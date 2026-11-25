@@ -8,7 +8,7 @@ public class PrototypeUI : MonoBehaviour {
  string PathName=>Path.Combine(Application.persistentDataPath,"apm-save.json");
  string T(string ko,string en)=>english?en:ko+" ("+en+")";
  [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
- static void Boot(){if(FindFirstObjectByType<PrototypeUI>()==null){var go=new GameObject("APM Prototype");DontDestroyOnLoad(go);go.AddComponent<PrototypeUI>();}}
+ static void Boot(){if(FindFirstObjectByType<NativeGameUI>()==null&&FindFirstObjectByType<PrototypeUI>()==null){var go=new GameObject("APM Prototype");DontDestroyOnLoad(go);go.AddComponent<PrototypeUI>();}}
  void Awake(){state=new GameState();try{if(File.Exists(PathName))state=GameRules.Import(File.ReadAllText(PathName));}catch(System.Exception e){status=e.Message;}}
  void Save(){try{File.WriteAllText(PathName,GameRules.Export(state));}catch(System.Exception e){status=e.Message;}}
  void OnGUI(){float w=Mathf.Min(Screen.width,850);GUILayout.BeginArea(new Rect((Screen.width-w)/2,0,w,Screen.height));scroll=GUILayout.BeginScrollView(scroll);
