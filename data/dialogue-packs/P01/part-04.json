@@ -5,7 +5,7 @@
   "scenes": [
     {
       "id": "P01-076",
-      "mechanism": "jurisdiction-triage",
+      "mechanism": "constituent-service-question",
       "learningTarget": "Dingell MI-12→6; Slotkin MI-8→7.",
       "date": "2024-12-16",
       "venue": {
@@ -13,8 +13,8 @@
         "en": "Michigan delegation constituent desk"
       },
       "context": {
-        "ko": "서로 다른 두 의원에게 보내는 민원이 한 봉투에 들어 있다.",
-        "en": "Correspondence for two members has arrived in one envelope."
+        "ko": "주민이 오래된 연락처를 들고 찾아왔다. 딩겔과 슬롯킨이 직접 안내에 나선다.",
+        "en": "A visitor arrives with an outdated contact card. Dingell and Slotkin help route the inquiry."
       },
       "cast": [
         {
@@ -35,19 +35,24 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "옛 명부의 제 번호는 12번이었습니다.",
-          "en": "My district was twelve in the old directory."
+          "ko": "제 옛 명함을 가져오셨군요. 지금도 같은 번호라고 생각하셨나요?",
+          "en": "You've brought my old card. Did you think the district number stayed the same?"
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 8번에서 7번으로 바뀌었어요. 임기별로 나누어야겠군요.",
-          "en": "Mine changed from eight to seven. We should separate the terms."
+          "ko": "저도 지역구 번호가 바뀌었죠. 이름을 먼저 확인하는 편이 좋겠습니다.",
+          "en": "Mine changed too. Better to start with the member's name."
+        },
+        {
+          "speaker": "player",
+          "ko": "주민께 현재의 연락 경로를 설명하겠습니다.",
+          "en": "I'll explain the current contact route to our visitor."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "딩겔 의원의 현재 민원은 {{blank}}에 배정하겠습니다.",
-        "en": "I'll route Representative Dingell's current correspondence to {{blank}}.",
+        "ko": "딩겔 의원님을 찾으신다면 이번 의회에서는 {{blank}} 의원실입니다.",
+        "en": "If you're looking for Representative Dingell, her office is listed under {{blank}} in this Congress.",
         "choices": [
           {
             "id": "A",
@@ -75,16 +80,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "좋습니다. 두 의원의 자료를 분리해 주세요.",
-            "en": "Good. Please keep the two members' records separate."
+            "speaker": "npc:0",
+            "ko": "맞아요. 제가 맡아 볼게요. 슬롯킨 의원실과는 별도의 연락처입니다.",
+            "en": "Right. I'll take it from here. Representative Slotkin's office has its own contact entry."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "딩겔은 118대 MI-6, 슬롯킨은 MI-7입니다.",
-            "en": "Dingell represents MI-6 and Slotkin MI-7 in the 118th."
+            "speaker": "npc:1",
+            "ko": "지금은 딩겔 의원이 MI-6, 제가 MI-7입니다. 117대의 MI-12와 MI-8을 그대로 사용하면 혼동됩니다.",
+            "en": "Dingell represents MI-6 and I represent MI-7 now. Reusing the 117th Congress's MI-12 and MI-8 labels causes confusion."
           }
         ]
       },
@@ -102,22 +107,22 @@
       ],
       "outcome": {
         "kind": "appointment",
-        "key": "p01-jurisdiction-triage-76"
+        "key": "p01-constituent-service-question-76"
       },
       "fictional": true
     },
     {
       "id": "P01-077",
-      "mechanism": "directory-error",
+      "mechanism": "direct-recall-over-coffee",
       "learningTarget": "Tlaib MI-13→12.",
       "date": "2024-12-16",
       "venue": {
-        "ko": "디트로이트 기록실",
-        "en": "Detroit archive"
+        "ko": "의사당 휴게실",
+        "en": "Capitol lounge"
       },
       "context": {
-        "ko": "검색창에서 같은 의원의 현재 정보가 두 개 나타난다.",
-        "en": "A search returns two apparently current entries for one member."
+        "ko": "잠깐의 휴식 중 틀라이브가 당신의 예전 만남 기억을 확인한다.",
+        "en": "During a brief break, Tlaib asks what you remember from a previous meeting."
       },
       "cast": [
         {
@@ -130,40 +135,45 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "13번과 12번이 함께 나옵니다.",
-          "en": "District thirteen and twelve both appear."
+          "speaker": "npc:0",
+          "ko": "예전 의회 때 제 소개를 들으셨죠?",
+          "en": "You heard my introduction during the previous Congress, didn't you?"
+        },
+        {
+          "speaker": "player",
+          "ko": "네, 그때는 미시간 13번으로 기억합니다.",
+          "en": "Yes, I remember Michigan's thirteenth."
         },
         {
           "speaker": "npc:0",
-          "ko": "둘 다 제 경력이지만 같은 임기는 아닙니다.",
-          "en": "Both are part of my career, but not the same term."
+          "ko": "그럼 지금 다시 소개한다면 어떻게 하시겠어요?",
+          "en": "How would you introduce me now?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "118대 필터에서는 {{blank}}가 표시되어야 합니다.",
-        "en": "The 118th Congress filter should display {{blank}}.",
+        "ko": "지금은 미시간 {{blank}}을 대표하는 틀라이브 의원님입니다.",
+        "en": "Today you are Representative Tlaib of Michigan's {{blank}} district.",
         "choices": [
           {
             "id": "A",
-            "ko": "MI-12",
-            "en": "MI-12"
+            "ko": "제12선거구",
+            "en": "12th"
           },
           {
             "id": "B",
-            "ko": "MI-13",
-            "en": "MI-13"
+            "ko": "제13선거구",
+            "en": "13th"
           },
           {
             "id": "C",
-            "ko": "MI-14",
-            "en": "MI-14"
+            "ko": "제14선거구",
+            "en": "14th"
           },
           {
             "id": "D",
-            "ko": "MI-11",
-            "en": "MI-11"
+            "ko": "제11선거구",
+            "en": "11th"
           }
         ],
         "correct": "A"
@@ -171,16 +181,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "옛 기록도 남겨 두고 오류를 수정하죠.",
-            "en": "Let's preserve the old record while fixing the error."
+            "speaker": "npc:0",
+            "ko": "정확해요. 다음에 만나면 두 임기 모두 기억하시겠군요.",
+            "en": "Exactly. Next time you'll remember both terms."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "틀라이브는 117대 MI-13, 118대 MI-12 의원입니다.",
-            "en": "Tlaib represented MI-13 in the 117th and MI-12 in the 118th."
+            "speaker": "npc:0",
+            "ko": "이번에는 제12선거구예요. 13번은 지난 의회 때의 기록입니다.",
+            "en": "It's the twelfth this time. Thirteen was my previous Congress."
           }
         ]
       },
@@ -197,8 +207,8 @@
         }
       ],
       "outcome": {
-        "kind": "document",
-        "key": "p01-directory-error-77"
+        "kind": "revisit",
+        "key": "p01-direct-recall-over-coffee-77"
       },
       "fictional": true
     },
@@ -307,16 +317,16 @@
     },
     {
       "id": "P01-079",
-      "mechanism": "retirement-memory",
+      "mechanism": "farewell-conversation",
       "learningTarget": "Kildee MI-5→8; Walberg MI-7→5.",
       "date": "2024-12-16",
       "venue": {
-        "ko": "대표단 연말 모임",
-        "en": "Year-end delegation gathering"
+        "ko": "미시간 대표단 연말 모임",
+        "en": "Michigan delegation year-end gathering"
       },
       "context": {
-        "ko": "임기 말에 의원들의 경력 자료를 기증받는다.",
-        "en": "At the end of the term, members contribute career records."
+        "ko": "연말에 킬디와 월버그가 이전 선거구 이야기를 나눈다.",
+        "en": "At a year-end gathering, Kildee and Walberg discuss their earlier districts."
       },
       "cast": [
         {
@@ -337,19 +347,24 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "제 경력에 5번과 8번이 모두 나옵니다.",
-          "en": "Both five and eight appear in my career record."
+          "ko": "오래된 소개 자료에는 저를 5번 의원이라고 부르더군요.",
+          "en": "An older introduction called me the member from district five."
         },
         {
           "speaker": "npc:1",
-          "ko": "이번 명부의 5번은 제 이름 아래 있죠.",
-          "en": "In this directory, five is listed under my name."
+          "ko": "그 번호는 지금 제 지역구입니다. 재미있는 변화죠.",
+          "en": "That is my district now. An interesting change."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "오늘 함께 사진을 찍으면 어떤 번호를 붙여 주실 건가요?",
+          "en": "What district label would you put on a photo of me today?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "킬디 의원의 이번 임기 자료는 {{blank}}에 보관하겠습니다.",
-        "en": "I'll preserve Representative Kildee's current-term papers under {{blank}}.",
+        "ko": "킬디 의원님과의 오늘 만남은 {{blank}}로 기억하겠습니다.",
+        "en": "I'll remember today's meeting with Representative Kildee under {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -377,16 +392,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "예전 기록도 함께 남겨 주세요.",
-            "en": "Keep the earlier records alongside them."
+            "speaker": "npc:0",
+            "ko": "감사합니다. 오래된 만남도 별도로 간직해 주세요.",
+            "en": "Thank you. Keep the older meeting separately, too."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "킬디는 118대 MI-8, 월버그는 MI-5입니다. 이전 번호는 5와 7입니다.",
-            "en": "Kildee is MI-8 and Walberg MI-5 in the 118th; previously they were five and seven."
+            "speaker": "npc:1",
+            "ko": "현재 킬디 의원은 MI-8이고 저는 MI-5입니다. 이전 번호는 각각 5번과 7번이었죠.",
+            "en": "Kildee currently represents MI-8; I represent MI-5. Our previous numbers were five and seven."
           }
         ]
       },
@@ -404,7 +419,7 @@
       ],
       "outcome": {
         "kind": "notebook",
-        "key": "p01-retirement-memory-79"
+        "key": "p01-farewell-conversation-79"
       },
       "fictional": true
     },
@@ -513,16 +528,16 @@
     },
     {
       "id": "P01-081",
-      "mechanism": "signage-repair",
+      "mechanism": "interrupted-stage-introduction",
       "learningTarget": "Rutherford FL-4→5; Franklin FL-15→18.",
       "date": "2024-12-16",
       "venue": {
-        "ko": "대표단 행사 무대 뒤",
-        "en": "Delegation event backstage"
+        "ko": "플로리다 대표단 행사 무대",
+        "en": "Florida delegation event stage"
       },
       "context": {
-        "ko": "행사장 안내판에 117대 명부가 잘못 인쇄되었다.",
-        "en": "The event signs were printed from the previous Congress directory."
+        "ko": "진행자가 러더퍼드를 예전 번호로 소개하자 프랭클린이 조용히 당신에게 알려 준다.",
+        "en": "A host introduces Rutherford using his previous district; Franklin quietly alerts you."
       },
       "cast": [
         {
@@ -542,20 +557,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "제 이름 옆에 아직 4번이라고 쓰여 있군요.",
-          "en": "My name is still marked district four."
+          "speaker": "host",
+          "ko": "플로리다 4번 지역구의 존 러더퍼드 의원님을 모시겠습니다.",
+          "en": "Please welcome John Rutherford of Florida's fourth district."
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 15번으로 되어 있네요. 지금은 18번인데 말입니다.",
-          "en": "Mine says fifteen, although it's eighteen now."
+          "ko": "잠깐, 그건 지난 의회 번호입니다. 저도 번호가 바뀌었거든요.",
+          "en": "Wait, that's the previous Congress's number. Mine changed as well."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "소개를 다시 부탁드려도 될까요?",
+          "en": "Could you give the introduction another try?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "러더퍼드 의원의 안내판은 {{blank}}로 교체하겠습니다.",
-        "en": "I'll replace Representative Rutherford's sign with {{blank}}.",
+        "ko": "정정하겠습니다. 러더퍼드 의원님은 이번 의회의 {{blank}} 대표입니다.",
+        "en": "A correction: Representative Rutherford represents {{blank}} in this Congress.",
         "choices": [
           {
             "id": "A",
@@ -583,16 +603,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "행사 전에 바로잡았군요.",
-            "en": "We caught it before the event."
+            "speaker": "npc:0",
+            "ko": "감사합니다. 이제 본 행사로 넘어가죠.",
+            "en": "Thank you. Now let's begin the event."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "러더퍼드는 118대 FL-5, 프랭클린은 FL-18입니다.",
-            "en": "Rutherford is FL-5 and Franklin FL-18 in the 118th."
+            "speaker": "npc:1",
+            "ko": "러더퍼드는 FL-5, 저는 FL-18입니다. 다음 소개에는 새 명부를 사용하죠.",
+            "en": "Rutherford represents FL-5 and I represent FL-18. Let's use the new directory for the introductions."
           }
         ]
       },
@@ -610,7 +630,7 @@
       ],
       "outcome": {
         "kind": "appointment",
-        "key": "p01-signage-repair-81"
+        "key": "p01-interrupted-stage-introduction-81"
       },
       "fictional": true
     },
@@ -724,7 +744,7 @@
     },
     {
       "id": "P01-083",
-      "mechanism": "card-exchange",
+      "mechanism": "cross-party-luncheon",
       "learningTarget": "Wasserman Schultz FL-23→25; Diaz-Balart FL-25→26.",
       "date": "2024-12-16",
       "venue": {
@@ -732,8 +752,8 @@
         "en": "Florida delegation luncheon"
       },
       "context": {
-        "ko": "서로 다른 정당의 의원과 연락처를 교환한다.",
-        "en": "You exchange contact details with members of different parties."
+        "ko": "두 의원의 소개가 끝난 뒤 진행자가 같은 주의 대표단과 정당의 차이에 대해 이야기를 시작한다.",
+        "en": "After two introductions, the host opens a discussion about the difference between a state delegation and a party."
       },
       "cast": [
         {
@@ -754,39 +774,44 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "제 예전 명함에는 23번이 있었죠.",
-          "en": "My old card showed twenty-three."
+          "ko": "저와 디아스발라트 의원은 모두 플로리다 하원의원이죠.",
+          "en": "Representative Diaz-Balart and I are both House members from Florida."
         },
         {
           "speaker": "npc:1",
-          "ko": "지금 제 명함에는 26번이라고 되어 있습니다.",
-          "en": "My current card says twenty-six."
+          "ko": "그렇다고 같은 정당이나 같은 지역구를 대표하는 것은 아닙니다.",
+          "en": "That doesn't mean we belong to the same party or represent the same district."
+        },
+        {
+          "speaker": "host",
+          "ko": "오늘 참석자에게 두 분의 현재 소속을 함께 소개해 주세요.",
+          "en": "Could you explain their current affiliations to our guests?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "와서먼 슐츠 의원의 현재 지역구는 {{blank}}로 기록하겠습니다.",
-        "en": "I'll record Representative Wasserman Schultz's current district as {{blank}}.",
+        "ko": "와서먼 슐츠 의원님은 {{blank}} 의원으로 소개하겠습니다.",
+        "en": "I'll introduce Representative Wasserman Schultz as {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "FL-23",
-            "en": "FL-23"
+            "ko": "FL-23 민주당",
+            "en": "the Democratic member for FL-23"
           },
           {
             "id": "B",
-            "ko": "FL-26",
-            "en": "FL-26"
+            "ko": "FL-25 공화당",
+            "en": "the Republican member for FL-25"
           },
           {
             "id": "C",
-            "ko": "FL-25",
-            "en": "FL-25"
+            "ko": "FL-25 민주당",
+            "en": "the Democratic member for FL-25"
           },
           {
             "id": "D",
-            "ko": "FL-28",
-            "en": "FL-28"
+            "ko": "FL-26 공화당",
+            "en": "the Republican member for FL-26"
           }
         ],
         "correct": "C"
@@ -794,16 +819,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "예전 명함도 역사 자료로 보관해도 되겠군요.",
-            "en": "You can keep the old card as a historical record."
+            "speaker": "npc:0",
+            "ko": "그리고 디아스발라트 의원의 소개도 별도로 이어 주시면 좋겠습니다.",
+            "en": "And please introduce Representative Diaz-Balart separately next."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "와서먼 슐츠는 FL-25 민주당, 디아스발라트는 FL-26 공화당 의원입니다.",
-            "en": "Wasserman Schultz is a Democrat from FL-25; Diaz-Balart is a Republican from FL-26."
+            "speaker": "npc:1",
+            "ko": "와서먼 슐츠 의원은 FL-25 민주당, 저는 FL-26 공화당입니다. 주 대표단과 정당은 서로 다른 개념입니다.",
+            "en": "Wasserman Schultz is a Democrat from FL-25; I am a Republican from FL-26. A state delegation and party are different concepts."
           }
         ]
       },
@@ -821,7 +846,7 @@
       ],
       "outcome": {
         "kind": "notebook",
-        "key": "p01-card-exchange-83"
+        "key": "p01-cross-party-luncheon-83"
       },
       "fictional": true
     },
@@ -928,16 +953,16 @@
     },
     {
       "id": "P01-085",
-      "mechanism": "delegation-expansion",
+      "mechanism": "delegation-seat-debate",
       "learningTarget": "Texas 36→38; Gonzalez TX-34 and Doggett TX-37.",
       "date": "2024-12-16",
       "venue": {
-        "ko": "텍사스 대표단 자료 모임",
-        "en": "Texas delegation reference meeting"
+        "ko": "텍사스 대표단 공개 간담회",
+        "en": "Texas delegation public forum"
       },
       "context": {
-        "ko": "재배분 이후 자료 상자의 크기를 결정한다.",
-        "en": "You decide how many sections a delegation file needs after apportionment."
+        "ko": "관객이 37번 지역구가 왜 생겼는지 질문한다.",
+        "en": "A guest asks why district thirty-seven exists."
       },
       "cast": [
         {
@@ -957,40 +982,45 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 의회에서 제 지역구는 34번입니다.",
-          "en": "My district is thirty-four in this Congress."
+          "speaker": "host",
+          "ko": "예전 텍사스 지도에는 36번까지 있던데요. 도겟 의원님, 37번은 어떻게 생겼나요?",
+          "en": "The old Texas map ended at thirty-six. Representative Doggett, how did thirty-seven appear?"
         },
         {
           "speaker": "npc:1",
-          "ko": "제 번호는 37번이죠. 이전에는 텍사스에 36석만 있었습니다.",
-          "en": "Mine is thirty-seven. Texas previously had only thirty-six seats."
+          "ko": "2020년 인구조사 이후 의석이 늘어났습니다.",
+          "en": "Our House allocation increased after the 2020 census."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 대표단 전체 규모도 청중에게 설명해 주시겠어요?",
+          "en": "Could you tell our audience the current delegation's total size?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현재 텍사스 하원 의석 수에 맞춰 {{blank}}칸을 만들겠습니다.",
-        "en": "I'll make {{blank}} sections for Texas's current House allocation.",
+        "ko": "텍사스는 기존 36석에서 {{blank}}으로 늘어났습니다.",
+        "en": "Texas increased from thirty-six seats to {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "38",
-            "en": "38"
+            "ko": "38석",
+            "en": "thirty-eight"
           },
           {
             "id": "B",
-            "ko": "36",
-            "en": "36"
+            "ko": "37석",
+            "en": "thirty-seven"
           },
           {
             "id": "C",
-            "ko": "37",
-            "en": "37"
+            "ko": "39석",
+            "en": "thirty-nine"
           },
           {
             "id": "D",
-            "ko": "39",
-            "en": "39"
+            "ko": "40석",
+            "en": "forty"
           }
         ],
         "correct": "A"
@@ -998,16 +1028,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "이제 모든 지역구 자료를 따로 넣을 수 있겠어요.",
-            "en": "Now every district can have its own section."
+            "speaker": "npc:1",
+            "ko": "그렇습니다. 제 지역구 번호가 37인 이유를 설명할 때 재배분의 맥락이 중요하죠.",
+            "en": "That's right. Apportionment is important context for explaining my district number."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "텍사스는 2020년 인구조사 이후 36석에서 38석이 되었습니다.",
-            "en": "Texas increased from thirty-six to thirty-eight seats after the 2020 census."
+            "speaker": "npc:0",
+            "ko": "텍사스는 두 석을 추가해 38석이 됐습니다. 37번과 38번이 새 번호입니다.",
+            "en": "Texas gained two seats, bringing the total to thirty-eight. Thirty-seven and thirty-eight are new district numbers."
           }
         ]
       },
@@ -1025,22 +1055,22 @@
       ],
       "outcome": {
         "kind": "document",
-        "key": "p01-delegation-expansion-85"
+        "key": "p01-delegation-seat-debate-85"
       },
       "fictional": true
     },
     {
       "id": "P01-086",
-      "mechanism": "same-number-other-state",
+      "mechanism": "overheard-state-confusion",
       "learningTarget": "Dingell MI-6; McBath GA-6→7.",
       "date": "2024-12-16",
       "venue": {
-        "ko": "주간 교류 행사",
-        "en": "Interstate delegation reception"
+        "ko": "의사당 복도",
+        "en": "Capitol corridor"
       },
       "context": {
-        "ko": "서로 다른 주의 6번 지역구 자료가 같은 파일로 저장되는 오류를 발견한다.",
-        "en": "Records for district six in different states are incorrectly saved in one file."
+        "ko": "방문객이 미시간 6번과 조지아 6번을 같은 지역구라고 이해한 것을 듣는다.",
+        "en": "You overhear a visitor mistake Michigan's sixth and Georgia's sixth for the same district."
       },
       "cast": [
         {
@@ -1060,40 +1090,45 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "딩겔 의원님과 맥배스 의원님은 6번 지역구를 함께 대표하신 건가요?",
+          "en": "Did Representatives Dingell and McBath jointly represent district six?"
+        },
+        {
           "speaker": "npc:0",
-          "ko": "저는 이번 의회 미시간 6번입니다.",
-          "en": "I represent Michigan's sixth district in this Congress."
+          "ko": "저는 이번 의회의 미시간 6번입니다.",
+          "en": "I'm the Michigan sixth-district member in this Congress."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 지난 의회 조지아 6번이었고 지금은 7번입니다.",
-          "en": "I represented Georgia's sixth in the previous Congress and now represent the seventh."
+          "ko": "저는 지난 의회에 조지아 6번을 맡았지만 지금은 조지아 7번입니다.",
+          "en": "I represented Georgia's sixth in the previous Congress and now represent Georgia's seventh."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "지역구 식별자에는 {{blank}}도 넣겠습니다.",
-        "en": "I'll include {{blank}} in the district identifier.",
+        "ko": "두 기록은 같은 번호라도 {{blank}}가 다르기 때문에 별개입니다.",
+        "en": "Even with the same number, those records are separate because their {{blank}} differ.",
         "choices": [
           {
             "id": "A",
-            "ko": "의원 성만",
-            "en": "only the surname"
+            "ko": "상원의원 임기",
+            "en": "Senate terms"
           },
           {
             "id": "B",
-            "ko": "주 약칭과 임기",
-            "en": "state abbreviation and congressional term"
+            "ko": "주와 임기",
+            "en": "states and terms"
           },
           {
             "id": "C",
-            "ko": "정당명만",
-            "en": "only the party name"
+            "ko": "대통령 선거인단",
+            "en": "presidential electors"
           },
           {
             "id": "D",
-            "ko": "지역구 번호만",
-            "en": "only the district number"
+            "ko": "의회 정원",
+            "en": "House sizes"
           }
         ],
         "correct": "B"
@@ -1101,16 +1136,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "두 주의 자료가 섞이지 않겠군요.",
-            "en": "The two states' records won't be mixed up."
+            "speaker": "npc:1",
+            "ko": "그 설명이면 번호가 겹쳐도 구분할 수 있겠어요.",
+            "en": "That explanation makes it possible to distinguish overlapping numbers."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "딩겔의 MI-6과 맥배스의 과거 GA-6은 다른 주와 시점의 기록입니다.",
-            "en": "Dingell's MI-6 and McBath's former GA-6 are distinct state-and-term records."
+            "speaker": "npc:0",
+            "ko": "MI-6은 제 현재 지역구이고 GA-6은 맥배스 의원의 이전 지역구입니다. 주와 임기를 함께 확인하세요.",
+            "en": "MI-6 is my current district and GA-6 is McBath's former district. Check both the state and the term."
           }
         ]
       },
@@ -1128,7 +1163,7 @@
       ],
       "outcome": {
         "kind": "notebook",
-        "key": "p01-same-number-other-state-86"
+        "key": "p01-overheard-state-confusion-86"
       },
       "fictional": true
     },
@@ -1230,7 +1265,7 @@
     },
     {
       "id": "P01-088",
-      "mechanism": "predecessor-letter",
+      "mechanism": "predecessor-recollection",
       "learningTarget": "Duarte→Gray, CA-13.",
       "date": "2026-05-01",
       "venue": {
@@ -1238,8 +1273,8 @@
         "en": "Central Valley delegation reception"
       },
       "context": {
-        "ko": "2024년 선거 전후의 CA-13 지역구 연표를 만든다.",
-        "en": "You build a CA-13 district chronology spanning the 2024 election."
+        "ko": "그레이와 인사하면서 2024년 말의 CA-13 의원을 기억해 낸다.",
+        "en": "You greet Gray and recall who represented CA-13 at the end of 2024."
       },
       "cast": [
         {
@@ -1253,19 +1288,24 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "118대 명부에는 다른 의원의 이름이 있죠.",
-          "en": "The 118th directory names another member."
+          "ko": "센트럴밸리에서 오셨군요. 예전에 이 번호의 의원을 만나 본 적이 있나요?",
+          "en": "You've come from the Central Valley. Have you met a member who previously held this district?"
         },
         {
-          "speaker": "aide",
-          "ko": "2024년 12월 명부와 지금의 명부를 비교합시다.",
-          "en": "Let's compare the December 2024 directory with the current one."
+          "speaker": "player",
+          "ko": "네, 2024년 말에 118대 대표단을 방문했었습니다.",
+          "en": "Yes, I visited the 118th Congress delegation in late 2024."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그러면 당시 CA-13 의원의 이름을 기억하시겠군요.",
+          "en": "Then perhaps you remember the name of the CA-13 member at that time."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "CA-13에서 그레이 의원의 전임자는 {{blank}}였군요.",
-        "en": "Representative Gray's predecessor in CA-13 was {{blank}}.",
+        "ko": "네, 당시 {{blank}} 의원님과 인사했습니다.",
+        "en": "Yes, I met Representative {{blank}} at that time.",
         "choices": [
           {
             "id": "A",
@@ -1293,16 +1333,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "이전 임기와 현재 임기를 같은 연표에 남기죠.",
-            "en": "Let's keep both terms in the same chronology."
+            "speaker": "npc:0",
+            "ko": "그렇군요. 그 만남은 전임자 기록으로 남겨 두고 오늘의 만남은 새로 추가하죠.",
+            "en": "I see. Keep that meeting under the predecessor and add today's separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "118대 CA-13은 두아르테, 119대는 그레이입니다.",
-            "en": "Duarte represented CA-13 in the 118th; Gray represents it in the 119th."
+            "speaker": "npc:0",
+            "ko": "118대 CA-13은 존 두아르테였습니다. 현재는 제가 그 지역구를 대표합니다.",
+            "en": "John Duarte represented CA-13 in the 118th. I represent it now."
           }
         ]
       },
@@ -1320,22 +1360,22 @@
       ],
       "outcome": {
         "kind": "revisit",
-        "key": "p01-predecessor-letter-88"
+        "key": "p01-predecessor-recollection-88"
       },
       "fictional": true
     },
     {
       "id": "P01-089",
-      "mechanism": "successor-portrait",
+      "mechanism": "gallery-guided-introduction",
       "learningTarget": "Steel→Tran, CA-45.",
       "date": "2026-05-01",
       "venue": {
-        "ko": "대표단 사진 전시실",
-        "en": "Delegation portrait exhibit"
+        "ko": "대표단 초상화 전시실",
+        "en": "Delegation portrait gallery"
       },
       "context": {
-        "ko": "2024년 말과 현재 CA-45 대표 사진을 나란히 전시한다.",
-        "en": "Late-2024 and current portraits of CA-45 members are placed side by side."
+        "ko": "트란이 CA-45의 이전 대표 사진을 가리킨다.",
+        "en": "Tran gestures toward a portrait of the previous CA-45 member."
       },
       "cast": [
         {
@@ -1348,20 +1388,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "두 사진은 같은 번호의 지역구를 대표한 다른 의원입니다.",
-          "en": "The two portraits depict different members associated with the same district number."
+          "speaker": "npc:0",
+          "ko": "이 사진은 제가 취임하기 전 같은 지역구를 대표했던 의원입니다.",
+          "en": "This portrait shows the member who represented the district before I took office."
         },
         {
-          "speaker": "npc:0",
-          "ko": "현재 명부에 제 이름이 들어 있습니다. 이전 사진도 보관해 주세요.",
-          "en": "My name appears in the current directory. Preserve the previous portrait too."
+          "speaker": "host",
+          "ko": "관람객에게 인물의 이름과 당시 임기를 알려 주세요.",
+          "en": "Please tell our visitors the name and the term."
+        },
+        {
+          "speaker": "player",
+          "ko": "사진 설명을 읽어 보겠습니다.",
+          "en": "I'll read the caption aloud."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "지난 임기 사진에는 {{blank}} 의원이라고 표시하겠습니다.",
-        "en": "I'll label the previous-term portrait Representative {{blank}}.",
+        "ko": "이분은 118대 CA-45를 대표한 {{blank}} 의원입니다.",
+        "en": "This is Representative {{blank}}, who represented CA-45 in the 118th Congress.",
         "choices": [
           {
             "id": "A",
@@ -1389,16 +1434,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "이제 의원 교체를 연속적으로 볼 수 있겠군요.",
-            "en": "Now we can trace the change in representation."
+            "speaker": "npc:0",
+            "ko": "맞습니다. 이제 제 사진과 지난 임기의 사진을 함께 살펴보시죠.",
+            "en": "Correct. Let's look at the earlier portrait alongside mine."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "CA-45의 118대 대표는 스틸, 119대 대표는 트란입니다.",
-            "en": "Steel represented CA-45 in the 118th; Tran represents it in the 119th."
+            "speaker": "host",
+            "ko": "이 사진은 미셸 스틸 의원의 것입니다. 트란 의원은 119대 CA-45 대표입니다.",
+            "en": "This portrait is of Michelle Steel. Tran represents CA-45 in the 119th Congress."
           }
         ]
       },
@@ -1416,7 +1461,7 @@
       ],
       "outcome": {
         "kind": "document",
-        "key": "p01-successor-portrait-89"
+        "key": "p01-gallery-guided-introduction-89"
       },
       "fictional": true
     },
@@ -1722,7 +1767,7 @@
     },
     {
       "id": "P01-093",
-      "mechanism": "repeated-redistricting",
+      "mechanism": "timeline-reconstruction",
       "learningTarget": "McBath GA-6→7→6; McCormick GA-6→7.",
       "date": "2026-05-01",
       "venue": {
@@ -1730,8 +1775,8 @@
         "en": "Georgia map research seminar"
       },
       "context": {
-        "ko": "세 의회의 번호 변화를 인물별로 비교한다.",
-        "en": "You compare district-number changes across three Congresses."
+        "ko": "참가자들이 맥배스와 매코믹의 임기별 지역구 카드를 순서대로 배치한다.",
+        "en": "Participants arrange district cards for McBath and McCormick in chronological order."
       },
       "cast": [
         {
@@ -1751,20 +1796,30 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "먼저 117대, 그다음 118대, 마지막이 119대입니다.",
+          "en": "Start with the 117th, then the 118th, and finally the 119th."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 기록에는 6번, 7번, 다시 6번이 등장합니다.",
-          "en": "My record shows six, seven, then six again."
+          "ko": "제 번호가 처음에는 6번이었다는 것부터 기억해 주세요.",
+          "en": "Remember that my number began as six."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 118대 6번에서 119대 7번으로 바뀌었죠.",
-          "en": "I went from six in the 118th to seven in the 119th."
+          "ko": "저는 118대에 6번이었고 이번에는 7번입니다.",
+          "en": "I was six in the 118th and seven in this Congress."
+        },
+        {
+          "speaker": "host",
+          "ko": "맥배스 의원의 카드 세 장을 어떤 순서로 놓을까요?",
+          "en": "How should we arrange Representative McBath's three cards?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "맥배스 의원의 117대부터 119대까지 순서는 {{blank}}입니다.",
-        "en": "Representative McBath's sequence from the 117th through 119th is {{blank}}.",
+        "ko": "왼쪽부터 {{blank}} 순서로 놓겠습니다.",
+        "en": "From left to right, I'll arrange them as {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1792,16 +1847,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "같은 번호가 반복되는 사실도 드러나는군요.",
-            "en": "The repeated number is now clear."
+            "speaker": "npc:0",
+            "ko": "정확합니다. 같은 번호로 돌아왔다고 해서 경계까지 같다고 단정하지는 맙시다.",
+            "en": "Exactly. Returning to the same number doesn't establish that the boundaries are identical."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "맥배스는 GA-6, GA-7, GA-6 순서이고 매코믹은 GA-6에서 GA-7로 바뀌었습니다.",
-            "en": "McBath represented GA-6, GA-7, then GA-6; McCormick went from GA-6 to GA-7."
+            "speaker": "npc:1",
+            "ko": "맥배스 의원은 6, 7, 6번 순서입니다. 저는 118대 6번, 119대 7번입니다.",
+            "en": "McBath's sequence is six, seven, six. Mine is six in the 118th, seven in the 119th."
           }
         ]
       },
@@ -1824,22 +1879,22 @@
       ],
       "outcome": {
         "kind": "document",
-        "key": "p01-repeated-redistricting-93"
+        "key": "p01-timeline-reconstruction-93"
       },
       "fictional": true
     },
     {
       "id": "P01-094",
-      "mechanism": "adjacent-office",
+      "mechanism": "colleague-introduces-new-member",
       "learningTarget": "Moore AL-2→1; Figures AL-2.",
       "date": "2026-05-01",
       "venue": {
-        "ko": "앨라배마 대표단 공동 접견실",
+        "ko": "앨라배마 대표단 접견실",
         "en": "Alabama delegation reception"
       },
       "context": {
-        "ko": "같은 주의 두 현직 의원을 소개하면서 과거 명부와 현재 명부를 구별한다.",
-        "en": "You introduce two sitting members while distinguishing older and current directories."
+        "ko": "무어가 당신을 같은 주의 다른 현직 의원에게 소개한다.",
+        "en": "Moore introduces you to another sitting member of the state delegation."
       },
       "cast": [
         {
@@ -1860,39 +1915,44 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "118대에는 제가 2번을 대표했지만 지금은 1번입니다.",
-          "en": "I represented district two in the 118th, but one now."
+          "ko": "이분은 쇼마리 피겨스 의원입니다. 제가 118대 때 맡았던 번호가 지금 이분의 번호죠.",
+          "en": "This is Representative Shomari Figures. He now holds the district number I had in the 118th Congress."
         },
         {
           "speaker": "npc:1",
-          "ko": "그 2번은 현재 제 이름으로 올라 있습니다.",
-          "en": "District two is currently listed under my name."
+          "ko": "반갑습니다. 무어 의원은 지금 제1선거구 의원이시죠.",
+          "en": "Good to meet you. Representative Moore now represents the first district."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 사람의 번호를 혼동하지 않도록 기억해 주세요.",
+          "en": "Remember our district numbers separately."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현재 AL-2의 대표는 {{blank}} 의원님입니다.",
-        "en": "The current representative for AL-2 is {{blank}}.",
+        "ko": "반갑습니다, 피겨스 의원님. 현재 {{blank}}를 대표하시는군요.",
+        "en": "Nice to meet you, Representative Figures. You currently represent {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "배리 무어",
-            "en": "Barry Moore"
+            "ko": "AL-1",
+            "en": "AL-1"
           },
           {
             "id": "B",
-            "ko": "쇼마리 피겨스",
-            "en": "Shomari Figures"
+            "ko": "AL-2",
+            "en": "AL-2"
           },
           {
             "id": "C",
-            "ko": "로버트 애더홀트",
-            "en": "Robert Aderholt"
+            "ko": "AL-3",
+            "en": "AL-3"
           },
           {
             "id": "D",
-            "ko": "테리 스웰",
-            "en": "Terri Sewell"
+            "ko": "AL-7",
+            "en": "AL-7"
           }
         ],
         "correct": "B"
@@ -1900,16 +1960,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "두 분의 현재 기록을 구분했군요.",
-            "en": "You've distinguished the current records."
+            "speaker": "npc:1",
+            "ko": "맞습니다. 앞으로 앨라배마 대표단 행사에서 또 뵙죠.",
+            "en": "That's right. I hope to see you at another Alabama delegation event."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "119대 피겨스는 AL-2, 무어는 AL-1입니다.",
-            "en": "Figures represents AL-2 and Moore AL-1 in the 119th."
+            "speaker": "npc:0",
+            "ko": "피겨스 의원은 AL-2, 저는 AL-1입니다. 118대에는 제가 AL-2였으니 혼동할 수 있죠.",
+            "en": "Figures represents AL-2 and I represent AL-1. I held AL-2 in the 118th, so the confusion is understandable."
           }
         ]
       },
@@ -1927,22 +1987,22 @@
       ],
       "outcome": {
         "kind": "appointment",
-        "key": "p01-adjacent-office-94"
+        "key": "p01-colleague-introduces-new-member-94"
       },
       "fictional": true
     },
     {
       "id": "P01-095",
-      "mechanism": "chamber-identifier",
+      "mechanism": "unexpected-career-transition",
       "learningTarget": "Gallego AZ-3→Senate; Ansari AZ-3.",
       "date": "2026-05-01",
       "venue": {
-        "ko": "애리조나 대표단 안내실",
-        "en": "Arizona delegation information office"
+        "ko": "애리조나 대표단 공동 행사",
+        "en": "Arizona delegation joint event"
       },
       "context": {
-        "ko": "전임 하원의원이 상원으로 옮긴 경우 연락망을 분리한다.",
-        "en": "A former House member moved to the Senate; his contact must be separated."
+        "ko": "안사리와 인사를 나누던 중 예전에 AZ-3에서 만났던 가예고를 다시 보고 싶어진다.",
+        "en": "While meeting Ansari, you ask to reconnect with Gallego, whom you previously encountered in AZ-3."
       },
       "cast": [
         {
@@ -1955,40 +2015,45 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "예전에 AZ-3의 가예고 의원님도 만났는데 오늘 오셨나요?",
+          "en": "I previously met Representative Gallego of AZ-3. Is he here today?"
+        },
+        {
           "speaker": "npc:0",
-          "ko": "현재 제 하원 지역구는 3번입니다.",
-          "en": "My current House district is three."
+          "ko": "그분은 지난 의회에는 하원에 계셨지만 지금은 다른 원에서 활동합니다.",
+          "en": "He was in the House last Congress, but now serves in the other chamber."
         },
         {
           "speaker": "aide",
-          "ko": "118대 같은 번호의 루벤 가예고 의원은 이제 상원에 있습니다.",
-          "en": "The previous member, Ruben Gallego, is now in the Senate."
+          "ko": "다음 일정을 잡으려면 현재 직책으로 연락해야 합니다.",
+          "en": "To arrange another meeting, we should use his current office."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "가예고 의원의 과거 하원 기록은 보존하고 현재 연락망은 {{blank}}로 분리하겠습니다.",
-        "en": "I'll preserve Gallego's House record and file his current contact under {{blank}}.",
+        "ko": "그렇다면 가예고 의원님과는 {{blank}} 자격으로 다시 만날 수 있겠군요.",
+        "en": "Then I could meet Gallego again in his capacity as {{blank}}.",
         "choices": [
           {
             "id": "A",
             "ko": "AZ-3 현직 하원의원",
-            "en": "current AZ-3 representative"
+            "en": "the sitting AZ-3 representative"
           },
           {
             "id": "B",
             "ko": "애리조나 주지사",
-            "en": "Arizona governor"
+            "en": "the governor of Arizona"
           },
           {
             "id": "C",
             "ko": "애리조나 연방 상원의원",
-            "en": "U.S. senator from Arizona"
+            "en": "a U.S. senator from Arizona"
           },
           {
             "id": "D",
             "ko": "AZ-7 현직 하원의원",
-            "en": "current AZ-7 representative"
+            "en": "the sitting AZ-7 representative"
           }
         ],
         "correct": "C"
@@ -1996,16 +2061,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "하원과 상원 연락처가 섞이지 않겠군요.",
-            "en": "The House and Senate contacts won't get mixed."
+            "speaker": "npc:0",
+            "ko": "그렇죠. AZ-3 관련 하원 일정은 저와 이야기하시면 됩니다.",
+            "en": "That's right. For AZ-3 House appointments, you can speak with me."
           }
         ],
         "incorrect": [
           {
             "speaker": "aide",
-            "ko": "가예고는 118대 AZ-3 의원이었고 현재 상원의원입니다. 안사리는 AZ-3입니다.",
-            "en": "Gallego was AZ-3 in the 118th and is now a senator; Ansari represents AZ-3."
+            "ko": "가예고는 2025년 1월 3일 상원의원으로 취임했습니다. 현재 AZ-3 하원의원은 안사리입니다.",
+            "en": "Gallego began Senate service on January 3, 2025. Ansari is the current AZ-3 House member."
           }
         ]
       },
@@ -2024,11 +2089,16 @@
           "url": "https://www.senate.gov/states/AZ/senators.htm",
           "claim": "Gallego AZ-3→Senate; Ansari AZ-3.",
           "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/senators/NewSenators.htm",
+          "claim": "Ruben Gallego began Senate service January 3, 2025.",
+          "asOf": "2025-01-03"
         }
       ],
       "outcome": {
-        "kind": "notebook",
-        "key": "p01-chamber-identifier-95"
+        "kind": "revisit",
+        "key": "p01-unexpected-career-transition-95"
       },
       "fictional": true
     },
@@ -2132,16 +2202,16 @@
     },
     {
       "id": "P01-097",
-      "mechanism": "leadership-contact",
+      "mechanism": "leadership-role-dialogue",
       "learningTarget": "Johnson Speaker and LA-4; Doggett TX-37.",
       "date": "2026-05-01",
       "venue": {
-        "ko": "의장 접견 일정실",
-        "en": "Speaker appointment office"
+        "ko": "의장 접견실",
+        "en": "Speaker's reception room"
       },
       "context": {
-        "ko": "의장 업무와 지역구 의원 업무의 연락처를 구분한다.",
-        "en": "You distinguish leadership appointments from district-member appointments."
+        "ko": "도겟과 함께 의장을 접견하는 자리에서 의장직과 지역구 대표직을 구분한다.",
+        "en": "You meet the Speaker with Doggett and distinguish the leadership office from the district seat."
       },
       "cast": [
         {
@@ -2161,20 +2231,25 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "의장님은 하원의원 직책도 계속 유지하고 계시죠?",
+          "en": "Mr. Speaker, you also retain your House seat, correct?"
+        },
+        {
           "speaker": "npc:0",
-          "ko": "의장 관련 일정과 제 지역구 일정은 구별해 주세요.",
-          "en": "Please distinguish Speaker-related appointments from district appointments."
+          "ko": "그렇습니다. 의장직과 지역구 대표직은 함께 존재합니다.",
+          "en": "That's right. The Speakership and my district seat coexist."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 경우는 텍사스 37번 지역구 기록으로 연락하면 됩니다.",
-          "en": "In my case, the Texas thirty-seventh district entry will do."
+          "ko": "저도 텍사스 37번 의원으로 오늘 왔습니다.",
+          "en": "I'm here today as the member from Texas's thirty-seventh."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "존슨 의장의 하원 지역구는 {{blank}}입니다.",
-        "en": "Speaker Johnson's House district is {{blank}}.",
+        "ko": "그럼 존슨 의장님은 {{blank}} 의원이기도 하시군요.",
+        "en": "Then Speaker Johnson is also the representative for {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2202,16 +2277,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "두 연락 경로를 정확히 구분했군요.",
-            "en": "You've distinguished the two contact paths."
+            "speaker": "npc:0",
+            "ko": "맞습니다. 지역구에서의 제 역할과 의장직을 구분해 기억해 주세요.",
+            "en": "Correct. Remember my district role separately from the Speakership."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "119대 의장 존슨은 LA-4 의원입니다. 도겟은 TX-37입니다.",
-            "en": "Johnson, Speaker of the 119th House, represents LA-4; Doggett represents TX-37."
+            "speaker": "npc:1",
+            "ko": "존슨 의장은 LA-4이고 저는 TX-37 의원입니다.",
+            "en": "Speaker Johnson represents LA-4; I represent TX-37."
           }
         ]
       },
@@ -2220,26 +2295,36 @@
           "url": "https://clerk.house.gov/member_info/olm-119.pdf",
           "claim": "Johnson Speaker and LA-4; Doggett TX-37.",
           "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://clerk.house.gov/Votes/20252",
+          "claim": "The House elected Mike Johnson of Louisiana Speaker on January 3, 2025.",
+          "asOf": "2025-01-03"
+        },
+        {
+          "url": "https://clerk.house.gov/members/J000299",
+          "claim": "Johnson represents Louisiana's fourth congressional district.",
+          "asOf": "2026-05-01"
         }
       ],
       "outcome": {
         "kind": "appointment",
-        "key": "p01-leadership-contact-97"
+        "key": "p01-leadership-role-dialogue-97"
       },
       "fictional": true
     },
     {
       "id": "P01-098",
-      "mechanism": "party-label-correction",
+      "mechanism": "live-press-factcheck",
       "learningTarget": "CA-45 Steel (R)→Tran (D); Min (D).",
       "date": "2026-05-01",
       "venue": {
-        "ko": "정치 자료 정리실",
-        "en": "Political records room"
+        "ko": "의회 기자 간담회",
+        "en": "Congressional press briefing"
       },
       "context": {
-        "ko": "같은 번호이면 정당도 그대로 복사해도 된다는 착각을 수정한다.",
-        "en": "You correct the assumption that a party label is inherited with the district number."
+        "ko": "기자가 예전 CA-45 의원의 정당을 트란에게 그대로 적용해 질문한다.",
+        "en": "A reporter assumes Tran has the same party affiliation as CA-45's previous member."
       },
       "cast": [
         {
@@ -2259,19 +2344,24 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "CA-45의 지난 임기 정당 표기를 새 카드에 복사할까요?",
-          "en": "Should I copy CA-45's previous party label onto the new card?"
+          "speaker": "host",
+          "ko": "CA-45는 지난 의회에도 공화당 의원이었으니 트란 의원님도 공화당이시죠?",
+          "en": "CA-45 had a Republican member in the last Congress, so you're Republican too, Representative Tran?"
         },
         {
           "speaker": "npc:0",
-          "ko": "현직 의원의 실제 소속을 확인해야 합니다.",
-          "en": "You need to check the incumbent's actual party affiliation."
+          "ko": "지역구 번호와 개인의 정당 소속은 별도로 확인해야 합니다.",
+          "en": "District numbers and individual party affiliation should be checked separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 카드도 같은 방식으로 확인하면 좋겠어요.",
-          "en": "Please verify mine the same way."
+          "ko": "제 경우도 현재 CA-47의 의원 소속을 직접 확인하시면 됩니다.",
+          "en": "For me, too, check the current CA-47 member's actual affiliation."
+        },
+        {
+          "speaker": "host",
+          "ko": "그럼 정정해서 방송하겠습니다. 정확한 표현을 부탁드립니다.",
+          "en": "Then we'll issue a correction. Please give us the accurate wording."
         }
       ],
       "response": {
@@ -2305,16 +2395,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "정당도 의원과 임기별로 확인해야겠군요.",
-            "en": "Party affiliation must be checked for each member and term."
+            "speaker": "npc:0",
+            "ko": "맞습니다. 이전 대표와 현재 대표를 구별한 정정입니다.",
+            "en": "Correct. That distinguishes the previous representative from the current one."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "118대 CA-45 스틸은 공화당, 119대 트란은 민주당입니다. 민도 민주당입니다.",
-            "en": "Steel was Republican in the 118th; Tran is Democratic in the 119th. Min is also Democratic."
+            "speaker": "npc:1",
+            "ko": "118대 CA-45의 스틸 의원은 공화당이었지만 트란 의원은 민주당입니다. 저도 민주당입니다.",
+            "en": "Steel of CA-45 in the 118th was Republican, but Tran is Democratic. I'm a Democrat as well."
           }
         ]
       },
@@ -2332,7 +2422,7 @@
       ],
       "outcome": {
         "kind": "document",
-        "key": "p01-party-label-correction-98"
+        "key": "p01-live-press-factcheck-98"
       },
       "fictional": true
     },
@@ -2436,16 +2526,16 @@
     },
     {
       "id": "P01-100",
-      "mechanism": "archive-to-appointment",
+      "mechanism": "returning-contact-comparison",
       "learningTarget": "McBath GA-7→6; Boebert CO-3→4.",
       "date": "2026-05-01",
       "venue": {
-        "ko": "인맥 수첩 정리 시간",
-        "en": "Contact notebook session"
+        "ko": "의회 리셉션",
+        "en": "Congressional reception"
       },
       "context": {
-        "ko": "과거 만남을 현재의 일정으로 연결한다.",
-        "en": "You link an earlier meeting to a current appointment."
+        "ko": "두 의원과 오랜만에 다시 인사를 나눈다. 이전 만남의 지역구 정보를 떠올리게 된다.",
+        "en": "You greet two members after a long absence and recall their district affiliations from earlier encounters."
       },
       "cast": [
         {
@@ -2466,19 +2556,29 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "예전에는 제 기록이 CO-3이었죠. 지금은 CO-4입니다.",
-          "en": "My old record said CO-3. It's CO-4 now."
+          "ko": "오랜만입니다. 지난번에는 제가 콜로라도 3번 의원으로 소개됐죠.",
+          "en": "It's been a while. Last time I was introduced as Colorado's third-district member."
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 118대 GA-7에서 현재 GA-6으로 바뀌었습니다.",
-          "en": "I went from GA-7 in the 118th to GA-6 now."
+          "ko": "저도 지난 의회에는 조지아 7번이었습니다.",
+          "en": "I was Georgia's seventh-district member in the previous Congress."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분 모두 이번 의회에서 번호가 바뀌었군요.",
+          "en": "Both of your district numbers have changed in this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그럼 다음에 저를 다시 만나면 어떤 지역구로 기억하실 건가요?",
+          "en": "So what district will you remember when we meet again?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "맥배스 의원의 새 접견은 {{blank}} 현직 의원 기록에 연결하겠습니다.",
-        "en": "I'll link the new meeting with Representative McBath to the incumbent entry for {{blank}}.",
+        "ko": "다음에는 맥배스 의원님을 {{blank}} 대표로 기억하겠습니다.",
+        "en": "Next time I'll remember you as the representative for {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2506,16 +2606,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "이전 만남을 잃지 않고 다음 일정으로 이어갈 수 있겠군요.",
-            "en": "You can carry the earlier meeting forward without losing its context."
+            "speaker": "npc:1",
+            "ko": "정확합니다. 다음에 만나면 조지아 대표단 이야기를 더 나누죠.",
+            "en": "Exactly. Next time we meet, we can talk more about the Georgia delegation."
           }
         ],
         "incorrect": [
           {
-            "speaker": "aide",
-            "ko": "119대 맥배스는 GA-6, 보버트는 CO-4입니다.",
-            "en": "McBath represents GA-6 and Boebert CO-4 in the 119th."
+            "speaker": "npc:0",
+            "ko": "맥배스 의원은 지금 GA-6이고 저는 CO-4입니다. 118대의 번호와 구분해 두시면 됩니다.",
+            "en": "McBath is now GA-6 and I'm CO-4. Keep those separate from the 118th Congress numbers."
           }
         ]
       },
@@ -2533,7 +2633,7 @@
       ],
       "outcome": {
         "kind": "revisit",
-        "key": "p01-archive-to-appointment-100"
+        "key": "p01-returning-contact-comparison-100"
       },
       "fictional": true
     }
