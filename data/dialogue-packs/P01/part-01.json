@@ -5,7 +5,7 @@
   "scenes": [
     {
       "id": "P01-001",
-      "mechanism": "map-comparison",
+      "mechanism": "peer-conversation",
       "learningTarget": "Nancy Pelosi represented CA-12 in December 2022 and CA-11 in December 2024.",
       "date": "2024-12-16",
       "venue": {
@@ -13,8 +13,8 @@
         "en": "Capitol map room"
       },
       "context": {
-        "ko": "투명 지도 두 장을 겹치는데 샌프란시스코 쪽 표지가 어긋난다.",
-        "en": "Two transparent maps overlap, but the San Francisco label no longer aligns."
+        "ko": "지역구 경계가 달라진 두 샌프란시스코만 지역 의원의 대화에 끼어든다.",
+        "en": "Join two Bay Area representatives discussing changes in their constituencies."
       },
       "cast": [
         {
@@ -34,25 +34,25 @@
       ],
       "opening": [
         {
+          "speaker": "npc:1",
+          "ko": "오클랜드에서 온 손님이 샌프란시스코 대표에게도 이야기하고 싶다네요.",
+          "en": "A visitor from Oakland wants to speak to the San Francisco representative as well."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "예전 명부를 기준으로 내 번호를 붙인 모양이군요.",
-          "en": "Someone seems to have used the old directory for my label."
+          "ko": "바버라, 지난 의회에는 우리 번호가 13과 12였지요. 이제 번호는 하나씩 내려갔습니다.",
+          "en": "Barbara, last Congress our numbers were thirteen and twelve. Both have moved down one."
         },
         {
           "speaker": "npc:1",
-          "ko": "오클랜드 쪽도 번호가 달라졌어요. 새 명부를 기준으로 해요.",
-          "en": "Oakland's number changed too. Let's use the new directory."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "다음 지도에서 옛 번호와 새 번호를 헷갈리지 않으려면 의원 이름을 먼저 찾아야겠네요.",
-          "en": "On the next map, start with the member's name rather than trusting the old number."
+          "ko": "그럼 손님을 펠로시 의원 쪽으로 소개해 주시겠어요?",
+          "en": "Would you introduce our visitor to Representative Pelosi?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "펠로시 의원님 표지는 {{blank}}로 옮기겠습니다.",
-        "en": "I'll move your label to {{blank}}, Representative Pelosi.",
+        "ko": "샌프란시스코에서 오신 펠로시 의원님은 지금 {{blank}}를 대표하십니다.",
+        "en": "Representative Pelosi of San Francisco now represents {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -80,9 +80,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "그래요. 두 지도를 따로 보관하면 혼동하지 않겠군요.",
-            "en": "Good. Keeping both maps separate should prevent confusion."
+            "speaker": "npc:1",
+            "ko": "그럼 저는 오클랜드 쪽 이야기를 이어갈게요. 두 지역의 질문을 따로 받아 봅시다.",
+            "en": "I'll take the Oakland side, then. Let's hear questions from both areas."
           }
         ],
         "incorrect": [
@@ -222,8 +222,8 @@
         "en": "Delegation mailroom"
       },
       "context": {
-        "ko": "오래된 주소가 적힌 두 봉투가 같은 바구니에 들어 있다.",
-        "en": "Two envelopes with old addresses have landed in one tray."
+        "ko": "지역 대표를 이미 알고 있는 주민의 봉투가 잘못 전달될 뻔했다.",
+        "en": "A resident knows the representative's name, but a letter risks going to the wrong office."
       },
       "cast": [
         {
@@ -243,25 +243,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이 봉투에는 제 이름이 맞는데 CA-10이라고 쓰여 있네요.",
-          "en": "This has my name but says CA-10."
+          "speaker": "npc:1",
+          "ko": "제 번호로 온 봉투인데 수신인이 하더 의원이네요.",
+          "en": "This envelope bears my district number but is addressed to Harder."
         },
         {
-          "speaker": "npc:1",
-          "ko": "지금 그 번호는 제 명부에 있죠. 이름을 보고 분리합시다.",
-          "en": "That's my number now. Let's sort them by name."
+          "speaker": "npc:0",
+          "ko": "지난 의회의 연락처가 아직 남아 있나 봅니다. 주민이 찾는 건 저군요.",
+          "en": "The sender must still have my old contact. They're looking for me."
         },
         {
           "speaker": "player",
-          "ko": "보내는 분은 두 분 중 누구를 찾는지 이미 알고 계시군요. 번호만 옛날 것이네요.",
-          "en": "The sender knows whom they want. Only the district number is outdated."
+          "ko": "봉투는 열지 않고 수신인에게 전달하겠습니다.",
+          "en": "I'll deliver it unopened to the intended recipient."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "하더 의원님 앞으로 온 편지는 {{blank}} 바구니에 넣겠습니다.",
-        "en": "I'll put Representative Harder's letter in the {{blank}} tray.",
+        "ko": "하더 의원 앞으로 온 편지는 현재 {{blank}} 의원실로 전달하겠습니다.",
+        "en": "I'll route the letter addressed to Harder to his current {{blank}} office.",
         "choices": [
           {
             "id": "A",
@@ -290,8 +290,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "고맙습니다. 이름과 번호를 같이 읽어야겠어요.",
-            "en": "Thanks. We really need to read both name and number."
+            "ko": "제가 직접 받겠습니다. 답장에는 다음에 사용할 연락 정보를 함께 넣죠.",
+            "en": "I'll take it personally. The reply can include updated contact information."
           }
         ],
         "incorrect": [
@@ -430,7 +430,7 @@
     },
     {
       "id": "P01-005",
-      "mechanism": "constituent-service",
+      "mechanism": "peer-conversation",
       "learningTarget": "Thompson CA-5→4; McClintock CA-4→5.",
       "date": "2024-12-16",
       "venue": {
@@ -438,8 +438,8 @@
         "en": "Meeting materials table"
       },
       "context": {
-        "ko": "CA-4라고 인쇄된 자료를 두 의원 중 누구에게 전달할지 판단한다.",
-        "en": "A packet marked CA-4 needs to reach the right member."
+        "ko": "두 의원에게 과거 지역구 번호만으로 의원을 식별할 수 있는지 질문한다.",
+        "en": "Two members discuss why a district number alone cannot identify a person across time."
       },
       "cast": [
         {
@@ -460,24 +460,29 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "2022년 자료라면 내 번호가 4였을 겁니다.",
-          "en": "If this were a 2022 packet, four would have been mine."
+          "ko": "2022년의 CA-4라고 하면 저를 떠올리겠죠.",
+          "en": "If you say CA-4 in 2022, you'd think of me."
         },
         {
           "speaker": "npc:1",
-          "ko": "하지만 이건 이번 회의 자료잖아요. 발행일을 확인합시다.",
-          "en": "But this is for today's meeting. Check the date."
+          "ko": "그런데 이번 의회에서는 제가 4번을 맡습니다.",
+          "en": "But I hold number four in this Congress."
         },
         {
-          "speaker": "npc:1",
-          "ko": "자료를 건네주실 때 저와 매클린톡 의원의 현재 번호를 구별해 주시겠어요?",
-          "en": "Could you distinguish my current number from Representative McClintock's when you hand us the material?"
+          "speaker": "player",
+          "ko": "번호가 같아도 시기가 다르면 사람은 달라질 수 있군요.",
+          "en": "The same number can mean a different person in another term."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그럼 제가 동료에게 넘겨 드릴 오늘의 질문은 누구에게 가야 할까요?",
+          "en": "Then whom should I hand today's question for District Four?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "이번 자료의 CA-4 수신인은 {{blank}} 의원님입니다.",
-        "en": "The recipient of this current CA-4 packet is Representative {{blank}}.",
+        "ko": "이번 의회의 CA-4 질문은 {{blank}} 의원님께 드리겠습니다.",
+        "en": "I'll address the current CA-4 question to Representative {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -506,8 +511,8 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "제게 주시면 됩니다. 예전 자료와 섞이지 않게 해 두죠.",
-            "en": "That's for me. Let's keep it separate from the older material."
+            "ko": "제가 받겠습니다. 예전 의회에서 매클린톡 의원이 했던 일과는 구별하죠.",
+            "en": "I'll take it. Keep that separate from McClintock's earlier service."
           }
         ],
         "incorrect": [
@@ -646,7 +651,7 @@
     },
     {
       "id": "P01-007",
-      "mechanism": "archival-research",
+      "mechanism": "career-reflection",
       "learningTarget": "Obernolte CA-8→23.",
       "date": "2024-12-16",
       "venue": {
@@ -654,8 +659,8 @@
         "en": "Records reading desk"
       },
       "context": {
-        "ko": "두 시기의 의원 명부를 비교하는 색인 작업을 맡았다.",
-        "en": "You are indexing directories from two different Congresses."
+        "ko": "오버놀티 의원과 예전 접견을 떠올리며 새 임기를 연결한다.",
+        "en": "Recall an earlier encounter with Obernolte and connect it with the present term."
       },
       "cast": [
         {
@@ -668,25 +673,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "같은 의원을 찾으면 두 줄을 연결해 주세요. 오래된 번호가 8입니다.",
-          "en": "Link the two entries for the same member. The old number is eight."
+          "speaker": "npc:0",
+          "ko": "처음 뵀을 때 제 소개에 8번이 들어 있었죠. 기억하십니까?",
+          "en": "When we first met, my introduction included number eight. Remember?"
+        },
+        {
+          "speaker": "player",
+          "ko": "이번에는 같은 사람을 만나러 왔는데 지역구 번호는 달라졌네요.",
+          "en": "I'm meeting the same person, but the district number has changed."
         },
         {
           "speaker": "npc:0",
-          "ko": "제 이름은 그대로 두고 새 번호만 추가하면 되겠군요.",
-          "en": "Keep my name and add the new number."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "두 명부를 연결해 두면 예전에 나눈 이야기도 찾을 수 있겠죠?",
-          "en": "Linking the two directories will let you find earlier conversations, won't it?"
+          "ko": "그렇죠. 제가 누구인지 먼저 기억해 주시면 번호가 바뀌어도 찾을 수 있습니다.",
+          "en": "Exactly. If you remember who I am first, you can find me despite the change."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "오버놀티 의원의 현재 색인은 {{blank}}로 연결하겠습니다.",
-        "en": "I'll link Representative Obernolte's current entry to {{blank}}.",
+        "ko": "오늘 오버놀티 의원님의 지역구는 {{blank}}입니다.",
+        "en": "Today Representative Obernolte represents {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -715,8 +720,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "연도가 같이 붙어 있으니 나중에도 찾기 쉽겠네요.",
-            "en": "With the year attached, that will be easy to find later."
+            "ko": "다음에는 예전 접견에서 나온 이야기를 이어가 보죠. 번호보다 그 기억이 중요하니까요.",
+            "en": "Next time we'll pick up the earlier conversation. That memory matters more than the number."
           }
         ],
         "incorrect": [
@@ -755,8 +760,8 @@
         "en": "Delegation dinner"
       },
       "context": {
-        "ko": "좌석표가 2022년 번호 순서로 배치되어 있다.",
-        "en": "A dinner seating chart was sorted by the 2022 district numbers."
+        "ko": "두 의원이 참여하는 공개 질의응답의 첫 질문을 연결한다.",
+        "en": "Route the first question at a public conversation with two members."
       },
       "cast": [
         {
@@ -776,25 +781,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "첫 질문은 14구에서 온 분입니다. 어느 의원님께 마이크를 드릴까요?",
+          "en": "Our first question is from District Fourteen. Who should receive the microphone?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지역은 16번입니다. 질문자와 스월웰 의원이 먼저 이야기하시면 되겠네요.",
+          "en": "I represent the Sixteenth. The visitor and Swalwell can speak first."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 좌석표에 아직 15가 붙어 있군요.",
-          "en": "My place card still says fifteen."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "제 것은 18입니다. 둘 다 새로 인쇄해야겠어요.",
-          "en": "Mine says eighteen. Both need reprinting."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "우리 둘 중 누가 먼저 발언하는지 현재 번호 순으로 정해 보세요.",
-          "en": "Try putting us in speaking order using our current district numbers."
+          "ko": "네, 질문부터 듣겠습니다. 소개는 짧게 해 주세요.",
+          "en": "Yes, let's hear the question. Keep the introduction short."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "스월웰 의원님 좌석표에는 이제 {{blank}}를 적겠습니다.",
-        "en": "I'll print {{blank}} on Representative Swalwell's card now.",
+        "ko": "첫 질문은 {{blank}}의 스월웰 의원님께 드립니다.",
+        "en": "The first question goes to Representative Swalwell of {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -823,8 +828,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "고맙습니다. 식사 전에 바로잡았네요.",
-            "en": "Thanks. We caught it before dinner."
+            "ko": "질문자에게 마이크를 넘겨 주세요. 에슈 의원님께는 다음 질문을 드리죠.",
+            "en": "Hand the microphone to the visitor. We'll take a question for Eshoo next."
           }
         ],
         "incorrect": [
@@ -963,7 +968,7 @@
     },
     {
       "id": "P01-010",
-      "mechanism": "office-handover",
+      "mechanism": "public-questions",
       "learningTarget": "Ruiz CA-36→25.",
       "date": "2024-12-16",
       "venue": {
@@ -971,8 +976,8 @@
         "en": "House reception room"
       },
       "context": {
-        "ko": "전임 보좌관에게 받은 연락처 파일을 다음 담당자에게 인계한다.",
-        "en": "You hand a contact file from a former aide to a new one."
+        "ko": "주민이 같은 의원에게 다시 연락할 수 있는지 직접 묻는다.",
+        "en": "A visitor asks whether a change in district number means losing contact with a familiar member."
       },
       "cast": [
         {
@@ -985,25 +990,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "루이스 의원의 2022년 항목이 36번입니다. 최신 정보는 따로 넣어야겠어요.",
-          "en": "Ruiz is listed under 36 in 2022. We should add a current entry."
+          "speaker": "host",
+          "ko": "예전에 36구 의원님을 만났는데 이제는 다른 번호가 적혀 있네요. 다른 사람인가요?",
+          "en": "I met the District Thirty-Six member before, but now the number differs. Is this someone else?"
         },
         {
           "speaker": "npc:0",
-          "ko": "과거 기록을 덮어쓰지는 마세요. 두 시점을 남기면 좋겠어요.",
-          "en": "Don't overwrite the old record. Keep both dates."
+          "ko": "아닙니다. 저는 라울 루이스입니다. 번호가 바뀐 것이죠.",
+          "en": "No. I'm Raul Ruiz. My district number changed."
         },
         {
           "speaker": "player",
-          "ko": "예전 기록을 지우지 않으면 다음 담당자도 같은 의원의 경력을 이해할 수 있겠네요.",
-          "en": "Keeping the older entry will help the next aide understand the member's career."
+          "ko": "어떤 지역의 대표인지 확인할 때는 현재 시점이 중요하겠군요.",
+          "en": "The date matters when identifying who represents an area."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현재 연락처는 {{blank}}로 추가하겠습니다.",
-        "en": "I'll add the current contact under {{blank}}.",
+        "ko": "현재 루이스 의원님은 {{blank}}를 대표하십니다.",
+        "en": "Representative Ruiz currently represents {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1032,8 +1037,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "그렇게 하면 오래된 서류도 쉽게 찾겠습니다.",
-            "en": "That will make older paperwork easier to trace."
+            "ko": "혹시 거주지 관할이 궁금하시다면 별도로 확인해 드릴 수 있습니다. 제 이름은 그대로 기억해 주세요.",
+            "en": "If you need to check which district covers your home, we can do that separately. Remember my name."
           }
         ],
         "incorrect": [
@@ -1064,7 +1069,7 @@
     },
     {
       "id": "P01-011",
-      "mechanism": "public-correction",
+      "mechanism": "broadcast",
       "learningTarget": "Chu CA-27→28.",
       "date": "2024-12-16",
       "venue": {
@@ -1072,8 +1077,8 @@
         "en": "Press workroom"
       },
       "context": {
-        "ko": "신문 교정쇄가 지난 의회 번호로 출고될 상황이다.",
-        "en": "A newspaper proof is about to go out with a previous Congress's number."
+        "ko": "인터뷰 도중 청취자가 2022년의 지역구를 기억해 질문한다.",
+        "en": "A caller remembers the 2022 district number during an interview."
       },
       "cast": [
         {
@@ -1086,25 +1091,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "기사에는 추 의원이 CA-27이라고 되어 있습니다.",
-          "en": "The article identifies Chu as CA-27."
+          "speaker": "host",
+          "ko": "다음 청취자는 추 의원을 예전 27구 대표로 기억한다고 합니다.",
+          "en": "Our next caller remembers Representative Chu as the former District Twenty-Seven member."
         },
         {
           "speaker": "npc:0",
-          "ko": "그건 지난 의회의 번호죠. 독자가 지금의 대표를 혼동하지 않도록 해 주세요.",
-          "en": "That's the previous Congress's number. Let's avoid confusing readers about today's representative."
+          "ko": "그 기억도 맞습니다. 다만 지금 방송은 2024년이죠.",
+          "en": "That memory is correct. But today's broadcast is in 2024."
         },
         {
-          "speaker": "npc:0",
-          "ko": "기사가 예전 임기를 다루는 게 아니라 오늘의 이야기라면 어떤 번호를 쓰시겠어요?",
-          "en": "If the story concerns today rather than the previous Congress, which number would you use?"
+          "speaker": "host",
+          "ko": "그럼 현재 대표 지역을 짧게 알려 드리고 질문을 받죠.",
+          "en": "Let's give the current district briefly, then take the question."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현재 기사에는 {{blank}}로 수정하겠습니다.",
-        "en": "I'll correct the current article to {{blank}}.",
+        "ko": "오늘의 손님, 추 의원님은 {{blank}} 소속입니다.",
+        "en": "Today's guest, Representative Chu, serves {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1133,8 +1138,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "발행 전에 확인해 주셔서 고맙습니다.",
-            "en": "Thanks for catching that before publication."
+            "ko": "이제 청취자 질문을 받아 보죠. 예전에 만난 분이라면 더 반갑겠군요.",
+            "en": "Let's hear the caller's question. It will be good to reconnect if we've met before."
           }
         ],
         "incorrect": [
@@ -1165,7 +1170,7 @@
     },
     {
       "id": "P01-012",
-      "mechanism": "broadcast",
+      "mechanism": "historical-artifact",
       "learningTarget": "Aguilar CA-31→33; Lieu CA-33→36.",
       "date": "2024-12-16",
       "venue": {
@@ -1173,8 +1178,8 @@
         "en": "Capitol recording room"
       },
       "context": {
-        "ko": "두 의원의 녹음 파일 이름이 섞여 진행자가 소리 내어 확인한다.",
-        "en": "Two recording filenames have been mixed up, so the producer reads them aloud."
+        "ko": "두 의원의 과거 인터뷰 녹음에서 현재 접견으로 이어지는 장면.",
+        "en": "Earlier recorded interviews lead to a present-day meeting."
       },
       "cast": [
         {
@@ -1194,25 +1199,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "지난 의회에 녹음한 아길라 의원의 인터뷰를 다시 들었습니다.",
+          "en": "I listened again to our Aguilar interview from the previous Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "당시 제 번호는 33이었습니다. 지금은 36이죠.",
+          "en": "I was numbered thirty-three then. Now I'm thirty-six."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 파일에는 31이라고 적혀 있군요. 새 번호는 다릅니다.",
-          "en": "My file says thirty-one. The new number is different."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "저는 36입니다. 두 파일을 구별해 주세요.",
-          "en": "Mine is thirty-six. Please distinguish the two recordings."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "재생할 때 이름까지 함께 들으면 두 의원을 구별할 수 있겠죠.",
-          "en": "Listeners will be able to distinguish us if they hear the names alongside the districts."
+          "ko": "오늘의 녹음에서 그 번호를 제가 쓰는 이유를 설명해 주실래요?",
+          "en": "Would you explain in today's recording why I now use that number?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "아길라 의원의 이번 녹음은 {{blank}} 파일로 저장할게요.",
-        "en": "I'll save Representative Aguilar's current recording under {{blank}}.",
+        "ko": "현재 아길라 의원의 지역구는 {{blank}}입니다.",
+        "en": "Aguilar's current district is {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1241,8 +1246,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "좋습니다. 이제 재생할 때 헷갈리지 않겠네요.",
-            "en": "Good. Playback should be less confusing now."
+            "ko": "옛 녹음은 그대로 남겨 둡시다. 두 시기의 목소리를 함께 들으면 변화를 기억하기 쉬울 겁니다.",
+            "en": "Keep the old recording unchanged. Hearing both periods will help us remember the change."
           }
         ],
         "incorrect": [
@@ -1381,7 +1386,7 @@
     },
     {
       "id": "P01-014",
-      "mechanism": "chronology",
+      "mechanism": "reunion",
       "learningTarget": "Porter CA-45→47.",
       "date": "2024-12-16",
       "venue": {
@@ -1389,8 +1394,8 @@
         "en": "Archive timeline table"
       },
       "context": {
-        "ko": "2022년 명부와 2024년 명부 카드가 뒤섞여 있다.",
-        "en": "The 2022 and 2024 directory cards have been shuffled."
+        "ko": "지난 의회의 만남을 회상하는 포터 의원이 당시 지역구를 묻는다.",
+        "en": "Porter recalls an earlier meeting and asks which district she represented then."
       },
       "cast": [
         {
@@ -1403,25 +1408,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "포터 의원 카드 두 장이 있습니다. 45와 47 중 예전 카드를 왼쪽에 놓아요.",
-          "en": "Porter has two cards, 45 and 47. Place the older one on the left."
+          "speaker": "npc:0",
+          "ko": "2022년에 만난 적이 있다고 하셨죠. 그때 제가 대표하던 지역을 기억하세요?",
+          "en": "You said we met in 2022. Do you remember which district I represented?"
+        },
+        {
+          "speaker": "player",
+          "ko": "지금의 47구가 아닌 이전 임기의 지역구였죠.",
+          "en": "It was an earlier district, not today's Forty-Seventh."
         },
         {
           "speaker": "npc:0",
-          "ko": "연표에는 번호가 바뀐 시점을 표시하면 되겠군요.",
-          "en": "Marking the change on the timeline would help."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "예전 만남과 오늘의 기록을 한 장씩 놓고 보면 제 경력의 변화가 보이겠네요.",
-          "en": "Putting our earlier and current meetings side by side will show the change in my career."
+          "ko": "그렇습니다. 그때의 만남과 오늘을 구분해 보세요.",
+          "en": "Exactly. Distinguish that meeting from today's."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "왼쪽 2022년 카드에는 {{blank}}가 들어갑니다.",
-        "en": "The left-hand 2022 card should be {{blank}}.",
+        "ko": "2022년에는 포터 의원님을 {{blank}} 대표로 만났습니다.",
+        "en": "In 2022 I met Representative Porter as the member for {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1450,8 +1455,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 2024년 카드와 혼동하지 않겠어요.",
-            "en": "Right. It won't be confused with the 2024 card."
+            "ko": "그 기억으로 오늘 대화를 이어가면 되겠네요.",
+            "en": "Then we can pick up our conversation from that memory."
           }
         ],
         "incorrect": [
@@ -1591,8 +1596,8 @@
         "en": "San Diego delegation portrait wall"
       },
       "context": {
-        "ko": "두 의원의 사진 아래 2024년 번호표가 떨어져 있다.",
-        "en": "Two 2024 district labels have fallen off the delegation portrait wall."
+        "ko": "두 의원이 과거 사진의 번호를 보고 서로를 알아보는 이야기.",
+        "en": "Two members recognize one another's earlier district labels in a photograph."
       },
       "cast": [
         {
@@ -1612,25 +1617,25 @@
       ],
       "opening": [
         {
+          "speaker": "npc:1",
+          "ko": "피터스 의원님과 찍은 지난 의회 사진이네요. 그때 제 번호는 53이었죠.",
+          "en": "Here's a photograph with Peters from the previous Congress. My number then was fifty-three."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 예전 번호 52가 아직 사진 뒤에 적혀 있네요.",
-          "en": "My old number, 52, is still written on the back."
+          "ko": "저는 52였습니다. 오늘 다시 찍으면 둘 다 번호가 달라요.",
+          "en": "Mine was fifty-two. Both numbers would differ if we took it today."
         },
         {
-          "speaker": "npc:1",
-          "ko": "제 옛 번호는 53이었죠. 지금 표지를 찾아요.",
-          "en": "Mine was 53. Let's find the current labels."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "다음 만남 때 사진을 먼저 보여 드릴 테니 두 분의 번호를 기억해 보세요.",
-          "en": "At a later meeting, try recalling the two numbers from the portraits."
+          "speaker": "host",
+          "ko": "이번 사진에는 누구인지와 현재 대표 지역을 같이 남기겠습니다.",
+          "en": "I'll identify the person and current district in today's photo."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "피터스 의원 사진 아래에는 {{blank}}를 붙이겠습니다.",
-        "en": "I'll attach {{blank}} beneath Representative Peters's portrait.",
+        "ko": "피터스 의원님은 현재 {{blank}}를 대표하십니다.",
+        "en": "Representative Peters now serves {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1658,9 +1663,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋아요. 제이컵스 의원 표지도 옆에 붙이죠.",
-            "en": "Good. Put Representative Jacobs's label alongside it."
+            "speaker": "npc:1",
+            "ko": "저는 CA-51입니다. 두 사람의 이름을 기억해 주시면 다음 사진에서도 구별할 수 있겠죠.",
+            "en": "I'm CA-51. Remember our names and you can distinguish us in the next picture."
           }
         ],
         "incorrect": [
@@ -1691,7 +1696,7 @@
     },
     {
       "id": "P01-017",
-      "mechanism": "event-logistics",
+      "mechanism": "civic-explanation",
       "learningTarget": "Vargas CA-51→52; California has 52 seats following 2020 apportionment.",
       "date": "2024-12-16",
       "venue": {
@@ -1699,8 +1704,8 @@
         "en": "Delegation meeting room"
       },
       "context": {
-        "ko": "의원별 발언 순서를 최신 번호로 정렬한다.",
-        "en": "The speaking order is being sorted by current district numbers."
+        "ko": "캘리포니아 의석 감소를 마지막 번호를 통해 이해한다.",
+        "en": "Explain California's seat loss through the final numbered district."
       },
       "cast": [
         {
@@ -1713,25 +1718,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "캘리포니아 마지막 번호가 53으로 남아 있네요.",
-          "en": "The last California number is still listed as 53."
+          "speaker": "npc:0",
+          "ko": "캘리포니아에 53번 의원이 아직 있는지 묻는 방문객을 만났습니다.",
+          "en": "A visitor asked whether California still has a District Fifty-Three member."
+        },
+        {
+          "speaker": "player",
+          "ko": "2020년 인구조사 이후 한 석이 줄었죠.",
+          "en": "The state lost one seat after the 2020 census."
         },
         {
           "speaker": "npc:0",
-          "ko": "이번 의회에는 52석입니다. 제 번호로 마지막 줄을 정리하죠.",
-          "en": "This Congress has 52 California seats. Use my number for the last row."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "한 석 줄어든 대표단의 마지막 번호를 기억하면 오늘 발언 순서도 이해할 수 있습니다.",
-          "en": "Remembering the final district number of the smaller delegation will explain today's speaking order."
+          "ko": "제 지역구가 마지막 번호가 됐습니다. 그 방문객에게 알려 주세요.",
+          "en": "Mine is now the last numbered district. Explain that to our visitor."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "마지막 발언자는 {{blank}}의 바르가스 의원입니다.",
-        "en": "The final speaker is Representative Vargas of {{blank}}.",
+        "ko": "캘리포니아의 마지막 하원 지역구는 바르가스 의원의 {{blank}}입니다.",
+        "en": "California's final numbered House district is Vargas's {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1760,8 +1765,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "순서가 맞습니다. 새 명부에 맞춰 진행합시다.",
-            "en": "That order works. Let's use the new directory."
+            "ko": "이제 53번이 왜 없는지 설명할 수 있겠네요. 다음에는 의석을 얻은 주의 동료와도 이야기해 보세요.",
+            "en": "Now you can explain why Fifty-Three is absent. Next, speak with a colleague from a state that gained a seat."
           }
         ],
         "incorrect": [
@@ -1913,8 +1918,8 @@
         "en": "Capitol elevator lobby"
       },
       "context": {
-        "ko": "두 의원이 서로 번호가 이어진 옛 기록을 이야기하다가 엘리베이터가 도착한다.",
-        "en": "Two members compare old numbers when the elevator arrives."
+        "ko": "엘리베이터에서 두 의원이 옛 선거구 번호 때문에 생긴 오해를 풀어 준다.",
+        "en": "Two members resolve a misconception during an elevator encounter."
       },
       "cast": [
         {
@@ -1934,25 +1939,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 2022년에 9번이었죠.",
-          "en": "I was number nine in 2022."
-        },
-        {
           "speaker": "npc:1",
-          "ko": "그리고 지금 9번은 접니다. 스탠턴 의원 번호를 적고 가시죠.",
-          "en": "And now nine is mine. Write down Stanton's number before we go."
+          "ko": "스탠턴 의원님, 이번에는 제가 9번이네요.",
+          "en": "Representative Stanton, I have number nine this time."
         },
         {
           "speaker": "npc:0",
-          "ko": "엘리베이터가 왔군요. 회의실에서 다시 만나면 제 새 번호로 불러 주세요.",
-          "en": "The elevator is here. Use my current district when we meet again upstairs."
+          "ko": "지난 의회에는 제가 9번이었죠. 오늘 처음 온 분은 우리를 혼동할 수도 있겠군요.",
+          "en": "I held nine in the previous Congress. A new visitor might confuse us."
+        },
+        {
+          "speaker": "player",
+          "ko": "그러면 오늘의 두 의원을 각각 소개하겠습니다.",
+          "en": "I'll introduce each of you for today's Congress."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "스탠턴 의원님은 현재 {{blank}}입니다.",
-        "en": "Representative Stanton is currently in {{blank}}.",
+        "ko": "스탠턴 의원님은 현재 {{blank}}의 대표입니다.",
+        "en": "Representative Stanton now represents {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1980,9 +1985,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 그럼 회의실에서 뵙죠.",
-            "en": "Good. See you in the meeting room."
+            "speaker": "npc:1",
+            "ko": "저는 AZ-9입니다. 회의에서 두 사람에게 각각 질문해 주세요.",
+            "en": "I'm AZ-9. You can direct questions to both of us at the meeting."
           }
         ],
         "incorrect": [
@@ -2013,7 +2018,7 @@
     },
     {
       "id": "P01-020",
-      "mechanism": "event-logistics",
+      "mechanism": "public-questions",
       "learningTarget": "Grijalva AZ-3→7.",
       "date": "2024-12-16",
       "venue": {
@@ -2021,8 +2026,8 @@
         "en": "Conference registration desk"
       },
       "context": {
-        "ko": "옛 명찰을 떨어뜨린 참가자가 새 명찰을 받는다.",
-        "en": "A participant who dropped an old badge needs a replacement."
+        "ko": "애리조나 주민이 과거 선거구 번호와 오늘의 대표를 구별한다.",
+        "en": "An Arizona visitor distinguishes an old district label from the current member."
       },
       "cast": [
         {
@@ -2035,25 +2040,25 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "그리할바 의원의 옛 명찰에는 AZ-3이라고 적혀 있네요.",
-          "en": "Grijalva's old badge says AZ-3."
+          "speaker": "npc:0",
+          "ko": "애리조나 3구에서 뵌 적이 있다고요? 그건 지난 의회 이야기입니다.",
+          "en": "You met me as the Third District member? That was last Congress."
+        },
+        {
+          "speaker": "host",
+          "ko": "오늘은 이 의원님의 하원 경력에 대해 이야기하는 시간입니다.",
+          "en": "Today we're discussing this member's congressional career."
         },
         {
           "speaker": "npc:0",
-          "ko": "새 명찰에는 이번 의회 번호를 써 주세요.",
-          "en": "Put this Congress's number on the new badge."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "이 명찰을 쓰고 다음 토론에서 다시 인사하겠습니다.",
-          "en": "I'll wear the new badge when we meet again at the discussion."
+          "ko": "제 옛 번호도 잊지 마세요. 오늘은 다른 번호로 대표하고 있습니다.",
+          "en": "Don't forget the earlier number. I serve under another one today."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "그리할바 의원님 새 명찰은 {{blank}}로 발급하겠습니다.",
-        "en": "I'll issue your new badge with {{blank}}.",
+        "ko": "2024년 그리할바 의원님의 지역구는 {{blank}}입니다.",
+        "en": "In 2024 Representative Grijalva serves {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2082,8 +2087,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "이제 입장할 수 있겠군요. 고맙습니다.",
-            "en": "That will get me through registration. Thank you."
+            "ko": "그렇습니다. 이제 예전 만남부터 이야기를 이어가 볼까요?",
+            "en": "Exactly. Shall we return to what we discussed at our earlier meeting?"
           }
         ],
         "incorrect": [
@@ -2326,8 +2331,8 @@
         "en": "Census briefing"
       },
       "context": {
-        "ko": "2022년까지의 단일 지역구와 새 몬태나 지도 사이에 안내 화살표를 놓는다.",
-        "en": "You place a transition arrow between Montana's old single-district map and the new one."
+        "ko": "한 석을 잃은 캘리포니아 사례에 이어 몬태나의 대표성 변화를 비교한다.",
+        "en": "Compare Montana's changed representation with California's loss of a seat."
       },
       "cast": [
         {
@@ -2341,24 +2346,24 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "이 지도에는 몬태나가 주 전체 선거구 하나로 되어 있네요.",
-          "en": "This map shows Montana as a single at-large district."
+          "ko": "캘리포니아는 한 석을 잃었지만 우리 몬태나는 반대였죠.",
+          "en": "California lost one seat, but Montana experienced the opposite."
         },
         {
-          "speaker": "aide",
-          "ko": "2020년 인구조사 후 의석이 늘었으니 새 지도에 몇 개를 표시할까요?",
-          "en": "After the 2020 census, how many seats should the new map show?"
+          "speaker": "player",
+          "ko": "예전에는 주 전체를 대표하는 하원의원이 한 명이었습니다.",
+          "en": "Previously Montana elected one representative statewide."
         },
         {
           "speaker": "npc:0",
-          "ko": "예전 몬태나 지도를 본 방문객에게도 새 의석이 생긴 이유를 설명해 주세요.",
-          "en": "Explain the additional seat to a visitor who remembers the old Montana map."
+          "ko": "이제 저는 제1선거구를 대표합니다. 주 전체 의석 수는 어떻게 달라졌을까요?",
+          "en": "Now I represent the First District. How did the statewide total change?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "몬태나의 이번 하원 의석 수는 {{blank}}입니다.",
-        "en": "Montana now has {{blank}} House seats.",
+        "ko": "2020년 인구조사 이후 몬태나 하원 의석은 {{blank}}석입니다.",
+        "en": "After the 2020 census Montana has {{blank}} House seats.",
         "choices": [
           {
             "id": "A",
@@ -2387,8 +2392,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "새 지도가 옛 지도와 왜 다른지 설명할 수 있겠군요.",
-            "en": "Now we can explain why the maps differ."
+            "ko": "다음에 새 의석이 생긴 오리건의 의원도 만나 보세요. 같은 배분 과정에서 나온 또 다른 사례입니다.",
+            "en": "Meet an Oregon member from a newly created seat next. It's another result of the same apportionment."
           }
         ],
         "incorrect": [
@@ -2419,7 +2424,7 @@
     },
     {
       "id": "P01-024",
-      "mechanism": "apportionment",
+      "mechanism": "peer-introduction",
       "learningTarget": "Oregon gained a sixth seat; Salinas OR-6 and Bonamici OR-1 in 2024.",
       "date": "2024-12-16",
       "venue": {
@@ -2427,8 +2432,8 @@
         "en": "Oregon delegation orientation map"
       },
       "context": {
-        "ko": "새 의석을 추가할 공간을 만들어야 하는 안내 지도 앞에 선다.",
-        "en": "An orientation map needs room for an additional House seat."
+        "ko": "몬태나의 의석 증가 사례에 이어 새로 생긴 오리건 의석의 의원을 소개받는다.",
+        "en": "After Montana's example, meet a member from Oregon's newly allocated seat."
       },
       "cast": [
         {
@@ -2448,25 +2453,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 제6선거구 의원입니다. 예전 지도에는 이 번호가 없었죠.",
-          "en": "I represent District 6. That number didn't exist on the old map."
-        },
-        {
           "speaker": "npc:1",
-          "ko": "제1선거구는 여전히 있습니다. 새 의석이 하나 추가됐어요.",
-          "en": "District 1 is still there. One additional seat was added."
+          "ko": "몬태나에서 의석이 늘어난 이야기를 들으셨나요? 오리건도 한 석을 얻었습니다.",
+          "en": "Heard how Montana gained a seat? Oregon gained one as well."
         },
         {
           "speaker": "npc:0",
-          "ko": "제가 처음 만난 분들에게 왜 이전 지도에 제 번호가 없었는지 설명할 때가 있죠.",
-          "en": "Sometimes I have to explain why my district number did not appear on older maps."
+          "ko": "그 새 의석을 맡은 사람이 저입니다. 예전에는 제 번호가 없었죠.",
+          "en": "I'm the member who holds that new seat. My number didn't exist before."
+        },
+        {
+          "speaker": "player",
+          "ko": "보나미치 의원님의 기존 의석과 살리나스 의원님의 새 의석을 구분하겠습니다.",
+          "en": "I'll distinguish Bonamici's existing seat from Salinas's new one."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "오리건 지도에는 총 {{blank}}개의 하원 선거구를 표시하겠습니다.",
-        "en": "I'll show a total of {{blank}} House districts on Oregon's map.",
+        "ko": "오리건 대표단은 이제 총 {{blank}}명입니다.",
+        "en": "Oregon's delegation now has {{blank}} members.",
         "choices": [
           {
             "id": "A",
@@ -2495,8 +2500,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "새 항목을 위한 공간이 생겼군요. 안내 지도에 연도를 넣죠.",
-            "en": "That makes room for the new entry. Date the map."
+            "ko": "이제 새 대표단에서 제게도 직접 질문하실 수 있겠죠.",
+            "en": "Now you can direct questions to me in the expanded delegation too."
           }
         ],
         "incorrect": [
@@ -2527,7 +2532,7 @@
     },
     {
       "id": "P01-025",
-      "mechanism": "apportionment",
+      "mechanism": "historic-cohort",
       "learningTarget": "Colorado gained an eighth seat; Caraveo CO-8 and Pettersen CO-7 in 2024.",
       "date": "2024-12-16",
       "venue": {
@@ -2535,8 +2540,8 @@
         "en": "Colorado delegation orientation"
       },
       "context": {
-        "ko": "일곱 칸짜리 대표단 도표에 새 의원을 배치할 칸을 마련한다.",
-        "en": "A seven-slot delegation chart needs a place for another representative."
+        "ko": "새로 배분된 의석을 맡은 의원과 기존 의석 의원이 대표단 행사를 함께 연다.",
+        "en": "Members of new and existing seats jointly hold a delegation event."
       },
       "cast": [
         {
@@ -2556,25 +2561,25 @@
       ],
       "opening": [
         {
+          "speaker": "npc:1",
+          "ko": "오리건에서 새 대표단 이야기를 들었다고요? 콜로라도도 한 석 늘었습니다.",
+          "en": "You heard about Oregon's new delegation? Colorado gained a seat too."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 선거구는 8번입니다. 예전 도표에는 칸이 없네요.",
-          "en": "My district is eight. The old chart has no slot for it."
+          "ko": "그 새 의석에서 당선되어 이번 의회에 왔습니다.",
+          "en": "I won that additional seat and joined this Congress."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 7번이니 그다음에 칸을 붙이면 되겠습니다.",
-          "en": "I'm district seven, so add a slot after mine."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "예전 일곱 칸짜리 대표단 그림을 함께 보면 새 의석의 의미가 분명해집니다.",
-          "en": "The old seven-slot chart helps make the new seat's significance clear."
+          "ko": "저는 제7선거구입니다. 제 동료를 다음 순서로 소개해 주세요.",
+          "en": "I represent the Seventh. Introduce my colleague next."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "콜로라도의 새 칸은 {{blank}}로 표시할게요.",
-        "en": "I'll label Colorado's new slot {{blank}}.",
+        "ko": "콜로라도의 새 의석인 {{blank}}의 카라베오 의원님입니다.",
+        "en": "This is Representative Caraveo of Colorado's new seat, {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2603,8 +2608,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "이제 이번 의회의 대표단이 모두 들어가겠군요.",
-            "en": "Now the chart can fit this Congress's delegation."
+            "ko": "두 주의 사례를 함께 기억하면 인구조사와 의회 구성의 관계가 보이겠죠.",
+            "en": "Remember both states and you'll see how the census affects Congress."
           }
         ],
         "incorrect": [
