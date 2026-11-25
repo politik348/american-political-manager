@@ -1,0 +1,1689 @@
+{
+  "round": 3,
+  "kind": "supplemental severe backlog",
+  "patches": [
+    {
+      "id": "P01-1272",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "originalFields": {
+        "context": {
+          "ko": "샌디에이고 교육 관계자 접견",
+          "en": "San Diego education delegation"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "교육위원회에서 함께 일했던 방문단이 왔습니다.",
+            "en": "A delegation I worked with on the school board has arrived."
+          },
+          {
+            "speaker": "host",
+            "ko": "당시 교육위원회 직책을 기록하세요.",
+            "en": "Record the former school board role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "필너는 1982년 샌디에이고 교육위원회 {{blank}}이었습니다.",
+          "en": "In 1982 Filner was the San Diego school board {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "위원장",
+              "en": "president"
+            },
+            {
+              "id": "B",
+              "ko": "교육감",
+              "en": "superintendent"
+            },
+            {
+              "id": "C",
+              "ko": "교장",
+              "en": "principal"
+            },
+            {
+              "id": "D",
+              "ko": "교사 노조 위원장",
+              "en": "teachers' union president"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "교육위원회 위원장이었습니다.",
+              "en": "I was school board president."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "교육 현안과 지방 행정 기록을 연결하세요.",
+              "en": "Link education concerns to the local administration record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "교육위원회 위원장이었습니다.",
+              "en": "I was school board president."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "샌디에이고 교육 관계자 접견",
+            "en": "San Diego education delegation"
+          },
+          "after": {
+            "ko": "샌디에이고 학교 운영 관련 문의의 관할 확인",
+            "en": "Check jurisdiction for a San Diego school governance inquiry"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "교육위원회에서 함께 일했던 방문단이 왔습니다.",
+              "en": "A delegation I worked with on the school board has arrived."
+            },
+            {
+              "speaker": "host",
+              "ko": "당시 교육위원회 직책을 기록하세요.",
+              "en": "Record the former school board role."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "학부모가 학교 운영 결정에 대해 의원실의 직접 승인을 요청했습니다. 1982년의 지방 공직 기록을 먼저 확인하겠습니다.",
+              "en": "A parent has asked the congressional office to directly approve a school governance decision. I'll first check the 1982 local office record."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "교육위원회에서의 당시 직책과 현재 연방 입법 권한을 구분하세요.",
+              "en": "Distinguish my former school board office from my present federal legislative authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "필너는 1982년 샌디에이고 교육위원회 {{blank}}이었습니다.",
+            "en": "In 1982 Filner was the San Diego school board {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "위원장",
+                "en": "president"
+              },
+              {
+                "id": "B",
+                "ko": "교육감",
+                "en": "superintendent"
+              },
+              {
+                "id": "C",
+                "ko": "교장",
+                "en": "principal"
+              },
+              {
+                "id": "D",
+                "ko": "교사 노조 위원장",
+                "en": "teachers' union president"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "필너는 1982년 샌디에이고 교육위원회 {{blank}}이었습니다.",
+            "en": "In 1982 Filner was the San Diego school board {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "교육감",
+                "en": "superintendent"
+              },
+              {
+                "id": "B",
+                "ko": "위원장",
+                "en": "president"
+              },
+              {
+                "id": "C",
+                "ko": "교장",
+                "en": "principal"
+              },
+              {
+                "id": "D",
+                "ko": "교사 노조 위원장",
+                "en": "teachers' union president"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "교육위원회 위원장이었습니다.",
+                "en": "I was school board president."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "교육 현안과 지방 행정 기록을 연결하세요.",
+                "en": "Link education concerns to the local administration record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "교육위원회 위원장이었습니다.",
+                "en": "I was school board president."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "위원장이었습니다. 교육위원회의 당시 의결 기록을 찾아보고 현재 문의의 관할은 별도로 확인하세요.",
+                "en": "I was president. Consult the board's contemporary decision records and check the jurisdiction of the present inquiry separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1982년 교육위원회 위원장이었습니다. 교육감이나 교장과 동일한 직책으로 기록하지 마세요.",
+                "en": "I was school board president in 1982. Don't record it as the same office as superintendent or principal."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "과거 만남 가정 삭제, 교육위원회 의결과 연방 입법 구별",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1288",
+      "path": "data/dialogue-packs/P01/part-52.json",
+      "originalBlobSha": "f48d19a28c73f1ec3d6f679a4c60dc6778b7020d",
+      "originalFields": {
+        "context": {
+          "ko": "농협 역사 전시에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
+          "en": "A fictional encounter at a farm cooperative exhibit, grounded in the dated historical record."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "곡물과 종자 협동조합의 운영에도 참여했습니다.",
+            "en": "I also served in the governance of a grain and seed cooperative."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "종자 관련 단체들은 제 경력에서도 중요한 지역 조직입니다.",
+            "en": "Seed organizations feature in my own background as well."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "보즈웰 의원은 농업 협동조합에서 {{blank}}을 맡았습니다.",
+          "en": "Boswell served on the cooperative's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "이사회",
+              "en": "board of directors"
+            },
+            {
+              "id": "B",
+              "ko": "연방 법원",
+              "en": "federal court"
+            },
+            {
+              "id": "C",
+              "ko": "주 선거관리위원회",
+              "en": "state election board"
+            },
+            {
+              "id": "D",
+              "ko": "소방본부",
+              "en": "fire department"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "농업 단체와 선출직 기관의 역할을 구분해 이해하면 좋습니다.",
+              "en": "Distinguish agricultural organizations from elected public institutions."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "보즈웰은 1979년부터 1993년까지 곡물·종자 농협 이사였습니다.",
+              "en": "Boswell served on the grain and seed cooperative board from 1979 to 1993."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "농협 역사 전시에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
+            "en": "A fictional encounter at a farm cooperative exhibit, grounded in the dated historical record."
+          },
+          "after": {
+            "ko": "아이오와 농업 협동조합의 의사결정 기록 검토",
+            "en": "Review decision-making records from an Iowa agricultural cooperative"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "곡물과 종자 협동조합의 운영에도 참여했습니다.",
+              "en": "I also served in the governance of a grain and seed cooperative."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "종자 관련 단체들은 제 경력에서도 중요한 지역 조직입니다.",
+              "en": "Seed organizations feature in my own background as well."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "농업 협동조합의 과거 의사결정 기록과 의회의 정책 기록이 섞여 있습니다. 보즈웰 의원의 1979~1993년 역할을 확인하겠습니다.",
+              "en": "Past cooperative decision records have been mixed with legislative policy records. I'll identify Boswell's role from 1979 to 1993."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 종자 관련 단체 경력과 보즈웰 의원의 협동조합 경력은 다른 기록입니다.",
+              "en": "My background in seed organizations differs from Boswell's cooperative service."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "협동조합의 내부 직책을 확인한 뒤 정부기관 기록과 분리하세요.",
+              "en": "Identify the internal cooperative role, then separate it from government records."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "보즈웰 의원은 농업 협동조합에서 {{blank}}을 맡았습니다.",
+            "en": "Boswell served on the cooperative's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "이사회",
+                "en": "board of directors"
+              },
+              {
+                "id": "B",
+                "ko": "연방 법원",
+                "en": "federal court"
+              },
+              {
+                "id": "C",
+                "ko": "주 선거관리위원회",
+                "en": "state election board"
+              },
+              {
+                "id": "D",
+                "ko": "소방본부",
+                "en": "fire department"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "보즈웰 의원은 농업 협동조합에서 {{blank}}을 맡았습니다.",
+            "en": "Boswell served on the cooperative's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "구매 담당 부서",
+                "en": "purchasing department"
+              },
+              {
+                "id": "B",
+                "ko": "이사회",
+                "en": "board of directors"
+              },
+              {
+                "id": "C",
+                "ko": "회계 담당 부서",
+                "en": "accounting department"
+              },
+              {
+                "id": "D",
+                "ko": "판매 담당 부서",
+                "en": "sales department"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "농업 단체와 선출직 기관의 역할을 구분해 이해하면 좋습니다.",
+                "en": "Distinguish agricultural organizations from elected public institutions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "보즈웰은 1979년부터 1993년까지 곡물·종자 농협 이사였습니다.",
+                "en": "Boswell served on the grain and seed cooperative board from 1979 to 1993."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이사회였습니다. 협동조합의 의사결정과 하원의 입법 활동을 각각의 기록으로 보존하세요.",
+                "en": "The board of directors. Preserve cooperative decisions separately from House legislative activity."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "보즈웰 의원은 협동조합 이사였습니다. 다른 내부 업무를 맡았다고 기록하지 마세요.",
+                "en": "Boswell served on the cooperative board. Don't attribute another internal role to him."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "이질 오답을 협동조합 내 역할로 바꾸고 산업단체와 의회 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 8,
+      "estimatedAfterScore": 18,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Recheck alternative role or degree names against scene date; original answer preserved."
+    },
+    {
+      "id": "P01-1299",
+      "path": "data/dialogue-packs/P01/part-52.json",
+      "originalBlobSha": "f48d19a28c73f1ec3d6f679a4c60dc6778b7020d",
+      "originalFields": {
+        "context": {
+          "ko": "소상공인 지역 행사에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
+          "en": "A fictional encounter at a local small-business event, grounded in the dated historical record."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전에는 외식업 단체에서 주정부 관련 업무도 맡았습니다.",
+            "en": "Before Congress, I worked on state relations for a restaurant industry association."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 경매 회사를 운영했습니다. 업종별 단체가 어떤 일을 하는지 비교해 볼 수 있겠군요.",
+            "en": "I ran an auction business. We can compare what different industry associations do."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "에머슨 의원이 일했던 외식업 단체는 {{blank}}입니다.",
+          "en": "Emerson worked for the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "전국경매인협회",
+              "en": "National Auctioneers Association"
+            },
+            {
+              "id": "B",
+              "ko": "미국종자협회",
+              "en": "American Seed Trade Association"
+            },
+            {
+              "id": "C",
+              "ko": "미주리 농업협회",
+              "en": "Missouri Farm Bureau"
+            },
+            {
+              "id": "D",
+              "ko": "전국외식업협회",
+              "en": "National Restaurant Association"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "산업 단체에서의 경험과 의원으로서의 공적 역할은 별개입니다.",
+              "en": "Industry association experience and a member's public role are separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "에머슨은 National Restaurant Association에서 주정부 관계 및 풀뿌리 업무를 맡았습니다.",
+              "en": "Emerson directed state relations and grassroots programs for the National Restaurant Association."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "소상공인 지역 행사에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
+            "en": "A fictional encounter at a local small-business event, grounded in the dated historical record."
+          },
+          "after": {
+            "ko": "두 산업 방문단의 정책 건의",
+            "en": "Policy submissions from two industry delegations"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의회에 오기 전에는 외식업 단체에서 주정부 관련 업무도 맡았습니다.",
+              "en": "Before Congress, I worked on state relations for a restaurant industry association."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 경매 회사를 운영했습니다. 업종별 단체가 어떤 일을 하는지 비교해 볼 수 있겠군요.",
+              "en": "I ran an auction business. We can compare what different industry associations do."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 산업단체의 건의서를 의원들의 공식 입법 기록과 분리하고 있습니다. 에머슨 의원의 과거 주정부 관계 업무를 확인하겠습니다.",
+              "en": "I'm separating two industry associations' submissions from official legislative records. I'll identify Emerson's former state-relations role."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저의 경매 사업 경력과 에머슨 의원의 단체 경력은 다른 출처입니다.",
+              "en": "My auction business and Emerson's association background are separate sources."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 근무했던 전국 단체의 이름을 확인한 후 건의와 실제 입법을 구분하세요.",
+              "en": "Identify the national organization where I worked, then distinguish advocacy from actual lawmaking."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "에머슨 의원이 일했던 외식업 단체는 {{blank}}입니다.",
+            "en": "Emerson worked for the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "전국경매인협회",
+                "en": "National Auctioneers Association"
+              },
+              {
+                "id": "B",
+                "ko": "미국종자협회",
+                "en": "American Seed Trade Association"
+              },
+              {
+                "id": "C",
+                "ko": "미주리 농업협회",
+                "en": "Missouri Farm Bureau"
+              },
+              {
+                "id": "D",
+                "ko": "전국외식업협회",
+                "en": "National Restaurant Association"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "에머슨 의원이 일했던 외식업 단체는 {{blank}}입니다.",
+            "en": "Emerson worked for the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "전국경매인협회",
+                "en": "National Auctioneers Association"
+              },
+              {
+                "id": "B",
+                "ko": "미국종자협회",
+                "en": "American Seed Trade Association"
+              },
+              {
+                "id": "C",
+                "ko": "전국외식업협회",
+                "en": "National Restaurant Association"
+              },
+              {
+                "id": "D",
+                "ko": "미주리 농업협회",
+                "en": "Missouri Farm Bureau"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "산업 단체에서의 경험과 의원으로서의 공적 역할은 별개입니다.",
+                "en": "Industry association experience and a member's public role are separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "에머슨은 National Restaurant Association에서 주정부 관계 및 풀뿌리 업무를 맡았습니다.",
+                "en": "Emerson directed state relations and grassroots programs for the National Restaurant Association."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국외식업협회입니다. 해당 업계의 건의 자료를 따로 검토하세요.",
+                "en": "The National Restaurant Association. Review the industry's submissions separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "에머슨 의원은 전국외식업협회에서 일했습니다. 제 경매 사업이나 다른 산업단체의 기록을 합치지 마세요.",
+                "en": "Emerson worked for the National Restaurant Association. Do not merge my auction business or other associations into that record."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "외식업 직답 제거, 민간단체 정책 건의와 공식 의원직 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 17,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1362",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "originalFields": {
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 사람의 의료 분야에 오기 전 동물 의료 분야 학위도 받았어요.",
+            "en": "Before human medicine I also earned a degree in animal medicine."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 의학을 공부했습니다. 학위의 차이를 설명해 주세요.",
+            "en": "I studied medicine too. Explain the difference between the degrees."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "에이브러햄 의원의 1980년 학위는 {{blank}}입니다.",
+          "en": "Abraham's 1980 degree was a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "수의학 박사",
+              "en": "DVM"
+            },
+            {
+              "id": "B",
+              "ko": "법학 박사",
+              "en": "JD"
+            },
+            {
+              "id": "C",
+              "ko": "교육학 박사",
+              "en": "EdD"
+            },
+            {
+              "id": "D",
+              "ko": "경영학 석사",
+              "en": "MBA"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+              "en": "He earned a DVM in 1980 and an MD in 1994."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+              "en": "He earned a DVM in 1980 and an MD in 1994."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+            "en": "A fictional regional encounter grounded in the historical record."
+          },
+          "after": {
+            "ko": "농촌 의료서비스 관련 간담회",
+            "en": "A meeting on rural health services"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 사람의 의료 분야에 오기 전 동물 의료 분야 학위도 받았어요.",
+              "en": "Before human medicine I also earned a degree in animal medicine."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저도 의학을 공부했습니다. 학위의 차이를 설명해 주세요.",
+              "en": "I studied medicine too. Explain the difference between the degrees."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 의원의 의료 관련 학위 기록을 비교하고 있습니다. 에이브러햄 의원의 1980년 학위와 1994년 학위를 별도로 기록하겠습니다.",
+              "en": "I'm comparing the two members' health-related educational records. I'll list Abraham's 1980 and 1994 degrees separately."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1994년 학위는 MD입니다. 앞선 학위의 종류를 확인하세요.",
+              "en": "The 1994 degree is an MD. Identify the earlier degree."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 분야의 훈련과 현재 입법 권한은 구분해야 합니다.",
+              "en": "Distinguish the two fields of training from present legislative authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "에이브러햄 의원의 1980년 학위는 {{blank}}입니다.",
+            "en": "Abraham's 1980 degree was a {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "수의학 박사",
+                "en": "DVM"
+              },
+              {
+                "id": "B",
+                "ko": "법학 박사",
+                "en": "JD"
+              },
+              {
+                "id": "C",
+                "ko": "교육학 박사",
+                "en": "EdD"
+              },
+              {
+                "id": "D",
+                "ko": "경영학 석사",
+                "en": "MBA"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "에이브러햄 의원의 1980년 학위는 {{blank}}입니다.",
+            "en": "Abraham's 1980 degree was a {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "의학 박사",
+                "en": "MD"
+              },
+              {
+                "id": "B",
+                "ko": "치의학 박사",
+                "en": "DDS"
+              },
+              {
+                "id": "C",
+                "ko": "약학 박사",
+                "en": "PharmD"
+              },
+              {
+                "id": "D",
+                "ko": "수의학 박사",
+                "en": "DVM"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+                "en": "He earned a DVM in 1980 and an MD in 1994."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+                "en": "He earned a DVM in 1980 and an MD in 1994."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "DVM입니다. 사람과 동물의 의료 분야에 대한 교육 기록을 별도로 보존하세요.",
+                "en": "DVM. Preserve the education records for human and animal medicine separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "1980년에는 DVM, 1994년에는 MD입니다. 학위 순서와 분야를 바로잡으세요.",
+                "en": "The DVM was earned in 1980 and the MD in 1994. Correct the sequence and fields."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "학위 직답 삭제, 의료 분야별 전문 교육 기록 비교",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 8,
+      "estimatedAfterScore": 18,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Recheck alternative role or degree names against scene date; original answer preserved."
+    },
+    {
+      "id": "P01-1366",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "originalFields": {
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "가금류 산업 관련 지역 행사입니다. 두 의원님이 공통으로 참여하는 모임이 있습니까?",
+            "en": "Welcome to this regional poultry industry event. Is there a caucus that both members belong to?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역 산업 관련 의원 모임에 참여하고 있습니다.",
+            "en": "I belong to a caucus connected with a regional industry."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 그 모임에 참여해요. 이름을 아시나요?",
+            "en": "I belong to it too. Do you know its name?"
+          },
+          {
+            "speaker": "aide",
+            "ko": "공식 명부의 코커스 항목을 확인했습니다.",
+            "en": "I've opened the caucus section of the official directory."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원이 참여한 모임은 {{blank}}입니다.",
+          "en": "The caucus both belong to is the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "닭 산업 코커스",
+              "en": "Congressional Chicken Caucus"
+            },
+            {
+              "id": "B",
+              "ko": "해양 코커스",
+              "en": "Oceans Caucus"
+            },
+            {
+              "id": "C",
+              "ko": "하원 법사위원회",
+              "en": "House Judiciary Committee"
+            },
+            {
+              "id": "D",
+              "ko": "상원 군사위원회",
+              "en": "Senate Armed Services Committee"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+              "en": "The 2016 directory records both as Chicken Caucus members."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+              "en": "The 2016 directory records both as Chicken Caucus members."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+            "en": "A fictional regional encounter grounded in the historical record."
+          },
+          "after": {
+            "ko": "지역 산업단체의 공동 의원모임 활동 확인",
+            "en": "Identify a shared caucus relevant to regional industry"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "가금류 산업 관련 지역 행사입니다. 두 의원님이 공통으로 참여하는 모임이 있습니까?",
+              "en": "Welcome to this regional poultry industry event. Is there a caucus that both members belong to?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 산업 관련 의원 모임에 참여하고 있습니다.",
+              "en": "I belong to a caucus connected with a regional industry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저도 그 모임에 참여해요. 이름을 아시나요?",
+              "en": "I belong to it too. Do you know its name?"
+            },
+            {
+              "speaker": "aide",
+              "ko": "공식 명부의 코커스 항목을 확인했습니다.",
+              "en": "I've opened the caucus section of the official directory."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지역 생산자들이 두 의원이 참여한 공동 의원모임의 활동을 문의합니다. 공식 위원회 배정과 혼동하지 않도록 명부를 확인하겠습니다.",
+              "en": "Local producers ask about a caucus both members joined. I'll check the directory without confusing it with formal committee assignments."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2016년 명부에서 제 코커스 참여 기록을 확인하세요.",
+              "en": "Check my caucus memberships in the 2016 directory."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "두 사람의 공통 모임과 공식 상임위원회 기록을 별도로 비교하세요.",
+              "en": "Compare our shared caucus and formal standing committee records separately."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "두 의원이 참여한 모임은 {{blank}}입니다.",
+            "en": "The caucus both belong to is the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "닭 산업 코커스",
+                "en": "Congressional Chicken Caucus"
+              },
+              {
+                "id": "B",
+                "ko": "해양 코커스",
+                "en": "Oceans Caucus"
+              },
+              {
+                "id": "C",
+                "ko": "하원 법사위원회",
+                "en": "House Judiciary Committee"
+              },
+              {
+                "id": "D",
+                "ko": "상원 군사위원회",
+                "en": "Senate Armed Services Committee"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "두 의원이 참여한 모임은 {{blank}}입니다.",
+            "en": "The caucus both belong to is the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "해양 코커스",
+                "en": "Oceans Caucus"
+              },
+              {
+                "id": "B",
+                "ko": "하원 법사위원회",
+                "en": "House Judiciary Committee"
+              },
+              {
+                "id": "C",
+                "ko": "상원 군사위원회",
+                "en": "Senate Armed Services Committee"
+              },
+              {
+                "id": "D",
+                "ko": "닭 산업 코커스",
+                "en": "Congressional Chicken Caucus"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+                "en": "The 2016 directory records both as Chicken Caucus members."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+                "en": "The 2016 directory records both as Chicken Caucus members."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "닭 산업 코커스입니다. 공동 산업 의제에 관한 협력 기록을 공식 위원회 심의와 구별하세요.",
+                "en": "The Congressional Chicken Caucus. Distinguish cooperation on industry issues from formal committee consideration."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 의원 모두 닭 산업 코커스에 참여했습니다. 상임위원회 배정으로 분류하면 안 됩니다.",
+                "en": "Both members belonged to the Congressional Chicken Caucus. Do not classify it as a standing committee assignment."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "가금류 행사에서 정답 직접 공개 제거, 코커스와 위원회 역할 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 17,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1371",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "originalFields": {
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "하원 진출 전 주 인권·인사 관련 행정기관을 맡았습니다.",
+            "en": "Before Congress I held a state human affairs position."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 에너지부 법률 업무도 맡았지요. 정부 수준을 구별해 봅시다.",
+            "en": "I also held a legal role at the Department of Energy. Distinguish the levels of government."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "클라이번 의원은 {{blank}}를 지냈습니다.",
+          "en": "Clyburn served as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 에너지부 장관",
+              "en": "U.S. secretary of energy"
+            },
+            {
+              "id": "B",
+              "ko": "주 인권위원장",
+              "en": "State Human Affairs Commissioner"
+            },
+            {
+              "id": "C",
+              "ko": "주 대법원장",
+              "en": "state chief justice"
+            },
+            {
+              "id": "D",
+              "ko": "카운티 보안관",
+              "en": "county sheriff"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+              "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+              "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+            "en": "A fictional regional encounter grounded in the historical record."
+          },
+          "after": {
+            "ko": "주 차원의 행정기관 기록과 연방정부 법률 업무 기록 비교",
+            "en": "Compare state administrative and federal legal service records"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "하원 진출 전 주 인권·인사 관련 행정기관을 맡았습니다.",
+              "en": "Before Congress I held a state human affairs position."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 에너지부 법률 업무도 맡았지요. 정부 수준을 구별해 봅시다.",
+              "en": "I also held a legal role at the Department of Energy. Distinguish the levels of government."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 의원의 이전 공직이 같은 정부 수준으로 등록돼 있습니다. 사우스캐롤라이나의 행정 직책과 연방 에너지부 업무를 분리하겠습니다.",
+              "en": "The former offices of both members are filed under the same level of government. I'll separate the South Carolina administrative office from federal Department of Energy work."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 연방 에너지부 법률 업무와 클라이번 의원의 주 공직은 별개입니다.",
+              "en": "My federal Department of Energy legal work is distinct from Clyburn's state office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "하원 진출 전에 맡은 주 공직의 정식 명칭을 확인하세요.",
+              "en": "Identify the formal title of my state office before entering the House."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "클라이번 의원은 {{blank}}를 지냈습니다.",
+            "en": "Clyburn served as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 에너지부 장관",
+                "en": "U.S. secretary of energy"
+              },
+              {
+                "id": "B",
+                "ko": "주 인권위원장",
+                "en": "State Human Affairs Commissioner"
+              },
+              {
+                "id": "C",
+                "ko": "주 대법원장",
+                "en": "state chief justice"
+              },
+              {
+                "id": "D",
+                "ko": "카운티 보안관",
+                "en": "county sheriff"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "클라이번 의원은 {{blank}}를 지냈습니다.",
+            "en": "Clyburn served as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 에너지부 장관",
+                "en": "U.S. secretary of energy"
+              },
+              {
+                "id": "B",
+                "ko": "주 대법원장",
+                "en": "state chief justice"
+              },
+              {
+                "id": "C",
+                "ko": "주 인권위원장",
+                "en": "State Human Affairs Commissioner"
+              },
+              {
+                "id": "D",
+                "ko": "카운티 보안관",
+                "en": "county sheriff"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+                "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+                "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 인권위원장이었습니다. 주 행정기관 관련 기록을 연방 부처의 업무와 구분하세요.",
+                "en": "State Human Affairs Commissioner. Separate the state administrative record from federal department work."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "클라이번 의원은 주 인권위원장이었습니다. 연방 에너지부 장관이나 주 법원장으로 등록하지 마세요.",
+                "en": "Clyburn was State Human Affairs Commissioner. Do not list him as federal energy secretary or state chief justice."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "인권 행정기관 직답 삭제, 주정부와 연방정부 경력 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 17,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1393",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "originalFields": {
+        "context": {
+          "ko": "아이오와 노동자 접견",
+          "en": "Iowa labor delegation"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노동자 방문단의 자료를 어디에 보낼지 함께 결정합시다.",
+            "en": "Let's decide where the workers' delegation papers belong."
+          },
+          {
+            "speaker": "player",
+            "ko": "이번 의회의 위원회 명칭을 확인하죠.",
+            "en": "Let's check the committee's name in this Congress."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코프 의원은 {{blank}} 위원회를 맡습니다.",
+          "en": "Kopp chairs the Committee on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "B",
+              "ko": "노동",
+              "en": "Labor"
+            },
+            {
+              "id": "C",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            },
+            {
+              "id": "D",
+              "ko": "세출",
+              "en": "Appropriations"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제69대 의회 노동위원장입니다.",
+              "en": "I chair Labor in the 69th Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 근로자 요청과 위원회 자료를 함께 검토합시다.",
+              "en": "Review the local workers' requests alongside committee materials."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제69대 의회 노동위원장입니다.",
+              "en": "I chair Labor in the 69th Congress."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "아이오와 노동자 접견",
+            "en": "Iowa labor delegation"
+          },
+          "after": {
+            "ko": "1926년 주민 방문단 자료의 의회 관할 판단",
+            "en": "Determine congressional jurisdiction for a 1926 delegation's materials"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "노동자 방문단의 자료를 어디에 보낼지 함께 결정합시다.",
+              "en": "Let's decide where the workers' delegation papers belong."
+            },
+            {
+              "speaker": "player",
+              "ko": "이번 의회의 위원회 명칭을 확인하죠.",
+              "en": "Let's check the committee's name in this Congress."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지역 주민의 개별 고용 관련 요청과 전국적인 정책 제안이 함께 들어왔습니다. 두 문의의 처리 경로가 같은지 확인하겠습니다.",
+              "en": "Individual employment-related requests and a nationwide policy proposal arrived together. I'll determine whether their handling channels are the same."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제69대 의회의 위원장직을 확인한 다음 위원회 정책 활동과 개별 주민 문의를 나누세요.",
+              "en": "Identify my chairmanship in the 69th Congress, then separate committee policy work from individual constituent inquiries."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "코프 의원은 {{blank}} 위원회를 맡습니다.",
+            "en": "Kopp chairs the Committee on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "노동",
+                "en": "Labor"
+              },
+              {
+                "id": "C",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              },
+              {
+                "id": "D",
+                "ko": "세출",
+                "en": "Appropriations"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "코프 의원은 {{blank}} 위원회를 맡습니다.",
+            "en": "Kopp chairs the Committee on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "노동",
+                "en": "Labor"
+              },
+              {
+                "id": "B",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "C",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              },
+              {
+                "id": "D",
+                "ko": "세출",
+                "en": "Appropriations"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제69대 의회 노동위원장입니다.",
+                "en": "I chair Labor in the 69th Congress."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 근로자 요청과 위원회 자료를 함께 검토합시다.",
+                "en": "Review the local workers' requests alongside committee materials."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제69대 의회 노동위원장입니다.",
+                "en": "I chair Labor in the 69th Congress."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "노동위원회입니다. 정책 제안은 위원회 관할과 연결하고 개별 요청은 별도의 담당 기관을 확인하세요.",
+                "en": "Labor. Connect policy proposals with committee jurisdiction and check the responsible institution for individual requests separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노동위원장입니다. 농업·외교·세출위원회 기록에 해당 제안을 잘못 넣지 마세요.",
+                "en": "I chair Labor. Don't misfile the proposal under Agriculture, Foreign Affairs or Appropriations."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "위원회 주제 선공개 제거, 지역 문의와 위원회 정책 역할 분리",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    }
+  ],
+  "actualPlaytest": false
+}
