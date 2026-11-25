@@ -1,0 +1,2849 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 79,
+  "scenes": [
+    {
+      "id": "P01-1951",
+      "mechanism": "numbered-seat-launch",
+      "learningTarget": "South Dakota began using three numbered House districts in 1913.",
+      "date": "1913-04-15",
+      "venue": {
+        "ko": "사우스다코타 지도 교체",
+        "en": "South Dakota map replacement"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles Hall Dillon",
+          "ko": "찰스 딜런",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": null,
+          "name": "Charles H. Burke",
+          "ko": "찰스 버크",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": null,
+          "name": "Eben Martin",
+          "ko": "에번 마틴",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "전에는 주 전체 의석이 두 개였습니다.",
+          "en": "Previously we had two statewide seats."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이제 저는 2구를 맡습니다.",
+          "en": "I now represent District 2."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "세 번째 의석도 지도에 넣어야 합니다.",
+          "en": "The third seat belongs on the map as well."
+        },
+        {
+          "speaker": "player",
+          "ko": "새 선거구 지도를 주민에게 어떻게 설명할까요?",
+          "en": "How should I explain the new map to residents?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1913년 사우스다코타의 의석 수는 {{blank}}개입니다.",
+        "en": "South Dakota now has {{blank}} House seats.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "3",
+            "en": "3"
+          },
+          {
+            "id": "B",
+            "ko": "2",
+            "en": "2"
+          },
+          {
+            "id": "C",
+            "ko": "4",
+            "en": "4"
+          },
+          {
+            "id": "D",
+            "ko": "1",
+            "en": "1"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
+            "en": "I'll display both the old statewide and new district maps."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1913년부터 사우스다코타는 세 개의 번호 선거구로 대표되었다.",
+            "en": "South Dakota began using three numbered House districts in 1913."
+          },
+          {
+            "speaker": "player",
+            "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
+            "en": "I'll display both the old statewide and new district maps."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "South Dakota began using three numbered House districts in 1913.",
+          "asOf": "1913-04-15"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1951-numbered-seat-launch"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1952",
+      "mechanism": "partisan-delegation",
+      "learningTarget": "Doolittle entered the House as a Democrat in 1913.",
+      "date": "1913-05-12",
+      "venue": {
+        "ko": "캔자스 대표단 오찬",
+        "en": "Kansas delegation lunch"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": "M001083",
+          "name": "Victor Murdock",
+          "ko": "빅터 머독",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/M001083"
+        },
+        {
+          "id": null,
+          "name": "Dudley Doolittle",
+          "ko": "더들리 둘리틀",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12362"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 공화당에서 진보당으로 옮긴 대표입니다.",
+          "en": "I am a representative who moved from the Republican to the Progressive Party."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 민주당으로 이번 의회에 입성했습니다.",
+          "en": "I entered this Congress as a Democrat."
+        },
+        {
+          "speaker": "player",
+          "ko": "같은 주라도 당적이 같다고 인쇄하면 안 되겠군요.",
+          "en": "So a shared state does not imply a shared party label."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "둘리틀의 1913년 당적은 {{blank}}입니다.",
+        "en": "Doolittle's party in 1913 is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican Party"
+          },
+          {
+            "id": "B",
+            "ko": "사회당",
+            "en": "Socialist Party"
+          },
+          {
+            "id": "C",
+            "ko": "금주당",
+            "en": "Prohibition Party"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "Democratic Party"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정당별 명찰을 따로 준비하겠습니다.",
+            "en": "I'll prepare distinct party labels."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "둘리틀은 1913년 민주당 하원의원으로 취임했다.",
+            "en": "Doolittle entered the House as a Democrat in 1913."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당별 명찰을 따로 준비하겠습니다.",
+            "en": "I'll prepare distinct party labels."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/M001083",
+          "claim": "Doolittle entered the House as a Democrat in 1913.",
+          "asOf": "1913-05-12"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_Kansas",
+          "claim": "Doolittle entered the House as a Democrat in 1913.",
+          "asOf": "1913-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12362",
+          "claim": "Doolittle entered the House as a Democrat in 1913.",
+          "asOf": "1913-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1952-partisan-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1953",
+      "mechanism": "two-democrats",
+      "learningTarget": "In 1913 Reed represented NH-1 and Stevens represented NH-2.",
+      "date": "1913-06-09",
+      "venue": {
+        "ko": "뉴햄프셔 두 의석 환영",
+        "en": "New Hampshire two-seat reception"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Eugene E. Reed",
+          "ko": "유진 리드",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        },
+        {
+          "id": null,
+          "name": "Raymond B. Stevens",
+          "ko": "레이먼드 스티븐스",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번에 제1구에 새 대표가 들어왔습니다.",
+          "en": "The First District has a new representative this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제2구 역시 민주당 대표를 선출했습니다.",
+          "en": "The Second District likewise elected a Democrat."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의석의 결과를 함께 보니 주 전체 의석과는 다르군요.",
+          "en": "Seeing both results makes clear these are not at-large seats."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1913년 뉴햄프셔 제2구 대표는 {{blank}}입니다.",
+        "en": "New Hampshire's Second District representative in 1913 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "설러웨이",
+            "en": "Sulloway"
+          },
+          {
+            "id": "B",
+            "ko": "웨이슨",
+            "en": "Wason"
+          },
+          {
+            "id": "C",
+            "ko": "스티븐스",
+            "en": "Stevens"
+          },
+          {
+            "id": "D",
+            "ko": "리드",
+            "en": "Reed"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 지역의 주민 명단을 나누어 저장하겠습니다.",
+            "en": "I'll keep two separate constituent lists."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1913년 리드는 NH-1, 스티븐스는 NH-2를 대표했다.",
+            "en": "In 1913 Reed represented NH-1 and Stevens represented NH-2."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 지역의 주민 명단을 나누어 저장하겠습니다.",
+            "en": "I'll keep two separate constituent lists."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "In 1913 Reed represented NH-1 and Stevens represented NH-2.",
+          "asOf": "1913-06-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1953-two-democrats"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1954",
+      "mechanism": "seat-handoff",
+      "learningTarget": "Johnson succeeded Burke in South Dakota's Second District in 1915.",
+      "date": "1915-04-12",
+      "venue": {
+        "ko": "사우스다코타 제2구 인수",
+        "en": "South Dakota district handoff"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1951의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1951."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles H. Burke",
+          "ko": "찰스 버크",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": null,
+          "name": "Royal Cleaves Johnson",
+          "ko": "로열 존슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/15914"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제2구의 예전 명부는 제 이름으로 되어 있습니다.",
+          "en": "The old Second District roster bears my name."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이번 3월부터 제가 그 의석을 맡았습니다.",
+          "en": "I took that seat this March."
+        },
+        {
+          "speaker": "player",
+          "ko": "기존 편지에 대한 새 답신 담당자가 필요합니다.",
+          "en": "The outstanding letters need a new recipient."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 SD-2 의원은 {{blank}}입니다.",
+        "en": "The current SD-2 representative is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "딜런",
+            "en": "Dillon"
+          },
+          {
+            "id": "B",
+            "ko": "존슨",
+            "en": "Johnson"
+          },
+          {
+            "id": "C",
+            "ko": "버크",
+            "en": "Burke"
+          },
+          {
+            "id": "D",
+            "ko": "갠디",
+            "en": "Gandy"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1913년 지도에 의석 인계 표지를 추가하겠습니다.",
+            "en": "I'll add a handoff marker to the 1913 map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨은 1915년 버크의 사우스다코타 제2구 의석을 이어받았다.",
+            "en": "Johnson succeeded Burke in South Dakota's Second District in 1915."
+          },
+          {
+            "speaker": "player",
+            "ko": "1913년 지도에 의석 인계 표지를 추가하겠습니다.",
+            "en": "I'll add a handoff marker to the 1913 map."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Johnson succeeded Burke in South Dakota's Second District in 1915.",
+          "asOf": "1915-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/15914",
+          "claim": "Johnson succeeded Burke in South Dakota's Second District in 1915.",
+          "asOf": "1915-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1954-seat-handoff"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1955",
+      "mechanism": "district-party-change",
+      "learningTarget": "Gandy succeeded Martin as the Democratic member for District 3 in 1915.",
+      "date": "1915-05-10",
+      "venue": {
+        "ko": "서부 사우스다코타 주민 접견",
+        "en": "Western South Dakota reception"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1951의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1951."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Eben Martin",
+          "ko": "에번 마틴",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": null,
+          "name": "Harry Luther Gandy",
+          "ko": "해리 갠디",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13610"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제3구의 이전 임기는 공화당 대표 기록입니다.",
+          "en": "The preceding Third District term belongs to a Republican."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 민주당으로 그 지역의 새 임기를 맡았습니다.",
+          "en": "I began the new term there as a Democrat."
+        },
+        {
+          "speaker": "player",
+          "ko": "대표와 정당이 동시에 바뀌었군요.",
+          "en": "Both the representative and party have changed."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1915년 SD-3의 새 의원은 {{blank}}입니다.",
+        "en": "The new SD-3 representative in 1915 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "갠디",
+            "en": "Gandy"
+          },
+          {
+            "id": "B",
+            "ko": "마틴",
+            "en": "Martin"
+          },
+          {
+            "id": "C",
+            "ko": "버크",
+            "en": "Burke"
+          },
+          {
+            "id": "D",
+            "ko": "존슨",
+            "en": "Johnson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "이전 공화당 임기와 새 민주당 임기를 나란히 보존하겠습니다.",
+            "en": "I'll preserve the outgoing Republican and incoming Democratic terms side by side."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "갠디는 1915년 마틴을 이어 제3구 민주당 의원이 되었다.",
+            "en": "Gandy succeeded Martin as the Democratic member for District 3 in 1915."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 공화당 임기와 새 민주당 임기를 나란히 보존하겠습니다.",
+            "en": "I'll preserve the outgoing Republican and incoming Democratic terms side by side."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Gandy succeeded Martin as the Democratic member for District 3 in 1915.",
+          "asOf": "1915-05-10"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13610",
+          "claim": "Gandy succeeded Martin as the Democratic member for District 3 in 1915.",
+          "asOf": "1915-05-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1955-district-party-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1956",
+      "mechanism": "kansas-turnover",
+      "learningTarget": "Ayres began his House service on March 4, 1915.",
+      "date": "1915-06-14",
+      "venue": {
+        "ko": "캔자스 새 임기 대조",
+        "en": "Kansas new-term comparison"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1952의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1952."
+      },
+      "cast": [
+        {
+          "id": "M001083",
+          "name": "Victor Murdock",
+          "ko": "빅터 머독",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/M001083"
+        },
+        {
+          "id": null,
+          "name": "William Augustus Ayres",
+          "ko": "윌리엄 에어스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8747"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 3월 하원 임기를 마쳤습니다.",
+          "en": "My House term ended this March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 의회에서 민주당 의원으로 첫 임기를 시작했습니다.",
+          "en": "I began my first House term as a Democrat this Congress."
+        },
+        {
+          "speaker": "player",
+          "ko": "기존 캔자스 연락망에 신임 의원을 추가해야겠습니다.",
+          "en": "I need to add the freshman to the Kansas contact list."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1915년 처음 하원에 입성한 두 사람 중 의원은 {{blank}}입니다.",
+        "en": "The member of the pair first entering the House in 1915 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "머독",
+            "en": "Murdock"
+          },
+          {
+            "id": "B",
+            "ko": "둘 다",
+            "en": "both"
+          },
+          {
+            "id": "C",
+            "ko": "둘 다 아님",
+            "en": "neither"
+          },
+          {
+            "id": "D",
+            "ko": "에어스",
+            "en": "Ayres"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1913년 대표단 자료를 1915년 임기표와 비교하겠습니다.",
+            "en": "I'll compare the 1913 delegation record with the new roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "에어스는 1915년 3월 4일 하원 임기를 시작했다.",
+            "en": "Ayres began his House service on March 4, 1915."
+          },
+          {
+            "speaker": "player",
+            "ko": "1913년 대표단 자료를 1915년 임기표와 비교하겠습니다.",
+            "en": "I'll compare the 1913 delegation record with the new roster."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/M001083",
+          "claim": "Ayres began his House service on March 4, 1915.",
+          "asOf": "1915-06-14"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_Kansas",
+          "claim": "Ayres began his House service on March 4, 1915.",
+          "asOf": "1915-06-14"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/8747",
+          "claim": "Ayres began his House service on March 4, 1915.",
+          "asOf": "1915-06-14"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1956-kansas-turnover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1957",
+      "mechanism": "new-england-reversal",
+      "learningTarget": "In 1915 Sulloway and Wason held both seats as Republicans.",
+      "date": "1915-07-12",
+      "venue": {
+        "ko": "뉴햄프셔 당적 교체",
+        "en": "New Hampshire party reversal"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1953의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1953."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Cyrus A. Sulloway",
+          "ko": "사이러스 설러웨이",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        },
+        {
+          "id": null,
+          "name": "Edward Hills Wason",
+          "ko": "에드워드 웨이슨",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제1구의 공화당 의석을 다시 맡았습니다.",
+          "en": "I have returned to the Republican seat in the First District."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 제2구에서 공화당 의원으로 입성했습니다.",
+          "en": "I entered as a Republican in the Second District."
+        },
+        {
+          "speaker": "player",
+          "ko": "1913년의 민주당 명부와 현재 명부를 바꾸어야겠군요.",
+          "en": "The Democratic roster of 1913 now needs updating."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 두 뉴햄프셔 하원 의석의 당적은 {{blank}}입니다.",
+        "en": "Both New Hampshire House seats now belong to the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "진보당",
+            "en": "Progressive Party"
+          },
+          {
+            "id": "B",
+            "ko": "사회당",
+            "en": "Socialist Party"
+          },
+          {
+            "id": "C",
+            "ko": "공화당",
+            "en": "Republican Party"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "Democratic Party"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "당적 변화가 보이도록 1913년 명부를 보존하겠습니다.",
+            "en": "I'll preserve the 1913 roster to show the party change."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1915년 설러웨이와 웨이슨이 공화당으로 두 의석을 맡았다.",
+            "en": "In 1915 Sulloway and Wason held both seats as Republicans."
+          },
+          {
+            "speaker": "player",
+            "ko": "당적 변화가 보이도록 1913년 명부를 보존하겠습니다.",
+            "en": "I'll preserve the 1913 roster to show the party change."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "In 1915 Sulloway and Wason held both seats as Republicans.",
+          "asOf": "1915-07-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1957-new-england-reversal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1958",
+      "mechanism": "vacancy-bridge",
+      "learningTarget": "Burroughs filled the vacancy caused by Sulloway's death in 1917.",
+      "date": "1917-05-14",
+      "venue": {
+        "ko": "뉴햄프셔 의석 공백 안내",
+        "en": "New Hampshire vacancy notice"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1957의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1957."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Edward Hills Wason",
+          "ko": "에드워드 웨이슨",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        },
+        {
+          "id": null,
+          "name": "Sherman Everett Burroughs",
+          "ko": "셔먼 버로스",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제2구는 제가 계속 대표합니다.",
+          "en": "I continue representing the Second District."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 설러웨이 사망 뒤 제1구의 공석을 채웠습니다.",
+          "en": "I filled the First District vacancy following Sulloway's death."
+        },
+        {
+          "speaker": "player",
+          "ko": "주민이 두 선거구의 상태를 따로 확인할 수 있도록 하겠습니다.",
+          "en": "I'll make each district's status visible to constituents."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제1구의 새 대표는 {{blank}}입니다.",
+        "en": "The new First District representative is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스티븐스",
+            "en": "Stevens"
+          },
+          {
+            "id": "B",
+            "ko": "버로스",
+            "en": "Burroughs"
+          },
+          {
+            "id": "C",
+            "ko": "웨이슨",
+            "en": "Wason"
+          },
+          {
+            "id": "D",
+            "ko": "리드",
+            "en": "Reed"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "제1구의 공석 기록을 종료하고 새 대표의 파일을 열겠습니다.",
+            "en": "I'll close the vacancy record and open the new representative's file."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "버로스는 1917년 설러웨이의 사망으로 생긴 공석을 채웠다.",
+            "en": "Burroughs filled the vacancy caused by Sulloway's death in 1917."
+          },
+          {
+            "speaker": "player",
+            "ko": "제1구의 공석 기록을 종료하고 새 대표의 파일을 열겠습니다.",
+            "en": "I'll close the vacancy record and open the new representative's file."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "Burroughs filled the vacancy caused by Sulloway's death in 1917.",
+          "asOf": "1917-05-14"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1958-vacancy-bridge"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1959",
+      "mechanism": "wartime-service-status",
+      "learningTarget": "Johnson absented himself from the House and enlisted on January 5, 1918.",
+      "date": "1918-02-11",
+      "venue": {
+        "ko": "전시 대표단 서신",
+        "en": "Wartime delegation correspondence"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1954의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1954."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Royal Cleaves Johnson",
+          "ko": "로열 존슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/15914"
+        },
+        {
+          "id": null,
+          "name": "Harry Luther Gandy",
+          "ko": "해리 갠디",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13610"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난 1월 군에 입대하기 위해 하원 활동을 잠시 떠났습니다.",
+          "en": "Last January I stepped away from House activity to enlist."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제3구의 주민 서신을 맡고 있습니다.",
+          "en": "I am handling correspondence for the Third District."
+        },
+        {
+          "speaker": "player",
+          "ko": "군 복무 때문에 자리를 비운 것과 의원직 사임은 구별하겠습니다.",
+          "en": "I'll distinguish absence for military service from resignation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1918년 1월 입대한 사우스다코타 의원은 {{blank}}입니다.",
+        "en": "The South Dakota member who enlisted in January 1918 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "존슨",
+            "en": "Johnson"
+          },
+          {
+            "id": "B",
+            "ko": "갠디",
+            "en": "Gandy"
+          },
+          {
+            "id": "C",
+            "ko": "딜런",
+            "en": "Dillon"
+          },
+          {
+            "id": "D",
+            "ko": "마틴",
+            "en": "Martin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "전시 부재 사실을 제2구 연락 기록에 표시하겠습니다.",
+            "en": "I'll note the wartime absence in the Second District file."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨은 1918년 1월 5일 군에 입대하기 위해 하원 활동을 일시 중단했다.",
+            "en": "Johnson absented himself from the House and enlisted on January 5, 1918."
+          },
+          {
+            "speaker": "player",
+            "ko": "전시 부재 사실을 제2구 연락 기록에 표시하겠습니다.",
+            "en": "I'll note the wartime absence in the Second District file."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/15914",
+          "claim": "Johnson absented himself from the House and enlisted on January 5, 1918.",
+          "asOf": "1918-02-11"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Johnson absented himself from the House and enlisted on January 5, 1918.",
+          "asOf": "1918-02-11"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13610",
+          "claim": "Johnson absented himself from the House and enlisted on January 5, 1918.",
+          "asOf": "1918-02-11"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1959-wartime-service-status"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1960",
+      "mechanism": "postwar-electoral-status",
+      "learningTarget": "Doolittle lost reelection in 1918 and left the House in March 1919.",
+      "date": "1919-04-14",
+      "venue": {
+        "ko": "캔자스 전후 의회 명부",
+        "en": "Kansas postwar roster"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1956의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1956."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Dudley Doolittle",
+          "ko": "더들리 둘리틀",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12362"
+        },
+        {
+          "id": null,
+          "name": "William Augustus Ayres",
+          "ko": "윌리엄 에어스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8747"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 선거에서 재선되지 못해 이제 전직입니다.",
+          "en": "I lost reelection last year and am now a former member."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 의회에도 남았습니다.",
+          "en": "I remain in this Congress."
+        },
+        {
+          "speaker": "player",
+          "ko": "전시 의원 명부를 그대로 사용하면 민원이 잘못 전달되겠군요.",
+          "en": "Using the wartime roster would misroute correspondence."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1919년 3월 임기를 마친 의원은 {{blank}}입니다.",
+        "en": "The member whose term ended in March 1919 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "에어스",
+            "en": "Ayres"
+          },
+          {
+            "id": "B",
+            "ko": "두 사람 모두",
+            "en": "both"
+          },
+          {
+            "id": "C",
+            "ko": "두 사람 모두 아님",
+            "en": "neither"
+          },
+          {
+            "id": "D",
+            "ko": "둘리틀",
+            "en": "Doolittle"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "이전 의원에게 보내던 연락을 현직 명부와 대조하겠습니다.",
+            "en": "I'll compare the old contacts with the current roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "둘리틀은 1918년 재선에 실패해 1919년 3월 하원을 떠났다.",
+            "en": "Doolittle lost reelection in 1918 and left the House in March 1919."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 의원에게 보내던 연락을 현직 명부와 대조하겠습니다.",
+            "en": "I'll compare the old contacts with the current roster."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12362",
+          "claim": "Doolittle lost reelection in 1918 and left the House in March 1919.",
+          "asOf": "1919-04-14"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_Kansas",
+          "claim": "Doolittle lost reelection in 1918 and left the House in March 1919.",
+          "asOf": "1919-04-14"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/8747",
+          "claim": "Doolittle lost reelection in 1918 and left the House in March 1919.",
+          "asOf": "1919-04-14"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1960-postwar-electoral-status"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1961",
+      "mechanism": "first-district-renewal",
+      "learningTarget": "Christopherson began representing District 1 in 1919.",
+      "date": "1919-05-12",
+      "venue": {
+        "ko": "사우스다코타 전후 지도",
+        "en": "South Dakota postwar map"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1959의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1959."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles A. Christopherson",
+          "ko": "찰스 크리스토퍼슨",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": null,
+          "name": "Royal Cleaves Johnson",
+          "ko": "로열 존슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/15914"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 3월 제1구의 새 임기를 시작했습니다.",
+          "en": "I began a new First District term in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제2구의 대표로 남았습니다.",
+          "en": "I remain the Second District representative."
+        },
+        {
+          "speaker": "player",
+          "ko": "전시 부재 기록과 정기 임기 변경을 별도로 표시하겠습니다.",
+          "en": "I'll distinguish the wartime absence from the regular term change."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1919년 SD-1 새 대표는 {{blank}}입니다.",
+        "en": "The new SD-1 representative in 1919 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "갠디",
+            "en": "Gandy"
+          },
+          {
+            "id": "B",
+            "ko": "버크",
+            "en": "Burke"
+          },
+          {
+            "id": "C",
+            "ko": "크리스토퍼슨",
+            "en": "Christopherson"
+          },
+          {
+            "id": "D",
+            "ko": "존슨",
+            "en": "Johnson"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "세 선거구의 현직 명부를 다시 작성하겠습니다.",
+            "en": "I'll redraw the current three-district roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "크리스토퍼슨은 1919년부터 제1구를 대표했다.",
+            "en": "Christopherson began representing District 1 in 1919."
+          },
+          {
+            "speaker": "player",
+            "ko": "세 선거구의 현직 명부를 다시 작성하겠습니다.",
+            "en": "I'll redraw the current three-district roster."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Christopherson began representing District 1 in 1919.",
+          "asOf": "1919-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/15914",
+          "claim": "Christopherson began representing District 1 in 1919.",
+          "asOf": "1919-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1961-first-district-renewal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1962",
+      "mechanism": "western-seat-transfer",
+      "learningTarget": "Williamson succeeded Gandy in District 3 in 1921.",
+      "date": "1921-04-11",
+      "venue": {
+        "ko": "사우스다코타 제3구 교체",
+        "en": "South Dakota Third District transfer"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1955의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1955."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William Williamson",
+          "ko": "윌리엄 윌리엄슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/23870"
+        },
+        {
+          "id": null,
+          "name": "Harry Luther Gandy",
+          "ko": "해리 갠디",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13610"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회에서 제3구를 맡았습니다.",
+          "en": "I took the Third District seat this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 임기는 지난 3월 끝났습니다.",
+          "en": "My term ended last March."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 민주당 기록을 없애지 않고 새 공화당 임기를 추가하겠습니다.",
+          "en": "I'll add the new Republican term without deleting the previous Democratic record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1921년 SD-3 대표는 {{blank}}입니다.",
+        "en": "The SD-3 representative in 1921 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "크리스토퍼슨",
+            "en": "Christopherson"
+          },
+          {
+            "id": "B",
+            "ko": "윌리엄슨",
+            "en": "Williamson"
+          },
+          {
+            "id": "C",
+            "ko": "갠디",
+            "en": "Gandy"
+          },
+          {
+            "id": "D",
+            "ko": "존슨",
+            "en": "Johnson"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1915년 의석 승계 문서에 다시 한 번 변경을 기록하겠습니다.",
+            "en": "I'll record another turnover in the 1915 succession file."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "윌리엄슨은 1921년 갠디의 제3구 의석을 이어받았다.",
+            "en": "Williamson succeeded Gandy in District 3 in 1921."
+          },
+          {
+            "speaker": "player",
+            "ko": "1915년 의석 승계 문서에 다시 한 번 변경을 기록하겠습니다.",
+            "en": "I'll record another turnover in the 1915 succession file."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/23870",
+          "claim": "Williamson succeeded Gandy in District 3 in 1921.",
+          "asOf": "1921-04-11"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Williamson succeeded Gandy in District 3 in 1921.",
+          "asOf": "1921-04-11"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13610",
+          "claim": "Williamson succeeded Gandy in District 3 in 1921.",
+          "asOf": "1921-04-11"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1962-western-seat-transfer"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1963",
+      "mechanism": "kansas-return-gap",
+      "learningTarget": "Ayres returned to the House in March 1923.",
+      "date": "1923-04-09",
+      "venue": {
+        "ko": "캔자스 전직 의원 재회",
+        "en": "Kansas former-member reunion"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1960의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1960."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William Augustus Ayres",
+          "ko": "윌리엄 에어스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8747"
+        },
+        {
+          "id": null,
+          "name": "Dudley Doolittle",
+          "ko": "더들리 둘리틀",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12362"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1920년 재선에 실패했지만 이번 의회에 돌아왔습니다.",
+          "en": "I lost reelection in 1920 but have returned this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1919년부터 하원 밖에 있습니다.",
+          "en": "I have been out of the House since 1919."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 전직 의원의 재임 공백을 동일하게 표시하지 않겠습니다.",
+          "en": "I won't mark the two former members' service gaps as identical."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1923년 하원에 복귀한 사람은 {{blank}}입니다.",
+        "en": "The member returning to the House in 1923 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "에어스",
+            "en": "Ayres"
+          },
+          {
+            "id": "B",
+            "ko": "둘리틀",
+            "en": "Doolittle"
+          },
+          {
+            "id": "C",
+            "ko": "머독",
+            "en": "Murdock"
+          },
+          {
+            "id": "D",
+            "ko": "셋 다",
+            "en": "all three"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1919년 명부에 1921~1923년 공백을 별도로 기록하겠습니다.",
+            "en": "I'll mark the 1921–23 gap on the postwar timeline."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "에어스는 1923년 3월 하원에 복귀했다.",
+            "en": "Ayres returned to the House in March 1923."
+          },
+          {
+            "speaker": "player",
+            "ko": "1919년 명부에 1921~1923년 공백을 별도로 기록하겠습니다.",
+            "en": "I'll mark the 1921–23 gap on the postwar timeline."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/8747",
+          "claim": "Ayres returned to the House in March 1923.",
+          "asOf": "1923-04-09"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_Kansas",
+          "claim": "Ayres returned to the House in March 1923.",
+          "asOf": "1923-04-09"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12362",
+          "claim": "Ayres returned to the House in March 1923.",
+          "asOf": "1923-04-09"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1963-kansas-return-gap"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1964",
+      "mechanism": "postwar-two-seats",
+      "learningTarget": "Lovre and Berry held South Dakota's two House seats in 1951.",
+      "date": "1951-07-09",
+      "venue": {
+        "ko": "사우스다코타 전후 대표단",
+        "en": "Postwar South Dakota delegation"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1951의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1951."
+      },
+      "cast": [
+        {
+          "id": "L000468",
+          "name": "Harold Orrin Lovre",
+          "ko": "해럴드 러브리",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/L000468"
+        },
+        {
+          "id": "B000416",
+          "name": "Ellis Yarnal Berry",
+          "ko": "엘리스 베리",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/B000416"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제1구에서 1949년부터 재임하고 있습니다.",
+          "en": "I have represented the First District since 1949."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 1월 제2구의 대표가 되었습니다.",
+          "en": "I became the Second District representative this January."
+        },
+        {
+          "speaker": "player",
+          "ko": "1913년의 세 의석 지도와 현재의 두 의석 지도를 비교하겠습니다.",
+          "en": "I'll compare the 1913 three-seat map with the current two-seat map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1951년 사우스다코타 하원 의석은 {{blank}}개입니다.",
+        "en": "South Dakota has {{blank}} House seats in 1951.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "3",
+            "en": "3"
+          },
+          {
+            "id": "B",
+            "ko": "1",
+            "en": "1"
+          },
+          {
+            "id": "C",
+            "ko": "4",
+            "en": "4"
+          },
+          {
+            "id": "D",
+            "ko": "2",
+            "en": "2"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "이전 세 의석과 현재 두 의석을 다른 지도로 보관하겠습니다.",
+            "en": "I'll retain separate maps of the former three and current two seats."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1951년 러브리와 베리가 사우스다코타의 두 하원 의석을 맡았다.",
+            "en": "Lovre and Berry held South Dakota's two House seats in 1951."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 세 의석과 현재 두 의석을 다른 지도로 보관하겠습니다.",
+            "en": "I'll retain separate maps of the former three and current two seats."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/L000468",
+          "claim": "Lovre and Berry held South Dakota's two House seats in 1951.",
+          "asOf": "1951-07-09"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Lovre and Berry held South Dakota's two House seats in 1951.",
+          "asOf": "1951-07-09"
+        },
+        {
+          "url": "https://bioguide.congress.gov/search/bio/B000416",
+          "claim": "Lovre and Berry held South Dakota's two House seats in 1951.",
+          "asOf": "1951-07-09"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1964-postwar-two-seats"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1965",
+      "mechanism": "widow-special-election",
+      "learningTarget": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+      "date": "1951-08-13",
+      "venue": {
+        "ko": "웨스트버지니아 보궐선거 접견",
+        "en": "West Virginia special-election reception"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Elizabeth Kee",
+          "ko": "엘리자베스 키",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        },
+        {
+          "id": null,
+          "name": "Norris Cotton",
+          "ko": "노리스 코튼",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "남편의 사망으로 공석이 생겼고 올해 선거로 그 자리를 채웠습니다.",
+          "en": "My husband's death left a vacancy, which I filled by election this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 뉴햄프셔의 정기 임기 의원입니다. 두 선거 유형을 구별해 주세요.",
+          "en": "I am serving a regular term from New Hampshire. Distinguish the two election types."
+        },
+        {
+          "speaker": "player",
+          "ko": "가족 관계와 당선 절차를 따로 기록하겠습니다.",
+          "en": "I'll record the family relationship separately from the election procedure."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "엘리자베스 키가 채운 공석의 전임자는 {{blank}}입니다.",
+        "en": "The predecessor whose vacancy Elizabeth Kee filled was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "밥 몰로핸",
+            "en": "Bob Mollohan"
+          },
+          {
+            "id": "B",
+            "ko": "노리스 코튼",
+            "en": "Norris Cotton"
+          },
+          {
+            "id": "C",
+            "ko": "존 키",
+            "en": "John Kee"
+          },
+          {
+            "id": "D",
+            "ko": "로버트 버드",
+            "en": "Robert Byrd"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
+            "en": "I'll preserve the special election and family record separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "엘리자베스 키는 1951년 존 키의 사망으로 생긴 공석을 채웠다.",
+            "en": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951."
+          },
+          {
+            "speaker": "player",
+            "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
+            "en": "I'll preserve the special election and family record separately."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia",
+          "claim": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+          "asOf": "1951-08-13"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+          "asOf": "1951-08-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1965-widow-special-election"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1966",
+      "mechanism": "new-england-contact-book",
+      "learningTarget": "In 1953 Merrow represented NH-1 and Cotton NH-2.",
+      "date": "1953-05-11",
+      "venue": {
+        "ko": "뉴햄프셔 주민 연락 수첩",
+        "en": "New Hampshire contact notebook"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1957의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1957."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Norris Cotton",
+          "ko": "노리스 코튼",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+        },
+        {
+          "id": null,
+          "name": "Chester Earl Merrow",
+          "ko": "체스터 메로",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18153"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제2구의 대표입니다.",
+          "en": "I represent the Second District."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 담당은 제1구입니다. 두 의원의 주소를 별도 표기합시다.",
+          "en": "Mine is the First District. Label our contacts separately."
+        },
+        {
+          "speaker": "player",
+          "ko": "1915년의 두 의석 지도를 현재 명부와 나란히 놓겠습니다.",
+          "en": "I'll place the 1915 map beside the current roster."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1953년 NH-1 대표는 {{blank}}입니다.",
+        "en": "The NH-1 representative in 1953 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "설러웨이",
+            "en": "Sulloway"
+          },
+          {
+            "id": "B",
+            "ko": "메로",
+            "en": "Merrow"
+          },
+          {
+            "id": "C",
+            "ko": "코튼",
+            "en": "Cotton"
+          },
+          {
+            "id": "D",
+            "ko": "배스",
+            "en": "Bass"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "지도와 명부의 연도를 명확히 표시하겠습니다.",
+            "en": "I'll date both map and roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1953년 메로는 NH-1, 코튼은 NH-2를 대표했다.",
+            "en": "In 1953 Merrow represented NH-1 and Cotton NH-2."
+          },
+          {
+            "speaker": "player",
+            "ko": "지도와 명부의 연도를 명확히 표시하겠습니다.",
+            "en": "I'll date both map and roster."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "In 1953 Merrow represented NH-1 and Cotton NH-2.",
+          "asOf": "1953-05-11"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/18153",
+          "claim": "In 1953 Merrow represented NH-1 and Cotton NH-2.",
+          "asOf": "1953-05-11"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1966-new-england-contact-book"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1967",
+      "mechanism": "wv-freshmen",
+      "learningTarget": "Mollohan entered the House from West Virginia's First District in 1953.",
+      "date": "1953-06-08",
+      "venue": {
+        "ko": "웨스트버지니아 신임 대표 환영",
+        "en": "West Virginia freshmen reception"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Bob Mollohan",
+          "ko": "밥 몰로핸",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        },
+        {
+          "id": null,
+          "name": "Robert Byrd",
+          "ko": "로버트 버드",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 의회에 제1구 의원으로 들어왔습니다.",
+          "en": "I entered this Congress as the First District member."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저 역시 새로운 하원의원입니다. 제 선거구는 다릅니다.",
+          "en": "I am also a new member, but my district is different."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 신임 의원의 지역을 명찰에서 구별하겠습니다.",
+          "en": "I'll distinguish the two districts on the name badges."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1953년 WV-1 대표는 {{blank}}입니다.",
+        "en": "The WV-1 representative in 1953 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "몰로핸",
+            "en": "Mollohan"
+          },
+          {
+            "id": "B",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "C",
+            "ko": "키",
+            "en": "Kee"
+          },
+          {
+            "id": "D",
+            "ko": "무어",
+            "en": "Moore"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "전후 대표단의 신임 명부를 열겠습니다.",
+            "en": "I'll open a postwar freshman roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "몰로핸은 1953년 웨스트버지니아 제1구 의원으로 취임했다.",
+            "en": "Mollohan entered the House from West Virginia's First District in 1953."
+          },
+          {
+            "speaker": "player",
+            "ko": "전후 대표단의 신임 명부를 열겠습니다.",
+            "en": "I'll open a postwar freshman roster."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia",
+          "claim": "Mollohan entered the House from West Virginia's First District in 1953.",
+          "asOf": "1953-06-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1967-wv-freshmen"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1968",
+      "mechanism": "senate-vacancy-ripple",
+      "learningTarget": "Bass entered the House representing NH-2 in 1955.",
+      "date": "1955-04-11",
+      "venue": {
+        "ko": "뉴햄프셔 상하원 명부 갱신",
+        "en": "New Hampshire chamber roster update"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1966의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1966."
+      },
+      "cast": [
+        {
+          "id": "B000222",
+          "name": "Perkins Bass",
+          "ko": "퍼킨스 배스",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/B000222"
+        },
+        {
+          "id": null,
+          "name": "Chester Earl Merrow",
+          "ko": "체스터 메로",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18153"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 1월 제2구 임기를 시작했습니다.",
+          "en": "My Second District term began this January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제1구에 남았습니다. 코튼의 상원 이동으로 명부가 바뀌었죠.",
+          "en": "I remain in the First District. Cotton's move to the Senate changed the roster."
+        },
+        {
+          "speaker": "player",
+          "ko": "상원과 하원의 연락처를 별도로 갱신하겠습니다.",
+          "en": "I'll update House and Senate contacts separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1955년 NH-2의 대표는 {{blank}}입니다.",
+        "en": "The NH-2 representative in 1955 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "메로",
+            "en": "Merrow"
+          },
+          {
+            "id": "B",
+            "ko": "코튼",
+            "en": "Cotton"
+          },
+          {
+            "id": "C",
+            "ko": "버로스",
+            "en": "Burroughs"
+          },
+          {
+            "id": "D",
+            "ko": "배스",
+            "en": "Bass"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1953년의 코튼 명부와 새 하원 기록을 연결하겠습니다.",
+            "en": "I'll link the 1953 Cotton roster to the new House entry."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "배스는 1955년 뉴햄프셔 제2구 하원의원으로 취임했다.",
+            "en": "Bass entered the House representing NH-2 in 1955."
+          },
+          {
+            "speaker": "player",
+            "ko": "1953년의 코튼 명부와 새 하원 기록을 연결하겠습니다.",
+            "en": "I'll link the 1953 Cotton roster to the new House entry."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/B000222",
+          "claim": "Bass entered the House representing NH-2 in 1955.",
+          "asOf": "1955-04-11"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+          "claim": "Bass entered the House representing NH-2 in 1955.",
+          "asOf": "1955-04-11"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/18153",
+          "claim": "Bass entered the House representing NH-2 in 1955.",
+          "asOf": "1955-04-11"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1968-senate-vacancy-ripple"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1969",
+      "mechanism": "new-jersey-party-contrast",
+      "learningTarget": "Frank Thompson entered the House as a Democrat in 1955.",
+      "date": "1955-05-09",
+      "venue": {
+        "ko": "뉴저지 양당 소개",
+        "en": "New Jersey bipartisan introduction"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+        "en": "Fictional RPG encounter grounded in historical records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Frank Thompson Jr.",
+          "ko": "프랭크 톰프슨 주니어",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey"
+        },
+        {
+          "id": null,
+          "name": "William B. Widnall",
+          "ko": "윌리엄 위드널",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회에 민주당 신임 의원으로 입성했습니다.",
+          "en": "I entered this Congress as a Democratic freshman."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 공화당 의원으로 재임하고 있습니다.",
+          "en": "I am serving as a Republican member."
+        },
+        {
+          "speaker": "player",
+          "ko": "대표단을 한 정당으로 묶어 소개하지 않겠습니다.",
+          "en": "I won't introduce the entire delegation under one party label."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "프랭크 톰프슨의 당적은 {{blank}}입니다.",
+        "en": "Frank Thompson's party is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "진보당",
+            "en": "Progressive Party"
+          },
+          {
+            "id": "B",
+            "ko": "사회당",
+            "en": "Socialist Party"
+          },
+          {
+            "id": "C",
+            "ko": "민주당",
+            "en": "Democratic Party"
+          },
+          {
+            "id": "D",
+            "ko": "공화당",
+            "en": "Republican Party"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "양당 소개 자료를 별도로 준비하겠습니다.",
+            "en": "I'll prepare separate party introductions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "프랭크 톰프슨은 1955년 민주당으로 하원에 입성했다.",
+            "en": "Frank Thompson entered the House as a Democrat in 1955."
+          },
+          {
+            "speaker": "player",
+            "ko": "양당 소개 자료를 별도로 준비하겠습니다.",
+            "en": "I'll prepare separate party introductions."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey",
+          "claim": "Frank Thompson entered the House as a Democrat in 1955.",
+          "asOf": "1955-05-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1969-new-jersey-party-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1970",
+      "mechanism": "sd-election-reversal",
+      "learningTarget": "McGovern succeeded Lovre in District 1 in 1957.",
+      "date": "1957-03-11",
+      "venue": {
+        "ko": "사우스다코타 선거 결과 인계",
+        "en": "South Dakota election-result handoff"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1964의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1964."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "George McGovern",
+          "ko": "조지 맥거번",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        },
+        {
+          "id": "L000468",
+          "name": "Harold Orrin Lovre",
+          "ko": "해럴드 러브리",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/L000468"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 선거에서 당선되어 이번 1월 임기를 시작했습니다.",
+          "en": "I won last year's election and began my term in January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제1구의 이전 임기는 지난 1월 끝났습니다.",
+          "en": "My previous First District term ended in January."
+        },
+        {
+          "speaker": "player",
+          "ko": "전임자와 후임자를 같은 의원으로 취급하면 안 되겠군요.",
+          "en": "I must not treat the predecessor and successor as the same representative."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1957년 SD-1의 새 대표는 {{blank}}입니다.",
+        "en": "The new SD-1 representative in 1957 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "코튼",
+            "en": "Cotton"
+          },
+          {
+            "id": "B",
+            "ko": "맥거번",
+            "en": "McGovern"
+          },
+          {
+            "id": "C",
+            "ko": "러브리",
+            "en": "Lovre"
+          },
+          {
+            "id": "D",
+            "ko": "베리",
+            "en": "Berry"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1951년 전후 지도에 정당 교체를 반영하겠습니다.",
+            "en": "I'll record the party turnover on the 1951 postwar map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "맥거번은 1957년 러브리의 제1구 의석을 이어받았다.",
+            "en": "McGovern succeeded Lovre in District 1 in 1957."
+          },
+          {
+            "speaker": "player",
+            "ko": "1951년 전후 지도에 정당 교체를 반영하겠습니다.",
+            "en": "I'll record the party turnover on the 1951 postwar map."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "McGovern succeeded Lovre in District 1 in 1957.",
+          "asOf": "1957-03-11"
+        },
+        {
+          "url": "https://bioguide.congress.gov/search/bio/L000468",
+          "claim": "McGovern succeeded Lovre in District 1 in 1957.",
+          "asOf": "1957-03-11"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1970-sd-election-reversal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1971",
+      "mechanism": "women-delegation-entry",
+      "learningTarget": "Dwyer entered the House as a Republican on January 3, 1957.",
+      "date": "1957-04-08",
+      "venue": {
+        "ko": "뉴저지 여성 대표의 입성",
+        "en": "New Jersey woman member's entry"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1969의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1969."
+      },
+      "cast": [
+        {
+          "id": "D000587",
+          "name": "Florence Price Dwyer",
+          "ko": "플로렌스 드와이어",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/D000587"
+        },
+        {
+          "id": null,
+          "name": "Peter W. Rodino",
+          "ko": "피터 로디노",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 의회에 공화당으로 입성했습니다.",
+          "en": "I entered this Congress as a Republican."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1949년부터 민주당으로 하원에서 일하고 있습니다.",
+          "en": "I have served in the House as a Democrat since 1949."
+        },
+        {
+          "speaker": "player",
+          "ko": "신임 의원의 입성을 기존 대표단 기록과 구별하겠습니다.",
+          "en": "I'll distinguish the freshman's entry from existing delegation records."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "드와이어가 하원 임기를 시작한 해는 {{blank}}년입니다.",
+        "en": "Dwyer began her House service in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "1957",
+            "en": "1957"
+          },
+          {
+            "id": "B",
+            "ko": "1955",
+            "en": "1955"
+          },
+          {
+            "id": "C",
+            "ko": "1953",
+            "en": "1953"
+          },
+          {
+            "id": "D",
+            "ko": "1959",
+            "en": "1959"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1955년 양당 소개 자료에 새로운 여성 의원을 추가하겠습니다.",
+            "en": "I'll add the new woman member to the 1955 bipartisan file."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "드와이어는 1957년 1월 3일 공화당 하원의원으로 취임했다.",
+            "en": "Dwyer entered the House as a Republican on January 3, 1957."
+          },
+          {
+            "speaker": "player",
+            "ko": "1955년 양당 소개 자료에 새로운 여성 의원을 추가하겠습니다.",
+            "en": "I'll add the new woman member to the 1955 bipartisan file."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/D000587",
+          "claim": "Dwyer entered the House as a Republican on January 3, 1957.",
+          "asOf": "1957-04-08"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey",
+          "claim": "Dwyer entered the House as a Republican on January 3, 1957.",
+          "asOf": "1957-04-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1971-women-delegation-entry"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1972",
+      "mechanism": "wv-first-district-turnover",
+      "learningTarget": "Moore became the WV-1 representative in 1957.",
+      "date": "1957-05-13",
+      "venue": {
+        "ko": "웨스트버지니아 제1구 교체",
+        "en": "West Virginia First District turnover"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1967의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1967."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Arch A. Moore Jr.",
+          "ko": "아치 무어 주니어",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        },
+        {
+          "id": null,
+          "name": "Bob Mollohan",
+          "ko": "밥 몰로핸",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 1월부터 제1구를 맡았습니다.",
+          "en": "I have represented the First District since January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이전 두 의회에서 그 의석을 맡았습니다.",
+          "en": "I held that seat in the two preceding Congresses."
+        },
+        {
+          "speaker": "player",
+          "ko": "1953년에 만든 명부를 갱신할 때가 되었군요.",
+          "en": "It's time to update the roster I opened in 1953."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1957년 WV-1 대표는 {{blank}}입니다.",
+        "en": "The WV-1 representative in 1957 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "몰로핸",
+            "en": "Mollohan"
+          },
+          {
+            "id": "B",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "C",
+            "ko": "키",
+            "en": "Kee"
+          },
+          {
+            "id": "D",
+            "ko": "무어",
+            "en": "Moore"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정당과 임기 변경을 같은 연표에 기록하겠습니다.",
+            "en": "I'll mark the party and term change on the same timeline."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "무어는 1957년 웨스트버지니아 제1구 대표가 되었다.",
+            "en": "Moore became the WV-1 representative in 1957."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당과 임기 변경을 같은 연표에 기록하겠습니다.",
+            "en": "I'll mark the party and term change on the same timeline."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia",
+          "claim": "Moore became the WV-1 representative in 1957.",
+          "asOf": "1957-05-13"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1972-wv-first-district-turnover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1973",
+      "mechanism": "state-versus-federal-women",
+      "learningTarget": "Dwyer began serving on the U.S. Advisory Commission on Intergovernmental Relations in 1959.",
+      "date": "1959-03-09",
+      "venue": {
+        "ko": "전후 대표성 자료 교류",
+        "en": "Postwar representation exchange"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1971의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1971."
+      },
+      "cast": [
+        {
+          "id": "D000587",
+          "name": "Florence Price Dwyer",
+          "ko": "플로렌스 드와이어",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/D000587"
+        },
+        {
+          "id": null,
+          "name": "George McGovern",
+          "ko": "조지 맥거번",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번에 정부 간 관계 자문위원회에서도 활동하게 됐습니다.",
+          "en": "I have also joined the advisory commission on intergovernmental relations."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제1구의 하원 임기를 이어갑니다.",
+          "en": "I continue my House term from the First District."
+        },
+        {
+          "speaker": "player",
+          "ko": "자문위원회 직책과 선거구 의석을 하나로 합치면 안 되겠군요.",
+          "en": "An advisory appointment should not be merged with an elected seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1959년 정부 간 관계 자문위원회에 참여한 의원은 {{blank}}입니다.",
+        "en": "The member joining the intergovernmental advisory commission in 1959 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "러브리",
+            "en": "Lovre"
+          },
+          {
+            "id": "B",
+            "ko": "배스",
+            "en": "Bass"
+          },
+          {
+            "id": "C",
+            "ko": "드와이어",
+            "en": "Dwyer"
+          },
+          {
+            "id": "D",
+            "ko": "맥거번",
+            "en": "McGovern"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1957년의 하원 입성 기록에 별도 공직 항목을 만들겠습니다.",
+            "en": "I'll add a separate public-service entry to her 1957 House record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "드와이어는 1959년 미국 정부 간 관계 자문위원회에서 활동을 시작했다.",
+            "en": "Dwyer began serving on the U.S. Advisory Commission on Intergovernmental Relations in 1959."
+          },
+          {
+            "speaker": "player",
+            "ko": "1957년의 하원 입성 기록에 별도 공직 항목을 만들겠습니다.",
+            "en": "I'll add a separate public-service entry to her 1957 House record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/D000587",
+          "claim": "Dwyer began serving on the U.S. Advisory Commission on Intergovernmental Relations in 1959.",
+          "asOf": "1959-03-09"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey",
+          "claim": "Dwyer began serving on the U.S. Advisory Commission on Intergovernmental Relations in 1959.",
+          "asOf": "1959-03-09"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "Dwyer began serving on the U.S. Advisory Commission on Intergovernmental Relations in 1959.",
+          "asOf": "1959-03-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1973-state-versus-federal-women"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1974",
+      "mechanism": "wv-postwar-newcomers",
+      "learningTarget": "In 1959 Hechler represented WV-4 and Slack WV-6.",
+      "date": "1959-04-13",
+      "venue": {
+        "ko": "웨스트버지니아 신임 의원 교류",
+        "en": "West Virginia freshman exchange"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1972의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1972."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Ken Hechler",
+          "ko": "켄 헤클러",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        },
+        {
+          "id": null,
+          "name": "John M. Slack Jr.",
+          "ko": "존 슬랙 주니어",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회에서 제4구를 맡았습니다.",
+          "en": "I took the Fourth District seat this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제6구에서 새 임기를 시작했습니다.",
+          "en": "I began a new term in the Sixth District."
+        },
+        {
+          "speaker": "player",
+          "ko": "번호가 바뀐 미래 지도는 사용하지 않겠습니다.",
+          "en": "I will not use a later map with changed numbers."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1959년 WV-4의 대표는 {{blank}}입니다.",
+        "en": "The WV-4 representative in 1959 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "B",
+            "ko": "헤클러",
+            "en": "Hechler"
+          },
+          {
+            "id": "C",
+            "ko": "슬랙",
+            "en": "Slack"
+          },
+          {
+            "id": "D",
+            "ko": "무어",
+            "en": "Moore"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "전후 신임 의원의 각 선거구 카드를 만들겠습니다.",
+            "en": "I'll create separate district cards for the postwar freshmen."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1959년 헤클러는 웨스트버지니아 제4구, 슬랙은 제6구를 대표했다.",
+            "en": "In 1959 Hechler represented WV-4 and Slack WV-6."
+          },
+          {
+            "speaker": "player",
+            "ko": "전후 신임 의원의 각 선거구 카드를 만들겠습니다.",
+            "en": "I'll create separate district cards for the postwar freshmen."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia",
+          "claim": "In 1959 Hechler represented WV-4 and Slack WV-6.",
+          "asOf": "1959-04-13"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1974-wv-postwar-newcomers"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1975",
+      "mechanism": "sd-bipartisan-continuity",
+      "learningTarget": "In 1959 Berry represented SD-2 and McGovern SD-1.",
+      "date": "1959-06-08",
+      "venue": {
+        "ko": "사우스다코타 전후 양당 기록",
+        "en": "South Dakota bipartisan continuity"
+      },
+      "context": {
+        "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1970의 기존 기록을 후속 검토합니다.",
+        "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1970."
+      },
+      "cast": [
+        {
+          "id": "B000416",
+          "name": "Ellis Yarnal Berry",
+          "ko": "엘리스 베리",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/B000416"
+        },
+        {
+          "id": null,
+          "name": "George McGovern",
+          "ko": "조지 맥거번",
+          "portrait": null,
+          "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제2구의 공화당 대표 기록은 이어집니다.",
+          "en": "The Republican record for District 2 continues."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제1구에서는 민주당 대표로 다시 재임 중입니다.",
+          "en": "I continue as the Democratic representative of District 1."
+        },
+        {
+          "speaker": "player",
+          "ko": "1957년의 당적 교체를 확인한 뒤 두 의석을 따로 추적하겠습니다.",
+          "en": "After reviewing the 1957 turnover, I'll track the two seats separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1959년 SD-2 대표는 {{blank}}입니다.",
+        "en": "The SD-2 representative in 1959 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "베리",
+            "en": "Berry"
+          },
+          {
+            "id": "B",
+            "ko": "맥거번",
+            "en": "McGovern"
+          },
+          {
+            "id": "C",
+            "ko": "러브리",
+            "en": "Lovre"
+          },
+          {
+            "id": "D",
+            "ko": "갠디",
+            "en": "Gandy"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "1957년 이후 두 의석의 당적을 별도로 표시하겠습니다.",
+            "en": "I'll track the parties of both seats separately since 1957."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1959년 베리는 SD-2, 맥거번은 SD-1을 대표했다.",
+            "en": "In 1959 Berry represented SD-2 and McGovern SD-1."
+          },
+          {
+            "speaker": "player",
+            "ko": "1957년 이후 두 의석의 당적을 별도로 표시하겠습니다.",
+            "en": "I'll track the parties of both seats separately since 1957."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bioguide.congress.gov/search/bio/B000416",
+          "claim": "In 1959 Berry represented SD-2 and McGovern SD-1.",
+          "asOf": "1959-06-08"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+          "claim": "In 1959 Berry represented SD-2 and McGovern SD-1.",
+          "asOf": "1959-06-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1975-sd-bipartisan-continuity"
+      },
+      "fictional": true
+    }
+  ]
+}
