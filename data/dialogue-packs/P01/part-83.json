@@ -1,0 +1,3413 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 83,
+  "scenes": [
+    {
+      "id": "P01-2051",
+      "mechanism": "reapportionment-service-basket",
+      "learningTarget": "In the 119th Congress Barry Moore (AL-01) lists Baldwin County outreach, while Shomari Figures (AL-02) lists a Montgomery office; the 118th Congress roster cannot route today's casework.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "앨라배마 민원 지도",
+        "en": "Alabama service map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "M001212",
+          "name": "Barry Moore",
+          "ko": "배리 무어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001212.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001212"
+        },
+        {
+          "id": "F000481",
+          "name": "Shomari Figures",
+          "ko": "쇼마리 피겨스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000481.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000481"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "옛 대표단 명부를 가져온 주민 두 명이 서로 다른 상담 장소를 찾고 있습니다.",
+          "en": "Two visitors with an old delegation directory need different outreach locations."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "한 분은 볼드윈 카운티 이동 상담 일정을 가지고 있군요.",
+          "en": "One has a Baldwin County mobile-outreach schedule."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다른 분은 몽고메리 카운티 청사 별관의 의원실을 찾고 있습니다.",
+          "en": "The other is looking for a congressional office in the Montgomery courthouse annex."
+        },
+        {
+          "speaker": "player",
+          "ko": "선거구 번호가 바뀌었으니 현재 의원실 안내를 대조해야겠습니다.",
+          "en": "The district numbers changed, so I'll use the current office guides."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "방문 일정을 {{blank}}로 연결하겠습니다.",
+        "en": "I'll route the visits to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "피겨스—볼드윈, 무어—몽고메리",
+            "en": "Figures—Baldwin; Moore—Montgomery"
+          },
+          {
+            "id": "B",
+            "ko": "무어—볼드윈, 피겨스—몽고메리",
+            "en": "Moore—Baldwin; Figures—Montgomery"
+          },
+          {
+            "id": "C",
+            "ko": "두 방문 모두 무어",
+            "en": "Moore for both"
+          },
+          {
+            "id": "D",
+            "ko": "두 방문 모두 피겨스",
+            "en": "Figures for both"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 무어의 AL-01 이동 상담 안내는 볼드윈을, 피겨스의 AL-02 연락처는 몽고메리를 명시합니다. 거주 자격은 주소로 별도 확인합니다.",
+            "en": "Moore's AL-01 outreach guide lists Baldwin; Figures's AL-02 office guide lists Montgomery. Verify residency separately by address."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "현재 무어의 AL-01 이동 상담 안내는 볼드윈을, 피겨스의 AL-02 연락처는 몽고메리를 명시합니다. 거주 자격은 주소로 별도 확인합니다.",
+            "en": "Moore's AL-01 outreach guide lists Baldwin; Figures's AL-02 office guide lists Montgomery. Verify residency separately by address."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://barrymoore.house.gov/MobileOfficeHours",
+          "claim": "Baldwin County outreach schedule.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://figures.house.gov/contact/office-locations",
+          "claim": "Montgomery office location.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2051-reapportionment-service-basket"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2052",
+      "mechanism": "zip-split-archive-recheck",
+      "learningTarget": "The current House lookup for ZIP 30012 lists both GA-04 Hank Johnson and GA-10 Mike Collins; ZIP alone cannot resolve an address, and the 2018 Gwinnett map cannot be carried forward.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "조지아 재획정 지도실",
+        "en": "Georgia redistricting archive"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "C001129",
+          "name": "Mike Collins",
+          "ko": "마이크 콜린스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001129"
+        },
+        {
+          "id": "J000288",
+          "name": "Henry C. \"Hank\" Johnson, Jr.",
+          "ko": "행크 존슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000288.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/J000288"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2018년 지도에는 귀넷 카운티가 여러 지역구에 걸쳐 있었군요.",
+          "en": "The 2018 map showed Gwinnett across several districts."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오늘 문의한 주민은 우편번호 30012만 남겼습니다.",
+          "en": "Today's constituent left only ZIP 30012."
+        },
+        {
+          "speaker": "aide",
+          "ko": "하원 검색 결과에 두 의원이 모두 표시됩니다.",
+          "en": "The House lookup returns both members."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그렇다면 이전 지도만으로 결정하지 맙시다.",
+          "en": "Then let's not decide from the old map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이 민원은 {{blank}} 후 담당 의원실로 전달하겠습니다.",
+        "en": "I'll route the inquiry after {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정확한 주소로 현행 지역구 확인",
+            "en": "checking the exact address against current districts"
+          },
+          {
+            "id": "B",
+            "ko": "2018년 지역구 지도만 적용",
+            "en": "using only the 2018 map"
+          },
+          {
+            "id": "C",
+            "ko": "먼저 표시된 의원을 무조건 선택",
+            "en": "choosing the first listed member"
+          },
+          {
+            "id": "D",
+            "ko": "우편번호를 지역구 번호로 변환",
+            "en": "converting the ZIP into a district number"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "30012 검색은 GA-04와 GA-10을 모두 반환합니다. 정확한 주소가 필요하며 2018년 경계와 동일하다고 가정할 수 없습니다.",
+            "en": "The 30012 lookup returns GA-04 and GA-10. An exact address is needed; 2018 boundaries cannot be presumed unchanged."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "30012 검색은 GA-04와 GA-10을 모두 반환합니다. 정확한 주소가 필요하며 2018년 경계와 동일하다고 가정할 수 없습니다.",
+            "en": "The 30012 lookup returns GA-04 and GA-10. An exact address is needed; 2018 boundaries cannot be presumed unchanged."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.house.gov/htbin/findrep?ZIP=30012",
+          "claim": "House ZIP lookup lists Johnson and Collins.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://hankjohnson.house.gov/",
+          "claim": "Johnson represents parts of DeKalb and Gwinnett.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/members/C001129",
+          "claim": "Collins represents GA-10.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2052-zip-split-archive-recheck"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2053",
+      "mechanism": "chicago-neighborhood-intake",
+      "learningTarget": "García's IL-04 office provides Southwest Chicago and western-suburban contacts; Schakowsky's IL-09 materials identify Evanston and Skokie; separate district outreach within metropolitan Chicago.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "시카고 지역 상담회",
+        "en": "Chicago area service fair"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "G000586",
+          "name": "Jesús G. \"Chuy\" García",
+          "ko": "추이 가르시아",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000586.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000586"
+        },
+        {
+          "id": "S001145",
+          "name": "Janice D. Schakowsky",
+          "ko": "잰 셔코스키",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001145.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001145"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "대도시권 주민 상담 안내문에 두 지역 이름이 섞였습니다.",
+          "en": "Two metro-area outreach guides have been mixed together."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 안내문은 시카고 남서부와 서부 교외 사무실을 구분합니다.",
+          "en": "My guide distinguishes Southwest Chicago and western-suburban offices."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지역 안내에는 에번스턴과 스코키가 나옵니다.",
+          "en": "My district materials mention Evanston and Skokie."
+        },
+        {
+          "speaker": "aide",
+          "ko": "카운티 이름만으로 두 의원을 같은 대표자로 취급하면 안 되겠네요.",
+          "en": "We can't treat two members as one representative just because of a county name."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "안내문 표제를 {{blank}}로 복구하겠습니다.",
+        "en": "I'll restore the labels as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "IL-09 셔코스키—남서부 시카고, IL-04 가르시아—에번스턴·스코키",
+            "en": "IL-09 Schakowsky—Southwest Chicago; IL-04 García—Evanston/Skokie"
+          },
+          {
+            "id": "B",
+            "ko": "IL-04에 두 안내문 모두 배정",
+            "en": "both guides to IL-04"
+          },
+          {
+            "id": "C",
+            "ko": "IL-09에 두 안내문 모두 배정",
+            "en": "both guides to IL-09"
+          },
+          {
+            "id": "D",
+            "ko": "IL-04 가르시아—남서부 시카고, IL-09 셔코스키—에번스턴·스코키",
+            "en": "IL-04 García—Southwest Chicago; IL-09 Schakowsky—Evanston/Skokie"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "가르시아의 사무실 안내는 남서부 시카고와 서부 교외, 셔코스키의 지역 자료는 에번스턴·스코키를 언급합니다. 실제 거주지 경계는 주소별 확인합니다.",
+            "en": "García's office guide lists Southwest Chicago and western suburbs, while Schakowsky's district materials identify Evanston and Skokie. Confirm individual addresses separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "가르시아의 사무실 안내는 남서부 시카고와 서부 교외, 셔코스키의 지역 자료는 에번스턴·스코키를 언급합니다. 실제 거주지 경계는 주소별 확인합니다.",
+            "en": "García's office guide lists Southwest Chicago and western suburbs, while Schakowsky's district materials identify Evanston and Skokie. Confirm individual addresses separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://chuygarcia.house.gov/contact/offices",
+          "claim": "Southwest Chicago and western suburbs offices.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://schakowsky.house.gov/media/press-releases/schakowsky-statement-icecbp-presence-9th-district",
+          "claim": "Evanston and Skokie in ninth-district context.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2053-chicago-neighborhood-intake"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2054",
+      "mechanism": "grid-coalition-regional-impact",
+      "learningTarget": "Casten (IL-06) and Feenstra (IA-04) led the 2024 SOO Green support letter, signed by Budzinski (IL-13); their districts differ: suburban DuPage/Cook, central/southern Illinois and agricultural northwest Iowa. A support request is not a grant award.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "중서부 전력망 청문 준비",
+        "en": "Midwest grid briefing"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "C001117",
+          "name": "Sean Casten",
+          "ko": "숀 캐스턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001117.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001117"
+        },
+        {
+          "id": "B001315",
+          "name": "Nikki Budzinski",
+          "ko": "니키 부진스키",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001315.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001315"
+        },
+        {
+          "id": "F000446",
+          "name": "Randy Feenstra",
+          "ko": "랜디 핀스트라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000446.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000446"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2024년 전력망 지원 서한을 다시 검토하고 있습니다. 제 교외 지역과 다른 지역의 이해를 구분합시다.",
+          "en": "We're reviewing the 2024 grid support letter. Distinguish suburban interests from other regions."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "중부·남부 일리노이 주민의 산업 및 전력 문제도 별도 항목에 넣어야 합니다.",
+          "en": "Central and southern Illinois industry and power concerns need a separate entry."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "아이오와 농촌의 전력 생산과 소비도 고려해야겠군요.",
+          "en": "Rural Iowa's electricity production and consumption deserve consideration."
+        },
+        {
+          "speaker": "player",
+          "ko": "공동 서한의 서명자와 각자의 지역을 연결하겠습니다.",
+          "en": "I'll match the signatories to their different regions."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "지역 배경을 {{blank}}로 구분하겠습니다.",
+        "en": "I'll distinguish the district backgrounds as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "IL-06 아이오와 농촌, IL-13 시카고 교외, IA-04 일리노이 중남부",
+            "en": "IL-06 rural Iowa; IL-13 Chicago suburbs; IA-04 central/southern Illinois"
+          },
+          {
+            "id": "B",
+            "ko": "세 의원 모두 동일한 지역구",
+            "en": "all three represent one district"
+          },
+          {
+            "id": "C",
+            "ko": "IL-06 교외·시카고 일부, IL-13 중남부 일리노이, IA-04 아이오와 농촌",
+            "en": "IL-06 suburbs/Chicago wards; IL-13 central/southern Illinois; IA-04 rural Iowa"
+          },
+          {
+            "id": "D",
+            "ko": "서한을 받았으므로 모든 지역의 보조금 승인",
+            "en": "all district grants approved because a letter was sent"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "캐스턴과 핀스트라가 주도한 서한에 부진스키도 서명했습니다. 서로 다른 지역 기반을 가진 공동 요청이지 지원금 승인이나 각 지역구 통과 경로를 입증하는 것은 아닙니다.",
+            "en": "Casten and Feenstra led the letter, and Budzinski signed. It was a joint request from distinct constituencies, not proof of a grant award or a route through every district."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "캐스턴과 핀스트라가 주도한 서한에 부진스키도 서명했습니다. 서로 다른 지역 기반을 가진 공동 요청이지 지원금 승인이나 각 지역구 통과 경로를 입증하는 것은 아닙니다.",
+            "en": "Casten and Feenstra led the letter, and Budzinski signed. It was a joint request from distinct constituencies, not proof of a grant award or a route through every district."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://casten.house.gov/media/press-releases/reps-casten-and-feenstra-lead-bipartisan-letter-in-support-of-soo-green",
+          "claim": "Joint letter and signatories.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://casten.house.gov/about",
+          "claim": "DuPage/Cook and Chicago wards.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://budzinski.house.gov/our-district",
+          "claim": "Central/southern Illinois district.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://feenstra.house.gov/",
+          "claim": "Iowa fourth district, 36-county tour.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2054-grid-coalition-regional-impact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2055",
+      "mechanism": "indianapolis-zip-triage",
+      "learningTarget": "House ZIP lookup 46235 returns Jefferson Shreve (IN-06) and André Carson (IN-07); Shreve also lists a Richmond district office. Indianapolis-area ZIP codes do not establish a single House district.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "인디애나 주민 지원 창구",
+        "en": "Indiana constituent intake"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "S001229",
+          "name": "Jefferson Shreve",
+          "ko": "제퍼슨 슈리브",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001229.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001229"
+        },
+        {
+          "id": "C001072",
+          "name": "André Carson",
+          "ko": "앤드리 카슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001072.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001072"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "인디애나폴리스 지역 주민이 46235라는 우편번호로 연방기관 민원을 냈습니다.",
+          "en": "An Indianapolis-area resident submitted federal casework with ZIP 46235."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 리치먼드 사무실 안내도 함께 준비되어 있습니다.",
+          "en": "My Richmond office guide is also available."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하원 우편번호 검색에서는 제 의원실도 후보로 나옵니다.",
+          "en": "The House ZIP lookup lists my office as another possibility."
+        },
+        {
+          "speaker": "player",
+          "ko": "아직 개인의 정확한 주소를 받지 못했습니다.",
+          "en": "We don't have the resident's exact address yet."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "IN-06과 IN-07 중 담당 의원실은 {{blank}}로 결정하겠습니다.",
+        "en": "I'll determine whether IN-06 or IN-07 is responsible by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "가까운 의원실만 선택",
+            "en": "choosing whichever office is closer"
+          },
+          {
+            "id": "B",
+            "ko": "실제 주소와 제119대 지역구 경계를 대조",
+            "en": "checking the exact address against 119th district boundaries"
+          },
+          {
+            "id": "C",
+            "ko": "인디애나폴리스 우편번호는 모두 IN-07로 처리",
+            "en": "assigning every Indianapolis ZIP to IN-07"
+          },
+          {
+            "id": "D",
+            "ko": "슈리브의 이전 시의회 직책으로 판단",
+            "en": "using Shreve's former city council office"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "46235는 슈리브와 카슨 모두를 반환합니다. 리치먼드 사무실 위치나 도시 이름만으로 개인의 지역구를 결정할 수 없습니다.",
+            "en": "46235 returns both Shreve and Carson. Neither Richmond office location nor city name determines an individual's district."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "46235는 슈리브와 카슨 모두를 반환합니다. 리치먼드 사무실 위치나 도시 이름만으로 개인의 지역구를 결정할 수 없습니다.",
+            "en": "46235 returns both Shreve and Carson. Neither Richmond office location nor city name determines an individual's district."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://ziplook.house.gov/htbin/findrep_house?ZIP=46235",
+          "claim": "ZIP 46235 lists IN-06 and IN-07.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://shreve.house.gov/",
+          "claim": "Richmond district office and sixth district.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2055-indianapolis-zip-triage"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2056",
+      "mechanism": "returning-member-boundary-dossier",
+      "learningTarget": "Cleo Fields served in 1993–1997 and returned to the House in 2025 as LA-06; his 2026 Northwestern State University funding announcement concerns Natchitoches, while current ZIP 70757 lists both LA-06 and Troy Carter's LA-02. Historical service is not the current map.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "루이지애나 의회 기록전",
+        "en": "Louisiana congressional archive"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "F000110",
+          "name": "Cleo Fields",
+          "ko": "클리오 필즈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000110.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000110"
+        },
+        {
+          "id": "C001125",
+          "name": "Troy A. Carter",
+          "ko": "트로이 카터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001125.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001125"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1990년대 제 재임 자료와 2025년 복귀 기록이 같은 전시판에 있습니다.",
+          "en": "My 1990s service record and 2025 return are on the same exhibit board."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "70757 주민의 문의도 들어왔는데 현재 검색은 두 의원을 표시합니다.",
+          "en": "A resident in 70757 has an inquiry, and today's lookup lists two members."
+        },
+        {
+          "speaker": "host",
+          "ko": "나키토시 대학 장비 지원 발표는 어느 시기의 자료로 둘까요?",
+          "en": "Where should we file the Natchitoches university equipment announcement?"
+        },
+        {
+          "speaker": "player",
+          "ko": "먼저 기록의 날짜와 대표 지역을 나누겠습니다.",
+          "en": "I'll separate dates and constituencies first."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "필즈의 2026년 나키토시 지원 발표는 {{blank}}에 연결하겠습니다.",
+        "en": "I'll attach Fields's 2026 Natchitoches funding announcement to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제119대 LA-06 기록",
+            "en": "the 119th Congress LA-06 record"
+          },
+          {
+            "id": "B",
+            "ko": "1993~1997년 재임 기록",
+            "en": "the 1993–1997 service record"
+          },
+          {
+            "id": "C",
+            "ko": "현행 LA-02 기록",
+            "en": "the current LA-02 record"
+          },
+          {
+            "id": "D",
+            "ko": "2027년 이후 경계 기록",
+            "en": "the post-2027 boundary record"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "필즈의 2026년 발표는 LA-06 재임 중 나왔습니다. 1990년대 재임과 현재의 지역구 경계를 동일시할 수 없고, 70757은 주소 확인이 필요합니다.",
+            "en": "Fields made the 2026 announcement while serving LA-06. His 1990s service does not establish today's boundary, and 70757 requires address verification."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "필즈의 2026년 발표는 LA-06 재임 중 나왔습니다. 1990년대 재임과 현재의 지역구 경계를 동일시할 수 없고, 70757은 주소 확인이 필요합니다.",
+            "en": "Fields made the 2026 announcement while serving LA-06. His 1990s service does not establish today's boundary, and 70757 requires address verification."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/F/FIELDS%2C-Cleo-%28F000110%29/",
+          "claim": "Nonconsecutive House service.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://fields.house.gov/media/press-releases/congressman-fields-announces-18-million-federal-funding-northwestern-state",
+          "claim": "Natchitoches university equipment grant announcement.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/htbin/findrep?ZIP=70757",
+          "claim": "ZIP lookup lists Fields and Carter.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2056-returning-member-boundary-dossier"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2057",
+      "mechanism": "chesapeake-three-region-routing",
+      "learningTarget": "MD-01 Harris's materials cover Eastern Shore institutions, MD-05 Hoyer's district materials include Southern Maryland colleges, and MD-08 Raskin represents parts of Montgomery County; distinguish regional context from statewide policy.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "메릴랜드 지역 정책 지도",
+        "en": "Maryland regional policy map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "H001052",
+          "name": "Andy Harris",
+          "ko": "앤디 해리스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001052.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001052"
+        },
+        {
+          "id": "H000874",
+          "name": "Steny H. Hoyer",
+          "ko": "스테니 호이어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H000874.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H000874"
+        },
+        {
+          "id": "R000606",
+          "name": "Jamie Raskin",
+          "ko": "제이미 래스킨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000606.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000606"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "체서피크만의 동쪽 대학, 남부 메릴랜드 교육기관, 몽고메리 주민 문의가 한 파일에 섞였습니다.",
+          "en": "An Eastern Shore university, a Southern Maryland college, and a Montgomery constituent inquiry were put in one file."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "동부 해안의 대학 관련 연방 지원 자료를 제 지역 기록과 대조해 보세요.",
+          "en": "Compare the Eastern Shore university's federal-support materials with my district record."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "남부 메릴랜드 교육기관 자료도 구분해야 합니다.",
+          "en": "The Southern Maryland college materials need a separate entry."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "몽고메리 카운티는 여러 지역구에 걸치므로 주소도 확인해야 합니다.",
+          "en": "Montgomery County spans districts, so check the address too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "세 지역의 대표 자료는 {{blank}} 순으로 분류하겠습니다.",
+        "en": "I'll classify the three regional records in the order {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "호이어 MD-05, 래스킨 MD-08, 해리스 MD-01",
+            "en": "Hoyer MD-05; Raskin MD-08; Harris MD-01"
+          },
+          {
+            "id": "B",
+            "ko": "래스킨 MD-08, 해리스 MD-01, 호이어 MD-05",
+            "en": "Raskin MD-08; Harris MD-01; Hoyer MD-05"
+          },
+          {
+            "id": "C",
+            "ko": "세 지역 모두 MD-05",
+            "en": "all three MD-05"
+          },
+          {
+            "id": "D",
+            "ko": "해리스 MD-01, 호이어 MD-05, 래스킨 MD-08",
+            "en": "Harris MD-01; Hoyer MD-05; Raskin MD-08"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해리스의 자료는 Eastern Shore, 호이어의 자료는 Southern Maryland, 래스킨의 공식 명부는 몽고메리 일부를 다룹니다. 카운티 전체를 한 의원에게 배정하지 않습니다.",
+            "en": "Harris's materials concern the Eastern Shore, Hoyer's Southern Maryland, and Raskin's official listing includes part of Montgomery. Do not assign an entire county to one office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "해리스의 자료는 Eastern Shore, 호이어의 자료는 Southern Maryland, 래스킨의 공식 명부는 몽고메리 일부를 다룹니다. 카운티 전체를 한 의원에게 배정하지 않습니다.",
+            "en": "Harris's materials concern the Eastern Shore, Hoyer's Southern Maryland, and Raskin's official listing includes part of Montgomery. Do not assign an entire county to one office."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://harris.house.gov/",
+          "claim": "University of Maryland Eastern Shore and Cambridge office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://hoyer.house.gov/content/marylands-5th-district",
+          "claim": "Southern Maryland colleges and economic development.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://2026mdmanual.msa.maryland.gov/msa/mdmanual/39fed/06ushse/html/msa14610.html",
+          "claim": "Maryland official manual identifies Raskin's district including part of Montgomery.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2057-chesapeake-three-region-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2058",
+      "mechanism": "massachusetts-coastal-office-pair",
+      "learningTarget": "Auchincloss's MA-04 office directory lists Newton and Fall River; Moulton's MA-06 has a Salem office. Distinguish SouthCoast and North Shore service locations.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "매사추세츠 지역 방문 계획",
+        "en": "Massachusetts regional visit plan"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "A000148",
+          "name": "Jake Auchincloss",
+          "ko": "제이크 오킨클로스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000148.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000148"
+        },
+        {
+          "id": "M001196",
+          "name": "Seth Moulton",
+          "ko": "세스 몰턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001196.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001196"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "뉴턴과 폴리버의 주민 상담 일정이 서로 다른 날에 있습니다.",
+          "en": "Newton and Fall River visits are scheduled on different days."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "세일럼에서 시작하는 방문 일정도 따로 준비해야 합니다.",
+          "en": "A separate visit begins in Salem."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 권역 안내를 한 의원실로 인쇄한 탓에 방문객이 혼란스럽습니다.",
+          "en": "Visitors are confused because the regional guides were printed under one office."
+        },
+        {
+          "speaker": "player",
+          "ko": "공식 사무실 목록으로 정정하겠습니다.",
+          "en": "I'll correct them using the official office list."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "폴리버와 세일럼의 안내는 각각 {{blank}}로 분리하겠습니다.",
+        "en": "I'll separate the Fall River and Salem guides under {{blank}}, respectively.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "몰턴 MA-06과 오킨클로스 MA-04",
+            "en": "Moulton MA-06 and Auchincloss MA-04"
+          },
+          {
+            "id": "B",
+            "ko": "둘 다 MA-04",
+            "en": "MA-04 for both"
+          },
+          {
+            "id": "C",
+            "ko": "오킨클로스 MA-04와 몰턴 MA-06",
+            "en": "Auchincloss MA-04 and Moulton MA-06"
+          },
+          {
+            "id": "D",
+            "ko": "둘 다 MA-06",
+            "en": "MA-06 for both"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "MA-04에는 폴리버와 뉴턴 사무실이 있고 MA-06 몰턴의 사무실은 세일럼에 있습니다. 이는 방문지 안내이지 주소별 지역구 판정은 아닙니다.",
+            "en": "MA-04 lists Fall River and Newton offices; Moulton's MA-06 office is in Salem. These are service locations, not address-level boundary determinations."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "MA-04에는 폴리버와 뉴턴 사무실이 있고 MA-06 몰턴의 사무실은 세일럼에 있습니다. 이는 방문지 안내이지 주소별 지역구 판정은 아닙니다.",
+            "en": "MA-04 lists Fall River and Newton offices; Moulton's MA-06 office is in Salem. These are service locations, not address-level boundary determinations."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://auchincloss.house.gov/",
+          "claim": "Newton and Fall River district offices.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://moulton.house.gov/",
+          "claim": "Salem district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.sec.state.ma.us/divisions/cis/government/gov-fed.htm",
+          "claim": "Massachusetts official federal office directory.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2058-massachusetts-coastal-office-pair"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2059",
+      "mechanism": "defense-versus-city-portfolio",
+      "learningTarget": "Mark Alford represents MO-04, whose official materials identify Whiteman Air Force Base and Fort Leonard Wood; Wesley Bell's MO-01 office is in St. Louis. Defense installations and urban constituent service are different geographic portfolios.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "미주리 산업 자료 전시",
+        "en": "Missouri industry exhibit"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "A000379",
+          "name": "Mark Alford",
+          "ko": "마크 앨퍼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000379.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000379"
+        },
+        {
+          "id": "B001324",
+          "name": "Wesley Bell",
+          "ko": "웨슬리 벨",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/B001324"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "군사시설의 지역 고용 자료와 세인트루이스 인턴십 안내가 같은 봉투에 들어 있습니다.",
+          "en": "A defense-employment brief and a St. Louis internship guide arrived in one envelope."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "첫 문서의 핵심은 화이트먼 공군기지와 포트 레너드 우드입니다.",
+          "en": "The first document concerns Whiteman and Fort Leonard Wood."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 번째는 제 지역 사무실에서 공공서비스를 경험하려는 학생용입니다.",
+          "en": "The second is for students seeking public-service experience in my district office."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 자료를 주 단위가 아니라 의원별 대표 영역으로 나누겠습니다.",
+          "en": "I'll separate the records by representative rather than state."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 군사시설의 지역 고용 자료는 {{blank}}에 연결하겠습니다.",
+        "en": "I'll link the two-installation employment brief to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "벨의 MO-01",
+            "en": "Bell's MO-01"
+          },
+          {
+            "id": "B",
+            "ko": "앨퍼드의 MO-04",
+            "en": "Alford's MO-04"
+          },
+          {
+            "id": "C",
+            "ko": "미주리 전주 단일 의석",
+            "en": "a statewide Missouri seat"
+          },
+          {
+            "id": "D",
+            "ko": "세인트루이스 시의회",
+            "en": "the St. Louis city council"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "앨퍼드의 공식 자료는 MO-04의 화이트먼과 포트 레너드 우드를 확인합니다. 벨의 세인트루이스 사무실과 별개입니다.",
+            "en": "Alford's official materials identify Whiteman and Fort Leonard Wood in MO-04, separate from Bell's St. Louis office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "앨퍼드의 공식 자료는 MO-04의 화이트먼과 포트 레너드 우드를 확인합니다. 벨의 세인트루이스 사무실과 별개입니다.",
+            "en": "Alford's official materials identify Whiteman and Fort Leonard Wood in MO-04, separate from Bell's St. Louis office."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://alford.house.gov/issues/issue/?IssueID=15041",
+          "claim": "Whiteman and Fort Leonard Wood in MO-04.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://alford.house.gov/news/documentsingle.aspx?DocumentID=1846",
+          "claim": "2026 statement identifies both installations in fourth district.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://bell.house.gov/services/internships",
+          "claim": "St. Louis district internship office (prior P01-2030 source).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2059-defense-versus-city-portfolio"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2060",
+      "mechanism": "jersey-coast-versus-camden",
+      "learningTarget": "Christopher Smith's NJ-04 includes municipalities in Monmouth and Ocean counties in the 119th Congress; Donald Norcross's NJ-01 office is in Camden. Compare coastal geography with Camden-based outreach.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "뉴저지 지역 대표단 지도",
+        "en": "New Jersey delegation map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "N000188",
+          "name": "Donald Norcross",
+          "ko": "도널드 노크로스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000188"
+        },
+        {
+          "id": "S000522",
+          "name": "Christopher H. Smith",
+          "ko": "크리스토퍼 스미스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000522.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000522"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "캠든 사무실에 연락하려는 노동자와 해안 지역 주민이 동시에 왔습니다.",
+          "en": "A worker seeking the Camden office and coastal residents arrived together."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "해안 지도에는 몬머스와 오션 카운티의 여러 자치단체가 표시되어 있습니다.",
+          "en": "The coastal map shows municipalities in Monmouth and Ocean counties."
+        },
+        {
+          "speaker": "aide",
+          "ko": "두 지역을 한 지역구로 분류했던 초안이 문제입니다.",
+          "en": "The draft incorrectly groups the two regions into one district."
+        },
+        {
+          "speaker": "player",
+          "ko": "지도에 전체 카운티가 아니라 포함되는 자치단체를 표시하겠습니다.",
+          "en": "I'll mark included municipalities, not entire counties."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해안 지도 자료는 {{blank}}에 배정하겠습니다.",
+        "en": "I'll assign the coastal map materials to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스미스 NJ-04",
+            "en": "Smith NJ-04"
+          },
+          {
+            "id": "B",
+            "ko": "노크로스 NJ-01",
+            "en": "Norcross NJ-01"
+          },
+          {
+            "id": "C",
+            "ko": "뉴저지 전주 단일 의석",
+            "en": "a statewide New Jersey seat"
+          },
+          {
+            "id": "D",
+            "ko": "캠든 시의회",
+            "en": "Camden city council"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "제119대 NJ-04는 몬머스와 오션 카운티의 여러 자치단체를 포함합니다. 노크로스는 NJ-01이며 캠든 사무실을 둡니다.",
+            "en": "The 119th NJ-04 includes municipalities in Monmouth and Ocean counties. Norcross represents NJ-01 and has a Camden office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "제119대 NJ-04는 몬머스와 오션 카운티의 여러 자치단체를 포함합니다. 노크로스는 NJ-01이며 캠든 사무실을 둡니다.",
+            "en": "The 119th NJ-04 includes municipalities in Monmouth and Ocean counties. Norcross represents NJ-01 and has a Camden office."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://chrissmith.house.gov/district/default.aspx",
+          "claim": "119th Congress Monmouth and Ocean municipalities.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://norcross.house.gov/about/our-district",
+          "claim": "Camden district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2060-jersey-coast-versus-camden"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2061",
+      "mechanism": "long-island-shoreline-contrast",
+      "learningTarget": "Gillen's NY-04 includes Nassau County's South Shore; Suozzi's NY-03 spans northeastern Queens and the North Shore, including parts of Nassau and Suffolk; county and congressional boundaries differ.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "롱아일랜드 지역 대표 안내",
+        "en": "Long Island representation guide"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "G000602",
+          "name": "Laura Gillen",
+          "ko": "로라 길런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000602.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000602"
+        },
+        {
+          "id": "S001201",
+          "name": "Thomas R. Suozzi",
+          "ko": "톰 수오지",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001201.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001201"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "헴프스테드 시절의 지방정부 자료와 지금의 연방 의석 자료가 섞였군요.",
+          "en": "My local-government record from Hempstead is mixed with my federal seat record."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "롱아일랜드 북부 해안 자료도 같은 나소 카운티라는 이유로 합쳐졌습니다.",
+          "en": "The North Shore file was merged just because it also concerns Nassau County."
+        },
+        {
+          "speaker": "host",
+          "ko": "지리 소개문을 두 부분으로 나누어 주세요.",
+          "en": "Please divide the geographic introduction into two parts."
+        },
+        {
+          "speaker": "player",
+          "ko": "도시 정부와 연방 지역구를 따로 표시하겠습니다.",
+          "en": "I'll distinguish municipal government from federal districts."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해안 권역은 {{blank}}로 구분하겠습니다.",
+        "en": "I'll distinguish the shore regions as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "길런 NY-04 북부 해안, 수오지 NY-03 남부 해안",
+            "en": "Gillen NY-04 North Shore; Suozzi NY-03 South Shore"
+          },
+          {
+            "id": "B",
+            "ko": "두 의원 모두 나소 전체",
+            "en": "both represent all Nassau"
+          },
+          {
+            "id": "C",
+            "ko": "두 의원 모두 Suffolk 전체",
+            "en": "both represent all Suffolk"
+          },
+          {
+            "id": "D",
+            "ko": "길런 NY-04 남부 해안, 수오지 NY-03 북부 해안",
+            "en": "Gillen NY-04 South Shore; Suozzi NY-03 North Shore"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "길런의 공식 약력은 나소 남부 해안, 수오지의 지역구 설명은 북부 해안과 퀸스 북동부 등을 언급합니다. 정확한 주소는 별도 확인해야 합니다.",
+            "en": "Gillen's biography identifies Nassau's South Shore; Suozzi's district description covers the North Shore and northeastern Queens, among other areas. Check exact addresses separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "길런의 공식 약력은 나소 남부 해안, 수오지의 지역구 설명은 북부 해안과 퀸스 북동부 등을 언급합니다. 정확한 주소는 별도 확인해야 합니다.",
+            "en": "Gillen's biography identifies Nassau's South Shore; Suozzi's district description covers the North Shore and northeastern Queens, among other areas. Check exact addresses separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://gillen.house.gov/about",
+          "claim": "Fourth district includes Nassau South Shore.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://suozzi.house.gov/about-new-yorks-third-congressional-district",
+          "claim": "Third district spans North Shore, northeastern Queens and parts of Suffolk.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2061-long-island-shoreline-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2062",
+      "mechanism": "hudson-valley-dated-dossiers",
+      "learningTarget": "Ryan served NY-19 in the 117th Congress and NY-18 in the 119th; his current office directory lists Newburgh, while Lawler's NY-17 includes parts of Rockland, Westchester, Putnam and Dutchess.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "허드슨 밸리 지도 비교실",
+        "en": "Hudson Valley map comparison"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "L000599",
+          "name": "Michael Lawler",
+          "ko": "마이크 롤러",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000599.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000599"
+        },
+        {
+          "id": "R000579",
+          "name": "Patrick Ryan",
+          "ko": "팻 라이언",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000579.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000579"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "2022년 특별선거 문서의 지역구 번호는 당시 기준으로 보존해 주세요.",
+          "en": "Please preserve the district number in the 2022 special-election file as of that time."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 제 지역구의 카운티 목록에는 록랜드와 웨스트체스터 등이 있습니다.",
+          "en": "My current district list includes Rockland and Westchester, among others."
+        },
+        {
+          "speaker": "aide",
+          "ko": "뉴버그 사무실의 현재 안내를 옛 특별선거 기록에 붙이려던 참입니다.",
+          "en": "We were about to attach the Newburgh office guide to the old special-election record."
+        },
+        {
+          "speaker": "player",
+          "ko": "현재 사무실 안내와 역사적 의석 기록을 구분하겠습니다.",
+          "en": "I'll separate current office information from historical seat records."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "뉴버그 사무실이 연결되는 현재 라이언의 의석은 {{blank}}입니다.",
+        "en": "The current Ryan seat associated with the Newburgh office is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NY-19 (2022년 기준)",
+            "en": "NY-19 (2022 record)"
+          },
+          {
+            "id": "B",
+            "ko": "NY-17",
+            "en": "NY-17"
+          },
+          {
+            "id": "C",
+            "ko": "NY-18",
+            "en": "NY-18"
+          },
+          {
+            "id": "D",
+            "ko": "NY-24",
+            "en": "NY-24"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "라이언은 2022년 NY-19에 취임했으나 현행 NY-18의 의원입니다. 뉴버그 안내는 현재 기록에 두고 롤러의 NY-17 카운티 자료와 구분합니다.",
+            "en": "Ryan entered the House in NY-19 in 2022 but represents NY-18 now. File Newburgh in the current record, separate from Lawler's NY-17 county guide."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "라이언은 2022년 NY-19에 취임했으나 현행 NY-18의 의원입니다. 뉴버그 안내는 현재 기록에 두고 롤러의 NY-17 카운티 자료와 구분합니다.",
+            "en": "Ryan entered the House in NY-19 in 2022 but represents NY-18 now. File Newburgh in the current record, separate from Lawler's NY-17 county guide."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/Members/ViewVacancies",
+          "claim": "Ryan's 2022 seat succession chronology; prior audit evidence.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://patryan.house.gov/",
+          "claim": "NY-18 and Newburgh district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://lawler.house.gov/about/our-district.htm",
+          "claim": "NY-17 current county description.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2062-hudson-valley-dated-dossiers"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2063",
+      "mechanism": "finger-lakes-farm-map",
+      "learningTarget": "Tenney's NY-24 in the 119th Congress includes Wayne, Oswego, Seneca and Yates counties, among others, and describes farming; the 2021 Clerk record identifies her as NY-22, while Lawler's NY-17 includes Hudson Valley counties.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "뉴욕 북부 농업 지도",
+        "en": "Upstate New York farm map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "T000478",
+          "name": "Claudia Tenney",
+          "ko": "클라우디아 테니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000478.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000478"
+        },
+        {
+          "id": "L000599",
+          "name": "Michael Lawler",
+          "ko": "마이크 롤러",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000599.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000599"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2021년 제 서명 기록과 현재 농업 지역 설명을 한꺼번에 보여주고 있군요.",
+          "en": "You're displaying my 2021 signature record alongside today's farm-region guide."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 허드슨 밸리 자료와 핑거레이크스 자료를 구분하는 게 좋겠습니다.",
+          "en": "Let's distinguish my Hudson Valley materials from the Finger Lakes brief."
+        },
+        {
+          "speaker": "host",
+          "ko": "웨인·세네카·예이츠 카운티 지도에 붙일 현재 지역구 표찰을 골라 주세요.",
+          "en": "Choose the current district label for the Wayne, Seneca and Yates county map."
+        },
+        {
+          "speaker": "player",
+          "ko": "과거 번호 대신 제119대 의회 자료를 기준으로 하겠습니다.",
+          "en": "I'll use the 119th Congress record, not the earlier number."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이 농업 지도는 {{blank}}에 해당합니다.",
+        "en": "This farm-region map belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "테니의 2021년 NY-22",
+            "en": "Tenney's 2021 NY-22"
+          },
+          {
+            "id": "B",
+            "ko": "테니의 NY-24",
+            "en": "Tenney's NY-24"
+          },
+          {
+            "id": "C",
+            "ko": "롤러의 NY-17",
+            "en": "Lawler's NY-17"
+          },
+          {
+            "id": "D",
+            "ko": "라이언의 NY-18",
+            "en": "Ryan's NY-18"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "테니의 현행 NY-24 설명에는 웨인·세네카·예이츠 등 농업 지역 카운티가 포함됩니다. 2021년 NY-22 기록은 그대로 별도 보존합니다.",
+            "en": "Tenney's current NY-24 guide includes agricultural counties such as Wayne, Seneca and Yates. Keep the 2021 NY-22 record separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "테니의 현행 NY-24 설명에는 웨인·세네카·예이츠 등 농업 지역 카운티가 포함됩니다. 2021년 NY-22 기록은 그대로 별도 보존합니다.",
+            "en": "Tenney's current NY-24 guide includes agricultural counties such as Wayne, Seneca and Yates. Keep the 2021 NY-22 record separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://tenney.house.gov/about/our-district",
+          "claim": "119th district counties and agricultural context.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/DischargePetition/20210420",
+          "claim": "2021 record identifies Tenney as NY-22.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://lawler.house.gov/about/our-district.htm",
+          "claim": "Current NY-17 county list.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2063-finger-lakes-farm-map"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2064",
+      "mechanism": "maternal-health-national-local",
+      "learningTarget": "Alma Adams (NC-12) represents much of Charlotte and co-leads Black maternal health work with Lauren Underwood (IL-14); their 2026 Momnibus announcement is national legislation, not a Charlotte-only service.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "모성건강 정책 자료회",
+        "en": "Maternal health policy exhibit"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "A000370",
+          "name": "Alma S. Adams",
+          "ko": "앨마 애덤스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000370.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000370"
+        },
+        {
+          "id": "U000040",
+          "name": "Lauren Underwood",
+          "ko": "로런 언더우드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/U000040.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/U000040"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "모성 사망을 줄이기 위한 연방 입법 자료를 정리합시다.",
+          "en": "Let's organize the federal proposal to reduce maternal deaths."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "샬럿의 주민 보건 상담 자료도 별도로 준비했습니다.",
+          "en": "There is also a separate Charlotte constituent-health guide."
+        },
+        {
+          "speaker": "host",
+          "ko": "전국 입법을 한 도시의 프로그램으로 소개하면 안 되겠지요?",
+          "en": "We shouldn't describe national legislation as a one-city program, should we?"
+        },
+        {
+          "speaker": "player",
+          "ko": "지역구 민원과 공동 연방 입법을 분리하겠습니다.",
+          "en": "I'll separate local casework from the joint federal proposal."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "샬럿 지역 자료는 {{blank}}로 분류하고 Momnibus는 전국 입법 기록에 두겠습니다.",
+        "en": "I'll file the Charlotte materials under {{blank}} and keep Momnibus in the national legislative record.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "애덤스 NC-12",
+            "en": "Adams NC-12"
+          },
+          {
+            "id": "B",
+            "ko": "언더우드 IL-14",
+            "en": "Underwood IL-14"
+          },
+          {
+            "id": "C",
+            "ko": "두 의원의 단일 공동 지역구",
+            "en": "one shared congressional district"
+          },
+          {
+            "id": "D",
+            "ko": "상원의원 코리 부커의 하원 지역구",
+            "en": "Senator Cory Booker's House district"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "애덤스의 NC-12는 샬럿 지역을 대표하며, 언더우드와 공동으로 추진한 Momnibus는 연방 입법입니다. 각각의 지역 대표성은 별개입니다.",
+            "en": "Adams's NC-12 represents Charlotte-area communities; the Momnibus advanced with Underwood is federal legislation. Their constituencies remain distinct."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "애덤스의 NC-12는 샬럿 지역을 대표하며, 언더우드와 공동으로 추진한 Momnibus는 연방 입법입니다. 각각의 지역 대표성은 별개입니다.",
+            "en": "Adams's NC-12 represents Charlotte-area communities; the Momnibus advanced with Underwood is federal legislation. Their constituencies remain distinct."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://adams.house.gov/media-center/press-releases/adams-underwood-booker-reintroduce-momnibus-reduce-maternal-deaths",
+          "claim": "Adams and Underwood with Booker reintroduce Momnibus.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://adams.house.gov/about/our-district",
+          "claim": "NC-12 district office in Charlotte.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://adams.house.gov/media-center/in-the-news",
+          "claim": "Official office-hosted report identifies much of Charlotte.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2064-maternal-health-national-local"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2065",
+      "mechanism": "ohio-urban-project-matching",
+      "learningTarget": "Landsman's OH-01 FY2026 funding materials identify Cincinnati Northside housing renovation and Warren County transportation work; Sykes's OH-13 constituent-resource list covers Akron. Distinguish southwest and northeast Ohio local issues.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "오하이오 도시 사업 설명회",
+        "en": "Ohio urban project briefing"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "L000601",
+          "name": "Greg Landsman",
+          "ko": "그레그 랜즈먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000601.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000601"
+        },
+        {
+          "id": "S001223",
+          "name": "Emilia Strong Sykes",
+          "ko": "에밀리아 사이크스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001223.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001223"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "북부 신시내티의 주택 개보수 사업과 워런 카운티 교통 자료가 왔습니다.",
+          "en": "Here are a Cincinnati Northside housing project and Warren County transportation materials."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "애크런 주민을 위한 복지 자원 안내는 별개의 문서입니다.",
+          "en": "The Akron community-resource guide is a separate document."
+        },
+        {
+          "speaker": "aide",
+          "ko": "사업 요청 목록과 주민 복지 서비스 목록을 구분해야 합니다.",
+          "en": "We need to distinguish project requests from a community-resource guide."
+        },
+        {
+          "speaker": "player",
+          "ko": "각 도시의 의원실 자료를 확인하겠습니다.",
+          "en": "I'll check the office materials for each city."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "신시내티 주택 사업 요청 목록은 {{blank}}에 연결하겠습니다.",
+        "en": "I'll attach the Cincinnati housing project request list to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "사이크스 OH-13",
+            "en": "Sykes OH-13"
+          },
+          {
+            "id": "B",
+            "ko": "두 의원의 동일한 지역구",
+            "en": "the two members' shared district"
+          },
+          {
+            "id": "C",
+            "ko": "애크런 시의회",
+            "en": "Akron city council"
+          },
+          {
+            "id": "D",
+            "ko": "랜즈먼 OH-01",
+            "en": "Landsman OH-01"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "랜즈먼의 OH-01 FY26 자료에는 신시내티 Northside 주택 사업이 포함됩니다. 사이크스의 OH-13 자료는 애크런 주민 자원 안내입니다.",
+            "en": "Landsman's OH-01 FY26 list includes the Cincinnati Northside housing project; Sykes's OH-13 guide covers Akron resources."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "랜즈먼의 OH-01 FY26 자료에는 신시내티 Northside 주택 사업이 포함됩니다. 사이크스의 OH-13 자료는 애크런 주민 자원 안내입니다.",
+            "en": "Landsman's OH-01 FY26 list includes the Cincinnati Northside housing project; Sykes's OH-13 guide covers Akron resources."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://landsman.house.gov/community-project-funding-fy26",
+          "claim": "Cincinnati Northside housing and Warren County SR48 project list.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://sykes.house.gov/community-resource-list",
+          "claim": "OH-13 community resources including Akron.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2065-ohio-urban-project-matching"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2066",
+      "mechanism": "watershed-versus-city-boundary",
+      "learningTarget": "Bynum (OR-05) and Senator Merkley introduced Deschutes River protection legislation in 2025; Dexter's OR-03 includes all Gresham and most Portland east of the Willamette. Compare distinct regional policy contexts without claiming a joint meeting.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "오리건 물 관리와 도시 지도",
+        "en": "Oregon water and urban map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "B001326",
+          "name": "Janelle S. Bynum",
+          "ko": "저넬 바이넘",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001326.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001326"
+        },
+        {
+          "id": "D000635",
+          "name": "Maxine Dexter",
+          "ko": "맥신 덱스터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000635.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000635"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "센트럴 오리건의 하천 수량과 수질을 다루는 입법 자료를 가져왔습니다.",
+          "en": "I brought legislative materials on Central Oregon river flow and water quality."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지도에는 윌라멧강 동쪽 도시권과 그레셤이 표시되어 있습니다.",
+          "en": "My map shows the urban area east of the Willamette and Gresham."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 하천 이름을 혼동해 정책 자료의 지역 표찰이 바뀌었습니다.",
+          "en": "The river names were confused and the regional policy labels were switched."
+        },
+        {
+          "speaker": "player",
+          "ko": "법안과 도시 지역구 설명을 각각 연결하겠습니다.",
+          "en": "I'll match the bill and the urban district description separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "데슈츠강 보호 입법 자료는 {{blank}}에 해당합니다.",
+        "en": "The Deschutes River protection proposal belongs with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "덱스터 OR-03의 그레셤 지리 기록",
+            "en": "Dexter OR-03's Gresham geography record"
+          },
+          {
+            "id": "B",
+            "ko": "오리건 전주 단일 의석",
+            "en": "a statewide Oregon seat"
+          },
+          {
+            "id": "C",
+            "ko": "바이넘 OR-05의 센트럴 오리건 정책 기록",
+            "en": "Bynum OR-05's Central Oregon policy record"
+          },
+          {
+            "id": "D",
+            "ko": "포틀랜드 시의회 단독 법안",
+            "en": "a Portland city council bill"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "바이넘은 머클리 상원의원과 데슈츠강 보호 법안을 발의했습니다. 덱스터의 OR-03 설명은 그레셤과 포틀랜드 동부이며, 두 자료의 지역을 구별합니다.",
+            "en": "Bynum introduced Deschutes legislation with Senator Merkley; Dexter's OR-03 description concerns Gresham and east Portland. Keep the regions distinct."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "바이넘은 머클리 상원의원과 데슈츠강 보호 법안을 발의했습니다. 덱스터의 OR-03 설명은 그레셤과 포틀랜드 동부이며, 두 자료의 지역을 구별합니다.",
+            "en": "Bynum introduced Deschutes legislation with Senator Merkley; Dexter's OR-03 description concerns Gresham and east Portland. Keep the regions distinct."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bynum.house.gov/media/press-releases/bynum-and-merkley-introduce-legislation-protect-deschutes-river",
+          "claim": "Bynum/Merkley proposal and Central Oregon watershed.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://dexter.house.gov/about/our-district",
+          "claim": "OR-03 Gresham and east Portland.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2066-watershed-versus-city-boundary"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2067",
+      "mechanism": "river-basin-not-constituency",
+      "learningTarget": "Deluzio's PA-17 includes all Beaver County and part of Allegheny County; he and Sykes (OH-13) appear in the 2024 Ohio River Basin Caucus membership. The basin is not a House district.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "오하이오강 유역 회의 자료실",
+        "en": "Ohio River Basin archive"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "D000530",
+          "name": "Christopher R. Deluzio",
+          "ko": "크리스 델루지오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000530.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000530"
+        },
+        {
+          "id": "S001223",
+          "name": "Emilia Strong Sykes",
+          "ko": "에밀리아 사이크스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001223.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001223"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "유역 코커스 명부를 보면 여러 주의 의원이 함께 참여합니다.",
+          "en": "The basin caucus roster includes members from different states."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역 설명에는 비버 카운티 전역과 앨러게니 일부가 들어 있습니다.",
+          "en": "My district guide includes all of Beaver County and part of Allegheny."
+        },
+        {
+          "speaker": "host",
+          "ko": "유역 전체를 하나의 하원 지역구로 그린 지도가 들어왔습니다.",
+          "en": "A map treats the entire river basin as one House district."
+        },
+        {
+          "speaker": "player",
+          "ko": "유역 정책과 선거구를 별도 범례로 분리하겠습니다.",
+          "en": "I'll give the watershed and constituencies separate map layers."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "비버 카운티 전역에 관한 대표성 설명은 {{blank}}에 해당합니다.",
+        "en": "The representation description covering all Beaver County belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "사이크스 OH-13",
+            "en": "Sykes OH-13"
+          },
+          {
+            "id": "B",
+            "ko": "델루지오 PA-17",
+            "en": "Deluzio PA-17"
+          },
+          {
+            "id": "C",
+            "ko": "오하이오강 유역 전체의 단일 의원",
+            "en": "one member for the whole Ohio River basin"
+          },
+          {
+            "id": "D",
+            "ko": "펜실베이니아 전주 단일 의석",
+            "en": "a statewide Pennsylvania seat"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "델루지오의 PA-17은 비버 카운티 전역과 앨러게니 일부를 포함합니다. 유역 코커스 참여가 다른 의원의 지역구를 동일하게 만들지는 않습니다.",
+            "en": "Deluzio's PA-17 contains all Beaver County and part of Allegheny. Shared basin-caucus participation does not merge constituencies."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "델루지오의 PA-17은 비버 카운티 전역과 앨러게니 일부를 포함합니다. 유역 코커스 참여가 다른 의원의 지역구를 동일하게 만들지는 않습니다.",
+            "en": "Deluzio's PA-17 contains all Beaver County and part of Allegheny. Shared basin-caucus participation does not merge constituencies."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://deluzio.house.gov/about",
+          "claim": "PA-17 Beaver and Allegheny coverage.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://sykes.house.gov/community-resource-list",
+          "claim": "OH-13 Ohio constituent resources.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/dialogue-packs/P01/part-62.json",
+          "claim": "Prior P01-1537 identifies documented caucus membership; use its evidence.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2067-river-basin-not-constituency"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2068",
+      "mechanism": "rural-airport-versus-upstate",
+      "learningTarget": "Clyburn's SC-06 2026 rural airport grant announcement includes an Orangeburg airport layout-plan project; Timmons represents SC-04 in the Upstate. Distinguish local award from statewide delegation roles.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "사우스캐롤라이나 공항 지원 자료",
+        "en": "South Carolina airport funding archive"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "C000537",
+          "name": "James E. Clyburn",
+          "ko": "짐 클라이번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000537.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000537"
+        },
+        {
+          "id": "T000480",
+          "name": "William R. Timmons IV",
+          "ko": "윌리엄 티먼스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000480.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000480"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "농촌 공항 지원 발표에 도시별 사업 항목이 들어 있습니다.",
+          "en": "The rural airport funding announcement lists projects by city."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 Upstate 자료와 섞이지 않도록 해당 의원실 발표를 확인하세요.",
+          "en": "Check the issuing office so the document isn't mixed with my Upstate materials."
+        },
+        {
+          "speaker": "host",
+          "ko": "오렌지버그 공항 계획 갱신 항목의 표찰이 빠졌습니다.",
+          "en": "The Orangeburg airport layout-plan entry is missing its label."
+        },
+        {
+          "speaker": "player",
+          "ko": "사업 발표를 한 의원과 실제 사업 단계를 기록하겠습니다.",
+          "en": "I'll record the announcing member and actual project stage."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "오렌지버그 공항 배치 계획 지원은 {{blank}}의 발표에 포함됩니다.",
+        "en": "The Orangeburg airport layout-plan grant appears in {{blank}}'s announcement.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "클라이번 SC-06",
+            "en": "Clyburn SC-06"
+          },
+          {
+            "id": "B",
+            "ko": "티먼스 SC-04",
+            "en": "Timmons SC-04"
+          },
+          {
+            "id": "C",
+            "ko": "두 의원의 단일 공동 지역구",
+            "en": "the two members' shared district"
+          },
+          {
+            "id": "D",
+            "ko": "주 전체 공항 공사 완료 보고",
+            "en": "a statewide completed-construction report"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "클라이번의 SC-06 농촌 공항 발표는 오렌지버그 배치 계획 갱신을 포함합니다. 티먼스의 SC-04와 별개이며 공사 완료라는 뜻은 아닙니다.",
+            "en": "Clyburn's SC-06 rural-airport announcement includes an Orangeburg layout-plan update. It is distinct from Timmons's SC-04 and does not mean construction is complete."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "클라이번의 SC-06 농촌 공항 발표는 오렌지버그 배치 계획 갱신을 포함합니다. 티먼스의 SC-04와 별개이며 공사 완료라는 뜻은 아닙니다.",
+            "en": "Clyburn's SC-06 rural-airport announcement includes an Orangeburg layout-plan update. It is distinct from Timmons's SC-04 and does not mean construction is complete."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clyburn.house.gov/clyburn-announces-1642458-in-department-of-transportation-aviation-grant-funding-for-rural-airports-in-south-carolinas-6th-congressional-district/",
+          "claim": "Orangeburg airport layout plan grant.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th roster Clyburn SC-06 and Timmons SC-04.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2068-rural-airport-versus-upstate"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2069",
+      "mechanism": "east-west-texas-policy-exhibit",
+      "learningTarget": "Moran's TX-01 stretches through East Texas Piney Woods along the Louisiana border; Pfluger's TX-11 includes the Permian Basin, whose oil and gas industry appears in his 119th Congress policy materials.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "텍사스 지역경제 전시",
+        "en": "Texas regional economy exhibit"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "M001224",
+          "name": "Nathaniel Moran",
+          "ko": "너새니얼 모런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001224.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001224"
+        },
+        {
+          "id": "P000048",
+          "name": "August Pfluger",
+          "ko": "어거스트 플루거",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000048.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000048"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역 지도는 동부 텍사스의 숲과 루이지애나 접경을 보여줍니다.",
+          "en": "My district map shows East Texas forests and the Louisiana border."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "에너지 산업 자료는 퍼미안 분지의 석유·가스 생산을 다룹니다.",
+          "en": "The energy industry brief covers oil and gas production in the Permian Basin."
+        },
+        {
+          "speaker": "host",
+          "ko": "텍사스라는 이름만 남아 있는 전시 라벨을 복원해 주세요.",
+          "en": "Restore the exhibit labels that currently say only Texas."
+        },
+        {
+          "speaker": "player",
+          "ko": "동부와 서부·중부 지역의 경제 지리를 분리하겠습니다.",
+          "en": "I'll distinguish eastern and western/central economic geography."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 자료는 {{blank}}로 연결하겠습니다.",
+        "en": "I'll label the two files as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "모런 TX-01 퍼미안 에너지, 플루거 TX-11 동부 숲",
+            "en": "Moran TX-01 Permian energy; Pfluger TX-11 East Texas forests"
+          },
+          {
+            "id": "B",
+            "ko": "두 자료 모두 TX-11",
+            "en": "both TX-11"
+          },
+          {
+            "id": "C",
+            "ko": "두 자료 모두 TX-01",
+            "en": "both TX-01"
+          },
+          {
+            "id": "D",
+            "ko": "모런 TX-01 동부 숲, 플루거 TX-11 퍼미안 에너지",
+            "en": "Moran TX-01 East Texas forests; Pfluger TX-11 Permian energy"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "모런의 TX-01 설명은 Piney Woods와 동부 접경, 플루거의 TX-11 자료는 퍼미안 분지의 에너지 산업을 다룹니다.",
+            "en": "Moran's TX-01 guide concerns the Piney Woods and eastern border; Pfluger's TX-11 materials concern Permian Basin energy."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "모런의 TX-01 설명은 Piney Woods와 동부 접경, 플루거의 TX-11 자료는 퍼미안 분지의 에너지 산업을 다룹니다.",
+            "en": "Moran's TX-01 guide concerns the Piney Woods and eastern border; Pfluger's TX-11 materials concern Permian Basin energy."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://moran.house.gov/about/our-district.htm",
+          "claim": "East Texas Piney Woods and Louisiana border.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://pfluger.house.gov/news/documentsingle.aspx?DocumentID=2231",
+          "claim": "119th Congress Permian Basin energy context.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2069-east-west-texas-policy-exhibit"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2070",
+      "mechanism": "south-texas-versus-fort-bend",
+      "learningTarget": "De La Cruz's TX-15 materials describe southern border and agrarian communities; Nehls's TX-22 district guide identifies most Fort Bend County including Richmond and Sugar Land areas. Compare policy geography, not former jobs.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "텍사스 남부와 휴스턴 교외 지도",
+        "en": "South Texas and Houston suburbs map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "D000594",
+          "name": "Monica De La Cruz",
+          "ko": "모니카 데라크루스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000594.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000594"
+        },
+        {
+          "id": "N000026",
+          "name": "Troy E. Nehls",
+          "ko": "트로이 넬스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000026.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000026"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "남부 국경과 농업 지역 주민을 위한 안내문을 가져왔습니다.",
+          "en": "I brought a guide for southern border and farming communities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다른 지도는 포트벤드의 리치먼드와 슈거랜드 일대를 다룹니다.",
+          "en": "The other map concerns Richmond and Sugar Land in Fort Bend."
+        },
+        {
+          "speaker": "host",
+          "ko": "과거 직업 자료가 아니라 현재 지역구 설명에 맞춰 분류해야 합니다.",
+          "en": "Classify the guides by current district descriptions, not earlier professions."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역구가 카운티 전체와 일치한다고 가정하지 않겠습니다.",
+          "en": "I won't assume a district matches an entire county."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "포트벤드 지도 자료는 {{blank}}에 연결하겠습니다.",
+        "en": "I'll attach the Fort Bend map to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데라크루스 TX-15",
+            "en": "De La Cruz TX-15"
+          },
+          {
+            "id": "B",
+            "ko": "텍사스 전주 단일 의석",
+            "en": "a statewide Texas seat"
+          },
+          {
+            "id": "C",
+            "ko": "넬스 TX-22",
+            "en": "Nehls TX-22"
+          },
+          {
+            "id": "D",
+            "ko": "리오그란데밸리 전체의 단일 지방정부",
+            "en": "one local government for the Rio Grande Valley"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "넬스의 TX-22 공식 설명은 포트벤드 대부분과 리치먼드 등 도시를 포함합니다. 데라크루스 TX-15 자료는 남부 국경·농업 지역을 다룹니다.",
+            "en": "Nehls's TX-22 guide covers most of Fort Bend and cities including Richmond; De La Cruz's TX-15 materials describe southern border and agricultural communities."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "넬스의 TX-22 공식 설명은 포트벤드 대부분과 리치먼드 등 도시를 포함합니다. 데라크루스 TX-15 자료는 남부 국경·농업 지역을 다룹니다.",
+            "en": "Nehls's TX-22 guide covers most of Fort Bend and cities including Richmond; De La Cruz's TX-15 materials describe southern border and agricultural communities."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://delacruz.house.gov/news/documentsingle.aspx?DocumentID=30",
+          "claim": "TX-15 southern border and agrarian communities.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://nehls.house.gov/about/our-district",
+          "claim": "TX-22 majority of Fort Bend and named cities.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2070-south-texas-versus-fort-bend"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2071",
+      "mechanism": "dallas-dual-office-and-counties",
+      "learningTarget": "Crockett's TX-30 includes portions of Dallas and Tarrant counties, including South Dallas communities; Johnson's TX-32 maintains a Richardson office. Metro/county boundaries do not determine an individual district.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "댈러스 광역권 주민 안내",
+        "en": "Dallas metro constituent guide"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "C001130",
+          "name": "Jasmine Crockett",
+          "ko": "재스민 크로켓",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001130.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001130"
+        },
+        {
+          "id": "J000310",
+          "name": "Julie Johnson",
+          "ko": "줄리 존슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000310.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/J000310"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역 지도에는 댈러스와 태런트 카운티의 일부, 그리고 댈러스 남부 공동체가 표시됩니다.",
+          "en": "My district map shows parts of Dallas and Tarrant counties and South Dallas communities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 연방기관 상담 안내에는 리처드슨 사무실이 나옵니다.",
+          "en": "My federal casework guide lists a Richardson office."
+        },
+        {
+          "speaker": "aide",
+          "ko": "두 지역 모두 댈러스 광역권이라고 해서 모든 주민을 한 의원에게 보내려던 참입니다.",
+          "en": "We were about to route everyone in the Dallas metro to one member."
+        },
+        {
+          "speaker": "player",
+          "ko": "광역권 지도와 실제 의원실 관할을 별개로 처리하겠습니다.",
+          "en": "I'll separate the metro map from actual constituency routing."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 안내 자료를 {{blank}}로 정리하겠습니다.",
+        "en": "I'll organize the two guides under {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "존슨 TX-32 댈러스 남부·태런트 일부, 크로켓 TX-30 리처드슨 사무실",
+            "en": "Johnson TX-32 South Dallas/part of Tarrant; Crockett TX-30 Richardson office"
+          },
+          {
+            "id": "B",
+            "ko": "크로켓 TX-30 댈러스 남부·태런트 일부, 존슨 TX-32 리처드슨 사무실",
+            "en": "Crockett TX-30 South Dallas/part of Tarrant; Johnson TX-32 Richardson office"
+          },
+          {
+            "id": "C",
+            "ko": "댈러스 광역권 전체 TX-30",
+            "en": "all Dallas metro TX-30"
+          },
+          {
+            "id": "D",
+            "ko": "댈러스 광역권 전체 TX-32",
+            "en": "all Dallas metro TX-32"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "크로켓의 TX-30 지역 설명과 존슨의 TX-32 리처드슨 방문 안내를 구분합니다. 주민 거주지는 정확한 주소를 확인합니다.",
+            "en": "Separate Crockett's TX-30 district description from Johnson's TX-32 Richardson office guide. Verify each resident's actual address."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "크로켓의 TX-30 지역 설명과 존슨의 TX-32 리처드슨 방문 안내를 구분합니다. 주민 거주지는 정확한 주소를 확인합니다.",
+            "en": "Separate Crockett's TX-30 district description from Johnson's TX-32 Richardson office guide. Verify each resident's actual address."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://crockett.house.gov/about/our-district",
+          "claim": "Dallas and Tarrant portions, South Dallas.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://juliejohnson.house.gov/contact/offices/district-office-3",
+          "claim": "Richardson district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://juliejohnson.house.gov/",
+          "claim": "Johnson represents TX-32.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2071-dallas-dual-office-and-counties"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2072",
+      "mechanism": "academy-residency-county-split",
+      "learningTarget": "Carter's TX-31 academy guide covers entire Bosque, Burnet, Coryell and Hamilton counties but only parts of Bell and Williamson; Pfluger represents TX-11. A Williamson address alone at county level cannot establish TX-31 eligibility.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "텍사스 사관학교 추천 상담",
+        "en": "Texas academy nomination desk"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "C001051",
+          "name": "John R. Carter",
+          "ko": "존 카터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001051.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001051"
+        },
+        {
+          "id": "P000048",
+          "name": "August Pfluger",
+          "ko": "어거스트 플루거",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000048.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000048"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "윌리엄슨 카운티 학생이 사관학교 추천 자격을 문의했습니다.",
+          "en": "A Williamson County student asks about academy nomination eligibility."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 안내문은 전역이 포함되는 카운티와 일부만 포함되는 카운티를 구분합니다.",
+          "en": "My guide distinguishes whole counties from partial counties."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "텍사스에는 다른 하원 지역구도 많으니 주소 확인이 중요합니다.",
+          "en": "Texas has many other House districts, so an address check matters."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 이름만으로 추천 관할을 확정하지 않겠습니다.",
+          "en": "I won't decide nomination jurisdiction using the county name alone."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "윌리엄슨 카운티 신청자는 {{blank}}가 필요합니다.",
+        "en": "The Williamson County applicant needs {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정확한 거주 주소로 TX-31 포함 여부 확인",
+            "en": "verification of whether the exact residence is in TX-31"
+          },
+          {
+            "id": "B",
+            "ko": "윌리엄슨이면 자동으로 TX-31 승인",
+            "en": "automatic TX-31 approval for any Williamson resident"
+          },
+          {
+            "id": "C",
+            "ko": "TX-11 의원의 자동 추천",
+            "en": "automatic nomination by the TX-11 member"
+          },
+          {
+            "id": "D",
+            "ko": "카운티 판사의 추천만 제출",
+            "en": "only a county judge nomination"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "카터의 TX-31 안내는 윌리엄슨과 벨 일부만 포함한다고 명시합니다. 추천 자격은 거주 주소 확인 후 판단해야 합니다.",
+            "en": "Carter's TX-31 guide explicitly lists only parts of Williamson and Bell. Determine eligibility after verifying residence."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "카터의 TX-31 안내는 윌리엄슨과 벨 일부만 포함한다고 명시합니다. 추천 자격은 거주 주소 확인 후 판단해야 합니다.",
+            "en": "Carter's TX-31 guide explicitly lists only parts of Williamson and Bell. Determine eligibility after verifying residence."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://carter.house.gov/academy-nominations/",
+          "claim": "TX-31 full and partial county list.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://pfluger.house.gov/news/documentsingle.aspx?DocumentID=2231",
+          "claim": "TX-11 member and district context.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2072-academy-residency-county-split"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2073",
+      "mechanism": "virginia-transport-versus-northern-counties",
+      "learningTarget": "McGuire's VA-05 official 2026 transportation tour included Lynchburg Regional Airport and Appomattox; Subramanyam's VA-10 inaugural release identifies Loudoun, Rappahannock, Fauquier and parts of Prince William and Fairfax. Distinguish regional transport and northern Virginia geography.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "버지니아 교통·지역 지도",
+        "en": "Virginia transport and regional map"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "M001239",
+          "name": "John J. McGuire III",
+          "ko": "존 맥과이어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001239.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001239"
+        },
+        {
+          "id": "S001230",
+          "name": "Suhas Subramanyam",
+          "ko": "수하스 수브라마냠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001230.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001230"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "교통부 장관의 제5지역구 방문 발표를 지역 인프라 기록에 넣고 싶습니다.",
+          "en": "I'd like to file the Transportation Secretary's fifth-district tour in the infrastructure record."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지역 설명에는 라우던과 포키어 등 북부 버지니아 카운티가 있습니다.",
+          "en": "My district description lists Loudoun and Fauquier, among other northern Virginia counties."
+        },
+        {
+          "speaker": "aide",
+          "ko": "린치버그 공항과 북부 카운티 지도가 한 폴더로 합쳐졌습니다.",
+          "en": "The Lynchburg airport and northern-county maps were merged."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원의 별도 공식 발표를 대조하겠습니다.",
+          "en": "I'll compare the two distinct official releases."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "린치버그 공항과 애퍼매턱스 방문 기록은 {{blank}}에 연결하겠습니다.",
+        "en": "I'll attach the Lynchburg airport and Appomattox tour to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "수브라마냠 VA-10",
+            "en": "Subramanyam VA-10"
+          },
+          {
+            "id": "B",
+            "ko": "버지니아 전주 단일 의석",
+            "en": "a statewide Virginia seat"
+          },
+          {
+            "id": "C",
+            "ko": "두 의원의 공동 방문으로 처리",
+            "en": "a joint tour by both members"
+          },
+          {
+            "id": "D",
+            "ko": "맥과이어 VA-05",
+            "en": "McGuire VA-05"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "맥과이어의 공식 제5지역구 방문 발표는 린치버그 공항과 애퍼매턱스를 포함합니다. 수브라마냠의 VA-10 설명과 별개이며 공동 방문으로 주장하지 않습니다.",
+            "en": "McGuire's official fifth-district tour announcement includes Lynchburg airport and Appomattox. It is separate from Subramanyam's VA-10 description; no joint tour is asserted."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "맥과이어의 공식 제5지역구 방문 발표는 린치버그 공항과 애퍼매턱스를 포함합니다. 수브라마냠의 VA-10 설명과 별개이며 공동 방문으로 주장하지 않습니다.",
+            "en": "McGuire's official fifth-district tour announcement includes Lynchburg airport and Appomattox. It is separate from Subramanyam's VA-10 description; no joint tour is asserted."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://mcguire.house.gov/media/press-releases/rep-john-mcguire-hosts-us-secretary-transportation-sean-p-duffy-fifth-district",
+          "claim": "Fifth district tour, Lynchburg airport and Appomattox.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://subramanyam.house.gov/media/press-releases/suhas-subramanyam-sworn-represent-virginias-10th-district",
+          "claim": "119th VA-10 county description.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2073-virginia-transport-versus-northern-counties"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2074",
+      "mechanism": "dated-tribal-map-and-industrial-corridor",
+      "learningTarget": "Smith's 2005 district-9 directory mentions Auburn and Nisqually reservation (prior P01-1659–1660); his 119th district guide describes Renton, Kent and Tukwila aerospace and distribution activity. Current WA-09 geography is not established by a 2005 directory.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "워싱턴 역사 지도 전시",
+        "en": "Washington historical map exhibit"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "S000510",
+          "name": "Adam Smith",
+          "ko": "애덤 스미스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000510.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000510"
+        },
+        {
+          "id": "S001216",
+          "name": "Kim Schrier",
+          "ko": "킴 슈리어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001216.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001216"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2005년 아카이브의 지도와 현재 산업 지역 안내를 한 전시판에 두었습니다.",
+          "en": "I've placed the 2005 map and today's industrial-region guide on one exhibit board."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "시기별 지도에 같은 번호가 있다고 경계가 같아지는 것은 아닙니다.",
+          "en": "A matching district number doesn't make maps from different periods identical."
+        },
+        {
+          "speaker": "host",
+          "ko": "렌턴·켄트·터퀼라의 항공우주 및 물류 산업 설명을 어느 자료에 넣을까요?",
+          "en": "Where should we file the Renton, Kent and Tukwila aerospace and logistics description?"
+        },
+        {
+          "speaker": "player",
+          "ko": "부족 정부의 별도 지위도 선거구 경계와 혼동하지 않겠습니다.",
+          "en": "I'll also keep tribal-government status distinct from congressional boundaries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "산업 설명은 {{blank}}에 연결하겠습니다.",
+        "en": "I'll attach the industry description to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2005년 지도에 근거한 현행 경계 추정",
+            "en": "an inferred current boundary based on the 2005 map"
+          },
+          {
+            "id": "B",
+            "ko": "슈리어의 WA-08 전체 산업 설명",
+            "en": "Schrier's entire WA-08 industry guide"
+          },
+          {
+            "id": "C",
+            "ko": "스미스의 현행 WA-09 지역 안내",
+            "en": "Smith's current WA-09 district guide"
+          },
+          {
+            "id": "D",
+            "ko": "부족 정부의 연방 하원 의석",
+            "en": "a tribal government's federal House seat"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "스미스의 현행 WA-09 안내는 렌턴·켄트·터퀼라 산업을 설명합니다. 2005년 자료는 과거 기록이며 현재 부족·도시 경계를 증명하지 않습니다.",
+            "en": "Smith's current WA-09 guide describes Renton, Kent and Tukwila industry. The 2005 record is historical and cannot establish current tribal or city boundaries."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "스미스의 현행 WA-09 안내는 렌턴·켄트·터퀼라 산업을 설명합니다. 2005년 자료는 과거 기록이며 현재 부족·도시 경계를 증명하지 않습니다.",
+            "en": "Smith's current WA-09 guide describes Renton, Kent and Tukwila industry. The 2005 record is historical and cannot establish current tribal or city boundaries."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://adamsmith.house.gov/9th-district",
+          "claim": "Current Ninth district geography and industry.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://schrier.house.gov/about",
+          "claim": "WA-08 official biography and regional description.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/dialogue-packs/P01/part-67.json",
+          "claim": "Prior P01-1659–1660 historical directory records; original official evidence in scenes.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
+          "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2074-dated-tribal-map-and-industrial-corridor"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2075",
+      "mechanism": "delegate-commissioner-voting-comparison",
+      "learningTarget": "Under the 119th Congress rules, DC Delegate Norton and Puerto Rico Resident Commissioner Hernández may introduce bills and serve on committees but cannot vote on final House passage; voting Representative Gillen can. Resident Commissioner serves four years while Delegate and Representative normally serve two.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "하원 대표성 모의 절차실",
+        "en": "House representation procedural exercise"
+      },
+      "context": {
+        "ko": "공식 기록을 바탕으로 만든 가상 만남. 발언·상호작용 및 결과는 창작이며 실제 공동 회의나 발언을 재현하지 않습니다.",
+        "en": "Fictional encounter based on public records. Dialogue, interaction and outcome are invented; no actual joint meeting or verbatim quotation is asserted."
+      },
+      "cast": [
+        {
+          "id": "N000147",
+          "name": "Eleanor Holmes Norton",
+          "ko": "엘리너 홈스 노턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000147.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000147"
+        },
+        {
+          "id": "H001103",
+          "name": "Pablo José Hernández",
+          "ko": "파블로 호세 에르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001103.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001103"
+        },
+        {
+          "id": "G000602",
+          "name": "Laura Gillen",
+          "ko": "로라 길런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000602.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000602"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "세 종류의 하원 대표가 법안 심의에 참여하는 모의 절차를 준비합니다.",
+          "en": "We're setting up a mock bill proceeding with three types of House representative."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 직책은 D.C. Delegate입니다. 토론과 표결을 구분해 주세요.",
+          "en": "My office is the D.C. Delegate. Distinguish debate from voting."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 푸에르토리코 Resident Commissioner입니다. 임기도 일반 하원의원과 다릅니다.",
+          "en": "I'm Puerto Rico's Resident Commissioner; the term differs from a voting Representative's."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "저는 일반 하원의원으로 참가합니다. 최종 본회의 표결과 위원회 심의가 다른 단계입니다.",
+          "en": "I'm participating as a voting Representative. Committee consideration and final passage are distinct stages."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "세 직책의 권한 표에서 {{blank}}로 정리하겠습니다.",
+        "en": "I'll complete the authority table as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "세 직책 모두 최종 본회의 표결 가능",
+            "en": "all three may vote on final House passage"
+          },
+          {
+            "id": "B",
+            "ko": "세 직책 모두 발의 가능, 최종 본회의 표결은 일반 의원만 가능",
+            "en": "all three may introduce bills; only the voting Representative may vote on final House passage"
+          },
+          {
+            "id": "C",
+            "ko": "Delegate와 Resident Commissioner는 발의도 불가능",
+            "en": "Delegate and Resident Commissioner cannot introduce bills"
+          },
+          {
+            "id": "D",
+            "ko": "Resident Commissioner만 최종 본회의 표결 가능",
+            "en": "only the Resident Commissioner may vote on final passage"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "Delegate와 Resident Commissioner도 발의·위원회 활동이 가능하지만 최종 하원 통과 표결권은 없습니다. Resident Commissioner는 4년, 일반 의원과 Delegate는 통상 2년 임기입니다.",
+            "en": "Delegates and the Resident Commissioner can introduce bills and serve on committees, but cannot vote on final House passage. The Resident Commissioner has a four-year term; Representatives and Delegates normally serve two."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇게 기록하면 두 자료의 관계와 차이를 함께 확인할 수 있겠습니다.",
+            "en": "That keeps both the connection and distinction between the records clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "Delegate와 Resident Commissioner도 발의·위원회 활동이 가능하지만 최종 하원 통과 표결권은 없습니다. Resident Commissioner는 4년, 일반 의원과 Delegate는 통상 2년 임기입니다.",
+            "en": "Delegates and the Resident Commissioner can introduce bills and serve on committees, but cannot vote on final House passage. The Resident Commissioner has a four-year term; Representatives and Delegates normally serve two."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 근거에 맞춰 기록을 수정하겠습니다.",
+            "en": "I'll revise the record to match that evidence."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/Help/ViewMemberFAQs",
+          "claim": "Clerk explanation of delegate and resident commissioner terms and legislative rights.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "Current roster and types of representatives.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://www.house.gov/representatives",
+          "claim": "119th Congress roster; cast identities and current representation (not 120th election boundaries).",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2075-delegate-commissioner-voting-comparison"
+      },
+      "fictional": true
+    }
+  ]
+}
