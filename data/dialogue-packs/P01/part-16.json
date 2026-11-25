@@ -1,0 +1,2505 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 16,
+  "scenes": [
+    {
+      "id": "P01-376",
+      "mechanism": "office-handover",
+      "learningTarget": "Ron Estes won KS-4 on April 11, 2017 after Mike Pompeo resigned.",
+      "date": "2017-04-26",
+      "venue": {
+        "ko": "캔자스 우편물 인계",
+        "en": "Kansas correspondence handover"
+      },
+      "context": {
+        "ko": "전임 의원 앞으로 온 편지를 새 의원에게 전달한다.",
+        "en": "A letter addressed to the predecessor must reach the incoming member."
+      },
+      "cast": [
+        {
+          "name": "Ron Estes",
+          "ko": "론 에스테스",
+          "id": "E000298",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000298.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Mike Pompeo",
+          "ko": "마이크 폼페이오",
+          "id": "P000602",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000602.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "제가 하원을 떠나기 전에 작성한 편지군요.",
+          "en": "This letter dates to before I left the House."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "주민의 요청은 저희가 이어받죠.",
+          "en": "Our office can take over the resident's request."
+        },
+        {
+          "speaker": "host",
+          "ko": "봉투에 정확한 의석을 적겠습니다.",
+          "en": "I'll put the correct seat on the envelope."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캔자스 {{blank}} 사무실로 보내겠습니다.",
+        "en": "I'll send it to the Kansas {{blank}} office.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "4구",
+            "en": "4th district"
+          },
+          {
+            "id": "B",
+            "ko": "1구",
+            "en": "1st district"
+          },
+          {
+            "id": "C",
+            "ko": "2구",
+            "en": "2nd district"
+          },
+          {
+            "id": "D",
+            "ko": "3구",
+            "en": "3rd district"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 미결 요청을 살펴보죠.",
+            "en": "Good. Let's review the outstanding request."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "폼페이오 의원이 사임한 의석은 4구입니다.",
+            "en": "Pompeo vacated the fourth district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Ron Estes won KS-4 on April 11, 2017 after Mike Pompeo resigned.",
+          "asOf": "2017-04-26"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-376-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-377",
+      "mechanism": "delegation-introduction",
+      "learningTarget": "Karen Handel won GA-6 June 20, 2017 after Tom Price resigned.",
+      "date": "2017-06-27",
+      "venue": {
+        "ko": "조지아 주민단체 간담회",
+        "en": "Georgia civic meeting"
+      },
+      "context": {
+        "ko": "단체의 초청장에 전임 의원 이름이 남아 있다.",
+        "en": "A civic group's invitation still names the former representative."
+      },
+      "cast": [
+        {
+          "name": "Karen C. Handel",
+          "ko": "캐런 핸들",
+          "id": "H001078",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001078.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Tom Price",
+          "ko": "톰 프라이스",
+          "id": "P000591",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000591.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "겨울에 발송한 초청장에는 프라이스 의원 이름이 있습니다.",
+          "en": "Our winter invitation names Price."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지금은 하원 현직이 아니니 직함을 고쳐 주세요.",
+          "en": "I'm no longer in the House, so change the title."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번에는 제가 주민들을 만나겠습니다.",
+          "en": "I'll meet the residents this time."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "6월 20일 조지아 6구에서 당선된 {{blank}} 의원께 초청장을 보내죠.",
+        "en": "Let's invite {{blank}}, elected in GA-6 on June 20.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "랠프 노먼",
+            "en": "Ralph Norman"
+          },
+          {
+            "id": "B",
+            "ko": "캐런 핸들",
+            "en": "Karen Handel"
+          },
+          {
+            "id": "C",
+            "ko": "톰 프라이스",
+            "en": "Tom Price"
+          },
+          {
+            "id": "D",
+            "ko": "론 에스테스",
+            "en": "Ron Estes"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민들이 직접 이야기할 시간을 마련해 주세요.",
+            "en": "Set aside time for residents to speak."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "6월 20일 선거에서 제가 당선됐습니다.",
+            "en": "I won the June 20 election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Karen Handel won GA-6 June 20, 2017 after Tom Price resigned.",
+          "asOf": "2017-06-27"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-377-delegation-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-378",
+      "mechanism": "public-correction",
+      "learningTarget": "Ralph Norman won SC-5 June 20, 2017 after Mick Mulvaney resigned.",
+      "date": "2017-06-28",
+      "venue": {
+        "ko": "사우스캐롤라이나 행사 준비실",
+        "en": "South Carolina event planning room"
+      },
+      "context": {
+        "ko": "현직과 전직을 구분하는 행사 프로그램을 만든다.",
+        "en": "An event program distinguishes the former and current members."
+      },
+      "cast": [
+        {
+          "name": "Ralph Norman",
+          "ko": "랠프 노먼",
+          "id": "N000190",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000190.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Mick Mulvaney",
+          "ko": "믹 멀베이니",
+          "id": "M001182",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001182.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 이름 옆에는 지역구도 넣어 주시죠.",
+          "en": "Put my district beside my name."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 이름 옆에는 전임이라고 표시해 주세요.",
+          "en": "Mark me as the former member."
+        },
+        {
+          "speaker": "host",
+          "ko": "인쇄 전에 의석 번호를 확인하겠습니다.",
+          "en": "I'll check the seat before printing."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "노먼 의원의 의석은 사우스캐롤라이나 {{blank}}입니다.",
+        "en": "Norman represents South Carolina's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "4구",
+            "en": "4th district"
+          },
+          {
+            "id": "B",
+            "ko": "7구",
+            "en": "7th district"
+          },
+          {
+            "id": "C",
+            "ko": "5구",
+            "en": "5th district"
+          },
+          {
+            "id": "D",
+            "ko": "1구",
+            "en": "1st district"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "이제 주민이 혼동하지 않겠군요.",
+            "en": "That should avoid confusing residents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "멀베이니 의원이 떠난 5구에서 당선됐습니다.",
+            "en": "I won the fifth district vacated by Mulvaney."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Ralph Norman won SC-5 June 20, 2017 after Mick Mulvaney resigned.",
+          "asOf": "2017-06-28"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-378-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-379",
+      "mechanism": "representation-system",
+      "learningTarget": "Greg Gianforte succeeded Ryan Zinke in Montana's at-large seat in the May 25, 2017 special election.",
+      "date": "2017-06-22",
+      "venue": {
+        "ko": "몬태나 순회 일정 회의",
+        "en": "Montana outreach planning"
+      },
+      "context": {
+        "ko": "대표의 순회 방문 범위를 정한다.",
+        "en": "A team plans the representative's outreach across the state."
+      },
+      "cast": [
+        {
+          "name": "Greg Gianforte",
+          "ko": "그레그 지안포르테",
+          "id": "G000584",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000584.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Ryan K. Zinke",
+          "ko": "라이언 징키",
+          "id": "Z000018",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Z000018.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "여러 지역에서 주민을 만날 일정을 짜죠.",
+          "en": "Let's arrange meetings in several communities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제가 하원에 있을 때도 주 전체를 대표했습니다.",
+          "en": "I represented the whole state during my House service."
+        },
+        {
+          "speaker": "host",
+          "ko": "일정표에 당시 의석 형태를 표시하겠습니다.",
+          "en": "I'll mark the seat type on the itinerary."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2017년 몬태나는 {{blank}} 의석입니다.",
+        "en": "Montana in 2017 has an {{blank}} seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "동부 1구",
+            "en": "eastern first district"
+          },
+          {
+            "id": "B",
+            "ko": "서부 2구",
+            "en": "western second district"
+          },
+          {
+            "id": "C",
+            "ko": "수도 3구",
+            "en": "capital third district"
+          },
+          {
+            "id": "D",
+            "ko": "주 전체",
+            "en": "at-large"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 전체를 고려해 순회합시다.",
+            "en": "Plan the trip with the entire state in mind."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "당시 의석은 하나의 주 전체 선거구였습니다.",
+            "en": "The seat was statewide at the time."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Greg Gianforte succeeded Ryan Zinke in Montana's at-large seat in the May 25, 2017 special election.",
+          "asOf": "2017-06-22"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-379-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-380",
+      "mechanism": "public-correction",
+      "learningTarget": "John Curtis won UT-3 November 7, 2017 after Jason Chaffetz resigned June 30.",
+      "date": "2017-11-14",
+      "venue": {
+        "ko": "유타 지역신문 편집실",
+        "en": "Utah newsroom"
+      },
+      "context": {
+        "ko": "과거 인터뷰와 현재 인터뷰를 한 지면에 싣는다.",
+        "en": "A newspaper prints old and new interviews together."
+      },
+      "cast": [
+        {
+          "name": "John R. Curtis",
+          "ko": "존 커티스",
+          "id": "C001114",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001114.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Jason Chaffetz",
+          "ko": "제이슨 채피츠",
+          "id": "C001076",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001076.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "여름 기사와 오늘 기사를 나란히 배치합니다.",
+          "en": "We'll put the summer story beside today's."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "6월 말 이후에는 저를 현직으로 표시하지 마세요.",
+          "en": "Don't list me as sitting member after June."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "오늘 기사에는 새 임기를 표시해 주세요.",
+          "en": "Mark the new term on today's story."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "11월 7일 유타 3구 선거에서 당선된 사람은 {{blank}}입니다.",
+        "en": "The November 7 winner in UT-3 was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "존 커티스",
+            "en": "John Curtis"
+          },
+          {
+            "id": "B",
+            "ko": "제이슨 채피츠",
+            "en": "Jason Chaffetz"
+          },
+          {
+            "id": "C",
+            "ko": "마이클 클라우드",
+            "en": "Michael Cloud"
+          },
+          {
+            "id": "D",
+            "ko": "트로이 볼더슨",
+            "en": "Troy Balderson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "기사 날짜를 함께 쓰면 좋겠습니다.",
+            "en": "Keep the story dates visible."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 11월 7일 당선됐습니다.",
+            "en": "I won on November 7."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "John Curtis won UT-3 November 7, 2017 after Jason Chaffetz resigned June 30.",
+          "asOf": "2017-11-14"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-380-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-381",
+      "mechanism": "public-correction",
+      "learningTarget": "Democrat Conor Lamb won the March 13, 2018 PA-18 special election after Republican Tim Murphy resigned.",
+      "date": "2018-04-13",
+      "venue": {
+        "ko": "펜실베이니아 의정기록실",
+        "en": "Pennsylvania legislative records room"
+      },
+      "context": {
+        "ko": "보궐선거 결과의 정당 색상이 잘못 표시돼 있다.",
+        "en": "A special-election chart has the wrong party color."
+      },
+      "cast": [
+        {
+          "name": "Conor Lamb",
+          "ko": "코너 램",
+          "id": "L000588",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000588.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "전임과 신임 의원을 같은 색으로 표시했네요.",
+          "en": "The predecessor and successor have the same color."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "같은 의석이라고 같은 정당은 아닙니다.",
+          "en": "The same seat doesn't imply the same party."
+        },
+        {
+          "speaker": "host",
+          "ko": "범례를 수정하겠습니다.",
+          "en": "I'll correct the legend."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "공화당 팀 머피가 떠난 PA-18에서 램 의원은 {{blank}} 소속으로 당선됐습니다.",
+        "en": "Lamb won PA-18, vacated by Republican Tim Murphy, as a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "자유당",
+            "en": "Libertarian"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "Democrat"
+          },
+          {
+            "id": "C",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "Independent"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "의석 변화와 당적 변화를 구분해 주세요.",
+            "en": "Distinguish the seat from its party affiliation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 민주당 소속으로 당선됐습니다.",
+            "en": "I was elected as a Democrat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Democrat Conor Lamb won the March 13, 2018 PA-18 special election after Republican Tim Murphy resigned.",
+          "asOf": "2018-04-13"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-381-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-382",
+      "mechanism": "office-handover",
+      "learningTarget": "Debbie Lesko won AZ-8 April 24, 2018 and took the oath May 7.",
+      "date": "2018-05-08",
+      "venue": {
+        "ko": "애리조나 의원 오리엔테이션",
+        "en": "Arizona member orientation"
+      },
+      "context": {
+        "ko": "당선일과 선서일이 뒤섞인 자료를 검토한다.",
+        "en": "An orientation packet mixes up election and oath dates."
+      },
+      "cast": [
+        {
+          "name": "Debbie Lesko",
+          "ko": "데비 레스코",
+          "id": "L000589",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000589.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "4월에 선거를 치렀고 어제 선서했습니다.",
+          "en": "The election was in April; I took the oath yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 날짜를 따로 쓰겠습니다.",
+          "en": "I'll enter the two dates separately."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "당선과 의회 활동 개시를 구별하죠.",
+          "en": "Distinguish winning from entering the House."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "레스코 의원의 선서일은 {{blank}}입니다.",
+        "en": "Lesko took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2018년 5월 1일",
+            "en": "May 1, 2018"
+          },
+          {
+            "id": "B",
+            "ko": "2018년 6월 7일",
+            "en": "June 7, 2018"
+          },
+          {
+            "id": "C",
+            "ko": "2018년 5월 7일",
+            "en": "May 7, 2018"
+          },
+          {
+            "id": "D",
+            "ko": "2018년 4월 24일",
+            "en": "April 24, 2018"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 안내 자료를 확정하죠.",
+            "en": "Now finalize the packet."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "당선일은 4월 24일, 선서일은 5월 7일입니다.",
+            "en": "I won April 24 and took the oath May 7."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Debbie Lesko won AZ-8 April 24, 2018 and took the oath May 7.",
+          "asOf": "2018-05-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-382-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-383",
+      "mechanism": "office-handover",
+      "learningTarget": "Troy Balderson won OH-12 August 7, 2018 after Pat Tiberi resigned.",
+      "date": "2018-09-05",
+      "venue": {
+        "ko": "오하이오 지역 협의회",
+        "en": "Ohio local coordination meeting"
+      },
+      "context": {
+        "ko": "전임자가 맡았던 협의 자료를 신임 의원과 살펴본다.",
+        "en": "The incoming member reviews discussion papers from the predecessor."
+      },
+      "cast": [
+        {
+          "name": "Troy Balderson",
+          "ko": "트로이 볼더슨",
+          "id": "B001306",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001306.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Patrick J. Tiberi",
+          "ko": "팻 티베리",
+          "id": "T000462",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000462.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "제 사임 전부터 논의하던 내용입니다.",
+          "en": "These discussions began before my resignation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지역 주민과 다시 만나 보죠.",
+          "en": "Let's meet the residents again."
+        },
+        {
+          "speaker": "host",
+          "ko": "표지에 현재 담당 의석을 적겠습니다.",
+          "en": "I'll mark the current seat on the cover."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "볼더슨 의원이 이어받은 의석은 오하이오 {{blank}}입니다.",
+        "en": "Balderson took over Ohio's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "11구",
+            "en": "11th district"
+          },
+          {
+            "id": "B",
+            "ko": "15구",
+            "en": "15th district"
+          },
+          {
+            "id": "C",
+            "ko": "16구",
+            "en": "16th district"
+          },
+          {
+            "id": "D",
+            "ko": "12구",
+            "en": "12th district"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음 회의 자료로 활용하겠습니다.",
+            "en": "I'll use it at the next meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 8월 7일 당선된 의석은 12구입니다.",
+            "en": "The seat I won August 7 was the twelfth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Troy Balderson won OH-12 August 7, 2018 after Pat Tiberi resigned.",
+          "asOf": "2018-09-05"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-383-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-384",
+      "mechanism": "constituency-story",
+      "learningTarget": "Joseph Morelle won NY-25 November 6, 2018 following Louise Slaughter's death.",
+      "date": "2018-11-14",
+      "venue": {
+        "ko": "뉴욕 지역 도서관",
+        "en": "New York district library"
+      },
+      "context": {
+        "ko": "전임 의원 기념전시와 현직 대표 안내를 분리한다.",
+        "en": "A library separates a memorial exhibit from its current-representative panel."
+      },
+      "cast": [
+        {
+          "name": "Joseph D. Morelle",
+          "ko": "조지프 모렐",
+          "id": "M001206",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001206.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "슬로터 의원의 기록은 전시실에 남겨 두겠습니다.",
+          "en": "We'll keep Slaughter's records in the exhibit."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 주민 연락처는 별도로 표시하죠.",
+          "en": "Put the current constituent contact on a separate panel."
+        },
+        {
+          "speaker": "host",
+          "ko": "과거와 현재를 구별하겠습니다.",
+          "en": "We'll distinguish past and present."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "뉴욕 25구의 새 현직 대표는 {{blank}}입니다.",
+        "en": "The new sitting representative for NY-25 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "조지프 모렐",
+            "en": "Joseph Morelle"
+          },
+          {
+            "id": "B",
+            "ko": "코너 램",
+            "en": "Conor Lamb"
+          },
+          {
+            "id": "C",
+            "ko": "수전 와일드",
+            "en": "Susan Wild"
+          },
+          {
+            "id": "D",
+            "ko": "메리 게이 스캔런",
+            "en": "Mary Gay Scanlon"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록은 보존하고 현재 정보도 제공할 수 있겠네요.",
+            "en": "That preserves history while providing current information."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "슬로터 의원 사망 뒤 11월 6일 선거에서 당선됐습니다.",
+            "en": "I won November 6 after Slaughter's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Joseph Morelle won NY-25 November 6, 2018 following Louise Slaughter's death.",
+          "asOf": "2018-11-14"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-384-constituency-story"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-385",
+      "mechanism": "delegation-introduction",
+      "learningTarget": "Michael Cloud won TX-27 June 30, 2018 after Blake Farenthold resigned.",
+      "date": "2018-07-11",
+      "venue": {
+        "ko": "텍사스 지역 라디오",
+        "en": "Texas local radio studio"
+      },
+      "context": {
+        "ko": "새 의원 인터뷰를 준비한다.",
+        "en": "A radio host prepares an interview with a new representative."
+      },
+      "cast": [
+        {
+          "name": "Michael Cloud",
+          "ko": "마이클 클라우드",
+          "id": "C001115",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001115.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "청취자에게 어느 지역구 대표로 소개할까요?",
+          "en": "Which seat should we use in the introduction?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지난달 선거에서 당선됐고 어제 선서했습니다.",
+          "en": "I won last month's election and took the oath yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "이전 의원 인터뷰와 별도로 방송하죠.",
+          "en": "We'll broadcast it separately from the previous interview."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "클라우드 의원은 텍사스 {{blank}} 대표입니다.",
+        "en": "Cloud represents Texas's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "35구",
+            "en": "35th district"
+          },
+          {
+            "id": "B",
+            "ko": "27구",
+            "en": "27th district"
+          },
+          {
+            "id": "C",
+            "ko": "23구",
+            "en": "23rd district"
+          },
+          {
+            "id": "D",
+            "ko": "34구",
+            "en": "34th district"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 주민 질문을 받아 보죠.",
+            "en": "Let's take questions from residents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "패런톨드 의원이 사임한 27구입니다.",
+            "en": "It's the twenty-seventh, vacated by Farenthold."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Michael Cloud won TX-27 June 30, 2018 after Blake Farenthold resigned.",
+          "asOf": "2018-07-11"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-385-delegation-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-386",
+      "mechanism": "representation-system",
+      "learningTarget": "Kevin Hern was appointed to the remainder of the 115th Congress in OK-1 effective November 6, 2018 under Oklahoma law.",
+      "date": "2018-11-14",
+      "venue": {
+        "ko": "오클라호마 의정기록실",
+        "en": "Oklahoma legislative records room"
+      },
+      "context": {
+        "ko": "남은 의회 임기의 충원 절차를 확인한다.",
+        "en": "The team records how the remaining congressional term was filled."
+      },
+      "cast": [
+        {
+          "name": "Kevin Hern",
+          "ko": "케빈 헌",
+          "id": "H001082",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001082.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Jim Bridenstine",
+          "ko": "짐 브라이든스타인",
+          "id": "B001283",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001283.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "제 사임 날짜를 먼저 적어 두세요.",
+          "en": "Start with my resignation date."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "115대 의회의 잔여 임기는 주지사의 임명이 적용됐습니다.",
+          "en": "A gubernatorial appointment applied to the remaining 115th Congress term."
+        },
+        {
+          "speaker": "host",
+          "ko": "절차와 정규 임기 기록을 분리하죠.",
+          "en": "Separate the procedure from the regular-term record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "헌 의원의 115대 잔여 임기 기록은 {{blank}}으로 표시합니다.",
+        "en": "For Hern's remaining 115th Congress term, record {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "상원 인준",
+            "en": "Senate confirmation"
+          },
+          {
+            "id": "B",
+            "ko": "정당 지명",
+            "en": "party nomination"
+          },
+          {
+            "id": "C",
+            "ko": "주지사 임명",
+            "en": "gubernatorial appointment"
+          },
+          {
+            "id": "D",
+            "ko": "하원의장 지명",
+            "en": "Speaker nomination"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해당 임기만의 기록이라는 점을 명시하세요.",
+            "en": "Specify that this record is for that term only."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 기록은 11월 6일 발효된 주지사 임명입니다.",
+            "en": "The official record specifies a gubernatorial appointment effective November 6."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Kevin Hern was appointed to the remainder of the 115th Congress in OK-1 effective November 6, 2018 under Oklahoma law.",
+          "asOf": "2018-11-14"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-386-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-387",
+      "mechanism": "map-comparison",
+      "learningTarget": "Mary Gay Scanlon filled PA-7 and Susan Wild filled PA-15 for the remainder of the 115th Congress following November 6, 2018 elections.",
+      "date": "2018-11-28",
+      "venue": {
+        "ko": "펜실베이니아 신임 의원 오리엔테이션",
+        "en": "Pennsylvania new-member orientation"
+      },
+      "context": {
+        "ko": "두 신임 의원이 남은 115대 임기의 의석을 비교한다.",
+        "en": "Two incoming members compare their remaining 115th Congress seats."
+      },
+      "cast": [
+        {
+          "name": "Mary Gay Scanlon",
+          "ko": "메리 게이 스캔런",
+          "id": "S001205",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001205.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        },
+        {
+          "name": "Susan Wild",
+          "ko": "수전 와일드",
+          "id": "W000826",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000826.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 7구의 잔여 임기를 맡았습니다.",
+          "en": "I took the remainder of the seventh district term."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 덴트 의원이 떠난 의석의 남은 임기를 맡았죠.",
+          "en": "I took the remaining term of the seat vacated by Dent."
+        },
+        {
+          "speaker": "host",
+          "ko": "다음 의회의 의석과 섞지 않겠습니다.",
+          "en": "I'll keep the next Congress's seats separate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "115대 와일드 의원의 의석은 PA-{{blank}}입니다.",
+        "en": "Wild's seat in the 115th Congress is PA-{{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "7",
+            "en": "7"
+          },
+          {
+            "id": "B",
+            "ko": "6",
+            "en": "6"
+          },
+          {
+            "id": "C",
+            "ko": "18",
+            "en": "18"
+          },
+          {
+            "id": "D",
+            "ko": "15",
+            "en": "15"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "이제 어느 임기인지 분명해졌네요.",
+            "en": "That clarifies which term we mean."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "115대 잔여 임기는 15구입니다.",
+            "en": "The remaining 115th term is in the fifteenth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
+          "claim": "Mary Gay Scanlon filled PA-7 and Susan Wild filled PA-15 for the remainder of the 115th Congress following November 6, 2018 elections.",
+          "asOf": "2018-11-28"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-387-map-comparison"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-388",
+      "mechanism": "public-correction",
+      "learningTarget": "NY-22 lacked a certificate of election at the opening of the 117th Congress; Claudia Tenney took the oath February 11, 2021.",
+      "date": "2021-02-12",
+      "venue": {
+        "ko": "뉴욕 뉴스룸",
+        "en": "New York newsroom"
+      },
+      "context": {
+        "ko": "개원 당시 공석으로 기록된 의석을 업데이트한다.",
+        "en": "A newsroom updates a seat vacant at the opening of Congress."
+      },
+      "cast": [
+        {
+          "name": "Claudia Tenney",
+          "ko": "클로디아 테니",
+          "id": "T000478",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000478.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "1월 기사는 당선증명서가 없어 공석이라고 썼습니다.",
+          "en": "Our January report noted the missing election certificate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "어제 선서했으니 현재 기사를 갱신하죠.",
+          "en": "I took the oath yesterday; update the current story."
+        },
+        {
+          "speaker": "host",
+          "ko": "옛 기사는 당시 상태대로 보존하겠습니다.",
+          "en": "We'll preserve the old story as it stood."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "NY-22의 공석 상태는 {{blank}} 선서 이후 변경됐습니다.",
+        "en": "NY-22's vacancy status changed after the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2021년 2월 11일",
+            "en": "February 11, 2021"
+          },
+          {
+            "id": "B",
+            "ko": "2021년 1월 3일",
+            "en": "January 3, 2021"
+          },
+          {
+            "id": "C",
+            "ko": "2021년 2월 1일",
+            "en": "February 1, 2021"
+          },
+          {
+            "id": "D",
+            "ko": "2021년 3월 11일",
+            "en": "March 11, 2021"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 기사 날짜를 함께 보여 주세요.",
+            "en": "Show both story dates."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "선서는 2월 11일이었습니다.",
+            "en": "My oath was February 11."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "NY-22 lacked a certificate of election at the opening of the 117th Congress; Claudia Tenney took the oath February 11, 2021.",
+          "asOf": "2021-02-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-388-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-389",
+      "mechanism": "peer-conversation",
+      "learningTarget": "Julia Letlow won LA-5 March 20, 2021; Troy Carter won LA-2 April 24, 2021.",
+      "date": "2021-05-12",
+      "venue": {
+        "ko": "루이지애나 대표단 환영회",
+        "en": "Louisiana delegation reception"
+      },
+      "context": {
+        "ko": "같은 주의 두 보궐선거 당선자가 서로를 소개한다.",
+        "en": "Two special-election winners from the same state introduce each other."
+      },
+      "cast": [
+        {
+          "name": "Julia Letlow",
+          "ko": "줄리아 레틀로",
+          "id": "L000595",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000595.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Troy A. Carter",
+          "ko": "트로이 카터",
+          "id": "C001125",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001125.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 3월 선거로 들어왔습니다.",
+          "en": "I came in through the March election."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 4월에 2구를 맡았고 어제 선서했죠.",
+          "en": "I won the second district in April and took the oath yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 지역구를 프로그램에 나란히 적겠습니다.",
+          "en": "I'll put both district labels on the program."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "레틀로 의원은 루이지애나 {{blank}} 대표입니다.",
+        "en": "Letlow represents Louisiana's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "6구",
+            "en": "6th district"
+          },
+          {
+            "id": "B",
+            "ko": "5구",
+            "en": "5th district"
+          },
+          {
+            "id": "C",
+            "ko": "2구",
+            "en": "2nd district"
+          },
+          {
+            "id": "D",
+            "ko": "3구",
+            "en": "3rd district"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "같은 주라도 서로 다른 의석이죠.",
+            "en": "Same state, different seats."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "3월 20일 5구 보궐선거에서 당선됐습니다.",
+            "en": "I won the fifth district special election March 20."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Julia Letlow won LA-5 March 20, 2021; Troy Carter won LA-2 April 24, 2021.",
+          "asOf": "2021-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-389-peer-conversation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-390",
+      "mechanism": "office-handover",
+      "learningTarget": "Troy Carter won LA-2 April 24, 2021 after Cedric Richmond resigned January 15.",
+      "date": "2021-05-13",
+      "venue": {
+        "ko": "루이지애나 민원 상담실",
+        "en": "Louisiana constituent assistance room"
+      },
+      "context": {
+        "ko": "전임 의원에게 온 지역 문의를 새 사무실과 연결한다.",
+        "en": "A district inquiry addressed to the predecessor is rerouted."
+      },
+      "cast": [
+        {
+          "name": "Troy A. Carter",
+          "ko": "트로이 카터",
+          "id": "C001125",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001125.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Cedric L. Richmond",
+          "ko": "세드릭 리치먼드",
+          "id": "R000588",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000588.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "이 편지는 제가 하원을 떠나기 전에 쓰였군요.",
+          "en": "This letter predates my departure from the House."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 문의는 제 사무실이 받겠습니다.",
+          "en": "My office will take the current inquiry."
+        },
+        {
+          "speaker": "host",
+          "ko": "주민에게 새 담당자를 알려 드리죠.",
+          "en": "Let's tell the resident who handles it now."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "LA-2의 새 대표는 {{blank}}입니다.",
+        "en": "The new representative for LA-2 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제이크 엘지",
+            "en": "Jake Ellzey"
+          },
+          {
+            "id": "B",
+            "ko": "마이크 캐리",
+            "en": "Mike Carey"
+          },
+          {
+            "id": "C",
+            "ko": "트로이 카터",
+            "en": "Troy Carter"
+          },
+          {
+            "id": "D",
+            "ko": "세드릭 리치먼드",
+            "en": "Cedric Richmond"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 연락처를 포함해 회신합시다.",
+            "en": "Include the new contact in the reply."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "4월 24일 선거에서 제가 당선됐습니다.",
+            "en": "I won the April 24 election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Troy Carter won LA-2 April 24, 2021 after Cedric Richmond resigned January 15.",
+          "asOf": "2021-05-13"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-390-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-391",
+      "mechanism": "office-handover",
+      "learningTarget": "Jake Ellzey won TX-6 July 27, 2021 and took the oath July 30.",
+      "date": "2021-07-31",
+      "venue": {
+        "ko": "텍사스 방문객 안내소",
+        "en": "Texas visitor information desk"
+      },
+      "context": {
+        "ko": "선거 후 현직 의원 명단의 갱신 시점을 확인한다.",
+        "en": "A visitor checks the timing of a sitting-member roster update."
+      },
+      "cast": [
+        {
+          "name": "Jake Ellzey",
+          "ko": "제이크 엘지",
+          "id": "E000071",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000071.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "선거는 27일이었는데 명단은 어제 갱신됐군요.",
+          "en": "The election was on the 27th; the roster changed yesterday."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 기록이 모두 맞습니다.",
+          "en": "Both records can be right."
+        },
+        {
+          "speaker": "host",
+          "ko": "선서일을 별도로 적죠.",
+          "en": "Let's record the oath date separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "엘지 의원의 선서일은 {{blank}}입니다.",
+        "en": "Ellzey took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2021년 7월 27일",
+            "en": "July 27, 2021"
+          },
+          {
+            "id": "B",
+            "ko": "2021년 8월 30일",
+            "en": "August 30, 2021"
+          },
+          {
+            "id": "C",
+            "ko": "2021년 6월 30일",
+            "en": "June 30, 2021"
+          },
+          {
+            "id": "D",
+            "ko": "2021년 7월 30일",
+            "en": "July 30, 2021"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민 방문 자료를 확정합시다.",
+            "en": "Let's finalize the visitor information."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "27일 당선됐고 30일 선서했습니다.",
+            "en": "I won July 27 and took the oath July 30."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Jake Ellzey won TX-6 July 27, 2021 and took the oath July 30.",
+          "asOf": "2021-07-31"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-391-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-392",
+      "mechanism": "peer-conversation",
+      "learningTarget": "Shontel Brown (OH-11) and Mike Carey (OH-15) won special elections November 2, 2021 and took the oath November 4.",
+      "date": "2021-11-05",
+      "venue": {
+        "ko": "오하이오 대표단 공동 환영회",
+        "en": "Ohio delegation welcome"
+      },
+      "context": {
+        "ko": "같은 날 선서한 의원들의 이름표를 구분한다.",
+        "en": "Name cards distinguish two members sworn in on the same day."
+      },
+      "cast": [
+        {
+          "name": "Shontel M. Brown",
+          "ko": "숀텔 브라운",
+          "id": "B001313",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001313.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Mike Carey",
+          "ko": "마이크 캐리",
+          "id": "C001126",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001126.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "같은 날 당선됐지만 서로 다른 지역입니다.",
+          "en": "We won on the same day in different districts."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 퍼지 의원이 사임한 의석을 맡았습니다.",
+          "en": "I took the seat vacated by Fudge."
+        },
+        {
+          "speaker": "host",
+          "ko": "서로 이름표가 바뀌지 않게 하죠.",
+          "en": "Let's make sure the cards aren't switched."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "브라운 의원은 OH-{{blank}}, 캐리 의원은 OH-15입니다.",
+        "en": "Brown is OH-{{blank}}; Carey is OH-15.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "11",
+            "en": "11"
+          },
+          {
+            "id": "B",
+            "ko": "15",
+            "en": "15"
+          },
+          {
+            "id": "C",
+            "ko": "12",
+            "en": "12"
+          },
+          {
+            "id": "D",
+            "ko": "16",
+            "en": "16"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "주민들도 올바른 사무실을 찾겠군요.",
+            "en": "Residents can find the right offices now."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "11구입니다. 캐리 의원은 15구죠.",
+            "en": "The eleventh; Carey took the fifteenth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Shontel Brown (OH-11) and Mike Carey (OH-15) won special elections November 2, 2021 and took the oath November 4.",
+          "asOf": "2021-11-05"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-392-peer-conversation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-393",
+      "mechanism": "delegation-introduction",
+      "learningTarget": "Melanie Stansbury won NM-1 June 1, 2021 after Deb Haaland resigned March 16.",
+      "date": "2021-06-15",
+      "venue": {
+        "ko": "뉴멕시코 정책회의",
+        "en": "New Mexico district policy meeting"
+      },
+      "context": {
+        "ko": "전임과 신임 의원의 역할이 다른 초청행사를 준비한다.",
+        "en": "An event distinguishes the roles of the former and current members."
+      },
+      "cast": [
+        {
+          "name": "Melanie A. Stansbury",
+          "ko": "멜러니 스탠즈베리",
+          "id": "S001218",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Debra A. Haaland",
+          "ko": "데브 홀랜드",
+          "id": "H001080",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001080.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "3월 이후에는 저를 현직 하원 의원으로 소개하지 마세요.",
+          "en": "After March, don't introduce me as the sitting House member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1구 하원 민원은 제가 받겠습니다.",
+          "en": "I'll receive House inquiries from the first district."
+        },
+        {
+          "speaker": "host",
+          "ko": "안내문에 두 사람의 역할을 구분하죠.",
+          "en": "Let's distinguish the two roles in the notice."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "6월 1일 NM-1을 맡게 된 사람은 {{blank}}입니다.",
+        "en": "The June 1 election brought {{blank}} to NM-1.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "숀텔 브라운",
+            "en": "Shontel Brown"
+          },
+          {
+            "id": "B",
+            "ko": "멜러니 스탠즈베리",
+            "en": "Melanie Stansbury"
+          },
+          {
+            "id": "C",
+            "ko": "데브 홀랜드",
+            "en": "Deb Haaland"
+          },
+          {
+            "id": "D",
+            "ko": "줄리아 레틀로",
+            "en": "Julia Letlow"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음 간담회에도 현직 연락처를 쓰세요.",
+            "en": "Use the current contact at the next meeting too."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "홀랜드 의원 사임 뒤 제가 6월 1일 당선됐습니다.",
+            "en": "I won June 1 after Haaland resigned."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Melanie Stansbury won NM-1 June 1, 2021 after Deb Haaland resigned March 16.",
+          "asOf": "2021-06-15"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-393-delegation-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-394",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Sheila Cherfilus-McCormick won FL-20 January 11, 2022 after Alcee Hastings died April 6, 2021.",
+      "date": "2022-01-19",
+      "venue": {
+        "ko": "플로리다 주민 봉사센터",
+        "en": "Florida constituent assistance center"
+      },
+      "context": {
+        "ko": "공석과 보궐선거가 서로 다른 달력 연도에 발생했다.",
+        "en": "A vacancy and its election occurred in different calendar years."
+      },
+      "cast": [
+        {
+          "name": "Sheila Cherfilus-McCormick",
+          "ko": "실라 셔필러스매코믹",
+          "id": "C001127",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001127.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "2021년에 공석이 생겼고 올해 새 의원이 선서했네요.",
+          "en": "The vacancy arose in 2021 and the new member took the oath this year."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 사건 모두 117대 의회에 속합니다.",
+          "en": "Both belong to the 117th Congress."
+        },
+        {
+          "speaker": "host",
+          "ko": "연도와 의회 번호를 별도로 쓰죠.",
+          "en": "Keep the year and Congress number separate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "셔필러스매코믹 의원은 {{blank}} 의석을 맡았습니다.",
+        "en": "Cherfilus-McCormick took the {{blank}} seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "FL-22",
+            "en": "FL-22"
+          },
+          {
+            "id": "B",
+            "ko": "FL-25",
+            "en": "FL-25"
+          },
+          {
+            "id": "C",
+            "ko": "FL-20",
+            "en": "FL-20"
+          },
+          {
+            "id": "D",
+            "ko": "FL-13",
+            "en": "FL-13"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "연도별 기록을 연결해 두세요.",
+            "en": "Link the annual records."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "헤이스팅스 의원 사망으로 비었던 20구입니다.",
+            "en": "It's the twentieth, vacated by Hastings's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Sheila Cherfilus-McCormick won FL-20 January 11, 2022 after Alcee Hastings died April 6, 2021.",
+          "asOf": "2022-01-19"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-394-vacancy-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-395",
+      "mechanism": "office-handover",
+      "learningTarget": "Mike Carey won OH-15 November 2, 2021 after Steve Stivers resigned May 16.",
+      "date": "2021-11-06",
+      "venue": {
+        "ko": "오하이오 주민 면담 조정실",
+        "en": "Ohio constituent meeting desk"
+      },
+      "context": {
+        "ko": "공석 기간의 면담 요청을 신임 의원과 연결한다.",
+        "en": "A meeting request made during the vacancy is routed to the new member."
+      },
+      "cast": [
+        {
+          "name": "Mike Carey",
+          "ko": "마이크 캐리",
+          "id": "C001126",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001126.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Steve Stivers",
+          "ko": "스티브 스타이버스",
+          "id": "S001187",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001187.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "5월 이후 회신은 제 이름으로 보내지 마세요.",
+          "en": "Don't issue replies in my name after May."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "면담을 기다리는 분들께 새 일정을 제안하죠.",
+          "en": "Offer new appointments to the residents waiting."
+        },
+        {
+          "speaker": "host",
+          "ko": "담당 지역구를 확인하고 연락하겠습니다.",
+          "en": "I'll check the seat before contacting them."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캐리 의원의 사무실은 오하이오 {{blank}} 담당입니다.",
+        "en": "Carey's office handles Ohio's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "11구",
+            "en": "11th district"
+          },
+          {
+            "id": "B",
+            "ko": "12구",
+            "en": "12th district"
+          },
+          {
+            "id": "C",
+            "ko": "16구",
+            "en": "16th district"
+          },
+          {
+            "id": "D",
+            "ko": "15구",
+            "en": "15th district"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 요청을 이어받겠습니다.",
+            "en": "I'll follow up on the request."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스타이버스 의원이 떠난 15구에서 당선됐습니다.",
+            "en": "I won the fifteenth after Stivers left."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Mike Carey won OH-15 November 2, 2021 after Steve Stivers resigned May 16.",
+          "asOf": "2021-11-06"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-395-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-396",
+      "mechanism": "constituency-story",
+      "learningTarget": "Brad Finstad won MN-1 August 9, 2022 after Jim Hagedorn died.",
+      "date": "2022-08-13",
+      "venue": {
+        "ko": "미네소타 지역 행사",
+        "en": "Minnesota local event"
+      },
+      "context": {
+        "ko": "신임 의원과 전임자 기념문구를 구분한다.",
+        "en": "A program distinguishes the incoming member from a memorial note."
+      },
+      "cast": [
+        {
+          "name": "Brad Finstad",
+          "ko": "브래드 핀스타드",
+          "id": "F000475",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000475.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "화요일에 당선됐고 어제 선서했습니다.",
+          "en": "I won Tuesday and took the oath yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "오늘 행사에는 현직 의원으로 소개하겠습니다.",
+          "en": "Today's program can introduce you as the sitting member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "전임 의원을 기리는 글은 따로 남겨 주세요.",
+          "en": "Keep the memorial note separate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "핀스타드 의원이 맡은 의석은 {{blank}}입니다.",
+        "en": "Finstad took the {{blank}} seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "MN-1",
+            "en": "MN-1"
+          },
+          {
+            "id": "B",
+            "ko": "MN-2",
+            "en": "MN-2"
+          },
+          {
+            "id": "C",
+            "ko": "MN-7",
+            "en": "MN-7"
+          },
+          {
+            "id": "D",
+            "ko": "MN-8",
+            "en": "MN-8"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "행사 소개문을 확정하죠.",
+            "en": "Let's finalize the introduction."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "해거돈 의원 사망 이후 열린 1구 선거에서 당선됐습니다.",
+            "en": "I won the first district election after Hagedorn died."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Brad Finstad won MN-1 August 9, 2022 after Jim Hagedorn died.",
+          "asOf": "2022-08-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-396-constituency-story"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-397",
+      "mechanism": "representation-system",
+      "learningTarget": "Democrat Mary Peltola won Alaska's at-large seat August 16, 2022 after Republican Don Young died.",
+      "date": "2022-09-14",
+      "venue": {
+        "ko": "알래스카 공공 간담회",
+        "en": "Alaska public forum"
+      },
+      "context": {
+        "ko": "새 대표와 기존 주 전체 의석의 관계를 논의한다.",
+        "en": "A forum distinguishes a change in representative from a change in seat type."
+      },
+      "cast": [
+        {
+          "name": "Mary Sattler Peltola",
+          "ko": "메리 펠톨라",
+          "id": "P000619",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000619.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "새 하원의원이 생겼지만 주 전체 의석은 그대로인가요?",
+          "en": "We have a new member, but is the statewide seat unchanged?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "대표가 바뀐 것과 의석 형태가 바뀐 건 다릅니다.",
+          "en": "A new member isn't the same as a new seat type."
+        },
+        {
+          "speaker": "host",
+          "ko": "행사 자료에서 두 사실을 구분하죠.",
+          "en": "Let's distinguish the two facts in the program."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "공화당 돈 영 뒤 알래스카 주 전체 의석은 {{blank}} 의원이 민주당 소속으로 맡았습니다.",
+        "en": "After Republican Don Young, Democrat {{blank}} took Alaska's at-large seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "클로디아 테니",
+            "en": "Claudia Tenney"
+          },
+          {
+            "id": "B",
+            "ko": "메리 펠톨라",
+            "en": "Mary Peltola"
+          },
+          {
+            "id": "C",
+            "ko": "데브 홀랜드",
+            "en": "Deb Haaland"
+          },
+          {
+            "id": "D",
+            "ko": "줄리아 레틀로",
+            "en": "Julia Letlow"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "의석은 그대로이고 정당은 바뀐 셈이죠.",
+            "en": "The seat type remained while its party changed."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "8월 16일 선거에서 제가 당선됐습니다.",
+            "en": "I won the August 16 election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Democrat Mary Peltola won Alaska's at-large seat August 16, 2022 after Republican Don Young died.",
+          "asOf": "2022-09-14"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-397-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-398",
+      "mechanism": "office-handover",
+      "learningTarget": "Mike Flood won NE-1 June 28, 2022 and took the oath July 12.",
+      "date": "2022-07-13",
+      "venue": {
+        "ko": "네브래스카 의회 방문 일정실",
+        "en": "Nebraska congressional visit desk"
+      },
+      "context": {
+        "ko": "당선일과 선서일의 차이로 방문 일정표를 조정한다.",
+        "en": "A visit schedule is revised because election and oath dates differ."
+      },
+      "cast": [
+        {
+          "name": "Mike Flood",
+          "ko": "마이크 플러드",
+          "id": "F000474",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000474.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "6월 말 일정에 현직 의원으로 적혀 있었네요.",
+          "en": "The late-June schedule listed you as sitting member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "당선과 선서를 따로 기록해 주세요.",
+          "en": "Record winning and taking the oath separately."
+        },
+        {
+          "speaker": "host",
+          "ko": "7월에 실제 선서일을 표시하겠습니다.",
+          "en": "I'll mark the actual oath date in July."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "플러드 의원은 6월 28일 당선 후 {{blank}} 선서했습니다.",
+        "en": "Flood won June 28 and took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "7월 4일",
+            "en": "July 4"
+          },
+          {
+            "id": "B",
+            "ko": "8월 12일",
+            "en": "August 12"
+          },
+          {
+            "id": "C",
+            "ko": "7월 12일",
+            "en": "July 12"
+          },
+          {
+            "id": "D",
+            "ko": "6월 28일",
+            "en": "June 28"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 방문 기록의 날짜가 맞네요.",
+            "en": "The visit record now has the correct date."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "선서는 7월 12일에 했습니다.",
+            "en": "I took the oath July 12."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Mike Flood won NE-1 June 28, 2022 and took the oath July 12.",
+          "asOf": "2022-07-13"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-398-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-399",
+      "mechanism": "map-comparison",
+      "learningTarget": "Patrick Ryan won NY-19 August 23, 2022 after Antonio Delgado resigned May 25.",
+      "date": "2022-09-15",
+      "venue": {
+        "ko": "뉴욕 지역단체 회의",
+        "en": "New York community association"
+      },
+      "context": {
+        "ko": "옛 의석과 다음 의회의 지도를 혼동하지 않도록 한다.",
+        "en": "A group distinguishes the previous seat from the next Congress's map."
+      },
+      "cast": [
+        {
+          "name": "Patrick Ryan",
+          "ko": "팻 라이언",
+          "id": "R000579",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000579.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        },
+        {
+          "name": "Antonio Delgado",
+          "ko": "안토니오 델가도",
+          "id": "D000630",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000630.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "5월에 하원을 떠났으니 현재 안건은 라이언 의원에게 보내세요.",
+          "en": "I left the House in May; route current House matters to Ryan."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 임기의 지역구 번호를 표지에 적죠.",
+          "en": "Put the district number for this term on the cover."
+        },
+        {
+          "speaker": "host",
+          "ko": "다음 의회의 지도와 섞지 않겠습니다.",
+          "en": "I won't mix it with the next Congress's map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "117대 라이언 의원의 의석은 NY-{{blank}}입니다.",
+        "en": "Ryan's seat in the 117th Congress is NY-{{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "18",
+            "en": "18"
+          },
+          {
+            "id": "B",
+            "ko": "22",
+            "en": "22"
+          },
+          {
+            "id": "C",
+            "ko": "23",
+            "en": "23"
+          },
+          {
+            "id": "D",
+            "ko": "19",
+            "en": "19"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "임기와 지역구가 명확해졌군요.",
+            "en": "That clarifies the term and district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "8월 23일 보궐선거는 19구였습니다.",
+            "en": "The August 23 special election was for the nineteenth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Patrick Ryan won NY-19 August 23, 2022 after Antonio Delgado resigned May 25.",
+          "asOf": "2022-09-15"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-399-map-comparison"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-400",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Rudy Yakym won the IN-2 special election November 8, 2022 and took the oath November 14.",
+      "date": "2022-11-15",
+      "venue": {
+        "ko": "인디애나 주민 의견 접수실",
+        "en": "Indiana constituent outreach desk"
+      },
+      "context": {
+        "ko": "정규선거일에 열린 보궐선거의 기록을 따로 남긴다.",
+        "en": "A center separately records a special election held on general-election day."
+      },
+      "cast": [
+        {
+          "name": "Rudy Yakym III",
+          "ko": "루디 야킴",
+          "id": "Y000067",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Y000067.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "11월 8일 자료에 특별선거라는 표시가 필요합니다.",
+          "en": "The November 8 record needs a special-election label."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "남은 의회 임기를 채우는 선거였음을 적으세요.",
+          "en": "Note that it filled the remaining term."
+        },
+        {
+          "speaker": "host",
+          "ko": "선서는 어제로 기록하죠.",
+          "en": "We'll record yesterday as the oath date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "야킴 의원의 117대 잔여 임기 의석은 {{blank}}입니다.",
+        "en": "Yakym's remaining 117th Congress term is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "IN-2",
+            "en": "IN-2"
+          },
+          {
+            "id": "B",
+            "ko": "IN-1",
+            "en": "IN-1"
+          },
+          {
+            "id": "C",
+            "ko": "IN-3",
+            "en": "IN-3"
+          },
+          {
+            "id": "D",
+            "ko": "IN-5",
+            "en": "IN-5"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음 임기와 별도로 보관합시다.",
+            "en": "Keep it separate from the next term."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "월러스키 의원의 사망으로 비었던 2구입니다.",
+            "en": "It's the second district, vacated by Walorski's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "Rudy Yakym won the IN-2 special election November 8, 2022 and took the oath November 14.",
+          "asOf": "2022-11-15"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-400-vacancy-chain"
+      },
+      "fictional": true
+    }
+  ]
+}
