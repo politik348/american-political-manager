@@ -139,7 +139,7 @@
     {
       "id": "P01-2052",
       "mechanism": "zip-split-archive-recheck",
-      "learningTarget": "The current House lookup for ZIP 30012 lists both GA-04 Hank Johnson and GA-10 Mike Collins; ZIP alone cannot resolve an address, and the 2018 Gwinnett map cannot be carried forward.",
+      "learningTarget": "House ZIP lookup 30012 lists GA-04 Hank Johnson, GA-10 Mike Collins and GA-13 Everton Blair Jr. in the 119th Congress; a ZIP alone cannot resolve an address and the 2018 Gwinnett map cannot be carried forward.",
       "date": "2026-11-25",
       "venue": {
         "ko": "조지아 재획정 지도실",
@@ -163,6 +163,13 @@
           "ko": "행크 존슨",
           "portrait": "https://unitedstates.github.io/images/congress/225x275/J000288.jpg",
           "source": "https://bioguide.congress.gov/search/bio/J000288"
+        },
+        {
+          "id": "B001328",
+          "name": "Everton Blair Jr.",
+          "ko": "에버턴 블레어 주니어",
+          "portrait": "https://clerk.house.gov/images/members/B001328.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001328"
         }
       ],
       "opening": [
@@ -177,14 +184,14 @@
           "en": "Today's constituent left only ZIP 30012."
         },
         {
-          "speaker": "aide",
-          "ko": "하원 검색 결과에 두 의원이 모두 표시됩니다.",
-          "en": "The House lookup returns both members."
+          "speaker": "npc:2",
+          "ko": "현재 검색에는 제 의원실도 포함되어 있습니다. 이전 지도만으로 판단하면 안 되겠군요.",
+          "en": "Today's lookup also lists my office. We shouldn't decide from the earlier map alone."
         },
         {
-          "speaker": "npc:0",
-          "ko": "그렇다면 이전 지도만으로 결정하지 맙시다.",
-          "en": "Then let's not decide from the old map."
+          "speaker": "player",
+          "ko": "세 후보 중 실제 관할을 확인해야겠습니다.",
+          "en": "I'll determine the actual jurisdiction among the three possibilities."
         }
       ],
       "response": {
@@ -219,8 +226,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "30012 검색은 GA-04와 GA-10을 모두 반환합니다. 정확한 주소가 필요하며 2018년 경계와 동일하다고 가정할 수 없습니다.",
-            "en": "The 30012 lookup returns GA-04 and GA-10. An exact address is needed; 2018 boundaries cannot be presumed unchanged."
+            "ko": "30012 검색은 GA-04·GA-10·GA-13을 모두 반환합니다. 실제 주소를 확인해야 하며 2018년 경계를 그대로 적용할 수 없습니다.",
+            "en": "The 30012 lookup returns GA-04, GA-10 and GA-13. Verify the exact address; the 2018 boundaries cannot be carried forward."
           },
           {
             "speaker": "npc:1",
@@ -231,8 +238,8 @@
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "30012 검색은 GA-04와 GA-10을 모두 반환합니다. 정확한 주소가 필요하며 2018년 경계와 동일하다고 가정할 수 없습니다.",
-            "en": "The 30012 lookup returns GA-04 and GA-10. An exact address is needed; 2018 boundaries cannot be presumed unchanged."
+            "ko": "30012 검색은 GA-04·GA-10·GA-13을 모두 반환합니다. 실제 주소를 확인해야 하며 2018년 경계를 그대로 적용할 수 없습니다.",
+            "en": "The 30012 lookup returns GA-04, GA-10 and GA-13. Verify the exact address; the 2018 boundaries cannot be carried forward."
           },
           {
             "speaker": "player",
@@ -243,8 +250,8 @@
       },
       "evidence": [
         {
-          "url": "https://www.house.gov/htbin/findrep?ZIP=30012",
-          "claim": "House ZIP lookup lists Johnson and Collins.",
+          "url": "https://ziplook.house.gov/htbin/findrep_house?ZIP=30012",
+          "claim": "ZIP 30012 overlaps three districts: GA-04, GA-10 and GA-13.",
           "asOf": "2026-11-25"
         },
         {
@@ -265,6 +272,11 @@
         {
           "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
           "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/B001328",
+          "claim": "Everton Blair Jr., sworn member for GA-13 since September 1, 2026.",
           "asOf": "2026-11-25"
         }
       ],
