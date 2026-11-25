@@ -7,10 +7,18 @@ const mapFiles=(await fs.readdir(mapDir)).filter(n=>/\.geojson$/i.test(n)&&/_\d+
 if(!mapFiles.length)throw Error('No source map filenames found');await fs.writeFile(path.join(out,'data/map-index.json'),JSON.stringify(mapFiles));
 const photos=(await fs.readdir(photoDir)).filter(n=>/^[A-Z]\d{6}\.jpg$/i.test(n));if(!photos.length)throw Error('No congressional portraits found');
 const manifest=[];for(const f of photos){await fs.copyFile(path.join(photoDir,f),path.join(out,'portraits',f));manifest.push({id:f.slice(0,-4),file:'portraits/'+f,source:'https://unitedstates.github.io/images/congress/225x275/'+f,rights:'Public domain according to the upstream repository'})}
-await fs.writeFile(path.join(out,'data/portraits.json'),JSON.stringify(manifest));await fs.writeFile(path.join(out,'SOURCES.txt'),'Portraits: https://github.com/unitedstates/images (public domain as described by source). Map filenames: https://github.com/JeffreyBLewis/congressional-district-boundaries (MIT), Lewis, DeVine, Pitcher and Martis (2013). Map geometries are retrieved on demand, not included in this pack.\n');
+await fs.writeFile(path.join(out,'data/portraits.json'),JSON.stringify(manifest));await fs.writeFile(path.join(out,'SOURCES.txt'),'Portraits: https://github.com/unitedstates/images (public domain as described by source). Map filenames: https://github.com/JeffreyBLewis/congressional-district-boundaries (MIT), Lewis, DeVine, Pitcher and Martis (2013). Web maps are retrieved on demand; native maps are simplified from upstream geometry for display, not analytical use.\n');
 console.log(JSON.stringify({maps:mapFiles.length,portraits:photos.length}));
 const base='https://unitedstates.github.io/congress-legislators/';
 const raw=(await Promise.all(['legislators-historical.json','legislators-current.json'].map(async f=>{const r=await fetch(base+f,{signal:AbortSignal.timeout(90000)});if(!r.ok)throw Error('Legislators HTTP '+r.status);return r.json()}))).flat();
 const people=[...new Map(raw.filter(p=>p.id?.bioguide&&p.terms?.some(t=>+t.end.slice(0,4)>=1900)).map(p=>[p.id.bioguide,{id:p.id.bioguide,name:p.name.official_full||[p.name.first,p.name.middle,p.name.last,p.name.suffix].filter(Boolean).join(' '),birthday:p.bio?.birthday,source:'https://bioguide.congress.gov/search/bio/'+p.id.bioguide,terms:p.terms}])).values()];
 await fs.writeFile(path.join(out,'data/people.json'),JSON.stringify({people}));
 console.log(JSON.stringify({nativePeople:people.length}));
+ // Compact native map meshes; sample source ring vertices for a lightweight visual overview.
+ await fs.mkdir(path.join(out,'maps'),{recursive:true});const nativeIndex=[];
+ for(const name of mapFiles){const basename=path.basename(name),m=basename.match(/^(.+)_(\d+)_to_(\d+)\.geojson$/i);if(!m)continue;
+ const geo=JSON.parse(await fs.readFile(path.join(mapDir,basename),'utf8'));let rings=[];
+ for(const [i,f] of (geo.features||[]).entries()){const g=f.geometry;if(!g)continue;const polys=g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];for(const poly of polys)for(const ring of poly){if(ring.length<4)continue;const step=Math.max(1,Math.ceil((ring.length-1)/500));const points=ring.filter((_,j)=>j===0||j===ring.length-1||j%step===0).map(x=>({x:+x[0],y:+x[1]}));if(points.length<4||points.some(v=>!Number.isFinite(v.x)||!Number.isFinite(v.y)))continue;rings.push({feature:i,points})}}
+ if(!rings.length)continue;const file=basename.replace(/\.geojson$/i,'');await fs.writeFile(path.join(out,'maps',file+'.json'),JSON.stringify({rings,source:'https://raw.githubusercontent.com/JeffreyBLewis/congressional-district-boundaries/master/'+name}));nativeIndex.push({file,state:m[1].replaceAll('_',' '),start:+m[2],end:+m[3]});}
+ await fs.writeFile(path.join(out,'data/native-map-index.json'),JSON.stringify({maps:nativeIndex}));
+ console.log(JSON.stringify({nativeMaps:nativeIndex.length}));
