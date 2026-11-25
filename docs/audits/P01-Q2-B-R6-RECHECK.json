@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "round": 6,
+  "counts_as_new": 0,
+  "records": [
+    {
+      "id": "P01-1485",
+      "prior": "docs/audits/P01-Q2-B-R3-1476-1575.json",
+      "result": "confirmed existing correction; no new change",
+      "finding": "July 17 2020 temporary committee resignation letter accepted July 20, not resignation from House; Moran confirmed chair Jan 7 2020; answer B remains correct.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/CREC-2020-07-20/pdf/CREC-2020-07-20-pt1-PgH3584-7.pdf",
+        "https://www.govinfo.gov/content/pkg/CRPT-116hrpt698/html/CRPT-116hrpt698.htm",
+        "https://www.veterans.senate.gov/2020/1/sen-moran-confirmed-as-chairman-of-the-senate-veterans-affairs-committee"
+      ],
+      "q4_conflict": "Do not describe Watkins as sitting committee member in August 2020."
+    },
+    {
+      "id": "P01-1586",
+      "prior": "docs/audits/P01-Q2-B-R4-PART-64.json",
+      "result": "core confirmed; missing ID restored",
+      "finding": "Browne was Waupaca DA 1898–1905, Voigt Sheboygan DA 1905–1911, both House Republicans in April 1924. Answer C retained.",
+      "changes": [
+        {
+          "field": "cast[0].id",
+          "name": "Edward Everts Browne",
+          "before": null,
+          "after": "B000955"
+        }
+      ],
+      "sources": [
+        "https://history.house.gov/People/Listing/B/BROWNE,-Edward-Everts-(B000955)/",
+        "https://history.house.gov/People/Detail/21007"
+      ],
+      "source_blob_sha_before": "ef390c7f65ecc4953239d7ca401cbfe2dc7b1548",
+      "source_blob_sha_after": "def15bb456886be497c8edcd5196420e07d04176",
+      "correction_commit": "e8850b97c9d190866e21b04ebe4306f600c8b000",
+      "q4_conflict": "Keep Waupaca as correct jurisdiction and preserve B000955; Q4 not modified."
+    }
+  ]
+}
