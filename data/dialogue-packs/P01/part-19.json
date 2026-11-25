@@ -1,0 +1,2498 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 19,
+  "scenes": [
+    {
+      "id": "P01-451",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Daniel Donovan won NY-11 May 5, 2015 after Michael Grimm resigned before the opening of the 114th Congress without taking its oath.",
+      "date": "2015-05-13",
+      "venue": {
+        "ko": "지역 방송국",
+        "en": "Local radio studio"
+      },
+      "context": {
+        "ko": "저는 114대 개원 전에 사임했습니다.",
+        "en": "I resigned before the 114th Congress opened."
+      },
+      "cast": [
+        {
+          "name": "Daniel M. Donovan, Jr.",
+          "ko": "댄 도너번",
+          "id": "D000625",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000625.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        },
+        {
+          "name": "Michael G. Grimm",
+          "ko": "마이클 그림",
+          "id": "G000569",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000569.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "저는 114대 개원 전에 사임했습니다.",
+          "en": "I resigned before the 114th Congress opened."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "어제 선서했으니 이제 주민들을 만나겠습니다.",
+          "en": "I took the oath yesterday; now I can meet constituents."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 분의 의회 기록을 구분해 방송하죠.",
+          "en": "Let's distinguish your congressional records on air."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "도너번 의원이 5월 5일 선거로 맡은 의석은 {{blank}}입니다.",
+        "en": "Donovan won the May 5 election for {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NY-11",
+            "en": "NY-11"
+          },
+          {
+            "id": "B",
+            "ko": "NY-10",
+            "en": "NY-10"
+          },
+          {
+            "id": "C",
+            "ko": "NY-12",
+            "en": "NY-12"
+          },
+          {
+            "id": "D",
+            "ko": "NY-13",
+            "en": "NY-13"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 이제 청취자의 질문을 받죠.",
+            "en": "Good. Let's take listeners' questions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "그림 의원이 개원 전에 사임한 뉴욕 11구입니다.",
+            "en": "It's New York's eleventh, vacated by Grimm before the opening."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Daniel Donovan won NY-11 May 5, 2015 after Michael Grimm resigned before the opening of the 114th Congress without taking its oath.",
+          "asOf": "2015-05-13"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-451-vacancy-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-452",
+      "mechanism": "constituency-story",
+      "learningTarget": "Trent Kelly won MS-1 June 2, 2015 after Alan Nunnelee died.",
+      "date": "2015-06-10",
+      "venue": {
+        "ko": "미시시피 주민 봉사 모임",
+        "en": "Mississippi community volunteer meeting"
+      },
+      "context": {
+        "ko": "누널리 의원을 기리는 행사를 준비하고 있습니다.",
+        "en": "We're preparing a memorial for Nunnelee."
+      },
+      "cast": [
+        {
+          "name": "Trent Kelly",
+          "ko": "트렌트 켈리",
+          "id": "K000388",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000388.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "누널리 의원을 기리는 행사를 준비하고 있습니다.",
+          "en": "We're preparing a memorial for Nunnelee."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "기념행사와 주민 민원 창구는 별도로 안내하죠.",
+          "en": "Let's distinguish the memorial from constituent services."
+        },
+        {
+          "speaker": "host",
+          "ko": "새 현직 대표를 주민에게 알려 드리겠습니다.",
+          "en": "We'll tell residents who now represents them."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "미시시피 1구의 새 대표는 {{blank}} 의원입니다.",
+        "en": "The new representative of Mississippi's first district is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "댄 도너번",
+            "en": "Dan Donovan"
+          },
+          {
+            "id": "B",
+            "ko": "트렌트 켈리",
+            "en": "Trent Kelly"
+          },
+          {
+            "id": "C",
+            "ko": "제임스 코머",
+            "en": "James Comer"
+          },
+          {
+            "id": "D",
+            "ko": "워런 데이비드슨",
+            "en": "Warren Davidson"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "자원봉사자들과 만나겠습니다.",
+            "en": "I'll meet with the volunteers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "누널리 의원 사망 뒤 6월 2일 제가 당선됐습니다.",
+            "en": "I won June 2 following Nunnelee's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Trent Kelly won MS-1 June 2, 2015 after Alan Nunnelee died.",
+          "asOf": "2015-06-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-452-constituency-story"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-453",
+      "mechanism": "office-handover",
+      "learningTarget": "Darin LaHood won IL-18 September 10, 2015 after Aaron Schock resigned March 31.",
+      "date": "2015-09-18",
+      "venue": {
+        "ko": "일리노이 의정 기록관",
+        "en": "Illinois legislative archive"
+      },
+      "context": {
+        "ko": "이 문서는 제 사임 전에 작성했습니다.",
+        "en": "This document predates my resignation."
+      },
+      "cast": [
+        {
+          "name": "Darin LaHood",
+          "ko": "대린 러후드",
+          "id": "L000585",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000585.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        },
+        {
+          "name": "Aaron Schock",
+          "ko": "애런 쇼크",
+          "id": "S001179",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001179.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "이 문서는 제 사임 전에 작성했습니다.",
+          "en": "This document predates my resignation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 맡은 임기의 기록을 새로 시작하죠.",
+          "en": "Let's start a record for my term."
+        },
+        {
+          "speaker": "host",
+          "ko": "같은 지역구라도 작성자를 구별하겠습니다.",
+          "en": "I'll distinguish the authors even for the same seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "러후드 의원이 맡은 일리노이 의석은 {{blank}}입니다.",
+        "en": "LaHood took Illinois's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "16구",
+            "en": "16th district"
+          },
+          {
+            "id": "B",
+            "ko": "15구",
+            "en": "15th district"
+          },
+          {
+            "id": "C",
+            "ko": "18구",
+            "en": "18th district"
+          },
+          {
+            "id": "D",
+            "ko": "17구",
+            "en": "17th district"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "안건마다 담당자와 날짜를 남겨 두죠.",
+            "en": "Keep the member and date for each item."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "쇼크 의원이 떠난 18구에서 제가 당선됐습니다.",
+            "en": "I won the eighteenth district vacated by Schock."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Darin LaHood won IL-18 September 10, 2015 after Aaron Schock resigned March 31.",
+          "asOf": "2015-09-18"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-453-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-454",
+      "mechanism": "representation-system",
+      "learningTarget": "Warren Davidson won OH-8 June 7, 2016 after John Boehner resigned October 31, 2015.",
+      "date": "2016-06-10",
+      "venue": {
+        "ko": "오하이오 지역 정치 토론회",
+        "en": "Ohio district political forum"
+      },
+      "context": {
+        "ko": "전임 의원이 하원의장이었으면 새 의원도 의장이 되나요?",
+        "en": "Does succeeding a former Speaker make the new member Speaker?"
+      },
+      "cast": [
+        {
+          "name": "Warren Davidson",
+          "ko": "워런 데이비드슨",
+          "id": "D000626",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000626.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        },
+        {
+          "name": "John A. Boehner",
+          "ko": "존 베이너",
+          "id": "B000589",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000589.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "전임 의원이 하원의장이었으면 새 의원도 의장이 되나요?",
+          "en": "Does succeeding a former Speaker make the new member Speaker?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "의장직과 지역구 의석은 별개의 직책입니다.",
+          "en": "The speakership and district seat are separate offices."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 선거로 지역구 의석을 맡았습니다.",
+          "en": "I won the district seat in this election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "데이비드슨 의원이 승계한 지역구는 {{blank}}입니다.",
+        "en": "Davidson succeeded to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "OH-11",
+            "en": "OH-11"
+          },
+          {
+            "id": "B",
+            "ko": "OH-12",
+            "en": "OH-12"
+          },
+          {
+            "id": "C",
+            "ko": "OH-15",
+            "en": "OH-15"
+          },
+          {
+            "id": "D",
+            "ko": "OH-8",
+            "en": "OH-8"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "그 차이가 주민에게도 중요합니다.",
+            "en": "That distinction matters to constituents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "베이너 의원이 사임한 오하이오 8구입니다.",
+            "en": "It's Ohio's eighth, vacated by Boehner."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Warren Davidson won OH-8 June 7, 2016 after John Boehner resigned October 31, 2015.",
+          "asOf": "2016-06-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-454-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-455",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Dwight Evans won PA-2 November 8, 2016 and took the oath November 14 for the 114th Congress.",
+      "date": "2016-11-15",
+      "venue": {
+        "ko": "필라델피아 주민연대 회의",
+        "en": "Philadelphia community coalition"
+      },
+      "context": {
+        "ko": "다음 의회가 열릴 때까지 면담을 기다려야 할까요?",
+        "en": "Must we wait for the next Congress for a meeting?"
+      },
+      "cast": [
+        {
+          "name": "Dwight Evans",
+          "ko": "드와이트 에번스",
+          "id": "E000296",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000296.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "다음 의회가 열릴 때까지 면담을 기다려야 할까요?",
+          "en": "Must we wait for the next Congress for a meeting?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "어제 114대 의회 의원으로 선서했습니다.",
+          "en": "I took the oath for the 114th Congress yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "그럼 이번 회기 안건으로 접수하겠습니다.",
+          "en": "We'll submit the request in this session."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "에번스 의원이 남은 임기를 맡은 의석은 {{blank}}입니다.",
+        "en": "Evans is filling the remaining term in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "PA-2",
+            "en": "PA-2"
+          },
+          {
+            "id": "B",
+            "ko": "PA-3",
+            "en": "PA-3"
+          },
+          {
+            "id": "C",
+            "ko": "PA-7",
+            "en": "PA-7"
+          },
+          {
+            "id": "D",
+            "ko": "PA-12",
+            "en": "PA-12"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 회기에도 주민 의견을 듣겠습니다.",
+            "en": "I'll hear constituents in this session too."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "파타 의원이 사임한 펜실베이니아 2구입니다.",
+            "en": "It's Pennsylvania's second, vacated by Fattah."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Dwight Evans won PA-2 November 8, 2016 and took the oath November 14 for the 114th Congress.",
+          "asOf": "2016-11-15"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-455-vacancy-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-456",
+      "mechanism": "peer-conversation",
+      "learningTarget": "Colleen Hanabusa (HI-1) and James Comer (KY-1) both won November 8, 2016 special elections and took the oath November 14.",
+      "date": "2016-11-16",
+      "venue": {
+        "ko": "신임 의원 휴게실",
+        "en": "New-member lounge"
+      },
+      "context": {
+        "ko": "저는 켄터키 1구에서 당선됐습니다.",
+        "en": "I won Kentucky's first district."
+      },
+      "cast": [
+        {
+          "name": "Colleen Hanabusa",
+          "ko": "콜린 하나부사",
+          "id": "H001050",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001050.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        },
+        {
+          "name": "James Comer",
+          "ko": "제임스 코머",
+          "id": "C001108",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001108.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "저는 켄터키 1구에서 당선됐습니다.",
+          "en": "I won Kentucky's first district."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저도 1구이지만 주가 다릅니다.",
+          "en": "Mine is a first district too, but in another state."
+        },
+        {
+          "speaker": "host",
+          "ko": "명찰에 주를 함께 쓰겠습니다.",
+          "en": "I'll make sure the state is on each name badge."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하나부사 의원의 의석은 {{blank}}입니다.",
+        "en": "Hanabusa's seat is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AK-AL",
+            "en": "AK-AL"
+          },
+          {
+            "id": "B",
+            "ko": "HI-1",
+            "en": "HI-1"
+          },
+          {
+            "id": "C",
+            "ko": "KY-1",
+            "en": "KY-1"
+          },
+          {
+            "id": "D",
+            "ko": "HI-2",
+            "en": "HI-2"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "번호가 같아도 다른 의석이라는 점이 분명하네요.",
+            "en": "Same number, clearly different seats."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "타카이 의원 사망 뒤 하와이 1구에서 당선됐습니다.",
+            "en": "I won Hawaii's first district after Takai's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "Colleen Hanabusa (HI-1) and James Comer (KY-1) both won November 8, 2016 special elections and took the oath November 14.",
+          "asOf": "2016-11-16"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-456-peer-conversation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-457",
+      "mechanism": "office-handover",
+      "learningTarget": "James Comer won KY-1 November 8, 2016 after Ed Whitfield resigned September 6.",
+      "date": "2016-11-17",
+      "venue": {
+        "ko": "켄터키 농촌 주민 간담회",
+        "en": "Kentucky rural community forum"
+      },
+      "context": {
+        "ko": "9월에 사임했으니 하원 안건은 신임 의원에게 전달하세요.",
+        "en": "I resigned in September; send House matters to the new member."
+      },
+      "cast": [
+        {
+          "name": "James Comer",
+          "ko": "제임스 코머",
+          "id": "C001108",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001108.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        },
+        {
+          "name": "Ed Whitfield",
+          "ko": "에드 휘트필드",
+          "id": "W000413",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000413.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "9월에 사임했으니 하원 안건은 신임 의원에게 전달하세요.",
+          "en": "I resigned in September; send House matters to the new member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "주민이 처음부터 설명하지 않도록 기존 자료를 살펴보겠습니다.",
+          "en": "I'll review earlier materials so residents needn't start from scratch."
+        },
+        {
+          "speaker": "host",
+          "ko": "담당 의원을 명시해 회의 요청을 보내죠.",
+          "en": "Let's name the current member on the meeting request."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "휘트필드 의원을 이어 켄터키 1구를 맡은 사람은 {{blank}}입니다.",
+        "en": "The successor to Whitfield in Kentucky's first district is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "대린 러후드",
+            "en": "Darin LaHood"
+          },
+          {
+            "id": "B",
+            "ko": "드와이트 에번스",
+            "en": "Dwight Evans"
+          },
+          {
+            "id": "C",
+            "ko": "제임스 코머",
+            "en": "James Comer"
+          },
+          {
+            "id": "D",
+            "ko": "트렌트 켈리",
+            "en": "Trent Kelly"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "회의에서 주민의 우선순위를 듣겠습니다.",
+            "en": "I'll hear their priorities at the meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "11월 8일 선거에서 제가 당선됐습니다.",
+            "en": "I won November 8."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224025&id=36507224009",
+          "claim": "James Comer won KY-1 November 8, 2016 after Ed Whitfield resigned September 6.",
+          "asOf": "2016-11-17"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-457-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-458",
+      "mechanism": "constituency-story",
+      "learningTarget": "Fred Keller won PA-12 May 21, 2019 after Tom Marino resigned January 23.",
+      "date": "2019-06-04",
+      "venue": {
+        "ko": "펜실베이니아 의견 청취회",
+        "en": "Pennsylvania listening session"
+      },
+      "context": {
+        "ko": "1월 이후 모인 의견을 한꺼번에 가져왔습니다.",
+        "en": "We brought the comments collected since January."
+      },
+      "cast": [
+        {
+          "name": "Fred Keller",
+          "ko": "프레드 켈러",
+          "id": "K000395",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000395.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Tom Marino",
+          "ko": "톰 마리노",
+          "id": "M001179",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001179.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "1월 이후 모인 의견을 한꺼번에 가져왔습니다.",
+          "en": "We brought the comments collected since January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 사임 이후 의견은 새 의원이 검토할 사항이군요.",
+          "en": "The incoming member should review comments after my resignation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "쟁점별로 나눠 듣겠습니다.",
+          "en": "I'll hear them issue by issue."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "켈러 의원은 펜실베이니아 {{blank}}를 맡았습니다.",
+        "en": "Keller took Pennsylvania's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2구",
+            "en": "2nd district"
+          },
+          {
+            "id": "B",
+            "ko": "7구",
+            "en": "7th district"
+          },
+          {
+            "id": "C",
+            "ko": "18구",
+            "en": "18th district"
+          },
+          {
+            "id": "D",
+            "ko": "12구",
+            "en": "12th district"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민 의견 목록부터 시작하죠.",
+            "en": "Let's start with the residents' list."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "5월 21일 12구 선거에서 당선됐습니다.",
+            "en": "I won the twelfth district election May 21."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Fred Keller won PA-12 May 21, 2019 after Tom Marino resigned January 23.",
+          "asOf": "2019-06-04"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-458-constituency-story"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-459",
+      "mechanism": "peer-conversation",
+      "learningTarget": "Gregory Murphy (NC-3) and Dan Bishop (NC-9) won September 10, 2019 special elections and took the oath September 17.",
+      "date": "2019-09-18",
+      "venue": {
+        "ko": "노스캐롤라이나 대표단 만찬",
+        "en": "North Carolina delegation dinner"
+      },
+      "context": {
+        "ko": "저는 존스 의원의 사망으로 비었던 의석에서 선거를 치렀습니다.",
+        "en": "My election filled the seat left vacant by Jones's death."
+      },
+      "cast": [
+        {
+          "name": "Gregory F. Murphy",
+          "ko": "그레고리 머피",
+          "id": "M001210",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001210.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Dan Bishop",
+          "ko": "댄 비숍",
+          "id": "B001311",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001311.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 존스 의원의 사망으로 비었던 의석에서 선거를 치렀습니다.",
+          "en": "My election filled the seat left vacant by Jones's death."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 선거도 같은 날이었지만 다른 지역구였죠.",
+          "en": "Mine was on the same day, but in another district."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 의석을 함께 기록하겠습니다.",
+          "en": "I'll record both seats."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "머피 의원은 NC-{{blank}}, 비숍 의원은 NC-9입니다.",
+        "en": "Murphy represents NC-{{blank}}; Bishop represents NC-9.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "3",
+            "en": "3"
+          },
+          {
+            "id": "B",
+            "ko": "9",
+            "en": "9"
+          },
+          {
+            "id": "C",
+            "ko": "11",
+            "en": "11"
+          },
+          {
+            "id": "D",
+            "ko": "1",
+            "en": "1"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "같은 선거일이지만 다른 의석입니다.",
+            "en": "Same election date, different seats."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 3구에서 당선됐습니다.",
+            "en": "I won the third district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Gregory Murphy (NC-3) and Dan Bishop (NC-9) won September 10, 2019 special elections and took the oath September 17.",
+          "asOf": "2019-09-18"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-459-peer-conversation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-460",
+      "mechanism": "representation-system",
+      "learningTarget": "The House Clerk received notice from the North Carolina state board of elections' general counsel on March 14, 2019 that a special election was ordered in NC-9; Dan Bishop won September 10.",
+      "date": "2019-09-19",
+      "venue": {
+        "ko": "노스캐롤라이나 선거기록 전시실",
+        "en": "North Carolina election records exhibit"
+      },
+      "context": {
+        "ko": "9구 기록을 전임자 사임 항목에 넣을까요?",
+        "en": "Should the ninth district go under predecessor resignations?"
+      },
+      "cast": [
+        {
+          "name": "Dan Bishop",
+          "ko": "댄 비숍",
+          "id": "B001311",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001311.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "9구 기록을 전임자 사임 항목에 넣을까요?",
+          "en": "Should the ninth district go under predecessor resignations?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이 경우 주 선거위원회 측 통지와 특별선거 명령이 기록되어 있습니다.",
+          "en": "This case records notice from the state board's counsel and an ordered special election."
+        },
+        {
+          "speaker": "host",
+          "ko": "별도 분류를 만들겠습니다.",
+          "en": "I'll create a separate classification."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2019년 3월 14일 하원 서기가 받은 통지는 {{blank}} 측에서 왔습니다.",
+        "en": "The March 14, 2019 notification received by the Clerk came from the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 교육위원회",
+            "en": "state board of education"
+          },
+          {
+            "id": "B",
+            "ko": "노스캐롤라이나 주 선거위원회 법률고문",
+            "en": "North Carolina state board of elections' general counsel"
+          },
+          {
+            "id": "C",
+            "ko": "연방상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "D",
+            "ko": "하원 윤리위원회",
+            "en": "House Ethics Committee"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "관람객이 특별선거의 배경까지 알겠네요.",
+            "en": "Visitors can read the election's background."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "하원 기록은 주 선거위원회 법률고문의 통지를 명시합니다.",
+            "en": "The House record identifies the state board's general counsel."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "The House Clerk received notice from the North Carolina state board of elections' general counsel on March 14, 2019 that a special election was ordered in NC-9; Dan Bishop won September 10.",
+          "asOf": "2019-09-19"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-460-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-461",
+      "mechanism": "office-handover",
+      "learningTarget": "Tom Tiffany won WI-7 May 12, 2020 after Sean Duffy resigned September 23, 2019.",
+      "date": "2020-05-20",
+      "venue": {
+        "ko": "위스콘신 주민 화상회의",
+        "en": "Wisconsin district video conference"
+      },
+      "context": {
+        "ko": "지난해 9월까지 제가 그 의석을 맡았습니다.",
+        "en": "I held the seat until September last year."
+      },
+      "cast": [
+        {
+          "name": "Thomas P. Tiffany",
+          "ko": "톰 티퍼니",
+          "id": "T000165",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000165.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Sean P. Duffy",
+          "ko": "숀 더피",
+          "id": "D000614",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000614.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "지난해 9월까지 제가 그 의석을 맡았습니다.",
+          "en": "I held the seat until September last year."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지금부터는 주민 문의를 제 사무실로 보내 주세요.",
+          "en": "Direct current inquiries to my office."
+        },
+        {
+          "speaker": "host",
+          "ko": "회의 안내에 지역구도 넣겠습니다.",
+          "en": "I'll include the district on the call notice."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "티퍼니 의원은 위스콘신 {{blank}}를 대표합니다.",
+        "en": "Tiffany represents Wisconsin's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "5구",
+            "en": "5th district"
+          },
+          {
+            "id": "B",
+            "ko": "8구",
+            "en": "8th district"
+          },
+          {
+            "id": "C",
+            "ko": "7구",
+            "en": "7th district"
+          },
+          {
+            "id": "D",
+            "ko": "1구",
+            "en": "1st district"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "화상회의에서 주민 의견을 듣겠습니다.",
+            "en": "I'll hear residents' concerns on the call."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "더피 의원이 사임한 7구입니다.",
+            "en": "It's the seventh, vacated by Duffy."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Tom Tiffany won WI-7 May 12, 2020 after Sean Duffy resigned September 23, 2019.",
+          "asOf": "2020-05-20"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-461-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-462",
+      "mechanism": "public-correction",
+      "learningTarget": "Chris Jacobs won NY-27 June 23, 2020 and took the oath July 21.",
+      "date": "2020-07-22",
+      "venue": {
+        "ko": "뉴욕 지역 방송 인터뷰",
+        "en": "New York local broadcast interview"
+      },
+      "context": {
+        "ko": "지난달 당선됐는데 어제 선서하셨군요.",
+        "en": "You won last month but took the oath yesterday."
+      },
+      "cast": [
+        {
+          "name": "Chris Jacobs",
+          "ko": "크리스 제이컵스",
+          "id": "J000020",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000020.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지난달 당선됐는데 어제 선서하셨군요.",
+          "en": "You won last month but took the oath yesterday."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "의정 기록에는 두 날짜가 필요합니다.",
+          "en": "The congressional record needs both dates."
+        },
+        {
+          "speaker": "host",
+          "ko": "방송 자막에서 구분하죠.",
+          "en": "We'll distinguish them in the caption."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제이컵스 의원의 선서일은 {{blank}}입니다.",
+        "en": "Jacobs took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2020년 6월 23일",
+            "en": "June 23, 2020"
+          },
+          {
+            "id": "B",
+            "ko": "2020년 7월 4일",
+            "en": "July 4, 2020"
+          },
+          {
+            "id": "C",
+            "ko": "2020년 8월 21일",
+            "en": "August 21, 2020"
+          },
+          {
+            "id": "D",
+            "ko": "2020년 7월 21일",
+            "en": "July 21, 2020"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "당선자와 현직 의원의 차이를 보여 주겠네요.",
+            "en": "That distinguishes a member-elect from a sitting member."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "6월 23일 당선됐지만 선서는 7월 21일이었습니다.",
+            "en": "I won June 23 and took the oath July 21."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Chris Jacobs won NY-27 June 23, 2020 and took the oath July 21.",
+          "asOf": "2020-07-22"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-462-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-463",
+      "mechanism": "map-comparison",
+      "learningTarget": "Republican Mike Garcia won CA-25 May 12, 2020 after Democrat Katie Hill resigned; Republican Tom Tiffany won WI-7 the same day.",
+      "date": "2020-05-20",
+      "venue": {
+        "ko": "신임 의원 화상 토론",
+        "en": "Remote new-member discussion"
+      },
+      "context": {
+        "ko": "위스콘신에서는 공화당 의석을 이어받았습니다.",
+        "en": "In Wisconsin, I succeeded a Republican."
+      },
+      "cast": [
+        {
+          "name": "Mike Garcia",
+          "ko": "마이크 가르시아",
+          "id": "G000061",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000061.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Thomas P. Tiffany",
+          "ko": "톰 티퍼니",
+          "id": "T000165",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000165.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "위스콘신에서는 공화당 의석을 이어받았습니다.",
+          "en": "In Wisconsin, I succeeded a Republican."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 캘리포니아 의석의 전임 의원은 민주당이었습니다.",
+          "en": "My California predecessor was a Democrat."
+        },
+        {
+          "speaker": "host",
+          "ko": "의석 지도에 두 사례를 다르게 표시하죠.",
+          "en": "Let's distinguish the cases on the seat map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "가르시아 의원 승계 이후 CA-25의 정당은 {{blank}}으로 바뀌었습니다.",
+        "en": "The party holding CA-25 changed to {{blank}} with Garcia's election.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "Democratic"
+          },
+          {
+            "id": "C",
+            "ko": "무소속",
+            "en": "Independent"
+          },
+          {
+            "id": "D",
+            "ko": "녹색당",
+            "en": "Green"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "같은 날 선거였지만 정당 변화는 달랐네요.",
+            "en": "The same election day brought different party changes."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "케이티 힐 민주당 의원이 떠난 의석에서 공화당으로 당선됐습니다.",
+            "en": "I won as a Republican in the seat vacated by Democrat Katie Hill."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Republican Mike Garcia won CA-25 May 12, 2020 after Democrat Katie Hill resigned; Republican Tom Tiffany won WI-7 the same day.",
+          "asOf": "2020-05-20"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-463-map-comparison"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-464",
+      "mechanism": "public-correction",
+      "learningTarget": "Duncan Hunter resigned CA-50 January 13, 2020; it remained vacant through the 116th Congress.",
+      "date": "2020-02-01",
+      "venue": {
+        "ko": "캘리포니아 지역 기자 인터뷰",
+        "en": "California district press interview"
+      },
+      "context": {
+        "ko": "기사 초안에 아직 현직 의원으로 적혀 있습니다.",
+        "en": "The draft still calls you a sitting member."
+      },
+      "cast": [
+        {
+          "name": "Duncan Hunter",
+          "ko": "던컨 헌터",
+          "id": "H001048",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001048.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "기사 초안에 아직 현직 의원으로 적혀 있습니다.",
+          "en": "The draft still calls you a sitting member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1월 13일 사임했으니 그렇게 쓰면 안 됩니다.",
+          "en": "I resigned January 13; that isn't accurate."
+        },
+        {
+          "speaker": "host",
+          "ko": "현재 의석 상태도 명시하겠습니다.",
+          "en": "I'll specify the current seat status."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 CA-50은 {{blank}} 상태입니다.",
+        "en": "CA-50 is currently {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주지사가 대표",
+            "en": "held by the governor"
+          },
+          {
+            "id": "B",
+            "ko": "공석",
+            "en": "vacant"
+          },
+          {
+            "id": "C",
+            "ko": "의장 대행이 대표",
+            "en": "held by acting Speaker"
+          },
+          {
+            "id": "D",
+            "ko": "상원 전환",
+            "en": "converted to a Senate seat"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "전직과 공석을 구분해 주시죠.",
+            "en": "Distinguish former member from a vacancy."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1월 13일 사임 이후 공석입니다.",
+            "en": "It's vacant since my January 13 resignation."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Duncan Hunter resigned CA-50 January 13, 2020; it remained vacant through the 116th Congress.",
+          "asOf": "2020-02-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-464-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-465",
+      "mechanism": "delegation-introduction",
+      "learningTarget": "Mark Meadows resigned NC-11 March 30, 2020; it remained vacant through the 116th Congress.",
+      "date": "2020-04-15",
+      "venue": {
+        "ko": "노스캐롤라이나 지역 문의 회의",
+        "en": "North Carolina district inquiries"
+      },
+      "context": {
+        "ko": "3월 30일에 하원을 떠났습니다.",
+        "en": "I left the House March 30."
+      },
+      "cast": [
+        {
+          "name": "Mark Meadows",
+          "ko": "마크 메도스",
+          "id": "M001187",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001187.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Dan Bishop",
+          "ko": "댄 비숍",
+          "id": "B001311",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001311.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월 30일에 하원을 떠났습니다.",
+          "en": "I left the House March 30."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 9구 현직 대표입니다.",
+          "en": "I'm still the sitting member for the ninth."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 의석 현황을 구분해 기록해야겠네요.",
+          "en": "I'll record the seats separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "메도스 의원 사임으로 공석이 된 의석은 {{blank}}입니다.",
+        "en": "The seat vacated by Meadows's resignation is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NC-3",
+            "en": "NC-3"
+          },
+          {
+            "id": "B",
+            "ko": "NC-1",
+            "en": "NC-1"
+          },
+          {
+            "id": "C",
+            "ko": "NC-11",
+            "en": "NC-11"
+          },
+          {
+            "id": "D",
+            "ko": "NC-9",
+            "en": "NC-9"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "현직 의석과 공석을 따로 표시합시다.",
+            "en": "Mark the filled seat and vacancy separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 떠난 의석은 노스캐롤라이나 11구입니다.",
+            "en": "The seat I left was North Carolina's eleventh."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Mark Meadows resigned NC-11 March 30, 2020; it remained vacant through the 116th Congress.",
+          "asOf": "2020-04-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-465-delegation-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-466",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "John Ratcliffe resigned TX-4 May 22, 2020; it remained vacant through the 116th Congress.",
+      "date": "2020-06-01",
+      "venue": {
+        "ko": "텍사스 신문 편집회의",
+        "en": "Texas newspaper editorial meeting"
+      },
+      "context": {
+        "ko": "새 공직 소식을 보도하며 이전 직함도 확인하겠습니다.",
+        "en": "We'll check the previous title while reporting your new office."
+      },
+      "cast": [
+        {
+          "name": "John Ratcliffe",
+          "ko": "존 랫클리프",
+          "id": "R000601",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000601.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "새 공직 소식을 보도하며 이전 직함도 확인하겠습니다.",
+          "en": "We'll check the previous title while reporting your new office."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "5월 22일 하원을 사임했습니다.",
+          "en": "I resigned from the House May 22."
+        },
+        {
+          "speaker": "host",
+          "ko": "하원 의석 현황은 별도로 표시하죠.",
+          "en": "We'll separately mark the House seat status."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "랫클리프 의원이 사임한 의석은 텍사스 {{blank}}입니다.",
+        "en": "Ratcliffe vacated Texas's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "6구",
+            "en": "6th district"
+          },
+          {
+            "id": "B",
+            "ko": "13구",
+            "en": "13th district"
+          },
+          {
+            "id": "C",
+            "ko": "27구",
+            "en": "27th district"
+          },
+          {
+            "id": "D",
+            "ko": "4구",
+            "en": "4th district"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "기사에서 두 직책을 구별해 주세요.",
+            "en": "Distinguish the two offices in the story."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "텍사스 4구에서 사임했습니다.",
+            "en": "I resigned from Texas's fourth district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "John Ratcliffe resigned TX-4 May 22, 2020; it remained vacant through the 116th Congress.",
+          "asOf": "2020-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-466-vacancy-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-467",
+      "mechanism": "public-correction",
+      "learningTarget": "Tom Graves resigned GA-14 October 4, 2020; it remained vacant through the 116th Congress.",
+      "date": "2020-10-12",
+      "venue": {
+        "ko": "조지아 시민회의",
+        "en": "Georgia civic forum"
+      },
+      "context": {
+        "ko": "이번 달 초까지 현직이셨죠?",
+        "en": "You were the sitting member until early this month?"
+      },
+      "cast": [
+        {
+          "name": "Tom Graves",
+          "ko": "톰 그레이브스",
+          "id": "G000560",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000560.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "이번 달 초까지 현직이셨죠?",
+          "en": "You were the sitting member until early this month?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "10월 4일 사임했습니다.",
+          "en": "I resigned October 4."
+        },
+        {
+          "speaker": "host",
+          "ko": "다음 의회와 남은 회기 명단을 따로 보관하죠.",
+          "en": "We'll separate the next Congress roster from this session's."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그레이브스 의원이 사임한 조지아 의석은 {{blank}}입니다.",
+        "en": "Graves resigned Georgia's {{blank}} seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "14구",
+            "en": "14th district"
+          },
+          {
+            "id": "B",
+            "ko": "6구",
+            "en": "6th district"
+          },
+          {
+            "id": "C",
+            "ko": "7구",
+            "en": "7th district"
+          },
+          {
+            "id": "D",
+            "ko": "5구",
+            "en": "5th district"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 의회와 다음 의회의 선거 결과를 섞지 마세요.",
+            "en": "Don't mix this Congress with the next election results."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "조지아 14구에서 사임했습니다.",
+            "en": "I resigned Georgia's fourteenth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Tom Graves resigned GA-14 October 4, 2020; it remained vacant through the 116th Congress.",
+          "asOf": "2020-10-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-467-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-468",
+      "mechanism": "map-comparison",
+      "learningTarget": "Paul Cook resigned CA-8 December 7, 2020; it remained vacant through the 116th Congress.",
+      "date": "2020-12-10",
+      "venue": {
+        "ko": "캘리포니아 대표단 기록 정리",
+        "en": "California delegation record review"
+      },
+      "context": {
+        "ko": "12월 7일에 하원을 떠났습니다.",
+        "en": "I left the House December 7."
+      },
+      "cast": [
+        {
+          "name": "Paul Cook",
+          "ko": "폴 쿡",
+          "id": "C001094",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001094.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        },
+        {
+          "name": "Mike Garcia",
+          "ko": "마이크 가르시아",
+          "id": "G000061",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000061.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "12월 7일에 하원을 떠났습니다.",
+          "en": "I left the House December 7."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 25구 현직 의원입니다.",
+          "en": "I'm the sitting member for the twenty-fifth."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 지역구의 상태를 따로 기록하겠습니다.",
+          "en": "I'll record the two seat statuses separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿡 의원이 떠난 의석은 {{blank}}입니다.",
+        "en": "Cook vacated {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-34",
+            "en": "CA-34"
+          },
+          {
+            "id": "B",
+            "ko": "CA-8",
+            "en": "CA-8"
+          },
+          {
+            "id": "C",
+            "ko": "CA-25",
+            "en": "CA-25"
+          },
+          {
+            "id": "D",
+            "ko": "CA-50",
+            "en": "CA-50"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "현직 의석과 공석을 같은 색으로 표시하지 마세요.",
+            "en": "Don't give a filled seat and a vacancy the same color."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 사임한 의석은 8구입니다.",
+            "en": "I resigned the eighth district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224027&id=36507224009",
+          "claim": "Paul Cook resigned CA-8 December 7, 2020; it remained vacant through the 116th Congress.",
+          "asOf": "2020-12-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-468-map-comparison"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-469",
+      "mechanism": "office-handover",
+      "learningTarget": "Michael Rulli won OH-6 June 11, 2024 after Bill Johnson resigned January 21.",
+      "date": "2024-06-26",
+      "venue": {
+        "ko": "오하이오 주민 의견 전달회",
+        "en": "Ohio constituent handover meeting"
+      },
+      "context": {
+        "ko": "1월 이후에는 제가 하원 대표가 아니었습니다.",
+        "en": "I was no longer the House member after January."
+      },
+      "cast": [
+        {
+          "name": "Michael A. Rulli",
+          "ko": "마이클 룰리",
+          "id": "R000619",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000619.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        },
+        {
+          "name": "Bill Johnson",
+          "ko": "빌 존슨",
+          "id": "J000292",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000292.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "1월 이후에는 제가 하원 대표가 아니었습니다.",
+          "en": "I was no longer the House member after January."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "6월 선거 이후 주민 의견을 직접 듣겠습니다.",
+          "en": "I'll hear residents directly after the June election."
+        },
+        {
+          "speaker": "host",
+          "ko": "지역구 연락망을 갱신하죠.",
+          "en": "Let's update the district contact network."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "룰리 의원이 이어받은 의석은 {{blank}}입니다.",
+        "en": "Rulli succeeded to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "OH-12",
+            "en": "OH-12"
+          },
+          {
+            "id": "B",
+            "ko": "OH-15",
+            "en": "OH-15"
+          },
+          {
+            "id": "C",
+            "ko": "OH-6",
+            "en": "OH-6"
+          },
+          {
+            "id": "D",
+            "ko": "OH-11",
+            "en": "OH-11"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 주민 회의부터 시작하죠.",
+            "en": "Let's start with the district meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨 의원이 사임한 오하이오 6구입니다.",
+            "en": "It's Ohio's sixth, vacated by Johnson."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Michael Rulli won OH-6 June 11, 2024 after Bill Johnson resigned January 21.",
+          "asOf": "2024-06-26"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-469-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-470",
+      "mechanism": "public-correction",
+      "learningTarget": "Tony Wied won WI-8 November 5, 2024 after Mike Gallagher resigned and took the oath November 12.",
+      "date": "2024-11-13",
+      "venue": {
+        "ko": "위스콘신 언론 인터뷰",
+        "en": "Wisconsin local press interview"
+      },
+      "context": {
+        "ko": "저는 4월에 사임했습니다.",
+        "en": "I resigned in April."
+      },
+      "cast": [
+        {
+          "name": "Tony Wied",
+          "ko": "토니 위드",
+          "id": "W000829",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000829.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        },
+        {
+          "name": "Mike Gallagher",
+          "ko": "마이크 갤러거",
+          "id": "G000579",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000579.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "저는 4월에 사임했습니다.",
+          "en": "I resigned in April."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "어제 118대 의회 의원으로 선서했습니다.",
+          "en": "I took the oath for the 118th Congress yesterday."
+        },
+        {
+          "speaker": "host",
+          "ko": "이번 의회 잔여 임기라고 자막을 넣겠습니다.",
+          "en": "I'll caption it as the remainder of this Congress."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "위드 의원의 선서일은 {{blank}}였습니다.",
+        "en": "Wied took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2024년 11월 5일",
+            "en": "November 5, 2024"
+          },
+          {
+            "id": "B",
+            "ko": "2025년 1월 3일",
+            "en": "January 3, 2025"
+          },
+          {
+            "id": "C",
+            "ko": "2024년 4월 24일",
+            "en": "April 24, 2024"
+          },
+          {
+            "id": "D",
+            "ko": "2024년 11월 12일",
+            "en": "November 12, 2024"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "선거와 취임을 구분한 소개군요.",
+            "en": "That distinguishes the election from taking office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "11월 5일 당선됐고 12일 선서했습니다.",
+            "en": "I won November 5 and took the oath November 12."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Tony Wied won WI-8 November 5, 2024 after Mike Gallagher resigned and took the oath November 12.",
+          "asOf": "2024-11-13"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-470-public-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-471",
+      "mechanism": "constituency-story",
+      "learningTarget": "Bill Pascrell died August 21, 2024; NJ-9 remained vacant through the 118th Congress.",
+      "date": "2024-09-05",
+      "venue": {
+        "ko": "뉴저지 지역 추모행사 준비실",
+        "en": "New Jersey memorial planning room"
+      },
+      "context": {
+        "ko": "패스크렐 의원의 추모행사에 현직 대표 연락처도 넣을까요?",
+        "en": "Should the memorial program list a current representative's contact?"
+      },
+      "cast": [
+        {
+          "name": "Andy Kim",
+          "ko": "앤디 김",
+          "id": "K000394",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000394.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "패스크렐 의원의 추모행사에 현직 대표 연락처도 넣을까요?",
+          "en": "Should the memorial program list a current representative's contact?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 의석은 지금 공석입니다. 제 지역구와도 다릅니다.",
+          "en": "That seat is vacant, and it isn't my district."
+        },
+        {
+          "speaker": "host",
+          "ko": "추모와 현재 의석 안내를 구분하겠습니다.",
+          "en": "I'll separate the memorial from the seat status."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "패스크렐 의원 사망으로 공석이 된 의석은 {{blank}}입니다.",
+        "en": "The seat vacated by Pascrell's death is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NJ-9",
+            "en": "NJ-9"
+          },
+          {
+            "id": "B",
+            "ko": "NJ-3",
+            "en": "NJ-3"
+          },
+          {
+            "id": "C",
+            "ko": "NJ-10",
+            "en": "NJ-10"
+          },
+          {
+            "id": "D",
+            "ko": "NJ-7",
+            "en": "NJ-7"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "추모 기록과 현재 상태를 각각 남기죠.",
+            "en": "Preserve the memorial and current status separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "뉴저지 9구입니다.",
+            "en": "It's New Jersey's ninth."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Bill Pascrell died August 21, 2024; NJ-9 remained vacant through the 118th Congress.",
+          "asOf": "2024-09-05"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-471-constituency-story"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-472",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Matt Gaetz resigned FL-1 November 13, 2024; it remained vacant through the 118th Congress.",
+      "date": "2024-11-20",
+      "venue": {
+        "ko": "플로리다 인터뷰 대기실",
+        "en": "Florida interview waiting room"
+      },
+      "context": {
+        "ko": "오늘은 어떤 직함으로 소개할까요?",
+        "en": "How should we introduce you today?"
+      },
+      "cast": [
+        {
+          "name": "Matt Gaetz",
+          "ko": "맷 게이츠",
+          "id": "G000578",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000578.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "오늘은 어떤 직함으로 소개할까요?",
+          "en": "How should we introduce you today?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "11월 13일 하원을 사임했습니다.",
+          "en": "I resigned from the House November 13."
+        },
+        {
+          "speaker": "host",
+          "ko": "현재 지역구 상태도 기사에 적겠습니다.",
+          "en": "We'll note the current seat status too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "게이츠 의원이 떠난 플로리다 {{blank}}는 공석입니다.",
+        "en": "Florida's {{blank}}, vacated by Gaetz, is empty.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "20구",
+            "en": "20th district"
+          },
+          {
+            "id": "B",
+            "ko": "1구",
+            "en": "1st district"
+          },
+          {
+            "id": "C",
+            "ko": "6구",
+            "en": "6th district"
+          },
+          {
+            "id": "D",
+            "ko": "13구",
+            "en": "13th district"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "날짜를 넣으면 당시 상황을 알겠군요.",
+            "en": "Including the date clarifies the situation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "사임한 의석은 플로리다 1구입니다.",
+            "en": "I resigned Florida's first district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Matt Gaetz resigned FL-1 November 13, 2024; it remained vacant through the 118th Congress.",
+          "asOf": "2024-11-20"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-472-vacancy-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-473",
+      "mechanism": "office-handover",
+      "learningTarget": "Andy Kim resigned NJ-3 December 8, 2024; it remained vacant through the 118th Congress.",
+      "date": "2024-12-10",
+      "venue": {
+        "ko": "뉴저지 지역 행사 연락회의",
+        "en": "New Jersey civic event coordination"
+      },
+      "context": {
+        "ko": "행사 자료에는 아직 하원 현직으로 적혀 있습니다.",
+        "en": "The event program still calls you a sitting House member."
+      },
+      "cast": [
+        {
+          "name": "Andy Kim",
+          "ko": "앤디 김",
+          "id": "K000394",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000394.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "행사 자료에는 아직 하원 현직으로 적혀 있습니다.",
+          "en": "The event program still calls you a sitting House member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "12월 8일에 하원을 사임했습니다.",
+          "en": "I resigned from the House December 8."
+        },
+        {
+          "speaker": "host",
+          "ko": "이전 기록은 보존하고 현재 안내만 고치죠.",
+          "en": "Preserve earlier records and update the current notice."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "앤디 김 의원 사임으로 공석이 된 의석은 {{blank}}입니다.",
+        "en": "The House seat vacated by Andy Kim is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NJ-10",
+            "en": "NJ-10"
+          },
+          {
+            "id": "B",
+            "ko": "NJ-11",
+            "en": "NJ-11"
+          },
+          {
+            "id": "C",
+            "ko": "NJ-3",
+            "en": "NJ-3"
+          },
+          {
+            "id": "D",
+            "ko": "NJ-9",
+            "en": "NJ-9"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "하원과 다른 공직의 기록을 구분해 주세요.",
+            "en": "Distinguish House service from other offices."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "뉴저지 3구였습니다.",
+            "en": "It was New Jersey's third district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Andy Kim resigned NJ-3 December 8, 2024; it remained vacant through the 118th Congress.",
+          "asOf": "2024-12-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-473-office-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-474",
+      "mechanism": "representation-system",
+      "learningTarget": "Kelly Armstrong resigned North Dakota's at-large seat December 14, 2024; it remained vacant through the 118th Congress.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "노스다코타 주 전체 행사",
+        "en": "North Dakota statewide event"
+      },
+      "context": {
+        "ko": "사임하셨다면 어느 지역구가 영향을 받나요?",
+        "en": "Which district is affected by your resignation?"
+      },
+      "cast": [
+        {
+          "name": "Kelly Armstrong",
+          "ko": "켈리 암스트롱",
+          "id": "A000377",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000377.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "사임하셨다면 어느 지역구가 영향을 받나요?",
+          "en": "Which district is affected by your resignation?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "우리 주의 하원 의석은 주 전체를 대표합니다.",
+          "en": "Our state's House seat represents the whole state."
+        },
+        {
+          "speaker": "host",
+          "ko": "주 전체 대표 현황을 수정하겠습니다.",
+          "en": "I'll update statewide House representation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "12월 14일 암스트롱 의원이 사임한 의석은 {{blank}}입니다.",
+        "en": "The seat Armstrong resigned December 14 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "ND-1",
+            "en": "ND-1"
+          },
+          {
+            "id": "B",
+            "ko": "ND-2",
+            "en": "ND-2"
+          },
+          {
+            "id": "C",
+            "ko": "SD-AL",
+            "en": "SD-AL"
+          },
+          {
+            "id": "D",
+            "ko": "ND-AL",
+            "en": "ND-AL"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 전체 의석이라는 점도 안내하세요.",
+            "en": "Note that it is a statewide seat."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스다코타의 주 전체 의석입니다.",
+            "en": "It's North Dakota's at-large seat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Kelly Armstrong resigned North Dakota's at-large seat December 14, 2024; it remained vacant through the 118th Congress.",
+          "asOf": "2024-12-16"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-474-representation-system"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-475",
+      "mechanism": "public-correction",
+      "learningTarget": "Jeff Jackson resigned NC-14 December 31, 2024; it remained vacant through the 118th Congress.",
+      "date": "2025-01-02",
+      "venue": {
+        "ko": "노스캐롤라이나 연말 의회 기록실",
+        "en": "North Carolina year-end congressional archive"
+      },
+      "context": {
+        "ko": "새해가 됐지만 아직 118대 의회 기록을 마감하고 있습니다.",
+        "en": "It's a new year, but we're still closing the 118th Congress record."
+      },
+      "cast": [
+        {
+          "name": "Jeff Jackson",
+          "ko": "제프 잭슨",
+          "id": "J000308",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000308.jpg",
+          "source": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "새해가 됐지만 아직 118대 의회 기록을 마감하고 있습니다.",
+          "en": "It's a new year, but we're still closing the 118th Congress record."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 12월 31일에 하원을 사임했습니다.",
+          "en": "I resigned from the House December 31."
+        },
+        {
+          "speaker": "host",
+          "ko": "남은 회기의 의석 상태를 기록하겠습니다.",
+          "en": "I'll record the seat's status for the remaining session."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "잭슨 의원이 사임한 의석은 {{blank}}입니다.",
+        "en": "The seat Jackson resigned was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NC-14",
+            "en": "NC-14"
+          },
+          {
+            "id": "B",
+            "ko": "NC-12",
+            "en": "NC-12"
+          },
+          {
+            "id": "C",
+            "ko": "NC-13",
+            "en": "NC-13"
+          },
+          {
+            "id": "D",
+            "ko": "NC-9",
+            "en": "NC-9"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "달력 연도와 의회 번호는 구별해야 합니다.",
+            "en": "The calendar year and Congress number are different."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스캐롤라이나 14구에서 사임했습니다.",
+            "en": "I resigned North Carolina's fourteenth district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224029&id=36507224009",
+          "claim": "Jeff Jackson resigned NC-14 December 31, 2024; it remained vacant through the 118th Congress.",
+          "asOf": "2025-01-02"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-475-public-correction"
+      },
+      "fictional": true
+    }
+  ]
+}
