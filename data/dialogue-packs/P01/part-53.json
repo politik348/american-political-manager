@@ -1,0 +1,2463 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 53,
+  "scenes": [
+    {
+      "id": "P01-1301",
+      "mechanism": "apportionment-planning",
+      "learningTarget": "2020 census awarded Oregon one additional House seat; five seats in the 117th Congress.",
+      "date": "2022-10-27",
+      "venue": {
+        "ko": "오리건 새 의석 준비 회의",
+        "en": "Oregon new-seat planning room"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": "B001278",
+          "name": "Suzanne Bonamici",
+          "ko": "수잰 보나미치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001278.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001278"
+        },
+        {
+          "id": "B000668",
+          "name": "Cliff Bentz",
+          "ko": "클리프 벤츠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000668.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B000668"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "아직 다섯 의석으로 활동하는 회기입니다. 다음 회기 계획을 세우려고 인구조사 자료를 가져왔어요.",
+          "en": "We are still in the five-seat Congress. I brought census data for next term's planning."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "의석 배분과 실제 새 지역구 경계를 구별해서 설명해 주세요.",
+          "en": "Explain the difference between seat allocation and the actual new boundaries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "오리건의 다음 회기 하원 의석은 {{blank}}개로 늘어납니다.",
+        "en": "Oregon will have {{blank}} House seats next term.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "5",
+            "en": "five"
+          },
+          {
+            "id": "B",
+            "ko": "6",
+            "en": "six"
+          },
+          {
+            "id": "C",
+            "ko": "7",
+            "en": "seven"
+          },
+          {
+            "id": "D",
+            "ko": "4",
+            "en": "four"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "늘어나는 의석은 다음 회기에 반영됩니다. 기존 의원 명단을 미리 바꾸지는 마세요.",
+            "en": "The added seat takes effect next Congress; don't change the current roster prematurely."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2020년 인구조사 결과 오리건은 한 석을 추가로 배정받아 여섯 석이 됩니다.",
+            "en": "The 2020 census awarded Oregon one additional seat, bringing it to six."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "2020 census awarded Oregon one additional House seat; five seats in the 117th Congress.",
+          "asOf": "2022-10-27"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "2020 census awarded Oregon one additional House seat; five seats in the 117th Congress.",
+          "asOf": "2022-10-27"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1301-apportionment-planning"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1302",
+      "mechanism": "watershed-expertise",
+      "learningTarget": "Bentz served on Oregon Water Resources Commission 1988–1996; Bonamici co-chair Oceans Caucus.",
+      "date": "2022-10-28",
+      "venue": {
+        "ko": "오리건 물 자원 토론장",
+        "en": "Oregon water resources forum"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": "B000668",
+          "name": "Cliff Bentz",
+          "ko": "클리프 벤츠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000668.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B000668"
+        },
+        {
+          "id": "B001278",
+          "name": "Suzanne Bonamici",
+          "ko": "수잰 보나미치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001278.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001278"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연방 하원 이전에 주 차원에서 물 관리 업무에 참여했습니다.",
+          "en": "Before Congress I participated in water management at state level."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 해양 관련 의원 모임에도 참여합니다. 내륙 물 자원과 해양 현안을 함께 이해해야죠.",
+          "en": "I work with an oceans caucus too. Inland water and ocean issues both matter."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "벤츠 의원의 1988~1996년 경력은 {{blank}}이었습니다.",
+        "en": "Bentz's 1988–1996 service was on the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 해양대기청",
+            "en": "National Oceanic and Atmospheric Administration"
+          },
+          {
+            "id": "B",
+            "ko": "오리건 교통위원회",
+            "en": "Oregon Transportation Commission"
+          },
+          {
+            "id": "C",
+            "ko": "오리건 수자원위원회",
+            "en": "Oregon Water Resources Commission"
+          },
+          {
+            "id": "D",
+            "ko": "연방 선거위원회",
+            "en": "Federal Election Commission"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주정부 물 관리와 연방 해양 정책의 기관을 구분해 두세요.",
+            "en": "Keep state water management and federal ocean policy institutions distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "벤츠는 오리건 수자원위원회 위원이었습니다.",
+            "en": "Bentz served on Oregon's Water Resources Commission."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "Bentz served on Oregon Water Resources Commission 1988–1996; Bonamici co-chair Oceans Caucus.",
+          "asOf": "2022-10-28"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1302-watershed-expertise"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1303",
+      "mechanism": "arts-science-demo",
+      "learningTarget": "Bonamici co-founded and co-chaired Congressional STEAM Caucus.",
+      "date": "2022-10-31",
+      "venue": {
+        "ko": "학교 과학·예술 전시",
+        "en": "School science and arts exhibition"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": "B001278",
+          "name": "Suzanne Bonamici",
+          "ko": "수잰 보나미치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001278.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001278"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "학생들이 과학 실험 옆에 미술 작품을 설치했어요. 의원님도 잠깐 봐 주세요.",
+          "en": "Students installed artwork beside their science experiments. Congresswoman, please take a look."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "예술과 과학을 함께 다루는 의원 모임도 있습니다. 그 이름을 아시나요?",
+          "en": "There is a congressional caucus combining arts and science. Do you know its name?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "보나미치 의원이 공동 창립한 모임은 {{blank}}입니다.",
+        "en": "Bonamici co-founded the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "해양안전위원회",
+            "en": "Ocean Safety Committee"
+          },
+          {
+            "id": "B",
+            "ko": "농업위원회",
+            "en": "Agriculture Committee"
+          },
+          {
+            "id": "C",
+            "ko": "예산위원회",
+            "en": "Budget Committee"
+          },
+          {
+            "id": "D",
+            "ko": "STEAM 의원 모임",
+            "en": "STEAM Caucus"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "교육 전시와 연결해서 이 모임을 기억해 보세요.",
+            "en": "Remember the caucus in connection with this educational exhibition."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "명부는 보나미치를 STEAM 의원 모임의 공동 창립자이자 공동 의장으로 기록합니다.",
+            "en": "The directory identifies Bonamici as co-founder and co-chair of the STEAM Caucus."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "Bonamici co-founded and co-chaired Congressional STEAM Caucus.",
+          "asOf": "2022-10-31"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1303-arts-science-demo"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1304",
+      "mechanism": "vacancy-history",
+      "learningTarget": "Blumenauer won special election May 21, 1996 after Wyden elected to Senate Feb 6, 1996.",
+      "date": "2022-11-01",
+      "venue": {
+        "ko": "포틀랜드 의석 역사 전시",
+        "en": "Portland seat history exhibit"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루머나워",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        },
+        {
+          "id": null,
+          "name": "Ron Wyden",
+          "ko": "론 와이든",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제가 상원으로 옮기면서 하원에 공석이 생겼습니다.",
+          "en": "My move to the Senate created a House vacancy."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그 공석을 채우는 선거에서 제가 당선됐습니다. 두 선거를 하나의 연표로 볼 수 있어요.",
+          "en": "I won the election to fill that vacancy. The two elections can be put on one timeline."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "블루머나워 의원의 하원 진출은 1996년 {{blank}}을 통해 이루어졌습니다.",
+        "en": "Blumenauer entered the House through a 1996 {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "보궐선거",
+            "en": "special election"
+          },
+          {
+            "id": "B",
+            "ko": "상원의원 임명",
+            "en": "Senate appointment"
+          },
+          {
+            "id": "C",
+            "ko": "주민투표",
+            "en": "referendum"
+          },
+          {
+            "id": "D",
+            "ko": "대통령 선거",
+            "en": "presidential election"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "공석이 발생한 원인과 이를 채운 선거를 연결해 기록하죠.",
+            "en": "Connect the vacancy's cause with the election that filled it."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1996년 5월 21일 와이든의 상원 이동에 따른 공석을 블루머나워가 보궐선거로 채웠습니다.",
+            "en": "Blumenauer won the May 21, 1996 special election for the vacancy created by Wyden's Senate election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "Blumenauer won special election May 21, 1996 after Wyden elected to Senate Feb 6, 1996.",
+          "asOf": "2022-11-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1304-vacancy-history"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1305",
+      "mechanism": "local-infrastructure",
+      "learningTarget": "DeFazio Lane County commissioner 1983–1986 and House Transportation and Infrastructure chair in 2022; Blumenauer Portland city commissioner 1986–1996.",
+      "date": "2022-11-02",
+      "venue": {
+        "ko": "유진 지방 인프라 세미나",
+        "en": "Eugene local infrastructure seminar"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Peter DeFazio",
+          "ko": "피터 디파지오",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        },
+        {
+          "id": null,
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루머나워",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 레인 카운티 정부에서 일한 뒤 연방 하원에 진출했습니다.",
+          "en": "I entered Congress after serving in Lane County government."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 포틀랜드 시 정부에서 일했죠. 지역 인프라와 연방 의회의 권한을 연결해 볼까요?",
+          "en": "I worked in Portland city government too. Shall we connect local infrastructure and federal authority?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "디파지오 의원은 이번 회기 하원 {{blank}}위원장입니다.",
+        "en": "DeFazio chairs the House Committee on {{blank}} this Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "B",
+            "ko": "교통·인프라",
+            "en": "Transportation and Infrastructure"
+          },
+          {
+            "id": "C",
+            "ko": "교육·노동",
+            "en": "Education and Labor"
+          },
+          {
+            "id": "D",
+            "ko": "윤리",
+            "en": "Ethics"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지방정부의 사업과 연방 위원회의 입법 관할은 다릅니다.",
+            "en": "Local projects and congressional legislative jurisdiction are different."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "디파지오는 117대 의회에서 교통·인프라위원장을 맡았습니다.",
+            "en": "DeFazio chaired Transportation and Infrastructure in the 117th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "DeFazio Lane County commissioner 1983–1986 and House Transportation and Infrastructure chair in 2022; Blumenauer Portland city commissioner 1986–1996.",
+          "asOf": "2022-11-02"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1305-local-infrastructure"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1306",
+      "mechanism": "rural-clinic",
+      "learningTarget": "Schrader veterinarian and farmer; Bentz farmer and attorney.",
+      "date": "2022-11-03",
+      "venue": {
+        "ko": "농촌 동물보건 간담회",
+        "en": "Rural animal health forum"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Kurt Schrader",
+          "ko": "커트 슈레이더",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        },
+        {
+          "id": "B000668",
+          "name": "Cliff Bentz",
+          "ko": "클리프 벤츠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000668.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B000668"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "농장뿐 아니라 동물 진료도 경험했습니다. 학생들에게 직업적 배경을 소개해 주세요.",
+          "en": "My background includes both farming and animal care. Could you introduce it to the students?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 농업과 법률 업무를 했습니다. 농촌 대표들의 배경도 다양하죠.",
+          "en": "I worked in farming and law. Rural representatives have diverse backgrounds."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "슈레이더 의원은 의회 이전에 {{blank}}로 일했습니다.",
+        "en": "Schrader worked as a {{blank}} before Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "치과의사",
+            "en": "dentist"
+          },
+          {
+            "id": "B",
+            "ko": "항공 정비사",
+            "en": "aircraft mechanic"
+          },
+          {
+            "id": "C",
+            "ko": "수의사",
+            "en": "veterinarian"
+          },
+          {
+            "id": "D",
+            "ko": "학교 교장",
+            "en": "school principal"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "동물보건 현장에 대한 경험과 연방 정책 결정은 별도로 구분해야 합니다.",
+            "en": "Distinguish practical animal health experience from federal policymaking."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "슈레이더는 수의사이자 농업인으로 일한 경력이 있습니다.",
+            "en": "Schrader's background included veterinary practice and farming."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "Schrader veterinarian and farmer; Bentz farmer and attorney.",
+          "asOf": "2022-11-03"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1306-rural-clinic"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1307",
+      "mechanism": "planning-commission",
+      "learningTarget": "Schrader was a Canby Planning Commission member; Blumenauer a Multnomah County commissioner.",
+      "date": "2022-11-04",
+      "venue": {
+        "ko": "지역 토지이용 워크숍",
+        "en": "Local land-use workshop"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Kurt Schrader",
+          "ko": "커트 슈레이더",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        },
+        {
+          "id": null,
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루머나워",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지방 계획을 다루는 위원회에서 일한 경험도 있습니다.",
+          "en": "I also served on a local planning body."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "카운티 정부의 업무와도 연결되는 주제군요. 도시 이름부터 확인하죠.",
+          "en": "That connects with county government too. Let's identify the city first."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "슈레이더 의원의 계획위원회 경력은 {{blank}}시에서였습니다.",
+        "en": "Schrader served on the planning commission in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "세일럼",
+            "en": "Salem"
+          },
+          {
+            "id": "B",
+            "ko": "유진",
+            "en": "Eugene"
+          },
+          {
+            "id": "C",
+            "ko": "벤드",
+            "en": "Bend"
+          },
+          {
+            "id": "D",
+            "ko": "캔비",
+            "en": "Canby"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "도시 계획위원회의 경험을 연방 하원 임기와 별도로 적어 두세요.",
+            "en": "Record the municipal planning experience separately from the House term."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "명부에 캔비 계획위원회 위원 경력이 기재되어 있습니다.",
+            "en": "The directory records service on the Canby Planning Commission."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-OR.htm",
+          "claim": "Schrader was a Canby Planning Commission member; Blumenauer a Multnomah County commissioner.",
+          "asOf": "2022-11-04"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1307-planning-commission"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1308",
+      "mechanism": "statewide-to-district",
+      "learningTarget": "Montana had one at-large House seat in 2022; 2020 census awarded an additional seat.",
+      "date": "2022-11-05",
+      "venue": {
+        "ko": "몬태나 대표 방식 토론",
+        "en": "Montana representation discussion"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Matt Rosendale",
+          "ko": "맷 로즌데일",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm"
+        },
+        {
+          "id": null,
+          "name": "Steve Daines",
+          "ko": "스티브 데인스",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이 회기에 몬태나의 유일한 하원 의석을 맡고 있습니다.",
+          "en": "I hold Montana's sole House seat this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 과거 그 의석에서 일했지만 상원은 주 전체를 대표합니다. 다음 하원 회기의 변화는 무엇일까요?",
+          "en": "I held that seat before, but the Senate represents the whole state. What changes next House term?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "몬태나는 인구조사 결과 다음 회기에 하원 의석을 {{blank}}개 갖게 됩니다.",
+        "en": "After the census Montana will have {{blank}} House seats next term.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2",
+            "en": "two"
+          },
+          {
+            "id": "B",
+            "ko": "1",
+            "en": "one"
+          },
+          {
+            "id": "C",
+            "ko": "3",
+            "en": "three"
+          },
+          {
+            "id": "D",
+            "ko": "4",
+            "en": "four"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "상원 의석은 변하지 않습니다. 하원 지역구의 변화만 따로 표시하세요.",
+            "en": "Senate seats do not change; mark the House change separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "몬태나는 2020년 인구조사에 따라 하원 한 석을 추가로 배정받았습니다.",
+            "en": "Montana gained one House seat under the 2020 census."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm",
+          "claim": "Montana had one at-large House seat in 2022; 2020 census awarded an additional seat.",
+          "asOf": "2022-11-05"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "Montana had one at-large House seat in 2022; 2020 census awarded an additional seat.",
+          "asOf": "2022-11-05"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1308-statewide-to-district"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1309",
+      "mechanism": "regulatory-background",
+      "learningTarget": "Rosendale Montana State Auditor/Commissioner of Securities and Insurance 2017–2021; Tester Senate Banking member.",
+      "date": "2022-11-07",
+      "venue": {
+        "ko": "몬태나 금융소비자 교육",
+        "en": "Montana financial consumer education"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Matt Rosendale",
+          "ko": "맷 로즌데일",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm"
+        },
+        {
+          "id": null,
+          "name": "Jon Tester",
+          "ko": "존 테스터",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에 오기 전 보험과 증권을 감독하는 주정부 직책을 맡았습니다.",
+          "en": "Before the House I held a state office overseeing insurance and securities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "상원 은행위원회와 주정부 감독 권한은 같은 것이 아닙니다.",
+          "en": "Senate banking jurisdiction and state regulatory authority are different."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "로즌데일 의원의 2017~2021년 직책은 몬태나 {{blank}}이었습니다.",
+        "en": "Rosendale held the Montana office of {{blank}} in 2017–2021.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 법무장관",
+            "en": "Attorney General"
+          },
+          {
+            "id": "B",
+            "ko": "주 감사관 겸 증권·보험 감독관",
+            "en": "State Auditor and Commissioner of Securities and Insurance"
+          },
+          {
+            "id": "C",
+            "ko": "주지사",
+            "en": "Governor"
+          },
+          {
+            "id": "D",
+            "ko": "교육감",
+            "en": "Superintendent of Public Instruction"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "감독 기관의 수준을 구분하는 것이 금융정책 이해에 도움이 됩니다.",
+            "en": "Distinguishing levels of regulation helps explain financial policy."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "로즌데일은 주 감사관 겸 증권·보험 감독관이었습니다.",
+            "en": "Rosendale was state auditor and securities and insurance commissioner."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MT.htm",
+          "claim": "Rosendale Montana State Auditor/Commissioner of Securities and Insurance 2017–2021; Tester Senate Banking member.",
+          "asOf": "2022-11-07"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1309-regulatory-background"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1310",
+      "mechanism": "regional-engineering",
+      "learningTarget": "McKinley founded engineering business McKinley and Associates; Miller owned bison farm.",
+      "date": "2022-11-09",
+      "venue": {
+        "ko": "휠링 지역 기술 전시",
+        "en": "Wheeling engineering exhibit"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "David McKinley",
+          "ko": "데이비드 매킨리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        },
+        {
+          "id": null,
+          "name": "Carol Miller",
+          "ko": "캐럴 밀러",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제가 의회 이전에 설립한 기술 회사의 활동 지역에는 휠링과 찰스턴이 있었습니다.",
+          "en": "The engineering firm I started before Congress had offices in Wheeling and Charleston."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 농장 운영 경험이 있습니다. 서로 다른 산업 배경을 보여주는 전시군요.",
+          "en": "I have a farming background. The exhibit shows how diverse our industries are."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "매킨리 의원이 설립한 회사는 {{blank}}입니다.",
+        "en": "McKinley founded {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Swann Ridge Bison Farm",
+            "en": "Swann Ridge Bison Farm"
+          },
+          {
+            "id": "B",
+            "ko": "National Journalism Center",
+            "en": "National Journalism Center"
+          },
+          {
+            "id": "C",
+            "ko": "McKinley and Associates",
+            "en": "McKinley and Associates"
+          },
+          {
+            "id": "D",
+            "ko": "AXM Consulting",
+            "en": "AXM Consulting"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 사업체와 의원의 공적 직책을 구분해 소개하면 좋겠습니다.",
+            "en": "Distinguish local business ownership from elected office in the introduction."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "매킨리는 엔지니어였으며 McKinley and Associates를 설립했습니다.",
+            "en": "McKinley was an engineer and founded McKinley and Associates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm",
+          "claim": "McKinley founded engineering business McKinley and Associates; Miller owned bison farm.",
+          "asOf": "2022-11-09"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1310-regional-engineering"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1311",
+      "mechanism": "interstate-legislator",
+      "learningTarget": "Mooney served in Maryland State Senate 1999–2010 before WV House service; McKinley WV state House 1981–1994.",
+      "date": "2022-11-10",
+      "venue": {
+        "ko": "애팔래치아 주 의회 교류",
+        "en": "Appalachian legislative exchange"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Alex Mooney",
+          "ko": "앨릭스 무니",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        },
+        {
+          "id": null,
+          "name": "David McKinley",
+          "ko": "데이비드 매킨리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연방 하원에서는 웨스트버지니아를 대표하지만, 주 상원 경력은 다른 주에 있었습니다.",
+          "en": "I represent West Virginia in Congress, but my state Senate service was in another state."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 웨스트버지니아 주 하원에서 일했습니다. 주 경계를 구분해야겠네요.",
+          "en": "I served in West Virginia's House. We should distinguish the states."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "무니 의원은 1999~2010년에 {{blank}} 주 상원의원이었습니다.",
+        "en": "Mooney served in the {{blank}} State Senate in 1999–2010.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "버지니아",
+            "en": "Virginia"
+          },
+          {
+            "id": "B",
+            "ko": "웨스트버지니아",
+            "en": "West Virginia"
+          },
+          {
+            "id": "C",
+            "ko": "오하이오",
+            "en": "Ohio"
+          },
+          {
+            "id": "D",
+            "ko": "메릴랜드",
+            "en": "Maryland"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그렇죠. 현재 연방 지역구와 과거 지방 정치 경력을 혼동하지 마세요.",
+            "en": "Correct. Do not confuse current federal representation with earlier state service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "무니의 주 상원 경력은 메릴랜드에 있습니다.",
+            "en": "Mooney's state Senate service was in Maryland."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm",
+          "claim": "Mooney served in Maryland State Senate 1999–2010 before WV House service; McKinley WV state House 1981–1994.",
+          "asOf": "2022-11-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1311-interstate-legislator"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1312",
+      "mechanism": "seat-loss-explainer",
+      "learningTarget": "West Virginia had three House seats in 117th Congress; 2020 census reduced allocation by one.",
+      "date": "2022-11-14",
+      "venue": {
+        "ko": "웨스트버지니아 대표단 설명회",
+        "en": "West Virginia delegation briefing"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Carol Miller",
+          "ko": "캐럴 밀러",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        },
+        {
+          "id": null,
+          "name": "David McKinley",
+          "ko": "데이비드 매킨리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "현재 회기에는 세 명의 하원의원이 활동하고 있습니다.",
+          "en": "Three House members are serving in the current Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하지만 인구조사 결과에 따라 차기 의석 수가 달라지죠. 주민들에게 언제 적용되는지 설명해 주세요.",
+          "en": "The census changes the next allocation. Explain when the change takes effect."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "차기 회기 웨스트버지니아의 하원 의석은 {{blank}}개입니다.",
+        "en": "West Virginia will have {{blank}} House seats next Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2",
+            "en": "two"
+          },
+          {
+            "id": "B",
+            "ko": "3",
+            "en": "three"
+          },
+          {
+            "id": "C",
+            "ko": "4",
+            "en": "four"
+          },
+          {
+            "id": "D",
+            "ko": "1",
+            "en": "one"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지금 활동하는 의원과 다음 회기 의석 수를 구분해 안내합시다.",
+            "en": "Distinguish the members serving now from the next Congress's allocation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "웨스트버지니아는 2020년 인구조사 결과 하원 의석 한 석을 잃어 두 석이 됩니다.",
+            "en": "West Virginia lost one seat in the 2020 apportionment, leaving two."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm",
+          "claim": "West Virginia had three House seats in 117th Congress; 2020 census reduced allocation by one.",
+          "asOf": "2022-11-14"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "West Virginia had three House seats in 117th Congress; 2020 census reduced allocation by one.",
+          "asOf": "2022-11-14"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1312-seat-loss-explainer"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1313",
+      "mechanism": "women-leadership",
+      "learningTarget": "Miller became first female majority whip of WV House of Delegates; Capito first woman elected to U.S. Senate from WV in 2014.",
+      "date": "2022-11-15",
+      "venue": {
+        "ko": "여성 지방정치 리더십 모임",
+        "en": "Women in local political leadership forum"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Carol Miller",
+          "ko": "캐럴 밀러",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm"
+        },
+        {
+          "id": "C001047",
+          "name": "Shelley Moore Capito",
+          "ko": "셸리 무어 캐피토",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001047.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001047"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "주 하원에서 여성 최초로 다수당 원내총무를 맡았습니다.",
+          "en": "I became the first woman to serve as majority whip in our state House."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 웨스트버지니아에서 최초로 연방 상원에 당선된 여성이었습니다. 서로 다른 기관의 기록이죠.",
+          "en": "I was the first woman elected to the U.S. Senate from West Virginia. These are different institutional milestones."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "밀러 의원의 원내총무 경력은 {{blank}}에서였습니다.",
+        "en": "Miller's whip service was in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 하원",
+            "en": "U.S. House"
+          },
+          {
+            "id": "B",
+            "ko": "웨스트버지니아 주 하원",
+            "en": "West Virginia House of Delegates"
+          },
+          {
+            "id": "C",
+            "ko": "웨스트버지니아 주 상원",
+            "en": "West Virginia Senate"
+          },
+          {
+            "id": "D",
+            "ko": "연방 상원",
+            "en": "U.S. Senate"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "여성 대표성의 변화도 어느 기관인지 정확히 적어야 합니다.",
+            "en": "Record the institution precisely when studying women's representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "밀러는 웨스트버지니아 주 하원의 첫 여성 다수당 원내총무가 됐습니다.",
+            "en": "Miller became the first female majority whip of the West Virginia House of Delegates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WV.htm",
+          "claim": "Miller became first female majority whip of WV House of Delegates; Capito first woman elected to U.S. Senate from WV in 2014.",
+          "asOf": "2022-11-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1313-women-leadership"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1314",
+      "mechanism": "university-governance",
+      "learningTarget": "Neguse served as University of Colorado regent 2009–2015; Bennet Denver Public Schools superintendent 2005–2009.",
+      "date": "2022-11-16",
+      "venue": {
+        "ko": "콜로라도 대학 정책 간담회",
+        "en": "Colorado university policy forum"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Joe Neguse",
+          "ko": "조 네구스",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Michael Bennet",
+          "ko": "마이클 베넷",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "대학교 운영에 참여했던 경험이 있습니다.",
+          "en": "I have experience in university governance."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 덴버 공립학교의 교육행정을 맡았습니다. 교육 수준과 기관을 구분해 봅시다.",
+          "en": "I administered Denver Public Schools. Let's distinguish the institutions and levels."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "네구스 의원은 2009~2015년에 {{blank}}의 이사였습니다.",
+        "en": "Neguse served from 2009 to 2015 on the governing board of the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "덴버 공립학교",
+            "en": "Denver Public Schools"
+          },
+          {
+            "id": "B",
+            "ko": "콜로라도 주립대",
+            "en": "Colorado State University"
+          },
+          {
+            "id": "C",
+            "ko": "콜로라도대학교",
+            "en": "University of Colorado"
+          },
+          {
+            "id": "D",
+            "ko": "미국 교육부",
+            "en": "U.S. Department of Education"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "대학 운영기구와 초중등 교육행정은 별개의 제도입니다.",
+            "en": "University governance and K–12 school administration are distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "네구스는 콜로라도대학교 Board of Regents에서 활동했습니다.",
+            "en": "Neguse served on the University of Colorado Board of Regents."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Neguse served as University of Colorado regent 2009–2015; Bennet Denver Public Schools superintendent 2005–2009.",
+          "asOf": "2022-11-16"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1314-university-governance"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1315",
+      "mechanism": "state-agency-brief",
+      "learningTarget": "Neguse executive director of Colorado Department of Regulatory Agencies 2015–2017; DeGette House Energy and Commerce member.",
+      "date": "2022-11-17",
+      "venue": {
+        "ko": "콜로라도 소비자 규제 세미나",
+        "en": "Colorado consumer regulation seminar"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Joe Neguse",
+          "ko": "조 네구스",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Diana DeGette",
+          "ko": "다이애나 디겟",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2015년부터 2017년까지 주 행정부의 규제 업무를 담당했습니다.",
+          "en": "From 2015 to 2017 I directed regulatory work in the state executive branch."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 연방 에너지·상무위원회에서 일합니다. 같은 정책 분야라도 기관의 기능은 다르죠.",
+          "en": "I serve on federal Energy and Commerce. Institutions can play different roles in related policy areas."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "네구스가 이끈 주정부 부서는 {{blank}}입니다.",
+        "en": "Neguse headed Colorado's Department of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "교통",
+            "en": "Transportation"
+          },
+          {
+            "id": "B",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "C",
+            "ko": "교육",
+            "en": "Education"
+          },
+          {
+            "id": "D",
+            "ko": "규제기관",
+            "en": "Regulatory Agencies"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "행정부의 규제 업무와 입법부의 위원회 활동을 구분하세요.",
+            "en": "Distinguish executive regulatory work from legislative committee work."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "네구스는 2015~2017년 Colorado Department of Regulatory Agencies의 책임자였습니다.",
+            "en": "Neguse directed the Colorado Department of Regulatory Agencies from 2015 to 2017."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Neguse executive director of Colorado Department of Regulatory Agencies 2015–2017; DeGette House Energy and Commerce member.",
+          "asOf": "2022-11-17"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1315-state-agency-brief"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1316",
+      "mechanism": "energy-work-history",
+      "learningTarget": "Boebert worked as natural gas product technician and pipeline integrity coordinator; Perlmutter chaired bipartisan renewable energy caucus in state Senate.",
+      "date": "2022-11-18",
+      "venue": {
+        "ko": "서부 콜로라도 에너지 직업 전시",
+        "en": "Western Colorado energy careers exhibit"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Lauren Boebert",
+          "ko": "로런 보버트",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Ed Perlmutter",
+          "ko": "에드 펄머터",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "의회 이전에 천연가스와 배관 관련 업무를 한 적이 있습니다.",
+          "en": "Before Congress I worked in natural gas and pipeline-related roles."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "주 의회에서는 재생에너지 초당적 의원 모임의 의장도 맡았습니다. 서로 다른 에너지 경험이죠.",
+          "en": "In the state legislature I chaired a bipartisan renewable-energy caucus. Those are distinct energy-related experiences."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "보버트 의원의 과거 직무 중 하나는 {{blank}}입니다.",
+        "en": "One of Boebert's former jobs was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "배관 건전성 조정 담당자",
+            "en": "pipeline integrity coordinator"
+          },
+          {
+            "id": "B",
+            "ko": "원자력 발전소 감독관",
+            "en": "nuclear plant superintendent"
+          },
+          {
+            "id": "C",
+            "ko": "석탄광산 검사관",
+            "en": "coal mine inspector"
+          },
+          {
+            "id": "D",
+            "ko": "연방 에너지부 장관",
+            "en": "U.S. Secretary of Energy"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "경력을 사실대로 기록하되 그 경력만으로 정책 입장을 추론하지는 마세요.",
+            "en": "Record the experience accurately without inferring policy positions from it."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "명부는 보버트의 경력에 pipeline integrity coordinator를 포함합니다.",
+            "en": "The directory lists pipeline integrity coordinator among Boebert's prior jobs."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Boebert worked as natural gas product technician and pipeline integrity coordinator; Perlmutter chaired bipartisan renewable energy caucus in state Senate.",
+          "asOf": "2022-11-18"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1316-energy-work-history"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1317",
+      "mechanism": "county-prosecution",
+      "learningTarget": "Buck was Weld County district attorney 2004–2014.",
+      "date": "2022-11-21",
+      "venue": {
+        "ko": "웰드 카운티 법률 진로 행사",
+        "en": "Weld County legal careers event"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Ken Buck",
+          "ko": "켄 벅",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지역 검찰과 연방 검찰의 차이를 학생들이 궁금해합니다.",
+          "en": "Students are asking about the difference between local and federal prosecution."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 연방 법무부에서 일한 뒤 카운티의 선출직 검사장도 맡았습니다.",
+          "en": "After work in the federal Justice Department, I also served as a county district attorney."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "벅 의원은 2004~2014년 {{blank}} 카운티 검사장이었습니다.",
+        "en": "Buck was district attorney of {{blank}} County from 2004 to 2014.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "덴버",
+            "en": "Denver"
+          },
+          {
+            "id": "B",
+            "ko": "웰드",
+            "en": "Weld"
+          },
+          {
+            "id": "C",
+            "ko": "엘파소",
+            "en": "El Paso"
+          },
+          {
+            "id": "D",
+            "ko": "볼더",
+            "en": "Boulder"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "검찰 경력에 관할 지역과 정부 수준을 같이 표시해 주세요.",
+            "en": "Record jurisdiction and level of government with the prosecution experience."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "벅은 웰드 카운티 검사장이었습니다.",
+            "en": "Buck served as district attorney for Weld County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Buck was Weld County district attorney 2004–2014.",
+          "asOf": "2022-11-21"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1317-county-prosecution"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1318",
+      "mechanism": "military-to-civic",
+      "learningTarget": "Crow U.S. Army 2002–2006; Lamborn and Crow both House Armed Services members in 2022.",
+      "date": "2022-11-22",
+      "venue": {
+        "ko": "콜로라도 퇴역군인 행사",
+        "en": "Colorado veterans event"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Jason Crow",
+          "ko": "제이슨 크로",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Doug Lamborn",
+          "ko": "더그 램본",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 군 복무 이후 법률가로도 일했습니다.",
+          "en": "After military service I also practiced law."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지금은 우리 둘 다 하원 군사위원회에서 일하고 있죠. 군 복무와 위원회 활동은 서로 다릅니다.",
+          "en": "We both now serve on House Armed Services. Military service and committee work are distinct."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "크로 의원은 2002~2006년 {{blank}}에서 복무했습니다.",
+        "en": "Crow served from 2002 to 2006 in the U.S. {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "해군",
+            "en": "Navy"
+          },
+          {
+            "id": "B",
+            "ko": "해안경비대",
+            "en": "Coast Guard"
+          },
+          {
+            "id": "C",
+            "ko": "육군",
+            "en": "Army"
+          },
+          {
+            "id": "D",
+            "ko": "공군",
+            "en": "Air Force"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "복무 경력과 의원의 국방 관련 위원회 경력을 별도로 기억해 주세요.",
+            "en": "Remember military service separately from congressional defense committee work."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 명부는 크로의 미국 육군 복무 기간을 2002~2006년으로 기록합니다.",
+            "en": "The directory records Crow's U.S. Army service from 2002 to 2006."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Crow U.S. Army 2002–2006; Lamborn and Crow both House Armed Services members in 2022.",
+          "asOf": "2022-11-22"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1318-military-to-civic"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1319",
+      "mechanism": "new-seat-civic-explainer",
+      "learningTarget": "Colorado had seven House seats in 2022 and gained one through 2020 apportionment.",
+      "date": "2022-11-28",
+      "venue": {
+        "ko": "콜로라도 인구조사 시민 설명회",
+        "en": "Colorado census civic briefing"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Ed Perlmutter",
+          "ko": "에드 펄머터",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Joe Neguse",
+          "ko": "조 네구스",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "현재 회기 의석과 새 회기 의석을 서로 다른 지도에 표시했습니다.",
+          "en": "I have marked current and next-term seats on different maps."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "새로운 대표 의석이 생기는 이유를 주민들에게 설명해 주세요. 선거구 번호만 외워서는 부족합니다.",
+          "en": "Explain why an additional seat exists. Memorizing district numbers alone is not enough."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2020년 인구조사 이후 콜로라도의 하원 의석은 {{blank}}개로 늘어납니다.",
+        "en": "After the 2020 census Colorado's House delegation increases to {{blank}} seats.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "7",
+            "en": "seven"
+          },
+          {
+            "id": "B",
+            "ko": "6",
+            "en": "six"
+          },
+          {
+            "id": "C",
+            "ko": "9",
+            "en": "nine"
+          },
+          {
+            "id": "D",
+            "ko": "8",
+            "en": "eight"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "인구조사에 따른 의석 배분과 주의 지도 작성은 구별됩니다.",
+            "en": "Census apportionment and state map drawing are separate processes."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "콜로라도는 일곱 석에서 여덟 석으로 늘어납니다.",
+            "en": "Colorado increases from seven to eight House seats."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "Colorado had seven House seats in 2022 and gained one through 2020 apportionment.",
+          "asOf": "2022-11-28"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "Colorado had seven House seats in 2022 and gained one through 2020 apportionment.",
+          "asOf": "2022-11-28"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1319-new-seat-civic-explainer"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1320",
+      "mechanism": "museum-to-congress",
+      "learningTarget": "Stansbury worked at New Mexico Museum of Natural History and Science 2002–2004 and on House Science committee in 2022; Leger Fernandez Education and Labor member.",
+      "date": "2022-11-29",
+      "venue": {
+        "ko": "앨버커키 자연사 박물관 교육 행사",
+        "en": "Albuquerque natural history education event"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Melanie Stansbury",
+          "ko": "멜러니 스탠즈베리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        },
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "테레사 레헤르 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "박물관에서 일하던 경험이 지금도 과학 교육을 이야기할 때 떠오릅니다.",
+          "en": "My museum work comes to mind when discussing science education."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 교육·노동위원회에서 일하고 있습니다. 박물관 이름을 학생들에게 소개해 주실래요?",
+          "en": "I serve on Education and Labor. Could you introduce the museum to the students?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스탠즈베리 의원이 일한 기관은 {{blank}}입니다.",
+        "en": "Stansbury worked at the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴멕시코 자연사·과학박물관",
+            "en": "New Mexico Museum of Natural History and Science"
+          },
+          {
+            "id": "B",
+            "ko": "스미스소니언 국립미술관",
+            "en": "Smithsonian American Art Museum"
+          },
+          {
+            "id": "C",
+            "ko": "미국 의회도서관",
+            "en": "Library of Congress"
+          },
+          {
+            "id": "D",
+            "ko": "뉴멕시코 주립도서관",
+            "en": "New Mexico State Library"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 과학교육 기관과 연방 입법 활동의 연결을 살펴볼 수 있겠네요.",
+            "en": "That gives us a starting point for examining local science education and federal legislation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스탠즈베리는 2002~2004년 뉴멕시코 자연사·과학박물관에서 일했습니다.",
+            "en": "Stansbury worked at the New Mexico Museum of Natural History and Science in 2002–2004."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+          "claim": "Stansbury worked at New Mexico Museum of Natural History and Science 2002–2004 and on House Science committee in 2022; Leger Fernandez Education and Labor member.",
+          "asOf": "2022-11-29"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1320-museum-to-congress"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1321",
+      "mechanism": "former-seat-introduction",
+      "learningTarget": "Heinrich represented NM-1 2009–2012, senator in 2022; Stansbury elected to NM-1 June 2021.",
+      "date": "2022-11-30",
+      "venue": {
+        "ko": "앨버커키 연방 대표 교류",
+        "en": "Albuquerque federal representation exchange"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Melanie Stansbury",
+          "ko": "멜러니 스탠즈베리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        },
+        {
+          "id": null,
+          "name": "Martin Heinrich",
+          "ko": "마틴 하인리히",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구에서 과거 하원 의원으로 일한 상원의원을 소개할게요.",
+          "en": "Let me introduce a senator who once served my House district."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "2009년부터 2012년까지 이 의석에서 일했습니다. 현재는 상원에 있죠.",
+          "en": "I served that seat from 2009 through 2012. I am now in the Senate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 사람의 하원 경력을 연결하는 의석은 {{blank}}입니다.",
+        "en": "Their House careers connect through {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴멕시코 2구",
+            "en": "NM-2"
+          },
+          {
+            "id": "B",
+            "ko": "뉴멕시코 1구",
+            "en": "NM-1"
+          },
+          {
+            "id": "C",
+            "ko": "뉴멕시코 3구",
+            "en": "NM-3"
+          },
+          {
+            "id": "D",
+            "ko": "애리조나 1구",
+            "en": "AZ-1"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "같은 번호가 시대마다 같은 경계였다고 가정하지는 마세요.",
+            "en": "Do not assume the same number had identical boundaries across eras."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "하인리히와 스탠즈베리 모두 서로 다른 시기에 뉴멕시코 1구를 대표했습니다.",
+            "en": "Heinrich and Stansbury represented NM-1 at different times."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+          "claim": "Heinrich represented NM-1 2009–2012, senator in 2022; Stansbury elected to NM-1 June 2021.",
+          "asOf": "2022-11-30"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1321-former-seat-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1322",
+      "mechanism": "constituent-geography",
+      "learningTarget": "NM-2 included Dona Ana County; NM-3 included Santa Fe and Taos in 117th Congress.",
+      "date": "2022-12-01",
+      "venue": {
+        "ko": "뉴멕시코 지역 주민 안내",
+        "en": "New Mexico constituent information desk"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Yvette Herrell",
+          "ko": "이벳 헤럴",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        },
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "테레사 레헤르 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "라스크루시스에 있는 사무실로 문의가 들어왔어요. 남부 지역 카운티를 지도에 표시하죠.",
+          "en": "A question came to the Las Cruces office. Let's mark the southern counties on the map."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지역구의 산타페와 타오스는 다른 지역을 이루고 있습니다.",
+          "en": "Santa Fe and Taos in my district form a different area."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "도냐아나 카운티는 117대 의회에서 헤럴 의원의 {{blank}}에 포함됐습니다.",
+        "en": "Dona Ana County was part of Herrell's {{blank}} in the 117th Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴멕시코 1구",
+            "en": "NM-1"
+          },
+          {
+            "id": "B",
+            "ko": "뉴멕시코 3구",
+            "en": "NM-3"
+          },
+          {
+            "id": "C",
+            "ko": "뉴멕시코 2구",
+            "en": "NM-2"
+          },
+          {
+            "id": "D",
+            "ko": "텍사스 16구",
+            "en": "TX-16"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주소와 당시 지도를 확인하는 것이 주민을 정확한 의원실로 안내하는 첫 단계입니다.",
+            "en": "Checking the address against the dated map is the first step in routing a constituent."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2022년 공식 명부는 도냐아나 카운티를 뉴멕시코 2구에 포함합니다.",
+            "en": "The 2022 directory lists Dona Ana County in NM-2."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+          "claim": "NM-2 included Dona Ana County; NM-3 included Santa Fe and Taos in 117th Congress.",
+          "asOf": "2022-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1322-constituent-geography"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1323",
+      "mechanism": "regulation-to-senate",
+      "learningTarget": "Luján served on New Mexico Public Regulation Commission 2005–2008, elected Senate 2020; Leger Fernandez NM-3 in 2022.",
+      "date": "2022-12-05",
+      "venue": {
+        "ko": "뉴멕시코 공공서비스 진로 행사",
+        "en": "New Mexico public-service career event"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Ben Ray Luján",
+          "ko": "벤 레이 루한",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        },
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "테레사 레헤르 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에 오기 전에는 주의 공공 규제 업무를 맡았습니다. 지금은 상원에서 일합니다.",
+          "en": "Before the House I worked in state public regulation. Now I serve in the Senate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "신임 의원들이 주정부와 연방정부의 경력을 구분하면 도움이 되겠군요.",
+          "en": "It helps new members to distinguish state from federal service."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "루한의 2005~2008년 공직은 {{blank}} 위원이었습니다.",
+        "en": "Luján served in 2005–2008 on the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방통신위원회",
+            "en": "Federal Communications Commission"
+          },
+          {
+            "id": "B",
+            "ko": "뉴멕시코 대법원",
+            "en": "New Mexico Supreme Court"
+          },
+          {
+            "id": "C",
+            "ko": "연방선거위원회",
+            "en": "Federal Election Commission"
+          },
+          {
+            "id": "D",
+            "ko": "뉴멕시코 공공규제위원회",
+            "en": "New Mexico Public Regulation Commission"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "정책 영역이 비슷하더라도 기관의 관할은 다릅니다.",
+            "en": "Related policy areas can belong to institutions with different jurisdictions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "루한은 뉴멕시코 공공규제위원회에서 일했습니다.",
+            "en": "Luján served on the New Mexico Public Regulation Commission."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+          "claim": "Luján served on New Mexico Public Regulation Commission 2005–2008, elected Senate 2020; Leger Fernandez NM-3 in 2022.",
+          "asOf": "2022-12-05"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1323-regulation-to-senate"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1324",
+      "mechanism": "public-service-fellowship",
+      "learningTarget": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+      "date": "2022-12-06",
+      "venue": {
+        "ko": "산타페 청년 공직 멘토링",
+        "en": "Santa Fe public service mentoring"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "테레사 레헤르 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        },
+        {
+          "id": null,
+          "name": "Melanie Stansbury",
+          "ko": "멜러니 스탠즈베리",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "클린턴 행정부 시기에 백악관에서 연수 프로그램에 참여했습니다.",
+          "en": "I participated in a White House fellowship during the Clinton administration."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이후 다른 행정부 시기에 예산관리국에서 일했습니다. 두 경력의 성격이 다르죠.",
+          "en": "I later worked at the Office of Management and Budget. These are different experiences."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "레헤르 페르난데스 의원의 과거 경력은 {{blank}}이었습니다.",
+        "en": "Leger Fernandez previously served as a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "백악관 펠로",
+            "en": "White House fellow"
+          },
+          {
+            "id": "B",
+            "ko": "대통령 비서실장",
+            "en": "White House chief of staff"
+          },
+          {
+            "id": "C",
+            "ko": "연방 대법관",
+            "en": "Supreme Court justice"
+          },
+          {
+            "id": "D",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "공직 진로에는 선거 외에도 여러 경험 경로가 있습니다.",
+            "en": "Public-service careers include experiences beyond elected office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "레헤르 페르난데스는 클린턴 행정부 당시 White House fellow였습니다.",
+            "en": "Leger Fernandez was a White House fellow during the Clinton administration."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+          "claim": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+          "asOf": "2022-12-06"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1324-public-service-fellowship"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1325",
+      "mechanism": "shared-county-map",
+      "learningTarget": "CO-2 included Boulder and Jefferson in part; CO-1 centered on Denver (117th Congress directory).",
+      "date": "2022-12-07",
+      "venue": {
+        "ko": "덴버 광역권 지도 설명",
+        "en": "Denver metropolitan map briefing"
+      },
+      "context": {
+        "ko": "공식 기록에 근거한 가상의 대화입니다.",
+        "en": "A fictional conversation grounded in official records."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Joe Neguse",
+          "ko": "조 네구스",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        },
+        {
+          "id": null,
+          "name": "Diana DeGette",
+          "ko": "다이애나 디겟",
+          "portrait": null,
+          "source": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "볼더 카운티의 일부를 포함하는 지역구 지도를 가지고 왔습니다.",
+          "en": "I brought the map of my district, which includes part of Boulder County."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "덴버 중심의 제 지역구와 함께 보면 광역권과 지역구가 일치하지 않는다는 점을 이해할 수 있어요.",
+          "en": "Compare it with my Denver-centered district to see that metro areas and districts do not always coincide."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "볼더 카운티 일부가 포함된 네구스 의원의 당시 지역구는 {{blank}}입니다.",
+        "en": "Neguse's district, which then included part of Boulder County, was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "콜로라도 1구",
+            "en": "CO-1"
+          },
+          {
+            "id": "B",
+            "ko": "콜로라도 2구",
+            "en": "CO-2"
+          },
+          {
+            "id": "C",
+            "ko": "콜로라도 5구",
+            "en": "CO-5"
+          },
+          {
+            "id": "D",
+            "ko": "콜로라도 7구",
+            "en": "CO-7"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 전체가 한 의원의 지역구라는 가정을 피하세요.",
+            "en": "Avoid assuming a whole county belongs to one member."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2022년 명부는 볼더 카운티 일부를 콜로라도 2구에 포함합니다.",
+            "en": "The 2022 directory lists part of Boulder County in CO-2."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CO.htm",
+          "claim": "CO-2 included Boulder and Jefferson in part; CO-1 centered on Denver (117th Congress directory).",
+          "asOf": "2022-12-07"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1325-shared-county-map"
+      },
+      "fictional": true
+    }
+  ]
+}
