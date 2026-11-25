@@ -1062,20 +1062,20 @@
     },
     {
       "id": "P01-1411",
-      "mechanism": "outgoing-service",
-      "learningTarget": "Pittenger lost reelection in 1946; his term ended January 3, 1947.",
-      "date": "1946-12-12",
+      "date": "1941-03-10",
+      "mechanism": "state-house-roster-recovery",
+      "learningTarget": "Pittenger served in the Minnesota state house from 1917 to 1920.",
       "venue": {
-        "ko": "둘루스 사무실 인계",
-        "en": "Duluth office transition"
+        "ko": "미네소타 주의회 명부 전시",
+        "en": "Minnesota legislative roster exhibit"
       },
       "context": {
-        "ko": "둘루스 사무실 인계",
-        "en": "Duluth office transition"
+        "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+        "en": "A fictional meeting grounded in the historical record."
       },
       "cast": [
         {
-          "id": null,
+          "id": "P000371",
           "name": "William Alvin Pittenger",
           "ko": "윌리엄 피텐저",
           "portrait": null,
@@ -1084,75 +1084,70 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 선거에서 패했지만 아직 임기가 끝난 것은 아닙니다.",
-          "en": "I lost the election, but my term has not ended."
+          "speaker": "host",
+          "ko": "오래된 의원 명부와 현재 연방 의회 명부가 섞였습니다.",
+          "en": "An older legislative roster got mixed into the current congressional roster."
         },
         {
-          "speaker": "player",
-          "ko": "남은 기간의 주민 문의를 계속 안내하겠습니다.",
-          "en": "I'll continue routing inquiries during the remaining term."
+          "speaker": "npc:0",
+          "ko": "1917년부터 1920년까지의 제 기록은 주의회 자료입니다.",
+          "en": "My 1917–1920 record belongs to the state legislature."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현 임기는 {{blank}}까지입니다.",
-        "en": "Your current term runs through {{blank}}.",
+        "ko": "이 명부는 미네소타 {{blank}} 기록이군요.",
+        "en": "This roster belongs to the Minnesota {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "1946년 11월",
-            "en": "November 1946"
+            "ko": "주상원",
+            "en": "State Senate"
           },
           {
             "id": "B",
-            "ko": "1948년 1월",
-            "en": "January 1948"
+            "ko": "주하원",
+            "en": "State House"
           },
           {
             "id": "C",
-            "ko": "1949년 1월",
-            "en": "January 1949"
+            "ko": "연방 하원",
+            "en": "U.S. House"
           },
           {
             "id": "D",
-            "ko": "1947년 1월 3일",
-            "en": "January 3, 1947"
+            "ko": "주 대법원",
+            "en": "Supreme Court"
           }
         ],
-        "correct": "D"
+        "correct": "B"
       },
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "1947년 1월 3일까지입니다.",
-            "en": "Until January 3, 1947."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "미결 민원 목록을 인계 준비하세요.",
-            "en": "Prepare the outstanding case list."
+            "speaker": "host",
+            "ko": "주하원 자료실에 따로 보관하겠습니다.",
+            "en": "I'll preserve it in the state house archive."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1947년 1월 3일까지입니다.",
-            "en": "Until January 3, 1947."
+            "ko": "그때는 미네소타 주하원 의원이었습니다.",
+            "en": "I served in the Minnesota state house then."
           }
         ]
       },
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/19739",
-          "claim": "Pittenger lost reelection in 1946; his term ended January 3, 1947.",
-          "asOf": "1946-12-12"
+          "claim": "Pittenger served in the Minnesota state house from 1917 to 1920.",
+          "asOf": "1941-03-10"
         }
       ],
       "outcome": {
-        "kind": "revisit",
-        "key": "p01-1411-outgoing-service"
+        "kind": "document",
+        "key": "p01-1411-state-house-roster-recovery"
       },
       "fictional": true
     },
@@ -1266,170 +1261,69 @@
     },
     {
       "id": "P01-1413",
-      "mechanism": "farm-generation-introduction",
-      "learningTarget": "Andersen and Langen were Republican Minnesota House members in 1959 with farming backgrounds.",
-      "date": "1959-04-12",
+      "date": "1945-02-12",
+      "mechanism": "judicial-versus-legislative-routing",
+      "learningTarget": "Fred Johnson began a term as Adams County judge in January 1945; Pittenger was a sitting U.S. representative.",
       "venue": {
-        "ko": "미네소타 농업 대표 세대",
-        "en": "Minnesota farm representatives"
+        "ko": "공직 안내 창구",
+        "en": "Public office information desk"
       },
       "context": {
-        "ko": "미네소타 농업 대표 세대",
-        "en": "Minnesota farm representatives"
+        "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+        "en": "A fictional meeting grounded in the historical record."
       },
       "cast": [
         {
-          "id": "A000179",
-          "name": "Herman Carl Andersen",
-          "ko": "허먼 칼 앤더슨",
+          "id": "P000371",
+          "name": "William Alvin Pittenger",
+          "ko": "윌리엄 피텐저",
           "portrait": null,
-          "source": "https://history.house.gov/People/Detail/8507"
+          "source": "https://history.house.gov/People/Detail/19739"
         },
         {
-          "id": "L000069",
-          "name": "Odin Elsford Stanley Langen",
-          "ko": "오딘 랭건",
+          "id": "J000130",
+          "name": "Fred Gustus Johnson",
+          "ko": "프레드 존슨",
           "portrait": null,
-          "source": "https://history.house.gov/People/Detail/16674"
+          "source": "https://history.house.gov/People/Listing/J/JOHNSON,-Fred-Gustus-(J000130)/"
         }
       ],
       "opening": [
-        {
-          "speaker": "npc:0",
-          "ko": "새 의원 랭건도 농업 경험을 가지고 있습니다.",
-          "en": "New member Langen also has farming experience."
-        },
         {
           "speaker": "npc:1",
-          "ko": "제 농장은 케네디 인근에 있습니다.",
-          "en": "My farm is near Kennedy."
-        }
-      ],
-      "response": {
-        "speaker": "player",
-        "ko": "랭건의 농업 연고는 {{blank}} 카운티입니다.",
-        "en": "Langen's farm ties are in {{blank}} County.",
-        "choices": [
-          {
-            "id": "A",
-            "ko": "렌빌",
-            "en": "Renville"
-          },
-          {
-            "id": "B",
-            "ko": "키트슨",
-            "en": "Kittson"
-          },
-          {
-            "id": "C",
-            "ko": "링컨",
-            "en": "Lincoln"
-          },
-          {
-            "id": "D",
-            "ko": "스위프트",
-            "en": "Swift"
-          }
-        ],
-        "correct": "B"
-      },
-      "followup": {
-        "correct": [
-          {
-            "speaker": "npc:0",
-            "ko": "케네디 인근 키트슨 카운티입니다.",
-            "en": "Kittson County near Kennedy."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 농촌 방문단의 지도에 위치를 표시하세요.",
-            "en": "Mark both farming areas on the delegation map."
-          }
-        ],
-        "incorrect": [
-          {
-            "speaker": "npc:0",
-            "ko": "케네디 인근 키트슨 카운티입니다.",
-            "en": "Kittson County near Kennedy."
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "url": "https://history.house.gov/People/Detail/8507",
-          "claim": "Andersen and Langen were Republican Minnesota House members in 1959 with farming backgrounds.",
-          "asOf": "1959-04-12"
+          "ko": "연방의회를 떠난 뒤 이번 1월에 애덤스 카운티의 새 공직을 맡았습니다.",
+          "en": "After leaving Congress, I began a new public office in Adams County this January."
         },
-        {
-          "url": "https://history.house.gov/People/Detail/16674",
-          "claim": "Andersen and Langen were Republican Minnesota House members in 1959 with farming backgrounds.",
-          "asOf": "1959-04-12"
-        }
-      ],
-      "outcome": {
-        "kind": "notebook",
-        "key": "p01-1413-farm-generation-introduction"
-      },
-      "fictional": true
-    },
-    {
-      "id": "P01-1414",
-      "mechanism": "farm-administration",
-      "learningTarget": "Langen was associated with Production Marketing Administration in Kittson County from 1935 to 1950.",
-      "date": "1959-06-12",
-      "venue": {
-        "ko": "키트슨 농업 기록",
-        "en": "Kittson agricultural records"
-      },
-      "context": {
-        "ko": "키트슨 농업 기록",
-        "en": "Kittson agricultural records"
-      },
-      "cast": [
-        {
-          "id": "L000069",
-          "name": "Odin Elsford Stanley Langen",
-          "ko": "오딘 랭건",
-          "portrait": null,
-          "source": "https://history.house.gov/People/Detail/16674"
-        }
-      ],
-      "opening": [
         {
           "speaker": "npc:0",
-          "ko": "대공황기부터 지역 농업 행정과 연결돼 있었습니다.",
-          "en": "I had ties to local agricultural administration from the Depression years."
-        },
-        {
-          "speaker": "player",
-          "ko": "당시 기관 명칭을 정확히 기록하겠습니다.",
-          "en": "I'll use the agency's correct name."
+          "ko": "저는 현재 미네소타 연방 하원의원입니다. 두 관할을 구분해야 합니다.",
+          "en": "I serve Minnesota in the U.S. House. We should distinguish the two jurisdictions."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "랭건의 1935~1950년 기관은 {{blank}}입니다.",
-        "en": "Langen was associated with the {{blank}} in 1935–1950.",
+        "ko": "존슨의 현직은 애덤스 카운티 {{blank}}입니다.",
+        "en": "Johnson now serves Adams County as its {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "Federal Reserve",
-            "en": "Federal Reserve"
+            "ko": "검사",
+            "en": "prosecutor"
           },
           {
             "id": "B",
-            "ko": "Interstate Commerce Commission",
-            "en": "Interstate Commerce Commission"
+            "ko": "보안관",
+            "en": "sheriff"
           },
           {
             "id": "C",
-            "ko": "Production Marketing Administration",
-            "en": "Production Marketing Administration"
+            "ko": "판사",
+            "en": "judge"
           },
           {
             "id": "D",
-            "ko": "Tennessee Valley Authority",
-            "en": "Tennessee Valley Authority"
+            "ko": "연방의원",
+            "en": "U.S. representative"
           }
         ],
         "correct": "C"
@@ -1437,34 +1331,125 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "Production Marketing Administration입니다.",
-            "en": "The Production Marketing Administration."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "농업 행정과 지역 대표 경력을 별도로 표시하세요.",
-            "en": "Separate agricultural administration from elected service."
+            "speaker": "player",
+            "ko": "카운티 법원 연락처와 연방 하원 연락처를 분리하겠습니다.",
+            "en": "I'll keep the county court and congressional contacts separate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "Production Marketing Administration입니다.",
-            "en": "The Production Marketing Administration."
+            "speaker": "npc:1",
+            "ko": "저는 1945년 1월부터 카운티 판사입니다.",
+            "en": "My county judgeship began in January 1945."
           }
         ]
       },
       "evidence": [
         {
-          "url": "https://history.house.gov/People/Detail/16674",
-          "claim": "Langen was associated with Production Marketing Administration in Kittson County from 1935 to 1950.",
-          "asOf": "1959-06-12"
+          "url": "https://history.house.gov/People/Detail/19739",
+          "claim": "Fred Johnson began a term as Adams County judge in January 1945; Pittenger was a sitting U.S. representative.",
+          "asOf": "1945-02-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/J/JOHNSON,-Fred-Gustus-(J000130)/",
+          "claim": "Fred Johnson began a term as Adams County judge in January 1945; Pittenger was a sitting U.S. representative.",
+          "asOf": "1945-02-12"
         }
       ],
       "outcome": {
-        "kind": "document",
-        "key": "p01-1414-farm-administration"
+        "kind": "notebook",
+        "key": "p01-1413-judicial-versus-legislative-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1414",
+      "date": "1939-06-12",
+      "mechanism": "alumni-letter-identification",
+      "learningTarget": "Pittenger earned his law degree at Harvard Law School in 1912.",
+      "venue": {
+        "ko": "덜루스 법조인 동문 행사",
+        "en": "Duluth legal alumni gathering"
+      },
+      "context": {
+        "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+        "en": "A fictional meeting grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "P000371",
+          "name": "William Alvin Pittenger",
+          "ko": "윌리엄 피텐저",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19739"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "1912년 법학 졸업생에게 보낼 초청장이 왔습니다. 학교 명칭이 빠졌네요.",
+          "en": "An invitation for the law class of 1912 arrived, but the school name is missing."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "인디애나의 와배시 대학에서 학부를 마치고 다른 학교에서 법학을 공부했지요.",
+          "en": "I finished college at Wabash in Indiana before studying law elsewhere."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "법학 동문 초청장은 {{blank}}에 연결해야겠습니다.",
+        "en": "The law alumni invitation belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "예일 로스쿨",
+            "en": "Yale Law School"
+          },
+          {
+            "id": "B",
+            "ko": "미네소타대 로스쿨",
+            "en": "University of Minnesota Law School"
+          },
+          {
+            "id": "C",
+            "ko": "컬럼비아 로스쿨",
+            "en": "Columbia Law School"
+          },
+          {
+            "id": "D",
+            "ko": "하버드 로스쿨",
+            "en": "Harvard Law School"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "하버드에서 1912년에 법학 공부를 마쳤습니다.",
+            "en": "I completed law school at Harvard in 1912."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "host",
+            "ko": "정확한 학교는 하버드 로스쿨입니다. 와배시는 학부 과정입니다.",
+            "en": "The law school was Harvard; Wabash was his undergraduate institution."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/19739",
+          "claim": "Pittenger earned his law degree at Harvard Law School in 1912.",
+          "asOf": "1939-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1414-alumni-letter-identification"
       },
       "fictional": true
     },
@@ -2382,170 +2367,69 @@
     },
     {
       "id": "P01-1424",
-      "mechanism": "generation-change",
-      "learningTarget": "Miller's House term ended January 3, 1959; Harold Terry Johnson entered that day.",
-      "date": "1959-02-12",
+      "date": "1943-06-12",
+      "mechanism": "state-legislative-pathways",
+      "learningTarget": "Miller served in the Nebraska legislature from 1937 to 1941; Pittenger previously served in the Minnesota state house.",
       "venue": {
-        "ko": "서부 대표의 임기 전환",
-        "en": "Western representatives' transition"
+        "ko": "중서부 주의회 경력 자료실",
+        "en": "Midwestern state legislative archive"
       },
       "context": {
-        "ko": "서부 대표의 임기 전환",
-        "en": "Western representatives' transition"
+        "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+        "en": "A fictional meeting grounded in the historical record."
       },
       "cast": [
         {
-          "id": null,
+          "id": "M000715",
           "name": "Arthur Lewis Miller",
           "ko": "아서 루이스 밀러",
           "portrait": null,
-          "source": "https://history.house.gov/People/Detail/18227"
+          "source": "https://history.house.gov/People/Listing/M/MILLER,-Arthur-Lewis-(M000715)/"
         },
         {
-          "id": null,
-          "name": "Harold Terry Johnson",
-          "ko": "해럴드 테리 존슨",
+          "id": "P000371",
+          "name": "William Alvin Pittenger",
+          "ko": "윌리엄 피텐저",
           "portrait": null,
-          "source": "https://history.house.gov/People/Detail/15862"
+          "source": "https://history.house.gov/People/Detail/19739"
         }
       ],
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "지난달 하원을 떠났습니다. 존슨 의원은 새로 들어왔지요.",
-          "en": "I left the House last month. Mr. Johnson has just arrived."
+          "ko": "연방 하원에 오기 전 1937년부터 1941년까지 주의회에서 일했습니다.",
+          "en": "Before entering the U.S. House, I served in the state legislature from 1937 to 1941."
         },
         {
           "speaker": "npc:1",
-          "ko": "캘리포니아 철도 노동자 출신으로 새 임기를 시작했습니다.",
-          "en": "I've begun my term with a background in California railroad labor."
+          "ko": "저도 주의회 경험이 있지만 제 지역은 미네소타입니다.",
+          "en": "I also have state legislative experience, but mine was in Minnesota."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "현재 현직 하원의원은 {{blank}}입니다.",
-        "en": "The sitting member of these two is {{blank}}.",
+        "ko": "밀러의 1937~1941년 기록은 {{blank}} 주의회 자료입니다.",
+        "en": "Miller's 1937–1941 record belongs to the {{blank}} legislature.",
         "choices": [
           {
             "id": "A",
-            "ko": "해럴드 존슨",
-            "en": "Harold Johnson"
+            "ko": "아이오와",
+            "en": "Iowa"
           },
           {
             "id": "B",
-            "ko": "아서 밀러",
-            "en": "Arthur Miller"
+            "ko": "네브래스카",
+            "en": "Nebraska"
           },
           {
             "id": "C",
-            "ko": "두 명 모두",
-            "en": "both"
+            "ko": "미네소타",
+            "en": "Minnesota"
           },
           {
             "id": "D",
-            "ko": "둘 다 아님",
-            "en": "neither"
-          }
-        ],
-        "correct": "A"
-      },
-      "followup": {
-        "correct": [
-          {
-            "speaker": "npc:0",
-            "ko": "존슨은 현직, 밀러는 전직입니다.",
-            "en": "Johnson is sitting; Miller is former."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 주의 연락망을 갱신하세요.",
-            "en": "Update both state contacts."
-          }
-        ],
-        "incorrect": [
-          {
-            "speaker": "npc:0",
-            "ko": "존슨은 현직, 밀러는 전직입니다.",
-            "en": "Johnson is sitting; Miller is former."
-          }
-        ]
-      },
-      "evidence": [
-        {
-          "url": "https://history.house.gov/People/Detail/18227",
-          "claim": "Miller's House term ended January 3, 1959; Harold Terry Johnson entered that day.",
-          "asOf": "1959-02-12"
-        },
-        {
-          "url": "https://history.house.gov/People/Detail/15862",
-          "claim": "Miller's House term ended January 3, 1959; Harold Terry Johnson entered that day.",
-          "asOf": "1959-02-12"
-        }
-      ],
-      "outcome": {
-        "kind": "appointment",
-        "key": "p01-1424-generation-change"
-      },
-      "fictional": true
-    },
-    {
-      "id": "P01-1425",
-      "mechanism": "rail-labor-network",
-      "learningTarget": "Johnson was district chairman of Brotherhood of Railway Clerks before entering Congress.",
-      "date": "1959-05-12",
-      "venue": {
-        "ko": "로즈빌 철도 노동자 접견",
-        "en": "Roseville railway workers' meeting"
-      },
-      "context": {
-        "ko": "로즈빌 철도 노동자 접견",
-        "en": "Roseville railway workers' meeting"
-      },
-      "cast": [
-        {
-          "id": null,
-          "name": "Harold Terry Johnson",
-          "ko": "해럴드 테리 존슨",
-          "portrait": null,
-          "source": "https://history.house.gov/People/Detail/15862"
-        }
-      ],
-      "opening": [
-        {
-          "speaker": "npc:0",
-          "ko": "철도 사무직 노동자들과 함께 일하던 기록이 있습니다.",
-          "en": "I have records from my work with railroad clerks."
-        },
-        {
-          "speaker": "player",
-          "ko": "노동조합 명칭을 정확히 표시하겠습니다.",
-          "en": "I'll label the union accurately."
-        }
-      ],
-      "response": {
-        "speaker": "player",
-        "ko": "존슨이 지구 의장을 맡았던 조직은 {{blank}}입니다.",
-        "en": "Johnson served as district chairman of the {{blank}}.",
-        "choices": [
-          {
-            "id": "A",
-            "ko": "United Mine Workers",
-            "en": "United Mine Workers"
-          },
-          {
-            "id": "B",
-            "ko": "Brotherhood of Railway Clerks",
-            "en": "Brotherhood of Railway Clerks"
-          },
-          {
-            "id": "C",
-            "ko": "United Auto Workers",
-            "en": "United Auto Workers"
-          },
-          {
-            "id": "D",
-            "ko": "International Longshoremen's Association",
-            "en": "International Longshoremen's Association"
+            "ko": "캔자스",
+            "en": "Kansas"
           }
         ],
         "correct": "B"
@@ -2553,34 +2437,125 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "철도 사무직 노동조합입니다.",
-            "en": "The Brotherhood of Railway Clerks."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "철도 노동자들의 요청을 지역구 자료에 연결하세요.",
-            "en": "Link the railway workers' inquiries to the district file."
+            "speaker": "player",
+            "ko": "각 주의회 자료를 구분해 보존하겠습니다.",
+            "en": "I'll preserve each state's legislative records separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "철도 사무직 노동조합입니다.",
-            "en": "The Brotherhood of Railway Clerks."
+            "ko": "제 주의회 경력은 네브래스카에서였습니다.",
+            "en": "My state legislative service was in Nebraska."
           }
         ]
       },
       "evidence": [
         {
-          "url": "https://history.house.gov/People/Detail/15862",
-          "claim": "Johnson was district chairman of Brotherhood of Railway Clerks before entering Congress.",
-          "asOf": "1959-05-12"
+          "url": "https://history.house.gov/People/Listing/M/MILLER,-Arthur-Lewis-(M000715)/",
+          "claim": "Miller served in the Nebraska legislature from 1937 to 1941; Pittenger previously served in the Minnesota state house.",
+          "asOf": "1943-06-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/19739",
+          "claim": "Miller served in the Nebraska legislature from 1937 to 1941; Pittenger previously served in the Minnesota state house.",
+          "asOf": "1943-06-12"
         }
       ],
       "outcome": {
-        "kind": "notebook",
-        "key": "p01-1425-rail-labor-network"
+        "kind": "document",
+        "key": "p01-1424-state-legislative-pathways"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1425",
+      "date": "1944-06-12",
+      "mechanism": "municipal-record-recovery",
+      "learningTarget": "Miller served as mayor of Kimball, Nebraska, in 1933 and 1934.",
+      "venue": {
+        "ko": "킴볼 지방정부 기록 전시",
+        "en": "Kimball municipal records exhibit"
+      },
+      "context": {
+        "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+        "en": "A fictional meeting grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "M000715",
+          "name": "Arthur Lewis Miller",
+          "ko": "아서 루이스 밀러",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/M/MILLER,-Arthur-Lewis-(M000715)/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "1933년과 1934년 킴볼의 시청 명부에서 의원님의 이름을 찾았습니다.",
+          "en": "I found your name in Kimball's municipal records for 1933 and 1934."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "의사로 일하던 시기에 지방정부 공직도 맡았지요.",
+          "en": "I held municipal office while working as a physician."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "당시 킴볼에서 맡으신 직책은 {{blank}}이었습니다.",
+        "en": "Your municipal office in Kimball then was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시의회 서기",
+            "en": "city clerk"
+          },
+          {
+            "id": "B",
+            "ko": "교육감",
+            "en": "school superintendent"
+          },
+          {
+            "id": "C",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "D",
+            "ko": "경찰서장",
+            "en": "police chief"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "맞습니다. 1933년과 1934년에 시장으로 재임했습니다.",
+            "en": "Yes. I served as mayor in 1933 and 1934."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "시장 기록입니다. 주 보건국장 경력은 훨씬 뒤의 일입니다.",
+            "en": "Those are mayoral records. My state health directorship came later."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/M/MILLER,-Arthur-Lewis-(M000715)/",
+          "claim": "Miller served as mayor of Kimball, Nebraska, in 1933 and 1934.",
+          "asOf": "1944-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1425-municipal-record-recovery"
       },
       "fictional": true
     }
