@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "team": "Q2-B",
+  "round": 3,
+  "date": "2026-11-25",
+  "legacy": {
+    "path": "docs/audits/P01-Q2-AUDIT.json",
+    "observed_blob_sha": "27ca2887ec3eb724b23cfde01348cb30afc867ee",
+    "reported_core_verified": 800,
+    "verified_in_current_session": false,
+    "policy": "Preserve the original; no overwrite or deletion."
+  },
+  "target": {
+    "start": "P01-1476",
+    "end": "P01-1875",
+    "new_core_verifications": 400
+  },
+  "shards": [
+    {
+      "path": "docs/audits/P01-Q2-B-R3-1476-1575.json",
+      "planned_start": "P01-1476",
+      "planned_end": "P01-1575",
+      "actual_start": "P01-1476",
+      "actual_end": "P01-1500",
+      "new_core_verified": 25,
+      "corrected": 2,
+      "all_cast_ids_verified": 18,
+      "audit_commit": "5f4a8bfc53be4807dff818e055805010188b4ec3",
+      "source_correction_commit": "ded2a2add21760d3824ebec54fc2de5110564812",
+      "audit_blob_sha": "60a987b01fd1c7279676f3f84b2d52a7564216a0"
+    }
+  ],
+  "planned_next_shards": [
+    {
+      "start": "P01-1576",
+      "end": "P01-1675"
+    },
+    {
+      "start": "P01-1676",
+      "end": "P01-1775"
+    },
+    {
+      "start": "P01-1776",
+      "end": "P01-1875"
+    }
+  ],
+  "progress": {
+    "new_core_verified": 25,
+    "reported_cumulative_if_legacy_800_correct": 825,
+    "remaining_this_round": 375,
+    "last_core_verified": "P01-1500",
+    "next": "P01-1501",
+    "pending_official_bioguide_crosscheck": [
+      "M001198",
+      "M000934",
+      "B001288",
+      "M001153",
+      "S001198"
+    ]
+  },
+  "count_policy": "Core claim independently verified, including corrected records. Do not count incomplete identifier checks as fully cleared nine-axis audits. Verify each saved batch by re-reading main; append only to relevant shard and update this index using current file SHA."
+}
