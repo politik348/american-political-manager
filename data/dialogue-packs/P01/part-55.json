@@ -1,0 +1,2469 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 55,
+  "scenes": [
+    {
+      "id": "P01-1351",
+      "mechanism": "community-college-visit",
+      "learningTarget": "Byrne served as chancellor of Alabama's two-year college system.",
+      "date": "2016-03-01",
+      "venue": {
+        "ko": "지역 전문대학 방문",
+        "en": "Community college visit"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "B001289",
+          "name": "Bradley Byrne",
+          "ko": "브래들리 번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001289.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001289"
+        },
+        {
+          "id": "R000591",
+          "name": "Martha Roby",
+          "ko": "마사 로비",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000591.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000591"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "학생들과 이야기하기 전에 제가 맡았던 교육행정 직책을 소개해 주세요.",
+          "en": "Before we meet the students, introduce my former educational administrative role."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 몽고메리 시의원 출신입니다. 두 경력은 다른 정부 영역에 속하죠.",
+          "en": "I came from Montgomery city council. Our backgrounds differ."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "번 의원은 앨라배마의 {{blank}}를 이끌었습니다.",
+        "en": "Byrne led Alabama's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 대법원",
+            "en": "state supreme court"
+          },
+          {
+            "id": "B",
+            "ko": "2년제 대학 시스템",
+            "en": "two-year college system"
+          },
+          {
+            "id": "C",
+            "ko": "주 경찰청",
+            "en": "state police agency"
+          },
+          {
+            "id": "D",
+            "ko": "항만청",
+            "en": "port authority"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "번은 주 2년제 대학 시스템의 총장을 지냈습니다.",
+            "en": "Byrne was chancellor of the state's two-year college system."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "번은 주 2년제 대학 시스템의 총장을 지냈습니다.",
+            "en": "Byrne was chancellor of the state's two-year college system."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+          "claim": "Byrne served as chancellor of Alabama's two-year college system.",
+          "asOf": "2016-03-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1351-community-college-visit"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1352",
+      "mechanism": "municipal-map-memory",
+      "learningTarget": "Roby previously represented Montgomery city council district seven.",
+      "date": "2016-03-03",
+      "venue": {
+        "ko": "몽고메리 지방의회 전시",
+        "en": "Montgomery municipal exhibit"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "R000591",
+          "name": "Martha Roby",
+          "ko": "마사 로비",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000591.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000591"
+        },
+        {
+          "id": "S001185",
+          "name": "Terri A. Sewell",
+          "ko": "테리 스웰",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001185.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001185"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "예전 시의회 지도를 가져왔어요. 연방 선거구 번호와 구별해 주세요.",
+          "en": "I brought an old municipal map. Distinguish its numbering from congressional districts."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 연방 지역구는 앨라배마 제7구입니다. 서로 다른 지도죠.",
+          "en": "My federal district is Alabama's seventh. These are different maps."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "로비 의원이 지방의회에서 대표했던 지역은 {{blank}}입니다.",
+        "en": "Roby represented {{blank}} on the city council.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "앨라배마 연방 제7구",
+            "en": "Alabama federal district seven"
+          },
+          {
+            "id": "B",
+            "ko": "모빌 제1구",
+            "en": "Mobile district one"
+          },
+          {
+            "id": "C",
+            "ko": "몽고메리 제7구",
+            "en": "Montgomery district seven"
+          },
+          {
+            "id": "D",
+            "ko": "버밍햄 제2구",
+            "en": "Birmingham district two"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "로비는 몽고메리 시의회 제7구 의원이었습니다.",
+            "en": "Roby served on Montgomery city council for district seven."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "로비는 몽고메리 시의회 제7구 의원이었습니다.",
+            "en": "Roby served on Montgomery city council for district seven."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+          "claim": "Roby previously represented Montgomery city council district seven.",
+          "asOf": "2016-03-03"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1352-municipal-map-memory"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1353",
+      "mechanism": "judicial-career-interview",
+      "learningTarget": "Sewell clerked for federal district judge U.W. Clemon in Birmingham.",
+      "date": "2016-03-05",
+      "venue": {
+        "ko": "법률 진로 인터뷰",
+        "en": "Legal career interview"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "S001185",
+          "name": "Terri A. Sewell",
+          "ko": "테리 스웰",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001185.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001185"
+        },
+        {
+          "id": "B001289",
+          "name": "Bradley Byrne",
+          "ko": "브래들리 번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001289.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001289"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 법률 경력에서 버밍햄의 연방 법원 경험도 중요합니다.",
+          "en": "My legal career included experience at a federal court in Birmingham."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저 역시 법학을 공부했지요. 학생에게 법원과 의회 역할을 설명합시다.",
+          "en": "I also studied law. Let's explain the difference between courts and Congress."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스웰 의원은 U.W. 클레먼 판사의 {{blank}}로 일했습니다.",
+        "en": "Sewell worked for Judge U.W. Clemon as a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "D",
+            "ko": "재판연구원",
+            "en": "law clerk"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스웰은 클레먼 연방 지방법원 판사의 재판연구원이었습니다.",
+            "en": "Sewell clerked for federal district judge Clemon."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스웰은 클레먼 연방 지방법원 판사의 재판연구원이었습니다.",
+            "en": "Sewell clerked for federal district judge Clemon."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+          "claim": "Sewell clerked for federal district judge U.W. Clemon in Birmingham.",
+          "asOf": "2016-03-05"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1353-judicial-career-interview"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1354",
+      "mechanism": "special-election-archive",
+      "learningTarget": "Byrne won December 17, 2013 special election after Jo Bonner resigned.",
+      "date": "2016-03-07",
+      "venue": {
+        "ko": "지역 의석 역사 자료실",
+        "en": "District history archive"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "B001289",
+          "name": "Bradley Byrne",
+          "ko": "브래들리 번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001289.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001289"
+        },
+        {
+          "id": "S000320",
+          "name": "Richard C. Shelby",
+          "ko": "리처드 셸비",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000320.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000320"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2013년 제1구 의석을 채운 선거는 일반 정기선거와 달랐습니다.",
+          "en": "The election that filled district one's seat in 2013 was different from a regular election."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하원 의석 공석 기록부터 살펴보죠.",
+          "en": "Start with the House vacancy record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "번 의원은 조 보너 사임 이후 {{blank}}로 당선됐습니다.",
+        "en": "Byrne was elected after Jo Bonner resigned in a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2013년 보궐선거",
+            "en": "2013 special election"
+          },
+          {
+            "id": "B",
+            "ko": "2014년 상원 선거",
+            "en": "2014 Senate election"
+          },
+          {
+            "id": "C",
+            "ko": "2013년 주지사 임명",
+            "en": "2013 gubernatorial appointment"
+          },
+          {
+            "id": "D",
+            "ko": "2012년 정기선거",
+            "en": "2012 general election"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "2013년 12월 17일 보궐선거에서 당선됐습니다.",
+            "en": "He won the December 17, 2013 special election."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2013년 12월 17일 보궐선거에서 당선됐습니다.",
+            "en": "He won the December 17, 2013 special election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+          "claim": "Byrne won December 17, 2013 special election after Jo Bonner resigned.",
+          "asOf": "2016-03-07"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1354-special-election-archive"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1355",
+      "mechanism": "local-prosecutor-roundtable",
+      "learningTarget": "Kelly served as Tupelo city prosecutor from 1999 to 2011.",
+      "date": "2016-03-09",
+      "venue": {
+        "ko": "지방 법률 간담회",
+        "en": "Local legal roundtable"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "K000388",
+          "name": "Trent Kelly",
+          "ko": "트렌트 켈리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000388.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000388"
+        },
+        {
+          "id": "T000193",
+          "name": "Bennie G. Thompson",
+          "ko": "베니 톰슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000193.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000193"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "투펠로의 지방 법률 업무를 1999년부터 2011년까지 맡았습니다.",
+          "en": "I handled municipal legal work in Tupelo from 1999 to 2011."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 볼턴의 지방정부에서 일했습니다. 두 도시를 혼동하지 마세요.",
+          "en": "I served in local government in Bolton. Don't confuse our cities."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "켈리 의원은 투펠로에서 {{blank}}였습니다.",
+        "en": "Kelly served Tupelo as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "B",
+            "ko": "시 검사",
+            "en": "city prosecutor"
+          },
+          {
+            "id": "C",
+            "ko": "교육감",
+            "en": "school superintendent"
+          },
+          {
+            "id": "D",
+            "ko": "시의장",
+            "en": "council president"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "켈리는 투펠로 시 검사였습니다.",
+            "en": "Kelly was Tupelo's city prosecutor."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "켈리는 투펠로 시 검사였습니다.",
+            "en": "Kelly was Tupelo's city prosecutor."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-MS.htm",
+          "claim": "Kelly served as Tupelo city prosecutor from 1999 to 2011.",
+          "asOf": "2016-03-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1355-local-prosecutor-roundtable"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1356",
+      "mechanism": "mayoral-transition-recall",
+      "learningTarget": "Thompson was Bolton mayor from 1973 to 1979.",
+      "date": "2016-03-11",
+      "venue": {
+        "ko": "볼턴 주민 공직 행사",
+        "en": "Bolton public-service event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "T000193",
+          "name": "Bennie G. Thompson",
+          "ko": "베니 톰슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000193.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000193"
+        },
+        {
+          "id": "K000388",
+          "name": "Trent Kelly",
+          "ko": "트렌트 켈리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000388.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000388"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난 지방정부 간담회에서 투펠로 이야기를 했죠. 저는 볼턴에서 일했습니다.",
+          "en": "At our earlier discussion we talked about Tupelo. I served in Bolton."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "주민들이 지방정부에서 선출직과 법률 직책을 구별하면 좋겠군요.",
+          "en": "Residents should distinguish elected municipal leadership from legal offices."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "톰슨 의원은 1973~1979년 {{blank}}였습니다.",
+        "en": "From 1973 to 1979 Thompson was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "투펠로 시장",
+            "en": "mayor of Tupelo"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "볼턴 시장",
+            "en": "mayor of Bolton"
+          },
+          {
+            "id": "D",
+            "ko": "주 국무장관",
+            "en": "secretary of state"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "톰슨은 볼턴 시장을 지냈습니다.",
+            "en": "Thompson was mayor of Bolton."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "톰슨은 볼턴 시장을 지냈습니다.",
+            "en": "Thompson was mayor of Bolton."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-MS.htm",
+          "claim": "Thompson was Bolton mayor from 1973 to 1979.",
+          "asOf": "2016-03-11"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1356-mayoral-transition-recall"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1357",
+      "mechanism": "shipbuilding-caucus-brief",
+      "learningTarget": "Palazzo belonged to the Shipbuilding Caucus in 2016.",
+      "date": "2016-03-13",
+      "venue": {
+        "ko": "걸프 연안 조선업 설명회",
+        "en": "Gulf Coast shipbuilding briefing"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "P000601",
+          "name": "Steven M. Palazzo",
+          "ko": "스티븐 팔라조",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000601.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000601"
+        },
+        {
+          "id": "T000193",
+          "name": "Bennie G. Thompson",
+          "ko": "베니 톰슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000193.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000193"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "조선업과 관련된 의원 모임에도 참여하고 있습니다.",
+          "en": "I also belong to a caucus concerned with shipbuilding."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 국토안보위원회에서 활동합니다. 코커스와 위원회는 다르죠.",
+          "en": "I serve on Homeland Security. Caucuses and committees differ."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "팔라조 의원이 참여한 모임은 {{blank}}입니다.",
+        "en": "Palazzo belongs to the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "상원 정보위원회",
+            "en": "Senate Intelligence Committee"
+          },
+          {
+            "id": "B",
+            "ko": "연방 대법원",
+            "en": "Supreme Court"
+          },
+          {
+            "id": "C",
+            "ko": "주 교육위원회",
+            "en": "state education board"
+          },
+          {
+            "id": "D",
+            "ko": "조선업 코커스",
+            "en": "Shipbuilding Caucus"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "2016년 명부에는 조선업 코커스 참여가 나옵니다.",
+            "en": "The 2016 directory lists his Shipbuilding Caucus membership."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2016년 명부에는 조선업 코커스 참여가 나옵니다.",
+            "en": "The 2016 directory lists his Shipbuilding Caucus membership."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-MS.htm",
+          "claim": "Palazzo belonged to the Shipbuilding Caucus in 2016.",
+          "asOf": "2016-03-13"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1357-shipbuilding-caucus-brief"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1358",
+      "mechanism": "congressional-printing",
+      "learningTarget": "Harper chaired the Joint Committee on Printing in the 114th Congress.",
+      "date": "2016-03-15",
+      "venue": {
+        "ko": "의회 출판 설명회",
+        "en": "Congressional publishing briefing"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "H001045",
+          "name": "Gregg Harper",
+          "ko": "그레그 하퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001045.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001045"
+        },
+        {
+          "id": "W000437",
+          "name": "Roger F. Wicker",
+          "ko": "로저 위커",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000437.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000437"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "의회 인쇄 업무에는 양원이 관련된 합동위원회가 있습니다.",
+          "en": "Congressional printing involves a joint committee of both chambers."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "상원도 합동위원회에 참여할 수 있습니다.",
+          "en": "The Senate can participate in joint committees too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하퍼 의원은 {{blank}} 위원장이었습니다.",
+        "en": "Harper chaired the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "인쇄 합동위원회",
+            "en": "Joint Committee on Printing"
+          },
+          {
+            "id": "B",
+            "ko": "상원 군사위원회",
+            "en": "Senate Armed Services Committee"
+          },
+          {
+            "id": "C",
+            "ko": "하원 농업위원회",
+            "en": "House Agriculture Committee"
+          },
+          {
+            "id": "D",
+            "ko": "주 선거위원회",
+            "en": "state election board"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "하퍼는 제114대 의회 인쇄 합동위원장을 맡았습니다.",
+            "en": "Harper chaired the Joint Committee on Printing in the 114th Congress."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "하퍼는 제114대 의회 인쇄 합동위원장을 맡았습니다.",
+            "en": "Harper chaired the Joint Committee on Printing in the 114th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-MS.htm",
+          "claim": "Harper chaired the Joint Committee on Printing in the 114th Congress.",
+          "asOf": "2016-03-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1358-congressional-printing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1359",
+      "mechanism": "coastal-restoration-career",
+      "learningTarget": "Graves headed the Louisiana Coastal Protection and Restoration Authority before the House.",
+      "date": "2016-03-17",
+      "venue": {
+        "ko": "해안 복원 주민 워크숍",
+        "en": "Coastal restoration workshop"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "G000577",
+          "name": "Garret Graves",
+          "ko": "개릿 그레이브스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000577.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000577"
+        },
+        {
+          "id": "R000588",
+          "name": "Cedric L. Richmond",
+          "ko": "세드릭 리치먼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000588.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000588"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해안 복원 업무를 주 차원에서 담당했던 경험이 있습니다.",
+          "en": "I previously worked on coastal restoration at the state level."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 걸프 연안 코커스에 참여합니다. 지방기관과 의원 모임을 구분합시다.",
+          "en": "I belong to the Gulf Coast Caucus. Distinguish the state agency from a caucus."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그레이브스 의원은 {{blank}}를 이끌었습니다.",
+        "en": "Graves headed the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 선거위원회",
+            "en": "Federal Election Commission"
+          },
+          {
+            "id": "B",
+            "ko": "루이지애나 해안보호·복원청",
+            "en": "Louisiana Coastal Protection and Restoration Authority"
+          },
+          {
+            "id": "C",
+            "ko": "주 대법원",
+            "en": "state supreme court"
+          },
+          {
+            "id": "D",
+            "ko": "국립공원청",
+            "en": "National Park Service"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "그레이브스는 루이지애나 해안보호·복원청 책임자였습니다.",
+            "en": "Graves headed Louisiana's coastal protection and restoration authority."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "그레이브스는 루이지애나 해안보호·복원청 책임자였습니다.",
+            "en": "Graves headed Louisiana's coastal protection and restoration authority."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-LA.htm",
+          "claim": "Graves headed the Louisiana Coastal Protection and Restoration Authority before the House.",
+          "asOf": "2016-03-17"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1359-coastal-restoration-career"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1360",
+      "mechanism": "cross-party-coastal-network",
+      "learningTarget": "Richmond was a member of the Gulf Coast Caucus in 2016.",
+      "date": "2016-03-19",
+      "venue": {
+        "ko": "걸프 연안 후속 간담회",
+        "en": "Gulf Coast follow-up discussion"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "R000588",
+          "name": "Cedric L. Richmond",
+          "ko": "세드릭 리치먼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000588.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000588"
+        },
+        {
+          "id": "G000577",
+          "name": "Garret Graves",
+          "ko": "개릿 그레이브스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000577.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000577"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난 해안 복원 행사에서 주 기관의 역할을 이야기했죠. 저는 연안 관련 의원 모임에 참여합니다.",
+          "en": "At our last coastal event we discussed state agencies. I belong to a coastal congressional caucus."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 주정부 경력과 연방 의원 모임은 서로 다른 제도적 경로입니다.",
+          "en": "My state experience and congressional caucuses are different institutional channels."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "리치먼드 의원은 {{blank}}에 참여합니다.",
+        "en": "Richmond belongs to the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "오대호 코커스",
+            "en": "Great Lakes Caucus"
+          },
+          {
+            "id": "B",
+            "ko": "상원 재정위원회",
+            "en": "Senate Finance Committee"
+          },
+          {
+            "id": "C",
+            "ko": "걸프 연안 코커스",
+            "en": "Gulf Coast Caucus"
+          },
+          {
+            "id": "D",
+            "ko": "주 항만청",
+            "en": "state port authority"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "명부는 리치먼드의 걸프 연안 코커스 참여를 기록합니다.",
+            "en": "The directory records Richmond's Gulf Coast Caucus membership."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "명부는 리치먼드의 걸프 연안 코커스 참여를 기록합니다.",
+            "en": "The directory records Richmond's Gulf Coast Caucus membership."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-LA.htm",
+          "claim": "Richmond was a member of the Gulf Coast Caucus in 2016.",
+          "asOf": "2016-03-19"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1360-cross-party-coastal-network"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1361",
+      "mechanism": "technology-background",
+      "learningTarget": "Scalise worked as a computer programmer before Congress.",
+      "date": "2016-03-21",
+      "venue": {
+        "ko": "지역 기술기업 진로 행사",
+        "en": "Technology career event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "S001176",
+          "name": "Steve Scalise",
+          "ko": "스티브 스컬리스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001176.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001176"
+        },
+        {
+          "id": "G000577",
+          "name": "Garret Graves",
+          "ko": "개릿 그레이브스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000577.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000577"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "정치에 오기 전에 기술기업에서 일했어요.",
+          "en": "Before Congress I worked at a technology company."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 해안 복원 분야에서 일했지요. 학생들에게 서로 다른 경력을 소개합시다.",
+          "en": "I worked in coastal restoration. Let's introduce our different backgrounds."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스컬리스 의원은 {{blank}}로 일했습니다.",
+        "en": "Scalise worked as a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "수의사",
+            "en": "veterinarian"
+          },
+          {
+            "id": "B",
+            "ko": "시 검사",
+            "en": "city prosecutor"
+          },
+          {
+            "id": "C",
+            "ko": "산림관리사",
+            "en": "forester"
+          },
+          {
+            "id": "D",
+            "ko": "컴퓨터 프로그래머",
+            "en": "computer programmer"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스컬리스는 기술기업의 컴퓨터 프로그래머였습니다.",
+            "en": "Scalise was a computer programmer at a technology company."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스컬리스는 기술기업의 컴퓨터 프로그래머였습니다.",
+            "en": "Scalise was a computer programmer at a technology company."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-LA.htm",
+          "claim": "Scalise worked as a computer programmer before Congress.",
+          "asOf": "2016-03-21"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1361-technology-background"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1362",
+      "mechanism": "rural-health-credentials",
+      "learningTarget": "Abraham earned a DVM in 1980 and MD in 1994.",
+      "date": "2016-03-23",
+      "venue": {
+        "ko": "농촌 의료 진로 설명회",
+        "en": "Rural health careers event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "A000374",
+          "name": "Ralph Lee Abraham",
+          "ko": "랠프 에이브러햄",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000374.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000374"
+        },
+        {
+          "id": "C001075",
+          "name": "Bill Cassidy",
+          "ko": "빌 캐시디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001075.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001075"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 사람의 의료 분야에 오기 전 동물 의료 분야 학위도 받았어요.",
+          "en": "Before human medicine I also earned a degree in animal medicine."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 의학을 공부했습니다. 학위의 차이를 설명해 주세요.",
+          "en": "I studied medicine too. Explain the difference between the degrees."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "에이브러햄 의원의 1980년 학위는 {{blank}}입니다.",
+        "en": "Abraham's 1980 degree was a {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "수의학 박사",
+            "en": "DVM"
+          },
+          {
+            "id": "B",
+            "ko": "법학 박사",
+            "en": "JD"
+          },
+          {
+            "id": "C",
+            "ko": "교육학 박사",
+            "en": "EdD"
+          },
+          {
+            "id": "D",
+            "ko": "경영학 석사",
+            "en": "MBA"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+            "en": "He earned a DVM in 1980 and an MD in 1994."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1980년 수의학, 1994년 의학 학위를 받았습니다.",
+            "en": "He earned a DVM in 1980 and an MD in 1994."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-LA.htm",
+          "claim": "Abraham earned a DVM in 1980 and MD in 1994.",
+          "asOf": "2016-03-23"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1362-rural-health-credentials"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1363",
+      "mechanism": "farm-broadcasting",
+      "learningTarget": "Crawford worked as farm director at KFIN-FM.",
+      "date": "2016-03-25",
+      "venue": {
+        "ko": "농업 라디오 행사",
+        "en": "Agricultural radio event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "C001087",
+          "name": "Eric A. \"Rick\" Crawford",
+          "ko": "릭 크로퍼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001087.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001087"
+        },
+        {
+          "id": "H001072",
+          "name": "J. French Hill",
+          "ko": "프렌치 힐",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001072.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001072"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "농업 현장에서 방송을 통해 소식을 전하던 때가 생각납니다.",
+          "en": "I remember conveying agricultural news through broadcasting."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 금융 분야에서 일했죠. 지역 경제 경력은 다양한 모습입니다.",
+          "en": "I worked in finance. Regional economic careers vary."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "크로퍼드 의원은 KFIN-FM에서 {{blank}}로 일했습니다.",
+        "en": "Crawford worked at KFIN-FM as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "B",
+            "ko": "농업 방송 책임자",
+            "en": "farm director"
+          },
+          {
+            "id": "C",
+            "ko": "은행장",
+            "en": "bank president"
+          },
+          {
+            "id": "D",
+            "ko": "주 판사",
+            "en": "state judge"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "크로퍼드는 KFIN-FM 농업 방송 책임자였습니다.",
+            "en": "Crawford was farm director at KFIN-FM."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "크로퍼드는 KFIN-FM 농업 방송 책임자였습니다.",
+            "en": "Crawford was farm director at KFIN-FM."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+          "claim": "Crawford worked as farm director at KFIN-FM.",
+          "asOf": "2016-03-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1363-farm-broadcasting"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1364",
+      "mechanism": "regional-banking",
+      "learningTarget": "Hill was CEO of Delta Trust & Banking Corp. from 1999 to 2014.",
+      "date": "2016-03-27",
+      "venue": {
+        "ko": "지역 금융기관 간담회",
+        "en": "Regional banking roundtable"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "H001072",
+          "name": "J. French Hill",
+          "ko": "프렌치 힐",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001072.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001072"
+        },
+        {
+          "id": "W000809",
+          "name": "Steve Womack",
+          "ko": "스티브 워맥",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000809.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000809"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1999~2014년에 지역 금융기관을 이끌었습니다.",
+          "en": "From 1999 to 2014 I led a regional banking institution."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 금융 자문 경험이 있습니다. 기관 이름을 정확히 남겨 주세요.",
+          "en": "I also have financial consulting experience. Record the institution accurately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "힐 의원이 이끈 곳은 {{blank}}입니다.",
+        "en": "Hill led {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Federal Election Commission",
+            "en": "Federal Election Commission"
+          },
+          {
+            "id": "B",
+            "ko": "National Park Service",
+            "en": "National Park Service"
+          },
+          {
+            "id": "C",
+            "ko": "Delta Trust & Banking Corp.",
+            "en": "Delta Trust & Banking Corp."
+          },
+          {
+            "id": "D",
+            "ko": "Fountain Lake School Board",
+            "en": "Fountain Lake School Board"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "힐은 Delta Trust & Banking Corp.의 CEO였습니다.",
+            "en": "Hill was CEO of Delta Trust & Banking Corp."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "힐은 Delta Trust & Banking Corp.의 CEO였습니다.",
+            "en": "Hill was CEO of Delta Trust & Banking Corp."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+          "claim": "Hill was CEO of Delta Trust & Banking Corp. from 1999 to 2014.",
+          "asOf": "2016-03-27"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1364-regional-banking"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1365",
+      "mechanism": "forest-engineering",
+      "learningTarget": "Westerman was a forester and professional engineer and served on Natural Resources.",
+      "date": "2016-03-29",
+      "venue": {
+        "ko": "산림 자원 설명회",
+        "en": "Forest resources briefing"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "W000821",
+          "name": "Bruce Westerman",
+          "ko": "브루스 웨스터먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000821.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000821"
+        },
+        {
+          "id": "C001087",
+          "name": "Eric A. \"Rick\" Crawford",
+          "ko": "릭 크로퍼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001087.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001087"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "산림과 공학을 함께 공부하고 일했습니다.",
+          "en": "My work combined forestry and engineering."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 농업 방송 경험이 있지요. 자원 문제와 농업 문제는 연결되기도 합니다.",
+          "en": "I have agricultural broadcasting experience. Resource and farm issues can intersect."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "웨스터먼 의원의 2016년 관련 위원회는 {{blank}}입니다.",
+        "en": "Westerman's relevant 2016 committee is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "외교위원회",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "B",
+            "ko": "법사위원회",
+            "en": "Judiciary"
+          },
+          {
+            "id": "C",
+            "ko": "세입위원회",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "D",
+            "ko": "천연자원위원회",
+            "en": "Natural Resources"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "웨스터먼은 천연자원위원회에 소속돼 있습니다.",
+            "en": "Westerman serves on Natural Resources."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "웨스터먼은 천연자원위원회에 소속돼 있습니다.",
+            "en": "Westerman serves on Natural Resources."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+          "claim": "Westerman was a forester and professional engineer and served on Natural Resources.",
+          "asOf": "2016-03-29"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1365-forest-engineering"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1366",
+      "mechanism": "poultry-caucus-network",
+      "learningTarget": "Both Womack and Hill belonged to the Congressional Chicken Caucus.",
+      "date": "2016-03-31",
+      "venue": {
+        "ko": "가금류 산업 설명회",
+        "en": "Poultry industry briefing"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "W000809",
+          "name": "Steve Womack",
+          "ko": "스티브 워맥",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000809.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000809"
+        },
+        {
+          "id": "H001072",
+          "name": "J. French Hill",
+          "ko": "프렌치 힐",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001072.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001072"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역 산업 관련 의원 모임에 참여하고 있습니다.",
+          "en": "I belong to a caucus connected with a regional industry."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 그 모임에 참여해요. 이름을 아시나요?",
+          "en": "I belong to it too. Do you know its name?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원이 참여한 모임은 {{blank}}입니다.",
+        "en": "The caucus both belong to is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "닭 산업 코커스",
+            "en": "Congressional Chicken Caucus"
+          },
+          {
+            "id": "B",
+            "ko": "해양 코커스",
+            "en": "Oceans Caucus"
+          },
+          {
+            "id": "C",
+            "ko": "하원 법사위원회",
+            "en": "House Judiciary Committee"
+          },
+          {
+            "id": "D",
+            "ko": "상원 군사위원회",
+            "en": "Senate Armed Services Committee"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+            "en": "The 2016 directory records both as Chicken Caucus members."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2016년 명부는 두 사람의 Chicken Caucus 참여를 기록합니다.",
+            "en": "The 2016 directory records both as Chicken Caucus members."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+          "claim": "Both Womack and Hill belonged to the Congressional Chicken Caucus.",
+          "asOf": "2016-03-31"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1366-poultry-caucus-network"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1367",
+      "mechanism": "house-to-senate-path",
+      "learningTarget": "Boozman served in the House from 2001 to 2011 before the Senate; Cotton won the Senate election in 2014.",
+      "date": "2016-04-02",
+      "venue": {
+        "ko": "대표단 경력 교류",
+        "en": "Delegation career exchange"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "W000809",
+          "name": "Steve Womack",
+          "ko": "스티브 워맥",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000809.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000809"
+        },
+        {
+          "id": "B001236",
+          "name": "John Boozman",
+          "ko": "존 부즈먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001236.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001236"
+        },
+        {
+          "id": "C001095",
+          "name": "Tom Cotton",
+          "ko": "톰 코튼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001095.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001095"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 현재 하원에서 활동합니다.",
+          "en": "I currently serve in the House."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 2001년부터 2011년까지 하원에서 일한 후 상원으로 옮겼습니다.",
+          "en": "I served in the House from 2001 to 2011 and then moved to the Senate."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "저도 하원에서 일한 뒤 2014년 상원 선거에서 당선됐습니다.",
+          "en": "I also served in the House before winning a Senate election in 2014."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "부즈먼 의원의 이전 연방직은 {{blank}}였습니다.",
+        "en": "Boozman's prior federal office was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "B",
+            "ko": "연방 하원의원",
+            "en": "U.S. representative"
+          },
+          {
+            "id": "C",
+            "ko": "주 판사",
+            "en": "state judge"
+          },
+          {
+            "id": "D",
+            "ko": "국무장관",
+            "en": "secretary of state"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "부즈먼은 2001~2011년 연방 하원의원이었습니다.",
+            "en": "Boozman served in the House from 2001 to 2011."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "부즈먼은 2001~2011년 연방 하원의원이었습니다.",
+            "en": "Boozman served in the House from 2001 to 2011."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+          "claim": "Boozman served in the House from 2001 to 2011 before the Senate; Cotton won the Senate election in 2014.",
+          "asOf": "2016-04-02"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1367-house-to-senate-path"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1368",
+      "mechanism": "governor-house-return",
+      "learningTarget": "Sanford served as South Carolina governor in 2003–2011 before returning to the House in 2013.",
+      "date": "2016-04-04",
+      "venue": {
+        "ko": "지역 대표단 재회",
+        "en": "Delegation reunion"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "S000051",
+          "name": "Mark Sanford",
+          "ko": "마크 샌퍼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000051.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000051"
+        },
+        {
+          "id": "S001184",
+          "name": "Tim Scott",
+          "ko": "팀 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001184"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 일하다가 주정부를 이끌었고 다시 하원에 왔습니다.",
+          "en": "I served in the House, led state government, and returned to the House."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 하원에서 상원으로 이동했죠. 두 경력의 방향이 다릅니다.",
+          "en": "I moved from the House to the Senate. Our career paths differ."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "샌퍼드 의원의 2003~2011년 직책은 {{blank}}였습니다.",
+        "en": "Sanford's office from 2003 to 2011 was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          },
+          {
+            "id": "B",
+            "ko": "찰스턴 시장",
+            "en": "mayor of Charleston"
+          },
+          {
+            "id": "C",
+            "ko": "사우스캐롤라이나 주지사",
+            "en": "governor of South Carolina"
+          },
+          {
+            "id": "D",
+            "ko": "주 재무관",
+            "en": "state treasurer"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "샌퍼드는 2003~2011년 주지사였습니다.",
+            "en": "Sanford was governor from 2003 to 2011."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "샌퍼드는 2003~2011년 주지사였습니다.",
+            "en": "Sanford was governor from 2003 to 2011."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-SC.htm",
+          "claim": "Sanford served as South Carolina governor in 2003–2011 before returning to the House in 2013.",
+          "asOf": "2016-04-04"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1368-governor-house-return"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1369",
+      "mechanism": "vacancy-appointment-chain",
+      "learningTarget": "Sanford won the May 7, 2013 special election after Scott's appointment to the Senate.",
+      "date": "2016-04-06",
+      "venue": {
+        "ko": "하원 공석 후속 설명",
+        "en": "House vacancy follow-up"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "S000051",
+          "name": "Mark Sanford",
+          "ko": "마크 샌퍼드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000051.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000051"
+        },
+        {
+          "id": "S001184",
+          "name": "Tim Scott",
+          "ko": "팀 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001184"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난번 경력의 방향을 비교했죠. 제가 복귀한 하원 의석에는 공석이 있었습니다.",
+          "en": "We compared careers earlier. The House seat I returned to was vacant."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제가 상원에 임명되면서 그 공석이 생겼습니다.",
+          "en": "My Senate appointment created that vacancy."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "샌퍼드 의원은 {{blank}}에서 당선되었습니다.",
+        "en": "Sanford won the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2014년 상원선거",
+            "en": "2014 Senate election"
+          },
+          {
+            "id": "B",
+            "ko": "2012년 주지사선거",
+            "en": "2012 governor election"
+          },
+          {
+            "id": "C",
+            "ko": "2016년 정기선거",
+            "en": "2016 general election"
+          },
+          {
+            "id": "D",
+            "ko": "2013년 5월 7일 보궐선거",
+            "en": "May 7, 2013 special election"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스콧의 상원 임명으로 발생한 공석을 보궐선거로 채웠습니다.",
+            "en": "The special election filled the vacancy caused by Scott's Senate appointment."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스콧의 상원 임명으로 발생한 공석을 보궐선거로 채웠습니다.",
+            "en": "The special election filled the vacancy caused by Scott's Senate appointment."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-SC.htm",
+          "claim": "Sanford won the May 7, 2013 special election after Scott's appointment to the Senate.",
+          "asOf": "2016-04-06"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1369-vacancy-appointment-chain"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1370",
+      "mechanism": "county-tourism-governance",
+      "learningTarget": "Rice chaired Horry County Council from 2010 to 2012.",
+      "date": "2016-04-08",
+      "venue": {
+        "ko": "머틀비치 지역행정 설명회",
+        "en": "Myrtle Beach local-government event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "R000597",
+          "name": "Tom Rice",
+          "ko": "톰 라이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000597.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000597"
+        },
+        {
+          "id": "C000537",
+          "name": "James E. Clyburn",
+          "ko": "제임스 클라이번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000537.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000537"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연방 하원에 오기 전에 카운티 의회를 이끌었습니다.",
+          "en": "Before Congress I chaired a county council."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 주 인적자원 관련 행정을 경험했습니다. 지방과 주를 구별해 주세요.",
+          "en": "I worked in state human-resource administration. Distinguish local from state government."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "라이스 의원은 {{blank}} 의장이었습니다.",
+        "en": "Rice chaired the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "호리 카운티 의회",
+            "en": "Horry County Council"
+          },
+          {
+            "id": "B",
+            "ko": "찰스턴 시의회",
+            "en": "Charleston City Council"
+          },
+          {
+            "id": "C",
+            "ko": "주 상원",
+            "en": "state senate"
+          },
+          {
+            "id": "D",
+            "ko": "연방 하원",
+            "en": "U.S. House"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "라이스는 2010~2012년 호리 카운티 의회 의장이었습니다.",
+            "en": "Rice chaired Horry County Council from 2010 to 2012."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "라이스는 2010~2012년 호리 카운티 의회 의장이었습니다.",
+            "en": "Rice chaired Horry County Council from 2010 to 2012."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-SC.htm",
+          "claim": "Rice chaired Horry County Council from 2010 to 2012.",
+          "asOf": "2016-04-08"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1370-county-tourism-governance"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1371",
+      "mechanism": "state-civil-service",
+      "learningTarget": "Clyburn served as South Carolina State Human Affairs Commissioner.",
+      "date": "2016-04-10",
+      "venue": {
+        "ko": "주 공공서비스 행사",
+        "en": "State public-service event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "C000537",
+          "name": "James E. Clyburn",
+          "ko": "제임스 클라이번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000537.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000537"
+        },
+        {
+          "id": "W000795",
+          "name": "Joe Wilson",
+          "ko": "조 윌슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000795.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000795"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원 진출 전 주 인권·인사 관련 행정기관을 맡았습니다.",
+          "en": "Before Congress I held a state human affairs position."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 에너지부 법률 업무도 맡았지요. 정부 수준을 구별해 봅시다.",
+          "en": "I also held a legal role at the Department of Energy. Distinguish the levels of government."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "클라이번 의원은 {{blank}}를 지냈습니다.",
+        "en": "Clyburn served as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 에너지부 장관",
+            "en": "U.S. secretary of energy"
+          },
+          {
+            "id": "B",
+            "ko": "주 인권위원장",
+            "en": "State Human Affairs Commissioner"
+          },
+          {
+            "id": "C",
+            "ko": "주 대법원장",
+            "en": "state chief justice"
+          },
+          {
+            "id": "D",
+            "ko": "카운티 보안관",
+            "en": "county sheriff"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+            "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "클라이번은 사우스캐롤라이나 주 Human Affairs Commissioner였습니다.",
+            "en": "Clyburn served as South Carolina State Human Affairs Commissioner."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-SC.htm",
+          "claim": "Clyburn served as South Carolina State Human Affairs Commissioner.",
+          "asOf": "2016-04-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1371-state-civil-service"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1372",
+      "mechanism": "county-executive-background",
+      "learningTarget": "Massie was Lewis County Judge Executive; McConnell was Jefferson County Judge/Executive 1978–1984.",
+      "date": "2016-04-12",
+      "venue": {
+        "ko": "켄터키 카운티 행정 교류",
+        "en": "Kentucky county-government exchange"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "M001184",
+          "name": "Thomas Massie",
+          "ko": "토머스 매시",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001184"
+        },
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원 이전에 루이스 카운티의 행정책임자를 맡았습니다.",
+          "en": "Before Congress I held an executive office in Lewis County."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 제퍼슨 카운티에서 같은 유형의 직책을 지냈습니다.",
+          "en": "I held the same type of office in Jefferson County."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 사람의 지방정부 직책 유형은 {{blank}}입니다.",
+        "en": "Their local government position was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 대법원 판사",
+            "en": "state supreme court judge"
+          },
+          {
+            "id": "B",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "C",
+            "ko": "카운티 Judge/Executive",
+            "en": "county judge/executive"
+          },
+          {
+            "id": "D",
+            "ko": "연방 검사",
+            "en": "U.S. attorney"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "두 사람 모두 서로 다른 카운티의 Judge/Executive였습니다.",
+            "en": "Both were judge/executive of different counties."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 사람 모두 서로 다른 카운티의 Judge/Executive였습니다.",
+            "en": "Both were judge/executive of different counties."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+          "claim": "Massie was Lewis County Judge Executive; McConnell was Jefferson County Judge/Executive 1978–1984.",
+          "asOf": "2016-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1372-county-executive-background"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1373",
+      "mechanism": "local-press-career",
+      "learningTarget": "Yarmuth founded, edited and wrote LEO Newsweekly from 1990 to 2005.",
+      "date": "2016-04-14",
+      "venue": {
+        "ko": "루이빌 지역신문 행사",
+        "en": "Louisville local press event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "Y000062",
+          "name": "John A. Yarmuth",
+          "ko": "존 야머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Y000062.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/Y000062"
+        },
+        {
+          "id": "M001184",
+          "name": "Thomas Massie",
+          "ko": "토머스 매시",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001184"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "정치에 오기 전 지역 언론에서 일했어요.",
+          "en": "Before politics I worked in local journalism."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 발명과 공학 분야에 있었습니다. 서로 다른 경로군요.",
+          "en": "I came from invention and engineering. Different paths indeed."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "야머스 의원이 창립한 지역 매체는 {{blank}}입니다.",
+        "en": "Yarmuth founded {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Kentucky State Senate",
+            "en": "Kentucky State Senate"
+          },
+          {
+            "id": "B",
+            "ko": "SensAble Devices",
+            "en": "SensAble Devices"
+          },
+          {
+            "id": "C",
+            "ko": "Delta Trust",
+            "en": "Delta Trust"
+          },
+          {
+            "id": "D",
+            "ko": "LEO Newsweekly",
+            "en": "LEO Newsweekly"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "야머스는 LEO Newsweekly의 창립자이자 편집자였습니다.",
+            "en": "Yarmuth founded and edited LEO Newsweekly."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "야머스는 LEO Newsweekly의 창립자이자 편집자였습니다.",
+            "en": "Yarmuth founded and edited LEO Newsweekly."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+          "claim": "Yarmuth founded, edited and wrote LEO Newsweekly from 1990 to 2005.",
+          "asOf": "2016-04-14"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1373-local-press-career"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1374",
+      "mechanism": "manufacturing-career",
+      "learningTarget": "Guthrie was vice president of Trace Die Cast from 1991 to 2009.",
+      "date": "2016-04-16",
+      "venue": {
+        "ko": "제조업 기술 진로 행사",
+        "en": "Manufacturing careers event"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        },
+        {
+          "id": "M001184",
+          "name": "Thomas Massie",
+          "ko": "토머스 매시",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001184"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1991~2009년 제조업 기업에서 임원을 맡았습니다.",
+          "en": "I was an executive at a manufacturing company from 1991 to 2009."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 엔지니어이자 발명가로 일했지요. 기업을 구별해 주세요.",
+          "en": "I worked as an engineer and inventor. Keep the companies distinct."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "거스리 의원이 일한 기업은 {{blank}}입니다.",
+        "en": "Guthrie worked for {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Trace Die Cast",
+            "en": "Trace Die Cast"
+          },
+          {
+            "id": "B",
+            "ko": "SensAble Devices",
+            "en": "SensAble Devices"
+          },
+          {
+            "id": "C",
+            "ko": "Delta Trust",
+            "en": "Delta Trust"
+          },
+          {
+            "id": "D",
+            "ko": "LEO Newsweekly",
+            "en": "LEO Newsweekly"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "거스리는 Trace Die Cast 부사장이었습니다.",
+            "en": "Guthrie was vice president of Trace Die Cast."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "거스리는 Trace Die Cast 부사장이었습니다.",
+            "en": "Guthrie was vice president of Trace Die Cast."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+          "claim": "Guthrie was vice president of Trace Die Cast from 1991 to 2009.",
+          "asOf": "2016-04-16"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1374-manufacturing-career"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1375",
+      "mechanism": "dual-term-ballot",
+      "learningTarget": "Massie was elected simultaneously to the 112th and 113th Congresses on November 6, 2012.",
+      "date": "2016-04-18",
+      "venue": {
+        "ko": "하원 임기 설명 워크숍",
+        "en": "House-term workshop"
+      },
+      "context": {
+        "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+        "en": "A fictional regional encounter grounded in the historical record."
+      },
+      "cast": [
+        {
+          "id": "M001184",
+          "name": "Thomas Massie",
+          "ko": "토머스 매시",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001184"
+        },
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2012년 같은 날 남은 임기와 다음 의회 임기에 모두 당선되었습니다.",
+          "en": "In 2012 I won both the remaining term and the next congressional term on the same day."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 임기를 구분하면 공석 처리 방식을 이해할 수 있습니다.",
+          "en": "Distinguishing the terms explains how the vacancy was filled."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "매시 의원이 동시에 당선된 회기는 {{blank}}입니다.",
+        "en": "Massie was elected simultaneously to the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "113대와 114대",
+            "en": "113th and 114th Congresses"
+          },
+          {
+            "id": "B",
+            "ko": "112대와 113대",
+            "en": "112th and 113th Congresses"
+          },
+          {
+            "id": "C",
+            "ko": "110대와 111대",
+            "en": "110th and 111th Congresses"
+          },
+          {
+            "id": "D",
+            "ko": "114대와 115대",
+            "en": "114th and 115th Congresses"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "2012년 11월 6일 112대 및 113대 하원에 당선됐습니다.",
+            "en": "He won election to the 112th and 113th Houses on November 6, 2012."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2012년 11월 6일 112대 및 113대 하원에 당선됐습니다.",
+            "en": "He won election to the 112th and 113th Houses on November 6, 2012."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+          "claim": "Massie was elected simultaneously to the 112th and 113th Congresses on November 6, 2012.",
+          "asOf": "2016-04-18"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1375-dual-term-ballot"
+      },
+      "fictional": true
+    }
+  ]
+}
