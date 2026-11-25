@@ -179,7 +179,7 @@
       ],
       "originalCorrectPosition": "B",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "historicalReverificationNeeded": false,
       "latestOriginalFieldsExact": true,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -382,7 +382,7 @@
       ],
       "originalCorrectPosition": "A",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "historicalReverificationNeeded": false,
       "latestOriginalFieldsExact": true,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -498,7 +498,7 @@
       ],
       "originalCorrectPosition": "A",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "historicalReverificationNeeded": false,
       "latestOriginalFieldsExact": true,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -5230,6 +5230,645 @@
       "priorR4Draft": false,
       "status": "editorially_staged_not_applied",
       "latestOriginalFieldsExact": true
+    },
+    {
+      "id": "P01-1481",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "latestObservedBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 두 수준의 재무 업무를 모두 경험했습니다.",
+            "en": "I've served in treasury roles at both levels."
+          },
+          {
+            "speaker": "player",
+            "ko": "카운티 세금 담당자와 주 재무관의 관계를 묻는 주민이 있습니다.",
+            "en": "A resident asks how county tax officials differ from the state treasurer."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 그레이트벤드 병원 이사회 경력이 있습니다. 서로 다른 지역기관입니다.",
+            "en": "I served on a hospital board in Great Bend. These are different local institutions."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "에스테스 의원의 카운티 경력은 {{blank}}입니다.",
+          "en": "Estes's county office was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "B",
+              "ko": "세지윅 카운티 재무관",
+              "en": "Sedgwick County treasurer"
+            },
+            {
+              "id": "C",
+              "ko": "그레이트벤드 시장",
+              "en": "Great Bend mayor"
+            },
+            {
+              "id": "D",
+              "ko": "연방 재무장관",
+              "en": "U.S. Treasury secretary"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지방 재무와 주정부 재무를 구분해 안내합시다.",
+              "en": "Let's distinguish county and state treasury work."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "에스테스는 세지윅 카운티 재무관을 지냈습니다.",
+              "en": "Estes served as Sedgwick County treasurer."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 두 수준의 재무 업무를 모두 경험했습니다.",
+              "en": "I've served in treasury roles at both levels."
+            },
+            {
+              "speaker": "player",
+              "ko": "카운티 세금 담당자와 주 재무관의 관계를 묻는 주민이 있습니다.",
+              "en": "A resident asks how county tax officials differ from the state treasurer."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 그레이트벤드 병원 이사회 경력이 있습니다. 서로 다른 지역기관입니다.",
+              "en": "I served on a hospital board in Great Bend. These are different local institutions."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "주민의 납세 안내문에 주정부와 카운티의 책임이 뒤섞여 있습니다. 발송 전에 정정해 주시겠습니까?",
+              "en": "A taxpayer notice confuses state and county responsibilities. Can you correct it before it goes out?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 주정부 이전 직책을 확인하면 어느 수준의 경험을 말하는지 구별할 수 있겠군요.",
+              "en": "Identify my office before state service and you'll know which level of experience we're discussing."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "병원 이사회 경력도 공직과 동일시하지 맙시다. 기관마다 책임이 다릅니다.",
+              "en": "And let's not equate hospital board service with public office. Each institution has different responsibilities."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "에스테스 의원의 카운티 경력은 {{blank}}입니다.",
+            "en": "Estes's county office was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주지사",
+                "en": "governor"
+              },
+              {
+                "id": "B",
+                "ko": "세지윅 카운티 재무관",
+                "en": "Sedgwick County treasurer"
+              },
+              {
+                "id": "C",
+                "ko": "그레이트벤드 시장",
+                "en": "Great Bend mayor"
+              },
+              {
+                "id": "D",
+                "ko": "연방 재무장관",
+                "en": "U.S. Treasury secretary"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "안내문에서 에스테스의 주정부 이전 카운티 직책은 {{blank}}로 정정하겠습니다.",
+            "en": "I'll correct the notice to identify Estes's pre-state county office as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주지사",
+                "en": "governor"
+              },
+              {
+                "id": "B",
+                "ko": "세지윅 카운티 재무관",
+                "en": "Sedgwick County treasurer"
+              },
+              {
+                "id": "C",
+                "ko": "그레이트벤드 시장",
+                "en": "Great Bend mayor"
+              },
+              {
+                "id": "D",
+                "ko": "연방 재무장관",
+                "en": "U.S. Treasury secretary"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지방 재무와 주정부 재무를 구분해 안내합시다.",
+                "en": "Let's distinguish county and state treasury work."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "에스테스는 세지윅 카운티 재무관을 지냈습니다.",
+                "en": "Estes served as Sedgwick County treasurer."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "좋습니다. 제 두 직책을 분리하고 주민에게 실제 관할 기관을 확인하도록 안내합시다.",
+                "en": "Good. Separate my two offices and advise the resident to check the responsible agency."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 직책은 주정부 이전 경력과 다릅니다. 저는 세지윅 카운티 재무관이었습니다. 안내문을 고쳐 다시 확인해 주세요.",
+                "en": "That is not my pre-state office. I was Sedgwick County treasurer. Please correct the notice before sending it."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 11,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "두 수준 재무 경험이 힌트이나 유일한 카운티 재무 선택지로 쉽게 소거. 마셜 병원 이사회는 재정 비교에 기여하지 않는다.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1488",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "latestObservedBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "방송 진행자가 의회 이전 안보 관련 경력을 비교해 달라고 합니다.",
+            "en": "A broadcaster asks us to compare national-security careers before Congress."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2013~2015년 백악관에서 이라크 관련 정책을 담당했습니다.",
+            "en": "From 2013 to 2015 I handled Iraq policy in the White House."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 해군에서 복무했습니다. 두 역할은 서로 다릅니다.",
+            "en": "I served in the Navy. The roles are different."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "김 의원의 당시 소속은 {{blank}}입니다.",
+          "en": "Kim's office then was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "국가안보회의",
+              "en": "National Security Council"
+            },
+            {
+              "id": "B",
+              "ko": "해군",
+              "en": "Navy"
+            },
+            {
+              "id": "C",
+              "ko": "하원 세입위원회",
+              "en": "House Ways and Means"
+            },
+            {
+              "id": "D",
+              "ko": "주 상원",
+              "en": "state Senate"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "행정부 정책 업무와 군 복무를 구별한 소개입니다.",
+              "en": "That distinguishes executive policy work from military service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "김은 2013~2015년 국가안보회의 이라크 담당 책임자였습니다.",
+              "en": "Kim was NSC director for Iraq from 2013 to 2015."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "방송 진행자가 의회 이전 안보 관련 경력을 비교해 달라고 합니다.",
+              "en": "A broadcaster asks us to compare national-security careers before Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2013~2015년 백악관에서 이라크 관련 정책을 담당했습니다.",
+              "en": "From 2013 to 2015 I handled Iraq policy in the White House."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 해군에서 복무했습니다. 두 역할은 서로 다릅니다.",
+              "en": "I served in the Navy. The roles are different."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "안보 정책 토론회 소개문이 두 의원을 모두 군 복무자로 분류했습니다. 수정이 필요합니다.",
+              "en": "A security-policy forum introduction classifies both members as military veterans. It needs correction."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 해군 경력과 다른 의원의 행정부 정책 경력을 나누어 소개해 주세요.",
+              "en": "Separate my Navy background from my colleague's executive policy work."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2013~2015년 이라크 정책을 맡았던 기관을 정확히 표기해 주시면 됩니다.",
+              "en": "Please identify the institution where I handled Iraq policy in 2013–2015."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "김 의원의 당시 소속은 {{blank}}입니다.",
+            "en": "Kim's office then was the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "국가안보회의",
+                "en": "National Security Council"
+              },
+              {
+                "id": "B",
+                "ko": "해군",
+                "en": "Navy"
+              },
+              {
+                "id": "C",
+                "ko": "하원 세입위원회",
+                "en": "House Ways and Means"
+              },
+              {
+                "id": "D",
+                "ko": "주 상원",
+                "en": "state Senate"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "김 의원의 당시 소속은 {{blank}}로 표기하겠습니다.",
+            "en": "I'll identify Kim's office at that time as the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "국가안보회의",
+                "en": "National Security Council"
+              },
+              {
+                "id": "B",
+                "ko": "해군",
+                "en": "Navy"
+              },
+              {
+                "id": "C",
+                "ko": "하원 세입위원회",
+                "en": "House Ways and Means"
+              },
+              {
+                "id": "D",
+                "ko": "주 상원",
+                "en": "state Senate"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "행정부 정책 업무와 군 복무를 구별한 소개입니다.",
+                "en": "That distinguishes executive policy work from military service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "김은 2013~2015년 국가안보회의 이라크 담당 책임자였습니다.",
+                "en": "Kim was NSC director for Iraq from 2013 to 2015."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "이제 군 복무와 행정부 정책 경험을 구별한 질문으로 토론을 시작할 수 있겠네요.",
+                "en": "Now we can open the forum with questions that distinguish military service from executive policy experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 직책은 국가안보회의 이라크 담당이었습니다. 다른 기관이나 군 복무 경력으로 소개하지 말아 주세요.",
+                "en": "I was the NSC director for Iraq. Please don't introduce that as service in another institution or the military."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "originalScore": 9,
+      "estimatedAfterScore": 13,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "백악관 이라크 정책과 해군 경력을 대비; 국가안보회의를 추론할 수 있으나 방송 소개만 하고 실제 안보 판단 없음.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1492",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "latestObservedBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "지역 법률가가 연방의원에게 지방정부 경험을 묻습니다.",
+            "en": "A local lawyer asks the representatives about municipal experience."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1990~1991년 세도나의 법률 업무를 맡았습니다.",
+            "en": "In 1990–1991 I handled legal work for Sedona."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 시카고 경찰 출신입니다. 지역정부의 법률 업무와 치안은 다르죠.",
+            "en": "I came from the Chicago police. Municipal legal work and policing differ."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "커크패트릭 의원은 세도나의 {{blank}}였습니다.",
+          "en": "Kirkpatrick was Sedona's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시 법률고문",
+              "en": "city attorney"
+            },
+            {
+              "id": "B",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "C",
+              "ko": "시의장",
+              "en": "council president"
+            },
+            {
+              "id": "D",
+              "ko": "연방 검사장",
+              "en": "U.S. attorney"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지방정부 직책을 구분해서 기록해 주세요.",
+              "en": "Record the municipal roles separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "커크패트릭은 1990~1991년 세도나 시 법률고문이었습니다.",
+              "en": "Kirkpatrick was Sedona city attorney in 1990–1991."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "지역 법률가가 연방의원에게 지방정부 경험을 묻습니다.",
+              "en": "A local lawyer asks the representatives about municipal experience."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1990~1991년 세도나의 법률 업무를 맡았습니다.",
+              "en": "In 1990–1991 I handled legal work for Sedona."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 시카고 경찰 출신입니다. 지역정부의 법률 업무와 치안은 다르죠.",
+              "en": "I came from the Chicago police. Municipal legal work and policing differ."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지방정부 진로 간담회에 법률 업무와 치안 업무를 구별하는 두 질문을 준비했습니다.",
+              "en": "I've prepared two questions for a local-government careers forum, one on legal work and one on policing."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "치안 경험에 관한 질문은 제게 주시죠. 커크패트릭 의원의 세도나 경력은 별도로 확인해야 합니다.",
+              "en": "I'll take the policing question. Verify Kirkpatrick's Sedona experience separately."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1990~1991년 제가 맡은 직책을 정확하게 소개하고 지방정부 권한에 관한 질문을 시작합시다.",
+              "en": "Introduce my 1990–1991 office accurately, then let's begin the question on local-government authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "커크패트릭 의원은 세도나의 {{blank}}였습니다.",
+            "en": "Kirkpatrick was Sedona's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시 법률고문",
+                "en": "city attorney"
+              },
+              {
+                "id": "B",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "C",
+                "ko": "시의장",
+                "en": "council president"
+              },
+              {
+                "id": "D",
+                "ko": "연방 검사장",
+                "en": "U.S. attorney"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "법률 업무 질문 전에 커크패트릭 의원을 세도나의 전 {{blank}}로 소개하겠습니다.",
+            "en": "Before the legal-work question, I'll introduce Kirkpatrick as Sedona's former {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시 법률고문",
+                "en": "city attorney"
+              },
+              {
+                "id": "B",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "C",
+                "ko": "시의장",
+                "en": "council president"
+              },
+              {
+                "id": "D",
+                "ko": "연방 검사장",
+                "en": "U.S. attorney"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지방정부 직책을 구분해서 기록해 주세요.",
+                "en": "Record the municipal roles separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "커크패트릭은 1990~1991년 세도나 시 법률고문이었습니다.",
+                "en": "Kirkpatrick was Sedona city attorney in 1990–1991."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "좋습니다. 이제 법률고문의 업무와 선출직의 권한이 어떻게 다른지 질문해 주세요.",
+                "en": "Good. Now ask how legal counsel's work differs from the authority of elected officials."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "세도나 시 법률고문이 정확합니다. 시장이나 경찰 경력으로 바꾸면 역할 비교가 틀어집니다.",
+                "en": "Sedona city attorney is correct. Substituting a mayoral or policing role would distort the comparison."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "originalScore": 9,
+      "estimatedAfterScore": 13,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "세도나 법률 업무에서 시 법률고문을 추론, 경찰 경력은 대비 단서. 후속은 기록에 그침.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
     }
   ],
   "priorDraftReview": [
@@ -5315,7 +5954,5 @@
     "Estimated after scores are editorial projections; no gameplay test.",
     "Prior story links not integrated. No original scene changed."
   ],
-  "severePending": [
-    "P01-1481"
-  ]
+  "severePending": []
 }
