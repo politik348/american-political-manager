@@ -1,0 +1,3803 @@
+{
+  "round": 3,
+  "kind": "backlog",
+  "baselineAuditBlob": "54f7f87b23021a8df6935f656c344646aec0cdc9",
+  "patches": [
+    {
+      "id": "P01-784",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "5e342105b11ea2b4579afd5f0dc956c95a0b279a",
+      "originalFields": {
+        "context": {
+          "ko": "은퇴 기념 토론에서 야당 지도부의 역할을 구분한다.",
+          "en": "A retirement discussion distinguishes minority leadership roles."
+        },
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "은퇴 기념 토론에서 야당 지도부의 역할을 구분한다.",
+            "en": "A retirement discussion distinguishes minority leadership roles."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "원내대표가 되기 전에는 야당 의원들의 표결을 조율하는 직책을 맡았습니다.",
+            "en": "Before becoming minority leader, I held the post coordinating the minority's votes."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "미셸의 당시 직책은 하원 {{blank}}였습니다.",
+          "en": "Michel then served as House {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "다수당 원내총무",
+              "en": "majority whip"
+            },
+            {
+              "id": "B",
+              "ko": "소수당 원내총무",
+              "en": "minority whip"
+            },
+            {
+              "id": "C",
+              "ko": "의장",
+              "en": "Speaker"
+            },
+            {
+              "id": "D",
+              "ko": "세출위원장",
+              "en": "Appropriations chair"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "원내총무에서 원내대표로 이어진 경력을 구분하겠습니다.",
+              "en": "I'll distinguish his progression from whip to minority leader."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "정확한 답은 소수당 원내총무입니다. 원내총무에서 원내대표로 이어진 경력을 구분하겠습니다.",
+              "en": "The correct answer is minority whip. I'll distinguish his progression from whip to minority leader."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "은퇴 기념 토론에서 야당 지도부의 역할을 구분한다.",
+            "en": "A retirement discussion distinguishes minority leadership roles."
+          },
+          "after": {
+            "ko": "은퇴하는 지도부의 업무 인수인계",
+            "en": "Leadership handover at retirement"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "은퇴 기념 토론에서 야당 지도부의 역할을 구분한다.",
+              "en": "A retirement discussion distinguishes minority leadership roles."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표가 되기 전에는 야당 의원들의 표결을 조율하는 직책을 맡았습니다.",
+              "en": "Before becoming minority leader, I held the post coordinating the minority's votes."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "새 지도부를 위해 이전 직책별 업무를 구분해야 합니다.",
+              "en": "We need to separate the retiring leadership's earlier roles for the handover."
+            },
+            {
+              "speaker": "player",
+              "ko": "94~96대 의회와 그 이후의 직책은 별개로 정리하겠습니다.",
+              "en": "I'll distinguish the 94th–96th Congresses from the later office."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "미셸의 당시 직책은 하원 {{blank}}였습니다.",
+            "en": "Michel then served as House {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "다수당 원내총무",
+                "en": "majority whip"
+              },
+              {
+                "id": "B",
+                "ko": "소수당 원내총무",
+                "en": "minority whip"
+              },
+              {
+                "id": "C",
+                "ko": "의장",
+                "en": "Speaker"
+              },
+              {
+                "id": "D",
+                "ko": "세출위원장",
+                "en": "Appropriations chair"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "94~96대 미셸의 직책은 {{blank}}였습니다.",
+            "en": "Michel's office in the 94th–96th Congresses was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "다수당 원내총무",
+                "en": "majority whip"
+              },
+              {
+                "id": "B",
+                "ko": "다수당 원내대표",
+                "en": "majority leader"
+              },
+              {
+                "id": "C",
+                "ko": "소수당 원내총무",
+                "en": "minority whip"
+              },
+              {
+                "id": "D",
+                "ko": "소수당 원내대표",
+                "en": "minority leader"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "원내총무에서 원내대표로 이어진 경력을 구분하겠습니다.",
+                "en": "I'll distinguish his progression from whip to minority leader."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "정확한 답은 소수당 원내총무입니다. 원내총무에서 원내대표로 이어진 경력을 구분하겠습니다.",
+                "en": "The correct answer is minority whip. I'll distinguish his progression from whip to minority leader."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇습니다. 이제 총무 경험과 이후 원내대표 경험을 비교해 봅시다.",
+                "en": "Right. Now compare whip experience with the later floor leadership."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시에는 소수당 원내총무였습니다. 원내대표가 된 뒤의 기록과 합치지 마세요.",
+                "en": "I was minority whip then. Don't merge that record with my later minority leadership."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "지도부 인수인계에서 원내대표와 총무 구별",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-797",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "5e342105b11ea2b4579afd5f0dc956c95a0b279a",
+      "originalFields": {
+        "context": {
+          "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
+          "en": "The Speaker reflects on cooperation among municipalities."
+        },
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
+            "en": "The Speaker reflects on cooperation among municipalities."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "웨더퍼드 시장이던 1953년에는 텍사스 지방자치단체 협력 조직을 이끌었습니다.",
+            "en": "While mayor of Weatherford in 1953, I headed an organization for cooperation among Texas municipalities."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그 조직은 {{blank}}입니다.",
+          "en": "That organization was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "텍사스 지방자치단체 연맹",
+              "en": "League of Texas Municipalities"
+            },
+            {
+              "id": "B",
+              "ko": "전국 주지사 협회",
+              "en": "National Governors Association"
+            },
+            {
+              "id": "C",
+              "ko": "미국 상원",
+              "en": "U.S. Senate"
+            },
+            {
+              "id": "D",
+              "ko": "텍사스 주상원",
+              "en": "Texas Senate"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
+              "en": "I'll distinguish the municipal office from intermunicipal leadership."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "정확한 답은 텍사스 지방자치단체 연맹입니다. 개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
+              "en": "The correct answer is League of Texas Municipalities. I'll distinguish the municipal office from intermunicipal leadership."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
+            "en": "The Speaker reflects on cooperation among municipalities."
+          },
+          "after": {
+            "ko": "여러 텍사스 도시의 공통 관심사에 대한 지방정부 협력",
+            "en": "Municipal cooperation on a shared concern in Texas"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
+              "en": "The Speaker reflects on cooperation among municipalities."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "웨더퍼드 시장이던 1953년에는 텍사스 지방자치단체 협력 조직을 이끌었습니다.",
+              "en": "While mayor of Weatherford in 1953, I headed an organization for cooperation among Texas municipalities."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "여러 시의 담당자가 함께 논의하려면 개별 시청과 별도의 협력 조직이 필요하겠습니다.",
+              "en": "A joint discussion among cities calls for an organization distinct from a single city hall."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1953년 제가 대표했던 조직의 경력을 참고해 보세요.",
+              "en": "Consider the organization I led in 1953."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "그 조직은 {{blank}}입니다.",
+            "en": "That organization was the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "텍사스 지방자치단체 연맹",
+                "en": "League of Texas Municipalities"
+              },
+              {
+                "id": "B",
+                "ko": "전국 주지사 협회",
+                "en": "National Governors Association"
+              },
+              {
+                "id": "C",
+                "ko": "미국 상원",
+                "en": "U.S. Senate"
+              },
+              {
+                "id": "D",
+                "ko": "텍사스 주상원",
+                "en": "Texas Senate"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "참고할 조직은 {{blank}}입니다.",
+            "en": "The organization to consult is the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "텍사스 지방자치단체 연맹",
+                "en": "League of Texas Municipalities"
+              },
+              {
+                "id": "B",
+                "ko": "전국 주지사 협회",
+                "en": "National Governors Association"
+              },
+              {
+                "id": "C",
+                "ko": "미국 상원",
+                "en": "U.S. Senate"
+              },
+              {
+                "id": "D",
+                "ko": "텍사스 주상원",
+                "en": "Texas Senate"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
+                "en": "I'll distinguish the municipal office from intermunicipal leadership."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "정확한 답은 텍사스 지방자치단체 연맹입니다. 개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
+                "en": "The correct answer is League of Texas Municipalities. I'll distinguish the municipal office from intermunicipal leadership."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 도시 간 협력과 연방 입법은 서로 다른 경로죠.",
+                "en": "Right. Intercity cooperation and federal lawmaking are distinct channels."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "텍사스 지방자치단체 연맹입니다. 주정부나 연방 의회의 직책으로 분류하면 안 됩니다.",
+                "en": "The League of Texas Municipalities. It was not a state or federal legislative office."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "도시 간 공동 대응을 위한 기관 선택",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-801",
+      "path": "data/dialogue-packs/P01/part-33.json",
+      "originalBlobSha": "3c5ce144ecf0071b81b90ab6316f2b6e948d327c",
+      "originalFields": {
+        "context": {
+          "ko": "워싱턴주 대표단 만찬에 참석해 의원과 대화한다.",
+          "en": "You attend the washington delegation dinner and speak with the member."
+        },
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "워싱턴주 대표단과의 정책 토론에 두 정당의 관점이 필요합니다.",
+            "en": "A discussion with Washington's delegation needs perspectives from both parties."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 공화당 의원입니다. 같은 주의 동료도 다른 정당일 수 있죠.",
+            "en": "I am a Republican. A colleague from the same state can belong to another party."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 소속 정당도 별도로 확인해 주세요.",
+            "en": "Identify my party separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스미스 의원은 {{blank}} 소속이군요.",
+          "en": "Smith belongs to the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "B",
+              "ko": "자유당",
+              "en": "Libertarian Party"
+            },
+            {
+              "id": "C",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "D",
+              "ko": "녹색당",
+              "en": "Green Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "두 의원을 같은 주의 서로 다른 정당 의원으로 소개하겠습니다.",
+              "en": "I'll introduce the two members as representatives of the same state from different parties."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "스미스는 민주당, 로저스는 공화당 의원입니다.",
+              "en": "Smith is a Democrat; Rodgers is a Republican."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "워싱턴주 대표단 만찬에 참석해 의원과 대화한다.",
+            "en": "You attend the washington delegation dinner and speak with the member."
+          },
+          "after": {
+            "ko": "워싱턴주 주민들의 양당 공개 질의",
+            "en": "A bipartisan public question session for Washington residents"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "워싱턴주 대표단과의 정책 토론에 두 정당의 관점이 필요합니다.",
+              "en": "A discussion with Washington's delegation needs perspectives from both parties."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 공화당 의원입니다. 같은 주의 동료도 다른 정당일 수 있죠.",
+              "en": "I am a Republican. A colleague from the same state can belong to another party."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 소속 정당도 별도로 확인해 주세요.",
+              "en": "Identify my party separately."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 분의 지역 대표라는 공통점과 정당 소속은 따로 소개하겠습니다.",
+              "en": "I'll introduce your shared state representation separately from party affiliation."
+            },
+            {
+              "speaker": "host",
+              "ko": "두 의원에게 각자의 질문 시간을 배정하기 전에 당적 표기를 확인하세요.",
+              "en": "Confirm their party labels before assigning separate question periods."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "스미스 의원은 {{blank}} 소속이군요.",
+            "en": "Smith belongs to the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "공화당",
+                "en": "Republican Party"
+              },
+              {
+                "id": "B",
+                "ko": "자유당",
+                "en": "Libertarian Party"
+              },
+              {
+                "id": "C",
+                "ko": "민주당",
+                "en": "Democratic Party"
+              },
+              {
+                "id": "D",
+                "ko": "녹색당",
+                "en": "Green Party"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "스미스 의원은 {{blank}} 소속입니다.",
+            "en": "Representative Smith belongs to the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "공화당",
+                "en": "Republican Party"
+              },
+              {
+                "id": "B",
+                "ko": "자유당",
+                "en": "Libertarian Party"
+              },
+              {
+                "id": "C",
+                "ko": "녹색당",
+                "en": "Green Party"
+              },
+              {
+                "id": "D",
+                "ko": "민주당",
+                "en": "Democratic Party"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "두 의원을 같은 주의 서로 다른 정당 의원으로 소개하겠습니다.",
+                "en": "I'll introduce the two members as representatives of the same state from different parties."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "스미스는 민주당, 로저스는 공화당 의원입니다.",
+                "en": "Smith is a Democrat; Rodgers is a Republican."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "맞습니다. 저는 민주당입니다. 지역 현안 질문부터 듣겠습니다.",
+                "en": "Correct. I'm a Democrat. Let's hear the local question first."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 공화당이고 스미스 의원은 민주당입니다. 같은 주라는 이유로 의견까지 같다고 가정하지 마세요.",
+                "en": "I'm a Republican and Smith is a Democrat. Don't assume shared views just because we represent one state."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "양당 패널의 소속 조합을 실제 소개에 이용",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-802",
+      "path": "data/dialogue-packs/P01/part-33.json",
+      "originalBlobSha": "3c5ce144ecf0071b81b90ab6316f2b6e948d327c",
+      "originalFields": {
+        "context": {
+          "ko": "과수원 가족 간담회에 참석해 의원과 대화한다.",
+          "en": "You attend the orchard family gathering and speak with the member."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "가족 사업에서 일하던 때가 생각납니다.",
+            "en": "I remember working in our family business."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 농업에 관한 이야기를 직접 듣고 싶습니다.",
+            "en": "I'd like to hear about local agriculture."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "의원님의 가족 사업은 {{blank}}이었죠.",
+          "en": "Your family business was an {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "은행",
+              "en": "investment bank"
+            },
+            {
+              "id": "B",
+              "ko": "과수원",
+              "en": "orchard"
+            },
+            {
+              "id": "C",
+              "ko": "제철소",
+              "en": "steel mill"
+            },
+            {
+              "id": "D",
+              "ko": "조선소",
+              "en": "shipyard"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "가족 과수원에서 일한 경험이 있습니다.",
+              "en": "I worked in my family's orchard business."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll use that record at our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "가족 과수원에서 일한 경험이 있습니다.",
+              "en": "I worked in my family's orchard business."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "과수원 가족 간담회에 참석해 의원과 대화한다.",
+            "en": "You attend the orchard family gathering and speak with the member."
+          },
+          "after": {
+            "ko": "가족 사업의 계절 노동과 생산 일정에 관한 모의 간담회",
+            "en": "A simulated discussion of seasonal work and production schedules"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "가족 사업에서 일하던 때가 생각납니다.",
+              "en": "I remember working in our family business."
+            },
+            {
+              "speaker": "player",
+              "ko": "지역 농업에 관한 이야기를 직접 듣고 싶습니다.",
+              "en": "I'd like to hear about local agriculture."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "가족 사업의 생산 일정과 노동 수요에 관한 질문을 준비했습니다.",
+              "en": "I've prepared a question about production schedules and labor demand in a family business."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 의회 진출 이전 가족 사업을 사례로 삼으면 좋겠습니다.",
+              "en": "My family's business before Congress can serve as a case."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "의원님의 가족 사업은 {{blank}}이었죠.",
+            "en": "Your family business was an {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "은행",
+                "en": "investment bank"
+              },
+              {
+                "id": "B",
+                "ko": "과수원",
+                "en": "orchard"
+              },
+              {
+                "id": "C",
+                "ko": "제철소",
+                "en": "steel mill"
+              },
+              {
+                "id": "D",
+                "ko": "조선소",
+                "en": "shipyard"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "그 사업은 {{blank}}이었습니다.",
+            "en": "That business was an {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "양묘장",
+                "en": "plant nursery"
+              },
+              {
+                "id": "B",
+                "ko": "과수원",
+                "en": "orchard"
+              },
+              {
+                "id": "C",
+                "ko": "낙농장",
+                "en": "dairy farm"
+              },
+              {
+                "id": "D",
+                "ko": "곡물 농장",
+                "en": "grain farm"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "가족 과수원에서 일한 경험이 있습니다.",
+                "en": "I worked in my family's orchard business."
+              },
+              {
+                "speaker": "player",
+                "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll use that record at our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "가족 과수원에서 일한 경험이 있습니다.",
+                "en": "I worked in my family's orchard business."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "과수원입니다. 수확기와 비수기의 노동 수요를 비교해 보세요.",
+                "en": "An orchard. Compare labor demand during harvest and the off-season."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "과수원에서 일했습니다. 다른 사업의 생산 방식과 혼동하지 말고 질문을 다시 구성하세요.",
+                "en": "I worked in an orchard. Reframe the question rather than assuming another business's production model."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "가족 기업의 현장 문제를 고르는 상황으로 전환",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 7,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-806",
+      "path": "data/dialogue-packs/P01/part-33.json",
+      "originalBlobSha": "3c5ce144ecf0071b81b90ab6316f2b6e948d327c",
+      "originalFields": {
+        "context": {
+          "ko": "시애틀 법조인 방문에 참석해 의원과 대화한다.",
+          "en": "You attend the seattle lawyers' visit and speak with the member."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "시애틀에서 법조 업무를 하던 분들을 다시 만나네요.",
+            "en": "I'm pleased to meet people from my Seattle legal career."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 공직을 주민들에게 소개하겠습니다.",
+            "en": "I'll explain your former public office to the residents."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1993~1995년 스미스의 직책은 시애틀 {{blank}}였습니다.",
+          "en": "In 1993–1995 Smith was Seattle's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "시 검사",
+              "en": "city prosecutor"
+            },
+            {
+              "id": "C",
+              "ko": "경찰청장",
+              "en": "police chief"
+            },
+            {
+              "id": "D",
+              "ko": "주지사",
+              "en": "governor"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시애틀 시 검사로 일했습니다.",
+              "en": "I served as a Seattle city prosecutor."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll use that record at our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "시애틀 시 검사로 일했습니다.",
+              "en": "I served as a Seattle city prosecutor."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "시애틀 법조인 방문에 참석해 의원과 대화한다.",
+            "en": "You attend the seattle lawyers' visit and speak with the member."
+          },
+          "after": {
+            "ko": "시애틀 주민이 과거 시 공직과 현재 연방의원직을 혼동",
+            "en": "A Seattle resident confuses former municipal office with federal legislative service"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "시애틀에서 법조 업무를 하던 분들을 다시 만나네요.",
+              "en": "I'm pleased to meet people from my Seattle legal career."
+            },
+            {
+              "speaker": "player",
+              "ko": "당시 공직을 주민들에게 소개하겠습니다.",
+              "en": "I'll explain your former public office to the residents."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "주민이 과거 시정부 법률 업무를 현재 의원실에서 직접 수행할 수 있다고 생각합니다.",
+              "en": "A resident assumes the congressional office can perform an earlier municipal legal role."
+            },
+            {
+              "speaker": "player",
+              "ko": "먼저 1993~1995년의 공직을 확인하고 권한을 나누겠습니다.",
+              "en": "I'll identify the 1993–1995 office before distinguishing its authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1993~1995년 스미스의 직책은 시애틀 {{blank}}였습니다.",
+            "en": "In 1993–1995 Smith was Seattle's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "B",
+                "ko": "시 검사",
+                "en": "city prosecutor"
+              },
+              {
+                "id": "C",
+                "ko": "경찰청장",
+                "en": "police chief"
+              },
+              {
+                "id": "D",
+                "ko": "주지사",
+                "en": "governor"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "당시 스미스는 시애틀의 {{blank}}였습니다.",
+            "en": "Smith was Seattle's {{blank}} then.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시 검사",
+                "en": "city prosecutor"
+              },
+              {
+                "id": "B",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "C",
+                "ko": "경찰청장",
+                "en": "police chief"
+              },
+              {
+                "id": "D",
+                "ko": "시 법률 자문관",
+                "en": "city legal adviser"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시애틀 시 검사로 일했습니다.",
+                "en": "I served as a Seattle city prosecutor."
+              },
+              {
+                "speaker": "player",
+                "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll use that record at our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "시애틀 시 검사로 일했습니다.",
+                "en": "I served as a Seattle city prosecutor."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 검사였습니다. 현재 의원직과 그 법 집행 역할을 구별해서 주민에게 안내하세요.",
+                "en": "City prosecutor. Explain the distinction between that legal role and my current House office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 검사였지 시 행정 전체를 지휘하는 시장은 아니었습니다. 주민 요청의 관할을 다시 확인하세요.",
+                "en": "I was city prosecutor, not mayor. Recheck which office has jurisdiction over the request."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "법 집행 권한과 입법 권한 판단",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-812",
+      "path": "data/dialogue-packs/P01/part-33.json",
+      "originalBlobSha": "3c5ce144ecf0071b81b90ab6316f2b6e948d327c",
+      "originalFields": {
+        "context": {
+          "ko": "참전군인 방문단에 참석해 의원과 대화한다.",
+          "en": "You attend the veterans' delegation and speak with the member."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 참전군인들의 서류를 가져오셨군요.",
+            "en": "You've brought correspondence from local veterans."
+          },
+          {
+            "speaker": "player",
+            "ko": "관련 위원회 자료에 연결하겠습니다.",
+            "en": "I'll route it to the appropriate committee records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1993년 클라이번이 배정받은 위원회는 {{blank}}입니다.",
+          "en": "In 1993 Clyburn was assigned to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "B",
+              "ko": "규칙",
+              "en": "Rules"
+            },
+            {
+              "id": "C",
+              "ko": "윤리",
+              "en": "Ethics"
+            },
+            {
+              "id": "D",
+              "ko": "보훈",
+              "en": "Veterans' Affairs"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제103대 의회 보훈위원회 위원이었습니다.",
+              "en": "I served on Veterans' Affairs in the 103rd Congress."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll use that record at our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제103대 의회 보훈위원회 위원이었습니다.",
+              "en": "I served on Veterans' Affairs in the 103rd Congress."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "참전군인 방문단에 참석해 의원과 대화한다.",
+            "en": "You attend the veterans' delegation and speak with the member."
+          },
+          "after": {
+            "ko": "참전군인 지원 신청과 연방 정책 문의가 동시에 들어온 상황",
+            "en": "A benefits application and a federal policy inquiry arrive together"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지역 참전군인들의 서류를 가져오셨군요.",
+              "en": "You've brought correspondence from local veterans."
+            },
+            {
+              "speaker": "player",
+              "ko": "관련 위원회 자료에 연결하겠습니다.",
+              "en": "I'll route it to the appropriate committee records."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "개별 지원 신청은 행정 절차로, 제도 개선 요청은 의회 정책 문의로 나누겠습니다.",
+              "en": "I'll separate the individual benefits application from a policy request to Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제103대 의회에서 배정받은 위원회가 정책 질문의 배경이 됩니다.",
+              "en": "My committee assignment in the 103rd Congress provides context for the policy question."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1993년 클라이번이 배정받은 위원회는 {{blank}}입니다.",
+            "en": "In 1993 Clyburn was assigned to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "규칙",
+                "en": "Rules"
+              },
+              {
+                "id": "C",
+                "ko": "윤리",
+                "en": "Ethics"
+              },
+              {
+                "id": "D",
+                "ko": "보훈",
+                "en": "Veterans' Affairs"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1993년 배정 위원회는 {{blank}}입니다.",
+            "en": "The 1993 committee assignment was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "규칙",
+                "en": "Rules"
+              },
+              {
+                "id": "C",
+                "ko": "보훈",
+                "en": "Veterans' Affairs"
+              },
+              {
+                "id": "D",
+                "ko": "윤리",
+                "en": "Ethics"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제103대 의회 보훈위원회 위원이었습니다.",
+                "en": "I served on Veterans' Affairs in the 103rd Congress."
+              },
+              {
+                "speaker": "player",
+                "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll use that record at our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제103대 의회 보훈위원회 위원이었습니다.",
+                "en": "I served on Veterans' Affairs in the 103rd Congress."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "보훈입니다. 위원회 활동이 개별 신청의 승인 자체는 아니라는 점을 설명하세요.",
+                "en": "Veterans' Affairs. Explain that committee service is not approval of an individual application."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "보훈위원회였습니다. 지원 신청을 처리하는 행정기관과 입법위원회를 구별해야 합니다.",
+                "en": "It was Veterans' Affairs. Distinguish the administering agency from the legislative committee."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "정책 관할과 개별 지원 신청 분리",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-821",
+      "path": "data/dialogue-packs/P01/part-33.json",
+      "originalBlobSha": "3c5ce144ecf0071b81b90ab6316f2b6e948d327c",
+      "originalFields": {
+        "context": {
+          "ko": "캔자스 기업 간담회에 참석해 의원과 대화한다.",
+          "en": "You attend the kansas business gathering and speak with the member."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해부터 캔자스 기업 관계자들과 일했습니다.",
+            "en": "I worked with Kansas business representatives beginning last year."
+          },
+          {
+            "speaker": "host",
+            "ko": "당시 참여한 조직을 소개해 주세요.",
+            "en": "Introduce the organization you served."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "모런은 1996~1997년 캔자스 {{blank}} 이사회에서 일했습니다.",
+          "en": "Moran served on the Kansas {{blank}} board in 1996–1997.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주대법원",
+              "en": "supreme court"
+            },
+            {
+              "id": "B",
+              "ko": "교육위원회",
+              "en": "board of education"
+            },
+            {
+              "id": "C",
+              "ko": "상공회의소",
+              "en": "chamber of commerce and industry"
+            },
+            {
+              "id": "D",
+              "ko": "주방위군",
+              "en": "national guard"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "상공회의소 이사회 경력이 있습니다.",
+              "en": "I served on the chamber of commerce and industry board."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll use that record at our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "상공회의소 이사회 경력이 있습니다.",
+              "en": "I served on the chamber of commerce and industry board."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "캔자스 기업 간담회에 참석해 의원과 대화한다.",
+            "en": "You attend the kansas business gathering and speak with the member."
+          },
+          "after": {
+            "ko": "사업자 방문단의 정책 의견을 공공기관 결정과 구별",
+            "en": "Distinguish business advocacy from governmental decisions"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난해부터 캔자스 기업 관계자들과 일했습니다.",
+              "en": "I worked with Kansas business representatives beginning last year."
+            },
+            {
+              "speaker": "host",
+              "ko": "당시 참여한 조직을 소개해 주세요.",
+              "en": "Introduce the organization you served."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "방문단의 정책 제안서를 주정부의 공식 결정문으로 잘못 분류했습니다.",
+              "en": "A delegation's policy proposal has been mislabeled as an official state decision."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1996~1997년 제가 이사로 활동한 조직의 성격을 확인해 주세요.",
+              "en": "Identify the nature of the organization on whose board I served in 1996–1997."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "모런은 1996~1997년 캔자스 {{blank}} 이사회에서 일했습니다.",
+            "en": "Moran served on the Kansas {{blank}} board in 1996–1997.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주대법원",
+                "en": "supreme court"
+              },
+              {
+                "id": "B",
+                "ko": "교육위원회",
+                "en": "board of education"
+              },
+              {
+                "id": "C",
+                "ko": "상공회의소",
+                "en": "chamber of commerce and industry"
+              },
+              {
+                "id": "D",
+                "ko": "주방위군",
+                "en": "national guard"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "모런이 활동한 곳은 캔자스 {{blank}}입니다.",
+            "en": "Moran served on the Kansas {{blank}} board.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주대법원",
+                "en": "supreme court"
+              },
+              {
+                "id": "B",
+                "ko": "상공회의소",
+                "en": "chamber of commerce and industry"
+              },
+              {
+                "id": "C",
+                "ko": "교육위원회",
+                "en": "board of education"
+              },
+              {
+                "id": "D",
+                "ko": "주방위군",
+                "en": "national guard"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상공회의소 이사회 경력이 있습니다.",
+                "en": "I served on the chamber of commerce and industry board."
+              },
+              {
+                "speaker": "player",
+                "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll use that record at our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "상공회의소 이사회 경력이 있습니다.",
+                "en": "I served on the chamber of commerce and industry board."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상공회의소입니다. 방문단 의견을 듣되 정부 결정과는 구별하세요.",
+                "en": "The chamber of commerce and industry. Hear the delegation's views without treating them as government decisions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캔자스 상공회의소 이사회였습니다. 민간 경제단체와 선출직 정부기관을 구분해 주세요.",
+                "en": "It was the Kansas chamber of commerce and industry board. Distinguish a business organization from a government office."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "민간 기업 단체의 의견과 정부 권한 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-826",
+      "path": "data/dialogue-packs/P01/part-34.json",
+      "originalBlobSha": "74ec2bcb14822bec860b5807deb6ccb9485ecbbc",
+      "originalFields": {
+        "context": {
+          "ko": "털리도 도시계획 사무실에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+          "en": "At the toledo planning office, the conversation connects a political career with local representation."
+        },
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "도시 재생 토론에서 오래된 토지이용 지도와 새로운 연방 지원 계획을 비교합니다.",
+            "en": "An urban redevelopment discussion compares older land-use maps with federal support plans."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1969년부터 1975년까지 톨리도와 루커스 카운티에서 지도와 도시 발전을 다루는 일을 했습니다.",
+            "en": "From 1969 to 1975 I worked on maps and urban development for Toledo and Lucas County."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1969~1975년 캡터의 직업은 {{blank}}였습니다.",
+          "en": "From 1969 to 1975 Kaptur worked as an {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "의사",
+              "en": "physician"
+            },
+            {
+              "id": "B",
+              "ko": "항공기 조종사",
+              "en": "pilot"
+            },
+            {
+              "id": "C",
+              "ko": "검사",
+              "en": "prosecutor"
+            },
+            {
+              "id": "D",
+              "ko": "도시계획가",
+              "en": "urban planner"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "도시계획 실무 경험과 연방 입법의 역할을 구분해 토론하겠습니다.",
+              "en": "I'll distinguish urban planning practice from federal lawmaking."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "털리도와 루커스 카운티의 도시계획위원회에서 일했습니다.",
+              "en": "I worked for the Toledo-Lucas County planning commissions."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "털리도 도시계획 사무실에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+            "en": "At the toledo planning office, the conversation connects a political career with local representation."
+          },
+          "after": {
+            "ko": "지역 지도와 연방 지원 자료를 검토하는 모의 주민회의",
+            "en": "A simulated meeting examining local maps and federal funding materials"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "도시 재생 토론에서 오래된 토지이용 지도와 새로운 연방 지원 계획을 비교합니다.",
+              "en": "An urban redevelopment discussion compares older land-use maps with federal support plans."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1969년부터 1975년까지 톨리도와 루커스 카운티에서 지도와 도시 발전을 다루는 일을 했습니다.",
+              "en": "From 1969 to 1975 I worked on maps and urban development for Toledo and Lucas County."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지도에서 사업 후보지를 찾았지만 연방 지원이 확정됐는지는 별도로 확인해야겠군요.",
+              "en": "We've located candidate sites on the map, but federal funding must be checked separately."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1969~1975년 톨리도와 루커스 카운티에서 제가 했던 일을 사례로 비교해 봅시다.",
+              "en": "Compare that with the work I did in Toledo and Lucas County from 1969 to 1975."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1969~1975년 캡터의 직업은 {{blank}}였습니다.",
+            "en": "From 1969 to 1975 Kaptur worked as an {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "의사",
+                "en": "physician"
+              },
+              {
+                "id": "B",
+                "ko": "항공기 조종사",
+                "en": "pilot"
+              },
+              {
+                "id": "C",
+                "ko": "검사",
+                "en": "prosecutor"
+              },
+              {
+                "id": "D",
+                "ko": "도시계획가",
+                "en": "urban planner"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "캡터의 당시 직업은 {{blank}}였습니다.",
+            "en": "Kaptur then worked as an {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "교통공학자",
+                "en": "transportation engineer"
+              },
+              {
+                "id": "B",
+                "ko": "건축가",
+                "en": "architect"
+              },
+              {
+                "id": "C",
+                "ko": "측량사",
+                "en": "surveyor"
+              },
+              {
+                "id": "D",
+                "ko": "도시계획가",
+                "en": "urban planner"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "도시계획 실무 경험과 연방 입법의 역할을 구분해 토론하겠습니다.",
+                "en": "I'll distinguish urban planning practice from federal lawmaking."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "털리도와 루커스 카운티의 도시계획위원회에서 일했습니다.",
+                "en": "I worked for the Toledo-Lucas County planning commissions."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "도시계획가였습니다. 이제 후보지 선정과 연방 지출 결정이 어떻게 다른지 살펴보세요.",
+                "en": "An urban planner. Now consider how site planning differs from federal spending decisions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "도시계획가였습니다. 토지이용 실무와 현재 연방 입법 책임을 따로 분석하세요.",
+                "en": "I was an urban planner. Analyze land-use planning separately from federal legislative responsibilities."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "도시계획 경험을 실제 토지이용 판단에 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 7,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-836",
+      "path": "data/dialogue-packs/P01/part-34.json",
+      "originalBlobSha": "74ec2bcb14822bec860b5807deb6ccb9485ecbbc",
+      "originalFields": {
+        "context": {
+          "ko": "토지이용 계획 간담회에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+          "en": "At the land-use planning gathering, the conversation connects a political career with local representation."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "예전에 토지이용 안건을 함께 검토했던 분들이군요.",
+            "en": "You are colleagues from earlier land-use discussions."
+          },
+          {
+            "speaker": "player",
+            "ko": "연방 하원 이전의 지역 활동 기록을 확인하겠습니다.",
+            "en": "I'll review your earlier municipal service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1981~1989년 그레인저가 맡았던 지방 기관은 {{blank}}입니다.",
+          "en": "From 1981 to 1989 Granger served on the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주대법원",
+              "en": "state supreme court"
+            },
+            {
+              "id": "B",
+              "ko": "용도지역위원회",
+              "en": "zoning commission"
+            },
+            {
+              "id": "C",
+              "ko": "연방선거위원회",
+              "en": "Federal Election Commission"
+            },
+            {
+              "id": "D",
+              "ko": "교육위원회",
+              "en": "school board"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "포트워스 용도지역위원회에서 일했습니다.",
+              "en": "I served on Fort Worth's zoning commission."
+            },
+            {
+              "speaker": "player",
+              "ko": "다음에 만날 때도 기억하겠습니다.",
+              "en": "I'll remember that when we meet again."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "포트워스 용도지역위원회에서 일했습니다.",
+              "en": "I served on Fort Worth's zoning commission."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "토지이용 계획 간담회에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+            "en": "At the land-use planning gathering, the conversation connects a political career with local representation."
+          },
+          "after": {
+            "ko": "포트워스의 토지이용 변경 문의를 지방·연방 관할로 나누기",
+            "en": "Distinguish local and federal jurisdiction for a Fort Worth land-use inquiry"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "예전에 토지이용 안건을 함께 검토했던 분들이군요.",
+              "en": "You are colleagues from earlier land-use discussions."
+            },
+            {
+              "speaker": "player",
+              "ko": "연방 하원 이전의 지역 활동 기록을 확인하겠습니다.",
+              "en": "I'll review your earlier municipal service."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "주민이 토지이용 변경 요청을 연방의원에게 직접 승인받으려 합니다.",
+              "en": "A resident seeks direct approval of a land-use change from a federal legislator."
+            },
+            {
+              "speaker": "player",
+              "ko": "의원님의 1981~1989년 지방기관 경력을 확인하고 현재 권한과 비교하겠습니다.",
+              "en": "I'll check your 1981–1989 local service and compare it with your current authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1981~1989년 그레인저가 맡았던 지방 기관은 {{blank}}입니다.",
+            "en": "From 1981 to 1989 Granger served on the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주대법원",
+                "en": "state supreme court"
+              },
+              {
+                "id": "B",
+                "ko": "용도지역위원회",
+                "en": "zoning commission"
+              },
+              {
+                "id": "C",
+                "ko": "연방선거위원회",
+                "en": "Federal Election Commission"
+              },
+              {
+                "id": "D",
+                "ko": "교육위원회",
+                "en": "school board"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "그레인저가 활동한 기관은 {{blank}}입니다.",
+            "en": "Granger served on the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "공원위원회",
+                "en": "parks board"
+              },
+              {
+                "id": "B",
+                "ko": "도서관위원회",
+                "en": "library board"
+              },
+              {
+                "id": "C",
+                "ko": "용도지역위원회",
+                "en": "zoning commission"
+              },
+              {
+                "id": "D",
+                "ko": "교육위원회",
+                "en": "school board"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "포트워스 용도지역위원회에서 일했습니다.",
+                "en": "I served on Fort Worth's zoning commission."
+              },
+              {
+                "speaker": "player",
+                "ko": "다음에 만날 때도 기억하겠습니다.",
+                "en": "I'll remember that when we meet again."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포트워스 용도지역위원회에서 일했습니다.",
+                "en": "I served on Fort Worth's zoning commission."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "용도지역위원회입니다. 주민 요청은 해당 지방 절차부터 확인하도록 안내하세요.",
+                "en": "The zoning commission. Direct the resident to check the applicable local process first."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포트워스 용도지역위원회였습니다. 연방선거 관련 기관이 아니라 지방 토지이용과 관련된 기관입니다.",
+                "en": "The Fort Worth zoning commission, a local land-use body rather than a federal elections agency."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "강제 재회 제거; 토지이용 민원과 지방기관 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 6,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-842",
+      "path": "data/dialogue-packs/P01/part-34.json",
+      "originalBlobSha": "74ec2bcb14822bec860b5807deb6ccb9485ecbbc",
+      "originalFields": {
+        "context": {
+          "ko": "외교 관련 서류 접견에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+          "en": "At the foreign affairs papers, the conversation connects a political career with local representation."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "외교 정책 관련 위원회 서류를 따로 모아 주세요.",
+            "en": "Please assemble the committee's foreign policy papers separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 사무실 자료와 구분하겠습니다.",
+            "en": "I'll keep them distinct from district correspondence."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "랜토스 의원은 제110대 의회에서 {{blank}} 위원장입니다.",
+          "en": "Lantos chairs {{blank}} in the 110th Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "B",
+              "ko": "세입",
+              "en": "Ways and Means"
+            },
+            {
+              "id": "C",
+              "ko": "윤리",
+              "en": "Ethics"
+            },
+            {
+              "id": "D",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제110대 의회 외교위원장을 맡았습니다.",
+              "en": "I chair Foreign Affairs in the 110th Congress."
+            },
+            {
+              "speaker": "player",
+              "ko": "다음에 만날 때도 기억하겠습니다.",
+              "en": "I'll remember that when we meet again."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제110대 의회 외교위원장을 맡았습니다.",
+              "en": "I chair Foreign Affairs in the 110th Congress."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "외교 관련 서류 접견에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+            "en": "At the foreign affairs papers, the conversation connects a political career with local representation."
+          },
+          "after": {
+            "ko": "대외 정책의 일반적 질문과 개인 사건 문의가 함께 접수됨",
+            "en": "A general international-policy question and individual casework arrive together"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "외교 정책 관련 위원회 서류를 따로 모아 주세요.",
+              "en": "Please assemble the committee's foreign policy papers separately."
+            },
+            {
+              "speaker": "player",
+              "ko": "지역 사무실 자료와 구분하겠습니다.",
+              "en": "I'll keep them distinct from district correspondence."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "개인 민원과 국가 간 정책에 관한 질문을 구분하겠습니다.",
+              "en": "I'll separate individual casework from questions about policy between nations."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제110대 의회에서 제가 맡은 위원장직을 확인하면 두 번째 질문의 맥락을 이해할 수 있습니다.",
+              "en": "My chairmanship in the 110th Congress provides context for the second question."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "랜토스 의원은 제110대 의회에서 {{blank}} 위원장입니다.",
+            "en": "Lantos chairs {{blank}} in the 110th Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "세입",
+                "en": "Ways and Means"
+              },
+              {
+                "id": "C",
+                "ko": "윤리",
+                "en": "Ethics"
+              },
+              {
+                "id": "D",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "랜토스의 위원장직은 {{blank}}입니다.",
+            "en": "Lantos chairs {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              },
+              {
+                "id": "B",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "C",
+                "ko": "세입",
+                "en": "Ways and Means"
+              },
+              {
+                "id": "D",
+                "ko": "윤리",
+                "en": "Ethics"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제110대 의회 외교위원장을 맡았습니다.",
+                "en": "I chair Foreign Affairs in the 110th Congress."
+              },
+              {
+                "speaker": "player",
+                "ko": "다음에 만날 때도 기억하겠습니다.",
+                "en": "I'll remember that when we meet again."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제110대 의회 외교위원장을 맡았습니다.",
+                "en": "I chair Foreign Affairs in the 110th Congress."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "외교위원회입니다. 개인 민원과 정책 심의의 차이를 설명하고 질문을 받아 보죠.",
+                "en": "Foreign Affairs. Explain the distinction between casework and policy consideration, then take the question."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "외교위원회입니다. 다른 위원회로 분류했다면 정책 문의의 관할을 다시 확인하세요.",
+                "en": "Foreign Affairs. If you assigned it elsewhere, recheck the jurisdiction of the policy question."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "국제정책 문의와 개인 민원 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-843",
+      "path": "data/dialogue-packs/P01/part-34.json",
+      "originalBlobSha": "74ec2bcb14822bec860b5807deb6ccb9485ecbbc",
+      "originalFields": {
+        "context": {
+          "ko": "나소 카운티 회계 담당자 방문에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+          "en": "At the nassau county finance staff visit, the conversation connects a political career with local representation."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "최근까지 나소 카운티에서 여러분과 재정 업무를 했습니다.",
+            "en": "Until recently I worked with you on Nassau County finances."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 직책을 연방 하원 경력과 따로 기록하겠습니다.",
+            "en": "I'll keep your earlier office separate from your federal service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1981~1993년 킹은 나소 카운티 {{blank}}였습니다.",
+          "en": "From 1981 to 1993 King was Nassau County {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "보안관",
+              "en": "sheriff"
+            },
+            {
+              "id": "C",
+              "ko": "회계감사관",
+              "en": "comptroller"
+            },
+            {
+              "id": "D",
+              "ko": "교육감",
+              "en": "school superintendent"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "나소 카운티 회계감사관이었습니다.",
+              "en": "I was Nassau County comptroller."
+            },
+            {
+              "speaker": "player",
+              "ko": "다음에 만날 때도 기억하겠습니다.",
+              "en": "I'll remember that when we meet again."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "나소 카운티 회계감사관이었습니다.",
+              "en": "I was Nassau County comptroller."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "나소 카운티 회계 담당자 방문에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
+            "en": "At the nassau county finance staff visit, the conversation connects a political career with local representation."
+          },
+          "after": {
+            "ko": "나소 카운티 재정 관련 기록의 책임 범위를 비교",
+            "en": "Compare responsibility for Nassau County financial records"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "최근까지 나소 카운티에서 여러분과 재정 업무를 했습니다.",
+              "en": "Until recently I worked with you on Nassau County finances."
+            },
+            {
+              "speaker": "player",
+              "ko": "당시 직책을 연방 하원 경력과 따로 기록하겠습니다.",
+              "en": "I'll keep your earlier office separate from your federal service."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "카운티 지출 기록을 조사하는 주민이 이를 연방 예산 표결 기록과 같은 것으로 생각합니다.",
+              "en": "A resident researching county expenditures treats them as federal budget votes."
+            },
+            {
+              "speaker": "player",
+              "ko": "1981~1993년의 카운티 공직부터 확인하겠습니다.",
+              "en": "I'll identify the county office held from 1981 to 1993 first."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1981~1993년 킹은 나소 카운티 {{blank}}였습니다.",
+            "en": "From 1981 to 1993 King was Nassau County {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "B",
+                "ko": "보안관",
+                "en": "sheriff"
+              },
+              {
+                "id": "C",
+                "ko": "회계감사관",
+                "en": "comptroller"
+              },
+              {
+                "id": "D",
+                "ko": "교육감",
+                "en": "school superintendent"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "킹의 당시 직책은 {{blank}}였습니다.",
+            "en": "King then served as Nassau County {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "카운티 행정책임자",
+                "en": "county executive"
+              },
+              {
+                "id": "B",
+                "ko": "보안관",
+                "en": "sheriff"
+              },
+              {
+                "id": "C",
+                "ko": "교육감",
+                "en": "school superintendent"
+              },
+              {
+                "id": "D",
+                "ko": "회계감사관",
+                "en": "comptroller"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "나소 카운티 회계감사관이었습니다.",
+                "en": "I was Nassau County comptroller."
+              },
+              {
+                "speaker": "player",
+                "ko": "다음에 만날 때도 기억하겠습니다.",
+                "en": "I'll remember that when we meet again."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "나소 카운티 회계감사관이었습니다.",
+                "en": "I was Nassau County comptroller."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "회계감사관입니다. 카운티 재정 감독과 연방의원의 표결은 별도로 살펴야 합니다.",
+                "en": "Comptroller. County financial oversight and congressional voting must be examined separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "나소 카운티 회계감사관이었습니다. 카운티 집행직 전체를 맡았다고 설명하지는 마세요.",
+                "en": "I was Nassau County comptroller. Don't describe that as heading all county executive functions."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "카운티 재정 감독과 연방 표결 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 7,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "New distractor categories require historical suitability review; correct answer unchanged."
+    },
+    {
+      "id": "P01-870",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "1603c61f8c5184453ccd54eefea73dc692d1b75e",
+      "originalFields": {
+        "context": {
+          "ko": "의회 페이지 프로그램 방문에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the capitol page program visit, the conversation draws on the actual political record."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 처음 의사당에서 배웠던 시절이 떠오릅니다.",
+            "en": "I remember my early years learning at the Capitol."
+          },
+          {
+            "speaker": "host",
+            "ko": "현재의 의원직 이전에 이곳에서 학생이셨군요.",
+            "en": "You were a student here before becoming a member."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1996년 스팬버거가 다닌 곳은 {{blank}}입니다.",
+          "en": "In 1996 Spanberger attended the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해군사관학교",
+              "en": "United States Naval Academy"
+            },
+            {
+              "id": "B",
+              "ko": "육군사관학교",
+              "en": "West Point"
+            },
+            {
+              "id": "C",
+              "ko": "미국 의회 페이지 학교",
+              "en": "United States Capitol Page School"
+            },
+            {
+              "id": "D",
+              "ko": "연방 사법센터",
+              "en": "Federal Judicial Center"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
+              "en": "I attended the Capitol Page School in 1996."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
+              "en": "I attended the Capitol Page School in 1996."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "의회 페이지 프로그램 방문에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+            "en": "At the capitol page program visit, the conversation draws on the actual political record."
+          },
+          "after": {
+            "ko": "학생이 의회에서 배울 수 있는 경로와 의원 당선을 비교",
+            "en": "A student compares educational experience in Congress with election to office"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제가 처음 의사당에서 배웠던 시절이 떠오릅니다.",
+              "en": "I remember my early years learning at the Capitol."
+            },
+            {
+              "speaker": "host",
+              "ko": "현재의 의원직 이전에 이곳에서 학생이셨군요.",
+              "en": "You were a student here before becoming a member."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "의회 관련 교육 경험이 의원으로 당선된 것과 같은 것은 아니겠죠.",
+              "en": "Educational experience connected to Congress is not the same as being elected, correct?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1996년에 제가 다녔던 학교를 사례로 삼아 그 차이를 살펴봅시다.",
+              "en": "Use the school I attended in 1996 to examine that distinction."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1996년 스팬버거가 다닌 곳은 {{blank}}입니다.",
+            "en": "In 1996 Spanberger attended the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "해군사관학교",
+                "en": "United States Naval Academy"
+              },
+              {
+                "id": "B",
+                "ko": "육군사관학교",
+                "en": "West Point"
+              },
+              {
+                "id": "C",
+                "ko": "미국 의회 페이지 학교",
+                "en": "United States Capitol Page School"
+              },
+              {
+                "id": "D",
+                "ko": "연방 사법센터",
+                "en": "Federal Judicial Center"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "스팬버거가 다닌 곳은 {{blank}}입니다.",
+            "en": "Spanberger attended the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "해군사관학교",
+                "en": "United States Naval Academy"
+              },
+              {
+                "id": "B",
+                "ko": "미국 의회 페이지 학교",
+                "en": "United States Capitol Page School"
+              },
+              {
+                "id": "C",
+                "ko": "육군사관학교",
+                "en": "West Point"
+              },
+              {
+                "id": "D",
+                "ko": "연방 사법센터",
+                "en": "Federal Judicial Center"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
+                "en": "I attended the Capitol Page School in 1996."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
+                "en": "I attended the Capitol Page School in 1996."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "의회 페이지 학교입니다. 학생 경험과 선출직 재임은 별개로 기억하세요.",
+                "en": "The Capitol Page School. Keep student experience separate from elected service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미국 의회 페이지 학교였습니다. 군사 교육기관에서의 경력이나 의원 임기로 분류하면 안 됩니다.",
+                "en": "It was the United States Capitol Page School, not military education or congressional tenure."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "학교 경험을 의회 참여 경로 비교에 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-877",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "originalFields": {
+        "context": {
+          "ko": "시민 모임에서 엘프레스가 자신의 당선에 관한 지역 역사를 꺼낸다.",
+          "en": "Elfreth brings up the local history behind her election at a civic gathering."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 당선은 메릴랜드 여성의 연방의회 진출 역사에서 연령 기록을 세웠습니다.",
+            "en": "My election set an age record for Maryland women in Congress."
+          },
+          {
+            "speaker": "player",
+            "ko": "주 단위 기록을 전국 기록과 구별해야겠네요.",
+            "en": "We should distinguish a state record from a national record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "메릴랜드에서 연방의회에 진출한 {{blank}} 여성입니다.",
+          "en": "You are Maryland's {{blank}} woman elected to Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "최연소",
+              "en": "youngest"
+            },
+            {
+              "id": "B",
+              "ko": "최초",
+              "en": "first"
+            },
+            {
+              "id": "C",
+              "ko": "최고령",
+              "en": "oldest"
+            },
+            {
+              "id": "D",
+              "ko": "두 번째",
+              "en": "second"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "세대교체를 주 정치의 역사와 함께 살펴보죠.",
+              "en": "Let's place generational change in state history."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "최연소 여성입니다. 전국 최초라는 뜻은 아니죠.",
+              "en": "I'm the youngest woman elected from Maryland, not the first nationwide."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "시민 모임에서 엘프레스가 자신의 당선에 관한 지역 역사를 꺼낸다.",
+            "en": "Elfreth brings up the local history behind her election at a civic gathering."
+          },
+          "after": {
+            "ko": "기자가 주 단위 대표성 이정표를 전국 최초로 과장하지 않도록 점검",
+            "en": "A reporter checks the scope of a state representation milestone"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 당선은 메릴랜드 여성의 연방의회 진출 역사에서 연령 기록을 세웠습니다.",
+              "en": "My election set an age record for Maryland women in Congress."
+            },
+            {
+              "speaker": "player",
+              "ko": "주 단위 기록을 전국 기록과 구별해야겠네요.",
+              "en": "We should distinguish a state record from a national record."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "편집자가 당선 관련 제목에 전국 최초라는 표현을 넣으려 합니다.",
+              "en": "An editor wants to call the election a nationwide first."
+            },
+            {
+              "speaker": "player",
+              "ko": "메릴랜드 여성의 연방의회 진출 기록에서 정확히 어떤 이정표인지 확인하겠습니다.",
+              "en": "I'll verify what milestone it represents among Maryland women elected to Congress."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "메릴랜드에서 연방의회에 진출한 {{blank}} 여성입니다.",
+            "en": "You are Maryland's {{blank}} woman elected to Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "최연소",
+                "en": "youngest"
+              },
+              {
+                "id": "B",
+                "ko": "최초",
+                "en": "first"
+              },
+              {
+                "id": "C",
+                "ko": "최고령",
+                "en": "oldest"
+              },
+              {
+                "id": "D",
+                "ko": "두 번째",
+                "en": "second"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "엘프레스는 메릴랜드의 {{blank}} 연방의회 진출 여성입니다.",
+            "en": "Elfreth is Maryland's {{blank}} woman elected to Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "최초",
+                "en": "first"
+              },
+              {
+                "id": "B",
+                "ko": "최고령",
+                "en": "oldest"
+              },
+              {
+                "id": "C",
+                "ko": "최연소",
+                "en": "youngest"
+              },
+              {
+                "id": "D",
+                "ko": "두 번째",
+                "en": "second"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "세대교체를 주 정치의 역사와 함께 살펴보죠.",
+                "en": "Let's place generational change in state history."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "최연소 여성입니다. 전국 최초라는 뜻은 아니죠.",
+                "en": "I'm the youngest woman elected from Maryland, not the first nationwide."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "최연소입니다. 제목에는 주 단위 기록이라는 범위를 명시하세요.",
+                "en": "Youngest. Specify that the milestone is statewide in the headline."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "메릴랜드 출신 최연소 여성 연방의원이라는 기록입니다. 최초 여성 또는 전국 최초라고 쓰면 다른 주장이 됩니다.",
+                "en": "The milestone is the youngest woman elected to Congress from Maryland. Calling it the first woman or a national first would be a different claim."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "대표성 기록의 범위를 검증하는 편집 판단",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-891",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "originalFields": {
+        "context": {
+          "ko": "모의 본회의 참가자가 의사봉을 들자 팀 무어가 주 의장 경험을 회고한다.",
+          "en": "Tim Moore recalls his state speakership as a mock-session participant picks up the gavel."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스캐롤라이나 주 의회에서 약 10년 동안 의사봉을 맡았습니다.",
+            "en": "I held the gavel for about a decade in North Carolina's legislature."
+          },
+          {
+            "speaker": "player",
+            "ko": "연방 하원의장과는 다른 직책이군요.",
+            "en": "That is different from the U.S. House Speaker."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이전 직책은 {{blank}}입니다.",
+          "en": "Your former position was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 하원의장",
+              "en": "U.S. House Speaker"
+            },
+            {
+              "id": "B",
+              "ko": "노스캐롤라이나 주지사",
+              "en": "North Carolina governor"
+            },
+            {
+              "id": "C",
+              "ko": "노스캐롤라이나 주 하원의장",
+              "en": "North Carolina House Speaker"
+            },
+            {
+              "id": "D",
+              "ko": "노스캐롤라이나 주 상원의장",
+              "en": "North Carolina Senate president"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "주 의회 모의회의를 시작합시다.",
+              "en": "Let's begin the mock state session."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "노스캐롤라이나 주 하원의장이었습니다.",
+              "en": "I was North Carolina House Speaker."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "모의 본회의 참가자가 의사봉을 들자 팀 무어가 주 의장 경험을 회고한다.",
+            "en": "Tim Moore recalls his state speakership as a mock-session participant picks up the gavel."
+          },
+          "after": {
+            "ko": "학생 모의회의의 주 하원·상원·연방 하원 역할 구분",
+            "en": "Distinguish state House, state Senate and federal House roles in a mock legislature"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "노스캐롤라이나 주 의회에서 약 10년 동안 의사봉을 맡았습니다.",
+              "en": "I held the gavel for about a decade in North Carolina's legislature."
+            },
+            {
+              "speaker": "player",
+              "ko": "연방 하원의장과는 다른 직책이군요.",
+              "en": "That is different from the U.S. House Speaker."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "학생이 노스캐롤라이나 주의회 모의회의에 연방 하원 의장 규칙을 그대로 적용하려 합니다.",
+              "en": "A student wants to apply federal House Speaker rules directly to a North Carolina state mock legislature."
+            },
+            {
+              "speaker": "player",
+              "ko": "무어 의원의 약 10년간 이전 지도부 경험이 어느 원에 해당했는지 먼저 확인하겠습니다.",
+              "en": "I'll first identify the chamber in which Moore held his earlier leadership position for about a decade."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "이전 직책은 {{blank}}입니다.",
+            "en": "Your former position was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 하원의장",
+                "en": "U.S. House Speaker"
+              },
+              {
+                "id": "B",
+                "ko": "노스캐롤라이나 주지사",
+                "en": "North Carolina governor"
+              },
+              {
+                "id": "C",
+                "ko": "노스캐롤라이나 주 하원의장",
+                "en": "North Carolina House Speaker"
+              },
+              {
+                "id": "D",
+                "ko": "노스캐롤라이나 주 상원의장",
+                "en": "North Carolina Senate president"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "이전 직책은 {{blank}}입니다.",
+            "en": "His former position was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "노스캐롤라이나 주 하원의장",
+                "en": "North Carolina House Speaker"
+              },
+              {
+                "id": "B",
+                "ko": "연방 하원의장",
+                "en": "U.S. House Speaker"
+              },
+              {
+                "id": "C",
+                "ko": "노스캐롤라이나 주지사",
+                "en": "North Carolina governor"
+              },
+              {
+                "id": "D",
+                "ko": "노스캐롤라이나 주 상원의장",
+                "en": "North Carolina Senate president"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 의회 모의회의를 시작합시다.",
+                "en": "Let's begin the mock state session."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노스캐롤라이나 주 하원의장이었습니다.",
+                "en": "I was North Carolina House Speaker."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "노스캐롤라이나 주 하원의장입니다. 모의회의에서는 해당 주 하원의 절차를 확인하세요.",
+                "en": "North Carolina House Speaker. Check the relevant state House procedures for the simulation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 하원의장이었습니다. 연방 하원의장이나 주 상원의장과는 다른 직책입니다.",
+                "en": "I was state House Speaker, distinct from the U.S. House Speaker or state Senate president."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "주의회 모의회의에서 관할과 의장직 판단",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-937",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "originalFields": {
+        "context": {
+          "ko": "주 재정 운용 역할극에서 매거지너가 이전 공직 경험을 비교한다.",
+          "en": "Magaziner compares his former public office with a state finance simulation."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방 입법 이전에는 주의 재정을 맡는 선출직에서 일했습니다.",
+            "en": "Before federal lawmaking I held an elected office managing state finance."
+          },
+          {
+            "speaker": "player",
+            "ko": "주 재정 관리와 연방 법안 심사를 나눠 토론하겠습니다.",
+            "en": "I'll discuss state financial administration separately from federal legislation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2015년부터 2023년까지 매거지너의 직책은 {{blank}}입니다.",
+          "en": "Magaziner's office from 2015 to 2023 was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로드아일랜드 주 재무관",
+              "en": "Rhode Island general treasurer"
+            },
+            {
+              "id": "B",
+              "ko": "로드아일랜드 주지사",
+              "en": "Rhode Island governor"
+            },
+            {
+              "id": "C",
+              "ko": "연방 재무장관",
+              "en": "U.S. Treasury secretary"
+            },
+            {
+              "id": "D",
+              "ko": "프로비던스 시장",
+              "en": "mayor of Providence"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "재정관리 책임과 의원의 표결권을 비교해 보세요.",
+              "en": "Compare financial responsibility with a legislator's voting role."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "로드아일랜드 주 재무관이었습니다.",
+              "en": "I was Rhode Island's general treasurer."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "주 재정 운용 역할극에서 매거지너가 이전 공직 경험을 비교한다.",
+            "en": "Magaziner compares his former public office with a state finance simulation."
+          },
+          "after": {
+            "ko": "로드아일랜드 주민의 주정부 재정 문의와 연방 정책 문의 분리",
+            "en": "Separate state financial inquiries from federal policy questions in Rhode Island"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "연방 입법 이전에는 주의 재정을 맡는 선출직에서 일했습니다.",
+              "en": "Before federal lawmaking I held an elected office managing state finance."
+            },
+            {
+              "speaker": "player",
+              "ko": "주 재정 관리와 연방 법안 심사를 나눠 토론하겠습니다.",
+              "en": "I'll discuss state financial administration separately from federal legislation."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "주정부의 재정 관리 관련 문의를 현재 연방의원에게 보내기 전에 관할부터 확인하겠습니다.",
+              "en": "Before sending a state financial-management inquiry to a federal member, I'll check jurisdiction."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2015~2023년 제가 맡았던 주 선출직과 현재의 입법직을 비교해 보세요.",
+              "en": "Compare the state elected office I held in 2015–2023 with my current legislative office."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "2015년부터 2023년까지 매거지너의 직책은 {{blank}}입니다.",
+            "en": "Magaziner's office from 2015 to 2023 was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "로드아일랜드 주 재무관",
+                "en": "Rhode Island general treasurer"
+              },
+              {
+                "id": "B",
+                "ko": "로드아일랜드 주지사",
+                "en": "Rhode Island governor"
+              },
+              {
+                "id": "C",
+                "ko": "연방 재무장관",
+                "en": "U.S. Treasury secretary"
+              },
+              {
+                "id": "D",
+                "ko": "프로비던스 시장",
+                "en": "mayor of Providence"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "당시 직책은 {{blank}}입니다.",
+            "en": "My office then was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "로드아일랜드 주지사",
+                "en": "Rhode Island governor"
+              },
+              {
+                "id": "B",
+                "ko": "연방 재무장관",
+                "en": "U.S. Treasury secretary"
+              },
+              {
+                "id": "C",
+                "ko": "프로비던스 시장",
+                "en": "mayor of Providence"
+              },
+              {
+                "id": "D",
+                "ko": "로드아일랜드 주 재무관",
+                "en": "Rhode Island general treasurer"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "재정관리 책임과 의원의 표결권을 비교해 보세요.",
+                "en": "Compare financial responsibility with a legislator's voting role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "로드아일랜드 주 재무관이었습니다.",
+                "en": "I was Rhode Island's general treasurer."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "로드아일랜드 주 재무관입니다. 주 재정 관리와 연방 법안 표결은 다른 권한입니다.",
+                "en": "Rhode Island general treasurer. State financial management and federal legislative votes are different powers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "로드아일랜드 주 재무관이었습니다. 연방 재무장관이나 주지사와 혼동하지 말고 문의를 다시 분류하세요.",
+                "en": "I was Rhode Island general treasurer. Reclassify the inquiry rather than confusing it with the federal Treasury secretary or governor."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "주정부 재정 문의의 책임과 연방 의회 권한 구별",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    },
+    {
+      "id": "P01-1022",
+      "path": "data/dialogue-packs/P01/part-41.json",
+      "originalBlobSha": "3c72d80e7b398cc7f0224b7f58437e802a24dcd7",
+      "originalFields": {
+        "context": {
+          "ko": "새 위원장 지역 접견",
+          "en": "New chair's constituent appointment"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 의회에서는 새 위원장 역할도 맡았습니다.",
+            "en": "I have taken on a new committee chairmanship this Congress."
+          },
+          {
+            "speaker": "host",
+            "ko": "세인트루이스 주민에게 위원회의 이름을 정확히 알려 주세요.",
+            "en": "Tell St. Louis constituents the committee's correct name."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제93대 의회 설리번 위원장 직책은 {{blank}}입니다.",
+          "en": "Sullivan chairs {{blank}} in the 93rd Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "세입",
+              "en": "Ways and Means"
+            },
+            {
+              "id": "B",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "C",
+              "ko": "상선·수산",
+              "en": "Merchant Marine and Fisheries"
+            },
+            {
+              "id": "D",
+              "ko": "군사",
+              "en": "Armed Services"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "상선·수산위원장을 맡았습니다.",
+              "en": "I chair Merchant Marine and Fisheries."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "새 위원장 안내문과 지역 사무실 연락처를 준비하세요.",
+              "en": "Prepare the chairmanship notice and district contact information."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "상선·수산위원장을 맡았습니다.",
+              "en": "I chair Merchant Marine and Fisheries."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "새 위원장 지역 접견",
+            "en": "New chair's constituent appointment"
+          },
+          "after": {
+            "ko": "미시시피강 수운과 수산 관련 정책 질문을 위원회 관할로 연결",
+            "en": "Connect river transport and fisheries policy questions to committee jurisdiction"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번 의회에서는 새 위원장 역할도 맡았습니다.",
+              "en": "I have taken on a new committee chairmanship this Congress."
+            },
+            {
+              "speaker": "host",
+              "ko": "세인트루이스 주민에게 위원회의 이름을 정확히 알려 주세요.",
+              "en": "Tell St. Louis constituents the committee's correct name."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "수운 사업과 수산 관련 정책 자료를 함께 가져왔습니다. 지역 사무실의 일반 민원과 구분하고 싶습니다.",
+              "en": "I've brought river transport and fisheries policy materials and want to distinguish them from ordinary district casework."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제93대 의회에서 새로 맡은 위원장직을 확인하면 어떤 정책 질문을 다룰지 분명해집니다.",
+              "en": "Identifying my new chairmanship in the 93rd Congress will clarify the policy context."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "제93대 의회 설리번 위원장 직책은 {{blank}}입니다.",
+            "en": "Sullivan chairs {{blank}} in the 93rd Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "세입",
+                "en": "Ways and Means"
+              },
+              {
+                "id": "B",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "C",
+                "ko": "상선·수산",
+                "en": "Merchant Marine and Fisheries"
+              },
+              {
+                "id": "D",
+                "ko": "군사",
+                "en": "Armed Services"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "설리번의 위원장직은 {{blank}}입니다.",
+            "en": "Sullivan chairs {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "세입",
+                "en": "Ways and Means"
+              },
+              {
+                "id": "B",
+                "ko": "상선·수산",
+                "en": "Merchant Marine and Fisheries"
+              },
+              {
+                "id": "C",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "D",
+                "ko": "군사",
+                "en": "Armed Services"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상선·수산위원장을 맡았습니다.",
+                "en": "I chair Merchant Marine and Fisheries."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "새 위원장 안내문과 지역 사무실 연락처를 준비하세요.",
+                "en": "Prepare the chairmanship notice and district contact information."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "상선·수산위원장을 맡았습니다.",
+                "en": "I chair Merchant Marine and Fisheries."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상선·수산위원회입니다. 위원회에서 검토할 정책과 개별 주민 문의를 나누어 주세요.",
+                "en": "Merchant Marine and Fisheries. Separate committee policy questions from individual constituent requests."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "상선·수산위원회입니다. 군사 또는 조세 정책이 아니라 수운과 수산이라는 질문의 맥락을 다시 살펴보세요.",
+                "en": "Merchant Marine and Fisheries. Reconsider the river transport and fisheries context rather than military or tax policy."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "항만 및 어업 정책과 지역 민원 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 15,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 1,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate; no playtest; no engine changes",
+      "status": "staged_not_applied",
+      "sourceChangedSincePriorAudit": false,
+      "structureCheck": {
+        "answerPreserved": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoices": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original answer and evidence retained; fictional encounter only."
+    }
+  ]
+}
