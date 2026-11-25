@@ -5,7 +5,7 @@
   "scenes": [
     {
       "id": "P01-376",
-      "mechanism": "office-handover",
+      "mechanism": "career-transition",
       "learningTarget": "Ron Estes won KS-4 on April 11, 2017 after Mike Pompeo resigned.",
       "date": "2017-04-26",
       "venue": {
@@ -13,8 +13,8 @@
         "en": "Kansas correspondence handover"
       },
       "context": {
-        "ko": "전임 의원 앞으로 온 편지를 새 의원에게 전달한다.",
-        "en": "A letter addressed to the predecessor must reach the incoming member."
+        "ko": "폼페이오가 하원을 떠난 뒤 캔자스 주민이 누가 지역 민원을 담당하는지 묻는다.",
+        "en": "A Kansas resident asks who handles district casework after Pompeo leaves the House."
       },
       "cast": [
         {
@@ -35,24 +35,24 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "제가 하원을 떠나기 전에 작성한 편지군요.",
-          "en": "This letter dates to before I left the House."
+          "ko": "1월 23일 하원을 사임했습니다. 이제 하원에서 표결할 수 없죠.",
+          "en": "I resigned January 23. I can no longer vote in the House."
         },
         {
           "speaker": "npc:0",
-          "ko": "주민의 요청은 저희가 이어받죠.",
-          "en": "Our office can take over the resident's request."
+          "ko": "4월 특별선거로 당선되고 어제 선서했습니다.",
+          "en": "I won the April special election and took the oath yesterday."
         },
         {
-          "speaker": "host",
-          "ko": "봉투에 정확한 의석을 적겠습니다.",
-          "en": "I'll put the correct seat on the envelope."
+          "speaker": "player",
+          "ko": "그럼 주민이 새 현직 대표에게 민원을 설명할 수 있겠군요.",
+          "en": "Then residents can take their concerns to their new sitting member."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "캔자스 {{blank}} 사무실로 보내겠습니다.",
-        "en": "I'll send it to the Kansas {{blank}} office.",
+        "ko": "에스테스 의원은 캔자스 {{blank}}의 새 현직 대표입니다.",
+        "en": "Estes is the new sitting member for Kansas's {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -81,8 +81,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "좋습니다. 미결 요청을 살펴보죠.",
-            "en": "Good. Let's review the outstanding request."
+            "ko": "주민의 요청을 먼저 듣겠습니다. 이전 의원의 기록과 이번 접견을 연결해 주세요.",
+            "en": "I'll hear the resident's request first. Connect the prior member's record to this meeting."
           }
         ],
         "incorrect": [
@@ -211,7 +211,7 @@
     },
     {
       "id": "P01-378",
-      "mechanism": "public-correction",
+      "mechanism": "cross-party-conversation",
       "learningTarget": "Ralph Norman won SC-5 June 20, 2017 after Mick Mulvaney resigned.",
       "date": "2017-06-28",
       "venue": {
@@ -219,8 +219,8 @@
         "en": "South Carolina event planning room"
       },
       "context": {
-        "ko": "현직과 전직을 구분하는 행사 프로그램을 만든다.",
-        "en": "An event program distinguishes the former and current members."
+        "ko": "같은 날 치러진 조지아와 사우스캐롤라이나 특별선거의 차이를 설명한다.",
+        "en": "Distinguish the South Carolina and Georgia special elections held on the same day."
       },
       "cast": [
         {
@@ -241,18 +241,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "제 이름 옆에는 지역구도 넣어 주시죠.",
-          "en": "Put my district beside my name."
+          "ko": "6월 20일에는 다른 주에서도 특별선거가 열렸습니다.",
+          "en": "Another state also held a special election on June 20."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 이름 옆에는 전임이라고 표시해 주세요.",
-          "en": "Mark me as the former member."
+          "ko": "조지아의 결과를 듣고 사우스캐롤라이나와 혼동하는 분이 있더군요.",
+          "en": "Some people heard the Georgia result and confused it with South Carolina."
         },
         {
-          "speaker": "host",
-          "ko": "인쇄 전에 의석 번호를 확인하겠습니다.",
-          "en": "I'll check the seat before printing."
+          "speaker": "player",
+          "ko": "어제 만난 핸들 의원과 노먼 의원의 의석을 분리해서 기억하겠습니다.",
+          "en": "I'll distinguish Handel's seat from Norman's."
         }
       ],
       "response": {
@@ -286,9 +286,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "이제 주민이 혼동하지 않겠군요.",
-            "en": "That should avoid confusing residents."
+            "speaker": "npc:0",
+            "ko": "그렇습니다. 두 주에서 같은 날 새 의원을 선출했지만 서로 다른 지역의 이야기죠.",
+            "en": "Right. Both states elected new members that day, but the stories belong to different districts."
           }
         ],
         "incorrect": [
@@ -1007,7 +1007,7 @@
     },
     {
       "id": "P01-386",
-      "mechanism": "representation-system",
+      "mechanism": "institutional-rule",
       "learningTarget": "Kevin Hern was appointed to the remainder of the 115th Congress in OK-1 effective November 6, 2018 under Oklahoma law.",
       "date": "2018-11-14",
       "venue": {
@@ -1015,8 +1015,8 @@
         "en": "Oklahoma legislative records room"
       },
       "context": {
-        "ko": "남은 의회 임기의 충원 절차를 확인한다.",
-        "en": "The team records how the remaining congressional term was filled."
+        "ko": "같은 날 선거를 치른 다른 신임 의원과 달리 헌 의원의 잔여 임기 절차를 듣는다.",
+        "en": "Hern explains how his unexpired term differs from other newcomers' special-election cases."
       },
       "cast": [
         {
@@ -1037,18 +1037,18 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "제 사임 날짜를 먼저 적어 두세요.",
-          "en": "Start with my resignation date."
+          "ko": "4월 사임한 뒤 남은 임기가 있었지요.",
+          "en": "After my April resignation, part of the term remained."
         },
         {
           "speaker": "npc:0",
-          "ko": "115대 의회의 잔여 임기는 주지사의 임명이 적용됐습니다.",
-          "en": "A gubernatorial appointment applied to the remaining 115th Congress term."
+          "ko": "11월 6일에는 다음 정규 임기를 위한 선거가 열렸지만 제115대 잔여 임기 절차는 별개였습니다.",
+          "en": "November 6 brought the regular election, but the unexpired 115th-Congress term followed a separate procedure."
         },
         {
-          "speaker": "host",
-          "ko": "절차와 정규 임기 기록을 분리하죠.",
-          "en": "Separate the procedure from the regular-term record."
+          "speaker": "player",
+          "ko": "그럼 단순히 특별선거로 들어온 다른 의원과 같은 방식이라고 할 수 없겠군요.",
+          "en": "Then your case cannot be described as identical to the others who entered through special elections."
         }
       ],
       "response": {
@@ -1083,8 +1083,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "해당 임기만의 기록이라는 점을 명시하세요.",
-            "en": "Specify that this record is for that term only."
+            "ko": "오클라호마 법률에 따른 임명은 11월 6일 발효됐고 13일 선서했습니다. 정규 임기 선거와 구별해 주세요.",
+            "en": "The appointment under Oklahoma law took effect November 6, and I took the oath November 13. Keep that separate from the regular election."
           }
         ],
         "incorrect": [
@@ -1110,7 +1110,7 @@
     },
     {
       "id": "P01-387",
-      "mechanism": "map-comparison",
+      "mechanism": "peer-conversation",
       "learningTarget": "Mary Gay Scanlon filled PA-7 and Susan Wild filled PA-15 for the remainder of the 115th Congress following November 6, 2018 elections.",
       "date": "2018-11-28",
       "venue": {
@@ -1118,8 +1118,8 @@
         "en": "Pennsylvania new-member orientation"
       },
       "context": {
-        "ko": "두 신임 의원이 남은 115대 임기의 의석을 비교한다.",
-        "en": "Two incoming members compare their remaining 115th Congress seats."
+        "ko": "같은 날 특별선거에 당선되었지만 다른 날 선서한 두 의원이 서로의 의석을 소개한다.",
+        "en": "Two members elected on the same day but sworn in on different dates introduce their seats."
       },
       "cast": [
         {
@@ -1140,18 +1140,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "저는 7구의 잔여 임기를 맡았습니다.",
-          "en": "I took the remainder of the seventh district term."
+          "ko": "저는 11월 13일 선서했습니다. 와일드 의원님은 어제였죠?",
+          "en": "I took the oath November 13. Yours was yesterday, Representative Wild?"
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 덴트 의원이 떠난 의석의 남은 임기를 맡았죠.",
-          "en": "I took the remaining term of the seat vacated by Dent."
+          "ko": "네, 같은 11월 6일 특별선거였지만 선서일은 달랐습니다.",
+          "en": "Yes. We won on the same November 6, but our oath dates differ."
         },
         {
-          "speaker": "host",
-          "ko": "다음 의회의 의석과 섞지 않겠습니다.",
-          "en": "I'll keep the next Congress's seats separate."
+          "speaker": "player",
+          "ko": "새 의회의 정기선거 결과와 지금의 잔여 임기 의석도 구별해야겠네요.",
+          "en": "We should also distinguish the regular-election results from today's unexpired terms."
         }
       ],
       "response": {
@@ -1186,8 +1186,8 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "이제 어느 임기인지 분명해졌네요.",
-            "en": "That clarifies which term we mean."
+            "ko": "저는 15구의 남은 임기를 맡습니다. 다음 의회가 열리면 새 지도를 놓고 다시 이야기하죠.",
+            "en": "I'm filling the unexpired term for the Fifteenth. Let's revisit the new map when the next Congress opens."
           }
         ],
         "incorrect": [
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "P01-389",
-      "mechanism": "peer-conversation",
+      "mechanism": "peer-introduction",
       "learningTarget": "Julia Letlow won LA-5 March 20, 2021; Troy Carter won LA-2 April 24, 2021.",
       "date": "2021-05-12",
       "venue": {
@@ -1339,18 +1339,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "저는 3월 선거로 들어왔습니다.",
-          "en": "I came in through the March election."
+          "ko": "3월 20일 선거에서 당선되고 4월 14일 선서했습니다.",
+          "en": "I won on March 20 and took the oath April 14."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 4월에 2구를 맡았고 어제 선서했죠.",
-          "en": "I won the second district in April and took the oath yesterday."
+          "ko": "저는 4월 24일 2구에서 당선됐고 어제 선서했습니다.",
+          "en": "I won the Second District on April 24 and took the oath yesterday."
         },
         {
-          "speaker": "host",
-          "ko": "두 지역구를 프로그램에 나란히 적겠습니다.",
-          "en": "I'll put both district labels on the program."
+          "speaker": "player",
+          "ko": "같은 주 대표단에 새로 온 두 분을 서로 다른 의석으로 기억하겠습니다.",
+          "en": "I'll remember the two new colleagues as representatives of different seats."
         }
       ],
       "response": {
@@ -1385,8 +1385,8 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "같은 주라도 서로 다른 의석이죠.",
-            "en": "Same state, different seats."
+            "ko": "그럼 다음에 2구의 승계 과정도 따로 이야기해 드리죠.",
+            "en": "Next time I'll explain the succession in the Second District separately."
           }
         ],
         "incorrect": [
@@ -1412,7 +1412,7 @@
     },
     {
       "id": "P01-390",
-      "mechanism": "office-handover",
+      "mechanism": "reunion",
       "learningTarget": "Troy Carter won LA-2 April 24, 2021 after Cedric Richmond resigned January 15.",
       "date": "2021-05-13",
       "venue": {
@@ -1420,8 +1420,8 @@
         "en": "Louisiana constituent assistance room"
       },
       "context": {
-        "ko": "전임 의원에게 온 지역 문의를 새 사무실과 연결한다.",
-        "en": "A district inquiry addressed to the predecessor is rerouted."
+        "ko": "레틀로와 함께 만났던 카터 의원이 전임자 리치먼드와 다시 나타난다.",
+        "en": "Carter, previously introduced alongside Letlow, appears again with his predecessor Richmond."
       },
       "cast": [
         {
@@ -1441,19 +1441,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:1",
-          "ko": "이 편지는 제가 하원을 떠나기 전에 쓰였군요.",
-          "en": "This letter predates my departure from the House."
-        },
-        {
           "speaker": "npc:0",
-          "ko": "현재 문의는 제 사무실이 받겠습니다.",
-          "en": "My office will take the current inquiry."
+          "ko": "어제 레틀로 의원과 함께 만났죠. 오늘은 제 의석의 이전 이야기를 소개하겠습니다.",
+          "en": "We met with Letlow yesterday. Today I'd like to introduce the earlier story of my seat."
         },
         {
-          "speaker": "host",
-          "ko": "주민에게 새 담당자를 알려 드리죠.",
-          "en": "Let's tell the resident who handles it now."
+          "speaker": "npc:1",
+          "ko": "저는 1월 15일 하원에서 물러났습니다.",
+          "en": "I resigned from the House January 15."
+        },
+        {
+          "speaker": "player",
+          "ko": "4월의 특별선거를 통해 그 공석이 채워졌군요.",
+          "en": "The vacancy was filled through the April special election."
         }
       ],
       "response": {
@@ -1488,8 +1488,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "새 연락처를 포함해 회신합시다.",
-            "en": "Include the new contact in the reply."
+            "ko": "이제 두 임기를 구분해서 기억하셨으니 주민들과의 새 접견도 이어가 보죠.",
+            "en": "Now that you've distinguished both terms, let's continue with a new constituent meeting."
           }
         ],
         "incorrect": [
@@ -1714,7 +1714,7 @@
     },
     {
       "id": "P01-393",
-      "mechanism": "delegation-introduction",
+      "mechanism": "career-transition",
       "learningTarget": "Melanie Stansbury won NM-1 June 1, 2021 after Deb Haaland resigned March 16.",
       "date": "2021-06-15",
       "venue": {
@@ -1722,8 +1722,8 @@
         "en": "New Mexico district policy meeting"
       },
       "context": {
-        "ko": "전임과 신임 의원의 역할이 다른 초청행사를 준비한다.",
-        "en": "An event distinguishes the roles of the former and current members."
+        "ko": "홀랜드의 하원 사임과 스탠즈베리의 선서 시기를 구분하는 대화.",
+        "en": "Distinguish Haaland's resignation from Stansbury's election and oath."
       },
       "cast": [
         {
@@ -1744,24 +1744,24 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "3월 이후에는 저를 현직 하원 의원으로 소개하지 마세요.",
-          "en": "After March, don't introduce me as the sitting House member."
+          "ko": "저는 3월 16일 하원에서 사임했습니다.",
+          "en": "I resigned from the House on March 16."
         },
         {
           "speaker": "npc:0",
-          "ko": "1구 하원 민원은 제가 받겠습니다.",
-          "en": "I'll receive House inquiries from the first district."
+          "ko": "6월 1일 특별선거로 당선된 뒤 어제 선서했습니다.",
+          "en": "After winning the June 1 special election, I took the oath yesterday."
         },
         {
-          "speaker": "host",
-          "ko": "안내문에 두 사람의 역할을 구분하죠.",
-          "en": "Let's distinguish the two roles in the notice."
+          "speaker": "player",
+          "ko": "당선 날짜와 표결할 수 있게 된 날짜를 구별해 두겠습니다.",
+          "en": "I'll distinguish election day from the day you could begin voting in the House."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "6월 1일 NM-1을 맡게 된 사람은 {{blank}}입니다.",
-        "en": "The June 1 election brought {{blank}} to NM-1.",
+        "ko": "6월 1일 뉴멕시코 1구 특별선거에서 당선된 사람은 {{blank}}입니다.",
+        "en": "The winner of the June 1 NM-1 special election was {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1790,8 +1790,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "다음 간담회에도 현직 연락처를 쓰세요.",
-            "en": "Use the current contact at the next meeting too."
+            "ko": "6월 14일 선서한 기록도 남겨 주세요. 이제 주민들과 현직 의원으로 만나겠습니다.",
+            "en": "Record the June 14 oath too. I can now meet residents as their sitting representative."
           }
         ],
         "incorrect": [
@@ -2112,7 +2112,7 @@
     },
     {
       "id": "P01-397",
-      "mechanism": "representation-system",
+      "mechanism": "career-reflection",
       "learningTarget": "Democrat Mary Peltola won Alaska's at-large seat August 16, 2022 after Republican Don Young died.",
       "date": "2022-09-14",
       "venue": {
@@ -2120,8 +2120,8 @@
         "en": "Alaska public forum"
       },
       "context": {
-        "ko": "새 대표와 기존 주 전체 의석의 관계를 논의한다.",
-        "en": "A forum distinguishes a change in representative from a change in seat type."
+        "ko": "하원 의석의 형태는 유지되었지만 정당이 바뀐 알래스카 사례를 돌아본다.",
+        "en": "Discuss Alaska's unchanged seat type but changed party representation."
       },
       "cast": [
         {
@@ -2134,19 +2134,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "새 하원의원이 생겼지만 주 전체 의석은 그대로인가요?",
-          "en": "We have a new member, but is the statewide seat unchanged?"
-        },
-        {
           "speaker": "npc:0",
-          "ko": "대표가 바뀐 것과 의석 형태가 바뀐 건 다릅니다.",
-          "en": "A new member isn't the same as a new seat type."
+          "ko": "어제 선서했습니다. 알래스카는 여전히 주 전체 하원 의석 하나를 갖고 있습니다.",
+          "en": "I took the oath yesterday. Alaska still has one statewide House seat."
         },
         {
           "speaker": "host",
-          "ko": "행사 자료에서 두 사실을 구분하죠.",
-          "en": "Let's distinguish the two facts in the program."
+          "ko": "그렇다면 변한 건 의석 수가 아니라 당선자의 정당이군요.",
+          "en": "So the change was in the winner's party, not the number of seats."
+        },
+        {
+          "speaker": "player",
+          "ko": "돈 영 의원의 오랜 기록과 새 대표의 임기를 나누어 이해하겠습니다.",
+          "en": "I'll distinguish Don Young's long service from the new member's term."
         }
       ],
       "response": {
@@ -2181,8 +2181,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "의석은 그대로이고 정당은 바뀐 셈이죠.",
-            "en": "The seat type remained while its party changed."
+            "ko": "다음에 알래스카의 주 전체 대표제를 이야기할 때 이번 선거도 함께 기억해 주세요.",
+            "en": "When we discuss Alaska's at-large representation again, remember this election too."
           }
         ],
         "incorrect": [
@@ -2304,7 +2304,7 @@
     },
     {
       "id": "P01-399",
-      "mechanism": "map-comparison",
+      "mechanism": "reunion",
       "learningTarget": "Patrick Ryan won NY-19 August 23, 2022 after Antonio Delgado resigned May 25.",
       "date": "2022-09-15",
       "venue": {
@@ -2312,8 +2312,8 @@
         "en": "New York community association"
       },
       "context": {
-        "ko": "옛 의석과 다음 의회의 지도를 혼동하지 않도록 한다.",
-        "en": "A group distinguishes the previous seat from the next Congress's map."
+        "ko": "델가도의 사임 뒤 라이언을 만난 플레이어가 다음 의회의 번호와 혼동하지 않도록 한다.",
+        "en": "After Delgado's departure, meet Ryan and avoid confusing this seat with the next Congress's map."
       },
       "cast": [
         {
@@ -2334,18 +2334,18 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "5월에 하원을 떠났으니 현재 안건은 라이언 의원에게 보내세요.",
-          "en": "I left the House in May; route current House matters to Ryan."
+          "ko": "5월에 하원을 떠났을 때와 달리 이제 이 지역에 현직 대표가 있군요.",
+          "en": "Unlike when I left in May, the district now has a sitting member."
         },
         {
           "speaker": "npc:0",
-          "ko": "이번 임기의 지역구 번호를 표지에 적죠.",
-          "en": "Put the district number for this term on the cover."
+          "ko": "8월 특별선거에서 당선되어 13일 선서했습니다.",
+          "en": "I won the August special election and took the oath on the 13th."
         },
         {
-          "speaker": "host",
-          "ko": "다음 의회의 지도와 섞지 않겠습니다.",
-          "en": "I won't mix it with the next Congress's map."
+          "speaker": "player",
+          "ko": "지금의 만남은 제117대 의회의 기존 경계에 속하죠.",
+          "en": "Today's encounter belongs to the old boundaries of the 117th Congress."
         }
       ],
       "response": {
@@ -2380,8 +2380,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "임기와 지역구가 명확해졌군요.",
-            "en": "That clarifies the term and district."
+            "ko": "다음 의회가 시작되면 번호가 달라질 수 있습니다. 그때 다시 만나 현재 임기와 비교합시다.",
+            "en": "The number can change in the next Congress. Let's compare this term when we meet again."
           }
         ],
         "incorrect": [
