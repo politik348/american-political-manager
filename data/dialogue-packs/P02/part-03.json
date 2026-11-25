@@ -1,0 +1,3012 @@
+{
+  "schema": 1,
+  "pack": "P02",
+  "part": 3,
+  "scenes": [
+    {
+      "id": "P02-051",
+      "mechanism": "opposition-transition",
+      "learningTarget": "The majority leader in 1981 is Baker.",
+      "date": "1981-06-01",
+      "venue": {
+        "ko": "새 다수당 일정",
+        "en": "New majority agenda"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Howard Baker",
+          "ko": "하워드 베이커",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/TN/senators.htm"
+        },
+        {
+          "id": "B001210",
+          "name": "Robert C. Byrd",
+          "ko": "로버트 버드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001210.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001210"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "공화당이 다수당으로 바뀌었습니다.",
+          "en": "Republicans have gained the majority."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "민주당은 소수당 지도부를 맡습니다.",
+          "en": "Democrats now lead the opposition."
+        },
+        {
+          "speaker": "player",
+          "ko": "새 의사일정에 맞춰 연락하죠.",
+          "en": "I'll route the new agenda."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1981년 다수당 지도자는 {{blank}}입니다.",
+        "en": "The majority leader in 1981 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "베이커",
+            "en": "Baker"
+          },
+          {
+            "id": "B",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "C",
+            "ko": "돌",
+            "en": "Dole"
+          },
+          {
+            "id": "D",
+            "ko": "미첼",
+            "en": "Mitchell"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "새 의사일정에 맞춰 연락하죠.",
+            "en": "I'll route the new agenda."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1981년 다수당 지도자는 베이커입니다.",
+            "en": "The majority leader in 1981 is Baker."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1981년 다수당 지도자는 베이커입니다.",
+            "en": "The majority leader in 1981 is Baker."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 의사일정에 맞춰 연락하죠.",
+            "en": "I'll route the new agenda."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The majority leader in 1981 is Baker.",
+          "asOf": "1981-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/TN/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1981-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/WV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1981-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-051-opposition-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-052",
+      "mechanism": "new-state-colleague",
+      "learningTarget": "In 1983 both senators belong to the Democratic Party.",
+      "date": "1983-06-01",
+      "venue": {
+        "ko": "뉴저지 대표단 환영",
+        "en": "New Jersey delegation welcome"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "L000123",
+          "name": "Frank Lautenberg",
+          "ko": "프랭크 라우텐버그",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000123.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000123"
+        },
+        {
+          "id": null,
+          "name": "Bill Bradley",
+          "ko": "빌 브래들리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 지난해 말 상원에 들어왔습니다.",
+          "en": "I entered the Senate late last year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이전부터 뉴저지를 대표했습니다.",
+          "en": "I already represented New Jersey."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원실에 공동 초대장을 보내죠.",
+          "en": "I'll send joint invitations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1983년 두 의원의 공통 정당은 {{blank}}입니다.",
+        "en": "In 1983 both senators belong to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "개혁당",
+            "en": "the Reform Party"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          },
+          {
+            "id": "C",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "no party"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의원실에 공동 초대장을 보내죠.",
+            "en": "I'll send joint invitations."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1983년 두 의원의 공통 정당은 민주당입니다.",
+            "en": "In 1983 both senators belong to the Democratic Party."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1983년 두 의원의 공통 정당은 민주당입니다.",
+            "en": "In 1983 both senators belong to the Democratic Party."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의원실에 공동 초대장을 보내죠.",
+            "en": "I'll send joint invitations."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "In 1983 both senators belong to the Democratic Party.",
+          "asOf": "1983-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1983-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-052-new-state-colleague"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-053",
+      "mechanism": "whip-duties-transfer",
+      "learningTarget": "The Republican whip in 1985 is Simpson.",
+      "date": "1985-06-01",
+      "venue": {
+        "ko": "공화당 표결 조율",
+        "en": "Republican vote coordination"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Alan K. Simpson",
+          "ko": "앨런 심프슨",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/WY/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Bob Dole",
+          "ko": "밥 돌",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/KS/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "의원들의 출석과 표를 파악하겠습니다.",
+          "en": "I'll coordinate attendance and votes."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "본회의 일정은 지도부가 맡습니다.",
+          "en": "Floor scheduling is leadership business."
+        },
+        {
+          "speaker": "player",
+          "ko": "표결 인원표를 넘기죠.",
+          "en": "I'll pass along the headcount."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1985년 공화당 원내총무는 {{blank}}입니다.",
+        "en": "The Republican whip in 1985 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스티븐스",
+            "en": "Stevens"
+          },
+          {
+            "id": "B",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "C",
+            "ko": "심프슨",
+            "en": "Simpson"
+          },
+          {
+            "id": "D",
+            "ko": "돌",
+            "en": "Dole"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "표결 인원표를 넘기죠.",
+            "en": "I'll pass along the headcount."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1985년 공화당 원내총무는 심프슨입니다.",
+            "en": "The Republican whip in 1985 is Simpson."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1985년 공화당 원내총무는 심프슨입니다.",
+            "en": "The Republican whip in 1985 is Simpson."
+          },
+          {
+            "speaker": "player",
+            "ko": "표결 인원표를 넘기죠.",
+            "en": "I'll pass along the headcount."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Republican whip in 1985 is Simpson.",
+          "asOf": "1985-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/WY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1985-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KS/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1985-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-053-whip-duties-transfer"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-054",
+      "mechanism": "bicameral-return",
+      "learningTarget": "The new South Dakota senator in 1987 is Daschle.",
+      "date": "1987-06-01",
+      "venue": {
+        "ko": "사우스다코타 대표단",
+        "en": "South Dakota delegation"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Larry Pressler",
+          "ko": "래리 프레슬러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 상원으로 옮겼습니다.",
+          "en": "I moved from the House to the Senate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이미 상원에서 재임 중입니다.",
+          "en": "I was already serving in the Senate."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 하원 경력과 연결하죠.",
+          "en": "I'll link the earlier House service."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1987년 신임 사우스다코타 의원은 {{blank}}입니다.",
+        "en": "The new South Dakota senator in 1987 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프레슬러",
+            "en": "Pressler"
+          },
+          {
+            "id": "B",
+            "ko": "맥거번",
+            "en": "McGovern"
+          },
+          {
+            "id": "C",
+            "ko": "압드너",
+            "en": "Abdnor"
+          },
+          {
+            "id": "D",
+            "ko": "대슐",
+            "en": "Daschle"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "이전 하원 경력과 연결하죠.",
+            "en": "I'll link the earlier House service."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1987년 신임 사우스다코타 의원은 대슐입니다.",
+            "en": "The new South Dakota senator in 1987 is Daschle."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1987년 신임 사우스다코타 의원은 대슐입니다.",
+            "en": "The new South Dakota senator in 1987 is Daschle."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 하원 경력과 연결하죠.",
+            "en": "I'll link the earlier House service."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "The new South Dakota senator in 1987 is Daschle.",
+          "asOf": "1987-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1987-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-054-bicameral-return"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-055",
+      "mechanism": "new-leadership-pair",
+      "learningTarget": "The majority leader in 1989 is Mitchell.",
+      "date": "1989-06-01",
+      "venue": {
+        "ko": "양당 지도부 회의",
+        "en": "Bipartisan leadership meeting"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "George J. Mitchell",
+          "ko": "조지 미첼",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ME/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Bob Dole",
+          "ko": "밥 돌",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/KS/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "민주당의 지도자가 새로 선출됐습니다.",
+          "en": "Democrats have elected a new leader."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "공화당 원내지도부는 제가 맡습니다.",
+          "en": "I lead Republicans on the floor."
+        },
+        {
+          "speaker": "player",
+          "ko": "양당 일정표를 정리하죠.",
+          "en": "I'll organize both schedules."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1989년 다수당 지도자는 {{blank}}입니다.",
+        "en": "The majority leader in 1989 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미첼",
+            "en": "Mitchell"
+          },
+          {
+            "id": "B",
+            "ko": "돌",
+            "en": "Dole"
+          },
+          {
+            "id": "C",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "D",
+            "ko": "베이커",
+            "en": "Baker"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "양당 일정표를 정리하죠.",
+            "en": "I'll organize both schedules."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1989년 다수당 지도자는 미첼입니다.",
+            "en": "The majority leader in 1989 is Mitchell."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1989년 다수당 지도자는 미첼입니다.",
+            "en": "The majority leader in 1989 is Mitchell."
+          },
+          {
+            "speaker": "player",
+            "ko": "양당 일정표를 정리하죠.",
+            "en": "I'll organize both schedules."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The majority leader in 1989 is Mitchell.",
+          "asOf": "1989-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1989-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KS/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1989-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-055-new-leadership-pair"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-056",
+      "mechanism": "polynesian-representation",
+      "learningTarget": "Hawaii's 1990 appointee is Akaka.",
+      "date": "1990-06-01",
+      "venue": {
+        "ko": "하와이 공석 승계",
+        "en": "Hawaii vacancy succession"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "A000069",
+          "name": "Daniel K. Akaka",
+          "ko": "대니얼 아카카",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000069.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000069"
+        },
+        {
+          "id": "I000025",
+          "name": "Daniel Inouye",
+          "ko": "대니얼 이노우에",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/I000025.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/I000025"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난달 임명되어 상원에 왔습니다.",
+          "en": "I arrived in the Senate by appointment last month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하와이의 다른 의석은 그대로입니다.",
+          "en": "Hawaii's other seat is unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "새 임명 기록을 연결하죠.",
+          "en": "I'll link the new appointment."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1990년 임명된 하와이 의원은 {{blank}}입니다.",
+        "en": "Hawaii's 1990 appointee is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "롱",
+            "en": "Long"
+          },
+          {
+            "id": "B",
+            "ko": "아카카",
+            "en": "Akaka"
+          },
+          {
+            "id": "C",
+            "ko": "이노우에",
+            "en": "Inouye"
+          },
+          {
+            "id": "D",
+            "ko": "퐁",
+            "en": "Fong"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "새 임명 기록을 연결하죠.",
+            "en": "I'll link the new appointment."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1990년 임명된 하와이 의원은 아카카입니다.",
+            "en": "Hawaii's 1990 appointee is Akaka."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1990년 임명된 하와이 의원은 아카카입니다.",
+            "en": "Hawaii's 1990 appointee is Akaka."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 임명 기록을 연결하죠.",
+            "en": "I'll link the new appointment."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/HI/timeline.htm",
+          "claim": "Hawaii's 1990 appointee is Akaka.",
+          "asOf": "1990-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/HI/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1990-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-056-polynesian-representation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-057",
+      "mechanism": "whip-handover",
+      "learningTarget": "The Democratic whip in 1991 is Ford.",
+      "date": "1991-06-01",
+      "venue": {
+        "ko": "민주당 표결 인계",
+        "en": "Democratic vote handover"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Wendell H. Ford",
+          "ko": "웬델 포드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/KY/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George J. Mitchell",
+          "ko": "조지 미첼",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ME/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해부터 원내총무 업무를 맡습니다.",
+          "en": "I have taken up the whip's duties this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지도자와 원내총무를 구별합시다.",
+          "en": "Distinguish the leader and the whip."
+        },
+        {
+          "speaker": "player",
+          "ko": "총무 연락망을 갱신하죠.",
+          "en": "I'll update the whip contact."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1991년 민주당 원내총무는 {{blank}}입니다.",
+        "en": "The Democratic whip in 1991 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "크랜스턴",
+            "en": "Cranston"
+          },
+          {
+            "id": "B",
+            "ko": "리드",
+            "en": "Reid"
+          },
+          {
+            "id": "C",
+            "ko": "포드",
+            "en": "Ford"
+          },
+          {
+            "id": "D",
+            "ko": "미첼",
+            "en": "Mitchell"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "총무 연락망을 갱신하죠.",
+            "en": "I'll update the whip contact."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1991년 민주당 원내총무는 포드입니다.",
+            "en": "The Democratic whip in 1991 is Ford."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1991년 민주당 원내총무는 포드입니다.",
+            "en": "The Democratic whip in 1991 is Ford."
+          },
+          {
+            "speaker": "player",
+            "ko": "총무 연락망을 갱신하죠.",
+            "en": "I'll update the whip contact."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Democratic whip in 1991 is Ford.",
+          "asOf": "1991-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1991-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1991-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-057-whip-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-058",
+      "mechanism": "women-delegation",
+      "learningTarget": "In 1993 both represent California.",
+      "date": "1993-06-01",
+      "venue": {
+        "ko": "캘리포니아 여성 대표단",
+        "en": "California women delegation"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "F000062",
+          "name": "Dianne Feinstein",
+          "ko": "다이앤 파인스타인",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000062.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000062"
+        },
+        {
+          "id": "B000711",
+          "name": "Barbara Boxer",
+          "ko": "바버라 복서",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000711.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B000711"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 특별선거 후 먼저 취임했습니다.",
+          "en": "I took office after last year's special election."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 올해 1월 정규 임기를 시작했습니다.",
+          "en": "I started my regular term this January."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의석의 취임일을 나누죠.",
+          "en": "I'll distinguish their start dates."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1993년 두 사람의 대표 주는 {{blank}}입니다.",
+        "en": "In 1993 both represent {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕",
+            "en": "New York"
+          },
+          {
+            "id": "B",
+            "ko": "오리건",
+            "en": "Oregon"
+          },
+          {
+            "id": "C",
+            "ko": "워싱턴",
+            "en": "Washington"
+          },
+          {
+            "id": "D",
+            "ko": "캘리포니아",
+            "en": "California"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의석의 취임일을 나누죠.",
+            "en": "I'll distinguish their start dates."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1993년 두 사람의 대표 주는 캘리포니아입니다.",
+            "en": "In 1993 both represent California."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1993년 두 사람의 대표 주는 캘리포니아입니다.",
+            "en": "In 1993 both represent California."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의석의 취임일을 나누죠.",
+            "en": "I'll distinguish their start dates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CA/senators.htm",
+          "claim": "In 1993 both represent California.",
+          "asOf": "1993-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/CA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1993-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-058-women-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-059",
+      "mechanism": "first-african-american-woman",
+      "learningTarget": "The first African American woman senator is Moseley Braun.",
+      "date": "1993-07-01",
+      "venue": {
+        "ko": "일리노이 대표단 소개",
+        "en": "Illinois delegation introduction"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Carol Moseley Braun",
+          "ko": "캐럴 모즐리 브라운",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Paul Simon",
+          "ko": "폴 사이먼",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 상원에 진입했습니다.",
+          "en": "I entered the Senate this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "새로운 대표성의 이정표입니다.",
+          "en": "This is a milestone in representation."
+        },
+        {
+          "speaker": "player",
+          "ko": "대표성 연표에 추가하죠.",
+          "en": "I'll add this to the representation timeline."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "최초 흑인 여성 상원의원은 {{blank}}입니다.",
+        "en": "The first African American woman senator is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "모즐리 브라운",
+            "en": "Moseley Braun"
+          },
+          {
+            "id": "B",
+            "ko": "사이먼",
+            "en": "Simon"
+          },
+          {
+            "id": "C",
+            "ko": "파인스타인",
+            "en": "Feinstein"
+          },
+          {
+            "id": "D",
+            "ko": "스미스",
+            "en": "Smith"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "대표성 연표에 추가하죠.",
+            "en": "I'll add this to the representation timeline."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "최초 흑인 여성 상원의원은 모즐리 브라운입니다.",
+            "en": "The first African American woman senator is Moseley Braun."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "최초 흑인 여성 상원의원은 모즐리 브라운입니다.",
+            "en": "The first African American woman senator is Moseley Braun."
+          },
+          {
+            "speaker": "player",
+            "ko": "대표성 연표에 추가하죠.",
+            "en": "I'll add this to the representation timeline."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/artandhistory/history/common/briefing/women_senators.htm",
+          "claim": "The first African American woman senator is Moseley Braun.",
+          "asOf": "1993-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1993-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-059-first-african-american-woman"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-060",
+      "mechanism": "presiding-chair-vs-floor",
+      "learningTarget": "The president pro tempore in 1995 is Thurmond.",
+      "date": "1995-06-01",
+      "venue": {
+        "ko": "의장석과 원내 지도부",
+        "en": "Chair and floor leadership"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Strom Thurmond",
+          "ko": "스트롬 서먼드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SC/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Bob Dole",
+          "ko": "밥 돌",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/KS/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회 임시의장으로 선출됐습니다.",
+          "en": "I was elected president pro tempore this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다수당 지도자는 별도 역할입니다.",
+          "en": "The majority leader has a separate role."
+        },
+        {
+          "speaker": "player",
+          "ko": "의장과 지도부 명패를 분리하죠.",
+          "en": "I'll separate the chair and leadership labels."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1995년 임시의장은 {{blank}}입니다.",
+        "en": "The president pro tempore in 1995 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미첼",
+            "en": "Mitchell"
+          },
+          {
+            "id": "B",
+            "ko": "서먼드",
+            "en": "Thurmond"
+          },
+          {
+            "id": "C",
+            "ko": "돌",
+            "en": "Dole"
+          },
+          {
+            "id": "D",
+            "ko": "버드",
+            "en": "Byrd"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "의장과 지도부 명패를 분리하죠.",
+            "en": "I'll separate the chair and leadership labels."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1995년 임시의장은 서먼드입니다.",
+            "en": "The president pro tempore in 1995 is Thurmond."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1995년 임시의장은 서먼드입니다.",
+            "en": "The president pro tempore in 1995 is Thurmond."
+          },
+          {
+            "speaker": "player",
+            "ko": "의장과 지도부 명패를 분리하죠.",
+            "en": "I'll separate the chair and leadership labels."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/officers-staff/president-pro-tempore/presidents-pro-tempore.htm",
+          "claim": "The president pro tempore in 1995 is Thurmond.",
+          "asOf": "1995-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/SC/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1995-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KS/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1995-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-060-presiding-chair-vs-floor"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-061",
+      "mechanism": "leader-resignation",
+      "learningTarget": "The majority leader in July 1996 is Lott.",
+      "date": "1996-07-01",
+      "venue": {
+        "ko": "지도부 변경",
+        "en": "Leadership change"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "L000447",
+          "name": "Trent Lott",
+          "ko": "트렌트 로트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000447.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000447"
+        },
+        {
+          "id": null,
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "돌 의원이 상원을 떠나 지도부가 바뀌었습니다.",
+          "en": "Senator Dole left the Senate and leadership changed."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "민주당 지도부는 계속 업무를 맡습니다.",
+          "en": "Democratic leadership continues its work."
+        },
+        {
+          "speaker": "player",
+          "ko": "사임 전후 지도부를 이어 보죠.",
+          "en": "I'll link the leadership before and after the resignation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1996년 7월 다수당 지도자는 {{blank}}입니다.",
+        "en": "The majority leader in July 1996 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "돌",
+            "en": "Dole"
+          },
+          {
+            "id": "B",
+            "ko": "리드",
+            "en": "Reid"
+          },
+          {
+            "id": "C",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "D",
+            "ko": "대슐",
+            "en": "Daschle"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "사임 전후 지도부를 이어 보죠.",
+            "en": "I'll link the leadership before and after the resignation."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1996년 7월 다수당 지도자는 로트입니다.",
+            "en": "The majority leader in July 1996 is Lott."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1996년 7월 다수당 지도자는 로트입니다.",
+            "en": "The majority leader in July 1996 is Lott."
+          },
+          {
+            "speaker": "player",
+            "ko": "사임 전후 지도부를 이어 보죠.",
+            "en": "I'll link the leadership before and after the resignation."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The majority leader in July 1996 is Lott.",
+          "asOf": "1996-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/MS/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1996-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1996-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-061-leader-resignation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-062",
+      "mechanism": "maine-same-party-pair",
+      "learningTarget": "Both Maine senators belong to the Republican Party.",
+      "date": "1997-06-01",
+      "venue": {
+        "ko": "메인주 공동 접견",
+        "en": "Maine joint reception"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "C001035",
+          "name": "Susan Collins",
+          "ko": "수전 콜린스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001035.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001035"
+        },
+        {
+          "id": "S000663",
+          "name": "Olympia Snowe",
+          "ko": "올림피아 스노",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000663.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000663"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 올해 1월 취임했습니다.",
+          "en": "I took office this January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1995년부터 상원에 있습니다.",
+          "en": "I have served in the Senate since 1995."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원실을 함께 방문하죠.",
+          "en": "I'll visit both offices."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 메인 상원의원의 정당은 {{blank}}입니다.",
+        "en": "Both Maine senators belong to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          },
+          {
+            "id": "B",
+            "ko": "개혁당",
+            "en": "the Reform Party"
+          },
+          {
+            "id": "C",
+            "ko": "무소속",
+            "en": "no party"
+          },
+          {
+            "id": "D",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의원실을 함께 방문하죠.",
+            "en": "I'll visit both offices."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 메인 상원의원의 정당은 공화당입니다.",
+            "en": "Both Maine senators belong to the Republican Party."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 메인 상원의원의 정당은 공화당입니다.",
+            "en": "Both Maine senators belong to the Republican Party."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의원실을 함께 방문하죠.",
+            "en": "I'll visit both offices."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "Both Maine senators belong to the Republican Party.",
+          "asOf": "1997-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1997-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-062-maine-same-party-pair"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-063",
+      "mechanism": "nevada-party-contrast",
+      "learningTarget": "The Democratic whip in 1999 is Reid.",
+      "date": "1999-06-01",
+      "venue": {
+        "ko": "네바다와 원내총무",
+        "en": "Nevada and the whip"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000146.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000146"
+        },
+        {
+          "id": null,
+          "name": "Richard H. Bryan",
+          "ko": "리처드 브라이언",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NV/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 올해 민주당 원내총무를 맡았습니다.",
+          "en": "I became Democratic whip this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "우리 주의 다른 의석도 민주당입니다.",
+          "en": "Our state's other seat is Democratic too."
+        },
+        {
+          "speaker": "player",
+          "ko": "정당 지도부 연락처를 구분하죠.",
+          "en": "I'll distinguish the leadership contacts."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1999년 민주당 원내총무는 {{blank}}입니다.",
+        "en": "The Democratic whip in 1999 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "리드",
+            "en": "Reid"
+          },
+          {
+            "id": "B",
+            "ko": "브라이언",
+            "en": "Bryan"
+          },
+          {
+            "id": "C",
+            "ko": "포드",
+            "en": "Ford"
+          },
+          {
+            "id": "D",
+            "ko": "더빈",
+            "en": "Durbin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정당 지도부 연락처를 구분하죠.",
+            "en": "I'll distinguish the leadership contacts."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1999년 민주당 원내총무는 리드입니다.",
+            "en": "The Democratic whip in 1999 is Reid."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1999년 민주당 원내총무는 리드입니다.",
+            "en": "The Democratic whip in 1999 is Reid."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당 지도부 연락처를 구분하죠.",
+            "en": "I'll distinguish the leadership contacts."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Democratic whip in 1999 is Reid.",
+          "asOf": "1999-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "1999-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-063-nevada-party-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-064",
+      "mechanism": "tied-chamber-transfer",
+      "learningTarget": "After January 20 the majority leader is Lott.",
+      "date": "2001-01-25",
+      "venue": {
+        "ko": "동수 상원 지도부",
+        "en": "Evenly divided Senate leadership"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "L000447",
+          "name": "Trent Lott",
+          "ko": "트렌트 로트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000447.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000447"
+        },
+        {
+          "id": null,
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "새 부통령 취임 후 다수당 지위가 바뀌었습니다.",
+          "en": "The majority changed after the new vice president took office."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "양당 의석수는 여전히 같습니다.",
+          "en": "Both parties still have the same number of seats."
+        },
+        {
+          "speaker": "player",
+          "ko": "부통령의 교체도 기록하죠.",
+          "en": "I'll record the change of vice president."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1월 20일 이후 다수당 지도자는 {{blank}}입니다.",
+        "en": "After January 20 the majority leader is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프리스트",
+            "en": "Frist"
+          },
+          {
+            "id": "B",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "C",
+            "ko": "대슐",
+            "en": "Daschle"
+          },
+          {
+            "id": "D",
+            "ko": "리드",
+            "en": "Reid"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "부통령의 교체도 기록하죠.",
+            "en": "I'll record the change of vice president."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1월 20일 이후 다수당 지도자는 로트입니다.",
+            "en": "After January 20 the majority leader is Lott."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1월 20일 이후 다수당 지도자는 로트입니다.",
+            "en": "After January 20 the majority leader is Lott."
+          },
+          {
+            "speaker": "player",
+            "ko": "부통령의 교체도 기록하죠.",
+            "en": "I'll record the change of vice president."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "After January 20 the majority leader is Lott.",
+          "asOf": "2001-01-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/MS/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2001-01-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2001-01-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-064-tied-chamber-transfer"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-065",
+      "mechanism": "caucus-switch",
+      "learningTarget": "The senator who became majority leader as a result is Daschle.",
+      "date": "2001-06-07",
+      "venue": {
+        "ko": "무소속 전환 후",
+        "en": "After the independent switch"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Jim Jeffords",
+          "ko": "짐 제퍼즈",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/VT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어제부터 무소속으로 전환했습니다.",
+          "en": "My switch to independent status took effect yesterday."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "민주당과 함께 원내 활동을 하기로 했습니다.",
+          "en": "You have chosen to caucus with Democrats."
+        },
+        {
+          "speaker": "player",
+          "ko": "정당별 의석수와 원내 협력을 구분하죠.",
+          "en": "I'll distinguish party seats from caucus alignment."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그 결과 다수당 지도자가 된 의원은 {{blank}}입니다.",
+        "en": "The senator who became majority leader as a result is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "B",
+            "ko": "프리스트",
+            "en": "Frist"
+          },
+          {
+            "id": "C",
+            "ko": "대슐",
+            "en": "Daschle"
+          },
+          {
+            "id": "D",
+            "ko": "제퍼즈",
+            "en": "Jeffords"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정당별 의석수와 원내 협력을 구분하죠.",
+            "en": "I'll distinguish party seats from caucus alignment."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "그 결과 다수당 지도자가 된 의원은 대슐입니다.",
+            "en": "The senator who became majority leader as a result is Daschle."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 결과 다수당 지도자가 된 의원은 대슐입니다.",
+            "en": "The senator who became majority leader as a result is Daschle."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당별 의석수와 원내 협력을 구분하죠.",
+            "en": "I'll distinguish party seats from caucus alignment."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The senator who became majority leader as a result is Daschle.",
+          "asOf": "2001-06-07"
+        },
+        {
+          "url": "https://www.senate.gov/states/VT/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2001-06-07"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2001-06-07"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-065-caucus-switch"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-066",
+      "mechanism": "family-seat-succession",
+      "learningTarget": "The new Alaska senator in 2002 is Lisa Murkowski.",
+      "date": "2002-12-23",
+      "venue": {
+        "ko": "알래스카 임명 후",
+        "en": "After Alaska's appointment"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M001153",
+          "name": "Lisa Murkowski",
+          "ko": "리사 머카우스키",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001153.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001153"
+        },
+        {
+          "id": "S000888",
+          "name": "Ted Stevens",
+          "ko": "테드 스티븐스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000888.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000888"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "아버지가 주지사가 된 후 공석에 임명되었습니다.",
+          "en": "I was appointed to the vacancy after my father became governor."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다른 상원 의석은 제가 유지합니다.",
+          "en": "I continue to hold the other seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "주지사와 상원 의석을 별도로 보죠.",
+          "en": "I'll separate the governorship and Senate seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2002년 새 알래스카 상원의원은 {{blank}}입니다.",
+        "en": "The new Alaska senator in 2002 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스티븐스",
+            "en": "Stevens"
+          },
+          {
+            "id": "B",
+            "ko": "그루닝",
+            "en": "Gruening"
+          },
+          {
+            "id": "C",
+            "ko": "그래블",
+            "en": "Gravel"
+          },
+          {
+            "id": "D",
+            "ko": "리사 머카우스키",
+            "en": "Lisa Murkowski"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "주지사와 상원 의석을 별도로 보죠.",
+            "en": "I'll separate the governorship and Senate seat."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2002년 새 알래스카 상원의원은 리사 머카우스키입니다.",
+            "en": "The new Alaska senator in 2002 is Lisa Murkowski."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2002년 새 알래스카 상원의원은 리사 머카우스키입니다.",
+            "en": "The new Alaska senator in 2002 is Lisa Murkowski."
+          },
+          {
+            "speaker": "player",
+            "ko": "주지사와 상원 의석을 별도로 보죠.",
+            "en": "I'll separate the governorship and Senate seat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/AK/timeline.htm",
+          "claim": "The new Alaska senator in 2002 is Lisa Murkowski.",
+          "asOf": "2002-12-23"
+        },
+        {
+          "url": "https://www.senate.gov/states/AK/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2002-12-23"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-066-family-seat-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-067",
+      "mechanism": "whip-new-majority",
+      "learningTarget": "The Republican whip in 2003 is McConnell.",
+      "date": "2003-06-01",
+      "venue": {
+        "ko": "공화당 지도부 분담",
+        "en": "Republican leadership assignments"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        },
+        {
+          "id": null,
+          "name": "Bill Frist",
+          "ko": "빌 프리스트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/TN/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "표결 참석을 조율하겠습니다.",
+          "en": "I'll coordinate vote attendance."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 다수당 지도부를 맡습니다.",
+          "en": "I lead the majority."
+        },
+        {
+          "speaker": "player",
+          "ko": "본회의 표결 연락을 맡기죠.",
+          "en": "I'll route the vote notice."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2003년 공화당 원내총무는 {{blank}}입니다.",
+        "en": "The Republican whip in 2003 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매코널",
+            "en": "McConnell"
+          },
+          {
+            "id": "B",
+            "ko": "프리스트",
+            "en": "Frist"
+          },
+          {
+            "id": "C",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "D",
+            "ko": "카일",
+            "en": "Kyl"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "본회의 표결 연락을 맡기죠.",
+            "en": "I'll route the vote notice."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2003년 공화당 원내총무는 매코널입니다.",
+            "en": "The Republican whip in 2003 is McConnell."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2003년 공화당 원내총무는 매코널입니다.",
+            "en": "The Republican whip in 2003 is McConnell."
+          },
+          {
+            "speaker": "player",
+            "ko": "본회의 표결 연락을 맡기죠.",
+            "en": "I'll route the vote notice."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Republican whip in 2003 is McConnell.",
+          "asOf": "2003-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2003-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/TN/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2003-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-067-whip-new-majority"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-068",
+      "mechanism": "illinois-senior-junior",
+      "learningTarget": "The new Illinois senator in 2005 is Obama.",
+      "date": "2005-06-01",
+      "venue": {
+        "ko": "일리노이 상원 대표단",
+        "en": "Illinois Senate delegation"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "O000167",
+          "name": "Barack Obama",
+          "ko": "버락 오바마",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/O000167.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/O000167"
+        },
+        {
+          "id": null,
+          "name": "Dick Durbin",
+          "ko": "딕 더빈",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 1월 상원에 왔습니다.",
+          "en": "I entered the Senate this January."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1997년부터 상원에 있습니다.",
+          "en": "I have served in the Senate since 1997."
+        },
+        {
+          "speaker": "player",
+          "ko": "선후배 의원을 구별하죠.",
+          "en": "I'll distinguish senior and junior members."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2005년 신임 일리노이 의원은 {{blank}}입니다.",
+        "en": "The new Illinois senator in 2005 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "피츠제럴드",
+            "en": "Fitzgerald"
+          },
+          {
+            "id": "B",
+            "ko": "오바마",
+            "en": "Obama"
+          },
+          {
+            "id": "C",
+            "ko": "더빈",
+            "en": "Durbin"
+          },
+          {
+            "id": "D",
+            "ko": "사이먼",
+            "en": "Simon"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "선후배 의원을 구별하죠.",
+            "en": "I'll distinguish senior and junior members."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2005년 신임 일리노이 의원은 오바마입니다.",
+            "en": "The new Illinois senator in 2005 is Obama."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2005년 신임 일리노이 의원은 오바마입니다.",
+            "en": "The new Illinois senator in 2005 is Obama."
+          },
+          {
+            "speaker": "player",
+            "ko": "선후배 의원을 구별하죠.",
+            "en": "I'll distinguish senior and junior members."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "The new Illinois senator in 2005 is Obama.",
+          "asOf": "2005-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2005-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-068-illinois-senior-junior"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-069",
+      "mechanism": "democratic-whip-transition",
+      "learningTarget": "The Democratic whip in 2005 is Durbin.",
+      "date": "2005-07-01",
+      "venue": {
+        "ko": "민주당 지도부 인계",
+        "en": "Democratic leadership handover"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Dick Durbin",
+          "ko": "딕 더빈",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        },
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000146.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000146"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 원내총무를 맡았습니다.",
+          "en": "I became whip this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 당 원내지도자로 옮겼습니다.",
+          "en": "I moved to the party's floor leadership."
+        },
+        {
+          "speaker": "player",
+          "ko": "새 원내총무에게 연락하죠.",
+          "en": "I'll contact the new whip."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2005년 민주당 원내총무는 {{blank}}입니다.",
+        "en": "The Democratic whip in 2005 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "대슐",
+            "en": "Daschle"
+          },
+          {
+            "id": "B",
+            "ko": "포드",
+            "en": "Ford"
+          },
+          {
+            "id": "C",
+            "ko": "더빈",
+            "en": "Durbin"
+          },
+          {
+            "id": "D",
+            "ko": "리드",
+            "en": "Reid"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "새 원내총무에게 연락하죠.",
+            "en": "I'll contact the new whip."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2005년 민주당 원내총무는 더빈입니다.",
+            "en": "The Democratic whip in 2005 is Durbin."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2005년 민주당 원내총무는 더빈입니다.",
+            "en": "The Democratic whip in 2005 is Durbin."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 원내총무에게 연락하죠.",
+            "en": "I'll contact the new whip."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Democratic whip in 2005 is Durbin.",
+          "asOf": "2005-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2005-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2005-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-069-democratic-whip-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-070",
+      "mechanism": "independent-delegation",
+      "learningTarget": "Sanders's party status in 2007 is independent.",
+      "date": "2007-06-01",
+      "venue": {
+        "ko": "버몬트 대표단 소개",
+        "en": "Vermont delegation introduction"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "S000033",
+          "name": "Bernie Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000033"
+        },
+        {
+          "id": "L000174",
+          "name": "Patrick Leahy",
+          "ko": "패트릭 리히",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000174.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000174"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 상원으로 옮겼습니다.",
+          "en": "I moved from the House to the Senate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "우리는 서로 다른 정당 지위를 갖습니다.",
+          "en": "We have different party statuses."
+        },
+        {
+          "speaker": "player",
+          "ko": "무소속과 원내 활동을 구별하죠.",
+          "en": "I'll distinguish party status from caucusing."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2007년 샌더스의 정당 지위는 {{blank}}입니다.",
+        "en": "Sanders's party status in 2007 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "Democrat"
+          },
+          {
+            "id": "C",
+            "ko": "개혁당",
+            "en": "Reform"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "independent"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "무소속과 원내 활동을 구별하죠.",
+            "en": "I'll distinguish party status from caucusing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2007년 샌더스의 정당 지위는 무소속입니다.",
+            "en": "Sanders's party status in 2007 is independent."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2007년 샌더스의 정당 지위는 무소속입니다.",
+            "en": "Sanders's party status in 2007 is independent."
+          },
+          {
+            "speaker": "player",
+            "ko": "무소속과 원내 활동을 구별하죠.",
+            "en": "I'll distinguish party status from caucusing."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/VT/senators.htm",
+          "claim": "Sanders's party status in 2007 is independent.",
+          "asOf": "2007-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/VT/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2007-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-070-independent-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-071",
+      "mechanism": "minority-leader-change",
+      "learningTarget": "The minority leader in 2007 is McConnell.",
+      "date": "2007-07-01",
+      "venue": {
+        "ko": "본회의 협의",
+        "en": "Floor negotiations"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000146.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000146"
+        },
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "민주당이 이번 의회 다수당입니다.",
+          "en": "Democrats hold the majority this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "공화당 원내지도부를 맡고 있습니다.",
+          "en": "I lead Republicans on the floor."
+        },
+        {
+          "speaker": "player",
+          "ko": "소수당 협의 상대를 확인하죠.",
+          "en": "I'll identify the minority counterpart."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2007년 소수당 지도자는 {{blank}}입니다.",
+        "en": "The minority leader in 2007 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매코널",
+            "en": "McConnell"
+          },
+          {
+            "id": "B",
+            "ko": "리드",
+            "en": "Reid"
+          },
+          {
+            "id": "C",
+            "ko": "프리스트",
+            "en": "Frist"
+          },
+          {
+            "id": "D",
+            "ko": "로트",
+            "en": "Lott"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "소수당 협의 상대를 확인하죠.",
+            "en": "I'll identify the minority counterpart."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2007년 소수당 지도자는 매코널입니다.",
+            "en": "The minority leader in 2007 is McConnell."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2007년 소수당 지도자는 매코널입니다.",
+            "en": "The minority leader in 2007 is McConnell."
+          },
+          {
+            "speaker": "player",
+            "ko": "소수당 협의 상대를 확인하죠.",
+            "en": "I'll identify the minority counterpart."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The minority leader in 2007 is McConnell.",
+          "asOf": "2007-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2007-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2007-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-071-minority-leader-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-072",
+      "mechanism": "republican-whip-change",
+      "learningTarget": "The Republican whip in 2008 is Kyl.",
+      "date": "2008-06-01",
+      "venue": {
+        "ko": "애리조나 원내 연락",
+        "en": "Arizona floor liaison"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "K000352",
+          "name": "Jon Kyl",
+          "ko": "존 카일",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000352.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000352"
+        },
+        {
+          "id": "M000303",
+          "name": "John McCain",
+          "ko": "존 매케인",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000303.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000303"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 원내총무를 맡았습니다.",
+          "en": "I took the whip's role this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "우리 주의 두 의원은 모두 공화당입니다.",
+          "en": "Both senators from our state are Republicans."
+        },
+        {
+          "speaker": "player",
+          "ko": "표결 인원 확인을 요청하죠.",
+          "en": "I'll request a headcount."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2008년 공화당 원내총무는 {{blank}}입니다.",
+        "en": "The Republican whip in 2008 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로트",
+            "en": "Lott"
+          },
+          {
+            "id": "B",
+            "ko": "카일",
+            "en": "Kyl"
+          },
+          {
+            "id": "C",
+            "ko": "매케인",
+            "en": "McCain"
+          },
+          {
+            "id": "D",
+            "ko": "매코널",
+            "en": "McConnell"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "표결 인원 확인을 요청하죠.",
+            "en": "I'll request a headcount."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2008년 공화당 원내총무는 카일입니다.",
+            "en": "The Republican whip in 2008 is Kyl."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2008년 공화당 원내총무는 카일입니다.",
+            "en": "The Republican whip in 2008 is Kyl."
+          },
+          {
+            "speaker": "player",
+            "ko": "표결 인원 확인을 요청하죠.",
+            "en": "I'll request a headcount."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Republican whip in 2008 is Kyl.",
+          "asOf": "2008-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2008-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-072-republican-whip-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-073",
+      "mechanism": "cabinet-seat-replacement",
+      "learningTarget": "The senator appointed to Clinton's vacancy is Gillibrand.",
+      "date": "2009-02-01",
+      "venue": {
+        "ko": "뉴욕 상원 임명",
+        "en": "New York Senate appointment"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "G000555",
+          "name": "Kirsten Gillibrand",
+          "ko": "커스틴 질리브랜드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000555.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000555"
+        },
+        {
+          "id": null,
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 사임하고 상원에 임명됐습니다.",
+          "en": "I resigned from the House and entered the Senate by appointment."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "뉴욕의 다른 의석은 그대로입니다.",
+          "en": "New York's other seat is unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "하원 기록에서 공석 승계로 연결하죠.",
+          "en": "I'll connect House service to the vacancy."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "클린턴의 공석을 채운 의원은 {{blank}}입니다.",
+        "en": "The senator appointed to Clinton's vacancy is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "복서",
+            "en": "Boxer"
+          },
+          {
+            "id": "B",
+            "ko": "스노",
+            "en": "Snowe"
+          },
+          {
+            "id": "C",
+            "ko": "질리브랜드",
+            "en": "Gillibrand"
+          },
+          {
+            "id": "D",
+            "ko": "슈머",
+            "en": "Schumer"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "하원 기록에서 공석 승계로 연결하죠.",
+            "en": "I'll connect House service to the vacancy."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "클린턴의 공석을 채운 의원은 질리브랜드입니다.",
+            "en": "The senator appointed to Clinton's vacancy is Gillibrand."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "클린턴의 공석을 채운 의원은 질리브랜드입니다.",
+            "en": "The senator appointed to Clinton's vacancy is Gillibrand."
+          },
+          {
+            "speaker": "player",
+            "ko": "하원 기록에서 공석 승계로 연결하죠.",
+            "en": "I'll connect House service to the vacancy."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "The senator appointed to Clinton's vacancy is Gillibrand.",
+          "asOf": "2009-02-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2009-02-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-073-cabinet-seat-replacement"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-074",
+      "mechanism": "party-switch-seat",
+      "learningTarget": "Specter's party in July 2009 is Democratic.",
+      "date": "2009-07-01",
+      "venue": {
+        "ko": "펜실베이니아 정당 전환",
+        "en": "Pennsylvania party switch"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "S000709",
+          "name": "Arlen Specter",
+          "ko": "알런 스펙터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000709.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000709"
+        },
+        {
+          "id": null,
+          "name": "Bob Casey Jr.",
+          "ko": "밥 케이시 주니어",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/PA/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올봄 정당을 바꿨습니다.",
+          "en": "I changed parties this spring."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "의석 자체는 그대로 유지됩니다.",
+          "en": "The seat itself remains unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "정당 변경 날짜를 기록하죠.",
+          "en": "I'll record the date of the party switch."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2009년 7월 스펙터의 정당은 {{blank}}입니다.",
+        "en": "Specter's party in July 2009 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "B",
+            "ko": "무소속",
+            "en": "Independent"
+          },
+          {
+            "id": "C",
+            "ko": "개혁당",
+            "en": "Reform"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "Democratic"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정당 변경 날짜를 기록하죠.",
+            "en": "I'll record the date of the party switch."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 7월 스펙터의 정당은 민주당입니다.",
+            "en": "Specter's party in July 2009 is Democratic."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 7월 스펙터의 정당은 민주당입니다.",
+            "en": "Specter's party in July 2009 is Democratic."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당 변경 날짜를 기록하죠.",
+            "en": "I'll record the date of the party switch."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/PA/senators.htm",
+          "claim": "Specter's party in July 2009 is Democratic.",
+          "asOf": "2009-07-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/PA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2009-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-074-party-switch-seat"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-075",
+      "mechanism": "delayed-seat-arrival",
+      "learningTarget": "The Minnesota senator sworn in in July 2009 is Franken.",
+      "date": "2009-07-10",
+      "venue": {
+        "ko": "미네소타 신임 의원 환영",
+        "en": "Minnesota new-member welcome"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "F000457",
+          "name": "Al Franken",
+          "ko": "앨 프랭컨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000457.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000457"
+        },
+        {
+          "id": "K000367",
+          "name": "Amy Klobuchar",
+          "ko": "에이미 클로버샤",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000367.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000367"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 달 선서를 마쳤습니다.",
+          "en": "I took the oath this month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 2007년부터 재임 중입니다.",
+          "en": "I have served since 2007."
+        },
+        {
+          "speaker": "player",
+          "ko": "선서일을 따로 기록하죠.",
+          "en": "I'll record the oath date separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2009년 7월 취임한 미네소타 의원은 {{blank}}입니다.",
+        "en": "The Minnesota senator sworn in in July 2009 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프랭컨",
+            "en": "Franken"
+          },
+          {
+            "id": "B",
+            "ko": "클로버샤",
+            "en": "Klobuchar"
+          },
+          {
+            "id": "C",
+            "ko": "콜먼",
+            "en": "Coleman"
+          },
+          {
+            "id": "D",
+            "ko": "데이턴",
+            "en": "Dayton"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "선서일을 따로 기록하죠.",
+            "en": "I'll record the oath date separately."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 7월 취임한 미네소타 의원은 프랭컨입니다.",
+            "en": "The Minnesota senator sworn in in July 2009 is Franken."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 7월 취임한 미네소타 의원은 프랭컨입니다.",
+            "en": "The Minnesota senator sworn in in July 2009 is Franken."
+          },
+          {
+            "speaker": "player",
+            "ko": "선서일을 따로 기록하죠.",
+            "en": "I'll record the oath date separately."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "The Minnesota senator sworn in in July 2009 is Franken.",
+          "asOf": "2009-07-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2009-07-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-075-delayed-seat-arrival"
+      },
+      "fictional": true
+    }
+  ]
+}
