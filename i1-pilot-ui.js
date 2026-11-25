@@ -1,0 +1,25 @@
+import {encounterDate} from './encounters.js';
+import {pilotBook,eligible,startPilot,answerPilot,chainIntro,approvedPhoto} from './i1-pilot.js';
+export function makePilotUI(ctx,c,loadError){
+ const {T,L,esc,button,safeUrl}=ctx,S=()=>ctx.state(),B=(ko,en,a)=>button(T(ko,en),'meet:pilot:'+a);
+ const bi=x=>esc(L(x.ko,x.en));
+ function render(){
+  const s=S(),mode=ctx.mode();if(!s||mode==='collection'||mode==='challenges'&&!s.politics?.active||s.development?.retired&&!s.politics?.active)return '';
+  const title=T('역사 대화 기록실 · I1 시범','Historical dialogue archive · I1 pilot');
+  if(loadError)return '<section class="panel"><h2>'+title+'</h2><p>'+T('작성형 자료를 불러오지 못했습니다. 기존 만남은 유지됩니다.','Authored data unavailable. Generated encounters remain available.')+'</p></section>';
+  const b=pilotBook(s),date=encounterDate(s),v=c.scenes.find(x=>x.id===b.active?.id&&x.date<=date);
+  let out='<section class="panel" id="i1-pilot"><h2>'+title+'</h2><p>'+T('가상 재현 · 실제 발언 또는 현재 재임을 뜻하지 않음 · 역사 검증 진행 중','Fictional reconstruction, not actual quotations or current office; historical audit ongoing')+'</p><p>'+T('자료 등록 / 구조 통과 / 현재 날짜 접근 가능','Registered / structurally valid / date-accessible')+': '+c.registered+' / '+c.scenes.length+' / '+eligible(c,date).length+'</p>';
+  if(!v){const all=eligible(c,date,b.pack),pages=Math.max(1,Math.ceil(all.length/10)),page=Math.min(Math.max(0,b.page||0),pages-1);return out+'<div class="toolbar">'+B('전체','All','pack:all')+B('하원','House','pack:P01')+B('상원','Senate','pack:P02')+'</div>'+all.slice(page*10,page*10+10).map(x=>'<p>'+button(esc(x.id+' · '+x.date+' · '+L(x.venue.ko,x.venue.en)),'meet:pilot:start:'+x.id)+(b.history[x.id]?' ✓':'')+'</p>').join('')+'<div class="toolbar">'+B('이전','Previous','prev')+' '+(page+1)+' / '+pages+' '+B('다음','Next','next')+'</div></section>'}
+  const answered=b.active.selected!==null,correct=v.response.choices.find(x=>x.id===v.response.correct),names=v.cast.map((x,i)=>!answered&&[correct.ko,correct.en].some(z=>[x.name,x.ko].includes(z))?T('인물','Person')+' '+(i+1):L(x.ko||x.name,x.name));
+  const speaker=t=>t.speaker.startsWith('npc:')?names[+t.speaker.slice(4)]:({player:T('나','You'),aide:T('보좌관','Aide'),host:T('진행자','Host')}[t.speaker]||t.speaker);
+  const turns=xs=>xs.map(t=>'<div class="encounter-speech"><small>'+esc(speaker(t))+'</small><p>'+bi(t)+'</p></div>').join('');
+  const intro=chainIntro(s,c,v);out+='<div class="eyebrow">'+esc(v.id+' · '+v.date)+'</div><h3>'+bi(v.venue)+'</h3><p>'+bi(v.context)+'</p>'+(intro?'<p class="notice" data-i1-chain>'+bi(intro)+'</p>':'');
+  out+=v.cast.map((x,i)=>{const p=approvedPhoto(c,v,i);return '<figure class="encounter-person">'+(p&&answered?'<img class="portrait" src="'+safeUrl(p.url)+'" alt="'+esc(names[i])+'" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>'+T('사진 없음','Portrait unavailable')+'</span>':'<span>'+T('사진 없음','Portrait unavailable')+'</span>')+'<figcaption>'+esc(names[i])+(p&&answered?'<small> · '+T('일반 초상/역사 자료 · 사건 사진 아님','Portrait / historical artifact, not event photograph')+' · '+esc(p.date)+' · '+esc(p.credit)+' · '+esc(p.rights)+' · <a href="'+safeUrl(p.metadata)+'" target="_blank" rel="noopener">'+T('출처','Source')+'</a></small>':'')+'</figcaption></figure>'}).join('');
+  out+=turns(v.opening)+'<p>'+esc(L(v.response.ko,v.response.en).replace('{{blank}}',answered?L(v.response.choices.find(x=>x.id===b.active.selected).ko,v.response.choices.find(x=>x.id===b.active.selected).en):'_____'))+'</p>';
+  if(!answered)out+='<div class="encounter-options">'+v.response.choices.map(x=>button(bi(x),'meet:pilot:answer:'+x.id)).join('')+'</div>';
+  else out+='<div class="notice" data-i1-result="'+(b.active.correct?'correct':'incorrect')+'">'+(b.active.correct?T('정답','Correct'):T('기록을 다시 확인합니다','Review the record'))+' · '+bi(correct)+'</div>'+turns(v.followup[b.active.correct?'correct':'incorrect'])+'<details><summary>'+T('역사 근거 문서','Historical evidence')+'</summary>'+v.evidence.map(e=>'<p><a href="'+safeUrl(e.url)+'" target="_blank" rel="noopener">'+esc(e.claim||e.url)+'</a> · '+esc(e.asOf)+'</p>').join('')+'</details>';
+  return out+B('기록실 목록','Back to archive','close')+'</section>';
+ }
+ function handle(a){const s=S(),b=pilotBook(s),date=encounterDate(s);if(loadError)return false;if(a.startsWith('start:'))return startPilot(s,c,a.slice(6),date);if(a.startsWith('answer:'))return answerPilot(s,c,a.slice(7),date);if(a==='close'){b.active=null;return true}if(a==='prev'||a==='next'){const pages=Math.max(1,Math.ceil(eligible(c,date,b.pack).length/10));b.page=Math.max(0,Math.min(pages-1,(b.page||0)+(a==='next'?1:-1)));return true}if(['pack:all','pack:P01','pack:P02'].includes(a)){b.pack=a.slice(5);b.page=0;return true}return false}
+ return {render,handle};
+}
