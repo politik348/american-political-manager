@@ -1,0 +1,2992 @@
+{
+  "schema": 1,
+  "pack": "P02",
+  "part": 4,
+  "scenes": [
+    {
+      "id": "P02-076",
+      "mechanism": "special-election-party-flip",
+      "learningTarget": "Brown belongs to the Republican Party.",
+      "date": "2010-02-10",
+      "venue": {
+        "ko": "매사추세츠 특별선거 이후",
+        "en": "After Massachusetts special election"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "B001268",
+          "name": "Scott P. Brown",
+          "ko": "스콧 브라운",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001268.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001268"
+        },
+        {
+          "id": "K000148",
+          "name": "John Kerry",
+          "ko": "존 케리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000148.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000148"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 달 특별선거 당선자로 취임했습니다.",
+          "en": "I took office this month after winning a special election."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "같은 주지만 서로 다른 정당입니다.",
+          "en": "We represent the same state but different parties."
+        },
+        {
+          "speaker": "player",
+          "ko": "특별선거 전후 정당을 구별하죠.",
+          "en": "I'll distinguish the party before and after the special election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "브라운의 소속 정당은 {{blank}}입니다.",
+        "en": "Brown belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          },
+          {
+            "id": "C",
+            "ko": "녹색당",
+            "en": "the Green Party"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "no party"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "특별선거 전후 정당을 구별하죠.",
+            "en": "I'll distinguish the party before and after the special election."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "브라운의 소속 정당은 공화당입니다.",
+            "en": "Brown belongs to the Republican Party."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "브라운의 소속 정당은 공화당입니다.",
+            "en": "Brown belongs to the Republican Party."
+          },
+          {
+            "speaker": "player",
+            "ko": "특별선거 전후 정당을 구별하죠.",
+            "en": "I'll distinguish the party before and after the special election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MA/timeline.htm",
+          "claim": "Brown belongs to the Republican Party.",
+          "asOf": "2010-02-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2010-02-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-076-special-election-party-flip"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-077",
+      "mechanism": "write-in-result",
+      "learningTarget": "Murkowski won the general election as a write-in candidate.",
+      "date": "2011-01-15",
+      "venue": {
+        "ko": "알래스카 선거 결과",
+        "en": "Alaska election result"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M001153",
+          "name": "Lisa Murkowski",
+          "ko": "리사 머카우스키",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001153.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001153"
+        },
+        {
+          "id": "B001265",
+          "name": "Mark Begich",
+          "ko": "마크 베기치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001265.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001265"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 공화당 예비선거에서 패했습니다.",
+          "en": "I lost the Republican primary last year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그러나 본선에서 승리해 상원 의석을 유지했습니다.",
+          "en": "Yet you won the general election and retained your seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "예비선거와 본선 결과를 나누죠.",
+          "en": "I'll separate the primary and general election results."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "머카우스키가 본선에서 승리한 방식은 {{blank}}입니다.",
+        "en": "Murkowski won the general election as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "무투표 당선자",
+            "en": "an unopposed candidate"
+          },
+          {
+            "id": "B",
+            "ko": "기명투표 후보",
+            "en": "a write-in candidate"
+          },
+          {
+            "id": "C",
+            "ko": "민주당 공식 후보",
+            "en": "the Democratic nominee"
+          },
+          {
+            "id": "D",
+            "ko": "임명직",
+            "en": "an appointee"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "예비선거와 본선 결과를 나누죠.",
+            "en": "I'll separate the primary and general election results."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "머카우스키가 본선에서 승리한 방식은 기명투표 후보입니다.",
+            "en": "Murkowski won the general election as a write-in candidate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "머카우스키가 본선에서 승리한 방식은 기명투표 후보입니다.",
+            "en": "Murkowski won the general election as a write-in candidate."
+          },
+          {
+            "speaker": "player",
+            "ko": "예비선거와 본선 결과를 나누죠.",
+            "en": "I'll separate the primary and general election results."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/AK/timeline.htm",
+          "claim": "Murkowski won the general election as a write-in candidate.",
+          "asOf": "2011-01-15"
+        },
+        {
+          "url": "https://www.senate.gov/states/AK/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2011-01-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-077-write-in-result"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-078",
+      "mechanism": "state-representation-first",
+      "learningTarget": "The new senator is Warren.",
+      "date": "2013-01-10",
+      "venue": {
+        "ko": "매사추세츠 신임 의원",
+        "en": "Massachusetts new senator"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "W000817",
+          "name": "Elizabeth Warren",
+          "ko": "엘리자베스 워런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000817.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000817"
+        },
+        {
+          "id": "K000148",
+          "name": "John Kerry",
+          "ko": "존 케리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000148.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000148"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 달 새 상원 임기를 시작했습니다.",
+          "en": "I started my Senate term this month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "우리 주의 첫 여성 상원의원입니다.",
+          "en": "You are our state's first woman senator."
+        },
+        {
+          "speaker": "player",
+          "ko": "여성 대표성 연표에 추가하죠.",
+          "en": "I'll add this to the representation timeline."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그 신임 의원은 {{blank}}입니다.",
+        "en": "The new senator is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "콜린스",
+            "en": "Collins"
+          },
+          {
+            "id": "B",
+            "ko": "스노",
+            "en": "Snowe"
+          },
+          {
+            "id": "C",
+            "ko": "워런",
+            "en": "Warren"
+          },
+          {
+            "id": "D",
+            "ko": "케리",
+            "en": "Kerry"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "여성 대표성 연표에 추가하죠.",
+            "en": "I'll add this to the representation timeline."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "그 신임 의원은 워런입니다.",
+            "en": "The new senator is Warren."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 신임 의원은 워런입니다.",
+            "en": "The new senator is Warren."
+          },
+          {
+            "speaker": "player",
+            "ko": "여성 대표성 연표에 추가하죠.",
+            "en": "I'll add this to the representation timeline."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MA/timeline.htm",
+          "claim": "The new senator is Warren.",
+          "asOf": "2013-01-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2013-01-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-078-state-representation-first"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-079",
+      "mechanism": "nomination-rule-change",
+      "learningTarget": "The cloture threshold for lower federal court nominations is a simple majority.",
+      "date": "2013-11-22",
+      "venue": {
+        "ko": "인준 절차 개정",
+        "en": "Confirmation procedure change"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000146.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000146"
+        },
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어제 인준 관련 토론 종결 선례가 바뀌었습니다.",
+          "en": "A nomination cloture precedent changed yesterday."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "일반 법안과 대법관 인준에는 아직 같은 변경이 적용되지 않습니다.",
+          "en": "The same change does not yet apply to legislation or Supreme Court nominations."
+        },
+        {
+          "speaker": "player",
+          "ko": "지명자 유형별 규칙을 나누죠.",
+          "en": "I'll separate the rules by nomination type."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하급 연방법원 지명자 토론 종결 기준은 {{blank}}입니다.",
+        "en": "The cloture threshold for lower federal court nominations is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "60표",
+            "en": "60 votes"
+          },
+          {
+            "id": "B",
+            "ko": "3분의 2",
+            "en": "two-thirds"
+          },
+          {
+            "id": "C",
+            "ko": "만장일치",
+            "en": "unanimity"
+          },
+          {
+            "id": "D",
+            "ko": "단순 과반",
+            "en": "a simple majority"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "지명자 유형별 규칙을 나누죠.",
+            "en": "I'll separate the rules by nomination type."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하급 연방법원 지명자 토론 종결 기준은 단순 과반입니다.",
+            "en": "The cloture threshold for lower federal court nominations is a simple majority."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "하급 연방법원 지명자 토론 종결 기준은 단순 과반입니다.",
+            "en": "The cloture threshold for lower federal court nominations is a simple majority."
+          },
+          {
+            "speaker": "player",
+            "ko": "지명자 유형별 규칙을 나누죠.",
+            "en": "I'll separate the rules by nomination type."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/powers-procedures/nominations/judicial-nominations-overview.htm",
+          "claim": "The cloture threshold for lower federal court nominations is a simple majority.",
+          "asOf": "2013-11-22"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2013-11-22"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2013-11-22"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-079-nomination-rule-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-080",
+      "mechanism": "majority-agenda-change",
+      "learningTarget": "The majority leader in 2015 is McConnell.",
+      "date": "2015-06-01",
+      "venue": {
+        "ko": "114대 의회 지도부",
+        "en": "114th Congress leadership"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        },
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000146.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000146"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "공화당이 상원 다수당을 차지했습니다.",
+          "en": "Republicans hold the Senate majority."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "민주당은 소수당으로 원내 협의를 합니다.",
+          "en": "Democrats negotiate as the minority."
+        },
+        {
+          "speaker": "player",
+          "ko": "새 다수당 연락처를 정하죠.",
+          "en": "I'll identify the new majority contact."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2015년 다수당 지도자는 {{blank}}입니다.",
+        "en": "The majority leader in 2015 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매코널",
+            "en": "McConnell"
+          },
+          {
+            "id": "B",
+            "ko": "리드",
+            "en": "Reid"
+          },
+          {
+            "id": "C",
+            "ko": "슈머",
+            "en": "Schumer"
+          },
+          {
+            "id": "D",
+            "ko": "더빈",
+            "en": "Durbin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "새 다수당 연락처를 정하죠.",
+            "en": "I'll identify the new majority contact."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2015년 다수당 지도자는 매코널입니다.",
+            "en": "The majority leader in 2015 is McConnell."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2015년 다수당 지도자는 매코널입니다.",
+            "en": "The majority leader in 2015 is McConnell."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 다수당 연락처를 정하죠.",
+            "en": "I'll identify the new majority contact."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The majority leader in 2015 is McConnell.",
+          "asOf": "2015-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2015-06-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2015-06-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-080-majority-agenda-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-081",
+      "mechanism": "supreme-court-cloture",
+      "learningTarget": "Cloture on Supreme Court nominations now requires a simple majority.",
+      "date": "2017-04-08",
+      "venue": {
+        "ko": "대법관 인준 선례",
+        "en": "Supreme Court confirmation precedent"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        },
+        {
+          "id": null,
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "대법관 지명자의 토론 종결 선례가 이번 주 바뀌었습니다.",
+          "en": "The cloture precedent for Supreme Court nominees changed this week."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "인준 절차와 일반 법안의 종결 규칙은 구별해야 합니다.",
+          "en": "Nomination procedure and legislative cloture must be distinguished."
+        },
+        {
+          "speaker": "player",
+          "ko": "대법관 인준과 법안 표결을 구별하죠.",
+          "en": "I'll distinguish judicial confirmations from bills."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대법관 지명자 토론 종결 기준은 이제 {{blank}}입니다.",
+        "en": "Cloture on Supreme Court nominations now requires {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "전원 찬성",
+            "en": "unanimity"
+          },
+          {
+            "id": "B",
+            "ko": "단순 과반",
+            "en": "a simple majority"
+          },
+          {
+            "id": "C",
+            "ko": "60표",
+            "en": "60 votes"
+          },
+          {
+            "id": "D",
+            "ko": "3분의 2",
+            "en": "two-thirds"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "대법관 인준과 법안 표결을 구별하죠.",
+            "en": "I'll distinguish judicial confirmations from bills."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대법관 지명자 토론 종결 기준은 이제 단순 과반입니다.",
+            "en": "Cloture on Supreme Court nominations now requires a simple majority."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "대법관 지명자 토론 종결 기준은 이제 단순 과반입니다.",
+            "en": "Cloture on Supreme Court nominations now requires a simple majority."
+          },
+          {
+            "speaker": "player",
+            "ko": "대법관 인준과 법안 표결을 구별하죠.",
+            "en": "I'll distinguish judicial confirmations from bills."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/powers-procedures/nominations/judicial-nominations-overview.htm",
+          "claim": "Cloture on Supreme Court nominations now requires a simple majority.",
+          "asOf": "2017-04-08"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2017-04-08"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2017-04-08"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-081-supreme-court-cloture"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-082",
+      "mechanism": "runoff-seat-classes",
+      "learningTarget": "Warnock's seat is in Class III.",
+      "date": "2021-01-22",
+      "venue": {
+        "ko": "조지아 결선 이후",
+        "en": "After Georgia runoffs"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "O000174",
+          "name": "Jon Ossoff",
+          "ko": "존 오소프",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/O000174.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/O000174"
+        },
+        {
+          "id": "W000790",
+          "name": "Raphael Warnock",
+          "ko": "라파엘 워녹",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000790.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000790"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "두 의석 모두 결선으로 결정됐습니다.",
+          "en": "Both seats were decided in runoffs."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하지만 정규 임기 만료 시점은 다릅니다.",
+          "en": "But the regular terms expire at different times."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의석의 다음 선거 날짜를 구별하죠.",
+          "en": "I'll distinguish the next election dates."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "워녹이 승계한 의석은 {{blank}}입니다.",
+        "en": "Warnock's seat is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Class II",
+            "en": "Class II"
+          },
+          {
+            "id": "B",
+            "ko": "Class IV",
+            "en": "Class IV"
+          },
+          {
+            "id": "C",
+            "ko": "Class III",
+            "en": "Class III"
+          },
+          {
+            "id": "D",
+            "ko": "Class I",
+            "en": "Class I"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의석의 다음 선거 날짜를 구별하죠.",
+            "en": "I'll distinguish the next election dates."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "워녹이 승계한 의석은 Class III입니다.",
+            "en": "Warnock's seat is in Class III."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "워녹이 승계한 의석은 Class III입니다.",
+            "en": "Warnock's seat is in Class III."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의석의 다음 선거 날짜를 구별하죠.",
+            "en": "I'll distinguish the next election dates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/GA/senators.htm",
+          "claim": "Warnock's seat is in Class III.",
+          "asOf": "2021-01-22"
+        },
+        {
+          "url": "https://www.senate.gov/states/GA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2021-01-22"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-082-runoff-seat-classes"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-083",
+      "mechanism": "vice-president-tiebreak",
+      "learningTarget": "The office empowered to break a tie is the vice president.",
+      "date": "2021-01-25",
+      "venue": {
+        "ko": "50대50 상원 운영",
+        "en": "Operating a 50–50 Senate"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        },
+        {
+          "id": "M000355",
+          "name": "Mitch McConnell",
+          "ko": "미치 매코널",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000355.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000355"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "양측 원내 세력은 50명씩입니다.",
+          "en": "The two sides each have 50 senators."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "새 부통령의 결정권 때문에 다수당이 달라졌습니다.",
+          "en": "The new vice president's tie-breaking power changes majority control."
+        },
+        {
+          "speaker": "player",
+          "ko": "동수 표결의 절차를 적어두죠.",
+          "en": "I'll note the tie-vote procedure."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "동수일 때 결정표를 행사할 수 있는 직책은 {{blank}}입니다.",
+        "en": "The office empowered to break a tie is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "하원의장",
+            "en": "the Speaker of the House"
+          },
+          {
+            "id": "B",
+            "ko": "법무장관",
+            "en": "the attorney general"
+          },
+          {
+            "id": "C",
+            "ko": "대법원장",
+            "en": "the chief justice"
+          },
+          {
+            "id": "D",
+            "ko": "부통령",
+            "en": "the vice president"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "동수 표결의 절차를 적어두죠.",
+            "en": "I'll note the tie-vote procedure."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "동수일 때 결정표를 행사할 수 있는 직책은 부통령입니다.",
+            "en": "The office empowered to break a tie is the vice president."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "동수일 때 결정표를 행사할 수 있는 직책은 부통령입니다.",
+            "en": "The office empowered to break a tie is the vice president."
+          },
+          {
+            "speaker": "player",
+            "ko": "동수 표결의 절차를 적어두죠.",
+            "en": "I'll note the tie-vote procedure."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The office empowered to break a tie is the vice president.",
+          "asOf": "2021-01-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2021-01-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/KY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2021-01-25"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-083-vice-president-tiebreak"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-084",
+      "mechanism": "california-vp-vacancy",
+      "learningTarget": "Harris's Senate successor is Padilla.",
+      "date": "2021-02-01",
+      "venue": {
+        "ko": "캘리포니아 임명 이후",
+        "en": "After California appointment"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "P000145",
+          "name": "Alex Padilla",
+          "ko": "앨릭스 파디야",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000145.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000145"
+        },
+        {
+          "id": "F000062",
+          "name": "Dianne Feinstein",
+          "ko": "다이앤 파인스타인",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000062.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000062"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해리스의 부통령 취임에 따른 공석으로 상원에 왔습니다.",
+          "en": "I entered the Senate through the vacancy created by Harris's move to the vice presidency."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 계속 유지됩니다.",
+          "en": "My seat continues unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "부통령 취임 전후 의석을 연결하죠.",
+          "en": "I'll link the seat before and after the inauguration."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해리스의 상원 후임은 {{blank}}입니다.",
+        "en": "Harris's Senate successor is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "파디야",
+            "en": "Padilla"
+          },
+          {
+            "id": "B",
+            "ko": "파인스타인",
+            "en": "Feinstein"
+          },
+          {
+            "id": "C",
+            "ko": "복서",
+            "en": "Boxer"
+          },
+          {
+            "id": "D",
+            "ko": "슈머",
+            "en": "Schumer"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "부통령 취임 전후 의석을 연결하죠.",
+            "en": "I'll link the seat before and after the inauguration."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "해리스의 상원 후임은 파디야입니다.",
+            "en": "Harris's Senate successor is Padilla."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "해리스의 상원 후임은 파디야입니다.",
+            "en": "Harris's Senate successor is Padilla."
+          },
+          {
+            "speaker": "player",
+            "ko": "부통령 취임 전후 의석을 연결하죠.",
+            "en": "I'll link the seat before and after the inauguration."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Harris's Senate successor is Padilla.",
+          "asOf": "2021-02-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/CA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2021-02-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-084-california-vp-vacancy"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-085",
+      "mechanism": "house-career-transition",
+      "learningTarget": "The new senator after Leahy is Welch.",
+      "date": "2023-01-20",
+      "venue": {
+        "ko": "버몬트 상원 재회",
+        "en": "Vermont Senate reunion"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "W000800",
+          "name": "Peter Welch",
+          "ko": "피터 웰치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000800.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000800"
+        },
+        {
+          "id": "S000033",
+          "name": "Bernie Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000033"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 이번 달 상원으로 옮겼습니다.",
+          "en": "I moved from the House to the Senate this month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 2007년부터 상원에 있습니다.",
+          "en": "I've served in the Senate since 2007."
+        },
+        {
+          "speaker": "player",
+          "ko": "하원 경력에서 새 상원 의석으로 연결하죠.",
+          "en": "I'll link the House career to the new Senate seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "리히 이후 새 상원의원은 {{blank}}입니다.",
+        "en": "The new senator after Leahy is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "리히",
+            "en": "Leahy"
+          },
+          {
+            "id": "B",
+            "ko": "웰치",
+            "en": "Welch"
+          },
+          {
+            "id": "C",
+            "ko": "샌더스",
+            "en": "Sanders"
+          },
+          {
+            "id": "D",
+            "ko": "제퍼즈",
+            "en": "Jeffords"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "하원 경력에서 새 상원 의석으로 연결하죠.",
+            "en": "I'll link the House career to the new Senate seat."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "리히 이후 새 상원의원은 웰치입니다.",
+            "en": "The new senator after Leahy is Welch."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "리히 이후 새 상원의원은 웰치입니다.",
+            "en": "The new senator after Leahy is Welch."
+          },
+          {
+            "speaker": "player",
+            "ko": "하원 경력에서 새 상원 의석으로 연결하죠.",
+            "en": "I'll link the House career to the new Senate seat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/VT/senators.htm",
+          "claim": "The new senator after Leahy is Welch.",
+          "asOf": "2023-01-20"
+        },
+        {
+          "url": "https://www.senate.gov/states/VT/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2023-01-20"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-085-house-career-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-086",
+      "mechanism": "appointment-after-death",
+      "learningTarget": "The new senator in October 2023 is Butler.",
+      "date": "2023-10-10",
+      "venue": {
+        "ko": "캘리포니아 공석 승계",
+        "en": "California vacancy succession"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Laphonza Butler",
+          "ko": "라폰자 버틀러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CA/senators.htm"
+        },
+        {
+          "id": "P000145",
+          "name": "Alex Padilla",
+          "ko": "앨릭스 파디야",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000145.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000145"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "파인스타인 의원 사망 후 이번 달 임명됐습니다.",
+          "en": "I was appointed this month after Senator Feinstein's death."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다른 의석에는 변화가 없습니다.",
+          "en": "The other seat is unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "임명일과 이후 선거를 구별하죠.",
+          "en": "I'll distinguish appointment from the later election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2023년 10월 신임 상원의원은 {{blank}}입니다.",
+        "en": "The new senator in October 2023 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "슈머",
+            "en": "Schumer"
+          },
+          {
+            "id": "B",
+            "ko": "복서",
+            "en": "Boxer"
+          },
+          {
+            "id": "C",
+            "ko": "버틀러",
+            "en": "Butler"
+          },
+          {
+            "id": "D",
+            "ko": "파디야",
+            "en": "Padilla"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "임명일과 이후 선거를 구별하죠.",
+            "en": "I'll distinguish appointment from the later election."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2023년 10월 신임 상원의원은 버틀러입니다.",
+            "en": "The new senator in October 2023 is Butler."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2023년 10월 신임 상원의원은 버틀러입니다.",
+            "en": "The new senator in October 2023 is Butler."
+          },
+          {
+            "speaker": "player",
+            "ko": "임명일과 이후 선거를 구별하죠.",
+            "en": "I'll distinguish appointment from the later election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "The new senator in October 2023 is Butler.",
+          "asOf": "2023-10-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/CA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2023-10-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-086-appointment-after-death"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-087",
+      "mechanism": "full-term-after-appointment",
+      "learningTarget": "Schiff's new regular term lasts six years.",
+      "date": "2025-01-10",
+      "venue": {
+        "ko": "정규 임기 선서",
+        "en": "Full-term oath"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "S001150",
+          "name": "Adam Schiff",
+          "ko": "애덤 시프",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001150.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001150"
+        },
+        {
+          "id": "P000145",
+          "name": "Alex Padilla",
+          "ko": "앨릭스 파디야",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000145.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000145"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난달 상원에 들어왔고 이번 달 정규 임기가 시작됐습니다.",
+          "en": "I entered the Senate last month and my full term began this month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 의석은 서로 다른 선거 주기를 가집니다.",
+          "en": "The two seats have different election cycles."
+        },
+        {
+          "speaker": "player",
+          "ko": "잔여 임기와 정규 임기를 나누죠.",
+          "en": "I'll separate the remaining and full terms."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "시프의 새 정규 임기는 {{blank}}입니다.",
+        "en": "Schiff's new regular term lasts {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2년",
+            "en": "two years"
+          },
+          {
+            "id": "B",
+            "ko": "4년",
+            "en": "four years"
+          },
+          {
+            "id": "C",
+            "ko": "8년",
+            "en": "eight years"
+          },
+          {
+            "id": "D",
+            "ko": "6년",
+            "en": "six years"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "잔여 임기와 정규 임기를 나누죠.",
+            "en": "I'll separate the remaining and full terms."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "시프의 새 정규 임기는 6년입니다.",
+            "en": "Schiff's new regular term lasts six years."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "시프의 새 정규 임기는 6년입니다.",
+            "en": "Schiff's new regular term lasts six years."
+          },
+          {
+            "speaker": "player",
+            "ko": "잔여 임기와 정규 임기를 나누죠.",
+            "en": "I'll separate the remaining and full terms."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.schiff.senate.gov/news/press-releases/statement-schiff-sworn-in-to-serve-six-year-term-as-californias-u-s-senator/",
+          "claim": "Schiff's new regular term lasts six years.",
+          "asOf": "2025-01-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/CA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-01-10"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-087-full-term-after-appointment"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-088",
+      "mechanism": "vice-president-seat-replacement",
+      "learningTarget": "Vance's appointed successor is Husted.",
+      "date": "2025-02-01",
+      "venue": {
+        "ko": "오하이오 의석 인수",
+        "en": "Ohio seat handover"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "H001104",
+          "name": "Jon Husted",
+          "ko": "존 허스테드",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/H001104"
+        },
+        {
+          "id": "M001242",
+          "name": "Bernie Moreno",
+          "ko": "버니 모레노",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001242.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001242"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "밴스가 부통령으로 이동한 공석에 임명됐습니다.",
+          "en": "I was appointed to the vacancy left by Vance's move to the vice presidency."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 정규 선거를 통해 취임했습니다.",
+          "en": "I entered office through the regular election."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의석의 취임 경로를 구별하죠.",
+          "en": "I'll distinguish how each entered office."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "밴스의 임명 후임은 {{blank}}입니다.",
+        "en": "Vance's appointed successor is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "허스테드",
+            "en": "Husted"
+          },
+          {
+            "id": "B",
+            "ko": "모레노",
+            "en": "Moreno"
+          },
+          {
+            "id": "C",
+            "ko": "브라운",
+            "en": "Brown"
+          },
+          {
+            "id": "D",
+            "ko": "포트먼",
+            "en": "Portman"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의석의 취임 경로를 구별하죠.",
+            "en": "I'll distinguish how each entered office."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "밴스의 임명 후임은 허스테드입니다.",
+            "en": "Vance's appointed successor is Husted."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "밴스의 임명 후임은 허스테드입니다.",
+            "en": "Vance's appointed successor is Husted."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의석의 취임 경로를 구별하죠.",
+            "en": "I'll distinguish how each entered office."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Vance's appointed successor is Husted.",
+          "asOf": "2025-02-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/OH/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-088-vice-president-seat-replacement"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-089",
+      "mechanism": "cabinet-seat-succession",
+      "learningTarget": "Rubio's appointed successor is Moody.",
+      "date": "2025-02-02",
+      "venue": {
+        "ko": "플로리다 공석 인수",
+        "en": "Florida vacancy handover"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M001244",
+          "name": "Ashley Moody",
+          "ko": "애슐리 무디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001244.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001244"
+        },
+        {
+          "id": "S001217",
+          "name": "Rick Scott",
+          "ko": "릭 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001217.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001217"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "루비오 의원이 국무장관으로 이동해 생긴 공석을 채웠습니다.",
+          "en": "I filled the vacancy left by Rubio's move to secretary of state."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다른 플로리다 의석은 그대로입니다.",
+          "en": "Florida's other seat is unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "장관직과 상원 공석을 구별하죠.",
+          "en": "I'll distinguish the cabinet office and Senate vacancy."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "루비오 후임으로 임명된 의원은 {{blank}}입니다.",
+        "en": "Rubio's appointed successor is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "루비오",
+            "en": "Rubio"
+          },
+          {
+            "id": "B",
+            "ko": "무디",
+            "en": "Moody"
+          },
+          {
+            "id": "C",
+            "ko": "스콧",
+            "en": "Scott"
+          },
+          {
+            "id": "D",
+            "ko": "넬슨",
+            "en": "Nelson"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "장관직과 상원 공석을 구별하죠.",
+            "en": "I'll distinguish the cabinet office and Senate vacancy."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "루비오 후임으로 임명된 의원은 무디입니다.",
+            "en": "Rubio's appointed successor is Moody."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "루비오 후임으로 임명된 의원은 무디입니다.",
+            "en": "Rubio's appointed successor is Moody."
+          },
+          {
+            "speaker": "player",
+            "ko": "장관직과 상원 공석을 구별하죠.",
+            "en": "I'll distinguish the cabinet office and Senate vacancy."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Rubio's appointed successor is Moody.",
+          "asOf": "2025-02-02"
+        },
+        {
+          "url": "https://www.senate.gov/states/FL/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-02"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-089-cabinet-seat-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-090",
+      "mechanism": "new-majority-leader",
+      "learningTarget": "The 119th Congress majority leader is Thune.",
+      "date": "2025-02-03",
+      "venue": {
+        "ko": "119대 의회 일정 협의",
+        "en": "119th Congress scheduling"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "T000250",
+          "name": "John Thune",
+          "ko": "존 튠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000250"
+        },
+        {
+          "id": null,
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "새 의회에서 공화당이 다수당입니다.",
+          "en": "Republicans hold the majority in the new Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "민주당은 소수당 원내 지도부를 맡습니다.",
+          "en": "Democrats lead the minority."
+        },
+        {
+          "speaker": "player",
+          "ko": "119대 의회 일정 담당을 확인하죠.",
+          "en": "I'll identify the scheduling lead."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "119대 의회 다수당 지도자는 {{blank}}입니다.",
+        "en": "The 119th Congress majority leader is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매코널",
+            "en": "McConnell"
+          },
+          {
+            "id": "B",
+            "ko": "더빈",
+            "en": "Durbin"
+          },
+          {
+            "id": "C",
+            "ko": "튠",
+            "en": "Thune"
+          },
+          {
+            "id": "D",
+            "ko": "슈머",
+            "en": "Schumer"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "119대 의회 일정 담당을 확인하죠.",
+            "en": "I'll identify the scheduling lead."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 다수당 지도자는 튠입니다.",
+            "en": "The 119th Congress majority leader is Thune."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 다수당 지도자는 튠입니다.",
+            "en": "The 119th Congress majority leader is Thune."
+          },
+          {
+            "speaker": "player",
+            "ko": "119대 의회 일정 담당을 확인하죠.",
+            "en": "I'll identify the scheduling lead."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+          "claim": "The 119th Congress majority leader is Thune.",
+          "asOf": "2025-02-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-03"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-090-new-majority-leader"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-091",
+      "mechanism": "presiding-leader-distinction",
+      "learningTarget": "The president pro tempore at the start of the 119th Congress is Grassley.",
+      "date": "2025-02-04",
+      "venue": {
+        "ko": "상원 의장석 안내",
+        "en": "Senate chair orientation"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "G000386",
+          "name": "Chuck Grassley",
+          "ko": "척 그래슬리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000386.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000386"
+        },
+        {
+          "id": "T000250",
+          "name": "John Thune",
+          "ko": "존 튠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000250"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "임시의장과 다수당 지도자는 다른 직책입니다.",
+          "en": "President pro tempore and majority leader are separate roles."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "의사일정 관리는 원내 지도부가 맡습니다.",
+          "en": "Floor scheduling is leadership business."
+        },
+        {
+          "speaker": "player",
+          "ko": "의장석 담당 명패를 확인하죠.",
+          "en": "I'll check the presiding officer's nameplate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "119대 의회 초반 임시의장은 {{blank}}입니다.",
+        "en": "The president pro tempore at the start of the 119th Congress is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "튠",
+            "en": "Thune"
+          },
+          {
+            "id": "B",
+            "ko": "슈머",
+            "en": "Schumer"
+          },
+          {
+            "id": "C",
+            "ko": "매코널",
+            "en": "McConnell"
+          },
+          {
+            "id": "D",
+            "ko": "그래슬리",
+            "en": "Grassley"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "의장석 담당 명패를 확인하죠.",
+            "en": "I'll check the presiding officer's nameplate."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 초반 임시의장은 그래슬리입니다.",
+            "en": "The president pro tempore at the start of the 119th Congress is Grassley."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 초반 임시의장은 그래슬리입니다.",
+            "en": "The president pro tempore at the start of the 119th Congress is Grassley."
+          },
+          {
+            "speaker": "player",
+            "ko": "의장석 담당 명패를 확인하죠.",
+            "en": "I'll check the presiding officer's nameplate."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/officers-staff/president-pro-tempore/presidents-pro-tempore.htm",
+          "claim": "The president pro tempore at the start of the 119th Congress is Grassley.",
+          "asOf": "2025-02-04"
+        },
+        {
+          "url": "https://www.senate.gov/states/IA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-04"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-02-04"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-091-presiding-leader-distinction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-092",
+      "mechanism": "whip-role-contact",
+      "learningTarget": "The Republican whip in the 119th Congress is Barrasso.",
+      "date": "2025-03-01",
+      "venue": {
+        "ko": "공화당 출석 조정",
+        "en": "Republican attendance coordination"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "B001261",
+          "name": "John Barrasso",
+          "ko": "존 바라소",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001261.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001261"
+        },
+        {
+          "id": "T000250",
+          "name": "John Thune",
+          "ko": "존 튠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000250"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "원내총무는 표결 참석을 확인합니다.",
+          "en": "The whip coordinates attendance for votes."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "다수당 지도부와 업무를 나눕니다.",
+          "en": "The majority leader shares leadership duties."
+        },
+        {
+          "speaker": "player",
+          "ko": "표결 연락 담당을 지정하죠.",
+          "en": "I'll identify the whip contact."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "119대 의회 공화당 원내총무는 {{blank}}입니다.",
+        "en": "The Republican whip in the 119th Congress is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "바라소",
+            "en": "Barrasso"
+          },
+          {
+            "id": "B",
+            "ko": "튠",
+            "en": "Thune"
+          },
+          {
+            "id": "C",
+            "ko": "슈머",
+            "en": "Schumer"
+          },
+          {
+            "id": "D",
+            "ko": "더빈",
+            "en": "Durbin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "표결 연락 담당을 지정하죠.",
+            "en": "I'll identify the whip contact."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 공화당 원내총무는 바라소입니다.",
+            "en": "The Republican whip in the 119th Congress is Barrasso."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "119대 의회 공화당 원내총무는 바라소입니다.",
+            "en": "The Republican whip in the 119th Congress is Barrasso."
+          },
+          {
+            "speaker": "player",
+            "ko": "표결 연락 담당을 지정하죠.",
+            "en": "I'll identify the whip contact."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+          "claim": "The Republican whip in the 119th Congress is Barrasso.",
+          "asOf": "2025-03-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/WY/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-03-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2025-03-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-092-whip-role-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-093",
+      "mechanism": "class-calendar-arizona",
+      "learningTarget": "Gallego's seat belongs to Class I.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "애리조나 선거주기",
+        "en": "Arizona election cycles"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "K000377",
+          "name": "Mark Kelly",
+          "ko": "마크 켈리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000377.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000377"
+        },
+        {
+          "id": "G000574",
+          "name": "Ruben Gallego",
+          "ko": "루벤 가예고",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000574.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000574"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 의석은 2022년 정규 선거 주기입니다.",
+          "en": "My seat follows the 2022 regular election cycle."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 2024년 정규 선거 주기입니다.",
+          "en": "Mine follows the 2024 regular election cycle."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원의 선거 달력을 나누죠.",
+          "en": "I'll split the two election calendars."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "가예고의 의석 클래스는 {{blank}}입니다.",
+        "en": "Gallego's seat belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Class IV",
+            "en": "Class IV"
+          },
+          {
+            "id": "B",
+            "ko": "Class I",
+            "en": "Class I"
+          },
+          {
+            "id": "C",
+            "ko": "Class II",
+            "en": "Class II"
+          },
+          {
+            "id": "D",
+            "ko": "Class III",
+            "en": "Class III"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "두 의원의 선거 달력을 나누죠.",
+            "en": "I'll split the two election calendars."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "가예고의 의석 클래스는 Class I입니다.",
+            "en": "Gallego's seat belongs to Class I."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "가예고의 의석 클래스는 Class I입니다.",
+            "en": "Gallego's seat belongs to Class I."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 의원의 선거 달력을 나누죠.",
+            "en": "I'll split the two election calendars."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Gallego's seat belongs to Class I.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-093-class-calendar-arizona"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-094",
+      "mechanism": "state-pair-washington",
+      "learningTarget": "The senator holding the Class III seat is Murray.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "워싱턴주 지역 접견",
+        "en": "Washington state meeting"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "C000127",
+          "name": "Maria Cantwell",
+          "ko": "마리아 캔트웰",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000127.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000127"
+        },
+        {
+          "id": "M001111",
+          "name": "Patty Murray",
+          "ko": "패티 머리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001111.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001111"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 의석은 2024년 정규 선거 주기입니다.",
+          "en": "My seat follows the 2024 regular election cycle."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 2022년 정규 선거 주기입니다.",
+          "en": "Mine follows the 2022 regular election cycle."
+        },
+        {
+          "speaker": "player",
+          "ko": "워싱턴주 의석의 만료일을 표시하죠.",
+          "en": "I'll mark Washington's seat expiration dates."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원 중 Class III 의석은 {{blank}}입니다.",
+        "en": "The senator holding the Class III seat is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스미스",
+            "en": "Smith"
+          },
+          {
+            "id": "B",
+            "ko": "클로버샤",
+            "en": "Klobuchar"
+          },
+          {
+            "id": "C",
+            "ko": "머리",
+            "en": "Murray"
+          },
+          {
+            "id": "D",
+            "ko": "캔트웰",
+            "en": "Cantwell"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "워싱턴주 의석의 만료일을 표시하죠.",
+            "en": "I'll mark Washington's seat expiration dates."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 의원 중 Class III 의석은 머리입니다.",
+            "en": "The senator holding the Class III seat is Murray."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 의원 중 Class III 의석은 머리입니다.",
+            "en": "The senator holding the Class III seat is Murray."
+          },
+          {
+            "speaker": "player",
+            "ko": "워싱턴주 의석의 만료일을 표시하죠.",
+            "en": "I'll mark Washington's seat expiration dates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/WA/senators.htm",
+          "claim": "The senator holding the Class III seat is Murray.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/WA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-094-state-pair-washington"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-095",
+      "mechanism": "independent-caucus-status",
+      "learningTarget": "King's official party designation is Independent.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "메인주 정당 표기",
+        "en": "Maine party labels"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "K000383",
+          "name": "Angus King",
+          "ko": "앵거스 킹",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000383.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000383"
+        },
+        {
+          "id": "C001035",
+          "name": "Susan Collins",
+          "ko": "수전 콜린스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001035.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001035"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 정당에 가입하지 않은 상원의원입니다.",
+          "en": "I serve as an independent senator."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 공화당 소속입니다.",
+          "en": "I am a Republican."
+        },
+        {
+          "speaker": "player",
+          "ko": "무소속과 원내 협력을 구별하죠.",
+          "en": "I'll distinguish independence from caucusing."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "킹의 공식 정당 표기는 {{blank}}입니다.",
+        "en": "King's official party designation is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "민주당",
+            "en": "Democratic"
+          },
+          {
+            "id": "B",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "C",
+            "ko": "녹색당",
+            "en": "Green"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "Independent"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "무소속과 원내 협력을 구별하죠.",
+            "en": "I'll distinguish independence from caucusing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "킹의 공식 정당 표기는 무소속입니다.",
+            "en": "King's official party designation is Independent."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "킹의 공식 정당 표기는 무소속입니다.",
+            "en": "King's official party designation is Independent."
+          },
+          {
+            "speaker": "player",
+            "ko": "무소속과 원내 협력을 구별하죠.",
+            "en": "I'll distinguish independence from caucusing."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "King's official party designation is Independent.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/ME/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-095-independent-caucus-status"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-096",
+      "mechanism": "maryland-class-pair",
+      "learningTarget": "Alsobrooks's seat belongs to Class I.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "메릴랜드 장기 달력",
+        "en": "Maryland long-term calendar"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "A000382",
+          "name": "Angela Alsobrooks",
+          "ko": "앤절라 올소브룩스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000382.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000382"
+        },
+        {
+          "id": "V000128",
+          "name": "Chris Van Hollen",
+          "ko": "크리스 밴홀런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000128.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000128"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 2025년에 정규 임기를 시작했습니다.",
+          "en": "My regular term began in 2025."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 2022년 정규 선거 주기입니다.",
+          "en": "My seat follows the 2022 regular election cycle."
+        },
+        {
+          "speaker": "player",
+          "ko": "메릴랜드 선거 일정을 준비하죠.",
+          "en": "I'll prepare the Maryland election calendar."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "올소브룩스의 의석은 {{blank}}입니다.",
+        "en": "Alsobrooks's seat belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Class I",
+            "en": "Class I"
+          },
+          {
+            "id": "B",
+            "ko": "Class II",
+            "en": "Class II"
+          },
+          {
+            "id": "C",
+            "ko": "Class III",
+            "en": "Class III"
+          },
+          {
+            "id": "D",
+            "ko": "Class IV",
+            "en": "Class IV"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "메릴랜드 선거 일정을 준비하죠.",
+            "en": "I'll prepare the Maryland election calendar."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "올소브룩스의 의석은 Class I입니다.",
+            "en": "Alsobrooks's seat belongs to Class I."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "올소브룩스의 의석은 Class I입니다.",
+            "en": "Alsobrooks's seat belongs to Class I."
+          },
+          {
+            "speaker": "player",
+            "ko": "메릴랜드 선거 일정을 준비하죠.",
+            "en": "I'll prepare the Maryland election calendar."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MD/senators.htm",
+          "claim": "Alsobrooks's seat belongs to Class I.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/MD/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-096-maryland-class-pair"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-097",
+      "mechanism": "pennsylvania-split-delegation",
+      "learningTarget": "Fetterman belongs to the Democratic Party.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "펜실베이니아 초당적 접견",
+        "en": "Pennsylvania bipartisan meeting"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "M001243",
+          "name": "Dave McCormick",
+          "ko": "데이브 매코믹",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001243.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001243"
+        },
+        {
+          "id": "F000479",
+          "name": "John Fetterman",
+          "ko": "존 페터먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000479.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000479"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 2025년부터 상원에 있습니다.",
+          "en": "I've served in the Senate since 2025."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 2023년부터 재임 중이며 정당도 다릅니다.",
+          "en": "I've served since 2023 and belong to a different party."
+        },
+        {
+          "speaker": "player",
+          "ko": "각 정당 의원실에 의견을 전달하죠.",
+          "en": "I'll send comments to both offices."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "페터먼의 정당은 {{blank}}입니다.",
+        "en": "Fetterman belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "개혁당",
+            "en": "the Reform Party"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          },
+          {
+            "id": "C",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          },
+          {
+            "id": "D",
+            "ko": "무소속",
+            "en": "no party"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "각 정당 의원실에 의견을 전달하죠.",
+            "en": "I'll send comments to both offices."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "페터먼의 정당은 민주당입니다.",
+            "en": "Fetterman belongs to the Democratic Party."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "페터먼의 정당은 민주당입니다.",
+            "en": "Fetterman belongs to the Democratic Party."
+          },
+          {
+            "speaker": "player",
+            "ko": "각 정당 의원실에 의견을 전달하죠.",
+            "en": "I'll send comments to both offices."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/PA/senators.htm",
+          "claim": "Fetterman belongs to the Democratic Party.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/PA/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-097-pennsylvania-split-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-098",
+      "mechanism": "nevada-seat-cycle",
+      "learningTarget": "Rosen's current regular term ends in 2031.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "네바다 정규 선거 안내",
+        "en": "Nevada regular election guide"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "R000608",
+          "name": "Jacky Rosen",
+          "ko": "재키 로즌",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000608.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000608"
+        },
+        {
+          "id": "C001113",
+          "name": "Catherine Cortez Masto",
+          "ko": "캐서린 코테즈 매스토",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001113.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001113"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 의석은 2024년 정규 선거 주기입니다.",
+          "en": "My seat follows the 2024 regular election cycle."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 2022년 정규 선거 주기입니다.",
+          "en": "Mine follows the 2022 regular election cycle."
+        },
+        {
+          "speaker": "player",
+          "ko": "정규 임기 만료일을 계산하죠.",
+          "en": "I'll calculate the regular term end."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "로즌의 다음 정규 임기 종료 연도는 {{blank}}입니다.",
+        "en": "Rosen's current regular term ends in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2029년",
+            "en": "2029"
+          },
+          {
+            "id": "B",
+            "ko": "2033년",
+            "en": "2033"
+          },
+          {
+            "id": "C",
+            "ko": "2031년",
+            "en": "2031"
+          },
+          {
+            "id": "D",
+            "ko": "2027년",
+            "en": "2027"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "정규 임기 만료일을 계산하죠.",
+            "en": "I'll calculate the regular term end."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "로즌의 다음 정규 임기 종료 연도는 2031년입니다.",
+            "en": "Rosen's current regular term ends in 2031."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "로즌의 다음 정규 임기 종료 연도는 2031년입니다.",
+            "en": "Rosen's current regular term ends in 2031."
+          },
+          {
+            "speaker": "player",
+            "ko": "정규 임기 만료일을 계산하죠.",
+            "en": "I'll calculate the regular term end."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Rosen's current regular term ends in 2031.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-098-nevada-seat-cycle"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-099",
+      "mechanism": "wisconsin-party-delegation",
+      "learningTarget": "Baldwin belongs to the Democratic Party.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "위스콘신 공동 청원",
+        "en": "Wisconsin joint petition"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "B001230",
+          "name": "Tammy Baldwin",
+          "ko": "태미 볼드윈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001230"
+        },
+        {
+          "id": "J000293",
+          "name": "Ron Johnson",
+          "ko": "론 존슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000293.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/J000293"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "두 사람 모두 주 전체를 대표합니다.",
+          "en": "Both of us represent the entire state."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하지만 소속 정당은 다릅니다.",
+          "en": "But we belong to different parties."
+        },
+        {
+          "speaker": "player",
+          "ko": "공동 청원과 개별 정당을 구별하죠.",
+          "en": "I'll distinguish a joint petition from individual parties."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "볼드윈의 소속 정당은 {{blank}}입니다.",
+        "en": "Baldwin belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          },
+          {
+            "id": "B",
+            "ko": "무소속",
+            "en": "no party"
+          },
+          {
+            "id": "C",
+            "ko": "녹색당",
+            "en": "the Green Party"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "공동 청원과 개별 정당을 구별하죠.",
+            "en": "I'll distinguish a joint petition from individual parties."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "볼드윈의 소속 정당은 민주당입니다.",
+            "en": "Baldwin belongs to the Democratic Party."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "볼드윈의 소속 정당은 민주당입니다.",
+            "en": "Baldwin belongs to the Democratic Party."
+          },
+          {
+            "speaker": "player",
+            "ko": "공동 청원과 개별 정당을 구별하죠.",
+            "en": "I'll distinguish a joint petition from individual parties."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/WI/senators.htm",
+          "claim": "Baldwin belongs to the Democratic Party.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/WI/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-099-wisconsin-party-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-100",
+      "mechanism": "texas-staggered-calendar",
+      "learningTarget": "Cornyn's seat belongs to Class II.",
+      "date": "2026-05-01",
+      "venue": {
+        "ko": "텍사스 임기 달력",
+        "en": "Texas term calendar"
+      },
+      "context": {
+        "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+        "en": "Fictional meeting based on Senate records; not actual quotations."
+      },
+      "cast": [
+        {
+          "id": "C001056",
+          "name": "John Cornyn",
+          "ko": "존 코닌",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001056.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001056"
+        },
+        {
+          "id": "C001098",
+          "name": "Ted Cruz",
+          "ko": "테드 크루즈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001098.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001098"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 의석은 2020년 정규 선거 주기입니다.",
+          "en": "My seat follows the 2020 regular election cycle."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 2024년 정규 선거 주기입니다.",
+          "en": "Mine follows the 2024 regular election cycle."
+        },
+        {
+          "speaker": "player",
+          "ko": "다음 텍사스 정규 선거를 표시하죠.",
+          "en": "I'll mark the next Texas regular election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "코닌의 의석은 {{blank}}입니다.",
+        "en": "Cornyn's seat belongs to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Class II",
+            "en": "Class II"
+          },
+          {
+            "id": "B",
+            "ko": "Class I",
+            "en": "Class I"
+          },
+          {
+            "id": "C",
+            "ko": "Class III",
+            "en": "Class III"
+          },
+          {
+            "id": "D",
+            "ko": "Class IV",
+            "en": "Class IV"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "player",
+            "ko": "다음 텍사스 정규 선거를 표시하죠.",
+            "en": "I'll mark the next Texas regular election."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "코닌의 의석은 Class II입니다.",
+            "en": "Cornyn's seat belongs to Class II."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "코닌의 의석은 Class II입니다.",
+            "en": "Cornyn's seat belongs to Class II."
+          },
+          {
+            "speaker": "player",
+            "ko": "다음 텍사스 정규 선거를 표시하죠.",
+            "en": "I'll mark the next Texas regular election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/TX/senators.htm",
+          "claim": "Cornyn's seat belongs to Class II.",
+          "asOf": "2026-05-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/TX/senators.htm",
+          "claim": "Senate service and state delegation history.",
+          "asOf": "2026-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-100-texas-staggered-calendar"
+      },
+      "fictional": true
+    }
+  ]
+}
