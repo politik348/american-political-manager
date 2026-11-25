@@ -1,0 +1,2597 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 70,
+  "scenes": [
+    {
+      "id": "P01-1726",
+      "mechanism": "farm-county-crossing",
+      "learningTarget": "Fresno County was split between CA-16 and CA-21 in the 117th Congress.",
+      "date": "2022-10-27",
+      "venue": {
+        "ko": "센트럴밸리 농업 간담회",
+        "en": "Central Valley farm discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "짐 코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        },
+        {
+          "id": "V000129",
+          "name": "David G. Valadao",
+          "ko": "데이비드 발라다오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000129"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "프레즈노 카운티 농업단체가 두 의원실에 초청장을 보냈습니다.",
+          "en": "A Fresno County farm group sent invitations to both offices."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제16구에도 프레즈노 일부가 있습니다.",
+          "en": "District 16 includes part of Fresno."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제21구도 그렇습니다.",
+          "en": "So does district 21."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 대표의 이름을 {{blank}}로 소개하겠습니다.",
+        "en": "I'll introduce the two representatives as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "하더와 맥너니",
+            "en": "Harder and McNerney"
+          },
+          {
+            "id": "B",
+            "ko": "가르시아와 뉴먼",
+            "en": "García and Newman"
+          },
+          {
+            "id": "C",
+            "ko": "코스타와 발라다오",
+            "en": "Costa and Valadao"
+          },
+          {
+            "id": "D",
+            "ko": "포캔과 카인드",
+            "en": "Pocan and Kind"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "농촌의 공통 현안과 개별 주민 관할을 나누어 토론합시다.",
+            "en": "Let's distinguish shared farm issues from individual casework."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "두 의원은 당시 프레즈노 일부를 각각 대표했습니다.",
+            "en": "Both represented portions of Fresno County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "Fresno County was split between CA-16 and CA-21 in the 117th Congress.",
+          "asOf": "2022-10-27"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1726-farm-county-crossing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1727",
+      "mechanism": "committee-funding",
+      "learningTarget": "Costa served on Natural Resources and Valadao on Appropriations in the 117th Congress.",
+      "date": "2022-10-28",
+      "venue": {
+        "ko": "물 공급 정책 공개 질의",
+        "en": "Water policy public questions"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1726 (2022-10-27). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1726 (2022-10-27); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "짐 코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        },
+        {
+          "id": "V000129",
+          "name": "David G. Valadao",
+          "ko": "데이비드 발라다오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000129"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "물 공급 관련 법률의 내용과 예산은 다른 문제입니다.",
+          "en": "Water legislation and funding are distinct questions."
+        },
+        {
+          "speaker": "player",
+          "ko": "주민들이 어느 위원회에 질의해야 할지 혼동합니다.",
+          "en": "Residents are confusing the committees."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 소속 위원회는 세출입니다.",
+          "en": "My assignment is Appropriations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "천연자원위원회 관할에 관해서는 {{blank}} 의원에게 질문하죠.",
+        "en": "Let's ask Representative {{blank}} about Natural Resources jurisdiction.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "발라다오",
+            "en": "Valadao"
+          },
+          {
+            "id": "B",
+            "ko": "하더",
+            "en": "Harder"
+          },
+          {
+            "id": "C",
+            "ko": "맥너니",
+            "en": "McNerney"
+          },
+          {
+            "id": "D",
+            "ko": "코스타",
+            "en": "Costa"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "질의를 정책과 예산으로 나누면 논의가 명확해지겠습니다.",
+            "en": "Separating policy and funding will clarify the discussion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "코스타는 당시 천연자원위원회 소속이었습니다.",
+            "en": "Costa served on Natural Resources."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "Costa served on Natural Resources and Valadao on Appropriations in the 117th Congress.",
+          "asOf": "2022-10-28"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1727-committee-funding"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1728",
+      "mechanism": "delta-community",
+      "learningTarget": "CA-9 and CA-10 both included portions of San Joaquin County in 2022.",
+      "date": "2022-10-29",
+      "venue": {
+        "ko": "샌호아킨강 삼각주 주민 회의",
+        "en": "San Joaquin Delta community meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "H001090",
+          "name": "Josh Harder",
+          "ko": "조시 하더",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001090.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001090"
+        },
+        {
+          "id": "M001166",
+          "name": "Jerry McNerney",
+          "ko": "제리 맥너니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001166.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001166"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "삼각주 지역 전체가 제 지역구라고 생각하는 주민이 있더군요.",
+          "en": "Some residents think the whole area is in my district."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 경계와 의회 선거구는 다를 수 있죠.",
+          "en": "County and congressional boundaries can differ."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제10구도 샌호아킨 카운티 일부를 포함합니다.",
+          "en": "District 10 also covers part of San Joaquin."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2022년 샌호아킨 카운티의 두 지역구는 {{blank}}였습니다.",
+        "en": "In 2022 the two districts covering San Joaquin County were {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제9·10구",
+            "en": "9 and 10"
+          },
+          {
+            "id": "B",
+            "ko": "제16·21구",
+            "en": "16 and 21"
+          },
+          {
+            "id": "C",
+            "ko": "제3·4구",
+            "en": "3 and 4"
+          },
+          {
+            "id": "D",
+            "ko": "제1·2구",
+            "en": "1 and 2"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민들이 자신의 주소로 담당 의원을 찾도록 안내하죠.",
+            "en": "Let's help residents locate their representative by address."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "제9구와 제10구 모두 카운티 일부를 대표했습니다.",
+            "en": "Both districts represented parts of the county."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "CA-9 and CA-10 both included portions of San Joaquin County in 2022.",
+          "asOf": "2022-10-29"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1728-delta-community"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1729",
+      "mechanism": "university-visit",
+      "learningTarget": "Merced County was wholly in Costa's CA-16 in October 2022.",
+      "date": "2022-10-30",
+      "venue": {
+        "ko": "머세드 대학생 면담",
+        "en": "Merced student meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1726 (2022-10-27). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1726 (2022-10-27); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "H001090",
+          "name": "Josh Harder",
+          "ko": "조시 하더",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001090.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001090"
+        },
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "짐 코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "머세드 학생들이 워싱턴 방문 중 지역구 의원과 만나고 싶어 합니다.",
+          "en": "Merced students visiting Washington want to meet their representative."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 사무실은 모데스토에 있습니다.",
+          "en": "My district office is in Modesto."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "당시 지도에서 머세드 카운티 전체는 제16구입니다.",
+          "en": "The current map places all of Merced County in district 16."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "학생들의 지역구 면담은 {{blank}} 의원에게 요청하겠습니다.",
+        "en": "I'll request the students' district meeting with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "하더",
+            "en": "Harder"
+          },
+          {
+            "id": "B",
+            "ko": "코스타",
+            "en": "Costa"
+          },
+          {
+            "id": "C",
+            "ko": "발라다오",
+            "en": "Valadao"
+          },
+          {
+            "id": "D",
+            "ko": "맥너니",
+            "en": "McNerney"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "지역구 면담과 정책 토론을 별도로 준비합시다.",
+            "en": "Let's prepare the district meeting separately from policy discussions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "2022년 10월 머세드는 코스타의 제16구였습니다.",
+            "en": "Merced was in Costa's district 16 in October 2022."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "Merced County was wholly in Costa's CA-16 in October 2022.",
+          "asOf": "2022-10-30"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1729-university-visit"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1730",
+      "mechanism": "return-to-office",
+      "learningTarget": "Valadao returned to the House in January 2021 after serving from 2013 to 2019.",
+      "date": "2022-10-31",
+      "venue": {
+        "ko": "의회 경력 단절 인터뷰",
+        "en": "Interview on congressional career gaps"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1727 (2022-10-28). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1727 (2022-10-28); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "V000129",
+          "name": "David G. Valadao",
+          "ko": "데이비드 발라다오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000129"
+        },
+        {
+          "id": "M001166",
+          "name": "Jerry McNerney",
+          "ko": "제리 맥너니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001166.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001166"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "의원이 한 번 의회를 떠났다가 다시 돌아올 수 있나요?",
+          "en": "Can a member leave Congress and later return?"
+        },
+        {
+          "speaker": "player",
+          "ko": "현직 의원이라고 모두 연속 재임한 것은 아니죠.",
+          "en": "Not every sitting member has served continuously."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 경우 2019년에 임기가 끝났고 2021년에 돌아왔습니다.",
+          "en": "My earlier term ended in 2019 and I returned in 2021."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "재임 기록은 공백까지 보여주어야 합니다.",
+          "en": "A service history should show gaps too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "발라다오의 복귀 시점은 {{blank}}입니다.",
+        "en": "Valadao returned in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2019년 1월",
+            "en": "January 2019"
+          },
+          {
+            "id": "B",
+            "ko": "2020년 1월",
+            "en": "January 2020"
+          },
+          {
+            "id": "C",
+            "ko": "2021년 1월",
+            "en": "January 2021"
+          },
+          {
+            "id": "D",
+            "ko": "2017년 1월",
+            "en": "January 2017"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "인터뷰에서 연속 재임과 복귀를 정확히 구분하겠습니다.",
+            "en": "We'll distinguish uninterrupted service from a return."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "발라다오는 2021년 제117대 의회에 복귀했습니다.",
+            "en": "Valadao returned in the 117th Congress in 2021."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "Valadao returned to the House in January 2021 after serving from 2013 to 2019.",
+          "asOf": "2022-10-31"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1730-return-to-office"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1731",
+      "mechanism": "urban-small-business",
+      "learningTarget": "Newman served on Small Business and Transportation and Infrastructure in 2022.",
+      "date": "2022-11-01",
+      "venue": {
+        "ko": "시카고 소상공인 원탁",
+        "en": "Chicago small-business roundtable"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "N000192",
+          "name": "Marie Newman",
+          "ko": "마리 뉴먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000192.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000192"
+        },
+        {
+          "id": "G000586",
+          "name": "Jesús G. \"Chuy\" García",
+          "ko": "추이 가르시아",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000586.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000586"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "교통 문제와 소상공인 대출을 함께 논의할 자리를 마련했습니다.",
+          "en": "I've arranged a discussion of transport and small-business credit."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 교통위원회에 참여합니다.",
+          "en": "I serve on Transportation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 그 위원회와 소기업위원회 모두에 속합니다.",
+          "en": "I serve on that committee and Small Business."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 분야의 위원회 경험을 가진 {{blank}} 의원에게 발언을 부탁하죠.",
+        "en": "Let's invite {{blank}} to address both areas of committee experience.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "가르시아",
+            "en": "García"
+          },
+          {
+            "id": "B",
+            "ko": "보스트",
+            "en": "Bost"
+          },
+          {
+            "id": "C",
+            "ko": "데이비스",
+            "en": "Davis"
+          },
+          {
+            "id": "D",
+            "ko": "뉴먼",
+            "en": "Newman"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 종류의 질문을 한 자리에서 구분해 다뤄 보겠습니다.",
+            "en": "We'll distinguish the two sets of questions at the meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "뉴먼은 두 위원회에 소속됐습니다.",
+            "en": "Newman served on both committees."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IL.htm",
+          "claim": "Newman served on Small Business and Transportation and Infrastructure in 2022.",
+          "asOf": "2022-11-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1731-urban-small-business"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1732",
+      "mechanism": "local-to-federal",
+      "learningTarget": "García served on Chicago City Council in 1986–1993 and Cook County Board in 2010–2018.",
+      "date": "2022-11-02",
+      "venue": {
+        "ko": "시의회 주민 설명회",
+        "en": "City council public workshop"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1731 (2022-11-01). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1731 (2022-11-01); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "G000586",
+          "name": "Jesús G. \"Chuy\" García",
+          "ko": "추이 가르시아",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000586.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000586"
+        },
+        {
+          "id": "N000192",
+          "name": "Marie Newman",
+          "ko": "마리 뉴먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000192.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000192"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연방의회에 오기 전 지방정부의 여러 층위를 경험했습니다.",
+          "en": "Before Congress I served at multiple levels of local government."
+        },
+        {
+          "speaker": "player",
+          "ko": "학생들이 카운티와 시의 권한을 비교하려 합니다.",
+          "en": "Students want to compare county and city responsibilities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 기관이 어떻게 다른지 사례를 들어 주실 수 있나요?",
+          "en": "Could you illustrate how the two institutions differ?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "가르시아의 지방의회 경력은 {{blank}}입니다.",
+        "en": "García's local legislative experience includes {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시카고 시의회와 쿡 카운티 위원회",
+            "en": "Chicago City Council and Cook County Board"
+          },
+          {
+            "id": "B",
+            "ko": "주 상원과 연방 상원",
+            "en": "state and U.S. Senate"
+          },
+          {
+            "id": "C",
+            "ko": "시카고 시장과 주지사",
+            "en": "Chicago mayor and governor"
+          },
+          {
+            "id": "D",
+            "ko": "연방 법원과 주 법원",
+            "en": "federal and state courts"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "학생들의 질문을 각 정부 층위에 맞춰 정리하죠.",
+            "en": "Let's organize the students' questions by government level."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "가르시아는 시의회와 카운티 위원회를 모두 거쳤습니다.",
+            "en": "García served on both bodies."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IL.htm",
+          "claim": "García served on Chicago City Council in 1986–1993 and Cook County Board in 2010–2018.",
+          "asOf": "2022-11-02"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1732-local-to-federal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1733",
+      "mechanism": "veteran-transport",
+      "learningTarget": "Bost served on Veterans' Affairs and Transportation and Infrastructure in 2022.",
+      "date": "2022-11-03",
+      "venue": {
+        "ko": "남부 일리노이 보훈 교통 회의",
+        "en": "Southern Illinois veterans' transport meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "B001295",
+          "name": "Mike Bost",
+          "ko": "마이크 보스트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001295.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001295"
+        },
+        {
+          "id": "D000619",
+          "name": "Rodney Davis",
+          "ko": "로드니 데이비스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000619.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000619"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "농업 관련 질의는 제 위원회에서 다룹니다.",
+          "en": "Agriculture questions fall within my committee's work."
+        },
+        {
+          "speaker": "player",
+          "ko": "퇴역군인 병원 접근 교통 문제도 있습니다.",
+          "en": "Veterans also have questions about travel to hospitals."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 보훈과 교통위원회에 모두 소속되어 있습니다.",
+          "en": "I serve on Veterans' Affairs and Transportation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해당 두 위원회의 관점을 {{blank}} 의원에게 듣겠습니다.",
+        "en": "I'll ask {{blank}} about those two committee perspectives.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데이비스",
+            "en": "Davis"
+          },
+          {
+            "id": "B",
+            "ko": "보스트",
+            "en": "Bost"
+          },
+          {
+            "id": "C",
+            "ko": "캐스턴",
+            "en": "Casten"
+          },
+          {
+            "id": "D",
+            "ko": "슈나이더",
+            "en": "Schneider"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "개별 보훈 지원 신청과 입법 논의를 분리하겠습니다.",
+            "en": "We'll separate individual benefits assistance from legislation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "보스트는 보훈 및 교통위원회 소속이었습니다.",
+            "en": "Bost served on both committees."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IL.htm",
+          "claim": "Bost served on Veterans' Affairs and Transportation and Infrastructure in 2022.",
+          "asOf": "2022-11-03"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1733-veteran-transport"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1734",
+      "mechanism": "election-administration",
+      "learningTarget": "Davis was ranking member of the House Administration Committee in 2022.",
+      "date": "2022-11-04",
+      "venue": {
+        "ko": "대학생 선거행정 공개 토론",
+        "en": "Student election administration forum"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1733 (2022-11-03). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1733 (2022-11-03); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "D000619",
+          "name": "Rodney Davis",
+          "ko": "로드니 데이비스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000619.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000619"
+        },
+        {
+          "id": "B001295",
+          "name": "Mike Bost",
+          "ko": "마이크 보스트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001295.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001295"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "학생들이 연방 선거행정과 하원 운영에 관해 묻고 싶습니다.",
+          "en": "Students want to ask about federal election administration and House operations."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "하원 운영위원회에서 소수당 간사를 맡고 있습니다.",
+          "en": "I'm ranking member of House Administration."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "공개적인 위원회 관할 설명을 부탁하죠.",
+          "en": "Let's ask for an explanation of public committee responsibilities."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "소수당 간사는 {{blank}} 의원입니다.",
+        "en": "The ranking member is Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "보스트",
+            "en": "Bost"
+          },
+          {
+            "id": "B",
+            "ko": "뉴먼",
+            "en": "Newman"
+          },
+          {
+            "id": "C",
+            "ko": "데이비스",
+            "en": "Davis"
+          },
+          {
+            "id": "D",
+            "ko": "가르시아",
+            "en": "García"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "선거행정과 선거운동을 구분하여 공개 토론을 진행하죠.",
+            "en": "Let's distinguish election administration from campaigning."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "데이비스는 하원 운영위원회 소수당 간사였습니다.",
+            "en": "Davis was the ranking member of House Administration."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IL.htm",
+          "claim": "Davis was ranking member of the House Administration Committee in 2022.",
+          "asOf": "2022-11-04"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1734-election-administration"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1735",
+      "mechanism": "suburban-water-dialogue",
+      "learningTarget": "Casten served on Science, Space, and Technology; Schneider on Ways and Means in 2022.",
+      "date": "2022-11-05",
+      "venue": {
+        "ko": "시카고 교외 식수 토론",
+        "en": "Chicago suburban drinking-water discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1731 (2022-11-01). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1731 (2022-11-01); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "C001117",
+          "name": "Sean Casten",
+          "ko": "숀 캐스턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001117.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001117"
+        },
+        {
+          "id": "S001190",
+          "name": "Bradley Scott Schneider",
+          "ko": "브래드 슈나이더",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001190.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001190"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "교외 주민들이 식수 검사와 재원 조달에 대해 질문합니다.",
+          "en": "Suburban residents have questions about water testing and funding."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "과학위원회 관점에서 연구 절차를 설명할 수 있습니다.",
+          "en": "I can explain research processes from the science committee perspective."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 세입위원회에서 활동합니다.",
+          "en": "I serve on Ways and Means."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "과학위원회의 관점은 {{blank}} 의원에게 요청하겠습니다.",
+        "en": "I'll ask Representative {{blank}} for the science committee perspective.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "슈나이더",
+            "en": "Schneider"
+          },
+          {
+            "id": "B",
+            "ko": "보스트",
+            "en": "Bost"
+          },
+          {
+            "id": "C",
+            "ko": "데이비스",
+            "en": "Davis"
+          },
+          {
+            "id": "D",
+            "ko": "캐스턴",
+            "en": "Casten"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 사람에게 같은 답을 요구하지 않고 각 관할에 맞춰 질문하겠습니다.",
+            "en": "We'll ask each about their respective remit."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "캐스턴은 과학·우주·기술위원회 소속이었습니다.",
+            "en": "Casten served on Science, Space, and Technology."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IL.htm",
+          "claim": "Casten served on Science, Space, and Technology; Schneider on Ways and Means in 2022.",
+          "asOf": "2022-11-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1735-suburban-water-dialogue"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1736",
+      "mechanism": "township-county",
+      "learningTarget": "Mrvan was North Township trustee 2005–2020; Baird served on Putnam County Commission 2006–2010.",
+      "date": "2022-11-06",
+      "venue": {
+        "ko": "인디애나 지방행정 토론",
+        "en": "Indiana local governance discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "M001214",
+          "name": "Frank J. Mrvan",
+          "ko": "프랭크 머밴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001214.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001214"
+        },
+        {
+          "id": "B001307",
+          "name": "James R. Baird",
+          "ko": "짐 베어드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001307.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001307"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "타운십과 카운티를 구분하는 지방행정 토론이군요.",
+          "en": "This discussion distinguishes township and county government."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분 모두 연방의회 전 지방 공직을 경험했죠?",
+          "en": "Both of you held local office before Congress?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 퍼트넘 카운티 위원회에서 일했습니다.",
+          "en": "I served on the Putnam County Commission."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "노스 타운십의 트러스티였던 분은 {{blank}} 의원입니다.",
+        "en": "The former North Township trustee is Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "머밴",
+            "en": "Mrvan"
+          },
+          {
+            "id": "B",
+            "ko": "베어드",
+            "en": "Baird"
+          },
+          {
+            "id": "C",
+            "ko": "펜스",
+            "en": "Pence"
+          },
+          {
+            "id": "D",
+            "ko": "뱅크스",
+            "en": "Banks"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민에게 지방 공직별 책임을 비교해 설명하겠습니다.",
+            "en": "We'll compare the responsibilities of the local offices."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "머밴은 2005~2020년 노스 타운십 트러스티였습니다.",
+            "en": "Mrvan held that office from 2005 to 2020."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IN.htm",
+          "claim": "Mrvan was North Township trustee 2005–2020; Baird served on Putnam County Commission 2006–2010.",
+          "asOf": "2022-11-06"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1736-township-county"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1737",
+      "mechanism": "lake-inland-exchange",
+      "learningTarget": "Lake County was in IN-1; Tippecanoe County was in IN-4 in 2022.",
+      "date": "2022-11-07",
+      "venue": {
+        "ko": "북부 산업·내륙 농업 교류",
+        "en": "Northern industry and inland agriculture exchange"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1736 (2022-11-06). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1736 (2022-11-06); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "M001214",
+          "name": "Frank J. Mrvan",
+          "ko": "프랭크 머밴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001214.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001214"
+        },
+        {
+          "id": "B001307",
+          "name": "James R. Baird",
+          "ko": "짐 베어드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001307.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001307"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "레이크 카운티와 티피카누 카운티의 지역 정책 토론을 함께 준비 중입니다.",
+          "en": "I'm preparing a joint discussion for Lake and Tippecanoe counties."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "레이크 카운티는 제1구입니다.",
+          "en": "Lake is in district one."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "티피카누는 제4구입니다.",
+          "en": "Tippecanoe is in district four."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "티피카누 주민의 대표는 {{blank}} 의원입니다.",
+        "en": "Tippecanoe residents are represented by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "머밴",
+            "en": "Mrvan"
+          },
+          {
+            "id": "B",
+            "ko": "베어드",
+            "en": "Baird"
+          },
+          {
+            "id": "C",
+            "ko": "카슨",
+            "en": "Carson"
+          },
+          {
+            "id": "D",
+            "ko": "스파츠",
+            "en": "Spartz"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "지역 경제의 차이를 토론하되 주민별 대표는 구분하죠.",
+            "en": "Let's discuss regional economies while distinguishing representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "티피카누는 베어드의 제4구에 속했습니다.",
+            "en": "Tippecanoe was in Baird's district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IN.htm",
+          "claim": "Lake County was in IN-1; Tippecanoe County was in IN-4 in 2022.",
+          "asOf": "2022-11-07"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1737-lake-inland-exchange"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1738",
+      "mechanism": "school-law",
+      "learningTarget": "Spartz served on Education and Labor and Judiciary in the 117th Congress.",
+      "date": "2022-11-08",
+      "venue": {
+        "ko": "학교 정책 모의 청문회",
+        "en": "Mock education hearing"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "S000929",
+          "name": "Victoria Spartz",
+          "ko": "빅토리아 스파츠",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000929.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000929"
+        },
+        {
+          "id": "P000615",
+          "name": "Greg Pence",
+          "ko": "그레그 펜스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000615.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000615"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "학교 제도와 법률 해석을 다루는 모의 청문회입니다.",
+          "en": "This mock hearing concerns schools and legal institutions."
+        },
+        {
+          "speaker": "player",
+          "ko": "실제 두 위원회 소속인 의원의 설명을 듣고 싶습니다.",
+          "en": "I'd like to hear from a member of both committees."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "교육·노동과 법사위원회가 제 소속입니다.",
+          "en": "My assignments include Education and Labor and Judiciary."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "학생들의 질문을 두 분야로 나누면 좋겠군요.",
+          "en": "We could group the students' questions into the two areas."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 위원회 경험을 가진 분은 {{blank}}입니다.",
+        "en": "The member with both assignments is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "펜스",
+            "en": "Pence"
+          },
+          {
+            "id": "B",
+            "ko": "카슨",
+            "en": "Carson"
+          },
+          {
+            "id": "C",
+            "ko": "스파츠",
+            "en": "Spartz"
+          },
+          {
+            "id": "D",
+            "ko": "뱅크스",
+            "en": "Banks"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "모의 청문회에서 위원회 관할을 명확히 합시다.",
+            "en": "Let's clarify committee jurisdiction in the mock hearing."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "스파츠는 두 위원회 소속이었습니다.",
+            "en": "Spartz served on both committees."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IN.htm",
+          "claim": "Spartz served on Education and Labor and Judiciary in the 117th Congress.",
+          "asOf": "2022-11-08"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1738-school-law"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1739",
+      "mechanism": "municipal-bridge",
+      "learningTarget": "Carson served on the Indianapolis-Marion County City-County Council in 2007 before Congress.",
+      "date": "2022-11-09",
+      "venue": {
+        "ko": "인디애나폴리스 주민 모임",
+        "en": "Indianapolis resident meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1738 (2022-11-08). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1738 (2022-11-08); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "C001072",
+          "name": "André Carson",
+          "ko": "안드레 카슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001072.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001072"
+        },
+        {
+          "id": "P000615",
+          "name": "Greg Pence",
+          "ko": "그레그 펜스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000615.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000615"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "시·카운티 통합 의회에서 연방의회로 진출한 사례를 듣고 싶습니다.",
+          "en": "I'd like an example of moving from a consolidated city-county council to Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2007년 그 의회에서 활동했습니다.",
+          "en": "I served on that council in 2007."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지방정부와 연방의회는 권한이 다릅니다.",
+          "en": "Local government and Congress have different powers."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그 경험을 가진 의원은 {{blank}}입니다.",
+        "en": "The member with that experience is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "펜스",
+            "en": "Pence"
+          },
+          {
+            "id": "B",
+            "ko": "베어드",
+            "en": "Baird"
+          },
+          {
+            "id": "C",
+            "ko": "머밴",
+            "en": "Mrvan"
+          },
+          {
+            "id": "D",
+            "ko": "카슨",
+            "en": "Carson"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "지역의 실제 제도를 학생들에게 설명하겠습니다.",
+            "en": "We'll explain the local institution to students."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "카슨은 2007년 시·카운티 의회 의원이었습니다.",
+            "en": "Carson served on that council in 2007."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IN.htm",
+          "claim": "Carson served on the Indianapolis-Marion County City-County Council in 2007 before Congress.",
+          "asOf": "2022-11-09"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1739-municipal-bridge"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1740",
+      "mechanism": "rural-south",
+      "learningTarget": "Crawford County was divided between IN-8 and IN-9 in 2022.",
+      "date": "2022-11-10",
+      "venue": {
+        "ko": "남부 인디애나 교통 방문",
+        "en": "Southern Indiana transport visit"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "B001275",
+          "name": "Larry Bucshon",
+          "ko": "래리 벅숀",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001275.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001275"
+        },
+        {
+          "id": "H001074",
+          "name": "Trey Hollingsworth",
+          "ko": "트레이 홀링스워스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001074.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001074"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "크로퍼드 카운티 주민 중 제9구 주민이 있습니다.",
+          "en": "Some Crawford residents live in district nine."
+        },
+        {
+          "speaker": "player",
+          "ko": "그렇다면 도로 현안에 두 의원실이 관심을 가질 수 있겠네요.",
+          "en": "Then both offices may have a role in regional road issues."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제8구에도 카운티 일부가 들어갑니다.",
+          "en": "District eight also includes part of the county."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "공동 면담에는 {{blank}}을 초청하겠습니다.",
+        "en": "I'll invite {{blank}} to the joint meeting.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "벅숀과 홀링스워스",
+            "en": "Bucshon and Hollingsworth"
+          },
+          {
+            "id": "B",
+            "ko": "카슨과 펜스",
+            "en": "Carson and Pence"
+          },
+          {
+            "id": "C",
+            "ko": "베어드와 스파츠",
+            "en": "Baird and Spartz"
+          },
+          {
+            "id": "D",
+            "ko": "머밴과 뱅크스",
+            "en": "Mrvan and Banks"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민별 담당 창구와 공통 교통 현안을 나눠 준비하죠.",
+            "en": "Let's distinguish individual casework from shared transport issues."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "두 의원실은 크로퍼드의 일부를 각각 대표했습니다.",
+            "en": "The two offices represented parts of Crawford."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-IN.htm",
+          "claim": "Crawford County was divided between IN-8 and IN-9 in 2022.",
+          "asOf": "2022-11-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1740-rural-south"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1741",
+      "mechanism": "kent-neighbors",
+      "learningTarget": "Kent County was split between MI-2 and MI-3 in 2022.",
+      "date": "2022-11-11",
+      "venue": {
+        "ko": "켄트 카운티 도시·교외 회의",
+        "en": "Kent County city-suburb meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "H001058",
+          "name": "Bill Huizenga",
+          "ko": "빌 하이젠가",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001058.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001058"
+        },
+        {
+          "id": "M001186",
+          "name": "Peter Meijer",
+          "ko": "피터 마이어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001186.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001186"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "그랜드래피즈 주변 주민들이 같은 카운티에서 왔습니다.",
+          "en": "Residents around Grand Rapids are from the same county."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구에 켄트 일부가 있습니다.",
+          "en": "District three contains part of Kent."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제2구 역시 일부를 포함합니다.",
+          "en": "District two contains part as well."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원의 공통 카운티는 {{blank}}입니다.",
+        "en": "The county shared by the two members is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "베리언",
+            "en": "Berrien"
+          },
+          {
+            "id": "B",
+            "ko": "켄트",
+            "en": "Kent"
+          },
+          {
+            "id": "C",
+            "ko": "잉햄",
+            "en": "Ingham"
+          },
+          {
+            "id": "D",
+            "ko": "오타와",
+            "en": "Ottawa"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "도시와 교외의 요청을 함께 듣고 담당 창구는 따로 안내하죠.",
+            "en": "Let's hear both communities while routing individual cases separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "켄트는 제2·3구에 걸쳐 있었습니다.",
+            "en": "Kent was divided between districts two and three."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+          "claim": "Kent County was split between MI-2 and MI-3 in 2022.",
+          "asOf": "2022-11-11"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1741-kent-neighbors"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1742",
+      "mechanism": "allegan-coordination",
+      "learningTarget": "Allegan County was split between MI-2 and MI-6 in 2022.",
+      "date": "2022-11-12",
+      "venue": {
+        "ko": "앨러건 지역 도로 토론",
+        "en": "Allegan road discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1741 (2022-11-11). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1741 (2022-11-11); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "H001058",
+          "name": "Bill Huizenga",
+          "ko": "빌 하이젠가",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001058.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001058"
+        },
+        {
+          "id": "U000031",
+          "name": "Fred Upton",
+          "ko": "프레드 업턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/U000031"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "앨러건 주민의 도로 문제가 접수됐습니다.",
+          "en": "A road concern came from Allegan residents."
+        },
+        {
+          "speaker": "player",
+          "ko": "켄트처럼 다른 의원실도 관련될까요?",
+          "en": "Could another office be involved, as with Kent?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제6구에도 앨러건 일부가 있습니다.",
+          "en": "District six includes part of Allegan too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이번에 함께 논의할 의원은 {{blank}}입니다.",
+        "en": "The members involved this time are {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "마이어와 슬롯킨",
+            "en": "Meijer and Slotkin"
+          },
+          {
+            "id": "B",
+            "ko": "레빈과 매클레인",
+            "en": "Levin and McClain"
+          },
+          {
+            "id": "C",
+            "ko": "하이젠가와 업턴",
+            "en": "Huizenga and Upton"
+          },
+          {
+            "id": "D",
+            "ko": "업턴과 슬롯킨",
+            "en": "Upton and Slotkin"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "같은 주에서도 현안에 따라 의원실 조합이 달라지겠군요.",
+            "en": "The relevant offices change with the issue and location."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "앨러건은 제2구와 제6구에 걸쳐 있었습니다.",
+            "en": "Allegan was split between districts two and six."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+          "claim": "Allegan County was split between MI-2 and MI-6 in 2022.",
+          "asOf": "2022-11-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1742-allegan-coordination"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1743",
+      "mechanism": "oakland-suburbs",
+      "learningTarget": "Oakland County was partly in MI-8 and MI-9 in 2022.",
+      "date": "2022-11-13",
+      "venue": {
+        "ko": "오클랜드 교외 주민 포럼",
+        "en": "Oakland suburban forum"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "S001208",
+          "name": "Elissa Slotkin",
+          "ko": "엘리사 슬롯킨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001208.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001208"
+        },
+        {
+          "id": "L000592",
+          "name": "Andy Levin",
+          "ko": "앤디 레빈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000592.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000592"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "오클랜드의 서로 다른 교외 지역 주민들이 회의에 왔습니다.",
+          "en": "Residents from different Oakland suburbs have joined us."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제8구도 카운티 일부를 포함합니다.",
+          "en": "District eight includes part of the county."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제9구에도 일부가 있습니다.",
+          "en": "So does district nine."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 지역구의 대표는 {{blank}}입니다.",
+        "en": "The two representatives are {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "업턴과 마이어",
+            "en": "Upton and Meijer"
+          },
+          {
+            "id": "B",
+            "ko": "하이젠가와 매클레인",
+            "en": "Huizenga and McClain"
+          },
+          {
+            "id": "C",
+            "ko": "마이어와 레빈",
+            "en": "Meijer and Levin"
+          },
+          {
+            "id": "D",
+            "ko": "슬롯킨과 레빈",
+            "en": "Slotkin and Levin"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주소에 따라 상담 창구를 구별하겠습니다.",
+            "en": "We'll distinguish casework offices by address."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "슬롯킨은 제8구, 레빈은 제9구였습니다.",
+            "en": "Slotkin served district eight and Levin district nine."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+          "claim": "Oakland County was partly in MI-8 and MI-9 in 2022.",
+          "asOf": "2022-11-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1743-oakland-suburbs"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1744",
+      "mechanism": "workforce-veterans",
+      "learningTarget": "Levin and McClain both served on Education and Labor in 2022.",
+      "date": "2022-11-14",
+      "venue": {
+        "ko": "디트로이트 외곽 인력정책 토론",
+        "en": "Detroit-area workforce discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1743 (2022-11-13). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1743 (2022-11-13); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "L000592",
+          "name": "Andy Levin",
+          "ko": "앤디 레빈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000592.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000592"
+        },
+        {
+          "id": "M001136",
+          "name": "Lisa C. McClain",
+          "ko": "리사 매클레인",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001136.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001136"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "지역 직업교육에 대한 공개 질문을 준비했습니다.",
+          "en": "I've prepared public questions about vocational education."
+        },
+        {
+          "speaker": "player",
+          "ko": "정당이 다른 두 분의 공통 위원회는 무엇인가요?",
+          "en": "Which committee do you share across party lines?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "교육·노동위원회입니다.",
+          "en": "Education and Labor."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원을 {{blank}} 위원으로 소개하겠습니다.",
+        "en": "I'll introduce both as members of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "교육·노동",
+            "en": "Education and Labor"
+          },
+          {
+            "id": "B",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "C",
+            "ko": "세입",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "D",
+            "ko": "법사",
+            "en": "Judiciary"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "공통 위원회 소속이 정책 합의를 뜻하지는 않는다는 점도 설명하죠.",
+            "en": "Let's clarify that shared membership doesn't imply agreement."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "레빈과 매클레인은 모두 교육·노동위원회에 속했습니다.",
+            "en": "Both served on Education and Labor."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+          "claim": "Levin and McClain both served on Education and Labor in 2022.",
+          "asOf": "2022-11-14"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1744-workforce-veterans"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1745",
+      "mechanism": "macomb-division",
+      "learningTarget": "Macomb County was divided between MI-9 and MI-10 in 2022.",
+      "date": "2022-11-15",
+      "venue": {
+        "ko": "매콤 카운티 주민 상담",
+        "en": "Macomb County constituent consultation"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1744 (2022-11-14). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1744 (2022-11-14); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "L000592",
+          "name": "Andy Levin",
+          "ko": "앤디 레빈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000592.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000592"
+        },
+        {
+          "id": "M001136",
+          "name": "Lisa C. McClain",
+          "ko": "리사 매클레인",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001136.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001136"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "매콤 주민이 두 의원 이름을 모두 알고 있습니다. 어느 쪽이 담당인가요?",
+          "en": "A Macomb resident knows both members' names. Which office is responsible?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제10구에도 매콤 일부가 있습니다.",
+          "en": "District ten includes part of Macomb."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제9구 역시 일부가 있죠.",
+          "en": "District nine also contains part."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이 카운티의 두 지역구 번호는 {{blank}}입니다.",
+        "en": "The two district numbers are {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2와 3",
+            "en": "2 and 3"
+          },
+          {
+            "id": "B",
+            "ko": "9와 10",
+            "en": "9 and 10"
+          },
+          {
+            "id": "C",
+            "ko": "6과 8",
+            "en": "6 and 8"
+          },
+          {
+            "id": "D",
+            "ko": "1과 4",
+            "en": "1 and 4"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "정확한 주소를 확인한 뒤 주민을 안내하죠.",
+            "en": "Let's route the resident after checking the address."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "매콤은 두 지역구에 나뉘었습니다.",
+            "en": "Macomb was divided between the two districts."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+          "claim": "Macomb County was divided between MI-9 and MI-10 in 2022.",
+          "asOf": "2022-11-15"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1745-macomb-division"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1746",
+      "mechanism": "senate-house-transition",
+      "learningTarget": "In 2022 Pocan represented WI-2 while former WI-2 member Baldwin served in the Senate.",
+      "date": "2022-11-16",
+      "venue": {
+        "ko": "매디슨 대학 공개 대화",
+        "en": "Madison university discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1697 (2012-05-09). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1697 (2012-05-09); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "P000607",
+          "name": "Mark Pocan",
+          "ko": "마크 포캔",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000607.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000607"
+        },
+        {
+          "id": "B001230",
+          "name": "Tammy Baldwin",
+          "ko": "태미 볼드윈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001230"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "옛 지역구 사진에 볼드윈 의원이 나오는데 지금도 하원의원인가요?",
+          "en": "An old district photo shows Baldwin. Is she still in the House?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "현재는 상원에서 위스콘신 전체를 대표합니다.",
+          "en": "I now represent Wisconsin in the Senate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제2구 하원 대표는 저입니다.",
+          "en": "I represent district two in the House."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2022년 매디슨의 하원 대표는 {{blank}}입니다.",
+        "en": "Madison's House representative in 2022 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "볼드윈",
+            "en": "Baldwin"
+          },
+          {
+            "id": "B",
+            "ko": "카인드",
+            "en": "Kind"
+          },
+          {
+            "id": "C",
+            "ko": "포캔",
+            "en": "Pocan"
+          },
+          {
+            "id": "D",
+            "ko": "피츠제럴드",
+            "en": "Fitzgerald"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "하원 지역구와 상원 주 전체 대표를 구분하겠습니다.",
+            "en": "We'll distinguish district and statewide representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "포캔은 제2구, 볼드윈은 상원의원이었습니다.",
+            "en": "Pocan served WI-2 and Baldwin the Senate."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WI.htm",
+          "claim": "In 2022 Pocan represented WI-2 while former WI-2 member Baldwin served in the Senate.",
+          "asOf": "2022-11-16"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1746-senate-house-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1747",
+      "mechanism": "jefferson-map-change",
+      "learningTarget": "Jefferson County was divided among WI-2, WI-5 and WI-6 in the 112th Congress, but entirely in WI-5 in October 2022.",
+      "date": "2022-11-17",
+      "venue": {
+        "ko": "제퍼슨 카운티 지도 비교",
+        "en": "Jefferson County map comparison"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1698 (2012-05-13). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1698 (2012-05-13); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "F000471",
+          "name": "Scott Fitzgerald",
+          "ko": "스콧 피츠제럴드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000471.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000471"
+        },
+        {
+          "id": "G000576",
+          "name": "Glenn Grothman",
+          "ko": "글렌 그로스먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000576.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000576"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "2012년 지도는 제퍼슨을 세 지역구로 나눕니다. 현재도 그렇나요?",
+          "en": "The 2012 map splits Jefferson among three districts. Is that still true?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "현재 제6구 명부에는 제퍼슨이 없습니다.",
+          "en": "The current district six listing omits Jefferson."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2022년에는 제5구에 카운티 전체가 포함됩니다.",
+          "en": "In 2022 district five includes the entire county."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 제퍼슨 주민의 담당 의원은 {{blank}}입니다.",
+        "en": "Jefferson's current House representative is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "그로스먼",
+            "en": "Grothman"
+          },
+          {
+            "id": "B",
+            "ko": "포캔",
+            "en": "Pocan"
+          },
+          {
+            "id": "C",
+            "ko": "카인드",
+            "en": "Kind"
+          },
+          {
+            "id": "D",
+            "ko": "피츠제럴드",
+            "en": "Fitzgerald"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "과거 지도와 현재 지도를 각각 보관하겠습니다.",
+            "en": "We'll keep both maps with their dates."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "2022년 제퍼슨은 모두 제5구였습니다.",
+            "en": "Jefferson was entirely in district five in 2022."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WI.htm",
+          "claim": "Jefferson County was divided among WI-2, WI-5 and WI-6 in the 112th Congress, but entirely in WI-5 in October 2022.",
+          "asOf": "2022-11-17"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Jefferson County was divided among WI-2, WI-5 and WI-6 in the 112th Congress, but entirely in WI-5 in October 2022.",
+          "asOf": "2022-11-17"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1747-jefferson-map-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1748",
+      "mechanism": "western-campus",
+      "learningTarget": "La Crosse and Eau Claire counties were in Kind's WI-3 in 2022.",
+      "date": "2022-11-18",
+      "venue": {
+        "ko": "위스콘신 서부 대학 교류",
+        "en": "Western Wisconsin campus exchange"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1746 (2022-11-16). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1746 (2022-11-16); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000188"
+        },
+        {
+          "id": "P000607",
+          "name": "Mark Pocan",
+          "ko": "마크 포캔",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000607.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000607"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "매디슨의 데인 카운티는 제2구입니다.",
+          "en": "Madison's Dane County lies in district two."
+        },
+        {
+          "speaker": "player",
+          "ko": "라크로스와 오클레어 학생들은 어느 대표에게 연락할까요?",
+          "en": "Which representative should La Crosse and Eau Claire students contact?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 카운티 모두 제3구에 있습니다.",
+          "en": "Both counties are in district three."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 도시 학생을 {{blank}} 의원에게 소개하겠습니다.",
+        "en": "I'll introduce the students to Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "카인드",
+            "en": "Kind"
+          },
+          {
+            "id": "B",
+            "ko": "포캔",
+            "en": "Pocan"
+          },
+          {
+            "id": "C",
+            "ko": "갤러거",
+            "en": "Gallagher"
+          },
+          {
+            "id": "D",
+            "ko": "그로스먼",
+            "en": "Grothman"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "다른 대학 지역구의 정책 요구를 비교할 수 있겠습니다.",
+            "en": "We can compare the policy concerns of different campus districts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "두 카운티는 제3구였습니다.",
+            "en": "Both counties were in district three."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WI.htm",
+          "claim": "La Crosse and Eau Claire counties were in Kind's WI-3 in 2022.",
+          "asOf": "2022-11-18"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1748-western-campus"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1749",
+      "mechanism": "lake-shipping-committee",
+      "learningTarget": "Gallagher served on Transportation and Infrastructure and Armed Services in 2022.",
+      "date": "2022-11-19",
+      "venue": {
+        "ko": "그린베이 수송 토론",
+        "en": "Green Bay shipping discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "G000579",
+          "name": "Mike Gallagher",
+          "ko": "마이크 갤러거",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000579.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000579"
+        },
+        {
+          "id": "G000576",
+          "name": "Glenn Grothman",
+          "ko": "글렌 그로스먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000576.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000576"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "그린베이에서 물류와 연방 군사 관련 질문을 함께 받았습니다.",
+          "en": "Green Bay residents submitted shipping and military-policy questions."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "교통·인프라와 군사위원회에 속합니다.",
+          "en": "I serve on Transportation and Infrastructure and Armed Services."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 예산과 교육·노동 등 다른 위원회에서 일합니다.",
+          "en": "I serve on other committees including Budget and Education and Labor."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 분야의 위원회 소속 의원은 {{blank}}입니다.",
+        "en": "The member assigned to both committees is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "그로스먼",
+            "en": "Grothman"
+          },
+          {
+            "id": "B",
+            "ko": "갤러거",
+            "en": "Gallagher"
+          },
+          {
+            "id": "C",
+            "ko": "피츠제럴드",
+            "en": "Fitzgerald"
+          },
+          {
+            "id": "D",
+            "ko": "포캔",
+            "en": "Pocan"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "공개 위원회 절차에 맞춰 질문을 분류하겠습니다.",
+            "en": "We'll group the questions by public committee responsibilities."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "갤러거는 두 위원회 소속이었습니다.",
+            "en": "Gallagher served on both committees."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WI.htm",
+          "claim": "Gallagher served on Transportation and Infrastructure and Armed Services in 2022.",
+          "asOf": "2022-11-19"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1749-lake-shipping-committee"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1750",
+      "mechanism": "dodge-suburban-line",
+      "learningTarget": "Dodge County was divided between WI-5 and WI-6 in 2022.",
+      "date": "2022-11-20",
+      "venue": {
+        "ko": "닷지 카운티 공동 주민 면담",
+        "en": "Dodge County shared constituent meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1747 (2022-11-17). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1747 (2022-11-17); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "F000471",
+          "name": "Scott Fitzgerald",
+          "ko": "스콧 피츠제럴드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000471.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000471"
+        },
+        {
+          "id": "G000576",
+          "name": "Glenn Grothman",
+          "ko": "글렌 그로스먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000576.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000576"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제5구에도 닷지 일부가 있습니다.",
+          "en": "District five includes part of Dodge."
+        },
+        {
+          "speaker": "player",
+          "ko": "제퍼슨의 경우와 달리 이곳은 아직 나뉘어 있군요.",
+          "en": "Unlike Jefferson, this county is still divided."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제6구에도 닷지 일부가 있습니다.",
+          "en": "District six also contains part of Dodge."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원을 함께 초청할 지역은 {{blank}}입니다.",
+        "en": "The county for the joint invitation is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제퍼슨",
+            "en": "Jefferson"
+          },
+          {
+            "id": "B",
+            "ko": "데인",
+            "en": "Dane"
+          },
+          {
+            "id": "C",
+            "ko": "닷지",
+            "en": "Dodge"
+          },
+          {
+            "id": "D",
+            "ko": "라크로스",
+            "en": "La Crosse"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "카운티 이름만으로 담당을 단정하지 않겠습니다.",
+            "en": "We won't assume jurisdiction from the county name alone."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "닷지는 제5·6구에 나뉘었습니다.",
+            "en": "Dodge was split between districts five and six."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-WI.htm",
+          "claim": "Dodge County was divided between WI-5 and WI-6 in 2022.",
+          "asOf": "2022-11-20"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1750-dodge-suburban-line"
+      },
+      "fictional": true
+    }
+  ]
+}
