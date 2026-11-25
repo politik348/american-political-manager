@@ -2,7 +2,7 @@ import {chromium} from 'playwright';import assert from 'node:assert/strict';impo
 const root=new URL('../data/dialogue-packs/',import.meta.url),manifest=JSON.parse(fs.readFileSync(new URL('i1-index.json',root),'utf8'));
 const scene=id=>JSON.parse(fs.readFileSync(new URL(id.split('-')[0]+'/part-'+String(Math.ceil(+id.split('-')[1]/25)).padStart(2,'0')+'.json',root),'utf8')).scenes.find(x=>x.id===id);
 const browser=await chromium.launch({headless:true});try{
- const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const page=await browser.newPage({serviceWorkers:'block'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(new URL('play-i1-pilot.html',process.env.APM_URL||'http://127.0.0.1:8000/').href);
  await page.locator('[data-action="lobby:career"]').click();await page.locator('#startyear').selectOption('2026');await page.locator('#startform').locator('select[name=mode]').selectOption('alternate');await page.locator('#startform button[type=submit]').click();
  const open=async id=>{await page.locator('#i1-jump').fill(id);await page.locator('[data-action="meet:pilot:jump"]').click();await page.locator('#i1-pilot .eyebrow').filter({hasText:id}).waitFor()};
