@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {venues,buildRoster,scenarioCount,startEncounter,answerEncounter,closeEncounter} from '../encounters.js';
+import {newGame} from '../engine.js';
+const read=p=>JSON.parse(fs.readFileSync(new URL('../data/'+p,import.meta.url)));
+const W=read('world.json'),H=read('historical-people.json'),R=read('encounter-records.json'),P=read('portraits.json');
+const current=read('legislators-current.json').map(p=>({id:p.id.bioguide,name:p.name.official_full||[p.name.first,p.name.middle,p.name.last,p.name.suffix].filter(Boolean).join(' '),terms:p.terms,wiki:p.id.wikipedia}));
+const people=[...current,...H.people,...R.people];
+test('at least thousands of generated scene combinations from real dated records',()=>{assert.equal(venues.length,24);assert.ok(scenarioCount(people,'2026-10-01',W.states,R.closeRaces)>1000)});
+test('term dates, close race candidates and no future-term leakage',()=>{for(const date of ['1900-10-01','1960-10-01','2024-10-01','2026-10-01'])for(const row of buildRoster(people,date,R.closeRaces))assert.ok(row.term.start<=date&&row.term.end>=date);const rows=buildRoster(people,'2024-10-01',R.closeRaces).filter(r=>r.race);assert.equal(rows.length,10);assert.ok(rows.every(r=>r.term.district===r.race.district&&r.term.state===r.race.state))});
+test('four unique answers, source and persistent contact recall',()=>{let s=newGame('Player','CA','Democrat',2024,'alternate');for(let i=0;i<12;i++){s.quarter=i%4+1;s.year=2024+Math.floor(i/4);const e=startEncounter(s,people,W.states,R.closeRaces,P);assert.ok(e);assert.equal(e.options.length,4);assert.equal(new Set(e.options).size,4);assert.equal(e.options.filter(x=>x===e.answer).length,1);assert.ok(e.source.startsWith('https://'));assert.ok(answerEncounter(s,e.options.indexOf(e.answer)));assert.equal(answerEncounter(s,0),false);assert.ok(closeEncounter(s));assert.equal(startEncounter(s,people,W.states,R.closeRaces,P),null);s=JSON.parse(JSON.stringify(s))}assert.equal(s.encounters.history.length,12)});
+test('new time slot does not retain an unfinished scene',()=>{const s=newGame('Player','CA','Democrat',2024,'alternate');const a=startEncounter(s,people,W.states,R.closeRaces,P);s.quarter++;const b=startEncounter(s,people,W.states,R.closeRaces,P);assert.notEqual(a.id,b.id);assert.ok(a.closed)});
+test('1900 and 1960 fallback produces valid choices',()=>{for(const year of [1900,1960]){const s=newGame('Player','CA','Democrat',year,'alternate');s.quarter=4;const e=startEncounter(s,people,W.states,R.closeRaces,P);assert.ok(e);assert.equal(e.options.length,4)}});
