@@ -1,0 +1,1155 @@
+{
+  "schema": 1,
+  "team": "Q2-B",
+  "round": 3,
+  "created": "2026-11-25",
+  "scope": {
+    "planned_start": "P01-1476",
+    "planned_end": "P01-1575",
+    "actual_start": "P01-1476",
+    "actual_end": "P01-1500",
+    "batch_size": 25
+  },
+  "legacy": {
+    "path": "docs/audits/P01-Q2-AUDIT.json",
+    "observed_blob_sha": "27ca2887ec3eb724b23cfde01348cb30afc867ee",
+    "reported_prior_core_count": 800,
+    "prior_count_revalidated": false,
+    "legacy_mutated": false
+  },
+  "batch": {
+    "scene_path": "data/dialogue-packs/P01/part-60.json",
+    "source_blob_sha_before": "0d0edc8d7952e0c7da517fede5013130ecf966f8",
+    "source_blob_sha_after": "71d0115a3368b5af3cd2210997e832484b540c9f",
+    "core_verified": 25,
+    "corrected": 2,
+    "unchanged": 23,
+    "all_cast_ids_officially_verified": 18,
+    "unique_cast_count": 24,
+    "unique_cast_ids_officially_verified": 19,
+    "scope_limitations": [
+      "Core factual verification does not imply every cast identifier or every possible mid-Congress committee change was independently confirmed. No claim of full nine-axis clearance for partial records.",
+      "Earlier linked scenes outside this batch and game runtime were not audited."
+    ]
+  },
+  "records": [
+    {
+      "id": "P01-1476",
+      "part": 60,
+      "date": "2020-08-01",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "St. George was included in Stewart's UT-2, and Bishop served UT-1.",
+      "correct": "A",
+      "correct_answer": "Stewart",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-UT.htm",
+          "locator": "HTML extraction lines 85–119,129–163,185–187",
+          "findings": "UT-1 Republican Bishop and UT-2 Republican Stewart; St. George city and Stewart office listed; Bishop Brigham City office listed."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "S001192",
+          "name": "Chris Stewart",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=S001192"
+        },
+        {
+          "id": "B001250",
+          "name": "Rob Bishop",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=B001250"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1477",
+      "part": 60,
+      "date": "2020-08-03",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Curtis was mayor of Provo 2010–2017; McAdams was Salt Lake County mayor 2013–2019.",
+      "correct": "B",
+      "correct_answer": "a county government",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-UT.htm",
+          "locator": "HTML extraction lines 205–219,254–267",
+          "findings": "UT-3 Republican Curtis and UT-4 Democrat McAdams; municipal mayor versus county mayor, both prior to 2020; Provo library confirms 2010–2017 despite House biography using election year 2009."
+        },
+        {
+          "url": "https://www.provolibrary.gov/provolibrary/provomayors",
+          "findings": "Municipal roster confirms Curtis served 2010–2017."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "C001114",
+          "name": "John R. Curtis",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/C/CURTIS,-John-R--(C001114)/"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/M/MCADAMS,-Ben-(M001209)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1478",
+      "part": 60,
+      "date": "2020-08-05",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Both UT-2 and UT-4 included parts of Salt Lake County in the 116th Congress.",
+      "correct": "C",
+      "correct_answer": "the resident's address",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-UT.htm",
+          "locator": "HTML extraction lines 129–163,241–242,254–267,287–288",
+          "findings": "UT-2 and UT-4 each include part of Salt Lake County; UT-3 also includes part, which does not contradict the two-district statement; address is the unique relevant choice."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "S001192",
+          "name": "Chris Stewart",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=S001192"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/M/MCADAMS,-Ben-(M001209)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1479",
+      "part": 60,
+      "date": "2020-08-07",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Bishop taught high school and was Utah House speaker during his last two years in the state legislature.",
+      "correct": "D",
+      "correct_answer": "Utah House",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-UT.htm",
+          "locator": "HTML extraction lines 85–98,205–219",
+          "findings": "Bishop taught high school, was Utah House speaker in 1992–1994; Curtis had municipal executive service."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "B001250",
+          "name": "Rob Bishop",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=B001250"
+        },
+        {
+          "id": "C001114",
+          "name": "John R. Curtis",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/C/CURTIS,-John-R--(C001114)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1480",
+      "part": 60,
+      "date": "2020-08-09",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "McAdams served on House Financial Services and Curtis on Natural Resources in 2020.",
+      "correct": "A",
+      "correct_answer": "McAdams",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-UT.htm",
+          "locator": "HTML extraction lines 205–219,254–267",
+          "findings": "Curtis Natural Resources and Foreign Affairs; McAdams Financial Services and Science, Space, and Technology; answer A fits financial regulation."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "C001114",
+          "name": "John R. Curtis",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/C/CURTIS,-John-R--(C001114)/"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/M/MCADAMS,-Ben-(M001209)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1481",
+      "part": 60,
+      "date": "2020-08-11",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Estes served as Sedgwick County treasurer before Kansas state treasurer.",
+      "correct": "B",
+      "correct_answer": "Sedgwick County treasurer",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "locator": "HTML extraction lines 105–116,278–290",
+          "findings": "KS-4 Republican Estes held county and state treasury posts; KS-1 Republican Marshall hospital board experience."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "E000298",
+          "name": "Ron Estes",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/E/ESTES,-Ron-(E000298)/"
+        },
+        {
+          "id": "M001198",
+          "name": "Roger Marshall",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: M001198 (Roger Marshall); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    },
+    {
+      "id": "P01-1482",
+      "part": 60,
+      "date": "2020-08-13",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Marshall chaired the board of Great Bend Regional Hospital before House service.",
+      "correct": "C",
+      "correct_answer": "Great Bend Regional Hospital",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "locator": "HTML extraction lines 105–116,278–290",
+          "findings": "Marshall's Great Bend Regional Hospital board chair role confirmed; distinct from Estes treasury work."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "M001198",
+          "name": "Roger Marshall",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        },
+        {
+          "id": "E000298",
+          "name": "Ron Estes",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/E/ESTES,-Ron-(E000298)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: M001198 (Roger Marshall); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    },
+    {
+      "id": "P01-1483",
+      "part": 60,
+      "date": "2020-08-15",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Davids attended Haskell Indian Nations University in Lawrence.",
+      "correct": "D",
+      "correct_answer": "Haskell Indian Nations University",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "locator": "HTML extraction lines 182–194,235–246",
+          "findings": "KS-3 Democrat Davids attended Haskell in Lawrence; KS-2 Republican Watkins attended West Point; no graduation year asserted."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "D000629",
+          "name": "Sharice Davids",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/D/DAVIDS,-Sharice-(D000629)/"
+        },
+        {
+          "id": "W000824",
+          "name": "Steve Watkins",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=W000824"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1484",
+      "part": 60,
+      "date": "2020-08-17",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Davids (D) served on Transportation and Infrastructure and Marshall (R) on Agriculture.",
+      "correct": "A",
+      "correct_answer": "Marshall",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "locator": "HTML extraction lines 105–116,235–246,278–290",
+          "findings": "Marshall Agriculture; Davids Transportation and Infrastructure; Estes Ways and Means; correct agricultural referral A. Sinema was an Arizona senator, not a Kansas House member."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AZ.htm",
+          "locator": "11–25",
+          "findings": "Sinema was Arizona senator."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "D000629",
+          "name": "Sharice Davids",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/D/DAVIDS,-Sharice-(D000629)/"
+        },
+        {
+          "id": "M001198",
+          "name": "Roger Marshall",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: M001198 (Roger Marshall); the directory confirms the person/office, but the ID page was inaccessible.",
+        "Earlier scene P01-1117 is outside this batch and was not re-audited; its vote is not the present answer."
+      ]
+    },
+    {
+      "id": "P01-1485",
+      "part": 60,
+      "date": "2020-08-19",
+      "core_fact_independently_verified": true,
+      "status": "verified_after_correction",
+      "learningTarget": "Watkins served on House Veterans' Affairs until his resignation was accepted on July 20, 2020; Moran chaired Senate Veterans' Affairs in 2020.",
+      "correct": "B",
+      "correct_answer": "different chambers",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "locator": "HTML extraction lines 49–71,182–194",
+          "findings": "Moran chaired Senate Veterans' Affairs; Watkins remained a House member but committee resignation accepted July 20. July directory committee listing is stale; corrected dialogue to past tense."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CRPT-116hrpt698/html/CRPT-116hrpt698.htm",
+          "locator": "74–104, footnote 1",
+          "findings": "Committee resignation dated July 20; no reappointment shown in end-of-Congress membership."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CREC-2020-07-20/pdf/CREC-2020-07-20-pt1-PgH3584-7.pdf",
+          "locator": "H3584",
+          "findings": "House accepted resignation."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "W000824",
+          "name": "Steve Watkins",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=W000824"
+        },
+        {
+          "id": "M000934",
+          "name": "Jerry Moran",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [
+        "Changed current House committee membership to former membership; added resignation date, fixed both languages and evidence; answer retained."
+      ],
+      "correction_commit": "ded2a2add21760d3824ebec54fc2de5110564812",
+      "unconfirmed": [
+        "Official individual identifier lookup: M000934 (Jerry Moran); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    },
+    {
+      "id": "P01-1486",
+      "part": 60,
+      "date": "2020-08-21",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Norcross worked as an electrician in IBEW Local 351 1979–1993.",
+      "correct": "C",
+      "correct_answer": "IBEW Local 351",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 81–98,140–148",
+          "findings": "NJ-1 Democrat Norcross worked as IBEW Local 351 electrician 1979–1993; NJ-2 Republican Van Drew was a dentist."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "N000188",
+          "name": "Donald Norcross",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/N/NORCROSS,-Donald-(N000188)/"
+        },
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/V/VAN-DREW,-Jefferson-(V000133)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1487",
+      "part": 60,
+      "date": "2020-08-23",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Van Drew represented Atlantic City in NJ-2, Kim represented NJ-3.",
+      "correct": "D",
+      "correct_answer": "Van Drew",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 138–190,205–219,237–245",
+          "findings": "NJ-2 Van Drew included Atlantic City and Cape May; NJ-3 Kim represented parts of Burlington and Ocean."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/V/VAN-DREW,-Jefferson-(V000133)/"
+        },
+        {
+          "id": "K000394",
+          "name": "Andy Kim",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/K/KIM,-Andy-(K000394)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1488",
+      "part": 60,
+      "date": "2020-08-25",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Kim served as Iraq director on National Security Council 2013–2015; Sherrill served in Navy.",
+      "correct": "A",
+      "correct_answer": "National Security Council",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 205–219,638–645",
+          "findings": "NJ-3 Democrat Kim NSC Iraq director 2013–2015; NJ-11 Democrat Sherrill Navy service."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "K000394",
+          "name": "Andy Kim",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/K/KIM,-Andy-(K000394)/"
+        },
+        {
+          "id": "S001207",
+          "name": "Mikie Sherrill",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/S/SHERRILL,-Mikie-(S001207)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1489",
+      "part": 60,
+      "date": "2020-08-27",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Kim's district office in Toms River was located in the township town hall in 2020.",
+      "correct": "B",
+      "correct_answer": "town hall",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 140–157,205–238",
+          "findings": "Kim office at Toms River Township Town Hall; Van Drew district office Mays Landing."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "K000394",
+          "name": "Andy Kim",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/K/KIM,-Andy-(K000394)/"
+        },
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/V/VAN-DREW,-Jefferson-(V000133)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1490",
+      "part": 60,
+      "date": "2020-08-29",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Malinowski served as Assistant Secretary of State for Democracy, Human Rights, and Labor 2014–2017.",
+      "correct": "C",
+      "correct_answer": "Department of State",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 205–219,413–431",
+          "findings": "NJ-7 Democrat Malinowski State Department assistant secretary 2014–2017; Kim prior State Department role."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "M001203",
+          "name": "Tom Malinowski",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/M/MALINOWSKI,-Tom-(M001203)/"
+        },
+        {
+          "id": "K000394",
+          "name": "Andy Kim",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/K/KIM,-Andy-(K000394)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1491",
+      "part": 60,
+      "date": "2020-08-31",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Sherrill's NJ-11 included Parsippany-Troy Hills; Booker represented NJ statewide.",
+      "correct": "D",
+      "correct_answer": "Sherrill",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-NJ.htm",
+          "locator": "HTML extraction lines 46–59,638–645,657–670",
+          "findings": "Sherrill represented NJ-11 including Parsippany-Troy Hills; Booker statewide NJ senator."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "S001207",
+          "name": "Mikie Sherrill",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/S/SHERRILL,-Mikie-(S001207)/"
+        },
+        {
+          "id": "B001288",
+          "name": "Cory A. Booker",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: B001288 (Cory A. Booker); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    },
+    {
+      "id": "P01-1492",
+      "part": 60,
+      "date": "2020-09-02",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Kirkpatrick served as Sedona city attorney 1990–1991.",
+      "correct": "A",
+      "correct_answer": "city attorney",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AZ.htm",
+          "locator": "HTML extraction lines 93–104,158–178",
+          "findings": "AZ-2 Democrat Kirkpatrick Sedona city attorney 1990–1991; AZ-1 Democrat O'Halleran Chicago police 1966–1979."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Detail/16560"
+        },
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=O000171"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1493",
+      "part": 60,
+      "date": "2020-09-04",
+      "core_fact_independently_verified": true,
+      "status": "verified_after_correction",
+      "learningTarget": "Kirkpatrick represented AZ-1 in the 111th, 113th and 114th Congresses (January 3, 2009–January 3, 2011; January 3, 2013–January 3, 2017) and AZ-2 in 2020.",
+      "correct": "B",
+      "correct_answer": "AZ-2",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AZ.htm",
+          "locator": "HTML extraction lines 93–104,158–178",
+          "findings": "Kirkpatrick AZ-1 in 111th, 113th, 114th; AZ-2 in 116th; exact earlier term endpoints clarified with House History; O'Halleran AZ-1."
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/16560",
+          "locator": "Concise Biography",
+          "findings": "Exact earlier term dates."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Detail/16560"
+        },
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=O000171"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [
+        "Clarified exact earlier terms and Congress numbers; answer and dialogue retained."
+      ],
+      "correction_commit": "ded2a2add21760d3824ebec54fc2de5110564812",
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1494",
+      "part": 60,
+      "date": "2020-09-06",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Pima County was partly in AZ-1 and AZ-2 in the 116th Congress.",
+      "correct": "C",
+      "correct_answer": "a specific address",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AZ.htm",
+          "locator": "HTML extraction lines 93–104,141–143,158–178,209–213,247–249",
+          "findings": "AZ-1 and AZ-2 included part of Pima County; AZ-3 also included part. Street address is the unique relevant option."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=O000171"
+        },
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Detail/16560"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1495",
+      "part": 60,
+      "date": "2020-09-08",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "O'Halleran belonged to Congressional Native American Caucus; McSally served on Senate Indian Affairs in 2020.",
+      "correct": "D",
+      "correct_answer": "Congressional Native American Caucus",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AZ.htm",
+          "locator": "HTML extraction lines 45–67,93–104",
+          "findings": "O'Halleran Congressional Native American Caucus; McSally Republican senator serving on Indian Affairs."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=O000171"
+        },
+        {
+          "id": "M001197",
+          "name": "Martha McSally",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=M001197"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1496",
+      "part": 60,
+      "date": "2020-09-10",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Phillips' MN-3 included Eden Prairie and Minnetonka; his office was in Minnetonka.",
+      "correct": "A",
+      "correct_answer": "Phillips",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-MN.htm",
+          "locator": "HTML extraction lines 236–243,260–271,285–292",
+          "findings": "MN-3 Democrat Phillips represented Eden Prairie and Minnetonka and had Minnetonka office; MN-4 DFL McCollum served St. Paul area."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "P000616",
+          "name": "Dean Phillips",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=P000616"
+        },
+        {
+          "id": "M001143",
+          "name": "Betty McCollum",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/M/MCCOLLUM,-Betty-(M001143)/"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1497",
+      "part": 60,
+      "date": "2020-09-12",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Phillips co-founded Penny's Coffee in 2016; Hagedorn served on House Small Business.",
+      "correct": "B",
+      "correct_answer": "Penny's Coffee",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-MN.htm",
+          "locator": "HTML extraction lines 98–105,236–243",
+          "findings": "Phillips co-founded Penny's Coffee in 2016; MN-1 Republican Hagedorn Small Business committee."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "P000616",
+          "name": "Dean Phillips",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=P000616"
+        },
+        {
+          "id": "H001088",
+          "name": "Jim Hagedorn",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=H001088"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1498",
+      "part": 60,
+      "date": "2020-09-14",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Hagedorn worked in Treasury's Bureau of Engraving and Printing as congressional affairs officer.",
+      "correct": "C",
+      "correct_answer": "Bureau of Engraving and Printing",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-MN.htm",
+          "locator": "HTML extraction lines 98–105,236–243",
+          "findings": "Hagedorn served as Treasury Bureau of Engraving and Printing congressional affairs officer; Phillips Financial Services."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "H001088",
+          "name": "Jim Hagedorn",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=H001088"
+        },
+        {
+          "id": "P000616",
+          "name": "Dean Phillips",
+          "status": "verified_official_name_id",
+          "source": "https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=P000616"
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "pass"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": []
+    },
+    {
+      "id": "P01-1499",
+      "part": 60,
+      "date": "2020-09-16",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Alaska had one at-large House seat in 2020; Young held it, Murkowski was senator.",
+      "correct": "D",
+      "correct_answer": "Alaska at large",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AK.htm",
+          "locator": "HTML extraction lines 11–23,87–102",
+          "findings": "One at-large House seat held by Republican Young; Murkowski Republican senator statewide."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "Y000033",
+          "name": "Don Young",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/Y/YOUNG,-Donald-Edwin-(Y000033)/"
+        },
+        {
+          "id": "M001153",
+          "name": "Lisa Murkowski",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: M001153 (Lisa Murkowski); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    },
+    {
+      "id": "P01-1500",
+      "part": 60,
+      "date": "2020-09-18",
+      "core_fact_independently_verified": true,
+      "status": "verified_core_no_change",
+      "learningTarget": "Young served on Fort Yukon city council for six years, four as mayor; Sullivan headed Alaska Department of Natural Resources 2011–2013.",
+      "correct": "A",
+      "correct_answer": "Fort Yukon",
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-AK.htm",
+          "locator": "HTML extraction lines 45–60,87–102",
+          "findings": "Young six years Fort Yukon council, four as mayor; Republican senator Sullivan headed Alaska DNR 2011–2013."
+        }
+      ],
+      "cast_id_checks": [
+        {
+          "id": "Y000033",
+          "name": "Don Young",
+          "status": "verified_official_name_id",
+          "source": "https://history.house.gov/People/Listing/Y/YOUNG,-Donald-Edwin-(Y000033)/"
+        },
+        {
+          "id": "S001198",
+          "name": "Dan Sullivan",
+          "status": "pending_official_id_crosscheck",
+          "source": null
+        }
+      ],
+      "checks": {
+        "office_party_district": "checked against July 2020 official directory; subsequent known changes checked where identified",
+        "answer_uniqueness": "pass on stated choices and question",
+        "future_leakage": "none identified in current scene text",
+        "legislative_action_stage": "not applicable",
+        "fictional_label": "pass",
+        "boundary": "historical district/county claims checked where present",
+        "bioguide_ids": "partial"
+      },
+      "changes": [],
+      "correction_commit": null,
+      "unconfirmed": [
+        "Official individual identifier lookup: S001198 (Dan Sullivan); the directory confirms the person/office, but the ID page was inaccessible."
+      ]
+    }
+  ]
+}
