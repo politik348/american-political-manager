@@ -1,0 +1,2698 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 71,
+  "scenes": [
+    {
+      "id": "P01-1751",
+      "mechanism": "bridge-aid",
+      "learningTarget": "Mfume and Harris joined the March 28 statement acknowledging approval of $60 million in quick-release emergency funds.",
+      "date": "2024-03-29",
+      "venue": {
+        "ko": "볼티모어 항만 회의",
+        "en": "Baltimore port meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "M000687",
+          "name": "Kweisi Mfume",
+          "ko": "음푸메",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000687.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000687"
+        },
+        {
+          "id": "H001052",
+          "name": "Andy Harris",
+          "ko": "해리스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001052.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001052"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주민들이 긴급 지원이 승인됐는지 묻습니다.",
+          "en": "Residents ask whether emergency funding has been approved."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "대표단은 주정부의 요청을 지지했습니다.",
+          "en": "Our delegation supported the state request."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "승인된 신속 집행액은 별개로 설명해야 합니다.",
+          "en": "We should separately explain the approved quick-release amount."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "승인액은 {{blank}}입니다.",
+        "en": "The approved amount was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "350만 달러",
+            "en": "$3.5 million"
+          },
+          {
+            "id": "B",
+            "ko": "2천만 달러",
+            "en": "$20 million"
+          },
+          {
+            "id": "C",
+            "ko": "6억 달러",
+            "en": "$600 million"
+          },
+          {
+            "id": "D",
+            "ko": "6천만 달러",
+            "en": "$60 million"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "승인액과 추가 복구 요구를 구분하죠.",
+            "en": "Let's distinguish approved money from future requests."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "대표단은 6천만 달러 신속 집행 승인을 언급했습니다.",
+            "en": "The statement acknowledged $60 million."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://raskin.house.gov/2024/3/following-francis-scott-key-bridge-collapse-team-maryland-voices-united-support-for-federal-emergency-relief-funding",
+          "claim": "Mfume and Harris joined the March 28 statement acknowledging approval of $60 million in quick-release emergency funds.",
+          "asOf": "2024-03-29"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1751-bridge-aid"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1752",
+      "mechanism": "worker-referral",
+      "learningTarget": "Raskin and Ruppersberger joined the April 5 announcement of $3.5 million in National Dislocated Worker Grant funding.",
+      "date": "2024-04-06",
+      "venue": {
+        "ko": "항만 노동자 상담",
+        "en": "Port worker consultation"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1751 (2024-03-29). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1751 (2024-03-29); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "R000606",
+          "name": "Jamie Raskin",
+          "ko": "래스킨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000606.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000606"
+        },
+        {
+          "id": "R000576",
+          "name": "C. A. Dutch Ruppersberger",
+          "ko": "루퍼스버거",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000576.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000576"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "항만 작업 중단으로 소득을 잃은 주민이 왔습니다.",
+          "en": "A resident lost income after port operations stopped."
+        },
+        {
+          "speaker": "player",
+          "ko": "교량 건설비와 다른 고용 지원이 있나요?",
+          "en": "Is there employment assistance separate from construction funding?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "4월 5일 노동부의 지원 발표를 참고합시다.",
+          "en": "Let's consult the April 5 Labor Department announcement."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "관련 프로그램은 {{blank}}입니다.",
+        "en": "The relevant program is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "National Dislocated Worker Grant",
+            "en": "National Dislocated Worker Grant"
+          },
+          {
+            "id": "B",
+            "ko": "Pell Grant",
+            "en": "Pell Grant"
+          },
+          {
+            "id": "C",
+            "ko": "Medicare Advantage",
+            "en": "Medicare Advantage"
+          },
+          {
+            "id": "D",
+            "ko": "Highway Trust Fund",
+            "en": "Highway Trust Fund"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "노동자에게 공식 지원 안내를 전달하죠.",
+            "en": "Let's direct workers to official assistance information."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "350만 달러는 긴급 실직자 지원 프로그램 자금입니다.",
+            "en": "The $3.5 million came through the dislocated worker program."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://raskin.house.gov/2024/4/maryland-delegation-announces-first-3-5-million-installment-of-federal-funds-to-support-port-of-baltimore-workers-impacted-by-francis-scott-key-bridge-collapse",
+          "claim": "Raskin and Ruppersberger joined the April 5 announcement of $3.5 million in National Dislocated Worker Grant funding.",
+          "asOf": "2024-04-06"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1752-worker-referral"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1753",
+      "mechanism": "recovery-radio",
+      "learningTarget": "Ivey and Sarbanes joined the announcement of funds for temporary cleanup and recovery jobs.",
+      "date": "2024-04-08",
+      "venue": {
+        "ko": "항만 지역 방송",
+        "en": "Port community broadcast"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1752 (2024-04-06). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1752 (2024-04-06); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "I000058",
+          "name": "Glenn Ivey",
+          "ko": "아이비",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/I000058.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/I000058"
+        },
+        {
+          "id": "S001168",
+          "name": "John P. Sarbanes",
+          "ko": "사베인스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001168.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001168"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "방송에서 이 자금으로 교량 전체를 다시 짓는다고 말하려 합니다.",
+          "en": "A broadcaster is about to say the grant rebuilds the entire bridge."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 자금은 노동자의 고용에 관한 것입니다.",
+          "en": "That funding concerns workers' employment."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "사업 목적을 정확하게 설명해 주세요.",
+          "en": "Please explain its specific purpose."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "지원 목적은 {{blank}}입니다.",
+        "en": "The funding supports {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "교량 전체 재건",
+            "en": "complete bridge reconstruction"
+          },
+          {
+            "id": "B",
+            "ko": "임시 정리·복구 일자리",
+            "en": "temporary cleanup and recovery jobs"
+          },
+          {
+            "id": "C",
+            "ko": "항만 영구 폐쇄",
+            "en": "permanent port closure"
+          },
+          {
+            "id": "D",
+            "ko": "선거구 변경",
+            "en": "redistricting"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "방송 문구를 수정하겠습니다.",
+            "en": "We'll correct the broadcast."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "지원은 임시 복구 일자리를 위한 것입니다.",
+            "en": "The funding was for temporary recovery jobs."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://raskin.house.gov/2024/4/maryland-delegation-announces-first-3-5-million-installment-of-federal-funds-to-support-port-of-baltimore-workers-impacted-by-francis-scott-key-bridge-collapse",
+          "claim": "Ivey and Sarbanes joined the announcement of funds for temporary cleanup and recovery jobs.",
+          "asOf": "2024-04-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1753-recovery-radio"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1754",
+      "mechanism": "lead-pipe-help",
+      "learningTarget": "Leger Fernández and Stansbury joined the May 2 announcement of $28.65 million in EPA funds to replace lead pipes.",
+      "date": "2024-05-03",
+      "venue": {
+        "ko": "뉴멕시코 식수 상담",
+        "en": "New Mexico water consultation"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "레거 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        },
+        {
+          "id": "S001218",
+          "name": "Melanie A. Stansbury",
+          "ko": "스탠즈버리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001218"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "마을에서 식수관 교체 사업을 알아보고 있습니다.",
+          "en": "A town is looking into replacing drinking-water pipes."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "5월 2일 주 전체 지원이 발표됐습니다.",
+          "en": "Statewide funding was announced May 2."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "무엇을 교체하는지 설명하죠.",
+          "en": "Let's explain what it is intended to replace."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "지원 목적은 {{blank}}입니다.",
+        "en": "The purpose is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "고속도로 확장",
+            "en": "highway expansion"
+          },
+          {
+            "id": "B",
+            "ko": "선거장 설치",
+            "en": "polling place construction"
+          },
+          {
+            "id": "C",
+            "ko": "납 수도관 교체",
+            "en": "lead pipe replacement"
+          },
+          {
+            "id": "D",
+            "ko": "활주로",
+            "en": "runways"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "공식 사업 안내를 마을에 전달하겠습니다.",
+            "en": "We'll pass official program information to the town."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "EPA 지원은 납 수도관 교체를 돕습니다.",
+            "en": "EPA funding supports lead pipe replacement."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://fernandez.house.gov/news/documentsingle.aspx?DocumentID=297",
+          "claim": "Leger Fernández and Stansbury joined the May 2 announcement of $28.65 million in EPA funds to replace lead pipes.",
+          "asOf": "2024-05-03"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1754-lead-pipe-help"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1755",
+      "mechanism": "revolving-fund",
+      "learningTarget": "Vasquez and Stansbury joined the May 2 announcement explaining State Revolving Funds' reuse of repayments.",
+      "date": "2024-05-06",
+      "venue": {
+        "ko": "지역 라디오 재정 인터뷰",
+        "en": "Local radio financing interview"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1754 (2024-05-03). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1754 (2024-05-03); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "V000136",
+          "name": "Gabe Vasquez",
+          "ko": "바스케스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000136.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000136"
+        },
+        {
+          "id": "S001218",
+          "name": "Melanie A. Stansbury",
+          "ko": "스탠즈버리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001218"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "왜 회전기금이라고 부르는지 청취자가 묻습니다.",
+          "en": "A listener asks why these are revolving funds."
+        },
+        {
+          "speaker": "player",
+          "ko": "상환금이 이후 사업에 다시 쓰이나요?",
+          "en": "Are repayments reused for later projects?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저비용 금융을 제공하는 구조입니다.",
+          "en": "The system provides low-cost financing."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "장기 금융 구조를 설명합시다.",
+          "en": "Let's explain the financing structure."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "상환금은 {{blank}}에 활용됩니다.",
+        "en": "Repayments can support {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "선거운동",
+            "en": "campaigns"
+          },
+          {
+            "id": "B",
+            "ko": "정당 회비",
+            "en": "party dues"
+          },
+          {
+            "id": "C",
+            "ko": "의원 급여",
+            "en": "member salaries"
+          },
+          {
+            "id": "D",
+            "ko": "후속 기반시설 사업",
+            "en": "future infrastructure projects"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "그 원리를 방송에서 설명하죠.",
+            "en": "Let's explain that principle on air."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "원리금 상환을 통해 이후 사업을 지원합니다.",
+            "en": "Repayments support later projects."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://fernandez.house.gov/news/documentsingle.aspx?DocumentID=297",
+          "claim": "Vasquez and Stansbury joined the May 2 announcement explaining State Revolving Funds' reuse of repayments.",
+          "asOf": "2024-05-06"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1755-revolving-fund"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1756",
+      "mechanism": "territorial-coalition",
+      "learningTarget": "Huffman, Moylan, Case and Peltola reintroduced fisheries legislation June 27 to update the Magnuson-Stevens Act.",
+      "date": "2024-06-28",
+      "venue": {
+        "ko": "태평양 어업 협력",
+        "en": "Pacific fisheries meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "H001068",
+          "name": "Jared Huffman",
+          "ko": "허프먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001068.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001068"
+        },
+        {
+          "id": "M001219",
+          "name": "James C. Moylan",
+          "ko": "모일런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001219.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001219"
+        },
+        {
+          "id": "C001055",
+          "name": "Ed Case",
+          "ko": "케이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001055.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001055"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "괌과 캘리포니아 어업인이 같은 법안에 의견을 내고 싶습니다.",
+          "en": "Guam and California fishers want to discuss the same bill."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "괌 대표로 재발의에 참여했습니다.",
+          "en": "I joined as Guam's delegate."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "하와이도 함께했습니다.",
+          "en": "Hawaii joined too."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "연방 어업의 기본 법률을 갱신하는 제안입니다.",
+          "en": "It updates the central fisheries statute."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대상 법률은 {{blank}}입니다.",
+        "en": "The statute is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Magnuson-Stevens Act",
+            "en": "Magnuson-Stevens Act"
+          },
+          {
+            "id": "B",
+            "ko": "Clean Air Act",
+            "en": "Clean Air Act"
+          },
+          {
+            "id": "C",
+            "ko": "Voting Rights Act",
+            "en": "Voting Rights Act"
+          },
+          {
+            "id": "D",
+            "ko": "Homestead Act",
+            "en": "Homestead Act"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "지역 요구를 공개 조항에 연결하죠.",
+            "en": "Let's connect local concerns to public provisions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "법안은 Magnuson-Stevens Act 개정을 제안했습니다.",
+            "en": "The bill proposed updating the Magnuson-Stevens Act."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://huffman.house.gov/media-center/press-releases/huffman-moylan-case-peltola-re-introduce-bipartisan-legislation-to-update-federal-fisheries-management",
+          "claim": "Huffman, Moylan, Case and Peltola reintroduced fisheries legislation June 27 to update the Magnuson-Stevens Act.",
+          "asOf": "2024-06-28"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1756-territorial-coalition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1757",
+      "mechanism": "fishery-science",
+      "learningTarget": "Peltola and Case joined the June 27 fisheries bill proposing modernized fisheries data systems.",
+      "date": "2024-07-01",
+      "venue": {
+        "ko": "알래스카·하와이 수산학 토론",
+        "en": "Alaska–Hawaii fisheries forum"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1756 (2024-06-28). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1756 (2024-06-28); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "P000619",
+          "name": "Mary Sattler Peltola",
+          "ko": "펠톨라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000619.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000619"
+        },
+        {
+          "id": "C001055",
+          "name": "Ed Case",
+          "ko": "케이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001055.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001055"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어획량 변화에 대응할 과학 자료가 필요합니다.",
+          "en": "Scientific data are needed as stocks shift."
+        },
+        {
+          "speaker": "player",
+          "ko": "이번 법안도 자료 체계 개선을 다루나요?",
+          "en": "Does this bill address data systems?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "과학과 자료 개선이 포함됐습니다.",
+          "en": "It includes science and data improvements."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현대화하려는 것은 {{blank}}입니다.",
+        "en": "The proposal seeks to modernize {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "선거 명부",
+            "en": "voter rolls"
+          },
+          {
+            "id": "B",
+            "ko": "어업 자료 체계",
+            "en": "fisheries data systems"
+          },
+          {
+            "id": "C",
+            "ko": "소득세",
+            "en": "income taxes"
+          },
+          {
+            "id": "D",
+            "ko": "학교 급식",
+            "en": "school meals"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "연구자와 어업인의 의견을 듣죠.",
+            "en": "Let's hear from researchers and fishers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "자료 체계 현대화가 포함됐습니다.",
+            "en": "Data modernization was part of the proposal."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://huffman.house.gov/media-center/press-releases/huffman-moylan-case-peltola-re-introduce-bipartisan-legislation-to-update-federal-fisheries-management",
+          "claim": "Peltola and Case joined the June 27 fisheries bill proposing modernized fisheries data systems.",
+          "asOf": "2024-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1757-fishery-science"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1758",
+      "mechanism": "working-waterfront",
+      "learningTarget": "Huffman and Peltola joined the fisheries bill proposing a working waterfront program.",
+      "date": "2024-07-02",
+      "venue": {
+        "ko": "연안 일터 주민 요청",
+        "en": "Working waterfront request"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1756 (2024-06-28). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1756 (2024-06-28); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "H001068",
+          "name": "Jared Huffman",
+          "ko": "허프먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001068.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001068"
+        },
+        {
+          "id": "P000619",
+          "name": "Mary Sattler Peltola",
+          "ko": "펠톨라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000619.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000619"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "항구 어업 일터를 유지하려는 주민이 찾아왔습니다.",
+          "en": "Residents hoping to preserve fishing workplaces have arrived."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "법안에 어업 공동체 지원이 포함됩니다.",
+          "en": "The bill includes community support."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "발의와 시행은 구분합시다.",
+          "en": "Let's distinguish introduction and implementation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "관련 제안은 {{blank}} 프로그램입니다.",
+        "en": "The proposal is a {{blank}} program.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "school voucher",
+            "en": "school voucher"
+          },
+          {
+            "id": "B",
+            "ko": "space launch",
+            "en": "space launch"
+          },
+          {
+            "id": "C",
+            "ko": "working waterfront",
+            "en": "working waterfront"
+          },
+          {
+            "id": "D",
+            "ko": "interstate toll",
+            "en": "interstate toll"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "사업이 이미 시행되었다고 약속하지 않겠습니다.",
+            "en": "We won't promise the program is operating."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "법안은 working waterfront 프로그램을 제안했습니다.",
+            "en": "The bill proposed a working waterfront program."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://huffman.house.gov/media-center/press-releases/huffman-moylan-case-peltola-re-introduce-bipartisan-legislation-to-update-federal-fisheries-management",
+          "claim": "Huffman and Peltola joined the fisheries bill proposing a working waterfront program.",
+          "asOf": "2024-07-02"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1758-working-waterfront"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1759",
+      "mechanism": "committee-scheduling",
+      "learningTarget": "Kaptur, Dingell and Huizenga signed a November 12 letter urging House Transportation and Infrastructure to consider H.R.7257.",
+      "date": "2024-11-13",
+      "venue": {
+        "ko": "오대호 법안 일정 협의",
+        "en": "Great Lakes legislative scheduling"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1742 (2022-11-12). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1742 (2022-11-12); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "K000009",
+          "name": "Marcy Kaptur",
+          "ko": "캡터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000009.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000009"
+        },
+        {
+          "id": "D000624",
+          "name": "Debbie Dingell",
+          "ko": "딩걸",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000624.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000624"
+        },
+        {
+          "id": "H001058",
+          "name": "Bill Huizenga",
+          "ko": "하이젠가",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001058.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001058"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "오대호 주민들이 법안의 다음 절차를 묻습니다.",
+          "en": "Residents ask about the next legislative step."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "위원회 심의를 요청하는 서한을 보냈습니다.",
+          "en": "We sent a letter requesting consideration."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "서한은 본회의 통과와 다릅니다.",
+          "en": "A letter differs from House passage."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "어느 위원회인지 알려 주세요.",
+          "en": "Please identify the committee."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "수신 기관은 하원 {{blank}}위원회입니다.",
+        "en": "The recipient was House {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "윤리",
+            "en": "Ethics"
+          },
+          {
+            "id": "B",
+            "ko": "규칙",
+            "en": "Rules"
+          },
+          {
+            "id": "C",
+            "ko": "외교",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "D",
+            "ko": "교통·인프라",
+            "en": "Transportation and Infrastructure"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "요청과 통과 단계를 구분하죠.",
+            "en": "Let's distinguish requests from passage."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 교통·인프라위원회 심의를 요청했습니다.",
+            "en": "The letter asked that committee to consider H.R.7257."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://joyce.house.gov/posts/joyce-house-great-lakes-task-force-urges-committee-on-transportation-and-infrastructure-to-take-up-great-lakes-restoration-initiative-act",
+          "claim": "Kaptur, Dingell and Huizenga signed a November 12 letter urging House Transportation and Infrastructure to consider H.R.7257.",
+          "asOf": "2024-11-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1759-committee-scheduling"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1760",
+      "mechanism": "mitigation-grant",
+      "learningTarget": "Nadler, Kennedy and Meng led an April 11 letter opposing elimination of over $325 million in New York BRIC funding.",
+      "date": "2025-04-12",
+      "venue": {
+        "ko": "뉴욕 홍수 예방 회의",
+        "en": "New York flood mitigation meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "N000002",
+          "name": "Jerrold Nadler",
+          "ko": "내들러",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000002.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/N000002"
+        },
+        {
+          "id": "K000402",
+          "name": "Timothy M. Kennedy",
+          "ko": "케네디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000402.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000402"
+        },
+        {
+          "id": "M001188",
+          "name": "Grace Meng",
+          "ko": "멩",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001188"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "홍수 예방 사업 담당자가 지원 삭감에 관해 묻습니다.",
+          "en": "A flood mitigation official asks about funding cuts."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "세 의원이 함께 서한을 주도했습니다.",
+          "en": "Three of us led a letter."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "핵심은 위험을 미리 줄이는 사업입니다.",
+          "en": "The focus is reducing hazards."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "프로그램을 확인합시다.",
+          "en": "Let's identify the program."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대상 프로그램은 {{blank}}입니다.",
+        "en": "The program at issue was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "BRIC",
+            "en": "BRIC"
+          },
+          {
+            "id": "B",
+            "ko": "SNAP",
+            "en": "SNAP"
+          },
+          {
+            "id": "C",
+            "ko": "GI Bill",
+            "en": "GI Bill"
+          },
+          {
+            "id": "D",
+            "ko": "Pell Grant",
+            "en": "Pell Grant"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민에게 실제 요구를 전달하겠습니다.",
+            "en": "We'll explain what the letter requested."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 BRIC 지원 중단에 반대했습니다.",
+            "en": "The letter opposed elimination of BRIC funds."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://nadler.house.gov/news/documentsingle.aspx?DocumentID=396328",
+          "claim": "Nadler, Kennedy and Meng led an April 11 letter opposing elimination of over $325 million in New York BRIC funding.",
+          "asOf": "2025-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1760-mitigation-grant"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1761",
+      "mechanism": "funding-status",
+      "learningTarget": "The April 11 letter also requested release of $1.6 billion in frozen Disaster Relief Funds.",
+      "date": "2025-04-15",
+      "venue": {
+        "ko": "퀸스·버펄로 인터뷰",
+        "en": "Queens–Buffalo interview"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1760 (2025-04-12). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1760 (2025-04-12); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "M001188",
+          "name": "Grace Meng",
+          "ko": "멩",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001188"
+        },
+        {
+          "id": "K000402",
+          "name": "Timothy M. Kennedy",
+          "ko": "케네디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000402.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000402"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "두 지원 액수가 같은 사업인가요?",
+          "en": "Are the two amounts for the same program?"
+        },
+        {
+          "speaker": "player",
+          "ko": "두 재원의 상태를 구별해야겠습니다.",
+          "en": "We should distinguish their statuses."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "16억 달러는 별도의 구호 자금입니다.",
+          "en": "The $1.6 billion is separate relief funding."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "서한은 그 자금의 해제를 요구합니다.",
+          "en": "The letter requests its release."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "16억 달러는 {{blank}} 자금으로 언급됐습니다.",
+        "en": "The $1.6 billion was described as {{blank}} funding.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "이미 지급된",
+            "en": "already paid"
+          },
+          {
+            "id": "B",
+            "ko": "동결된",
+            "en": "frozen"
+          },
+          {
+            "id": "C",
+            "ko": "새로 통과된",
+            "en": "newly enacted"
+          },
+          {
+            "id": "D",
+            "ko": "개인 후원",
+            "en": "privately donated"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "기사에서 두 자금을 구분하죠.",
+            "en": "Let's distinguish the two funding statuses."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "동결된 16억 달러의 해제를 요청했습니다.",
+            "en": "The letter requested release of the frozen $1.6 billion."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://nadler.house.gov/news/documentsingle.aspx?DocumentID=396328",
+          "claim": "The April 11 letter also requested release of $1.6 billion in frozen Disaster Relief Funds.",
+          "asOf": "2025-04-15"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1761-funding-status"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1762",
+      "mechanism": "interstate-aid",
+      "learningTarget": "Williams, McBath and Castor signed the May 28 letter requesting emergency supplemental funding.",
+      "date": "2025-05-30",
+      "venue": {
+        "ko": "동남부 주간 재난 회의",
+        "en": "Southeastern interstate meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "W000788",
+          "name": "Nikema Williams",
+          "ko": "윌리엄스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000788.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000788"
+        },
+        {
+          "id": "M001208",
+          "name": "Lucy McBath",
+          "ko": "맥배스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001208.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001208"
+        },
+        {
+          "id": "C001066",
+          "name": "Kathy Castor",
+          "ko": "캐스터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001066.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001066"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "여러 주 주민이 재난구호 기금 부족을 걱정합니다.",
+          "en": "Residents in several states worry about relief funding."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "조지아 의원들도 참여했습니다.",
+          "en": "Georgia members joined."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "플로리다에서도 참여했죠.",
+          "en": "Florida joined too."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "행정부에 추가 예산 요청 제출을 요구했습니다.",
+          "en": "We asked the administration to submit a new request."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "요구는 {{blank}}입니다.",
+        "en": "The request was for {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 선거 연기",
+            "en": "postponing state elections"
+          },
+          {
+            "id": "B",
+            "ko": "법원 신설",
+            "en": "new courts"
+          },
+          {
+            "id": "C",
+            "ko": "긴급 추가 예산 요청",
+            "en": "an emergency supplemental funding request"
+          },
+          {
+            "id": "D",
+            "ko": "주 경계 변경",
+            "en": "changing state borders"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "지원 통과를 약속하지 않고 설명하죠.",
+            "en": "Let's explain without implying passage."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 긴급 추가 예산 요청을 촉구했습니다.",
+            "en": "The letter urged a supplemental funding request."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://ross.house.gov/2025/5/with-federal-disaster-aid-almost-exhausted-members-of-congress-from-north-carolina-virginia-florida-and-georgia-urge-trump-admin-to-submit-new-funding-request-to-congress",
+          "claim": "Williams, McBath and Castor signed the May 28 letter requesting emergency supplemental funding.",
+          "asOf": "2025-05-30"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1762-interstate-aid"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1763",
+      "mechanism": "forecast-correction",
+      "learningTarget": "The May 28 letter warned that the Disaster Relief Fund was projected to run out in late June 2025.",
+      "date": "2025-06-02",
+      "venue": {
+        "ko": "재난 지원 방송",
+        "en": "Disaster funding broadcast"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1762 (2025-05-30). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1762 (2025-05-30); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "C001066",
+          "name": "Kathy Castor",
+          "ko": "캐스터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001066.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001066"
+        },
+        {
+          "id": "M001208",
+          "name": "Lucy McBath",
+          "ko": "맥배스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001208.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001208"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "방송이 기금이 이미 고갈됐다고 말하려 합니다.",
+          "en": "A broadcaster is about to say the fund is already depleted."
+        },
+        {
+          "speaker": "player",
+          "ko": "서한에서는 전망이었죠?",
+          "en": "It was a projection in the letter, correct?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "정확한 시점을 말해 주세요.",
+          "en": "Please give the projected date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "전망 시점은 {{blank}}입니다.",
+        "en": "The projected time was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2024년 1월",
+            "en": "January 2024"
+          },
+          {
+            "id": "B",
+            "ko": "2026년 12월",
+            "en": "December 2026"
+          },
+          {
+            "id": "C",
+            "ko": "2025년 1월",
+            "en": "January 2025"
+          },
+          {
+            "id": "D",
+            "ko": "2025년 6월 말",
+            "en": "late June 2025"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "예측과 실제 결과를 나누어 보도하겠습니다.",
+            "en": "We'll distinguish projections from results."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 6월 말 고갈 가능성을 경고했습니다.",
+            "en": "The letter warned of projected late-June depletion."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://ross.house.gov/2025/5/with-federal-disaster-aid-almost-exhausted-members-of-congress-from-north-carolina-virginia-florida-and-georgia-urge-trump-admin-to-submit-new-funding-request-to-congress",
+          "claim": "The May 28 letter warned that the Disaster Relief Fund was projected to run out in late June 2025.",
+          "asOf": "2025-06-02"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1763-forecast-correction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1764",
+      "mechanism": "offshore-coalition",
+      "learningTarget": "Buchanan, Castor and Frost signed the December delegation letter urging preservation of the offshore leasing moratorium through 2032.",
+      "date": "2025-12-06",
+      "venue": {
+        "ko": "플로리다 해안 공동 간담회",
+        "en": "Florida coastal meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "B001260",
+          "name": "Vern Buchanan",
+          "ko": "뷰캐넌",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001260.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001260"
+        },
+        {
+          "id": "C001066",
+          "name": "Kathy Castor",
+          "ko": "캐스터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001066.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001066"
+        },
+        {
+          "id": "F000476",
+          "name": "Maxwell Frost",
+          "ko": "프로스트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000476.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000476"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "해안 주민들이 양당 의원에게 같은 질문을 합니다.",
+          "en": "Coastal residents ask members of both parties the same question."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "대표단 전체가 공동서한에 서명했습니다.",
+          "en": "The delegation signed a joint letter."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "기존 임대 제한 유지를 요청했습니다.",
+          "en": "We requested retaining existing leasing restrictions."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "기한도 중요합니다.",
+          "en": "The expiration date matters."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "유지를 요청한 제한은 {{blank}}까지입니다.",
+        "en": "The restriction was to last through {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2032년",
+            "en": "2032"
+          },
+          {
+            "id": "B",
+            "ko": "2025년",
+            "en": "2025"
+          },
+          {
+            "id": "C",
+            "ko": "2028년",
+            "en": "2028"
+          },
+          {
+            "id": "D",
+            "ko": "2040년",
+            "en": "2040"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "공동서한 내용을 전달하겠습니다.",
+            "en": "We'll explain the actual joint letter."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 제한이 2032년까지라고 설명합니다.",
+            "en": "The letter describes the extension through 2032."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://buchanan.house.gov/2025/12/05/id-cfed1f06-9e8e-4039-935d-afe9ee44311e/",
+          "claim": "Buchanan, Castor and Frost signed the December delegation letter urging preservation of the offshore leasing moratorium through 2032.",
+          "asOf": "2025-12-06"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1764-offshore-coalition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1765",
+      "mechanism": "agency-response",
+      "learningTarget": "Bean and Buchanan signed the letter responding to BOEM's November 20 draft offshore leasing plan.",
+      "date": "2025-12-08",
+      "venue": {
+        "ko": "관광업 종사자 질의",
+        "en": "Tourism worker questions"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1764 (2025-12-06). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1764 (2025-12-06); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "B001314",
+          "name": "Aaron Bean",
+          "ko": "빈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001314.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001314"
+        },
+        {
+          "id": "B001260",
+          "name": "Vern Buchanan",
+          "ko": "뷰캐넌",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001260.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001260"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "관광업 종사자가 어느 기관의 계획인지 묻습니다.",
+          "en": "A tourism worker asks which agency's plan prompted the response."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "11월 20일의 해상 임대 초안입니다.",
+          "en": "It was the November 20 draft offshore leasing plan."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "내무부 산하 기관의 계획입니다.",
+          "en": "The agency is within Interior."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해당 기관은 {{blank}}입니다.",
+        "en": "The agency was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "IRS",
+            "en": "IRS"
+          },
+          {
+            "id": "B",
+            "ko": "BOEM",
+            "en": "BOEM"
+          },
+          {
+            "id": "C",
+            "ko": "FEC",
+            "en": "FEC"
+          },
+          {
+            "id": "D",
+            "ko": "USPS",
+            "en": "USPS"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "초안과 최종 결정을 구분하죠.",
+            "en": "Let's distinguish a draft from a final decision."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "BOEM의 초안에 대응한 서한입니다.",
+            "en": "The letter responded to BOEM's draft."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://buchanan.house.gov/2025/12/05/id-cfed1f06-9e8e-4039-935d-afe9ee44311e/",
+          "claim": "Bean and Buchanan signed the letter responding to BOEM's November 20 draft offshore leasing plan.",
+          "asOf": "2025-12-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1765-agency-response"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1766",
+      "mechanism": "coastal-policy-debate",
+      "learningTarget": "Frost and Castor signed a letter identifying the Gulf Test Range as a military training area implicated by proposed leasing.",
+      "date": "2025-12-10",
+      "venue": {
+        "ko": "해안 정책 학생 토론",
+        "en": "Coastal policy student debate"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1764 (2025-12-06). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1764 (2025-12-06); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "F000476",
+          "name": "Maxwell Frost",
+          "ko": "프로스트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000476.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000476"
+        },
+        {
+          "id": "C001066",
+          "name": "Kathy Castor",
+          "ko": "캐스터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001066.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001066"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "이 논쟁은 관광업 문제뿐인가요?",
+          "en": "Is the debate only about tourism?"
+        },
+        {
+          "speaker": "player",
+          "ko": "공동서한에는 군사 훈련도 나옵니다.",
+          "en": "The letter mentions military training too."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "훈련 구역 이름을 확인합시다.",
+          "en": "Let's identify the training area."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "여러 근거를 구분해 설명하죠.",
+          "en": "Let's distinguish the concerns."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "서한이 언급한 구역은 {{blank}}입니다.",
+        "en": "The area named was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Area 51",
+            "en": "Area 51"
+          },
+          {
+            "id": "B",
+            "ko": "Fort Knox",
+            "en": "Fort Knox"
+          },
+          {
+            "id": "C",
+            "ko": "Gulf Test Range",
+            "en": "Gulf Test Range"
+          },
+          {
+            "id": "D",
+            "ko": "West Point",
+            "en": "West Point"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "환경·경제·훈련 논거를 구분하겠습니다.",
+            "en": "We'll distinguish environmental, economic and training concerns."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 Gulf Test Range를 언급했습니다.",
+            "en": "The letter identified Gulf Test Range."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://buchanan.house.gov/2025/12/05/id-cfed1f06-9e8e-4039-935d-afe9ee44311e/",
+          "claim": "Frost and Castor signed a letter identifying the Gulf Test Range as a military training area implicated by proposed leasing.",
+          "asOf": "2025-12-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1766-coastal-policy-debate"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1767",
+      "mechanism": "tribal-settlement",
+      "learningTarget": "Vasquez and Heinrich led the reintroduced Zuni Indian Tribe Water Rights Settlement Act; Leger Fernández was an original cosponsor.",
+      "date": "2025-05-01",
+      "venue": {
+        "ko": "뉴멕시코 부족 물 권리 회의",
+        "en": "New Mexico tribal water discussion"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1754 (2024-05-03). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1754 (2024-05-03); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "레거 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        },
+        {
+          "id": "V000136",
+          "name": "Gabe Vasquez",
+          "ko": "바스케스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000136.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000136"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주니 부족의 물 권리 합의 설명을 부탁받았습니다.",
+          "en": "I've been asked to explain the Zuni water settlement."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "부족 합의 법안들은 서로 별개입니다.",
+          "en": "The settlement bills are separate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "주니 법안은 하인리히 상원의원과 제가 주도했습니다.",
+          "en": "Senator Heinrich and I led the Zuni bill."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하원 측 주도 의원은 {{blank}}입니다.",
+        "en": "The House-side lead was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "레거 페르난데스",
+            "en": "Leger Fernández"
+          },
+          {
+            "id": "B",
+            "ko": "스탠즈버리",
+            "en": "Stansbury"
+          },
+          {
+            "id": "C",
+            "ko": "허프먼",
+            "en": "Huffman"
+          },
+          {
+            "id": "D",
+            "ko": "바스케스",
+            "en": "Vasquez"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "합의 당사자와 의원을 구분하겠습니다.",
+            "en": "We'll distinguish settlement parties and lawmakers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "주니 법안은 하인리히와 바스케스가 주도했습니다.",
+            "en": "Heinrich and Vasquez led the Zuni bill."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://fernandez.house.gov/news/documentsingle.aspx?DocumentID=411",
+          "claim": "Vasquez and Heinrich led the reintroduced Zuni Indian Tribe Water Rights Settlement Act; Leger Fernández was an original cosponsor.",
+          "asOf": "2025-05-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1767-tribal-settlement"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1768",
+      "mechanism": "watershed-meeting",
+      "learningTarget": "Stansbury was an original cosponsor of the Ohkay Owingeh Rio Chama bill led by Leger Fernández and Heinrich.",
+      "date": "2025-05-02",
+      "venue": {
+        "ko": "리오 차마 유역 설명회",
+        "en": "Rio Chama watershed meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1767 (2025-05-01). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1767 (2025-05-01); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "S001218",
+          "name": "Melanie A. Stansbury",
+          "ko": "스탠즈버리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001218"
+        },
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "레거 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "부족과 비부족 기관이 함께 참여한 합의입니다.",
+          "en": "The agreement involves tribal and nontribal parties."
+        },
+        {
+          "speaker": "player",
+          "ko": "어느 유역의 물 권리를 다루나요?",
+          "en": "Which watershed's claims are involved?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오케이 오윙에 부족에 관한 법안입니다.",
+          "en": "It concerns the Ohkay Owingeh Pueblo."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대상 유역은 {{blank}}입니다.",
+        "en": "The watershed is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "리오 차마",
+            "en": "Rio Chama"
+          },
+          {
+            "id": "B",
+            "ko": "허드슨강",
+            "en": "Hudson"
+          },
+          {
+            "id": "C",
+            "ko": "미시시피강 하류",
+            "en": "Lower Mississippi"
+          },
+          {
+            "id": "D",
+            "ko": "콜로라도강 하류",
+            "en": "Lower Colorado"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "다른 합의와 혼동하지 않도록 하죠.",
+            "en": "Let's distinguish it from other settlements."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "법안은 리오 차마 물 권리를 다룹니다.",
+            "en": "The bill addresses Rio Chama water claims."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://fernandez.house.gov/news/documentsingle.aspx?DocumentID=411",
+          "claim": "Stansbury was an original cosponsor of the Ohkay Owingeh Rio Chama bill led by Leger Fernández and Heinrich.",
+          "asOf": "2025-05-02"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1768-watershed-meeting"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1769",
+      "mechanism": "waterline-project",
+      "learningTarget": "Leger Fernández led Navajo-Gallup Water Supply Project Amendments with Luján; Stansbury was an original cosponsor.",
+      "date": "2025-05-03",
+      "venue": {
+        "ko": "갤럽 식수 사업 상담",
+        "en": "Gallup drinking-water consultation"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1768 (2025-05-02). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1768 (2025-05-02); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "L000273",
+          "name": "Teresa Leger Fernandez",
+          "ko": "레거 페르난데스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000273"
+        },
+        {
+          "id": "S001218",
+          "name": "Melanie A. Stansbury",
+          "ko": "스탠즈버리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001218"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주민이 법안 발의가 수도관 완공을 뜻하는지 묻습니다.",
+          "en": "A resident asks if introduction means the waterline is complete."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "사업 재원과 기간 확보를 위한 개정안입니다.",
+          "en": "The amendment seeks resources and time."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "완공과 입법은 구분합시다.",
+          "en": "Let's distinguish completion and legislation."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "개정안 대상은 {{blank}}입니다.",
+        "en": "The amendment concerns the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Hoover Dam",
+            "en": "Hoover Dam"
+          },
+          {
+            "id": "B",
+            "ko": "Navajo-Gallup Water Supply Project",
+            "en": "Navajo-Gallup Water Supply Project"
+          },
+          {
+            "id": "C",
+            "ko": "Gateway Tunnel",
+            "en": "Gateway Tunnel"
+          },
+          {
+            "id": "D",
+            "ko": "Great Lakes Restoration Initiative",
+            "en": "Great Lakes Restoration Initiative"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "완공을 약속하지 않고 설명하겠습니다.",
+            "en": "We'll explain without promising completion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "개정안은 Navajo-Gallup 사업을 다룹니다.",
+            "en": "The amendments address Navajo-Gallup."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://fernandez.house.gov/news/documentsingle.aspx?DocumentID=411",
+          "claim": "Leger Fernández led Navajo-Gallup Water Supply Project Amendments with Luján; Stansbury was an original cosponsor.",
+          "asOf": "2025-05-03"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1769-waterline-project"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1770",
+      "mechanism": "rural-eligibility",
+      "learningTarget": "Pettersen and Hurd led the February 23 Rural Water Security Act introduction seeking Colorado's inclusion in WRDA Section 595.",
+      "date": "2026-02-24",
+      "venue": {
+        "ko": "콜로라도 농촌 수도 협의",
+        "en": "Colorado rural water meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "P000620",
+          "name": "Brittany Pettersen",
+          "ko": "페터슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000620.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000620"
+        },
+        {
+          "id": "H001100",
+          "name": "Jeff Hurd",
+          "ko": "허드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001100.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001100"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "왜 콜로라도 수도사업은 다른 서부 주와 자격이 다른가요?",
+          "en": "Why does Colorado have different water project eligibility?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 해당 조항의 대상이 아닙니다.",
+          "en": "Colorado is excluded from that provision."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "대상에 추가하는 법안을 발의했습니다.",
+          "en": "We introduced a bill to add it."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "변경 대상은 WRDA {{blank}}입니다.",
+        "en": "The proposed change concerns WRDA {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제1조",
+            "en": "Section 1"
+          },
+          {
+            "id": "B",
+            "ko": "제404조",
+            "en": "Section 404"
+          },
+          {
+            "id": "C",
+            "ko": "제595조",
+            "en": "Section 595"
+          },
+          {
+            "id": "D",
+            "ko": "제230조",
+            "en": "Section 230"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "자격 변경은 입법 절차가 필요하다고 설명하겠습니다.",
+            "en": "We'll explain that eligibility changes require legislation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "법안은 제595조에 콜로라도 추가를 제안합니다.",
+            "en": "The bill proposes adding Colorado to Section 595."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://pettersen.house.gov/news/documentsingle.aspx?DocumentID=1614",
+          "claim": "Pettersen and Hurd led the February 23 Rural Water Security Act introduction seeking Colorado's inclusion in WRDA Section 595.",
+          "asOf": "2026-02-24"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1770-rural-eligibility"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1771",
+      "mechanism": "cost-share",
+      "learningTarget": "Crank and Evans supported the water bill; existing Section 595 assistance covers up to 75 percent of eligible costs.",
+      "date": "2026-02-26",
+      "venue": {
+        "ko": "콜로라도 지방정부 재정회의",
+        "en": "Colorado local finance meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1770 (2026-02-24). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1770 (2026-02-24); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "C001137",
+          "name": "Jeff Crank",
+          "ko": "크랭크",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001137.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001137"
+        },
+        {
+          "id": "E000300",
+          "name": "Gabe Evans",
+          "ko": "에번스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000300.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/E000300"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지방 수도기관이 연방 지원 비율을 묻습니다.",
+          "en": "A local water authority asks about cost sharing."
+        },
+        {
+          "speaker": "player",
+          "ko": "기존 최대 비율과 콜로라도 자격은 구분해야겠네요.",
+          "en": "We must distinguish the existing maximum from Colorado's eligibility."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제안이 통과되면 적용될 수 있는 구조입니다.",
+          "en": "It could apply if the bill passes."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "기존 제도의 최대 비율은 {{blank}}입니다.",
+        "en": "The existing program covers up to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "25%",
+            "en": "25%"
+          },
+          {
+            "id": "B",
+            "ko": "100%",
+            "en": "100%"
+          },
+          {
+            "id": "C",
+            "ko": "10%",
+            "en": "10%"
+          },
+          {
+            "id": "D",
+            "ko": "75%",
+            "en": "75%"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "최대 비율은 자동 지급을 뜻하지 않습니다.",
+            "en": "The maximum is not an automatic award."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "제595조는 적격 비용의 최대 75%를 지원합니다.",
+            "en": "Section 595 covers up to 75% of eligible costs."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://pettersen.house.gov/news/documentsingle.aspx?DocumentID=1614",
+          "claim": "Crank and Evans supported the water bill; existing Section 595 assistance covers up to 75 percent of eligible costs.",
+          "asOf": "2026-02-26"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1771-cost-share"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1772",
+      "mechanism": "oversight-deadline",
+      "learningTarget": "Kennedy and Thompson requested a FEMA briefing by June 5, 2026 about changed BRIC rules.",
+      "date": "2026-05-27",
+      "venue": {
+        "ko": "재난예방 감독 회의",
+        "en": "Disaster mitigation oversight"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1760 (2025-04-12). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1760 (2025-04-12); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "K000402",
+          "name": "Timothy M. Kennedy",
+          "ko": "케네디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000402.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000402"
+        },
+        {
+          "id": "T000193",
+          "name": "Bennie G. Thompson",
+          "ko": "톰슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000193.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000193"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "재난예방 규칙이 바뀐 뒤 의회는 무엇을 요청했나요?",
+          "en": "What did Congress request after mitigation rules changed?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "기관 설명을 요청했습니다.",
+          "en": "We requested an agency briefing."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "서한에는 기한도 있습니다.",
+          "en": "The letter specifies a deadline."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "요청 기한은 {{blank}}입니다.",
+        "en": "The requested deadline was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2026년 6월 5일",
+            "en": "June 5, 2026"
+          },
+          {
+            "id": "B",
+            "ko": "2025년 4월 11일",
+            "en": "April 11, 2025"
+          },
+          {
+            "id": "C",
+            "ko": "2026년 12월 31일",
+            "en": "December 31, 2026"
+          },
+          {
+            "id": "D",
+            "ko": "2026년 1월 3일",
+            "en": "January 3, 2026"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "설명 요청과 실제 실시를 구분하겠습니다.",
+            "en": "We'll distinguish a request from a completed briefing."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서한은 6월 5일까지 설명을 요청했습니다.",
+            "en": "The letter requested a briefing by June 5."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2438",
+          "claim": "Kennedy and Thompson requested a FEMA briefing by June 5, 2026 about changed BRIC rules.",
+          "asOf": "2026-05-27"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1772-oversight-deadline"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1773",
+      "mechanism": "bipartisan-chairs",
+      "learningTarget": "Lofgren and Calvert, California Democratic and Republican delegation chairs, led a January 2026 disaster funding letter; Brownley signed.",
+      "date": "2026-01-12",
+      "venue": {
+        "ko": "캘리포니아 산불 복구 회의",
+        "en": "California wildfire recovery meeting"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public records."
+      },
+      "cast": [
+        {
+          "id": "L000397",
+          "name": "Zoe Lofgren",
+          "ko": "로프그런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000397.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000397"
+        },
+        {
+          "id": "C000059",
+          "name": "Ken Calvert",
+          "ko": "캘버트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000059"
+        },
+        {
+          "id": "B001285",
+          "name": "Julia Brownley",
+          "ko": "브라운리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001285.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001285"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "피해 주민이 양당 대표단의 협력 여부를 묻습니다.",
+          "en": "A survivor asks whether both parties are cooperating."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "민주당 대표단 의장으로 참여했습니다.",
+          "en": "I joined as Democratic delegation chair."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "공화당 대표단 의장으로도 함께했습니다.",
+          "en": "I joined as Republican delegation chair."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "주 전체 공동서한입니다.",
+          "en": "It is a statewide joint letter."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 하원 측 의장은 {{blank}}입니다.",
+        "en": "The two House delegation chairs are {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "그레이와 퐁",
+            "en": "Gray and Fong"
+          },
+          {
+            "id": "B",
+            "ko": "로프그런과 캘버트",
+            "en": "Lofgren and Calvert"
+          },
+          {
+            "id": "C",
+            "ko": "코스타와 하더",
+            "en": "Costa and Harder"
+          },
+          {
+            "id": "D",
+            "ko": "브라운리와 그레이",
+            "en": "Brownley and Gray"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "실제 공동서한을 설명하겠습니다.",
+            "en": "We'll explain the documented cooperation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "두 대표단 의장이 공동서한을 주도했습니다.",
+            "en": "The two delegation chairs led the letter."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://juliabrownley.house.gov/brownley-joins-full-california-congressional-delegation-push-for-federal-disaster-funding-one-year-after-devastating-eaton-and-palisades-fires/",
+          "claim": "Lofgren and Calvert, California Democratic and Republican delegation chairs, led a January 2026 disaster funding letter; Brownley signed.",
+          "asOf": "2026-01-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1773-bipartisan-chairs"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1774",
+      "mechanism": "central-valley-transition",
+      "learningTarget": "The January 2026 letter lists Gray as CA-13, Fong CA-20 and Costa CA-21.",
+      "date": "2026-01-13",
+      "venue": {
+        "ko": "센트럴밸리 지역 대표 소개",
+        "en": "Central Valley representative introduction"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1729 (2022-10-30). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1729 (2022-10-30); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "G000605",
+          "name": "Adam Gray",
+          "ko": "그레이",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000605.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000605"
+        },
+        {
+          "id": "F000480",
+          "name": "Vince Fong",
+          "ko": "퐁",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000480.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000480"
+        },
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "2022년과 2026년 대표단 자료를 비교합니다.",
+          "en": "I'm comparing the 2022 and 2026 delegations."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "현재 제 번호는 21입니다.",
+          "en": "My current district is 21."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제20구입니다.",
+          "en": "Mine is 20."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제13구입니다.",
+          "en": "I represent district 13."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2026년 CA-13 대표는 {{blank}}입니다.",
+        "en": "The 2026 CA-13 representative is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "빈스 퐁",
+            "en": "Vince Fong"
+          },
+          {
+            "id": "B",
+            "ko": "짐 코스타",
+            "en": "Jim Costa"
+          },
+          {
+            "id": "C",
+            "ko": "애덤 그레이",
+            "en": "Adam Gray"
+          },
+          {
+            "id": "D",
+            "ko": "켄 캘버트",
+            "en": "Ken Calvert"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "날짜별로 나누어 주민을 안내하죠.",
+            "en": "Let's date the records for constituent guidance."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "서명 명단은 그레이를 CA-13으로 표시합니다.",
+            "en": "The list identifies Gray as CA-13."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://juliabrownley.house.gov/brownley-joins-full-california-congressional-delegation-push-for-federal-disaster-funding-one-year-after-devastating-eaton-and-palisades-fires/",
+          "claim": "The January 2026 letter lists Gray as CA-13, Fong CA-20 and Costa CA-21.",
+          "asOf": "2026-01-13"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1774-central-valley-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1775",
+      "mechanism": "district-renumbering",
+      "learningTarget": "January 2026 signatories Valadao and Harder were listed as CA-22 and CA-09; in October 2022 they served CA-21 and CA-10.",
+      "date": "2026-01-14",
+      "venue": {
+        "ko": "지역 대표단 지도 설명회",
+        "en": "District map briefing"
+      },
+      "context": {
+        "ko": "공개 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1728 (2022-10-29). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public records. Optional continuity candidate P01-1728 (2022-10-29); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "V000129",
+          "name": "David G. Valadao",
+          "ko": "발라다오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000129"
+        },
+        {
+          "id": "H001090",
+          "name": "Josh Harder",
+          "ko": "하더",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001090.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001090"
+        },
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "2022년과 2026년의 지역구 번호가 다릅니다.",
+          "en": "District numbers differ between 2022 and 2026."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 제 번호는 22입니다.",
+          "en": "My current number is 22."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 번호는 9입니다.",
+          "en": "Mine is 9."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "번호만으로 지리적 경계를 알 수 없습니다.",
+          "en": "Numbers alone don't establish boundaries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하더의 2026년 지역구는 {{blank}}입니다.",
+        "en": "Harder's 2026 district is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-10",
+            "en": "CA-10"
+          },
+          {
+            "id": "B",
+            "ko": "CA-16",
+            "en": "CA-16"
+          },
+          {
+            "id": "C",
+            "ko": "CA-21",
+            "en": "CA-21"
+          },
+          {
+            "id": "D",
+            "ko": "CA-9",
+            "en": "CA-9"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민에게 당시 경계를 확인하도록 안내하죠.",
+            "en": "Let's direct residents to dated boundaries."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "명단에 하더 CA-9, 발라다오 CA-22가 나옵니다.",
+            "en": "The list identifies Harder CA-9 and Valadao CA-22."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://juliabrownley.house.gov/brownley-joins-full-california-congressional-delegation-push-for-federal-disaster-funding-one-year-after-devastating-eaton-and-palisades-fires/",
+          "claim": "January 2026 signatories Valadao and Harder were listed as CA-22 and CA-09; in October 2022 they served CA-21 and CA-10.",
+          "asOf": "2026-01-14"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-CA.htm",
+          "claim": "Valadao represented CA-21 and Harder CA-10 in October 2022.",
+          "asOf": "2026-01-14"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1775-district-renumbering"
+      },
+      "fictional": true
+    }
+  ]
+}
