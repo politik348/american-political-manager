@@ -1,3 +1,2 @@
-// Use a new versioned directory on subsequent releases.
 import fs from 'node:fs/promises';
-const root=new URL('../',import.meta.url);const dir='release/17.6.1/';await fs.mkdir(new URL(dir,root),{recursive:true});for(const file of ["app.js","engine.js","expansion.js","v7.js","v11.js","v17.js","v17-ui.js","onboarding.js","onboarding-ui.js","style.css"])await fs.copyFile(new URL(file,root),new URL(dir+file,root));await fs.copyFile(new URL('index.html',root),new URL('start.html',root));
+const root=new URL('../',import.meta.url);const dir='release/17.7.0/';await fs.mkdir(new URL(dir,root),{recursive:true});for(const file of ["app.js","engine.js","expansion.js","v7.js","v11.js","v17.js","v17-ui.js","onboarding.js","onboarding-ui.js","style.css","dynamics.js"])await fs.copyFile(new URL(file,root),new URL(dir+file,root));for(const entry of ['start.html','play-17.7.html'])await fs.copyFile(new URL('index.html',root),new URL(entry,root));
