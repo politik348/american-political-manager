@@ -1,0 +1,2473 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 27,
+  "scenes": [
+    {
+      "id": "P01-651",
+      "mechanism": "district-succession",
+      "learningTarget": "Mikulski won the Baltimore House seat vacated by Sarbanes, who entered the Senate in 1977.",
+      "date": "1977-02-10",
+      "venue": {
+        "ko": "볼티모어 주민 접견",
+        "en": "Baltimore constituent gathering"
+      },
+      "context": {
+        "ko": "한 주민이 새 하원의원과 새 상원의원에게 서로 다른 문의를 전달한다.",
+        "en": "A constituent brings separate requests to the new House member and senator."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Barbara Ann Mikulski",
+          "ko": "바버라 미컬스키",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18207"
+        },
+        {
+          "id": null,
+          "name": "Paul Spyros Sarbanes",
+          "ko": "폴 사베인스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/21212"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "이제 메릴랜드 전체를 상원에서 대표합니다.",
+          "en": "I now represent Maryland statewide in the Senate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "볼티모어 하원 의석의 업무는 제가 이어받았습니다.",
+          "en": "I took over the Baltimore House seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "같은 지역 주민이라도 두 직책에 각각 문의할 수 있겠군요.",
+          "en": "Residents can contact each office for its own responsibilities."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1977년 사베인스의 볼티모어 하원 의석을 이어받은 분은 {{blank}}입니다.",
+        "en": "The person who succeeded Sarbanes in the Baltimore House seat in 1977 was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "케넬리",
+            "en": "Kennelly"
+          },
+          {
+            "id": "B",
+            "ko": "펜윅",
+            "en": "Fenwick"
+          },
+          {
+            "id": "C",
+            "ko": "미컬스키",
+            "en": "Mikulski"
+          },
+          {
+            "id": "D",
+            "ko": "복서",
+            "en": "Boxer"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 사무실의 연락처를 함께 주민들에게 안내하죠.",
+            "en": "Let's provide both offices' contact details to residents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "미컬스키는 사베인스가 상원으로 이동하며 비운 볼티모어 의석에 당선됐습니다.",
+            "en": "Mikulski won the Baltimore seat Sarbanes left for the Senate."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18207",
+          "claim": "Mikulski won the Baltimore House seat vacated by Sarbanes, who entered the Senate in 1977.",
+          "asOf": "1977-02-10"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/21212",
+          "claim": "Mikulski won the Baltimore House seat vacated by Sarbanes, who entered the Senate in 1977.",
+          "asOf": "1977-02-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-651-district-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-652",
+      "mechanism": "port-policy-link",
+      "learningTarget": "Mikulski served on Merchant Marine and Fisheries, whose jurisdiction affected Baltimore shipping and the inner harbor.",
+      "date": "1985-04-12",
+      "venue": {
+        "ko": "항만 노동자 간담회",
+        "en": "Harbor workers' gathering"
+      },
+      "context": {
+        "ko": "볼티모어 항만 노동자들이 연방 위원회의 관할 문제를 가져온다.",
+        "en": "Baltimore harbor workers bring a question about congressional jurisdiction."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Barbara Ann Mikulski",
+          "ko": "바버라 미컬스키",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18207"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "항만과 해운업에 관한 서류입니다. 어디에서 다루나요?",
+          "en": "These papers concern the harbor and shipping. Where are they handled?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 활동하는 위원회 가운데 관련 관할을 맡는 곳이 있습니다.",
+          "en": "One of the committees I serve on has relevant jurisdiction."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역 산업과 위원회 배정이 연결되는군요.",
+          "en": "Committee assignments can connect to district industries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해운과 항만 현안은 하원 {{blank}} 위원회 관할과 연결됩니다.",
+        "en": "Shipping and harbor issues relate to the House {{blank}} Committee.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "B",
+            "ko": "윤리",
+            "en": "Ethics"
+          },
+          {
+            "id": "C",
+            "ko": "규칙",
+            "en": "Rules"
+          },
+          {
+            "id": "D",
+            "ko": "상선·수산",
+            "en": "Merchant Marine and Fisheries"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "항만 관련 자료를 그 위원회의 관할과 함께 살펴봅시다.",
+            "en": "Let's examine the harbor papers alongside that committee's jurisdiction."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "미컬스키는 볼티모어 해운업과 항만에 관련된 상선·수산위원회에서 활동했습니다.",
+            "en": "Mikulski served on Merchant Marine and Fisheries, relevant to Baltimore's harbor and shipping."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18207",
+          "claim": "Mikulski served on Merchant Marine and Fisheries, whose jurisdiction affected Baltimore shipping and the inner harbor.",
+          "asOf": "1985-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-652-port-policy-link"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-653",
+      "mechanism": "representation-network",
+      "learningTarget": "Mikulski was a founding member of the Congresswomen's Caucus in 1977.",
+      "date": "1977-12-15",
+      "venue": {
+        "ko": "여성 의원 모임",
+        "en": "Congresswomen's gathering"
+      },
+      "context": {
+        "ko": "여러 지역 여성 의원의 공동 활동을 위한 모임에 초대받는다.",
+        "en": "You receive an invitation to a gathering for cooperation among congresswomen."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Barbara Ann Mikulski",
+          "ko": "바버라 미컬스키",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18207"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 여성 하원의원들이 함께 활동할 모임을 만들었습니다.",
+          "en": "This year congresswomen formed a group to work together."
+        },
+        {
+          "speaker": "player",
+          "ko": "각자의 지역구는 달라도 공통 의제를 논의할 수 있겠네요.",
+          "en": "Members from different districts can discuss shared concerns."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "미컬스키 의원이 창립에 참여한 모임은 {{blank}}입니다.",
+        "en": "Mikulski helped found the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "여성 의원 코커스",
+            "en": "Congresswomen's Caucus"
+          },
+          {
+            "id": "B",
+            "ko": "하원 규칙위원회",
+            "en": "House Rules Committee"
+          },
+          {
+            "id": "C",
+            "ko": "상원 외교위원회",
+            "en": "Senate Foreign Relations Committee"
+          },
+          {
+            "id": "D",
+            "ko": "주지사 협회",
+            "en": "Governors Association"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역구를 넘어선 의회 내 관계도 중요합니다.",
+            "en": "Relationships across constituencies matter too."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "미컬스키는 1977년 여성 의원 코커스의 창립 구성원이었습니다.",
+            "en": "Mikulski helped found the Congresswomen's Caucus in 1977."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18207",
+          "claim": "Mikulski was a founding member of the Congresswomen's Caucus in 1977.",
+          "asOf": "1977-12-15"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-653-representation-network"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-654",
+      "mechanism": "cross-party-friendship",
+      "learningTarget": "New Jersey Republican Fenwick and New York Democrat Abzug were close House friends with a shared commitment to women's rights.",
+      "date": "1976-03-12",
+      "venue": {
+        "ko": "두 의원의 복도 대화",
+        "en": "Conversation between colleagues"
+      },
+      "context": {
+        "ko": "다른 정당에 속한 두 의원이 여성의 권리 문제에 관해 이야기를 나눈다.",
+        "en": "Two members from different parties discuss a shared concern."
+      },
+      "cast": [
+        {
+          "id": "F000078",
+          "name": "Millicent Hammond Fenwick",
+          "ko": "밀리센트 펜윅",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13066"
+        },
+        {
+          "id": null,
+          "name": "Bella Savitzky Abzug",
+          "ko": "벨라 앱저그",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8276"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "벨라 의원과 저는 여성의 권리라는 공통 관심사가 있습니다.",
+          "en": "Bella and I share a commitment to women's rights."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "서로 다른 정당에 속한다고 해서 모든 관심사가 다른 건 아니죠.",
+          "en": "Different parties need not mean different concerns on every issue."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분의 실제 동료 관계가 인상적입니다.",
+          "en": "Your relationship as colleagues is striking."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "뉴욕의 민주당원 앱저그와 달리 펜윅 의원은 {{blank}} 소속입니다.",
+        "en": "Unlike New York Democrat Abzug, Fenwick belongs to the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "민주당",
+            "en": "Democratic Party"
+          },
+          {
+            "id": "B",
+            "ko": "공화당",
+            "en": "Republican Party"
+          },
+          {
+            "id": "C",
+            "ko": "자유토지당",
+            "en": "Free Soil Party"
+          },
+          {
+            "id": "D",
+            "ko": "휘그당",
+            "en": "Whig Party"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 차이와 공통 관심사를 함께 기억해 주세요.",
+            "en": "Remember our differences as well as our common concern."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜윅과 앱저그는 각각 공화당과 민주당 소속으로 여성 권리에 대한 관심을 공유한 가까운 동료였습니다.",
+            "en": "Republican Fenwick and Democrat Abzug were close colleagues who shared a commitment to women's rights."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13066",
+          "claim": "New Jersey Republican Fenwick and New York Democrat Abzug were close House friends with a shared commitment to women's rights.",
+          "asOf": "1976-03-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/8276",
+          "claim": "New Jersey Republican Fenwick and New York Democrat Abzug were close House friends with a shared commitment to women's rights.",
+          "asOf": "1976-03-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-654-cross-party-friendship"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-655",
+      "mechanism": "open-seat-transition",
+      "learningTarget": "Fenwick entered Congress after Peter Frelinghuysen Jr. retired from his north-central New Jersey district.",
+      "date": "1975-02-04",
+      "venue": {
+        "ko": "뉴저지 주민 환영회",
+        "en": "New Jersey constituent reception"
+      },
+      "context": {
+        "ko": "오랫동안 한 의원이 맡았던 지역에 새 대표가 들어온다.",
+        "en": "A new representative arrives in a district long held by another member."
+      },
+      "cast": [
+        {
+          "id": "F000078",
+          "name": "Millicent Hammond Fenwick",
+          "ko": "밀리센트 펜윅",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13066"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "전임 의원이 22년 동안 대표했던 지역을 이제 맡게 됐습니다.",
+          "en": "I now serve the district my predecessor represented for 22 years."
+        },
+        {
+          "speaker": "host",
+          "ko": "전임자가 은퇴한 뒤 처음 열린 주민 모임입니다.",
+          "en": "This is our first constituent gathering after the predecessor retired."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "펜윅 의원이 이어받은 지역은 뉴저지의 {{blank}} 지역입니다.",
+        "en": "Fenwick's new constituency lies in {{blank}} New Jersey.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "남동부",
+            "en": "southeastern"
+          },
+          {
+            "id": "B",
+            "ko": "최남단",
+            "en": "far southern"
+          },
+          {
+            "id": "C",
+            "ko": "북중부",
+            "en": "north-central"
+          },
+          {
+            "id": "D",
+            "ko": "대서양 섬 지역만",
+            "en": "offshore islands only"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 대표와 주민들의 접점을 만들어 봅시다.",
+            "en": "Let's create opportunities for residents to meet their new member."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜윅은 프릴링하이즌이 은퇴한 뉴저지 북중부 지역구에서 당선됐습니다.",
+            "en": "Fenwick won the north-central New Jersey seat after Frelinghuysen retired."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13066",
+          "claim": "Fenwick entered Congress after Peter Frelinghuysen Jr. retired from his north-central New Jersey district.",
+          "asOf": "1975-02-04"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-655-open-seat-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-656",
+      "mechanism": "narrow-primary-memory",
+      "learningTarget": "Fenwick defeated Thomas Kean by 76 votes in the June 1974 Republican primary.",
+      "date": "1974-11-15",
+      "venue": {
+        "ko": "지역 선거 기록 보관소",
+        "en": "Local election archive"
+      },
+      "context": {
+        "ko": "선거 결과표를 가져온 지역 기자가 공천 경쟁의 근소한 차이를 회고한다.",
+        "en": "A reporter recalls the narrow primary margin while examining election records."
+      },
+      "cast": [
+        {
+          "id": "F000078",
+          "name": "Millicent Hammond Fenwick",
+          "ko": "밀리센트 펜윅",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13066"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지난 6월 공화당 경선 기록이 나왔습니다. 일반 선거와 달리 정말 접전이었죠.",
+          "en": "Here is June's Republican primary record. It was unusually close."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "토머스 킨과의 경쟁에서 근소한 차이로 이겼습니다.",
+          "en": "I narrowly defeated Thomas Kean."
+        },
+        {
+          "speaker": "player",
+          "ko": "정확한 차이를 결과표에 남기겠습니다.",
+          "en": "I'll record the exact margin."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1974년 6월 펜윅의 공천 경쟁 승리 차이는 {{blank}}표였습니다.",
+        "en": "Fenwick's margin in the June 1974 primary was {{blank}} votes.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "760",
+            "en": "760"
+          },
+          {
+            "id": "B",
+            "ko": "7,600",
+            "en": "7,600"
+          },
+          {
+            "id": "C",
+            "ko": "1,076",
+            "en": "1,076"
+          },
+          {
+            "id": "D",
+            "ko": "76",
+            "en": "76"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "경선 결과와 본선 결과는 구분해 주세요.",
+            "en": "Keep the primary and general election returns separate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜윅은 토머스 킨을 76표 차로 이겼습니다.",
+            "en": "Fenwick defeated Thomas Kean by 76 votes."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13066",
+          "claim": "Fenwick defeated Thomas Kean by 76 votes in the June 1974 Republican primary.",
+          "asOf": "1974-11-15"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-656-narrow-primary-memory"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-657",
+      "mechanism": "committee-access",
+      "learningTarget": "Fenwick obtained a Foreign Affairs Committee assignment in 1979 after years of seeking it.",
+      "date": "1979-05-10",
+      "venue": {
+        "ko": "위원회 배정 이후 재회",
+        "en": "Reunion after committee assignment"
+      },
+      "context": {
+        "ko": "예전에 위원회 배정을 기다리던 의원이 새 임무를 맡았다는 소식을 전한다.",
+        "en": "A member who had sought a committee assignment shares news of a new role."
+      },
+      "cast": [
+        {
+          "id": "F000078",
+          "name": "Millicent Hammond Fenwick",
+          "ko": "밀리센트 펜윅",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13066"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "예전에는 관심 있던 위원회에 들어가지 못하셨죠.",
+          "en": "Previously you had not obtained the committee assignment you wanted."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "올해 그곳에 배정됐습니다.",
+          "en": "I received that assignment this year."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1979년에 펜윅 의원이 배정받은 곳은 {{blank}} 위원회였습니다.",
+        "en": "In 1979 Fenwick gained a seat on the {{blank}} Committee.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "외교",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "B",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "C",
+            "ko": "세입",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "D",
+            "ko": "군사",
+            "en": "Armed Services"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "예전 배정과 새 배정을 따로 기억해 주세요.",
+            "en": "Keep the earlier and new assignments distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜윅은 오랜 노력 끝에 1979년 외교위원회에 배정됐습니다.",
+            "en": "Fenwick gained a Foreign Affairs Committee assignment in 1979 after years of seeking it."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13066",
+          "claim": "Fenwick obtained a Foreign Affairs Committee assignment in 1979 after years of seeking it.",
+          "asOf": "1979-05-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-657-committee-access"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-658",
+      "mechanism": "midterm-vacancy",
+      "learningTarget": "Kennelly won the January 12, 1982 special election after William Cotter's death, representing a Hartford-area district.",
+      "date": "1982-02-02",
+      "venue": {
+        "ko": "하트퍼드 지역 사무실",
+        "en": "Hartford district office"
+      },
+      "context": {
+        "ko": "임기 중 새 대표가 취임한 뒤 주민이 사무실을 방문한다.",
+        "en": "A resident visits after the new member takes office midterm."
+      },
+      "cast": [
+        {
+          "id": "K000118",
+          "name": "Barbara Bailey Kennelly",
+          "ko": "바버라 케넬리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail?id=16225"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난달 특별선거 뒤 25일 의석을 맡았습니다.",
+          "en": "After last month's special election, I took my seat on the 25th."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역의 연방 대표가 임기 중 바뀌었군요.",
+          "en": "Federal representation changed midterm."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "케넬리 의원은 {{blank}}의 사망으로 생긴 공석을 채웠습니다.",
+        "en": "Kennelly filled the vacancy created by the death of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "폴 사베인스",
+            "en": "Paul Sarbanes"
+          },
+          {
+            "id": "B",
+            "ko": "윌리엄 코터",
+            "en": "William Cotter"
+          },
+          {
+            "id": "C",
+            "ko": "토머스 오닐",
+            "en": "Thomas O'Neill"
+          },
+          {
+            "id": "D",
+            "ko": "존 버튼",
+            "en": "John Burton"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 지역 주민들의 새 문의를 받겠습니다.",
+            "en": "I will now take new constituent inquiries."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "케넬리는 코터 사망으로 열린 1982년 1월 12일 특별선거에서 당선됐습니다.",
+            "en": "Kennelly won the January 12, 1982 special election after Cotter's death."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail?id=16225",
+          "claim": "Kennelly won the January 12, 1982 special election after William Cotter's death, representing a Hartford-area district.",
+          "asOf": "1982-02-02"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-658-midterm-vacancy"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-659",
+      "mechanism": "personal-colleague-network",
+      "learningTarget": "Kennelly of Connecticut and Ferraro of New York were friends and House colleagues; Kennelly's district had major insurance employers.",
+      "date": "1984-03-10",
+      "venue": {
+        "ko": "지역 경제 정책 오찬",
+        "en": "District economic policy lunch"
+      },
+      "context": {
+        "ko": "두 친구 의원이 지역경제와 전국 정책의 연결을 논의한다.",
+        "en": "Two friends in Congress discuss the connection between local economic interests and national policy."
+      },
+      "cast": [
+        {
+          "id": "K000118",
+          "name": "Barbara Bailey Kennelly",
+          "ko": "바버라 케넬리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail?id=16225"
+        },
+        {
+          "id": null,
+          "name": "Geraldine Anne Ferraro",
+          "ko": "제럴딘 페라로",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13081"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "바버라 의원의 지역구에는 큰 보험회사들이 있습니다.",
+          "en": "Barbara's district has major insurance companies."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "세입위원회의 업무가 지역 산업과도 연결되죠.",
+          "en": "Ways and Means work relates to the district's industries."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원의 지역적 배경은 다르지만 정책 대화는 이어지는군요.",
+          "en": "Your districts differ, but the policy conversation continues."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "케넬리 의원의 보험산업 중심 지역은 {{blank}}주에 있습니다.",
+        "en": "Kennelly's insurance-industry constituency is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕",
+            "en": "New York"
+          },
+          {
+            "id": "B",
+            "ko": "뉴저지",
+            "en": "New Jersey"
+          },
+          {
+            "id": "C",
+            "ko": "코네티컷",
+            "en": "Connecticut"
+          },
+          {
+            "id": "D",
+            "ko": "메릴랜드",
+            "en": "Maryland"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 산업과 전국 정책의 관계를 함께 검토하죠.",
+            "en": "Let's examine local industry alongside national policy."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "케넬리는 하트퍼드 지역의 보험 산업과 관련된 세입위원회 업무를 맡았고 페라로는 뉴욕의 동료이자 친구였습니다.",
+            "en": "Kennelly served Hartford's insurance-centered constituency; Ferraro was her New York colleague and friend."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail?id=16225",
+          "claim": "Kennelly of Connecticut and Ferraro of New York were friends and House colleagues; Kennelly's district had major insurance employers.",
+          "asOf": "1984-03-10"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13081",
+          "claim": "Kennelly of Connecticut and Ferraro of New York were friends and House colleagues; Kennelly's district had major insurance employers.",
+          "asOf": "1984-03-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-659-personal-colleague-network"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-660",
+      "mechanism": "intraparty-leadership-contest",
+      "learningTarget": "Kennelly defeated Slaughter of New York for Democratic Caucus vice chair in the 103rd Congress.",
+      "date": "1993-03-15",
+      "venue": {
+        "ko": "당 코커스 회의 후",
+        "en": "After the party caucus meeting"
+      },
+      "context": {
+        "ko": "같은 당의 두 여성 의원이 내부 지도부 선거 결과를 이야기한다.",
+        "en": "Two women in the same party discuss an internal leadership election."
+      },
+      "cast": [
+        {
+          "id": "K000118",
+          "name": "Barbara Bailey Kennelly",
+          "ko": "바버라 케넬리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail?id=16225"
+        },
+        {
+          "id": "S000480",
+          "name": "Louise McIntosh Slaughter",
+          "ko": "루이즈 슬로터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000480.jpg",
+          "source": "https://history.house.gov/People/Detail/21738"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 당 코커스 부의장 선거에서 당선됐습니다.",
+          "en": "I won the caucus vice-chair election."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 그 직책을 놓고 경쟁했습니다.",
+          "en": "I also competed for that position."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역구 선거와 당내 지도부 선거는 다른 절차군요.",
+          "en": "District elections and internal leadership contests are separate processes."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "케넬리와 경쟁한 뉴욕 하원의원은 {{blank}}입니다.",
+        "en": "The New York House member who competed with Kennelly was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "복서",
+            "en": "Boxer"
+          },
+          {
+            "id": "B",
+            "ko": "미컬스키",
+            "en": "Mikulski"
+          },
+          {
+            "id": "C",
+            "ko": "펜윅",
+            "en": "Fenwick"
+          },
+          {
+            "id": "D",
+            "ko": "슬로터",
+            "en": "Slaughter"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "각자의 지역대표직과 당내 직책을 구분해 두죠.",
+            "en": "Distinguish our district seats from party leadership offices."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "케넬리는 제103대 의회 민주당 코커스 부의장 선거에서 슬로터와 경쟁해 당선됐습니다.",
+            "en": "Kennelly defeated Slaughter for Democratic Caucus vice chair in the 103rd Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail?id=16225",
+          "claim": "Kennelly defeated Slaughter of New York for Democratic Caucus vice chair in the 103rd Congress.",
+          "asOf": "1993-03-15"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/21738",
+          "claim": "Kennelly defeated Slaughter of New York for Democratic Caucus vice chair in the 103rd Congress.",
+          "asOf": "1993-03-15"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-660-intraparty-leadership-contest"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-661",
+      "mechanism": "representation-milestone",
+      "learningTarget": "Kennelly became the first woman on the House Permanent Select Committee on Intelligence in 1987.",
+      "date": "1987-12-10",
+      "venue": {
+        "ko": "위원회 신규 배정",
+        "en": "New committee appointment"
+      },
+      "context": {
+        "ko": "하원의 여성 대표성 변화와 관련된 소식을 접한다.",
+        "en": "You learn of a milestone in women's representation on House committees."
+      },
+      "cast": [
+        {
+          "id": "K000118",
+          "name": "Barbara Bailey Kennelly",
+          "ko": "바버라 케넬리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail?id=16225"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "올해 이 위원회에 처음으로 여성 의원이 배정됐습니다.",
+          "en": "A woman joined this committee for the first time this year."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 배정을 맡게 되었습니다.",
+          "en": "I received that assignment."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "케넬리 의원이 최초 여성 위원으로 합류한 곳은 하원 {{blank}}입니다.",
+        "en": "Kennelly became the first woman on the House {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정보특별위원회",
+            "en": "Permanent Select Committee on Intelligence"
+          },
+          {
+            "id": "B",
+            "ko": "농업위원회",
+            "en": "Agriculture Committee"
+          },
+          {
+            "id": "C",
+            "ko": "규칙위원회",
+            "en": "Rules Committee"
+          },
+          {
+            "id": "D",
+            "ko": "윤리위원회",
+            "en": "Ethics Committee"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "위원회별 대표성의 변화를 기록하면 좋겠습니다.",
+            "en": "It is useful to record representation changes committee by committee."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1987년 케넬리는 하원 정보특별위원회의 첫 여성 위원이 되었습니다.",
+            "en": "Kennelly became its first woman member in 1987."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail?id=16225",
+          "claim": "Kennelly became the first woman on the House Permanent Select Committee on Intelligence in 1987.",
+          "asOf": "1987-12-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-661-representation-milestone"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-662",
+      "mechanism": "staff-to-representative",
+      "learningTarget": "Boxer worked for Representative John Lowell Burton, whose district encompassed Marin County, from 1974 to 1976.",
+      "date": "1983-03-12",
+      "venue": {
+        "ko": "마린 카운티 주민 재회",
+        "en": "Marin County reunion"
+      },
+      "context": {
+        "ko": "주민이 신임 의원을 예전 보좌진 시절부터 기억한다.",
+        "en": "A resident remembers the new member from her earlier staff service."
+      },
+      "cast": [
+        {
+          "id": "B000711",
+          "name": "Barbara Boxer",
+          "ko": "바버라 복서",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000711.jpg",
+          "source": "https://history.house.gov/People/Detail/9704"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "마린 카운티를 포함한 지역구의 보좌진으로 일하시던 때를 기억합니다.",
+          "en": "I remember your staff work for the district encompassing Marin County."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1974년부터 1976년까지 그 의원의 보좌진이었습니다.",
+          "en": "I worked for that member from 1974 to 1976."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "복서 의원이 보좌했던 인물은 {{blank}}입니다.",
+        "en": "Boxer worked for Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "필립 버튼",
+            "en": "Phillip Burton"
+          },
+          {
+            "id": "B",
+            "ko": "존 로웰 버튼",
+            "en": "John Lowell Burton"
+          },
+          {
+            "id": "C",
+            "ko": "조지 밀러",
+            "en": "George Miller"
+          },
+          {
+            "id": "D",
+            "ko": "폴 사베인스",
+            "en": "Paul Sarbanes"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이전 보좌진 경력과 현재 의원직을 연결해 기억해 주세요.",
+            "en": "Remember how my earlier staff role relates to my current office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "복서는 마린 카운티를 포함한 지역구의 존 로웰 버튼 의원 보좌진으로 일했습니다.",
+            "en": "Boxer worked for John Lowell Burton, whose district included Marin County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/9704",
+          "claim": "Boxer worked for Representative John Lowell Burton, whose district encompassed Marin County, from 1974 to 1976.",
+          "asOf": "1983-03-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-662-staff-to-representative"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-663",
+      "mechanism": "two-senate-seats",
+      "learningTarget": "Boxer won election in 1992 to the California Senate seat previously held by retiring Alan Cranston.",
+      "date": "1992-11-10",
+      "venue": {
+        "ko": "캘리포니아 선거 결과 브리핑",
+        "en": "California election returns briefing"
+      },
+      "context": {
+        "ko": "캘리포니아의 두 상원 선거가 동시에 열려 당선자의 의석을 구분한다.",
+        "en": "Two simultaneous Senate races require distinguishing which seat each winner sought."
+      },
+      "cast": [
+        {
+          "id": "B000711",
+          "name": "Barbara Boxer",
+          "ko": "바버라 복서",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000711.jpg",
+          "source": "https://history.house.gov/People/Detail/9704"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "올해 캘리포니아에는 상원 선거가 두 개였습니다.",
+          "en": "California held two Senate elections this year."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 출마한 것은 임기 만료를 앞둔 의원의 의석이었습니다.",
+          "en": "I ran for the seat of the senator whose term was ending."
+        },
+        {
+          "speaker": "player",
+          "ko": "다른 공석을 채우는 선거와 구분하겠습니다.",
+          "en": "I'll distinguish it from the other vacancy election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "복서 의원이 당선된 의석의 전임 상원의원은 {{blank}}입니다.",
+        "en": "The former senator whose seat Boxer won was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "피트 윌슨",
+            "en": "Pete Wilson"
+          },
+          {
+            "id": "B",
+            "ko": "폴 사베인스",
+            "en": "Paul Sarbanes"
+          },
+          {
+            "id": "C",
+            "ko": "앨런 크랜스턴",
+            "en": "Alan Cranston"
+          },
+          {
+            "id": "D",
+            "ko": "제임스 제퍼즈",
+            "en": "James Jeffords"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 선거의 기록을 별도로 보관하죠.",
+            "en": "Keep the returns of the two elections separate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "복서는 크랜스턴이 은퇴하는 의석에 출마해 1992년 당선됐습니다.",
+            "en": "Boxer won the seat of retiring senator Alan Cranston in 1992."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/9704",
+          "claim": "Boxer won election in 1992 to the California Senate seat previously held by retiring Alan Cranston.",
+          "asOf": "1992-11-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-663-two-senate-seats"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-664",
+      "mechanism": "local-executive-to-house",
+      "learningTarget": "Sanders served as mayor of Burlington, Vermont from 1981 to 1989 before entering the House in 1991.",
+      "date": "1991-02-14",
+      "venue": {
+        "ko": "버링턴 주민 모임",
+        "en": "Burlington residents' meeting"
+      },
+      "context": {
+        "ko": "예전에 시장에게 요청을 전했던 주민이 새 연방 의원으로 다시 만난다.",
+        "en": "A resident meets a former mayor in his new federal office."
+      },
+      "cast": [
+        {
+          "id": "S000033",
+          "name": "Bernard Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://history.house.gov/People/Detail/21173"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "예전에는 시청에서 만났는데 이제 의사당에서 뵙네요.",
+          "en": "We met at city hall before, and now here at the Capitol."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "시장을 맡았던 임기는 1981년부터 1989년까지였습니다.",
+          "en": "My mayoral service lasted from 1981 to 1989."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "샌더스 의원이 시장으로 일했던 도시는 {{blank}}입니다.",
+        "en": "The city where Sanders served as mayor was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "몬트필리어",
+            "en": "Montpelier"
+          },
+          {
+            "id": "B",
+            "ko": "러틀랜드",
+            "en": "Rutland"
+          },
+          {
+            "id": "C",
+            "ko": "브래틀버러",
+            "en": "Brattleboro"
+          },
+          {
+            "id": "D",
+            "ko": "버링턴",
+            "en": "Burlington"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "시 행정과 연방 대표직의 권한은 구분해야 합니다.",
+            "en": "Municipal and federal responsibilities are distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "샌더스는 1981~1989년 버링턴 시장이었습니다.",
+            "en": "Sanders was mayor of Burlington from 1981 to 1989."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/21173",
+          "claim": "Sanders served as mayor of Burlington, Vermont from 1981 to 1989 before entering the House in 1991.",
+          "asOf": "1991-02-14"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-664-local-executive-to-house"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-665",
+      "mechanism": "statewide-house-seat",
+      "learningTarget": "Sanders represented Vermont's at-large House seat as an Independent in the 109th Congress.",
+      "date": "2005-08-15",
+      "venue": {
+        "ko": "버몬트 지역 순회 일정",
+        "en": "Vermont statewide itinerary"
+      },
+      "context": {
+        "ko": "방문단이 서로 멀리 떨어진 도시를 같은 하원 의원에게 연결하려 한다.",
+        "en": "Visitors from distant towns seek contact with the same House member."
+      },
+      "cast": [
+        {
+          "id": "S000033",
+          "name": "Bernard Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://history.house.gov/People/Detail/21173"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "여러 도시가 떨어져 있는데 하원 대표는 한 분입니다.",
+          "en": "The towns are far apart, but they have one House representative."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 하원 선거구는 주 전체입니다.",
+          "en": "My House constituency covers the entire state."
+        },
+        {
+          "speaker": "player",
+          "ko": "번호가 붙은 지역구와 다른 방식이군요.",
+          "en": "That differs from a numbered district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2005년 샌더스 의원의 버몬트 하원 의석은 {{blank}}입니다.",
+        "en": "In 2005 Sanders held Vermont's {{blank}} House seat.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 전체",
+            "en": "at-large"
+          },
+          {
+            "id": "B",
+            "ko": "제1선거구",
+            "en": "First District"
+          },
+          {
+            "id": "C",
+            "ko": "제2선거구",
+            "en": "Second District"
+          },
+          {
+            "id": "D",
+            "ko": "제3선거구",
+            "en": "Third District"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 전역의 주민에게 같은 대표 연락처를 안내하죠.",
+            "en": "Give constituents throughout the state the same House contact."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제109대 의회에서 샌더스는 버몬트 주 전체 의석의 무소속 의원이었습니다.",
+            "en": "Sanders was Vermont's independent at-large House member in the 109th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/21173",
+          "claim": "Sanders represented Vermont's at-large House seat as an Independent in the 109th Congress.",
+          "asOf": "2005-08-15"
+        },
+        {
+          "url": "https://www.govinfo.gov/app/details/CDIR-2005-07-11/CDIR-2005-07-11-VT-H-0/context",
+          "claim": "Sanders represented Vermont's at-large House seat as an Independent in the 109th Congress.",
+          "asOf": "2005-08-15"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-665-statewide-house-seat"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-666",
+      "mechanism": "statewide-handover",
+      "learningTarget": "Sanders entered the Senate in 2007 while Welch succeeded him as Vermont's statewide House member.",
+      "date": "2007-02-06",
+      "venue": {
+        "ko": "버몬트 대표단 인수인계",
+        "en": "Vermont delegation handover"
+      },
+      "context": {
+        "ko": "새 상원의원과 새 하원의원이 주민 문의를 나누어 맡는다.",
+        "en": "The new senator and new House member divide constituent correspondence."
+      },
+      "cast": [
+        {
+          "id": "S000033",
+          "name": "Bernard Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://history.house.gov/People/Detail/21173"
+        },
+        {
+          "id": "W000800",
+          "name": "Peter Welch",
+          "ko": "피터 웰치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000800.jpg",
+          "source": "https://history.house.gov/People/Detail/24183"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 업무는 이제 상원에 있습니다.",
+          "en": "My work is now in the Senate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "버몬트의 하원 업무는 제가 이어받았습니다.",
+          "en": "I have taken over Vermont's House representation."
+        },
+        {
+          "speaker": "player",
+          "ko": "주 전체를 대표하는 하원의원이 바뀐 것이군요.",
+          "en": "The state's at-large House representative has changed."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2007년 새 버몬트 하원의원은 {{blank}}입니다.",
+        "en": "Vermont's new House member in 2007 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "샌더스",
+            "en": "Sanders"
+          },
+          {
+            "id": "B",
+            "ko": "웰치",
+            "en": "Welch"
+          },
+          {
+            "id": "C",
+            "ko": "폴",
+            "en": "Paul"
+          },
+          {
+            "id": "D",
+            "ko": "라이언",
+            "en": "Ryan"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 두 원에 맞게 주민 요청을 전달하겠습니다.",
+            "en": "We'll direct requests to the proper chamber."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "샌더스가 상원으로 이동하고 웰치가 버몬트 주 전체 하원 의석에 취임했습니다.",
+            "en": "Sanders entered the Senate and Welch took Vermont's at-large House seat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/21173",
+          "claim": "Sanders entered the Senate in 2007 while Welch succeeded him as Vermont's statewide House member.",
+          "asOf": "2007-02-06"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/24183",
+          "claim": "Sanders entered the Senate in 2007 while Welch succeeded him as Vermont's statewide House member.",
+          "asOf": "2007-02-06"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-666-statewide-handover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-667",
+      "mechanism": "prior-state-leadership",
+      "learningTarget": "Welch served as president pro tempore of the Vermont Senate in 2003–2007 before entering the U.S. House.",
+      "date": "2007-08-20",
+      "venue": {
+        "ko": "주의회 방문단",
+        "en": "State legislature visitors"
+      },
+      "context": {
+        "ko": "주의회에서 일한 동료들이 연방 하원에서 웰치를 다시 만난다.",
+        "en": "Former state legislative colleagues meet Welch in the federal House."
+      },
+      "cast": [
+        {
+          "id": "W000800",
+          "name": "Peter Welch",
+          "ko": "피터 웰치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000800.jpg",
+          "source": "https://history.house.gov/People/Detail/24183"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2003년부터 올해 연방 의회에 오기 전까지 주의회 지도부에서 일했습니다.",
+          "en": "From 2003 until I came to Congress this year, I served in state legislative leadership."
+        },
+        {
+          "speaker": "player",
+          "ko": "주의회 직책과 지금의 연방 하원 의원직을 구분하겠습니다.",
+          "en": "I'll distinguish your state role from your federal House office."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "웰치 의원은 당시 버몬트 주상원의 {{blank}}였습니다.",
+        "en": "Welch was then the Vermont Senate's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "B",
+            "ko": "법무장관",
+            "en": "attorney general"
+          },
+          {
+            "id": "C",
+            "ko": "임시의장",
+            "en": "president pro tempore"
+          },
+          {
+            "id": "D",
+            "ko": "하원의장",
+            "en": "House speaker"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 단계의 입법기관을 구분해 이해해 주세요.",
+            "en": "Distinguish the two levels of legislative government."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "웰치는 2003~2007년 버몬트 주상원 임시의장이었습니다.",
+            "en": "Welch was Vermont Senate president pro tempore in 2003–2007."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/24183",
+          "claim": "Welch served as president pro tempore of the Vermont Senate in 2003–2007 before entering the U.S. House.",
+          "asOf": "2007-08-20"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-667-prior-state-leadership"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-668",
+      "mechanism": "dated-district-recognition",
+      "learningTarget": "Paul's archive identifies his 1978 campaign with Texas District 22; the 2008 directory lists him in Texas District 14.",
+      "date": "2008-08-15",
+      "venue": {
+        "ko": "텍사스 선거 자료실",
+        "en": "Texas campaign archive"
+      },
+      "context": {
+        "ko": "오래된 선거 홍보물과 현재 의회 명부에 서로 다른 번호가 적혀 있다.",
+        "en": "An old campaign item and the current directory show different district numbers."
+      },
+      "cast": [
+        {
+          "id": "P000583",
+          "name": "Ronald Ernest Paul",
+          "ko": "론 폴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000583.jpg",
+          "source": "https://history.house.gov/People/Detail/20005"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "1978년 자료에는 제22선거구라고 되어 있습니다.",
+          "en": "The 1978 campaign material says District 22."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현재 의회 명부의 번호는 그때와 다릅니다.",
+          "en": "The current directory has a different number."
+        },
+        {
+          "speaker": "aide",
+          "ko": "연도별 표기를 따로 보관하죠.",
+          "en": "Keep the two dated labels separate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2008년 론 폴 의원의 지역구는 텍사스 {{blank}}입니다.",
+        "en": "In 2008 Ron Paul represents Texas's {{blank}} District.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제22선거구",
+            "en": "22nd"
+          },
+          {
+            "id": "B",
+            "ko": "제7선거구",
+            "en": "7th"
+          },
+          {
+            "id": "C",
+            "ko": "제10선거구",
+            "en": "10th"
+          },
+          {
+            "id": "D",
+            "ko": "제14선거구",
+            "en": "14th"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "과거 자료의 번호를 현재 번호로 바꾸지는 마세요.",
+            "en": "Do not overwrite the old campaign label with the current one."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1978년 선거 자료는 TX-22, 2008년 의회 명부는 TX-14로 기록합니다.",
+            "en": "The 1978 campaign material lists TX-22; the 2008 directory lists TX-14."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20005",
+          "claim": "Paul's archive identifies his 1978 campaign with Texas District 22; the 2008 directory lists him in Texas District 14.",
+          "asOf": "2008-08-15"
+        },
+        {
+          "url": "https://www.govinfo.gov/app/details/CDIR-2008-08-01/CDIR-2008-08-01-TX-H-14",
+          "claim": "Paul's archive identifies his 1978 campaign with Texas District 22; the 2008 directory lists him in Texas District 14.",
+          "asOf": "2008-08-15"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-668-dated-district-recognition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-669",
+      "mechanism": "distinct-party-state-introduction",
+      "learningTarget": "Paul served Texas as a Republican and Sanders Vermont as an Independent in the 109th Congress.",
+      "date": "2006-10-12",
+      "venue": {
+        "ko": "의원 대담 준비실",
+        "en": "Joint interview preparation"
+      },
+      "context": {
+        "ko": "두 의원이 함께 진행되는 대담의 소개를 준비한다.",
+        "en": "Two lawmakers prepare to be introduced in a joint interview."
+      },
+      "cast": [
+        {
+          "id": "P000583",
+          "name": "Ronald Ernest Paul",
+          "ko": "론 폴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000583.jpg",
+          "source": "https://history.house.gov/People/Detail/20005"
+        },
+        {
+          "id": "S000033",
+          "name": "Bernard Sanders",
+          "ko": "버니 샌더스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000033.jpg",
+          "source": "https://history.house.gov/People/Detail/21173"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 텍사스의 공화당 하원의원입니다.",
+          "en": "I am a Republican House member from Texas."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 버몬트의 주 전체 의석을 맡고 있습니다.",
+          "en": "I hold Vermont's statewide House seat."
+        },
+        {
+          "speaker": "host",
+          "ko": "두 분의 정당 소속이 같다고 소개하지 않겠습니다.",
+          "en": "I won't introduce both of you as belonging to the same party."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "샌더스 의원은 당시 {{blank}} 소속입니다.",
+        "en": "Sanders serves at that time as an {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "무소속",
+            "en": "Independent"
+          },
+          {
+            "id": "B",
+            "ko": "공화당원",
+            "en": "Republican"
+          },
+          {
+            "id": "C",
+            "ko": "민주당원",
+            "en": "Democrat"
+          },
+          {
+            "id": "D",
+            "ko": "휘그당원",
+            "en": "Whig"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 차이를 반영해서 대담을 진행합시다.",
+            "en": "Let's make that distinction clear in the interview."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제109대 의회에서 폴은 공화당, 샌더스는 무소속이었습니다.",
+            "en": "In the 109th House Paul was Republican and Sanders Independent."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20005",
+          "claim": "Paul served Texas as a Republican and Sanders Vermont as an Independent in the 109th Congress.",
+          "asOf": "2006-10-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/21173",
+          "claim": "Paul served Texas as a Republican and Sanders Vermont as an Independent in the 109th Congress.",
+          "asOf": "2006-10-12"
+        },
+        {
+          "url": "https://www.govinfo.gov/app/details/CDIR-2006-09-01/CDIR-2006-09-01-VT-H-0",
+          "claim": "Paul served Texas as a Republican and Sanders Vermont as an Independent in the 109th Congress.",
+          "asOf": "2006-10-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-669-distinct-party-state-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-670",
+      "mechanism": "staff-to-member-transition",
+      "learningTarget": "Ryan worked for Kansas Representative Sam Brownback in 1995–1996 before entering the House from Wisconsin in 1999.",
+      "date": "1999-02-10",
+      "venue": {
+        "ko": "옛 보좌진 동료와 재회",
+        "en": "Reunion with former staff colleagues"
+      },
+      "context": {
+        "ko": "예전에는 다른 의원을 보좌하던 인물이 자기 지역의 의원으로 돌아온다.",
+        "en": "A former congressional aide returns as a representative in his own right."
+      },
+      "cast": [
+        {
+          "id": "R000570",
+          "name": "Paul D. Ryan",
+          "ko": "폴 라이언",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000570.jpg",
+          "source": "https://history.house.gov/People/Listing/R/RYAN,-Paul-D--(R000570)/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "예전에 캔자스 의원 사무실에서 근무하셨죠?",
+          "en": "You used to work in a Kansas member's office, didn't you?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1995년부터 1996년까지 하원에서 그 의원을 보좌했습니다.",
+          "en": "I worked for him in the House from 1995 to 1996."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "라이언 의원이 당시 보좌했던 의원은 {{blank}}입니다.",
+        "en": "The representative Ryan worked for was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "존 베이너",
+            "en": "John Boehner"
+          },
+          {
+            "id": "B",
+            "ko": "샘 브라운백",
+            "en": "Sam Brownback"
+          },
+          {
+            "id": "C",
+            "ko": "케빈 매카시",
+            "en": "Kevin McCarthy"
+          },
+          {
+            "id": "D",
+            "ko": "에릭 캔터",
+            "en": "Eric Cantor"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 위스콘신 주민을 직접 대표하는 직책을 맡았습니다.",
+            "en": "I now directly represent constituents in Wisconsin."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "라이언은 캔자스 하원의원 샘 브라운백의 보좌진이었습니다.",
+            "en": "Ryan worked for Kansas Representative Sam Brownback."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/R/RYAN,-Paul-D--(R000570)/",
+          "claim": "Ryan worked for Kansas Representative Sam Brownback in 1995–1996 before entering the House from Wisconsin in 1999.",
+          "asOf": "1999-02-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-670-staff-to-member-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-671",
+      "mechanism": "leadership-and-constituency",
+      "learningTarget": "Ryan became Speaker in October 2015 following Ohio Representative John Boehner's departure.",
+      "date": "2015-11-05",
+      "venue": {
+        "ko": "위스콘신 주민 접견",
+        "en": "Wisconsin constituent reception"
+      },
+      "context": {
+        "ko": "지역 주민이 자신의 의원이 전국 의회 지도부에 오른 뒤에도 지역대표인지 묻는다.",
+        "en": "A constituent asks whether a newly elected Speaker still represents the district."
+      },
+      "cast": [
+        {
+          "id": "R000570",
+          "name": "Paul D. Ryan",
+          "ko": "폴 라이언",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000570.jpg",
+          "source": "https://history.house.gov/People/Listing/R/RYAN,-Paul-D--(R000570)/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "의장직을 맡았지만 위스콘신의 하원 의원이라는 사실은 달라지지 않습니다.",
+          "en": "I have become Speaker, but I remain a Wisconsin House member."
+        },
+        {
+          "speaker": "player",
+          "ko": "전임 의장과 새 의장의 출신 주는 다르군요.",
+          "en": "The outgoing and incoming Speakers represent different states."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2015년 10월 라이언이 뒤를 이은 오하이오 출신 의장은 {{blank}}입니다.",
+        "en": "The Ohio Speaker Ryan succeeded in October 2015 was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴트 깅리치",
+            "en": "Newt Gingrich"
+          },
+          {
+            "id": "B",
+            "ko": "톰 폴리",
+            "en": "Tom Foley"
+          },
+          {
+            "id": "C",
+            "ko": "존 베이너",
+            "en": "John Boehner"
+          },
+          {
+            "id": "D",
+            "ko": "데니스 해스터트",
+            "en": "Dennis Hastert"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "의장직과 지역구 의원직을 각각 기록해 주세요.",
+            "en": "Record the speakership and constituency separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "라이언은 2015년 10월 오하이오의 베이너 뒤를 이어 의장이 됐습니다.",
+            "en": "Ryan succeeded Boehner of Ohio as Speaker in October 2015."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/R/RYAN,-Paul-D--(R000570)/",
+          "claim": "Ryan became Speaker in October 2015 following Ohio Representative John Boehner's departure.",
+          "asOf": "2015-11-05"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-671-leadership-and-constituency"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-672",
+      "mechanism": "family-representation",
+      "learningTarget": "Liz Cheney and her father Richard Cheney both served Wyoming in the U.S. House in different periods.",
+      "date": "2017-02-15",
+      "venue": {
+        "ko": "와이오밍 대표단 세대 교류",
+        "en": "Wyoming generational meeting"
+      },
+      "context": {
+        "ko": "주민이 두 세대의 체니와 같은 주의 대표 기록을 연결한다.",
+        "en": "A constituent connects two generations of the Cheney family to the same state's representation."
+      },
+      "cast": [
+        {
+          "id": "C001109",
+          "name": "Liz Cheney",
+          "ko": "리즈 체니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001109.jpg",
+          "source": "https://history.house.gov/People/Detail/15032440419"
+        },
+        {
+          "id": "C000344",
+          "name": "Richard Bruce Cheney",
+          "ko": "딕 체니",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/C/CHENEY%2C-Richard-Bruce-%28C000344%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 이번 의회부터 와이오밍을 대표합니다.",
+          "en": "I represent Wyoming beginning with this Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 과거 하원에서 그 주를 대표했습니다.",
+          "en": "I represented that state in the House in earlier years."
+        },
+        {
+          "speaker": "player",
+          "ko": "가족 관계뿐 아니라 공직의 시대도 구분해야겠네요.",
+          "en": "We should distinguish the periods of service as well as the family relationship."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "리즈 체니 의원과 딕 체니 전 의원의 공통 대표 주는 {{blank}}입니다.",
+        "en": "The state both Liz and Dick Cheney represented in the House is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "위스콘신",
+            "en": "Wisconsin"
+          },
+          {
+            "id": "B",
+            "ko": "네브래스카",
+            "en": "Nebraska"
+          },
+          {
+            "id": "C",
+            "ko": "몬태나",
+            "en": "Montana"
+          },
+          {
+            "id": "D",
+            "ko": "와이오밍",
+            "en": "Wyoming"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 사람의 별도 임기 기록을 함께 보관하죠.",
+            "en": "Keep separate term records for each of us."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "딕 체니와 딸 리즈 체니는 서로 다른 시기에 와이오밍 하원의원으로 재임했습니다.",
+            "en": "Dick Cheney and his daughter Liz represented Wyoming in the House in different periods."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/15032440419",
+          "claim": "Liz Cheney and her father Richard Cheney both served Wyoming in the U.S. House in different periods.",
+          "asOf": "2017-02-15"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/C/CHENEY%2C-Richard-Bruce-%28C000344%29/",
+          "claim": "Liz Cheney and her father Richard Cheney both served Wyoming in the U.S. House in different periods.",
+          "asOf": "2017-02-15"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-672-family-representation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-673",
+      "mechanism": "party-leadership-role",
+      "learningTarget": "Cheney chaired the House Republican Conference in the 116th Congress.",
+      "date": "2019-03-12",
+      "venue": {
+        "ko": "주 전체 지역구와 지도부",
+        "en": "Statewide constituency and leadership"
+      },
+      "context": {
+        "ko": "와이오밍 주민이 소속 의원의 당내 직책과 지역대표직의 차이를 확인한다.",
+        "en": "A Wyoming constituent distinguishes their member's party role from district representation."
+      },
+      "cast": [
+        {
+          "id": "C001109",
+          "name": "Liz Cheney",
+          "ko": "리즈 체니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001109.jpg",
+          "source": "https://history.house.gov/People/Detail/15032440419"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "의원님은 이번 의회에 당 지도부 직책도 맡았습니다.",
+          "en": "You also hold a party leadership office in this Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 직책과 와이오밍 주민을 대표하는 일은 구분됩니다.",
+          "en": "That role is distinct from representing Wyoming constituents."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제116대 의회에서 체니 의원은 하원 {{blank}} 의장입니다.",
+        "en": "In the 116th Congress Cheney chairs the House {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당 콘퍼런스",
+            "en": "Republican Conference"
+          },
+          {
+            "id": "B",
+            "ko": "민주당 코커스",
+            "en": "Democratic Caucus"
+          },
+          {
+            "id": "C",
+            "ko": "농업위원회",
+            "en": "Agriculture Committee"
+          },
+          {
+            "id": "D",
+            "ko": "윤리위원회",
+            "en": "Ethics Committee"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "당내 직책의 성격을 정확히 안내합시다.",
+            "en": "Explain the nature of the party office accurately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "체니는 제116대 의회의 하원 공화당 콘퍼런스 의장이었습니다.",
+            "en": "Cheney chaired the House Republican Conference in the 116th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/15032440419",
+          "claim": "Cheney chaired the House Republican Conference in the 116th Congress.",
+          "asOf": "2019-03-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-673-party-leadership-role"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-674",
+      "mechanism": "district-number-change",
+      "learningTarget": "Kinzinger was listed in Illinois District 11 in the December 2011 directory and District 16 in February 2014.",
+      "date": "2014-03-10",
+      "venue": {
+        "ko": "일리노이 지역 연락망",
+        "en": "Illinois district contact network"
+      },
+      "context": {
+        "ko": "예전에 사용한 연락망의 선거구 표기가 현재 명부와 다르다.",
+        "en": "An older contact sheet has a different district number from the current directory."
+      },
+      "cast": [
+        {
+          "id": "K000378",
+          "name": "Adam Kinzinger",
+          "ko": "애덤 킨징어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000378.jpg",
+          "source": "https://history.house.gov/People/Detail/16573"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "2011년 의회 명부에는 일리노이 제11선거구로 적혀 있습니다.",
+          "en": "The 2011 congressional directory lists Illinois's 11th District."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회의 지역구 번호는 달라졌습니다.",
+          "en": "My district number changed in this Congress."
+        },
+        {
+          "speaker": "aide",
+          "ko": "이전 번호와 새 번호를 모두 날짜와 함께 남겨 두죠.",
+          "en": "Keep both numbers with their dates."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "2014년 2월 명부에서 킨징어 의원은 일리노이 {{blank}} 선거구를 대표합니다.",
+        "en": "In the February 2014 directory Kinzinger represents Illinois's {{blank}} District.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제11",
+            "en": "11th"
+          },
+          {
+            "id": "B",
+            "ko": "제16",
+            "en": "16th"
+          },
+          {
+            "id": "C",
+            "ko": "제17",
+            "en": "17th"
+          },
+          {
+            "id": "D",
+            "ko": "제18",
+            "en": "18th"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 경계와 연락망을 확인할 때 해당 연도를 사용합시다.",
+            "en": "Use the relevant year when consulting district records."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2011년 명부는 IL-11, 2014년 명부는 IL-16으로 기록합니다.",
+            "en": "The 2011 directory lists IL-11 and the 2014 directory IL-16."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/16573",
+          "claim": "Kinzinger was listed in Illinois District 11 in the December 2011 directory and District 16 in February 2014.",
+          "asOf": "2014-03-10"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-IL-H-11.htm",
+          "claim": "Kinzinger was listed in Illinois District 11 in the December 2011 directory and District 16 in February 2014.",
+          "asOf": "2014-03-10"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-IL-H-16.htm",
+          "claim": "Kinzinger was listed in Illinois District 11 in the December 2011 directory and District 16 in February 2014.",
+          "asOf": "2014-03-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-674-district-number-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-675",
+      "mechanism": "incumbent-generation-comparison",
+      "learningTarget": "In the 112th Congress Kinzinger and Manzullo were Illinois Republicans; Manzullo first entered the House in 1993, Kinzinger in 2011.",
+      "date": "2012-04-15",
+      "venue": {
+        "ko": "일리노이 대표단 만남",
+        "en": "Illinois delegation meeting"
+      },
+      "context": {
+        "ko": "같은 주의 두 공화당 의원이 서로 다른 의회 경력을 비교한다.",
+        "en": "Two Republicans from Illinois compare their different lengths of House service."
+      },
+      "cast": [
+        {
+          "id": "K000378",
+          "name": "Adam Kinzinger",
+          "ko": "애덤 킨징어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000378.jpg",
+          "source": "https://history.house.gov/People/Detail/16573"
+        },
+        {
+          "id": "M001138",
+          "name": "Donald A. Manzullo",
+          "ko": "도널드 만줄로",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001138.jpg",
+          "source": "https://history.house.gov/People/Detail/18749"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 작년 1월에 처음 하원에 들어왔습니다.",
+          "en": "I first entered the House in January of last year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1993년부터 연방 하원에서 일했습니다.",
+          "en": "I have served in the federal House since 1993."
+        },
+        {
+          "speaker": "player",
+          "ko": "같은 주의 의원이라도 서로 다른 세대군요.",
+          "en": "Even members of the same state delegation can represent different generations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 사람 가운데 더 오래 재임한 의원은 {{blank}}입니다.",
+        "en": "The longer-serving member of the two is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "킨징어",
+            "en": "Kinzinger"
+          },
+          {
+            "id": "B",
+            "ko": "샌더스",
+            "en": "Sanders"
+          },
+          {
+            "id": "C",
+            "ko": "만줄로",
+            "en": "Manzullo"
+          },
+          {
+            "id": "D",
+            "ko": "웰치",
+            "en": "Welch"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "각자의 첫 의회 기록을 구분해 주세요.",
+            "en": "Keep our first congressional terms distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "만줄로는 1993년, 킨징어는 2011년에 하원에 입성했습니다.",
+            "en": "Manzullo entered the House in 1993, Kinzinger in 2011."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/16573",
+          "claim": "In the 112th Congress Kinzinger and Manzullo were Illinois Republicans; Manzullo first entered the House in 1993, Kinzinger in 2011.",
+          "asOf": "2012-04-15"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/18749",
+          "claim": "In the 112th Congress Kinzinger and Manzullo were Illinois Republicans; Manzullo first entered the House in 1993, Kinzinger in 2011.",
+          "asOf": "2012-04-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-675-incumbent-generation-comparison"
+      },
+      "fictional": true
+    }
+  ]
+}
