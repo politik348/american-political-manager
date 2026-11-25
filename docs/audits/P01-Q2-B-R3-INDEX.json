@@ -28,6 +28,20 @@
       "audit_commit": "5f4a8bfc53be4807dff818e055805010188b4ec3",
       "source_correction_commit": "ded2a2add21760d3824ebec54fc2de5110564812",
       "audit_blob_sha": "60a987b01fd1c7279676f3f84b2d52a7564216a0"
+    },
+    {
+      "path": "docs/audits/P01-Q2-B-R3-BATCH-1501-1525.json",
+      "planned_start": "P01-1501",
+      "planned_end": "P01-1525",
+      "actual_start": "P01-1501",
+      "actual_end": "P01-1525",
+      "new_core_verified": 25,
+      "corrected": 1,
+      "all_cast_ids_verified": 21,
+      "audit_commit": "854a66098809fb43beecec9f7bb348a8dc8ec540",
+      "source_correction_commit": "01b7d86ac85f5a933e31d5762b5b5fd36c5363eb",
+      "audit_blob_sha": "b2ed8ac1bbc61cbaf9abe06b60d47f32c93bd71f",
+      "note": "Nonoverlapping recovery batch after parent-shard append 409; do not duplicate when consolidating."
     }
   ],
   "planned_next_shards": [
@@ -45,17 +59,24 @@
     }
   ],
   "progress": {
-    "new_core_verified": 25,
-    "reported_cumulative_if_legacy_800_correct": 825,
-    "remaining_this_round": 375,
-    "last_core_verified": "P01-1500",
-    "next": "P01-1501",
+    "new_core_verified": 50,
+    "reported_cumulative_if_legacy_800_correct": 850,
+    "remaining_this_round": 350,
+    "last_core_verified": "P01-1525",
+    "next": "P01-1526",
     "pending_official_bioguide_crosscheck": [
       "M001198",
       "M000934",
       "B001288",
       "M001153",
-      "S001198"
+      "S001198",
+      "B000944",
+      "P000449",
+      "C001070",
+      "T000461"
+    ],
+    "pending_ancillary_fact": [
+      "P01-1504: official records differ on Allentown solicitor end year; main answer confirmed."
     ]
   },
   "count_policy": "Core claim independently verified, including corrected records. Do not count incomplete identifier checks as fully cleared nine-axis audits. Verify each saved batch by re-reading main; append only to relevant shard and update this index using current file SHA."
