@@ -747,7 +747,23 @@
     "P01-1362": "docs/audits/P01-Q4-DIALOGUE-R3-severe-02.json",
     "P01-1366": "docs/audits/P01-Q4-DIALOGUE-R3-severe-02.json",
     "P01-1371": "docs/audits/P01-Q4-DIALOGUE-R3-severe-02.json",
-    "P01-1393": "docs/audits/P01-Q4-DIALOGUE-R3-severe-02.json"
+    "P01-1393": "docs/audits/P01-Q4-DIALOGUE-R3-severe-02.json",
+    "P01-727": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-730": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-733": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-734": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-736": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-739": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-748": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-749": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-751": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-753": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-762": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-773": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-785": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-789": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-794": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+    "P01-800": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json"
   },
   "metrics": {
     "newAudits": {
@@ -770,10 +786,10 @@
         "excellent": 117
       }
     },
-    "newPatches": 121,
-    "cumulativePatches": 294,
-    "meanPatchOriginal": 9.809917355371901,
-    "meanPatchAfter": 16.619834710743802,
+    "newPatches": 137,
+    "cumulativePatches": 310,
+    "meanPatchOriginal": 9.934306569343066,
+    "meanPatchAfter": 16.467153284671532,
     "storyCandidates": 94,
     "actualPlaytest": false,
     "oldSevereCompleted": 16,
@@ -784,9 +800,13 @@
       "D": 5,
       "A": 1
     },
-    "structurePass": 121,
+    "structurePass": 137,
     "strictFourCycleParts": 8,
-    "historicalReverificationNeeded": 30
+    "historicalReverificationNeeded": 30,
+    "oldBacklogCompleted": 32,
+    "newScopePatches": 105,
+    "patchRecommendation": 200,
+    "patchShortfall": 63
   },
   "engineProposals": [
     {
@@ -803,38 +823,22 @@
     "nextPart": 60,
     "remainingAudits": 0,
     "remainingOldBacklog": [
-      "P01-727",
-      "P01-730",
-      "P01-733",
-      "P01-734",
-      "P01-736",
-      "P01-739",
       "P01-741",
       "P01-745",
       "P01-746",
       "P01-747",
-      "P01-748",
-      "P01-749",
-      "P01-751",
       "P01-752",
-      "P01-753",
       "P01-754",
       "P01-757",
       "P01-758",
-      "P01-762",
       "P01-771",
       "P01-772",
-      "P01-773",
       "P01-777",
       "P01-778",
       "P01-782",
-      "P01-785",
       "P01-786",
       "P01-788",
-      "P01-789",
       "P01-790",
-      "P01-794",
-      "P01-800",
       "P01-803",
       "P01-805",
       "P01-810",
@@ -1011,7 +1015,7 @@
     "Full semantic cross-team comparison pending; A3/B candidate ledgers not checked.",
     "Patches staged, not applied; no original scene or game engine changes by Q4. Revised distractor entities flagged where applicable.",
     "Editorial scores are estimates, not playtest data. Many revisions still rely on the original multiple-choice mechanic.",
-    "200 new patch recommendation not reached; 121 staged; remaining improvement candidate IDs listed. All previously unpatched overhaul-grade scenes in the audited 800 now have staged revisions."
+    "200 new patch recommendation not reached; 137 staged; remaining improvement candidate IDs listed. All previously unpatched overhaul-grade scenes in the audited 800 now have staged revisions. Old moderate backlog supplement has 16 actual records; its creation commit message mistakenly says 15."
   ],
   "storyValidation": {
     "latestQ2Blob": "27ca2887ec3eb724b23cfde01348cb30afc867ee",
@@ -2093,12 +2097,12 @@
   "sourceValidation": {
     "method": "Latest main tree blob SHA compared against staged patch and audited part source. Original fields captured at staging; no independent field replay or playtest claimed.",
     "treeTruncated": false,
-    "checkedNewPatches": 121,
-    "matchingBlobCount": 121,
+    "checkedNewPatches": 137,
+    "matchingBlobCount": 137,
     "conflicts": [],
     "changedParts": [],
     "baselineFilesPreserved": true,
-    "supplementalChecked": 15
+    "supplementalChecked": 31
   },
   "supplementalPatchShards": [
     {
@@ -2128,6 +2132,29 @@
         "P01-1366",
         "P01-1371",
         "P01-1393"
+      ]
+    },
+    {
+      "path": "docs/audits/P01-Q4-DIALOGUE-R3-backlog-02.json",
+      "blobSha": "5be7cfdee17b394979858ca8177a159a464d5771",
+      "patchCount": 16,
+      "patchIds": [
+        "P01-727",
+        "P01-730",
+        "P01-733",
+        "P01-734",
+        "P01-736",
+        "P01-739",
+        "P01-748",
+        "P01-749",
+        "P01-751",
+        "P01-753",
+        "P01-762",
+        "P01-773",
+        "P01-785",
+        "P01-789",
+        "P01-794",
+        "P01-800"
       ]
     }
   ],
