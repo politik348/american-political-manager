@@ -1,8 +1,9 @@
-# Unity migration scaffold
-Target: Unity 6, Android/iOS/desktop. This directory is a C# starter scaffold, NOT a complete runnable Unity project.
-1. Create a new Unity 2D project and copy `unity/Assets/APM` into its Assets folder.
-2. The included Assets/APM/Data/world.json mirrors the root data/world.json. Load it as a TextAsset using GameRules.LoadWorld; keep both copies synchronized.
-3. Build UI Toolkit or uGUI scenes for career, people, states, elections, history, review, settings. Bind to GameState.
-4. The C# rules include actions, election, review, vote and succession. Verify parity against engine.js and add Unity tests. Persist JSON using Application.persistentDataPath.
-5. For full Congress data and portraits use documented sources; retain image credit and per-file license. Download and package verified portraits as allowed for native offline use.
-The browser app is not directly executable as C#; JSON data and save schema are portable. No Unity Editor build or device test has been performed.
+# APM V7 Unity migration
+Native UI Toolkit prototype for Unity 6. Not a complete shipping app and not compiled in the assistant environment.
+1. Create a Unity 6 2D project with UI Toolkit available. Copy `unity/Assets/APM` into its Assets folder.
+2. Run GitHub Actions **Build offline portrait pack and historical map index**; download its artifact after a successful run. Copy data/people.json into Assets/Resources/APM/people.json and portraits/*.jpg into Assets/Resources/APM/Portraits/. Keep sources and rights notices.
+3. Select APM → Create Native Demo Scene in the Unity Editor. If the panel has no runtime theme, assign the project's default runtime theme to APMPanelSettings. Assign a Korean-capable font to NativeGameUI (not bundled). Ensure the World JSON and optional People JSON are assigned.
+4. Enter Play Mode. Add Assets/APM/APMNativeDemo.unity to Build Profiles for target Android/iOS/desktop. Set app identifier, platform SDK and signing; build on a correctly licensed Unity installation.
+5. Native screens: career, directory and profiles with observed peer links, state list and source link, elections, bicameral legislation, historical archive, study, settings. Portraits first use Resources then download and cache on-device. Native GeoJSON rendering and full committee data not yet integrated. Web save format shares the schema and legislature fields; round-trip parity requires testing.
+6. All electoral and legislative outcomes are fictional abstractions. Historical records come from the cited public datasets; no person ratings or invented alliances.
+No Editor compile, real scene test, signing or APK/IPA build was performed here.
