@@ -295,7 +295,7 @@
       ],
       "originalCorrectPosition": "B",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -730,7 +730,7 @@
       ],
       "originalCorrectPosition": "A",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -1586,13 +1586,436 @@
       "latestOriginalFieldsExact": true,
       "reviewNotes": "Beck의 임기 종료 직접 공개, 두 사람 중 Peavey 자동 선택. 경제 위기의 민원을 실제 다루지 않음.",
       "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1585",
+      "path": "data/dialogue-packs/P01/part-64.json",
+      "originalBlobSha": "ef390c7f65ecc4953239d7ca401cbfe2dc7b1548",
+      "latestObservedBlobSha": "ef390c7f65ecc4953239d7ca401cbfe2dc7b1548",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "두 의원의 군 복무 시기가 같았는지 확인하려고 합니다.",
+            "en": "We want to know whether the two members served in the same period."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "프리어는 오래전 육군 통신 업무를 맡았고 셰이퍼는 최근 전쟁에 참전했습니다.",
+            "en": "Frear served in Army signals earlier; Schafer served in the recent war."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "셰이퍼의 해외 복무는 {{blank}} 기간이었습니다.",
+          "en": "Schafer served overseas during {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "보어전쟁",
+              "en": "Boer War"
+            },
+            {
+              "id": "B",
+              "ko": "제1차 세계대전",
+              "en": "World War I"
+            },
+            {
+              "id": "C",
+              "ko": "미서전쟁",
+              "en": "Spanish-American War"
+            },
+            {
+              "id": "D",
+              "ko": "남북전쟁",
+              "en": "Civil War"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "각 세대 장병의 복무 기간을 따로 적겠습니다.",
+              "en": "I'll record the generations of service separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "셰이퍼는 1917년 입대해 프랑스에서 22개월 복무했습니다.",
+              "en": "Schafer enlisted in 1917 and served in France for 22 months."
+            },
+            {
+              "speaker": "player",
+              "ko": "각 세대 장병의 복무 기간을 따로 적겠습니다.",
+              "en": "I'll record the generations of service separately."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "두 의원의 군 복무 시기가 같았는지 확인하려고 합니다.",
+              "en": "We want to know whether the two members served in the same period."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "프리어는 오래전 육군 통신 업무를 맡았고 셰이퍼는 최근 전쟁에 참전했습니다.",
+              "en": "Frear served in Army signals earlier; Schafer served in the recent war."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "참전 군인 간담회에 사용할 두 의원의 복무 이력이 서로 뒤바뀌었습니다.",
+              "en": "The military biographies of the two members have been mixed up in a veterans' forum program."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 육군 통신 업무와 셰이퍼 의원의 해외 복무를 같은 시기라고 단정하지 맙시다.",
+              "en": "Let's not assume my Army signals work and Schafer's overseas service occurred in the same period."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 해외 복무가 어느 전쟁에 해당하는지 확인한 후 참전 세대별 질문을 나누어 주세요.",
+              "en": "Identify the war during which I served overseas, then divide the questions by service generation."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "셰이퍼의 해외 복무는 {{blank}} 기간이었습니다.",
+            "en": "Schafer served overseas during {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "보어전쟁",
+                "en": "Boer War"
+              },
+              {
+                "id": "B",
+                "ko": "제1차 세계대전",
+                "en": "World War I"
+              },
+              {
+                "id": "C",
+                "ko": "미서전쟁",
+                "en": "Spanish-American War"
+              },
+              {
+                "id": "D",
+                "ko": "남북전쟁",
+                "en": "Civil War"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "셰이퍼의 해외 복무는 {{blank}} 기간으로 정정하겠습니다.",
+            "en": "I'll correct Schafer's overseas service to the period of {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "보어전쟁",
+                "en": "Boer War"
+              },
+              {
+                "id": "B",
+                "ko": "제1차 세계대전",
+                "en": "World War I"
+              },
+              {
+                "id": "C",
+                "ko": "미서전쟁",
+                "en": "Spanish-American War"
+              },
+              {
+                "id": "D",
+                "ko": "남북전쟁",
+                "en": "Civil War"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "각 세대 장병의 복무 기간을 따로 적겠습니다.",
+                "en": "I'll record the generations of service separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "셰이퍼는 1917년 입대해 프랑스에서 22개월 복무했습니다.",
+                "en": "Schafer enlisted in 1917 and served in France for 22 months."
+              },
+              {
+                "speaker": "player",
+                "ko": "각 세대 장병의 복무 기간을 따로 적겠습니다.",
+                "en": "I'll record the generations of service separately."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 1917년 입대 후 프랑스에서 22개월 복무했습니다. 이제 프리어 의원의 복무 시기와 별도로 질문을 받겠습니다.",
+                "en": "Correct. I enlisted in 1917 and served in France for 22 months. I'll now take questions separately from Frear's service period."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "셰이퍼 의원의 복무는 제1차 세계대전에 해당합니다. 두 사람의 이력을 다시 분리한 뒤 간담회를 진행합시다.",
+                "en": "Schafer's service belongs to World War I. Separate the two biographies before proceeding with the forum."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 12,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "최근 전쟁이라는 단서에서 당시 WWI 쉽게 식별; 동종 전쟁 보기와 복무 세대 대비. 후속 행동 동일.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1600",
+      "path": "data/dialogue-packs/P01/part-64.json",
+      "originalBlobSha": "ef390c7f65ecc4953239d7ca401cbfe2dc7b1548",
+      "latestObservedBlobSha": "ef390c7f65ecc4953239d7ca401cbfe2dc7b1548",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "두 주 의원들의 1932년 결과를 정리합니다. 두 사람은 아직 현직입니다.",
+            "en": "We're reviewing 1932 results from two states. Both are still serving."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "케첨은 재선에 실패했습니다. 보일로는 위스콘신에서 재선됐죠.",
+            "en": "Ketcham lost reelection; Boileau was reelected in Wisconsin."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "케첨의 대표 주는 {{blank}}입니다.",
+          "en": "Ketcham represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "미시간",
+              "en": "Michigan"
+            },
+            {
+              "id": "B",
+              "ko": "위스콘신",
+              "en": "Wisconsin"
+            },
+            {
+              "id": "C",
+              "ko": "미네소타",
+              "en": "Minnesota"
+            },
+            {
+              "id": "D",
+              "ko": "아이오와",
+              "en": "Iowa"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "정기선거 결과와 아직 남은 임기를 구별하겠습니다.",
+              "en": "I'll distinguish election results from remaining terms."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "케첨은 미시간, 보일로는 위스콘신의 대표입니다.",
+              "en": "Ketcham represents Michigan; Boileau represents Wisconsin."
+            },
+            {
+              "speaker": "player",
+              "ko": "정기선거 결과와 아직 남은 임기를 구별하겠습니다.",
+              "en": "I'll distinguish election results from remaining terms."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "두 주 의원들의 1932년 결과를 정리합니다. 두 사람은 아직 현직입니다.",
+              "en": "We're reviewing 1932 results from two states. Both are still serving."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "케첨은 재선에 실패했습니다. 보일로는 위스콘신에서 재선됐죠.",
+              "en": "Ketcham lost reelection; Boileau was reelected in Wisconsin."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "1932년 선거 이후 주민에게 현직 대표를 안내하는 자료를 검토하고 있습니다. 두 의원의 주와 선거 결과가 뒤섞였습니다.",
+              "en": "We're reviewing guidance on incumbent representatives after the 1932 election. The members' states and election results have been mixed up."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 재선에 실패했더라도 남은 임기 동안 어느 주를 대표하는지 정확히 알려 주어야 합니다.",
+              "en": "Although I lost reelection, the notice must still correctly identify the state I represent for the remainder of my term."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 재선 결과와 케첨 의원의 현직 대표성은 별도로 다루어 주세요.",
+              "en": "Treat my reelection result separately from Ketcham's incumbent representation."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "케첨의 대표 주는 {{blank}}입니다.",
+            "en": "Ketcham represents {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "미시간",
+                "en": "Michigan"
+              },
+              {
+                "id": "B",
+                "ko": "위스콘신",
+                "en": "Wisconsin"
+              },
+              {
+                "id": "C",
+                "ko": "미네소타",
+                "en": "Minnesota"
+              },
+              {
+                "id": "D",
+                "ko": "아이오와",
+                "en": "Iowa"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "케첨의 현직 대표 주는 {{blank}}로 표기하겠습니다.",
+            "en": "I'll identify Ketcham's state of representation as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "미시간",
+                "en": "Michigan"
+              },
+              {
+                "id": "B",
+                "ko": "위스콘신",
+                "en": "Wisconsin"
+              },
+              {
+                "id": "C",
+                "ko": "미네소타",
+                "en": "Minnesota"
+              },
+              {
+                "id": "D",
+                "ko": "아이오와",
+                "en": "Iowa"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "정기선거 결과와 아직 남은 임기를 구별하겠습니다.",
+                "en": "I'll distinguish election results from remaining terms."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "케첨은 미시간, 보일로는 위스콘신의 대표입니다.",
+                "en": "Ketcham represents Michigan; Boileau represents Wisconsin."
+              },
+              {
+                "speaker": "player",
+                "ko": "정기선거 결과와 아직 남은 임기를 구별하겠습니다.",
+                "en": "I'll distinguish election results from remaining terms."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "좋습니다. 제 위스콘신 재선 결과와 케첨 의원의 미시간 대표성을 구별해 주민에게 안내합시다.",
+                "en": "Good. Distinguish my Wisconsin reelection from Ketcham's Michigan representation in the notice."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 미시간을 대표합니다. 선거에서 패배했다는 이유로 현재 임기나 대표 주를 바꾸어 기록하지 마세요.",
+                "en": "I represent Michigan. Don't change the current term or the state represented merely because I lost the election."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 12,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "Boileau Wisconsin을 직접 말하고 Ketcham의 주를 선택, 동종 주 보기. 선거와 남은 임기 구별 후속은 유용.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
     }
   ],
   "priorDraftReview": [],
-  "severePending": [
-    "P01-1585",
-    "P01-1600"
-  ],
+  "severePending": [],
   "limitations": [
     "No independent historical verification or gameplay test. Source facts and choice IDs preserved."
   ]
