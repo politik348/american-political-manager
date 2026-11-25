@@ -1,0 +1,35 @@
+name: Import actual congressional portrait files
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/sync-portraits.yml'
+      - 'scripts/sync-portraits.mjs'
+permissions:
+  contents: write
+concurrency:
+  group: sync-congress-portraits
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: |
+          git clone --branch gh-pages --depth 1 --filter=blob:none --sparse https://github.com/unitedstates/images.git _upstream
+          git -C _upstream sparse-checkout set congress/225x275
+          node scripts/sync-portraits.mjs _upstream/congress/225x275
+      - name: Commit source photographs and local records
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add portraits data/portraits.json data/legislators-current.json data/legislators-historical.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Import verified public-domain congressional portrait files"
+          git pull --rebase origin main
+          git push origin HEAD:main
