@@ -1,0 +1,23 @@
+name: Portrait coverage audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/audit-photos.mjs'
+      - '.github/workflows/portrait-audit.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: node scripts/audit-photos.mjs > portrait-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portrait-audit
+          path: portrait-audit.json
