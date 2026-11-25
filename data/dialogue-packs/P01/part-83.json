@@ -306,23 +306,23 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "대도시권 주민 상담 안내문에 두 지역 이름이 섞였습니다.",
-          "en": "Two metro-area outreach guides have been mixed together."
+          "ko": "시카고 남서부 안내와 에번스턴·스코키 주민 안내가 섞였습니다.",
+          "en": "Southwest Chicago and Evanston/Skokie outreach guides were mixed up."
         },
         {
           "speaker": "npc:0",
-          "ko": "제 안내문은 시카고 남서부와 서부 교외 사무실을 구분합니다.",
-          "en": "My guide distinguishes Southwest Chicago and western-suburban offices."
+          "ko": "시카고 시내의 모든 주소가 같은 지역구는 아닙니다.",
+          "en": "Not every Chicago address belongs to one district."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 지역 안내에는 에번스턴과 스코키가 나옵니다.",
-          "en": "My district materials mention Evanston and Skokie."
+          "ko": "교외 주민에게도 정확한 의원실 안내가 필요합니다.",
+          "en": "Suburban residents need accurate office information too."
         },
         {
-          "speaker": "aide",
-          "ko": "카운티 이름만으로 두 의원을 같은 대표자로 취급하면 안 되겠네요.",
-          "en": "We can't treat two members as one representative just because of a county name."
+          "speaker": "player",
+          "ko": "공식 지역 안내를 대조해 표제를 복구하겠습니다.",
+          "en": "I'll restore the headings using the published geographic guides."
         }
       ],
       "response": {
@@ -1136,30 +1136,30 @@
           "id": "B001324",
           "name": "Wesley Bell",
           "ko": "웨슬리 벨",
-          "portrait": null,
+          "portrait": "https://clerk.house.gov/images/members/B001324.jpg",
           "source": "https://bioguide.congress.gov/search/bio/B001324"
         }
       ],
       "opening": [
         {
           "speaker": "host",
-          "ko": "군사시설의 지역 고용 자료와 세인트루이스 인턴십 안내가 같은 봉투에 들어 있습니다.",
-          "en": "A defense-employment brief and a St. Louis internship guide arrived in one envelope."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "첫 문서의 핵심은 화이트먼 공군기지와 포트 레너드 우드입니다.",
-          "en": "The first document concerns Whiteman and Fort Leonard Wood."
+          "ko": "화이트먼·포트 레너드 우드 지역 고용 자료와 세인트루이스 인턴십 안내가 섞였습니다.",
+          "en": "An employment brief on Whiteman and Fort Leonard Wood was mixed with a St. Louis internship guide."
         },
         {
           "speaker": "npc:1",
-          "ko": "두 번째는 제 지역 사무실에서 공공서비스를 경험하려는 학생용입니다.",
-          "en": "The second is for students seeking public-service experience in my district office."
+          "ko": "도시 인턴십 안내는 군사시설 관련 자료와 분리해야 합니다.",
+          "en": "Separate city internship information from the installations file."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "시설 소재 지역구에 따라 적절한 정책 자료를 골라야겠군요.",
+          "en": "The installations' district will determine the proper policy file."
         },
         {
           "speaker": "player",
-          "ko": "두 자료를 주 단위가 아니라 의원별 대표 영역으로 나누겠습니다.",
-          "en": "I'll separate the records by representative rather than state."
+          "ko": "두 시설 소재를 공식 자료로 확인하겠습니다.",
+          "en": "I'll verify the installations using official records."
         }
       ],
       "response": {
@@ -1241,6 +1241,11 @@
           "url": "https://www.census.gov/geographies/reference-maps/2025/geo/cong-dist-119-wall.html",
           "claim": "119th Congress map series, January 2025–January 2027; no parcel-level boundary inference.",
           "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/members/B001324",
+          "claim": "Clerk member portrait reused from P01-2030.",
+          "asOf": "2026-11-25"
         }
       ],
       "outcome": {
@@ -1280,24 +1285,24 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "몬머스·오션 해안 지도와 캠든 노동 상담 자료가 섞였습니다.",
+          "en": "A Monmouth/Ocean coastal map was mixed with a Camden labor-service guide."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "캠든 사무실에 연락하려는 노동자와 해안 지역 주민이 동시에 왔습니다.",
-          "en": "A worker seeking the Camden office and coastal residents arrived together."
+          "ko": "노동 상담과 해안 인프라에는 각각 정확한 지역구 자료가 필요합니다.",
+          "en": "Labor outreach and coastal infrastructure need the proper district records."
         },
         {
           "speaker": "npc:1",
-          "ko": "해안 지도에는 몬머스와 오션 카운티의 여러 자치단체가 표시되어 있습니다.",
-          "en": "The coastal map shows municipalities in Monmouth and Ocean counties."
-        },
-        {
-          "speaker": "aide",
-          "ko": "두 지역을 한 지역구로 분류했던 초안이 문제입니다.",
-          "en": "The draft incorrectly groups the two regions into one district."
+          "ko": "카운티 전역이 한 지역구에 포함된다고 가정하지 마세요.",
+          "en": "Don't assume an entire county belongs to one district."
         },
         {
           "speaker": "player",
-          "ko": "지도에 전체 카운티가 아니라 포함되는 자치단체를 표시하겠습니다.",
-          "en": "I'll mark included municipalities, not entire counties."
+          "ko": "제119대 지역 안내로 표찰을 복구하겠습니다.",
+          "en": "I'll restore the map label from the 119th district guides."
         }
       ],
       "response": {
@@ -1622,8 +1627,8 @@
       },
       "evidence": [
         {
-          "url": "https://clerk.house.gov/Members/ViewVacancies",
-          "claim": "Ryan's 2022 seat succession chronology; prior audit evidence.",
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224028&id=36507224009",
+          "claim": "House historical record of Ryan's 2022 special election in NY-19.",
           "asOf": "2026-11-25"
         },
         {
@@ -1960,24 +1965,24 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "북부 신시내티의 주택 개보수 사업과 워런 카운티 교통 자료가 왔습니다.",
-          "en": "Here are a Cincinnati Northside housing project and Warren County transportation materials."
+          "speaker": "host",
+          "ko": "신시내티 Northside 주택 사업 요청과 애크런 복지 안내가 도착했습니다.",
+          "en": "A Cincinnati Northside housing request and an Akron resource guide have arrived."
         },
         {
           "speaker": "npc:1",
-          "ko": "애크런 주민을 위한 복지 자원 안내는 별개의 문서입니다.",
-          "en": "The Akron community-resource guide is a separate document."
+          "ko": "복지 자원 목록은 예산 사업 요청서와 목적이 다릅니다.",
+          "en": "A community-resource list serves a different purpose from a funding request."
         },
         {
-          "speaker": "aide",
-          "ko": "사업 요청 목록과 주민 복지 서비스 목록을 구분해야 합니다.",
-          "en": "We need to distinguish project requests from a community-resource guide."
+          "speaker": "npc:0",
+          "ko": "도시별 사업을 해당 지역구 자료에 연결해야 합니다.",
+          "en": "Match the city projects to the proper district records."
         },
         {
           "speaker": "player",
-          "ko": "각 도시의 의원실 자료를 확인하겠습니다.",
-          "en": "I'll check the office materials for each city."
+          "ko": "공개 FY26 사업 목록을 확인하겠습니다.",
+          "en": "I'll consult the published FY26 project list."
         }
       ],
       "response": {
@@ -2093,24 +2098,24 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "센트럴 오리건의 하천 수량과 수질을 다루는 입법 자료를 가져왔습니다.",
-          "en": "I brought legislative materials on Central Oregon river flow and water quality."
+          "speaker": "host",
+          "ko": "데슈츠강 법안 자료와 그레셤·포틀랜드 동부 지도가 섞였습니다.",
+          "en": "Deschutes legislation was mixed with a Gresham and east Portland map."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 지도에는 윌라멧강 동쪽 도시권과 그레셤이 표시되어 있습니다.",
-          "en": "My map shows the urban area east of the Willamette and Gresham."
+          "ko": "하천 유역과 하원 지역구는 서로 다른 지리 단위입니다.",
+          "en": "A watershed and a House district are different geographic units."
         },
         {
-          "speaker": "host",
-          "ko": "두 하천 이름을 혼동해 정책 자료의 지역 표찰이 바뀌었습니다.",
-          "en": "The river names were confused and the regional policy labels were switched."
+          "speaker": "npc:0",
+          "ko": "법안 발의자와 도시 지도 담당 의원을 구분해야 합니다.",
+          "en": "Distinguish the bill sponsor from the member associated with the urban map."
         },
         {
           "speaker": "player",
-          "ko": "법안과 도시 지역구 설명을 각각 연결하겠습니다.",
-          "en": "I'll match the bill and the urban district description separately."
+          "ko": "실제 발의 기록과 지역 설명을 대조하겠습니다.",
+          "en": "I'll compare the introduction record and district guide."
         }
       ],
       "response": {
@@ -2312,8 +2317,8 @@
           "asOf": "2026-11-25"
         },
         {
-          "url": "https://github.com/politik348/american-political-manager/blob/main/data/dialogue-packs/P01/part-62.json",
-          "claim": "Prior P01-1537 identifies documented caucus membership; use its evidence.",
+          "url": "https://mcgarvey.house.gov/media/press-releases/congressman-morgan-mcgarvey-announces-congresswoman-erin-houchin-as-ohio-river-basin-caucus-co-chair",
+          "claim": "May 16, 2024 caucus membership includes Sykes and Deluzio.",
           "asOf": "2026-11-25"
         },
         {
@@ -2364,30 +2369,30 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "농촌 공항 지원 발표에 도시별 사업 항목이 들어 있습니다.",
-          "en": "The rural airport funding announcement lists projects by city."
+          "speaker": "host",
+          "ko": "오렌지버그 공항 배치 계획의 지원 발표자가 빠졌습니다.",
+          "en": "An Orangeburg airport layout-plan grant entry is missing its announcing member."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 Upstate 자료와 섞이지 않도록 해당 의원실 발표를 확인하세요.",
-          "en": "Check the issuing office so the document isn't mixed with my Upstate materials."
+          "ko": "Upstate 자료와 구분해야 합니다.",
+          "en": "Keep it separate from the Upstate materials."
         },
         {
-          "speaker": "host",
-          "ko": "오렌지버그 공항 계획 갱신 항목의 표찰이 빠졌습니다.",
-          "en": "The Orangeburg airport layout-plan entry is missing its label."
+          "speaker": "npc:0",
+          "ko": "지원금 발표가 공사 완료를 뜻하지 않습니다.",
+          "en": "A grant announcement does not mean construction is complete."
         },
         {
           "speaker": "player",
-          "ko": "사업 발표를 한 의원과 실제 사업 단계를 기록하겠습니다.",
-          "en": "I'll record the announcing member and actual project stage."
+          "ko": "공항 위치와 발표 원문을 확인하겠습니다.",
+          "en": "I'll check the airport location and original announcement."
         }
       ],
       "response": {
         "speaker": "player",
         "ko": "오렌지버그 공항 배치 계획 지원은 {{blank}}의 발표에 포함됩니다.",
-        "en": "The Orangeburg airport layout-plan grant appears in {{blank}}'s announcement.",
+        "en": "The Orangeburg airport layout-plan grant appears in the announcement by {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2763,24 +2768,24 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "댈러스 남부·태런트 일부 지도와 리처드슨 사무실 안내가 섞였습니다.",
+          "en": "A South Dallas/partial Tarrant map was mixed with a Richardson office guide."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 지역 지도에는 댈러스와 태런트 카운티의 일부, 그리고 댈러스 남부 공동체가 표시됩니다.",
-          "en": "My district map shows parts of Dallas and Tarrant counties and South Dallas communities."
+          "ko": "광역권 이름이 같다고 주민 모두가 같은 의원을 갖지는 않습니다.",
+          "en": "A shared metro name does not mean everyone has one representative."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 연방기관 상담 안내에는 리처드슨 사무실이 나옵니다.",
-          "en": "My federal casework guide lists a Richardson office."
-        },
-        {
-          "speaker": "aide",
-          "ko": "두 지역 모두 댈러스 광역권이라고 해서 모든 주민을 한 의원에게 보내려던 참입니다.",
-          "en": "We were about to route everyone in the Dallas metro to one member."
+          "ko": "사무실 위치와 거주 주소를 구분해야 합니다.",
+          "en": "Office locations differ from residential addresses."
         },
         {
           "speaker": "player",
-          "ko": "광역권 지도와 실제 의원실 관할을 별개로 처리하겠습니다.",
-          "en": "I'll separate the metro map from actual constituency routing."
+          "ko": "두 지역 안내를 분리해 기록하겠습니다.",
+          "en": "I'll separate the two geographic guides."
         }
       ],
       "response": {
@@ -3034,24 +3039,24 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "교통부 장관의 제5지역구 방문 발표를 지역 인프라 기록에 넣고 싶습니다.",
-          "en": "I'd like to file the Transportation Secretary's fifth-district tour in the infrastructure record."
+          "speaker": "host",
+          "ko": "린치버그 공항·애퍼매턱스 방문 기록과 라우던·포키어 지도가 섞였습니다.",
+          "en": "A Lynchburg airport/Appomattox tour record was mixed with a Loudoun/Fauquier map."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 지역 설명에는 라우던과 포키어 등 북부 버지니아 카운티가 있습니다.",
-          "en": "My district description lists Loudoun and Fauquier, among other northern Virginia counties."
+          "ko": "같은 주를 다룬다고 공동 방문으로 해석하면 안 됩니다.",
+          "en": "Two records from the same state do not imply a joint tour."
         },
         {
-          "speaker": "aide",
-          "ko": "린치버그 공항과 북부 카운티 지도가 한 폴더로 합쳐졌습니다.",
-          "en": "The Lynchburg airport and northern-county maps were merged."
+          "speaker": "npc:0",
+          "ko": "교통부 장관 방문 발표의 담당 의원을 확인하세요.",
+          "en": "Identify the member in the Transportation Secretary's tour announcement."
         },
         {
           "speaker": "player",
-          "ko": "두 의원의 별도 공식 발표를 대조하겠습니다.",
-          "en": "I'll compare the two distinct official releases."
+          "ko": "각 발표 원문을 대조하겠습니다.",
+          "en": "I'll compare the original announcements."
         }
       ],
       "response": {
@@ -3253,8 +3258,8 @@
           "asOf": "2026-11-25"
         },
         {
-          "url": "https://github.com/politik348/american-political-manager/blob/main/data/dialogue-packs/P01/part-67.json",
-          "claim": "Prior P01-1659–1660 historical directory records; original official evidence in scenes.",
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2005-07-11/html/CDIR-2005-07-11-WA.htm",
+          "claim": "2005 Congressional Directory ninth district listed Auburn and Nisqually reservation.",
           "asOf": "2026-11-25"
         },
         {
