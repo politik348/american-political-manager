@@ -51,8 +51,8 @@ export function buildRoster(people,date,closeRaces=[]){
 }
 const role=t=>t.type;
 function facts(row,roster,states,known){const t=row.term,out=[];const ds=district(t);const vals=(fn,rows=roster)=>uniq(rows.map(fn).filter(Boolean));const add=(type,answer,pool)=>{if(answer&&uniq(pool.filter(x=>x!==answer)).length>=3)out.push({type,answer,pool:uniq(pool.filter(x=>x!==answer))})};
- if(ds&&(t.type==='rep'||t.type==='housecandidate')){const same=vals(x=>district(x.term),roster.filter(x=>x.term.state===t.state&&['rep','housecandidate'].includes(x.term.type)));const other=vals(x=>district(x.term),roster.filter(x=>['rep','housecandidate'].includes(x.term.type)));add(t.type==='housecandidate'?'candidate':'district',ds,[...same,...other])}
- if(t.state&&['rep','sen','gov'].includes(t.type))add('state',t.state,vals(x=>x.term.state));
+ const samePerson=roster.filter(x=>norm(x.person.name)===norm(row.person.name)&&x.term.type===t.type);if(ds&&(t.type==='rep'||t.type==='housecandidate')&&uniq(samePerson.map(x=>district(x.term)).filter(Boolean)).length===1){const same=vals(x=>district(x.term),roster.filter(x=>x.term.state===t.state&&['rep','housecandidate'].includes(x.term.type)));const other=vals(x=>district(x.term),roster.filter(x=>['rep','housecandidate'].includes(x.term.type)));add(t.type==='housecandidate'?'candidate':'district',ds,[...same,...other])}
+ if(t.state&&['rep','sen','gov'].includes(t.type)&&uniq(samePerson.map(x=>x.term.state).filter(Boolean)).length===1)add('state',t.state,vals(x=>x.term.state));
  // Only use office questions when that person's office is unambiguous on this date.
  const roles=uniq(roster.filter(x=>norm(x.person.name)===norm(row.person.name)).map(x=>role(x.term)));
  if(roles.length===1)add('office',t.type,vals(x=>role(x.term)));
@@ -68,9 +68,9 @@ export function startEncounter(s,people,states,closeRaces=[],portraits=[],place=
  const seed=slot+':'+s.name+':'+(b.serial+1),race=slot.startsWith('race'),eligible=[];
  for(const row of roster){const key=norm(row.person.name),contact=b.contacts[key];const f=facts(row,roster,states,!!contact&&contact.meetings>=2&&local.has(row.person.id));if(!f.length)continue;const due=contact&&contact.due<=b.serial+1;let score=(due?12:contact?-2:5)+(local.has(row.person.id)?6:0)+(row.term.state===s.state?3:0)+(row.term.type==='rep'?3:0)+(race&&row.race?9:0)+(race&&row.term.type==='candidate'?4:0)+(hash(seed+key+row.term.type)%1000)/100;eligible.push({row,f,key,score})}
  if(!eligible.length)return null;eligible.sort((a,c)=>c.score-a.score);const chosen=eligible[0],row=chosen.row;
- let fs=chosen.f.slice().sort((a,c)=>{const rank=f=>((chosen.row.race&&f.type==='candidate')?8:f.type==='district'?5:f.type==='name'?4:1)+(b.seen[chosen.key+':'+f.type]? -3:2)+(hash(seed+f.type)%100)/100;return rank(c)-rank(a)});
- const f=fs[0],vlist=venues.filter(v=>sceneFits(v,row)),priority=vlist.filter(v=>preferred[race?'race':'career'].includes(v[0]));const venue=pick(priority.length?priority:vlist,seed+':venue');if(!venue)return null;
- const line=pick(lines[f.type],seed+':line'),options=shuffle([f.answer,...shuffle(f.pool,seed+':wrong').slice(0,3)],seed+':options');
+ let fs=chosen.f.slice().sort((a,c)=>{const rank=f=>((chosen.row.race&&f.type==='candidate')?8:f.type==='district'?5:f.type==='name'?4:1)+(b.contacts[chosen.key]?.facts?.[f.type]?.streak===0?5:b.seen[chosen.key+':'+f.type]?-3:2)+(hash(seed+f.type)%100)/100;return rank(c)-rank(a)});
+ const f=fs[0],vlist=venues.filter(v=>sceneFits(v,row)),priority=vlist.filter(v=>preferred[race?'race':'career'].includes(v[0]));const all=priority.length?priority:vlist;const unused=all.filter(v=>!b.history.slice(0,8).some(h=>h.venue===v[0]));const venue=pick(unused.length?unused:all,seed+':venue');if(!venue)return null;
+ const line=pick(lines[f.type],seed+':line');const nearby=(f.type==='district'||f.type==='candidate')?f.pool.filter(x=>x.startsWith(row.term.state+'-')):[];const wrong=shuffle(nearby,seed+':near').slice(0,2);const options=shuffle([f.answer,...wrong,...shuffle(f.pool.filter(x=>!wrong.includes(x)),seed+':wrong').slice(0,3-wrong.length)],seed+':options');
  const id=++b.serial,contact=b.contacts[chosen.key];
  b.active={id,slot,date,year,person:{id:row.person.id,name:row.person.name,ko:row.person.ko||'',wiki:row.person.wiki||'',historical:!!row.person.historical,photo:row.person.photo||'',source:row.person.source||row.source},term:row.term,source:row.source,venue:venue.slice(0,5),line,fact:f.type,answer:f.answer,options,key:chosen.key,returning:!!contact,race:row.race||null,selected:null,closed:false};
  b.lastSlot=slot;return b.active
