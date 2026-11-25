@@ -1,0 +1,2590 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 58,
+  "scenes": [
+    {
+      "id": "P01-1426",
+      "mechanism": "state-seat-succession",
+      "learningTarget": "Dymally succeeded Hawkins in the California Assembly after Hawkins won a U.S. House seat in 1962.",
+      "date": "1963-02-12",
+      "venue": {
+        "ko": "로스앤젤레스 지역대표 인계",
+        "en": "Los Angeles representation handoff"
+      },
+      "context": {
+        "ko": "로스앤젤레스 지역대표 인계",
+        "en": "Los Angeles representation handoff"
+      },
+      "cast": [
+        {
+          "id": "H000367",
+          "name": "Augustus Freeman Hawkins",
+          "ko": "거스 호킨스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/14733"
+        },
+        {
+          "id": null,
+          "name": "Mervyn Malcolm Dymally",
+          "ko": "머빈 다이멀리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12563"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "주의회에서 오랫동안 대표했던 지역의 새 의원을 소개합니다.",
+          "en": "Meet the new state legislator from the area I represented for years."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 아직 연방의원이 아닙니다. 주의회에서 그 지역을 맡았습니다.",
+          "en": "I am not a federal representative yet. I took the seat in the state legislature."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "다이멀리 의원이 이어받은 자리는 {{blank}}입니다.",
+        "en": "Dymally succeeded Hawkins in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 하원",
+            "en": "U.S. House"
+          },
+          {
+            "id": "B",
+            "ko": "연방 상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "C",
+            "ko": "캘리포니아 주하원",
+            "en": "California Assembly"
+          },
+          {
+            "id": "D",
+            "ko": "로스앤젤레스 시의회",
+            "en": "Los Angeles City Council"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다이멀리는 주하원을, 호킨스는 연방 하원을 맡았습니다.",
+            "en": "Dymally serves in the state Assembly; Hawkins in the U.S. House."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민 서신을 정부 수준에 맞춰 분류합시다.",
+            "en": "Sort constituent letters by level of government."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "다이멀리는 주하원을, 호킨스는 연방 하원을 맡았습니다.",
+            "en": "Dymally serves in the state Assembly; Hawkins in the U.S. House."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/14733",
+          "claim": "Dymally succeeded Hawkins in the California Assembly after Hawkins won a U.S. House seat in 1962.",
+          "asOf": "1963-02-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12563",
+          "claim": "Dymally succeeded Hawkins in the California Assembly after Hawkins won a U.S. House seat in 1962.",
+          "asOf": "1963-02-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1426-state-seat-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1427",
+      "mechanism": "new-district-constituency",
+      "learningTarget": "Hawkins won election in 1962 in a newly created majority-Black district in central Los Angeles.",
+      "date": "1963-04-12",
+      "venue": {
+        "ko": "로스앤젤레스 새 지역구",
+        "en": "New Los Angeles district"
+      },
+      "context": {
+        "ko": "로스앤젤레스 새 지역구",
+        "en": "New Los Angeles district"
+      },
+      "cast": [
+        {
+          "id": "H000367",
+          "name": "Augustus Freeman Hawkins",
+          "ko": "거스 호킨스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/14733"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "새 지역구의 주민들이 방문했군요. 인구 구성과 경계를 정확히 설명합시다.",
+          "en": "Visitors from our newly created district have arrived. Let's explain its boundaries and population."
+        },
+        {
+          "speaker": "player",
+          "ko": "기존 의석을 단순히 이어받은 것이 아니군요.",
+          "en": "This was not simply succession to an existing seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1962년 새 지역구는 {{blank}} 다수 지역이었습니다.",
+        "en": "The new district in 1962 had a {{blank}} majority.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "아시아계",
+            "en": "Asian American"
+          },
+          {
+            "id": "B",
+            "ko": "원주민",
+            "en": "Native American"
+          },
+          {
+            "id": "C",
+            "ko": "백인",
+            "en": "White"
+          },
+          {
+            "id": "D",
+            "ko": "흑인",
+            "en": "Black"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "로스앤젤레스 중심부의 흑인 다수 신설 지역구였습니다.",
+            "en": "It was a new majority-Black district in central Los Angeles."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지도와 1962년 선거 자료를 함께 전시하세요.",
+            "en": "Display the map alongside 1962 election records."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "로스앤젤레스 중심부의 흑인 다수 신설 지역구였습니다.",
+            "en": "It was a new majority-Black district in central Los Angeles."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/14733",
+          "claim": "Hawkins won election in 1962 in a newly created majority-Black district in central Los Angeles.",
+          "asOf": "1963-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1427-new-district-constituency"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1428",
+      "mechanism": "shared-event-recollection",
+      "learningTarget": "Hawkins represented Watts in 1965; Burke organized a legal defense fund for those arrested during the unrest.",
+      "date": "1973-04-12",
+      "venue": {
+        "ko": "와츠 지역 기록실",
+        "en": "Watts community archive"
+      },
+      "context": {
+        "ko": "와츠 지역 기록실",
+        "en": "Watts community archive"
+      },
+      "cast": [
+        {
+          "id": "H000367",
+          "name": "Augustus Freeman Hawkins",
+          "ko": "거스 호킨스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/14733"
+        },
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1965년 와츠 주민들이 겪었던 사건을 기억합니다.",
+          "en": "I remember what residents of Watts experienced in 1965."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "당시 체포된 사람들을 위한 법률 지원 기금을 조직했습니다.",
+          "en": "I organized a legal defense fund for people arrested at the time."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원의 기록이 연결되는 지역은 {{blank}}입니다.",
+        "en": "The neighborhood linking these records is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "와츠",
+            "en": "Watts"
+          },
+          {
+            "id": "B",
+            "ko": "벤투라",
+            "en": "Ventura"
+          },
+          {
+            "id": "C",
+            "ko": "새크라멘토",
+            "en": "Sacramento"
+          },
+          {
+            "id": "D",
+            "ko": "프레즈노",
+            "en": "Fresno"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1965년 로스앤젤레스 와츠의 사건입니다.",
+            "en": "These records concern Watts in Los Angeles in 1965."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "당시 주민 지원과 이후 의회 활동을 구분해서 보관합시다.",
+            "en": "Keep contemporary community support distinct from later congressional activity."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1965년 로스앤젤레스 와츠의 사건입니다.",
+            "en": "These records concern Watts in Los Angeles in 1965."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/14733",
+          "claim": "Hawkins represented Watts in 1965; Burke organized a legal defense fund for those arrested during the unrest.",
+          "asOf": "1973-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Hawkins represented Watts in 1965; Burke organized a legal defense fund for those arrested during the unrest.",
+          "asOf": "1973-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1428-shared-event-recollection"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1429",
+      "mechanism": "urban-policy-memory",
+      "learningTarget": "Burke chaired the California Assembly urban development committee before her U.S. House service.",
+      "date": "1973-06-12",
+      "venue": {
+        "ko": "로스앤젤레스 도시개발 접견",
+        "en": "Los Angeles urban development meeting"
+      },
+      "context": {
+        "ko": "로스앤젤레스 도시개발 접견",
+        "en": "Los Angeles urban development meeting"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "도시개발 자료를 가져왔군요. 주의회에서도 그 문제를 다뤘습니다.",
+          "en": "You've brought urban development papers. I worked on that issue in the state legislature too."
+        },
+        {
+          "speaker": "player",
+          "ko": "어떤 위원회였는지 기록해 두겠습니다.",
+          "en": "I'll note which committee it was."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "버크의 이전 주의회 위원회는 {{blank}}였습니다.",
+        "en": "Burke chaired the state Assembly committee on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "외교",
+            "en": "foreign affairs"
+          },
+          {
+            "id": "B",
+            "ko": "도시개발",
+            "en": "urban development"
+          },
+          {
+            "id": "C",
+            "ko": "해군",
+            "en": "naval affairs"
+          },
+          {
+            "id": "D",
+            "ko": "관세",
+            "en": "tariffs"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주의회 도시개발위원회였습니다.",
+            "en": "It was the state Assembly urban development committee."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "도시의 주·연방 정책 권한을 비교하는 안내서를 만드세요.",
+            "en": "Prepare a guide comparing state and federal urban policy roles."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "주의회 도시개발위원회였습니다.",
+            "en": "It was the state Assembly urban development committee."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Burke chaired the California Assembly urban development committee before her U.S. House service.",
+          "asOf": "1973-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1429-urban-policy-memory"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1430",
+      "mechanism": "civil-disorder-commission-contrast",
+      "learningTarget": "Burke served on the McCone commission staff after Watts; Corman served on the President's National Advisory Commission on Civil Disorders in 1967–1968.",
+      "date": "1974-04-12",
+      "venue": {
+        "ko": "도시 갈등 조사 자료",
+        "en": "Urban unrest investigation records"
+      },
+      "context": {
+        "ko": "도시 갈등 조사 자료",
+        "en": "Urban unrest investigation records"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        },
+        {
+          "id": null,
+          "name": "James Charles Corman",
+          "ko": "제임스 코먼",
+          "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/5c/James_C._Corman%2C_1963.jpg",
+          "source": "https://history.house.gov/People/Detail/11430"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "와츠 이후 조사위원회 자료를 검토하고 있습니다.",
+          "en": "I'm reviewing the inquiry records after Watts."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이후 전국 차원의 민간 소요 조사위원회에 참여했습니다.",
+          "en": "I later served on a national commission on civil disorders."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "코먼의 조사위원회 활동은 {{blank}} 차원이었습니다.",
+        "en": "Corman's commission operated at the {{blank}} level.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시",
+            "en": "municipal"
+          },
+          {
+            "id": "B",
+            "ko": "카운티",
+            "en": "county"
+          },
+          {
+            "id": "C",
+            "ko": "연방",
+            "en": "federal"
+          },
+          {
+            "id": "D",
+            "ko": "학교",
+            "en": "school"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "코먼은 대통령 자문위원회에, 버크는 캘리포니아 조사에 참여했습니다.",
+            "en": "Corman served on the presidential advisory commission; Burke worked on the California inquiry."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 조사 자료를 비교해 주민 자료에 첨부하세요.",
+            "en": "Compare both inquiry records in the constituent briefing."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "코먼은 대통령 자문위원회에, 버크는 캘리포니아 조사에 참여했습니다.",
+            "en": "Corman served on the presidential advisory commission; Burke worked on the California inquiry."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Burke served on the McCone commission staff after Watts; Corman served on the President's National Advisory Commission on Civil Disorders in 1967–1968.",
+          "asOf": "1974-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/11430",
+          "claim": "Burke served on the McCone commission staff after Watts; Corman served on the President's National Advisory Commission on Civil Disorders in 1967–1968.",
+          "asOf": "1974-04-12"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:James_C._Corman,_1963.jpg",
+          "claim": "Portrait of James Charles Corman; California State Printing Office, California Blue Book 1963; Commons PD-US-no notice",
+          "asOf": "1974-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1430-civil-disorder-commission-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1431",
+      "mechanism": "commission-document",
+      "learningTarget": "Corman served on the President's National Advisory Commission on Civil Disorders, 1967–1968.",
+      "date": "1968-06-12",
+      "venue": {
+        "ko": "밴나이스 주민 토론",
+        "en": "Van Nuys community discussion"
+      },
+      "context": {
+        "ko": "밴나이스 주민 토론",
+        "en": "Van Nuys community discussion"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "James Charles Corman",
+          "ko": "제임스 코먼",
+          "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/5c/James_C._Corman%2C_1963.jpg",
+          "source": "https://history.house.gov/People/Detail/11430"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "도시 갈등에 대한 전국 조사 자료를 주민에게 설명하고 싶습니다.",
+          "en": "I'd like residents to understand the national inquiry into urban unrest."
+        },
+        {
+          "speaker": "host",
+          "ko": "조사의 주제를 안내문에 적어 주세요.",
+          "en": "Identify the commission's topic in the program."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "코먼이 참여한 1967~1968년 위원회는 {{blank}}을 조사했습니다.",
+        "en": "Corman's 1967–1968 commission examined {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농산물 가격",
+            "en": "crop prices"
+          },
+          {
+            "id": "B",
+            "ko": "철도 요금",
+            "en": "rail rates"
+          },
+          {
+            "id": "C",
+            "ko": "해군 함정",
+            "en": "naval vessels"
+          },
+          {
+            "id": "D",
+            "ko": "시민 소요",
+            "en": "civil disorders"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "대통령의 민간 소요 자문위원회였습니다.",
+            "en": "It was the President's advisory commission on civil disorders."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민들의 지역 경험을 조사 보고서와 함께 토론합시다.",
+            "en": "Discuss local experiences alongside the report."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "대통령의 민간 소요 자문위원회였습니다.",
+            "en": "It was the President's advisory commission on civil disorders."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/11430",
+          "claim": "Corman served on the President's National Advisory Commission on Civil Disorders, 1967–1968.",
+          "asOf": "1968-06-12"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:James_C._Corman,_1963.jpg",
+          "claim": "Portrait of James Charles Corman; California State Printing Office, California Blue Book 1963; Commons PD-US-no notice",
+          "asOf": "1968-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1431-commission-document"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1432",
+      "mechanism": "statewide-office-reunion",
+      "learningTarget": "Hawkins was a sitting House member; Dymally became California lieutenant governor in 1975.",
+      "date": "1975-04-12",
+      "venue": {
+        "ko": "캘리포니아 공직 재회",
+        "en": "California public office reunion"
+      },
+      "context": {
+        "ko": "캘리포니아 공직 재회",
+        "en": "California public office reunion"
+      },
+      "cast": [
+        {
+          "id": "H000367",
+          "name": "Augustus Freeman Hawkins",
+          "ko": "거스 호킨스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/14733"
+        },
+        {
+          "id": null,
+          "name": "Mervyn Malcolm Dymally",
+          "ko": "머빈 다이멀리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12563"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "예전 주의회 후임자가 이제 주정부의 다른 직책을 맡았군요.",
+          "en": "My former Assembly successor now holds another state office."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이번에는 주 전체의 선출직입니다.",
+          "en": "This time it is a statewide elected office."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1975년 다이멀리의 직책은 {{blank}}입니다.",
+        "en": "Dymally's office in 1975 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "캘리포니아 부지사",
+            "en": "California lieutenant governor"
+          },
+          {
+            "id": "B",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          },
+          {
+            "id": "C",
+            "ko": "로스앤젤레스 시장",
+            "en": "Los Angeles mayor"
+          },
+          {
+            "id": "D",
+            "ko": "연방 하원의장",
+            "en": "U.S. House Speaker"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다이멀리는 부지사, 호킨스는 연방 하원의원입니다.",
+            "en": "Dymally is lieutenant governor; Hawkins is a federal representative."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1963년 의석 인계와 새 직책을 연결하세요.",
+            "en": "Link the 1963 transition to the new office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "다이멀리는 부지사, 호킨스는 연방 하원의원입니다.",
+            "en": "Dymally is lieutenant governor; Hawkins is a federal representative."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/14733",
+          "claim": "Hawkins was a sitting House member; Dymally became California lieutenant governor in 1975.",
+          "asOf": "1975-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12563",
+          "claim": "Hawkins was a sitting House member; Dymally became California lieutenant governor in 1975.",
+          "asOf": "1975-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1432-statewide-office-reunion"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1433",
+      "mechanism": "local-service-funding",
+      "learningTarget": "Burke sought funding for an American Indian hospital in Los Angeles while serving on Appropriations.",
+      "date": "1975-06-12",
+      "venue": {
+        "ko": "로스앤젤레스 의료 접견",
+        "en": "Los Angeles health delegation"
+      },
+      "context": {
+        "ko": "로스앤젤레스 의료 접견",
+        "en": "Los Angeles health delegation"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역의 원주민 의료시설 관련 자료가 있습니까?",
+          "en": "Do you have the papers on a local Indigenous health facility?"
+        },
+        {
+          "speaker": "player",
+          "ko": "지역사회 요구와 연방 예산을 연결하겠습니다.",
+          "en": "I'll connect the community's needs to federal appropriations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "버크가 지원을 요청한 시설은 {{blank}}입니다.",
+        "en": "Burke sought funding for an {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "국제공항",
+            "en": "international airport"
+          },
+          {
+            "id": "B",
+            "ko": "아메리칸 인디언 병원",
+            "en": "American Indian hospital"
+          },
+          {
+            "id": "C",
+            "ko": "해군 조선소",
+            "en": "naval shipyard"
+          },
+          {
+            "id": "D",
+            "ko": "연방 법원",
+            "en": "federal courthouse"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "로스앤젤레스의 아메리칸 인디언 병원 지원입니다.",
+            "en": "It was support for an American Indian hospital in Los Angeles."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "의료 방문단과 후속 접견을 잡으세요.",
+            "en": "Arrange a follow-up with the health delegation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "로스앤젤레스의 아메리칸 인디언 병원 지원입니다.",
+            "en": "It was support for an American Indian hospital in Los Angeles."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Burke sought funding for an American Indian hospital in Los Angeles while serving on Appropriations.",
+          "asOf": "1975-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1433-local-service-funding"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1434",
+      "mechanism": "assembly-to-house-cohort",
+      "learningTarget": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+      "date": "1963-05-12",
+      "venue": {
+        "ko": "캘리포니아 신입 의원 소개",
+        "en": "California freshman introductions"
+      },
+      "context": {
+        "ko": "캘리포니아 신입 의원 소개",
+        "en": "California freshman introductions"
+      },
+      "cast": [
+        {
+          "id": "H000367",
+          "name": "Augustus Freeman Hawkins",
+          "ko": "거스 호킨스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/14733"
+        },
+        {
+          "id": "W000571",
+          "name": "Charles Herbert Wilson",
+          "ko": "찰스 허버트 윌슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "윌슨 의원도 저처럼 주하원에서 일한 뒤 이번 의회에 왔습니다.",
+          "en": "Wilson, like me, came to this Congress after state Assembly service."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "우리의 주의회 임기는 서로 다르지만 연방 입성 시점은 같습니다.",
+          "en": "Our Assembly careers differ, but our federal entry dates coincide."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원의 첫 연방 의회는 제{{blank}}대입니다.",
+        "en": "Both entered the {{blank}} Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "87",
+            "en": "87th"
+          },
+          {
+            "id": "B",
+            "ko": "89",
+            "en": "89th"
+          },
+          {
+            "id": "C",
+            "ko": "88",
+            "en": "88th"
+          },
+          {
+            "id": "D",
+            "ko": "90",
+            "en": "90th"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1963년 제88대 의회입니다.",
+            "en": "The 88th Congress, in 1963."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 지역 대표의 주의회와 연방 경력표를 따로 작성하세요.",
+            "en": "Prepare separate state and federal career records."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1963년 제88대 의회입니다.",
+            "en": "The 88th Congress, in 1963."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/14733",
+          "claim": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+          "asOf": "1963-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/",
+          "claim": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+          "asOf": "1963-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1434-assembly-to-house-cohort"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1435",
+      "mechanism": "legislative-route-contrast",
+      "learningTarget": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+      "date": "1971-05-12",
+      "venue": {
+        "ko": "캘리포니아 주의회 동료 재회",
+        "en": "California legislative colleagues"
+      },
+      "context": {
+        "ko": "캘리포니아 주의회 동료 재회",
+        "en": "California legislative colleagues"
+      },
+      "cast": [
+        {
+          "id": "W000571",
+          "name": "Charles Herbert Wilson",
+          "ko": "찰스 허버트 윌슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/"
+        },
+        {
+          "id": null,
+          "name": "George Elmore Danielson",
+          "ko": "조지 대니얼슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/11883"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "대니얼슨 의원이 주의회에서 연방의회로 왔군요.",
+          "en": "Mr. Danielson has moved from the state legislature to Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 주하원에 이어 주상원도 거쳤습니다.",
+          "en": "I served in the state Senate after the Assembly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대니얼슨의 연방의회 직전 공직은 {{blank}}입니다.",
+        "en": "Danielson's last legislative office before Congress was the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "B",
+            "ko": "시의회",
+            "en": "city council"
+          },
+          {
+            "id": "C",
+            "ko": "카운티 위원회",
+            "en": "county board"
+          },
+          {
+            "id": "D",
+            "ko": "캘리포니아 주상원",
+            "en": "California Senate"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1967~1971년 캘리포니아 주상원의원입니다.",
+            "en": "California state senator, 1967–1971."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 사람의 지역 의정 경력 차이를 기록합시다.",
+            "en": "Record their different paths to federal representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1967~1971년 캘리포니아 주상원의원입니다.",
+            "en": "California state senator, 1967–1971."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/",
+          "claim": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+          "asOf": "1971-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/11883",
+          "claim": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+          "asOf": "1971-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1435-legislative-route-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1436",
+      "mechanism": "municipal-transition",
+      "learningTarget": "Patterson was mayor of Santa Ana in 1973–1975 before House service.",
+      "date": "1975-05-12",
+      "venue": {
+        "ko": "산타애나 시정 방문",
+        "en": "Santa Ana municipal visit"
+      },
+      "context": {
+        "ko": "산타애나 시정 방문",
+        "en": "Santa Ana municipal visit"
+      },
+      "cast": [
+        {
+          "id": "P000121",
+          "name": "Jerry Mumford Patterson",
+          "ko": "제리 패터슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "얼마 전까지 산타애나 시청에서 일하던 동료들이 오셨습니다.",
+          "en": "My recent colleagues from Santa Ana city hall have arrived."
+        },
+        {
+          "speaker": "player",
+          "ko": "시민들이 새 연방 대표와 지방정부를 구분하도록 돕겠습니다.",
+          "en": "I'll help residents distinguish their new federal member from city government."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "패터슨의 이전 직책은 산타애나 {{blank}}입니다.",
+        "en": "Patterson's prior office was Santa Ana {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "연방판사",
+            "en": "federal judge"
+          },
+          {
+            "id": "D",
+            "ko": "상원의원",
+            "en": "senator"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "산타애나 시장을 지냈습니다.",
+            "en": "I was mayor of Santa Ana."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "시정 문의와 의회 민원을 나누세요.",
+            "en": "Separate municipal requests from federal casework."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "산타애나 시장을 지냈습니다.",
+            "en": "I was mayor of Santa Ana."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/",
+          "claim": "Patterson was mayor of Santa Ana in 1973–1975 before House service.",
+          "asOf": "1975-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1436-municipal-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1437",
+      "mechanism": "city-representation-exchange",
+      "learningTarget": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+      "date": "1975-07-12",
+      "venue": {
+        "ko": "남부 캘리포니아 도시 대표 회의",
+        "en": "Southern California urban delegation meeting"
+      },
+      "context": {
+        "ko": "남부 캘리포니아 도시 대표 회의",
+        "en": "Southern California urban delegation meeting"
+      },
+      "cast": [
+        {
+          "id": "P000121",
+          "name": "Jerry Mumford Patterson",
+          "ko": "제리 패터슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/"
+        },
+        {
+          "id": null,
+          "name": "James Charles Corman",
+          "ko": "제임스 코먼",
+          "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/5c/James_C._Corman%2C_1963.jpg",
+          "source": "https://history.house.gov/People/Detail/11430"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "코먼 의원도 지방 의회 경험이 있습니다.",
+          "en": "Mr. Corman has city council experience too."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 시의회는 로스앤젤레스였습니다.",
+          "en": "Mine was in Los Angeles."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "패터슨이 활동했던 시의회는 {{blank}}입니다.",
+        "en": "Patterson served on the city council of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로스앤젤레스",
+            "en": "Los Angeles"
+          },
+          {
+            "id": "B",
+            "ko": "산타애나",
+            "en": "Santa Ana"
+          },
+          {
+            "id": "C",
+            "ko": "롱비치",
+            "en": "Long Beach"
+          },
+          {
+            "id": "D",
+            "ko": "로즈빌",
+            "en": "Roseville"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "패터슨은 산타애나에서 일했습니다.",
+            "en": "Patterson served in Santa Ana."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 도시의 주민 대표 기관을 지도에 표시하세요.",
+            "en": "Mark both municipal institutions on the map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "패터슨은 산타애나에서 일했습니다.",
+            "en": "Patterson served in Santa Ana."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/",
+          "claim": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+          "asOf": "1975-07-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/11430",
+          "claim": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+          "asOf": "1975-07-12"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:James_C._Corman,_1963.jpg",
+          "claim": "Portrait of James Charles Corman; California State Printing Office, California Blue Book 1963; Commons PD-US-no notice",
+          "asOf": "1975-07-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1437-city-representation-exchange"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1438",
+      "mechanism": "local-to-federal-institution",
+      "learningTarget": "Johnson chaired Public Works and Transportation in the 95th Congress; Danielson represented California as a Democrat.",
+      "date": "1977-04-12",
+      "venue": {
+        "ko": "캘리포니아 교통·지역 회의",
+        "en": "California transport and local affairs meeting"
+      },
+      "context": {
+        "ko": "캘리포니아 교통·지역 회의",
+        "en": "California transport and local affairs meeting"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "George Elmore Danielson",
+          "ko": "조지 대니얼슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/11883"
+        },
+        {
+          "id": null,
+          "name": "Harold Terry Johnson",
+          "ko": "해럴드 테리 존슨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/15862"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "캘리포니아 교통 관련 문의는 존슨 의원의 위원회 관할도 확인해야 합니다.",
+          "en": "California transport requests should be checked against Mr. Johnson's committee jurisdiction."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이번 의회에서 공공사업과 교통을 담당합니다.",
+          "en": "I chair public works and transportation in this Congress."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "교통 자료는 {{blank}} 위원장에게도 전달하겠습니다.",
+        "en": "I'll also route the transportation papers to Chairman {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "대니얼슨",
+            "en": "Danielson"
+          },
+          {
+            "id": "B",
+            "ko": "패터슨",
+            "en": "Patterson"
+          },
+          {
+            "id": "C",
+            "ko": "존슨",
+            "en": "Johnson"
+          },
+          {
+            "id": "D",
+            "ko": "윌슨",
+            "en": "Wilson"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨이 제95대 의회의 교통·공공사업위원장입니다.",
+            "en": "Johnson chairs Public Works and Transportation in the 95th Congress."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역 문의와 위원회 자료를 구별합시다.",
+            "en": "Separate district requests from committee materials."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨이 제95대 의회의 교통·공공사업위원장입니다.",
+            "en": "Johnson chairs Public Works and Transportation in the 95th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/11883",
+          "claim": "Johnson chaired Public Works and Transportation in the 95th Congress; Danielson represented California as a Democrat.",
+          "asOf": "1977-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/15862",
+          "claim": "Johnson chaired Public Works and Transportation in the 95th Congress; Danielson represented California as a Democrat.",
+          "asOf": "1977-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1438-local-to-federal-institution"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1439",
+      "mechanism": "planning-record",
+      "learningTarget": "Clancy chaired the Cincinnati Planning Commission in 1958–1960.",
+      "date": "1961-04-12",
+      "venue": {
+        "ko": "신시내티 도시계획 지도",
+        "en": "Cincinnati planning map"
+      },
+      "context": {
+        "ko": "신시내티 도시계획 지도",
+        "en": "Cincinnati planning map"
+      },
+      "cast": [
+        {
+          "id": "C000409",
+          "name": "Donald Daniel Clancy",
+          "ko": "도널드 클랜시",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/10964"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "시장 시절 도시계획위원회의 자료도 남아 있습니다.",
+          "en": "The planning commission records from my mayoral years remain."
+        },
+        {
+          "speaker": "player",
+          "ko": "어느 도시의 계획인지 확인하겠습니다.",
+          "en": "I'll identify the city."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "클랜시의 1958~1960년 도시계획 업무는 {{blank}}입니다.",
+        "en": "Clancy's 1958–1960 planning work was in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "클리블랜드",
+            "en": "Cleveland"
+          },
+          {
+            "id": "B",
+            "ko": "콜럼버스",
+            "en": "Columbus"
+          },
+          {
+            "id": "C",
+            "ko": "톨레도",
+            "en": "Toledo"
+          },
+          {
+            "id": "D",
+            "ko": "신시내티",
+            "en": "Cincinnati"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "신시내티 도시계획위원장으로 일했습니다.",
+            "en": "I chaired Cincinnati's planning commission."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "옛 계획 지도와 주민 의견을 함께 검토합시다.",
+            "en": "Review the old planning map with residents' comments."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "신시내티 도시계획위원장으로 일했습니다.",
+            "en": "I chaired Cincinnati's planning commission."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10964",
+          "claim": "Clancy chaired the Cincinnati Planning Commission in 1958–1960.",
+          "asOf": "1961-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1439-planning-record"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1440",
+      "mechanism": "ohio-freshman-introduction",
+      "learningTarget": "Clancy and Harsha entered Congress as Ohio Republicans in 1961; Harsha was from Portsmouth.",
+      "date": "1961-06-12",
+      "venue": {
+        "ko": "오하이오 신입 의원 만남",
+        "en": "Ohio freshman meeting"
+      },
+      "context": {
+        "ko": "오하이오 신입 의원 만남",
+        "en": "Ohio freshman meeting"
+      },
+      "cast": [
+        {
+          "id": "C000409",
+          "name": "Donald Daniel Clancy",
+          "ko": "도널드 클랜시",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/10964"
+        },
+        {
+          "id": "H000281",
+          "name": "William Howard Harsha",
+          "ko": "윌리엄 하샤",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "포츠머스에서 온 하샤 의원을 소개하죠.",
+          "en": "Let me introduce Mr. Harsha from Portsmouth."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 이번 의회에서 첫 임기를 시작했습니다.",
+          "en": "I also began my first term this Congress."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 분은 제{{blank}}대 의회 입성 동기입니다.",
+        "en": "You both entered the {{blank}} Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "87",
+            "en": "87th"
+          },
+          {
+            "id": "B",
+            "ko": "86",
+            "en": "86th"
+          },
+          {
+            "id": "C",
+            "ko": "88",
+            "en": "88th"
+          },
+          {
+            "id": "D",
+            "ko": "89",
+            "en": "89th"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1961년 제87대 의회입니다.",
+            "en": "The 87th Congress, in 1961."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 도시의 지역 사무실 연락처를 구분하세요.",
+            "en": "Keep the two city office contacts distinct."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1961년 제87대 의회입니다.",
+            "en": "The 87th Congress, in 1961."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10964",
+          "claim": "Clancy and Harsha entered Congress as Ohio Republicans in 1961; Harsha was from Portsmouth.",
+          "asOf": "1961-06-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/",
+          "claim": "Clancy and Harsha entered Congress as Ohio Republicans in 1961; Harsha was from Portsmouth.",
+          "asOf": "1961-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1440-ohio-freshman-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1441",
+      "mechanism": "county-legal-geography",
+      "learningTarget": "Harsha was Scioto County prosecutor in 1951–1955.",
+      "date": "1962-04-12",
+      "venue": {
+        "ko": "포츠머스 법률 방문단",
+        "en": "Portsmouth legal delegation"
+      },
+      "context": {
+        "ko": "포츠머스 법률 방문단",
+        "en": "Portsmouth legal delegation"
+      },
+      "cast": [
+        {
+          "id": "H000281",
+          "name": "William Howard Harsha",
+          "ko": "윌리엄 하샤",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "포츠머스의 옛 카운티 동료들이 찾아왔군요.",
+          "en": "Former county colleagues from Portsmouth have arrived."
+        },
+        {
+          "speaker": "host",
+          "ko": "어느 카운티인지 소개해 주세요.",
+          "en": "Identify the county for our program."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하샤가 검사로 재임했던 곳은 {{blank}} 카운티입니다.",
+        "en": "Harsha served as prosecutor of {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "해밀턴",
+            "en": "Hamilton"
+          },
+          {
+            "id": "B",
+            "ko": "사이오토",
+            "en": "Scioto"
+          },
+          {
+            "id": "C",
+            "ko": "프랭클린",
+            "en": "Franklin"
+          },
+          {
+            "id": "D",
+            "ko": "쿠야호가",
+            "en": "Cuyahoga"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "사이오토 카운티입니다.",
+            "en": "Scioto County."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 관할과 연방 지역구를 동일시하지 않도록 안내하세요.",
+            "en": "Explain that county jurisdiction and a congressional district are not identical."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "사이오토 카운티입니다.",
+            "en": "Scioto County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/",
+          "claim": "Harsha was Scioto County prosecutor in 1951–1955.",
+          "asOf": "1962-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1441-county-legal-geography"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1442",
+      "mechanism": "community-service-contrast",
+      "learningTarget": "Harsha practiced law in Portsmouth; Mosher edited the Oberlin News-Tribune; both served Ohio in 1964.",
+      "date": "1964-04-12",
+      "venue": {
+        "ko": "오하이오 지역 방문단 교류",
+        "en": "Ohio local delegation exchange"
+      },
+      "context": {
+        "ko": "오하이오 지역 방문단 교류",
+        "en": "Ohio local delegation exchange"
+      },
+      "cast": [
+        {
+          "id": "H000281",
+          "name": "William Howard Harsha",
+          "ko": "윌리엄 하샤",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/"
+        },
+        {
+          "id": null,
+          "name": "Charles Adams Mosher",
+          "ko": "찰스 모셔",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18619"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "모셔 의원의 지역 언론 경험과 제 법조 경험은 서로 다릅니다.",
+          "en": "Mr. Mosher's newspaper background differs from my legal career."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 신문은 오벌린에서 발간했습니다.",
+          "en": "My newspaper was published in Oberlin."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "모셔가 편집했던 신문은 {{blank}}입니다.",
+        "en": "Mosher edited the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Swift County News",
+            "en": "Swift County News"
+          },
+          {
+            "id": "B",
+            "ko": "Tulare Daily News",
+            "en": "Tulare Daily News"
+          },
+          {
+            "id": "C",
+            "ko": "Oberlin News-Tribune",
+            "en": "Oberlin News-Tribune"
+          },
+          {
+            "id": "D",
+            "ko": "Detroit News",
+            "en": "Detroit News"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "오벌린 뉴스 트리뷴입니다.",
+            "en": "The Oberlin News-Tribune."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역 언론 방문과 법률 방문을 별도로 예약하세요.",
+            "en": "Schedule separate press and legal delegation visits."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "오벌린 뉴스 트리뷴입니다.",
+            "en": "The Oberlin News-Tribune."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/H/HARSHA%2C-William-Howard-%28H000281%29/",
+          "claim": "Harsha practiced law in Portsmouth; Mosher edited the Oberlin News-Tribune; both served Ohio in 1964.",
+          "asOf": "1964-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/18619",
+          "claim": "Harsha practiced law in Portsmouth; Mosher edited the Oberlin News-Tribune; both served Ohio in 1964.",
+          "asOf": "1964-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1442-community-service-contrast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1443",
+      "mechanism": "marine-science-delegation",
+      "learningTarget": "Mosher served on the Presidential Commission on Marine Science, Engineering and Resources in 1967–1969.",
+      "date": "1968-06-12",
+      "venue": {
+        "ko": "오벌린 과학 접견",
+        "en": "Oberlin science delegation"
+      },
+      "context": {
+        "ko": "오벌린 과학 접견",
+        "en": "Oberlin science delegation"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles Adams Mosher",
+          "ko": "찰스 모셔",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18619"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해양 과학과 자원 연구 관련 조사 자료가 있습니까?",
+          "en": "Do you have the inquiry papers on marine science and resources?"
+        },
+        {
+          "speaker": "player",
+          "ko": "지역 대표의 위원회 밖 활동도 기록하겠습니다.",
+          "en": "I'll record your public service outside House committees."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "모셔가 참여한 위원회의 분야는 {{blank}}입니다.",
+        "en": "Mosher's presidential commission concerned {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주택 금융",
+            "en": "housing finance"
+          },
+          {
+            "id": "B",
+            "ko": "농업 가격",
+            "en": "farm prices"
+          },
+          {
+            "id": "C",
+            "ko": "시 교육",
+            "en": "municipal education"
+          },
+          {
+            "id": "D",
+            "ko": "해양 과학·공학·자원",
+            "en": "marine science, engineering and resources"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해양 과학·공학·자원입니다.",
+            "en": "Marine science, engineering and resources."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대학 연구 방문단에 조사 자료를 안내하세요.",
+            "en": "Direct the university visitors to the commission records."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "해양 과학·공학·자원입니다.",
+            "en": "Marine science, engineering and resources."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18619",
+          "claim": "Mosher served on the Presidential Commission on Marine Science, Engineering and Resources in 1967–1969.",
+          "asOf": "1968-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1443-marine-science-delegation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1444",
+      "mechanism": "oberlin-generation-reunion",
+      "learningTarget": "Mosher left the House in January 1977; Pease entered that January and both had served Oberlin City Council.",
+      "date": "1977-04-12",
+      "venue": {
+        "ko": "오벌린 세대교체",
+        "en": "Oberlin generational transition"
+      },
+      "context": {
+        "ko": "오벌린 세대교체",
+        "en": "Oberlin generational transition"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles Adams Mosher",
+          "ko": "찰스 모셔",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18619"
+        },
+        {
+          "id": "P000170",
+          "name": "Donald James Pease",
+          "ko": "도널드 피스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19488"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "오벌린 시의회에서 일했던 또 다른 의원이 새 의회에 들어왔습니다.",
+          "en": "Another former Oberlin council member has joined the new Congress."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 1월부터 연방 하원의원입니다.",
+          "en": "I have been a federal representative since January."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 현직인 분은 {{blank}}입니다.",
+        "en": "The sitting member is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "피스",
+            "en": "Pease"
+          },
+          {
+            "id": "B",
+            "ko": "모셔",
+            "en": "Mosher"
+          },
+          {
+            "id": "C",
+            "ko": "둘 모두",
+            "en": "both"
+          },
+          {
+            "id": "D",
+            "ko": "둘 다 아님",
+            "en": "neither"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "피스는 현직이고 모셔는 전직입니다.",
+            "en": "Pease is sitting; Mosher is former."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "오벌린의 세대교체 기록을 작성하세요.",
+            "en": "Write the Oberlin generational record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "피스는 현직이고 모셔는 전직입니다.",
+            "en": "Pease is sitting; Mosher is former."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18619",
+          "claim": "Mosher left the House in January 1977; Pease entered that January and both had served Oberlin City Council.",
+          "asOf": "1977-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/19488",
+          "claim": "Mosher left the House in January 1977; Pease entered that January and both had served Oberlin City Council.",
+          "asOf": "1977-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1444-oberlin-generation-reunion"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1445",
+      "mechanism": "district-record-identification",
+      "learningTarget": "Pease represented Ohio's 13th congressional district from 1977.",
+      "date": "1977-06-12",
+      "venue": {
+        "ko": "오하이오 제13선거구 접견",
+        "en": "Ohio District 13 reception"
+      },
+      "context": {
+        "ko": "오하이오 제13선거구 접견",
+        "en": "Ohio District 13 reception"
+      },
+      "cast": [
+        {
+          "id": "P000170",
+          "name": "Donald James Pease",
+          "ko": "도널드 피스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19488"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역구 서류가 새 사무실에 들어왔습니다. 번호를 확인합시다.",
+          "en": "District papers have arrived. Let's check their number."
+        },
+        {
+          "speaker": "player",
+          "ko": "현재 의회 기준으로 분류하겠습니다.",
+          "en": "I'll sort them using this Congress's boundaries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "피스 의원의 지역구는 오하이오 제{{blank}}선거구입니다.",
+        "en": "Pease represents Ohio's {{blank}} District.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "1",
+            "en": "1st"
+          },
+          {
+            "id": "B",
+            "ko": "13",
+            "en": "13th"
+          },
+          {
+            "id": "C",
+            "ko": "7",
+            "en": "7th"
+          },
+          {
+            "id": "D",
+            "ko": "15",
+            "en": "15th"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "제13선거구입니다.",
+            "en": "The Thirteenth District."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역구 지도와 서신 목록을 연결하세요.",
+            "en": "Link the district map with the correspondence list."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제13선거구입니다.",
+            "en": "The Thirteenth District."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/19488",
+          "claim": "Pease represented Ohio's 13th congressional district from 1977.",
+          "asOf": "1977-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1445-district-record-identification"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1446",
+      "mechanism": "township-to-federal",
+      "learningTarget": "Ford served as justice of the peace of Taylor Township in 1955–1957.",
+      "date": "1965-04-12",
+      "venue": {
+        "ko": "테일러 타운십 주민 접견",
+        "en": "Taylor Township reception"
+      },
+      "context": {
+        "ko": "테일러 타운십 주민 접견",
+        "en": "Taylor Township reception"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William David Ford",
+          "ko": "윌리엄 데이비드 포드",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13314"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "테일러 타운십에서 만났던 주민들이 찾아왔습니다.",
+          "en": "Residents I knew from Taylor Township are visiting."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 사법직과 현재 하원의원을 구분하겠습니다.",
+          "en": "I'll distinguish your earlier judicial office from your House seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "포드의 1955~1957년 지방 공직은 {{blank}}입니다.",
+        "en": "Ford's local office in 1955–1957 was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "치안판사",
+            "en": "justice of the peace"
+          },
+          {
+            "id": "D",
+            "ko": "보안관",
+            "en": "sheriff"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "테일러 타운십 치안판사였습니다.",
+            "en": "I was justice of the peace in Taylor Township."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민의 법률 문의와 연방 의회 문의를 구분하세요.",
+            "en": "Separate local legal inquiries from federal casework."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "테일러 타운십 치안판사였습니다.",
+            "en": "I was justice of the peace in Taylor Township."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13314",
+          "claim": "Ford served as justice of the peace of Taylor Township in 1955–1957.",
+          "asOf": "1965-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1446-township-to-federal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1447",
+      "mechanism": "regional-state-legislative-exchange",
+      "learningTarget": "Ford served Michigan state Senate 1962–1964; Pease served Ohio state Senate 1965–1967 and 1975–1977.",
+      "date": "1977-05-12",
+      "venue": {
+        "ko": "중서부 지방의정 교류",
+        "en": "Midwestern state legislative exchange"
+      },
+      "context": {
+        "ko": "중서부 지방의정 교류",
+        "en": "Midwestern state legislative exchange"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William David Ford",
+          "ko": "윌리엄 데이비드 포드",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13314"
+        },
+        {
+          "id": "P000170",
+          "name": "Donald James Pease",
+          "ko": "도널드 피스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19488"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "피스 의원도 주상원 경험이 있군요.",
+          "en": "Mr. Pease also has state Senate experience."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 경우에는 오하이오의 두 차례 주상원 임기입니다.",
+          "en": "Mine was two periods in the Ohio Senate."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "포드의 이전 주상원은 {{blank}}입니다.",
+        "en": "Ford served in the state Senate of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "오하이오",
+            "en": "Ohio"
+          },
+          {
+            "id": "B",
+            "ko": "인디애나",
+            "en": "Indiana"
+          },
+          {
+            "id": "C",
+            "ko": "일리노이",
+            "en": "Illinois"
+          },
+          {
+            "id": "D",
+            "ko": "미시간",
+            "en": "Michigan"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "미시간 주상원에서 일했습니다.",
+            "en": "I served in the Michigan Senate."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 주의 지방 의정 경력을 비교하세요.",
+            "en": "Compare their state legislative careers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "미시간 주상원에서 일했습니다.",
+            "en": "I served in the Michigan Senate."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13314",
+          "claim": "Ford served Michigan state Senate 1962–1964; Pease served Ohio state Senate 1965–1967 and 1975–1977.",
+          "asOf": "1977-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/19488",
+          "claim": "Ford served Michigan state Senate 1962–1964; Pease served Ohio state Senate 1965–1967 and 1975–1977.",
+          "asOf": "1977-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1447-regional-state-legislative-exchange"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1448",
+      "mechanism": "constitutional-convention-archive",
+      "learningTarget": "Ford was a delegate to Michigan's 1961–1962 constitutional convention.",
+      "date": "1966-05-12",
+      "venue": {
+        "ko": "미시간 헌법 자료실",
+        "en": "Michigan constitutional archive"
+      },
+      "context": {
+        "ko": "미시간 헌법 자료실",
+        "en": "Michigan constitutional archive"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William David Ford",
+          "ko": "윌리엄 데이비드 포드",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13314"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1961년부터 이어진 주 헌법회의 자료도 주민들이 물어봅니다.",
+          "en": "Residents ask about the state constitutional convention records beginning in 1961."
+        },
+        {
+          "speaker": "player",
+          "ko": "연방 헌법 개정과 혼동하지 않겠습니다.",
+          "en": "I won't confuse it with federal constitutional amendments."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "포드가 참여한 회의는 {{blank}} 헌법회의입니다.",
+        "en": "Ford was a delegate to the {{blank}} constitutional convention.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미시간주",
+            "en": "Michigan"
+          },
+          {
+            "id": "B",
+            "ko": "연방",
+            "en": "federal"
+          },
+          {
+            "id": "C",
+            "ko": "오하이오주",
+            "en": "Ohio"
+          },
+          {
+            "id": "D",
+            "ko": "캘리포니아주",
+            "en": "California"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1961~1962년 미시간주 헌법회의입니다.",
+            "en": "Michigan's 1961–1962 constitutional convention."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주 헌법 자료를 연방 의회 기록과 별도로 보관하세요.",
+            "en": "Preserve the state constitution records separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1961~1962년 미시간주 헌법회의입니다.",
+            "en": "Michigan's 1961–1962 constitutional convention."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13314",
+          "claim": "Ford was a delegate to Michigan's 1961–1962 constitutional convention.",
+          "asOf": "1966-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1448-constitutional-convention-archive"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1449",
+      "mechanism": "different-state-office-paths",
+      "learningTarget": "Dymally lost reelection as lieutenant governor in 1978; Burke did not seek House reelection and lost nomination for attorney general.",
+      "date": "1978-12-12",
+      "venue": {
+        "ko": "캘리포니아 선거 후 회의",
+        "en": "California post-election meeting"
+      },
+      "context": {
+        "ko": "캘리포니아 선거 후 회의",
+        "en": "California post-election meeting"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Mervyn Malcolm Dymally",
+          "ko": "머빈 다이멀리",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12563"
+        },
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 주정부 재선에 실패했습니다.",
+          "en": "I lost statewide reelection this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 하원 재선 대신 주 법무장관 공천에 도전했습니다.",
+          "en": "I sought the state attorney general nomination rather than House reelection."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "버크가 1978년 도전한 새 공직은 {{blank}}입니다.",
+        "en": "Burke sought the office of {{blank}} in 1978.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "부지사",
+            "en": "lieutenant governor"
+          },
+          {
+            "id": "B",
+            "ko": "주 법무장관",
+            "en": "state attorney general"
+          },
+          {
+            "id": "C",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          },
+          {
+            "id": "D",
+            "ko": "시장",
+            "en": "mayor"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 법무장관 공천에서 패했습니다.",
+            "en": "I lost the nomination for state attorney general."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 사람의 선거와 기존 임기 종료일을 구분하세요.",
+            "en": "Separate the election outcomes from the end of existing terms."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 법무장관 공천에서 패했습니다.",
+            "en": "I lost the nomination for state attorney general."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12563",
+          "claim": "Dymally lost reelection as lieutenant governor in 1978; Burke did not seek House reelection and lost nomination for attorney general.",
+          "asOf": "1978-12-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Dymally lost reelection as lieutenant governor in 1978; Burke did not seek House reelection and lost nomination for attorney general.",
+          "asOf": "1978-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1449-different-state-office-paths"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1450",
+      "mechanism": "urban-municipal-experience",
+      "learningTarget": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+      "date": "1976-05-12",
+      "venue": {
+        "ko": "도시 대표의 지방경험 비교",
+        "en": "Urban representatives' local experience"
+      },
+      "context": {
+        "ko": "도시 대표의 지방경험 비교",
+        "en": "Urban representatives' local experience"
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        },
+        {
+          "id": "C000409",
+          "name": "Donald Daniel Clancy",
+          "ko": "도널드 클랜시",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/10964"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "클랜시 의원의 지방 행정 경험과 제 주의회 경험을 비교해 봅시다.",
+          "en": "Let's compare Mr. Clancy's municipal experience with my state legislative work."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 신시내티 시청에서 일했습니다.",
+          "en": "I worked at Cincinnati city hall."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "클랜시의 이전 대표 도시는 {{blank}}입니다.",
+        "en": "Clancy's former municipal office was in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로스앤젤레스",
+            "en": "Los Angeles"
+          },
+          {
+            "id": "B",
+            "ko": "오벌린",
+            "en": "Oberlin"
+          },
+          {
+            "id": "C",
+            "ko": "신시내티",
+            "en": "Cincinnati"
+          },
+          {
+            "id": "D",
+            "ko": "산타애나",
+            "en": "Santa Ana"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+            "en": "I served on Cincinnati City Council and as mayor."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "도시·주·연방의 주민대표 경로를 나눠 설명합시다.",
+            "en": "Explain municipal, state and federal representation separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+            "en": "I served on Cincinnati City Council and as mayor."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+          "asOf": "1976-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/10964",
+          "claim": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+          "asOf": "1976-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1450-urban-municipal-experience"
+      },
+      "fictional": true
+    }
+  ]
+}
