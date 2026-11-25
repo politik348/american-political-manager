@@ -6,7 +6,7 @@ export function validScene(s){
  const turn=t=>bilingual(t)&&(/^(player|aide|host)$/.test(t.speaker)||(/^npc:\d+$/.test(t.speaker)&&Number(t.speaker.slice(4))<s.cast.length));
  const turns=v=>Array.isArray(v)&&v.length>0&&v.every(turn);
  const r=s.response,c=r?.choices;
- return turns(s.opening)&&s.opening.length>=2&&s.opening.length<=5&&bilingual(r)&&r.speaker==='player'&&['ko','en'].every(k=>r[k].split('{{blank}}').length===2)&&Array.isArray(c)&&c.length===4&&c.every(bilingual)&&new Set(c.map(x=>x.id)).size===4&&c.every(x=>/^[ABCD]$/.test(x.id))&&['ko','en'].every(k=>new Set(c.map(x=>x[k].trim())).size===4)&&c.some(x=>x.id===r.correct)&&turns(s.followup?.correct)&&turns(s.followup?.incorrect)&&Array.isArray(s.evidence)&&s.evidence.length>0&&s.evidence.every(e=>/^https:\/\//.test(e.url)&&isDate(e.asOf)&&e.asOf<=s.date)&&s.outcome&&typeof s.outcome.key==='string';
+ return turns(s.opening)&&s.opening.length>=2&&s.opening.length<=5&&bilingual(r)&&r.speaker==='player'&&['ko','en'].every(k=>r[k].split('{{blank}}').length===2)&&Array.isArray(c)&&c.length===4&&c.every(bilingual)&&new Set(c.map(x=>x.id)).size===4&&c.every(x=>/^[ABCD]$/.test(x.id))&&['ko','en'].every(k=>new Set(c.map(x=>x[k].trim())).size===4)&&c.some(x=>x.id===r.correct)&&turns(s.followup?.correct)&&turns(s.followup?.incorrect)&&Array.isArray(s.evidence)&&s.evidence.length>0&&s.evidence.every(e=>/^https:\/\//.test(e.url)&&isDate(e.asOf)&&e.asOf<=s.date&&(e.retrievedAt===undefined||isDate(e.retrievedAt)&&e.retrievedAt>=e.asOf))&&s.outcome&&typeof s.outcome.key==='string';
 }
 export function catalog(parts){
  const scenes=[],rejected=[],seen=new Set(),duplicates=[];
