@@ -2458,16 +2458,16 @@
     },
     {
       "id": "P01-2024",
-      "mechanism": "fish-pier-office-visit",
-      "learningTarget": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+      "mechanism": "multi-county-casework-routing",
+      "learningTarget": "Chellie Pingree's ME-01 district page lists Lincoln and Sagadahoc among its constituent counties, so casework planning cannot be limited to Portland.",
       "date": "2026-11-25",
       "venue": {
-        "ko": "메인 어항 상담 안내대",
-        "en": "Maine fishing-port casework desk"
+        "ko": "메인주 민원 상담 계획실",
+        "en": "Maine constituent-service planning room"
       },
       "context": {
-        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 메인 어항 상담 안내대에서 자료를 확인합니다.",
-        "en": "Fictional encounter based on historical records, set at the maine fishing-port casework desk."
+        "ko": "공식 지역구 자료를 활용한 가상 상황. 보좌진이 여러 카운티의 민원 상담 일정을 검토한다.",
+        "en": "Fictional encounter based on the official district page. Staff review a multi-county casework plan."
       },
       "cast": [
         {
@@ -2480,85 +2480,85 @@
       ],
       "opening": [
         {
-          "speaker": "player",
-          "ko": "어항에서 일하는 주민이 연방기관 민원 상담 장소를 묻습니다.",
-          "en": "A resident working near the fishing port asks where to seek federal casework."
+          "speaker": "aide",
+          "ko": "포틀랜드에만 상담을 배정하면 다른 지역의 주민들이 빠집니다.",
+          "en": "If we plan only for Portland, we miss constituents elsewhere."
         },
         {
           "speaker": "npc:0",
-          "ko": "제 연락 페이지에 지역 사무실 주소가 있습니다.",
-          "en": "My contact page lists the district office address."
+          "ko": "공식 지역구 안내에는 링컨 카운티도 있습니다. 인접한 다른 카운티를 확인해 보세요.",
+          "en": "The district guide also lists Lincoln County. Check another neighboring county."
         },
         {
-          "speaker": "aide",
-          "ko": "주소 확인과 민원 접수는 별도의 절차로 안내합시다.",
-          "en": "Explain address verification separately from casework intake."
+          "speaker": "player",
+          "ko": "카운티 명칭과 정확한 선거구 경계는 구분해서 기록하겠습니다.",
+          "en": "I'll distinguish county names from exact district boundaries."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "ME-01 핑그리 의원의 Fish Pier 사무실은 {{blank}}에 있습니다.",
-        "en": "Pingree's ME-01 Fish Pier office is in {{blank}}.",
+        "ko": "공식 ME-01 안내에 링컨과 함께 기재된 카운티는 {{blank}}입니다.",
+        "en": "Along with Lincoln, the ME-01 guide lists {{blank}} County.",
         "choices": [
           {
             "id": "A",
-            "ko": "뱅거",
-            "en": "Bangor"
+            "ko": "새거더혹",
+            "en": "Sagadahoc"
           },
           {
             "id": "B",
-            "ko": "루이스턴",
-            "en": "Lewiston"
+            "ko": "애루스툭",
+            "en": "Aroostook"
           },
           {
             "id": "C",
-            "ko": "프레스크아일",
-            "en": "Presque Isle"
+            "ko": "페놉스콧",
+            "en": "Penobscot"
           },
           {
             "id": "D",
-            "ko": "포틀랜드",
-            "en": "Portland"
+            "ko": "워싱턴",
+            "en": "Washington"
           }
         ],
-        "correct": "D"
+        "correct": "A"
       },
       "followup": {
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주민에게 공식 방문 위치를 안내합니다.",
-            "en": "Provide the official location for the resident."
+            "ko": "좋습니다. 두 카운티의 주민 모두 고려해 상담 계획을 검토합시다.",
+            "en": "Good. Let's consider residents of both counties in the plan."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "공식 연락 페이지는 포틀랜드 피시 피어 사무실을 안내합니다.",
-            "en": "The contact page lists the Portland Fish Pier office."
+            "ko": "공식 안내에는 링컨과 새거더혹이 모두 기재되어 있습니다.",
+            "en": "The official guide lists both Lincoln and Sagadahoc."
           },
           {
             "speaker": "player",
-            "ko": "기록을 바로잡겠습니다.",
-            "en": "I'll correct the record."
+            "ko": "상담 계획을 수정하겠습니다.",
+            "en": "I'll revise the plan."
           }
         ]
       },
       "evidence": [
         {
-          "url": "https://pingree.house.gov/contact/contactform.htm",
-          "claim": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+          "url": "https://pingree.house.gov/1st-district/",
+          "claim": "Official ME-01 district page lists Lincoln and Sagadahoc counties, among others; listing does not establish exact county-wide boundaries.",
           "asOf": "2026-11-25"
         },
         {
-          "url": "https://clerk.house.gov/Members/ViewMemberList",
-          "claim": "119th Congress member, party and district.",
+          "url": "https://bioguide.congress.gov/search/bio/P000597",
+          "claim": "Biographical identity of Chellie Pingree.",
           "asOf": "2026-11-25"
         }
       ],
       "outcome": {
-        "kind": "appointment",
-        "key": "p01-2024-fish-pier-office-visit"
+        "kind": "document",
+        "key": "p01-2024-multi-county-casework-routing"
       },
       "fictional": true
     },
