@@ -27,14 +27,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "옛 도시계획 도면을 가져오셨군요. 의회에 오기 전 이곳에서 일했습니다.",
-          "en": "You've brought the old planning maps. I worked here before Congress."
+          "speaker": "host",
+          "ko": "도시 재생 토론에서 오래된 토지이용 지도와 새로운 연방 지원 계획을 비교합니다.",
+          "en": "An urban redevelopment discussion compares older land-use maps with federal support plans."
         },
         {
-          "speaker": "player",
-          "ko": "도시계획과 연방 대표 업무를 연결해 보겠습니다.",
-          "en": "I'll relate the planning work to federal representation."
+          "speaker": "npc:0",
+          "ko": "1969년부터 1975년까지 톨리도와 루커스 카운티에서 지도와 도시 발전을 다루는 일을 했습니다.",
+          "en": "From 1969 to 1975 I worked on maps and urban development for Toledo and Lucas County."
         }
       ],
       "response": {
@@ -68,14 +68,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "털리도와 루커스 카운티의 도시계획위원회에서 일했습니다.",
-            "en": "I worked for the Toledo-Lucas County planning commissions."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "도시계획 실무 경험과 연방 입법의 역할을 구분해 토론하겠습니다.",
+            "en": "I'll distinguish urban planning practice from federal lawmaking."
           }
         ],
         "incorrect": [
@@ -89,7 +84,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16086",
-          "claim": "Kaptur worked as an urban planner for Toledo-Lucas County planning commissions in 1969–1975.",
+          "claim": "Urban planner, Toledo-Lucas County plan commissions 1969–75.",
           "asOf": "1983-03-10"
         }
       ],
@@ -185,7 +180,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16086",
-          "claim": "Kaptur served as assistant director for urban affairs in the Executive Office of the President in 1977–1979.",
+          "claim": "Assistant director for urban affairs, domestic policy staff, Executive Office 1977–79.",
           "asOf": "1983-05-10"
         }
       ],
@@ -281,7 +276,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16086",
-          "claim": "Kaptur graduated from St. Ursula Academy in Toledo in 1964.",
+          "claim": "St. Ursula Academy graduation 1964.",
           "asOf": "1984-05-15"
         }
       ],
@@ -294,15 +289,15 @@
     {
       "id": "P01-829",
       "mechanism": "cross-state-introduction",
-      "learningTarget": "Lowey of New York and Kaptur of Ohio both served in the House in 2019; Lowey chaired Appropriations.",
+      "learningTarget": "Kaptur chaired Energy and Water Development appropriations subcommittee while Lowey chaired full Appropriations in the 116th Congress.",
       "date": "2019-04-10",
       "venue": {
         "ko": "세출위원회 지역 방문단",
         "en": "Appropriations visitors"
       },
       "context": {
-        "ko": "세출위원회 지역 방문단에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
-        "en": "At the appropriations visitors, the conversation connects a political career with local representation."
+        "ko": "전체 세출위원회와 에너지·수자원 개발 소위원회의 관할을 비교한다.",
+        "en": "Compare the full Appropriations Committee and Energy and Water Development subcommittee."
       },
       "cast": [
         {
@@ -322,40 +317,45 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "오하이오 주민들의 자료를 먼저 받겠습니다.",
-          "en": "I'll take the papers from the Ohio visitors first."
+          "speaker": "host",
+          "ko": "수력 시설과 에너지 연구 예산을 논의할 때 전체 세출위원장과 소위원장의 역할을 구분해야 합니다.",
+          "en": "When discussing water infrastructure and energy research funding, distinguish the full committee chair from the subcommittee chair."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 뉴욕 대표이자 이번 의회의 세출위원장입니다.",
-          "en": "I represent New York and chair Appropriations in this Congress."
+          "ko": "저는 전체 세출위원회를 맡고 있습니다.",
+          "en": "I chair the full Appropriations Committee."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 소위원회는 이 예산 분야를 담당합니다.",
+          "en": "My subcommittee handles this area of spending."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "세출위원장 로위와 함께 만난 오하이오 의원은 {{blank}}입니다.",
-        "en": "The Ohio member meeting Chair Lowey is {{blank}}.",
+        "ko": "캡터가 맡은 소위원회는 {{blank}} 분야입니다.",
+        "en": "Kaptur chairs the subcommittee on {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "캡터",
-            "en": "Kaptur"
+            "ko": "에너지·수자원 개발",
+            "en": "Energy and Water Development"
           },
           {
             "id": "B",
-            "ko": "그레인저",
-            "en": "Granger"
+            "ko": "외교",
+            "en": "Foreign Affairs"
           },
           {
             "id": "C",
-            "ko": "멀로니",
-            "en": "Maloney"
+            "ko": "사법",
+            "en": "Judiciary"
           },
           {
             "id": "D",
-            "ko": "델라우로",
-            "en": "DeLauro"
+            "ko": "농업",
+            "en": "Agriculture"
           }
         ],
         "correct": "A"
@@ -363,33 +363,28 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "캡터는 오하이오, 로위는 뉴욕을 대표합니다.",
-            "en": "Kaptur represents Ohio; Lowey represents New York."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "에너지·수자원 개발 소위원회와 전체 위원회를 구분하겠습니다.",
+            "en": "I'll distinguish the Energy and Water Development subcommittee from the full committee."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "캡터는 오하이오, 로위는 뉴욕을 대표합니다.",
-            "en": "Kaptur represents Ohio; Lowey represents New York."
+            "ko": "에너지·수자원 개발 소위원회입니다.",
+            "en": "It is Energy and Water Development."
           }
         ]
       },
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16086",
-          "claim": "Lowey of New York and Kaptur of Ohio both served in the House in 2019; Lowey chaired Appropriations.",
+          "claim": "Ohio Democrat; Energy and Water Development appropriations subcommittee chair in 116th.",
           "asOf": "2019-04-10"
         },
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey of New York and Kaptur of Ohio both served in the House in 2019; Lowey chaired Appropriations.",
+          "claim": "New York Democrat and full Appropriations chair in 116th.",
           "asOf": "2019-04-10"
         }
       ],
@@ -485,7 +480,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey was New York assistant secretary of state in 1985–1987 before her House career.",
+          "claim": "New York assistant secretary of state 1985–87.",
           "asOf": "1989-03-16"
         }
       ],
@@ -581,7 +576,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey graduated from Bronx High School of Science in 1955.",
+          "claim": "Bronx High School of Science graduation 1955.",
           "asOf": "1990-04-12"
         }
       ],
@@ -594,7 +589,7 @@
     {
       "id": "P01-832",
       "mechanism": "historical-friendship",
-      "learningTarget": "Lowey served on Appropriations for thirteen terms alongside Connecticut Representative DeLauro.",
+      "learningTarget": "Lowey and DeLauro were in their 13th shared Appropriations term during the 116th Congress.",
       "date": "2019-06-12",
       "venue": {
         "ko": "위원회 동료와 커피",
@@ -622,14 +617,19 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "세출위원회 경험을 비교하려면 연방 의원 재임 기간과 위원회 재임 기간을 구분해야 합니다.",
+          "en": "Comparing Appropriations experience requires distinguishing House tenure from committee tenure."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "로사 의원과 여러 임기 동안 같은 위원회에서 일했습니다.",
-          "en": "Rosa and I have served together on a committee for many terms."
+          "ko": "우리는 지금 열세 번째 공동 위원회 임기에 있습니다.",
+          "en": "We are now in our thirteenth shared committee term."
         },
         {
           "speaker": "npc:1",
-          "ko": "지역구는 달라도 함께 검토한 예산이 많죠.",
-          "en": "Our districts differ, but we've reviewed many budgets together."
+          "ko": "서로 다른 지역구를 대표하지만 같은 예산 심사에 참여합니다.",
+          "en": "We represent different districts but take part in the same spending reviews."
         }
       ],
       "response": {
@@ -663,14 +663,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "로위와 델라우로는 세출위원회에서 오랫동안 함께 활동했습니다.",
-            "en": "Lowey and DeLauro served together on Appropriations for many terms."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "두 의원의 세출위원회 공동 재임 기록을 별도로 정리하겠습니다.",
+            "en": "I'll record their overlapping Appropriations service separately."
           }
         ],
         "incorrect": [
@@ -684,17 +679,17 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey served on Appropriations for thirteen terms alongside Connecticut Representative DeLauro.",
+          "claim": "Appropriations member 103rd–116th.",
           "asOf": "2019-06-12"
         },
         {
           "url": "https://history.house.gov/People/Detail/12101",
-          "claim": "Lowey served on Appropriations for thirteen terms alongside Connecticut Representative DeLauro.",
+          "claim": "Appropriations member 103rd and 105th–116th; 116th is their 13th shared term.",
           "asOf": "2019-06-12"
         },
         {
           "url": "https://history.house.gov/Oral-History/Women/Representative-Lowey/",
-          "claim": "Lowey served on Appropriations for thirteen terms alongside Connecticut Representative DeLauro.",
+          "claim": "Retrospective official oral history confirms 13 shared terms.",
           "asOf": "2019-06-12"
         }
       ],
@@ -707,15 +702,15 @@
     {
       "id": "P01-833",
       "mechanism": "relationship-recall",
-      "learningTarget": "Lowey, DeLauro and Pelosi were close friends known as DeLoSi.",
+      "learningTarget": "DeLauro chaired Labor-HHS-Education appropriations subcommittee while Lowey chaired State-Foreign Operations in the 116th Congress.",
       "date": "2020-07-10",
       "venue": {
         "ko": "의회 동료 사진첩",
         "en": "Congressional colleagues' album"
       },
       "context": {
-        "ko": "의회 동료 사진첩에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
-        "en": "At the congressional colleagues' album, the conversation connects a political career with local representation."
+        "ko": "두 위원장의 예산 분야를 비교한다.",
+        "en": "Compare the two chairs' spending jurisdictions."
       },
       "cast": [
         {
@@ -735,40 +730,45 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "해외 원조 예산과 국내 학교·보건 예산을 구분해 소위원회 심사 자료를 준비합니다.",
+          "en": "We are preparing subcommittee materials separating foreign assistance from domestic school and health spending."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "사진첩을 보니 의회에서 맺은 우정이 생각납니다.",
-          "en": "This album reminds me of friendships formed in Congress."
+          "ko": "국무부와 대외 활동 관련 예산은 제 소위원회 업무입니다.",
+          "en": "State Department and foreign operations funding fall within my subcommittee's work."
         },
         {
           "speaker": "npc:1",
-          "ko": "우리 이름을 합친 별칭도 있었죠.",
-          "en": "There was even a nickname combining our names."
+          "ko": "저는 국내 노동·보건·교육 관련 예산을 심사하는 소위원회를 맡고 있습니다.",
+          "en": "I chair the subcommittee reviewing domestic labor, health and education spending."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "델라우로·로위와 함께 DeLoSi 별칭에 포함된 동료는 {{blank}}입니다.",
-        "en": "The colleague included with DeLauro and Lowey in DeLoSi is {{blank}}.",
+        "ko": "델로로가 맡은 소위원회의 분야는 {{blank}}입니다.",
+        "en": "DeLauro chairs the subcommittee covering {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "낸시 펠로시",
-            "en": "Nancy Pelosi"
+            "ko": "노동·보건·교육",
+            "en": "Labor, Health and Human Services, and Education"
           },
           {
             "id": "B",
-            "ko": "케이 그레인저",
-            "en": "Kay Granger"
+            "ko": "국방",
+            "en": "Defense"
           },
           {
             "id": "C",
-            "ko": "마시 캡터",
-            "en": "Marcy Kaptur"
+            "ko": "농업",
+            "en": "Agriculture"
           },
           {
             "id": "D",
-            "ko": "캐럴린 멀로니",
-            "en": "Carolyn Maloney"
+            "ko": "에너지·수자원 개발",
+            "en": "Energy and Water Development"
           }
         ],
         "correct": "A"
@@ -776,38 +776,28 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "DeLoSi는 델라우로, 로위, 펠로시 세 사람의 우정을 가리킵니다.",
-            "en": "DeLoSi refers to the friendship of DeLauro, Lowey and Pelosi."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "국내 노동·보건·교육 예산은 델로로의 소위원회에 연결하겠습니다.",
+            "en": "I'll route domestic labor, health and education funding to DeLauro's subcommittee."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "DeLoSi는 델라우로, 로위, 펠로시 세 사람의 우정을 가리킵니다.",
-            "en": "DeLoSi refers to the friendship of DeLauro, Lowey and Pelosi."
+            "ko": "델로로는 노동·보건·교육 소위원장을 맡고 있습니다.",
+            "en": "DeLauro chairs the Labor-HHS-Education subcommittee."
           }
         ]
       },
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey, DeLauro and Pelosi were close friends known as DeLoSi.",
+          "claim": "116th Appropriations chair and State-Foreign Operations subcommittee chair.",
           "asOf": "2020-07-10"
         },
         {
           "url": "https://history.house.gov/People/Detail/12101",
-          "claim": "Lowey, DeLauro and Pelosi were close friends known as DeLoSi.",
-          "asOf": "2020-07-10"
-        },
-        {
-          "url": "https://history.house.gov/Oral-History/Women/Representative-Lowey/",
-          "claim": "Lowey, DeLauro and Pelosi were close friends known as DeLoSi.",
+          "claim": "116th Labor-HHS-Education appropriations subcommittee chair.",
           "asOf": "2020-07-10"
         }
       ],
@@ -903,12 +893,12 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Lowey became the first woman to chair House Appropriations in 2019.",
+          "claim": "Appropriations chair 116th.",
           "asOf": "2019-02-13"
         },
         {
           "url": "https://history.house.gov/Oral-History/Women/Representative-Lowey/",
-          "claim": "Lowey became the first woman to chair House Appropriations in 2019.",
+          "claim": "First woman to chair Appropriations in 2019.",
           "asOf": "2019-02-13"
         }
       ],
@@ -1004,7 +994,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/14039",
-          "claim": "Granger served as Fort Worth mayor in 1991–1995.",
+          "claim": "Fort Worth mayor 1991–95.",
           "asOf": "1997-03-10"
         }
       ],
@@ -1100,7 +1090,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/14039",
-          "claim": "Granger served on the Fort Worth zoning commission from 1981 to 1989.",
+          "claim": "Fort Worth zoning commission 1981–89.",
           "asOf": "1998-05-12"
         }
       ],
@@ -1196,7 +1186,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/14039",
-          "claim": "Granger worked as a teacher and business owner before entering Congress.",
+          "claim": "Teacher and business owner.",
           "asOf": "1997-05-10"
         }
       ],
@@ -1237,14 +1227,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이제 세출위원장 명단에 제 임기를 추가할 차례입니다.",
-          "en": "It's time to add my term to the list of Appropriations chairs."
+          "speaker": "host",
+          "ko": "2023년 세출위원장 취임을 기념해 전직 위원장도 초청했습니다.",
+          "en": "A former chair is invited to mark the new Appropriations chair's accession in 2023."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 임기는 제116대 의회였죠.",
-          "en": "My chairmanship was in the 116th Congress."
+          "ko": "저는 2021년에 하원의원 임기를 마쳤습니다. 116대 위원장 재임과 현재 기록은 구분해야 합니다.",
+          "en": "My House service ended in 2021. Distinguish my 116th Congress chairmanship from the current record."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "새 의회에서 제 위원장직을 정확히 기록해 주세요.",
+          "en": "Identify my chairmanship in the new Congress accurately."
         }
       ],
       "response": {
@@ -1278,14 +1273,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "로위는 제116대, 그레인저는 제118대 세출위원장입니다.",
-            "en": "Lowey chaired in the 116th; Granger chairs in the 118th."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "전직 로위 위원장과 현직 그레인저 위원장을 구분해 소개하겠습니다.",
+            "en": "I'll distinguish former Chair Lowey from current Chair Granger."
           }
         ],
         "incorrect": [
@@ -1299,12 +1289,12 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/14039",
-          "claim": "Granger chaired Appropriations in the 118th Congress, after Lowey chaired in the 116th.",
+          "claim": "Appropriations chair 118th.",
           "asOf": "2023-03-14"
         },
         {
           "url": "https://history.house.gov/People/Detail/17192",
-          "claim": "Granger chaired Appropriations in the 118th Congress, after Lowey chaired in the 116th.",
+          "claim": "Appropriations chair 116th; House service ended Jan 3, 2021.",
           "asOf": "2023-03-14"
         }
       ],
@@ -1400,7 +1390,12 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16704",
-          "claim": "Lantos earned a PhD in economics at the University of California, Berkeley in 1953 and was an economics professor.",
+          "claim": "PhD UC Berkeley 1953; economics professor.",
+          "asOf": "1981-04-10"
+        },
+        {
+          "url": "https://humanrightscommission.house.gov/about/history",
+          "claim": "PhD in economics, UC Berkeley.",
           "asOf": "1981-04-10"
         }
       ],
@@ -1496,7 +1491,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16704",
-          "claim": "Lantos was born in Budapest and came to the United States on an academic scholarship in 1947.",
+          "claim": "Born Budapest; academic scholarship arrival in US in 1947.",
           "asOf": "1982-06-12"
         }
       ],
@@ -1537,14 +1532,19 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "같은 가족 출신 두 의원의 지역구 문의가 하나로 섞였습니다. 친족 관계가 동일 선거구를 뜻하지는 않습니다.",
+          "en": "Constituent inquiries to two related members have been combined. Family ties do not mean the same district."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "스웨트 의원과 저는 가족 관계도 있습니다.",
-          "en": "Swett and I also have a family connection."
+          "ko": "저는 캘리포니아를 대표하고 스웨트 의원은 뉴햄프셔를 대표합니다.",
+          "en": "I represent California and Representative Swett represents New Hampshire."
         },
         {
           "speaker": "npc:1",
-          "ko": "하지만 우리는 서로 다른 주의 하원 의석을 맡고 있습니다.",
-          "en": "But we hold House seats in different states."
+          "ko": "우리의 가족 관계와 각각의 선출직을 구분해 주세요.",
+          "en": "Distinguish our family relationship from our separate elected offices."
         }
       ],
       "response": {
@@ -1578,14 +1578,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "캘리포니아의 랜토스와 뉴햄프셔의 스웨트는 장인과 사위였습니다.",
-            "en": "Lantos of California and Swett of New Hampshire were father-in-law and son-in-law."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "가족 관계는 인물 관계 기록에, 선거구 업무는 각각의 사무실에 구분하겠습니다.",
+            "en": "I'll record the family connection separately from the two district offices."
           }
         ],
         "incorrect": [
@@ -1599,12 +1594,12 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16704",
-          "claim": "New Hampshire Representative Richard Swett was the son-in-law of California Representative Tom Lantos.",
+          "claim": "Father-in-law of Richard Swett; California House Democrat.",
           "asOf": "1993-05-10"
         },
         {
           "url": "https://history.house.gov/People/Detail/22513",
-          "claim": "New Hampshire Representative Richard Swett was the son-in-law of California Representative Tom Lantos.",
+          "claim": "Son-in-law of Lantos; NH Democrat served 1991–95.",
           "asOf": "1993-05-10"
         }
       ],
@@ -1700,7 +1695,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16704",
-          "claim": "Lantos chaired Foreign Affairs in the 110th Congress.",
+          "claim": "Foreign Affairs chair 110th.",
           "asOf": "2007-04-18"
         }
       ],
@@ -1796,7 +1791,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16338",
-          "claim": "King served as Nassau County comptroller from 1981 to 1993.",
+          "claim": "Nassau County comptroller 1981–93.",
           "asOf": "1993-03-12"
         }
       ],
@@ -1892,7 +1887,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16338",
-          "claim": "King served on the Hempstead town council in 1977–1981.",
+          "claim": "Hempstead town council 1977–81.",
           "asOf": "1994-04-15"
         }
       ],
@@ -1988,7 +1983,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/16338",
-          "claim": "King chaired Homeland Security in the 112th Congress.",
+          "claim": "Homeland Security chair 109th and 112th.",
           "asOf": "2011-04-12"
         }
       ],
@@ -2084,7 +2079,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/21787",
-          "claim": "Smith worked in his family's sporting goods business before Congress.",
+          "claim": "Family sporting goods business before House.",
           "asOf": "1981-03-15"
         }
       ],
@@ -2118,14 +2113,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 의회에서 첫 임기를 시작했지만 이전에도 출마한 적이 있습니다.",
-          "en": "This is my first term, but I ran before."
+          "speaker": "host",
+          "ko": "선거 결과 전시에서 1978년과 1980년의 선거 결과가 모두 당선으로 잘못 표시됐습니다.",
+          "en": "An election exhibit mistakenly marks both the 1978 and 1980 races as victories."
         },
         {
-          "speaker": "player",
-          "ko": "낙선과 이후 당선을 하나의 경력으로 연결하겠습니다.",
-          "en": "I'll connect the earlier defeat with the later victory."
+          "speaker": "npc:0",
+          "ko": "첫 번째 도전에서는 패배했고 다음 선거에서 당선됐습니다.",
+          "en": "My first attempt was unsuccessful; I won the next election."
         }
       ],
       "response": {
@@ -2159,14 +2154,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "1978년에는 낙선했고 1980년에 당선되었습니다.",
-            "en": "I lost in 1978 and won in 1980."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "1978년 패배와 1980년 당선, 1981년 취임을 구분하겠습니다.",
+            "en": "I'll distinguish the 1978 defeat, the 1980 victory and the 1981 start of service."
           }
         ],
         "incorrect": [
@@ -2180,7 +2170,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/21787",
-          "claim": "Smith lost a House race in 1978 before winning election in 1980.",
+          "claim": "Unsuccessful 1978 candidate; elected to 97th Congress.",
           "asOf": "1981-05-12"
         }
       ],
@@ -2276,7 +2266,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17437",
-          "claim": "Maloney served on New York City Council in 1982–1992 before Congress.",
+          "claim": "New York City Council 1982–92.",
           "asOf": "1993-04-10"
         }
       ],
@@ -2372,7 +2362,7 @@
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17437",
-          "claim": "Maloney worked for the New York state Assembly housing committee in 1977.",
+          "claim": "NY State Assembly housing committee staff in 1977.",
           "asOf": "1994-05-12"
         }
       ],
@@ -2385,7 +2375,7 @@
     {
       "id": "P01-850",
       "mechanism": "cross-party-dialogue",
-      "learningTarget": "Maloney chaired Oversight and Reform in the 116th Congress while Peter King served New York as a Republican.",
+      "learningTarget": "Maloney served as acting Oversight and Reform chair and was selected by the Democratic Caucus November 20, 2019; formal House election was November 21.",
       "date": "2019-11-20",
       "venue": {
         "ko": "뉴욕 대표단의 감독 업무 회의",
@@ -2413,20 +2403,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "뉴욕 주민의 감독 관련 문의를 새 위원장 기록과 함께 분류합시다.",
-          "en": "Let's sort New York residents' oversight inquiries alongside the new chair's records."
+          "speaker": "host",
+          "ko": "오늘 민주당 코커스에서 위원장 후보를 선택했다는 소식이 전해졌습니다. 본회의의 공식 선출과는 구분해야 합니다.",
+          "en": "News arrives that the Democratic Caucus selected a committee chair today. Distinguish that step from formal House election."
         },
         {
           "speaker": "npc:1",
-          "ko": "같은 뉴욕 대표단이라도 저는 공화당 소속입니다.",
-          "en": "I am a Republican in the same New York delegation."
+          "ko": "같은 뉴욕 대표단의 공화당 의원으로서 당내 선출과 하원 전체의 선출을 구분하겠습니다.",
+          "en": "As a Republican from the same New York delegation, I distinguish caucus selection from election by the House."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 현재 위원장 직무를 임시로 맡고 있습니다. 어느 위원회인지 확인해 주세요.",
+          "en": "I currently serve as acting chair. Identify the committee."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "멀로니가 맡은 위원장 직책은 {{blank}} 위원회입니다.",
-        "en": "Maloney chairs the {{blank}} Committee.",
+        "ko": "멀로니가 임시 위원장으로 맡고 있는 위원회는 {{blank}}입니다.",
+        "en": "Maloney is acting chair of {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2454,33 +2449,38 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "제116대 의회 감독·개혁위원장입니다.",
-            "en": "I chair Oversight and Reform in the 116th Congress."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "speaker": "host",
+            "ko": "감독개혁위원회의 임시 위원장과 오늘의 당내 선출을 기록하겠습니다.",
+            "en": "I'll record the acting chairmanship and today's caucus selection for Oversight and Reform."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제116대 의회 감독·개혁위원장입니다.",
-            "en": "I chair Oversight and Reform in the 116th Congress."
+            "ko": "감독개혁위원회입니다. 오늘 당내 선출과 하원의 공식 선출은 구분해야 합니다.",
+            "en": "Oversight and Reform. Today's caucus selection is distinct from formal House election."
           }
         ]
       },
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/17437",
-          "claim": "Maloney chaired Oversight and Reform in the 116th Congress while Peter King served New York as a Republican.",
+          "claim": "Oversight and Reform chair in 116th.",
+          "asOf": "2019-11-20"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-116hres725eh/html/BILLS-116hres725eh.htm",
+          "claim": "House formally elected Maloney chair Nov 21, 2019.",
+          "asOf": "2019-11-20"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/house-democrats-tap-carolyn-maloney-to-chair-oversight-committee/",
+          "claim": "On Nov 20 Democratic caucus selected Maloney; she had been temporary leader.",
           "asOf": "2019-11-20"
         },
         {
           "url": "https://history.house.gov/People/Detail/16338",
-          "claim": "Maloney chaired Oversight and Reform in the 116th Congress while Peter King served New York as a Republican.",
+          "claim": "New York Republican in House through Jan 2021.",
           "asOf": "2019-11-20"
         }
       ],
