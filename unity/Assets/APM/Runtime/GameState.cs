@@ -8,7 +8,7 @@ namespace APM {
 [Serializable] public class GameState {
  public int schema=1,year=1900,quarter=1,funds=40,energy=100,skill=20,support=25,network=10,age=30,termUntil=0,points=0,actionsLeft=2;
  public string name="Alex Morgan",state="CA",party="Independent",mode="historyMode",office="local",target="rep";
- public List<LogEntry> history=new List<LogEntry>();public List<string> collection=new List<string>();public List<ReviewEntry> reviews=new List<ReviewEntry>();public List<ElectionEntry> elections=new List<ElectionEntry>();public List<VoteEntry> legislation=new List<VoteEntry>();
+ public LegislatureState legislature=new LegislatureState();public List<LogEntry> history=new List<LogEntry>();public List<string> collection=new List<string>();public List<ReviewEntry> reviews=new List<ReviewEntry>();public List<ElectionEntry> elections=new List<ElectionEntry>();public List<VoteEntry> legislation=new List<VoteEntry>();
 }
 [Serializable] public class StateRecord {public string id,name;public int admitted;}
 [Serializable] public class EraRecord {public int start,end;public string ko,en;}
