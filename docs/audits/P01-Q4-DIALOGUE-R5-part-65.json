@@ -527,7 +527,7 @@
       ],
       "originalCorrectPosition": "B",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -2296,12 +2296,223 @@
       "latestOriginalFieldsExact": true,
       "reviewNotes": "파리 1949 유일한 마셜플랜 보기, 하든 지역 경제 역할 무관. 국내외 재건 비교 미사용.",
       "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1618",
+      "path": "data/dialogue-packs/P01/part-65.json",
+      "originalBlobSha": "5d17bfa02daf85ac7ee549eaeebf965f156434eb",
+      "latestObservedBlobSha": "5d17bfa02daf85ac7ee549eaeebf965f156434eb",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "일리노이의 주 전체 의석 대표가 바뀌었습니다.",
+            "en": "Illinois's at-large representation has changed."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "번스는 현직이지만 더글러스는 지난해 재선에 실패했습니다.",
+            "en": "Byrnes remains in office, but Douglas lost reelection last year."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "더글러스가 재선에 실패한 선거 연도는 {{blank}}입니다.",
+          "en": "Douglas lost reelection in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1940년",
+              "en": "1940"
+            },
+            {
+              "id": "B",
+              "ko": "1946년",
+              "en": "1946"
+            },
+            {
+              "id": "C",
+              "ko": "1944년",
+              "en": "1944"
+            },
+            {
+              "id": "D",
+              "ko": "1942년",
+              "en": "1942"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "더글러스는 1946년 재선에 실패해 1947년 1월 임기를 마쳤습니다.",
+              "en": "Douglas lost reelection in 1946 and left office in January 1947."
+            },
+            {
+              "speaker": "player",
+              "ko": "전쟁 중 임기와 전후 선거 결과를 구별하겠습니다.",
+              "en": "I'll separate wartime service from the postwar result."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "더글러스는 1946년 재선에 실패해 1947년 1월 임기를 마쳤습니다.",
+              "en": "Douglas lost reelection in 1946 and left office in January 1947."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "일리노이의 주 전체 의석 대표가 바뀌었습니다.",
+              "en": "Illinois's at-large representation has changed."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "번스는 현직이지만 더글러스는 지난해 재선에 실패했습니다.",
+              "en": "Byrnes remains in office, but Douglas lost reelection last year."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "전후 선거 설명회 자료에 더글러스 의원의 선거 패배 연도와 퇴임 연도가 하나로 합쳐져 있습니다.",
+              "en": "A postwar election briefing merges Douglas's election defeat and departure from office into one year."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "선거 결과와 임기 종료는 별도로 표시해야 합니다. 제 현직 여부와도 혼동하지 맙시다.",
+              "en": "Mark the election result and the end of the term separately. Don't confuse them with my incumbent status either."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 재선에 실패한 해를 확인하고 임기 종료 시점을 따로 안내해 주세요.",
+              "en": "Identify the year I lost reelection and explain the end of my term separately."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "더글러스가 재선에 실패한 선거 연도는 {{blank}}입니다.",
+            "en": "Douglas lost reelection in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "1940년",
+                "en": "1940"
+              },
+              {
+                "id": "B",
+                "ko": "1946년",
+                "en": "1946"
+              },
+              {
+                "id": "C",
+                "ko": "1944년",
+                "en": "1944"
+              },
+              {
+                "id": "D",
+                "ko": "1942년",
+                "en": "1942"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "더글러스의 재선 실패는 {{blank}} 선거로 정정하겠습니다.",
+            "en": "I'll identify Douglas's reelection defeat as the election of {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "1940년",
+                "en": "1940"
+              },
+              {
+                "id": "B",
+                "ko": "1946년",
+                "en": "1946"
+              },
+              {
+                "id": "C",
+                "ko": "1944년",
+                "en": "1944"
+              },
+              {
+                "id": "D",
+                "ko": "1942년",
+                "en": "1942"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "더글러스는 1946년 재선에 실패해 1947년 1월 임기를 마쳤습니다.",
+                "en": "Douglas lost reelection in 1946 and left office in January 1947."
+              },
+              {
+                "speaker": "player",
+                "ko": "전쟁 중 임기와 전후 선거 결과를 구별하겠습니다.",
+                "en": "I'll separate wartime service from the postwar result."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "더글러스는 1946년 재선에 실패해 1947년 1월 임기를 마쳤습니다.",
+                "en": "Douglas lost reelection in 1946 and left office in January 1947."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 선거는 1946년, 임기 종료는 1947년 1월입니다. 두 사건을 구별한 설명으로 진행합시다.",
+                "en": "Correct. The election was in 1946, and my term ended in January 1947. Let's proceed with an explanation that distinguishes the two."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "재선 실패는 1946년입니다. 1947년 1월 퇴임과 같은 사건으로 기록하지 말고 설명을 수정해 주세요.",
+                "en": "The reelection defeat was in 1946. Revise the briefing rather than treating it as the same event as the January 1947 departure."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 12,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "지난해라는 힌트에서 장면 시점 1947이면 1946 쉽게 추론. 동종 연도, 전후 맥락 설명 가능.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
     }
   ],
   "priorDraftReview": [],
-  "severePending": [
-    "P01-1618"
-  ],
+  "severePending": [],
   "limitations": [
     "No independent historical verification or gameplay test. Source facts and choice IDs preserved."
   ]
