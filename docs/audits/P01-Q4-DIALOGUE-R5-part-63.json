@@ -672,7 +672,7 @@
       ],
       "originalCorrectPosition": "A",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -1831,12 +1831,223 @@
       "latestOriginalFieldsExact": true,
       "reviewNotes": "5월 대 6월 명시로 가장 빠른 의원 자명. 네 인물의 역할 동일, 취임일과 선거일 구분은 후속에서만.",
       "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1573",
+      "path": "data/dialogue-packs/P01/part-63.json",
+      "originalBlobSha": "ad0bf70a62ebfd42ae3ba7ed1f12e54734947cc5",
+      "latestObservedBlobSha": "ad0bf70a62ebfd42ae3ba7ed1f12e54734947cc5",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "취임 후 농업 지도자들과 진행한 화상간담회 자료입니다.",
+            "en": "Here are the materials from a virtual roundtable with agriculture leaders after taking office."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 농업계 외에 의회에서 어떤 위원회가 참여했나요?",
+            "en": "Which congressional committee was represented alongside local agriculture leaders?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "위원장을 초대해 농작물 보험과 수출 지원 등 농업법 우선순위를 논의했습니다.",
+            "en": "I invited the chair to discuss Farm Bill priorities such as crop insurance and export support."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "간담회에 초대된 위원장은 하원 {{blank}}위원장입니다.",
+          "en": "The invited chair led the House Committee on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "B",
+              "ko": "법사",
+              "en": "Judiciary"
+            },
+            {
+              "id": "C",
+              "ko": "윤리",
+              "en": "Ethics"
+            },
+            {
+              "id": "D",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "농업계가 의회 위원장과 직접 의견을 나눈 기록을 자료집에 추가하세요.",
+              "en": "Add this record of agricultural leaders communicating with a committee chair to the dossier."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2025년 4월 14일 첫 100일 보고에는 하원 농업위원장 GT 톰슨과의 화상간담회가 기록돼 있습니다.",
+              "en": "The April 14 first-100-days report records a virtual roundtable with House Agriculture Chair GT Thompson."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "취임 후 농업 지도자들과 진행한 화상간담회 자료입니다.",
+              "en": "Here are the materials from a virtual roundtable with agriculture leaders after taking office."
+            },
+            {
+              "speaker": "player",
+              "ko": "지역 농업계 외에 의회에서 어떤 위원회가 참여했나요?",
+              "en": "Which congressional committee was represented alongside local agriculture leaders?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "위원장을 초대해 농작물 보험과 수출 지원 등 농업법 우선순위를 논의했습니다.",
+              "en": "I invited the chair to discuss Farm Bill priorities such as crop insurance and export support."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "노스다코타 지역 단체가 첫 100일 활동 보고서에 나온 화상간담회를 후속 정책 토론의 출발점으로 삼으려 합니다.",
+              "en": "A North Dakota group wants to use the virtual roundtable in the first-100-days report as a starting point for a policy discussion."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 초청한 하원 위원장이 어느 위원회를 이끌었는지 확인해 주세요. 간담회 참석과 법안 통과를 혼동해서는 안 됩니다.",
+              "en": "Identify the House committee led by the chair I invited. Attending a roundtable is not the same as passing a bill."
+            },
+            {
+              "speaker": "player",
+              "ko": "위원회 관할을 확인하고 후속 정책 질문을 준비하겠습니다.",
+              "en": "I'll identify the committee's jurisdiction and prepare follow-up policy questions."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "간담회에 초대된 위원장은 하원 {{blank}}위원장입니다.",
+            "en": "The invited chair led the House Committee on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "법사",
+                "en": "Judiciary"
+              },
+              {
+                "id": "C",
+                "ko": "윤리",
+                "en": "Ethics"
+              },
+              {
+                "id": "D",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "당시 초청된 위원장은 하원 {{blank}}위원회를 이끌었습니다.",
+            "en": "The invited chair led the House Committee on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "법사",
+                "en": "Judiciary"
+              },
+              {
+                "id": "C",
+                "ko": "윤리",
+                "en": "Ethics"
+              },
+              {
+                "id": "D",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "농업계가 의회 위원장과 직접 의견을 나눈 기록을 자료집에 추가하세요.",
+                "en": "Add this record of agricultural leaders communicating with a committee chair to the dossier."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2025년 4월 14일 첫 100일 보고에는 하원 농업위원장 GT 톰슨과의 화상간담회가 기록돼 있습니다.",
+                "en": "The April 14 first-100-days report records a virtual roundtable with House Agriculture Chair GT Thompson."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 이제 농작물 보험과 수출 지원 등 농업법 우선순위에 관한 질문을 준비합시다. 간담회에서 의견을 나눴다는 사실만으로 입법이 완료된 것은 아닙니다.",
+                "en": "Correct. Now prepare questions on Farm Bill priorities such as crop insurance and export support. Discussion at the roundtable does not mean legislation was enacted."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 초청한 사람은 하원 농업위원장 GT 톰슨이었습니다. 다른 위원회의 권한으로 설명하지 말고 후속 질문을 다시 준비해 주세요.",
+                "en": "The invited member was House Agriculture Chair GT Thompson. Please revise the follow-up questions rather than attributing the discussion to another committee."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 12,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "농업 지도자, Farm Bill, 농작물 보험 등에서 농업위원장 명백. 구체 간담회 가치 있으나 의제 판단 없음.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
     }
   ],
   "priorDraftReview": [],
-  "severePending": [
-    "P01-1573"
-  ],
+  "severePending": [],
   "limitations": [
     "No independent historical verification or gameplay test. Source facts and choice IDs preserved."
   ]
