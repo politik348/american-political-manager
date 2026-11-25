@@ -1,0 +1,2602 @@
+{
+  "schema": 1,
+  "pack": "P02",
+  "part": 6,
+  "scenes": [
+    {
+      "id": "P02-126",
+      "mechanism": "challenge-ruling",
+      "learningTarget": "The Senate did not remove Smoot.",
+      "date": "1907-02-21",
+      "venue": {
+        "ko": "의원 자격 심사",
+        "en": "Membership challenge"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Reed Smoot",
+          "ko": "리드 스무트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George Sutherland",
+          "ko": "조지 서덜랜드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 자격에 대한 심사가 끝났습니다.",
+          "en": "The challenge to my credentials has concluded."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "의원직 박탈 여부를 표결 결과와 구별합시다.",
+          "en": "Distinguish the challenge from the final vote."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스무트의 의석은 {{blank}}으로 처리하죠.",
+        "en": "I'll record Smoot's seat as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "폐지",
+            "en": "abolished"
+          },
+          {
+            "id": "B",
+            "ko": "유지",
+            "en": "retained"
+          },
+          {
+            "id": "C",
+            "ko": "제명",
+            "en": "expelled"
+          },
+          {
+            "id": "D",
+            "ko": "사임",
+            "en": "resigned"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "상원은 스무트의 의석을 박탈하지 않았습니다.",
+            "en": "The Senate did not remove Smoot."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 상원은 스무트의 의석을 박탈하지 않았습니다.",
+            "en": "Let's distinguish the records. The Senate did not remove Smoot."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/UT/senators.htm",
+          "claim": "The Senate did not remove Smoot.",
+          "asOf": "1907-02-21"
+        },
+        {
+          "url": "https://www.senate.gov/about/powers-procedures/expulsion/091ReedSmoot_expulsion.htm",
+          "claim": "The Senate did not remove Smoot.",
+          "asOf": "1907-02-21"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-126-challenge-ruling"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-127",
+      "mechanism": "tariff-referral",
+      "learningTarget": "Aldrich led tariff deliberations in 1909.",
+      "date": "1909-07-01",
+      "venue": {
+        "ko": "관세 의견서",
+        "en": "Tariff memorandum"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-105.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-105."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Nelson W. Aldrich",
+          "ko": "넬슨 올드리치",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/RI/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George P. Wetmore",
+          "ko": "조지 웨트모어",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/RI/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "관세 개정안을 재무위원회가 검토하고 있습니다.",
+          "en": "The Finance Committee is reviewing tariff changes."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "산업계 의견서도 심의에 들어갑니다.",
+          "en": "Industry submissions belong in the review."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "위원회 의견서는 위원장 {{blank}}에게 전달하죠.",
+        "en": "I'll route the committee memorandum to Chairman {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스무트",
+            "en": "Smoot"
+          },
+          {
+            "id": "B",
+            "ko": "오언",
+            "en": "Owen"
+          },
+          {
+            "id": "C",
+            "ko": "올드리치",
+            "en": "Aldrich"
+          },
+          {
+            "id": "D",
+            "ko": "웨트모어",
+            "en": "Wetmore"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "올드리치는 1909년 관세 논의를 이끌었습니다.",
+            "en": "Aldrich led tariff deliberations in 1909."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 올드리치는 1909년 관세 논의를 이끌었습니다.",
+            "en": "Let's distinguish the records. Aldrich led tariff deliberations in 1909."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/RI/senators.htm",
+          "claim": "Aldrich led tariff deliberations in 1909.",
+          "asOf": "1909-07-01"
+        },
+        {
+          "url": "https://www.finance.senate.gov/about/history/",
+          "claim": "Aldrich led tariff deliberations in 1909.",
+          "asOf": "1909-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-127-tariff-referral"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-128",
+      "mechanism": "provisional-badge",
+      "learningTarget": "Thompson was a Democratic appointee.",
+      "date": "1909-12-01",
+      "venue": {
+        "ko": "임시 출입증",
+        "en": "Provisional badge"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Fountain L. Thompson",
+          "ko": "파운틴 톰프슨",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Porter J. McCumber",
+          "ko": "포터 매컴버",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난달 존슨의 공석에 임명됐습니다.",
+          "en": "I was appointed to Johnson's vacancy last month."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 임기는 계속됩니다.",
+          "en": "My term continues."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "임명 출입증의 소속 정당은 {{blank}}으로 기록하죠.",
+        "en": "I'll record the appointee's party as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "B",
+            "ko": "사회당",
+            "en": "Socialist"
+          },
+          {
+            "id": "C",
+            "ko": "무소속",
+            "en": "Independent"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "Democratic"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "톰프슨은 민주당 임명 의원입니다.",
+            "en": "Thompson was a Democratic appointee."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 톰프슨은 민주당 임명 의원입니다.",
+            "en": "Let's distinguish the records. Thompson was a Democratic appointee."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/ND/senators.htm",
+          "claim": "Thompson was a Democratic appointee.",
+          "asOf": "1909-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-128-provisional-badge"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-129",
+      "mechanism": "office-return",
+      "learningTarget": "Gronna succeeded Purcell in February 1911.",
+      "date": "1911-07-01",
+      "venue": {
+        "ko": "공석 정상화",
+        "en": "Seat normalization"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-108.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-108."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Asle J. Gronna",
+          "ko": "애슬 그로나",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Porter J. McCumber",
+          "ko": "포터 매컴버",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2월에 Class III 의석에 취임했습니다.",
+          "en": "I entered Class III in February."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 의석이 다시 채워졌습니다.",
+          "en": "Both seats are filled again."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class III 방문 명단의 퍼셀 대신 {{blank}}을 넣죠.",
+        "en": "Replace Purcell with {{blank}} in the Class III visitor list.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "그로나",
+            "en": "Gronna"
+          },
+          {
+            "id": "B",
+            "ko": "매컴버",
+            "en": "McCumber"
+          },
+          {
+            "id": "C",
+            "ko": "톰프슨",
+            "en": "Thompson"
+          },
+          {
+            "id": "D",
+            "ko": "존슨",
+            "en": "Johnson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "그로나가 1911년 2월 퍼셀을 승계했습니다.",
+            "en": "Gronna succeeded Purcell in February 1911."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 그로나가 1911년 2월 퍼셀을 승계했습니다.",
+            "en": "Let's distinguish the records. Gronna succeeded Purcell in February 1911."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/ND/senators.htm",
+          "claim": "Gronna succeeded Purcell in February 1911.",
+          "asOf": "1911-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-129-office-return"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-130",
+      "mechanism": "gap-diagnosis",
+      "learningTarget": "Thomas entered in January 1913.",
+      "date": "1913-07-01",
+      "venue": {
+        "ko": "공석 원인 검토",
+        "en": "Vacancy diagnosis"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Charles S. Thomas",
+          "ko": "찰스 토머스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "John F. Shafroth",
+          "ko": "존 샤프로스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 전임 휴스 의원이 1911년 사망했습니다.",
+          "en": "My predecessor Hughes died in 1911."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "올해 새 대표단이 구성됐습니다.",
+          "en": "The delegation was renewed this year."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "휴스의 Class III 후임자는 {{blank}}으로 기록하죠.",
+        "en": "I'll identify Hughes's Class III successor as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "텔러",
+            "en": "Teller"
+          },
+          {
+            "id": "B",
+            "ko": "토머스",
+            "en": "Thomas"
+          },
+          {
+            "id": "C",
+            "ko": "샤프로스",
+            "en": "Shafroth"
+          },
+          {
+            "id": "D",
+            "ko": "구겐하임",
+            "en": "Guggenheim"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "토머스는 1913년 1월 취임했습니다.",
+            "en": "Thomas entered in January 1913."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 토머스는 1913년 1월 취임했습니다.",
+            "en": "Let's distinguish the records. Thomas entered in January 1913."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CO/senators.htm",
+          "claim": "Thomas entered in January 1913.",
+          "asOf": "1913-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-130-gap-diagnosis"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-131",
+      "mechanism": "election-certification",
+      "learningTarget": "Smoot became Utah's first directly elected senator.",
+      "date": "1914-12-01",
+      "venue": {
+        "ko": "직선제 당선 인증",
+        "en": "Direct-election certification"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-107.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-107."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Reed Smoot",
+          "ko": "리드 스무트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George Sutherland",
+          "ko": "조지 서덜랜드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 선거는 이전과 다른 헌법 규칙에 따랐습니다.",
+          "en": "This election followed a new constitutional rule."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "유타 주민들이 직접 투표했습니다.",
+          "en": "Utah voters cast their ballots directly."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이번 직선제에서 재선된 유타 의원은 {{blank}}입니다.",
+        "en": "Utah's senator reelected under direct election is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "킹",
+            "en": "King"
+          },
+          {
+            "id": "B",
+            "ko": "로린스",
+            "en": "Rawlins"
+          },
+          {
+            "id": "C",
+            "ko": "스무트",
+            "en": "Smoot"
+          },
+          {
+            "id": "D",
+            "ko": "서덜랜드",
+            "en": "Sutherland"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스무트는 유타 최초의 직선 상원의원입니다.",
+            "en": "Smoot became Utah's first directly elected senator."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 스무트는 유타 최초의 직선 상원의원입니다.",
+            "en": "Let's distinguish the records. Smoot became Utah's first directly elected senator."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/UT/senators.htm",
+          "claim": "Smoot became Utah's first directly elected senator.",
+          "asOf": "1914-12-01"
+        },
+        {
+          "url": "https://www.senate.gov/states/UT/timeline.htm",
+          "claim": "Smoot became Utah's first directly elected senator.",
+          "asOf": "1914-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-131-election-certification"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-132",
+      "mechanism": "split-color",
+      "learningTarget": "King was a Democrat and Smoot a Republican.",
+      "date": "1917-07-01",
+      "venue": {
+        "ko": "대표단 지도 수정",
+        "en": "Delegation map correction"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-131.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-131."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "William H. King",
+          "ko": "윌리엄 킹",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Reed Smoot",
+          "ko": "리드 스무트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월에 새 의원으로 취임했습니다.",
+          "en": "I entered as a new senator in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 기존 의석에 남아 있습니다.",
+          "en": "I remain in the other seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의석을 같은 정당색으로 표시하지 않겠습니다. 킹은 {{blank}}입니다.",
+        "en": "I won't give the seats one party color. King is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당",
+            "en": "Republican"
+          },
+          {
+            "id": "B",
+            "ko": "진보당",
+            "en": "Progressive"
+          },
+          {
+            "id": "C",
+            "ko": "무소속",
+            "en": "Independent"
+          },
+          {
+            "id": "D",
+            "ko": "민주당",
+            "en": "Democratic"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "킹은 민주당, 스무트는 공화당입니다.",
+            "en": "King was a Democrat and Smoot a Republican."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 킹은 민주당, 스무트는 공화당입니다.",
+            "en": "Let's distinguish the records. King was a Democrat and Smoot a Republican."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/UT/senators.htm",
+          "claim": "King was a Democrat and Smoot a Republican.",
+          "asOf": "1917-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-132-split-color"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-133",
+      "mechanism": "temporary-term",
+      "learningTarget": "Wilfley was appointed April 30, 1918.",
+      "date": "1918-07-01",
+      "venue": {
+        "ko": "임명 기간 표시",
+        "en": "Appointment term marker"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Xenophon P. Wilfley",
+          "ko": "제노폰 윌플리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "James A. Reed",
+          "ko": "제임스 리드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "스톤 의원이 4월 사망했습니다.",
+          "en": "Stone died in April."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "같은 달 임명으로 새 의원이 들어왔습니다.",
+          "en": "An appointee entered later that month."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 공석을 임시로 채운 사람은 {{blank}}입니다.",
+        "en": "The temporary appointee is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "윌플리",
+            "en": "Wilfley"
+          },
+          {
+            "id": "B",
+            "ko": "리드",
+            "en": "Reed"
+          },
+          {
+            "id": "C",
+            "ko": "스펜서",
+            "en": "Spencer"
+          },
+          {
+            "id": "D",
+            "ko": "윌리엄스",
+            "en": "Williams"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "윌플리는 1918년 4월 30일 임명됐습니다.",
+            "en": "Wilfley was appointed April 30, 1918."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 윌플리는 1918년 4월 30일 임명됐습니다.",
+            "en": "Let's distinguish the records. Wilfley was appointed April 30, 1918."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MO/senators.htm",
+          "claim": "Wilfley was appointed April 30, 1918.",
+          "asOf": "1918-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-133-temporary-term"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-134",
+      "mechanism": "post-election-update",
+      "learningTarget": "Spencer entered on November 6, 1918.",
+      "date": "1918-12-01",
+      "venue": {
+        "ko": "특별선거 결과 반영",
+        "en": "Applying special-election results"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-133.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-133."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Selden P. Spencer",
+          "ko": "셀던 스펜서",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "James A. Reed",
+          "ko": "제임스 리드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "11월 새 의원이 취임했습니다.",
+          "en": "A new senator took office in November."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "임명과 선거 이후의 재임 기록을 분리합시다.",
+          "en": "Separate appointment from post-election service."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "윌플리 이후 의석을 {{blank}}에게 연결하죠.",
+        "en": "I'll link the seat after Wilfley to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "윌리엄스",
+            "en": "Williams"
+          },
+          {
+            "id": "B",
+            "ko": "스펜서",
+            "en": "Spencer"
+          },
+          {
+            "id": "C",
+            "ko": "리드",
+            "en": "Reed"
+          },
+          {
+            "id": "D",
+            "ko": "스톤",
+            "en": "Stone"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스펜서는 1918년 11월 6일 취임했습니다.",
+            "en": "Spencer entered on November 6, 1918."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 스펜서는 1918년 11월 6일 취임했습니다.",
+            "en": "Let's distinguish the records. Spencer entered on November 6, 1918."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MO/senators.htm",
+          "claim": "Spencer entered on November 6, 1918.",
+          "asOf": "1918-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-134-post-election-update"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-135",
+      "mechanism": "cabinet-vacancy",
+      "learningTarget": "Bursum filled Fall's vacancy in March 1921.",
+      "date": "1921-07-01",
+      "venue": {
+        "ko": "장관 이동에 따른 공석",
+        "en": "Cabinet vacancy"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-114.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-114."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Holm O. Bursum",
+          "ko": "홈 버섬",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NM/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Andrieus A. Jones",
+          "ko": "앤드리어스 존스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NM/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "폴 의원이 상원을 떠났습니다.",
+          "en": "Fall left the Senate."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 다른 의석을 유지합니다.",
+          "en": "I hold the other seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "3월 임명된 Class II 의원은 {{blank}}입니다.",
+        "en": "The Class II senator appointed in March is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "커팅",
+            "en": "Cutting"
+          },
+          {
+            "id": "B",
+            "ko": "브래튼",
+            "en": "Bratton"
+          },
+          {
+            "id": "C",
+            "ko": "버섬",
+            "en": "Bursum"
+          },
+          {
+            "id": "D",
+            "ko": "존스",
+            "en": "Jones"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "버섬은 1921년 3월 폴의 공석을 채웠습니다.",
+            "en": "Bursum filled Fall's vacancy in March 1921."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 버섬은 1921년 3월 폴의 공석을 채웠습니다.",
+            "en": "Let's distinguish the records. Bursum filled Fall's vacancy in March 1921."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/NM/senators.htm",
+          "claim": "Bursum filled Fall's vacancy in March 1921.",
+          "asOf": "1921-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-135-cabinet-vacancy"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-136",
+      "mechanism": "resignation-file",
+      "learningTarget": "Couzens was appointed November 29, 1922.",
+      "date": "1922-12-01",
+      "venue": {
+        "ko": "사임 서류 인계",
+        "en": "Resignation file handover"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "James Couzens",
+          "ko": "제임스 커즌스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Charles E. Townsend",
+          "ko": "찰스 타운젠드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "뉴베리 의원이 11월 사임했습니다.",
+          "en": "Newberry resigned in November."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그 뒤 임명으로 새 의원이 취임했습니다.",
+          "en": "An appointee took office afterward."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class II 자격증명을 {{blank}}의 이름으로 갱신하죠.",
+        "en": "I'll update the Class II credentials to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "타운젠드",
+            "en": "Townsend"
+          },
+          {
+            "id": "B",
+            "ko": "페리스",
+            "en": "Ferris"
+          },
+          {
+            "id": "C",
+            "ko": "밴던버그",
+            "en": "Vandenberg"
+          },
+          {
+            "id": "D",
+            "ko": "커즌스",
+            "en": "Couzens"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "커즌스는 1922년 11월 29일 임명됐습니다.",
+            "en": "Couzens was appointed November 29, 1922."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 커즌스는 1922년 11월 29일 임명됐습니다.",
+            "en": "Let's distinguish the records. Couzens was appointed November 29, 1922."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MI/senators.htm",
+          "claim": "Couzens was appointed November 29, 1922.",
+          "asOf": "1922-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-136-resignation-file"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-137",
+      "mechanism": "term-overlap",
+      "learningTarget": "Howell entered Class I in March 1923.",
+      "date": "1923-07-01",
+      "venue": {
+        "ko": "대표단 교대",
+        "en": "Delegation turnover"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-112.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-112."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Robert B. Howell",
+          "ko": "로버트 하웰",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NE/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George W. Norris",
+          "ko": "조지 노리스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NE/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월에 히치콕 의원의 임기가 끝났습니다.",
+          "en": "Hitchcock's term ended in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 의석은 계속됩니다.",
+          "en": "My seat continues."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class I의 신임 의원은 {{blank}}으로 기록하죠.",
+        "en": "I'll record the new Class I senator as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "하웰",
+            "en": "Howell"
+          },
+          {
+            "id": "B",
+            "ko": "노리스",
+            "en": "Norris"
+          },
+          {
+            "id": "C",
+            "ko": "히치콕",
+            "en": "Hitchcock"
+          },
+          {
+            "id": "D",
+            "ko": "브라운",
+            "en": "Brown"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "하웰은 1923년 3월 Class I에 취임했습니다.",
+            "en": "Howell entered Class I in March 1923."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 하웰은 1923년 3월 Class I에 취임했습니다.",
+            "en": "Let's distinguish the records. Howell entered Class I in March 1923."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/NE/senators.htm",
+          "claim": "Howell entered Class I in March 1923.",
+          "asOf": "1923-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-137-term-overlap"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-138",
+      "mechanism": "vacancy-resolution",
+      "learningTarget": "Metcalf entered Colt's seat in November 1924.",
+      "date": "1924-12-01",
+      "venue": {
+        "ko": "빈 의석 재개",
+        "en": "Reopening a vacant seat"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Jesse H. Metcalf",
+          "ko": "제시 메트캐프",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/RI/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Peter G. Gerry",
+          "ko": "피터 게리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/RI/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "콜트 의원이 8월 사망했습니다.",
+          "en": "Colt died in August."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "11월에 새 의원이 취임했습니다.",
+          "en": "A new senator entered in November."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class II 연락처를 {{blank}}에게 바꾸죠.",
+        "en": "I'll update the Class II contact to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "그린",
+            "en": "Green"
+          },
+          {
+            "id": "B",
+            "ko": "메트캐프",
+            "en": "Metcalf"
+          },
+          {
+            "id": "C",
+            "ko": "게리",
+            "en": "Gerry"
+          },
+          {
+            "id": "D",
+            "ko": "헤버트",
+            "en": "Hébert"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "메트캐프가 1924년 11월 콜트의 의석에 취임했습니다.",
+            "en": "Metcalf entered Colt's seat in November 1924."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 메트캐프가 1924년 11월 콜트의 의석에 취임했습니다.",
+            "en": "Let's distinguish the records. Metcalf entered Colt's seat in November 1924."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/RI/senators.htm",
+          "claim": "Metcalf entered Colt's seat in November 1924.",
+          "asOf": "1924-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-138-vacancy-resolution"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-139",
+      "mechanism": "new-appointment",
+      "learningTarget": "Nye was appointed in November 1925.",
+      "date": "1925-12-01",
+      "venue": {
+        "ko": "겨울 임명",
+        "en": "Winter appointment"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Gerald P. Nye",
+          "ko": "제럴드 나이",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Lynn J. Frazier",
+          "ko": "린 프레이저",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/ND/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "래드 의원이 6월 사망했습니다.",
+          "en": "Ladd died in June."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "11월에 공석 임명이 이루어졌습니다.",
+          "en": "An appointment followed in November."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "신임 Class III 의원 {{blank}}의 접견을 잡죠.",
+        "en": "I'll schedule a meeting with new Class III Senator {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "래드",
+            "en": "Ladd"
+          },
+          {
+            "id": "B",
+            "ko": "매컴버",
+            "en": "McCumber"
+          },
+          {
+            "id": "C",
+            "ko": "나이",
+            "en": "Nye"
+          },
+          {
+            "id": "D",
+            "ko": "프레이저",
+            "en": "Frazier"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "나이는 1925년 11월 임명됐습니다.",
+            "en": "Nye was appointed in November 1925."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 나이는 1925년 11월 임명됐습니다.",
+            "en": "Let's distinguish the records. Nye was appointed in November 1925."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/ND/senators.htm",
+          "claim": "Nye was appointed in November 1925.",
+          "asOf": "1925-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-139-new-appointment"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-140",
+      "mechanism": "replacement-contact",
+      "learningTarget": "Hawes took office December 6, 1926.",
+      "date": "1926-12-15",
+      "venue": {
+        "ko": "대표단 연락처 교체",
+        "en": "Delegation contact change"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-134.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-134."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Harry B. Hawes",
+          "ko": "해리 호스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "James A. Reed",
+          "ko": "제임스 리드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "윌리엄스의 임시 재임이 끝났습니다.",
+          "en": "Williams's temporary service ended."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이달 신임 의원이 취임했습니다.",
+          "en": "A new senator entered this month."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class III의 새 연락처는 {{blank}}입니다.",
+        "en": "The new Class III contact is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "리드",
+            "en": "Reed"
+          },
+          {
+            "id": "B",
+            "ko": "스펜서",
+            "en": "Spencer"
+          },
+          {
+            "id": "C",
+            "ko": "클라크",
+            "en": "Clark"
+          },
+          {
+            "id": "D",
+            "ko": "호스",
+            "en": "Hawes"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "호스는 1926년 12월 6일 취임했습니다.",
+            "en": "Hawes took office December 6, 1926."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 호스는 1926년 12월 6일 취임했습니다.",
+            "en": "Let's distinguish the records. Hawes took office December 6, 1926."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MO/senators.htm",
+          "claim": "Hawes took office December 6, 1926.",
+          "asOf": "1926-12-15"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-140-replacement-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-141",
+      "mechanism": "interim-introduction",
+      "learningTarget": "Vandenberg was appointed March 31, 1928.",
+      "date": "1928-07-01",
+      "venue": {
+        "ko": "새 동료 소개",
+        "en": "Introducing a new colleague"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-119.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-119."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Arthur H. Vandenberg",
+          "ko": "아서 밴던버그",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "James Couzens",
+          "ko": "제임스 커즌스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "페리스 의원이 3월 사망했습니다.",
+          "en": "Ferris died in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그 뒤 새 동료가 임명됐습니다.",
+          "en": "A new colleague was appointed afterward."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class I의 신임 의원은 {{blank}}입니다.",
+        "en": "The new Class I senator is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "밴던버그",
+            "en": "Vandenberg"
+          },
+          {
+            "id": "B",
+            "ko": "커즌스",
+            "en": "Couzens"
+          },
+          {
+            "id": "C",
+            "ko": "페리스",
+            "en": "Ferris"
+          },
+          {
+            "id": "D",
+            "ko": "브라운",
+            "en": "Brown"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "밴던버그는 1928년 3월 31일 임명됐습니다.",
+            "en": "Vandenberg was appointed March 31, 1928."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 밴던버그는 1928년 3월 31일 임명됐습니다.",
+            "en": "Let's distinguish the records. Vandenberg was appointed March 31, 1928."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MI/senators.htm",
+          "claim": "Vandenberg was appointed March 31, 1928.",
+          "asOf": "1928-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-141-interim-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-142",
+      "mechanism": "seniority-presentation",
+      "learningTarget": "Bingham entered in 1925 and Walcott in 1929.",
+      "date": "1929-07-01",
+      "venue": {
+        "ko": "대표단 발표",
+        "en": "Delegation presentation"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-118.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-118."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Frederic C. Walcott",
+          "ko": "프레더릭 월컷",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Hiram Bingham",
+          "ko": "하이럼 빙엄",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월 처음 취임했습니다.",
+          "en": "I entered in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1925년부터 상원에 있습니다.",
+          "en": "I've served since 1925."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "더 오래 재임한 의원부터 발표를 맡기죠. {{blank}}입니다.",
+        "en": "Give the first presentation to the longer-serving senator, {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "브랜디지",
+            "en": "Brandegee"
+          },
+          {
+            "id": "B",
+            "ko": "빙엄",
+            "en": "Bingham"
+          },
+          {
+            "id": "C",
+            "ko": "월컷",
+            "en": "Walcott"
+          },
+          {
+            "id": "D",
+            "ko": "맥린",
+            "en": "McLean"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "빙엄은 1925년, 월컷은 1929년에 취임했습니다.",
+            "en": "Bingham entered in 1925 and Walcott in 1929."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 빙엄은 1925년, 월컷은 1929년에 취임했습니다.",
+            "en": "Let's distinguish the records. Bingham entered in 1925 and Walcott in 1929."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CT/senators.htm",
+          "claim": "Bingham entered in 1925 and Walcott in 1929.",
+          "asOf": "1929-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-142-seniority-presentation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-143",
+      "mechanism": "tariff-impact",
+      "learningTarget": "Smoot-Hawley was signed June 17, 1930.",
+      "date": "1930-06-18",
+      "venue": {
+        "ko": "관세법 지역 설명회",
+        "en": "Tariff law briefing"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-117.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-117."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Reed Smoot",
+          "ko": "리드 스무트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "William H. King",
+          "ko": "윌리엄 킹",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/UT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어제 관세법이 서명됐습니다.",
+          "en": "The tariff act was signed yesterday."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "새 관세 법률의 이름을 정확히 전달합시다.",
+          "en": "Identify the enacted tariff law correctly."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "주민 안내문에 {{blank}}이라고 쓰죠.",
+        "en": "I'll identify the law as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방준비법",
+            "en": "the Federal Reserve Act"
+          },
+          {
+            "id": "B",
+            "ko": "상호무역협정법",
+            "en": "the Reciprocal Trade Agreements Act"
+          },
+          {
+            "id": "C",
+            "ko": "스무트-홀리 관세법",
+            "en": "the Smoot-Hawley Tariff Act"
+          },
+          {
+            "id": "D",
+            "ko": "셔먼법",
+            "en": "the Sherman Act"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스무트-홀리법은 1930년 6월 17일 서명됐습니다.",
+            "en": "Smoot-Hawley was signed June 17, 1930."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 스무트-홀리법은 1930년 6월 17일 서명됐습니다.",
+            "en": "Let's distinguish the records. Smoot-Hawley was signed June 17, 1930."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/UT/senators.htm",
+          "claim": "Smoot-Hawley was signed June 17, 1930.",
+          "asOf": "1930-06-18"
+        },
+        {
+          "url": "https://www.senate.gov/states/UT/timeline.shtml",
+          "claim": "Smoot-Hawley was signed June 17, 1930.",
+          "asOf": "1930-06-18"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-143-tariff-impact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-144",
+      "mechanism": "bipartisan-scheduling",
+      "learningTarget": "Costigan was a Democrat who entered in 1931.",
+      "date": "1931-07-01",
+      "venue": {
+        "ko": "두 정당 접견",
+        "en": "Two-party meeting"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님.",
+        "en": "Fictional encounter, not actual quotations."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Edward P. Costigan",
+          "ko": "에드워드 코스티건",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Charles W. Waterman",
+          "ko": "찰스 워터먼",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월에 새 상원의원이 됐습니다.",
+          "en": "I entered in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 공화당 소속의 다른 의원입니다.",
+          "en": "I hold the other seat as a Republican."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "민주당 접견은 {{blank}} 의원실에 잡죠.",
+        "en": "I'll schedule the Democratic meeting with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "워터먼",
+            "en": "Waterman"
+          },
+          {
+            "id": "B",
+            "ko": "핍스",
+            "en": "Phipps"
+          },
+          {
+            "id": "C",
+            "ko": "애덤스",
+            "en": "Adams"
+          },
+          {
+            "id": "D",
+            "ko": "코스티건",
+            "en": "Costigan"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "코스티건은 1931년 취임한 민주당 의원입니다.",
+            "en": "Costigan was a Democrat who entered in 1931."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 코스티건은 1931년 취임한 민주당 의원입니다.",
+            "en": "Let's distinguish the records. Costigan was a Democrat who entered in 1931."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CO/senators.htm",
+          "claim": "Costigan was a Democrat who entered in 1931.",
+          "asOf": "1931-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-144-bipartisan-scheduling"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-145",
+      "mechanism": "interim-notice",
+      "learningTarget": "Walker was appointed September 26, 1932.",
+      "date": "1932-10-01",
+      "venue": {
+        "ko": "공석 안내문",
+        "en": "Vacancy notice"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-144.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-144."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Walter Walker",
+          "ko": "월터 워커",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Edward P. Costigan",
+          "ko": "에드워드 코스티건",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "워터먼 의원이 8월 사망했습니다.",
+          "en": "Waterman died in August."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "9월 임명으로 공석을 채웠습니다.",
+          "en": "An appointment filled the vacancy in September."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 임명 의원은 {{blank}}으로 안내하죠.",
+        "en": "I'll identify the current appointee as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "워커",
+            "en": "Walker"
+          },
+          {
+            "id": "B",
+            "ko": "코스티건",
+            "en": "Costigan"
+          },
+          {
+            "id": "C",
+            "ko": "슈일러",
+            "en": "Schuyler"
+          },
+          {
+            "id": "D",
+            "ko": "애덤스",
+            "en": "Adams"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "워커는 1932년 9월 26일 임명됐습니다.",
+            "en": "Walker was appointed September 26, 1932."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 워커는 1932년 9월 26일 임명됐습니다.",
+            "en": "Let's distinguish the records. Walker was appointed September 26, 1932."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CO/senators.htm",
+          "claim": "Walker was appointed September 26, 1932.",
+          "asOf": "1932-10-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-145-interim-notice"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-146",
+      "mechanism": "delegation-party-change",
+      "learningTarget": "Lonergan entered Class III in March 1933.",
+      "date": "1933-07-01",
+      "venue": {
+        "ko": "대선 이후 대표단",
+        "en": "Delegation after the election"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-142.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-142."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Augustine Lonergan",
+          "ko": "어거스틴 로너건",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CT/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Frederic C. Walcott",
+          "ko": "프레더릭 월컷",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "3월에 Class III 의석이 민주당으로 바뀌었습니다.",
+          "en": "The Class III seat changed to Democratic in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "Class I은 공화당에 남았습니다.",
+          "en": "Class I remains Republican."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "새 민주당 의원 {{blank}}을 별도 표시하죠.",
+        "en": "I'll mark new Democratic Senator {{blank}} separately.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "말로니",
+            "en": "Maloney"
+          },
+          {
+            "id": "B",
+            "ko": "로너건",
+            "en": "Lonergan"
+          },
+          {
+            "id": "C",
+            "ko": "월컷",
+            "en": "Walcott"
+          },
+          {
+            "id": "D",
+            "ko": "빙엄",
+            "en": "Bingham"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "로너건은 1933년 3월 Class III에 취임했습니다.",
+            "en": "Lonergan entered Class III in March 1933."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 로너건은 1933년 3월 Class III에 취임했습니다.",
+            "en": "Let's distinguish the records. Lonergan entered Class III in March 1933."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CT/senators.htm",
+          "claim": "Lonergan entered Class III in March 1933.",
+          "asOf": "1933-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-146-delegation-party-change"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-147",
+      "mechanism": "seat-vs-cabinet",
+      "learningTarget": "Byrd was appointed March 4, 1933.",
+      "date": "1933-07-01",
+      "venue": {
+        "ko": "장관직과 의석",
+        "en": "Cabinet office and seat"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-115.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-115."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Harry F. Byrd",
+          "ko": "해리 버드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/VA/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Carter Glass",
+          "ko": "카터 글래스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/VA/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "스완슨 의원이 3월 상원을 떠났습니다.",
+          "en": "Swanson left in March."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 Class II 의석은 유지됩니다.",
+          "en": "My Class II seat continues."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "Class I 승계자는 {{blank}}입니다.",
+        "en": "The Class I successor is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스완슨",
+            "en": "Swanson"
+          },
+          {
+            "id": "B",
+            "ko": "마틴",
+            "en": "Martin"
+          },
+          {
+            "id": "C",
+            "ko": "버드",
+            "en": "Byrd"
+          },
+          {
+            "id": "D",
+            "ko": "글래스",
+            "en": "Glass"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "버드는 1933년 3월 4일 임명됐습니다.",
+            "en": "Byrd was appointed March 4, 1933."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 버드는 1933년 3월 4일 임명됐습니다.",
+            "en": "Let's distinguish the records. Byrd was appointed March 4, 1933."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/VA/senators.htm",
+          "claim": "Byrd was appointed March 4, 1933.",
+          "asOf": "1933-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-147-seat-vs-cabinet"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-148",
+      "mechanism": "short-term-appointment",
+      "learningTarget": "Hunter entered November 7, 1934.",
+      "date": "1934-12-01",
+      "venue": {
+        "ko": "짧은 재임 달력",
+        "en": "Short service calendar"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-121.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-121."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Richard C. Hunter",
+          "ko": "리처드 헌터",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NE/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "George W. Norris",
+          "ko": "조지 노리스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NE/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "11월 Class I 의원으로 취임했습니다.",
+          "en": "I entered Class I in November."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 Class II 의석은 계속됩니다.",
+          "en": "My Class II seat continues."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "톰프슨 이후의 재임자는 {{blank}}으로 기록하죠.",
+        "en": "I'll record {{blank}} after Thompson.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "노리스",
+            "en": "Norris"
+          },
+          {
+            "id": "B",
+            "ko": "하웰",
+            "en": "Howell"
+          },
+          {
+            "id": "C",
+            "ko": "히치콕",
+            "en": "Hitchcock"
+          },
+          {
+            "id": "D",
+            "ko": "헌터",
+            "en": "Hunter"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "헌터는 1934년 11월 7일 취임했습니다.",
+            "en": "Hunter entered November 7, 1934."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 헌터는 1934년 11월 7일 취임했습니다.",
+            "en": "Let's distinguish the records. Hunter entered November 7, 1934."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/NE/senators.htm",
+          "claim": "Hunter entered November 7, 1934.",
+          "asOf": "1934-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p02-148-short-term-appointment"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-149",
+      "mechanism": "early-start",
+      "learningTarget": "Brown entered in November 1936 to fill the remaining term.",
+      "date": "1936-12-01",
+      "venue": {
+        "ko": "정규 임기 전 취임",
+        "en": "Taking office before the full term"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-141.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-141."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Prentiss M. Brown",
+          "ko": "프렌티스 브라운",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Arthur H. Vandenberg",
+          "ko": "아서 밴던버그",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MI/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "정규 임기는 내년 1월 시작되지만 공석을 먼저 채웠습니다.",
+          "en": "My full term starts next January, but I filled the vacancy first."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "커즌스 의원 사망에 따른 공석입니다.",
+          "en": "The vacancy followed Couzens's death."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "잔여 임기를 채운 의원은 {{blank}}입니다.",
+        "en": "The senator filling the remaining term is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "브라운",
+            "en": "Brown"
+          },
+          {
+            "id": "B",
+            "ko": "밴던버그",
+            "en": "Vandenberg"
+          },
+          {
+            "id": "C",
+            "ko": "커즌스",
+            "en": "Couzens"
+          },
+          {
+            "id": "D",
+            "ko": "퍼거슨",
+            "en": "Ferguson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "브라운은 1936년 11월 취임하여 잔여 임기를 채웠습니다.",
+            "en": "Brown entered in November 1936 to fill the remaining term."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 브라운은 1936년 11월 취임하여 잔여 임기를 채웠습니다.",
+            "en": "Let's distinguish the records. Brown entered in November 1936 to fill the remaining term."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/MI/senators.htm",
+          "claim": "Brown entered in November 1936 to fill the remaining term.",
+          "asOf": "1936-12-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p02-149-early-start"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-150",
+      "mechanism": "shared-delegation",
+      "learningTarget": "Johnson and Adams were Democrats.",
+      "date": "1937-07-01",
+      "venue": {
+        "ko": "공동 주민 면담",
+        "en": "Joint constituent meeting"
+      },
+      "context": {
+        "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-116.",
+        "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-116."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Edwin C. Johnson",
+          "ko": "에드윈 존슨",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        },
+        {
+          "id": null,
+          "name": "Alva B. Adams",
+          "ko": "앨바 애덤스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/CO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 처음 취임했습니다.",
+          "en": "I entered this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 1933년부터 Class III에 있습니다.",
+          "en": "I've held Class III since 1933."
+        },
+        {
+          "speaker": "player",
+          "ko": "이 상황에 맞춰 처리하겠습니다.",
+          "en": "I'll handle it accordingly."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원실을 같은 정당으로 연결하죠. {{blank}}입니다.",
+        "en": "I'll link both offices under {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "무소속",
+            "en": "no party"
+          },
+          {
+            "id": "B",
+            "ko": "민주당",
+            "en": "the Democratic Party"
+          },
+          {
+            "id": "C",
+            "ko": "공화당",
+            "en": "the Republican Party"
+          },
+          {
+            "id": "D",
+            "ko": "진보당",
+            "en": "the Progressive Party"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "존슨과 애덤스는 민주당입니다.",
+            "en": "Johnson and Adams were Democrats."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "기록을 구별합시다. 존슨과 애덤스는 민주당입니다.",
+            "en": "Let's distinguish the records. Johnson and Adams were Democrats."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/states/CO/senators.htm",
+          "claim": "Johnson and Adams were Democrats.",
+          "asOf": "1937-07-01"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-150-shared-delegation"
+      },
+      "fictional": true
+    }
+  ]
+}
