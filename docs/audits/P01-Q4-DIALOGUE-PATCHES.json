@@ -1,0 +1,4460 @@
+{
+  "schema": 1,
+  "team": "P01-Q4",
+  "auditDate": "2026-11-25",
+  "applicationContract": "Check originalBlobSha and originalFields before applying. Rebase if source changed. Change only listed fields. Original scene files untouched; no gameplay integration or CI executed.",
+  "patches": [
+    {
+      "id": "P01-676",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "동문 전시회에 군 복무 기록과 대학 졸업 기록을 함께 놓으려 합니다. 두 기록의 순서를 확인해야겠어요.",
+            "en": "We are pairing military and college records for the alumni exhibit. We need to put them in chronological order."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대학 졸업 전에 군에서 보낸 시간이 있습니다. 복무 군종을 정확히 구분해 주세요.",
+            "en": "My military service preceded my college graduation. Please distinguish the service branch accurately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "골든 의원은 {{blank}}에서 복무했습니다.",
+          "en": "Representative Golden served in the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해군",
+              "en": "Navy"
+            },
+            {
+              "id": "B",
+              "ko": "해병대",
+              "en": "Marine Corps"
+            },
+            {
+              "id": "C",
+              "ko": "해안경비대",
+              "en": "Coast Guard"
+            },
+            {
+              "id": "D",
+              "ko": "공군",
+              "en": "Air Force"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "좋습니다. 군 복무 기록 다음에 2011년 베이츠 칼리지 졸업 기록을 배치하겠습니다.",
+              "en": "Good. The 2011 Bates graduation record can follow the military record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 2002년부터 2006년까지 해병대에서 복무했습니다.",
+              "en": "I served in the Marine Corps from 2002 to 2006."
+            }
+          ]
+        },
+        "context": {
+          "ko": "동문들이 의원의 군 복무 경력과 학교 이야기를 나눈다.",
+          "en": "Alumni discuss the member's military and college background."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "동문 전시회에 군 복무 기록과 대학 졸업 기록을 함께 놓으려 합니다. 두 기록의 순서를 확인해야겠어요.",
+              "en": "We are pairing military and college records for the alumni exhibit. We need to put them in chronological order."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "대학 졸업 전에 군에서 보낸 시간이 있습니다. 복무 군종을 정확히 구분해 주세요.",
+              "en": "My military service preceded my college graduation. Please distinguish the service branch accurately."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "졸업을 앞둔 학생이 대학에 가기 전 다른 길을 택했던 사람의 이야기를 듣고 싶다고 합니다.",
+              "en": "A student approaching graduation wants to hear from someone who took a different path before college."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 베이츠 입학 전 경험부터 소개해 주시겠어요? 이어서 학생의 질문을 듣겠습니다.",
+              "en": "Would you introduce my experience before Bates? Then I'll take the student's question."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "골든 의원은 {{blank}}에서 복무했습니다.",
+            "en": "Representative Golden served in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "해군",
+                "en": "Navy"
+              },
+              {
+                "id": "B",
+                "ko": "해병대",
+                "en": "Marine Corps"
+              },
+              {
+                "id": "C",
+                "ko": "해안경비대",
+                "en": "Coast Guard"
+              },
+              {
+                "id": "D",
+                "ko": "공군",
+                "en": "Air Force"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "골든 의원님은 대학에 가기 전 {{blank}}에서 복무하셨습니다.",
+            "en": "Before college, Representative Golden served in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "해군",
+                "en": "Navy"
+              },
+              {
+                "id": "B",
+                "ko": "해병대",
+                "en": "Marine Corps"
+              },
+              {
+                "id": "C",
+                "ko": "해안경비대",
+                "en": "Coast Guard"
+              },
+              {
+                "id": "D",
+                "ko": "공군",
+                "en": "Air Force"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "좋습니다. 군 복무 기록 다음에 2011년 베이츠 칼리지 졸업 기록을 배치하겠습니다.",
+                "en": "Good. The 2011 Bates graduation record can follow the military record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 2002년부터 2006년까지 해병대에서 복무했습니다.",
+                "en": "I served in the Marine Corps from 2002 to 2006."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "2002년부터 2006년까지였죠. 2011년에 베이츠를 졸업했습니다. 자, 학생에게 마이크를 넘겨 볼까요?",
+                "en": "From 2002 to 2006. I graduated from Bates in 2011. Shall we hand the microphone to the student?"
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "해병대였습니다. 2002년부터 2006년까지 복무했죠. 학생에게 다시 소개해 주세요.",
+                "en": "It was the Marine Corps, from 2002 to 2006. Please introduce me again."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "동문들이 의원의 군 복무 경력과 학교 이야기를 나눈다.",
+            "en": "Alumni discuss the member's military and college background."
+          },
+          "after": {
+            "ko": "동문 행사에서 진로 질문을 기다리는 학생에게 골든의 군 복무 경력을 소개한다.",
+            "en": "Introduce Golden's military background to a student waiting to ask about career paths."
+          }
+        }
+      ],
+      "reason": "동문의 진로 대화로 전환",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-677",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "직업교육 전시에 작은 사업체의 작업 장면을 넣으려고 합니다. 자동차 관련 공구와 기계 가공 설비가 각각 놓여 있네요.",
+            "en": "For the vocational exhibit, we're illustrating a small business. There are automotive tools and machining equipment."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전 남편과 운영하던 사업체를 설명하는 문구라면 두 종류의 작업을 모두 포함해야겠죠.",
+            "en": "If the caption describes the business my husband and I ran before Congress, it should cover both kinds of work."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "의원님은 의회에 오기 전 {{blank}}을 운영하셨죠.",
+          "en": "Before Congress you ran {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "자동차 정비소와 기계 가공소",
+              "en": "an auto repair and machine shop"
+            },
+            {
+              "id": "B",
+              "ko": "신문 인쇄소",
+              "en": "a newspaper printing shop"
+            },
+            {
+              "id": "C",
+              "ko": "약국",
+              "en": "a pharmacy"
+            },
+            {
+              "id": "D",
+              "ko": "보험 대리점",
+              "en": "an insurance agency"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "수리와 가공을 별개의 직업으로 잘못 나누지 않고 한 사업체의 경험으로 전시하겠습니다.",
+              "en": "We'll present repair and machining as experience in one business, not mistakenly split them into separate jobs."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "남편과 자동차 정비소 및 기계 가공소를 운영했습니다.",
+              "en": "My husband and I ran an auto repair and machine shop."
+            }
+          ]
+        },
+        "context": {
+          "ko": "수리 교육에 쓸 공구를 살펴보다 의원과 이야기가 시작된다.",
+          "en": "A discussion begins beside tools for a repair class."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "직업교육 전시에 작은 사업체의 작업 장면을 넣으려고 합니다. 자동차 관련 공구와 기계 가공 설비가 각각 놓여 있네요.",
+              "en": "For the vocational exhibit, we're illustrating a small business. There are automotive tools and machining equipment."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "의회에 오기 전 남편과 운영하던 사업체를 설명하는 문구라면 두 종류의 작업을 모두 포함해야겠죠.",
+              "en": "If the caption describes the business my husband and I ran before Congress, it should cover both kinds of work."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "기술 교육 참가자들이 소규모 사업체 운영 경험이 있는 사람에게 질문할 시간을 요청했습니다.",
+              "en": "Workshop participants asked for time to question someone with small-business experience."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "의회에 오기 전에 제가 운영했던 사업을 아신다면, 어느 참가자에게 먼저 말을 걸면 좋을지 알겠죠.",
+              "en": "If you know what business I ran before Congress, you'll know which participants to approach first."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "의원님은 의회에 오기 전 {{blank}}을 운영하셨죠.",
+            "en": "Before Congress you ran {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "자동차 정비소와 기계 가공소",
+                "en": "an auto repair and machine shop"
+              },
+              {
+                "id": "B",
+                "ko": "신문 인쇄소",
+                "en": "a newspaper printing shop"
+              },
+              {
+                "id": "C",
+                "ko": "약국",
+                "en": "a pharmacy"
+              },
+              {
+                "id": "D",
+                "ko": "보험 대리점",
+                "en": "an insurance agency"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "{{blank}} 창업을 준비하는 참가자와 먼저 이야기해 보시겠어요?",
+            "en": "Would you first speak with participants hoping to start {{blank}}?",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "자동차 정비소와 기계 가공소",
+                "en": "an auto repair and machine shop"
+              },
+              {
+                "id": "B",
+                "ko": "신문 인쇄소",
+                "en": "a newspaper printing shop"
+              },
+              {
+                "id": "C",
+                "ko": "약국",
+                "en": "a pharmacy"
+              },
+              {
+                "id": "D",
+                "ko": "보험 대리점",
+                "en": "an insurance agency"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "수리와 가공을 별개의 직업으로 잘못 나누지 않고 한 사업체의 경험으로 전시하겠습니다.",
+                "en": "We'll present repair and machining as experience in one business, not mistakenly split them into separate jobs."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "남편과 자동차 정비소 및 기계 가공소를 운영했습니다.",
+                "en": "My husband and I ran an auto repair and machine shop."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "남편과 운영했던 사업이 바로 그 분야였죠. 참가자들의 질문을 받아 볼까요?",
+                "en": "That's the kind of business my husband and I ran. Shall we take their questions?"
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제가 운영했던 것은 자동차 정비소와 기계 가공소였습니다. 그 분야 참가자를 먼저 만나죠. 다른 참가자도 질문할 수 있습니다.",
+                "en": "I ran an auto repair and machine shop. Let's start with those participants; the others can ask questions too."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "수리 교육에 쓸 공구를 살펴보다 의원과 이야기가 시작된다.",
+            "en": "A discussion begins beside tools for a repair class."
+          },
+          "after": {
+            "ko": "직업교육 참가자들을 의원의 실제 사업 경험과 연결한다.",
+            "en": "Connect vocational participants with the member's actual business experience."
+          }
+        }
+      ],
+      "reason": "정답 노출 공구 제거; 사업 상담 대상 선택",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-678",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "시청 기록 전시에서 지방 행정 책임자의 사진과 자영업자의 작업 사진이 뒤섞였습니다.",
+            "en": "A local-government exhibit has mixed photographs of a municipal executive with those of a small-business owner."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의회 이전 경력은 사업체 운영이었습니다. 지방 행정 기록은 다른 쪽이겠네요.",
+            "en": "My pre-Congress experience was running a business. The municipal record belongs on the other side."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2010년부터 2017년까지의 시정 기록에 제 직책을 표시해 주세요.",
+            "en": "Please label my position in the municipal records covering 2010 through 2017."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스트릭랜드 의원은 과거 {{blank}}이었습니다.",
+          "en": "Representative Strickland previously served as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스포캔 시장",
+              "en": "mayor of Spokane"
+            },
+            {
+              "id": "B",
+              "ko": "시애틀 시장",
+              "en": "mayor of Seattle"
+            },
+            {
+              "id": "C",
+              "ko": "올림피아 시장",
+              "en": "mayor of Olympia"
+            },
+            {
+              "id": "D",
+              "ko": "타코마 시장",
+              "en": "mayor of Tacoma"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "두 경력이 연방의회로 이어졌지만 서로 다른 경로였다는 점을 전시에 반영하겠습니다.",
+              "en": "The exhibit will show two different paths into federal office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제가 시장을 지낸 곳은 타코마입니다. 2010년부터 2017년까지였죠.",
+              "en": "I was mayor of Tacoma from 2010 to 2017."
+            }
+          ]
+        },
+        "context": {
+          "ko": "두 의원에게 도시 행정 경험과 자영업 경험을 구별해 소개한다.",
+          "en": "Introduce two members by distinguishing municipal and business experience."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "시청 기록 전시에서 지방 행정 책임자의 사진과 자영업자의 작업 사진이 뒤섞였습니다.",
+              "en": "A local-government exhibit has mixed photographs of a municipal executive with those of a small-business owner."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 의회 이전 경력은 사업체 운영이었습니다. 지방 행정 기록은 다른 쪽이겠네요.",
+              "en": "My pre-Congress experience was running a business. The municipal record belongs on the other side."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2010년부터 2017년까지의 시정 기록에 제 직책을 표시해 주세요.",
+              "en": "Please label my position in the municipal records covering 2010 through 2017."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "첫 질문은 도시 행정 경험이고, 다음은 소규모 사업 운영입니다. 두 분께 질문 순서를 어떻게 드릴까요?",
+              "en": "The first question concerns municipal administration; the next concerns small-business operations. How should we arrange the speakers?"
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "사업 운영 질문이라면 제가 이어받겠습니다.",
+              "en": "I'll take the business question."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "그럼 첫 질문을 제게 소개해 주시겠어요?",
+              "en": "Would you introduce me for the first question?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "스트릭랜드 의원은 과거 {{blank}}이었습니다.",
+            "en": "Representative Strickland previously served as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "스포캔 시장",
+                "en": "mayor of Spokane"
+              },
+              {
+                "id": "B",
+                "ko": "시애틀 시장",
+                "en": "mayor of Seattle"
+              },
+              {
+                "id": "C",
+                "ko": "올림피아 시장",
+                "en": "mayor of Olympia"
+              },
+              {
+                "id": "D",
+                "ko": "타코마 시장",
+                "en": "mayor of Tacoma"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2010~2017년에 {{blank}}이었던 스트릭랜드 의원님께 먼저 질문하겠습니다.",
+            "en": "Let's first ask Representative Strickland, who served as {{blank}} from 2010 to 2017.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "스포캔 시장",
+                "en": "mayor of Spokane"
+              },
+              {
+                "id": "B",
+                "ko": "시애틀 시장",
+                "en": "mayor of Seattle"
+              },
+              {
+                "id": "C",
+                "ko": "올림피아 시장",
+                "en": "mayor of Olympia"
+              },
+              {
+                "id": "D",
+                "ko": "타코마 시장",
+                "en": "mayor of Tacoma"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "두 경력이 연방의회로 이어졌지만 서로 다른 경로였다는 점을 전시에 반영하겠습니다.",
+                "en": "The exhibit will show two different paths into federal office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제가 시장을 지낸 곳은 타코마입니다. 2010년부터 2017년까지였죠.",
+                "en": "I was mayor of Tacoma from 2010 to 2017."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "타코마에서의 시정 경험부터 말씀드리죠.",
+                "en": "Let's start with my municipal experience in Tacoma."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "그 뒤에 사업 운영 질문을 받겠습니다.",
+                "en": "Then I'll take the business question."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "타코마 시장이었습니다. 이제 도시 행정 질문부터 듣겠습니다.",
+                "en": "I was mayor of Tacoma. Let's hear the municipal question first."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "다음 사업 운영 질문은 제게 주세요.",
+                "en": "Send the next business question my way."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "두 의원에게 도시 행정 경험과 자영업 경험을 구별해 소개한다.",
+            "en": "Introduce two members by distinguishing municipal and business experience."
+          },
+          "after": {
+            "ko": "지역 행정 세미나에서 두 의원의 상이한 경력에 따라 질문을 배정한다.",
+            "en": "At a local-government seminar, assign questions according to the two members' distinct backgrounds."
+          }
+        }
+      ],
+      "reason": "사진 분류 대신 두 정치인이 다른 질문을 담당",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-679",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이사콰에서 어린 환자들을 돌보던 시절이 생각나네요.",
+            "en": "This reminds me of caring for young patients in Issaquah."
+          },
+          {
+            "speaker": "player",
+            "ko": "어떤 전문 분야였는지 학생에게 정확히 말해 주고 싶어요.",
+            "en": "I'd like to tell the student your specialty accurately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "슈리어 의원은 {{blank}}였습니다.",
+          "en": "Representative Schrier was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "치과 의사",
+              "en": "a dentist"
+            },
+            {
+              "id": "B",
+              "ko": "응급 구조사",
+              "en": "a paramedic"
+            },
+            {
+              "id": "C",
+              "ko": "소아과 의사",
+              "en": "a pediatrician"
+            },
+            {
+              "id": "D",
+              "ko": "안과 의사",
+              "en": "an ophthalmologist"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그때 배운 의료 접근성 이야기도 나눠 보죠.",
+              "en": "We can also discuss access to care."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 전문 분야는 소아과였습니다.",
+              "en": "My specialty was pediatrics."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이사콰에서 어린 환자들을 돌보던 시절이 생각나네요.",
+              "en": "This reminds me of caring for young patients in Issaquah."
+            },
+            {
+              "speaker": "player",
+              "ko": "어떤 전문 분야였는지 학생에게 정확히 말해 주고 싶어요.",
+              "en": "I'd like to tell the student your specialty accurately."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "의료 분야 진로를 알아보는 학생이 의원님의 의회 이전 경험을 듣고 싶어 합니다.",
+              "en": "A student exploring medical careers wants to hear about your pre-Congress work."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이사콰에서 일했던 경험부터 소개해 주시겠어요? 그다음 학생의 질문을 듣죠.",
+              "en": "Would you introduce my work in Issaquah first? Then I'll hear the student's question."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "슈리어 의원은 {{blank}}였습니다.",
+            "en": "Representative Schrier was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "치과 의사",
+                "en": "a dentist"
+              },
+              {
+                "id": "B",
+                "ko": "응급 구조사",
+                "en": "a paramedic"
+              },
+              {
+                "id": "C",
+                "ko": "소아과 의사",
+                "en": "a pediatrician"
+              },
+              {
+                "id": "D",
+                "ko": "안과 의사",
+                "en": "an ophthalmologist"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "슈리어 의원님은 의회에 오기 전에 {{blank}}로 일하셨습니다.",
+            "en": "Before Congress, Representative Schrier worked as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "치과 의사",
+                "en": "a dentist"
+              },
+              {
+                "id": "B",
+                "ko": "응급 구조사",
+                "en": "a paramedic"
+              },
+              {
+                "id": "C",
+                "ko": "소아과 의사",
+                "en": "a pediatrician"
+              },
+              {
+                "id": "D",
+                "ko": "안과 의사",
+                "en": "an ophthalmologist"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그때 배운 의료 접근성 이야기도 나눠 보죠.",
+                "en": "We can also discuss access to care."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 전문 분야는 소아과였습니다.",
+                "en": "My specialty was pediatrics."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이사콰에서 소아과 진료를 했죠. 학생에게 어떤 분야가 궁금한지 물어보세요.",
+                "en": "I practiced pediatrics in Issaquah. Ask the student what part of that work interests them."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 전문 분야는 소아과였습니다. 이사콰에서 진료했죠. 학생의 질문을 이어가겠습니다.",
+                "en": "My specialty was pediatrics, in Issaquah. Let's continue with the student's question."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "어린 환자라는 정답 직접 단서 제거",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-680",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "aide",
+            "ko": "주민이 2017년 당선 기록을 들고 와서 지금의 연방의회 직책과 같은 것인지 묻습니다.",
+            "en": "A resident has brought a 2017 election record and wonders whether it was for the same office as today."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "그 기록은 2022년 연방 하원의원 선거보다 앞선 것입니다. 어느 기관의 선거인지 확인해 주세요.",
+            "en": "That record predates my 2022 congressional election. Please identify the body involved."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "바스케스 의원이 2017년에 당선된 기관은 {{blank}}입니다.",
+          "en": "The body Vasquez was elected to in 2017 was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "산타페 시의회",
+              "en": "Santa Fe City Council"
+            },
+            {
+              "id": "B",
+              "ko": "라스크루시스 시의회",
+              "en": "Las Cruces City Council"
+            },
+            {
+              "id": "C",
+              "ko": "앨버커키 시의회",
+              "en": "Albuquerque City Council"
+            },
+            {
+              "id": "D",
+              "ko": "뉴멕시코 주상원",
+              "en": "New Mexico State Senate"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "aide",
+              "ko": "그러면 2017년 기록은 지방 선거 항목에, 2022년 기록은 연방 선거 항목에 보관하겠습니다.",
+              "en": "We'll file the 2017 record under local elections and the 2022 record under federal elections."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2017년에는 라스크루시스 시의회에 당선됐습니다.",
+              "en": "I was elected to the Las Cruces City Council in 2017."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "aide",
+              "ko": "주민이 2017년 당선 기록을 들고 와서 지금의 연방의회 직책과 같은 것인지 묻습니다.",
+              "en": "A resident has brought a 2017 election record and wonders whether it was for the same office as today."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "그 기록은 2022년 연방 하원의원 선거보다 앞선 것입니다. 어느 기관의 선거인지 확인해 주세요.",
+              "en": "That record predates my 2022 congressional election. Please identify the body involved."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "주민이 2017년과 2022년 선거 기록을 가져왔습니다. 두 선거에서 같은 직책을 뽑은 것인지 궁금해합니다.",
+              "en": "A resident brought election records from 2017 and 2022 and wants to know whether they elected you to the same office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지방과 연방의 차이부터 설명해 주시겠어요? 그다음 뉴멕시코 2구에 관한 질문을 받죠.",
+              "en": "Would you explain the difference between local and federal office first? Then we can take questions about New Mexico's Second District."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "바스케스 의원이 2017년에 당선된 기관은 {{blank}}입니다.",
+            "en": "The body Vasquez was elected to in 2017 was the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "산타페 시의회",
+                "en": "Santa Fe City Council"
+              },
+              {
+                "id": "B",
+                "ko": "라스크루시스 시의회",
+                "en": "Las Cruces City Council"
+              },
+              {
+                "id": "C",
+                "ko": "앨버커키 시의회",
+                "en": "Albuquerque City Council"
+              },
+              {
+                "id": "D",
+                "ko": "뉴멕시코 주상원",
+                "en": "New Mexico State Senate"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2017년에는 {{blank}}에 당선되셨고, 2022년에는 연방 하원에 당선되셨습니다.",
+            "en": "In 2017 you were elected to the {{blank}}, and in 2022 to the U.S. House.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "산타페 시의회",
+                "en": "Santa Fe City Council"
+              },
+              {
+                "id": "B",
+                "ko": "라스크루시스 시의회",
+                "en": "Las Cruces City Council"
+              },
+              {
+                "id": "C",
+                "ko": "앨버커키 시의회",
+                "en": "Albuquerque City Council"
+              },
+              {
+                "id": "D",
+                "ko": "뉴멕시코 주상원",
+                "en": "New Mexico State Senate"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "aide",
+                "ko": "그러면 2017년 기록은 지방 선거 항목에, 2022년 기록은 연방 선거 항목에 보관하겠습니다.",
+                "en": "We'll file the 2017 record under local elections and the 2022 record under federal elections."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2017년에는 라스크루시스 시의회에 당선됐습니다.",
+                "en": "I was elected to the Las Cruces City Council in 2017."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "라스크루시스 시의회와 연방 하원은 다른 기관입니다. 다음 대표단 간담회에서도 이 차이를 기억해 주세요.",
+                "en": "The Las Cruces City Council and U.S. House are different bodies. Keep that distinction in mind at the next delegation meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2017년 선거는 라스크루시스 시의회였습니다. 연방 하원 당선은 2022년이죠. 주민에게 두 기관을 구별해 설명합시다.",
+                "en": "The 2017 election was for Las Cruces City Council; my House election was in 2022. Let's explain the distinction to the resident."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "주민에게 지방 및 연방 선거를 설명; 기존 693 연결 보강",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-681",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전에는 오리건주의 노동기관에서 일했습니다.",
+            "en": "Before Congress I worked in Oregon's labor agency."
+          },
+          {
+            "speaker": "player",
+            "ko": "주 정부 직책과 연방 직책을 따로 기록하겠습니다.",
+            "en": "I'll record the state and federal jobs separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "호일 의원은 오리건주의 {{blank}}을 지냈습니다.",
+          "en": "Hoyle served as Oregon's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "노동위원장",
+              "en": "labor commissioner"
+            },
+            {
+              "id": "B",
+              "ko": "법무장관",
+              "en": "attorney general"
+            },
+            {
+              "id": "C",
+              "ko": "주 재무장관",
+              "en": "state treasurer"
+            },
+            {
+              "id": "D",
+              "ko": "주 국무장관",
+              "en": "secretary of state"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그렇게 해야 어느 기관에 자료를 요청할지 알 수 있죠.",
+              "en": "That makes it easier to request records from the right agency."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 노동위원장으로 주 노동산업국을 이끌었습니다.",
+              "en": "I served as labor commissioner, leading the Bureau of Labor and Industries."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의회에 오기 전에는 오리건주의 노동기관에서 일했습니다.",
+              "en": "Before Congress I worked in Oregon's labor agency."
+            },
+            {
+              "speaker": "player",
+              "ko": "주 정부 직책과 연방 직책을 따로 기록하겠습니다.",
+              "en": "I'll record the state and federal jobs separately."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "방문객이 의원님의 의회 이전 주 정부 경력을 찾아보고 싶어 합니다. 어느 직책의 기록부터 찾으면 될까요?",
+              "en": "A visitor wants to look up your state-government career before Congress. Which office's records should they consult?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "연방 의원 기록부터 찾을 필요는 없어요. 제가 맡았던 오리건주 직책을 알려 주세요.",
+              "en": "There's no need to start with federal congressional records. Identify the Oregon state office I held."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "호일 의원은 오리건주의 {{blank}}을 지냈습니다.",
+            "en": "Hoyle served as Oregon's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "노동위원장",
+                "en": "labor commissioner"
+              },
+              {
+                "id": "B",
+                "ko": "법무장관",
+                "en": "attorney general"
+              },
+              {
+                "id": "C",
+                "ko": "주 재무장관",
+                "en": "state treasurer"
+              },
+              {
+                "id": "D",
+                "ko": "주 국무장관",
+                "en": "secretary of state"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "오리건주 {{blank}}의 재임 기록부터 찾아보겠습니다.",
+            "en": "I'll start with the records of Oregon's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "노동위원장",
+                "en": "labor commissioner"
+              },
+              {
+                "id": "B",
+                "ko": "법무장관",
+                "en": "attorney general"
+              },
+              {
+                "id": "C",
+                "ko": "주 재무장관",
+                "en": "state treasurer"
+              },
+              {
+                "id": "D",
+                "ko": "주 국무장관",
+                "en": "secretary of state"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇게 해야 어느 기관에 자료를 요청할지 알 수 있죠.",
+                "en": "That makes it easier to request records from the right agency."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 노동위원장으로 주 노동산업국을 이끌었습니다.",
+                "en": "I served as labor commissioner, leading the Bureau of Labor and Industries."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "노동위원장 재임 기록을 먼저 보죠. 주 노동산업국과 연방 하원 자료는 따로 살펴볼 수 있습니다.",
+                "en": "Start with the labor commissioner's records. We can examine Bureau of Labor and Industries and House materials separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제가 맡았던 직책은 노동위원장이었습니다. 그 기록부터 찾고 나서 연방 하원 자료를 보죠.",
+                "en": "I served as labor commissioner. Start with those records, then turn to the House materials."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "노동기관이라는 답 노출 제거 및 자료 접근의 목적 부여",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-685",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "aide",
+            "ko": "롱아일랜드의 두 의원에게 각각 별도의 서류를 전달해야 합니다. 첫 번째 묶음에는 제1선거구, 두 번째에는 제2선거구라고만 적혀 있습니다.",
+            "en": "Two packets must go to different Long Island members. One is marked District One, the other District Two."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "이름이 아니라 번호만 남았군요. 어느 의원에게 두 번째 묶음을 전달할지 정해 주세요.",
+            "en": "Only the numbers remain. Decide which member should receive the second packet."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "뉴욕 2구의 연락 담당 의원은 {{blank}}입니다.",
+          "en": "New York's Second District is represented by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "가바리노",
+              "en": "Garbarino"
+            },
+            {
+              "id": "B",
+              "ko": "라로타",
+              "en": "LaLota"
+            },
+            {
+              "id": "C",
+              "ko": "로울러",
+              "en": "Lawler"
+            },
+            {
+              "id": "D",
+              "ko": "골든",
+              "en": "Golden"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "aide",
+              "ko": "제2선거구 서류는 가바리노 의원에게 전달하고 나머지는 라로타 의원에게 전달하겠습니다.",
+              "en": "I'll send the District Two packet to Garbarino and the other to LaLota."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2구는 가바리노, 1구는 라로타입니다.",
+              "en": "Garbarino represents District Two; LaLota represents District One."
+            }
+          ]
+        },
+        "context": {
+          "ko": "1구와 2구 주소의 문의가 함께 들어와 두 의원에게 분류를 부탁한다.",
+          "en": "Requests from districts One and Two arrive together."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "aide",
+              "ko": "롱아일랜드의 두 의원에게 각각 별도의 서류를 전달해야 합니다. 첫 번째 묶음에는 제1선거구, 두 번째에는 제2선거구라고만 적혀 있습니다.",
+              "en": "Two packets must go to different Long Island members. One is marked District One, the other District Two."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이름이 아니라 번호만 남았군요. 어느 의원에게 두 번째 묶음을 전달할지 정해 주세요.",
+              "en": "Only the numbers remain. Decide which member should receive the second packet."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "롱아일랜드 주민 두 사람이 각각 자기 지역구 의원에게 질문하려고 기다립니다. 한 사람은 1구, 다른 사람은 2구입니다.",
+              "en": "Two Long Island residents want to speak to their own representatives. One is from District One, the other from District Two."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1구 주민은 제가 만나겠습니다. 2구 주민도 자기 의원에게 소개해 주세요.",
+              "en": "I'll meet the District One resident. Please introduce the District Two resident to their representative."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "두 사람의 문의가 섞이지 않도록 이름부터 확인하고 시작하죠.",
+              "en": "Let's establish names before we start so the two questions don't get mixed up."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "뉴욕 2구의 연락 담당 의원은 {{blank}}입니다.",
+            "en": "New York's Second District is represented by {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "가바리노",
+                "en": "Garbarino"
+              },
+              {
+                "id": "B",
+                "ko": "라로타",
+                "en": "LaLota"
+              },
+              {
+                "id": "C",
+                "ko": "로울러",
+                "en": "Lawler"
+              },
+              {
+                "id": "D",
+                "ko": "골든",
+                "en": "Golden"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2구 주민은 {{blank}} 의원님께 질문하시면 됩니다.",
+            "en": "The District Two resident can speak with Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "가바리노",
+                "en": "Garbarino"
+              },
+              {
+                "id": "B",
+                "ko": "라로타",
+                "en": "LaLota"
+              },
+              {
+                "id": "C",
+                "ko": "로울러",
+                "en": "Lawler"
+              },
+              {
+                "id": "D",
+                "ko": "골든",
+                "en": "Golden"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "aide",
+                "ko": "제2선거구 서류는 가바리노 의원에게 전달하고 나머지는 라로타 의원에게 전달하겠습니다.",
+                "en": "I'll send the District Two packet to Garbarino and the other to LaLota."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2구는 가바리노, 1구는 라로타입니다.",
+                "en": "Garbarino represents District Two; LaLota represents District One."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "제가 2구를 맡은 가바리노입니다. 첫 질문을 들어 보죠.",
+                "en": "I'm Garbarino, the District Two member. Let's hear your first question."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "1구 주민은 제게 오시면 됩니다.",
+                "en": "And the District One resident can come to me."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2구는 제가 맡습니다. 가바리노입니다. 라로타 의원은 1구이고요. 질문을 이어가세요.",
+                "en": "I'm Garbarino, the District Two member; LaLota represents District One. Please go ahead with the questions."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "1구와 2구 주소의 문의가 함께 들어와 두 의원에게 분류를 부탁한다.",
+            "en": "Requests from districts One and Two arrive together."
+          },
+          "after": {
+            "ko": "롱아일랜드 주민 두 사람을 각각의 지역구 의원에게 직접 소개한다.",
+            "en": "Introduce two Long Island residents to their respective representatives."
+          }
+        }
+      ],
+      "reason": "두 정치인 모두 직접 주민을 만나게 함",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-686",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이 사진을 보니 처음 의회에 왔을 때가 생각나네요.",
+            "en": "This takes me back to when I first arrived in Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 2023년 같은 시기에 임기를 시작했죠.",
+            "en": "I began my term in 2023 as well."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 분이 처음 함께 속한 의회는 {{blank}}입니다.",
+          "en": "The first Congress in which you both served was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제116대 의회",
+              "en": "116th Congress"
+            },
+            {
+              "id": "B",
+              "ko": "제117대 의회",
+              "en": "117th Congress"
+            },
+            {
+              "id": "C",
+              "ko": "제119대 의회",
+              "en": "119th Congress"
+            },
+            {
+              "id": "D",
+              "ko": "제118대 의회",
+              "en": "118th Congress"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "사진 설명에 정확한 회기를 남겨 주세요.",
+              "en": "Put the correct Congress in the caption."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2023년 시작한 제118대 의회가 두 사람의 첫 회기입니다.",
+              "en": "The 118th Congress, beginning in 2023, was our first."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 사진을 보니 처음 의회에 왔을 때가 생각나네요.",
+              "en": "This takes me back to when I first arrived in Congress."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저도 2023년 같은 시기에 임기를 시작했죠.",
+              "en": "I began my term in 2023 as well."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "신임 의원을 소개할 때 처음 들어온 회기가 궁금한 사람이 많더군요. 저와 사이크스 의원도 같은 회기에 시작했습니다.",
+              "en": "People often ask which Congress a member first entered. Representative Sykes and I began in the same one."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "각자를 소개하기 전에 그 공통점부터 말해 주시겠어요?",
+              "en": "Would you start with that shared experience before introducing us individually?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "두 분이 처음 함께 속한 의회는 {{blank}}입니다.",
+            "en": "The first Congress in which you both served was the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "제116대 의회",
+                "en": "116th Congress"
+              },
+              {
+                "id": "B",
+                "ko": "제117대 의회",
+                "en": "117th Congress"
+              },
+              {
+                "id": "C",
+                "ko": "제119대 의회",
+                "en": "119th Congress"
+              },
+              {
+                "id": "D",
+                "ko": "제118대 의회",
+                "en": "118th Congress"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "두 분은 {{blank}}에서 함께 하원 경력을 시작하셨습니다.",
+            "en": "You both began your House careers in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "제116대 의회",
+                "en": "116th Congress"
+              },
+              {
+                "id": "B",
+                "ko": "제117대 의회",
+                "en": "117th Congress"
+              },
+              {
+                "id": "C",
+                "ko": "제119대 의회",
+                "en": "119th Congress"
+              },
+              {
+                "id": "D",
+                "ko": "제118대 의회",
+                "en": "118th Congress"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "사진 설명에 정확한 회기를 남겨 주세요.",
+                "en": "Put the correct Congress in the caption."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2023년 시작한 제118대 의회가 두 사람의 첫 회기입니다.",
+                "en": "The 118th Congress, beginning in 2023, was our first."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "2023년 1월에 시작한 제118대 의회였죠. 그때의 신임 의원 명단도 함께 살펴봅시다.",
+                "en": "The 118th, beginning in January 2023. Let's also look at that Congress's freshman roster."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제118대 의회입니다. 둘 다 2023년 1월에 시작했죠. 이제 당시 명단을 살펴봅시다.",
+                "en": "It was the 118th Congress; we both started in January 2023. Let's look at that roster."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "연도 선공개 삭제; 동기 의원 소개",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-687",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지도에는 아이다호 1구가 표시되어 있습니다.",
+            "en": "My map shows Idaho's First District."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 다른 하원 선거구를 맡고 있습니다.",
+            "en": "I represent the other House district."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "아이다호 2구는 {{blank}} 의원의 지역구입니다.",
+          "en": "Idaho's Second District is represented by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴하우스",
+              "en": "Newhouse"
+            },
+            {
+              "id": "B",
+              "ko": "벤츠",
+              "en": "Bentz"
+            },
+            {
+              "id": "C",
+              "ko": "심프슨",
+              "en": "Simpson"
+            },
+            {
+              "id": "D",
+              "ko": "풀처",
+              "en": "Fulcher"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 장을 함께 걸면 주 대표단 전체를 볼 수 있겠군요.",
+              "en": "Putting both maps up will show the state's delegation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "심프슨이 2구, 풀처가 1구를 맡습니다.",
+              "en": "Simpson represents District Two and Fulcher District One."
+            }
+          ]
+        },
+        "context": {
+          "ko": "한 참가자가 두 의원 중 누가 2구를 맡는지 물으며 지도 두 장을 꺼낸다.",
+          "en": "A participant unfolds two maps and asks who represents District Two."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 지도에는 아이다호 1구가 표시되어 있습니다.",
+              "en": "My map shows Idaho's First District."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 다른 하원 선거구를 맡고 있습니다.",
+              "en": "I represent the other House district."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "아이다호 2구에서 온 방문객이 의원님 두 분 가운데 자신의 대표를 만나고 싶다고 합니다.",
+              "en": "A visitor from Idaho's Second District wants to meet their representative among these two members."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "아이다호 대표단이라는 사실만으로는 충분하지 않겠군요.",
+              "en": "Knowing that we're both in the Idaho delegation isn't quite enough."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "방문객에게 자기 지역구 의원의 이름을 알려 주시겠어요?",
+              "en": "Would you introduce the visitor's own representative by name?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "아이다호 2구는 {{blank}} 의원의 지역구입니다.",
+            "en": "Idaho's Second District is represented by {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴하우스",
+                "en": "Newhouse"
+              },
+              {
+                "id": "B",
+                "ko": "벤츠",
+                "en": "Bentz"
+              },
+              {
+                "id": "C",
+                "ko": "심프슨",
+                "en": "Simpson"
+              },
+              {
+                "id": "D",
+                "ko": "풀처",
+                "en": "Fulcher"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2구 주민님, {{blank}} 의원님을 소개합니다.",
+            "en": "For our District Two visitor, let me introduce Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴하우스",
+                "en": "Newhouse"
+              },
+              {
+                "id": "B",
+                "ko": "벤츠",
+                "en": "Bentz"
+              },
+              {
+                "id": "C",
+                "ko": "심프슨",
+                "en": "Simpson"
+              },
+              {
+                "id": "D",
+                "ko": "풀처",
+                "en": "Fulcher"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 장을 함께 걸면 주 대표단 전체를 볼 수 있겠군요.",
+                "en": "Putting both maps up will show the state's delegation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "심프슨이 2구, 풀처가 1구를 맡습니다.",
+                "en": "Simpson represents District Two and Fulcher District One."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "마이클 심프슨입니다. 2구 주민의 질문을 듣겠습니다.",
+                "en": "I'm Michael Simpson. Let's hear the District Two resident's question."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "저는 1구의 러스 풀처입니다.",
+                "en": "I'm Russ Fulcher, from District One."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제가 2구를 대표하는 마이클 심프슨입니다. 풀처 의원은 1구이고요. 질문을 시작하시죠.",
+                "en": "I'm Michael Simpson, representing District Two; Fulcher represents District One. Let's begin."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "한 참가자가 두 의원 중 누가 2구를 맡는지 물으며 지도 두 장을 꺼낸다.",
+            "en": "A participant unfolds two maps and asks who represents District Two."
+          },
+          "after": {
+            "ko": "아이다호 주민에게 해당 지역구 의원을 대면 소개한다.",
+            "en": "Introduce an Idaho resident to the member representing their district."
+          }
+        }
+      ],
+      "reason": "선택이 한 명 소거로 끝나지 않도록 직접 인사 상황",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-688",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "같은 워싱턴주 의원이라도 정당은 다를 수 있죠.",
+            "en": "Members from Washington need not belong to the same party."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 소속은 민주당입니다.",
+            "en": "I'm a Democrat."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "뉴하우스 의원의 정당은 {{blank}}입니다.",
+          "en": "Representative Newhouse belongs to the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "자유당",
+              "en": "Libertarian Party"
+            },
+            {
+              "id": "B",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "C",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "D",
+              "ko": "녹색당",
+              "en": "Green Party"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지역구와 정당을 서로 다른 항목으로 기록합시다.",
+              "en": "Let's record district and party in separate fields."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 워싱턴 4구의 공화당 의원입니다.",
+              "en": "I'm a Republican representing Washington's Fourth District."
+            }
+          ]
+        },
+        "context": {
+          "ko": "한 학생이 두 의원의 같은 주 소속을 같은 정당 소속으로 착각한다.",
+          "en": "A student mistakes shared state representation for shared party affiliation."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "같은 워싱턴주 의원이라도 정당은 다를 수 있죠.",
+              "en": "Members from Washington need not belong to the same party."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 소속은 민주당입니다.",
+              "en": "I'm a Democrat."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "워싱턴주 대표단의 두 의원을 한 패널에 모셨습니다. 사회자가 같은 정당 소속이라고 소개하려 합니다.",
+              "en": "Two Washington delegation members are on the panel. The moderator is about to introduce them as members of the same party."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "같은 주를 대표한다고 정당까지 같은 건 아니죠. 소개를 바로잡아 주시겠어요?",
+              "en": "Representing the same state doesn't mean belonging to the same party. Would you correct the introduction?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 4구와 정당을 먼저 말해 주세요.",
+              "en": "Start with my Fourth District and party."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "뉴하우스 의원의 정당은 {{blank}}입니다.",
+            "en": "Representative Newhouse belongs to the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "자유당",
+                "en": "Libertarian Party"
+              },
+              {
+                "id": "B",
+                "ko": "공화당",
+                "en": "Republican Party"
+              },
+              {
+                "id": "C",
+                "ko": "민주당",
+                "en": "Democratic Party"
+              },
+              {
+                "id": "D",
+                "ko": "녹색당",
+                "en": "Green Party"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "뉴하우스 의원님은 워싱턴 4구의 {{blank}} 의원입니다.",
+            "en": "Representative Newhouse represents Washington's Fourth District as a member of the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "자유당",
+                "en": "Libertarian Party"
+              },
+              {
+                "id": "B",
+                "ko": "공화당",
+                "en": "Republican Party"
+              },
+              {
+                "id": "C",
+                "ko": "민주당",
+                "en": "Democratic Party"
+              },
+              {
+                "id": "D",
+                "ko": "녹색당",
+                "en": "Green Party"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역구와 정당을 서로 다른 항목으로 기록합시다.",
+                "en": "Let's record district and party in separate fields."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 워싱턴 4구의 공화당 의원입니다.",
+                "en": "I'm a Republican representing Washington's Fourth District."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공화당입니다.",
+                "en": "Republican."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "저는 민주당의 10구 의원입니다. 이제 각자 소개를 이어가죠.",
+                "en": "I'm a Democrat representing District Ten. Let's continue with individual introductions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 공화당 소속입니다. 스트릭랜드 의원은 민주당이죠. 두 분을 구별해 소개하면 됩니다.",
+                "en": "I'm a Republican; Representative Strickland is a Democrat. Introduce us separately by party."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "한 학생이 두 의원의 같은 주 소속을 같은 정당 소속으로 착각한다.",
+            "en": "A student mistakes shared state representation for shared party affiliation."
+          },
+          "after": {
+            "ko": "같은 주의 두 의원을 같은 정당으로 잘못 소개하려는 사회자를 돕는다.",
+            "en": "Help a moderator avoid misintroducing two members of the same state as belonging to the same party."
+          }
+        }
+      ],
+      "reason": "상대 정당 선공개 삭제; 사회자의 오인 수정",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-690",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 연방 하원 임기는 2021년에 시작했어요.",
+            "en": "My House service began in 2021."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 그다음 의회에 들어왔습니다.",
+            "en": "I entered in the following Congress."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "브리친 의원이 하원에 처음 들어온 해는 {{blank}}입니다.",
+          "en": "Brecheen first entered the House in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2019년",
+              "en": "2019"
+            },
+            {
+              "id": "B",
+              "ko": "2021년",
+              "en": "2021"
+            },
+            {
+              "id": "C",
+              "ko": "2025년",
+              "en": "2025"
+            },
+            {
+              "id": "D",
+              "ko": "2023년",
+              "en": "2023"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "사진의 순서가 맞습니다. 신임 의원 명부도 함께 두죠.",
+              "en": "The order is right. Let's keep the freshman roster with it."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "브리친은 2023년 1월부터 오클라호마 2구를 맡았습니다.",
+              "en": "Brecheen began representing Oklahoma's Second District in January 2023."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 연방 하원 임기는 2021년에 시작했어요.",
+              "en": "My House service began in 2021."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 그다음 의회에 들어왔습니다.",
+              "en": "I entered in the following Congress."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "오클라호마 대표단에 온 방문객이 우리 두 사람이 같은 회기에 처음 하원에 들어왔다고 생각하는군요.",
+              "en": "A visitor to the Oklahoma delegation thinks the two of us first entered the House in the same Congress."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "그렇지 않습니다. 제 첫 임기를 먼저 소개해 주시겠어요?",
+              "en": "That's not quite right. Would you introduce my first term?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "브리친 의원이 하원에 처음 들어온 해는 {{blank}}입니다.",
+            "en": "Brecheen first entered the House in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2019년",
+                "en": "2019"
+              },
+              {
+                "id": "B",
+                "ko": "2021년",
+                "en": "2021"
+              },
+              {
+                "id": "C",
+                "ko": "2025년",
+                "en": "2025"
+              },
+              {
+                "id": "D",
+                "ko": "2023년",
+                "en": "2023"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "브리친 의원님은 {{blank}}에 하원에 처음 들어오셨습니다.",
+            "en": "Representative Brecheen first entered the House in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2019년",
+                "en": "2019"
+              },
+              {
+                "id": "B",
+                "ko": "2021년",
+                "en": "2021"
+              },
+              {
+                "id": "C",
+                "ko": "2025년",
+                "en": "2025"
+              },
+              {
+                "id": "D",
+                "ko": "2023년",
+                "en": "2023"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "사진의 순서가 맞습니다. 신임 의원 명부도 함께 두죠.",
+                "en": "The order is right. Let's keep the freshman roster with it."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "브리친은 2023년 1월부터 오클라호마 2구를 맡았습니다.",
+                "en": "Brecheen began representing Oklahoma's Second District in January 2023."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "2023년 1월, 오클라호마 2구였습니다.",
+                "en": "January 2023, representing Oklahoma's Second District."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "저는 2021년에 시작했습니다. 서로 다른 회기였다는 점도 소개해 주세요.",
+                "en": "I began in 2021. Mention that we entered in different Congresses."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 첫 임기는 2023년입니다. 바이스 의원은 2021년에 시작했죠. 방문객에게 다시 설명해 주세요.",
+                "en": "My first term began in 2023; Bice began in 2021. Please explain the difference to the visitor."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "다음 회기라는 연도 공개 삭제",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-693",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번에는 제 3구 자료도 함께 준비했습니다.",
+            "en": "This time I've brought material for my Third District."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지난번 이야기한 제 2구 자료와 나란히 두면 되겠네요.",
+            "en": "We can place it beside the Second District materials we discussed."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "뉴멕시코 3구 자료의 담당자는 {{blank}} 의원입니다.",
+          "en": "The New Mexico Third District materials belong to Representative {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "레헤르 페르난데스",
+              "en": "Leger Fernandez"
+            },
+            {
+              "id": "B",
+              "ko": "바스케스",
+              "en": "Vasquez"
+            },
+            {
+              "id": "C",
+              "ko": "호일",
+              "en": "Hoyle"
+            },
+            {
+              "id": "D",
+              "ko": "슈리어",
+              "en": "Schrier"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난 방문 기록에 새로운 지역구를 추가합시다.",
+              "en": "Let's add the new district to the prior visit notes."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "3구는 제가, 2구는 바스케스 의원이 맡습니다.",
+              "en": "I represent District Three and Vasquez represents District Two."
+            }
+          ]
+        },
+        "context": {
+          "ko": "앞서 라스크루시스 시의회 경력을 이야기한 바스케스와 다른 뉴멕시코 의원을 만난다.",
+          "en": "Meet Vasquez again after discussing his city council service, now with another New Mexico member."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번에는 제 3구 자료도 함께 준비했습니다.",
+              "en": "This time I've brought material for my Third District."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "지난번 이야기한 제 2구 자료와 나란히 두면 되겠네요.",
+              "en": "We can place it beside the Second District materials we discussed."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:1",
+              "ko": "뉴멕시코 2구를 맡고 있는 게이브 바스케스입니다. 오늘은 다른 지역구의 동료도 함께 만나 보시죠.",
+              "en": "I'm Gabe Vasquez, representing New Mexico's Second District. Today let's meet a colleague from another district."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "반갑습니다. 2구와 3구 주민의 질문을 따로 받으면 좋겠군요.",
+              "en": "Good to meet you. Let's hear questions from District Two and District Three residents separately."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "3구 주민에게 제 동료를 소개해 주시겠어요?",
+              "en": "Would you introduce my colleague to the District Three resident?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "뉴멕시코 3구 자료의 담당자는 {{blank}} 의원입니다.",
+            "en": "The New Mexico Third District materials belong to Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "레헤르 페르난데스",
+                "en": "Leger Fernandez"
+              },
+              {
+                "id": "B",
+                "ko": "바스케스",
+                "en": "Vasquez"
+              },
+              {
+                "id": "C",
+                "ko": "호일",
+                "en": "Hoyle"
+              },
+              {
+                "id": "D",
+                "ko": "슈리어",
+                "en": "Schrier"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "뉴멕시코 3구의 {{blank}} 의원님입니다.",
+            "en": "This is Representative {{blank}}, from New Mexico's Third District.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "레헤르 페르난데스",
+                "en": "Leger Fernandez"
+              },
+              {
+                "id": "B",
+                "ko": "바스케스",
+                "en": "Vasquez"
+              },
+              {
+                "id": "C",
+                "ko": "호일",
+                "en": "Hoyle"
+              },
+              {
+                "id": "D",
+                "ko": "슈리어",
+                "en": "Schrier"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지난 방문 기록에 새로운 지역구를 추가합시다.",
+                "en": "Let's add the new district to the prior visit notes."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "3구는 제가, 2구는 바스케스 의원이 맡습니다.",
+                "en": "I represent District Three and Vasquez represents District Two."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "테레사 레헤르 페르난데스입니다. 3구 주민의 질문을 듣겠습니다.",
+                "en": "I'm Teresa Leger Fernandez. Let's hear the District Three resident's question."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "2구 질문은 제게 주세요.",
+                "en": "Send District Two questions to me."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "테레사 레헤르 페르난데스입니다. 제가 3구를 맡고 있고 바스케스 의원은 2구입니다. 질문을 이어가죠.",
+                "en": "I'm Teresa Leger Fernandez. I represent District Three; Vasquez represents District Two. Let's continue."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "앞서 라스크루시스 시의회 경력을 이야기한 바스케스와 다른 뉴멕시코 의원을 만난다.",
+            "en": "Meet Vasquez again after discussing his city council service, now with another New Mexico member."
+          },
+          "after": {
+            "ko": "바스케스가 뉴멕시코 대표단의 다른 의원을 소개한다. 선행 만남 여부는 가정하지 않는다.",
+            "en": "Vasquez introduces a colleague from the New Mexico delegation, without assuming a prior encounter."
+          }
+        }
+      ],
+      "reason": "순서 강제 없이 바스케스가 동료를 소개; 재회 엔진 제안과 분리",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": "Conditional memory of prior encounter needs engine gating."
+    },
+    {
+      "id": "P01-695",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제가 처음 연방 하원에 들어온 회기를 기준으로 계산해 주세요.",
+            "en": "Use the Congress in which I first entered the House."
+          },
+          {
+            "speaker": "player",
+            "ko": "그럼 지금 두 번째 임기라는 점도 설명할 수 있겠네요.",
+            "en": "Then we can explain that this is your second term."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "숄튼 의원의 첫 하원 임기는 {{blank}}에 시작했습니다.",
+          "en": "Scholten's first House term began in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2021년",
+              "en": "2021"
+            },
+            {
+              "id": "B",
+              "ko": "2025년",
+              "en": "2025"
+            },
+            {
+              "id": "C",
+              "ko": "2023년",
+              "en": "2023"
+            },
+            {
+              "id": "D",
+              "ko": "2017년",
+              "en": "2017"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "첫 임기와 두 번째 임기를 구분해 기록해 주세요.",
+              "en": "Record the first and second terms separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2023년 미시간 3구에서 첫 임기를 시작했습니다.",
+              "en": "My first term began in 2023 in Michigan's Third District."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제가 처음 연방 하원에 들어온 회기를 기준으로 계산해 주세요.",
+              "en": "Use the Congress in which I first entered the House."
+            },
+            {
+              "speaker": "player",
+              "ko": "그럼 지금 두 번째 임기라는 점도 설명할 수 있겠네요.",
+              "en": "Then we can explain that this is your second term."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "학생이 숄튼 의원님을 이번 회기에 처음 하원에 온 신임 의원이라고 소개하려 합니다.",
+              "en": "A student is about to introduce Representative Scholten as a freshman who first entered the House this Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "현재 회기와 처음 임기를 시작한 회기는 구분해야 합니다. 학생에게 제 첫 임기를 알려 주시겠어요?",
+              "en": "My current Congress and my first Congress need to be distinguished. Would you tell the student when my first term began?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "숄튼 의원의 첫 하원 임기는 {{blank}}에 시작했습니다.",
+            "en": "Scholten's first House term began in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2021년",
+                "en": "2021"
+              },
+              {
+                "id": "B",
+                "ko": "2025년",
+                "en": "2025"
+              },
+              {
+                "id": "C",
+                "ko": "2023년",
+                "en": "2023"
+              },
+              {
+                "id": "D",
+                "ko": "2017년",
+                "en": "2017"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "숄튼 의원님의 첫 하원 임기는 {{blank}}에 시작했습니다.",
+            "en": "Representative Scholten's first House term began in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2021년",
+                "en": "2021"
+              },
+              {
+                "id": "B",
+                "ko": "2025년",
+                "en": "2025"
+              },
+              {
+                "id": "C",
+                "ko": "2023년",
+                "en": "2023"
+              },
+              {
+                "id": "D",
+                "ko": "2017년",
+                "en": "2017"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "첫 임기와 두 번째 임기를 구분해 기록해 주세요.",
+                "en": "Record the first and second terms separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2023년 미시간 3구에서 첫 임기를 시작했습니다.",
+                "en": "My first term began in 2023 in Michigan's Third District."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "2023년, 미시간 3구였습니다. 이제 학생이 첫 회기와 이번 회기를 구별해 소개할 수 있겠네요.",
+                "en": "In 2023, representing Michigan's Third District. Now the student can distinguish my first Congress from the current one."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2023년 미시간 3구에서 시작했습니다. 이번 회기에 처음 들어온 것은 아닙니다. 소개를 이어가세요.",
+                "en": "I began in 2023, in Michigan's Third District. This isn't my first Congress. Please continue the introduction."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "두 번째 임기 단서 제거; 신임 의원 오인 정정",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-698",
+      "path": "data/dialogue-packs/P01/part-28.json",
+      "originalBlobSha": "d710270ff63287a3e85599d33480e1cad7d3720e",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "aide",
+            "ko": "버지니아 주민 간담회 녹취록의 발언자 표지가 떨어졌습니다. 제8선거구와 제2선거구라는 표지만 남았어요.",
+            "en": "The speaker labels fell off the Virginia constituent-forum transcript. Only District Eight and District Two remain."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "각 지역구는 따로 기록해야 합니다. 먼저 제8선거구 발언자의 이름부터 복원하시죠.",
+            "en": "Each district needs its own label. Start by restoring the name for the District Eight speaker."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "버지니아 8구는 {{blank}} 의원의 지역구입니다.",
+          "en": "Virginia's Eighth District is represented by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "키건스",
+              "en": "Kiggans"
+            },
+            {
+              "id": "B",
+              "ko": "위트먼",
+              "en": "Wittman"
+            },
+            {
+              "id": "C",
+              "ko": "바스케스",
+              "en": "Vasquez"
+            },
+            {
+              "id": "D",
+              "ko": "베이어",
+              "en": "Beyer"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "aide",
+              "ko": "제8선거구는 베이어, 제2선거구는 키건스 의원으로 기록하겠습니다.",
+              "en": "I'll label District Eight as Beyer and District Two as Kiggans."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "베이어가 8구, 키건스가 2구를 대표합니다.",
+              "en": "Beyer represents the Eighth and Kiggans the Second."
+            }
+          ]
+        },
+        "context": {
+          "ko": "버지니아 8구와 2구 주민 방문 일정이 같은 날 잡혀 있다.",
+          "en": "Visits from Virginia's Eighth and Second districts fall on the same day."
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "aide",
+              "ko": "버지니아 주민 간담회 녹취록의 발언자 표지가 떨어졌습니다. 제8선거구와 제2선거구라는 표지만 남았어요.",
+              "en": "The speaker labels fell off the Virginia constituent-forum transcript. Only District Eight and District Two remain."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "각 지역구는 따로 기록해야 합니다. 먼저 제8선거구 발언자의 이름부터 복원하시죠.",
+              "en": "Each district needs its own label. Start by restoring the name for the District Eight speaker."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "버지니아 8구 주민이 자신의 의원에게 문의할 자리를 찾고 있습니다. 2구 주민도 옆에서 기다려요.",
+              "en": "A Virginia District Eight resident is looking for their representative; a District Two resident is waiting nearby."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "2구 주민은 제가 만나겠습니다. 8구 주민에게는 동료 의원을 소개해 주세요.",
+              "en": "I'll meet the District Two resident. Please introduce my colleague to the District Eight resident."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "각자 자기 지역구의 주민부터 만나죠.",
+              "en": "Let's each meet the resident from our own district first."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "버지니아 8구는 {{blank}} 의원의 지역구입니다.",
+            "en": "Virginia's Eighth District is represented by {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "키건스",
+                "en": "Kiggans"
+              },
+              {
+                "id": "B",
+                "ko": "위트먼",
+                "en": "Wittman"
+              },
+              {
+                "id": "C",
+                "ko": "바스케스",
+                "en": "Vasquez"
+              },
+              {
+                "id": "D",
+                "ko": "베이어",
+                "en": "Beyer"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "8구 주민은 {{blank}} 의원님께 질문하시면 됩니다.",
+            "en": "The District Eight resident can speak with Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "키건스",
+                "en": "Kiggans"
+              },
+              {
+                "id": "B",
+                "ko": "위트먼",
+                "en": "Wittman"
+              },
+              {
+                "id": "C",
+                "ko": "바스케스",
+                "en": "Vasquez"
+              },
+              {
+                "id": "D",
+                "ko": "베이어",
+                "en": "Beyer"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "aide",
+                "ko": "제8선거구는 베이어, 제2선거구는 키건스 의원으로 기록하겠습니다.",
+                "en": "I'll label District Eight as Beyer and District Two as Kiggans."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "베이어가 8구, 키건스가 2구를 대표합니다.",
+                "en": "Beyer represents the Eighth and Kiggans the Second."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "돈 베이어입니다. 8구 주민의 질문을 받겠습니다.",
+                "en": "I'm Don Beyer. I'll take the District Eight resident's question."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "저는 2구의 젠 키건스입니다.",
+                "en": "I'm Jen Kiggans, from District Two."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "8구는 제가 맡습니다. 돈 베이어입니다. 2구는 키건스 의원이 맡죠. 이제 질문해 주세요.",
+                "en": "I represent District Eight—Don Beyer. Kiggans represents District Two. Please go ahead with your question."
+              }
+            ]
+          }
+        },
+        {
+          "field": "context",
+          "before": {
+            "ko": "버지니아 8구와 2구 주민 방문 일정이 같은 날 잡혀 있다.",
+            "en": "Visits from Virginia's Eighth and Second districts fall on the same day."
+          },
+          "after": {
+            "ko": "버지니아 주민 두 사람을 실제 지역구에 맞게 소개한다.",
+            "en": "Introduce two Virginia residents according to their respective districts."
+          }
+        }
+      ],
+      "reason": "베이어도 직접 발화; 실제 질문 전달",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-701",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 회기에는 상원에서 일합니다.",
+            "en": "I'll serve in the Senate next term."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하원 자료와 상원 자료를 구별해야겠군요.",
+            "en": "We'll need to separate House and Senate papers."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "언더우드가 상원에서 대표할 주는 {{blank}}입니다.",
+          "en": "Underwood will represent {{blank}} in the Senate.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "테네시",
+              "en": "Tennessee"
+            },
+            {
+              "id": "B",
+              "ko": "노스캐롤라이나",
+              "en": "North Carolina"
+            },
+            {
+              "id": "C",
+              "ko": "앨라배마",
+              "en": "Alabama"
+            },
+            {
+              "id": "D",
+              "ko": "조지아",
+              "en": "Georgia"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 기관의 기록을 나눠 보관하죠.",
+              "en": "Keep separate records for the two chambers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1914년에 앨라배마 상원의원으로 선출됐습니다.",
+              "en": "I was elected to the Senate from Alabama in 1914."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "새 회기에는 상원에서 일합니다.",
+              "en": "I'll serve in the Senate next term."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "하원 자료와 상원 자료를 구별해야겠군요.",
+              "en": "We'll need to separate House and Senate papers."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번 회기가 끝나면 저는 하원을 떠납니다. 새 직책으로 연락하려는 방문객에게 어느 주의 상원의원으로 선출됐는지 알려 주세요.",
+              "en": "I'll leave the House when this Congress ends. Tell visitors hoping to contact me in my new office which state elected me to the Senate."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "하원에서 이어지는 논의와 상원으로 가는 연락은 따로 받으면 되겠군요.",
+              "en": "We can distinguish matters continuing in the House from correspondence going to the Senate."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "언더우드가 상원에서 대표할 주는 {{blank}}입니다.",
+            "en": "Underwood will represent {{blank}} in the Senate.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "테네시",
+                "en": "Tennessee"
+              },
+              {
+                "id": "B",
+                "ko": "노스캐롤라이나",
+                "en": "North Carolina"
+              },
+              {
+                "id": "C",
+                "ko": "앨라배마",
+                "en": "Alabama"
+              },
+              {
+                "id": "D",
+                "ko": "조지아",
+                "en": "Georgia"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "언더우드 의원님은 {{blank}}의 상원의원으로 선출되셨습니다.",
+            "en": "You were elected to the Senate from {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "테네시",
+                "en": "Tennessee"
+              },
+              {
+                "id": "B",
+                "ko": "노스캐롤라이나",
+                "en": "North Carolina"
+              },
+              {
+                "id": "C",
+                "ko": "앨라배마",
+                "en": "Alabama"
+              },
+              {
+                "id": "D",
+                "ko": "조지아",
+                "en": "Georgia"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 기관의 기록을 나눠 보관하죠.",
+                "en": "Keep separate records for the two chambers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1914년에 앨라배마 상원의원으로 선출됐습니다.",
+                "en": "I was elected to the Senate from Alabama in 1914."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "앨라배마에서 1914년에 선출됐습니다. 새 회기에는 상원에서 만나죠.",
+                "en": "Alabama elected me in 1914. We can meet in the Senate in the next Congress."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "하원 쪽 문의는 여기에 남기세요.",
+                "en": "Leave House inquiries here."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "앨라배마입니다. 1914년에 선출됐죠. 새 회기가 시작되기 전까지는 하원 기록과 구별해 주세요.",
+                "en": "Alabama. I was elected in 1914. Keep that distinct from my House record until the next Congress begins."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "상원 전환에 따른 작별 인사 및 연락처 변경",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-708",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "aide",
+            "ko": "안건을 준비하는 의원들이 회의 당일에야 일정을 알게 되면 검토 시간이 부족합니다.",
+            "en": "Members have too little time to prepare when they learn the schedule on the day of business."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "의사일정을 공개하는 방식부터 바꿔야겠군요. 어떤 방식이 준비 시간을 확보할까요?",
+            "en": "The way the schedule is made available matters. Which approach would give members time to prepare?"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "롱워스 의장은 일정을 {{blank}}하도록 요구했습니다.",
+          "en": "Longworth required House schedules to be {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "회의 후 폐기",
+              "en": "destroyed after sessions"
+            },
+            {
+              "id": "B",
+              "ko": "상원에만 공개",
+              "en": "available only to senators"
+            },
+            {
+              "id": "C",
+              "ko": "비밀로 유지",
+              "en": "kept secret"
+            },
+            {
+              "id": "D",
+              "ko": "미리 게시",
+              "en": "posted in advance"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "aide",
+              "ko": "그러면 의원들이 토론 전에 법안을 살펴볼 수 있겠군요.",
+              "en": "That gives members a chance to examine legislation before debate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "일정은 미리 게시하도록 했습니다.",
+              "en": "I required the schedule to be posted in advance."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "aide",
+              "ko": "안건을 준비하는 의원들이 회의 당일에야 일정을 알게 되면 검토 시간이 부족합니다.",
+              "en": "Members have too little time to prepare when they learn the schedule on the day of business."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "의사일정을 공개하는 방식부터 바꿔야겠군요. 어떤 방식이 준비 시간을 확보할까요?",
+              "en": "The way the schedule is made available matters. Which approach would give members time to prepare?"
+            }
+          ],
+          "after": [
+            {
+              "speaker": "aide",
+              "ko": "내일 다룰 법안을 준비하려는 의원들이 언제 안건을 알 수 있는지 문의합니다.",
+              "en": "Members preparing legislation for tomorrow want to know when they can see the agenda."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "의원들이 회의 전에 안건을 검토할 수 있게 해야 합니다. 제가 요구한 공개 방식을 전달해 주세요.",
+              "en": "Members need a chance to review business before the session. Tell them how I required the schedule to be made available."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "롱워스 의장은 일정을 {{blank}}하도록 요구했습니다.",
+            "en": "Longworth required House schedules to be {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "회의 후 폐기",
+                "en": "destroyed after sessions"
+              },
+              {
+                "id": "B",
+                "ko": "상원에만 공개",
+                "en": "available only to senators"
+              },
+              {
+                "id": "C",
+                "ko": "비밀로 유지",
+                "en": "kept secret"
+              },
+              {
+                "id": "D",
+                "ko": "미리 게시",
+                "en": "posted in advance"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "하원 일정은 {{blank}}하도록 하겠습니다.",
+            "en": "House schedules should be {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "회의 시작 시 게시",
+                "en": "posted at the start of the session"
+              },
+              {
+                "id": "B",
+                "ko": "위원회 요청이 있을 때만 게시",
+                "en": "posted only at a committee's request"
+              },
+              {
+                "id": "C",
+                "ko": "회의 종료 후 게시",
+                "en": "posted after the session"
+              },
+              {
+                "id": "D",
+                "ko": "미리 게시",
+                "en": "posted in advance"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "aide",
+                "ko": "그러면 의원들이 토론 전에 법안을 살펴볼 수 있겠군요.",
+                "en": "That gives members a chance to examine legislation before debate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일정은 미리 게시하도록 했습니다.",
+                "en": "I required the schedule to be posted in advance."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미리 게시하면 의원들이 토론 전에 안건을 읽을 수 있겠죠.",
+                "en": "Posting them in advance gives members time to read the agenda before debate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제가 요구한 것은 일정을 미리 게시하는 방식입니다. 준비 시간이 확보되도록 안내해 주세요.",
+                "en": "I required schedules to be posted in advance. Let the members know so they can prepare."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "문제 해결형 장면의 강점 유지; 선택지 현실성 개선",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": "Alternative options are hypothetical scheduling choices, not historical assertions."
+    },
+    {
+      "id": "P01-709",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의원이 되기 전에도 하원 절차를 다루는 일을 했습니다.",
+            "en": "I worked with House procedure before becoming a member."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시의 직책을 정확히 기록하겠습니다.",
+            "en": "I'll record that position accurately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "크리스프는 1891년부터 1895년까지 하원 {{blank}}이었습니다.",
+          "en": "Crisp was House {{blank}} from 1891 to 1895.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "경위",
+              "en": "sergeant at arms"
+            },
+            {
+              "id": "B",
+              "ko": "도서관장",
+              "en": "librarian"
+            },
+            {
+              "id": "C",
+              "ko": "의사절차 자문관",
+              "en": "parliamentarian"
+            },
+            {
+              "id": "D",
+              "ko": "서기",
+              "en": "clerk"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "선출직과 전문 직원의 차이도 살펴보죠.",
+              "en": "Let's examine the distinction between elected and professional roles."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "그때는 하원 의사절차 자문관이었습니다.",
+              "en": "I was the House parliamentarian then."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의원이 되기 전에도 하원 절차를 다루는 일을 했습니다.",
+              "en": "I worked with House procedure before becoming a member."
+            },
+            {
+              "speaker": "player",
+              "ko": "당시의 직책을 정확히 기록하겠습니다.",
+              "en": "I'll record that position accurately."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "방문객이 하원 절차에 대한 조언을 하는 직원과 본회의를 주재하는 의원이 같은 직책인지 묻습니다.",
+              "en": "A visitor asks whether the staff member who advises on House procedure holds the same office as the member who presides."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저도 의원이 되기 전에 하원에서 일했습니다. 1891년부터 1895년까지 맡았던 직책을 소개해 주시겠어요?",
+              "en": "I worked in the House before becoming a member. Would you identify the office I held from 1891 to 1895?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "크리스프는 1891년부터 1895년까지 하원 {{blank}}이었습니다.",
+            "en": "Crisp was House {{blank}} from 1891 to 1895.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "경위",
+                "en": "sergeant at arms"
+              },
+              {
+                "id": "B",
+                "ko": "도서관장",
+                "en": "librarian"
+              },
+              {
+                "id": "C",
+                "ko": "의사절차 자문관",
+                "en": "parliamentarian"
+              },
+              {
+                "id": "D",
+                "ko": "서기",
+                "en": "clerk"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "크리스프 의원님은 당시 하원 {{blank}}이었습니다.",
+            "en": "At the time you were the House {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "경위",
+                "en": "sergeant at arms"
+              },
+              {
+                "id": "B",
+                "ko": "도서관장",
+                "en": "librarian"
+              },
+              {
+                "id": "C",
+                "ko": "의사절차 자문관",
+                "en": "parliamentarian"
+              },
+              {
+                "id": "D",
+                "ko": "서기",
+                "en": "clerk"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "선출직과 전문 직원의 차이도 살펴보죠.",
+                "en": "Let's examine the distinction between elected and professional roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "그때는 하원 의사절차 자문관이었습니다.",
+                "en": "I was the House parliamentarian then."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "의사절차 자문관이었죠. 제 선출직 경력과는 구분해서 설명하면 됩니다.",
+                "en": "Parliamentarian. Explain that separately from my elected service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 의사절차 자문관이었습니다. 선출직 의원이나 본회의 의장과는 구분되는 직책이죠.",
+                "en": "I was House parliamentarian, distinct from an elected member or the presiding officer."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "절차 자문과 선출직의 구별을 방문자의 질문에 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-714",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 6월 4일 의장으로 선출됐습니다.",
+            "en": "I was elected Speaker on June 4."
+          },
+          {
+            "speaker": "player",
+            "ko": "지도부 명단을 바꾸어야겠군요.",
+            "en": "The leadership directory needs updating."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "번스를 이어 의장이 된 분은 {{blank}}입니다.",
+          "en": "Byrns's successor as Speaker is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "버트런드 스넬",
+              "en": "Bertrand Snell"
+            },
+            {
+              "id": "B",
+              "ko": "윌리엄 뱅크헤드",
+              "en": "William Bankhead"
+            },
+            {
+              "id": "C",
+              "ko": "헨리 레이니",
+              "en": "Henry Rainey"
+            },
+            {
+              "id": "D",
+              "ko": "솔 블룸",
+              "en": "Sol Bloom"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "새 이름으로 안내문을 고쳐 주세요.",
+              "en": "Update the notice with the new name."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "뱅크헤드가 6월 4일 의장으로 선출됐습니다.",
+              "en": "Bankhead was elected Speaker on June 4."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 6월 4일 의장으로 선출됐습니다.",
+              "en": "I was elected Speaker on June 4."
+            },
+            {
+              "speaker": "player",
+              "ko": "지도부 명단을 바꾸어야겠군요.",
+              "en": "The leadership directory needs updating."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "6월 4일 이후 본회의 운영 문의의 수신인을 바꿔야 합니다. 예전 번스 의장 명단을 그대로 사용해서는 안 되겠죠.",
+              "en": "After June 4, we need to change the recipient for questions about House proceedings. We shouldn't keep using the old directory naming Speaker Byrns."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지도부가 바뀌어도 이전 의장의 기록을 지우면 안 됩니다. 새 문의는 누구에게 보내겠습니까?",
+              "en": "A leadership change doesn't erase the former Speaker's records. Who should receive the new inquiry?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "번스를 이어 의장이 된 분은 {{blank}}입니다.",
+            "en": "Byrns's successor as Speaker is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "버트런드 스넬",
+                "en": "Bertrand Snell"
+              },
+              {
+                "id": "B",
+                "ko": "윌리엄 뱅크헤드",
+                "en": "William Bankhead"
+              },
+              {
+                "id": "C",
+                "ko": "헨리 레이니",
+                "en": "Henry Rainey"
+              },
+              {
+                "id": "D",
+                "ko": "솔 블룸",
+                "en": "Sol Bloom"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "이번 문의는 {{blank}} 의장님께 전달하겠습니다.",
+            "en": "I'll send the inquiry to Speaker {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "버트런드 스넬",
+                "en": "Bertrand Snell"
+              },
+              {
+                "id": "B",
+                "ko": "윌리엄 뱅크헤드",
+                "en": "William Bankhead"
+              },
+              {
+                "id": "C",
+                "ko": "헨리 레이니",
+                "en": "Henry Rainey"
+              },
+              {
+                "id": "D",
+                "ko": "솔 블룸",
+                "en": "Sol Bloom"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "새 이름으로 안내문을 고쳐 주세요.",
+                "en": "Update the notice with the new name."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "뱅크헤드가 6월 4일 의장으로 선출됐습니다.",
+                "en": "Bankhead was elected Speaker on June 4."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "뱅크헤드입니다. 6월 4일에 의장으로 선출됐죠. 이전 의장 기록은 그대로 보존하세요.",
+                "en": "Bankhead. I was elected Speaker on June 4. Preserve the previous Speaker's record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "6월 4일에 선출된 의장은 저, 윌리엄 뱅크헤드입니다. 새 문의를 제게 보내고 번스 의장의 과거 기록을 보존하세요.",
+                "en": "The Speaker elected June 4 was me, William Bankhead. Send the new inquiry to me and preserve former Speaker Byrns's records."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "본인 이름 맞히기 구조를 의장 승계에 따른 업무 전환으로 변환",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-717",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저도 이제 하원에서 일하게 됐습니다.",
+            "en": "I now serve in the House too."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "아버님은 제 전임 의장이셨죠.",
+            "en": "Your father preceded me as Speaker."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "번스 주니어의 첫 하원 회기는 {{blank}} 의회입니다.",
+          "en": "Byrns Jr.'s first House term is in the {{blank}} Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제72대",
+              "en": "72nd"
+            },
+            {
+              "id": "B",
+              "ko": "제78대",
+              "en": "78th"
+            },
+            {
+              "id": "C",
+              "ko": "제76대",
+              "en": "76th"
+            },
+            {
+              "id": "D",
+              "ko": "제74대",
+              "en": "74th"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 세대의 기록을 구별해 주세요.",
+              "en": "Keep the two generations' records distinct."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "주니어는 1939년 제76대 의회에 들어왔습니다.",
+              "en": "Byrns Jr. entered the 76th Congress in 1939."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저도 이제 하원에서 일하게 됐습니다.",
+              "en": "I now serve in the House too."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "아버님은 제 전임 의장이셨죠.",
+              "en": "Your father preceded me as Speaker."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:1",
+              "ko": "방문객이 번스라는 이름을 듣고 제 전임 의장을 떠올렸습니다. 오늘 만난 분은 그분의 아들입니다.",
+              "en": "A visitor heard the name Byrns and thought of my predecessor as Speaker. Today's member is his son."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "아버지의 기록과 제 첫 임기를 구별해 소개해 주시겠어요?",
+              "en": "Would you distinguish my father's record from my own first House term?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "번스 주니어의 첫 하원 회기는 {{blank}} 의회입니다.",
+            "en": "Byrns Jr.'s first House term is in the {{blank}} Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "제72대",
+                "en": "72nd"
+              },
+              {
+                "id": "B",
+                "ko": "제78대",
+                "en": "78th"
+              },
+              {
+                "id": "C",
+                "ko": "제76대",
+                "en": "76th"
+              },
+              {
+                "id": "D",
+                "ko": "제74대",
+                "en": "74th"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "번스 주니어 의원님은 {{blank}} 의회에서 처음 하원에 들어오셨습니다.",
+            "en": "Representative Byrns Jr., you first entered the House in the {{blank}} Congress.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "제72대",
+                "en": "72nd"
+              },
+              {
+                "id": "B",
+                "ko": "제78대",
+                "en": "78th"
+              },
+              {
+                "id": "C",
+                "ko": "제76대",
+                "en": "76th"
+              },
+              {
+                "id": "D",
+                "ko": "제74대",
+                "en": "74th"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 세대의 기록을 구별해 주세요.",
+                "en": "Keep the two generations' records distinct."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "주니어는 1939년 제76대 의회에 들어왔습니다.",
+                "en": "Byrns Jr. entered the 76th Congress in 1939."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1939년에 시작한 제76대 의회였습니다.",
+                "en": "The 76th Congress, beginning in 1939."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "그러면 전임 의장의 기록과 혼동하지 않겠군요. 이제 새 의원에게 질문해 보세요.",
+                "en": "That distinguishes him from my predecessor. Now ask the new member your question."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 첫 회기는 1939년의 제76대 의회입니다. 아버지의 경력과 별개로 봐 주세요.",
+                "en": "My first Congress was the 76th, in 1939. Please distinguish it from my father's career."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "세대 구분을 정치적 인물 기억과 연결",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-718",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 뉴욕 박람회에서도 공식 역할을 맡고 있죠.",
+            "en": "I have an official role at this New York fair too."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 박람회에서의 역할을 따로 기록하겠습니다.",
+            "en": "I'll distinguish the roles at the two fairs."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "블룸의 이번 역할은 {{blank}}입니다.",
+          "en": "Bloom's role at this fair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴욕주지사",
+              "en": "governor of New York"
+            },
+            {
+              "id": "B",
+              "ko": "이사 겸 미국 위원",
+              "en": "director and US commissioner"
+            },
+            {
+              "id": "C",
+              "ko": "뉴욕시장",
+              "en": "mayor of New York"
+            },
+            {
+              "id": "D",
+              "ko": "박람회 건축가",
+              "en": "fair architect"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번 기념품도 보관하면 좋겠네요.",
+              "en": "Keep a souvenir from this fair too."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1939년 박람회의 이사이자 미국 위원입니다.",
+              "en": "I'm a director and US commissioner at the 1939 fair."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번 뉴욕 박람회에서도 공식 역할을 맡고 있죠.",
+              "en": "I have an official role at this New York fair too."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 박람회에서의 역할을 따로 기록하겠습니다.",
+              "en": "I'll distinguish the roles at the two fairs."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "관람객이 1893년 박람회 기념품과 올해 뉴욕 박람회 안내를 나란히 보고 같은 사람이 두 행사에서 어떤 역할을 했는지 묻습니다.",
+              "en": "A visitor sees a souvenir from the 1893 exposition beside this year's New York fair program and asks how the same person was involved in both."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1893년에는 미드웨이 건설을 감독했습니다. 이번 뉴욕 박람회에서 제가 맡은 역할을 소개해 주시겠어요?",
+              "en": "In 1893 I supervised construction of the Midway. Would you introduce my role at this year's New York fair?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "블룸의 이번 역할은 {{blank}}입니다.",
+            "en": "Bloom's role at this fair is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴욕주지사",
+                "en": "governor of New York"
+              },
+              {
+                "id": "B",
+                "ko": "이사 겸 미국 위원",
+                "en": "director and US commissioner"
+              },
+              {
+                "id": "C",
+                "ko": "뉴욕시장",
+                "en": "mayor of New York"
+              },
+              {
+                "id": "D",
+                "ko": "박람회 건축가",
+                "en": "fair architect"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "이번에는 블룸 의원님이 {{blank}}으로 참여하셨습니다.",
+            "en": "At this fair you are serving as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴욕주지사",
+                "en": "governor of New York"
+              },
+              {
+                "id": "B",
+                "ko": "이사 겸 미국 위원",
+                "en": "director and US commissioner"
+              },
+              {
+                "id": "C",
+                "ko": "뉴욕시장",
+                "en": "mayor of New York"
+              },
+              {
+                "id": "D",
+                "ko": "박람회 건축가",
+                "en": "fair architect"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이번 기념품도 보관하면 좋겠네요.",
+                "en": "Keep a souvenir from this fair too."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1939년 박람회의 이사이자 미국 위원입니다.",
+                "en": "I'm a director and US commissioner at the 1939 fair."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이사 겸 미국 위원입니다. 두 행사에서 맡은 일이 같지는 않았죠. 관람객에게 각각의 자료를 보여 줍시다.",
+                "en": "Director and U.S. commissioner. My roles at the two fairs were different. Let's show the visitor the respective materials."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "이번에는 이사 겸 미국 위원입니다. 1893년의 미드웨이 건설 감독과 구별해 설명해 주세요.",
+                "en": "This time I'm a director and U.S. commissioner. Distinguish that from supervising Midway construction in 1893."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "두 박람회의 역할 차이를 관람객 질문으로 활용",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    },
+    {
+      "id": "P01-723",
+      "path": "data/dialogue-packs/P01/part-29.json",
+      "originalBlobSha": "ee33b093263c66f41369d02866b7d8d40c520677",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "헌츠빌에서 시 정부의 법률 업무를 맡았죠.",
+            "en": "I handled legal work for Huntsville's city government."
+          },
+          {
+            "speaker": "player",
+            "ko": "지방정부 경력에 정확한 직책을 적겠습니다.",
+            "en": "I'll record the exact local position."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "뱅크헤드는 1898년부터 1902년까지 헌츠빌 {{blank}}이었습니다.",
+          "en": "Bankhead served Huntsville from 1898 to 1902 as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시 법률고문",
+              "en": "city attorney"
+            },
+            {
+              "id": "B",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "C",
+              "ko": "경찰서장",
+              "en": "police chief"
+            },
+            {
+              "id": "D",
+              "ko": "교육감",
+              "en": "superintendent"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "재스퍼의 법률 실무와 구별해 주세요.",
+              "en": "Distinguish it from my later Jasper practice."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "당시 헌츠빌 시 법률고문이었습니다.",
+              "en": "I was Huntsville's city attorney."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "헌츠빌에서 시 정부의 법률 업무를 맡았죠.",
+              "en": "I handled legal work for Huntsville's city government."
+            },
+            {
+              "speaker": "player",
+              "ko": "지방정부 경력에 정확한 직책을 적겠습니다.",
+              "en": "I'll record the exact local position."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "헌츠빌 방문객이 의원님의 옛 시 정부 경력을 듣고 싶어 합니다. 1898년부터 1902년 사이의 직책을 소개해 주세요.",
+              "en": "A visitor from Huntsville wants to hear about your former city-government experience. Begin with the office you held from 1898 to 1902."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "그때 공직을 이후의 법률 실무와 구별해 소개해 주시겠어요?",
+              "en": "Would you introduce that public office separately from my later legal practice?"
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "뱅크헤드는 1898년부터 1902년까지 헌츠빌 {{blank}}이었습니다.",
+            "en": "Bankhead served Huntsville from 1898 to 1902 as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시 법률고문",
+                "en": "city attorney"
+              },
+              {
+                "id": "B",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "C",
+                "ko": "경찰서장",
+                "en": "police chief"
+              },
+              {
+                "id": "D",
+                "ko": "교육감",
+                "en": "superintendent"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "그 기간 뱅크헤드 의원님은 헌츠빌의 {{blank}}이었습니다.",
+            "en": "During that period you served Huntsville as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "시 법률고문",
+                "en": "city attorney"
+              },
+              {
+                "id": "B",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "C",
+                "ko": "경찰서장",
+                "en": "police chief"
+              },
+              {
+                "id": "D",
+                "ko": "교육감",
+                "en": "superintendent"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "재스퍼의 법률 실무와 구별해 주세요.",
+                "en": "Distinguish it from my later Jasper practice."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 헌츠빌 시 법률고문이었습니다.",
+                "en": "I was Huntsville's city attorney."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 법률고문이었습니다. 그 시기부터 방문객과 이야기해 보죠.",
+                "en": "City attorney. Let's begin the conversation with that period."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "헌츠빌 시 법률고문이었습니다. 1898년부터 1902년까지였죠. 이제 방문객의 질문을 듣겠습니다.",
+                "en": "I was Huntsville's city attorney from 1898 to 1902. Now let's hear the visitor's question."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "직책의 직접 단서 제거; 주민 질문",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "structureCheck": {
+        "idDateCastEvidenceLearningTargetOutcomePreserved": true,
+        "opening2to5": true,
+        "blankExactlyOneEach": true,
+        "fourDistinctChoiceIds": true,
+        "correctAnswerPreserved": true,
+        "speakerReferencesValid": true,
+        "bothLanguages": true,
+        "bothBranches": true,
+        "roundTripOriginalMatch": true
+      },
+      "status": "staged_not_applied",
+      "limitations": null
+    }
+  ]
+}
