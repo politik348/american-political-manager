@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "team": "Q2-B",
+  "round": 4,
+  "created": "2026-11-25",
+  "scope": {
+    "part": 73,
+    "ids": [
+      "P01-1814",
+      "P01-1816"
+    ],
+    "noncontiguous_priority": true
+  },
+  "source_blob_sha_after": "1189ee0787244215d810706fe1481681e2107e44",
+  "source_blob_sha_before": "893147b94ec6c0e0f49cc897502c96d8e3aa69a8",
+  "summary": {
+    "core_verified": 2,
+    "corrected": 2,
+    "unchanged": 0
+  },
+  "count_policy": "Count these IDs once; skip or merge their audit records when part 73 is reviewed in sequence.",
+  "records": [
+    {
+      "id": "P01-1814",
+      "part": 73,
+      "date": "1944-11-20",
+      "learningTarget": "Willa Fulmer won the November 7, 1944 special election for her husband's unexpired term; Riley won the next full term on the same day.",
+      "core_fact_independently_verified": true,
+      "status": "verified_after_correction",
+      "correct": "B",
+      "correct_answer": "special election for the unexpired term",
+      "source_checks": [
+        {
+          "url": "https://history.house.gov/People/Detail/20408",
+          "locator": "Concise Biography; Cite This Page link",
+          "finding": "John Jacob Riley, Democrat from SC, served January 3 1945–January 3 1949; official page canonical listing confirms R000260."
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13499",
+          "locator": "Biography; November 7 election and November 16 oath",
+          "finding": "Willa Fulmer won special election for remainder of husband's term; same ballot elected Riley to regular 79th Congress."
+        }
+      ],
+      "checks": {
+        "answer_uniqueness": "pass",
+        "fictional_label": "pass",
+        "future_leakage": "none in dialogue; P01-1814 describes future term as election result, not completed tenure",
+        "bioguide_ids": "Riley R000260 verified on official House page; other cast IDs not independently rechecked in this priority audit",
+        "office_party_district": "Riley Democrat SC and Gore Democrat TN, term dates confirmed; precise district numbers not independently checked"
+      },
+      "changes": [
+        "Replace incorrect Fulmer source on Riley cast and evidence with Riley official profile; set Riley Bioguide ID R000260; evidence claims separated by person; correct answers unchanged."
+      ],
+      "correction_commit": "4f47d1c5bb9e3a0b22f228858fa28329e3853260",
+      "q4_conflict": "Potential conflict if Q4 rewrite overwrites cast/evidence with old Fulmer-only link or null ID. No matching literal IDs found in fetched Q4 patches and R3 backlog; Q4 files not changed.",
+      "unconfirmed": [
+        "Other cast IDs, detailed district boundaries and runtime not audited."
+      ]
+    },
+    {
+      "id": "P01-1816",
+      "part": 73,
+      "date": "1945-02-12",
+      "learningTarget": "Riley began his term on January 3, 1945, and Gore returned that day.",
+      "core_fact_independently_verified": true,
+      "status": "verified_after_correction",
+      "correct": "D",
+      "correct_answer": "January 3, 1945",
+      "source_checks": [
+        {
+          "url": "https://history.house.gov/People/Detail/20408",
+          "locator": "Concise Biography; Cite This Page link",
+          "finding": "John Jacob Riley, Democrat from SC, served January 3 1945–January 3 1949; official page canonical listing confirms R000260."
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/13968",
+          "locator": "Concise Biography",
+          "finding": "Albert Gore resigned Dec 4 1944 to enter Army; reelected for term starting January 3 1945."
+        }
+      ],
+      "checks": {
+        "answer_uniqueness": "pass",
+        "fictional_label": "pass",
+        "future_leakage": "none in dialogue; P01-1814 describes future term as election result, not completed tenure",
+        "bioguide_ids": "Riley R000260 verified on official House page; other cast IDs not independently rechecked in this priority audit",
+        "office_party_district": "Riley Democrat SC and Gore Democrat TN, term dates confirmed; precise district numbers not independently checked"
+      },
+      "changes": [
+        "Replace incorrect Fulmer source on Riley cast and evidence with Riley official profile; set Riley Bioguide ID R000260; evidence claims separated by person; correct answers unchanged."
+      ],
+      "correction_commit": "4f47d1c5bb9e3a0b22f228858fa28329e3853260",
+      "q4_conflict": "Potential conflict if Q4 rewrite overwrites cast/evidence with old Fulmer-only link or null ID. No matching literal IDs found in fetched Q4 patches and R3 backlog; Q4 files not changed.",
+      "unconfirmed": [
+        "Other cast IDs, detailed district boundaries and runtime not audited."
+      ]
+    }
+  ]
+}
