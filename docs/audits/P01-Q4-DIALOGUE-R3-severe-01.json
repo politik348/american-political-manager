@@ -1,0 +1,1890 @@
+{
+  "round": 3,
+  "kind": "supplemental severe backlog",
+  "patches": [
+    {
+      "id": "P01-1157",
+      "path": "data/dialogue-packs/P01/part-47.json",
+      "originalBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "originalFields": {
+        "context": {
+          "ko": "마이애미 지역 방송에서 마리아 엘비라 살라사르, 프레더리카 윌슨와 이야기를 나눈다.",
+          "en": "A fictional conversation with Maria Elvira Salazar, Frederica S. Wilson at the miami community broadcast."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 의회에 오기 전 방송에서 뉴스와 인터뷰를 진행했습니다.",
+            "en": "Before Congress I worked in broadcast news and interviews."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 학교 현장에서 일했습니다. 지역사회에 정보를 전달하는 경험은 서로 달랐죠.",
+            "en": "I worked in schools. Our experiences communicating with communities differed."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "살라사르 의원의 이전 직업은 {{blank}}입니다.",
+          "en": "Salazar's former profession was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "항공기 조종사",
+              "en": "pilot"
+            },
+            {
+              "id": "B",
+              "ko": "방송 기자",
+              "en": "broadcast journalist"
+            },
+            {
+              "id": "C",
+              "ko": "초등학교 교장",
+              "en": "elementary school principal"
+            },
+            {
+              "id": "D",
+              "ko": "약사",
+              "en": "pharmacist"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지역의 다양한 주민에게 정보가 어떻게 전달되는지 살펴보죠.",
+              "en": "Examine how information reaches diverse communities."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "살라사르 의원은 방송 기자 출신입니다.",
+              "en": "Salazar worked as a broadcast journalist."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "마이애미 지역 방송에서 마리아 엘비라 살라사르, 프레더리카 윌슨와 이야기를 나눈다.",
+            "en": "A fictional conversation with Maria Elvira Salazar, Frederica S. Wilson at the miami community broadcast."
+          },
+          "after": {
+            "ko": "지역 정책 간담회 이후 주민에게 정보를 전달하는 방식 논의",
+            "en": "Discuss how to communicate policy information after a community meeting"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 의회에 오기 전 방송에서 뉴스와 인터뷰를 진행했습니다.",
+              "en": "Before Congress I worked in broadcast news and interviews."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 학교 현장에서 일했습니다. 지역사회에 정보를 전달하는 경험은 서로 달랐죠.",
+              "en": "I worked in schools. Our experiences communicating with communities differed."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "정책 설명을 듣지 못한 주민에게 내용을 전달할 방법을 준비하고 있습니다. 두 의원님의 이전 직업 경험을 비교하고 싶습니다.",
+              "en": "I'm preparing ways to reach residents who missed a policy briefing. I'd like to compare your former professions."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "학교에서 일했던 제 경험과 살라사르 의원의 이전 전문직은 다릅니다.",
+              "en": "My experience working in schools differs from Salazar's former profession."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 경력을 확인한 뒤 주민 대상 설명 자료와 학교 교육 자료를 구분해 보세요.",
+              "en": "Identify my background, then distinguish public information materials from school instruction."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "살라사르 의원의 이전 직업은 {{blank}}입니다.",
+            "en": "Salazar's former profession was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "항공기 조종사",
+                "en": "pilot"
+              },
+              {
+                "id": "B",
+                "ko": "방송 기자",
+                "en": "broadcast journalist"
+              },
+              {
+                "id": "C",
+                "ko": "초등학교 교장",
+                "en": "elementary school principal"
+              },
+              {
+                "id": "D",
+                "ko": "약사",
+                "en": "pharmacist"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "살라사르 의원의 이전 직업은 {{blank}}입니다.",
+            "en": "Salazar's former profession was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "방송 기자",
+                "en": "broadcast journalist"
+              },
+              {
+                "id": "B",
+                "ko": "항공기 조종사",
+                "en": "pilot"
+              },
+              {
+                "id": "C",
+                "ko": "초등학교 교장",
+                "en": "elementary school principal"
+              },
+              {
+                "id": "D",
+                "ko": "약사",
+                "en": "pharmacist"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역의 다양한 주민에게 정보가 어떻게 전달되는지 살펴보죠.",
+                "en": "Examine how information reaches diverse communities."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "살라사르 의원은 방송 기자 출신입니다.",
+                "en": "Salazar worked as a broadcast journalist."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "방송 기자였습니다. 주민에게 전달할 설명에는 사실 확인과 질문에 대한 답변을 포함하세요.",
+                "en": "I was a broadcast journalist. Include fact-checking and answers to residents' questions in the briefing."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "살라사르 의원은 방송 기자 출신입니다. 제 교육 경력과 혼동하지 말고 전달 방식을 다시 검토하세요.",
+                "en": "Salazar was a broadcast journalist. Distinguish her background from my work in education before revising the outreach plan."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "기자 경력과 학교 경험을 정책 정보 전달 문제에 적용",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 17,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 2,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1160",
+      "path": "data/dialogue-packs/P01/part-47.json",
+      "originalBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "originalFields": {
+        "context": {
+          "ko": "동부 텍사스 진료소에서 브라이언 배빈와 이야기를 나눈다.",
+          "en": "A fictional conversation with Brian Babin at the east texas clinic."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회 이전에 이 지역에서 의료 전문직으로 일했습니다.",
+            "en": "Before Congress I practiced a healthcare profession in this region."
+          },
+          {
+            "speaker": "player",
+            "ko": "주민의 구강 건강을 다룬 경력이군요.",
+            "en": "Your career dealt with residents' oral health."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "배빈 의원의 이전 전문직은 {{blank}}입니다.",
+          "en": "Babin's former profession was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "치과의사",
+              "en": "dentist"
+            },
+            {
+              "id": "B",
+              "ko": "약사",
+              "en": "pharmacist"
+            },
+            {
+              "id": "C",
+              "ko": "수의사",
+              "en": "veterinarian"
+            },
+            {
+              "id": "D",
+              "ko": "간호사",
+              "en": "nurse"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지역 의료 접근성을 사례로 토론하죠.",
+              "en": "Discuss local access to care as a case study."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "치과의사로 일했습니다.",
+              "en": "I practiced dentistry."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "동부 텍사스 진료소에서 브라이언 배빈와 이야기를 나눈다.",
+            "en": "A fictional conversation with Brian Babin at the east texas clinic."
+          },
+          "after": {
+            "ko": "지역 의료 접근성 간담회",
+            "en": "A meeting on local access to health care"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의회 이전에 이 지역에서 의료 전문직으로 일했습니다.",
+              "en": "Before Congress I practiced a healthcare profession in this region."
+            },
+            {
+              "speaker": "player",
+              "ko": "주민의 구강 건강을 다룬 경력이군요.",
+              "en": "Your career dealt with residents' oral health."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지역의 의료서비스 부족 문제를 의원님께 설명하려 합니다. 이전 전문직 경험이 어느 분야였는지 먼저 확인하겠습니다.",
+              "en": "I want to discuss shortages in local health services. I'll first identify your former medical profession."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 전문직 경험이 모든 의료서비스의 행정 권한을 뜻하지는 않습니다. 분야를 구별해 보세요.",
+              "en": "My professional background does not establish administrative authority over all health services. Identify the field."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "배빈 의원의 이전 전문직은 {{blank}}입니다.",
+            "en": "Babin's former profession was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "치과의사",
+                "en": "dentist"
+              },
+              {
+                "id": "B",
+                "ko": "약사",
+                "en": "pharmacist"
+              },
+              {
+                "id": "C",
+                "ko": "수의사",
+                "en": "veterinarian"
+              },
+              {
+                "id": "D",
+                "ko": "간호사",
+                "en": "nurse"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "배빈 의원의 이전 전문직은 {{blank}}입니다.",
+            "en": "Babin's former profession was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "약사",
+                "en": "pharmacist"
+              },
+              {
+                "id": "B",
+                "ko": "치과의사",
+                "en": "dentist"
+              },
+              {
+                "id": "C",
+                "ko": "수의사",
+                "en": "veterinarian"
+              },
+              {
+                "id": "D",
+                "ko": "간호사",
+                "en": "nurse"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역 의료 접근성을 사례로 토론하죠.",
+                "en": "Discuss local access to care as a case study."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "치과의사로 일했습니다.",
+                "en": "I practiced dentistry."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "치과의사였습니다. 구강 의료 접근 문제를 구체화하되 개별 진료나 지원 신청의 결정권은 따로 확인하세요.",
+                "en": "I practiced dentistry. Specify the dental access issue while separately checking who can decide individual care or assistance requests."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "이전 직업은 치과의사입니다. 약제 조제나 다른 의료 전문직의 권한으로 제 경력을 설명하지 마세요.",
+                "en": "I was a dentist. Don't describe my career in terms of pharmacy or another health profession."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "구강건강 직답 삭제, 의료 민원과 의원의 전문직 경험 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1163",
+      "path": "data/dialogue-packs/P01/part-47.json",
+      "originalBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "originalFields": {
+        "context": {
+          "ko": "윌리엄슨 카운티 법원 토론에서 존 카터와 이야기를 나눈다.",
+          "en": "A fictional conversation with John R. Carter at the williamson county court discussion."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전 이 카운티에서 재판 업무를 담당했습니다.",
+            "en": "Before Congress I worked in this county's courts."
+          },
+          {
+            "speaker": "player",
+            "ko": "법원과 의회의 책임이 서로 다르군요.",
+            "en": "Courts and Congress have different responsibilities."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카터 의원의 이전 직책은 {{blank}}입니다.",
+          "en": "Carter previously served as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "카운티 보안관",
+              "en": "county sheriff"
+            },
+            {
+              "id": "B",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            },
+            {
+              "id": "C",
+              "ko": "텍사스 주지사",
+              "en": "Texas governor"
+            },
+            {
+              "id": "D",
+              "ko": "지방법원 판사",
+              "en": "district court judge"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "법 집행과 입법의 역할을 구별해 보세요.",
+              "en": "Distinguish judicial and legislative roles."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "윌리엄슨 카운티의 지방법원 판사였습니다.",
+              "en": "I was a district court judge in Williamson County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "윌리엄슨 카운티 법원 토론에서 존 카터와 이야기를 나눈다.",
+            "en": "A fictional conversation with John R. Carter at the williamson county court discussion."
+          },
+          "after": {
+            "ko": "윌리엄슨 카운티 주민의 사법 관련 문의",
+            "en": "A Williamson County resident's inquiry about judicial matters"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의회에 오기 전 이 카운티에서 재판 업무를 담당했습니다.",
+              "en": "Before Congress I worked in this county's courts."
+            },
+            {
+              "speaker": "player",
+              "ko": "법원과 의회의 책임이 서로 다르군요.",
+              "en": "Courts and Congress have different responsibilities."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "주민이 사건에 대한 결정을 의원실에 요청했습니다. 현재 의원직과 과거 지방 공직을 혼동한 것 같습니다.",
+              "en": "A resident asks the congressional office to decide a case. They may be confusing the current House office with your earlier local office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "윌리엄슨 카운티에서 맡았던 직책을 확인하고 현재 입법 권한과 분리하세요.",
+              "en": "Identify my former Williamson County office and distinguish it from my current legislative authority."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "카터 의원의 이전 직책은 {{blank}}입니다.",
+            "en": "Carter previously served as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "카운티 보안관",
+                "en": "county sheriff"
+              },
+              {
+                "id": "B",
+                "ko": "연방 상원의원",
+                "en": "U.S. senator"
+              },
+              {
+                "id": "C",
+                "ko": "텍사스 주지사",
+                "en": "Texas governor"
+              },
+              {
+                "id": "D",
+                "ko": "지방법원 판사",
+                "en": "district court judge"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "카터 의원의 이전 직책은 {{blank}}입니다.",
+            "en": "Carter previously served as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "카운티 보안관",
+                "en": "county sheriff"
+              },
+              {
+                "id": "B",
+                "ko": "연방 상원의원",
+                "en": "U.S. senator"
+              },
+              {
+                "id": "C",
+                "ko": "지방법원 판사",
+                "en": "district court judge"
+              },
+              {
+                "id": "D",
+                "ko": "텍사스 주지사",
+                "en": "Texas governor"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법 집행과 입법의 역할을 구별해 보세요.",
+                "en": "Distinguish judicial and legislative roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "윌리엄슨 카운티의 지방법원 판사였습니다.",
+                "en": "I was a district court judge in Williamson County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지방법원 판사였습니다. 사건 결정과 법률 제정은 별개의 권한이므로 적절한 기관을 확인하세요.",
+                "en": "I was a district court judge. Decisions in cases and lawmaking are distinct powers, so check the proper institution."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저의 이전 직책은 지방법원 판사입니다. 현재 의원실이 법원의 사건을 판결하는 것으로 안내하지 마세요.",
+                "en": "I was a district court judge. Do not tell the resident that my present congressional office decides court cases."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "재판 직답 삭제, 법원과 의원실의 권한을 실질적으로 분리",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1165",
+      "path": "data/dialogue-packs/P01/part-47.json",
+      "originalBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "originalFields": {
+        "context": {
+          "ko": "코퍼스크리스티 지역 사업 행사에서 마이클 클라우드와 이야기를 나눈다.",
+          "en": "A fictional conversation with Michael Cloud at the corpus christi business event."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회 이전에는 빅토리아에서 사업을 운영했습니다.",
+            "en": "Before Congress I ran a business in Victoria."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 기업이 공공 메시지를 전달하는 역할도 있겠군요.",
+            "en": "Local businesses can help communicate public messages."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "클라우드 의원이 운영한 사업의 분야는 {{blank}}입니다.",
+          "en": "Cloud's business was in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "항공기 제조",
+              "en": "aircraft manufacturing"
+            },
+            {
+              "id": "B",
+              "ko": "미디어 제작",
+              "en": "media production"
+            },
+            {
+              "id": "C",
+              "ko": "낙농업",
+              "en": "dairy farming"
+            },
+            {
+              "id": "D",
+              "ko": "석탄 채굴",
+              "en": "coal mining"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지역의 기업과 미디어 생태계를 함께 살펴보죠.",
+              "en": "Explore the local business and media ecosystem."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "미디어 제작 사업이었습니다.",
+              "en": "It was a media production business."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "코퍼스크리스티 지역 사업 행사에서 마이클 클라우드와 이야기를 나눈다.",
+            "en": "A fictional conversation with Michael Cloud at the corpus christi business event."
+          },
+          "after": {
+            "ko": "빅토리아 지역 기업 방문단",
+            "en": "A business delegation from Victoria"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "의회 이전에는 빅토리아에서 사업을 운영했습니다.",
+              "en": "Before Congress I ran a business in Victoria."
+            },
+            {
+              "speaker": "player",
+              "ko": "지역 기업이 공공 메시지를 전달하는 역할도 있겠군요.",
+              "en": "Local businesses can help communicate public messages."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "방문단은 지역 기업의 경험을 정책 논의에 연결하고 싶어 합니다. 의원님이 직접 운영했던 사업을 확인해 보겠습니다.",
+              "en": "The delegation wants to connect local business experience to policy discussions. I'll identify the business you operated."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "빅토리아에서의 민간 사업 기록을 현재 공적 직책과 구분하세요.",
+              "en": "Separate my private business record in Victoria from my current public office."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "클라우드 의원이 운영한 사업의 분야는 {{blank}}입니다.",
+            "en": "Cloud's business was in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "항공기 제조",
+                "en": "aircraft manufacturing"
+              },
+              {
+                "id": "B",
+                "ko": "미디어 제작",
+                "en": "media production"
+              },
+              {
+                "id": "C",
+                "ko": "낙농업",
+                "en": "dairy farming"
+              },
+              {
+                "id": "D",
+                "ko": "석탄 채굴",
+                "en": "coal mining"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "클라우드 의원이 운영한 사업의 분야는 {{blank}}입니다.",
+            "en": "Cloud's business was in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "미디어 제작",
+                "en": "media production"
+              },
+              {
+                "id": "B",
+                "ko": "항공기 제조",
+                "en": "aircraft manufacturing"
+              },
+              {
+                "id": "C",
+                "ko": "낙농업",
+                "en": "dairy farming"
+              },
+              {
+                "id": "D",
+                "ko": "석탄 채굴",
+                "en": "coal mining"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역의 기업과 미디어 생태계를 함께 살펴보죠.",
+                "en": "Explore the local business and media ecosystem."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미디어 제작 사업이었습니다.",
+                "en": "It was a media production business."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미디어 제작 사업입니다. 지역의 정보 전달 관련 기업 질문을 별도 의제로 정리하세요.",
+                "en": "It was media production. Organize business questions about local communications as a separate agenda item."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미디어 제작 회사를 운영했습니다. 다른 업종의 경력으로 잘못 분류하면 방문단의 질문도 달라집니다.",
+                "en": "I operated a media production company. Misclassifying the industry would also misdirect the delegation's questions."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "공공 메시지 힌트 삭제, 민간기업과 공공직 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1167",
+      "path": "data/dialogue-packs/P01/part-47.json",
+      "originalBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "originalFields": {
+        "context": {
+          "ko": "워터베리 학교 방문에서 자하나 헤이스와 이야기를 나눈다.",
+          "en": "A fictional conversation with Jahana Hayes at the waterbury school visit."
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생 여러분과 만나는 것은 제 이전 직업을 떠올리게 합니다.",
+            "en": "Meeting students reminds me of my previous career."
+          },
+          {
+            "speaker": "player",
+            "ko": "2016년에는 전국적 교육상도 받으셨죠.",
+            "en": "You received a national education honor in 2016."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "헤이스 의원이 받은 상은 {{blank}}입니다.",
+          "en": "Hayes received {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "퓰리처상",
+              "en": "Pulitzer Prize"
+            },
+            {
+              "id": "B",
+              "ko": "노벨평화상",
+              "en": "Nobel Peace Prize"
+            },
+            {
+              "id": "C",
+              "ko": "의회 금메달",
+              "en": "Congressional Gold Medal"
+            },
+            {
+              "id": "D",
+              "ko": "전미 올해의 교사상",
+              "en": "National Teacher of the Year"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "교실 경험과 연방 교육 정책을 비교해 봅시다.",
+              "en": "Compare classroom experience and federal education policy."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2016년 전미 올해의 교사였습니다.",
+              "en": "I was the 2016 National Teacher of the Year."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "워터베리 학교 방문에서 자하나 헤이스와 이야기를 나눈다.",
+            "en": "A fictional conversation with Jahana Hayes at the waterbury school visit."
+          },
+          "after": {
+            "ko": "교실 경험을 연방 교육정책과 연결하는 학생 간담회",
+            "en": "A student meeting connecting classroom experience to federal education policy"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "학생 여러분과 만나는 것은 제 이전 직업을 떠올리게 합니다.",
+              "en": "Meeting students reminds me of my previous career."
+            },
+            {
+              "speaker": "player",
+              "ko": "2016년에는 전국적 교육상도 받으셨죠.",
+              "en": "You received a national education honor in 2016."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "2016년 수상 기록을 바탕으로 교실 현장의 질문을 준비하겠습니다. 어떤 교육상의 기록인지 확인해야 합니다.",
+              "en": "I'm preparing classroom-focused questions based on a 2016 award record. I'll identify the education honor first."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "수상 경력과 의회에서의 정책 권한은 별도로 설명해 주세요.",
+              "en": "Explain the award and congressional policy authority separately."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "헤이스 의원이 받은 상은 {{blank}}입니다.",
+            "en": "Hayes received {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "퓰리처상",
+                "en": "Pulitzer Prize"
+              },
+              {
+                "id": "B",
+                "ko": "노벨평화상",
+                "en": "Nobel Peace Prize"
+              },
+              {
+                "id": "C",
+                "ko": "의회 금메달",
+                "en": "Congressional Gold Medal"
+              },
+              {
+                "id": "D",
+                "ko": "전미 올해의 교사상",
+                "en": "National Teacher of the Year"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "헤이스 의원이 받은 상은 {{blank}}입니다.",
+            "en": "Hayes received {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주 올해의 교사상",
+                "en": "State Teacher of the Year"
+              },
+              {
+                "id": "B",
+                "ko": "전미 올해의 교장상",
+                "en": "National Principal of the Year"
+              },
+              {
+                "id": "C",
+                "ko": "전미 올해의 교사상",
+                "en": "National Teacher of the Year"
+              },
+              {
+                "id": "D",
+                "ko": "전미 올해의 교육감상",
+                "en": "National Superintendent of the Year"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "교실 경험과 연방 교육 정책을 비교해 봅시다.",
+                "en": "Compare classroom experience and federal education policy."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2016년 전미 올해의 교사였습니다.",
+                "en": "I was the 2016 National Teacher of the Year."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "전미 올해의 교사입니다. 교실의 경험을 정책 논의에 반영하는 질문을 준비하세요.",
+                "en": "National Teacher of the Year. Prepare questions about how classroom experience informs policy discussions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2016년 전미 올해의 교사였습니다. 다른 교육기관의 상이나 의회 직책으로 소개하지 마세요.",
+                "en": "I was the 2016 National Teacher of the Year. Do not describe this as another educational award or congressional office."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "수상 이름 직접 힌트 삭제 및 동종 교육상 선택지",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": true,
+      "originalScore": 7,
+      "estimatedAfterScore": 17,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 2,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Recheck alternative award names against scene date; original answer preserved."
+    },
+    {
+      "id": "P01-1190",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "originalFields": {
+        "context": {
+          "ko": "푸에블로 언론인 모임",
+          "en": "Pueblo newspaper gathering"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 푸에블로로 이주했을 때 만난 언론인들이군요.",
+            "en": "I recognize journalists I met when I moved to Pueblo last year."
+          },
+          {
+            "speaker": "host",
+            "ko": "이전 신문의 이름을 행사에 넣죠.",
+            "en": "Include your newspaper's name in the program."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1912년 키팅이 인수한 신문은 {{blank}}입니다.",
+          "en": "Keating acquired the {{blank}} in 1912.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Milwaukee Leader",
+              "en": "Milwaukee Leader"
+            },
+            {
+              "id": "B",
+              "ko": "Chicago Tribune",
+              "en": "Chicago Tribune"
+            },
+            {
+              "id": "C",
+              "ko": "Pueblo Leader",
+              "en": "Pueblo Leader"
+            },
+            {
+              "id": "D",
+              "ko": "Denver Post",
+              "en": "Denver Post"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "Pueblo Leader를 인수했습니다.",
+              "en": "I acquired the Pueblo Leader."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "신문 경력과 새 의정 활동의 연표를 전시하세요.",
+              "en": "Display a timeline linking the newspaper and congressional careers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "Pueblo Leader를 인수했습니다.",
+              "en": "I acquired the Pueblo Leader."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "푸에블로 언론인 모임",
+            "en": "Pueblo newspaper gathering"
+          },
+          "after": {
+            "ko": "1912년 지역신문 자료를 정리하는 언론 연구자",
+            "en": "A press researcher sorting local newspaper records from 1912"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난해 푸에블로로 이주했을 때 만난 언론인들이군요.",
+              "en": "I recognize journalists I met when I moved to Pueblo last year."
+            },
+            {
+              "speaker": "host",
+              "ko": "이전 신문의 이름을 행사에 넣죠.",
+              "en": "Include your newspaper's name in the program."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "1912년 신문 인수 기록을 의회 입성 이후 자료와 분리하고 있습니다. 푸에블로로 이주한 시기의 소유 기록을 확인하겠습니다.",
+              "en": "I'm separating the 1912 newspaper acquisition record from later congressional material. I'll check the ownership record associated with your move to Pueblo."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 인수한 신문을 확인하면 당시 지역 보도 자료의 출처를 구별할 수 있습니다.",
+              "en": "Identifying the paper I acquired will help distinguish the sources of contemporary local reporting."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1912년 키팅이 인수한 신문은 {{blank}}입니다.",
+            "en": "Keating acquired the {{blank}} in 1912.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "Milwaukee Leader",
+                "en": "Milwaukee Leader"
+              },
+              {
+                "id": "B",
+                "ko": "Chicago Tribune",
+                "en": "Chicago Tribune"
+              },
+              {
+                "id": "C",
+                "ko": "Pueblo Leader",
+                "en": "Pueblo Leader"
+              },
+              {
+                "id": "D",
+                "ko": "Denver Post",
+                "en": "Denver Post"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1912년 키팅이 인수한 신문은 {{blank}}입니다.",
+            "en": "Keating acquired the {{blank}} in 1912.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "Milwaukee Leader",
+                "en": "Milwaukee Leader"
+              },
+              {
+                "id": "B",
+                "ko": "Chicago Tribune",
+                "en": "Chicago Tribune"
+              },
+              {
+                "id": "C",
+                "ko": "Denver Post",
+                "en": "Denver Post"
+              },
+              {
+                "id": "D",
+                "ko": "Pueblo Leader",
+                "en": "Pueblo Leader"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "Pueblo Leader를 인수했습니다.",
+                "en": "I acquired the Pueblo Leader."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "신문 경력과 새 의정 활동의 연표를 전시하세요.",
+                "en": "Display a timeline linking the newspaper and congressional careers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "Pueblo Leader를 인수했습니다.",
+                "en": "I acquired the Pueblo Leader."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "Pueblo Leader입니다. 신문사 기록의 시기와 새 하원 임기를 구별해 보관하세요.",
+                "en": "Pueblo Leader. Preserve its ownership record separately from my new House term."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "Pueblo Leader를 인수했습니다. 다른 도시 신문의 소유 기록을 제 경력에 합치지 마세요.",
+                "en": "I acquired the Pueblo Leader. Do not attach another city's newspaper ownership record to my career."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "선행 만남 삭제, 신문사의 소유·정치 경력 문서 구분",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1215",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "originalFields": {
+        "context": {
+          "ko": "전시 소규모 공장 접견",
+          "en": "Wartime small-plant meeting"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "전시 생산체제에서 소규모 공장들의 업무도 다루고 있습니다.",
+            "en": "My wartime production work includes small manufacturing plants."
+          },
+          {
+            "speaker": "player",
+            "ko": "전직 하원의원의 현재 산업 업무를 확인하겠습니다.",
+            "en": "I'll identify the former member's current industrial role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "매버릭이 전시 위원장을 맡은 기관은 {{blank}}입니다.",
+          "en": "Maverick chaired the {{blank}} during the war.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방통상위원회",
+              "en": "Federal Trade Commission"
+            },
+            {
+              "id": "B",
+              "ko": "연방준비제도",
+              "en": "Federal Reserve"
+            },
+            {
+              "id": "C",
+              "ko": "전국노동관계위원회",
+              "en": "National Labor Relations Board"
+            },
+            {
+              "id": "D",
+              "ko": "소규모 전시공장 공사",
+              "en": "Smaller War Plants Corporation"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "소규모 전시공장 공사의 위원장으로 일했습니다.",
+              "en": "I served as chair of the Smaller War Plants Corporation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "전시 산업 기록을 과거 지역구 자료와 별도로 정리하세요.",
+              "en": "Keep wartime industrial records distinct from former district files."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "소규모 전시공장 공사의 위원장으로 일했습니다.",
+              "en": "I served as chair of the Smaller War Plants Corporation."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "전시 소규모 공장 접견",
+            "en": "Wartime small-plant meeting"
+          },
+          "after": {
+            "ko": "전시 생산 관련 기관의 담당자 기록 확인",
+            "en": "Identify the responsible official in wartime production records"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "전시 생산체제에서 소규모 공장들의 업무도 다루고 있습니다.",
+              "en": "My wartime production work includes small manufacturing plants."
+            },
+            {
+              "speaker": "player",
+              "ko": "전직 하원의원의 현재 산업 업무를 확인하겠습니다.",
+              "en": "I'll identify the former member's current industrial role."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "공장 운영자들이 전시 생산 관련 문의를 보내왔습니다. 예전 하원 사무실과 현재 행정기관 중 어느 쪽 기록인지 먼저 확인하겠습니다.",
+              "en": "Plant operators have submitted wartime production inquiries. I'll first distinguish your former House office from the current administrative body."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "전시생산위원회 부위원장 기록 외에 제가 위원장을 맡았던 기관을 확인하세요.",
+              "en": "Besides my War Production Board vice-chairmanship, identify the body I chaired."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "매버릭이 전시 위원장을 맡은 기관은 {{blank}}입니다.",
+            "en": "Maverick chaired the {{blank}} during the war.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방통상위원회",
+                "en": "Federal Trade Commission"
+              },
+              {
+                "id": "B",
+                "ko": "연방준비제도",
+                "en": "Federal Reserve"
+              },
+              {
+                "id": "C",
+                "ko": "전국노동관계위원회",
+                "en": "National Labor Relations Board"
+              },
+              {
+                "id": "D",
+                "ko": "소규모 전시공장 공사",
+                "en": "Smaller War Plants Corporation"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "매버릭이 전시 위원장을 맡은 기관은 {{blank}}입니다.",
+            "en": "Maverick chaired the {{blank}} during the war.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방통상위원회",
+                "en": "Federal Trade Commission"
+              },
+              {
+                "id": "B",
+                "ko": "연방준비제도",
+                "en": "Federal Reserve"
+              },
+              {
+                "id": "C",
+                "ko": "소규모 전시공장 공사",
+                "en": "Smaller War Plants Corporation"
+              },
+              {
+                "id": "D",
+                "ko": "전국노동관계위원회",
+                "en": "National Labor Relations Board"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "소규모 전시공장 공사의 위원장으로 일했습니다.",
+                "en": "I served as chair of the Smaller War Plants Corporation."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "전시 산업 기록을 과거 지역구 자료와 별도로 정리하세요.",
+                "en": "Keep wartime industrial records distinct from former district files."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "소규모 전시공장 공사의 위원장으로 일했습니다.",
+                "en": "I served as chair of the Smaller War Plants Corporation."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "소규모 전시공장 공사입니다. 전시 산업 업무 기록을 이전 의회 기록과 분리하세요.",
+                "en": "The Smaller War Plants Corporation. Separate wartime industrial administration from former congressional records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "소규모 전시공장 공사 위원장이었습니다. 노동관계위원회나 연방준비제도의 위원장 기록으로 분류하면 안 됩니다.",
+                "en": "I chaired the Smaller War Plants Corporation. Do not file it as a chairmanship of the labor board or Federal Reserve."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "소규모 공장 명칭 선공개 삭제, 전시 행정과 의회 역할 구별",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    },
+    {
+      "id": "P01-1228",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "originalFields": {
+        "context": {
+          "ko": "하원 운영 기록실",
+          "en": "House administration records room"
+        },
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "위원회 운영 관련 서류를 가져와 주세요. 지역 민원 서류와는 분리하죠.",
+            "en": "Please bring the committee administration papers. Keep them separate from district requests."
+          },
+          {
+            "speaker": "player",
+            "ko": "현재 위원회 명칭부터 확인하겠습니다.",
+            "en": "I'll check your current committee's name first."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제94대 의회의 톰프슨은 {{blank}} 위원장입니다.",
+          "en": "In the 94th Congress Thompson chairs {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원 운영",
+              "en": "House Administration"
+            },
+            {
+              "id": "B",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "C",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            },
+            {
+              "id": "D",
+              "ko": "군사",
+              "en": "Armed Services"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "하원 운영위원회입니다.",
+              "en": "House Administration."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "위원회 자료를 정리하고 주민 접견 일정도 따로 잡으세요.",
+              "en": "Organize the committee papers and schedule a separate constituent meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "하원 운영위원회입니다.",
+              "en": "House Administration."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "context",
+          "before": {
+            "ko": "하원 운영 기록실",
+            "en": "House administration records room"
+          },
+          "after": {
+            "ko": "의회 내부 절차 관련 문의와 지역 정책 민원 분류",
+            "en": "Separate internal House administration inquiries from district policy casework"
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "위원회 운영 관련 서류를 가져와 주세요. 지역 민원 서류와는 분리하죠.",
+              "en": "Please bring the committee administration papers. Keep them separate from district requests."
+            },
+            {
+              "speaker": "player",
+              "ko": "현재 위원회 명칭부터 확인하겠습니다.",
+              "en": "I'll check your current committee's name first."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "하원 자체의 조직 운영 관련 자료와 지역 농업 관련 정책 문의를 한 문서철에서 발견했습니다. 두 분야를 나누겠습니다.",
+              "en": "I found materials about internal House organization alongside district agricultural policy inquiries. I'll separate the two."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제94대 의회 위원장직을 확인하고 해당 기록을 적절한 범위로 분류하세요.",
+              "en": "Identify my chairmanship in the 94th Congress and classify the material by the proper scope."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "제94대 의회의 톰프슨은 {{blank}} 위원장입니다.",
+            "en": "In the 94th Congress Thompson chairs {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "하원 운영",
+                "en": "House Administration"
+              },
+              {
+                "id": "B",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "C",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              },
+              {
+                "id": "D",
+                "ko": "군사",
+                "en": "Armed Services"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "제94대 의회의 톰프슨은 {{blank}} 위원장입니다.",
+            "en": "In the 94th Congress Thompson chairs {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "농업",
+                "en": "Agriculture"
+              },
+              {
+                "id": "B",
+                "ko": "하원 운영",
+                "en": "House Administration"
+              },
+              {
+                "id": "C",
+                "ko": "외교",
+                "en": "Foreign Affairs"
+              },
+              {
+                "id": "D",
+                "ko": "군사",
+                "en": "Armed Services"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 운영위원회입니다.",
+                "en": "House Administration."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "위원회 자료를 정리하고 주민 접견 일정도 따로 잡으세요.",
+                "en": "Organize the committee papers and schedule a separate constituent meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 운영위원회입니다.",
+                "en": "House Administration."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 운영위원회입니다. 내부 운영 관련 자료를 따로 정리하고 농업 정책 문의는 별도의 관할을 확인하세요.",
+                "en": "House Administration. File internal operations separately and verify the jurisdiction for agricultural policy inquiries."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 운영위원회 위원장입니다. 다른 정책 상임위원회 기록과 합치지 마세요.",
+                "en": "I chair House Administration. Do not merge these records with another policy committee's files."
+              }
+            ]
+          }
+        }
+      ],
+      "reason": "하원 운영위원회 정답 어구 반복 삭제, 의회 내부 행정과 외부 정책 구별",
+      "historicalFactChanged": false,
+      "historicalReverificationNeeded": false,
+      "originalScore": 8,
+      "estimatedAfterScore": 16,
+      "estimatedAfterScores": {
+        "naturalDialogue": 2,
+        "participationMotivation": 2,
+        "meetingImmersion": 2,
+        "learningIntegration": 2,
+        "distinctiveness": 1,
+        "answerConcealment": 2,
+        "distractorQuality": 1,
+        "castRole": 1,
+        "branchNaturalness": 2,
+        "continuity": 1
+      },
+      "scoreBasis": "editorial estimate, not playtested",
+      "status": "staged_not_applied",
+      "structureCheck": {
+        "correctContentExact": true,
+        "blankExactlyOneEach": true,
+        "uniqueChoiceTexts": true,
+        "opening2to5": true,
+        "speakersValid": true,
+        "bothLanguages": true,
+        "branchesDiffer": true,
+        "protectedFieldsPreserved": true
+      },
+      "reviewNotes": "Original core answer preserved; fictional encounter."
+    }
+  ],
+  "actualPlaytest": false
+}
