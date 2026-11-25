@@ -1,0 +1,2711 @@
+{
+  "schema": "q4-r4-preliminary-v1",
+  "round": 4,
+  "part": 76,
+  "source": {
+    "path": "data/dialogue-packs/P01/part-76.json",
+    "blobSha": "a889575afab8524b2ca2ddbfedc74c26d8739edc",
+    "commit": "109e66b1787bd90e0e63be5dfe3502d8cdc8c3ff"
+  },
+  "screened": 25,
+  "deepReviewed": 0,
+  "rows": [
+    {
+      "id": "P01-1876",
+      "mechanism": "redistricted-service",
+      "learningTarget": "Rogers's KY-5 expanded from 30 to 33 counties in 2022, adding all of Boyd County including Ashland; Barr represents KY-6.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "새 지도에 애슐랜드를 {{blank}}에 표시하겠습니다.",
+        "en": "I'll mark Ashland in {{blank}} on the updated map.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "KY-5",
+            "en": "KY-5"
+          },
+          {
+            "id": "B",
+            "ko": "KY-6",
+            "en": "KY-6"
+          },
+          {
+            "id": "C",
+            "ko": "KY-4",
+            "en": "KY-4"
+          },
+          {
+            "id": "D",
+            "ko": "KY-2",
+            "en": "KY-2"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이 동부 켄터키 행사 지도에는 애슐랜드가 빠졌네요.",
+          "en": "This eastern Kentucky event map omits Ashland."
+        },
+        {
+          "speaker": "player",
+          "ko": "옛 지도라면 선거구 변경을 반영해야겠군요.",
+          "en": "If it is an old map, we need to account for redistricting."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "2023년에 애슐랜드 사무실을 열었습니다. 보이드 카운티 전체가 제 지역구에 들어왔지요.",
+          "en": "I opened an Ashland office in 2023 after all of Boyd County entered my district."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 기존 30개 카운티 지도와 새 33개 카운티 지도를 나란히 비교합시다.",
+            "en": "Good. Compare the old 30-county map with the new 33-county map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2022년 재획정으로 보이드 전체가 로저스의 제5구에 들어왔습니다.",
+            "en": "Redistricting added all of Boyd to Rogers's fifth district."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "B001282",
+          "name": "Andy Barr"
+        },
+        {
+          "id": "R000395",
+          "name": "Harold Rogers"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1877",
+      "mechanism": "broadcast-correction",
+      "learningTarget": "Burchett (TN-2), Ogles (TN-5), Rose (TN-6) were listed as Knoxville, Columbia and Cookeville residents respectively.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "녹스빌로 기재된 의원의 지역구는 {{blank}}입니다.",
+        "en": "The member listed at Knoxville serves {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "TN-5",
+            "en": "TN-5"
+          },
+          {
+            "id": "B",
+            "ko": "TN-2",
+            "en": "TN-2"
+          },
+          {
+            "id": "C",
+            "ko": "TN-6",
+            "en": "TN-6"
+          },
+          {
+            "id": "D",
+            "ko": "TN-8",
+            "en": "TN-8"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "방송 자막에 세 의원 모두 내슈빌 거주라고 적혀 있습니다.",
+          "en": "Our caption says all three members live in Nashville."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "제 공식 명부에는 쿡빌이라고 나옵니다.",
+          "en": "The official list gives Cookeville for me."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역구 번호와 거주지를 섞지 않겠습니다.",
+          "en": "I'll separate district numbers from residence."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 표기는 녹스빌입니다.",
+          "en": "Mine is Knoxville."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 컬럼비아로 나옵니다.",
+          "en": "Mine is Columbia."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "방송에 세 지역의 이름을 따로 붙이죠.",
+            "en": "Let's label all three locations separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "버쳇은 제2구, 오글스 제5구, 로즈 제6구입니다.",
+            "en": "Burchett serves two, Ogles five and Rose six."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "B001309",
+          "name": "Tim Burchett"
+        },
+        {
+          "id": "O000175",
+          "name": "Andrew Ogles"
+        },
+        {
+          "id": "R000612",
+          "name": "John W. Rose"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1878",
+      "mechanism": "service-access",
+      "learningTarget": "Burlison represents MO-7 and maintains a Springfield office; Onder represents MO-3.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "스프링필드 지역 사무실을 둔 {{blank}} 의원과 일정을 잡겠습니다.",
+        "en": "I'll arrange the visit with {{blank}}, whose office is in Springfield.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "온더",
+            "en": "Onder"
+          },
+          {
+            "id": "B",
+            "ko": "그레이브스",
+            "en": "Graves"
+          },
+          {
+            "id": "C",
+            "ko": "벌리슨",
+            "en": "Burlison"
+          },
+          {
+            "id": "D",
+            "ko": "클리버",
+            "en": "Cleaver"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "스프링필드 사무실 방문 일정을 잡으려는 분이 있다고요?",
+          "en": "Someone needs to schedule a Springfield office visit?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구와 제7구의 사무실을 혼동하지 않도록 합시다.",
+          "en": "Let's avoid confusing our third- and seventh-district offices."
+        },
+        {
+          "speaker": "player",
+          "ko": "행사 장소와 대표 관할도 별개로 확인하겠습니다.",
+          "en": "I'll check the venue and constituency separately."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "방문 일정에 지역구 번호도 함께 넣으세요.",
+            "en": "Include the district number in the appointment."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "벌리슨의 스프링필드 사무실은 MO-7에 속합니다.",
+            "en": "Burlison's Springfield office serves MO-7."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "B001316",
+          "name": "Eric Burlison"
+        },
+        {
+          "id": "O000177",
+          "name": "Robert F. Onder, Jr."
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1879",
+      "mechanism": "urban-region-comparison",
+      "learningTarget": "Timmons represents SC-4, which includes most of Greenville and Spartanburg counties; Mace SC-1 and Fry SC-7.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "두 카운티의 대부분을 포함하는 지역구는 {{blank}}입니다.",
+        "en": "The district encompassing most of both counties is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "SC-1",
+            "en": "SC-1"
+          },
+          {
+            "id": "B",
+            "ko": "SC-7",
+            "en": "SC-7"
+          },
+          {
+            "id": "C",
+            "ko": "SC-6",
+            "en": "SC-6"
+          },
+          {
+            "id": "D",
+            "ko": "SC-4",
+            "en": "SC-4"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "npc:2",
+          "ko": "업스테이트 교통 회의 자료가 해안 지역 회의 자료와 섞였습니다.",
+          "en": "The Upstate transport materials got mixed with the coastal forum materials."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "찰스턴과 업스테이트의 상황을 별도로 이야기해야겠네요.",
+          "en": "Charleston and the Upstate deserve separate discussion."
+        },
+        {
+          "speaker": "player",
+          "ko": "그린빌과 스파턴버그 쪽의 대표를 찾아보겠습니다.",
+          "en": "I'll identify the representative for Greenville and Spartanburg."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제7구와도 구분하세요.",
+          "en": "Keep district seven separate too."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "업스테이트 세션을 별도로 구성하겠습니다.",
+            "en": "We'll give the Upstate its own session."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "티먼스의 제4구가 그린빌과 스파턴버그의 대부분을 포함합니다.",
+            "en": "Timmons's fourth district includes most of both counties."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M000194",
+          "name": "Nancy Mace"
+        },
+        {
+          "id": "F000478",
+          "name": "Russell Fry"
+        },
+        {
+          "id": "T000480",
+          "name": "William R. Timmons IV"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1880",
+      "mechanism": "civic-program",
+      "learningTarget": "Loudermilk announced 11 military service academy appointments from GA-11 on June 5, 2026; Clyde GA-9 and Jack GA-3 are distinct districts.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "6월 5일 제11구 발표에 따르면 임명장을 받은 학생은 {{blank}}명입니다.",
+        "en": "The June 5 district eleven announcement named {{blank}} appointees.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "11",
+            "en": "11"
+          },
+          {
+            "id": "B",
+            "ko": "3",
+            "en": "3"
+          },
+          {
+            "id": "C",
+            "ko": "9",
+            "en": "9"
+          },
+          {
+            "id": "D",
+            "ko": "14",
+            "en": "14"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:2",
+          "ko": "군사학교에 진학할 학생들의 축하 행사에 도와줄 수 있나요?",
+          "en": "Could you help with an event celebrating service academy appointments?"
+        },
+        {
+          "speaker": "player",
+          "ko": "발표한 학생 수와 지역구를 정확하게 소개하겠습니다.",
+          "en": "I'll give the correct count and district."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제9구의 추천 절차와는 구별합시다.",
+          "en": "Keep that separate from district nine's process."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구도 별도의 대표 지역입니다.",
+          "en": "District three is separate as well."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "추천과 실제 임명 결과도 구분해서 학생들에게 설명하죠.",
+            "en": "Explain the distinction between nominations and appointments."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "라우더밀크는 11명의 임명 결과를 발표했습니다.",
+            "en": "Loudermilk announced eleven appointments."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "C001116",
+          "name": "Andrew S. Clyde"
+        },
+        {
+          "id": "J000311",
+          "name": "Brian Jack"
+        },
+        {
+          "id": "L000583",
+          "name": "Barry Loudermilk"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1881",
+      "mechanism": "industrial-geography",
+      "learningTarget": "Fallon's TX-4 includes Red River Army Depot; King-Hinds represents the Northern Mariana Islands as delegate.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "TX-4 사례는 {{blank}}입니다.",
+        "en": "The TX-4 example is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Kennedy Space Center",
+            "en": "Kennedy Space Center"
+          },
+          {
+            "id": "B",
+            "ko": "Red River Army Depot",
+            "en": "Red River Army Depot"
+          },
+          {
+            "id": "C",
+            "ko": "Port of Baltimore",
+            "en": "Port of Baltimore"
+          },
+          {
+            "id": "D",
+            "ko": "Hoover Dam",
+            "en": "Hoover Dam"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "산업 현장 견학 프로그램에 군 정비 시설 사례를 넣으려 합니다.",
+          "en": "We want to include a military maintenance facility in an industrial tour."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "섬 지역의 인프라 경험과 비교할 수 있겠군요.",
+          "en": "That could be compared with island infrastructure."
+        },
+        {
+          "speaker": "player",
+          "ko": "텍사스 북동부의 실제 시설부터 찾겠습니다.",
+          "en": "I'll identify the actual northeastern Texas facility."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "시설의 역할과 의원의 관할을 구분해 설명합시다.",
+            "en": "Distinguish the installation's mission from congressional representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "폴런 의원실은 제4구의 Red River Army Depot를 소개합니다.",
+            "en": "Fallon's office identifies Red River Army Depot in district four."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "F000246",
+          "name": "Pat Fallon"
+        },
+        {
+          "id": "K000404",
+          "name": "Kimberlyn King-Hinds"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1882",
+      "mechanism": "shared-county-policy",
+      "learningTarget": "Goldman's TX-12 includes portions of Tarrant and Parker counties; Van Duyne's TX-24 includes portions of Dallas and Tarrant counties.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "공통 카운티는 {{blank}}입니다.",
+        "en": "Their shared county is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "파커",
+            "en": "Parker"
+          },
+          {
+            "id": "B",
+            "ko": "댈러스",
+            "en": "Dallas"
+          },
+          {
+            "id": "C",
+            "ko": "태런트",
+            "en": "Tarrant"
+          },
+          {
+            "id": "D",
+            "ko": "엘패소",
+            "en": "El Paso"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "두 지역구의 기업이 한 광역 행사에 참가합니다.",
+          "en": "Businesses from both districts will attend a metropolitan event."
+        },
+        {
+          "speaker": "player",
+          "ko": "공통으로 포함하는 카운티가 있습니까?",
+          "en": "Do the districts include parts of the same county?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "파커는 제 지역구에도 있고 댈러스는 동료의 지역구에 있습니다.",
+          "en": "Parker is part of my district and Dallas part of my colleague's."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "광역권 경제 토론에서는 두 지역구가 모두 참여할 수 있겠네요.",
+            "en": "Both districts can participate in a regional economic discussion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "두 지역구 모두 태런트 일부를 포함합니다.",
+            "en": "Both include portions of Tarrant."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "G000601",
+          "name": "Craig A. Goldman"
+        },
+        {
+          "id": "V000134",
+          "name": "Beth Van Duyne"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1883",
+      "mechanism": "boundary-map",
+      "learningTarget": "Gooden's TX-5 stretches from Dallas County into Henderson, Kaufman, Van Zandt, Wood and Upshur; Self serves TX-3.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "업셔를 포함하는 것으로 소개된 지역구는 {{blank}}입니다.",
+        "en": "The district described as reaching Upshur is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "TX-3",
+            "en": "TX-3"
+          },
+          {
+            "id": "B",
+            "ko": "TX-12",
+            "en": "TX-12"
+          },
+          {
+            "id": "C",
+            "ko": "TX-24",
+            "en": "TX-24"
+          },
+          {
+            "id": "D",
+            "ko": "TX-5",
+            "en": "TX-5"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "댈러스 광역권이라고만 쓰면 동부 농촌 지역이 보이지 않겠네요.",
+          "en": "Calling it only metropolitan Dallas would hide the eastern rural areas."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구는 우드와 업셔 쪽까지 뻗습니다.",
+          "en": "My district extends toward Wood and Upshur."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구와 제5구의 번호도 분리해야 합니다.",
+          "en": "Separate districts three and five too."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "동서로 긴 지역구의 지도를 학생들에게 보여줍시다.",
+            "en": "Show students the east-west extent of the district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "구든의 제5구는 우드와 업셔를 포함합니다.",
+            "en": "Gooden's fifth district includes Wood and Upshur."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "G000589",
+          "name": "Lance Gooden"
+        },
+        {
+          "id": "S001224",
+          "name": "Keith Self"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1884",
+      "mechanism": "distance-awareness",
+      "learningTarget": "Escobar represented TX-16 and Jackson TX-13; the official list gives El Paso and Amarillo as their residences.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "엘패소로 기재된 에스코바 의원은 {{blank}}를 대표합니다.",
+        "en": "Escobar, listed at El Paso, represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "TX-16",
+            "en": "TX-16"
+          },
+          {
+            "id": "B",
+            "ko": "TX-13",
+            "en": "TX-13"
+          },
+          {
+            "id": "C",
+            "ko": "TX-19",
+            "en": "TX-19"
+          },
+          {
+            "id": "D",
+            "ko": "TX-23",
+            "en": "TX-23"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "서부 텍사스라는 이름으로 한 행사를 열 수는 있지만 지역은 다릅니다.",
+          "en": "We can hold a West Texas event, but the communities differ."
+        },
+        {
+          "speaker": "player",
+          "ko": "엘패소와 애머릴로의 대표를 구별해서 소개하겠습니다.",
+          "en": "I'll distinguish the El Paso and Amarillo representatives."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지역구는 제13구입니다.",
+          "en": "My district is thirteen."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 지역의 상황을 직접 비교할 순서를 마련합시다.",
+            "en": "Let's arrange a comparison of the two regions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "에스코바는 TX-16, 잭슨은 TX-13입니다.",
+            "en": "Escobar serves TX-16 and Jackson TX-13."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "E000299",
+          "name": "Veronica Escobar"
+        },
+        {
+          "id": "J000304",
+          "name": "Ronny Jackson"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1885",
+      "mechanism": "city-not-single-district",
+      "learningTarget": "Fletcher TX-7 and Green TX-9 are both listed at Houston; Crenshaw represents TX-2 and is listed at Humble.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "플레처와 그린의 의석은 {{blank}}입니다.",
+        "en": "Fletcher and Green hold {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "TX-2와 TX-4",
+            "en": "TX-2 and TX-4"
+          },
+          {
+            "id": "B",
+            "ko": "TX-7과 TX-9",
+            "en": "TX-7 and TX-9"
+          },
+          {
+            "id": "C",
+            "ko": "TX-12와 TX-13",
+            "en": "TX-12 and TX-13"
+          },
+          {
+            "id": "D",
+            "ko": "TX-16과 TX-19",
+            "en": "TX-16 and TX-19"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "휴스턴의 대표를 한 사람만 자막에 넣으면 될까요?",
+          "en": "Can our Houston caption name only one representative?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 휴스턴 거주로 기재돼 있습니다.",
+          "en": "I am also listed at Houston."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "제2구는 별도의 의석입니다.",
+          "en": "District two is a separate seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "도시 이름과 의석을 혼동하지 않겠습니다.",
+          "en": "I won't confuse a city name with a seat."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제7구와 제9구를 각각 소개해 주세요.",
+          "en": "Introduce districts seven and nine separately."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "방송에서 도시와 지역구를 동일시하지 않겠습니다.",
+            "en": "The broadcast won't equate a city with a district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "두 의원은 휴스턴 거주로 기재되지만 다른 의석을 맡습니다.",
+            "en": "Both are listed at Houston but hold distinct seats."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "F000468",
+          "name": "Lizzie Fletcher"
+        },
+        {
+          "id": "G000553",
+          "name": "Al Green"
+        },
+        {
+          "id": "C001120",
+          "name": "Dan Crenshaw"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:2",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1886",
+      "mechanism": "same-city-distinct-seats",
+      "learningTarget": "McCaul TX-10 and Roy TX-21 are listed at Austin; Sessions TX-17 is listed at Waco.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "웨이코로 기재된 의원은 {{blank}}입니다.",
+        "en": "The member listed at Waco is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "마이클 매콜",
+            "en": "Michael McCaul"
+          },
+          {
+            "id": "B",
+            "ko": "칩 로이",
+            "en": "Chip Roy"
+          },
+          {
+            "id": "C",
+            "ko": "피트 세션스",
+            "en": "Pete Sessions"
+          },
+          {
+            "id": "D",
+            "ko": "랜스 구든",
+            "en": "Lance Gooden"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "npc:2",
+          "ko": "오스틴 방문 자료에 제17구가 잘못 들어갔습니다.",
+          "en": "The Austin visit materials mistakenly identify district seventeen."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "공식 명부에서는 저와 로이 의원이 모두 오스틴으로 나옵니다.",
+          "en": "The official list gives Austin for both Roy and me."
+        },
+        {
+          "speaker": "player",
+          "ko": "주소 표기만으로 의석을 합칠 수 없죠.",
+          "en": "A shared residence city doesn't merge their seats."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제21구와 제10구는 별개입니다.",
+          "en": "District twenty-one is distinct from district ten."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "세 지역구의 정책 질문을 별도로 준비하겠습니다.",
+            "en": "We'll prepare separate questions for the three districts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "세션스는 TX-17, 매콜 TX-10, 로이 TX-21입니다.",
+            "en": "Sessions serves TX-17, McCaul TX-10 and Roy TX-21."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M001157",
+          "name": "Michael T. McCaul"
+        },
+        {
+          "id": "R000614",
+          "name": "Chip Roy"
+        },
+        {
+          "id": "S000250",
+          "name": "Pete Sessions"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1887",
+      "mechanism": "name-disambiguation",
+      "learningTarget": "Morgan Luttrell represents TX-8; Brandon Gill represents TX-26; the official list gives Magnolia and Flower Mound respectively.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "제8구 행사에 참석할 의원은 {{blank}}입니다.",
+        "en": "The district eight participant is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "브랜던 길",
+            "en": "Brandon Gill"
+          },
+          {
+            "id": "B",
+            "ko": "키스 셀프",
+            "en": "Keith Self"
+          },
+          {
+            "id": "C",
+            "ko": "팻 팰런",
+            "en": "Pat Fallon"
+          },
+          {
+            "id": "D",
+            "ko": "모건 러트렐",
+            "en": "Morgan Luttrell"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "두 지역 행사에 제 이름 대신 다른 의원 이름이 들어갔습니다.",
+          "en": "Another member's name was put on my regional event."
+        },
+        {
+          "speaker": "player",
+          "ko": "명찰의 지역구와 성을 함께 확인하겠습니다.",
+          "en": "I'll check both surnames and district numbers."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "플라워마운드로 기재된 사람은 저입니다.",
+          "en": "I'm the one listed at Flower Mound."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "각자의 명찰을 바로잡죠.",
+            "en": "Let's correct each badge."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "러트렐은 TX-8, 길은 TX-26입니다.",
+            "en": "Luttrell serves TX-8 and Gill TX-26."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "L000603",
+          "name": "Morgan Luttrell"
+        },
+        {
+          "id": "G000603",
+          "name": "Brandon Gill"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1888",
+      "mechanism": "freshman-introductions",
+      "learningTarget": "Harrigan NC-10, Harris NC-8 and McDowell NC-6 served in the 119th Congress; the list distinguishes Hickory, Indian Trail and Advance.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "히커리로 기재된 해리건의 의석은 {{blank}}입니다.",
+        "en": "Harrigan, listed at Hickory, holds {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NC-10",
+            "en": "NC-10"
+          },
+          {
+            "id": "B",
+            "ko": "NC-8",
+            "en": "NC-8"
+          },
+          {
+            "id": "C",
+            "ko": "NC-6",
+            "en": "NC-6"
+          },
+          {
+            "id": "D",
+            "ko": "NC-13",
+            "en": "NC-13"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "성의 철자가 비슷한 두 신임 의원을 혼동하기 쉽네요.",
+          "en": "The two new members with similar surnames are easy to confuse."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 해리스, 제8구입니다.",
+          "en": "I'm Harris, district eight."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "저는 제6구입니다.",
+          "en": "I'm from district six."
+        },
+        {
+          "speaker": "player",
+          "ko": "히커리로 표기된 사람은 다른 분이죠.",
+          "en": "The person listed at Hickory is someone else."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 해리건입니다.",
+          "en": "I'm Harrigan."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "세 분의 이름과 의석을 정확히 소개하겠습니다.",
+            "en": "We'll introduce all three accurately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "해리건 제10구, 해리스 제8구, 맥도웰 제6구입니다.",
+            "en": "Harrigan serves ten, Harris eight and McDowell six."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "H001101",
+          "name": "Pat Harrigan"
+        },
+        {
+          "id": "H001102",
+          "name": "Mark Harris"
+        },
+        {
+          "id": "M001240",
+          "name": "Addison P. McDowell"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:2",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1889",
+      "mechanism": "leadership-vs-district",
+      "learningTarget": "Clark was Democratic whip in the 119th Congress and represented MA-5; Trahan represented MA-3.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "클라크 의원의 지역구는 {{blank}}입니다.",
+        "en": "Clark's district is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "MA-3",
+            "en": "MA-3"
+          },
+          {
+            "id": "B",
+            "ko": "MA-5",
+            "en": "MA-5"
+          },
+          {
+            "id": "C",
+            "ko": "MA-7",
+            "en": "MA-7"
+          },
+          {
+            "id": "D",
+            "ko": "MA-9",
+            "en": "MA-9"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "지역구 주민 모임에 지도부의 역할도 설명할 수 있으면 좋겠습니다.",
+          "en": "It would be useful to explain leadership at a district meeting."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 하원 민주당 원내총무 역할과 지역구 역할을 함께 맡습니다.",
+          "en": "I hold the Democratic whip role as well as a district seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "정당 지도부 직책이 지역구 번호를 바꾸지는 않죠.",
+          "en": "A party leadership role doesn't change a district number."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생들에게 지도부 직책과 선거구 대표성을 따로 설명하겠습니다.",
+            "en": "We'll explain party leadership and district representation separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "클라크는 MA-5와 민주당 원내총무를 겸합니다.",
+            "en": "Clark represents MA-5 and serves as Democratic whip."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "C001101",
+          "name": "Katherine M. Clark"
+        },
+        {
+          "id": "T000482",
+          "name": "Lori Trahan"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1890",
+      "mechanism": "regional-delegation",
+      "learningTarget": "Lee PA-12, Meuser PA-9 and Joyce PA-13 are distinct members; list residences Swissvale, Dallas and Hollidaysburg.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "PA-13의 의원은 {{blank}}입니다.",
+        "en": "PA-13 is represented by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "서머 리",
+            "en": "Summer Lee"
+          },
+          {
+            "id": "B",
+            "ko": "댄 뮤저",
+            "en": "Dan Meuser"
+          },
+          {
+            "id": "C",
+            "ko": "존 조이스",
+            "en": "John Joyce"
+          },
+          {
+            "id": "D",
+            "ko": "마이크 켈리",
+            "en": "Mike Kelly"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "펜실베이니아의 세 지역을 하나의 도시로 표시한 안내를 수정하겠습니다.",
+          "en": "I'll correct a guide treating three Pennsylvania regions as one city."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 거주지 표기는 스위스베일입니다.",
+          "en": "My listed residence is Swissvale."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 댈러스라고 기재돼 있습니다.",
+          "en": "I'm listed at Dallas."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "제 표기는 홀리데이스버그입니다.",
+          "en": "Mine is Hollidaysburg."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "각 지역의 주민 질문을 비교하는 시간을 만들죠.",
+            "en": "Let's compare questions from the three regions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "조이스는 PA-13, 리는 PA-12, 뮤저는 PA-9입니다.",
+            "en": "Joyce serves PA-13, Lee PA-12 and Meuser PA-9."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "L000602",
+          "name": "Summer L. Lee"
+        },
+        {
+          "id": "M001204",
+          "name": "Daniel Meuser"
+        },
+        {
+          "id": "J000302",
+          "name": "John Joyce"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1",
+        "npc:2"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1891",
+      "mechanism": "delegation-geography",
+      "learningTarget": "Jackson IL-1 and Ramirez IL-3 are listed at Chicago, while Miller IL-15 is listed at Oakland.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "오클랜드로 기재된 의원의 지역구는 {{blank}}입니다.",
+        "en": "The member listed at Oakland represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "IL-1",
+            "en": "IL-1"
+          },
+          {
+            "id": "B",
+            "ko": "IL-3",
+            "en": "IL-3"
+          },
+          {
+            "id": "C",
+            "ko": "IL-7",
+            "en": "IL-7"
+          },
+          {
+            "id": "D",
+            "ko": "IL-15",
+            "en": "IL-15"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "npc:2",
+          "ko": "일리노이 전체를 시카고와 동일시하는 발표를 들었습니다.",
+          "en": "I heard a presentation equating all of Illinois with Chicago."
+        },
+        {
+          "speaker": "player",
+          "ko": "서로 다른 지역구의 경험을 비교해야겠군요.",
+          "en": "We should compare distinct district experiences."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 시카고로 기재돼 있습니다.",
+          "en": "I'm listed at Chicago."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 같은 도시지만 다른 의석입니다.",
+          "en": "So am I, but I hold a different seat."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역의 다양성을 토론할 수 있도록 세 분을 소개하겠습니다.",
+            "en": "We'll introduce all three to discuss regional diversity."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "밀러의 의석은 IL-15입니다.",
+            "en": "Miller holds IL-15."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "J000309",
+          "name": "Jonathan L. Jackson"
+        },
+        {
+          "id": "R000617",
+          "name": "Delia C. Ramirez"
+        },
+        {
+          "id": "M001211",
+          "name": "Mary E. Miller"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1892",
+      "mechanism": "oath-vs-election",
+      "learningTarget": "Patronis FL-1 and Fine FL-6 won April 1, 2025 and took the oath April 2.",
+      "interactionProxy": "election_or_transition",
+      "question": {
+        "speaker": "player",
+        "ko": "두 의원의 선서일은 {{blank}}입니다.",
+        "en": "Both members took the oath on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2025년 4월 2일",
+            "en": "April 2, 2025"
+          },
+          {
+            "id": "B",
+            "ko": "2025년 4월 1일",
+            "en": "April 1, 2025"
+          },
+          {
+            "id": "C",
+            "ko": "2025년 1월 3일",
+            "en": "January 3, 2025"
+          },
+          {
+            "id": "D",
+            "ko": "2025년 1월 20일",
+            "en": "January 20, 2025"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "보궐선거 보도와 의원 취임 보도에 같은 날짜가 적혀 있습니다.",
+          "en": "The election and swearing-in stories use the same date."
+        },
+        {
+          "speaker": "player",
+          "ko": "당선과 취임은 따로 기록해야 합니다.",
+          "en": "Election and swearing-in should be recorded separately."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "두 의석의 당선일은 4월 1일이었습니다.",
+          "en": "Both seats were won April 1."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "보도에 당선인과 재임 의원을 구별하죠.",
+            "en": "Let's distinguish members-elect from sitting members."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "두 의원은 4월 2일 선서했습니다.",
+            "en": "Both took the oath April 2."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "P000622",
+          "name": "Jimmy Patronis"
+        },
+        {
+          "id": "F000484",
+          "name": "Randy Fine"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1893",
+      "mechanism": "same-region-distinction",
+      "learningTarget": "Luna represents FL-13 and Laurel Lee FL-15, listed respectively at St. Petersburg and Tampa.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "루나 의원의 초청장에는 {{blank}}를 적겠습니다.",
+        "en": "I'll put {{blank}} on Luna's invitation.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "FL-15",
+            "en": "FL-15"
+          },
+          {
+            "id": "B",
+            "ko": "FL-13",
+            "en": "FL-13"
+          },
+          {
+            "id": "C",
+            "ko": "FL-6",
+            "en": "FL-6"
+          },
+          {
+            "id": "D",
+            "ko": "FL-23",
+            "en": "FL-23"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "탬파베이 행사의 초청장에 두 의원의 번호가 뒤바뀌었습니다.",
+          "en": "The Tampa Bay event invitations have the district numbers reversed."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "탬파로 기재된 저는 제15구입니다.",
+          "en": "I'm listed at Tampa and represent district fifteen."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "세인트피터즈버그로 기재된 제 의석은 별개입니다.",
+          "en": "My seat, listed at St. Petersburg, is distinct."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 의원의 참석 세션을 정확히 구분하죠.",
+            "en": "Let's distinguish the two sessions correctly."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "루나는 제13구, 리는 제15구입니다.",
+            "en": "Luna serves thirteen and Lee fifteen."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "L000596",
+          "name": "Anna Paulina Luna"
+        },
+        {
+          "id": "L000597",
+          "name": "Laurel M. Lee"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1894",
+      "mechanism": "district-label",
+      "learningTarget": "Mills FL-7 and Moskowitz FL-23 are listed at New Smyrna Beach and Parkland respectively.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "파크랜드로 기재된 의원은 {{blank}}입니다.",
+        "en": "The member listed at Parkland is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "밀스",
+            "en": "Mills"
+          },
+          {
+            "id": "B",
+            "ko": "루나",
+            "en": "Luna"
+          },
+          {
+            "id": "C",
+            "ko": "모스코위츠",
+            "en": "Moskowitz"
+          },
+          {
+            "id": "D",
+            "ko": "파인",
+            "en": "Fine"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "재난 관련 토론에 플로리다 여러 지역을 초청하고 있습니다.",
+          "en": "We're inviting multiple Florida regions to a disaster discussion."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 의원의 지역구를 정확히 구분하죠.",
+          "en": "Let's identify the two members' districts accurately."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제7구는 제 의석입니다.",
+          "en": "District seven is my seat."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역별 질문을 한 회의에서 비교하겠습니다.",
+            "en": "We'll compare the regional questions in one meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "모스코위츠는 FL-23입니다.",
+            "en": "Moskowitz represents FL-23."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M001216",
+          "name": "Cory Mills"
+        },
+        {
+          "id": "M001217",
+          "name": "Jared Moskowitz"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1895",
+      "mechanism": "at-large-comparison",
+      "learningTarget": "Hageman represents Wyoming at large; Lee represents NV-3.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "와이오밍 하원의원의 관할은 {{blank}}입니다.",
+        "en": "Wyoming's House constituency is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제3구",
+            "en": "district three"
+          },
+          {
+            "id": "B",
+            "ko": "샤이엔 시만",
+            "en": "Cheyenne alone"
+          },
+          {
+            "id": "C",
+            "ko": "상원 선거구",
+            "en": "a Senate district"
+          },
+          {
+            "id": "D",
+            "ko": "주 전체",
+            "en": "the entire state"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "와이오밍의 하원 지도는 번호가 하나도 없습니다.",
+          "en": "Wyoming's House map has no numbered subdivisions."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "네바다에는 제3구처럼 번호가 있는 의석들이 있습니다.",
+          "en": "Nevada has numbered seats, including district three."
+        },
+        {
+          "speaker": "player",
+          "ko": "대표 방식의 차이를 학생들에게 보여주겠습니다.",
+          "en": "I'll show the students how the representation differs."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생들이 상원의 주 전체 대표와도 구별할 수 있겠군요.",
+            "en": "Students can also distinguish this from statewide Senate representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "헤이그먼은 와이오밍의 주 전체 하원 의석입니다.",
+            "en": "Hageman holds Wyoming's at-large House seat."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "H001096",
+          "name": "Harriet M. Hageman"
+        },
+        {
+          "id": "L000590",
+          "name": "Susie Lee"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1896",
+      "mechanism": "territorial-title",
+      "learningTarget": "Hernández is Puerto Rico's resident commissioner; King-Hinds and Plaskett are delegates for the Northern Mariana Islands and U.S. Virgin Islands.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "에르난데스의 공식 직함은 {{blank}}입니다.",
+        "en": "Hernández's official title is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Resident Commissioner",
+            "en": "Resident Commissioner"
+          },
+          {
+            "id": "B",
+            "ko": "Senator",
+            "en": "Senator"
+          },
+          {
+            "id": "C",
+            "ko": "Governor",
+            "en": "Governor"
+          },
+          {
+            "id": "D",
+            "ko": "Speaker",
+            "en": "Speaker"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "세 섬 대표를 모두 같은 직함으로 소개하려 합니다.",
+          "en": "We're about to introduce all three island representatives with the same title."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 북마리아나제도의 delegate입니다.",
+          "en": "I am the Northern Mariana Islands delegate."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "저는 미국령 버진아일랜드의 delegate입니다.",
+          "en": "I am the U.S. Virgin Islands delegate."
+        },
+        {
+          "speaker": "player",
+          "ko": "푸에르토리코는 다른 공식 직함을 쓰지요.",
+          "en": "Puerto Rico uses a different official title."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 직함으로 소개해 주세요.",
+          "en": "Please use that title for me."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "세 지역의 대표 직함을 정확하게 사용합시다.",
+            "en": "Let's use the correct title for each territory."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "푸에르토리코 대표는 resident commissioner입니다.",
+            "en": "Puerto Rico elects a resident commissioner."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "H001103",
+          "name": "Pablo José Hernández"
+        },
+        {
+          "id": "K000404",
+          "name": "Kimberlyn King-Hinds"
+        },
+        {
+          "id": "P000610",
+          "name": "Stacey E. Plaskett"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:2",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1897",
+      "mechanism": "territory-vs-state",
+      "learningTarget": "Hamadeh represents AZ-8, a numbered House seat; Hernández holds Puerto Rico's resident commissioner position.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "하마데 의원은 {{blank}}를 대표합니다.",
+        "en": "Hamadeh represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "PR-AL",
+            "en": "PR-AL"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-8",
+            "en": "AZ-8"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-7",
+            "en": "AZ-7"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-3",
+            "en": "AZ-3"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "애리조나의 제8구와 푸에르토리코 대표직이 같은 형태라고 설명한 자료가 있네요.",
+          "en": "A handout treats Arizona district eight and Puerto Rico's seat as the same kind of representation."
+        },
+        {
+          "speaker": "player",
+          "ko": "주 지역구와 영토 대표의 직함을 구분하겠습니다.",
+          "en": "I'll distinguish a state's district from a territorial office."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "푸에르토리코의 직함은 resident commissioner입니다.",
+          "en": "Puerto Rico's title is resident commissioner."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "서로 다른 대표 제도를 함께 토론하겠습니다.",
+            "en": "We'll discuss the different forms of representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "하마데는 애리조나 제8구 하원의원입니다.",
+            "en": "Hamadeh holds Arizona's eighth House seat."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "H001098",
+          "name": "Abraham J. Hamadeh"
+        },
+        {
+          "id": "H001103",
+          "name": "Pablo José Hernández"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1898",
+      "mechanism": "separate-districts",
+      "learningTarget": "Jordan OH-4, Miller OH-7 and Taylor OH-2 were listed at Urbana, Rocky River and Amelia respectively.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "록키리버로 기재된 의원은 {{blank}}입니다.",
+        "en": "The member listed at Rocky River is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "짐 조던",
+            "en": "Jim Jordan"
+          },
+          {
+            "id": "B",
+            "ko": "데이비드 테일러",
+            "en": "David Taylor"
+          },
+          {
+            "id": "C",
+            "ko": "맥스 밀러",
+            "en": "Max Miller"
+          },
+          {
+            "id": "D",
+            "ko": "마이크 캐리",
+            "en": "Mike Carey"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "오하이오의 세 의원을 학생 토론에 초청했습니다.",
+          "en": "Three Ohio members have been invited to a student discussion."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "저는 제2구의 테일러입니다.",
+          "en": "I'm Taylor from district two."
+        },
+        {
+          "speaker": "player",
+          "ko": "이름뿐 아니라 대표 지역도 소개하죠.",
+          "en": "Let's introduce their constituencies, not just names."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제4구입니다.",
+          "en": "I represent district four."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제7구는 제 의석입니다.",
+          "en": "District seven is my seat."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생 질문을 서로 다른 지역의 사례로 구성하겠습니다.",
+            "en": "We'll organize questions around their different regions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "밀러는 OH-7입니다.",
+            "en": "Miller represents OH-7."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "J000289",
+          "name": "Jim Jordan"
+        },
+        {
+          "id": "M001222",
+          "name": "Max L. Miller"
+        },
+        {
+          "id": "T000490",
+          "name": "David J. Taylor"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1899",
+      "mechanism": "district-comparison",
+      "learningTarget": "Cisneros CA-31, Khanna CA-17 and Kiley CA-3 were serving in the 119th Congress; Kiley was listed as Independent in the May 1 official list.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "무소속으로 기재된 의원은 {{blank}}입니다.",
+        "en": "The member listed as independent is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로 카나",
+            "en": "Ro Khanna"
+          },
+          {
+            "id": "B",
+            "ko": "길 시스네로스",
+            "en": "Gil Cisneros"
+          },
+          {
+            "id": "C",
+            "ko": "짐 코스타",
+            "en": "Jim Costa"
+          },
+          {
+            "id": "D",
+            "ko": "케빈 카일리",
+            "en": "Kevin Kiley"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "캘리포니아 대표단을 두 정당만으로 표기한 안내에 예외가 있습니까?",
+          "en": "Does a two-party caption for California's delegation miss an exception?"
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "5월 공식 명부에서 제 소속은 무소속으로 표시됐습니다.",
+          "en": "The May list identifies me as independent."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제31구는 별도 의석입니다.",
+          "en": "District thirty-one is a separate seat."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제17구도 그렇죠.",
+          "en": "So is district seventeen."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "소속 정당은 반드시 기준 날짜와 함께 표기하죠.",
+            "en": "Always label party affiliation with an as-of date."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "5월 1일 명부의 무소속 의원은 CA-3의 카일리였습니다.",
+            "en": "The May list identified Kiley of CA-3 as independent."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "C001123",
+          "name": "Gilbert Ray Cisneros, Jr."
+        },
+        {
+          "id": "K000389",
+          "name": "Ro Khanna"
+        },
+        {
+          "id": "K000401",
+          "name": "Kevin Kiley"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:2",
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1900",
+      "mechanism": "distinct-seats",
+      "learningTarget": "Mullin represents CA-15 and Torres CA-35 in the 119th Congress.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "토레스 의원의 의석은 {{blank}}입니다.",
+        "en": "Torres holds {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-35",
+            "en": "CA-35"
+          },
+          {
+            "id": "B",
+            "ko": "CA-15",
+            "en": "CA-15"
+          },
+          {
+            "id": "C",
+            "ko": "CA-17",
+            "en": "CA-17"
+          },
+          {
+            "id": "D",
+            "ko": "CA-31",
+            "en": "CA-31"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "지역 대표 활동을 비교하는 회의에 두 지역구가 참여합니다.",
+          "en": "Two districts will participate in a constituent representation forum."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분 모두 캘리포니아이지만 각자의 의석을 분리해야겠군요.",
+          "en": "Both are from California, but their seats must be kept separate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제15구가 제 의석입니다.",
+          "en": "District fifteen is mine."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "각 지역구의 경험을 비교할 시간을 배정하죠.",
+            "en": "Allocate time to compare both districts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "토레스는 제35구, 멀린은 제15구입니다.",
+            "en": "Torres serves district 35 and Mullin district 15."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M001225",
+          "name": "Kevin Mullin"
+        },
+        {
+          "id": "T000474",
+          "name": "Norma J. Torres"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:1",
+        "npc:0"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    }
+  ],
+  "patches": [
+    {
+      "id": "P01-1876",
+      "path": "data/dialogue-packs/P01/part-76.json",
+      "originalBlobSha": "a889575afab8524b2ca2ddbfedc74c26d8739edc",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이 동부 켄터키 행사 지도에는 애슐랜드가 빠졌네요.",
+            "en": "This eastern Kentucky event map omits Ashland."
+          },
+          {
+            "speaker": "player",
+            "ko": "옛 지도라면 선거구 변경을 반영해야겠군요.",
+            "en": "If it is an old map, we need to account for redistricting."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2023년에 애슐랜드 사무실을 열었습니다. 보이드 카운티 전체가 제 지역구에 들어왔지요.",
+            "en": "I opened an Ashland office in 2023 after all of Boyd County entered my district."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 지도에 애슐랜드를 {{blank}}에 표시하겠습니다.",
+          "en": "I'll mark Ashland in {{blank}} on the updated map.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "KY-5",
+              "en": "KY-5"
+            },
+            {
+              "id": "B",
+              "ko": "KY-6",
+              "en": "KY-6"
+            },
+            {
+              "id": "C",
+              "ko": "KY-4",
+              "en": "KY-4"
+            },
+            {
+              "id": "D",
+              "ko": "KY-2",
+              "en": "KY-2"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 기존 30개 카운티 지도와 새 33개 카운티 지도를 나란히 비교합시다.",
+              "en": "Good. Compare the old 30-county map with the new 33-county map."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2022년 재획정으로 보이드 전체가 로저스의 제5구에 들어왔습니다.",
+              "en": "Redistricting added all of Boyd to Rogers's fifth district."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 동부 켄터키 행사 지도에는 애슐랜드가 빠졌네요.",
+              "en": "This eastern Kentucky event map omits Ashland."
+            },
+            {
+              "speaker": "player",
+              "ko": "옛 지도라면 선거구 변경을 반영해야겠군요.",
+              "en": "If it is an old map, we need to account for redistricting."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "2023년에 애슐랜드 사무실을 열었습니다. 보이드 카운티 전체가 제 지역구에 들어왔지요.",
+              "en": "I opened an Ashland office in 2023 after all of Boyd County entered my district."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "애슐랜드 주민이 2022년 이전 지역구 안내문을 가지고 왔습니다.",
+              "en": "An Ashland resident has a district guide from before 2022."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "현행 경계와 과거 안내문을 구별하고 보이드 카운티의 담당 의원실을 확인하세요.",
+              "en": "Distinguish the current boundary from the older guide and verify the office for Boyd County."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "새 지도에 애슐랜드를 {{blank}}에 표시하겠습니다.",
+            "en": "I'll mark Ashland in {{blank}} on the updated map.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "KY-5",
+                "en": "KY-5"
+              },
+              {
+                "id": "B",
+                "ko": "KY-6",
+                "en": "KY-6"
+              },
+              {
+                "id": "C",
+                "ko": "KY-4",
+                "en": "KY-4"
+              },
+              {
+                "id": "D",
+                "ko": "KY-2",
+                "en": "KY-2"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "현재 문의는 {{blank}} 지역구로 보내겠습니다.",
+            "en": "I'll route the current inquiry to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "KY-5",
+                "en": "KY-5"
+              },
+              {
+                "id": "B",
+                "ko": "KY-6",
+                "en": "KY-6"
+              },
+              {
+                "id": "C",
+                "ko": "KY-4",
+                "en": "KY-4"
+              },
+              {
+                "id": "D",
+                "ko": "KY-2",
+                "en": "KY-2"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "좋습니다. 기존 30개 카운티 지도와 새 33개 카운티 지도를 나란히 비교합시다.",
+                "en": "Good. Compare the old 30-county map with the new 33-county map."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2022년 재획정으로 보이드 전체가 로저스의 제5구에 들어왔습니다.",
+                "en": "Redistricting added all of Boyd to Rogers's fifth district."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "기존 안내문의 날짜를 표시하고 새 지역구 연락처로 연결하세요.",
+                "en": "Mark the older guide's date and refer the inquiry to the updated district contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2022년 로저스의 KY-5가 보이드 카운티 전역을 포함하도록 확대됐습니다. 배정을 다시 확인하세요.",
+                "en": "Rogers's KY-5 expanded to include all of Boyd County in 2022. Recheck the referral."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": [],
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1892",
+      "path": "data/dialogue-packs/P01/part-76.json",
+      "originalBlobSha": "a889575afab8524b2ca2ddbfedc74c26d8739edc",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "보궐선거 보도와 의원 취임 보도에 같은 날짜가 적혀 있습니다.",
+            "en": "The election and swearing-in stories use the same date."
+          },
+          {
+            "speaker": "player",
+            "ko": "당선과 취임은 따로 기록해야 합니다.",
+            "en": "Election and swearing-in should be recorded separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의석의 당선일은 4월 1일이었습니다.",
+            "en": "Both seats were won April 1."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원의 선서일은 {{blank}}입니다.",
+          "en": "Both members took the oath on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2025년 4월 2일",
+              "en": "April 2, 2025"
+            },
+            {
+              "id": "B",
+              "ko": "2025년 4월 1일",
+              "en": "April 1, 2025"
+            },
+            {
+              "id": "C",
+              "ko": "2025년 1월 3일",
+              "en": "January 3, 2025"
+            },
+            {
+              "id": "D",
+              "ko": "2025년 1월 20일",
+              "en": "January 20, 2025"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "보도에 당선인과 재임 의원을 구별하죠.",
+              "en": "Let's distinguish members-elect from sitting members."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "두 의원은 4월 2일 선서했습니다.",
+              "en": "Both took the oath April 2."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "보궐선거 보도와 의원 취임 보도에 같은 날짜가 적혀 있습니다.",
+              "en": "The election and swearing-in stories use the same date."
+            },
+            {
+              "speaker": "player",
+              "ko": "당선과 취임은 따로 기록해야 합니다.",
+              "en": "Election and swearing-in should be recorded separately."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "두 의석의 당선일은 4월 1일이었습니다.",
+              "en": "Both seats were won April 1."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "플로리다 두 공석의 선거 결과가 나왔지만 주민 문의 접수 시스템은 아직 갱신되지 않았습니다.",
+              "en": "Results are in for two Florida vacancies, but the constituent case system has not yet been updated."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "선거일과 선서일을 구별해 실제 하원 재임 기록의 시작점을 표시하세요.",
+              "en": "Distinguish election day from oath day when marking the start of actual House service."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "두 의원의 선서일은 {{blank}}입니다.",
+            "en": "Both members took the oath on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2025년 4월 2일",
+                "en": "April 2, 2025"
+              },
+              {
+                "id": "B",
+                "ko": "2025년 4월 1일",
+                "en": "April 1, 2025"
+              },
+              {
+                "id": "C",
+                "ko": "2025년 1월 3일",
+                "en": "January 3, 2025"
+              },
+              {
+                "id": "D",
+                "ko": "2025년 1월 20일",
+                "en": "January 20, 2025"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "두 당선인의 선서일은 {{blank}}입니다.",
+            "en": "The two members-elect took the oath on {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "2025년 4월 2일",
+                "en": "April 2, 2025"
+              },
+              {
+                "id": "B",
+                "ko": "2025년 4월 1일",
+                "en": "April 1, 2025"
+              },
+              {
+                "id": "C",
+                "ko": "2025년 1월 3일",
+                "en": "January 3, 2025"
+              },
+              {
+                "id": "D",
+                "ko": "2025년 1월 20일",
+                "en": "January 20, 2025"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "보도에 당선인과 재임 의원을 구별하죠.",
+                "en": "Let's distinguish members-elect from sitting members."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "두 의원은 4월 2일 선서했습니다.",
+                "en": "Both took the oath April 2."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역구의 접견 담당자 기록을 선서일에 맞춰 갱신하세요.",
+                "en": "Update the meeting contacts for both districts using the oath date."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "선거는 4월 1일, 선서는 4월 2일이었습니다. 두 날짜를 섞지 마세요.",
+                "en": "The election was April 1; the oath was April 2. Keep the dates distinct."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": [],
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    }
+  ],
+  "storyCandidates": [],
+  "limitations": "Literal matching is not semantic answer disclosure; no grades assigned. No historical re-verification or playtest."
+}
