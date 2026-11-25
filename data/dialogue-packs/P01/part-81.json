@@ -1,0 +1,2657 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 81,
+  "scenes": [
+    {
+      "id": "P01-2001",
+      "mechanism": "vacancy-to-member-file",
+      "learningTarget": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+      "date": "2026-06-11",
+      "venue": {
+        "ko": "의석 승계 기록실",
+        "en": "Seat succession archive"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 의석 승계 기록실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the seat succession archive."
+      },
+      "cast": [
+        {
+          "id": "G000607",
+          "name": "James Gallagher",
+          "ko": "제임스 갤러거",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/G000607"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "CA-01 기록이 공석으로 남아 있어요.",
+          "en": "The CA-01 entry still shows a vacancy."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "6월 10일 선서 기록부터 확인합시다.",
+          "en": "Check the June 10 oath record first."
+        },
+        {
+          "speaker": "player",
+          "ko": "선거 결과와 실제 취임 기록을 나누어 보관하겠습니다.",
+          "en": "I'll keep the election result separate from the oath record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "새 현직 의원의 이름은 {{blank}}로 기록하겠습니다.",
+        "en": "I'll enter {{blank}} as the newly sworn representative.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "제임스 갤러거",
+            "en": "James Gallagher"
+          },
+          {
+            "id": "B",
+            "ko": "더그 라말파",
+            "en": "Doug LaMalfa"
+          },
+          {
+            "id": "C",
+            "ko": "케빈 카일리",
+            "en": "Kevin Kiley"
+          },
+          {
+            "id": "D",
+            "ko": "마이크 톰프슨",
+            "en": "Mike Thompson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "갱신된 재임 기록을 보관합시다.",
+            "en": "File the updated service record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "6월 10일 CA-01에 취임한 사람은 갤러거입니다.",
+            "en": "Gallagher took the oath for CA-01 on June 10."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/members/G000607",
+          "claim": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+          "asOf": "2026-06-11"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+          "claim": "Official oath chronology.",
+          "asOf": "2026-06-11"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2001-vacancy-to-member-file"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2002",
+      "mechanism": "district-transition-reception",
+      "learningTarget": "Everton Blair Jr. took the oath September 1, 2026, for GA-13 as a Democrat.",
+      "date": "2026-09-02",
+      "venue": {
+        "ko": "조지아 대표단 접견실",
+        "en": "Georgia delegation reception"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 조지아 대표단 접견실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the georgia delegation reception."
+      },
+      "cast": [
+        {
+          "id": "B001328",
+          "name": "Everton Blair Jr.",
+          "ko": "에버턴 블레어 주니어",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/B001328"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어제 선서를 마쳤습니다. 새 대표단 소개를 준비하고 있군요.",
+          "en": "I took the oath yesterday. You're preparing the new delegation introductions."
+        },
+        {
+          "speaker": "host",
+          "ko": "소개장에 당적과 지역구를 함께 적어야 합니다.",
+          "en": "The introduction card needs both party and district."
+        },
+        {
+          "speaker": "player",
+          "ko": "기존 공석 명단과는 다른 카드로 만들겠습니다.",
+          "en": "I'll make a new card rather than reuse the vacancy list."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "블레어 의원 소개장은 {{blank}}로 표기하겠습니다.",
+        "en": "I'll label Blair's card {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "GA-13 공화당",
+            "en": "GA-13 Republican"
+          },
+          {
+            "id": "B",
+            "ko": "GA-13 민주당",
+            "en": "GA-13 Democrat"
+          },
+          {
+            "id": "C",
+            "ko": "GA-14 민주당",
+            "en": "GA-14 Democrat"
+          },
+          {
+            "id": "D",
+            "ko": "GA-12 공화당",
+            "en": "GA-12 Republican"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 대표단 접견 순서가 정리됐군요.",
+            "en": "The delegation reception list is ready."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "9월 1일 취임한 블레어는 GA-13 민주당 의원입니다.",
+            "en": "Blair was sworn in on September 1 as the Democrat representing GA-13."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/Members/B001328",
+          "claim": "Everton Blair Jr. took the oath September 1, 2026, for GA-13 as a Democrat.",
+          "asOf": "2026-09-02"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+          "claim": "Official oath chronology.",
+          "asOf": "2026-09-02"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2002-district-transition-reception"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2003",
+      "mechanism": "swearing-in-calendar-check",
+      "learningTarget": "Aisha Wahab took the oath for CA-14 on September 2, 2026.",
+      "date": "2026-09-03",
+      "venue": {
+        "ko": "하원 선서 일정 게시대",
+        "en": "House oath calendar board"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 하원 선서 일정 게시대에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the house oath calendar board."
+      },
+      "cast": [
+        {
+          "id": "W000832",
+          "name": "Aisha Wahab",
+          "ko": "아이샤 와하브",
+          "portrait": null,
+          "source": "https://bioguide.congress.gov/search/bio/W000832"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "캘리포니아 새 의원의 재임 시작일을 입력해야 합니다.",
+          "en": "We need the California newcomer’s service start date."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "선거일이 아니라 선서일을 기록해 주세요.",
+          "en": "Use the oath date, not the election date."
+        },
+        {
+          "speaker": "player",
+          "ko": "서기실의 날짜와 CA-14 기록을 함께 대조하겠습니다.",
+          "en": "I'll compare the Clerk's date against the CA-14 entry."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "와하브 의원의 하원 취임일은 {{blank}}입니다.",
+        "en": "Wahab's House service began on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2026년 5월 1일",
+            "en": "May 1, 2026"
+          },
+          {
+            "id": "B",
+            "ko": "2026년 6월 10일",
+            "en": "June 10, 2026"
+          },
+          {
+            "id": "C",
+            "ko": "2026년 9월 2일",
+            "en": "September 2, 2026"
+          },
+          {
+            "id": "D",
+            "ko": "2026년 9월 1일",
+            "en": "September 1, 2026"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 연표와 의원 명부가 일치합니다.",
+            "en": "Now the timeline and roster agree."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "와하브의 선서 기록은 9월 2일입니다.",
+            "en": "Wahab's oath is dated September 2."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/Members/W000832",
+          "claim": "Aisha Wahab took the oath for CA-14 on September 2, 2026.",
+          "asOf": "2026-09-03"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+          "claim": "Official oath chronology.",
+          "asOf": "2026-09-03"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2003-swearing-in-calendar-check"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2004",
+      "mechanism": "small-business-career-brief",
+      "learningTarget": "Rick W. Allen represented GA-12 and built a business before election to Congress.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "조지아 경제 간담회 준비실",
+        "en": "Georgia economic roundtable prep"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 조지아 경제 간담회 준비실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the georgia economic roundtable prep."
+      },
+      "cast": [
+        {
+          "id": "A000372",
+          "name": "Rick W. Allen",
+          "ko": "릭 앨런",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000372.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000372"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지역 기업인 간담회에서 의원의 이전 경력을 한 줄 소개하려 합니다.",
+          "en": "We need one line on the representative’s earlier career for a business roundtable."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "공직 이전의 경력은 제 공식 약력에서 확인할 수 있습니다.",
+          "en": "My official biography covers my pre-Congress career."
+        },
+        {
+          "speaker": "player",
+          "ko": "정치적 입장 대신 검증된 직업 이력을 사용하겠습니다.",
+          "en": "I'll use a verified career fact rather than infer a political position."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "GA-12의 릭 앨런은 의회 입성 전 {{blank}} 경험이 있었습니다.",
+        "en": "Before Congress, Rick Allen of GA-12 had experience {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방대법관으로 재직한",
+            "en": "serving on the Supreme Court"
+          },
+          {
+            "id": "B",
+            "ko": "해군참모총장으로 재직한",
+            "en": "serving as Chief of Naval Operations"
+          },
+          {
+            "id": "C",
+            "ko": "연방준비제도 의장으로 재직한",
+            "en": "chairing the Federal Reserve"
+          },
+          {
+            "id": "D",
+            "ko": "사업체를 설립하고 성장시킨",
+            "en": "building his own business"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "기업인 방문 자료에 그 경력을 넣겠습니다.",
+            "en": "I'll add that to the visitor briefing."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "앨런의 공식 약력은 사업체 창업과 운영 경험을 기록합니다.",
+            "en": "Allen's official biography describes starting and growing a business."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://energycommerce.house.gov/representatives/allen",
+          "claim": "Rick W. Allen represented GA-12 and built a business before election to Congress.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2004-small-business-career-brief"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2005",
+      "mechanism": "committee-referral-oversight",
+      "learningTarget": "Clay Higgins of LA-03 serves on the House Oversight and Government Reform Committee in the 119th Congress.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "연방기관 감독 요청 접수처",
+        "en": "Federal oversight intake desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 연방기관 감독 요청 접수처에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the federal oversight intake desk."
+      },
+      "cast": [
+        {
+          "id": "H001077",
+          "name": "Clay Higgins",
+          "ko": "클레이 히긴스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001077.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001077"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주민이 연방기관의 업무 처리 문제를 가져왔습니다.",
+          "en": "A constituent brought a complaint about federal agency administration."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "의원실의 민원 처리와 위원회의 감독 활동은 구분해야 합니다.",
+          "en": "Distinguish district casework from committee oversight."
+        },
+        {
+          "speaker": "aide",
+          "ko": "히긴스 의원의 실제 상임위원회 배정부터 확인하죠.",
+          "en": "Let's check Higgins's actual committee assignment."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "LA-03 히긴스의 소속 상임위 중 기관 감독과 관련된 곳은 {{blank}}입니다.",
+        "en": "Higgins of LA-03 serves on the {{blank}} relevant to agency oversight.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "감독·정부개혁위원회",
+            "en": "Oversight and Government Reform Committee"
+          },
+          {
+            "id": "B",
+            "ko": "세입위원회",
+            "en": "Ways and Means Committee"
+          },
+          {
+            "id": "C",
+            "ko": "농업위원회",
+            "en": "Agriculture Committee"
+          },
+          {
+            "id": "D",
+            "ko": "규칙위원회",
+            "en": "Rules Committee"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "감독 절차와 개별 민원 문서를 분리해 두죠.",
+            "en": "Keep the oversight and casework files separate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "히긴스의 공식 배정에는 감독·정부개혁위원회가 포함됩니다.",
+            "en": "His published assignments include Oversight and Government Reform."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clayhiggins.house.gov/about/committees-and-caucuses/",
+          "claim": "Clay Higgins of LA-03 serves on the House Oversight and Government Reform Committee in the 119th Congress.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2005-committee-referral-oversight"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2006",
+      "mechanism": "career-ladder-indiana",
+      "learningTarget": "Mark B. Messmer represented IN-08 in the 119th Congress after serving in the Indiana House (2008–2014) and Indiana Senate (2014–2024).",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "인디애나 주정치 자료전",
+        "en": "Indiana state politics exhibit"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 인디애나 주정치 자료전에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the indiana state politics exhibit."
+      },
+      "cast": [
+        {
+          "id": "M001233",
+          "name": "Mark B. Messmer",
+          "ko": "마크 메스머",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001233.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001233"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연방 하원에 오기 전 주의회 양원에서 일했습니다.",
+          "en": "I served in both chambers of the state legislature before the U.S. House."
+        },
+        {
+          "speaker": "host",
+          "ko": "전시판에서 주 상원과 연방 상원이 섞여 있습니다.",
+          "en": "The exhibit confuses the state Senate with the U.S. Senate."
+        },
+        {
+          "speaker": "player",
+          "ko": "2014년부터 2024년까지의 이력을 정확히 표시하겠습니다.",
+          "en": "I'll label the 2014–2024 period accurately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "IN-08 메스머의 그 기간 직책은 {{blank}}이었습니다.",
+        "en": "During that period, Messmer of IN-08 served in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미국 연방 상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "B",
+            "ko": "인디애나 주 상원",
+            "en": "Indiana State Senate"
+          },
+          {
+            "id": "C",
+            "ko": "인디애나 주지사실",
+            "en": "Indiana governor's office"
+          },
+          {
+            "id": "D",
+            "ko": "미국 연방 대법원",
+            "en": "U.S. Supreme Court"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주의회에서 연방의회로 이어지는 경력 경로를 기록합니다.",
+            "en": "Record the state-to-federal career path."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2014~2024년 재임 기관은 인디애나 주 상원입니다.",
+            "en": "He served in the Indiana State Senate from 2014 to 2024."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/36507225761",
+          "claim": "Mark B. Messmer represented IN-08 in the 119th Congress after serving in the Indiana House (2008–2014) and Indiana Senate (2014–2024).",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2006-career-ladder-indiana"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2007",
+      "mechanism": "san-gabriel-language-access",
+      "learningTarget": "CA-28, represented by Judy Chu, includes Pasadena and the western San Gabriel Valley.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "언어 접근성 행사 준비실",
+        "en": "Language-access event prep"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 언어 접근성 행사 준비실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the language-access event prep."
+      },
+      "cast": [
+        {
+          "id": "C001080",
+          "name": "Judy Chu",
+          "ko": "주디 추",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001080.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001080"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "서부 샌게이브리얼 밸리 주민 대상 통역 안내회를 준비 중입니다.",
+          "en": "We're preparing an interpretation-access event for western San Gabriel Valley residents."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지역구 약력에 패서디나도 포함됩니다.",
+          "en": "My district biography includes Pasadena too."
+        },
+        {
+          "speaker": "player",
+          "ko": "안내 자료를 지역구 단위로 구분하겠습니다.",
+          "en": "I'll organize the materials by congressional district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "추 의원의 패서디나 일대 안내 자료는 {{blank}} 폴더에 넣겠습니다.",
+        "en": "I'll put Chu's Pasadena-area materials in the {{blank}} folder.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-32",
+            "en": "CA-32"
+          },
+          {
+            "id": "B",
+            "ko": "CA-37",
+            "en": "CA-37"
+          },
+          {
+            "id": "C",
+            "ko": "CA-28",
+            "en": "CA-28"
+          },
+          {
+            "id": "D",
+            "ko": "CA-46",
+            "en": "CA-46"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "통역 안내회 자료가 지역구별로 정리됐습니다.",
+            "en": "The interpretation-event materials are organized."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "추 의원의 CA-28에는 패서디나와 서부 샌게이브리얼 밸리가 포함됩니다.",
+            "en": "Chu's CA-28 includes Pasadena and the western San Gabriel Valley."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://chu.house.gov/about/biography",
+          "claim": "CA-28, represented by Judy Chu, includes Pasadena and the western San Gabriel Valley.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2007-san-gabriel-language-access"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2008",
+      "mechanism": "wildfire-guide-dispatch",
+      "learningTarget": "Brad Sherman represents CA-32; his office offers federal-agency casework through its San Fernando Valley district office.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "산불 복구 안내소",
+        "en": "Wildfire recovery information desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 산불 복구 안내소에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the wildfire recovery information desk."
+      },
+      "cast": [
+        {
+          "id": "S000344",
+          "name": "Brad Sherman",
+          "ko": "브래드 셔먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000344.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000344"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "연방기관 지원 양식을 직접 제출하려는 주민이 있습니다.",
+          "en": "A resident wants to submit federal-agency assistance paperwork in person."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "우리 지역구 사무실 위치를 공식 서비스 페이지에서 찾을 수 있습니다.",
+          "en": "The service page identifies our district office."
+        },
+        {
+          "speaker": "player",
+          "ko": "의원실 방문 안내와 피해 지역의 경계 판단을 구분하겠습니다.",
+          "en": "I'll distinguish office directions from determining disaster-area boundaries."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CA-32 셔먼 의원의 방문 안내에 적을 지역 사무실은 {{blank}}입니다.",
+        "en": "Sherman's CA-32 in-person casework guidance identifies the {{blank}} office.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "샌디에이고 북부",
+            "en": "North San Diego County"
+          },
+          {
+            "id": "B",
+            "ko": "프레즈노",
+            "en": "Fresno"
+          },
+          {
+            "id": "C",
+            "ko": "새크라멘토",
+            "en": "Sacramento"
+          },
+          {
+            "id": "D",
+            "ko": "샌퍼낸도 밸리",
+            "en": "San Fernando Valley"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민에게 방문 위치를 알려주고 주소 확인 절차를 남깁시다.",
+            "en": "Give the visitor directions and keep address verification separate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 서비스 페이지는 샌퍼낸도 밸리 지역구 사무실을 안내합니다.",
+            "en": "The service page directs visitors to the San Fernando Valley district office."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://sherman.house.gov/services",
+          "claim": "Brad Sherman represents CA-32; his office offers federal-agency casework through its San Fernando Valley district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2008-wildfire-guide-dispatch"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2009",
+      "mechanism": "county-not-district",
+      "learningTarget": "CA-37 represented by Sydney Kamlager-Dove covers an area within Los Angeles County; a county is not identical to a congressional district.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "카운티 공동회의",
+        "en": "County coordination meeting"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 카운티 공동회의에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the county coordination meeting."
+      },
+      "cast": [
+        {
+          "id": "K000400",
+          "name": "Sydney Kamlager-Dove",
+          "ko": "시드니 캄라거도브",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000400.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000400"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "로스앤젤레스 카운티 전체를 한 지역구로 표시한 초안이 왔습니다.",
+          "en": "A draft treats all of Los Angeles County as one congressional district."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구는 그 카운티 안의 일부 지역을 대표합니다.",
+          "en": "My district represents an area within that county."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 단위 자료에 의회 지역구 구분을 추가하겠습니다.",
+          "en": "I'll add congressional-district distinctions to the county data."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캄라거도브의 지역구 CA-37은 {{blank}} 안에 있습니다.",
+        "en": "Kamlager-Dove's CA-37 lies within {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "로스앤젤레스 카운티",
+            "en": "Los Angeles County"
+          },
+          {
+            "id": "B",
+            "ko": "샌프란시스코 카운티",
+            "en": "San Francisco County"
+          },
+          {
+            "id": "C",
+            "ko": "컨 카운티",
+            "en": "Kern County"
+          },
+          {
+            "id": "D",
+            "ko": "프레즈노 카운티",
+            "en": "Fresno County"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 표에 별도의 지역구 열을 추가합니다.",
+            "en": "Add a separate district column to the county table."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-37은 로스앤젤레스 카운티의 일부입니다. 카운티 전체와 같지 않습니다.",
+            "en": "CA-37 covers part of Los Angeles County, not the entire county."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://kamlager-dove.house.gov/about",
+          "claim": "CA-37 represented by Sydney Kamlager-Dove covers an area within Los Angeles County; a county is not identical to a congressional district.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2009-county-not-district"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2010",
+      "mechanism": "cross-county-service-map",
+      "learningTarget": "Linda Sánchez's CA-38 includes Whittier and La Habra and crosses Los Angeles and Orange counties.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "지역 교통 협의실",
+        "en": "Local transit coordination room"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 지역 교통 협의실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the local transit coordination room."
+      },
+      "cast": [
+        {
+          "id": "S001156",
+          "name": "Linda T. Sánchez",
+          "ko": "린다 산체스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001156.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001156"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "휘티어와 라하브라의 주민 대표가 함께 왔군요.",
+          "en": "Representatives from Whittier and La Habra arrived together."
+        },
+        {
+          "speaker": "aide",
+          "ko": "두 도시는 카운티 경계가 달라 별개 의원실로 보내야 할까요?",
+          "en": "Should we split them by county into different congressional offices?"
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 경계보다 현재 하원 지역구 지도를 먼저 확인하죠.",
+          "en": "Let's check the congressional district map before relying on county lines."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 도시를 포함하는 산체스 의원의 지역구는 {{blank}}입니다.",
+        "en": "Sánchez's district covering both communities is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-11",
+            "en": "CA-11"
+          },
+          {
+            "id": "B",
+            "ko": "CA-38",
+            "en": "CA-38"
+          },
+          {
+            "id": "C",
+            "ko": "CA-22",
+            "en": "CA-22"
+          },
+          {
+            "id": "D",
+            "ko": "CA-52",
+            "en": "CA-52"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "공동 교통 논의 자료를 하나의 의원실 방문에 연결합니다.",
+            "en": "Arrange one office visit for the joint transit discussion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-38에는 휘티어와 라하브라가 모두 포함됩니다.",
+            "en": "CA-38 includes both Whittier and La Habra."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://lindasanchez.house.gov/about-linda/our-district",
+          "claim": "Linda Sánchez's CA-38 includes Whittier and La Habra and crosses Los Angeles and Orange counties.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2010-cross-county-service-map"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2011",
+      "mechanism": "island-community-brief",
+      "learningTarget": "Robert Garcia's CA-42 includes Avalon, as listed by his district office.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "도서 지역 주민 접견실",
+        "en": "Island community reception"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 도서 지역 주민 접견실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the island community reception."
+      },
+      "cast": [
+        {
+          "id": "G000598",
+          "name": "Robert Garcia",
+          "ko": "로버트 가르시아",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000598.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000598"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "섬 지역 주민의 교통 접근성 자료가 도착했습니다.",
+          "en": "A brief on transport access from an island community has arrived."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구 공식 도시 목록에는 애벌론이 있습니다.",
+          "en": "Avalon appears in my official list of district communities."
+        },
+        {
+          "speaker": "player",
+          "ko": "본토 도시만 보고 지역구를 추정하면 안 되겠군요.",
+          "en": "We shouldn't infer the district from mainland cities alone."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "애벌론의 자료는 가르시아 의원의 {{blank}} 기록에 연결하겠습니다.",
+        "en": "I'll attach Avalon's brief to Garcia's {{blank}} district record.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-28",
+            "en": "CA-28"
+          },
+          {
+            "id": "B",
+            "ko": "CA-32",
+            "en": "CA-32"
+          },
+          {
+            "id": "C",
+            "ko": "CA-42",
+            "en": "CA-42"
+          },
+          {
+            "id": "D",
+            "ko": "CA-49",
+            "en": "CA-49"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역구 기록에 도서 지역을 별도로 표시합니다.",
+            "en": "Mark the island community separately in the district record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 지역구 목록에 애벌론이 포함된 곳은 CA-42입니다.",
+            "en": "The official CA-42 community list includes Avalon."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://robertgarcia.house.gov/about/our-district",
+          "claim": "Robert Garcia's CA-42 includes Avalon, as listed by his district office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2011-island-community-brief"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2012",
+      "mechanism": "park-project-accountability",
+      "learningTarget": "Lou Correa of CA-46 presented federal funding for Chepa's Park renovation in Santa Ana in 2026.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "공원 예산 전시대",
+        "en": "Park funding exhibit"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 공원 예산 전시대에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the park funding exhibit."
+      },
+      "cast": [
+        {
+          "id": "C001110",
+          "name": "Lou Correa",
+          "ko": "루 코레아",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001110.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001110"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "공원 개선 사업의 수혜 도시가 빠진 전시 표찰이 있습니다.",
+          "en": "A park-renovation display is missing its beneficiary city."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "체파스 파크 개선에 대한 공식 발표를 확인합시다.",
+          "en": "Check the published announcement about Chepa's Park."
+        },
+        {
+          "speaker": "player",
+          "ko": "확정된 지원 발표와 앞으로의 공사 진행을 구분해 표시하겠습니다.",
+          "en": "I'll distinguish announced funding from future construction progress."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CA-46 코레아 의원이 발표한 체파스 파크 사업의 도시는 {{blank}}입니다.",
+        "en": "The city associated with Correa's CA-46 Chepa's Park announcement is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "패서디나",
+            "en": "Pasadena"
+          },
+          {
+            "id": "B",
+            "ko": "휘티어",
+            "en": "Whittier"
+          },
+          {
+            "id": "C",
+            "ko": "애벌론",
+            "en": "Avalon"
+          },
+          {
+            "id": "D",
+            "ko": "샌타애나",
+            "en": "Santa Ana"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "도시 이름과 사업 단계가 모두 명확해졌습니다.",
+            "en": "The city and project stage are now clear."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "체파스 파크 개선 지원 발표의 수혜 도시는 샌타애나입니다.",
+            "en": "The Chepa's Park funding announcement names Santa Ana."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://correa.house.gov/news/press-releases/correa-presents-2m-to-city-of-santa-ana-for-chepas-park-renovation",
+          "claim": "Lou Correa of CA-46 presented federal funding for Chepa's Park renovation in Santa Ana in 2026.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2012-park-project-accountability"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2013",
+      "mechanism": "coastal-restoration-brief",
+      "learningTarget": "Mike Levin of CA-49 announced a federal plan for beach sand restoration in Oceanside in 2026.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "해안 침식 현장 지도실",
+        "en": "Coastal erosion map room"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 해안 침식 현장 지도실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the coastal erosion map room."
+      },
+      "cast": [
+        {
+          "id": "L000593",
+          "name": "Mike Levin",
+          "ko": "마이크 레빈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000593.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000593"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "모래 복원 계획이 발표된 해안 도시를 지도에 표시해 주세요.",
+          "en": "Mark the coastal city named in the sand-restoration announcement."
+        },
+        {
+          "speaker": "aide",
+          "ko": "계획 확정과 공사 완료는 다른 단계입니다.",
+          "en": "A plan and completed construction are different stages."
+        },
+        {
+          "speaker": "player",
+          "ko": "공식 발표에서 도시를 확인하고 계획 단계로 기록하겠습니다.",
+          "en": "I'll verify the city and label the project as a plan."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CA-49 레빈의 해안 복원 계획이 다룬 도시는 {{blank}}입니다.",
+        "en": "Levin's CA-49 beach-restoration plan concerns {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "오션사이드",
+            "en": "Oceanside"
+          },
+          {
+            "id": "B",
+            "ko": "롱비치",
+            "en": "Long Beach"
+          },
+          {
+            "id": "C",
+            "ko": "샌타모니카",
+            "en": "Santa Monica"
+          },
+          {
+            "id": "D",
+            "ko": "샌프란시스코",
+            "en": "San Francisco"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해안 지도에 공사 완료가 아닌 계획으로 표기합니다.",
+            "en": "Mark the plan rather than completed works on the map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 발표는 오션사이드 해변의 모래 복원 계획을 다룹니다.",
+            "en": "The announcement addresses sand restoration at Oceanside's beaches."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://levin.house.gov/media/press-releases/after-26-years-rep-mike-levin-and-army-corps-secure-federal-plan-to-bring-sand-back-to-oceansides-beaches",
+          "claim": "Mike Levin of CA-49 announced a federal plan for beach sand restoration in Oceanside in 2026.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2013-coastal-restoration-brief"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2014",
+      "mechanism": "in-person-casework-routing",
+      "learningTarget": "Jeff Crank represents CO-05; the office's federal-agency help page identifies its Colorado Springs office for in-person assistance.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "콜로라도 민원 창구",
+        "en": "Colorado casework desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 콜로라도 민원 창구에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the colorado casework desk."
+      },
+      "cast": [
+        {
+          "id": "C001137",
+          "name": "Jeff Crank",
+          "ko": "제프 크랭크",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001137.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001137"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "온라인 양식을 이용하기 어려운 주민에게 방문 방법을 알려주려 합니다.",
+          "en": "A resident unable to use the online form needs an in-person option."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "연방기관 지원 페이지의 직접 방문 안내를 보세요.",
+          "en": "Look at the in-person instructions on the federal-agency help page."
+        },
+        {
+          "speaker": "aide",
+          "ko": "주소가 그 지역구에 해당하는지는 별도로 확인합니다.",
+          "en": "We still verify that the constituent's address belongs to the district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CO-05 크랭크 의원의 방문 상담 안내 도시는 {{blank}}입니다.",
+        "en": "Crank's CO-05 in-person casework office is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "오로라",
+            "en": "Aurora"
+          },
+          {
+            "id": "B",
+            "ko": "콜로라도스프링스",
+            "en": "Colorado Springs"
+          },
+          {
+            "id": "C",
+            "ko": "볼더",
+            "en": "Boulder"
+          },
+          {
+            "id": "D",
+            "ko": "포트콜린스",
+            "en": "Fort Collins"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민에게 방문 방법을 안내하겠습니다.",
+            "en": "Provide the resident with the in-person option."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "방문 안내는 콜로라도스프링스 사무실을 명시합니다.",
+            "en": "The in-person instructions identify the Colorado Springs office."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://crank.house.gov/services/help-federal-agency",
+          "claim": "Jeff Crank represents CO-05; the office's federal-agency help page identifies its Colorado Springs office for in-person assistance.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2014-in-person-casework-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2015",
+      "mechanism": "library-capital-request",
+      "learningTarget": "Jason Crow's CO-06 community project funding announcement identified renovation of Aurora's Central Public Library.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "도서관 사업 검토실",
+        "en": "Library capital project review"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 도서관 사업 검토실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the library capital project review."
+      },
+      "cast": [
+        {
+          "id": "C001121",
+          "name": "Jason Crow",
+          "ko": "제이슨 크로",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001121.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001121"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "청소년 공간을 만드는 도서관 개선 사업의 도시를 확인해야 합니다.",
+          "en": "We need the city for a library renovation with youth space."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "공동체 사업 발표에 중앙 공공도서관의 이름이 있습니다.",
+          "en": "The community-project announcement names the central public library."
+        },
+        {
+          "speaker": "player",
+          "ko": "도서관 사업을 해당 지역구 지도에 연결하겠습니다.",
+          "en": "I'll attach the library project to the district map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CO-06 크로 의원의 발표에서 중앙도서관 사업 도시는 {{blank}}입니다.",
+        "en": "The city named for Crow's CO-06 central library project is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "콜로라도스프링스",
+            "en": "Colorado Springs"
+          },
+          {
+            "id": "B",
+            "ko": "푸에블로",
+            "en": "Pueblo"
+          },
+          {
+            "id": "C",
+            "ko": "오로라",
+            "en": "Aurora"
+          },
+          {
+            "id": "D",
+            "ko": "그랜드정션",
+            "en": "Grand Junction"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "사업 위치와 지역구가 함께 기록됐습니다.",
+            "en": "The project location and district are recorded together."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "발표에서 오로라 중앙 공공도서관 개선 사업이 확인됩니다.",
+            "en": "The announcement identifies Aurora's Central Public Library renovation."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://crow.house.gov/media/press-releases/congressman-crow-secures-over-122m-for-colorado-community-projects-in-annual-funding-bill",
+          "claim": "Jason Crow's CO-06 community project funding announcement identified renovation of Aurora's Central Public Library.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2015-library-capital-request"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2016",
+      "mechanism": "coast-valley-coalition",
+      "learningTarget": "Rosa DeLauro's CT-03 extends from Long Island Sound and New Haven toward the Naugatuck Valley and Waterbury.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "코네티컷 지역 연합회의",
+        "en": "Connecticut regional coalition"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 코네티컷 지역 연합회의에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the connecticut regional coalition."
+      },
+      "cast": [
+        {
+          "id": "D000216",
+          "name": "Rosa L. DeLauro",
+          "ko": "로사 델로로",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000216.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000216"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해안 도시와 내륙 계곡 주민이 같은 지역구 토론에 참석했습니다.",
+          "en": "Coastal and inland valley residents came to the same district discussion."
+        },
+        {
+          "speaker": "host",
+          "ko": "뉴헤이븐만 표시하면 내륙 참가자가 사라집니다.",
+          "en": "A map showing only New Haven loses the inland participants."
+        },
+        {
+          "speaker": "player",
+          "ko": "공식 약력의 지역 설명으로 지도를 확장하겠습니다.",
+          "en": "I'll extend the map using the district description in the official biography."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "CT-03 델로로의 설명에는 뉴헤이븐과 함께 {{blank}}가 나옵니다.",
+        "en": "DeLauro's CT-03 description pairs New Haven with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "허드슨 밸리",
+            "en": "Hudson Valley"
+          },
+          {
+            "id": "B",
+            "ko": "샌퍼낸도 밸리",
+            "en": "San Fernando Valley"
+          },
+          {
+            "id": "C",
+            "ko": "셰넌도어 밸리",
+            "en": "Shenandoah Valley"
+          },
+          {
+            "id": "D",
+            "ko": "노거턱 밸리",
+            "en": "Naugatuck Valley"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해안과 내륙을 함께 담은 지역 설명을 저장합니다.",
+            "en": "Save a regional description that includes coast and inland."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CT-03 설명에는 노거턱 밸리와 워터베리가 포함됩니다.",
+            "en": "CT-03's description includes the Naugatuck Valley and Waterbury."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://delauro.house.gov/about-rosa",
+          "claim": "Rosa DeLauro's CT-03 extends from Long Island Sound and New Haven toward the Naugatuck Valley and Waterbury.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2016-coast-valley-coalition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2017",
+      "mechanism": "multi-county-outreach",
+      "learningTarget": "Kat Cammack's FL-03 district description includes Alachua and Suwannee counties.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "플로리다 카운티 이동 상담 계획실",
+        "en": "Florida county outreach planning"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 플로리다 카운티 이동 상담 계획실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the florida county outreach planning."
+      },
+      "cast": [
+        {
+          "id": "C001039",
+          "name": "Kat Cammack",
+          "ko": "캣 캐맥",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001039.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001039"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "앨러추아 주민에 이어 다른 카운티 주민도 상담을 신청했습니다.",
+          "en": "Residents from another county applied after the Alachua group."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 공식 지역구 목록에 있는 카운티인지 확인해 주세요.",
+          "en": "Check whether the county appears on my official district list."
+        },
+        {
+          "speaker": "player",
+          "ko": "주 전체를 하나의 지역구로 처리하지 않고 목록을 확인합니다.",
+          "en": "I'll check the list rather than treat the state as a single district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "FL-03 캐맥 의원의 목록에서 앨러추아와 함께 확인되는 곳은 {{blank}} 카운티입니다.",
+        "en": "Cammack's FL-03 list includes Alachua and {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "수워니",
+            "en": "Suwannee"
+          },
+          {
+            "id": "B",
+            "ko": "먼로",
+            "en": "Monroe"
+          },
+          {
+            "id": "C",
+            "ko": "마이애미데이드",
+            "en": "Miami-Dade"
+          },
+          {
+            "id": "D",
+            "ko": "브로워드",
+            "en": "Broward"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 카운티 주민의 상담을 같은 지역구 일정으로 조정합니다.",
+            "en": "Coordinate the two county groups under the same district schedule."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 지역구 목록에는 수워니 카운티도 포함됩니다.",
+            "en": "The published district list also includes Suwannee County."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://cammack.house.gov/about/our-district",
+          "claim": "Kat Cammack's FL-03 district description includes Alachua and Suwannee counties.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2017-multi-county-outreach"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2018",
+      "mechanism": "water-infrastructure-location",
+      "learningTarget": "Lois Frankel of FL-22 identifies a fiscal 2026 Delray Beach/Palm Beach County water-related funding request.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "수도시설 예산 문서실",
+        "en": "Water infrastructure funding desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 수도시설 예산 문서실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the water infrastructure funding desk."
+      },
+      "cast": [
+        {
+          "id": "F000462",
+          "name": "Lois Frankel",
+          "ko": "로이스 프랭클",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000462.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000462"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "델레이비치 사업의 예산 요청 서류를 카운티별로 분류합니다.",
+          "en": "We are sorting the Delray Beach funding request by county."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "서류의 지역구 표기와 사업 위치를 함께 보세요.",
+          "en": "Read the district heading together with the project location."
+        },
+        {
+          "speaker": "player",
+          "ko": "요청과 최종 예산 통과는 따로 기록하겠습니다.",
+          "en": "I'll record a request separately from enacted appropriations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "FL-22 프랭클의 델레이비치 요청서에 적힌 카운티는 {{blank}}입니다.",
+        "en": "Frankel's FL-22 Delray Beach request names {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "먼로",
+            "en": "Monroe"
+          },
+          {
+            "id": "B",
+            "ko": "팜비치",
+            "en": "Palm Beach"
+          },
+          {
+            "id": "C",
+            "ko": "앨러추아",
+            "en": "Alachua"
+          },
+          {
+            "id": "D",
+            "ko": "리",
+            "en": "Lee"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "요청 단계로 표시한 지역 예산 기록을 보존합니다.",
+            "en": "Preserve the local funding record as a request."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공개 요청서는 델레이비치를 팜비치 카운티 사업으로 적고 있습니다.",
+            "en": "The public request identifies Delray Beach in Palm Beach County."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://frankel.house.gov/uploadedfiles/fy26_delray_beach_army_corps_financial_disclosure.pdf",
+          "claim": "Lois Frankel of FL-22 identifies a fiscal 2026 Delray Beach/Palm Beach County water-related funding request.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2018-water-infrastructure-location"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2019",
+      "mechanism": "veteran-recognition-eligibility",
+      "learningTarget": "Frederica Wilson's FL-24 Vietnam veteran commendation guidance identifies portions of Miami-Dade and Broward counties.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "재향군인 표창 안내회",
+        "en": "Veteran recognition briefing"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 재향군인 표창 안내회에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the veteran recognition briefing."
+      },
+      "cast": [
+        {
+          "id": "W000808",
+          "name": "Frederica Wilson",
+          "ko": "프레데리카 윌슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000808.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000808"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "표창 후보의 거주 자격을 확인할 때 카운티 이름만으로 결론 내리지 마세요.",
+          "en": "Don't decide a nominee's residency eligibility from county name alone."
+        },
+        {
+          "speaker": "aide",
+          "ko": "공식 안내에는 마이애미데이드와 다른 카운티 일부가 적혀 있습니다.",
+          "en": "The guidance names Miami-Dade and part of another county."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 카운티가 일부 포함된다는 점을 안내문에 명시하겠습니다.",
+          "en": "I'll clarify that the district contains portions of two counties."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "FL-24 윌슨 의원의 안내에 함께 등장하는 카운티는 {{blank}}입니다.",
+        "en": "Wilson's FL-24 guidance also names {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "먼로",
+            "en": "Monroe"
+          },
+          {
+            "id": "B",
+            "ko": "레비",
+            "en": "Levy"
+          },
+          {
+            "id": "C",
+            "ko": "브로워드",
+            "en": "Broward"
+          },
+          {
+            "id": "D",
+            "ko": "수워니",
+            "en": "Suwannee"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "신청자가 주소 확인을 거치도록 안내를 정정합니다.",
+            "en": "Revise the instructions to require address verification."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "FL-24에는 마이애미데이드와 브로워드의 일부가 포함됩니다.",
+            "en": "FL-24 includes portions of Miami-Dade and Broward."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://wilson.house.gov/services/congressional-veteran-commendation",
+          "claim": "Frederica Wilson's FL-24 Vietnam veteran commendation guidance identifies portions of Miami-Dade and Broward counties.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2019-veteran-recognition-eligibility"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2020",
+      "mechanism": "senior-housing-beneficiary",
+      "learningTarget": "María Elvira Salazar's FL-27 FY2026 community project announcement includes affordable senior housing in the City of Miami.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "노인 주택 사업 기록실",
+        "en": "Senior housing project archive"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 노인 주택 사업 기록실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the senior housing project archive."
+      },
+      "cast": [
+        {
+          "id": "S000168",
+          "name": "Maria Elvira Salazar",
+          "ko": "마리아 엘비라 살라사르",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000168.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000168"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "노인 주택 사업을 지역구 예산 기록에 추가하고 싶습니다.",
+          "en": "I'd like to add a senior housing project to the district funding record."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2026 회계연도 사업 발표의 수혜 도시를 확인하세요.",
+          "en": "Check the beneficiary city in the FY2026 project announcement."
+        },
+        {
+          "speaker": "aide",
+          "ko": "도시 이름과 카운티 전체를 혼동하지 않도록 표시합시다.",
+          "en": "Distinguish the city from the entire county."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "FL-27 살라사르 발표의 저렴한 노인 주택 사업 도시는 {{blank}}입니다.",
+        "en": "Salazar's FL-27 affordable senior housing project is listed in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "탬파",
+            "en": "Tampa"
+          },
+          {
+            "id": "B",
+            "ko": "잭슨빌",
+            "en": "Jacksonville"
+          },
+          {
+            "id": "C",
+            "ko": "올랜도",
+            "en": "Orlando"
+          },
+          {
+            "id": "D",
+            "ko": "마이애미",
+            "en": "Miami"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주택 사업의 지리적 수혜 범위를 기록합니다.",
+            "en": "Record the project's geographic beneficiary."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "발표의 노인 주택 항목은 마이애미 시를 명시합니다.",
+            "en": "The senior housing entry names the City of Miami."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://salazar.house.gov/media/press-releases/rep-mara-elvira-salazar-secures-256-million-floridas-27th-district-fy26",
+          "claim": "María Elvira Salazar's FL-27 FY2026 community project announcement includes affordable senior housing in the City of Miami.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2020-senior-housing-beneficiary"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2021",
+      "mechanism": "keys-emergency-coordination",
+      "learningTarget": "Carlos Gimenez's FL-28 encompasses all Monroe County and southwestern Miami-Dade County.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "플로리다키스 비상대응 지도",
+        "en": "Florida Keys emergency coordination map"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 플로리다키스 비상대응 지도에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the florida keys emergency coordination map."
+      },
+      "cast": [
+        {
+          "id": "G000593",
+          "name": "Carlos Gimenez",
+          "ko": "카를로스 히메네스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000593.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000593"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "플로리다키스와 본토에 걸친 비상대응 논의 자료가 있습니다.",
+          "en": "We have emergency-planning materials spanning the Keys and mainland."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "공식 지역구 설명은 한 카운티 전역과 다른 카운티 일부를 구분합니다.",
+          "en": "The district description distinguishes an entire county from part of another."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 전체가 포함되는 곳부터 표시하겠습니다.",
+          "en": "I'll mark the county included in its entirety first."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "FL-28 히메네스의 지역구에 전역이 포함되는 카운티는 {{blank}}입니다.",
+        "en": "The county entirely included in Gimenez's FL-28 is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "먼로",
+            "en": "Monroe"
+          },
+          {
+            "id": "B",
+            "ko": "마이애미데이드",
+            "en": "Miami-Dade"
+          },
+          {
+            "id": "C",
+            "ko": "브로워드",
+            "en": "Broward"
+          },
+          {
+            "id": "D",
+            "ko": "팜비치",
+            "en": "Palm Beach"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 전체와 일부의 범례를 구분했습니다.",
+            "en": "The map legend now distinguishes whole and partial counties."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "먼로 카운티 전역과 마이애미데이드 남서부가 FL-28에 포함됩니다.",
+            "en": "FL-28 covers all Monroe County and southwestern Miami-Dade."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://gimenez.house.gov/about",
+          "claim": "Carlos Gimenez's FL-28 encompasses all Monroe County and southwestern Miami-Dade County.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2021-keys-emergency-coordination"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2022",
+      "mechanism": "two-office-travel-plan",
+      "learningTarget": "Buddy Carter's GA-01 district page lists Savannah and Brunswick offices.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "조지아 해안 상담 일정판",
+        "en": "Georgia coastal casework calendar"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 조지아 해안 상담 일정판에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the georgia coastal casework calendar."
+      },
+      "cast": [
+        {
+          "id": "C001103",
+          "name": "Buddy Carter",
+          "ko": "버디 카터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001103.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001103"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "해안 지역 주민 상담 일정에 서배너 사무실만 들어가 있습니다.",
+          "en": "The coastal casework calendar lists only the Savannah office."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지역구 페이지에는 다른 방문 장소도 안내되어 있습니다.",
+          "en": "The district page lists another location for visits."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 사무실을 구분해 주민에게 가까운 선택지를 보여주겠습니다.",
+          "en": "I'll list both offices so residents can choose a convenient one."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "GA-01 카터 의원의 서배너 외 지역 사무실은 {{blank}}입니다.",
+        "en": "Carter's other GA-01 district office besides Savannah is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "올버니",
+            "en": "Albany"
+          },
+          {
+            "id": "B",
+            "ko": "브런즈윅",
+            "en": "Brunswick"
+          },
+          {
+            "id": "C",
+            "ko": "애틀랜타",
+            "en": "Atlanta"
+          },
+          {
+            "id": "D",
+            "ko": "메이컨",
+            "en": "Macon"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 방문 장소를 일정표에 추가합니다.",
+            "en": "Add both locations to the casework calendar."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 페이지는 서배너와 브런즈윅 사무실을 안내합니다.",
+            "en": "The district page lists Savannah and Brunswick offices."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://buddycarter.house.gov/district/",
+          "claim": "Buddy Carter's GA-01 district page lists Savannah and Brunswick offices.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2022-two-office-travel-plan"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2023",
+      "mechanism": "regional-coalition-albany",
+      "learningTarget": "Sanford Bishop's GA-02 includes Albany and most of Columbus and Macon-Bibb.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "남서부 조지아 지역 협의회",
+        "en": "Southwest Georgia coalition"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 남서부 조지아 지역 협의회에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the southwest georgia coalition."
+      },
+      "cast": [
+        {
+          "id": "B000490",
+          "name": "Sanford Bishop Jr.",
+          "ko": "샌퍼드 비숍 주니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000490.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B000490"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "올버니 주민과 다른 도시 참가자의 대표를 정리해야 합니다.",
+          "en": "We need to organize representation for Albany residents and other city participants."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구 설명은 남서부뿐 아니라 중부 조지아 일부도 다룹니다.",
+          "en": "My district description reaches parts of central as well as southwest Georgia."
+        },
+        {
+          "speaker": "player",
+          "ko": "도시 전체를 포함하는지 여부도 공식 설명대로 표시하겠습니다.",
+          "en": "I'll preserve whether the description covers all or most of a city."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "GA-02 비숍의 설명에 올버니와 함께 대부분이 포함되는 도시는 {{blank}}입니다.",
+        "en": "Bishop's GA-02 description includes Albany and most of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "서배너",
+            "en": "Savannah"
+          },
+          {
+            "id": "B",
+            "ko": "브런즈윅",
+            "en": "Brunswick"
+          },
+          {
+            "id": "C",
+            "ko": "컬럼버스",
+            "en": "Columbus"
+          },
+          {
+            "id": "D",
+            "ko": "오거스타",
+            "en": "Augusta"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "도시별 대표성 표에 전체·부분 구분을 남깁니다.",
+            "en": "Keep whole-versus-partial distinctions in the city table."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 설명은 올버니와 컬럼버스 및 메이컨-빕 대부분을 언급합니다.",
+            "en": "The description names Albany and most of Columbus and Macon-Bibb."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://bishop.house.gov/about/our-district",
+          "claim": "Sanford Bishop's GA-02 includes Albany and most of Columbus and Macon-Bibb.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-2023-regional-coalition-albany"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2024",
+      "mechanism": "fish-pier-office-visit",
+      "learningTarget": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "메인 어항 상담 안내대",
+        "en": "Maine fishing-port casework desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 메인 어항 상담 안내대에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the maine fishing-port casework desk."
+      },
+      "cast": [
+        {
+          "id": "P000597",
+          "name": "Chellie Pingree",
+          "ko": "첼리 핑그리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000597.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000597"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "어항에서 일하는 주민이 연방기관 민원 상담 장소를 묻습니다.",
+          "en": "A resident working near the fishing port asks where to seek federal casework."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 연락 페이지에 지역 사무실 주소가 있습니다.",
+          "en": "My contact page lists the district office address."
+        },
+        {
+          "speaker": "aide",
+          "ko": "주소 확인과 민원 접수는 별개 절차로 안내합시다.",
+          "en": "Explain address verification separately from casework intake."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "ME-01 핑그리 의원의 Fish Pier 사무실은 {{blank}}에 있습니다.",
+        "en": "Pingree's ME-01 Fish Pier office is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뱅거",
+            "en": "Bangor"
+          },
+          {
+            "id": "B",
+            "ko": "루이스턴",
+            "en": "Lewiston"
+          },
+          {
+            "id": "C",
+            "ko": "프레스크아일",
+            "en": "Presque Isle"
+          },
+          {
+            "id": "D",
+            "ko": "포틀랜드",
+            "en": "Portland"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민에게 공식 방문 위치를 안내합니다.",
+            "en": "Provide the official location for the resident."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공식 연락 페이지는 포틀랜드 피시 피어 사무실을 안내합니다.",
+            "en": "The contact page lists the Portland Fish Pier office."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://pingree.house.gov/contact/contactform.htm",
+          "claim": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-2024-fish-pier-office-visit"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-2025",
+      "mechanism": "tax-help-local-referral",
+      "learningTarget": "Jared Golden's ME-02 office announced in-person IRS assistance in Bangor and lists its Bangor office.",
+      "date": "2026-11-25",
+      "venue": {
+        "ko": "메인 세금 지원 안내실",
+        "en": "Maine tax assistance desk"
+      },
+      "context": {
+        "ko": "실제 기록을 바탕으로 구성된 가상 만남. 메인 세금 지원 안내실에서 자료를 확인합니다.",
+        "en": "Fictional encounter based on historical records, set at the maine tax assistance desk."
+      },
+      "cast": [
+        {
+          "id": "G000592",
+          "name": "Jared Golden",
+          "ko": "재러드 골든",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000592.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000592"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "IRS 현장 지원 소식을 들은 주민이 어느 의원실에 문의할지 묻습니다.",
+          "en": "A resident heard about in-person IRS help and asks which district office to contact."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "발표에 적힌 도시와 사무실을 확인하세요.",
+          "en": "Check the city and office listed in the announcement."
+        },
+        {
+          "speaker": "player",
+          "ko": "이미 종료된 행사일 수도 있으니 현재 일정으로 오해하지 않게 기록하겠습니다.",
+          "en": "I'll avoid presenting a past event as an upcoming one."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "ME-02 골든 의원의 IRS 지원 발표에 나온 도시는 {{blank}}입니다.",
+        "en": "Golden's ME-02 IRS assistance announcement concerns {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뱅거",
+            "en": "Bangor"
+          },
+          {
+            "id": "B",
+            "ko": "보스턴",
+            "en": "Boston"
+          },
+          {
+            "id": "C",
+            "ko": "포틀랜드",
+            "en": "Portland"
+          },
+          {
+            "id": "D",
+            "ko": "맨체스터",
+            "en": "Manchester"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "과거 행사와 현재 연락처를 구분한 기록을 남깁니다.",
+            "en": "Keep the past event distinct from current contact details."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "IRS 지원 발표는 뱅거를 명시하고 골든의 뱅거 사무실도 안내합니다.",
+            "en": "The announcement names Bangor and lists Golden's Bangor office."
+          },
+          {
+            "speaker": "player",
+            "ko": "기록을 바로잡겠습니다.",
+            "en": "I'll correct the record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://golden.house.gov/media/press-releases/irs-to-provide-in-person-tax-assistance-in-bangor-this-week",
+          "claim": "Jared Golden's ME-02 office announced in-person IRS assistance in Bangor and lists its Bangor office.",
+          "asOf": "2026-11-25"
+        },
+        {
+          "url": "https://clerk.house.gov/Members/ViewMemberList",
+          "claim": "119th Congress member, party and district.",
+          "asOf": "2026-11-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-2025-tax-help-local-referral"
+      },
+      "fictional": true
+    }
+  ]
+}
