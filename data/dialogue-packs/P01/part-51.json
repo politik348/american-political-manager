@@ -1,0 +1,2583 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 51,
+  "scenes": [
+    {
+      "id": "P01-1251",
+      "mechanism": "district-university-contact",
+      "learningTarget": "Cooper taught as adjunct professor at Vanderbilt University before or during his career.",
+      "date": "1983-04-12",
+      "venue": {
+        "ko": "내슈빌 지역 접견",
+        "en": "Nashville constituent meeting"
+      },
+      "context": {
+        "ko": "내슈빌 지역 접견",
+        "en": "Nashville constituent meeting"
+      },
+      "cast": [
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://history.house.gov/People/Detail/11401"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역 대학과 의회 사이의 연락처를 정리합시다.",
+          "en": "Let's organize contacts between the local university and Congress."
+        },
+        {
+          "speaker": "host",
+          "ko": "내슈빌의 학교 명칭을 확인해 주세요.",
+          "en": "Please identify the Nashville university."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿠퍼의 겸임교수 경력은 {{blank}}와 연결됩니다.",
+        "en": "Cooper's adjunct teaching is associated with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미시간대학교",
+            "en": "University of Michigan"
+          },
+          {
+            "id": "B",
+            "ko": "스탠퍼드대학교",
+            "en": "Stanford University"
+          },
+          {
+            "id": "C",
+            "ko": "오리건대학교",
+            "en": "University of Oregon"
+          },
+          {
+            "id": "D",
+            "ko": "밴더빌트대학교",
+            "en": "Vanderbilt University"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "밴더빌트대학교입니다.",
+            "en": "Vanderbilt University."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대학 관계자 접견 자료를 준비하세요.",
+            "en": "Prepare a briefing for the university delegation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "밴더빌트대학교입니다.",
+            "en": "Vanderbilt University."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/11401",
+          "claim": "Cooper taught as adjunct professor at Vanderbilt University before or during his career.",
+          "asOf": "1983-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim Cooper; Public domain per upstream repository",
+          "asOf": "1983-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1251-district-university-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1252",
+      "mechanism": "outgoing-office-transition",
+      "learningTarget": "Cooper did not seek House reelection in 1994 and unsuccessfully sought a Senate seat.",
+      "date": "1994-12-12",
+      "venue": {
+        "ko": "테네시 사무실 인계",
+        "en": "Tennessee office transition"
+      },
+      "context": {
+        "ko": "테네시 사무실 인계",
+        "en": "Tennessee office transition"
+      },
+      "cast": [
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://history.house.gov/People/Detail/11401"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "다음 의회의 하원 의원 명단에 제 이름을 그대로 옮기면 안 됩니다.",
+          "en": "Do not copy my name into the next House roster."
+        },
+        {
+          "speaker": "player",
+          "ko": "1994년의 출마 직책을 확인하겠습니다.",
+          "en": "I'll check which office you sought in 1994."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿠퍼는 1994년 하원 재선 대신 {{blank}}에 출마했습니다.",
+        "en": "Instead of seeking House reelection in 1994, Cooper ran for the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "B",
+            "ko": "주하원",
+            "en": "state House"
+          },
+          {
+            "id": "C",
+            "ko": "시장",
+            "en": "mayoralty"
+          },
+          {
+            "id": "D",
+            "ko": "주지사",
+            "en": "governorship"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "상원 선거에서 낙선했습니다.",
+            "en": "I was unsuccessful in the Senate race."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원 임기 종료 기록과 선거 결과를 분리하세요.",
+            "en": "Separate the end of House service from the election result."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "상원 선거에서 낙선했습니다.",
+            "en": "I was unsuccessful in the Senate race."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/11401",
+          "claim": "Cooper did not seek House reelection in 1994 and unsuccessfully sought a Senate seat.",
+          "asOf": "1994-12-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim Cooper; Public domain per upstream repository",
+          "asOf": "1994-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1252-outgoing-office-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1253",
+      "mechanism": "returning-member-reunion",
+      "learningTarget": "Cooper returned to the House in 2003 while Duncan had served continuously since 1988.",
+      "date": "2003-04-12",
+      "venue": {
+        "ko": "테네시 대표단 재회",
+        "en": "Tennessee delegation reunion"
+      },
+      "context": {
+        "ko": "테네시 대표단 재회",
+        "en": "Tennessee delegation reunion"
+      },
+      "cast": [
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://history.house.gov/People/Detail/11401"
+        },
+        {
+          "id": "D000533",
+          "name": "John J. Duncan Jr.",
+          "ko": "존 덩컨 주니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000533.jpg",
+          "source": "https://history.house.gov/People/Detail/12493"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "오랜만에 하원으로 돌아왔습니다. 덩컨 의원도 테네시 대표단에 있군요.",
+          "en": "I'm back in the House after a long absence. Mr. Duncan is still in the Tennessee delegation."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 임기에는 그 공백이 없습니다.",
+          "en": "My service did not have that gap."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿠퍼가 복귀한 의회는 제{{blank}}대입니다.",
+        "en": "Cooper returned in the {{blank}} Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "104",
+            "en": "104th"
+          },
+          {
+            "id": "B",
+            "ko": "108",
+            "en": "108th"
+          },
+          {
+            "id": "C",
+            "ko": "100",
+            "en": "100th"
+          },
+          {
+            "id": "D",
+            "ko": "110",
+            "en": "110th"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "제108대 의회에서 복귀했습니다.",
+            "en": "I returned in the 108th Congress."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 의원의 서로 다른 재임 연표를 등록하세요.",
+            "en": "Register their distinct service timelines."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제108대 의회에서 복귀했습니다.",
+            "en": "I returned in the 108th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/11401",
+          "claim": "Cooper returned to the House in 2003 while Duncan had served continuously since 1988.",
+          "asOf": "2003-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim Cooper; Public domain per upstream repository",
+          "asOf": "2003-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12493",
+          "claim": "Cooper returned to the House in 2003 while Duncan had served continuously since 1988.",
+          "asOf": "2003-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of John J. Duncan Jr.; Public domain per upstream repository",
+          "asOf": "2003-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1253-returning-member-reunion"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1254",
+      "mechanism": "health-community-contact",
+      "learningTarget": "McDermott trained in child psychiatry at University of Washington hospitals in 1966–1968.",
+      "date": "1989-04-12",
+      "venue": {
+        "ko": "시애틀 의료진 접견",
+        "en": "Seattle medical delegation"
+      },
+      "context": {
+        "ko": "시애틀 의료진 접견",
+        "en": "Seattle medical delegation"
+      },
+      "cast": [
+        {
+          "id": "M000404",
+          "name": "Jim McDermott",
+          "ko": "짐 맥더멋",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000404.jpg",
+          "source": "https://history.house.gov/People/Listing/M/MCDERMOTT%2C-James-A--%28M000404%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "시애틀에서 만났던 의료 관계자가 찾아왔습니다.",
+          "en": "Medical colleagues from Seattle are visiting."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역 의료기관과 의원의 경력을 확인하겠습니다.",
+          "en": "I'll check the link between local hospitals and your career."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "맥더멋의 시애틀 수련 분야는 {{blank}}였습니다.",
+        "en": "McDermott's Seattle residency was in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정형외과",
+            "en": "orthopedics"
+          },
+          {
+            "id": "B",
+            "ko": "치과",
+            "en": "dentistry"
+          },
+          {
+            "id": "C",
+            "ko": "소아 정신의학",
+            "en": "child psychiatry"
+          },
+          {
+            "id": "D",
+            "ko": "안과",
+            "en": "ophthalmology"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1966~1968년 소아 정신의학 수련을 받았습니다.",
+            "en": "I trained in child psychiatry in 1966–1968."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "의료 방문단의 요구를 별도 기록하세요.",
+            "en": "Record the medical delegation's concerns separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1966~1968년 소아 정신의학 수련을 받았습니다.",
+            "en": "I trained in child psychiatry in 1966–1968."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/M/MCDERMOTT%2C-James-A--%28M000404%29/",
+          "claim": "McDermott trained in child psychiatry at University of Washington hospitals in 1966–1968.",
+          "asOf": "1989-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim McDermott; Public domain per upstream repository",
+          "asOf": "1989-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1254-health-community-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1255",
+      "mechanism": "ethics-committee-routing",
+      "learningTarget": "McDermott chaired Standards of Official Conduct in the 103rd Congress.",
+      "date": "1993-05-12",
+      "venue": {
+        "ko": "의원 윤리 문의",
+        "en": "Congressional ethics inquiry"
+      },
+      "context": {
+        "ko": "의원 윤리 문의",
+        "en": "Congressional ethics inquiry"
+      },
+      "cast": [
+        {
+          "id": "M000404",
+          "name": "Jim McDermott",
+          "ko": "짐 맥더멋",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000404.jpg",
+          "source": "https://history.house.gov/People/Listing/M/MCDERMOTT%2C-James-A--%28M000404%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "위원회 관련 문의와 지역 민원을 구분해 주세요.",
+          "en": "Please distinguish committee inquiries from district casework."
+        },
+        {
+          "speaker": "player",
+          "ko": "현재 위원회의 정식 명칭을 확인하겠습니다.",
+          "en": "I'll check the committee's official name."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제103대 의회에서 맥더멋은 {{blank}} 위원장입니다.",
+        "en": "In the 103rd Congress McDermott chairs {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "B",
+            "ko": "군사",
+            "en": "Armed Services"
+          },
+          {
+            "id": "C",
+            "ko": "교통",
+            "en": "Transportation"
+          },
+          {
+            "id": "D",
+            "ko": "공직행동기준",
+            "en": "Standards of Official Conduct"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "공직행동기준위원회입니다.",
+            "en": "The Committee on Standards of Official Conduct."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "위원회 업무와 개인 민원을 별도 자료철에 넣으세요.",
+            "en": "File committee business separately from individual casework."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "공직행동기준위원회입니다.",
+            "en": "The Committee on Standards of Official Conduct."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/M/MCDERMOTT%2C-James-A--%28M000404%29/",
+          "claim": "McDermott chaired Standards of Official Conduct in the 103rd Congress.",
+          "asOf": "1993-05-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim McDermott; Public domain per upstream repository",
+          "asOf": "1993-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1255-ethics-committee-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1256",
+      "mechanism": "special-election-handoff",
+      "learningTarget": "Blumenauer entered the House May 21 1996 by special election following Ron Wyden's resignation.",
+      "date": "1996-06-12",
+      "venue": {
+        "ko": "포틀랜드 지역 사무실",
+        "en": "Portland district office"
+      },
+      "context": {
+        "ko": "포틀랜드 지역 사무실",
+        "en": "Portland district office"
+      },
+      "cast": [
+        {
+          "id": "B000574",
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루메나워",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000574.jpg",
+          "source": "https://history.house.gov/People/Detail/9518"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "전임자의 주민 서류를 새 사무실로 인계해야 합니다.",
+          "en": "We need to transfer constituent files from my predecessor's office."
+        },
+        {
+          "speaker": "player",
+          "ko": "어떤 의원의 사임으로 생긴 공석인지 확인하겠습니다.",
+          "en": "I'll identify whose resignation created the vacancy."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "블루메나워는 {{blank}}의 사임으로 열린 특별선거에서 당선됐습니다.",
+        "en": "Blumenauer won the special election following the resignation of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "론 와이든",
+            "en": "Ron Wyden"
+          },
+          {
+            "id": "B",
+            "ko": "짐 쿠퍼",
+            "en": "Jim Cooper"
+          },
+          {
+            "id": "C",
+            "ko": "론 카인드",
+            "en": "Ron Kind"
+          },
+          {
+            "id": "D",
+            "ko": "밥 필너",
+            "en": "Bob Filner"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "론 와이든의 공석입니다.",
+            "en": "It was Ron Wyden's vacancy."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역구 인수인계 목록을 작성하세요.",
+            "en": "Prepare the district handover checklist."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "론 와이든의 공석입니다.",
+            "en": "It was Ron Wyden's vacancy."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/9518",
+          "claim": "Blumenauer entered the House May 21 1996 by special election following Ron Wyden's resignation.",
+          "asOf": "1996-06-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Earl Blumenauer; Public domain per upstream repository",
+          "asOf": "1996-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1256-special-election-handoff"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1257",
+      "mechanism": "municipal-to-federal",
+      "learningTarget": "Blumenauer served as Portland city commissioner from 1986 to 1996.",
+      "date": "1997-04-12",
+      "venue": {
+        "ko": "포틀랜드 도시행정 회고",
+        "en": "Portland municipal government review"
+      },
+      "context": {
+        "ko": "포틀랜드 도시행정 회고",
+        "en": "Portland municipal government review"
+      },
+      "cast": [
+        {
+          "id": "B000574",
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루메나워",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000574.jpg",
+          "source": "https://history.house.gov/People/Detail/9518"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "도시에서 처리하던 민원과 연방 의회에 보내는 민원을 구분합시다.",
+          "en": "Let's distinguish requests handled by the city from those directed to Congress."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 지방 공직을 정확히 기록하겠습니다.",
+          "en": "I'll identify your former local office."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1986~1996년 블루메나워는 포틀랜드 {{blank}}이었습니다.",
+        "en": "From 1986 to 1996 Blumenauer was a Portland {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "B",
+            "ko": "시 위원",
+            "en": "city commissioner"
+          },
+          {
+            "id": "C",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "D",
+            "ko": "연방 판사",
+            "en": "federal judge"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "시 위원이었습니다.",
+            "en": "I was a city commissioner."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "시정부와 의회 연락처를 함께 정리하세요.",
+            "en": "Organize the municipal and congressional contacts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "시 위원이었습니다.",
+            "en": "I was a city commissioner."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/9518",
+          "claim": "Blumenauer served as Portland city commissioner from 1986 to 1996.",
+          "asOf": "1997-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Earl Blumenauer; Public domain per upstream repository",
+          "asOf": "1997-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1257-municipal-to-federal"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1258",
+      "mechanism": "new-generation-introduction",
+      "learningTarget": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+      "date": "1997-05-12",
+      "venue": {
+        "ko": "신임 대표단 회의",
+        "en": "New member delegation meeting"
+      },
+      "context": {
+        "ko": "신임 대표단 회의",
+        "en": "New member delegation meeting"
+      },
+      "cast": [
+        {
+          "id": "B000574",
+          "name": "Earl Blumenauer",
+          "ko": "얼 블루메나워",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B000574.jpg",
+          "source": "https://history.house.gov/People/Detail/9518"
+        },
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://history.house.gov/People/Detail/16313"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 특별선거로 들어왔습니다. 올해는 카인드 의원이 합류했군요.",
+          "en": "I arrived through a special election last year. Mr. Kind joined this year."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 위스콘신에서 왔습니다.",
+          "en": "I'm from Wisconsin."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "블루메나워 의원의 대표 주는 {{blank}}입니다.",
+        "en": "Blumenauer represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "위스콘신",
+            "en": "Wisconsin"
+          },
+          {
+            "id": "B",
+            "ko": "워싱턴",
+            "en": "Washington"
+          },
+          {
+            "id": "C",
+            "ko": "오리건",
+            "en": "Oregon"
+          },
+          {
+            "id": "D",
+            "ko": "캘리포니아",
+            "en": "California"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 오리건 대표입니다.",
+            "en": "I represent Oregon."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 입성 날짜를 별도 기록하세요.",
+            "en": "Record both entry dates separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 오리건 대표입니다.",
+            "en": "I represent Oregon."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/9518",
+          "claim": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+          "asOf": "1997-05-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Earl Blumenauer; Public domain per upstream repository",
+          "asOf": "1997-05-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/16313",
+          "claim": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+          "asOf": "1997-05-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+          "asOf": "1997-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1258-new-generation-introduction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1259",
+      "mechanism": "county-service-routing",
+      "learningTarget": "Kind served as state prosecutor in La Crosse County district attorney's office in 1992–1996.",
+      "date": "1997-04-12",
+      "venue": {
+        "ko": "라크로스 주민 접견",
+        "en": "La Crosse constituent meeting"
+      },
+      "context": {
+        "ko": "라크로스 주민 접견",
+        "en": "La Crosse constituent meeting"
+      },
+      "cast": [
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://history.house.gov/People/Detail/16313"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "카운티에서 일할 때 알던 주민들이 찾아왔습니다.",
+          "en": "Residents I knew from county work have arrived."
+        },
+        {
+          "speaker": "host",
+          "ko": "지방 법률 업무와 연방 민원을 나눕시다.",
+          "en": "Let's separate local legal matters from federal casework."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "카인드가 검사로 일한 카운티는 {{blank}}입니다.",
+        "en": "Kind worked as a prosecutor in {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데인",
+            "en": "Dane"
+          },
+          {
+            "id": "B",
+            "ko": "쿡",
+            "en": "Cook"
+          },
+          {
+            "id": "C",
+            "ko": "녹스",
+            "en": "Knox"
+          },
+          {
+            "id": "D",
+            "ko": "라크로스",
+            "en": "La Crosse"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "라크로스 카운티입니다.",
+            "en": "La Crosse County."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주 법률 문의와 연방 의회 문의를 각각 안내하세요.",
+            "en": "Direct state legal and federal congressional inquiries separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "라크로스 카운티입니다.",
+            "en": "La Crosse County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/16313",
+          "claim": "Kind served as state prosecutor in La Crosse County district attorney's office in 1992–1996.",
+          "asOf": "1997-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+          "asOf": "1997-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1259-county-service-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1260",
+      "mechanism": "local-roots-briefing",
+      "learningTarget": "Kind was born in La Crosse and represented Wisconsin in the House.",
+      "date": "1998-04-12",
+      "venue": {
+        "ko": "위스콘신 지역 소개",
+        "en": "Wisconsin district introduction"
+      },
+      "context": {
+        "ko": "위스콘신 지역 소개",
+        "en": "Wisconsin district introduction"
+      },
+      "cast": [
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://history.house.gov/People/Detail/16313"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역 방문단에게 제 출생지와 대표 주를 정확히 소개해 주세요.",
+          "en": "Please introduce my birthplace and state of representation accurately."
+        },
+        {
+          "speaker": "player",
+          "ko": "동명의 다른 도시와 혼동하지 않겠습니다.",
+          "en": "I'll avoid confusing it with another place."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "카인드의 출생지 라크로스는 {{blank}}주에 있습니다.",
+        "en": "Kind's birthplace of La Crosse is in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "위스콘신",
+            "en": "Wisconsin"
+          },
+          {
+            "id": "B",
+            "ko": "미네소타",
+            "en": "Minnesota"
+          },
+          {
+            "id": "C",
+            "ko": "일리노이",
+            "en": "Illinois"
+          },
+          {
+            "id": "D",
+            "ko": "아이오와",
+            "en": "Iowa"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "위스콘신입니다.",
+            "en": "Wisconsin."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역 대표 안내서의 지명을 수정하세요.",
+            "en": "Update the geographic label in the representative guide."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "위스콘신입니다.",
+            "en": "Wisconsin."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/16313",
+          "claim": "Kind was born in La Crosse and represented Wisconsin in the House.",
+          "asOf": "1998-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+          "asOf": "1998-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1260-local-roots-briefing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1261",
+      "mechanism": "county-council-transition",
+      "learningTarget": "Chabot served as Hamilton County commissioner in 1990–1994 before entering Congress.",
+      "date": "1995-04-12",
+      "venue": {
+        "ko": "신시내티 지방행정 회고",
+        "en": "Cincinnati local government review"
+      },
+      "context": {
+        "ko": "신시내티 지방행정 회고",
+        "en": "Cincinnati local government review"
+      },
+      "cast": [
+        {
+          "id": "C000266",
+          "name": "Steve Chabot",
+          "ko": "스티브 섀벗",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000266.jpg",
+          "source": "https://history.house.gov/People/Detail/10791"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "카운티 위원회 자료를 지역 사무실에 가져왔습니다.",
+          "en": "I brought county commission records to the district office."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 공직과 현재 하원 직책을 구별하겠습니다.",
+          "en": "I'll distinguish the earlier office from your House role."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "섀벗이 1990~1994년 위원으로 활동한 곳은 {{blank}} 카운티입니다.",
+        "en": "Chabot served as commissioner in {{blank}} County in 1990–1994.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프랭클린",
+            "en": "Franklin"
+          },
+          {
+            "id": "B",
+            "ko": "해밀턴",
+            "en": "Hamilton"
+          },
+          {
+            "id": "C",
+            "ko": "쿡",
+            "en": "Cook"
+          },
+          {
+            "id": "D",
+            "ko": "미들랜드",
+            "en": "Midland"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해밀턴 카운티입니다.",
+            "en": "Hamilton County."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지방정부 업무 자료를 별도로 보관하세요.",
+            "en": "File local government documents separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "해밀턴 카운티입니다.",
+            "en": "Hamilton County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10791",
+          "claim": "Chabot served as Hamilton County commissioner in 1990–1994 before entering Congress.",
+          "asOf": "1995-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Steve Chabot; Public domain per upstream repository",
+          "asOf": "1995-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1261-county-council-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1262",
+      "mechanism": "defeat-office-closure",
+      "learningTarget": "Chabot lost reelection in 2008 and his House term ended January 3 2009.",
+      "date": "2009-01-05",
+      "venue": {
+        "ko": "오하이오 사무실 정리",
+        "en": "Ohio office closure"
+      },
+      "context": {
+        "ko": "오하이오 사무실 정리",
+        "en": "Ohio office closure"
+      },
+      "cast": [
+        {
+          "id": "C000266",
+          "name": "Steve Chabot",
+          "ko": "스티브 섀벗",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000266.jpg",
+          "source": "https://history.house.gov/People/Detail/10791"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 선거 이후 제 하원 임기는 종료되었습니다.",
+          "en": "My House term has ended following the election."
+        },
+        {
+          "speaker": "player",
+          "ko": "주민이 현직 의원을 찾도록 연락처를 갱신하겠습니다.",
+          "en": "I'll update contacts so residents can reach their sitting member."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "섀벗의 첫 연속 하원 재임은 {{blank}}에 종료되었습니다.",
+        "en": "Chabot's first continuous period of House service ended in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2008년 1월",
+            "en": "January 2008"
+          },
+          {
+            "id": "B",
+            "ko": "2008년 11월",
+            "en": "November 2008"
+          },
+          {
+            "id": "C",
+            "ko": "2009년 1월",
+            "en": "January 2009"
+          },
+          {
+            "id": "D",
+            "ko": "2007년 1월",
+            "en": "January 2007"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 1월 3일입니다.",
+            "en": "January 3, 2009."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "퇴임과 선거일을 구분해 기록하세요.",
+            "en": "Distinguish departure from election day."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2009년 1월 3일입니다.",
+            "en": "January 3, 2009."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10791",
+          "claim": "Chabot lost reelection in 2008 and his House term ended January 3 2009.",
+          "asOf": "2009-01-05"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Steve Chabot; Public domain per upstream repository",
+          "asOf": "2009-01-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1262-defeat-office-closure"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1263",
+      "mechanism": "staff-to-member",
+      "learningTarget": "Upton worked for Michigan Representative David Stockman in 1976–1980 before entering the House.",
+      "date": "1987-04-12",
+      "venue": {
+        "ko": "미시간 의회 보좌진 재회",
+        "en": "Michigan congressional staff reunion"
+      },
+      "context": {
+        "ko": "미시간 의회 보좌진 재회",
+        "en": "Michigan congressional staff reunion"
+      },
+      "cast": [
+        {
+          "id": "U000031",
+          "name": "Fred Upton",
+          "ko": "프레드 업턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+          "source": "https://history.house.gov/People/Detail/20868"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이전에 다른 미시간 의원의 사무실에서 일했습니다.",
+          "en": "I previously worked in another Michigan member's office."
+        },
+        {
+          "speaker": "player",
+          "ko": "보좌진 경력을 대표단 연표에 넣겠습니다.",
+          "en": "I'll add the staff experience to the delegation timeline."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "업턴이 보좌한 의원은 {{blank}}입니다.",
+        "en": "Upton worked for Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "짐 센센브레너",
+            "en": "Jim Sensenbrenner"
+          },
+          {
+            "id": "B",
+            "ko": "데이브 캠프",
+            "en": "Dave Camp"
+          },
+          {
+            "id": "C",
+            "ko": "짐 쿠퍼",
+            "en": "Jim Cooper"
+          },
+          {
+            "id": "D",
+            "ko": "데이비드 스톡먼",
+            "en": "David Stockman"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "데이비드 스톡먼 의원입니다.",
+            "en": "Representative David Stockman."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "보좌진 시절과 의원 재임기간을 구분하세요.",
+            "en": "Distinguish staff service from elected service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "데이비드 스톡먼 의원입니다.",
+            "en": "Representative David Stockman."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20868",
+          "claim": "Upton worked for Michigan Representative David Stockman in 1976–1980 before entering the House.",
+          "asOf": "1987-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Fred Upton; Public domain per upstream repository",
+          "asOf": "1987-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1263-staff-to-member"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1264",
+      "mechanism": "campaign-archive-identification",
+      "learningTarget": "The 1994 Upton campaign commercials in the University of Oklahoma archive are identified as Michigan District 6.",
+      "date": "1994-12-12",
+      "venue": {
+        "ko": "미시간 선거 광고 자료",
+        "en": "Michigan campaign archive"
+      },
+      "context": {
+        "ko": "미시간 선거 광고 자료",
+        "en": "Michigan campaign archive"
+      },
+      "cast": [
+        {
+          "id": "U000031",
+          "name": "Fred Upton",
+          "ko": "프레드 업턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+          "source": "https://history.house.gov/People/Detail/20868"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "올해 선거 광고의 지역구 표기를 정확히 보존합시다.",
+          "en": "Let's preserve the district label on this year's campaign advertisements."
+        },
+        {
+          "speaker": "player",
+          "ko": "자료의 지역구 번호를 확인하겠습니다.",
+          "en": "I'll check the district number on the materials."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1994년 업턴의 선거 광고는 미시간 제{{blank}}선거구 자료입니다.",
+        "en": "Upton's 1994 campaign ads concern Michigan's {{blank}} district.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "6",
+            "en": "6th"
+          },
+          {
+            "id": "B",
+            "ko": "1",
+            "en": "1st"
+          },
+          {
+            "id": "C",
+            "ko": "3",
+            "en": "3rd"
+          },
+          {
+            "id": "D",
+            "ko": "9",
+            "en": "9th"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "제6선거구입니다.",
+            "en": "The 6th district."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "광고 자료에 선거 연도와 지역구를 함께 표시하세요.",
+            "en": "Label the campaign archive with both year and district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "제6선거구입니다.",
+            "en": "The 6th district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20868",
+          "claim": "The 1994 Upton campaign commercials in the University of Oklahoma archive are identified as Michigan District 6.",
+          "asOf": "1994-12-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Fred Upton; Public domain per upstream repository",
+          "asOf": "1994-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1264-campaign-archive-identification"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1265",
+      "mechanism": "state-delegation-seniority",
+      "learningTarget": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+      "date": "1991-04-12",
+      "venue": {
+        "ko": "미시간 대표단 소개",
+        "en": "Michigan delegation introduction"
+      },
+      "context": {
+        "ko": "미시간 대표단 소개",
+        "en": "Michigan delegation introduction"
+      },
+      "cast": [
+        {
+          "id": "U000031",
+          "name": "Fred Upton",
+          "ko": "프레드 업턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+          "source": "https://history.house.gov/People/Detail/20868"
+        },
+        {
+          "id": "C000071",
+          "name": "Dave Camp",
+          "ko": "데이브 캠프",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000071.jpg",
+          "source": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "캠프 의원이 새로 들어왔습니다. 우리 둘은 같은 주에서 왔습니다.",
+          "en": "Mr. Camp has just arrived. We come from the same state."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하지만 첫 재임 연도는 서로 다릅니다.",
+          "en": "Our first years of service differ."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캠프의 하원 입성 연도는 {{blank}}입니다.",
+        "en": "Camp entered the House in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "1987",
+            "en": "1987"
+          },
+          {
+            "id": "B",
+            "ko": "1991",
+            "en": "1991"
+          },
+          {
+            "id": "C",
+            "ko": "1995",
+            "en": "1995"
+          },
+          {
+            "id": "D",
+            "ko": "1983",
+            "en": "1983"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+            "en": "1991. Mr. Upton entered in 1987."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대표단 명부를 첫 임기 순으로 정리하세요.",
+            "en": "Sort the delegation roster by first term."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+            "en": "1991. Mr. Upton entered in 1987."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20868",
+          "claim": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+          "asOf": "1991-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Fred Upton; Public domain per upstream repository",
+          "asOf": "1991-04-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/",
+          "claim": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+          "asOf": "1991-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Dave Camp; Public domain per upstream repository",
+          "asOf": "1991-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1265-state-delegation-seniority"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1266",
+      "mechanism": "constituent-office-apprenticeship",
+      "learningTarget": "Camp was on Michigan Representative Bill Schuette's staff in 1984–1987.",
+      "date": "1991-05-12",
+      "venue": {
+        "ko": "미들랜드 의회 사무실",
+        "en": "Midland congressional office"
+      },
+      "context": {
+        "ko": "미들랜드 의회 사무실",
+        "en": "Midland congressional office"
+      },
+      "cast": [
+        {
+          "id": "C000071",
+          "name": "Dave Camp",
+          "ko": "데이브 캠프",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000071.jpg",
+          "source": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이전 의원 사무실에서 배운 업무 경험을 새 사무실에도 활용하겠습니다.",
+          "en": "I'll apply what I learned working in another member's office."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 보좌 의원의 이름을 기록하겠습니다.",
+          "en": "I'll record the previous member's name."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캠프가 1984~1987년 보좌한 의원은 {{blank}}입니다.",
+        "en": "From 1984 to 1987 Camp worked for {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프레드 업턴",
+            "en": "Fred Upton"
+          },
+          {
+            "id": "B",
+            "ko": "론 카인드",
+            "en": "Ron Kind"
+          },
+          {
+            "id": "C",
+            "ko": "빌 슈트",
+            "en": "Bill Schuette"
+          },
+          {
+            "id": "D",
+            "ko": "짐 쿠퍼",
+            "en": "Jim Cooper"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "빌 슈트 의원입니다.",
+            "en": "Representative Bill Schuette."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지역 사무실 업무 인수인계 자료를 준비하세요.",
+            "en": "Prepare a district-office transition briefing."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "빌 슈트 의원입니다.",
+            "en": "Representative Bill Schuette."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/",
+          "claim": "Camp was on Michigan Representative Bill Schuette's staff in 1984–1987.",
+          "asOf": "1991-05-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Dave Camp; Public domain per upstream repository",
+          "asOf": "1991-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1266-constituent-office-apprenticeship"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1267",
+      "mechanism": "suburban-open-seat",
+      "learningTarget": "Biggert won the southwest Chicago suburban seat vacated by retiring Harris Fawell in 1998.",
+      "date": "1999-04-12",
+      "venue": {
+        "ko": "시카고 교외 대표 접견",
+        "en": "Chicago suburban representative meeting"
+      },
+      "context": {
+        "ko": "시카고 교외 대표 접견",
+        "en": "Chicago suburban representative meeting"
+      },
+      "cast": [
+        {
+          "id": "B001232",
+          "name": "Judy Biggert",
+          "ko": "주디 비거트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001232.jpg",
+          "source": "https://history.house.gov/People/Detail/10365"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "은퇴한 전임자의 지역구 자료를 인계받고 있습니다.",
+          "en": "I'm taking over the district records of my retiring predecessor."
+        },
+        {
+          "speaker": "player",
+          "ko": "이전 대표의 이름부터 확인하겠습니다.",
+          "en": "I'll identify the previous representative."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "비거트가 1998년 승계한 의석의 전임자는 {{blank}}입니다.",
+        "en": "Biggert succeeded {{blank}} in the 1998 election.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "밥 필너",
+            "en": "Bob Filner"
+          },
+          {
+            "id": "B",
+            "ko": "프레드 업턴",
+            "en": "Fred Upton"
+          },
+          {
+            "id": "C",
+            "ko": "짐 쿠퍼",
+            "en": "Jim Cooper"
+          },
+          {
+            "id": "D",
+            "ko": "해리스 파웰",
+            "en": "Harris Fawell"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "해리스 파웰 의원입니다.",
+            "en": "Representative Harris Fawell."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "교외 주민의 접견 안내를 갱신하세요.",
+            "en": "Update the suburban constituent contact guide."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "해리스 파웰 의원입니다.",
+            "en": "Representative Harris Fawell."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10365",
+          "claim": "Biggert won the southwest Chicago suburban seat vacated by retiring Harris Fawell in 1998.",
+          "asOf": "1999-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Judy Biggert; Public domain per upstream repository",
+          "asOf": "1999-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1267-suburban-open-seat"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1268",
+      "mechanism": "education-barriers",
+      "learningTarget": "Biggert introduced a measure in 1999 to reduce barriers to schooling for homeless children.",
+      "date": "1999-06-12",
+      "venue": {
+        "ko": "주거 불안 학생 교육 접견",
+        "en": "Education access meeting for homeless students"
+      },
+      "context": {
+        "ko": "주거 불안 학생 교육 접견",
+        "en": "Education access meeting for homeless students"
+      },
+      "cast": [
+        {
+          "id": "B001232",
+          "name": "Judy Biggert",
+          "ko": "주디 비거트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001232.jpg",
+          "source": "https://history.house.gov/People/Detail/10365"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "거처를 자주 옮기는 학생도 학교에 다닐 수 있도록 방안을 검토하고 있습니다.",
+          "en": "I'm examining how children who move frequently can remain in school."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역 교육 방문단의 핵심 문제를 기록하겠습니다.",
+          "en": "I'll record the education delegation's central concern."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "비거트가 1999년 집중한 대상은 {{blank}}입니다.",
+        "en": "Biggert's 1999 work focused on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주거 불안 아동",
+            "en": "homeless children"
+          },
+          {
+            "id": "B",
+            "ko": "해외 관광객",
+            "en": "foreign tourists"
+          },
+          {
+            "id": "C",
+            "ko": "현역 군인",
+            "en": "active-duty personnel"
+          },
+          {
+            "id": "D",
+            "ko": "은퇴 판사",
+            "en": "retired judges"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주거 불안 아동의 교육 접근입니다.",
+            "en": "School access for children experiencing homelessness."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "교육기관의 등록 장애 사례를 정리하세요.",
+            "en": "Organize examples of enrollment barriers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "주거 불안 아동의 교육 접근입니다.",
+            "en": "School access for children experiencing homelessness."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10365",
+          "claim": "Biggert introduced a measure in 1999 to reduce barriers to schooling for homeless children.",
+          "asOf": "1999-06-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Judy Biggert; Public domain per upstream repository",
+          "asOf": "1999-06-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1268-education-barriers"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1269",
+      "mechanism": "energy-subcommittee-contact",
+      "learningTarget": "Biggert chaired the Science Committee's Energy Subcommittee during the 108th Congress.",
+      "date": "2004-04-12",
+      "venue": {
+        "ko": "에너지 연구기관 접견",
+        "en": "Energy research delegation"
+      },
+      "context": {
+        "ko": "에너지 연구기관 접견",
+        "en": "Energy research delegation"
+      },
+      "cast": [
+        {
+          "id": "B001232",
+          "name": "Judy Biggert",
+          "ko": "주디 비거트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001232.jpg",
+          "source": "https://history.house.gov/People/Detail/10365"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "연구기관의 에너지 관련 문의를 위원회 업무와 연결합시다.",
+          "en": "Let's connect the research delegation's energy inquiries to committee work."
+        },
+        {
+          "speaker": "player",
+          "ko": "현재 소위원회 관할을 확인하겠습니다.",
+          "en": "I'll identify the relevant subcommittee."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제108대 의회의 비거트는 과학위원회 {{blank}} 소위원장입니다.",
+        "en": "In the 108th Congress Biggert chairs the Science Committee's {{blank}} Subcommittee.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "B",
+            "ko": "에너지",
+            "en": "Energy"
+          },
+          {
+            "id": "C",
+            "ko": "이민",
+            "en": "Immigration"
+          },
+          {
+            "id": "D",
+            "ko": "선거",
+            "en": "Elections"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "에너지 소위원회입니다.",
+            "en": "The Energy Subcommittee."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "연구기관 접견 자료를 해당 소위원회별로 정리하세요.",
+            "en": "Organize the research briefing by subcommittee."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "에너지 소위원회입니다.",
+            "en": "The Energy Subcommittee."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10365",
+          "claim": "Biggert chaired the Science Committee's Energy Subcommittee during the 108th Congress.",
+          "asOf": "2004-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Judy Biggert; Public domain per upstream repository",
+          "asOf": "2004-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1269-energy-subcommittee-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1270",
+      "mechanism": "family-seat-succession",
+      "learningTarget": "Duncan Jr. won the special election and regular election on November 8 1988 after his father's death.",
+      "date": "1988-12-12",
+      "venue": {
+        "ko": "테네시 의석 인수인계",
+        "en": "Tennessee seat handoff"
+      },
+      "context": {
+        "ko": "테네시 의석 인수인계",
+        "en": "Tennessee seat handoff"
+      },
+      "cast": [
+        {
+          "id": "D000533",
+          "name": "John J. Duncan Jr.",
+          "ko": "존 덩컨 주니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000533.jpg",
+          "source": "https://history.house.gov/People/Detail/12493"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "아버지의 의석에 대한 특별선거와 다음 임기의 정규선거 기록이 있습니다.",
+          "en": "There are records of both the special election for my father's seat and the regular election for the next term."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 선거의 목적을 구분하겠습니다.",
+          "en": "I'll distinguish the purposes of the two elections."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "덩컨 주니어가 두 선거에서 당선된 날짜는 {{blank}}입니다.",
+        "en": "Duncan Jr. won both elections on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "1989년 1월 3일",
+            "en": "January 3, 1989"
+          },
+          {
+            "id": "B",
+            "ko": "1986년 11월 4일",
+            "en": "November 4, 1986"
+          },
+          {
+            "id": "C",
+            "ko": "1988년 11월 8일",
+            "en": "November 8, 1988"
+          },
+          {
+            "id": "D",
+            "ko": "1990년 11월 6일",
+            "en": "November 6, 1990"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1988년 11월 8일입니다.",
+            "en": "November 8, 1988."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "잔여 임기와 다음 정규 임기를 구분하세요.",
+            "en": "Distinguish the remaining term from the next regular term."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1988년 11월 8일입니다.",
+            "en": "November 8, 1988."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12493",
+          "claim": "Duncan Jr. won the special election and regular election on November 8 1988 after his father's death.",
+          "asOf": "1988-12-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of John J. Duncan Jr.; Public domain per upstream repository",
+          "asOf": "1988-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1270-family-seat-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1271",
+      "mechanism": "local-court-reunion",
+      "learningTarget": "Duncan Jr. served as state trial judge in Knox County from 1981 to 1988.",
+      "date": "1989-04-12",
+      "venue": {
+        "ko": "녹스 카운티 법조인 방문",
+        "en": "Knox County legal delegation"
+      },
+      "context": {
+        "ko": "녹스 카운티 법조인 방문",
+        "en": "Knox County legal delegation"
+      },
+      "cast": [
+        {
+          "id": "D000533",
+          "name": "John J. Duncan Jr.",
+          "ko": "존 덩컨 주니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000533.jpg",
+          "source": "https://history.house.gov/People/Detail/12493"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "법원에서 알던 지역 주민들이 방문했습니다.",
+          "en": "People I knew from the local courthouse have arrived."
+        },
+        {
+          "speaker": "player",
+          "ko": "전직 사법 업무와 현재 의회 업무를 구분하겠습니다.",
+          "en": "I'll distinguish your judicial and legislative roles."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "덩컨 주니어가 판사로 근무한 카운티는 {{blank}}입니다.",
+        "en": "Duncan Jr. served as a judge in {{blank}} County.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데이비드슨",
+            "en": "Davidson"
+          },
+          {
+            "id": "B",
+            "ko": "윌슨",
+            "en": "Wilson"
+          },
+          {
+            "id": "C",
+            "ko": "해밀턴",
+            "en": "Hamilton"
+          },
+          {
+            "id": "D",
+            "ko": "녹스",
+            "en": "Knox"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "녹스 카운티입니다.",
+            "en": "Knox County."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "법원 문의와 연방 주민 민원을 분리하세요.",
+            "en": "Separate court inquiries from federal casework."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "녹스 카운티입니다.",
+            "en": "Knox County."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12493",
+          "claim": "Duncan Jr. served as state trial judge in Knox County from 1981 to 1988.",
+          "asOf": "1989-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of John J. Duncan Jr.; Public domain per upstream repository",
+          "asOf": "1989-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1271-local-court-reunion"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1272",
+      "mechanism": "municipal-education-network",
+      "learningTarget": "Filner served on the San Diego school board from 1979 to 1983 and as president in 1982.",
+      "date": "1993-04-12",
+      "venue": {
+        "ko": "샌디에이고 교육 관계자 접견",
+        "en": "San Diego education delegation"
+      },
+      "context": {
+        "ko": "샌디에이고 교육 관계자 접견",
+        "en": "San Diego education delegation"
+      },
+      "cast": [
+        {
+          "id": "F000116",
+          "name": "Bob Filner",
+          "ko": "밥 필너",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000116.jpg",
+          "source": "https://history.house.gov/People/Detail/13121"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "교육위원회에서 함께 일했던 방문단이 왔습니다.",
+          "en": "A delegation I worked with on the school board has arrived."
+        },
+        {
+          "speaker": "host",
+          "ko": "당시 교육위원회 직책을 기록하세요.",
+          "en": "Record the former school board role."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "필너는 1982년 샌디에이고 교육위원회 {{blank}}이었습니다.",
+        "en": "In 1982 Filner was the San Diego school board {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "위원장",
+            "en": "president"
+          },
+          {
+            "id": "B",
+            "ko": "교육감",
+            "en": "superintendent"
+          },
+          {
+            "id": "C",
+            "ko": "교장",
+            "en": "principal"
+          },
+          {
+            "id": "D",
+            "ko": "교사 노조 위원장",
+            "en": "teachers' union president"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "교육위원회 위원장이었습니다.",
+            "en": "I was school board president."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "교육 현안과 지방 행정 기록을 연결하세요.",
+            "en": "Link education concerns to the local administration record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "교육위원회 위원장이었습니다.",
+            "en": "I was school board president."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13121",
+          "claim": "Filner served on the San Diego school board from 1979 to 1983 and as president in 1982.",
+          "asOf": "1993-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Bob Filner; Public domain per upstream repository",
+          "asOf": "1993-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-1272-municipal-education-network"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1273",
+      "mechanism": "veterans-service-routing",
+      "learningTarget": "Filner chaired Veterans' Affairs in the 110th Congress.",
+      "date": "2007-04-12",
+      "venue": {
+        "ko": "샌디에이고 참전군인 접견",
+        "en": "San Diego veterans delegation"
+      },
+      "context": {
+        "ko": "샌디에이고 참전군인 접견",
+        "en": "San Diego veterans delegation"
+      },
+      "cast": [
+        {
+          "id": "F000116",
+          "name": "Bob Filner",
+          "ko": "밥 필너",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000116.jpg",
+          "source": "https://history.house.gov/People/Detail/13121"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "참전군인 방문단의 요청을 해당 위원회 자료와 연결해 주세요.",
+          "en": "Connect the veterans delegation's requests to the committee papers."
+        },
+        {
+          "speaker": "player",
+          "ko": "현재 위원회 명칭을 확인하겠습니다.",
+          "en": "I'll identify your current committee."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "제110대 의회 필너가 맡은 위원회는 {{blank}}입니다.",
+        "en": "Filner chairs {{blank}} in the 110th Congress.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "B",
+            "ko": "보훈",
+            "en": "Veterans' Affairs"
+          },
+          {
+            "id": "C",
+            "ko": "세입",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "D",
+            "ko": "법사",
+            "en": "Judiciary"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "보훈위원회입니다.",
+            "en": "Veterans' Affairs."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민별 요청과 위원회 정책 자료를 구분하세요.",
+            "en": "Distinguish individual cases from committee policy materials."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "보훈위원회입니다.",
+            "en": "Veterans' Affairs."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13121",
+          "claim": "Filner chaired Veterans' Affairs in the 110th Congress.",
+          "asOf": "2007-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Bob Filner; Public domain per upstream repository",
+          "asOf": "2007-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1273-veterans-service-routing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1274",
+      "mechanism": "vacancy-constituent-handoff",
+      "learningTarget": "Mary Bono won the April 7 1998 special election after Sonny Bono died.",
+      "date": "1998-05-12",
+      "venue": {
+        "ko": "팜스프링스 지역 접견",
+        "en": "Palm Springs district meeting"
+      },
+      "context": {
+        "ko": "팜스프링스 지역 접견",
+        "en": "Palm Springs district meeting"
+      },
+      "cast": [
+        {
+          "id": "B001228",
+          "name": "Mary Bono",
+          "ko": "메리 보노",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001228.jpg",
+          "source": "https://history.house.gov/People/Detail/10357"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "전임자 사무실의 주민 연락처를 이어받고 있습니다.",
+          "en": "I'm taking over constituent contacts from the former office."
+        },
+        {
+          "speaker": "player",
+          "ko": "공석의 발생 원인과 특별선거 일자를 기록하겠습니다.",
+          "en": "I'll record the cause of the vacancy and the special election date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "메리 보노는 {{blank}}의 사망으로 열린 특별선거에서 당선됐습니다.",
+        "en": "Mary Bono won a special election following the death of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "해리스 파웰",
+            "en": "Harris Fawell"
+          },
+          {
+            "id": "B",
+            "ko": "론 와이든",
+            "en": "Ron Wyden"
+          },
+          {
+            "id": "C",
+            "ko": "소니 보노",
+            "en": "Sonny Bono"
+          },
+          {
+            "id": "D",
+            "ko": "빌 슈트",
+            "en": "Bill Schuette"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "소니 보노 의원의 공석이었습니다.",
+            "en": "It was Representative Sonny Bono's vacancy."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1998년 4월 7일 특별선거를 인계 기록에 표시하세요.",
+            "en": "Mark the April 7, 1998 special election in the handover record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "소니 보노 의원의 공석이었습니다.",
+            "en": "It was Representative Sonny Bono's vacancy."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10357",
+          "claim": "Mary Bono won the April 7 1998 special election after Sonny Bono died.",
+          "asOf": "1998-05-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Mary Bono; Public domain per upstream repository",
+          "asOf": "1998-05-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1274-vacancy-constituent-handoff"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1275",
+      "mechanism": "state-party-leadership-memory",
+      "learningTarget": "Sensenbrenner was assistant minority leader in Wisconsin's state Senate in 1977–1979.",
+      "date": "1980-04-12",
+      "venue": {
+        "ko": "위스콘신 주의회 동료 접견",
+        "en": "Wisconsin legislative colleagues meeting"
+      },
+      "context": {
+        "ko": "위스콘신 주의회 동료 접견",
+        "en": "Wisconsin legislative colleagues meeting"
+      },
+      "cast": [
+        {
+          "id": "S000244",
+          "name": "Jim Sensenbrenner",
+          "ko": "짐 센센브레너",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000244.jpg",
+          "source": "https://history.house.gov/People/Detail/21438"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이전 주상원 지도부 동료들과 다시 만났습니다.",
+          "en": "I've reunited with colleagues from state Senate leadership."
+        },
+        {
+          "speaker": "player",
+          "ko": "주의회 직책과 현재 연방의회 직책을 구별하겠습니다.",
+          "en": "I'll distinguish your former state role from your current federal role."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "1977~1979년 센센브레너는 위스콘신 주상원 {{blank}}이었습니다.",
+        "en": "From 1977 to 1979 Sensenbrenner was Wisconsin state Senate {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "다수당 원내대표",
+            "en": "majority leader"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "의장",
+            "en": "president"
+          },
+          {
+            "id": "D",
+            "ko": "소수당 원내부대표",
+            "en": "assistant minority leader"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "소수당 원내부대표였습니다.",
+            "en": "I was assistant minority leader."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 의회 지도부의 직책을 비교하는 자료를 만드세요.",
+            "en": "Prepare a comparison of state and federal leadership roles."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "소수당 원내부대표였습니다.",
+            "en": "I was assistant minority leader."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/21438",
+          "claim": "Sensenbrenner was assistant minority leader in Wisconsin's state Senate in 1977–1979.",
+          "asOf": "1980-04-12"
+        },
+        {
+          "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+          "claim": "Portrait of Jim Sensenbrenner; Public domain per upstream repository",
+          "asOf": "1980-04-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-1275-state-party-leadership-memory"
+      },
+      "fictional": true
+    }
+  ]
+}
