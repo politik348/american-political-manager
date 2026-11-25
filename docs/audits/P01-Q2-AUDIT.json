@@ -34,10 +34,10 @@
     ]
   },
   "metrics": {
-    "q2CoreAnswerVerified": 475,
+    "q2CoreAnswerVerified": 500,
     "q2CompleteFullAudit": 0,
-    "q2ModifiedScenes": 312,
-    "q2DialogueRevisions": 110,
+    "q2ModifiedScenes": 313,
+    "q2DialogueRevisions": 111,
     "q2ConfirmedHistoricalErrorsCorrected": 10,
     "q2NewPhotoLinks": 0,
     "firstBatchPhotoUrlCoverage": {
@@ -53,9 +53,9 @@
       "independentlyVerifiedPhotos": 0
     },
     "q2NewCommittedStoryLinks": 0,
-    "unreviewedCoreAnswers": 1200,
+    "unreviewedCoreAnswers": 1175,
     "legacyUnknown": 675,
-    "newContentUnreviewed": 525,
+    "newContentUnreviewed": 500,
     "structureScanned": 875,
     "structureBasicPassed": 875,
     "pre1900SceneCount": 77,
@@ -76,7 +76,8 @@
     "q2NewRecordedChronologicalCandidates": 93,
     "q2NewSharedCastChronologicalCandidates": 92,
     "q2NewHistoricalSuccessionCandidates": 1,
-    "q2SemanticDuplicateReplacements": 5
+    "q2SemanticDuplicateReplacements": 5,
+    "q2HistoricalErrorsCorrected": null
   },
   "candidateStoryLinks": [
     {
@@ -1620,6 +1621,23 @@
       "coreAnswerVerified": 25,
       "modifiedScenes": [],
       "dialogueRevised": [],
+      "fullAuditCertified": 0
+    },
+    {
+      "id": "Q2-B-08",
+      "range": "P01-1151–1175",
+      "part": 47,
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "auditedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "contentCommit": "652f545ebd4d0770c366eed9b9e0437cdfa426a0",
+      "coreAnswerVerified": 25,
+      "modifiedScenes": [
+        "P01-1174"
+      ],
+      "dialogueRevised": [
+        "P01-1174"
+      ],
+      "historicalErrorsCorrected": 1,
       "fullAuditCertified": 0
     }
   ],
@@ -31118,427 +31136,987 @@
     {
       "id": "P01-1151",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-FL.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-FL.htm",
+          "claim": "Bilirakis FL-9 and Buchanan FL-13 in 112th Congress.",
+          "asOf": "2012-05-07"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Bilirakis FL-9 and Buchanan FL-13 in 112th Congress."
     },
     {
       "id": "P01-1152",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-FL.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-FL-H-12.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-FL-H-16.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-FL.htm",
+          "claim": "Bilirakis moved to FL-12 and Buchanan FL-16 in 113th.",
+          "asOf": "2014-03-03"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-FL-H-12.htm",
+          "claim": "Bilirakis moved to FL-12 and Buchanan FL-16 in 113th.",
+          "asOf": "2014-03-03"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-FL-H-16.htm",
+          "claim": "Bilirakis moved to FL-12 and Buchanan FL-16 in 113th.",
+          "asOf": "2014-03-03"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Bilirakis moved to FL-12 and Buchanan FL-16 in 113th."
     },
     {
       "id": "P01-1153",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://buchanan.house.gov/2021/11/02/id-33a21b5e-297d-4016-8dec-2b01507ae751/"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://buchanan.house.gov/2021/11/02/id-33a21b5e-297d-4016-8dec-2b01507ae751/",
+          "claim": "November 2 2021 water-quality delegation meeting; Buchanan and Wasserman Schultz hosts, Castor and Bilirakis attendees.",
+          "asOf": "2021-11-03"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "November 2 2021 water-quality delegation meeting; Buchanan and Wasserman Schultz hosts, Castor and Bilirakis attendees."
     },
     {
       "id": "P01-1154",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-FL.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-FL.htm",
+          "claim": "Dunn FL-2 and Soto FL-9.",
+          "asOf": "2018-08-06"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Dunn FL-2 and Soto FL-9."
     },
     {
       "id": "P01-1155",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-FL.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-FL.htm",
+          "claim": "Dunn founded Advanced Urology Institute.",
+          "asOf": "2018-09-10"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Dunn founded Advanced Urology Institute."
     },
     {
       "id": "P01-1156",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://history.house.gov/People/Detail/24196"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/24196",
+          "claim": "House historical biography explicitly lists elementary school principal.",
+          "asOf": "2014-04-14"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "House historical biography explicitly lists elementary school principal."
     },
     {
       "id": "P01-1157",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.local10.com/news/local/2020/09/27/this-week-in-south-florida-maria-elvira-salazar/",
+        "https://history.house.gov/People/Detail/24196",
+        "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-FL.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.local10.com/news/local/2020/09/27/this-week-in-south-florida-maria-elvira-salazar/",
+          "claim": "2020 report confirms Salazar broadcast journalism; Wilson teacher and principal.",
+          "asOf": "2022-09-15"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/24196",
+          "claim": "2020 report confirms Salazar broadcast journalism; Wilson teacher and principal.",
+          "asOf": "2022-09-15"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-FL.htm",
+          "claim": "2020 report confirms Salazar broadcast journalism; Wilson teacher and principal.",
+          "asOf": "2022-09-15"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "2020 report confirms Salazar broadcast journalism; Wilson teacher and principal."
     },
     {
       "id": "P01-1158",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-FL.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-FL.htm",
+          "claim": "Steube FL-17 and Donalds FL-19.",
+          "asOf": "2022-10-28"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Steube FL-17 and Donalds FL-19."
     },
     {
       "id": "P01-1159",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm",
+          "claim": "Weber TX-14 and Babin TX-36.",
+          "asOf": "2016-04-18"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Weber TX-14 and Babin TX-36."
     },
     {
       "id": "P01-1160",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm",
+          "claim": "Babin practiced dentistry.",
+          "asOf": "2016-05-16"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Babin practiced dentistry."
     },
     {
       "id": "P01-1161",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-33.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-25.htm",
+        "https://veasey.house.gov/about/full-biography"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-33.htm",
+          "claim": "Veasey newly created district 33, Williams district 25.",
+          "asOf": "2014-06-09"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-25.htm",
+          "claim": "Veasey newly created district 33, Williams district 25.",
+          "asOf": "2014-06-09"
+        },
+        {
+          "url": "https://veasey.house.gov/about/full-biography",
+          "claim": "Veasey newly created district 33, Williams district 25.",
+          "asOf": "2014-06-09"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Veasey newly created district 33, Williams district 25."
     },
     {
       "id": "P01-1162",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-25.htm",
+        "https://smallbusiness.house.gov/about/chair.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-TX-H-25.htm",
+          "claim": "Williams operated family-owned auto dealership.",
+          "asOf": "2014-08-11"
+        },
+        {
+          "url": "https://smallbusiness.house.gov/about/chair.htm",
+          "claim": "Williams operated family-owned auto dealership.",
+          "asOf": "2014-08-11"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Williams operated family-owned auto dealership."
     },
     {
       "id": "P01-1163",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://carter.house.gov/about/",
+        "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://carter.house.gov/about/",
+          "claim": "Carter served as district judge of the 277th District Court in Williamson County.",
+          "asOf": "2016-06-13"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-TX.htm",
+          "claim": "Carter served as district judge of the 277th District Court in Williamson County.",
+          "asOf": "2016-06-13"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Carter served as district judge of the 277th District Court in Williamson County."
     },
     {
       "id": "P01-1164",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-TX.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-TX.htm",
+          "claim": "Garcia TX-29 and Castro TX-20.",
+          "asOf": "2020-08-17"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Garcia TX-29 and Castro TX-20."
     },
     {
       "id": "P01-1165",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-TX.htm",
+        "https://www.cloudforcongress.com/about-michael/"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-TX.htm",
+          "claim": "Cloud was a business owner and founded video production company; Victoria residence confirmed, precise company premises not independently established.",
+          "asOf": "2020-09-14"
+        },
+        {
+          "url": "https://www.cloudforcongress.com/about-michael/",
+          "claim": "Cloud was a business owner and founded video production company; Victoria residence confirmed, precise company premises not independently established.",
+          "asOf": "2020-09-14"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Cloud was a business owner and founded video production company; Victoria residence confirmed, precise company premises not independently established."
     },
     {
       "id": "P01-1166",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://hayes.house.gov/2020/12/house-delegation-delauro-larson-courtney-himes-hayes-secure-historic-vicories"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://hayes.house.gov/2020/12/house-delegation-delauro-larson-courtney-himes-hayes-secure-historic-vicories",
+          "claim": "December 22 2020 announcement names all five delegation members and FY2021 omnibus.",
+          "asOf": "2020-12-29"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "December 22 2020 announcement names all five delegation members and FY2021 omnibus."
     },
     {
       "id": "P01-1167",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.murphy.senate.gov/newsroom/press-releases/murphy-blumenthal-congratulate-waterbury-teacher-on-national-teacher-of-the-year-award"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.murphy.senate.gov/newsroom/press-releases/murphy-blumenthal-congratulate-waterbury-teacher-on-national-teacher-of-the-year-award",
+          "claim": "April 28 2016 Senate release confirms national award.",
+          "asOf": "2020-10-05"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "April 28 2016 Senate release confirms national award."
     },
     {
       "id": "P01-1168",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-CT.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-CT.htm",
+          "claim": "Murphy CT-5 and Himes CT-4.",
+          "asOf": "2012-05-14"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Murphy CT-5 and Himes CT-4."
     },
     {
       "id": "P01-1169",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MA.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MA-H-8.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MA-H-9.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MA.htm",
+          "claim": "Keating MA-10 to MA-9 and Lynch MA-9 to MA-8.",
+          "asOf": "2014-04-07"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MA-H-8.htm",
+          "claim": "Keating MA-10 to MA-9 and Lynch MA-9 to MA-8.",
+          "asOf": "2014-04-07"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MA-H-9.htm",
+          "claim": "Keating MA-10 to MA-9 and Lynch MA-9 to MA-8.",
+          "asOf": "2014-04-07"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Keating MA-10 to MA-9 and Lynch MA-9 to MA-8."
     },
     {
       "id": "P01-1170",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://lynch.house.gov/2019/11/13/2019-11-massachusetts-delegation-demands-answers-cuts-state-low-income-home-heating-funding/"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://lynch.house.gov/2019/11/13/2019-11-massachusetts-delegation-demands-answers-cuts-state-low-income-home-heating-funding/",
+          "claim": "November 2019 release identifies LIHEAP letter and both members.",
+          "asOf": "2019-12-02"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "November 2019 release identifies LIHEAP letter and both members."
     },
     {
       "id": "P01-1171",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MI.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MI.htm",
+          "claim": "Peters MI-9.",
+          "asOf": "2012-06-11"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Peters MI-9."
     },
     {
       "id": "P01-1172",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MI.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MI-H-14.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-MI.htm",
+          "claim": "Peters moved to MI-14 in 113th.",
+          "asOf": "2014-03-10"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2014-02-18/html/CDIR-2014-02-18-MI-H-14.htm",
+          "claim": "Peters moved to MI-14 in 113th.",
+          "asOf": "2014-03-10"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Peters moved to MI-14 in 113th."
     },
     {
       "id": "P01-1173",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+        "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-KS.htm"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "claim": "Marshall KS-1 then Senate; Mann KS-1 in 117th.",
+          "asOf": "2021-10-18"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-KS.htm",
+          "claim": "Marshall KS-1 then Senate; Mann KS-1 in 117th.",
+          "asOf": "2021-10-18"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Marshall KS-1 then Senate; Mann KS-1 in 117th."
     },
     {
       "id": "P01-1174",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
-      "issues": [],
-      "modified": false,
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.govinfo.gov/content/pkg/BILLS-117hr2746ih/html/BILLS-117hr2746ih.htm",
+        "https://www.govinfo.gov/content/pkg/BILLS-117s1340is/html/BILLS-117s1340is.htm",
+        "https://www.govinfo.gov/content/pkg/PLAW-117publ26/html/PLAW-117publ26.htm",
+        "https://ross.house.gov/2021/7/ross-tillis-burr-and-hudson-bipartisan-legislation-consolidate-fort-bragg-one"
+      ],
+      "issues": [
+        "Incorrectly conflated House companion H.R. 2746 with enacted Senate S. 1340; omitted statutory exception for pending cases."
+      ],
+      "modified": true,
       "photoStatus": "not_reviewed_Q3_responsibility",
-      "modificationCommit": null,
+      "modificationCommit": "652f545ebd4d0770c366eed9b9e0437cdfa426a0",
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-117hr2746ih/html/BILLS-117hr2746ih.htm",
+          "claim": "H.R. 2746 cosponsors include Hudson and Budd; Senate S. 1340 became law on July 6; Eastern District consolidation excludes pre-existing cases.",
+          "asOf": "2021-07-07"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-117s1340is/html/BILLS-117s1340is.htm",
+          "claim": "H.R. 2746 cosponsors include Hudson and Budd; Senate S. 1340 became law on July 6; Eastern District consolidation excludes pre-existing cases.",
+          "asOf": "2021-07-07"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ26/html/PLAW-117publ26.htm",
+          "claim": "H.R. 2746 cosponsors include Hudson and Budd; Senate S. 1340 became law on July 6; Eastern District consolidation excludes pre-existing cases.",
+          "asOf": "2021-07-07"
+        },
+        {
+          "url": "https://ross.house.gov/2021/7/ross-tillis-burr-and-hudson-bipartisan-legislation-consolidate-fort-bragg-one",
+          "claim": "H.R. 2746 cosponsors include Hudson and Budd; Senate S. 1340 became law on July 6; Eastern District consolidation excludes pre-existing cases.",
+          "asOf": "2021-07-07"
+        }
+      ],
+      "dialogueModified": true,
+      "historicalErrorCorrected": true,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "H.R. 2746 cosponsors include Hudson and Budd; Senate S. 1340 became law on July 6; Eastern District consolidation excludes pre-existing cases."
     },
     {
       "id": "P01-1175",
       "path": "data/dialogue-packs/P01/part-47.json",
-      "blobShaAtAudit": null,
-      "latestObservedBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
-      "verifiedItems": [],
-      "status": "not_verified",
-      "evidenceUrls": [],
+      "blobShaAtAudit": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "latestObservedBlobSha": "5deb8c0cd00b4388e61b6fd6cf2ceffb4a0b5000",
+      "verifiedItems": [
+        "Core answer checked against actual source text; four answer choices reviewed for core uniqueness."
+      ],
+      "status": "core_answer_verified_full_audit_pending",
+      "evidenceUrls": [
+        "https://www.budd.senate.gov/about-senator-ted-budd/",
+        "https://history.house.gov/People/Listing/B/BUDD,-Theodore-Paul-(B001305)/",
+        "https://ballotpedia.org/North_Carolina%27s_9th_Congressional_District_election%2C_2022"
+      ],
       "issues": [],
       "modified": false,
       "photoStatus": "not_reviewed_Q3_responsibility",
       "modificationCommit": null,
       "structuralScanStatus": "not_reviewed",
       "remaining": [
-        "Core factual verification; chronology and cast; choice uniqueness; dialogue duplication; narrative continuity"
-      ]
+        "Full cast Bioguide ID/term validation and all ancillary historical claims not fully certified; Q3/Q4 separate."
+      ],
+      "originalBlobSha": "8827dcd7a23538b54f44fe39b0141ec097aa9085",
+      "evidence": [
+        {
+          "url": "https://www.budd.senate.gov/about-senator-ted-budd/",
+          "claim": "Budd NC-13 through January 3 2023 then senator; Hudson elected to new NC-9 November 8 2022, formerly NC-8.",
+          "asOf": "2023-06-12"
+        },
+        {
+          "url": "https://history.house.gov/People/Listing/B/BUDD,-Theodore-Paul-(B001305)/",
+          "claim": "Budd NC-13 through January 3 2023 then senator; Hudson elected to new NC-9 November 8 2022, formerly NC-8.",
+          "asOf": "2023-06-12"
+        },
+        {
+          "url": "https://ballotpedia.org/North_Carolina%27s_9th_Congressional_District_election%2C_2022",
+          "claim": "Budd NC-13 through January 3 2023 then senator; Hudson elected to new NC-9 November 8 2022, formerly NC-8.",
+          "asOf": "2023-06-12"
+        }
+      ],
+      "dialogueModified": false,
+      "historicalErrorCorrected": false,
+      "auditTeam": "Q2-B",
+      "auditDate": "2026-11-25",
+      "auditSession": 2,
+      "sourceAccessNote": "Budd NC-13 through January 3 2023 then senator; Hudson elected to new NC-9 November 8 2022, formerly NC-8."
     },
     {
       "id": "P01-1176",
@@ -41973,12 +42551,12 @@
     "date": "2026-11-25",
     "session": 2,
     "target": 375,
-    "newCoreAnswers": 50,
-    "lastVerified": "P01-1150",
-    "nextStart": "P01-1151",
+    "newCoreAnswers": 75,
+    "lastVerified": "P01-1175",
+    "nextStart": "P01-1176",
     "scopeExtension": 200,
-    "newModifiedScenes": 3,
-    "newHistoricalErrors": 0,
+    "newModifiedScenes": 4,
+    "newHistoricalErrors": 1,
     "fullAuditCertified": 0,
     "photoWrites": 0,
     "newPrecisionOrUncertaintyCorrections": 3,
