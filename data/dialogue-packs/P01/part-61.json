@@ -6,15 +6,15 @@
     {
       "id": "P01-1501",
       "mechanism": "split-ballot-debrief",
-      "learningTarget": "Scanlon served PA-7 in the 115th Congress and PA-5 in the 116th.",
+      "learningTarget": "Scanlon won the November 6, 2018 PA-7 special election and took the oath November 13; Lamb took the oath April 12 after his March election.",
       "date": "2020-08-03",
       "venue": {
         "ko": "두 장의 명찰 전시",
         "en": "Two-badge exhibit"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 정치적 만남입니다.",
-        "en": "A fictional political encounter grounded in public historical records."
+        "ko": "공식 기록에 근거한 가상의 정치적 만남입니다. 선행 P01-433 (2019-02-08): 스캔런의 지역구 변화를 기록한 뒤, 실제 보궐선거 당선과 취임 날짜를 구분한다.",
+        "en": "A fictional political encounter grounded in public historical records. Earlier scene P01-433 (2019-02-08): After recording Scanlon's district change, distinguish election from swearing-in."
       },
       "cast": [
         {
@@ -35,49 +35,49 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "2018년 옛 명찰과 새 명찰을 전시하려고 합니다.",
-          "en": "We're displaying old and new badges from 2018."
+          "ko": "보궐선거 결과와 취임 명찰을 함께 전시합니다.",
+          "en": "We're displaying election results alongside oath-of-office badges."
         },
         {
           "speaker": "npc:0",
-          "ko": "11월 6일에 남은 임기와 새 임기 모두를 위해 선출됐습니다.",
-          "en": "On November 6 I won elections for the remaining term and the next term."
+          "ko": "11월 6일에 당선됐지만 취임 명부에는 다른 날짜가 적혀 있습니다.",
+          "en": "I won on November 6, but the oath record has a different date."
         },
         {
           "speaker": "player",
-          "ko": "두 의석 번호를 따로 적어야겠군요.",
-          "en": "I should label the district numbers separately."
+          "ko": "선거일과 취임일을 분리하겠습니다.",
+          "en": "I'll separate election day from the oath date."
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 2018년에 두 개의 다른 번호로 당선됐죠.",
-          "en": "I too won under two different district numbers in 2018."
+          "ko": "저도 3월 당선과 4월 취임이 달랐습니다.",
+          "en": "My March election and April oath were also separate."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "스캔런의 두 의석 번호는 {{blank}}입니다.",
-        "en": "Scanlon's two district numbers were {{blank}}.",
+        "ko": "스캔런의 취임일은 {{blank}}입니다.",
+        "en": "Scanlon took the oath on {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "PA-5 → PA-7",
-            "en": "PA-5 → PA-7"
+            "ko": "2018년 11월 6일",
+            "en": "November 6, 2018"
           },
           {
             "id": "B",
-            "ko": "PA-7 → PA-5",
-            "en": "PA-7 → PA-5"
+            "ko": "2018년 11월 13일",
+            "en": "November 13, 2018"
           },
           {
             "id": "C",
-            "ko": "PA-18 → PA-17",
-            "en": "PA-18 → PA-17"
+            "ko": "2018년 4월 12일",
+            "en": "April 12, 2018"
           },
           {
             "id": "D",
-            "ko": "PA-4 → PA-6",
-            "en": "PA-4 → PA-6"
+            "ko": "2018년 11월 27일",
+            "en": "November 27, 2018"
           }
         ],
         "correct": "B"
@@ -86,32 +86,27 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "이제 명찰을 날짜별로 정리할 수 있겠네요.",
-            "en": "Now we can arrange the badges by date."
+            "ko": "좋습니다. 이제 선거 결과와 의원 명부를 서로 다른 날짜의 기록으로 전시할 수 있겠습니다.",
+            "en": "Good. We can now display election results and the House roll as separately dated records."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "스캔런은 115대 제7구, 116대 제5구에 선출됐습니다.",
-            "en": "Scanlon was elected to PA-7 in the 115th and PA-5 in the 116th."
+            "speaker": "npc:0",
+            "ko": "11월 6일은 당선일이고 하원 명부에 오른 취임일은 11월 13일입니다.",
+            "en": "November 6 was election day; November 13 was the oath date."
           }
         ]
       },
       "evidence": [
         {
-          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-PA.htm",
-          "claim": "Scanlon served PA-7 in the 115th Congress and PA-5 in the 116th.",
-          "asOf": "2020-08-03"
-        },
-        {
           "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
-          "claim": "Scanlon served PA-7 in the 115th Congress and PA-5 in the 116th.",
+          "claim": "Scanlon won the November 6, 2018 PA-7 special election and took the oath November 13; Lamb took the oath April 12 after his March election.",
           "asOf": "2020-08-03"
         }
       ],
       "outcome": {
-        "kind": "document",
+        "kind": "revisit",
         "key": "p01-1501-split-ballot-debrief"
       },
       "fictional": true
@@ -2388,15 +2383,15 @@
     {
       "id": "P01-1523",
       "mechanism": "special-election-chronology",
-      "learningTarget": "Balderson won August 7, 2018 special election for Tiberi's vacancy and November 6 regular election.",
+      "learningTarget": "Balderson won the OH-12 special election August 7, 2018 and took the oath September 4, 2018.",
       "date": "2020-09-26",
       "venue": {
         "ko": "제12구 의석 승계 기록",
         "en": "District twelve succession record"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 정치적 만남입니다. 선행 P01-1515 (2020-09-06) 이후 제12구 의석 승계 기록에서 이어지는 후속 만남입니다.",
-        "en": "A fictional political encounter grounded in public historical records. Earlier scene P01-1515 (2020-09-06): follow-up at District twelve succession record, extending the earlier discussion."
+        "ko": "공식 기록에 근거한 가상의 정치적 만남입니다. 선행 P01-1515 (2020-09-06) 이후 제12구 의석 승계 기록에서 이어지는 후속 만남입니다. 선행 P01-383 (2018-09-05): 볼더슨 보궐선거 기록에 이어 취임일을 확인한다.",
+        "en": "A fictional political encounter grounded in public historical records. Earlier scene P01-1515 (2020-09-06): follow-up at District twelve succession record, extending the earlier discussion. Earlier scene P01-383 (2018-09-05): Follow the Balderson special election record with his oath date."
       },
       "cast": [
         {
@@ -2417,44 +2412,44 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "첫 의회 선거 기록에 두 날짜가 있습니다.",
-          "en": "There are two dates in my first congressional election year."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "공석을 채우는 선거와 정기선거를 구분해야 합니다.",
-          "en": "Distinguish filling a vacancy from the regular election."
+          "ko": "제12구 보궐선거 당선 기록을 다시 가져왔습니다.",
+          "en": "I've brought the district twelve special election record again."
         },
         {
           "speaker": "player",
-          "ko": "8월과 11월의 결과를 순서대로 적겠습니다.",
-          "en": "I'll put the August and November results in order."
+          "ko": "앞서 당선일은 확인했습니다. 의원 명부에 오른 날짜는 언제인가요?",
+          "en": "We checked election day earlier. When did you join the House roll?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "당선과 선서는 별개의 사건으로 기록해야 합니다.",
+          "en": "Election and swearing-in belong in separate records."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "2018년 8월 7일 볼더슨은 {{blank}}에서 당선됐습니다.",
-        "en": "On August 7, 2018 Balderson won a {{blank}}.",
+        "ko": "볼더슨의 취임일은 {{blank}}입니다.",
+        "en": "Balderson took the oath on {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "대통령 선거",
-            "en": "presidential election"
+            "ko": "2018년 8월 7일",
+            "en": "August 7, 2018"
           },
           {
             "id": "B",
-            "ko": "주지사 선거",
-            "en": "governor election"
+            "ko": "2018년 11월 6일",
+            "en": "November 6, 2018"
           },
           {
             "id": "C",
-            "ko": "정기 하원 선거",
-            "en": "regular House election"
+            "ko": "2018년 11월 13일",
+            "en": "November 13, 2018"
           },
           {
             "id": "D",
-            "ko": "보궐선거",
-            "en": "special election"
+            "ko": "2018년 9월 4일",
+            "en": "September 4, 2018"
           }
         ],
         "correct": "D"
@@ -2463,37 +2458,27 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "11월 선거와 별도 기록입니다.",
-            "en": "The November election is a separate record."
+            "ko": "이제 8월의 선거 결과와 9월의 취임 기록을 연결해 보관하죠.",
+            "en": "Now let's file the August election and September oath together as separate milestones."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "볼더슨은 티베리 사임에 따른 공석을 채운 8월 보궐선거에서 당선됐습니다.",
-            "en": "Balderson won the August special election for Tiberi's vacancy."
+            "speaker": "npc:0",
+            "ko": "8월 7일에 당선됐으며 9월 4일 선서를 마치고 하원 명부에 올랐습니다.",
+            "en": "He won August 7 and joined the House roll upon taking the oath September 4."
           }
         ]
       },
       "evidence": [
         {
-          "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-OH.htm",
-          "claim": "Balderson won August 7, 2018 special election for Tiberi's vacancy and November 6 regular election.",
-          "asOf": "2020-09-26"
-        },
-        {
-          "url": "https://history.house.gov/People/Detail/25769804129",
-          "claim": "Balderson won August 7, 2018 special election for Tiberi's vacancy and November 6 regular election.",
-          "asOf": "2020-09-26"
-        },
-        {
           "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224026&id=36507224009",
-          "claim": "Balderson won August 7, 2018 special election for Tiberi's vacancy and November 6 regular election.",
+          "claim": "Balderson won the OH-12 special election August 7, 2018 and took the oath September 4, 2018.",
           "asOf": "2020-09-26"
         }
       ],
       "outcome": {
-        "kind": "document",
+        "kind": "revisit",
         "key": "p01-1523-special-election-chronology"
       },
       "fictional": true
