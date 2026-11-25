@@ -124,28 +124,33 @@
     ]
   },
   "metrics": {
-    "imageFilesOpened": 7,
-    "newCandidatePeople": 7,
+    "imageFilesOpened": 13,
+    "newCandidatePeople": 13,
     "verifiedPeople": 2,
-    "partialPeople": 5,
+    "partialPeople": 11,
     "verifiedCandidateSlotsInPriority": 5,
     "verifiedCandidateScenesInPriority": 4,
-    "allCandidateSlotsInPriority": 17,
-    "allCandidateScenesInPriority": 13,
+    "allCandidateSlotsInPriority": 34,
+    "allCandidateScenesInPriority": 24,
     "projectedPercentIfAllVerifiedCandidateSlotsInPriorityApproved": 71.09103544127866,
     "existingPhotoErrorsConfirmed": 0,
     "existingPhotoErrorsAuditComplete": false,
     "verifiedReplacements": 0,
     "liveIntegration": false,
-    "rawMissingIdentityKeys": 194
+    "rawMissingIdentityKeys": 194,
+    "nearEraCandidateSlotsNotYetApproved": 3,
+    "nearEraCandidateScenesNotYetApproved": 2,
+    "eraApprovedSlots": 0,
+    "projectedPercentNearEraIfApproved": 70.95205003474635,
+    "priorityMissingSlots": 246
   },
   "batches": [
     {
       "id": "Q3-01-in-progress",
       "targetPeople": 25,
-      "peopleWithOpenedImage": 7,
+      "peopleWithOpenedImage": 13,
       "completed": false,
-      "notes": "Initial checkpoint; not a completed 25-person batch. Original LOC record access failed for several candidates. Verified entries use accessible primary published periodical captions, original image files and official House identity records; capture dates and era gating remain approximate."
+      "notes": "Initial checkpoint; not a completed 25-person batch. Original LOC record access failed for several candidates. Verified entries use accessible primary published periodical captions, original image files and official House identity records; capture dates and era gating remain approximate. Second checkpoint adds six opened images with Commons metadata and official House biographies. No additional verified entries because original item pages or provenance still require direct confirmation."
     }
   ],
   "people": [
@@ -196,7 +201,16 @@
         "Early House leadership photo; match scene age individually.",
         "Check all other P01 parts for matching names/aliases; review dates before integration."
       ],
-      "alternatives": []
+      "alternatives": [],
+      "eraReview": {
+        "nearEraCandidate": [
+          "P01-701"
+        ],
+        "requiresEarlierImageOrDateReview": [
+          "P01-724"
+        ],
+        "approved": []
+      }
     },
     {
       "name": "Claude Kitchin",
@@ -252,7 +266,17 @@
         "Full-length photo; crop with context; actual capture date unknown.",
         "Check all other P01 parts for matching names/aliases; review dates before integration."
       ],
-      "alternatives": []
+      "alternatives": [],
+      "eraReview": {
+        "nearEraCandidate": [
+          "P01-701",
+          "P01-702"
+        ],
+        "requiresEarlierImageOrDateReview": [
+          "P01-725"
+        ],
+        "approved": []
+      }
     },
     {
       "name": "James Robert Mann",
@@ -510,6 +534,335 @@
       "remaining": [
         "Find contemporaneous early-career photo for 1915 scenes; do not use 2013 as capture date.",
         "Check all other P01 parts for matching names/aliases; review dates before integration."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Sol Bloom",
+      "ko": "솔 블룸",
+      "bioguideId": "B000565",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/9505",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sol_Bloom_1923.jpg",
+      "sourcePageUrl": "https://hdl.loc.gov/loc.pnp/npcc.09884",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Sol_Bloom_1923.jpg",
+      "institution": "Library of Congress, National Photo Company Collection",
+      "photoType": "historical photograph",
+      "date": "1923",
+      "author": "National Photo Company",
+      "rights": "Commons metadata states public domain US; underlying catalog record not independently accessed",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: National Photo Company, Library of Congress, National Photo Company Collection",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons caption and LOC digital identifier; House biography corroborates name and ID.",
+      "scenarioIds": [
+        "P01-706",
+        "P01-718",
+        "P01-720"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-706",
+          "date": "1925-05-15",
+          "part": 29,
+          "storedId": null
+        },
+        {
+          "sceneId": "P01-718",
+          "date": "1939-08-14",
+          "part": 29,
+          "storedId": null
+        },
+        {
+          "sceneId": "P01-720",
+          "date": "1947-04-16",
+          "part": 29,
+          "storedId": null
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Charles Aubrey Eaton",
+      "ko": "찰스 이턴",
+      "bioguideId": "E000023",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/12630",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Charles_Aubrey_Eaton_(March_29%2C_1868_%E2%80%93_January_23%2C_1953)_circa_1915.jpg",
+      "sourcePageUrl": null,
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Charles_Aubrey_Eaton_(March_29%2C_1868_%E2%80%93_January_23%2C_1953)_circa_1915.jpg",
+      "institution": "Bain collection (reported by Commons; repository pending)",
+      "photoType": "historical photograph",
+      "date": "circa 1915 (Commons description; not 2013 upload date)",
+      "author": "Bain News Service (reported)",
+      "rights": "Underlying catalog and rights not independently confirmed",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: Bain News Service (reported), Bain collection (reported by Commons; repository pending)",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons caption identifies name and life dates; official House biography corroborates; original archive record pending.",
+      "scenarioIds": [
+        "P01-707",
+        "P01-720",
+        "P01-722"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-707",
+          "date": "1926-02-04",
+          "part": 29,
+          "storedId": "E000023"
+        },
+        {
+          "sceneId": "P01-720",
+          "date": "1947-04-16",
+          "part": 29,
+          "storedId": "E000023"
+        },
+        {
+          "sceneId": "P01-722",
+          "date": "1951-06-12",
+          "part": 29,
+          "storedId": "E000023"
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Bertrand Hollis Snell",
+      "ko": "버트런드 스넬",
+      "bioguideId": "S000652",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/21938",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bertrand_Snell_cph.3c04408.jpg",
+      "sourcePageUrl": "https://hdl.loc.gov/loc.pnp/cph.3c04408",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Bertrand_Snell_cph.3c04408.jpg",
+      "institution": "Library of Congress, Prints and Photographs Division",
+      "photoType": "historical photograph (crop)",
+      "date": "1931-12-08 (Commons metadata)",
+      "author": "Underwood & Underwood",
+      "rights": "Commons reports public domain / no known restrictions; original LOC catalog pending",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: Underwood & Underwood, Library of Congress, Prints and Photographs Division",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons identifies cropped subject and parent group photograph; official House biography confirms name and ID.",
+      "scenarioIds": [
+        "P01-712"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-712",
+          "date": "1933-06-07",
+          "part": 29,
+          "storedId": "S000652"
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Robert Lee Doughton",
+      "ko": "로버트 도턴",
+      "bioguideId": "D000448",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/12391",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/DOUGHTON%2C_ROBERT_LEE._REP._FROM_NORTH_CAROLINA%2C_1911_LCCN2016866145.jpg",
+      "sourcePageUrl": "https://www.loc.gov/pictures/item/2016866145/",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:DOUGHTON%2C_ROBERT_LEE._REP._FROM_NORTH_CAROLINA%2C_1911_LCCN2016866145.jpg",
+      "institution": "Library of Congress, Harris & Ewing Collection",
+      "photoType": "historical photograph",
+      "date": "1914 (Commons date; title mentions 1911, not necessarily capture year)",
+      "author": "Harris & Ewing",
+      "rights": "No known restrictions per Commons; LOC collection rights policy https://wwws.loc.gov/rr/print/res/140_harr.html",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: Harris & Ewing, Library of Congress, Harris & Ewing Collection",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons transcribes catalog caption, LCCN and digital identifier; House biography confirms name and ID; full-length image needs crop.",
+      "scenarioIds": [
+        "P01-702",
+        "P01-713",
+        "P01-715",
+        "P01-722"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-702",
+          "date": "1916-05-12",
+          "part": 29,
+          "storedId": "D000448"
+        },
+        {
+          "sceneId": "P01-713",
+          "date": "1934-02-06",
+          "part": 29,
+          "storedId": "D000448"
+        },
+        {
+          "sceneId": "P01-715",
+          "date": "1937-03-17",
+          "part": 29,
+          "storedId": "D000448"
+        },
+        {
+          "sceneId": "P01-722",
+          "date": "1951-06-12",
+          "part": 29,
+          "storedId": "D000448"
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "Robert C. Word Ramspeck",
+      "ko": "로버트 램스펙",
+      "bioguideId": "R000032",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/20115",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Rep._Robert_Ramspeck%2C_Democrat_of_Ga._LCCN2016877600.jpg",
+      "sourcePageUrl": "https://www.loc.gov/pictures/item/2016877600/",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Rep._Robert_Ramspeck%2C_Democrat_of_Ga._LCCN2016877600.jpg",
+      "institution": "Library of Congress, Harris & Ewing Collection",
+      "photoType": "historical photograph",
+      "date": "1940 (Commons metadata)",
+      "author": "Harris & Ewing",
+      "rights": "No known restrictions per Commons; LOC collection rights policy https://wwws.loc.gov/rr/print/res/140_harr.html",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: Harris & Ewing, Library of Congress, Harris & Ewing Collection",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons transcribes caption, LCCN and digital identifier; House biography confirms name and ID.",
+      "scenarioIds": [
+        "P01-710",
+        "P01-719"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-710",
+          "date": "1930-04-04",
+          "part": 29,
+          "storedId": "R000032"
+        },
+        {
+          "sceneId": "P01-719",
+          "date": "1942-05-12",
+          "part": 29,
+          "storedId": "R000032"
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
+      ],
+      "alternatives": []
+    },
+    {
+      "name": "William Brockman Bankhead",
+      "ko": "윌리엄 뱅크헤드",
+      "bioguideId": "B000113",
+      "bioguideEvidence": "https://history.house.gov/People/Detail/7674",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/William_B._Bankhead_LCCN2016859706_(cropped).jpg",
+      "sourcePageUrl": "https://www.loc.gov/pictures/item/2016859706/",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:William_B._Bankhead_LCCN2016859706_(cropped).jpg",
+      "institution": "Library of Congress, Harris & Ewing Collection",
+      "photoType": "historical photograph (crop)",
+      "date": "circa 1917–1940 (Commons metadata range)",
+      "author": "Harris & Ewing",
+      "rights": "No known restrictions per Commons; LOC collection rights policy https://wwws.loc.gov/rr/print/res/140_harr.html",
+      "requiredAttribution": "Mandatory attribution not independently established; recommended credit: Harris & Ewing, Library of Congress, Harris & Ewing Collection",
+      "access": {
+        "result": "image_rendered",
+        "date": "2026-11-25",
+        "method": "Commons original image link opened and rendered; LOC source item not independently verified"
+      },
+      "identityEvidence": "Commons description and linked original catalog caption identify Alabama politician; House biography confirms name and ID; precise capture year unknown.",
+      "scenarioIds": [
+        "P01-714",
+        "P01-715",
+        "P01-717",
+        "P01-723"
+      ],
+      "scenarioOccurrences": [
+        {
+          "sceneId": "P01-714",
+          "date": "1936-06-10",
+          "part": 29,
+          "storedId": null
+        },
+        {
+          "sceneId": "P01-715",
+          "date": "1937-03-17",
+          "part": 29,
+          "storedId": null
+        },
+        {
+          "sceneId": "P01-717",
+          "date": "1939-05-02",
+          "part": 29,
+          "storedId": null
+        },
+        {
+          "sceneId": "P01-723",
+          "date": "1920-04-15",
+          "part": 29,
+          "storedId": null
+        }
+      ],
+      "mappingScope": "Nine priority files; other parts not yet matched",
+      "existingPhotoReplacementNeeded": null,
+      "linkedOccurrencesInPriority": [],
+      "verificationDate": "2026-11-25",
+      "status": "partial",
+      "remaining": [
+        "Independently inspect original archival catalog; confirm date and rights where uncertain; compare scene dates.",
+        "Check other 34 P01 parts for names/aliases."
       ],
       "alternatives": []
     }
@@ -1568,7 +1921,8 @@
       "parts": [
         29
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "D000448"
     },
     {
       "key": "V000105",
@@ -1616,21 +1970,24 @@
       "parts": [
         29
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "B000565"
     },
     {
       "key": "E000023",
       "parts": [
         29
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "E000023"
     },
     {
       "key": "R000032",
       "parts": [
         29
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "R000032"
     },
     {
       "key": "Joseph Wellington Byrns",
@@ -1646,7 +2003,8 @@
         29,
         35
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "S000652"
     },
     {
       "key": "William Brockman Bankhead",
@@ -1654,7 +2012,8 @@
         29,
         35
       ],
-      "status": "not_independently_audited"
+      "status": "partial",
+      "matchedRecord": "B000113"
     },
     {
       "key": "Frederick Moore Vinson",
@@ -1910,7 +2269,8 @@
     "Raw identity keys may represent variants or incorrect IDs; not a unique-person count.",
     "Verified candidate slots are a provisional upper bound within nine priority files, not live integration or final era approval.",
     "No existing image error audit completed; no confirmed errors does not imply absence.",
-    "Additional discovered search leads without opened photographs are not counted."
+    "Additional discovered search leads without opened photographs are not counted.",
+    "Priority missing slots sum to 246, correcting the initial arithmetic in the narrative report. Five identity/rights-verified occurrences include two earlier scenes not yet era-approved; three near-era candidates are provisional, zero era-approved."
   ],
   "next": [
     "Finish first 25-person batch, then second batch; reattempt original LOC catalog through accessible mirrors or alternate institution.",
