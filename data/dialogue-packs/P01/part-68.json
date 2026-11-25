@@ -1,0 +1,2607 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 68,
+  "scenes": [
+    {
+      "id": "P01-1676",
+      "mechanism": "district-triage",
+      "learningTarget": "Wake County was divided between NC-2 and NC-4 in the 112th Congress.",
+      "date": "2012-01-05",
+      "venue": {
+        "ko": "웨이크 카운티 주민 전화",
+        "en": "Wake County constituent call"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "E000291",
+          "name": "Renee L. Ellmers",
+          "ko": "러네이 엘머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000291.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/E000291"
+        },
+        {
+          "id": "P000523",
+          "name": "David E. Price",
+          "ko": "데이비드 프라이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000523.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000523"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "웨이크 카운티 주민이 서류를 어느 사무실로 보내야 할지 묻네요.",
+          "en": "A Wake County resident asks where to send their paperwork."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 이름만으로는 부족할까요?",
+          "en": "Is the county name enough?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제4구와 제2구 모두 웨이크의 일부를 포함합니다.",
+          "en": "Both the fourth and second districts cover parts of Wake."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "먼저 {{blank}}를 확인하겠습니다.",
+        "en": "I'll first confirm the resident's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "거주 주소",
+            "en": "street address"
+          },
+          {
+            "id": "B",
+            "ko": "정당",
+            "en": "party"
+          },
+          {
+            "id": "C",
+            "ko": "직업",
+            "en": "occupation"
+          },
+          {
+            "id": "D",
+            "ko": "나이",
+            "en": "age"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주소를 확인하면 두 사무실 중 맞는 곳으로 연결할 수 있겠군요.",
+            "en": "With the address we can route the case to the right office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "당시 웨이크 카운티는 제2구와 제4구에 걸쳐 있었습니다.",
+            "en": "Wake County was split between districts two and four."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-NC.htm",
+          "claim": "Wake County was divided between NC-2 and NC-4 in the 112th Congress.",
+          "asOf": "2012-01-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1676-district-triage"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1677",
+      "mechanism": "overlapping-coast",
+      "learningTarget": "Beaufort and Craven counties were each split between NC-1 and NC-3 in 2012.",
+      "date": "2012-01-09",
+      "venue": {
+        "ko": "해안 주민 간담회",
+        "en": "Coastal constituent meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "B001251",
+          "name": "G. K. Butterfield",
+          "ko": "G. K. 버터필드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001251.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001251"
+        },
+        {
+          "id": "J000255",
+          "name": "Walter B. Jones",
+          "ko": "월터 존스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000255.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/J000255"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "보퍼트 주민 모임에 초청받았습니다. 어느 의원님을 부르면 좋을까요?",
+          "en": "A Beaufort resident group invited me. Which member should join?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "크레이븐과 보퍼트의 일부가 제 지역구입니다.",
+          "en": "Parts of Craven and Beaufort are in my district."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 카운티에는 제 지역구 주민도 있죠.",
+          "en": "I have constituents in both counties too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "양쪽 사무실이 관련될 수 있으니 {{blank}}을 요청하겠습니다.",
+        "en": "Since both offices may be involved, I'll request {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "선거 후원금",
+            "en": "campaign donations"
+          },
+          {
+            "id": "B",
+            "ko": "지역별 참가자 주소",
+            "en": "participants' addresses by locality"
+          },
+          {
+            "id": "C",
+            "ko": "출신 대학",
+            "en": "alma maters"
+          },
+          {
+            "id": "D",
+            "ko": "정당 가입",
+            "en": "party membership"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민이 섞여 있다면 양쪽에 의견을 전달할 수 있겠습니다.",
+            "en": "If residents span the line, both offices can hear them."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "보퍼트와 크레이븐은 당시 제1구와 제3구에 나뉘어 있었습니다.",
+            "en": "Both counties were divided between NC-1 and NC-3."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-NC.htm",
+          "claim": "Beaufort and Craven counties were each split between NC-1 and NC-3 in 2012.",
+          "asOf": "2012-01-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1677-overlapping-coast"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1678",
+      "mechanism": "municipal-planning",
+      "learningTarget": "Ellmers chaired the Dunn Planning Board in 2008–2010.",
+      "date": "2012-01-13",
+      "venue": {
+        "ko": "던 도시계획 상담",
+        "en": "Dunn planning consultation"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1676 (2012-01-05). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1676 (2012-01-05); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "E000291",
+          "name": "Renee L. Ellmers",
+          "ko": "러네이 엘머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000291.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/E000291"
+        },
+        {
+          "id": "B001251",
+          "name": "G. K. Butterfield",
+          "ko": "G. K. 버터필드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001251.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001251"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "소규모 도시 개발계획을 설명하는 자리에 도움이 필요하다고요?",
+          "en": "You need someone to explain a small-city development plan?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지방의 경험이 있는 동료를 소개하면 좋겠습니다.",
+          "en": "A colleague with municipal experience could help."
+        },
+        {
+          "speaker": "player",
+          "ko": "던의 계획 심의 경험을 말씀해 주실 수 있나요?",
+          "en": "Could you discuss your planning experience in Dunn?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "당시 엘머스 의원이 이끌었던 기관은 {{blank}}였습니다.",
+        "en": "Ellmers previously chaired the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 세출위원회",
+            "en": "House Appropriations Committee"
+          },
+          {
+            "id": "B",
+            "ko": "주 상원",
+            "en": "state Senate"
+          },
+          {
+            "id": "C",
+            "ko": "도시계획위원회",
+            "en": "Dunn Planning Board"
+          },
+          {
+            "id": "D",
+            "ko": "카운티 법원",
+            "en": "county court"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "계획 심의와 연방의회 권한의 차이를 주민들과 논의하죠.",
+            "en": "Let's discuss the difference between planning review and congressional authority."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "엘머스는 2008–2010년 던 도시계획위원장이었습니다.",
+            "en": "Ellmers chaired Dunn's Planning Board from 2008 to 2010."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-NC.htm",
+          "claim": "Ellmers chaired the Dunn Planning Board in 2008–2010.",
+          "asOf": "2012-01-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1678-municipal-planning"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1679",
+      "mechanism": "higher-education-meeting",
+      "learningTarget": "Durham and Orange counties were wholly in Price's NC-4 in the 112th Congress.",
+      "date": "2012-01-17",
+      "venue": {
+        "ko": "더럼 대학 정책 포럼",
+        "en": "Durham university policy forum"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1676 (2012-01-05). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1676 (2012-01-05); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "P000523",
+          "name": "David E. Price",
+          "ko": "데이비드 프라이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000523.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000523"
+        },
+        {
+          "id": "E000291",
+          "name": "Renee L. Ellmers",
+          "ko": "러네이 엘머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000291.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/E000291"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "더럼과 오렌지 카운티 학생들이 대표자를 만나고 싶습니다.",
+          "en": "Students from Durham and Orange counties want to meet their representative."
+        },
+        {
+          "speaker": "player",
+          "ko": "웨이크와는 달리 이 두 카운티도 나뉘어 있나요?",
+          "en": "Unlike Wake, are these counties also split?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "둘 다 제4구에 들어 있습니다.",
+          "en": "Both are in district four."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇다면 학생들을 한 의원실로 안내할 수 있겠군요.",
+          "en": "Then one House office can receive the group."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "학생들의 연방 하원 문의는 {{blank}} 의원실로 보내겠습니다.",
+        "en": "I'll direct the students to Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "엘머스",
+            "en": "Ellmers"
+          },
+          {
+            "id": "B",
+            "ko": "존스",
+            "en": "Jones"
+          },
+          {
+            "id": "C",
+            "ko": "버터필드",
+            "en": "Butterfield"
+          },
+          {
+            "id": "D",
+            "ko": "프라이스",
+            "en": "Price"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "학생들과 의회 역할을 토론할 시간을 잡아보죠.",
+            "en": "Let's arrange a discussion of Congress with the students."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "더럼과 오렌지 카운티는 제4구에 포함됐습니다.",
+            "en": "Durham and Orange were in district four."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-NC.htm",
+          "claim": "Durham and Orange counties were wholly in Price's NC-4 in the 112th Congress.",
+          "asOf": "2012-01-17"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1679-higher-education-meeting"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1680",
+      "mechanism": "joint-flood-intake",
+      "learningTarget": "Cumberland County was partly in NC-7 and NC-8 under the 112th Congress boundaries.",
+      "date": "2012-01-21",
+      "venue": {
+        "ko": "컴벌랜드 수해 주민 접수",
+        "en": "Cumberland flood intake"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "M000485",
+          "name": "Mike McIntyre",
+          "ko": "마이크 매킨타이어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M000485.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M000485"
+        },
+        {
+          "id": "K000369",
+          "name": "Larry Kissell",
+          "ko": "래리 키셀",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000369.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000369"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "컴벌랜드에서 들어온 주민 요청인데 제8구인지 확인해야 합니다.",
+          "en": "A Cumberland request came in, and we need to check if it's in district eight."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제7구에도 컴벌랜드 일부가 있습니다.",
+          "en": "District seven includes part of Cumberland too."
+        },
+        {
+          "speaker": "player",
+          "ko": "피해 주소로 담당 사무실을 나누고 공통 문의는 공유하죠.",
+          "en": "Let's sort cases by address and share common questions."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 사무실이 나누어 대표하는 카운티는 {{blank}}입니다.",
+        "en": "The county divided between these offices is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "컴벌랜드",
+            "en": "Cumberland"
+          },
+          {
+            "id": "B",
+            "ko": "더럼",
+            "en": "Durham"
+          },
+          {
+            "id": "C",
+            "ko": "오렌지",
+            "en": "Orange"
+          },
+          {
+            "id": "D",
+            "ko": "데어",
+            "en": "Dare"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "피해 주민들이 잘못된 사무실에 두 번 연락하는 일을 줄일 수 있겠네요.",
+            "en": "That should reduce duplicate calls to the wrong office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "컴벌랜드 일부는 각각 제7구와 제8구에 속했습니다.",
+            "en": "Parts of Cumberland lay in districts seven and eight."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-NC.htm",
+          "claim": "Cumberland County was partly in NC-7 and NC-8 under the 112th Congress boundaries.",
+          "asOf": "2012-01-21"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1680-joint-flood-intake"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1681",
+      "mechanism": "harbor-introductions",
+      "learningTarget": "In 2012 Rigell (R, VA-2) and Scott (D, VA-3) represented parts of Norfolk.",
+      "date": "2012-02-05",
+      "venue": {
+        "ko": "햄프턴로즈 항만 회의",
+        "en": "Hampton Roads harbor meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "R000589",
+          "name": "E. Scott Rigell",
+          "ko": "스콧 리겔",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000589.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000589"
+        },
+        {
+          "id": "S000185",
+          "name": "Robert C. \"Bobby\" Scott",
+          "ko": "바비 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000185.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000185"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "노퍽 항만 주민들이 두 정당의 하원의원과 이야기하고 싶다고 합니다.",
+          "en": "Norfolk residents want to speak to House members from both parties."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제2구에도 노퍽이 포함됩니다.",
+          "en": "District two includes Norfolk."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구 역시 노퍽 일부를 포함합니다.",
+          "en": "District three covers part of Norfolk as well."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원이 대표하는 공통 도시는 {{blank}}입니다.",
+        "en": "The city both represent is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "리치먼드",
+            "en": "Richmond"
+          },
+          {
+            "id": "B",
+            "ko": "노퍽",
+            "en": "Norfolk"
+          },
+          {
+            "id": "C",
+            "ko": "로어노크",
+            "en": "Roanoke"
+          },
+          {
+            "id": "D",
+            "ko": "윈체스터",
+            "en": "Winchester"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "도시의 서로 다른 지역 주민을 함께 초청해 봅시다.",
+            "en": "Let's invite residents from both parts of the city."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "당시 리겔과 스콧의 지역구는 노퍽을 나누어 대표했습니다.",
+            "en": "Rigell and Scott represented portions of Norfolk."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-VA.htm",
+          "claim": "In 2012 Rigell (R, VA-2) and Scott (D, VA-3) represented parts of Norfolk.",
+          "asOf": "2012-02-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1681-harbor-introductions"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1682",
+      "mechanism": "agency-jurisdiction",
+      "learningTarget": "Rigell served on House Armed Services and Homeland Security; Scott on Education and the Workforce and Judiciary.",
+      "date": "2012-02-09",
+      "venue": {
+        "ko": "해안 경비 관련 민원",
+        "en": "Coastal security inquiry"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1681 (2012-02-05). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1681 (2012-02-05); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "R000589",
+          "name": "E. Scott Rigell",
+          "ko": "스콧 리겔",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000589.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000589"
+        },
+        {
+          "id": "S000185",
+          "name": "Robert C. \"Bobby\" Scott",
+          "ko": "바비 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000185.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000185"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해안 경비와 군 관련 정책 문의가 들어왔습니다.",
+          "en": "A question about coastal security and military policy came in."
+        },
+        {
+          "speaker": "player",
+          "ko": "위원회 담당부터 구별해 보겠습니다.",
+          "en": "I'll distinguish the committees first."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 교육·노동과 법사위원회에 소속되어 있습니다.",
+          "en": "My committees cover education and the workforce, and judiciary."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "군사·국토안보 관련 위원회 소속은 {{blank}} 의원입니다.",
+        "en": "The member serving on Armed Services and Homeland Security is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스콧",
+            "en": "Scott"
+          },
+          {
+            "id": "B",
+            "ko": "그리피스",
+            "en": "Griffith"
+          },
+          {
+            "id": "C",
+            "ko": "리겔",
+            "en": "Rigell"
+          },
+          {
+            "id": "D",
+            "ko": "굿래트",
+            "en": "Goodlatte"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "항만 주민의 질문을 각각 적절한 정책 담당자에게 전달하죠.",
+            "en": "Let's route the harbor residents' questions to the relevant policy contacts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "리겔은 두 안보 관련 위원회에 소속됐습니다.",
+            "en": "Rigell served on both security-related committees."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-VA.htm",
+          "claim": "Rigell served on House Armed Services and Homeland Security; Scott on Education and the Workforce and Judiciary.",
+          "asOf": "2012-02-09"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1682-agency-jurisdiction"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1683",
+      "mechanism": "state-floor-procedure",
+      "learningTarget": "Griffith was Virginia House of Delegates majority leader 2001–2011; Scott served in both state chambers.",
+      "date": "2012-02-13",
+      "venue": {
+        "ko": "주의회 모의 회의",
+        "en": "State legislative simulation"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "G000568",
+          "name": "H. Morgan Griffith",
+          "ko": "모건 그리피스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000568.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000568"
+        },
+        {
+          "id": "S000185",
+          "name": "Robert C. \"Bobby\" Scott",
+          "ko": "바비 스콧",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000185.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000185"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "주의회 모의회의에서 다수당 지도부의 역할을 묻습니다.",
+          "en": "A mock state legislature asks about majority leadership."
+        },
+        {
+          "speaker": "player",
+          "ko": "실제 주 하원 원내 운영 경험이 있는 분을 모시죠.",
+          "en": "Let's invite someone with actual state House floor leadership experience."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 2001년부터 2011년까지 그 역할을 맡았습니다.",
+          "en": "I held that role from 2001 to 2011."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 주 하원과 주 상원에서 활동했지만 별개의 경력입니다.",
+          "en": "I served in both state chambers, but that is a different record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그리피스 의원의 당시 직책은 {{blank}}였습니다.",
+        "en": "Griffith was the state House {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "소수당 원내대표",
+            "en": "minority leader"
+          },
+          {
+            "id": "B",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "C",
+            "ko": "법원장",
+            "en": "chief justice"
+          },
+          {
+            "id": "D",
+            "ko": "다수당 원내대표",
+            "en": "majority leader"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "모의회의의 주의회 권한을 설명하는 데 도움이 되겠군요.",
+            "en": "That will help the mock legislature understand state-level powers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "그리피스는 버지니아 대의원회의 다수당 원내대표였습니다.",
+            "en": "Griffith was majority leader of the Virginia House of Delegates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-VA.htm",
+          "claim": "Griffith was Virginia House of Delegates majority leader 2001–2011; Scott served in both state chambers.",
+          "asOf": "2012-02-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1683-state-floor-procedure"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1684",
+      "mechanism": "mountain-county-boundary",
+      "learningTarget": "Alleghany County was split between VA-6 and VA-9 in 2012.",
+      "date": "2012-02-17",
+      "venue": {
+        "ko": "앨러게니 산악지역 주민 요청",
+        "en": "Alleghany mountain community request"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1683 (2012-02-13). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1683 (2012-02-13); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "G000289",
+          "name": "Bob Goodlatte",
+          "ko": "밥 굿래트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000289.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000289"
+        },
+        {
+          "id": "G000568",
+          "name": "H. Morgan Griffith",
+          "ko": "모건 그리피스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000568.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000568"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "앨러게니 카운티의 교통 문의가 두 사무실에 도착했습니다.",
+          "en": "An Alleghany County transportation inquiry reached two offices."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제6구도 일부를 대표합니다.",
+          "en": "District six covers part of it."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제9구도 마찬가지입니다.",
+          "en": "So does district nine."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "카운티 이름만으로 대표를 확정하지 말고 {{blank}}을 확인하죠.",
+        "en": "Instead of assigning a representative by county name, let's verify {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "당시 주소별 경계",
+            "en": "the dated boundary by address"
+          },
+          {
+            "id": "B",
+            "ko": "현재 상원 의석",
+            "en": "current Senate seats"
+          },
+          {
+            "id": "C",
+            "ko": "출생지",
+            "en": "birthplaces"
+          },
+          {
+            "id": "D",
+            "ko": "주 정당 조직",
+            "en": "state party organization"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 사무실에 걸친 문제인지 먼저 판단하겠습니다.",
+            "en": "We'll first determine whether both offices are involved."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "앨러게니는 당시 제6구와 제9구로 나뉘었습니다.",
+            "en": "Alleghany was divided between VA-6 and VA-9."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-VA.htm",
+          "claim": "Alleghany County was split between VA-6 and VA-9 in 2012.",
+          "asOf": "2012-02-17"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1684-mountain-county-boundary"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1685",
+      "mechanism": "suburb-county-contact",
+      "learningTarget": "Fairfax County was split between VA-10 and VA-11 (and VA-8) in 2012.",
+      "date": "2012-02-21",
+      "venue": {
+        "ko": "페어팩스 교외 방문",
+        "en": "Fairfax suburban visit"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "W000672",
+          "name": "Frank R. Wolf",
+          "ko": "프랭크 울프",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000672.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000672"
+        },
+        {
+          "id": "C001078",
+          "name": "Gerald E. Connolly",
+          "ko": "제리 코널리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001078.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001078"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "페어팩스의 주민 대표들과 만나려 한다고요?",
+          "en": "You're planning to meet Fairfax residents?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제11구도 카운티 일부를 포함합니다.",
+          "en": "District eleven includes part of the county too."
+        },
+        {
+          "speaker": "player",
+          "ko": "제8구도 있는 만큼 특정 주소를 요청해야겠네요.",
+          "en": "District eight is also involved, so I'll ask for a specific address."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "울프 의원의 당시 선거구는 {{blank}}입니다.",
+        "en": "Wolf's district at the time was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "VA-11",
+            "en": "VA-11"
+          },
+          {
+            "id": "B",
+            "ko": "VA-10",
+            "en": "VA-10"
+          },
+          {
+            "id": "C",
+            "ko": "VA-8",
+            "en": "VA-8"
+          },
+          {
+            "id": "D",
+            "ko": "VA-9",
+            "en": "VA-9"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "서로 다른 의원실의 관할을 혼동하지 않고 방문할 수 있겠네요.",
+            "en": "You can now plan the visit without confusing office jurisdictions."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "울프는 제10구, 코널리는 제11구였습니다.",
+            "en": "Wolf represented VA-10 and Connolly VA-11."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-VA.htm",
+          "claim": "Fairfax County was split between VA-10 and VA-11 (and VA-8) in 2012.",
+          "asOf": "2012-02-21"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1685-suburb-county-contact"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1686",
+      "mechanism": "river-city-meeting",
+      "learningTarget": "Hamilton County was in TN-3, represented by Fleischmann; Cooper represented TN-5.",
+      "date": "2012-03-05",
+      "venue": {
+        "ko": "채터누가 기업 간담회",
+        "en": "Chattanooga business meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "F000459",
+          "name": "Charles J. \"Chuck\" Fleischmann",
+          "ko": "척 플라이슈먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000459.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000459"
+        },
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000754"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "해밀턴 카운티의 기업 대표가 우리 사무실을 찾았습니다.",
+          "en": "A Hamilton County business representative contacted our office."
+        },
+        {
+          "speaker": "player",
+          "ko": "내슈빌 담당 의원과 혼동하면 안 되겠네요.",
+          "en": "I shouldn't confuse it with Nashville's representative."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제5구를 맡고 있습니다.",
+          "en": "I serve district five."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "해밀턴 카운티는 {{blank}} 의원의 지역구입니다.",
+        "en": "Hamilton County was represented by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "쿠퍼",
+            "en": "Cooper"
+          },
+          {
+            "id": "B",
+            "ko": "블랙",
+            "en": "Black"
+          },
+          {
+            "id": "C",
+            "ko": "플라이슈먼",
+            "en": "Fleischmann"
+          },
+          {
+            "id": "D",
+            "ko": "블랙번",
+            "en": "Blackburn"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "채터누가 주민과의 접견을 제3구에서 준비하겠습니다.",
+            "en": "We'll arrange the Chattanooga constituent meeting through district three."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "해밀턴은 제3구에 포함되었습니다.",
+            "en": "Hamilton County was in TN-3."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-TN.htm",
+          "claim": "Hamilton County was in TN-3, represented by Fleischmann; Cooper represented TN-5.",
+          "asOf": "2012-03-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1686-river-city-meeting"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1687",
+      "mechanism": "metro-fringe",
+      "learningTarget": "Cooper's TN-5 contained Davidson County; Black's TN-6 contained Rutherford County in 2012.",
+      "date": "2012-03-09",
+      "venue": {
+        "ko": "내슈빌 광역권 대화",
+        "en": "Nashville metropolitan discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000754"
+        },
+        {
+          "id": "B001273",
+          "name": "Diane Black",
+          "ko": "다이앤 블랙",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001273"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "광역권 주민들이 내슈빌과 머프리스버러의 대표를 한 자리에 초청하려 합니다.",
+          "en": "Residents want Nashville and Murfreesboro representatives at one event."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "러더퍼드 카운티는 제6구입니다.",
+          "en": "Rutherford County lies in district six."
+        },
+        {
+          "speaker": "player",
+          "ko": "그렇다면 두 도시의 대표가 다르군요.",
+          "en": "So the two cities have different representatives."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "데이비슨 카운티는 제5구에 있습니다.",
+          "en": "Davidson County is in district five."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "머프리스버러 쪽 초청은 {{blank}} 의원에게 전달하겠습니다.",
+        "en": "I'll send the Murfreesboro invitation to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "짐 쿠퍼",
+            "en": "Jim Cooper"
+          },
+          {
+            "id": "B",
+            "ko": "척 플라이슈먼",
+            "en": "Chuck Fleischmann"
+          },
+          {
+            "id": "C",
+            "ko": "에드 휘트필드",
+            "en": "Ed Whitfield"
+          },
+          {
+            "id": "D",
+            "ko": "다이앤 블랙",
+            "en": "Diane Black"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "광역권 안의 서로 다른 지역구를 함께 만날 수 있겠네요.",
+            "en": "We can bring distinct metropolitan districts together."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "당시 러더퍼드 카운티는 제6구였습니다.",
+            "en": "Rutherford County was in TN-6."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-TN.htm",
+          "claim": "Cooper's TN-5 contained Davidson County; Black's TN-6 contained Rutherford County in 2012.",
+          "asOf": "2012-03-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1687-metro-fringe"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1688",
+      "mechanism": "budget-tax-briefing",
+      "learningTarget": "Black was on House Budget and Ways and Means in the 112th Congress.",
+      "date": "2012-03-13",
+      "venue": {
+        "ko": "주민 세금·예산 토론",
+        "en": "Constituent tax and budget forum"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1687 (2012-03-09). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1687 (2012-03-09); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "B001273",
+          "name": "Diane Black",
+          "ko": "다이앤 블랙",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001273.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001273"
+        },
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000754"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "세입과 예산을 함께 논의하는 주민 모임입니다.",
+          "en": "Residents want to discuss revenue and budgeting together."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 위원회 모두에 참여하고 있습니다.",
+          "en": "I sit on both committees."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "위원회 소속을 알면 질문을 적절히 나눌 수 있겠죠.",
+          "en": "Committee assignments can help direct questions."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "블랙 의원의 두 위원회는 예산위원회와 {{blank}}입니다.",
+        "en": "Black's committees include Budget and {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "세입위원회",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "B",
+            "ko": "법사위원회",
+            "en": "Judiciary"
+          },
+          {
+            "id": "C",
+            "ko": "외교위원회",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "D",
+            "ko": "농업위원회",
+            "en": "Agriculture"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "세금 문제와 지출 문제를 구분해 토론을 준비하겠습니다.",
+            "en": "Let's prepare the discussion distinguishing revenue and spending."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "블랙은 예산 및 세입위원회에 속했습니다.",
+            "en": "Black served on Budget and Ways and Means."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-TN.htm",
+          "claim": "Black was on House Budget and Ways and Means in the 112th Congress.",
+          "asOf": "2012-03-13"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1688-budget-tax-briefing"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1689",
+      "mechanism": "shared-county-session",
+      "learningTarget": "Cheatham County was split between TN-5 and TN-7 in 2012.",
+      "date": "2012-03-17",
+      "venue": {
+        "ko": "치텀 카운티 이동 상담",
+        "en": "Cheatham County mobile clinic"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1687 (2012-03-09). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1687 (2012-03-09); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "B001243",
+          "name": "Marsha Blackburn",
+          "ko": "마샤 블랙번",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001243.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001243"
+        },
+        {
+          "id": "C000754",
+          "name": "Jim Cooper",
+          "ko": "짐 쿠퍼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C000754"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "치텀 카운티에 이동 상담 부스를 열 계획이라면 경계를 확인하세요.",
+          "en": "If you're planning a mobile clinic in Cheatham, check the boundary."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제7구에도 카운티 일부가 있습니다.",
+          "en": "District seven contains part of it."
+        },
+        {
+          "speaker": "player",
+          "ko": "주민의 지역구에 맞춰 상담 창구를 두 개로 나누겠습니다.",
+          "en": "I'll separate the desks by each resident's district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿠퍼와 블랙번이 나누어 대표한 카운티는 {{blank}}입니다.",
+        "en": "The county divided between Cooper and Blackburn was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "해밀턴",
+            "en": "Hamilton"
+          },
+          {
+            "id": "B",
+            "ko": "치텀",
+            "en": "Cheatham"
+          },
+          {
+            "id": "C",
+            "ko": "러더퍼드",
+            "en": "Rutherford"
+          },
+          {
+            "id": "D",
+            "ko": "앤더슨",
+            "en": "Anderson"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 창구를 마련하면 주민들이 각자의 의원실에 연락할 수 있겠네요.",
+            "en": "Two desks will let constituents reach their own office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "치텀은 제5구와 제7구에 나뉘었습니다.",
+            "en": "Cheatham was split between TN-5 and TN-7."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-TN.htm",
+          "claim": "Cheatham County was split between TN-5 and TN-7 in 2012.",
+          "asOf": "2012-03-17"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1689-shared-county-session"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1690",
+      "mechanism": "energy-region",
+      "learningTarget": "Roane County was partly in TN-3 and TN-4 in 2012.",
+      "date": "2012-03-21",
+      "venue": {
+        "ko": "로언 카운티 기반시설 회의",
+        "en": "Roane County infrastructure meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "D000616",
+          "name": "Scott DesJarlais",
+          "ko": "스콧 데자를레",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000616.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000616"
+        },
+        {
+          "id": "F000459",
+          "name": "Charles J. \"Chuck\" Fleischmann",
+          "ko": "척 플라이슈먼",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/F000459.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/F000459"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "로언 카운티 기반시설 회의가 한 의원실에서만 열리면 일부 주민이 빠질 수 있나요?",
+          "en": "Could a single-office Roane infrastructure meeting miss some residents?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구에 카운티 일부가 들어 있습니다.",
+          "en": "District three contains part of the county."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제4구에도 일부가 있죠.",
+          "en": "District four contains part too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "두 의원실이 검토할 공통 카운티는 {{blank}}입니다.",
+        "en": "The county both offices should review is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데이비슨",
+            "en": "Davidson"
+          },
+          {
+            "id": "B",
+            "ko": "블런트",
+            "en": "Blount"
+          },
+          {
+            "id": "C",
+            "ko": "로언",
+            "en": "Roane"
+          },
+          {
+            "id": "D",
+            "ko": "윌슨",
+            "en": "Wilson"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민의 구체적 주소를 반영해 양쪽 초청장을 준비합시다.",
+            "en": "Let's prepare invitations for both offices using residents' addresses."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "로언은 제3구와 제4구에 나뉘어 있었습니다.",
+            "en": "Roane was divided between TN-3 and TN-4."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-TN.htm",
+          "claim": "Roane County was partly in TN-3 and TN-4 in 2012.",
+          "asOf": "2012-03-21"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1690-energy-region"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1691",
+      "mechanism": "urban-suburban-boundary",
+      "learningTarget": "Jefferson County was shared by KY-2 and KY-3 in the 112th Congress.",
+      "date": "2012-04-05",
+      "venue": {
+        "ko": "루이빌 광역 주민 상담",
+        "en": "Louisville metropolitan clinic"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        },
+        {
+          "id": "Y000062",
+          "name": "John A. Yarmuth",
+          "ko": "존 야머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Y000062.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/Y000062"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제2구에도 제퍼슨 카운티 일부가 있습니다.",
+          "en": "District two contains part of Jefferson County."
+        },
+        {
+          "speaker": "player",
+          "ko": "루이빌이라는 이름만으로는 모든 주민의 대표를 알 수 없겠네요.",
+          "en": "The name Louisville alone won't identify everyone's representative."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제3구도 제퍼슨 카운티에 속합니다.",
+          "en": "District three is also in Jefferson County."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대표자 확인에는 {{blank}}이 필요합니다.",
+        "en": "To identify the representative we need {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주지사의 이름",
+            "en": "the governor's name"
+          },
+          {
+            "id": "B",
+            "ko": "정당 지지율",
+            "en": "party polling"
+          },
+          {
+            "id": "C",
+            "ko": "선거일 날씨",
+            "en": "election-day weather"
+          },
+          {
+            "id": "D",
+            "ko": "당시 주소와 선거구 경계",
+            "en": "the address and historical district boundary"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민의 주소를 확인하고 적합한 창구로 연결하죠.",
+            "en": "Let's check addresses before routing the cases."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "제퍼슨 카운티는 제2구와 제3구에 걸쳐 있었습니다.",
+            "en": "Jefferson County was divided between districts two and three."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-KY.htm",
+          "claim": "Jefferson County was shared by KY-2 and KY-3 in the 112th Congress.",
+          "asOf": "2012-04-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1691-urban-suburban-boundary"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1692",
+      "mechanism": "county-line-negotiation",
+      "learningTarget": "Scott County was split between KY-4 and KY-6 in 2012.",
+      "date": "2012-04-09",
+      "venue": {
+        "ko": "스콧 카운티 지역 요청",
+        "en": "Scott County local request"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "D000603",
+          "name": "Geoff Davis",
+          "ko": "제프 데이비스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000603.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000603"
+        },
+        {
+          "id": "C001058",
+          "name": "Ben Chandler",
+          "ko": "벤 챈들러",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001058.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001058"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "스콧 카운티의 두 마을에서 공통 요청을 보내왔습니다.",
+          "en": "Two Scott County communities sent a shared request."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제4구에도 카운티 일부가 포함됩니다.",
+          "en": "Part of the county is in district four."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제6구에서도 주민 의견을 받을 수 있습니다.",
+          "en": "District six can receive constituent concerns too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "공통 현안은 {{blank}} 의원실에 함께 전달하겠습니다.",
+        "en": "I'll send the shared issue to both {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데이비스와 챈들러",
+            "en": "Davis and Chandler"
+          },
+          {
+            "id": "B",
+            "ko": "휘트필드와 야머스",
+            "en": "Whitfield and Yarmuth"
+          },
+          {
+            "id": "C",
+            "ko": "거스리와 휘트필드",
+            "en": "Guthrie and Whitfield"
+          },
+          {
+            "id": "D",
+            "ko": "야머스와 거스리",
+            "en": "Yarmuth and Guthrie"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "각 사무실의 주민 관할을 확인한 뒤 공동 회의를 준비하죠.",
+            "en": "Let's verify constituents and then arrange a shared meeting."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "스콧 카운티는 당시 제4구와 제6구로 나뉘었습니다.",
+            "en": "Scott County was split between districts four and six."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-KY.htm",
+          "claim": "Scott County was split between KY-4 and KY-6 in 2012.",
+          "asOf": "2012-04-09"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1692-county-line-negotiation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1693",
+      "mechanism": "manufacturing-roundtable",
+      "learningTarget": "Guthrie served on Energy and Commerce and Davis on Ways and Means in 2012.",
+      "date": "2012-04-13",
+      "venue": {
+        "ko": "켄터키 제조업 대표 회의",
+        "en": "Kentucky manufacturing roundtable"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1692 (2012-04-09). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1692 (2012-04-09); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        },
+        {
+          "id": "D000603",
+          "name": "Geoff Davis",
+          "ko": "제프 데이비스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000603.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000603"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "공장 에너지 비용과 연방 세금에 관한 질문이 동시에 들어왔습니다.",
+          "en": "Factory energy costs and federal taxation are both on the agenda."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 위원회의 관할을 구분하겠습니다.",
+          "en": "I'll distinguish the two committee jurisdictions."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 에너지·상무위원회에 있습니다.",
+          "en": "I serve on Energy and Commerce."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 세입위원회에 소속되어 있습니다.",
+          "en": "I'm on Ways and Means."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "세금 제도 관련 질문은 {{blank}} 의원에게 먼저 전달하죠.",
+        "en": "Let's direct the tax-policy question first to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "거스리",
+            "en": "Guthrie"
+          },
+          {
+            "id": "B",
+            "ko": "데이비스",
+            "en": "Davis"
+          },
+          {
+            "id": "C",
+            "ko": "야머스",
+            "en": "Yarmuth"
+          },
+          {
+            "id": "D",
+            "ko": "챈들러",
+            "en": "Chandler"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "각 정책의 입법 관할을 구별하면 토론 시간이 절약되겠군요.",
+            "en": "Distinguishing legislative jurisdiction will save discussion time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "데이비스는 세입위원회 위원이었습니다.",
+            "en": "Davis served on Ways and Means."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-KY.htm",
+          "claim": "Guthrie served on Energy and Commerce and Davis on Ways and Means in 2012.",
+          "asOf": "2012-04-13"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1693-manufacturing-roundtable"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1694",
+      "mechanism": "local-press-interview",
+      "learningTarget": "Yarmuth founded and edited LEO Newsweekly from 1990–2005.",
+      "date": "2012-04-17",
+      "venue": {
+        "ko": "루이빌 지역 언론 인터뷰",
+        "en": "Louisville local press interview"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "Y000062",
+          "name": "John A. Yarmuth",
+          "ko": "존 야머스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Y000062.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/Y000062"
+        },
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지역 언론에 관한 질문이라면 제 언론 경험도 이야기할 수 있습니다.",
+          "en": "I can discuss my journalism background if local media is the subject."
+        },
+        {
+          "speaker": "player",
+          "ko": "지역 주민의 목소리를 어떻게 취재하는지 학생들이 궁금해합니다.",
+          "en": "Students want to learn how local voices reach the press."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지역구가 다른 의원도 주민 언론과 접촉하니 그 경험을 들려주세요.",
+          "en": "Members from other districts also interact with local media; tell them about your experience."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "야머스 의원이 창립한 지역 매체는 {{blank}}입니다.",
+        "en": "Yarmuth founded the local publication {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Courier-Journal",
+            "en": "Courier-Journal"
+          },
+          {
+            "id": "B",
+            "ko": "The Hill",
+            "en": "The Hill"
+          },
+          {
+            "id": "C",
+            "ko": "LEO Newsweekly",
+            "en": "LEO Newsweekly"
+          },
+          {
+            "id": "D",
+            "ko": "Roll Call",
+            "en": "Roll Call"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "학생들에게 지역 언론과 의회의 관계를 토론할 기회를 마련하죠.",
+            "en": "Let's arrange a discussion of local press and Congress for the students."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "야머스는 1990–2005년 LEO Newsweekly의 창립자·편집자였습니다.",
+            "en": "Yarmuth founded and edited LEO Newsweekly."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-KY.htm",
+          "claim": "Yarmuth founded and edited LEO Newsweekly from 1990–2005.",
+          "asOf": "2012-04-17"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1694-local-press-interview"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1695",
+      "mechanism": "western-region-referral",
+      "learningTarget": "Christian County was in KY-1 and Warren County in KY-2 in 2012.",
+      "date": "2012-04-21",
+      "venue": {
+        "ko": "켄터키 서부 주민 방문",
+        "en": "Western Kentucky constituent visit"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1693 (2012-04-13). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1693 (2012-04-13); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "W000413",
+          "name": "Ed Whitfield",
+          "ko": "에드 휘트필드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/W000413.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/W000413"
+        },
+        {
+          "id": "G000558",
+          "name": "Brett Guthrie",
+          "ko": "브렛 거스리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000558"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "워런 카운티 주민은 제2구 사무실에 문의하면 됩니다.",
+          "en": "Warren County residents can contact district two."
+        },
+        {
+          "speaker": "player",
+          "ko": "그럼 크리스천 카운티에서 온 다른 주민은요?",
+          "en": "What about the other resident from Christian County?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그곳은 제1구에 속합니다.",
+          "en": "That's in district one."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "크리스천 카운티 문의는 {{blank}} 의원실로 연결하겠습니다.",
+        "en": "I'll route the Christian County inquiry to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "거스리",
+            "en": "Guthrie"
+          },
+          {
+            "id": "B",
+            "ko": "야머스",
+            "en": "Yarmuth"
+          },
+          {
+            "id": "C",
+            "ko": "챈들러",
+            "en": "Chandler"
+          },
+          {
+            "id": "D",
+            "ko": "휘트필드",
+            "en": "Whitfield"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "서부 주민들의 문의를 서로 다른 담당 창구로 연결하겠습니다.",
+            "en": "We'll route the western Kentucky cases to their proper offices."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "크리스천 카운티는 당시 제1구였습니다.",
+            "en": "Christian County belonged to KY-1."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-KY.htm",
+          "claim": "Christian County was in KY-1 and Warren County in KY-2 in 2012.",
+          "asOf": "2012-04-21"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1695-western-region-referral"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1696",
+      "mechanism": "city-county-split",
+      "learningTarget": "Milwaukee County was partly in WI-4 and WI-5 in 2012.",
+      "date": "2012-05-05",
+      "venue": {
+        "ko": "밀워키 교외와 도심 회의",
+        "en": "Milwaukee city and suburbs meeting"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "M001160",
+          "name": "Gwen Moore",
+          "ko": "그웬 무어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001160.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001160"
+        },
+        {
+          "id": "S000244",
+          "name": "F. James Sensenbrenner, Jr.",
+          "ko": "짐 센센브레너",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000244.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000244"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "밀워키 카운티 주민들이 도시와 교외의 교통 문제를 함께 논의하려 합니다.",
+          "en": "Milwaukee County residents want to discuss urban and suburban transport."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제4구는 밀워키 시와 인근 지역을 포함합니다.",
+          "en": "District four includes Milwaukee and nearby communities."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제5구에도 카운티 일부가 들어 있습니다.",
+          "en": "District five also contains part of the county."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "공통 지역 문제이므로 {{blank}} 의원실에 모두 초청장을 보내죠.",
+        "en": "Let's invite both {{blank}} to discuss the shared issue.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "무어와 센센브레너",
+            "en": "Moore and Sensenbrenner"
+          },
+          {
+            "id": "B",
+            "ko": "카인드와 페트리",
+            "en": "Kind and Petri"
+          },
+          {
+            "id": "C",
+            "ko": "볼드윈과 카인드",
+            "en": "Baldwin and Kind"
+          },
+          {
+            "id": "D",
+            "ko": "페트리와 볼드윈",
+            "en": "Petri and Baldwin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "각 지역 주민의 질문을 나눠 받을 수 있겠습니다.",
+            "en": "We can receive questions from residents of both districts."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "밀워키 카운티 일부가 제4구와 제5구에 들어 있었습니다.",
+            "en": "Milwaukee County was split between districts four and five."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Milwaukee County was partly in WI-4 and WI-5 in 2012.",
+          "asOf": "2012-05-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1696-city-county-split"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1697",
+      "mechanism": "regional-campus-event",
+      "learningTarget": "Dane County was in Baldwin's WI-2; La Crosse County was in Kind's WI-3 in 2012.",
+      "date": "2012-05-09",
+      "venue": {
+        "ko": "위스콘신 대학 지역 교류",
+        "en": "Wisconsin campus exchange"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다.",
+        "en": "Fictional encounter grounded in public historical records."
+      },
+      "cast": [
+        {
+          "id": "B001230",
+          "name": "Tammy Baldwin",
+          "ko": "태미 볼드윈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001230"
+        },
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000188"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "매디슨과 라크로스 학생들이 의회 방문을 계획합니다.",
+          "en": "Students from Madison and La Crosse are planning a congressional visit."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "라크로스 카운티는 제3구입니다.",
+          "en": "La Crosse County is in district three."
+        },
+        {
+          "speaker": "player",
+          "ko": "매디슨 학생들은 다른 대표를 만나야 하겠네요.",
+          "en": "Madison students should meet a different representative."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "데인 카운티는 제2구에 있습니다.",
+          "en": "Dane County belongs to district two."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "매디슨 학생들의 대표는 {{blank}} 의원입니다.",
+        "en": "The Madison students' representative is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "카인드",
+            "en": "Kind"
+          },
+          {
+            "id": "B",
+            "ko": "볼드윈",
+            "en": "Baldwin"
+          },
+          {
+            "id": "C",
+            "ko": "무어",
+            "en": "Moore"
+          },
+          {
+            "id": "D",
+            "ko": "페트리",
+            "en": "Petri"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 도시 학생들의 방문을 따로 준비하겠습니다.",
+            "en": "We'll arrange separate visits for the students from both cities."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "데인 카운티는 볼드윈의 제2구였습니다.",
+            "en": "Dane County was in Baldwin's second district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Dane County was in Baldwin's WI-2; La Crosse County was in Kind's WI-3 in 2012.",
+          "asOf": "2012-05-09"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1697-regional-campus-event"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1698",
+      "mechanism": "cross-county-transport",
+      "learningTarget": "Jefferson County was split among WI-2, WI-5 and WI-6 in 2012.",
+      "date": "2012-05-13",
+      "venue": {
+        "ko": "제퍼슨 카운티 도로 협의",
+        "en": "Jefferson County road discussion"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1697 (2012-05-09). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1697 (2012-05-09); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "P000265",
+          "name": "Thomas E. Petri",
+          "ko": "톰 페트리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000265.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000265"
+        },
+        {
+          "id": "S000244",
+          "name": "F. James Sensenbrenner, Jr.",
+          "ko": "짐 센센브레너",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S000244.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S000244"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제6구 주민들의 도로 관련 질문이 들어왔습니다.",
+          "en": "Road questions have come from residents of district six."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제5구에도 제퍼슨 카운티 일부가 있습니다.",
+          "en": "District five also includes part of Jefferson County."
+        },
+        {
+          "speaker": "player",
+          "ko": "제2구 사무실도 초청해야겠네요.",
+          "en": "Then we should invite district two as well."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "세 지역구에 나뉜 카운티는 {{blank}}입니다.",
+        "en": "The county divided among all three is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "데인",
+            "en": "Dane"
+          },
+          {
+            "id": "B",
+            "ko": "도어",
+            "en": "Door"
+          },
+          {
+            "id": "C",
+            "ko": "제퍼슨",
+            "en": "Jefferson"
+          },
+          {
+            "id": "D",
+            "ko": "라크로스",
+            "en": "La Crosse"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "광역 교통 현안에 맞춰 세 의원실에 연락해 보겠습니다.",
+            "en": "We'll contact all three offices about the regional transport issue."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "제퍼슨은 제2·5·6구에 나뉘어 있었습니다.",
+            "en": "Jefferson County was split among districts two, five and six."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Jefferson County was split among WI-2, WI-5 and WI-6 in 2012.",
+          "asOf": "2012-05-13"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1698-cross-county-transport"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1699",
+      "mechanism": "housing-policy-clinic",
+      "learningTarget": "Moore worked as a housing officer at Wisconsin Housing and Development Authority and served on House Financial Services in 2012.",
+      "date": "2012-05-17",
+      "venue": {
+        "ko": "밀워키 주택 정책 상담",
+        "en": "Milwaukee housing clinic"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1696 (2012-05-05). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1696 (2012-05-05); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "M001160",
+          "name": "Gwen Moore",
+          "ko": "그웬 무어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001160.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001160"
+        },
+        {
+          "id": "B001230",
+          "name": "Tammy Baldwin",
+          "ko": "태미 볼드윈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001230"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주택 금융과 주정부 주택 지원이 어떻게 다른지 설명해 줄 분을 찾습니다.",
+          "en": "I'm looking for someone to explain the difference between housing finance and state housing assistance."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "주 주택기관에서 일했고 지금은 금융서비스위원회에 있습니다.",
+          "en": "I worked in a state housing agency and now serve on Financial Services."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지방 프로그램과 연방 금융 규칙을 구별하면 도움이 되겠죠.",
+          "en": "Separating state programs from federal financial rules would help."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "무어 의원의 연방 위원회는 {{blank}}입니다.",
+        "en": "Moore's federal committee is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "군사",
+            "en": "Armed Services"
+          },
+          {
+            "id": "B",
+            "ko": "농업",
+            "en": "Agriculture"
+          },
+          {
+            "id": "C",
+            "ko": "외교",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "D",
+            "ko": "금융서비스",
+            "en": "Financial Services"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "주민들에게 두 수준의 주택 정책을 구별해 설명하겠습니다.",
+            "en": "We'll explain the two levels of housing policy to residents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "무어는 당시 금융서비스위원회에 소속됐습니다.",
+            "en": "Moore served on Financial Services at the time."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Moore worked as a housing officer at Wisconsin Housing and Development Authority and served on House Financial Services in 2012.",
+          "asOf": "2012-05-17"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-1699-housing-policy-clinic"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-1700",
+      "mechanism": "lake-river-exchange",
+      "learningTarget": "Winnebago County was in Petri's WI-6 and Eau Claire County in Kind's WI-3 in 2012.",
+      "date": "2012-05-21",
+      "venue": {
+        "ko": "위스콘신 동서 지역 교류",
+        "en": "Wisconsin east-west exchange"
+      },
+      "context": {
+        "ko": "공개 역사 기록을 바탕으로 구성한 가상의 만남입니다. 조건부 연결 후보 P01-1698 (2012-05-13). 선행 장면 미경험 시에도 독립 진행 가능.",
+        "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1698 (2012-05-13); playable independently without assuming a prior encounter."
+      },
+      "cast": [
+        {
+          "id": "P000265",
+          "name": "Thomas E. Petri",
+          "ko": "톰 페트리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000265.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000265"
+        },
+        {
+          "id": "K000188",
+          "name": "Ron Kind",
+          "ko": "론 카인드",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000188"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "오클레어 카운티의 주민 행사에 참석할 수 있습니다.",
+          "en": "I can attend the Eau Claire County constituent event."
+        },
+        {
+          "speaker": "player",
+          "ko": "오시코시 쪽 위너베이고 주민 행사도 같은 대표인가요?",
+          "en": "Does the same member serve the Winnebago event near Oshkosh?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "위너베이고는 제6구에 포함됩니다.",
+          "en": "Winnebago County is in district six."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "위너베이고 행사는 {{blank}} 의원실에 연결하겠습니다.",
+        "en": "I'll route the Winnebago event to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "페트리",
+            "en": "Petri"
+          },
+          {
+            "id": "B",
+            "ko": "카인드",
+            "en": "Kind"
+          },
+          {
+            "id": "C",
+            "ko": "무어",
+            "en": "Moore"
+          },
+          {
+            "id": "D",
+            "ko": "볼드윈",
+            "en": "Baldwin"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:npc:0",
+            "ko": "두 지역의 주민 요청을 각각 전달할 수 있겠네요.",
+            "en": "We can now route requests from the two regions separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:npc:1",
+            "ko": "위너베이고는 제6구, 오클레어는 제3구였습니다.",
+            "en": "Winnebago was in WI-6; Eau Claire in WI-3."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CDIR-2011-12-01/html/CDIR-2011-12-01-WI.htm",
+          "claim": "Winnebago County was in Petri's WI-6 and Eau Claire County in Kind's WI-3 in 2012.",
+          "asOf": "2012-05-21"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-1700-lake-river-exchange"
+      },
+      "fictional": true
+    }
+  ]
+}
