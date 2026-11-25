@@ -63,7 +63,7 @@
       ],
       "originalCorrectPosition": "C",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -92,7 +92,7 @@
       ],
       "originalCorrectPosition": "D",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -179,7 +179,7 @@
       ],
       "originalCorrectPosition": "C",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -208,7 +208,7 @@
       ],
       "originalCorrectPosition": "D",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -382,7 +382,7 @@
       ],
       "originalCorrectPosition": "B",
       "overhaulNeeded": true,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -614,7 +614,7 @@
       ],
       "originalCorrectPosition": "B",
       "overhaulNeeded": false,
-      "patchWritten": false,
+      "patchWritten": true,
       "latestOriginalFieldsExact": true,
       "historicalReverificationNeeded": false,
       "status": "individual_bilingual_editorial_review_not_playtested"
@@ -2066,12 +2066,1308 @@
       "latestOriginalFieldsExact": true,
       "reviewNotes": "카운티만 불충분하다는 원리를 제시하나 타운십 이름 질문, 다른 주 도시 오답. 선행 만남 가정.",
       "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1502",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "학교 운영위원회 자료를 학생들과 살펴보고 싶어요.",
+            "en": "I'd like students to examine records from my school board years."
+          },
+          {
+            "speaker": "player",
+            "ko": "시의회와는 어떻게 다르죠?",
+            "en": "How does that differ from a city council?"
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 애빙턴 타운십 선출직을 경험했습니다. 서로 다른 기관이죠.",
+            "en": "I held elected office in Abington Township. The institutions differ."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스캔런이 의장도 맡은 교육구는 {{blank}}입니다.",
+          "en": "Scanlon chaired the board of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "애빙턴",
+              "en": "Abington"
+            },
+            {
+              "id": "B",
+              "ko": "라살대학교",
+              "en": "La Salle University"
+            },
+            {
+              "id": "C",
+              "ko": "Wallingford-Swarthmore",
+              "en": "Wallingford-Swarthmore"
+            },
+            {
+              "id": "D",
+              "ko": "펜실베이니아 주 하원",
+              "en": "Pennsylvania House"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "학교 이사회 기록은 별도로 분류해 주세요.",
+              "en": "File the school board records separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "스캔런은 Wallingford-Swarthmore 학교 이사회 의장이었습니다.",
+              "en": "Scanlon presided over the Wallingford-Swarthmore school board."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "학교 운영위원회 자료를 학생들과 살펴보고 싶어요.",
+              "en": "I'd like students to examine records from my school board years."
+            },
+            {
+              "speaker": "player",
+              "ko": "시의회와는 어떻게 다르죠?",
+              "en": "How does that differ from a city council?"
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 애빙턴 타운십 선출직을 경험했습니다. 서로 다른 기관이죠.",
+              "en": "I held elected office in Abington Township. The institutions differ."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "학생 대표들이 학교 운영과 타운십 행정에 관한 질문을 두 의원에게 나누어 전달하려 합니다.",
+              "en": "Student representatives want to direct separate questions on school governance and township administration."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "타운십에서의 선출직 경험은 제가 설명하겠습니다. 학교 이사회 경험은 스캔런 의원에게 확인해 주세요.",
+              "en": "I'll address elected township service. Check Scanlon's school board experience for the other question."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 의장을 맡았던 교육구의 명칭부터 정확히 확인하고 질문을 받겠습니다.",
+              "en": "I'll take the questions once you've identified the school district whose board I chaired."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "스캔런이 의장도 맡은 교육구는 {{blank}}입니다.",
+            "en": "Scanlon chaired the board of {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "애빙턴",
+                "en": "Abington"
+              },
+              {
+                "id": "B",
+                "ko": "라살대학교",
+                "en": "La Salle University"
+              },
+              {
+                "id": "C",
+                "ko": "Wallingford-Swarthmore",
+                "en": "Wallingford-Swarthmore"
+              },
+              {
+                "id": "D",
+                "ko": "펜실베이니아 주 하원",
+                "en": "Pennsylvania House"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "학교 이사회 경험은 {{blank}} 교육구와 연결해 소개하겠습니다.",
+            "en": "I'll introduce the school board experience under the district of {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "애빙턴",
+                "en": "Abington"
+              },
+              {
+                "id": "B",
+                "ko": "라살대학교",
+                "en": "La Salle University"
+              },
+              {
+                "id": "C",
+                "ko": "Wallingford-Swarthmore",
+                "en": "Wallingford-Swarthmore"
+              },
+              {
+                "id": "D",
+                "ko": "펜실베이니아 주 하원",
+                "en": "Pennsylvania House"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "학교 이사회 기록은 별도로 분류해 주세요.",
+                "en": "File the school board records separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "스캔런은 Wallingford-Swarthmore 학교 이사회 의장이었습니다.",
+                "en": "Scanlon presided over the Wallingford-Swarthmore school board."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "좋습니다. 학교 이사회와 타운십 행정의 권한 차이부터 학생들과 이야기합시다.",
+                "en": "Good. Let's start by discussing how school board authority differs from township administration."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "스캔런 의원이 의장을 맡은 곳은 Wallingford-Swarthmore입니다. 제 타운십 경력과 혼동하지 말고 질문을 다시 배분해 주세요.",
+                "en": "Scanlon chaired Wallingford-Swarthmore. Don't confuse it with my township experience; please redirect the questions."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "C",
+      "newCorrect": "C",
+      "correctChanged": false,
+      "originalScore": 10,
+      "estimatedAfterScore": 14,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "학교위원회와 딘 타운십 대조는 자연스럽지만 교육구 명칭 확인으로 끝나며 이질 보기.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1503",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:1",
+            "ko": "대학에서 영어를 가르쳤습니다.",
+            "en": "I taught English at a university."
+          },
+          {
+            "speaker": "host",
+            "ko": "고등학교 교사 경험은 다른 의원님께 듣겠습니다.",
+            "en": "Now we'll hear from another member about high school teaching."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "필라델피아에서 과학 수업을 맡았지요.",
+            "en": "I taught a science subject in Philadelphia."
+          },
+          {
+            "speaker": "player",
+            "ko": "학생들이 두 경력을 비교할 수 있겠네요.",
+            "en": "The students can compare those careers."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "훌러핸 의원의 교과는 {{blank}}였습니다.",
+          "en": "Houlahan taught {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "영어",
+              "en": "English"
+            },
+            {
+              "id": "B",
+              "ko": "역사",
+              "en": "history"
+            },
+            {
+              "id": "C",
+              "ko": "수학",
+              "en": "mathematics"
+            },
+            {
+              "id": "D",
+              "ko": "화학",
+              "en": "chemistry"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "중등교육과 대학 교육도 비교해 봅시다.",
+              "en": "Let's compare secondary and higher education."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "훌러핸은 Simon Gratz High School에서 화학을 가르쳤습니다.",
+              "en": "Houlahan taught chemistry at Simon Gratz High School."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:1",
+              "ko": "대학에서 영어를 가르쳤습니다.",
+              "en": "I taught English at a university."
+            },
+            {
+              "speaker": "host",
+              "ko": "고등학교 교사 경험은 다른 의원님께 듣겠습니다.",
+              "en": "Now we'll hear from another member about high school teaching."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "필라델피아에서 과학 수업을 맡았지요.",
+              "en": "I taught a science subject in Philadelphia."
+            },
+            {
+              "speaker": "player",
+              "ko": "학생들이 두 경력을 비교할 수 있겠네요.",
+              "en": "The students can compare those careers."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "교육 간담회에서 중등학교 교사와 대학 강사의 경험을 비교하려고 합니다. 두 분에게 질문을 나누겠습니다.",
+              "en": "For an education forum, I want to compare secondary-school teaching and college instruction. I'll divide the questions between you."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 대학 영어 교육에 관한 질문을 맡겠습니다.",
+              "en": "I'll take the question on teaching English at college."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 필라델피아 고등학교 교사 경험에 관한 질문은 담당 교과부터 확인해 주세요.",
+              "en": "For my Philadelphia high-school teaching experience, identify the subject first."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "훌러핸 의원의 교과는 {{blank}}였습니다.",
+            "en": "Houlahan taught {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "영어",
+                "en": "English"
+              },
+              {
+                "id": "B",
+                "ko": "역사",
+                "en": "history"
+              },
+              {
+                "id": "C",
+                "ko": "수학",
+                "en": "mathematics"
+              },
+              {
+                "id": "D",
+                "ko": "화학",
+                "en": "chemistry"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "훌러핸 의원에게는 {{blank}} 수업 경험을 질문하겠습니다.",
+            "en": "I'll ask Houlahan about teaching {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "영어",
+                "en": "English"
+              },
+              {
+                "id": "B",
+                "ko": "역사",
+                "en": "history"
+              },
+              {
+                "id": "C",
+                "ko": "수학",
+                "en": "mathematics"
+              },
+              {
+                "id": "D",
+                "ko": "화학",
+                "en": "chemistry"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "중등교육과 대학 교육도 비교해 봅시다.",
+                "en": "Let's compare secondary and higher education."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "훌러핸은 Simon Gratz High School에서 화학을 가르쳤습니다.",
+                "en": "Houlahan taught chemistry at Simon Gratz High School."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 그 수업 경험을 토대로 중등교육 현장의 질문을 이어가 주세요.",
+                "en": "That's right. Follow up with questions about secondary education using that classroom experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "Simon Gratz High School에서 가르친 과목은 화학이었습니다. 질문지를 수정하고 다시 시작합시다.",
+                "en": "I taught chemistry at Simon Gratz High School. Let's revise the question sheet and start again."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "originalScore": 9,
+      "estimatedAfterScore": 13,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "과학 과목 힌트가 유일한 화학 보기로 직결. 딘 영어 강의와 대비, 후속에 새로운 행동 없음.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1506",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "민간 법률 경력도 소개해 주세요.",
+            "en": "Please introduce your civilian legal careers."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "앨러게니 카운티에서 치안판사로 일했습니다.",
+            "en": "I served as a magisterial district judge in Allegheny County."
+          },
+          {
+            "speaker": "player",
+            "ko": "램 의원도 피츠버그에서 법률 업무를 했죠?",
+            "en": "Lamb also worked in law in Pittsburgh, right?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "당시에는 연방 검찰 업무였습니다.",
+            "en": "That was federal prosecution work."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "램의 직책은 {{blank}}였습니다.",
+          "en": "Lamb's former position was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "치안판사",
+              "en": "magisterial district judge"
+            },
+            {
+              "id": "B",
+              "ko": "카운티 시장",
+              "en": "county mayor"
+            },
+            {
+              "id": "C",
+              "ko": "연방 검사보",
+              "en": "assistant U.S. attorney"
+            },
+            {
+              "id": "D",
+              "ko": "주 법무장관",
+              "en": "state attorney general"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "법원과 검찰의 역할도 따로 설명합시다.",
+              "en": "Let's explain the separate roles of courts and prosecutors."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "램은 피츠버그의 연방 검사보였습니다.",
+              "en": "Lamb was an assistant U.S. attorney in Pittsburgh."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "민간 법률 경력도 소개해 주세요.",
+              "en": "Please introduce your civilian legal careers."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "앨러게니 카운티에서 치안판사로 일했습니다.",
+              "en": "I served as a magisterial district judge in Allegheny County."
+            },
+            {
+              "speaker": "player",
+              "ko": "램 의원도 피츠버그에서 법률 업무를 했죠?",
+              "en": "Lamb also worked in law in Pittsburgh, right?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "당시에는 연방 검찰 업무였습니다.",
+              "en": "That was federal prosecution work."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "시민 대상 사법제도 설명회에서 검사와 판사의 역할을 같은 것으로 소개한 초안이 나왔습니다.",
+              "en": "A draft for a civic law forum treats prosecutors and judges as having the same role."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 앨러게니 카운티 치안판사 경력을 설명하겠습니다. 램 의원의 피츠버그 경력과 구별해 주시죠.",
+              "en": "I'll explain my Allegheny County judicial experience. Distinguish that from Lamb's Pittsburgh career."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2014~2017년 제 직책을 제대로 확인하고 사법기관별 질문을 나누어 주세요.",
+              "en": "Identify my 2014–2017 position and divide the questions by institution."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "램의 직책은 {{blank}}였습니다.",
+            "en": "Lamb's former position was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "치안판사",
+                "en": "magisterial district judge"
+              },
+              {
+                "id": "B",
+                "ko": "카운티 시장",
+                "en": "county mayor"
+              },
+              {
+                "id": "C",
+                "ko": "연방 검사보",
+                "en": "assistant U.S. attorney"
+              },
+              {
+                "id": "D",
+                "ko": "주 법무장관",
+                "en": "state attorney general"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "피츠버그에서 램이 맡았던 직책은 {{blank}}로 정정하겠습니다.",
+            "en": "I'll correct Lamb's Pittsburgh position to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "치안판사",
+                "en": "magisterial district judge"
+              },
+              {
+                "id": "B",
+                "ko": "카운티 시장",
+                "en": "county mayor"
+              },
+              {
+                "id": "C",
+                "ko": "연방 검사보",
+                "en": "assistant U.S. attorney"
+              },
+              {
+                "id": "D",
+                "ko": "주 법무장관",
+                "en": "state attorney general"
+              }
+            ],
+            "correct": "C"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법원과 검찰의 역할도 따로 설명합시다.",
+                "en": "Let's explain the separate roles of courts and prosecutors."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "램은 피츠버그의 연방 검사보였습니다.",
+                "en": "Lamb was an assistant U.S. attorney in Pittsburgh."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "이제 재판을 담당한 직책과 검찰 직책을 구별한 질문을 각각 진행합시다.",
+                "en": "Now let's proceed with separate questions about judicial and prosecutorial roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 피츠버그의 연방 검사보였습니다. 치안판사와 같은 직책으로 소개하면 설명회가 잘못된 출발을 하게 됩니다.",
+                "en": "I was an assistant U.S. attorney in Pittsburgh. Presenting that as a judicial office would mislead the audience."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "C",
+      "newCorrect": "C",
+      "correctChanged": false,
+      "originalScore": 11,
+      "estimatedAfterScore": 15,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "연방 검찰 단서에서 검사보 선택; 판사와 검사 구분은 좋지만 오답은 이력만 재진술.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1507",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "지난 진로 행사에서 판사 경력을 들었죠. 이후에는 어떤 선거구였나요?",
+            "en": "We discussed your judgeship at the career event. What district came afterward?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "해리스버그에서 제37구를 맡았습니다.",
+            "en": "I represented district thirty-seven in Harrisburg."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "현재 연방 하원 제14구와는 다른 선거구입니다.",
+            "en": "That is distinct from his current federal district fourteen."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제37구는 {{blank}}의 선거구였습니다.",
+          "en": "District thirty-seven belonged to the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 상원",
+              "en": "U.S. Senate"
+            },
+            {
+              "id": "B",
+              "ko": "연방 하원",
+              "en": "U.S. House"
+            },
+            {
+              "id": "C",
+              "ko": "피츠버그 시의회",
+              "en": "Pittsburgh city council"
+            },
+            {
+              "id": "D",
+              "ko": "펜실베이니아 주 상원",
+              "en": "Pennsylvania State Senate"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "주와 연방 의회 연표를 분리합시다.",
+              "en": "Keep state and federal timelines separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "레셴탈러는 주 상원 제37구 의원이었습니다.",
+              "en": "Reschenthaler represented state Senate district 37."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "지난 진로 행사에서 판사 경력을 들었죠. 이후에는 어떤 선거구였나요?",
+              "en": "We discussed your judgeship at the career event. What district came afterward?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "해리스버그에서 제37구를 맡았습니다.",
+              "en": "I represented district thirty-seven in Harrisburg."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "현재 연방 하원 제14구와는 다른 선거구입니다.",
+              "en": "That is distinct from his current federal district fourteen."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "제37구와 제14구가 동일한 선거구라는 안내문이 들어왔습니다. 어느 기관의 의석인지 확인하겠습니다.",
+              "en": "A notice treats District 37 and District 14 as the same constituency. I'll verify which institution each seat belonged to."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제2015~2019년 의석부터 확인해 주세요. 연방 하원 경력과 별개입니다.",
+              "en": "Check my 2015–2019 seat first. It is distinct from my U.S. House service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "의회 수준이 다른 의석이라면 선거구 번호만으로 비교할 수 없겠죠.",
+              "en": "If the seats belong to different legislative levels, district numbers alone cannot settle the comparison."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "제37구는 {{blank}}의 선거구였습니다.",
+            "en": "District thirty-seven belonged to the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 상원",
+                "en": "U.S. Senate"
+              },
+              {
+                "id": "B",
+                "ko": "연방 하원",
+                "en": "U.S. House"
+              },
+              {
+                "id": "C",
+                "ko": "피츠버그 시의회",
+                "en": "Pittsburgh city council"
+              },
+              {
+                "id": "D",
+                "ko": "펜실베이니아 주 상원",
+                "en": "Pennsylvania State Senate"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "레셴탈러의 제37구는 {{blank}}의 의석으로 정정하겠습니다.",
+            "en": "I'll correct Reschenthaler's District 37 to a seat in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 상원",
+                "en": "U.S. Senate"
+              },
+              {
+                "id": "B",
+                "ko": "연방 하원",
+                "en": "U.S. House"
+              },
+              {
+                "id": "C",
+                "ko": "피츠버그 시의회",
+                "en": "Pittsburgh city council"
+              },
+              {
+                "id": "D",
+                "ko": "펜실베이니아 주 상원",
+                "en": "Pennsylvania State Senate"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주와 연방 의회 연표를 분리합시다.",
+                "en": "Keep state and federal timelines separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "레셴탈러는 주 상원 제37구 의원이었습니다.",
+                "en": "Reschenthaler represented state Senate district 37."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "좋습니다. 주의회와 연방의회에 대한 안내를 분리하고 각 기관의 관할을 확인합시다.",
+                "en": "Good. Separate the guidance on state and federal legislatures and verify their respective jurisdictions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제37구는 펜실베이니아 주 상원 의석이었습니다. 연방 하원 제14구와 합치지 말아 주세요.",
+                "en": "District 37 was a Pennsylvania State Senate seat. Please don't merge it with U.S. House District 14."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "originalScore": 10,
+      "estimatedAfterScore": 14,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "해리스버그 및 현 연방 14구 대비로 주 상원 소거 가능; 선행 진로 행사 경험 가정.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1513",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "옛 지방정부 사진을 전시에 넣으려 합니다.",
+            "en": "I'd like to display a photo from my local-government years."
+          },
+          {
+            "speaker": "player",
+            "ko": "시의회 이후에는 어떤 기관이었나요?",
+            "en": "What came after city council service?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1990년부터 카운티 정부에서 일했습니다.",
+            "en": "Starting in 1990 I worked in county government."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "다음 직책은 {{blank}}였습니다.",
+          "en": "Chabot's next office was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "오하이오 주지사",
+              "en": "Ohio governor"
+            },
+            {
+              "id": "B",
+              "ko": "해밀턴 카운티 커미셔너",
+              "en": "Hamilton County commissioner"
+            },
+            {
+              "id": "C",
+              "ko": "신시내티 시장",
+              "en": "Cincinnati mayor"
+            },
+            {
+              "id": "D",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시와 카운티를 구별한 연표가 되겠군요.",
+              "en": "That timeline distinguishes city and county offices."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "섀벗은 1990–1994년 해밀턴 카운티 커미셔너였습니다.",
+              "en": "Chabot was Hamilton County commissioner from 1990 to 1994."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "옛 지방정부 사진을 전시에 넣으려 합니다.",
+              "en": "I'd like to display a photo from my local-government years."
+            },
+            {
+              "speaker": "player",
+              "ko": "시의회 이후에는 어떤 기관이었나요?",
+              "en": "What came after city council service?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1990년부터 카운티 정부에서 일했습니다.",
+              "en": "Starting in 1990 I worked in county government."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "신시내티 주민 단체가 전직 공직자의 관할 경험을 소개하는 설명회를 준비합니다.",
+              "en": "A Cincinnati civic group is preparing a forum on former officials' experience with local jurisdictions."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 시의회 임기는 1990년에 끝났습니다. 이후 4년 동안의 직책을 확인하면 두 기관의 차이를 설명할 수 있습니다.",
+              "en": "My city council service ended in 1990. Identify my office for the next four years so we can distinguish the two institutions."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 직책을 근거로 시와 카운티의 역할에 관한 질문을 준비하겠습니다.",
+              "en": "I'll use that office to frame questions about the roles of city and county government."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "다음 직책은 {{blank}}였습니다.",
+            "en": "Chabot's next office was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "오하이오 주지사",
+                "en": "Ohio governor"
+              },
+              {
+                "id": "B",
+                "ko": "해밀턴 카운티 커미셔너",
+                "en": "Hamilton County commissioner"
+              },
+              {
+                "id": "C",
+                "ko": "신시내티 시장",
+                "en": "Cincinnati mayor"
+              },
+              {
+                "id": "D",
+                "ko": "연방 상원의원",
+                "en": "U.S. senator"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "섀벗의 1990~1994년 직책은 {{blank}}였습니다.",
+            "en": "Chabot's office from 1990 to 1994 was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "오하이오 주지사",
+                "en": "Ohio governor"
+              },
+              {
+                "id": "B",
+                "ko": "해밀턴 카운티 커미셔너",
+                "en": "Hamilton County commissioner"
+              },
+              {
+                "id": "C",
+                "ko": "신시내티 시장",
+                "en": "Cincinnati mayor"
+              },
+              {
+                "id": "D",
+                "ko": "연방 상원의원",
+                "en": "U.S. senator"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시와 카운티를 구별한 연표가 되겠군요.",
+                "en": "That timeline distinguishes city and county offices."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "섀벗은 1990–1994년 해밀턴 카운티 커미셔너였습니다.",
+                "en": "Chabot was Hamilton County commissioner from 1990 to 1994."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "정확합니다. 두 기관을 같은 정부 단위로 취급하지 말고 관할 차이를 토론합시다.",
+                "en": "Correct. Let's discuss their different jurisdictions rather than treating them as the same government unit."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 기간 저는 해밀턴 카운티 커미셔너였습니다. 시의회 이후의 직책을 다시 확인한 뒤 주민 질문을 배분합시다.",
+                "en": "I was a Hamilton County commissioner then. Verify my post-council office before assigning the residents' questions."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "originalScore": 7,
+      "estimatedAfterScore": 11,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "1990년 카운티 정부 힌트와 유일한 카운티 보기. 1인 장면 복수 역할 중립 1, 전시 연표 외 행동 없음.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
+    },
+    {
+      "id": "P01-1521",
+      "path": "data/dialogue-packs/P01/part-61.json",
+      "originalBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "latestObservedBlobSha": "6934be227ba83c8f8922e069ac239ece7db2a47d",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "하원에서 행정부를 거쳐 상원으로 간 경력을 살펴봅니다.",
+            "en": "We're tracing a path from the House through the executive branch to the Senate."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 하원으로 복귀했고 포트먼 의원은 상원으로 갔죠.",
+            "en": "I returned to the House, while Portman went to the Senate."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "무역대표부에 이어 연방 예산관리 업무를 맡았습니다.",
+            "en": "After serving as trade representative I took a federal budget role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "포트먼의 2006–2007년 직책은 {{blank}}입니다.",
+          "en": "Portman's 2006–2007 office was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 재무장관",
+              "en": "Treasury secretary"
+            },
+            {
+              "id": "B",
+              "ko": "백악관 예산관리국장",
+              "en": "director of OMB"
+            },
+            {
+              "id": "C",
+              "ko": "오하이오 주 재무관",
+              "en": "Ohio state treasurer"
+            },
+            {
+              "id": "D",
+              "ko": "하원 예산위원장",
+              "en": "House Budget chair"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "행정부 직책을 순서대로 배치합시다.",
+              "en": "Place the executive roles in order."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "포트먼은 2006–2007년 예산관리국장이었습니다.",
+              "en": "Portman directed OMB from 2006 to 2007."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "하원에서 행정부를 거쳐 상원으로 간 경력을 살펴봅니다.",
+              "en": "We're tracing a path from the House through the executive branch to the Senate."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 하원으로 복귀했고 포트먼 의원은 상원으로 갔죠.",
+              "en": "I returned to the House, while Portman went to the Senate."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "무역대표부에 이어 연방 예산관리 업무를 맡았습니다.",
+              "en": "After serving as trade representative I took a federal budget role."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "정책 토론회 자료가 무역대표부 이후 포트먼 의원의 직책을 의회 예산직으로 잘못 분류했습니다.",
+              "en": "A policy forum brief incorrectly classifies Portman's post-trade office as a congressional budget post."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "하원에서 맡는 역할과 행정부에서 맡는 직책을 분리해서 소개해야겠군요.",
+              "en": "We should distinguish congressional roles from executive branch offices."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2006~2007년 제 직책을 확인한 뒤 행정부 예산과 의회 심의에 관한 질문을 나누어 주세요.",
+              "en": "Verify my 2006–2007 position, then separate questions on executive budgeting from legislative review."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "포트먼의 2006–2007년 직책은 {{blank}}입니다.",
+            "en": "Portman's 2006–2007 office was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 재무장관",
+                "en": "Treasury secretary"
+              },
+              {
+                "id": "B",
+                "ko": "백악관 예산관리국장",
+                "en": "director of OMB"
+              },
+              {
+                "id": "C",
+                "ko": "오하이오 주 재무관",
+                "en": "Ohio state treasurer"
+              },
+              {
+                "id": "D",
+                "ko": "하원 예산위원장",
+                "en": "House Budget chair"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "포트먼의 당시 직책은 {{blank}}로 정정하겠습니다.",
+            "en": "I'll correct Portman's office at that time to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 재무장관",
+                "en": "Treasury secretary"
+              },
+              {
+                "id": "B",
+                "ko": "백악관 예산관리국장",
+                "en": "director of OMB"
+              },
+              {
+                "id": "C",
+                "ko": "오하이오 주 재무관",
+                "en": "Ohio state treasurer"
+              },
+              {
+                "id": "D",
+                "ko": "하원 예산위원장",
+                "en": "House Budget chair"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "행정부 직책을 순서대로 배치합시다.",
+                "en": "Place the executive roles in order."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "포트먼은 2006–2007년 예산관리국장이었습니다.",
+                "en": "Portman directed OMB from 2006 to 2007."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "좋습니다. 이제 행정부 예산 과정과 의회의 심의 역할을 구별해서 토론합시다.",
+                "en": "Good. Now let's distinguish executive budgeting from legislative review in our discussion."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 저는 백악관 예산관리국장이었습니다. 하원 위원장이나 주 재무관으로 분류하면 안 됩니다.",
+                "en": "I was director of OMB. That is not a House committee chair or a state treasurer."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "originalScore": 9,
+      "estimatedAfterScore": 13,
+      "scoreBasis": "editorial projection not playtested",
+      "historicalReverificationNeeded": false,
+      "latestOriginalFieldsExact": true,
+      "reviewNotes": "예산관리 업무 단서와 직책명 대응, 다른 예산 역할 구분 가능하나 연표 작성에 그침.",
+      "priorR4Draft": false,
+      "status": "editorially_staged_not_applied"
     }
   ],
   "priorDraftReview": [],
-  "severePending": [
-    "P01-1513"
-  ],
+  "severePending": [],
   "limitations": [
     "No independent historical verification or gameplay test. Source facts and choice IDs preserved."
   ]
