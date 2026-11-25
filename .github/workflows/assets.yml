@@ -1,0 +1,30 @@
+name: Build offline portrait pack and historical map index
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build-assets.mjs'
+      - '.github/workflows/assets.yml'
+permissions:
+  contents: read
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Fetch upstream indexes and public domain photos
+        run: |
+          mkdir -p _sources
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/JeffreyBLewis/congressional-district-boundaries.git _sources/maps
+          git -C _sources/maps sparse-checkout set GeoJson
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/unitedstates/images.git _sources/photos
+          git -C _sources/photos sparse-checkout set congress/225x275
+      - run: node scripts/build-assets.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: APM-offline-portraits-and-map-index
+          path: offline-assets/
+          retention-days: 30
