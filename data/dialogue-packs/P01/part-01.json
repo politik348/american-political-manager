@@ -1,0 +1,2512 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 1,
+  "scenes": [
+    {
+      "id": "P01-001",
+      "mechanism": "map-overlay",
+      "learningTarget": "Nancy Pelosi represented CA-12 in December 2022 and CA-11 in December 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의사당 지도실",
+        "en": "Capitol map room"
+      },
+      "context": {
+        "ko": "투명 지도 두 장을 겹치는데 샌프란시스코 쪽 표지가 어긋난다.",
+        "en": "Two transparent maps overlap, but the San Francisco label no longer aligns."
+      },
+      "cast": [
+        {
+          "id": "P000197",
+          "name": "Nancy Pelosi",
+          "ko": "낸시 펠로시",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000197.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000197"
+        },
+        {
+          "id": "L000551",
+          "name": "Barbara Lee",
+          "ko": "바버라 리",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000551.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000551"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "예전 명부를 기준으로 내 번호를 붙인 모양이군요.",
+          "en": "Someone seems to have used the old directory for my label."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오클랜드 쪽도 번호가 달라졌어요. 새 명부를 기준으로 해요.",
+          "en": "Oakland's number changed too. Let's use the new directory."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "펠로시 의원님 표지는 {{blank}}로 옮기겠습니다.",
+        "en": "I'll move your label to {{blank}}, Representative Pelosi.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-11",
+            "en": "CA-11"
+          },
+          {
+            "id": "B",
+            "ko": "CA-12",
+            "en": "CA-12"
+          },
+          {
+            "id": "C",
+            "ko": "CA-13",
+            "en": "CA-13"
+          },
+          {
+            "id": "D",
+            "ko": "CA-14",
+            "en": "CA-14"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그래요. 두 지도를 따로 보관하면 혼동하지 않겠군요.",
+            "en": "Good. Keeping both maps separate should prevent confusion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2022년에는 CA-12였지만 지금은 CA-11입니다. 옛 지도를 버릴 필요는 없어요.",
+            "en": "It was CA-12 in 2022, but it is CA-11 now. Keep the old map, too."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Nancy Pelosi represented CA-12 in December 2022 and CA-11 in December 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Nancy Pelosi represented CA-12 in December 2022 and CA-11 in December 2024.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-map-overlay-1"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-002",
+      "mechanism": "return-visit",
+      "learningTarget": "John Garamendi: CA-3 in 2022, CA-8 in 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의원회관 복도",
+        "en": "House office corridor"
+      },
+      "context": {
+        "ko": "2년 전에 받은 명함을 꺼내자 의원이 새 명함을 건넨다.",
+        "en": "You take out a card from two years ago, and the member offers a fresh one."
+      },
+      "cast": [
+        {
+          "id": "G000559",
+          "name": "John Garamendi",
+          "ko": "존 개러멘디",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000559.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000559"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "그 명함을 아직 가지고 있군요. 반갑습니다.",
+          "en": "You still have that card. Good to see you."
+        },
+        {
+          "speaker": "aide",
+          "ko": "두 번호를 모두 적어 두면 예전 기록도 찾기 쉬울 겁니다.",
+          "en": "Keeping both numbers will make the old record easier to find."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "예전 CA-3 대신 현재 {{blank}}로 연락처를 갱신할게요.",
+        "en": "I'll update the contact from CA-3 to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-4",
+            "en": "CA-4"
+          },
+          {
+            "id": "B",
+            "ko": "CA-8",
+            "en": "CA-8"
+          },
+          {
+            "id": "C",
+            "ko": "CA-9",
+            "en": "CA-9"
+          },
+          {
+            "id": "D",
+            "ko": "CA-6",
+            "en": "CA-6"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그러면 다음에 연락할 때 최신 기록을 찾겠네요.",
+            "en": "Then you'll have the current record next time you get in touch."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-3은 옛 번호예요. 지금 명부에는 CA-8로 올라 있습니다.",
+            "en": "CA-3 is the old number. The current directory lists CA-8."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "John Garamendi: CA-3 in 2022, CA-8 in 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: John Garamendi: CA-3 in 2022, CA-8 in 2024.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-return-visit-2"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-003",
+      "mechanism": "misdelivered-letter",
+      "learningTarget": "Harder moved from CA-10 to CA-9; DeSaulnier from CA-11 to CA-10.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "대표단 우편 분류실",
+        "en": "Delegation mailroom"
+      },
+      "context": {
+        "ko": "오래된 주소가 적힌 두 봉투가 같은 바구니에 들어 있다.",
+        "en": "Two envelopes with old addresses have landed in one tray."
+      },
+      "cast": [
+        {
+          "id": "H001090",
+          "name": "Josh Harder",
+          "ko": "조시 하더",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/H001090.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/H001090"
+        },
+        {
+          "id": "D000623",
+          "name": "Mark DeSaulnier",
+          "ko": "마크 디소니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000623.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/D000623"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이 봉투에는 제 이름이 맞는데 CA-10이라고 쓰여 있네요.",
+          "en": "This has my name but says CA-10."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지금 그 번호는 제 명부에 있죠. 이름을 보고 분리합시다.",
+          "en": "That's my number now. Let's sort them by name."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하더 의원님 앞으로 온 편지는 {{blank}} 바구니에 넣겠습니다.",
+        "en": "I'll put Representative Harder's letter in the {{blank}} tray.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-10",
+            "en": "CA-10"
+          },
+          {
+            "id": "B",
+            "ko": "CA-11",
+            "en": "CA-11"
+          },
+          {
+            "id": "C",
+            "ko": "CA-9",
+            "en": "CA-9"
+          },
+          {
+            "id": "D",
+            "ko": "CA-8",
+            "en": "CA-8"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "고맙습니다. 이름과 번호를 같이 읽어야겠어요.",
+            "en": "Thanks. We really need to read both name and number."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-9가 제 번호이고 디소니어 의원이 CA-10입니다.",
+            "en": "CA-9 is mine; Representative DeSaulnier has CA-10."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Harder moved from CA-10 to CA-9; DeSaulnier from CA-11 to CA-10.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Harder moved from CA-10 to CA-9; DeSaulnier from CA-11 to CA-10.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-misdelivered-letter-3"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-004",
+      "mechanism": "radio-interview",
+      "learningTarget": "Costa CA-16→21 and Valadao CA-21→22 between the dated directories.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의사당 라디오 스튜디오",
+        "en": "Capitol radio studio"
+      },
+      "context": {
+        "ko": "생방송 직전 진행자가 센트럴밸리 의원 두 명의 소개 순서를 잡는다.",
+        "en": "A producer orders introductions for two Central Valley members before a live segment."
+      },
+      "cast": [
+        {
+          "id": "C001059",
+          "name": "Jim Costa",
+          "ko": "짐 코스타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001059"
+        },
+        {
+          "id": "V000129",
+          "name": "David G. Valadao",
+          "ko": "데이비드 발라다오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000129.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000129"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "프레즈노에서 온 코스타입니다. 먼저 제 소개를 해도 좋겠어요.",
+          "en": "Costa here, from Fresno. You can introduce me first."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그리고 제 번호는 22입니다. 두 분의 번호를 구별해 주세요.",
+          "en": "And my number is 22. Keep our numbers distinct."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "첫 손님은 {{blank}}의 짐 코스타 의원입니다.",
+        "en": "Our first guest is Jim Costa of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-16",
+            "en": "CA-16"
+          },
+          {
+            "id": "B",
+            "ko": "CA-22",
+            "en": "CA-22"
+          },
+          {
+            "id": "C",
+            "ko": "CA-20",
+            "en": "CA-20"
+          },
+          {
+            "id": "D",
+            "ko": "CA-21",
+            "en": "CA-21"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 이제 두 사람을 구분해서 소개할 수 있겠군요.",
+            "en": "Great. Now listeners can distinguish the two of us."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-16은 제 옛 번호입니다. 지금은 CA-21이고 발라다오 의원은 CA-22입니다.",
+            "en": "CA-16 was my old number. I now hold CA-21; Valadao holds CA-22."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Costa CA-16→21 and Valadao CA-21→22 between the dated directories.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Costa CA-16→21 and Valadao CA-21→22 between the dated directories.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-radio-interview-4"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-005",
+      "mechanism": "address-label",
+      "learningTarget": "Thompson CA-5→4; McClintock CA-4→5.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "회의 자료 포장대",
+        "en": "Meeting materials table"
+      },
+      "context": {
+        "ko": "CA-4라고 인쇄된 자료를 두 의원 중 누구에게 전달할지 판단한다.",
+        "en": "A packet marked CA-4 needs to reach the right member."
+      },
+      "cast": [
+        {
+          "id": "M001177",
+          "name": "Tom McClintock",
+          "ko": "톰 매클린톡",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001177.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001177"
+        },
+        {
+          "id": "T000460",
+          "name": "Mike Thompson",
+          "ko": "마이크 톰프슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/T000460.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/T000460"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "2022년 자료라면 내 번호가 4였을 겁니다.",
+          "en": "If this were a 2022 packet, four would have been mine."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "하지만 이건 이번 회의 자료잖아요. 발행일을 확인합시다.",
+          "en": "But this is for today's meeting. Check the date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이번 자료의 CA-4 수신인은 {{blank}} 의원님입니다.",
+        "en": "The recipient of this current CA-4 packet is Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "마이크 톰프슨",
+            "en": "Mike Thompson"
+          },
+          {
+            "id": "B",
+            "ko": "톰 매클린톡",
+            "en": "Tom McClintock"
+          },
+          {
+            "id": "C",
+            "ko": "아미 베라",
+            "en": "Ami Bera"
+          },
+          {
+            "id": "D",
+            "ko": "존 개러멘디",
+            "en": "John Garamendi"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "제게 주시면 됩니다. 예전 자료와 섞이지 않게 해 두죠.",
+            "en": "That's for me. Let's keep it separate from the older material."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 CA-4는 톰프슨이고 매클린톡은 CA-5입니다.",
+            "en": "Thompson now represents CA-4 and McClintock represents CA-5."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Thompson CA-5→4; McClintock CA-4→5.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Thompson CA-5→4; McClintock CA-4→5.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-address-label-5"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-006",
+      "mechanism": "side-conversation",
+      "learningTarget": "Matsui CA-6→7 and Bera CA-7→6.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "정책 오찬 테이블",
+        "en": "Policy luncheon table"
+      },
+      "context": {
+        "ko": "옆자리 대화를 듣다가 번호가 서로 달라졌음을 알아차린다.",
+        "en": "An exchange at the next seat reveals that two district numbers have changed."
+      },
+      "cast": [
+        {
+          "id": "M001163",
+          "name": "Doris O. Matsui",
+          "ko": "도리스 마쓰이",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/M001163.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/M001163"
+        },
+        {
+          "id": "B001287",
+          "name": "Ami Bera",
+          "ko": "아미 베라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001287.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001287"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이전에는 제 지역구 번호가 6이었죠.",
+          "en": "My district number used to be six."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그리고 저는 7이었어요. 지금은 그 반대예요.",
+          "en": "And mine was seven. It's the other way around now."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그러면 현재 CA-7은 {{blank}} 의원님의 지역구군요.",
+        "en": "Then today's CA-7 belongs to Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "아미 베라",
+            "en": "Ami Bera"
+          },
+          {
+            "id": "B",
+            "ko": "도리스 마쓰이",
+            "en": "Doris Matsui"
+          },
+          {
+            "id": "C",
+            "ko": "조시 하더",
+            "en": "Josh Harder"
+          },
+          {
+            "id": "D",
+            "ko": "로 카나",
+            "en": "Ro Khanna"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "맞아요. 번호가 바뀌어도 사람은 그대로라는 점이 중요하죠.",
+            "en": "Exactly. The numbers changed, not the people."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "마쓰이는 CA-7, 베라는 CA-6입니다. 2022년에는 반대였죠.",
+            "en": "Matsui is CA-7 and Bera CA-6. In 2022 it was reversed."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Matsui CA-6→7 and Bera CA-7→6.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Matsui CA-6→7 and Bera CA-7→6.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-side-conversation-6"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-007",
+      "mechanism": "document-comparison",
+      "learningTarget": "Obernolte CA-8→23.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "기록 열람석",
+        "en": "Records reading desk"
+      },
+      "context": {
+        "ko": "두 시기의 의원 명부를 비교하는 색인 작업을 맡았다.",
+        "en": "You are indexing directories from two different Congresses."
+      },
+      "cast": [
+        {
+          "id": "O000019",
+          "name": "Jay Obernolte",
+          "ko": "제이 오버놀티",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/O000019.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/O000019"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "같은 의원을 찾으면 두 줄을 연결해 주세요. 오래된 번호가 8입니다.",
+          "en": "Link the two entries for the same member. The old number is eight."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 이름은 그대로 두고 새 번호만 추가하면 되겠군요.",
+          "en": "Keep my name and add the new number."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "오버놀티 의원의 현재 색인은 {{blank}}로 연결하겠습니다.",
+        "en": "I'll link Representative Obernolte's current entry to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-8",
+            "en": "CA-8"
+          },
+          {
+            "id": "B",
+            "ko": "CA-20",
+            "en": "CA-20"
+          },
+          {
+            "id": "C",
+            "ko": "CA-23",
+            "en": "CA-23"
+          },
+          {
+            "id": "D",
+            "ko": "CA-25",
+            "en": "CA-25"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "연도가 같이 붙어 있으니 나중에도 찾기 쉽겠네요.",
+            "en": "With the year attached, that will be easy to find later."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "CA-8은 117대 때 번호이고 118대 명부에는 CA-23입니다.",
+            "en": "CA-8 was the 117th Congress number; the 118th lists CA-23."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Obernolte CA-8→23.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Obernolte CA-8→23.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-document-comparison-7"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-008",
+      "mechanism": "seating-plan",
+      "learningTarget": "Swalwell CA-15→14; Eshoo CA-18→16.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "대표단 만찬",
+        "en": "Delegation dinner"
+      },
+      "context": {
+        "ko": "좌석표가 2022년 번호 순서로 배치되어 있다.",
+        "en": "A dinner seating chart was sorted by the 2022 district numbers."
+      },
+      "cast": [
+        {
+          "id": "S001193",
+          "name": "Eric Swalwell",
+          "ko": "에릭 스월웰",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001193.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001193"
+        },
+        {
+          "id": "E000215",
+          "name": "Anna G. Eshoo",
+          "ko": "애나 에슈",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/E000215.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/E000215"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 좌석표에 아직 15가 붙어 있군요.",
+          "en": "My place card still says fifteen."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 것은 18입니다. 둘 다 새로 인쇄해야겠어요.",
+          "en": "Mine says eighteen. Both need reprinting."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스월웰 의원님 좌석표에는 이제 {{blank}}를 적겠습니다.",
+        "en": "I'll print {{blank}} on Representative Swalwell's card now.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-15",
+            "en": "CA-15"
+          },
+          {
+            "id": "B",
+            "ko": "CA-16",
+            "en": "CA-16"
+          },
+          {
+            "id": "C",
+            "ko": "CA-18",
+            "en": "CA-18"
+          },
+          {
+            "id": "D",
+            "ko": "CA-14",
+            "en": "CA-14"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "고맙습니다. 식사 전에 바로잡았네요.",
+            "en": "Thanks. We caught it before dinner."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스월웰은 CA-14이고 에슈는 CA-16입니다. 두 사람 모두 번호가 바뀌었어요.",
+            "en": "Swalwell is CA-14 and Eshoo CA-16. Both numbers changed."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Swalwell CA-15→14; Eshoo CA-18→16.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Swalwell CA-15→14; Eshoo CA-18→16.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-seating-plan-8"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-009",
+      "mechanism": "exhibit-caption",
+      "learningTarget": "Lofgren CA-19→18; Panetta CA-20→19.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의회 전시 준비실",
+        "en": "Congressional exhibit workshop"
+      },
+      "context": {
+        "ko": "전시용 사진 아래 두 의원의 이름과 지역구를 배치한다.",
+        "en": "You prepare names and districts beneath two exhibit portraits."
+      },
+      "cast": [
+        {
+          "id": "L000397",
+          "name": "Zoe Lofgren",
+          "ko": "조이 로프그렌",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000397.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000397"
+        },
+        {
+          "id": "P000613",
+          "name": "Jimmy Panetta",
+          "ko": "지미 파네타",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000613.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000613"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 사진은 19라는 번호로 보관돼 있었네요.",
+          "en": "My photograph was filed under nineteen."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그 번호는 이제 제 명부에 있습니다. 사진 날짜도 남겨 주세요.",
+          "en": "That number is now mine. Keep the photo date, too."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 CA-19 사진 설명은 {{blank}} 의원으로 표기하겠습니다.",
+        "en": "I'll label the current CA-19 portrait Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "지미 파네타",
+            "en": "Jimmy Panetta"
+          },
+          {
+            "id": "B",
+            "ko": "조이 로프그렌",
+            "en": "Zoe Lofgren"
+          },
+          {
+            "id": "C",
+            "ko": "애나 에슈",
+            "en": "Anna Eshoo"
+          },
+          {
+            "id": "D",
+            "ko": "에릭 스월웰",
+            "en": "Eric Swalwell"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋아요. 이전 사진의 설명은 그대로 보관해 주세요.",
+            "en": "Good. Preserve the original caption on the older photo."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 CA-19는 파네타, CA-18은 로프그렌입니다.",
+            "en": "Today CA-19 is Panetta and CA-18 is Lofgren."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Lofgren CA-19→18; Panetta CA-20→19.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Lofgren CA-19→18; Panetta CA-20→19.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-exhibit-caption-9"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-010",
+      "mechanism": "handover",
+      "learningTarget": "Ruiz CA-36→25.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의원회관 접견실",
+        "en": "House reception room"
+      },
+      "context": {
+        "ko": "전임 보좌관에게 받은 연락처 파일을 다음 담당자에게 인계한다.",
+        "en": "You hand a contact file from a former aide to a new one."
+      },
+      "cast": [
+        {
+          "id": "R000599",
+          "name": "Raul Ruiz",
+          "ko": "라울 루이스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/R000599.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/R000599"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "루이스 의원의 2022년 항목이 36번입니다. 최신 정보는 따로 넣어야겠어요.",
+          "en": "Ruiz is listed under 36 in 2022. We should add a current entry."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "과거 기록을 덮어쓰지는 마세요. 두 시점을 남기면 좋겠어요.",
+          "en": "Don't overwrite the old record. Keep both dates."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 연락처는 {{blank}}로 추가하겠습니다.",
+        "en": "I'll add the current contact under {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-36",
+            "en": "CA-36"
+          },
+          {
+            "id": "B",
+            "ko": "CA-25",
+            "en": "CA-25"
+          },
+          {
+            "id": "C",
+            "ko": "CA-26",
+            "en": "CA-26"
+          },
+          {
+            "id": "D",
+            "ko": "CA-35",
+            "en": "CA-35"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그렇게 하면 오래된 서류도 쉽게 찾겠습니다.",
+            "en": "That will make older paperwork easier to trace."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 제 번호는 CA-25입니다. CA-36은 과거 기록이에요.",
+            "en": "My current number is CA-25. CA-36 belongs to the earlier record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Ruiz CA-36→25.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Ruiz CA-36→25.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-handover-10"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-011",
+      "mechanism": "press-correction",
+      "learningTarget": "Chu CA-27→28.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "기자석",
+        "en": "Press workroom"
+      },
+      "context": {
+        "ko": "신문 교정쇄가 지난 의회 번호로 출고될 상황이다.",
+        "en": "A newspaper proof is about to go out with a previous Congress's number."
+      },
+      "cast": [
+        {
+          "id": "C001080",
+          "name": "Judy Chu",
+          "ko": "주디 추",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001080.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001080"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "기사에는 추 의원이 CA-27이라고 되어 있습니다.",
+          "en": "The article identifies Chu as CA-27."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그건 지난 의회의 번호죠. 독자가 지금의 대표를 혼동하지 않도록 해 주세요.",
+          "en": "That's the previous Congress's number. Let's avoid confusing readers about today's representative."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "현재 기사에는 {{blank}}로 수정하겠습니다.",
+        "en": "I'll correct the current article to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-27",
+            "en": "CA-27"
+          },
+          {
+            "id": "B",
+            "ko": "CA-29",
+            "en": "CA-29"
+          },
+          {
+            "id": "C",
+            "ko": "CA-28",
+            "en": "CA-28"
+          },
+          {
+            "id": "D",
+            "ko": "CA-30",
+            "en": "CA-30"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "발행 전에 확인해 주셔서 고맙습니다.",
+            "en": "Thanks for catching that before publication."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재는 CA-28입니다. CA-27은 2022년 명부의 번호예요.",
+            "en": "It is CA-28 now. CA-27 is the 2022 directory entry."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Chu CA-27→28.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Chu CA-27→28.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-press-correction-11"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-012",
+      "mechanism": "audio-rehearsal",
+      "learningTarget": "Aguilar CA-31→33; Lieu CA-33→36.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의사당 녹음실",
+        "en": "Capitol recording room"
+      },
+      "context": {
+        "ko": "두 의원의 녹음 파일 이름이 섞여 진행자가 소리 내어 확인한다.",
+        "en": "Two recording filenames have been mixed up, so the producer reads them aloud."
+      },
+      "cast": [
+        {
+          "id": "A000371",
+          "name": "Pete Aguilar",
+          "ko": "피트 아길라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000371.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/A000371"
+        },
+        {
+          "id": "L000582",
+          "name": "Ted Lieu",
+          "ko": "테드 리우",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/L000582.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/L000582"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 파일에는 31이라고 적혀 있군요. 새 번호는 다릅니다.",
+          "en": "My file says thirty-one. The new number is different."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 36입니다. 두 파일을 구별해 주세요.",
+          "en": "Mine is thirty-six. Please distinguish the two recordings."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "아길라 의원의 이번 녹음은 {{blank}} 파일로 저장할게요.",
+        "en": "I'll save Representative Aguilar's current recording under {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-31",
+            "en": "CA-31"
+          },
+          {
+            "id": "B",
+            "ko": "CA-36",
+            "en": "CA-36"
+          },
+          {
+            "id": "C",
+            "ko": "CA-32",
+            "en": "CA-32"
+          },
+          {
+            "id": "D",
+            "ko": "CA-33",
+            "en": "CA-33"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 이제 재생할 때 헷갈리지 않겠네요.",
+            "en": "Good. Playback should be less confusing now."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "아길라 의원은 CA-33, 리우 의원은 CA-36입니다.",
+            "en": "Aguilar represents CA-33 and Lieu CA-36."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Aguilar CA-31→33; Lieu CA-33→36.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Aguilar CA-31→33; Lieu CA-33→36.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-audio-rehearsal-12"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-013",
+      "mechanism": "joint-introduction",
+      "learningTarget": "Kim CA-39→40; Steel CA-48→45.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "캘리포니아 대표단 리셉션",
+        "en": "California delegation reception"
+      },
+      "context": {
+        "ko": "한국어와 영어를 병기한 소개 카드를 직접 읽을 차례다.",
+        "en": "You are about to read bilingual introduction cards for two members."
+      },
+      "cast": [
+        {
+          "id": "K000397",
+          "name": "Young Kim",
+          "ko": "영 김",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/K000397.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/K000397"
+        },
+        {
+          "id": "S001135",
+          "name": "Michelle Steel",
+          "ko": "미셸 스틸",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001135.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001135"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "두 사람 모두 같은 주 의원이니 번호까지 소개해 주세요.",
+          "en": "We're from the same state, so include the district numbers."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 명부 번호는 45입니다. 먼저 김 의원을 소개하시죠.",
+          "en": "My directory number is forty-five. Introduce Representative Kim first."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "영 김 의원은 {{blank}}를 대표합니다.",
+        "en": "Representative Young Kim represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-40",
+            "en": "CA-40"
+          },
+          {
+            "id": "B",
+            "ko": "CA-39",
+            "en": "CA-39"
+          },
+          {
+            "id": "C",
+            "ko": "CA-45",
+            "en": "CA-45"
+          },
+          {
+            "id": "D",
+            "ko": "CA-48",
+            "en": "CA-48"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이렇게 소개하면 두 사람의 이름을 구분하기 좋겠네요.",
+            "en": "That introduction makes it easy to tell us apart."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "김 의원은 현재 CA-40, 스틸 의원은 CA-45입니다.",
+            "en": "Kim currently holds CA-40 and Steel CA-45."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Kim CA-39→40; Steel CA-48→45.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Kim CA-39→40; Steel CA-48→45.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-joint-introduction-13"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-014",
+      "mechanism": "timeline-sort",
+      "learningTarget": "Porter CA-45→47.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "자료실 연표 작업대",
+        "en": "Archive timeline table"
+      },
+      "context": {
+        "ko": "2022년 명부와 2024년 명부 카드가 뒤섞여 있다.",
+        "en": "The 2022 and 2024 directory cards have been shuffled."
+      },
+      "cast": [
+        {
+          "id": "P000618",
+          "name": "Katie Porter",
+          "ko": "케이티 포터",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000618.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000618"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "포터 의원 카드 두 장이 있습니다. 45와 47 중 예전 카드를 왼쪽에 놓아요.",
+          "en": "Porter has two cards, 45 and 47. Place the older one on the left."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "연표에는 번호가 바뀐 시점을 표시하면 되겠군요.",
+          "en": "Marking the change on the timeline would help."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "왼쪽 2022년 카드에는 {{blank}}가 들어갑니다.",
+        "en": "The left-hand 2022 card should be {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-47",
+            "en": "CA-47"
+          },
+          {
+            "id": "B",
+            "ko": "CA-45",
+            "en": "CA-45"
+          },
+          {
+            "id": "C",
+            "ko": "CA-46",
+            "en": "CA-46"
+          },
+          {
+            "id": "D",
+            "ko": "CA-48",
+            "en": "CA-48"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "맞습니다. 2024년 카드와 혼동하지 않겠어요.",
+            "en": "Right. It won't be confused with the 2024 card."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2022년에는 CA-45였고 2024년에는 CA-47입니다.",
+            "en": "It was CA-45 in 2022 and CA-47 in 2024."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Porter CA-45→47.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Porter CA-45→47.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-timeline-sort-14"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-015",
+      "mechanism": "phone-routing",
+      "learningTarget": "Issa CA-50→48.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "대표단 전화 안내석",
+        "en": "Delegation telephone desk"
+      },
+      "context": {
+        "ko": "2022년 명부를 보고 걸려 온 전화를 최신 명부에 맞춰 연결한다.",
+        "en": "A caller using the 2022 directory needs the current listing."
+      },
+      "cast": [
+        {
+          "id": "I000056",
+          "name": "Darrell Issa",
+          "ko": "대럴 이사",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/I000056.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/I000056"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "이사 의원에게 전화가 왔습니다. 발신자는 CA-50만 알고 있어요.",
+          "en": "A caller wants Issa and only knows CA-50."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그건 옛 번호입니다. 현재 연락처로 안내해 주세요.",
+          "en": "That's the old number. Direct them to my current listing."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이사 의원실의 현재 번호인 {{blank}}로 연결하겠습니다.",
+        "en": "I'll direct the call to Representative Issa's current listing, {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-50",
+            "en": "CA-50"
+          },
+          {
+            "id": "B",
+            "ko": "CA-49",
+            "en": "CA-49"
+          },
+          {
+            "id": "C",
+            "ko": "CA-48",
+            "en": "CA-48"
+          },
+          {
+            "id": "D",
+            "ko": "CA-51",
+            "en": "CA-51"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "수고했습니다. 발신자에게 연도도 알려 주세요.",
+            "en": "Thanks. Let the caller know the directory year as well."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "지금 제 지역구는 CA-48입니다. CA-50은 이전 번호죠.",
+            "en": "My district is CA-48 now. CA-50 is the previous number."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Issa CA-50→48.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Issa CA-50→48.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-phone-routing-15"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-016",
+      "mechanism": "photo-pair",
+      "learningTarget": "Peters CA-52→50; Jacobs CA-53→51.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "샌디에이고 대표단 사진 벽",
+        "en": "San Diego delegation portrait wall"
+      },
+      "context": {
+        "ko": "두 의원의 사진 아래 2024년 번호표가 떨어져 있다.",
+        "en": "Two 2024 district labels have fallen off the delegation portrait wall."
+      },
+      "cast": [
+        {
+          "id": "P000608",
+          "name": "Scott H. Peters",
+          "ko": "스콧 피터스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000608.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000608"
+        },
+        {
+          "id": "J000305",
+          "name": "Sara Jacobs",
+          "ko": "세라 제이컵스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/J000305.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/J000305"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 예전 번호 52가 아직 사진 뒤에 적혀 있네요.",
+          "en": "My old number, 52, is still written on the back."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 옛 번호는 53이었죠. 지금 표지를 찾아요.",
+          "en": "Mine was 53. Let's find the current labels."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "피터스 의원 사진 아래에는 {{blank}}를 붙이겠습니다.",
+        "en": "I'll attach {{blank}} beneath Representative Peters's portrait.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-51",
+            "en": "CA-51"
+          },
+          {
+            "id": "B",
+            "ko": "CA-52",
+            "en": "CA-52"
+          },
+          {
+            "id": "C",
+            "ko": "CA-53",
+            "en": "CA-53"
+          },
+          {
+            "id": "D",
+            "ko": "CA-50",
+            "en": "CA-50"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋아요. 제이컵스 의원 표지도 옆에 붙이죠.",
+            "en": "Good. Put Representative Jacobs's label alongside it."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "피터스는 CA-50, 제이컵스는 CA-51입니다.",
+            "en": "Peters is CA-50 and Jacobs is CA-51."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Peters CA-52→50; Jacobs CA-53→51.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Peters CA-52→50; Jacobs CA-53→51.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-photo-pair-16"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-017",
+      "mechanism": "meeting-agenda",
+      "learningTarget": "Vargas CA-51→52; California has 52 seats following 2020 apportionment.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "대표단 회의실",
+        "en": "Delegation meeting room"
+      },
+      "context": {
+        "ko": "의원별 발언 순서를 최신 번호로 정렬한다.",
+        "en": "The speaking order is being sorted by current district numbers."
+      },
+      "cast": [
+        {
+          "id": "V000130",
+          "name": "Juan Vargas",
+          "ko": "후안 바르가스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/V000130.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/V000130"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "캘리포니아 마지막 번호가 53으로 남아 있네요.",
+          "en": "The last California number is still listed as 53."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회에는 52석입니다. 제 번호로 마지막 줄을 정리하죠.",
+          "en": "This Congress has 52 California seats. Use my number for the last row."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "마지막 발언자는 {{blank}}의 바르가스 의원입니다.",
+        "en": "The final speaker is Representative Vargas of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-52",
+            "en": "CA-52"
+          },
+          {
+            "id": "B",
+            "ko": "CA-53",
+            "en": "CA-53"
+          },
+          {
+            "id": "C",
+            "ko": "CA-51",
+            "en": "CA-51"
+          },
+          {
+            "id": "D",
+            "ko": "CA-50",
+            "en": "CA-50"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "순서가 맞습니다. 새 명부에 맞춰 진행합시다.",
+            "en": "That order works. Let's use the new directory."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 CA-52가 제 지역구이고 53번은 이번 명부에 없습니다.",
+            "en": "My current district is CA-52; there is no district 53 in this directory."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Vargas CA-51→52; California has 52 seats following 2020 apportionment.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Vargas CA-51→52; California has 52 seats following 2020 apportionment.",
+          "asOf": "2022-12-12"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "2020 Census seat allocation change relevant to the scene.",
+          "asOf": "2021-04-26"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-meeting-agenda-17"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-018",
+      "mechanism": "budget-briefing",
+      "learningTarget": "Schweikert AZ-6→1; Gallego AZ-7→3.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "애리조나 대표단 설명회",
+        "en": "Arizona delegation briefing"
+      },
+      "context": {
+        "ko": "예산 자료에 의원별 지역구 번호를 달아 분류한다.",
+        "en": "A budget handout is being indexed by member and district."
+      },
+      "cast": [
+        {
+          "id": "S001183",
+          "name": "David Schweikert",
+          "ko": "데이비드 슈와이커트",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001183.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001183"
+        },
+        {
+          "id": "G000574",
+          "name": "Ruben Gallego",
+          "ko": "루벤 가예고",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000574.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000574"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 옛 번호 6을 사용하면 다른 의원에게 전달될 수 있겠군요.",
+          "en": "Using my old number six could send this to the wrong member."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 예전에는 7이었지만 지금은 3입니다.",
+          "en": "I was seven before, but now I'm three."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "슈와이커트 의원 항목은 {{blank}}로 분류하겠습니다.",
+        "en": "I'll index Representative Schweikert's section under {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AZ-6",
+            "en": "AZ-6"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-1",
+            "en": "AZ-1"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-3",
+            "en": "AZ-3"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-7",
+            "en": "AZ-7"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "정확합니다. 지역구 번호를 연도와 함께 적으세요.",
+            "en": "Correct. Write the year alongside the district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "현재 슈와이커트는 AZ-1, 가예고는 AZ-3입니다.",
+            "en": "Schweikert is AZ-1 and Gallego AZ-3 now."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Schweikert AZ-6→1; Gallego AZ-7→3.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Schweikert AZ-6→1; Gallego AZ-7→3.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-budget-briefing-18"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-019",
+      "mechanism": "interrupted-conversation",
+      "learningTarget": "Stanton AZ-9→4; Gosar AZ-4→9.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "의사당 엘리베이터 앞",
+        "en": "Capitol elevator lobby"
+      },
+      "context": {
+        "ko": "두 의원이 서로 번호가 이어진 옛 기록을 이야기하다가 엘리베이터가 도착한다.",
+        "en": "Two members compare old numbers when the elevator arrives."
+      },
+      "cast": [
+        {
+          "id": "S001211",
+          "name": "Greg Stanton",
+          "ko": "그레그 스탠턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001211.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001211"
+        },
+        {
+          "id": "G000565",
+          "name": "Paul A. Gosar",
+          "ko": "폴 고사",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000565.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000565"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 2022년에 9번이었죠.",
+          "en": "I was number nine in 2022."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그리고 지금 9번은 접니다. 스탠턴 의원 번호를 적고 가시죠.",
+          "en": "And now nine is mine. Write down Stanton's number before we go."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스탠턴 의원님은 현재 {{blank}}입니다.",
+        "en": "Representative Stanton is currently in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AZ-9",
+            "en": "AZ-9"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-3",
+            "en": "AZ-3"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-4",
+            "en": "AZ-4"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-6",
+            "en": "AZ-6"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 그럼 회의실에서 뵙죠.",
+            "en": "Good. See you in the meeting room."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스탠턴은 AZ-4, 고사는 AZ-9입니다.",
+            "en": "Stanton is AZ-4; Gosar is AZ-9."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Stanton AZ-9→4; Gosar AZ-4→9.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Stanton AZ-9→4; Gosar AZ-4→9.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-interrupted-conversation-19"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-020",
+      "mechanism": "lost-badge",
+      "learningTarget": "Grijalva AZ-3→7.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "회의 등록대",
+        "en": "Conference registration desk"
+      },
+      "context": {
+        "ko": "옛 명찰을 떨어뜨린 참가자가 새 명찰을 받는다.",
+        "en": "A participant who dropped an old badge needs a replacement."
+      },
+      "cast": [
+        {
+          "id": "G000551",
+          "name": "Raúl M. Grijalva",
+          "ko": "라울 그리할바",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/G000551.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/G000551"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "aide",
+          "ko": "그리할바 의원의 옛 명찰에는 AZ-3이라고 적혀 있네요.",
+          "en": "Grijalva's old badge says AZ-3."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "새 명찰에는 이번 의회 번호를 써 주세요.",
+          "en": "Put this Congress's number on the new badge."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그리할바 의원님 새 명찰은 {{blank}}로 발급하겠습니다.",
+        "en": "I'll issue your new badge with {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AZ-3",
+            "en": "AZ-3"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-6",
+            "en": "AZ-6"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-9",
+            "en": "AZ-9"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-7",
+            "en": "AZ-7"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 입장할 수 있겠군요. 고맙습니다.",
+            "en": "That will get me through registration. Thank you."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 의회에서 제 지역구는 AZ-7입니다. 3은 예전 번호예요.",
+            "en": "My district in this Congress is AZ-7. Three was the old number."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Grijalva AZ-3→7.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Grijalva AZ-3→7.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-lost-badge-20"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-021",
+      "mechanism": "unchanged-record",
+      "learningTarget": "Biggs AZ-5 unchanged; Ciscomani AZ-6 in 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "대표단 기록 정리실",
+        "en": "Delegation records room"
+      },
+      "context": {
+        "ko": "모든 번호가 바뀌었다는 가정으로 명부를 고치려는 직원에게 예외를 설명한다.",
+        "en": "An aide assumes every district number changed; you need to identify an exception."
+      },
+      "cast": [
+        {
+          "id": "B001302",
+          "name": "Andy Biggs",
+          "ko": "앤디 빅스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001302.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001302"
+        },
+        {
+          "id": "C001133",
+          "name": "Juan Ciscomani",
+          "ko": "후안 시스코마니",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001133.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001133"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 번호는 2022년에도 5였어요.",
+          "en": "My number was five in 2022 as well."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 이번 명부에서 6번입니다. 같은 번호가 유지되는 경우도 있죠.",
+          "en": "I'm number six in this directory. Some labels do remain the same."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "빅스 의원의 현재 항목은 {{blank}}로 유지하겠습니다.",
+        "en": "I'll retain Representative Biggs's current entry as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AZ-5",
+            "en": "AZ-5"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-6",
+            "en": "AZ-6"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-4",
+            "en": "AZ-4"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-7",
+            "en": "AZ-7"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "맞습니다. 무조건 바꾸면 오히려 틀리는군요.",
+            "en": "Exactly. Changing every entry would introduce errors."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "빅스 의원은 2022년과 2024년 모두 AZ-5입니다.",
+            "en": "Biggs is listed as AZ-5 in both 2022 and 2024."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Biggs AZ-5 unchanged; Ciscomani AZ-6 in 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://historycms.house.gov/WorkArea/DownloadAsset.aspx?id=25769822885",
+          "claim": "December 12, 2022 district listing used for historical comparison: Biggs AZ-5 unchanged; Ciscomani AZ-6 in 2024.",
+          "asOf": "2022-12-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-unchanged-record-21"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-022",
+      "mechanism": "statewide-service",
+      "learningTarget": "Peltola is Alaska's at-large representative in December 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "알래스카 대표단 접견실",
+        "en": "Alaska delegation reception"
+      },
+      "context": {
+        "ko": "주 전체에 관한 민원 안내를 준비하며 번호 없는 선거구 표기를 배운다.",
+        "en": "A statewide constituent-service guide needs the correct district designation."
+      },
+      "cast": [
+        {
+          "id": "P000619",
+          "name": "Mary Sattler Peltola",
+          "ko": "메리 펠톨라",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000619.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000619"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "알래스카는 하원의원이 한 명입니다. 숫자 대신 별도 표기를 써요.",
+          "en": "Alaska has one House member. We use a designation instead of a number."
+        },
+        {
+          "speaker": "aide",
+          "ko": "그럼 안내문에 1번이라고 쓰면 안 되겠네요.",
+          "en": "Then our guide shouldn't say district one."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "펠톨라 의원의 지역구는 {{blank}}로 표기하겠습니다.",
+        "en": "I'll list Representative Peltola's district as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AK-1",
+            "en": "AK-1"
+          },
+          {
+            "id": "B",
+            "ko": "AK-AL",
+            "en": "AK-AL"
+          },
+          {
+            "id": "C",
+            "ko": "AK-2",
+            "en": "AK-2"
+          },
+          {
+            "id": "D",
+            "ko": "AK-3",
+            "en": "AK-3"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그렇죠. 주 전체를 대표한다는 의미입니다.",
+            "en": "Right. It means representation of the entire state."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "알래스카의 유일한 지역구는 주 전체 선거구인 AK-AL입니다.",
+            "en": "Alaska's sole House district is the statewide at-large district, AK-AL."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Peltola is Alaska's at-large representative in December 2024.",
+          "asOf": "2024-12-16"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-statewide-service-22"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-023",
+      "mechanism": "apportionment-board",
+      "learningTarget": "Montana gained one seat after the 2020 census; Zinke represents MT-1 in 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "인구조사 설명회",
+        "en": "Census briefing"
+      },
+      "context": {
+        "ko": "2022년까지의 단일 지역구와 새 몬태나 지도 사이에 안내 화살표를 놓는다.",
+        "en": "You place a transition arrow between Montana's old single-district map and the new one."
+      },
+      "cast": [
+        {
+          "id": "Z000018",
+          "name": "Ryan K. Zinke",
+          "ko": "라이언 징키",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/Z000018.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/Z000018"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이 지도에는 몬태나가 주 전체 선거구 하나로 되어 있네요.",
+          "en": "This map shows Montana as a single at-large district."
+        },
+        {
+          "speaker": "aide",
+          "ko": "2020년 인구조사 후 의석이 늘었으니 새 지도에 몇 개를 표시할까요?",
+          "en": "After the 2020 census, how many seats should the new map show?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "몬태나의 이번 하원 의석 수는 {{blank}}입니다.",
+        "en": "Montana now has {{blank}} House seats.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "1",
+            "en": "1"
+          },
+          {
+            "id": "B",
+            "ko": "3",
+            "en": "3"
+          },
+          {
+            "id": "C",
+            "ko": "2",
+            "en": "2"
+          },
+          {
+            "id": "D",
+            "ko": "4",
+            "en": "4"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 지도가 옛 지도와 왜 다른지 설명할 수 있겠군요.",
+            "en": "Now we can explain why the maps differ."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "몬태나는 한 석에서 두 석으로 늘었고 저는 제1선거구입니다.",
+            "en": "Montana went from one seat to two; I represent the first district."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Montana gained one seat after the 2020 census; Zinke represents MT-1 in 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "2020 Census seat allocation change relevant to the scene.",
+          "asOf": "2021-04-26"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-apportionment-board-23"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-024",
+      "mechanism": "district-allocation",
+      "learningTarget": "Oregon gained a sixth seat; Salinas OR-6 and Bonamici OR-1 in 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "오리건 대표단 안내 지도",
+        "en": "Oregon delegation orientation map"
+      },
+      "context": {
+        "ko": "새 의석을 추가할 공간을 만들어야 하는 안내 지도 앞에 선다.",
+        "en": "An orientation map needs room for an additional House seat."
+      },
+      "cast": [
+        {
+          "id": "S001226",
+          "name": "Andrea Salinas",
+          "ko": "안드레아 살리나스",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/S001226.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/S001226"
+        },
+        {
+          "id": "B001278",
+          "name": "Suzanne Bonamici",
+          "ko": "수잔 보나미치",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/B001278.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/B001278"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제6선거구 의원입니다. 예전 지도에는 이 번호가 없었죠.",
+          "en": "I represent District 6. That number didn't exist on the old map."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제1선거구는 여전히 있습니다. 새 의석이 하나 추가됐어요.",
+          "en": "District 1 is still there. One additional seat was added."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "오리건 지도에는 총 {{blank}}개의 하원 선거구를 표시하겠습니다.",
+        "en": "I'll show a total of {{blank}} House districts on Oregon's map.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "5",
+            "en": "5"
+          },
+          {
+            "id": "B",
+            "ko": "7",
+            "en": "7"
+          },
+          {
+            "id": "C",
+            "ko": "4",
+            "en": "4"
+          },
+          {
+            "id": "D",
+            "ko": "6",
+            "en": "6"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 항목을 위한 공간이 생겼군요. 안내 지도에 연도를 넣죠.",
+            "en": "That makes room for the new entry. Date the map."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2020년 인구조사 결과 오리건은 5석에서 6석으로 늘었습니다.",
+            "en": "The 2020 census increased Oregon's allocation from five to six seats."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Oregon gained a sixth seat; Salinas OR-6 and Bonamici OR-1 in 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "2020 Census seat allocation change relevant to the scene.",
+          "asOf": "2021-04-26"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-district-allocation-24"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-025",
+      "mechanism": "new-delegation",
+      "learningTarget": "Colorado gained an eighth seat; Caraveo CO-8 and Pettersen CO-7 in 2024.",
+      "date": "2024-12-16",
+      "venue": {
+        "ko": "콜로라도 대표단 신규 안내",
+        "en": "Colorado delegation orientation"
+      },
+      "context": {
+        "ko": "일곱 칸짜리 대표단 도표에 새 의원을 배치할 칸을 마련한다.",
+        "en": "A seven-slot delegation chart needs a place for another representative."
+      },
+      "cast": [
+        {
+          "id": "C001134",
+          "name": "Yadira Caraveo",
+          "ko": "야디라 카라베오",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/C001134.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/C001134"
+        },
+        {
+          "id": "P000620",
+          "name": "Brittany Pettersen",
+          "ko": "브리트니 페터슨",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/P000620.jpg",
+          "source": "https://bioguide.congress.gov/search/bio/P000620"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 선거구는 8번입니다. 예전 도표에는 칸이 없네요.",
+          "en": "My district is eight. The old chart has no slot for it."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 7번이니 그다음에 칸을 붙이면 되겠습니다.",
+          "en": "I'm district seven, so add a slot after mine."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "콜로라도의 새 칸은 {{blank}}로 표시할게요.",
+        "en": "I'll label Colorado's new slot {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CO-8",
+            "en": "CO-8"
+          },
+          {
+            "id": "B",
+            "ko": "CO-7",
+            "en": "CO-7"
+          },
+          {
+            "id": "C",
+            "ko": "CO-9",
+            "en": "CO-9"
+          },
+          {
+            "id": "D",
+            "ko": "CO-6",
+            "en": "CO-6"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이제 이번 의회의 대표단이 모두 들어가겠군요.",
+            "en": "Now the chart can fit this Congress's delegation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "콜로라도는 인구조사 후 8석이 되었고 카라베오는 CO-8입니다.",
+            "en": "Colorado gained an eighth seat after the census; Caraveo represents CO-8."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://clerk.house.gov/member_info/olm-118.pdf",
+          "claim": "Colorado gained an eighth seat; Caraveo CO-8 and Pettersen CO-7 in 2024.",
+          "asOf": "2024-12-16"
+        },
+        {
+          "url": "https://www.census.gov/newsroom/press-releases/2021/2020-census-apportionment-results.html",
+          "claim": "2020 Census seat allocation change relevant to the scene.",
+          "asOf": "2021-04-26"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-new-delegation-25"
+      },
+      "fictional": true
+    }
+  ]
+}
