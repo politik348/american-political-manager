@@ -1,4 +1,4 @@
-const KEY='apm-shell-v7.1.0',PHOTO='apm-portraits-v1',SHELL=['./','./index.html','./style.css','./app.js','./engine.js','./expansion.js','./v7.js','./data/world.json','./data/portraits.json','./manifest.webmanifest','./icon.svg'];
+const KEY='apm-shell-v11.0.0',PHOTO='apm-portraits-v1',SHELL=['./','./index.html','./style.css','./app.js','./engine.js','./expansion.js','./v7.js','./v11.js','./data/historical-people.json','./data/scenarios.json','./data/world.json','./data/portraits.json','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(KEY).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('apm-shell-')&&k!==KEY).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 async function portrait(req){let c=await caches.open(PHOTO);let hit=await c.match(req);if(hit)return hit;let res=await fetch(req);if(res.ok||res.type==='opaque'){try{await c.put(req,res.clone());const keys=await c.keys();for(const k of keys.slice(0,Math.max(0,keys.length-180)))await c.delete(k)}catch{}}return res}
