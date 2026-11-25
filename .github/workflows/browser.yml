@@ -19,6 +19,7 @@ jobs:
           python -m http.server 8000 > server.log 2>&1 &
           node tests/browser.mjs
           node tests/browser-v7.mjs
+          node tests/browser-v176.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -26,4 +27,5 @@ jobs:
           path: |
             browser-*.png
             v7-*.png
+            v176-*.png
             server.log
