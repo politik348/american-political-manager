@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "team": "Q2-B",
+  "round": 4,
+  "created": "2026-11-25",
+  "previous_index": "docs/audits/P01-Q2-B-R3-INDEX.json",
+  "baseline_reported_core_verified": 850,
+  "baseline_revalidated": false,
+  "target_new": 475,
+  "target_cumulative": 1325,
+  "progress": {
+    "new_core_verified": 52,
+    "cumulative_reported": 902,
+    "remaining": 423,
+    "contiguous_through": "P01-1575",
+    "next": "P01-1576",
+    "priority_ids": [
+      "P01-1814",
+      "P01-1816"
+    ],
+    "corrected_scenarios": 3,
+    "full_axis_clearance_claimed": 0
+  },
+  "shards": [
+    {
+      "path": "docs/audits/P01-Q2-B-R4-PART-62.json",
+      "blob_sha": "bd4ccfc15e8082a29593dc0f775d2c2460ec1d02",
+      "scope": {
+        "start": "P01-1526",
+        "end": "P01-1550",
+        "part": 62
+      },
+      "summary": {
+        "core_verified": 25,
+        "corrected": 0,
+        "unchanged": 25,
+        "full_axis_clearance_claimed": 0
+      }
+    },
+    {
+      "path": "docs/audits/P01-Q2-B-R4-PART-63.json",
+      "blob_sha": "4b18764a29c7112a79068bc72f244fc3c34ddca6",
+      "scope": {
+        "start": "P01-1551",
+        "end": "P01-1575",
+        "part": 63
+      },
+      "summary": {
+        "core_verified": 25,
+        "corrected": 1,
+        "unchanged": 24,
+        "full_axis_clearance_claimed": 0
+      }
+    },
+    {
+      "path": "docs/audits/P01-Q2-B-R4-RILEY-PRIORITY.json",
+      "blob_sha": "caf5eacd791f2b3224f267b3f069555d605f028a",
+      "scope": {
+        "part": 73,
+        "ids": [
+          "P01-1814",
+          "P01-1816"
+        ],
+        "noncontiguous_priority": true
+      },
+      "summary": {
+        "core_verified": 2,
+        "corrected": 2,
+        "unchanged": 0
+      }
+    }
+  ],
+  "correction_commits": [
+    "34fbbc49af8511b5f174e5e8623ed9a3cee2e40a",
+    "4f47d1c5bb9e3a0b22f228858fa28329e3853260"
+  ],
+  "count_policy": "Count unique verified IDs once, merge or skip priority IDs during sequential part 73 audit. Unverified axes are not claimed complete. Preserve prior audit and Q4 files."
+}
