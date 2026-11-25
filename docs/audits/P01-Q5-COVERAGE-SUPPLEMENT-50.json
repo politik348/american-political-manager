@@ -15,7 +15,7 @@
       "data/dialogue-packs/P01/part-82.json"
     ],
     "remoteBlobs": [
-      "0ea5e4a58fb627f418a209e3e2c426dd71681a55",
+      "4b366fe594aba1d9596932953d2546cd07395b5b",
       "d9aa619d17041aadf11ad5e6cd42818783876ee2"
     ],
     "range": "P01-2001–2050",
@@ -1063,11 +1063,11 @@
       },
       {
         "id": "P01-2024",
-        "target": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+        "target": "Chellie Pingree's ME-01 district page lists Lincoln and Sagadahoc among its constituent counties, so casework planning cannot be limited to Portland.",
         "priorExactTarget": false,
         "priorClosest": {
           "id": "P01-1329",
-          "similarity": 0.5555555555555556,
+          "similarity": 0.1111111111111111,
           "target": "Pingree's district office was at Portland Fish Pier."
         }
       },
@@ -1332,14 +1332,17 @@
         }
       }
     ],
-    "highSimilarityFlags": [
+    "highSimilarityFlags": [],
+    "remediation": [
       {
         "id": "P01-2024",
-        "target": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
-        "priorExactTarget": false,
-        "priorClosest": {
+        "previousClosest": "P01-1329",
+        "previousSimilarity": 0.5555555555555556,
+        "action": "Replaced Portland Fish Pier office question with Lincoln/Sagadahoc county casework routing",
+        "source": "https://pingree.house.gov/1st-district/",
+        "newClosest": {
           "id": "P01-1329",
-          "similarity": 0.5555555555555556,
+          "similarity": 0.1111111111111111,
           "target": "Pingree's district office was at Portland Fish Pier."
         }
       }
@@ -2077,7 +2080,7 @@
     {
       "id": "P01-2024",
       "category": "geography",
-      "target": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+      "target": "Chellie Pingree's ME-01 district page lists Lincoln and Sagadahoc among its constituent counties, so casework planning cannot be limited to Portland.",
       "cast": [
         {
           "id": "P000597",
@@ -2089,20 +2092,20 @@
       ],
       "evidence": [
         {
-          "url": "https://pingree.house.gov/contact/contactform.htm",
-          "claim": "Chellie Pingree's ME-01 constituent services list a district office at Portland Fish Pier.",
+          "url": "https://pingree.house.gov/1st-district/",
+          "claim": "Official ME-01 district page lists Lincoln and Sagadahoc counties, among others; listing does not establish exact county-wide boundaries.",
           "asOf": "2026-11-25"
         },
         {
-          "url": "https://clerk.house.gov/Members/ViewMemberList",
-          "claim": "119th Congress member, party and district.",
+          "url": "https://bioguide.congress.gov/search/bio/P000597",
+          "claim": "Biographical identity of Chellie Pingree.",
           "asOf": "2026-11-25"
         }
       ],
       "answer": {
-        "id": "D",
-        "ko": "포틀랜드",
-        "en": "Portland"
+        "id": "A",
+        "ko": "새거더혹",
+        "en": "Sagadahoc"
       }
     },
     {
