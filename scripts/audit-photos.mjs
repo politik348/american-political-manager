@@ -1,0 +1,7 @@
+// Bounded audit: no claim that every historical figure has a portrait.
+const base='https://theunitedstates.io/images/congress/225x275/';
+const records=await Promise.all(['legislators-historical.json','legislators-current.json'].map(async f=>{const r=await fetch('https://unitedstates.github.io/congress-legislators/'+f);if(!r.ok)throw Error('Dataset HTTP '+r.status);return r.json()}));
+const all=records.flat().filter(p=>p.id?.bioguide&&p.terms?.some(t=>+t.end.slice(0,4)>=1900));
+const ids=[...new Set(all.map(p=>p.id.bioguide))];const limit=Math.min(ids.length,Number(process.env.APM_PHOTO_LIMIT||120));const sample=Array.from({length:limit},(_,i)=>ids[Math.floor(i*ids.length/limit)]);let counts={ok:0,missing:0,other:0};const results=[];
+for(let i=0;i<sample.length;i+=8)await Promise.all(sample.slice(i,i+8).map(async id=>{try{const r=await fetch(base+id+'.jpg',{method:'HEAD',signal:AbortSignal.timeout(10000)});const status=r.ok&&r.headers.get('content-type')?.startsWith('image/')?'ok':r.status===404?'missing':'other';counts[status]++;results.push({id,status,http:r.status})}catch(e){counts.other++;results.push({id,status:'other',error:String(e)})}}));
+console.log(JSON.stringify({population:ids.length,sampleSize:limit,counts,results},null,2));
