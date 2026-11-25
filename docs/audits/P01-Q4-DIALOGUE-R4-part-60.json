@@ -1,0 +1,4239 @@
+{
+  "schema": "q4-r4-preliminary-v1",
+  "round": 4,
+  "part": 60,
+  "source": {
+    "path": "data/dialogue-packs/P01/part-60.json",
+    "blobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+    "commit": "109e66b1787bd90e0e63be5dfe3502d8cdc8c3ff"
+  },
+  "screened": 25,
+  "deepReviewed": 0,
+  "rows": [
+    {
+      "id": "P01-1476",
+      "mechanism": "map-routing",
+      "learningTarget": "St. George was included in Stewart's UT-2, and Bishop served UT-1.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "세인트조지 일정은 {{blank}} 의원과 잡겠습니다.",
+        "en": "I'll arrange the St. George visit with Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "스튜어트",
+            "en": "Stewart"
+          },
+          {
+            "id": "B",
+            "ko": "비숍",
+            "en": "Bishop"
+          },
+          {
+            "id": "C",
+            "ko": "커티스",
+            "en": "Curtis"
+          },
+          {
+            "id": "D",
+            "ko": "맥애덤스",
+            "en": "McAdams"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구에는 세인트조지가 있습니다. 남부 사무실도 그곳에 두고 있죠.",
+          "en": "My district includes St. George, where I have a southern office."
+        },
+        {
+          "speaker": "player",
+          "ko": "세인트조지 주민과 약속이 잡혔는데 어느 의원실로 갈까요?",
+          "en": "We have an appointment with St. George residents. Which office should we visit?"
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 북쪽 브리검시티에 사무실이 있습니다. 같은 주라도 일정이 다릅니다.",
+          "en": "My office is in Brigham City up north. Our schedules cover different areas."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "남부 사무실로 안내하겠습니다. 다음에 북부도 방문하세요.",
+            "en": "I'll direct you to the southern office. Visit the north another time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년 세인트조지는 스튜어트의 유타 제2구였습니다.",
+            "en": "In 2020 St. George was in Stewart's UT-2."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "S001192",
+          "name": "Chris Stewart"
+        },
+        {
+          "id": "B001250",
+          "name": "Rob Bishop"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1477",
+      "mechanism": "municipal-versus-county",
+      "learningTarget": "Curtis was mayor of Provo 2010–2017; McAdams was Salt Lake County mayor 2013–2019.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "맥애덤스 의원은 {{blank}}의 행정책임자였습니다.",
+        "en": "McAdams led {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프로보 시",
+            "en": "the city of Provo"
+          },
+          {
+            "id": "B",
+            "ko": "카운티 정부",
+            "en": "a county government"
+          },
+          {
+            "id": "C",
+            "ko": "유타 주",
+            "en": "the state of Utah"
+          },
+          {
+            "id": "D",
+            "ko": "연방 행정부",
+            "en": "the federal executive"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "두 의원님을 시장이라고 소개하려다 멈췄습니다. 같은 유형의 지방정부였나요?",
+          "en": "I almost introduced both of you as mayors. Did you lead the same kind of local government?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 프로보 시를 맡았습니다.",
+          "en": "I led the city of Provo."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 경우에는 솔트레이크 카운티였습니다.",
+          "en": "In my case it was Salt Lake County."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "시와 카운티의 업무를 구별한 소개가 되겠군요.",
+            "en": "That introduction distinguishes city and county government."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "맥애덤스는 2013~2019년 솔트레이크 카운티 시장이었습니다.",
+            "en": "McAdams was Salt Lake County mayor in 2013–2019."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "C001114",
+          "name": "John R. Curtis"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1478",
+      "mechanism": "shared-county-map",
+      "learningTarget": "Both UT-2 and UT-4 included parts of Salt Lake County in the 116th Congress.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "그렇다면 {{blank}}부터 확인하겠습니다.",
+        "en": "Then I'll first verify {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주민의 정당",
+            "en": "party affiliation"
+          },
+          {
+            "id": "B",
+            "ko": "주민의 직업",
+            "en": "occupation"
+          },
+          {
+            "id": "C",
+            "ko": "주민의 주소",
+            "en": "the resident's address"
+          },
+          {
+            "id": "D",
+            "ko": "의원의 출생지",
+            "en": "the member's birthplace"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "솔트레이크 카운티 주민이 의원을 만나고 싶다고 합니다. 카운티만 알면 충분한가요?",
+          "en": "A Salt Lake County resident wants to meet a representative. Is the county name enough?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제2구에도 카운티 일부가 포함됩니다.",
+          "en": "District two contains part of the county."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제4구 역시 그렇습니다. 상세 주소가 필요해요.",
+          "en": "So does district four. We need the precise address."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "정확한 경계로 주민을 안내할 수 있겠네요.",
+            "en": "That will route the resident using the correct boundary."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "두 선거구 모두 솔트레이크 카운티 일부를 포함했습니다.",
+            "en": "Both districts contained parts of Salt Lake County."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "S001192",
+          "name": "Chris Stewart"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1479",
+      "mechanism": "education-to-legislature",
+      "learningTarget": "Bishop taught high school and was Utah House speaker during his last two years in the state legislature.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "비숍 의원의 의장 경력은 {{blank}}입니다.",
+        "en": "Bishop's speakership was in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "연방 하원",
+            "en": "U.S. House"
+          },
+          {
+            "id": "B",
+            "ko": "유타 주 상원",
+            "en": "Utah Senate"
+          },
+          {
+            "id": "C",
+            "ko": "프로보 시의회",
+            "en": "Provo city council"
+          },
+          {
+            "id": "D",
+            "ko": "유타 주 하원",
+            "en": "Utah House"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "학생이 의회에 오기 전 교사였던 의원님께 질문하고 싶대요.",
+          "en": "A student wants to ask the representative who taught school a question."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 고등학교에서 가르쳤고 주 하원 의장도 맡았습니다.",
+          "en": "I taught high school and also served as state House speaker."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 시 행정부를 거쳤죠. 기관마다 권한이 다릅니다.",
+          "en": "I came through municipal executive office. Each institution has different powers."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생에게 주의회와 연방의회 구분을 알려주세요.",
+            "en": "Show the student how state and federal legislatures differ."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "비숍은 주 하원 임기 마지막 2년간 의장이었습니다.",
+            "en": "Bishop was state House speaker in his final two years there."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "B001250",
+          "name": "Rob Bishop"
+        },
+        {
+          "id": "C001114",
+          "name": "John R. Curtis"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1480",
+      "mechanism": "committee-referral",
+      "learningTarget": "McAdams served on House Financial Services and Curtis on Natural Resources in 2020.",
+      "interactionProxy": "institution_or_policy",
+      "question": {
+        "speaker": "player",
+        "ko": "금융 규제 문의는 {{blank}} 의원의 위원회 업무와 연결하겠습니다.",
+        "en": "I'll connect the financial regulation inquiry with Representative {{blank}}'s committee work.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "맥애덤스",
+            "en": "McAdams"
+          },
+          {
+            "id": "B",
+            "ko": "커티스",
+            "en": "Curtis"
+          },
+          {
+            "id": "C",
+            "ko": "비숍",
+            "en": "Bishop"
+          },
+          {
+            "id": "D",
+            "ko": "스튜어트",
+            "en": "Stewart"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "지난번 지방정부 역할을 비교했죠. 이번엔 금융 규제에 관한 문의가 들어왔습니다.",
+          "en": "We compared local government last time. Now we have a financial regulation question."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 위원회는 천연자원 문제를 다룹니다.",
+          "en": "My committee deals with natural resources."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 금융서비스위원회에 있습니다. 문의를 분류해 봅시다.",
+          "en": "I sit on Financial Services. Let's sort the inquiry."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지방정부 경험과 현재 위원회 관할을 함께 고려했군요.",
+            "en": "You've distinguished local experience from current committee jurisdiction."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년 맥애덤스는 금융서비스위원회 소속입니다.",
+            "en": "McAdams served on Financial Services in 2020."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "C001114",
+          "name": "John R. Curtis"
+        },
+        {
+          "id": "M001209",
+          "name": "Ben McAdams"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [
+        {
+          "speaker": "player",
+          "ko": "지난번 지방정부 역할을 비교했죠. 이번엔 금융 규제에 관한 문의가 들어왔습니다.",
+          "en": "We compared local government last time. Now we have a financial regulation question."
+        }
+      ],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1481",
+      "mechanism": "county-state-treasury",
+      "learningTarget": "Estes served as Sedgwick County treasurer before Kansas state treasurer.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "에스테스 의원의 카운티 경력은 {{blank}}입니다.",
+        "en": "Estes's county office was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          {
+            "id": "B",
+            "ko": "세지윅 카운티 재무관",
+            "en": "Sedgwick County treasurer"
+          },
+          {
+            "id": "C",
+            "ko": "그레이트벤드 시장",
+            "en": "Great Bend mayor"
+          },
+          {
+            "id": "D",
+            "ko": "연방 재무장관",
+            "en": "U.S. Treasury secretary"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "저는 두 수준의 재무 업무를 모두 경험했습니다.",
+          "en": "I've served in treasury roles at both levels."
+        },
+        {
+          "speaker": "player",
+          "ko": "카운티 세금 담당자와 주 재무관의 관계를 묻는 주민이 있습니다.",
+          "en": "A resident asks how county tax officials differ from the state treasurer."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 그레이트벤드 병원 이사회 경력이 있습니다. 서로 다른 지역기관입니다.",
+          "en": "I served on a hospital board in Great Bend. These are different local institutions."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지방 재무와 주정부 재무를 구분해 안내합시다.",
+            "en": "Let's distinguish county and state treasury work."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "에스테스는 세지윅 카운티 재무관을 지냈습니다.",
+            "en": "Estes served as Sedgwick County treasurer."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "E000298",
+          "name": "Ron Estes"
+        },
+        {
+          "id": "M001198",
+          "name": "Roger Marshall"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1482",
+      "mechanism": "hospital-board-visit",
+      "learningTarget": "Marshall chaired the board of Great Bend Regional Hospital before House service.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "마셜 의원이 이끌었던 이사회는 {{blank}}의 이사회였습니다.",
+        "en": "Marshall chaired the board of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Kansas State University",
+            "en": "Kansas State University"
+          },
+          {
+            "id": "B",
+            "ko": "Wichita City Council",
+            "en": "Wichita City Council"
+          },
+          {
+            "id": "C",
+            "ko": "Great Bend Regional Hospital",
+            "en": "Great Bend Regional Hospital"
+          },
+          {
+            "id": "D",
+            "ko": "Federal Reserve",
+            "en": "Federal Reserve"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "병원 운영위원회와 연방의회의 역할을 구별해 소개하고 싶습니다.",
+          "en": "I'd like to distinguish hospital governance from Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그레이트벤드의 병원 이사회 의장을 맡은 경험이 있습니다.",
+          "en": "I chaired a hospital board in Great Bend."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 지방정부 재무 경험과는 다른 기관이군요.",
+          "en": "That's a different institution from my county treasury experience."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "병원 경력은 의원직과 별도로 전시에 적어 주세요.",
+            "en": "Record the hospital role separately from congressional service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "마셜은 Great Bend Regional Hospital 이사회 의장이었습니다.",
+            "en": "Marshall chaired Great Bend Regional Hospital's board."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M001198",
+          "name": "Roger Marshall"
+        },
+        {
+          "id": "E000298",
+          "name": "Ron Estes"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1483",
+      "mechanism": "tribal-education-introduction",
+      "learningTarget": "Davids attended Haskell Indian Nations University in Lawrence.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "데이비즈 의원이 다닌 기관은 {{blank}}입니다.",
+        "en": "Davids attended {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "West Point",
+            "en": "West Point"
+          },
+          {
+            "id": "B",
+            "ko": "Kansas State University",
+            "en": "Kansas State University"
+          },
+          {
+            "id": "C",
+            "ko": "U.S. Naval Academy",
+            "en": "U.S. Naval Academy"
+          },
+          {
+            "id": "D",
+            "ko": "Haskell Indian Nations University",
+            "en": "Haskell Indian Nations University"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "교육기관 소개가 시작되기 전 데이비즈 의원이 학생을 만납니다.",
+          "en": "Before the school introductions, Davids greets a student."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "로렌스에서 원주민 교육기관에 다닌 경험이 있습니다.",
+          "en": "I attended a Native American educational institution in Lawrence."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 육군사관학교 출신입니다. 두 교육 경로를 나눠 기록해 주세요.",
+          "en": "I attended West Point. Record our educational paths separately."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 학교에서의 경험도 학생들에게 소개하겠습니다.",
+            "en": "I'll introduce that part of her education to the students."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "데이비즈는 Haskell Indian Nations University에 다녔습니다.",
+            "en": "Davids attended Haskell Indian Nations University."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "D000629",
+          "name": "Sharice Davids"
+        },
+        {
+          "id": "W000824",
+          "name": "Steve Watkins"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1484",
+      "mechanism": "cross-party-committee",
+      "learningTarget": "Davids (D) served on Transportation and Infrastructure and Marshall (R) on Agriculture.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "농산물 생산 정책에 관한 질문은 우선 {{blank}} 의원에게 하겠습니다.",
+        "en": "I'll start the agricultural production question with Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "마셜",
+            "en": "Marshall"
+          },
+          {
+            "id": "B",
+            "ko": "데이비즈",
+            "en": "Davids"
+          },
+          {
+            "id": "C",
+            "ko": "시네마",
+            "en": "Sinema"
+          },
+          {
+            "id": "D",
+            "ko": "에스테스",
+            "en": "Estes"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "기자가 두 의원을 함께 인터뷰할 기회를 주었습니다.",
+          "en": "A reporter offers a joint interview with the two members."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 제3구에서 교통·인프라위원회에 소속되어 있습니다.",
+          "en": "I represent district three and serve on Transportation and Infrastructure."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 제1구에서 농업위원회에 있습니다.",
+          "en": "I represent district one and serve on Agriculture."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 지역의 이해관계를 별도로 듣고 공통점을 찾아보세요.",
+            "en": "Hear each region's concerns before looking for common ground."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "마셜은 공화당 농업위원회 위원이고 데이비즈는 민주당 교통·인프라위원입니다.",
+            "en": "Marshall is a Republican on Agriculture; Davids is a Democrat on Transportation and Infrastructure."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "D000629",
+          "name": "Sharice Davids"
+        },
+        {
+          "id": "M001198",
+          "name": "Roger Marshall"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1485",
+      "mechanism": "veteran-inquiry",
+      "learningTarget": "Watkins served on House Veterans' Affairs until his resignation was accepted on July 20, 2020; Moran chaired Senate Veterans' Affairs in 2020.",
+      "interactionProxy": "institution_or_policy",
+      "question": {
+        "speaker": "player",
+        "ko": "두 위원회는 {{blank}}에 속합니다.",
+        "en": "The two committees belong to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "동일한 하원",
+            "en": "the same House"
+          },
+          {
+            "id": "B",
+            "ko": "서로 다른 원",
+            "en": "different chambers"
+          },
+          {
+            "id": "C",
+            "ko": "캔자스 주 의회",
+            "en": "Kansas legislature"
+          },
+          {
+            "id": "D",
+            "ko": "연방 법원",
+            "en": "the federal courts"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "퇴역군인이 양원 중 어디에서 보훈 문제를 다루는지 묻습니다.",
+          "en": "A veteran asks where veterans' policy is handled in Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 하원 보훈위원회 위원이었지만, 7월 20일 위원직에서 물러났습니다.",
+          "en": "I served on House Veterans' Affairs, but resigned from the committee on July 20."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "상원의 보훈위원회는 제가 위원장을 맡고 있지요.",
+          "en": "I chair Senate Veterans' Affairs."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "법안이 양원에서 어떻게 심의되는지 다음에 살펴보죠.",
+            "en": "Next we'll examine how legislation is considered by both chambers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "왓킨스는 전 하원 보훈위원회 위원이고, 모런은 현 상원 보훈위원장입니다.",
+            "en": "Watkins formerly served on the House committee; Moran chairs the Senate committee."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "W000824",
+          "name": "Steve Watkins"
+        },
+        {
+          "id": "M000934",
+          "name": "Jerry Moran"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1486",
+      "mechanism": "labor-history-exhibit",
+      "learningTarget": "Norcross worked as an electrician in IBEW Local 351 1979–1993.",
+      "interactionProxy": "career_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "노크로스 의원은 {{blank}}에서 전기기사로 일했습니다.",
+        "en": "Norcross worked as an electrician in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미국 치과의사협회",
+            "en": "American Dental Association"
+          },
+          {
+            "id": "B",
+            "ko": "해군",
+            "en": "U.S. Navy"
+          },
+          {
+            "id": "C",
+            "ko": "IBEW Local 351",
+            "en": "IBEW Local 351"
+          },
+          {
+            "id": "D",
+            "ko": "연방 국무부",
+            "en": "U.S. State Department"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1979년부터 1993년까지 전기 관련 직종에서 일했습니다.",
+          "en": "I worked in an electrical trade from 1979 to 1993."
+        },
+        {
+          "speaker": "host",
+          "ko": "노동조합 전시에서 의원님이 예전 직업을 설명하겠다고 합니다.",
+          "en": "At a labor history exhibit, a representative offers to explain his former occupation."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 치과의사 출신이죠. 직업별 조직도 다릅니다.",
+          "en": "I came from dentistry. Our professional organizations differ."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "노동조합과 연방의원 경력을 구분해 전시에 기록해 주세요.",
+            "en": "Record union and congressional service separately in the exhibit."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "노크로스는 IBEW Local 351에서 전기기사로 일했습니다.",
+            "en": "Norcross was an electrician in IBEW Local 351."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "N000188",
+          "name": "Donald Norcross"
+        },
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1487",
+      "mechanism": "shore-office-choice",
+      "learningTarget": "Van Drew represented Atlantic City in NJ-2, Kim represented NJ-3.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "애틀랜틱시티 주민에게는 {{blank}} 의원실을 안내하겠습니다.",
+        "en": "I'll direct the Atlantic City resident to Representative {{blank}}'s office.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "김",
+            "en": "Kim"
+          },
+          {
+            "id": "B",
+            "ko": "노크로스",
+            "en": "Norcross"
+          },
+          {
+            "id": "C",
+            "ko": "셰릴",
+            "en": "Sherrill"
+          },
+          {
+            "id": "D",
+            "ko": "밴 드루",
+            "en": "Van Drew"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "애틀랜틱시티 주민이 연방 의원실에 문의하려 합니다.",
+          "en": "An Atlantic City resident wants to contact a House office."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구에 애틀랜틱시티와 케이프메이가 있습니다.",
+          "en": "My district includes Atlantic City and Cape May."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 벌링턴과 오션 카운티 일부를 대표합니다.",
+          "en": "I represent parts of Burlington and Ocean counties."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민이 살고 있는 도시를 기준으로 확인했군요.",
+            "en": "You checked the city where the constituent lives."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년 애틀랜틱시티는 밴 드루의 제2구였습니다.",
+            "en": "Atlantic City was in Van Drew's NJ-2 in 2020."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew"
+        },
+        {
+          "id": "K000394",
+          "name": "Andy Kim"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1488",
+      "mechanism": "national-security-career",
+      "learningTarget": "Kim served as Iraq director on National Security Council 2013–2015; Sherrill served in Navy.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "김 의원의 당시 소속은 {{blank}}입니다.",
+        "en": "Kim's office then was the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "국가안보회의",
+            "en": "National Security Council"
+          },
+          {
+            "id": "B",
+            "ko": "해군",
+            "en": "Navy"
+          },
+          {
+            "id": "C",
+            "ko": "하원 세입위원회",
+            "en": "House Ways and Means"
+          },
+          {
+            "id": "D",
+            "ko": "주 상원",
+            "en": "state Senate"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "방송 진행자가 의회 이전 안보 관련 경력을 비교해 달라고 합니다.",
+          "en": "A broadcaster asks us to compare national-security careers before Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2013~2015년 백악관에서 이라크 관련 정책을 담당했습니다.",
+          "en": "From 2013 to 2015 I handled Iraq policy in the White House."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 해군에서 복무했습니다. 두 역할은 서로 다릅니다.",
+          "en": "I served in the Navy. The roles are different."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "행정부 정책 업무와 군 복무를 구별한 소개입니다.",
+            "en": "That distinguishes executive policy work from military service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "김은 2013~2015년 국가안보회의 이라크 담당 책임자였습니다.",
+            "en": "Kim was NSC director for Iraq from 2013 to 2015."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "K000394",
+          "name": "Andy Kim"
+        },
+        {
+          "id": "S001207",
+          "name": "Mikie Sherrill"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1489",
+      "mechanism": "town-hall-office",
+      "learningTarget": "Kim's district office in Toms River was located in the township town hall in 2020.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "톰스리버에서는 {{blank}}에 있는 김 의원실로 안내하겠습니다.",
+        "en": "In Toms River I'll direct the resident to Kim's office at the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "주 대법원",
+            "en": "state supreme court"
+          },
+          {
+            "id": "B",
+            "ko": "타운십 청사",
+            "en": "town hall"
+          },
+          {
+            "id": "C",
+            "ko": "주지사 관저",
+            "en": "governor's residence"
+          },
+          {
+            "id": "D",
+            "ko": "연방 상원 청사",
+            "en": "Senate office building"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "지난 해안 주민 안내 이후 다른 주민이 톰스리버의 사무실 위치를 물었습니다.",
+          "en": "After the coastal referral, another resident asks about an office in Toms River."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역 사무실 중 하나는 타운십 청사에 있습니다.",
+          "en": "One of my district offices is in the township hall."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제 사무실은 메이스랜딩에 있습니다. 시청과 의원실은 같은 기관이 아니죠.",
+          "en": "My office is in Mays Landing. A municipal hall and a congressional office are not the same institution."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "건물을 공유하더라도 연방 의원실과 지방정부를 구분해야 합니다.",
+            "en": "Sharing a building does not make the offices part of the same government."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년 김 의원의 사무실은 톰스리버 타운십 청사에 있었습니다.",
+            "en": "Kim's Toms River office was in the township town hall in 2020."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "K000394",
+          "name": "Andy Kim"
+        },
+        {
+          "id": "V000133",
+          "name": "Jefferson Van Drew"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1490",
+      "mechanism": "human-rights-archive",
+      "learningTarget": "Malinowski served as Assistant Secretary of State for Democracy, Human Rights, and Labor 2014–2017.",
+      "interactionProxy": "career_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "말리노스키 의원의 차관보 직책은 {{blank}} 소속이었습니다.",
+        "en": "Malinowski's assistant secretary position was in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "노동부",
+            "en": "Department of Labor"
+          },
+          {
+            "id": "B",
+            "ko": "법무부",
+            "en": "Department of Justice"
+          },
+          {
+            "id": "C",
+            "ko": "국무부",
+            "en": "Department of State"
+          },
+          {
+            "id": "D",
+            "ko": "뉴저지 주정부",
+            "en": "New Jersey state government"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "외교부 직책이 적힌 두 개의 옛 명함을 발견했습니다.",
+          "en": "I found two old business cards listing State Department roles."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 민주주의·인권·노동 담당 차관보를 지냈습니다.",
+          "en": "I was assistant secretary for democracy, human rights and labor."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저도 국무부 외교 업무를 했지만 맡은 직책은 달랐습니다.",
+          "en": "I worked in foreign affairs at State too, but in a different role."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "명함은 당시 직책을 보여주는 자료로 보관하세요.",
+            "en": "Keep the card as a record of that former office."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "말리노스키는 2014~2017년 국무부 차관보였습니다.",
+            "en": "Malinowski was a State Department assistant secretary from 2014 to 2017."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "M001203",
+          "name": "Tom Malinowski"
+        },
+        {
+          "id": "K000394",
+          "name": "Andy Kim"
+        }
+      ],
+      "literalAnswerMatches": [
+        {
+          "i": 2,
+          "speaker": "npc:1",
+          "ko": true,
+          "en": false
+        }
+      ],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1491",
+      "mechanism": "district-broker",
+      "learningTarget": "Sherrill's NJ-11 included Parsippany-Troy Hills; Booker represented NJ statewide.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "그 지역의 하원 대표는 {{blank}} 의원입니다.",
+        "en": "The House representative for that area is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "부커",
+            "en": "Booker"
+          },
+          {
+            "id": "B",
+            "ko": "김",
+            "en": "Kim"
+          },
+          {
+            "id": "C",
+            "ko": "밴 드루",
+            "en": "Van Drew"
+          },
+          {
+            "id": "D",
+            "ko": "셰릴",
+            "en": "Sherrill"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제 지역구에는 파시패니트로이힐스가 포함됩니다.",
+          "en": "My district includes Parsippany-Troy Hills."
+        },
+        {
+          "speaker": "player",
+          "ko": "뉴어크에서 온 상원의원이 인근 교외 지역 의원을 소개합니다.",
+          "en": "A senator from Newark introduces a representative from nearby suburbs."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 상원의원으로서 그 지역도 포함한 뉴저지 전역을 대표하죠.",
+          "en": "As senator I represent all of New Jersey, including that area."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "광역권을 공유해도 대표 범위는 다르죠.",
+            "en": "A shared metropolitan region does not mean the same constituency."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "파시패니트로이힐스는 2020년 제11구였습니다.",
+            "en": "Parsippany-Troy Hills was in NJ-11 in 2020."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "S001207",
+          "name": "Mikie Sherrill"
+        },
+        {
+          "id": "B001288",
+          "name": "Cory A. Booker"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1492",
+      "mechanism": "county-legal-reunion",
+      "learningTarget": "Kirkpatrick served as Sedona city attorney 1990–1991.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "커크패트릭 의원은 세도나의 {{blank}}였습니다.",
+        "en": "Kirkpatrick was Sedona's {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "시 법률고문",
+            "en": "city attorney"
+          },
+          {
+            "id": "B",
+            "ko": "시장",
+            "en": "mayor"
+          },
+          {
+            "id": "C",
+            "ko": "시의장",
+            "en": "council president"
+          },
+          {
+            "id": "D",
+            "ko": "연방 검사장",
+            "en": "U.S. attorney"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지역 법률가가 연방의원에게 지방정부 경험을 묻습니다.",
+          "en": "A local lawyer asks the representatives about municipal experience."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1990~1991년 세도나의 법률 업무를 맡았습니다.",
+          "en": "In 1990–1991 I handled legal work for Sedona."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 시카고 경찰 출신입니다. 지역정부의 법률 업무와 치안은 다르죠.",
+          "en": "I came from the Chicago police. Municipal legal work and policing differ."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지방정부 직책을 구분해서 기록해 주세요.",
+            "en": "Record the municipal roles separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "커크패트릭은 1990~1991년 세도나 시 법률고문이었습니다.",
+            "en": "Kirkpatrick was Sedona city attorney in 1990–1991."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick"
+        },
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1493",
+      "mechanism": "changed-district-career",
+      "learningTarget": "Kirkpatrick represented AZ-1 in the 111th, 113th and 114th Congresses (January 3, 2009–January 3, 2011; January 3, 2013–January 3, 2017) and AZ-2 in 2020.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "커크패트릭 의원의 2020년 대표 지역은 {{blank}}입니다.",
+        "en": "Kirkpatrick's 2020 constituency is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "AZ-1",
+            "en": "AZ-1"
+          },
+          {
+            "id": "B",
+            "ko": "AZ-2",
+            "en": "AZ-2"
+          },
+          {
+            "id": "C",
+            "ko": "AZ-3",
+            "en": "AZ-3"
+          },
+          {
+            "id": "D",
+            "ko": "AZ-9",
+            "en": "AZ-9"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "옛 제1구 지도를 가지고 왔는데 지금도 이 번호로 소개하면 되나요?",
+          "en": "I brought an old district-one map. Should I still introduce you using that number?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2018년에 제2구에서 당선됐습니다.",
+          "en": "I won election in district two in 2018."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "지금 제1구를 맡은 사람은 저입니다.",
+          "en": "I now represent district one."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이전 경력과 현재 대표 지역을 따로 표기합시다.",
+            "en": "Let's label earlier service and present representation separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년에는 커크패트릭이 제2구, 오핼러런이 제1구 의원입니다.",
+            "en": "In 2020 Kirkpatrick holds AZ-2 and O'Halleran AZ-1."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick"
+        },
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1494",
+      "mechanism": "county-split-inquiry",
+      "learningTarget": "Pima County was partly in AZ-1 and AZ-2 in the 116th Congress.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "주민의 지역구를 알아보려면 {{blank}}가 필요합니다.",
+        "en": "To identify the resident's district we need {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "출생 지역",
+            "en": "birthplace"
+          },
+          {
+            "id": "B",
+            "ko": "소속 정당",
+            "en": "party affiliation"
+          },
+          {
+            "id": "C",
+            "ko": "구체적인 주소",
+            "en": "a specific address"
+          },
+          {
+            "id": "D",
+            "ko": "학력",
+            "en": "education"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "피마 카운티에서 온 주민의 민원서를 받았습니다.",
+          "en": "I received a constituent inquiry from Pima County."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제1구에도 피마 일부가 있습니다.",
+          "en": "Part of Pima is in district one."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제2구도 피마의 일부를 포함합니다.",
+          "en": "District two includes part of Pima too."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 전체가 단일 선거구에 포함된다고 가정하지 마세요.",
+            "en": "Do not assume an entire county falls in one district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "피마 카운티는 여러 연방 하원 지역구에 걸쳐 있었습니다.",
+            "en": "Pima County was divided among House districts."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran"
+        },
+        {
+          "id": "K000368",
+          "name": "Ann Kirkpatrick"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1495",
+      "mechanism": "tribal-policy-chamber",
+      "learningTarget": "O'Halleran belonged to Congressional Native American Caucus; McSally served on Senate Indian Affairs in 2020.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "오핼러런 의원의 소속 모임은 {{blank}}입니다.",
+        "en": "O'Halleran's group is the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Senate Indian Affairs",
+            "en": "Senate Indian Affairs"
+          },
+          {
+            "id": "B",
+            "ko": "House Ways and Means",
+            "en": "House Ways and Means"
+          },
+          {
+            "id": "C",
+            "ko": "Joint Economic Committee",
+            "en": "Joint Economic Committee"
+          },
+          {
+            "id": "D",
+            "ko": "Congressional Native American Caucus",
+            "en": "Congressional Native American Caucus"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "부족정부 관계자가 양원 정책 담당자를 함께 만나고 싶다고 합니다.",
+          "en": "A tribal-government representative wants to meet policy contacts in both chambers."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 하원의 원주민 관련 의원 모임에 참여합니다.",
+          "en": "I belong to a Native American caucus in the House."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 상원 인디언 사무위원회에 소속되어 있습니다.",
+          "en": "I serve on Senate Indian Affairs."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "코커스와 상원 위원회는 별개의 조직입니다.",
+            "en": "A caucus and a Senate committee are separate bodies."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "오핼러런은 Congressional Native American Caucus에 참여했습니다.",
+            "en": "O'Halleran belonged to the Congressional Native American Caucus."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "O000171",
+          "name": "Tom O’Halleran"
+        },
+        {
+          "id": "M001197",
+          "name": "Martha McSally"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1496",
+      "mechanism": "suburban-office",
+      "learningTarget": "Phillips' MN-3 included Eden Prairie and Minnetonka; his office was in Minnetonka.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "미네통카의 {{blank}} 의원실로 안내하겠습니다.",
+        "en": "I'll direct them to Representative {{blank}}'s Minnetonka office.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "필립스",
+            "en": "Phillips"
+          },
+          {
+            "id": "B",
+            "ko": "매컬럼",
+            "en": "McCollum"
+          },
+          {
+            "id": "C",
+            "ko": "해거던",
+            "en": "Hagedorn"
+          },
+          {
+            "id": "D",
+            "ko": "마셜",
+            "en": "Marshall"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "제3구에 이든프레리와 미네통카가 있습니다.",
+          "en": "District three includes Eden Prairie and Minnetonka."
+        },
+        {
+          "speaker": "player",
+          "ko": "이든프레리 주민이 지역 의원실을 직접 찾아가려 합니다.",
+          "en": "An Eden Prairie resident wants to visit their district office."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 세인트폴 쪽 제4구를 대표합니다.",
+          "en": "I represent district four on the St. Paul side."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "도심과 교외의 대표 지역을 나눠서 안내했군요.",
+            "en": "You've distinguished the urban and suburban constituencies."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "이든프레리는 필립스의 제3구였습니다.",
+            "en": "Eden Prairie was in Phillips' third district."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "P000616",
+          "name": "Dean Phillips"
+        },
+        {
+          "id": "M001143",
+          "name": "Betty McCollum"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1497",
+      "mechanism": "small-business-exhibit",
+      "learningTarget": "Phillips co-founded Penny's Coffee in 2016; Hagedorn served on House Small Business.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "필립스 의원이 공동 창립한 사업체는 {{blank}}입니다.",
+        "en": "Phillips co-founded {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "General Mills",
+            "en": "General Mills"
+          },
+          {
+            "id": "B",
+            "ko": "Penny's Coffee",
+            "en": "Penny's Coffee"
+          },
+          {
+            "id": "C",
+            "ko": "Great Bend Regional Hospital",
+            "en": "Great Bend Regional Hospital"
+          },
+          {
+            "id": "D",
+            "ko": "Action Target",
+            "en": "Action Target"
+          }
+        ],
+        "correct": "B"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지역 카페 행사에서 의원의 창업 경험에 대해 이야기가 나옵니다.",
+          "en": "At a local cafe event, a member's business experience comes up."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2016년에 커피 사업체를 공동 창립한 적이 있습니다.",
+          "en": "I co-founded a coffee business in 2016."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 하원 중소기업위원회에 소속되어 있습니다.",
+          "en": "I serve on the House Small Business Committee."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "기업 경험과 위원회 활동을 각각 소개하죠.",
+            "en": "Let's introduce the business experience and committee work separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "필립스는 2016년 Penny's Coffee를 공동 창립했습니다.",
+            "en": "Phillips co-founded Penny's Coffee in 2016."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "P000616",
+          "name": "Dean Phillips"
+        },
+        {
+          "id": "H001088",
+          "name": "Jim Hagedorn"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1498",
+      "mechanism": "treasury-staff-recall",
+      "learningTarget": "Hagedorn worked in Treasury's Bureau of Engraving and Printing as congressional affairs officer.",
+      "interactionProxy": "career_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "해거던 의원의 당시 소속은 {{blank}}입니다.",
+        "en": "Hagedorn's former agency was the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "Federal Election Commission",
+            "en": "Federal Election Commission"
+          },
+          {
+            "id": "B",
+            "ko": "National Park Service",
+            "en": "National Park Service"
+          },
+          {
+            "id": "C",
+            "ko": "Bureau of Engraving and Printing",
+            "en": "Bureau of Engraving and Printing"
+          },
+          {
+            "id": "D",
+            "ko": "U.S. Postal Service",
+            "en": "U.S. Postal Service"
+          }
+        ],
+        "correct": "C"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "지난번 기업 전시에서 만난 해거던 의원에게 연방기관 경력을 묻습니다.",
+          "en": "I ask Hagedorn, whom I met at the business exhibit, about his federal agency experience."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "연방 재무부의 화폐 인쇄 관련 기관에서 의회 연락 업무를 담당했습니다.",
+          "en": "I handled congressional affairs at a Treasury agency concerned with currency production."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 금융서비스위원회에서 일합니다. 기관의 업무를 구분해 봅시다.",
+          "en": "I serve on Financial Services. Let's distinguish the agency's role."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "재무부 직원 경력과 현재 하원 임기를 나누어 기록하세요.",
+            "en": "Record Treasury employment separately from House service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "해거던은 재무부 Bureau of Engraving and Printing에서 의회 업무를 담당했습니다.",
+            "en": "Hagedorn was a congressional affairs officer at the Bureau of Engraving and Printing."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "H001088",
+          "name": "Jim Hagedorn"
+        },
+        {
+          "id": "P000616",
+          "name": "Dean Phillips"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [
+        {
+          "speaker": "player",
+          "ko": "지난번 기업 전시에서 만난 해거던 의원에게 연방기관 경력을 묻습니다.",
+          "en": "I ask Hagedorn, whom I met at the business exhibit, about his federal agency experience."
+        }
+      ],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1499",
+      "mechanism": "statewide-constituency",
+      "learningTarget": "Alaska had one at-large House seat in 2020; Young held it, Murkowski was senator.",
+      "interactionProxy": "geography_or_referral",
+      "question": {
+        "speaker": "player",
+        "ko": "영 의원의 하원 지역구는 {{blank}}입니다.",
+        "en": "Young's House constituency is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "앵커리지 제1구",
+            "en": "Anchorage district one"
+          },
+          {
+            "id": "B",
+            "ko": "주노 제2구",
+            "en": "Juneau district two"
+          },
+          {
+            "id": "C",
+            "ko": "페어뱅크스 제3구",
+            "en": "Fairbanks district three"
+          },
+          {
+            "id": "D",
+            "ko": "알래스카 주 전체",
+            "en": "Alaska at large"
+          }
+        ],
+        "correct": "D"
+      },
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주노 주민이 도시별 하원의원 명단을 찾고 있습니다.",
+          "en": "A Juneau resident is searching for a city-specific House delegation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "알래스카에는 하원 의석이 하나뿐입니다.",
+          "en": "Alaska has just one House seat."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "상원은 두 의석이고 저도 주 전체를 대표합니다.",
+          "en": "There are two Senate seats, and I represent the entire state too."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지도에 주 전체 의석이라고 적어 주세요.",
+            "en": "Label the map as an at-large seat."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "2020년 영은 알래스카 주 전체 하원의원이었습니다.",
+            "en": "Young represented Alaska at large in 2020."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "Y000033",
+          "name": "Don Young"
+        },
+        {
+          "id": "M001153",
+          "name": "Lisa Murkowski"
+        }
+      ],
+      "literalAnswerMatches": [],
+      "priorPlayLanguage": [],
+      "identicalBranches": false,
+      "playerLines": 1,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    },
+    {
+      "id": "P01-1500",
+      "mechanism": "river-community-introduction",
+      "learningTarget": "Young served on Fort Yukon city council for six years, four as mayor; Sullivan headed Alaska Department of Natural Resources 2011–2013.",
+      "interactionProxy": "other_recall",
+      "question": {
+        "speaker": "player",
+        "ko": "영 의원의 지방정부 경력은 {{blank}}에서였습니다.",
+        "en": "Young's municipal service was in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "포트유콘",
+            "en": "Fort Yukon"
+          },
+          {
+            "id": "B",
+            "ko": "주노",
+            "en": "Juneau"
+          },
+          {
+            "id": "C",
+            "ko": "앵커리지",
+            "en": "Anchorage"
+          },
+          {
+            "id": "D",
+            "ko": "시트카",
+            "en": "Sitka"
+          }
+        ],
+        "correct": "A"
+      },
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "지난 대표성 설명에서 만난 영 의원이 옛 지방정부 경험을 소개합니다.",
+          "en": "Young, whom we met at the representation briefing, introduces his local government experience."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "포트유콘 시의회에서 6년 동안 활동했고 그중 4년은 시장이었습니다.",
+          "en": "I served six years on Fort Yukon city council, four as mayor."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "저는 주 천연자원부를 이끌었습니다. 지방정부와 주 기관은 다르죠.",
+          "en": "I led the state natural resources department. Municipal government and state agencies differ."
+        }
+      ],
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 전체를 대표하기 전에 활동했던 지역을 기록합시다.",
+            "en": "Record the community he served before statewide representation."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "영은 포트유콘 시의원과 시장을 지냈습니다.",
+            "en": "Young served as Fort Yukon council member and mayor."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "id": "Y000033",
+          "name": "Don Young"
+        },
+        {
+          "id": "S001198",
+          "name": "Dan Sullivan"
+        }
+      ],
+      "literalAnswerMatches": [
+        {
+          "i": 1,
+          "speaker": "npc:0",
+          "ko": true,
+          "en": true
+        }
+      ],
+      "priorPlayLanguage": [
+        {
+          "speaker": "host",
+          "ko": "지난 대표성 설명에서 만난 영 의원이 옛 지방정부 경험을 소개합니다.",
+          "en": "Young, whom we met at the representation briefing, introduces his local government experience."
+        }
+      ],
+      "identicalBranches": false,
+      "playerLines": 0,
+      "npcSpeakers": [
+        "npc:0",
+        "npc:1"
+      ],
+      "status": "preliminary_text_screen_not_independent_deep_grade"
+    }
+  ],
+  "patches": [
+    {
+      "id": "P01-1476",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구에는 세인트조지가 있습니다. 남부 사무실도 그곳에 두고 있죠.",
+            "en": "My district includes St. George, where I have a southern office."
+          },
+          {
+            "speaker": "player",
+            "ko": "세인트조지 주민과 약속이 잡혔는데 어느 의원실로 갈까요?",
+            "en": "We have an appointment with St. George residents. Which office should we visit?"
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 북쪽 브리검시티에 사무실이 있습니다. 같은 주라도 일정이 다릅니다.",
+            "en": "My office is in Brigham City up north. Our schedules cover different areas."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "세인트조지 일정은 {{blank}} 의원과 잡겠습니다.",
+          "en": "I'll arrange the St. George visit with Representative {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스튜어트",
+              "en": "Stewart"
+            },
+            {
+              "id": "B",
+              "ko": "비숍",
+              "en": "Bishop"
+            },
+            {
+              "id": "C",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "D",
+              "ko": "맥애덤스",
+              "en": "McAdams"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "남부 사무실로 안내하겠습니다. 다음에 북부도 방문하세요.",
+              "en": "I'll direct you to the southern office. Visit the north another time."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2020년 세인트조지는 스튜어트의 유타 제2구였습니다.",
+              "en": "In 2020 St. George was in Stewart's UT-2."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 지역구에는 세인트조지가 있습니다. 남부 사무실도 그곳에 두고 있죠.",
+              "en": "My district includes St. George, where I have a southern office."
+            },
+            {
+              "speaker": "player",
+              "ko": "세인트조지 주민과 약속이 잡혔는데 어느 의원실로 갈까요?",
+              "en": "We have an appointment with St. George residents. Which office should we visit?"
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 북쪽 브리검시티에 사무실이 있습니다. 같은 주라도 일정이 다릅니다.",
+              "en": "My office is in Brigham City up north. Our schedules cover different areas."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "세인트조지 주민들이 연방기관 문의를 가져왔는데 북부 출장과 시간이 겹칩니다.",
+              "en": "St. George residents have brought a federal-agency inquiry, but our northern trip conflicts."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역구를 기준으로 남부 일정 담당자를 정하세요. 잘못 배정하면 주민이 다시 이동해야 합니다.",
+              "en": "Assign the southern visit by congressional district; a wrong referral means another trip for residents."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "세인트조지 일정은 {{blank}} 의원과 잡겠습니다.",
+            "en": "I'll arrange the St. George visit with Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "스튜어트",
+                "en": "Stewart"
+              },
+              {
+                "id": "B",
+                "ko": "비숍",
+                "en": "Bishop"
+              },
+              {
+                "id": "C",
+                "ko": "커티스",
+                "en": "Curtis"
+              },
+              {
+                "id": "D",
+                "ko": "맥애덤스",
+                "en": "McAdams"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "남부 일정은 {{blank}} 의원실에 맡기겠습니다.",
+            "en": "I'll assign the southern visit to Representative {{blank}}'s office.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "스튜어트",
+                "en": "Stewart"
+              },
+              {
+                "id": "B",
+                "ko": "비숍",
+                "en": "Bishop"
+              },
+              {
+                "id": "C",
+                "ko": "커티스",
+                "en": "Curtis"
+              },
+              {
+                "id": "D",
+                "ko": "맥애덤스",
+                "en": "McAdams"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "남부 사무실로 안내하겠습니다. 다음에 북부도 방문하세요.",
+                "en": "I'll direct you to the southern office. Visit the north another time."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2020년 세인트조지는 스튜어트의 유타 제2구였습니다.",
+                "en": "In 2020 St. George was in Stewart's UT-2."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "남부 접견을 확정하고 주민의 문의를 사전에 전달합시다.",
+                "en": "Confirm the southern appointment and send the inquiry ahead."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "북부 일정과 혼동했군요. 세인트조지는 당시 스튜어트의 UT-2였으니 남부 사무실부터 연결하세요.",
+                "en": "That confuses the northern itinerary. St. George was in Stewart's UT-2 then; contact the southern office first."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1477",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "두 의원님을 시장이라고 소개하려다 멈췄습니다. 같은 유형의 지방정부였나요?",
+            "en": "I almost introduced both of you as mayors. Did you lead the same kind of local government?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 프로보 시를 맡았습니다.",
+            "en": "I led the city of Provo."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 경우에는 솔트레이크 카운티였습니다.",
+            "en": "In my case it was Salt Lake County."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "맥애덤스 의원은 {{blank}}의 행정책임자였습니다.",
+          "en": "McAdams led {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "프로보 시",
+              "en": "the city of Provo"
+            },
+            {
+              "id": "B",
+              "ko": "카운티 정부",
+              "en": "a county government"
+            },
+            {
+              "id": "C",
+              "ko": "유타 주",
+              "en": "the state of Utah"
+            },
+            {
+              "id": "D",
+              "ko": "연방 행정부",
+              "en": "the federal executive"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시와 카운티의 업무를 구별한 소개가 되겠군요.",
+              "en": "That introduction distinguishes city and county government."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "맥애덤스는 2013~2019년 솔트레이크 카운티 시장이었습니다.",
+              "en": "McAdams was Salt Lake County mayor in 2013–2019."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "두 의원님을 시장이라고 소개하려다 멈췄습니다. 같은 유형의 지방정부였나요?",
+              "en": "I almost introduced both of you as mayors. Did you lead the same kind of local government?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 프로보 시를 맡았습니다.",
+              "en": "I led the city of Provo."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 경우에는 솔트레이크 카운티였습니다.",
+              "en": "In my case it was Salt Lake County."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "광역 교통계획 회의에서 시와 카운티의 전직 행정책임자에게 서로 다른 질문을 맡기려 합니다.",
+              "en": "At a regional transport meeting, I need to assign different questions to the former city and county executives."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "한쪽에는 시내 도로, 다른 쪽에는 여러 도시를 연결하는 조정 문제를 맡기세요.",
+              "en": "Assign city streets to one and coordination across municipalities to the other."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "맥애덤스 의원은 {{blank}}의 행정책임자였습니다.",
+            "en": "McAdams led {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "프로보 시",
+                "en": "the city of Provo"
+              },
+              {
+                "id": "B",
+                "ko": "카운티 정부",
+                "en": "a county government"
+              },
+              {
+                "id": "C",
+                "ko": "유타 주",
+                "en": "the state of Utah"
+              },
+              {
+                "id": "D",
+                "ko": "연방 행정부",
+                "en": "the federal executive"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "광역 조정 경험을 확인하려면 맥애덤스가 이끈 {{blank}}에 주목하겠습니다.",
+            "en": "For regional coordination experience, I'll focus on McAdams's former leadership of {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "프로보 시",
+                "en": "the city of Provo"
+              },
+              {
+                "id": "B",
+                "ko": "카운티 정부",
+                "en": "a county government"
+              },
+              {
+                "id": "C",
+                "ko": "유타 주",
+                "en": "the state of Utah"
+              },
+              {
+                "id": "D",
+                "ko": "연방 행정부",
+                "en": "the federal executive"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시와 카운티의 업무를 구별한 소개가 되겠군요.",
+                "en": "That introduction distinguishes city and county government."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "맥애덤스는 2013~2019년 솔트레이크 카운티 시장이었습니다.",
+                "en": "McAdams was Salt Lake County mayor in 2013–2019."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "광역 조정 질문과 시내 도로 질문을 분리해 회의 자료를 준비하세요.",
+                "en": "Prepare separate briefing questions on regional coordination and city streets."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "프로보 시와 솔트레이크 카운티는 다른 행정 단위입니다. 맥애덤스는 후자를 맡았으니 질문을 다시 배정하세요.",
+                "en": "Provo and Salt Lake County are different jurisdictions. McAdams led the latter; reassign the questions."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1479",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "학생이 의회에 오기 전 교사였던 의원님께 질문하고 싶대요.",
+            "en": "A student wants to ask the representative who taught school a question."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 고등학교에서 가르쳤고 주 하원 의장도 맡았습니다.",
+            "en": "I taught high school and also served as state House speaker."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 시 행정부를 거쳤죠. 기관마다 권한이 다릅니다.",
+            "en": "I came through municipal executive office. Each institution has different powers."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "비숍 의원의 의장 경력은 {{blank}}입니다.",
+          "en": "Bishop's speakership was in the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 하원",
+              "en": "U.S. House"
+            },
+            {
+              "id": "B",
+              "ko": "유타 주 상원",
+              "en": "Utah Senate"
+            },
+            {
+              "id": "C",
+              "ko": "프로보 시의회",
+              "en": "Provo city council"
+            },
+            {
+              "id": "D",
+              "ko": "유타 주 하원",
+              "en": "Utah House"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "학생에게 주의회와 연방의회 구분을 알려주세요.",
+              "en": "Show the student how state and federal legislatures differ."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "비숍은 주 하원 임기 마지막 2년간 의장이었습니다.",
+              "en": "Bishop was state House speaker in his final two years there."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "학생이 의회에 오기 전 교사였던 의원님께 질문하고 싶대요.",
+              "en": "A student wants to ask the representative who taught school a question."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 고등학교에서 가르쳤고 주 하원 의장도 맡았습니다.",
+              "en": "I taught high school and also served as state House speaker."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 시 행정부를 거쳤죠. 기관마다 권한이 다릅니다.",
+              "en": "I came through municipal executive office. Each institution has different powers."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "학생들이 주법 개정과 연방법 개정의 차이를 토론하려 합니다. 비숍 의원의 의장 경력을 사례로 쓰겠습니다.",
+              "en": "Students want to distinguish changing state law from changing federal law. I'll use Bishop's speakership as a case."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "교사 출신이라는 사실만으로 어느 의회를 이끌었는지 알 수는 없습니다. 관할을 구분해 보세요.",
+              "en": "His teaching career alone does not identify the legislature he led. Distinguish the jurisdictions."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "비숍 의원의 의장 경력은 {{blank}}입니다.",
+            "en": "Bishop's speakership was in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 하원",
+                "en": "U.S. House"
+              },
+              {
+                "id": "B",
+                "ko": "유타 주 상원",
+                "en": "Utah Senate"
+              },
+              {
+                "id": "C",
+                "ko": "프로보 시의회",
+                "en": "Provo city council"
+              },
+              {
+                "id": "D",
+                "ko": "유타 주 하원",
+                "en": "Utah House"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "비숍 의원의 의장 경력은 {{blank}}에서의 경험입니다.",
+            "en": "Bishop's speakership was experience in the {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "연방 하원",
+                "en": "U.S. House"
+              },
+              {
+                "id": "B",
+                "ko": "유타 주 상원",
+                "en": "Utah Senate"
+              },
+              {
+                "id": "C",
+                "ko": "프로보 시의회",
+                "en": "Provo city council"
+              },
+              {
+                "id": "D",
+                "ko": "유타 주 하원",
+                "en": "Utah House"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "학생에게 주의회와 연방의회 구분을 알려주세요.",
+                "en": "Show the student how state and federal legislatures differ."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "비숍은 주 하원 임기 마지막 2년간 의장이었습니다.",
+                "en": "Bishop was state House speaker in his final two years there."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주법의 입법 절차를 설명하는 사례로 쓰고 연방 하원과 구분합시다.",
+                "en": "Use it to explain state legislative procedure, separately from the U.S. House."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "비숍이 의장이었던 곳은 유타 주 하원입니다. 연방 하원의 권한을 그대로 적용하면 안 됩니다.",
+                "en": "Bishop was speaker of the Utah House. Do not apply federal House authority to that role."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1480",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "지난번 지방정부 역할을 비교했죠. 이번엔 금융 규제에 관한 문의가 들어왔습니다.",
+            "en": "We compared local government last time. Now we have a financial regulation question."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제 위원회는 천연자원 문제를 다룹니다.",
+            "en": "My committee deals with natural resources."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 금융서비스위원회에 있습니다. 문의를 분류해 봅시다.",
+            "en": "I sit on Financial Services. Let's sort the inquiry."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "금융 규제 문의는 {{blank}} 의원의 위원회 업무와 연결하겠습니다.",
+          "en": "I'll connect the financial regulation inquiry with Representative {{blank}}'s committee work.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "맥애덤스",
+              "en": "McAdams"
+            },
+            {
+              "id": "B",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "C",
+              "ko": "비숍",
+              "en": "Bishop"
+            },
+            {
+              "id": "D",
+              "ko": "스튜어트",
+              "en": "Stewart"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지방정부 경험과 현재 위원회 관할을 함께 고려했군요.",
+              "en": "You've distinguished local experience from current committee jurisdiction."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2020년 맥애덤스는 금융서비스위원회 소속입니다.",
+              "en": "McAdams served on Financial Services in 2020."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "지난번 지방정부 역할을 비교했죠. 이번엔 금융 규제에 관한 문의가 들어왔습니다.",
+              "en": "We compared local government last time. Now we have a financial regulation question."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 위원회는 천연자원 문제를 다룹니다.",
+              "en": "My committee deals with natural resources."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 금융서비스위원회에 있습니다. 문의를 분류해 봅시다.",
+              "en": "I sit on Financial Services. Let's sort the inquiry."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "지역 상인이 대출 규제 문제와 연방 토지 이용 문제를 함께 가져왔습니다.",
+              "en": "A local merchant has raised both lending regulation and federal land use."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 문의를 한 의원에게 몰지 말고 당시 위원회 배정에 따라 나누세요.",
+              "en": "Do not send both to one member; divide them by committee assignment at the time."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "금융 규제 문의는 {{blank}} 의원의 위원회 업무와 연결하겠습니다.",
+            "en": "I'll connect the financial regulation inquiry with Representative {{blank}}'s committee work.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "맥애덤스",
+                "en": "McAdams"
+              },
+              {
+                "id": "B",
+                "ko": "커티스",
+                "en": "Curtis"
+              },
+              {
+                "id": "C",
+                "ko": "비숍",
+                "en": "Bishop"
+              },
+              {
+                "id": "D",
+                "ko": "스튜어트",
+                "en": "Stewart"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "대출 규제 문의는 {{blank}} 의원과 논의하겠습니다.",
+            "en": "I'll discuss the lending regulation inquiry with Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "맥애덤스",
+                "en": "McAdams"
+              },
+              {
+                "id": "B",
+                "ko": "커티스",
+                "en": "Curtis"
+              },
+              {
+                "id": "C",
+                "ko": "비숍",
+                "en": "Bishop"
+              },
+              {
+                "id": "D",
+                "ko": "스튜어트",
+                "en": "Stewart"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지방정부 경험과 현재 위원회 관할을 함께 고려했군요.",
+                "en": "You've distinguished local experience from current committee jurisdiction."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2020년 맥애덤스는 금융서비스위원회 소속입니다.",
+                "en": "McAdams served on Financial Services in 2020."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "금융 문의는 맥애덤스 측으로, 토지 문제는 커티스 측으로 분리해서 전달합시다.",
+                "en": "Route the finance inquiry to McAdams and the land question to Curtis separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "대출 규제와 토지 이용의 관할을 혼동했습니다. 맥애덤스는 금융서비스위원회, 커티스는 천연자원위원회였습니다.",
+                "en": "You confused the jurisdictions. McAdams served on Financial Services and Curtis on Natural Resources."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1484",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "기자가 두 의원을 함께 인터뷰할 기회를 주었습니다.",
+            "en": "A reporter offers a joint interview with the two members."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 제3구에서 교통·인프라위원회에 소속되어 있습니다.",
+            "en": "I represent district three and serve on Transportation and Infrastructure."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 제1구에서 농업위원회에 있습니다.",
+            "en": "I represent district one and serve on Agriculture."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "농산물 생산 정책에 관한 질문은 우선 {{blank}} 의원에게 하겠습니다.",
+          "en": "I'll start the agricultural production question with Representative {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마셜",
+              "en": "Marshall"
+            },
+            {
+              "id": "B",
+              "ko": "데이비즈",
+              "en": "Davids"
+            },
+            {
+              "id": "C",
+              "ko": "시네마",
+              "en": "Sinema"
+            },
+            {
+              "id": "D",
+              "ko": "에스테스",
+              "en": "Estes"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 지역의 이해관계를 별도로 듣고 공통점을 찾아보세요.",
+              "en": "Hear each region's concerns before looking for common ground."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "마셜은 공화당 농업위원회 위원이고 데이비즈는 민주당 교통·인프라위원입니다.",
+              "en": "Marshall is a Republican on Agriculture; Davids is a Democrat on Transportation and Infrastructure."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "기자가 두 의원을 함께 인터뷰할 기회를 주었습니다.",
+              "en": "A reporter offers a joint interview with the two members."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 제3구에서 교통·인프라위원회에 소속되어 있습니다.",
+              "en": "I represent district three and serve on Transportation and Infrastructure."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 제1구에서 농업위원회에 있습니다.",
+              "en": "I represent district one and serve on Agriculture."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "농가 대표는 생산 지원을, 운송업체는 도로 병목을 논의하고 싶어 합니다.",
+              "en": "Farm representatives want to discuss production support, while carriers want to discuss road bottlenecks."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 현안을 담당 위원회에 맞춰 분리하면 초당적 접견을 준비할 수 있습니다.",
+              "en": "Separate the issues by committee jurisdiction to prepare a bipartisan meeting."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "농산물 생산 정책에 관한 질문은 우선 {{blank}} 의원에게 하겠습니다.",
+            "en": "I'll start the agricultural production question with Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "마셜",
+                "en": "Marshall"
+              },
+              {
+                "id": "B",
+                "ko": "데이비즈",
+                "en": "Davids"
+              },
+              {
+                "id": "C",
+                "ko": "시네마",
+                "en": "Sinema"
+              },
+              {
+                "id": "D",
+                "ko": "에스테스",
+                "en": "Estes"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "농업 생산 문제는 {{blank}} 의원에게 먼저 연결하겠습니다.",
+            "en": "I'll first refer the agricultural production issue to Representative {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "마셜",
+                "en": "Marshall"
+              },
+              {
+                "id": "B",
+                "ko": "데이비즈",
+                "en": "Davids"
+              },
+              {
+                "id": "C",
+                "ko": "시네마",
+                "en": "Sinema"
+              },
+              {
+                "id": "D",
+                "ko": "에스테스",
+                "en": "Estes"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역의 이해관계를 별도로 듣고 공통점을 찾아보세요.",
+                "en": "Hear each region's concerns before looking for common ground."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "마셜은 공화당 농업위원회 위원이고 데이비즈는 민주당 교통·인프라위원입니다.",
+                "en": "Marshall is a Republican on Agriculture; Davids is a Democrat on Transportation and Infrastructure."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "농업 문의와 운송 문의의 자료를 별도로 전달합시다.",
+                "en": "Send separate briefs on farming and transport."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마셜은 농업위원회, 데이비즈는 교통·인프라위원회였습니다. 농업 문의를 다시 배정하세요.",
+                "en": "Marshall served on Agriculture and Davids on Transportation and Infrastructure. Reassign the farming inquiry."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1487",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "애틀랜틱시티 주민이 연방 의원실에 문의하려 합니다.",
+            "en": "An Atlantic City resident wants to contact a House office."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구에 애틀랜틱시티와 케이프메이가 있습니다.",
+            "en": "My district includes Atlantic City and Cape May."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 벌링턴과 오션 카운티 일부를 대표합니다.",
+            "en": "I represent parts of Burlington and Ocean counties."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "애틀랜틱시티 주민에게는 {{blank}} 의원실을 안내하겠습니다.",
+          "en": "I'll direct the Atlantic City resident to Representative {{blank}}'s office.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "김",
+              "en": "Kim"
+            },
+            {
+              "id": "B",
+              "ko": "노크로스",
+              "en": "Norcross"
+            },
+            {
+              "id": "C",
+              "ko": "셰릴",
+              "en": "Sherrill"
+            },
+            {
+              "id": "D",
+              "ko": "밴 드루",
+              "en": "Van Drew"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "주민이 살고 있는 도시를 기준으로 확인했군요.",
+              "en": "You checked the city where the constituent lives."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2020년 애틀랜틱시티는 밴 드루의 제2구였습니다.",
+              "en": "Atlantic City was in Van Drew's NJ-2 in 2020."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "애틀랜틱시티 주민이 연방 의원실에 문의하려 합니다.",
+              "en": "An Atlantic City resident wants to contact a House office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 지역구에 애틀랜틱시티와 케이프메이가 있습니다.",
+              "en": "My district includes Atlantic City and Cape May."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 벌링턴과 오션 카운티 일부를 대표합니다.",
+              "en": "I represent parts of Burlington and Ocean counties."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "애틀랜틱시티 주민이 연방기관 답변을 기다리고 있습니다. 뉴저지의 여러 의원실 중 하나를 골라야 합니다.",
+              "en": "An Atlantic City resident is waiting for a federal agency's reply. We must choose among New Jersey offices."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "현재 지도 대신 이 접견 시점의 지역구를 사용하세요.",
+              "en": "Use the district boundaries at the time of this meeting, not a current map."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "애틀랜틱시티 주민에게는 {{blank}} 의원실을 안내하겠습니다.",
+            "en": "I'll direct the Atlantic City resident to Representative {{blank}}'s office.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "김",
+                "en": "Kim"
+              },
+              {
+                "id": "B",
+                "ko": "노크로스",
+                "en": "Norcross"
+              },
+              {
+                "id": "C",
+                "ko": "셰릴",
+                "en": "Sherrill"
+              },
+              {
+                "id": "D",
+                "ko": "밴 드루",
+                "en": "Van Drew"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "애틀랜틱시티 주민은 {{blank}} 의원실로 안내하겠습니다.",
+            "en": "I'll refer the Atlantic City resident to Representative {{blank}}'s office.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "김",
+                "en": "Kim"
+              },
+              {
+                "id": "B",
+                "ko": "노크로스",
+                "en": "Norcross"
+              },
+              {
+                "id": "C",
+                "ko": "셰릴",
+                "en": "Sherrill"
+              },
+              {
+                "id": "D",
+                "ko": "밴 드루",
+                "en": "Van Drew"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주민이 살고 있는 도시를 기준으로 확인했군요.",
+                "en": "You checked the city where the constituent lives."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2020년 애틀랜틱시티는 밴 드루의 제2구였습니다.",
+                "en": "Atlantic City was in Van Drew's NJ-2 in 2020."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주민의 문의를 해당 지역구 사무실에 전달하고 접수 여부를 확인하세요.",
+                "en": "Forward the inquiry to that district office and check receipt."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 애틀랜틱시티는 밴드루의 NJ-2였습니다. 김 의원의 NJ-3와 구별해야 합니다.",
+                "en": "Atlantic City was in Van Drew's NJ-2 then; distinguish it from Kim's NJ-3."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1491",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구에는 파시패니트로이힐스가 포함됩니다.",
+            "en": "My district includes Parsippany-Troy Hills."
+          },
+          {
+            "speaker": "player",
+            "ko": "뉴어크에서 온 상원의원이 인근 교외 지역 의원을 소개합니다.",
+            "en": "A senator from Newark introduces a representative from nearby suburbs."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 상원의원으로서 그 지역도 포함한 뉴저지 전역을 대표하죠.",
+            "en": "As senator I represent all of New Jersey, including that area."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그 지역의 하원 대표는 {{blank}} 의원입니다.",
+          "en": "The House representative for that area is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부커",
+              "en": "Booker"
+            },
+            {
+              "id": "B",
+              "ko": "김",
+              "en": "Kim"
+            },
+            {
+              "id": "C",
+              "ko": "밴 드루",
+              "en": "Van Drew"
+            },
+            {
+              "id": "D",
+              "ko": "셰릴",
+              "en": "Sherrill"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "광역권을 공유해도 대표 범위는 다르죠.",
+              "en": "A shared metropolitan region does not mean the same constituency."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "파시패니트로이힐스는 2020년 제11구였습니다.",
+              "en": "Parsippany-Troy Hills was in NJ-11 in 2020."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 지역구에는 파시패니트로이힐스가 포함됩니다.",
+              "en": "My district includes Parsippany-Troy Hills."
+            },
+            {
+              "speaker": "player",
+              "ko": "뉴어크에서 온 상원의원이 인근 교외 지역 의원을 소개합니다.",
+              "en": "A senator from Newark introduces a representative from nearby suburbs."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 상원의원으로서 그 지역도 포함한 뉴저지 전역을 대표하죠.",
+              "en": "As senator I represent all of New Jersey, including that area."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "파시패니-트로이힐스 주민이 지역구 의원과 상원의원에게 같은 문의를 보냈습니다.",
+              "en": "A Parsippany-Troy Hills resident sent the same inquiry to a district member and a senator."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주 전체 대표와 지역구 대표의 역할을 구별해 하원 접견 담당자를 정하세요.",
+              "en": "Distinguish statewide from district representation and choose the House contact."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "그 지역의 하원 대표는 {{blank}} 의원입니다.",
+            "en": "The House representative for that area is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "부커",
+                "en": "Booker"
+              },
+              {
+                "id": "B",
+                "ko": "김",
+                "en": "Kim"
+              },
+              {
+                "id": "C",
+                "ko": "밴 드루",
+                "en": "Van Drew"
+              },
+              {
+                "id": "D",
+                "ko": "셰릴",
+                "en": "Sherrill"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "해당 지역의 하원의원은 {{blank}}입니다.",
+            "en": "The House representative for that area is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "부커",
+                "en": "Booker"
+              },
+              {
+                "id": "B",
+                "ko": "김",
+                "en": "Kim"
+              },
+              {
+                "id": "C",
+                "ko": "밴 드루",
+                "en": "Van Drew"
+              },
+              {
+                "id": "D",
+                "ko": "셰릴",
+                "en": "Sherrill"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "광역권을 공유해도 대표 범위는 다르죠.",
+                "en": "A shared metropolitan region does not mean the same constituency."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "파시패니트로이힐스는 2020년 제11구였습니다.",
+                "en": "Parsippany-Troy Hills was in NJ-11 in 2020."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 접견을 배정하고 상원 문의는 별도 기록으로 남겨두세요.",
+                "en": "Assign the House meeting and keep the Senate inquiry separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "부커는 뉴저지 전체를 대표하는 상원의원입니다. 해당 지역의 하원 연락처는 당시 셰릴이었습니다.",
+                "en": "Booker was a statewide senator; the House contact for the area then was Sherrill."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1493",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "옛 제1구 지도를 가지고 왔는데 지금도 이 번호로 소개하면 되나요?",
+            "en": "I brought an old district-one map. Should I still introduce you using that number?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2018년에 제2구에서 당선됐습니다.",
+            "en": "I won election in district two in 2018."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지금 제1구를 맡은 사람은 저입니다.",
+            "en": "I now represent district one."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "커크패트릭 의원의 2020년 대표 지역은 {{blank}}입니다.",
+          "en": "Kirkpatrick's 2020 constituency is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "AZ-1",
+              "en": "AZ-1"
+            },
+            {
+              "id": "B",
+              "ko": "AZ-2",
+              "en": "AZ-2"
+            },
+            {
+              "id": "C",
+              "ko": "AZ-3",
+              "en": "AZ-3"
+            },
+            {
+              "id": "D",
+              "ko": "AZ-9",
+              "en": "AZ-9"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "이전 경력과 현재 대표 지역을 따로 표기합시다.",
+              "en": "Let's label earlier service and present representation separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2020년에는 커크패트릭이 제2구, 오핼러런이 제1구 의원입니다.",
+              "en": "In 2020 Kirkpatrick holds AZ-2 and O'Halleran AZ-1."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "옛 제1구 지도를 가지고 왔는데 지금도 이 번호로 소개하면 되나요?",
+              "en": "I brought an old district-one map. Should I still introduce you using that number?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2018년에 제2구에서 당선됐습니다.",
+              "en": "I won election in district two in 2018."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "지금 제1구를 맡은 사람은 저입니다.",
+              "en": "I now represent district one."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "주민이 커크패트릭의 오래된 명함을 가져왔습니다. 2020년 접견 자료를 갱신해야 합니다.",
+              "en": "A resident brought Kirkpatrick's old business card. We need to update the 2020 meeting record."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "예전 의회 임기와 현재 접견 시점의 지역구를 혼동하면 안 됩니다.",
+              "en": "Do not confuse her earlier congressional terms with the district at this meeting."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "커크패트릭 의원의 2020년 대표 지역은 {{blank}}입니다.",
+            "en": "Kirkpatrick's 2020 constituency is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "AZ-1",
+                "en": "AZ-1"
+              },
+              {
+                "id": "B",
+                "ko": "AZ-2",
+                "en": "AZ-2"
+              },
+              {
+                "id": "C",
+                "ko": "AZ-3",
+                "en": "AZ-3"
+              },
+              {
+                "id": "D",
+                "ko": "AZ-9",
+                "en": "AZ-9"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2020년 커크패트릭의 지역구는 {{blank}}입니다.",
+            "en": "Kirkpatrick's constituency in 2020 is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "AZ-1",
+                "en": "AZ-1"
+              },
+              {
+                "id": "B",
+                "ko": "AZ-2",
+                "en": "AZ-2"
+              },
+              {
+                "id": "C",
+                "ko": "AZ-3",
+                "en": "AZ-3"
+              },
+              {
+                "id": "D",
+                "ko": "AZ-9",
+                "en": "AZ-9"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이전 경력과 현재 대표 지역을 따로 표기합시다.",
+                "en": "Let's label earlier service and present representation separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2020년에는 커크패트릭이 제2구, 오핼러런이 제1구 의원입니다.",
+                "en": "In 2020 Kirkpatrick holds AZ-2 and O'Halleran AZ-1."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "옛 지역구 기록은 이력으로 보존하고 현재 문의에는 새 코드를 사용하세요.",
+                "en": "Keep the old district in the career record and use the updated code for this inquiry."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "AZ-1은 과거 임기 기록입니다. 2020년에는 AZ-2였으므로 명함을 갱신하세요.",
+                "en": "AZ-1 belongs to earlier terms. In 2020 it was AZ-2; update the card."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "B",
+      "newCorrect": "B",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1496",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제3구에 이든프레리와 미네통카가 있습니다.",
+            "en": "District three includes Eden Prairie and Minnetonka."
+          },
+          {
+            "speaker": "player",
+            "ko": "이든프레리 주민이 지역 의원실을 직접 찾아가려 합니다.",
+            "en": "An Eden Prairie resident wants to visit their district office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 세인트폴 쪽 제4구를 대표합니다.",
+            "en": "I represent district four on the St. Paul side."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "미네통카의 {{blank}} 의원실로 안내하겠습니다.",
+          "en": "I'll direct them to Representative {{blank}}'s Minnetonka office.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "필립스",
+              "en": "Phillips"
+            },
+            {
+              "id": "B",
+              "ko": "매컬럼",
+              "en": "McCollum"
+            },
+            {
+              "id": "C",
+              "ko": "해거던",
+              "en": "Hagedorn"
+            },
+            {
+              "id": "D",
+              "ko": "마셜",
+              "en": "Marshall"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "도심과 교외의 대표 지역을 나눠서 안내했군요.",
+              "en": "You've distinguished the urban and suburban constituencies."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "이든프레리는 필립스의 제3구였습니다.",
+              "en": "Eden Prairie was in Phillips' third district."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제3구에 이든프레리와 미네통카가 있습니다.",
+              "en": "District three includes Eden Prairie and Minnetonka."
+            },
+            {
+              "speaker": "player",
+              "ko": "이든프레리 주민이 지역 의원실을 직접 찾아가려 합니다.",
+              "en": "An Eden Prairie resident wants to visit their district office."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 세인트폴 쪽 제4구를 대표합니다.",
+              "en": "I represent district four on the St. Paul side."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "에덴프레리 주민 대표단과 미네통카에서 만날 수 있는 의원실을 찾고 있습니다.",
+              "en": "We're finding a congressional office in Minnetonka for a delegation from Eden Prairie."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 도시를 같은 지역구로 묶을 수 있는지 당시 지도를 확인하세요.",
+              "en": "Check whether both cities belong to the same district on the map at the time."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "미네통카의 {{blank}} 의원실로 안내하겠습니다.",
+            "en": "I'll direct them to Representative {{blank}}'s Minnetonka office.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "필립스",
+                "en": "Phillips"
+              },
+              {
+                "id": "B",
+                "ko": "매컬럼",
+                "en": "McCollum"
+              },
+              {
+                "id": "C",
+                "ko": "해거던",
+                "en": "Hagedorn"
+              },
+              {
+                "id": "D",
+                "ko": "마셜",
+                "en": "Marshall"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "미네통카의 {{blank}} 의원실에 접견을 요청하겠습니다.",
+            "en": "I'll request a meeting at Representative {{blank}}'s Minnetonka office.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "필립스",
+                "en": "Phillips"
+              },
+              {
+                "id": "B",
+                "ko": "매컬럼",
+                "en": "McCollum"
+              },
+              {
+                "id": "C",
+                "ko": "해거던",
+                "en": "Hagedorn"
+              },
+              {
+                "id": "D",
+                "ko": "마셜",
+                "en": "Marshall"
+              }
+            ],
+            "correct": "A"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "도심과 교외의 대표 지역을 나눠서 안내했군요.",
+                "en": "You've distinguished the urban and suburban constituencies."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "이든프레리는 필립스의 제3구였습니다.",
+                "en": "Eden Prairie was in Phillips' third district."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 도시의 공동 문의를 한 접견 자료로 묶어 보냅시다.",
+                "en": "Send the two cities' shared concerns in one meeting brief."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 도시 모두 당시 필립스의 MN-3에 포함됐습니다. 해당 사무실로 다시 문의하세요.",
+                "en": "Both cities were in Phillips's MN-3 then. Redirect the inquiry to that office."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "A",
+      "newCorrect": "A",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    },
+    {
+      "id": "P01-1499",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "71d0115a3368b5af3cd2210997e832484b540c9f",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "주노 주민이 도시별 하원의원 명단을 찾고 있습니다.",
+            "en": "A Juneau resident is searching for a city-specific House delegation."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "알래스카에는 하원 의석이 하나뿐입니다.",
+            "en": "Alaska has just one House seat."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "상원은 두 의석이고 저도 주 전체를 대표합니다.",
+            "en": "There are two Senate seats, and I represent the entire state too."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "영 의원의 하원 지역구는 {{blank}}입니다.",
+          "en": "Young's House constituency is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "앵커리지 제1구",
+              "en": "Anchorage district one"
+            },
+            {
+              "id": "B",
+              "ko": "주노 제2구",
+              "en": "Juneau district two"
+            },
+            {
+              "id": "C",
+              "ko": "페어뱅크스 제3구",
+              "en": "Fairbanks district three"
+            },
+            {
+              "id": "D",
+              "ko": "알래스카 주 전체",
+              "en": "Alaska at large"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "지도에 주 전체 의석이라고 적어 주세요.",
+              "en": "Label the map as an at-large seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2020년 영은 알래스카 주 전체 하원의원이었습니다.",
+              "en": "Young represented Alaska at large in 2020."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "주노 주민이 도시별 하원의원 명단을 찾고 있습니다.",
+              "en": "A Juneau resident is searching for a city-specific House delegation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "알래스카에는 하원 의석이 하나뿐입니다.",
+              "en": "Alaska has just one House seat."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "상원은 두 의석이고 저도 주 전체를 대표합니다.",
+              "en": "There are two Senate seats, and I represent the entire state too."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "알래스카의 여러 지역 주민이 하원 대표에게 공동 청원을 제출하려 합니다.",
+              "en": "Residents from several Alaska communities want to submit a joint petition to their House representative."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "상원 의석과 하원 지역구를 구별해 청원 대상을 정하세요.",
+              "en": "Distinguish Senate seats from House districts before choosing the petition recipient."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "영 의원의 하원 지역구는 {{blank}}입니다.",
+            "en": "Young's House constituency is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "앵커리지 제1구",
+                "en": "Anchorage district one"
+              },
+              {
+                "id": "B",
+                "ko": "주노 제2구",
+                "en": "Juneau district two"
+              },
+              {
+                "id": "C",
+                "ko": "페어뱅크스 제3구",
+                "en": "Fairbanks district three"
+              },
+              {
+                "id": "D",
+                "ko": "알래스카 주 전체",
+                "en": "Alaska at large"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "영 의원의 당시 하원 지역구는 {{blank}}입니다.",
+            "en": "Young's House constituency at the time is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "앵커리지 제1구",
+                "en": "Anchorage district one"
+              },
+              {
+                "id": "B",
+                "ko": "주노 제2구",
+                "en": "Juneau district two"
+              },
+              {
+                "id": "C",
+                "ko": "페어뱅크스 제3구",
+                "en": "Fairbanks district three"
+              },
+              {
+                "id": "D",
+                "ko": "알래스카 주 전체",
+                "en": "Alaska at large"
+              }
+            ],
+            "correct": "D"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지도에 주 전체 의석이라고 적어 주세요.",
+                "en": "Label the map as an at-large seat."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "2020년 영은 알래스카 주 전체 하원의원이었습니다.",
+                "en": "Young represented Alaska at large in 2020."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 전체의 공동 청원을 하원 대표에게 전달합시다.",
+                "en": "Send the statewide joint petition to the House representative."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 알래스카에는 하원 단일 전주 지역구가 있었습니다. 상원 의석과 혼동하지 마세요.",
+                "en": "Alaska then had one statewide House seat. Do not confuse it with a Senate seat."
+              }
+            ]
+          }
+        }
+      ],
+      "originalCorrect": "D",
+      "newCorrect": "D",
+      "correctChanged": false,
+      "historicalReverificationNeeded": true,
+      "estimatedImprovementPoints": 3,
+      "scoreBasis": "provisional editorial estimate; no full rubric or playtest",
+      "conditionalStory": null,
+      "status": "draft_not_applied_requires_Q2_and_editorial_review"
+    }
+  ],
+  "limitations": "Literal matching is not semantic answer disclosure; name matches may be legitimate. No grades assigned. No historical re-verification or playtest."
+}
