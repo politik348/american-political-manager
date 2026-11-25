@@ -1,0 +1,3 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const root=new URL('../',import.meta.url);for(const f of ["app.js","engine.js","expansion.js","v7.js","v11.js","v17.js","v17-ui.js","onboarding.js","onboarding-ui.js","style.css"]){const source=await fs.readFile(new URL(f,root),'utf8');const release=await fs.readFile(new URL('release/17.6.1/'+f,root),'utf8');assert.equal(release,source,'Release snapshot mismatch: '+f)}const index=await fs.readFile(new URL('index.html',root),'utf8');const start=await fs.readFile(new URL('start.html',root),'utf8');assert.equal(index,start);assert.ok(index.includes('./release/17.6.1/app.js'));assert.ok(index.includes('./release/17.6.1/style.css'));console.log('Release snapshot verified');

@@ -1,9 +1,9 @@
 {
   "name": "american-political-manager",
-  "version": "17.6.0",
+  "version": "17.6.1",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --check app.js && node --check sw.js && node --check v7.js && node --check v11.js && node --check v17.js && node --check v17-ui.js && node --check onboarding.js && node --check onboarding-ui.js && node --test tests/*.test.js"
+    "test": "node --check app.js && node --check sw.js && node --check v7.js && node --check v11.js && node --check v17.js && node --check v17-ui.js && node --check onboarding.js && node --check onboarding-ui.js && node scripts/check-release.mjs && node --test tests/*.test.js"
   }
 }
