@@ -28,13 +28,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "전기료와 농업용수 문제를 함께 논의합시다.",
-          "en": "Let's discuss electricity and irrigation together."
+          "ko": "캐니언 카운티 재무관으로 일했던 시절부터 지방의 재정 문제를 가까이에서 봤습니다. 이번에는 전기와 관개용수 문제를 함께 다루려 합니다.",
+          "en": "Since my days as Canyon County treasurer, I've seen local fiscal concerns firsthand. Now I want to address power and irrigation together."
         },
         {
           "speaker": "player",
-          "ko": "아이다호와 오리건 경계의 공공댐 계획이죠.",
-          "en": "This is the public dam plan on the Idaho–Oregon border."
+          "ko": "민간 발전만을 위한 계획이 아니라 공공 다목적댐을 제안하시는군요.",
+          "en": "You're proposing a public multipurpose dam rather than a plan limited to private power generation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "아이다호와 오리건 사이의 어느 협곡인지 기억해 주세요.",
+          "en": "Remember which canyon lies between Idaho and Oregon."
         }
       ],
       "response": {
@@ -69,8 +74,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "강 유역 주민과도 만나죠.",
-            "en": "Let's meet the river communities too."
+            "ko": "그곳의 주민과 농업 관계자 의견도 듣도록 합시다. 댐이 이미 건설됐다고 말해서는 안 됩니다.",
+            "en": "Let's hear from residents and farmers there. Do not describe the proposed dam as already built."
           }
         ],
         "incorrect": [
@@ -205,7 +210,7 @@
     {
       "id": "P01-553",
       "mechanism": "campaign-artifact",
-      "learningTarget": "Pfost challenged her 1954 opponent Erwin Schwiebert to log rolling at a county fair and won the subsequent election.",
+      "learningTarget": "Pfost lost a log-rolling contest against Erwin Schwiebert during the 1954 campaign but won the congressional election by about 9,000 votes.",
       "date": "1954-11-08",
       "venue": {
         "ko": "카운티 축제 회고",
@@ -227,39 +232,44 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "선거 중 상대 후보와 통나무 위에 올랐습니다.",
-          "en": "I stood on a log with my opponent during the campaign."
+          "ko": "선거 유세 때 상대 후보 슈비버트에게 통나무 굴리기 시합을 제안했습니다. 저도 물에 빠질 각오를 했죠.",
+          "en": "During the campaign I challenged my opponent Schwiebert to log rolling. I knew I might end up in the water."
         },
         {
           "speaker": "player",
-          "ko": "선거 승패와 경기 승패는 별개군요.",
-          "en": "The contest and election results are separate."
+          "ko": "그런데 축제 시합의 승패와 실제 선거의 승패가 달랐다고 들었습니다.",
+          "en": "I heard that the result of the fair contest differed from the election result."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그 두 결과를 정확하게 구분해서 이야기해 주시겠습니까?",
+          "en": "Could you recount the two results accurately?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "축제의 경기는 {{blank}}이었습니다.",
-        "en": "The fair contest was {{blank}}.",
+        "ko": "포스트는 {{blank}}.",
+        "en": "Pfost {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "로데오",
-            "en": "rodeo"
+            "ko": "통나무 경기와 본선 모두에서 승리했다",
+            "en": "won both the log-rolling contest and the election"
           },
           {
             "id": "B",
-            "ko": "조정",
-            "en": "rowing"
+            "ko": "통나무 경기와 본선 모두에서 패배했다",
+            "en": "lost both the log-rolling contest and the election"
           },
           {
             "id": "C",
-            "ko": "양궁",
-            "en": "archery"
+            "ko": "통나무 경기에서 이겼지만 본선에서는 졌다",
+            "en": "won the log-rolling contest but lost the election"
           },
           {
             "id": "D",
-            "ko": "통나무 굴리기",
-            "en": "log rolling"
+            "ko": "통나무 경기에서 졌지만 본선에서는 이겼다",
+            "en": "lost the log-rolling contest but won the election"
           }
         ],
         "correct": "D"
@@ -268,22 +278,22 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "그 일화와 개표 결과를 함께 남기죠.",
-            "en": "Keep that story alongside the election returns."
+            "ko": "제가 먼저 물에 빠졌지만 선거에서는 약 9천 표 차이로 이겼습니다. 재미있는 일화와 공식 선거 결과는 구별해야죠.",
+            "en": "I fell off first but won the election by about 9,000 votes. An amusing anecdote isn't the official election result."
           }
         ],
         "incorrect": [
           {
             "speaker": "aide",
-            "ko": "포스트는 먼저 통나무에서 떨어졌지만 선거에는 이겼습니다.",
-            "en": "Pfost fell first but won the election."
+            "ko": "포스트가 먼저 물에 빠졌고 선거에서는 약 9천 표 차이로 당선되었습니다.",
+            "en": "Pfost fell off first and won the election by about 9,000 votes."
           }
         ]
       },
       "evidence": [
         {
           "url": "https://history.house.gov/People/Detail/19633",
-          "claim": "Pfost challenged her 1954 opponent Erwin Schwiebert to log rolling at a county fair and won the subsequent election.",
+          "claim": "Pfost lost a log-rolling contest against Erwin Schwiebert during the 1954 campaign but won the congressional election by about 9,000 votes.",
           "asOf": "1954-11-08"
         }
       ],
@@ -500,13 +510,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "자원위원회의 한 소위원회를 맡고 있습니다.",
-          "en": "I chair a Resources subcommittee."
+          "ko": "이전에 북부 팬핸들 주민을 방문했던 일을 기억하시죠? 국유림 관리에 관한 문의가 들어왔습니다.",
+          "en": "Remember our visit to northern panhandle residents? We've received an inquiry about national forest management."
         },
         {
           "speaker": "player",
-          "ko": "아이다호의 국유림과 관련되는 업무군요.",
-          "en": "That connects to Idaho's national forests."
+          "ko": "그 문의가 의원님이 맡은 소위원회의 관할인지 확인해 보겠습니다.",
+          "en": "I'll check whether the inquiry falls within the jurisdiction of the subcommittee you chair."
         }
       ],
       "response": {
@@ -541,8 +551,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "산림 정책 자료로 다음 토론을 이어가죠.",
-            "en": "Let's continue with forest policy materials."
+            "ko": "그 소위원회 업무와 주민의 요구를 연결해서 다음 면담을 준비해 주세요.",
+            "en": "Connect the subcommittee's work to the residents' request as you prepare our next meeting."
           }
         ],
         "incorrect": [
@@ -780,44 +790,44 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "저는 유엔과 브레턴우즈 협정을 지지했습니다.",
-          "en": "I supported the UN and Bretton Woods agreements."
+          "ko": "지난번 여성유권자연맹에서 일했던 경험을 이야기했죠. 이번에는 전후 국제 협력에 대한 표결을 설명하겠습니다.",
+          "en": "Last time we discussed my League of Women Voters work. Today I want to explain my votes on postwar international cooperation."
         },
         {
           "speaker": "npc:1",
-          "ko": "같은 대표단 안에도 국제주의에 대한 이견이 있죠.",
-          "en": "Our delegation includes disagreement over internationalism."
+          "ko": "같은 일리노이 대표단이어도 국제주의를 둘러싼 생각은 같지 않습니다.",
+          "en": "Even within the Illinois delegation, views on internationalism differ."
         },
         {
           "speaker": "player",
-          "ko": "지역이 같아도 입장이 같지는 않군요.",
-          "en": "A shared state doesn't mean shared positions."
+          "ko": "그럼 더글러스 의원의 표결을 지역구나 동료의 입장만으로 추정하면 안 되겠군요.",
+          "en": "Then we shouldn't infer Douglas's votes merely from her state or a colleague's position."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "두 의원의 대표 주는 {{blank}}입니다.",
-        "en": "Both members represent {{blank}}.",
+        "ko": "더글러스는 {{blank}}을 지지하는 표를 던졌습니다.",
+        "en": "Douglas voted in support of {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "뉴욕",
-            "en": "New York"
+            "ko": "미국의 국제연맹 가입",
+            "en": "U.S. membership in the League of Nations"
           },
           {
             "id": "B",
-            "ko": "일리노이",
-            "en": "Illinois"
+            "ko": "유엔과 브레턴우즈 협정",
+            "en": "the United Nations and Bretton Woods agreements"
           },
           {
             "id": "C",
-            "ko": "캘리포니아",
-            "en": "California"
+            "ko": "유엔에서의 즉각 탈퇴",
+            "en": "immediate withdrawal from the United Nations"
           },
           {
             "id": "D",
-            "ko": "오하이오",
-            "en": "Ohio"
+            "ko": "북대서양조약기구 창설 조약",
+            "en": "the treaty creating NATO"
           }
         ],
         "correct": "B"
@@ -826,15 +836,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "서로 다른 입장을 기록하죠.",
-            "en": "Keep the positions distinct."
+            "ko": "그렇습니다. 다음에는 군비 통제에 국제기구가 어떤 역할을 할 수 있는지 이야기합시다.",
+            "en": "Exactly. Next let's discuss how international institutions might contribute to arms control."
           }
         ],
         "incorrect": [
           {
             "speaker": "aide",
-            "ko": "더글러스와 섬너는 일리노이 의원이었지만 국제주의에 대한 입장이 달랐습니다.",
-            "en": "Douglas and Sumner represented Illinois but differed on internationalism."
+            "ko": "하원의 공식 전기에 따르면 더글러스는 유엔과 브레턴우즈 협정을 지지했습니다.",
+            "en": "The House biography records Douglas's support for the UN and Bretton Woods agreements."
           }
         ]
       },
@@ -888,18 +898,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "전후 국제 협력에 관한 제안을 준비했습니다.",
-          "en": "I prepared a postwar international cooperation proposal."
+          "ko": "지난번 전후 국제 협력에 대해 의견이 갈렸죠. 이번에는 군비 통제에 관한 제안을 준비했습니다.",
+          "en": "Last time we discussed disagreement over postwar international cooperation. Today I have a proposal on arms control."
         },
         {
           "speaker": "npc:1",
-          "ko": "캘리포니아에서 왔지만 함께 제안했죠.",
-          "en": "I came from California but joined the proposal."
+          "ko": "일리노이 의원의 제안에 캘리포니아 의원인 저도 함께합니다.",
+          "en": "I'm joining the Illinois member's proposal from California."
         },
         {
           "speaker": "player",
-          "ko": "두 분의 공동 작업을 기억하겠습니다.",
-          "en": "I'll remember your collaboration."
+          "ko": "같은 주의 의원들과 의견이 다르더라도 다른 주의 의원과 협력할 수 있군요.",
+          "en": "Members may disagree with colleagues from their own state yet cooperate across state lines."
         }
       ],
       "response": {
@@ -934,8 +944,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "국제협력 배경을 더 읽어 보죠.",
-            "en": "Let's examine the international cooperation context."
+            "ko": "우리의 공동 제안이 국제기구에 어떤 역할을 맡기려는 것인지 살펴봅시다.",
+            "en": "Let's examine the role our joint proposal would give the international organization."
           }
         ],
         "incorrect": [
@@ -1080,13 +1090,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "세출위원회 제안을 받았지만 다른 분야를 택했습니다.",
-          "en": "I was offered Appropriations but chose another field."
+          "ko": "1951년 에번스턴 주민들과 만났던 것을 기억하십니까? 이번 의회에서는 제 위원회 선택에 대해서도 질문을 받았습니다.",
+          "en": "Remember our 1951 meeting with Evanston residents? This Congress I've also been asked about my committee choice."
         },
         {
           "speaker": "player",
-          "ko": "자신의 정책 관심사를 선택하셨군요.",
-          "en": "You chose your own policy interests."
+          "ko": "세출위원회 제안을 받으셨다고 들었는데, 실제 선택은 달랐군요.",
+          "en": "I heard you were offered Appropriations, but you made a different choice."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 택한 정책 분야를 알고 있다면 관련 자료를 준비해 주시겠습니까?",
+          "en": "If you know the policy field I chose, could you prepare the relevant materials?"
         }
       ],
       "response": {
@@ -1121,8 +1136,8 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "외교 관련 자료를 가져오세요.",
-            "en": "Bring foreign policy materials next time."
+            "ko": "외교 관련 자료를 부탁합니다. 위원회 배정은 개인의 의정 관심사를 보여주기도 합니다.",
+            "en": "Please bring the foreign-policy materials. Committee assignments can reflect a member's legislative interests."
           }
         ],
         "incorrect": [
