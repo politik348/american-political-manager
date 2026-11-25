@@ -1,0 +1,2490 @@
+{
+  "schema": 1,
+  "pack": "P01",
+  "part": 5,
+  "scenes": [
+    {
+      "id": "P01-101",
+      "mechanism": "reunion",
+      "learningTarget": "Cannon returned from Illinois in 1915 after his 1912 defeat.",
+      "date": "1915-12-07",
+      "venue": {
+        "ko": "의사당 휴게실",
+        "en": "Capitol lounge"
+      },
+      "context": {
+        "ko": "캐넌이 하원에 돌아와 현 의장과 만난다.",
+        "en": "Cannon returns to the House and meets the Speaker."
+      },
+      "cast": [
+        {
+          "id": "C000121",
+          "name": "Joseph Gurney Cannon",
+          "ko": "조지프 거니 캐넌",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/10600"
+        },
+        {
+          "id": "C000437",
+          "name": "Champ Clark",
+          "ko": "챔프 클라크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/11000"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "캐넌 의원, 이번에는 다시 동료 의원으로 만나네요.",
+          "en": "Mr. Cannon, welcome back as a fellow member."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1912년에는 낙선했지만 이번에는 돌아왔습니다.",
+          "en": "I lost in 1912, but now I'm back."
+        },
+        {
+          "speaker": "player",
+          "ko": "그럼 이번 만남은 이전 의장 경력과 구별하죠.",
+          "en": "Then let's distinguish this visit from your former Speakership."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "캐넌 의원의 복귀는 {{blank}} 대표단의 기록에 남기겠습니다.",
+        "en": "I'll record your return under the {{blank}} delegation.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "일리노이",
+            "en": "Illinois"
+          },
+          {
+            "id": "B",
+            "ko": "미주리",
+            "en": "Missouri"
+          },
+          {
+            "id": "C",
+            "ko": "인디애나",
+            "en": "Indiana"
+          },
+          {
+            "id": "D",
+            "ko": "오하이오",
+            "en": "Ohio"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 다음에는 동료 의원으로 만나죠.",
+            "en": "Good. Next time we'll meet as fellow members."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 일리노이 의원으로 1915년 하원에 복귀했습니다.",
+            "en": "I returned to the House from Illinois in 1915."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/10600",
+          "claim": "Cannon returned from Illinois in 1915 after his 1912 defeat.",
+          "asOf": "1915-12-07"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/11000",
+          "claim": "Cannon returned from Illinois in 1915 after his 1912 defeat.",
+          "asOf": "1915-12-07"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-reunion-101"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-102",
+      "mechanism": "artifact-navigation",
+      "learningTarget": "March 8, 1912 directory identifies Champ Clark of Missouri as Speaker.",
+      "date": "1912-03-08",
+      "venue": {
+        "ko": "의사당 방문객 안내소",
+        "en": "Capitol visitor desk"
+      },
+      "context": {
+        "ko": "공식 좌석 안내서로 의장석을 찾아간다.",
+        "en": "A visitor uses the official seating directory to find the Speaker."
+      },
+      "cast": [
+        {
+          "id": "C000437",
+          "name": "Champ Clark",
+          "ko": "챔프 클라크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/11000"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "이 안내서에는 주, 선거구, 좌석 번호가 적혀 있습니다.",
+          "en": "This directory lists states, districts, and seats."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "좌석 번호와 선거구 번호는 별개죠.",
+          "en": "A seat number is not a district number."
+        },
+        {
+          "speaker": "player",
+          "ko": "의장 항목부터 찾아보겠습니다.",
+          "en": "I'll start with the Speaker's entry."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "챔프 클라크 의장은 {{blank}}에서 오셨군요.",
+        "en": "Speaker Clark is from {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "일리노이",
+            "en": "Illinois"
+          },
+          {
+            "id": "B",
+            "ko": "미주리",
+            "en": "Missouri"
+          },
+          {
+            "id": "C",
+            "ko": "켄터키",
+            "en": "Kentucky"
+          },
+          {
+            "id": "D",
+            "ko": "캔자스",
+            "en": "Kansas"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "안내서를 가지고 다른 의원도 찾아보세요.",
+            "en": "Use the directory to find other members, too."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1912년 안내서에 미주리 의원인 제가 의장으로 나옵니다.",
+            "en": "The 1912 directory identifies me as the Speaker from Missouri."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/Collection/Detail/15032451362",
+          "claim": "March 8, 1912 directory identifies Champ Clark of Missouri as Speaker.",
+          "asOf": "1912-03-08"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-artifact-navigation-102"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-103",
+      "mechanism": "career-transition",
+      "learningTarget": "Texas Speaker Garner was elected Vice President on Roosevelt's ticket in 1932.",
+      "date": "1933-03-06",
+      "venue": {
+        "ko": "부통령 접견실",
+        "en": "Vice President's reception room"
+      },
+      "context": {
+        "ko": "전직 의장에게 새 직책으로 인사한다.",
+        "en": "You greet a former Speaker in his new role."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "John Nance Garner",
+          "ko": "존 낸스 가너",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/13655"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "가너 의장님, 예전에 하원에서 뵀습니다.",
+          "en": "Speaker Garner, we met in the House."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이제는 루스벨트와 함께 당선된 부통령입니다.",
+          "en": "Now I'm Vice President, elected with Roosevelt."
+        },
+        {
+          "speaker": "aide",
+          "ko": "예전 하원 경력도 잊지 말아 주세요.",
+          "en": "Please remember his former House service."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "가너 부통령의 하원 경력은 {{blank}} 대표단의 기록이군요.",
+        "en": "Your House career belongs to the {{blank}} delegation.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕",
+            "en": "New York"
+          },
+          {
+            "id": "B",
+            "ko": "오클라호마",
+            "en": "Oklahoma"
+          },
+          {
+            "id": "C",
+            "ko": "텍사스",
+            "en": "Texas"
+          },
+          {
+            "id": "D",
+            "ko": "미주리",
+            "en": "Missouri"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음에는 부통령 일정으로 만나죠.",
+            "en": "We'll meet next time through the vice-presidential schedule."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "텍사스에서 하원의원과 의장을 지낸 뒤 부통령이 됐습니다.",
+            "en": "I represented Texas and served as Speaker before becoming Vice President."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/13655",
+          "claim": "Texas Speaker Garner was elected Vice President on Roosevelt's ticket in 1932.",
+          "asOf": "1933-03-06"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-career-transition-103"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-104",
+      "mechanism": "federal-state-distinction",
+      "learningTarget": "McCormack served in Massachusetts state legislature before entering the U.S. House in 1928.",
+      "date": "1929-04-16",
+      "venue": {
+        "ko": "보스턴 접견실",
+        "en": "Boston reception"
+      },
+      "context": {
+        "ko": "주 의회 시절의 지인이 연방 의회 접견을 요청한다.",
+        "en": "A statehouse acquaintance requests a federal appointment."
+      },
+      "cast": [
+        {
+          "id": "M000364",
+          "name": "John William McCormack",
+          "ko": "존 매코맥",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/17779"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "매사추세츠 주 상원에서 일했던 때를 기억하시네요.",
+          "en": "You remember my Massachusetts Senate service."
+        },
+        {
+          "speaker": "player",
+          "ko": "그때와 같은 기관에서 일하고 계신가요?",
+          "en": "Are you still in the same institution?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 특별선거 이후에는 달라졌습니다.",
+          "en": "That changed after last year's special election."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "매코맥 의원은 지금 {{blank}}에서 일하시는군요.",
+        "en": "You now serve in the {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매사추세츠 주 상원",
+            "en": "Massachusetts Senate"
+          },
+          {
+            "id": "B",
+            "ko": "미국 연방 상원",
+            "en": "U.S. Senate"
+          },
+          {
+            "id": "C",
+            "ko": "보스턴 시의회",
+            "en": "Boston City Council"
+          },
+          {
+            "id": "D",
+            "ko": "미국 연방 하원",
+            "en": "U.S. House"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번에는 연방 의회에서 뵙겠습니다.",
+            "en": "I'll see you in the federal Congress this time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1928년 특별선거로 연방 하원에 들어왔습니다.",
+            "en": "I entered the U.S. House through a 1928 special election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/17779",
+          "claim": "McCormack served in Massachusetts state legislature before entering the U.S. House in 1928.",
+          "asOf": "1929-04-16"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-federal-state-distinction-104"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-105",
+      "mechanism": "career-origin-conversation",
+      "learningTarget": "Martin represented Massachusetts and published a North Attleboro newspaper.",
+      "date": "1926-02-15",
+      "venue": {
+        "ko": "지역 신문사",
+        "en": "Local newspaper office"
+      },
+      "context": {
+        "ko": "기자 출신 의원이 옛 신문을 펼친다.",
+        "en": "A former reporter unfolds a local newspaper."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Joseph William Martin Jr.",
+          "ko": "조지프 마틴 주니어",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/17559"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "노스애틀버러에서 지역 신문을 발행했습니다.",
+          "en": "I published a local newspaper in North Attleborough."
+        },
+        {
+          "speaker": "host",
+          "ko": "그 도시와 연방 의회 경력을 함께 소개해 볼까요?",
+          "en": "Can we connect the town to his congressional career?"
+        },
+        {
+          "speaker": "player",
+          "ko": "출생지보다 실제 대표하는 주가 중요하겠군요.",
+          "en": "The state he represents matters more here than birthplace."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "마틴 의원은 {{blank}}에서 활동한 신문인 출신 하원의원입니다.",
+        "en": "Martin is a House member with a newspaper career in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "매사추세츠",
+            "en": "Massachusetts"
+          },
+          {
+            "id": "B",
+            "ko": "메인",
+            "en": "Maine"
+          },
+          {
+            "id": "C",
+            "ko": "로드아일랜드",
+            "en": "Rhode Island"
+          },
+          {
+            "id": "D",
+            "ko": "버몬트",
+            "en": "Vermont"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음 방문에서는 지역 신문도 살펴보세요.",
+            "en": "Look through the local papers on your next visit."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 매사추세츠의 하원의원이고 그곳에서 신문을 발행했습니다.",
+            "en": "I represent Massachusetts, where I published a newspaper."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/17559",
+          "claim": "Martin represented Massachusetts and published a North Attleboro newspaper.",
+          "asOf": "1926-02-15"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-career-origin-conversation-105"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-106",
+      "mechanism": "chamber-transfer",
+      "learningTarget": "Smith represented Maine in the House 1940–1949 and the Senate beginning 1949.",
+      "date": "1949-01-10",
+      "venue": {
+        "ko": "상원 의원회관",
+        "en": "Senate office building"
+      },
+      "context": {
+        "ko": "1940년에 하원에서 만났던 의원이 새로운 건물에서 등장한다.",
+        "en": "A member encountered in the House in 1940 appears in another chamber."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Margaret Chase Smith",
+          "ko": "마거릿 체이스 스미스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/21866"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회부터는 다른 건물에서 일합니다.",
+          "en": "I work in a different building now."
+        },
+        {
+          "speaker": "player",
+          "ko": "1948년 선거에서 새로운 직책을 얻으셨군요.",
+          "en": "You won a new office in the 1948 election."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "메인주를 대표한다는 점은 그대로입니다.",
+          "en": "I still represent Maine."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이제 {{blank}}으로 연락드리겠습니다.",
+        "en": "I'll contact you as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "메인주 연방 하원의원",
+            "en": "a U.S. representative from Maine"
+          },
+          {
+            "id": "B",
+            "ko": "메인주 연방 상원의원",
+            "en": "a U.S. senator from Maine"
+          },
+          {
+            "id": "C",
+            "ko": "메인주 주지사",
+            "en": "Maine's governor"
+          },
+          {
+            "id": "D",
+            "ko": "메인주 법무장관",
+            "en": "Maine's attorney general"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "두 원에서의 경력을 이어서 기록해 주세요.",
+            "en": "Link my service in both chambers."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1949년 1월 3일 상원으로 옮겼습니다.",
+            "en": "I entered the Senate on January 3, 1949."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/21866",
+          "claim": "Smith represented Maine in the House 1940–1949 and the Senate beginning 1949.",
+          "asOf": "1949-01-10"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-chamber-transfer-106"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-107",
+      "mechanism": "home-district-story",
+      "learningTarget": "Luce's Connecticut district included Fairfield County and Greenwich.",
+      "date": "1943-02-12",
+      "venue": {
+        "ko": "전시 정책 토론회",
+        "en": "Wartime policy forum"
+      },
+      "context": {
+        "ko": "작가 출신 의원과 출생지와 지역구의 차이를 이야기한다.",
+        "en": "A writer turned congresswoman discusses birthplace and representation."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Clare Boothe Luce",
+          "ko": "클레어 부스 루스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/17213"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "뉴욕에서 태어났지만 그리니치를 포함하는 지역에서 당선됐습니다.",
+          "en": "I was born in New York but won the district including Greenwich."
+        },
+        {
+          "speaker": "host",
+          "ko": "그럼 뉴욕 대표단으로 소개하면 안 되겠군요.",
+          "en": "So we shouldn't introduce you as a New York member."
+        },
+        {
+          "speaker": "player",
+          "ko": "그리니치가 속한 주를 생각해 보죠.",
+          "en": "Let's recall which state Greenwich is in."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "루스 의원은 {{blank}} 대표단 소속이군요.",
+        "en": "You're in the {{blank}} delegation.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕",
+            "en": "New York"
+          },
+          {
+            "id": "B",
+            "ko": "뉴저지",
+            "en": "New Jersey"
+          },
+          {
+            "id": "C",
+            "ko": "코네티컷",
+            "en": "Connecticut"
+          },
+          {
+            "id": "D",
+            "ko": "매사추세츠",
+            "en": "Massachusetts"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역구 방문 때에도 그 차이를 기억해 주세요.",
+            "en": "Remember that distinction on a district visit."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "그리니치는 코네티컷에 있고 저는 그 주에서 당선됐습니다.",
+            "en": "Greenwich is in Connecticut, where I was elected."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/17213",
+          "claim": "Luce's Connecticut district included Fairfield County and Greenwich.",
+          "asOf": "1943-02-12"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-home-district-story-107"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-108",
+      "mechanism": "open-seat-story",
+      "learningTarget": "Douglas succeeded Thomas Francis Ford in a downtown Los Angeles district in 1944.",
+      "date": "1945-02-05",
+      "venue": {
+        "ko": "로스앤젤레스 접견실",
+        "en": "Los Angeles reception"
+      },
+      "context": {
+        "ko": "배우 출신 신임 의원이 출마하게 된 계기를 이야기한다.",
+        "en": "A former actress recalls what opened her congressional race."
+      },
+      "cast": [
+        {
+          "id": "D000454",
+          "name": "Helen Gahagan Douglas",
+          "ko": "헬렌 개해건 더글러스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12399"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 토머스 프랜시스 포드 의원이 은퇴를 결정했죠.",
+          "en": "Last year Thomas Francis Ford decided to retire."
+        },
+        {
+          "speaker": "player",
+          "ko": "그 빈자리를 두고 출마하셨군요.",
+          "en": "That opened the seat you ran for."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "다음에는 제가 대표하는 도시 중심부를 방문해 보세요.",
+          "en": "Next time visit the downtown area of the city I represent."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "다음 방문 도시는 {{blank}}입니다.",
+        "en": "Our next visit will be to {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "샌프란시스코",
+            "en": "San Francisco"
+          },
+          {
+            "id": "B",
+            "ko": "샌디에이고",
+            "en": "San Diego"
+          },
+          {
+            "id": "C",
+            "ko": "새크라멘토",
+            "en": "Sacramento"
+          },
+          {
+            "id": "D",
+            "ko": "로스앤젤레스",
+            "en": "Los Angeles"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그곳의 지역 이야기도 이어가죠.",
+            "en": "We'll continue our conversation there."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1944년 로스앤젤레스 중심부를 포함한 포드의 선거구에서 당선됐습니다.",
+            "en": "In 1944 I won Ford's district encompassing downtown Los Angeles."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12399",
+          "claim": "Douglas succeeded Thomas Francis Ford in a downtown Los Angeles district in 1944.",
+          "asOf": "1945-02-05"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-open-seat-story-108"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-109",
+      "mechanism": "local-institution-clue",
+      "learningTarget": "Powell's Harlem community and Abyssinian Church were central to his rise to Congress.",
+      "date": "1945-02-12",
+      "venue": {
+        "ko": "뉴욕 대표단 접견실",
+        "en": "New York delegation reception"
+      },
+      "context": {
+        "ko": "의원의 교회 활동을 통해 지역 정치 기반을 이해한다.",
+        "en": "A member's church work illuminates his political base."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Adam Clayton Powell Jr.",
+          "ko": "애덤 클레이턴 파월 주니어",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19872"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "의회에 오기 전 애비시니안 침례교회에서 일했습니다.",
+          "en": "Before Congress I worked at Abyssinian Baptist Church."
+        },
+        {
+          "speaker": "player",
+          "ko": "교회와 지역사회 활동이 연결됐군요.",
+          "en": "Your church and community work were connected."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "뉴욕에 가면 그 지역의 역사를 살펴보세요.",
+          "en": "Explore that community when you visit New York."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그곳은 {{blank}}이군요.",
+        "en": "That community is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "할렘",
+            "en": "Harlem"
+          },
+          {
+            "id": "B",
+            "ko": "브롱크스",
+            "en": "the Bronx"
+          },
+          {
+            "id": "C",
+            "ko": "스태튼아일랜드",
+            "en": "Staten Island"
+          },
+          {
+            "id": "D",
+            "ko": "플러싱",
+            "en": "Flushing"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "좋습니다. 지역사회 역사부터 알아보죠.",
+            "en": "Good. Start with the community's history."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "애비시니안 교회는 할렘에 있고 제 정치적 기반도 그곳에 있습니다.",
+            "en": "Abyssinian Church is in Harlem, where my political base developed."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/19872",
+          "claim": "Powell's Harlem community and Abyssinian Church were central to his rise to Congress.",
+          "asOf": "1945-02-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-local-institution-clue-109"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-110",
+      "mechanism": "municipal-to-federal",
+      "learningTarget": "Roybal entered newly created CA-30 in 1962 after Los Angeles City Council service.",
+      "date": "1963-02-04",
+      "venue": {
+        "ko": "도시 정책 간담회",
+        "en": "Urban policy meeting"
+      },
+      "context": {
+        "ko": "시의회에서 만난 인물과 주택 문제를 연방 차원에서 다시 이야기한다.",
+        "en": "A city council acquaintance continues a housing discussion in Congress."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Edward R. Roybal",
+          "ko": "에드워드 로이발",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/20684"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "시의원 시절부터 주택과 일자리 문제를 다뤘죠.",
+          "en": "Housing and jobs were issues I addressed on the city council."
+        },
+        {
+          "speaker": "player",
+          "ko": "이번에는 연방 의회에서 이야기를 이어가네요.",
+          "en": "Now we're continuing the discussion in Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "캘리포니아의 의석이 늘면서 새 지역구가 만들어졌습니다.",
+          "en": "California gained seats, including a newly created district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "로이발 의원의 첫 연방 지역구는 {{blank}}입니다.",
+        "en": "Your first federal House district is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "CA-29",
+            "en": "CA-29"
+          },
+          {
+            "id": "B",
+            "ko": "CA-30",
+            "en": "CA-30"
+          },
+          {
+            "id": "C",
+            "ko": "CA-25",
+            "en": "CA-25"
+          },
+          {
+            "id": "D",
+            "ko": "CA-12",
+            "en": "CA-12"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음에는 지역 주택 문제를 더 이야기하죠.",
+            "en": "Let's discuss local housing further next time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1962년 신설된 캘리포니아 제30선거구에 당선됐습니다.",
+            "en": "I won the newly created California 30th district in 1962."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20684",
+          "claim": "Roybal entered newly created CA-30 in 1962 after Los Angeles City Council service.",
+          "asOf": "1963-02-04"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-municipal-to-federal-110"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-111",
+      "mechanism": "redistricting-opportunity",
+      "learningTarget": "Burke ran in a new court-mandated district covering much of southwest Los Angeles.",
+      "date": "1973-02-12",
+      "venue": {
+        "ko": "캘리포니아 지역사회 포럼",
+        "en": "California community forum"
+      },
+      "context": {
+        "ko": "법원 명령 이후 새 선거구가 생긴 배경을 듣는다.",
+        "en": "A member describes a district created after court-ordered reapportionment."
+      },
+      "cast": [
+        {
+          "id": "B001102",
+          "name": "Yvonne Brathwaite Burke",
+          "ko": "이본 브레이스웨이트 버크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/7693"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "주 의회에서 일할 때 법원 명령에 따른 재배분으로 새 하원 선거구가 생겼습니다.",
+          "en": "While I was in the state assembly, court-mandated reapportionment created a House district."
+        },
+        {
+          "speaker": "host",
+          "ko": "어느 지역을 포함했는지 지도에서 보여 주세요.",
+          "en": "Show our audience the area it covered."
+        },
+        {
+          "speaker": "player",
+          "ko": "로스앤젤레스 지도를 보겠습니다.",
+          "en": "Let's look at the Los Angeles map."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "버크 의원의 새 지역구는 {{blank}}의 상당 부분을 포함했군요.",
+        "en": "Your new district covered much of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "샌프란시스코 북부",
+            "en": "northern San Francisco"
+          },
+          {
+            "id": "B",
+            "ko": "샌디에이고 동부",
+            "en": "eastern San Diego"
+          },
+          {
+            "id": "C",
+            "ko": "로스앤젤레스 남서부",
+            "en": "southwest Los Angeles"
+          },
+          {
+            "id": "D",
+            "ko": "새크라멘토 시내",
+            "en": "downtown Sacramento"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 배경을 다음 지역사회 토론에서도 기억하세요.",
+            "en": "Remember that context at the next community forum."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 선거구는 로스앤젤레스 남서부의 상당 부분을 포함했습니다.",
+            "en": "The district covered much of southwest Los Angeles."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/7693",
+          "claim": "Burke ran in a new court-mandated district covering much of southwest Los Angeles.",
+          "asOf": "1973-02-12"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-redistricting-opportunity-111"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-112",
+      "mechanism": "career-transition",
+      "learningTarget": "Badillo represented New York 1971–78 and resigned to become NYC deputy mayor.",
+      "date": "1978-02-06",
+      "venue": {
+        "ko": "뉴욕시청",
+        "en": "New York City Hall"
+      },
+      "context": {
+        "ko": "하원의원으로 만났던 사람을 시청에서 다시 만난다.",
+        "en": "You encounter a former House member at City Hall."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Herman Badillo",
+          "ko": "허먼 바디요",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8806"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "의사당에서 뵈었는데 오늘은 시청이군요.",
+          "en": "We met at the Capitol, but today we're at City Hall."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "하원에서 사임하고 시 정부로 옮겼습니다.",
+          "en": "I resigned from the House to join city government."
+        },
+        {
+          "speaker": "aide",
+          "ko": "예전 뉴욕 지역구 기록은 따로 남기죠.",
+          "en": "Let's preserve his former New York district record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "이번에 바디요님은 {{blank}}으로 소개해야겠군요.",
+        "en": "Today I should introduce you as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕주 주지사",
+            "en": "New York governor"
+          },
+          {
+            "id": "B",
+            "ko": "뉴욕주 상원의원",
+            "en": "New York state senator"
+          },
+          {
+            "id": "C",
+            "ko": "연방 하원의장",
+            "en": "Speaker of the House"
+          },
+          {
+            "id": "D",
+            "ko": "뉴욕시 부시장",
+            "en": "New York City deputy mayor"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음에는 시청에서 뵙죠.",
+            "en": "See you at City Hall next time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1978년 뉴욕시 부시장이 되기 위해 하원을 떠났습니다.",
+            "en": "I left the House to become New York City deputy mayor in 1978."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/8806",
+          "claim": "Badillo represented New York 1971–78 and resigned to become NYC deputy mayor.",
+          "asOf": "1978-02-06"
+        },
+        {
+          "url": "https://history.house.gov/Collection/Detail/15032397075",
+          "claim": "Badillo represented New York 1971–78 and resigned to become NYC deputy mayor.",
+          "asOf": "1978-02-06"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-career-transition-112"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-113",
+      "mechanism": "incumbent-primary-conflict",
+      "learningTarget": "Abzug faced incumbent Ryan after the 1972 district merger; Ryan won primary and died before general election.",
+      "date": "1973-02-05",
+      "venue": {
+        "ko": "뉴욕 대표단 오찬",
+        "en": "New York delegation luncheon"
+      },
+      "context": {
+        "ko": "1972년 선거구 통합으로 동료와 경쟁하게 된 일을 회고한다.",
+        "en": "Abzug recalls a primary against a fellow incumbent after districts merged."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Bella Abzug",
+          "ko": "벨라 애브저그",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8276"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "지난해 선거구가 합쳐지면서 같은 당 현직 의원과 경선을 치렀죠.",
+          "en": "Last year's district merger put me in a primary with another incumbent of my party."
+        },
+        {
+          "speaker": "player",
+          "ko": "재획정은 동료 의원의 경쟁 관계도 바꾸는군요.",
+          "en": "Redistricting can change relationships between colleagues."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "그때 경선에서 경쟁했던 사람을 기억하시나요?",
+          "en": "Do you remember my primary opponent?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그 상대는 {{blank}} 의원이었습니다.",
+        "en": "Your opponent was Representative {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "윌리엄 피츠 라이언",
+            "en": "William Fitts Ryan"
+          },
+          {
+            "id": "B",
+            "ko": "허먼 바디요",
+            "en": "Herman Badillo"
+          },
+          {
+            "id": "C",
+            "ko": "애덤 클레이턴 파월",
+            "en": "Adam Clayton Powell"
+          },
+          {
+            "id": "D",
+            "ko": "제럴드 포드",
+            "en": "Gerald Ford"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 경선과 본선은 별개의 기록으로 기억해 주세요.",
+            "en": "Keep the primary and general election separate."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "라이언이 경선에서 승리했지만 본선 전 사망했고 당은 저를 대체 후보로 지명했습니다.",
+            "en": "Ryan won the primary but died before the general election; the party named me as replacement."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/8276",
+          "claim": "Abzug faced incumbent Ryan after the 1972 district merger; Ryan won primary and died before general election.",
+          "asOf": "1973-02-05"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-incumbent-primary-conflict-113"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-114",
+      "mechanism": "regional-policy-visit",
+      "learningTarget": "Hansen entered Congress from Washington in 1960 with transportation and resource management priorities.",
+      "date": "1961-02-06",
+      "venue": {
+        "ko": "교통 정책 간담회",
+        "en": "Transportation forum"
+      },
+      "context": {
+        "ko": "교통과 자원 관리를 주제로 현지 방문을 조율한다.",
+        "en": "A field visit is arranged around transportation and resource issues."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Julia Butler Hansen",
+          "ko": "줄리아 버틀러 핸슨",
+          "portrait": null,
+          "source": "https://history.house.gov/Collection/Detail/30763"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "교통 인프라와 자원 관리는 제가 하원에 가져온 의제입니다.",
+          "en": "Transportation and resource management are issues I brought to Congress."
+        },
+        {
+          "speaker": "host",
+          "ko": "현장 방문을 주 대표단과 조율하겠습니다.",
+          "en": "We'll coordinate the field visit with your delegation."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "지역의 인프라를 함께 살펴보시겠어요?",
+          "en": "Would you join me to look at regional infrastructure?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "핸슨 의원과의 다음 방문은 {{blank}}에서 이어가겠습니다.",
+        "en": "Our next visit will be in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "오리건주",
+            "en": "Oregon"
+          },
+          {
+            "id": "B",
+            "ko": "워싱턴주",
+            "en": "Washington State"
+          },
+          {
+            "id": "C",
+            "ko": "아이다호주",
+            "en": "Idaho"
+          },
+          {
+            "id": "D",
+            "ko": "몬태나주",
+            "en": "Montana"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "현지에서 이야기하죠.",
+            "en": "Let's talk on site."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 1960년 워싱턴주에서 하원에 들어왔습니다.",
+            "en": "I entered the House from Washington State in 1960."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/Collection/Detail/30763",
+          "claim": "Hansen entered Congress from Washington in 1960 with transportation and resource management priorities.",
+          "asOf": "1961-02-06"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-regional-policy-visit-114"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-115",
+      "mechanism": "vacancy-chain",
+      "learningTarget": "Akaka resigned HI-2 May 16, 1990 to fill Matsunaga's Senate vacancy.",
+      "date": "1990-05-17",
+      "venue": {
+        "ko": "하와이 대표단 접견실",
+        "en": "Hawaii delegation reception"
+      },
+      "context": {
+        "ko": "한 원의 공석이 다른 원의 공석으로 이어진다.",
+        "en": "A vacancy in one chamber produces a vacancy in the other."
+      },
+      "cast": [
+        {
+          "id": "A000069",
+          "name": "Daniel K. Akaka",
+          "ko": "대니얼 아카카",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000069.jpg",
+          "source": "https://history.house.gov/People/Detail/8354"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "마쓰나가 상원의원의 사망으로 생긴 공석을 채우게 됐습니다.",
+          "en": "I've been appointed to fill the vacancy left by Senator Matsunaga's death."
+        },
+        {
+          "speaker": "player",
+          "ko": "그러면 의원님의 하원 자리도 비겠군요.",
+          "en": "That leaves your House seat vacant too."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 원의 기록을 구별해 주세요.",
+          "en": "Distinguish the records of the two chambers."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "아카카의 사임으로 비게 된 하원 의석은 {{blank}}입니다.",
+        "en": "Akaka's resignation vacated the House seat for {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "HI-1",
+            "en": "HI-1"
+          },
+          {
+            "id": "B",
+            "ko": "HI-AL",
+            "en": "HI-AL"
+          },
+          {
+            "id": "C",
+            "ko": "HI-2",
+            "en": "HI-2"
+          },
+          {
+            "id": "D",
+            "ko": "AK-AL",
+            "en": "AK-AL"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "그 기록에 후임의 취임도 이어질 겁니다.",
+            "en": "The successor's arrival will connect to that entry."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1990년 5월 16일 HI-2 하원의원직을 사임했습니다.",
+            "en": "I resigned the HI-2 House seat on May 16, 1990."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/8354",
+          "claim": "Akaka resigned HI-2 May 16, 1990 to fill Matsunaga's Senate vacancy.",
+          "asOf": "1990-05-17"
+        },
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224012&id=36507224009",
+          "claim": "Akaka resigned HI-2 May 16, 1990 to fill Matsunaga's Senate vacancy.",
+          "asOf": "1990-05-17"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-vacancy-chain-115"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-116",
+      "mechanism": "reunion",
+      "learningTarget": "Mink won September 22, 1990 special election for HI-2 after Akaka's resignation.",
+      "date": "1990-10-01",
+      "venue": {
+        "ko": "하와이 대표단 환영회",
+        "en": "Hawaii delegation welcome"
+      },
+      "context": {
+        "ko": "아카카의 공석을 기억하는 플레이어가 밍크의 복귀를 맞는다.",
+        "en": "You remember Akaka's vacancy as Mink returns to the House."
+      },
+      "cast": [
+        {
+          "id": "M000797",
+          "name": "Patsy Takemoto Mink",
+          "ko": "팻시 다케모토 밍크",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/18329"
+        },
+        {
+          "id": "A000069",
+          "name": "Daniel K. Akaka",
+          "ko": "대니얼 아카카",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/A000069.jpg",
+          "source": "https://history.house.gov/People/Detail/8354"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:1",
+          "ko": "제가 상원으로 옮긴 뒤 하원 특별선거가 열렸죠.",
+          "en": "A House special election followed my move to the Senate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "9월 특별선거에서 당선돼 다시 하원에 왔습니다.",
+          "en": "I won the September special election and returned to the House."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분의 경력이 같은 의석에서 이어졌군요.",
+          "en": "Your careers connect through the same seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "밍크 의원이 이번에 맡은 의석은 {{blank}}입니다.",
+        "en": "The seat Mink won this time is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "HI-1",
+            "en": "HI-1"
+          },
+          {
+            "id": "B",
+            "ko": "HI-AL",
+            "en": "HI-AL"
+          },
+          {
+            "id": "C",
+            "ko": "CA-29",
+            "en": "CA-29"
+          },
+          {
+            "id": "D",
+            "ko": "HI-2",
+            "en": "HI-2"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음에는 예전 임기와 이번 임기를 함께 이야기하죠.",
+            "en": "Next time we'll discuss both my earlier and current terms."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "밍크 의원은 제가 떠난 HI-2의 공석을 채웠습니다.",
+            "en": "Mink filled the HI-2 vacancy I left."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/18329",
+          "claim": "Mink won September 22, 1990 special election for HI-2 after Akaka's resignation.",
+          "asOf": "1990-10-01"
+        },
+        {
+          "url": "https://history.house.gov/dropdowntemplate?htmlContentID=36507224012&id=36507224009",
+          "claim": "Mink won September 22, 1990 special election for HI-2 after Akaka's resignation.",
+          "asOf": "1990-10-01"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-reunion-116"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-117",
+      "mechanism": "representation-system",
+      "learningTarget": "Norton began service as DC Delegate January 3, 1991.",
+      "date": "1991-02-04",
+      "venue": {
+        "ko": "워싱턴 D.C. 주민 접견회",
+        "en": "Washington DC constituent reception"
+      },
+      "context": {
+        "ko": "방문객이 D.C.의 대표를 워싱턴주 의원과 혼동한다.",
+        "en": "A visitor confuses DC representation with Washington State."
+      },
+      "cast": [
+        {
+          "id": "N000147",
+          "name": "Eleanor Holmes Norton",
+          "ko": "엘리너 홈스 노턴",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/N000147.jpg",
+          "source": "https://history.house.gov/People/Detail/19016"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "host",
+          "ko": "어느 주의 하원의원으로 소개할까요?",
+          "en": "Which state's representative should we introduce you as?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "저는 워싱턴 D.C.에서 선출됐습니다. 일반 주 의석과 다르죠.",
+          "en": "I was elected from Washington, DC, which differs from an ordinary state seat."
+        },
+        {
+          "speaker": "player",
+          "ko": "직책 자체를 정확하게 소개하겠습니다.",
+          "en": "I'll introduce the office accurately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "노턴 의원은 {{blank}}입니다.",
+        "en": "Norton serves as {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "워싱턴 D.C. 연방 하원 대표(Delegate)",
+            "en": "the House Delegate from DC"
+          },
+          {
+            "id": "B",
+            "ko": "워싱턴주 하원의원",
+            "en": "a representative from Washington State"
+          },
+          {
+            "id": "C",
+            "ko": "D.C. 상원의원",
+            "en": "a U.S. senator from DC"
+          },
+          {
+            "id": "D",
+            "ko": "D.C. 시장",
+            "en": "the mayor of DC"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "주민 접견에서도 그 차이를 기억하세요.",
+            "en": "Remember that distinction when meeting constituents."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1991년 1월 3일 D.C. 하원 Delegate 임기를 시작했습니다.",
+            "en": "I began as DC's House Delegate on January 3, 1991."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/19016",
+          "claim": "Norton began service as DC Delegate January 3, 1991.",
+          "asOf": "1991-02-04"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-representation-system-117"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-118",
+      "mechanism": "milestone-reunion",
+      "learningTarget": "Dingell became longest-serving member of Congress June 7, 2013.",
+      "date": "2013-06-10",
+      "venue": {
+        "ko": "의회 기념 접견회",
+        "en": "Congressional milestone reception"
+      },
+      "context": {
+        "ko": "1955년 첫 임기를 기억하며 긴 경력을 축하한다.",
+        "en": "You recall his first term in 1955 while celebrating a milestone."
+      },
+      "cast": [
+        {
+          "id": "D000355",
+          "name": "John D. Dingell",
+          "ko": "존 딩겔 주니어",
+          "portrait": "https://unitedstates.github.io/images/congress/225x275/D000355.jpg",
+          "source": "https://history.house.gov/People/Detail/12268"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "아버지의 뒤를 이어 하원에 들어왔던 때를 기억하시나요?",
+          "en": "Do you remember when I followed my father into the House?"
+        },
+        {
+          "speaker": "player",
+          "ko": "그때부터 오랜 시간이 흘렀습니다. 이번 주에 새 기록을 세우셨죠.",
+          "en": "A long time has passed. You reached a milestone this week."
+        },
+        {
+          "speaker": "host",
+          "ko": "축하 인사에 그 기록을 담아 주세요.",
+          "en": "Mention that record in your congratulations."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "딩겔 의원님의 {{blank}} 기록을 축하드립니다.",
+        "en": "Congratulations on becoming {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미시간 최초 하원의장",
+            "en": "Michigan's first Speaker"
+          },
+          {
+            "id": "B",
+            "ko": "미국 의회 역사상 최장 재직 의원",
+            "en": "the longest-serving member in congressional history"
+          },
+          {
+            "id": "C",
+            "ko": "최연소 연방 하원의원",
+            "en": "the youngest House member"
+          },
+          {
+            "id": "D",
+            "ko": "최초의 여성 상원의원",
+            "en": "the first woman senator"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "1955년의 만남도 함께 기억해 주세요.",
+            "en": "Remember our meeting in 1955 too."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2013년 6월 7일 로버트 버드의 재직 기록을 넘어섰습니다.",
+            "en": "On June 7, 2013 I surpassed Robert Byrd's service record."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/12268",
+          "claim": "Dingell became longest-serving member of Congress June 7, 2013.",
+          "asOf": "2013-06-10"
+        },
+        {
+          "url": "https://history.house.gov/OralHistory/Detail?id=15032419659",
+          "claim": "Dingell became longest-serving member of Congress June 7, 2013.",
+          "asOf": "2013-06-10"
+        }
+      ],
+      "outcome": {
+        "kind": "revisit",
+        "key": "p01-milestone-reunion-118"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-119",
+      "mechanism": "committee-access-story",
+      "learningTarget": "Grasso received Education and Labor and Veterans' Affairs assignments from Albert in 1971.",
+      "date": "1971-02-08",
+      "venue": {
+        "ko": "의장 접견실",
+        "en": "Speaker's reception room"
+      },
+      "context": {
+        "ko": "1964년 정당대회에서 함께 일했던 두 사람이 위원회 배정을 이야기한다.",
+        "en": "Former convention colleagues discuss committee assignments."
+      },
+      "cast": [
+        {
+          "id": "G000387",
+          "name": "Ella Tambussi Grasso",
+          "ko": "엘라 그라소",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Listing/G/GRASSO,-Ella-Tambussi-(G000387)/"
+        },
+        {
+          "id": null,
+          "name": "Carl Albert",
+          "ko": "칼 앨버트",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8360"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1964년 정당대회 결의안 위원회에서 함께 일했죠.",
+          "en": "We worked together on the resolutions committee at the 1964 convention."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이제 하원에서 위원회 업무를 이야기하는군요.",
+          "en": "Now we're discussing House committee work."
+        },
+        {
+          "speaker": "player",
+          "ko": "그라소 의원 지역구의 고용 문제와도 관계가 있겠군요.",
+          "en": "That connects to employment concerns in Grasso's district."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "그라소 의원이 요청한 위원회는 교육·노동위원회와 {{blank}}입니다.",
+        "en": "Grasso requested Education and Labor and {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "외교위원회",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "B",
+            "ko": "법사위원회",
+            "en": "Judiciary"
+          },
+          {
+            "id": "C",
+            "ko": "보훈위원회",
+            "en": "Veterans' Affairs"
+          },
+          {
+            "id": "D",
+            "ko": "정보위원회",
+            "en": "Intelligence"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역구의 고용과 참전군인 문제에 연결되는 배정이죠.",
+            "en": "Those assignments connect to jobs and veterans' concerns in my district."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:1",
+            "ko": "교육·노동위원회와 보훈위원회 배정을 요청했고 둘 다 받아들였습니다.",
+            "en": "She requested Education and Labor and Veterans' Affairs, and I granted both."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Listing/G/GRASSO,-Ella-Tambussi-(G000387)/",
+          "claim": "Grasso received Education and Labor and Veterans' Affairs assignments from Albert in 1971.",
+          "asOf": "1971-02-08"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/8360",
+          "claim": "Grasso received Education and Labor and Veterans' Affairs assignments from Albert in 1971.",
+          "asOf": "1971-02-08"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-committee-access-story-119"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-120",
+      "mechanism": "convention-recognition",
+      "learningTarget": "Jordan, Texas representative, delivered the landmark 1976 Democratic convention keynote.",
+      "date": "1976-07-14",
+      "venue": {
+        "ko": "뉴욕 민주당 전당대회",
+        "en": "Democratic National Convention, New York"
+      },
+      "context": {
+        "ko": "기조연설을 듣고 연설자의 하원 경력을 연결한다.",
+        "en": "You connect a convention speaker with her House career."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Barbara Jordan",
+          "ko": "바버라 조던",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/16031"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "기조연설을 듣고 인사드리고 싶었습니다.",
+          "en": "I wanted to greet you after the keynote."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번에는 전당대회에서 만났지만 하원 경력도 기억해 주세요.",
+          "en": "We've met at the convention, but remember my House career too."
+        },
+        {
+          "speaker": "host",
+          "ko": "다른 참석자에게도 소개해 주시겠어요?",
+          "en": "Could you introduce her to another attendee?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "바버라 조던 의원은 {{blank}} 대표단 소속입니다.",
+        "en": "Barbara Jordan serves in the House from {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "뉴욕",
+            "en": "New York"
+          },
+          {
+            "id": "B",
+            "ko": "조지아",
+            "en": "Georgia"
+          },
+          {
+            "id": "C",
+            "ko": "루이지애나",
+            "en": "Louisiana"
+          },
+          {
+            "id": "D",
+            "ko": "텍사스",
+            "en": "Texas"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에서도 다시 뵙죠.",
+            "en": "See you again in Congress."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 텍사스 하원의원으로 이번 전당대회 기조연설을 맡았습니다.",
+            "en": "I'm a Texas representative who delivered this convention's keynote."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/16031",
+          "claim": "Jordan, Texas representative, delivered the landmark 1976 Democratic convention keynote.",
+          "asOf": "1976-07-14"
+        },
+        {
+          "url": "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Permanent-Interest/Legislative-Interests/",
+          "claim": "Jordan, Texas representative, delivered the landmark 1976 Democratic convention keynote.",
+          "asOf": "1976-07-14"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-convention-recognition-120"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-121",
+      "mechanism": "institutional-rights-discussion",
+      "learningTarget": "De Priest introduced a resolution challenging House restaurant discrimination January 24, 1934.",
+      "date": "1934-01-25",
+      "venue": {
+        "ko": "의사당 식당 입구",
+        "en": "House restaurant entrance"
+      },
+      "context": {
+        "ko": "식당 차별 문제를 다룬 결의안 제출 다음 날 대화를 나눈다.",
+        "en": "You discuss a resolution addressing discrimination in the House restaurant the day after its introduction."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Oscar De Priest",
+          "ko": "오스카 드프리스트",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/12155"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "어제 식당의 차별 문제를 다루는 결의안을 냈습니다.",
+          "en": "Yesterday I introduced a resolution addressing discrimination in the restaurant."
+        },
+        {
+          "speaker": "player",
+          "ko": "의회 내부의 권리 문제이기도 하군요.",
+          "en": "It's a question of rights within Congress itself."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "사건을 전할 때 제 소속 대표단도 정확히 알려 주세요.",
+          "en": "Identify my delegation accurately when discussing the incident."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "결의안을 제출한 분은 {{blank}}의 드프리스트 의원입니다.",
+        "en": "The resolution was introduced by Representative De Priest of {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "일리노이",
+            "en": "Illinois"
+          },
+          {
+            "id": "B",
+            "ko": "오하이오",
+            "en": "Ohio"
+          },
+          {
+            "id": "C",
+            "ko": "미주리",
+            "en": "Missouri"
+          },
+          {
+            "id": "D",
+            "ko": "미시간",
+            "en": "Michigan"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "결의안의 이후 진행도 지켜보죠.",
+            "en": "Let's follow the resolution's progress."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 일리노이 의원으로 1934년 1월 24일 이 결의안을 냈습니다.",
+            "en": "I represent Illinois and introduced the resolution on January 24, 1934."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/HistoricalHighlight/Detail/35119",
+          "claim": "De Priest introduced a resolution challenging House restaurant discrimination January 24, 1934.",
+          "asOf": "1934-01-25"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/12155",
+          "claim": "De Priest introduced a resolution challenging House restaurant discrimination January 24, 1934.",
+          "asOf": "1934-01-25"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-institutional-rights-discussion-121"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-122",
+      "mechanism": "district-system-change",
+      "learningTarget": "Montana replaced at-large House elections with eastern and western districts in 1917.",
+      "date": "1918-06-03",
+      "venue": {
+        "ko": "몬태나 지역 정치 간담회",
+        "en": "Montana political meeting"
+      },
+      "context": {
+        "ko": "1916년 주 전체 선거 이후 바뀐 선거제도를 이야기한다.",
+        "en": "You discuss the electoral system after the 1916 statewide election."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Jeannette Rankin",
+          "ko": "지넷 랭킨",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/20147"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "1916년에는 주 전체에서 두 의원을 뽑았죠.",
+          "en": "In 1916 Montana elected two House members statewide."
+        },
+        {
+          "speaker": "player",
+          "ko": "지난해 주 의회에서 제도를 바꾸었다고 들었습니다.",
+          "en": "I heard the legislature changed it last year."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 선거는 새 제도를 고려해야 합니다.",
+          "en": "The coming election must account for the new system."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "몬태나는 {{blank}}을 마련했군요.",
+        "en": "Montana has now created {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "단일 주 전체 선거구",
+            "en": "one statewide district"
+          },
+          {
+            "id": "B",
+            "ko": "동부와 서부 두 선거구",
+            "en": "an eastern and a western district"
+          },
+          {
+            "id": "C",
+            "ko": "세 개 도시 선거구",
+            "en": "three urban districts"
+          },
+          {
+            "id": "D",
+            "ko": "두 상원 선거구",
+            "en": "two Senate districts"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "재획정이 선거의 중요한 배경입니다.",
+            "en": "Redistricting is important context for the election."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "1917년 주 의회는 주 전체 의석을 동부와 서부 선거구로 나눴습니다.",
+            "en": "In 1917 the legislature replaced at-large seats with eastern and western districts."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/Blog/Detail/15032451896",
+          "claim": "Montana replaced at-large House elections with eastern and western districts in 1917.",
+          "asOf": "1918-06-03"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/20147",
+          "claim": "Montana replaced at-large House elections with eastern and western districts in 1917.",
+          "asOf": "1918-06-03"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p01-district-system-change-122"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-123",
+      "mechanism": "constituent-policy-request",
+      "learningTarget": "Rogers chaired Veterans' Affairs in the 80th Congress.",
+      "date": "1947-02-10",
+      "venue": {
+        "ko": "보훈 정책 간담회",
+        "en": "Veterans' policy meeting"
+      },
+      "context": {
+        "ko": "MA-5에서 만났던 의원에게 참전군인 관련 후속 면담을 요청한다.",
+        "en": "You seek a follow-up on veterans' issues with a member previously encountered from MA-5."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Edith Nourse Rogers",
+          "ko": "이디스 노스 로저스",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/20569"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "참전군인 문제에 관해 다시 이야기하고 싶습니다.",
+          "en": "I'd like to follow up on veterans' concerns."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회에서는 그 문제를 다루는 위원회 의장입니다.",
+          "en": "This Congress I chair the committee that handles those matters."
+        },
+        {
+          "speaker": "aide",
+          "ko": "지역구 민원과 위원회 일정은 별개로 잡겠습니다.",
+          "en": "We'll distinguish district correspondence from committee meetings."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "로저스 의원과의 후속 회의는 {{blank}} 관련 일정으로 잡겠습니다.",
+        "en": "I'll arrange a follow-up concerning {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "외교위원회",
+            "en": "Foreign Affairs"
+          },
+          {
+            "id": "B",
+            "ko": "세입위원회",
+            "en": "Ways and Means"
+          },
+          {
+            "id": "C",
+            "ko": "보훈위원회",
+            "en": "the Veterans' Affairs Committee"
+          },
+          {
+            "id": "D",
+            "ko": "농업위원회",
+            "en": "Agriculture"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "다음에 그 문제를 더 논의하죠.",
+            "en": "Let's discuss that further next time."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 80대 의회 하원 보훈위원회 의장입니다.",
+            "en": "I chair House Veterans' Affairs in the 80th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/20569",
+          "claim": "Rogers chaired Veterans' Affairs in the 80th Congress.",
+          "asOf": "1947-02-10"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-constituent-policy-request-123"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-124",
+      "mechanism": "party-office-distinction",
+      "learningTarget": "Norton was the first woman elected to party leadership, as Democratic Caucus Secretary in the 79th Congress.",
+      "date": "1945-02-05",
+      "venue": {
+        "ko": "민주당 의원총회 접견실",
+        "en": "Democratic caucus reception"
+      },
+      "context": {
+        "ko": "1925년 신임 의원으로 만났던 노턴의 새 당내 역할을 듣는다.",
+        "en": "Norton, encountered as a freshman in 1925, discusses her new party role."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Mary Teresa Norton",
+          "ko": "메리 테리사 노턴",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/19024"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "뉴저지 대표단에서의 경력은 그대로입니다.",
+          "en": "My New Jersey delegation record remains unchanged."
+        },
+        {
+          "speaker": "player",
+          "ko": "하지만 이번 의회에 새 당내 직책을 맡으셨죠.",
+          "en": "But you have a new party office in this Congress."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "하원의장과는 다른 민주당 의원총회 직책입니다.",
+          "en": "It's a caucus role distinct from the Speakership."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "노턴 의원님의 새 역할은 {{blank}}입니다.",
+        "en": "Your new role is {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "하원의장",
+            "en": "Speaker"
+          },
+          {
+            "id": "B",
+            "ko": "공화당 원내대표",
+            "en": "Republican leader"
+          },
+          {
+            "id": "C",
+            "ko": "상원 의장대행",
+            "en": "Senate president pro tempore"
+          },
+          {
+            "id": "D",
+            "ko": "민주당 의원총회 서기",
+            "en": "Democratic Caucus Secretary"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:0",
+            "ko": "대표단과 당내 역할은 따로 기억하세요.",
+            "en": "Remember my delegation and party roles separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "79대 의회에서 민주당 의원총회 서기가 됐습니다.",
+            "en": "I became Democratic Caucus Secretary in the 79th Congress."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/Education/Fact-Sheets/WIC-Fact-Sheet2/",
+          "claim": "Norton was the first woman elected to party leadership, as Democratic Caucus Secretary in the 79th Congress.",
+          "asOf": "1945-02-05"
+        },
+        {
+          "url": "https://history.house.gov/People/Detail/19024",
+          "claim": "Norton was the first woman elected to party leadership, as Democratic Caucus Secretary in the 79th Congress.",
+          "asOf": "1945-02-05"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p01-party-office-distinction-124"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P01-125",
+      "mechanism": "legislative-collaboration",
+      "learningTarget": "Abzug and Chisholm coauthored the Child Development Act; Chisholm represented Brooklyn NY-12.",
+      "date": "1972-02-07",
+      "venue": {
+        "ko": "뉴욕 대표단 정책 오찬",
+        "en": "New York delegation policy luncheon"
+      },
+      "context": {
+        "ko": "두 뉴욕 의원이 보육 입법 협력 경험을 이야기한다.",
+        "en": "Two New York members discuss their childcare legislation collaboration."
+      },
+      "cast": [
+        {
+          "id": null,
+          "name": "Bella Abzug",
+          "ko": "벨라 애브저그",
+          "portrait": null,
+          "source": "https://history.house.gov/People/Detail/8276"
+        },
+        {
+          "id": null,
+          "name": "Shirley Chisholm",
+          "ko": "셜리 치점",
+          "portrait": null,
+          "source": "https://www.archives.gov/research/african-americans/individuals/shirley-chisholm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "npc:0",
+          "ko": "치점 의원과 보육 관련 입법을 함께 작성했죠.",
+          "en": "Representative Chisholm and I worked together on childcare legislation."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "같은 주 의원으로 협력해도 지역구는 서로 다릅니다.",
+          "en": "We collaborate in the same delegation but represent distinct districts."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 분의 연락처를 구별해 기억하겠습니다.",
+          "en": "I'll remember your contacts separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "브루클린의 치점 의원은 {{blank}}를 대표합니다.",
+        "en": "Representative Chisholm of Brooklyn represents {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "NY-12",
+            "en": "NY-12"
+          },
+          {
+            "id": "B",
+            "ko": "NY-10",
+            "en": "NY-10"
+          },
+          {
+            "id": "C",
+            "ko": "NY-14",
+            "en": "NY-14"
+          },
+          {
+            "id": "D",
+            "ko": "NY-5",
+            "en": "NY-5"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "다음 정책 토론에서도 함께 이야기하죠.",
+            "en": "Let's continue at the next policy discussion."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "치점은 뉴욕 제12선거구 의원이며 함께 Child Development Act를 작성했습니다.",
+            "en": "Chisholm represents NY-12; we coauthored the Child Development Act."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://history.house.gov/People/Detail/8276",
+          "claim": "Abzug and Chisholm coauthored the Child Development Act; Chisholm represented Brooklyn NY-12.",
+          "asOf": "1972-02-07"
+        },
+        {
+          "url": "https://www.archives.gov/research/african-americans/individuals/shirley-chisholm",
+          "claim": "Abzug and Chisholm coauthored the Child Development Act; Chisholm represented Brooklyn NY-12.",
+          "asOf": "1972-02-07"
+        }
+      ],
+      "outcome": {
+        "kind": "appointment",
+        "key": "p01-legislative-collaboration-125"
+      },
+      "fictional": true
+    }
+  ]
+}
