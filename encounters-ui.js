@@ -8,7 +8,7 @@ function format(f,v){return f==='district'||f==='candidate'?districtLabel(v):f==
 function B(ko,en,act){return button(T(ko,en),'meet:'+act)}
 function picture(e,hidden){const person=ctx.people().find(x=>x.id===e.person.id)||e.person;return photo(person,true,hidden)}
 function render(place='auto'){const s=S(),b=encounterBook(s),slot=encounterSlot(s),e=b.active;const race=s.politics?.active;const activeRace=race&&!race.finished;
-if(ctx.mode()==='collection'||ctx.mode()==='challenges'&&!activeRace)return '';
+if(ctx.mode()==='collection'||ctx.mode()==='challenges'&&!activeRace||s.development?.retired&&!activeRace)return '';
 if(e&&!e.closed&&e.slot===slot){
 const answer=e.selected!==null,hidden=e.fact==='name'&&!answer,term=e.term,role=roleLabels[term.type]||[term.type,term.type];const name=hidden?T('전에 만난 인물','A familiar face'):esc(e.person.name)+(e.person.ko?' · '+esc(e.person.ko):'');
 const greeting=e.returning?T('다시 인사를 나눕니다.','You meet again.'):T('정치권에서 새로운 인물을 만났습니다.','You meet a new political figure.');
@@ -17,9 +17,9 @@ return '<section class="panel encounter-scene" id="encounter-scene"><div class="
 }
 if(b.lastSlot===slot)return '';
 const label=activeRace?T('선거 일정 중 만남','Campaign encounter'):place==='congress'?T('의회 일정 중 만남','Congressional encounter'):T('오늘의 정치 일정','Today’s political appointment');
-return '<section class="panel encounter-invite"><div class="eyebrow">INVITATION</div><h2>'+label+'</h2><p>'+T('보좌진이 행사 참가자와의 인사를 주선했습니다. 잠시 들러 보시겠습니까?','Staff have arranged an introduction at an event. Would you like to stop by?')+'</p>'+B('행사에 참석하기','Attend the event','start')+'</section>'
+return '<section class="panel encounter-invite"><div class="eyebrow">INVITATION</div><h2>'+label+'</h2><p>'+T('보좌진이 행사 참가자와의 인사를 주선했습니다. 잠시 들러 보시겠습니까?','Staff have arranged an introduction at an event. Would you like to stop by?')+'</p>'+B('행사에 참석하기','Attend the event','start:'+place)+'</section>'
 }
 function journal(){const b=encounterBook(S()),cs=Object.values(b.contacts).sort((a,c)=>c.meetings-a.meetings);return '<details class="panel encounter-journal"><summary>'+T('인맥 수첩','Contact notebook')+' · '+cs.length+'</summary>'+(cs.length?cs.slice(0,30).map(c=>'<p><strong>'+esc(c.name)+'</strong> · '+T('만남','Meetings')+' '+c.meetings+' · '+T('기억한 정보','Recalled facts')+' '+c.correct+'/'+c.attempts+'</p>').join(''):'<p>'+T('아직 기록된 만남이 없습니다.','No recorded encounters yet.')+'</p>')+'</details>'}
-function handle(a){const s=S();if(a==='start'){return !!startEncounter(s,ctx.people(),ctx.states,ctx.closeRaces,ctx.portraits())}if(a==='close')return closeEncounter(s);if(a.startsWith('answer:'))return answerEncounter(s,+a.slice(7));return false}
+function handle(a){const s=S();if(a.startsWith('start:')){return !!startEncounter(s,ctx.people(),ctx.states,ctx.closeRaces,ctx.portraits(),a.slice(6))}if(a==='close')return closeEncounter(s);if(a.startsWith('answer:'))return answerEncounter(s,+a.slice(7));return false}
 return {render,journal,handle};
 }
