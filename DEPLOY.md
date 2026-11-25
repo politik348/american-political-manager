@@ -1,0 +1,11 @@
+# American Political Manager V6.0 — first integrated prototype
+Static web app, no build dependencies. Run locally with `python -m http.server 8000` then open http://localhost:8000 (not file://). For GitHub Pages: Settings → Pages → Build and deployment → Deploy from a branch → main / (root). On HTTPS, the service worker caches the core game; external Congress records may load from browser cache after a successful online import. Portraits depend on source availability. On mobile use Add to Home Screen; install experience varies by browser.
+## Features
+- 1900–2026 arbitrary starting year, eight era labels, 50 state admission years.
+- Korean with English terms; English switch. Not every real legislator has a Korean transliteration.
+- Fictional career, quarter turns, five actions, four target offices, succession, simulated elections. Historical presidential winners 1900–2024, distinct from invented results.
+- Congressional source import and date/state filtering, portraits when available, links, collection, review with due dates.
+- Alternate history: fictional policy votes, not full historical causal branching.
+- Local autosave and JSON transfer. Unity migration scaffold.
+## Data and limitations
+Historical and current legislators: https://unitedstates.github.io/congress-legislators/ ; portraits: https://github.com/unitedstates/images ; biography: https://bioguide.congress.gov/ ; elections: https://www.archives.gov/electoral-college/results ; Senate selection: https://www.senate.gov/about/origins-foundations/senate-and-constitution/seventeenth-amendment.htm . Presidential photo thumbnails may use Wikimedia; verify individual file license and attribution before redistributing. Starter records are limited. No exact district geography, historical state election calendar, Senate classes, real roll calls, actual governor database, full alternate history or native Unity build. No real-person skill or election probability estimates. Election mechanics are a fictional game abstraction. Test: npm test.
