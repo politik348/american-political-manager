@@ -11,7 +11,54 @@
     "early_675_status": "legacy_audit_status_unknown",
     "early_exact_ids": [],
     "prior_R3_R6_index_counts": 575,
-    "prior_full_shard_union_recount_pending": true
+    "prior_full_shard_union_recount_pending": false,
+    "verified_prior_unique": 1375,
+    "prior_unique_ids": {
+      "contiguous_start": "P01-676",
+      "contiguous_end": "P01-2050"
+    },
+    "reconciliation": [
+      {
+        "source": "Q2",
+        "core_count": 800,
+        "range": "P01-676–1475"
+      },
+      {
+        "source": "R3",
+        "count": 50,
+        "shards": 2,
+        "sha_matches": 2
+      },
+      {
+        "source": "R4",
+        "count": 127,
+        "shards": 6,
+        "sha_matches": 6,
+        "priority_ids": [
+          "P01-1814",
+          "P01-1816"
+        ]
+      },
+      {
+        "source": "R5",
+        "count": 150,
+        "shards": 6,
+        "sha_matches": 6
+      },
+      {
+        "source": "R6",
+        "count": 248,
+        "shards": 10,
+        "sha_matches": 10,
+        "excluded": [
+          "P01-1814",
+          "P01-1816"
+        ]
+      }
+    ],
+    "prior_duplicate_ids": [],
+    "new_vs_prior_overlap": [],
+    "legacy_reported_at_least_168_exact_ids_unknown": true
   },
   "scope": "P01-001–250",
   "shards": [
@@ -25,7 +72,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 0
-      }
+      },
+      "blob_sha": "a74e5cd09dc65600797ddc0f291d67e001570938"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-02.json",
@@ -37,7 +85,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 0
-      }
+      },
+      "blob_sha": "afa13d84ceb2580bf1dce018e52001a5da15a425"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-03.json",
@@ -49,7 +98,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 5
-      }
+      },
+      "blob_sha": "f78ee3f83f55e13236133ccd61630491e651c093"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-04.json",
@@ -61,7 +111,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 0
-      }
+      },
+      "blob_sha": "81b3c3c17d8cd7e8a78202ab2eb061dafe6b55fd"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-05.json",
@@ -75,7 +126,8 @@
         "missing_id_slots": 5
       },
       "source_blob_sha_before": "59b12c014fb308f91549c16d8b92b72698404af8",
-      "source_blob_sha_after": "15d1686e79dbd51dc69ba063f7a7508348802378"
+      "source_blob_sha_after": "15d1686e79dbd51dc69ba063f7a7508348802378",
+      "blob_sha": "6f2ad05c2f1f2b41bef9940c9f318044c7f2706a"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-06.json",
@@ -87,7 +139,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 17
-      }
+      },
+      "blob_sha": "20618b26f10c67e1a3a4c5e218aa4eadc3754cdd"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-07.json",
@@ -99,7 +152,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 12
-      }
+      },
+      "blob_sha": "cc4aa2160746b171c9bf3001dad05789f2106edb"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-08.json",
@@ -111,7 +165,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 19
-      }
+      },
+      "blob_sha": "57f79157c671e7d234037b96b81dcb8447730e94"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-09.json",
@@ -123,7 +178,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 21
-      }
+      },
+      "blob_sha": "6a09da8af71301751a9350a2f90d52791124ea4e"
     },
     {
       "path": "docs/audits/P01-Q2-C-R1-PART-10.json",
@@ -135,7 +191,8 @@
         "corrected": 0,
         "full_axis_clearance": 0,
         "missing_id_slots": 11
-      }
+      },
+      "blob_sha": "e35be12bc0c70a0d2c4994edafa8bf855fa7d8f0"
     }
   ],
   "core_verified_ids": [
@@ -398,13 +455,13 @@
     "P01-112"
   ],
   "restored_bioguide": [],
-  "count_policy": "New documented IDs, not confirmed first-ever verification: legacy 168 minimum reported without exact IDs. Core only; do not claim full-axis clearance. 1375 baseline reported by HQ, R3-R6 index ranges reconcile; full individual prior shard union not yet independently recounted.",
-  "I1_policy": "No source ID or portrait changes; record null slots only; I1 owns restoration.",
+  "count_policy": "Only explicit scene-level independent core verification records are counted; prior union 1375 and current 154 are disjoint. Unmapped legacy reports are not added. New means newly documented, not provably first-ever verification. Core verification does not imply full-axis clearance.",
+  "I1_policy": "No Bioguide ID edits. 90 null cast.id slots observed in current 250 scenes; HQ's 70-slot I1 queue has not been reconciled by slot and is not directly comparable.",
   "progress": {
     "new_documented_core_verified": 154,
     "known_reverified": 0,
     "prior_reported_plus_nonoverlapping_documented_ids": 1529,
-    "baseline_union_status": "prior reported 1375; all 675 early ledger IDs unknown",
+    "baseline_union_status": "Confirmed exact prior documented union P01-676–2050, no duplicates; early P01-001–675 legacy identities unknown.",
     "pending_in_round": 96,
     "full_axis_clearance": 0,
     "original_corrected": 2,
@@ -413,6 +470,25 @@
     "target": 250,
     "next_scope_after_round": "P01-251–675",
     "missing_id_slots": 90,
-    "minimum_met": true
+    "minimum_met": true,
+    "prior_confirmed_documented_core_verified": 1375,
+    "cumulative_unique_documented_core_verified": 1529,
+    "remaining_without_documented_core": 521,
+    "all_target_complete": false,
+    "prior_shards_sha_verified": 24,
+    "current_shards_sha_verified": 10,
+    "unique_current_verified_ids": 154
+  },
+  "verification_readback": {
+    "current_unique": 154,
+    "pending": 96,
+    "scope_union": 250,
+    "index_shard_ids_match": true,
+    "original_changed_ids": [
+      "P01-110",
+      "P01-112"
+    ],
+    "corrected_source_blob_sha": "15d1686e79dbd51dc69ba063f7a7508348802378",
+    "full_axis_clearance": 0
   }
 }
