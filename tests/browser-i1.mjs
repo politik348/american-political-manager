@@ -2,6 +2,17 @@ import {chromium} from 'playwright';import assert from 'node:assert/strict';impo
 const root=new URL('../data/dialogue-packs/',import.meta.url),manifest=JSON.parse(fs.readFileSync(new URL('i1-index.json',root),'utf8'));
 const scene=id=>JSON.parse(fs.readFileSync(new URL(id.split('-')[0]+'/part-'+String(Math.ceil(+id.split('-')[1]/25)).padStart(2,'0')+'.json',root),'utf8')).scenes.find(x=>x.id===id);
 const browser=await chromium.launch({headless:true});try{
+ const menuPage=await browser.newPage({serviceWorkers:'block'});await menuPage.goto(new URL('index.html',process.env.APM_URL||'http://127.0.0.1:8000/').href);
+ await menuPage.locator('[data-action="lobby:tutorial"]').click();await menuPage.locator('[data-action="lobby:back"]').click();
+ await menuPage.locator('[data-action="lobby:career"]').click();await menuPage.locator('#startform input[name=name]').fill('Old Career');await menuPage.locator('#startform button[type=submit]').click();await menuPage.locator('[data-action="lobby:back"]').click();
+ const saves=()=>menuPage.evaluate(()=>({career:localStorage.getItem('apm-save-v1'),tutorial:localStorage.getItem('apm-tutorial-v176')}));
+ const before=await saves();assert.ok(before.career&&before.tutorial);
+ await menuPage.locator('[data-action="lobby:new:career"]').click();await menuPage.locator('#startform').waitFor();assert.deepEqual(await saves(),before);await menuPage.locator('[data-action="lobby:back"]').click();assert.deepEqual(await saves(),before);
+ await menuPage.locator('[data-action="lobby:new:tutorial"]').click({trial:true});menuPage.once('dialog',d=>d.dismiss());await menuPage.locator('[data-action="lobby:new:tutorial"]').click();assert.deepEqual(await saves(),before);
+ await menuPage.locator('[data-action="lobby:new:career"]').click();await menuPage.locator('#startform input[name=name]').fill('New Career');menuPage.once('dialog',d=>d.dismiss());await menuPage.locator('#startform button[type=submit]').click();assert.deepEqual(await saves(),before);
+ menuPage.once('dialog',d=>d.accept());await menuPage.locator('#startform button[type=submit]').click();const after=await saves();assert.equal(JSON.parse(after.career).name,'New Career');assert.equal(after.tutorial,before.tutorial);
+ await menuPage.locator('[data-action="lobby:back"]').click();menuPage.once('dialog',d=>d.accept());await menuPage.locator('[data-action="lobby:new:tutorial"]').click();await menuPage.locator('[data-action="lobby:back"]').click();assert.equal((await saves()).career,after.career);await menuPage.locator('[data-action="lobby:career"]').click();assert.equal(JSON.parse((await saves()).career).name,'New Career');await menuPage.close();
+ console.log('Lobby new game regression: fresh career, confirmation cancellation, independent mode saves, resume');
  const page=await browser.newPage({serviceWorkers:'block'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(new URL('index.html',process.env.APM_URL||'http://127.0.0.1:8000/').href);
  await page.locator('[data-action="lobby:career"]').click();await page.locator('#startyear').selectOption('2026');await page.locator('#startform').locator('select[name=mode]').selectOption('alternate');await page.locator('#startform button[type=submit]').click();
