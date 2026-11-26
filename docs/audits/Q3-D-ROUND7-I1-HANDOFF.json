@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "team": "Q3-D",
+  "round": 7,
+  "run": "https://github.com/politik348/american-political-manager/actions/runs/45734913964",
+  "jobId": 139625703330,
+  "metrics": {
+    "cases": 2,
+    "sameCatalogImageRendered": 2,
+    "cleanUrlRendered": 1,
+    "binaryStored": 0,
+    "chromiumRetested": 0
+  },
+  "cases": [
+    {
+      "id": "L000004",
+      "name": "Robert M. La Follette",
+      "approvedUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Photo_of_Robert_M._La_Follette%2C_Sr.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "cleanUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Photo_of_Robert_M._La_Follette%2C_Sr.jpg",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Photo_of_Robert_M._La_Follette,_Sr.jpg",
+      "sourcePageUrl": "https://archive.org/stream/ArenaMagazine-Volume35/0601-arena-volume35#page/n589/mode/2up",
+      "author": "E. R. Curtiss",
+      "date": "published by 1906; capture unknown",
+      "rights": "US PD expired; published 1906",
+      "credit": "E. R. Curtiss",
+      "format": "image/jpeg",
+      "dimensions": [
+        1368,
+        2336
+      ],
+      "firstCI": {
+        "time": "2026-11-26T01:19:38Z",
+        "status": 200,
+        "displayed": true
+      },
+      "secondCI": {
+        "time": "2026-11-26T01:20:01Z",
+        "error": "net::ERR_BLOCKED_BY_ORB",
+        "fallback": true
+      },
+      "webRender": "Approved query URL rendered; query-free URL failed in web retrieval",
+      "localRecommendation": "US PD basis (Commons item pre-1931 publication/registration); preserve same file revision; download, validate actual JPEG magic and MIME, record SHA256, keep source/credit, then store at I1-agreed same-origin static path. Do not replace with a different photo.",
+      "proposedFilename": "L000004.jpg",
+      "localBytesVerified": false
+    },
+    {
+      "id": "L000393",
+      "name": "Henry Cabot Lodge",
+      "approvedUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Henry_Cabot_Lodge_c1916.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "cleanUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Henry_Cabot_Lodge_c1916.jpg",
+      "metadataPageUrl": "https://commons.wikimedia.org/wiki/File:Henry_Cabot_Lodge_c1916.jpg",
+      "sourcePageUrl": "https://www.loc.gov/item/00652551/",
+      "author": "Pirie MacDonald",
+      "date": "ca.1916",
+      "rights": "US PD; Commons pre-1931 copyright/publication statement",
+      "credit": "Pirie MacDonald",
+      "format": "image/jpeg",
+      "dimensions": [
+        1507,
+        2146
+      ],
+      "firstCI": {
+        "time": "2026-11-26T01:19:38Z",
+        "status": 200,
+        "displayed": true
+      },
+      "secondCI": {
+        "time": "2026-11-26T01:20:01Z",
+        "error": "net::ERR_BLOCKED_BY_ORB",
+        "fallback": true
+      },
+      "webRender": "Query-free URL rendered; same Commons file",
+      "localRecommendation": "US PD basis (Commons item pre-1931 publication/registration); preserve same file revision; download, validate actual JPEG magic and MIME, record SHA256, keep source/credit, then store at I1-agreed same-origin static path. Do not replace with a different photo.",
+      "proposedFilename": "L000393.jpg",
+      "localBytesVerified": false
+    }
+  ],
+  "rootCause": "Intermittent remote delivery demonstrated; ORB is symptom, HTTP response body/headers not captured. Rate limiting or non-image response possible, not established.",
+  "limitations": [
+    "Container DNS lookup failed for Wikimedia; no verified binary, file hash, or local path agreed.",
+    "LOC Lodge catalog direct returned 403; metadata mirror checked; La Follette publication scan not independently reopened.",
+    "No engine changes, no Chromium rerun."
+  ],
+  "acceptance": "I1 confirms path, stores verified bytes, runs repeated cold/warm Chromium tests, expects displayed=true fallback=false credit=true source=true and HTTP 200."
+}
