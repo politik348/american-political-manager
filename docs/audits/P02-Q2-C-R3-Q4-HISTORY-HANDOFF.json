@@ -1,0 +1,1123 @@
+{
+  "schema": 1,
+  "team": "Q2-C",
+  "round": 3,
+  "source_path": "docs/audits/P02-Q4-R2-Q2C-HOLDS.json",
+  "source_sha": "3830674129e440c5249eccd3df788eeb3eba7b75",
+  "counts": {
+    "reviewed": 19,
+    "pass": 17,
+    "revise": 2,
+    "hold": 0,
+    "new_core_credit": 0
+  },
+  "records": [
+    {
+      "id": "P02-026",
+      "learningTarget": "The majority leader in 1947 is White.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Barkley's opposition contact",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-02.json",
+        "sha": "425cdb34c097ba2ba1c2b8cc0273cd369ec5187d",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "새 의회의 양당 발언 요청을 접수했습니다.",
+              "en": "I have requests for floor time from both parties."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표에게 보낼 요청과 위원회 요청을 구분하세요.",
+              "en": "Distinguish floor-leader requests from committee requests."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1947년 다수당 지도자의 공식 직책을 확인하세요.",
+              "en": "Verify the official majority leader in 1947."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "화이트에게 다수당 일정 요청을 보내고 바클리의 야당 연락망은 따로 유지하세요.",
+                "en": "Send the simulated majority scheduling request to White; preserve Barkley's opposition contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1947년 다수당 지도자는 화이트입니다. 소수당 연락처로 보낸 요청을 회수하세요.",
+                "en": "White was majority leader in 1947. Retrieve the request sent to the minority contact."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "80th Congress, White majority, Barkley minority (line 54)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "Use 'minority leader' if a formal title is needed.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-030",
+      "learningTarget": "The majority leader in 1955 is Johnson.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Knowland's minority contact",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-02.json",
+        "sha": "425cdb34c097ba2ba1c2b8cc0273cd369ec5187d",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1955년 본회의 일정 협의에 양당의 요청이 들어왔습니다.",
+              "en": "Both parties have requests for the simulated 1955 floor schedule."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 지도부의 일정 역할과 소수당의 협의 역할을 나누세요.",
+              "en": "Separate majority scheduling leadership from minority consultation."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "해당 의회의 실제 다수당 지도자를 확인하세요.",
+              "en": "Identify the actual majority leader for this Congress."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "존슨에게 다수당 일정 요청을 배정하고 노울랜드의 소수당 연락은 유지하세요.",
+                "en": "Assign the majority scheduling request to Johnson and retain Knowland's minority contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "다수당 지도자는 존슨입니다. 양당 직책을 뒤집은 연락표를 고치세요.",
+                "en": "Johnson was majority leader. Correct the reversed leadership contacts."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "84th Congress, Johnson majority, Knowland minority (line 60)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-042",
+      "learningTarget": "The Democratic whip in 1969 is Kennedy.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Mansfield's leadership role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-02.json",
+        "sha": "425cdb34c097ba2ba1c2b8cc0273cd369ec5187d",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1969년 민주당 표결 준비 연락망을 새로 구성합니다.",
+              "en": "I'm setting up a simulated Democratic vote-preparation contact list for 1969."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "일정 결정과 의원 출석 확인을 다른 역할로 구분하세요.",
+              "en": "Distinguish scheduling from attendance coordination."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "해당 의회의 원내총무를 공식 명부로 확인하세요.",
+              "en": "Verify that Congress's whip from the official roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "케네디에게 원내총무 업무를 배정하고 맨스필드의 지도자 역할을 유지하세요.",
+                "en": "Assign whip duties to Kennedy while retaining Mansfield's leadership role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1969년 원내총무는 케네디입니다. 지도자 명부와 바뀐 연락망을 수정하세요.",
+                "en": "Kennedy was whip in 1969. Correct the contact list that swapped the offices."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "91st Congress Mansfield majority (line 67); Kennedy whip 1969–71",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-048",
+      "learningTarget": "The Democratic whip in 1977 is Cranston.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Byrd's floor leadership role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-02.json",
+        "sha": "425cdb34c097ba2ba1c2b8cc0273cd369ec5187d",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1977년 민주당의 가상 표결 준비 업무를 배분합니다.",
+              "en": "I'm allocating simulated Democratic vote-preparation tasks in 1977."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 지도자의 일정 관리와 원내총무의 출석 조정을 구분하세요.",
+              "en": "Distinguish majority scheduling from whip attendance coordination."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "공식 원내총무 명부에 따라 담당자를 선택하세요.",
+              "en": "Select the coordinator using the official whip roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "크랜스턴에게 출석 조정을 배정하고 버드의 원내 지도부 역할을 유지하세요.",
+                "en": "Assign attendance to Cranston and retain Byrd's floor leadership role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "원내총무는 크랜스턴입니다. 지도자 직책으로 보낸 출석 요청을 수정하세요.",
+                "en": "Cranston was whip. Redirect the attendance request sent to the leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "95th Congress Byrd majority (line 72); Cranston whip 1977–91",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-051",
+      "learningTarget": "The majority leader in 1981 is Baker.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Byrd's separate opposition contact",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1981년 다수당 교체 뒤 양당 일정 협의 경로를 설정합니다.",
+              "en": "I'm setting up floor-scheduling contacts after the 1981 change in majority."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "기존 다수당의 이력을 소수당 전환 뒤에도 보존하세요.",
+              "en": "Preserve the former majority's history after its transition to opposition."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "해당 의회의 다수당 지도자를 공식 명부로 확인하세요.",
+              "en": "Verify the majority leader from that Congress's official roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "베이커를 새 다수당 지도자로 연결하고 버드의 소수당 연락처를 따로 두세요.",
+                "en": "Link Baker as the new majority leader and retain Byrd's separate opposition contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1981년 다수당 지도자는 베이커입니다. 이전 회기 지도부를 복사한 배정을 수정하세요.",
+                "en": "Baker was majority leader in 1981. Correct the assignment copied from the prior Congress."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "97th Congress Baker majority, Byrd minority (line 74)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-053",
+      "learningTarget": "The Republican whip in 1985 is Simpson.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Dole's scheduling role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1985년 가상 본회의 표결 전에 출석 확인과 일정 조정 요청이 동시에 들어왔습니다.",
+              "en": "Attendance and scheduling requests arrive before a simulated 1985 floor vote."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "출석과 표 확보를 담당하는 직책은 원내대표와 구분됩니다.",
+              "en": "The office coordinating attendance and votes differs from floor leadership."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "당시 공화당 원내총무를 확인해 첫 요청을 배정하세요.",
+              "en": "Identify the Republican whip and assign the first request."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "심프슨에게 출석 확인을 배정하고 돌의 일정 역할은 별도로 남기세요.",
+                "en": "Assign attendance to Simpson and retain Dole's separate scheduling role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1985년 원내총무는 심프슨입니다. 원내대표에게 잘못 보낸 출석 요청을 수정하세요.",
+                "en": "Simpson was whip in 1985. Redirect the attendance request misrouted to the leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "99th Congress Dole majority (line 76); Simpson whip 1985–95",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change; scheduling is coordination, not unilateral control.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-055",
+      "learningTarget": "The majority leader in 1989 is Mitchell.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Dole's minority contact",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1989년 원내 지도부 교체에 따른 가상 일정 협의표를 갱신합니다.",
+              "en": "I'm updating the simulated scheduling chart for the 1989 leadership transition."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이전 민주당 지도부의 재임 종료와 공화당 직책은 따로 표시하세요.",
+              "en": "Separate the former Democratic leader's end of service from Republican offices."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "새 다수당 지도자를 공식 선출 기록으로 확인하세요.",
+              "en": "Verify the new majority leader from the official selection record."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "미첼을 새 다수당 지도자로 연결하고 돌의 소수당 연락처를 유지하세요.",
+                "en": "Link Mitchell as new majority leader and retain Dole's minority contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "다수당 지도자는 미첼입니다. 이전 지도자나 소수당 지도자로 지정한 항목을 수정하세요.",
+                "en": "Mitchell was majority leader. Correct an assignment to the former or minority leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "101st Congress Mitchell majority, Dole minority (line 78)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-057",
+      "learningTarget": "The Democratic whip in 1991 is Ford.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Mitchell's scheduling role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1991년 민주당 본회의 준비에서 출석 확인의 담당자를 찾습니다.",
+              "en": "I'm identifying the Democratic attendance coordinator for a simulated 1991 floor session."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표의 의제 조정과 원내총무의 출석 조정은 다른 업무입니다.",
+              "en": "Agenda coordination and whip attendance coordination are distinct tasks."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "공식 지도부 명부에서 원내총무를 확인하세요.",
+              "en": "Verify the whip from the official leadership roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "포드에게 출석 확인을 배정하고 미첼의 일정 역할을 별도로 유지하세요.",
+                "en": "Assign attendance to Ford and retain Mitchell's scheduling role separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1991년 원내총무는 포드입니다. 원내대표에게 보낸 출석 요청을 수정하세요.",
+                "en": "Ford was whip in 1991. Redirect the request sent to the floor leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "102nd Congress Mitchell majority (line 79); Ford whip 1991–99",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-060",
+      "learningTarget": "The president pro tempore in 1995 is Thurmond.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Dole's floor role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "1995년 가상 본회의에서 의장석 관련 요청과 원내 일정 요청을 구분합니다.",
+              "en": "In a simulated 1995 floor session, distinguish presiding-office requests from scheduling requests."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표의 업무와 임시의장 직책을 동일시하지 마세요.",
+              "en": "Do not equate the floor leader's duties with the president pro tempore's office."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "당시 임시의장의 공식 재임 기록을 확인하세요.",
+              "en": "Verify the official president pro tempore record."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "서먼드의 임시의장 직책으로 의장석 요청을 연결하고 돌의 원내 역할은 분리하세요.",
+                "en": "Route the presiding-office request to Thurmond and keep Dole's floor role separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1995년 임시의장은 서먼드입니다. 원내대표로 표시한 의장석 명부를 수정하세요.",
+                "en": "Thurmond was president pro tempore in 1995. Correct the roster that listed the floor leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "104th Congress Dole majority on June 1, 1995 (line 81)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change to secondary role; formal president pro tempore fact carried from R2.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-061",
+      "learningTarget": "The majority leader in July 1996 is Lott.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Daschle's minority office",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "돌의 상원 퇴임 이후 7월 원내 지도부 승계 기록을 검토합니다.",
+              "en": "I'm reviewing the July leadership succession after Dole left the Senate."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "소수당 지도부의 기존 기록은 유지하세요.",
+              "en": "Preserve the existing minority leadership record."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1996년 7월 새 다수당 지도자를 확인하세요.",
+              "en": "Identify the majority leader in July 1996."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "로트를 돌의 후임 지도자로 연결하고 대슐의 소수당 직책을 유지하세요.",
+                "en": "Link Lott as Dole's successor and preserve Daschle's minority office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "7월 지도자는 로트입니다. 이미 퇴임한 돌에게 보낸 가상 요청을 회수하세요.",
+                "en": "Lott was leader in July. Retrieve the simulated request sent to Dole after his departure."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "104th Congress Lott succeeded Dole in June 1996; Daschle minority (lines 81–82)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-067",
+      "learningTarget": "The Republican whip in 2003 is McConnell.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Frist's scheduling role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "2003년 공화당 표결 준비에서 출석과 일정 업무를 배분합니다.",
+              "en": "I'm allocating simulated Republican attendance and scheduling tasks for 2003."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 지도자의 의제 역할과 원내총무의 출석 역할을 구분하세요.",
+              "en": "Distinguish majority agenda leadership from whip attendance coordination."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "당시 원내총무 명부를 확인하세요.",
+              "en": "Verify the contemporary whip roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "맥코널에게 출석 조정을 배정하고 프리스트의 일정 역할은 따로 유지하세요.",
+                "en": "Assign attendance coordination to McConnell and retain Frist's scheduling role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "원내총무는 맥코널입니다. 프리스트의 직책으로 전달한 요청을 수정하세요.",
+                "en": "McConnell was whip. Redirect the request sent to Frist's office."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "108th Congress Frist majority (line 86); McConnell whip 2003–07",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-069",
+      "learningTarget": "The Democratic whip in 2005 is Durbin.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Reid's floor leadership",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "2005년 민주당의 가상 본회의 표결 준비 연락망을 갱신합니다.",
+              "en": "I'm updating simulated Democratic vote-preparation contacts in 2005."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표의 일정 협의와 원내총무의 출석 조정은 다릅니다.",
+              "en": "Scheduling and whip attendance coordination are distinct."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "공식 지도부 명부에서 원내총무를 선택하세요.",
+              "en": "Select the whip from the official roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "더빈을 출석 조정 담당자로 연결하고 리드의 원내 지도부를 유지하세요.",
+                "en": "Link Durbin to attendance coordination and retain Reid's floor leadership."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "원내총무는 더빈입니다. 두 직책을 바꿔 놓은 연락표를 고치세요.",
+                "en": "Durbin was whip. Correct the reversed leadership contacts."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "109th Congress Reid minority (line 87); Durbin whip from 2005",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change; minority coordinates with majority, not majority calendar authority.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-071",
+      "learningTarget": "The minority leader in 2007 is McConnell.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Reid's majority contact",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-03.json",
+        "sha": "5ad44b7cf0642d63a7b3148a5cad0a37810b8c61",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "2007년 양당 지도부 간 가상 의사일정 협의를 준비합니다.",
+              "en": "I'm preparing a simulated 2007 floor-scheduling consultation between the two parties."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 연락처와 소수당 협의 상대를 각각 확인해야 합니다.",
+              "en": "Verify majority and minority contacts separately."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "그 의회의 소수당 지도자를 공식 명부로 확인하세요.",
+              "en": "Identify the minority leader from the official roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "맥코널에게 소수당 협의 요청을 연결하고 리드의 다수당 연락을 유지하세요.",
+                "en": "Link minority consultation to McConnell and retain Reid's majority contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "소수당 지도자는 맥코널입니다. 이전 회기 지도자를 표시한 항목을 수정하세요.",
+                "en": "McConnell was minority leader. Correct the entry using the previous Congress's leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "110th Congress Reid majority, McConnell minority (line 88)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-080",
+      "learningTarget": "The majority leader in 2015 is McConnell.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Reid's minority role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-04.json",
+        "sha": "870da5101a672ea627db4a2213d5d31a24402140",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "2015년 다수당 교체에 따라 가상의 본회의 일정 협의망을 재구성합니다.",
+              "en": "I'm reorganizing simulated floor scheduling after the 2015 change in majority."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "기존 민주당 지도부는 소수당 협의 대상으로 분리하세요.",
+              "en": "Separate the former Democratic leadership as the minority counterpart."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "해당 회기의 다수당 지도자를 공식 명부로 확인하세요.",
+              "en": "Identify the majority leader in the official roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "맥코널에게 다수당 일정 요청을 연결하고 리드의 소수당 역할은 유지하세요.",
+                "en": "Link majority scheduling to McConnell and preserve Reid's minority role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2015년 지도자는 맥코널입니다. 이전 다수당 지도자에게 보낸 가상 요청을 수정하세요.",
+                "en": "McConnell was majority leader in 2015. Redirect the simulated request sent to the former majority leader."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "114th Congress McConnell majority, Reid minority (line 92)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-087",
+      "learningTarget": "Schiff's new regular term lasts six years.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "regular term's end in 2031",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-04.json",
+        "sha": "870da5101a672ea627db4a2213d5d31a24402140",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "시프의 2024년 잔여 임기와 2025년 시작 정규 임기를 분리한 달력을 만듭니다.",
+              "en": "I'm creating separate calendars for Schiff's remaining term in 2024 and regular term starting in 2025."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "잔여 임기의 길이를 정규 임기 길이로 사용하지 마세요.",
+              "en": "Do not use the remaining term length as the regular term length."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "새 정규 상원 임기의 길이를 적용하세요.",
+              "en": "Apply the length of the new regular Senate term."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "6년을 적용해 2031년 정규 임기 종료를 표시하세요.",
+                "en": "Apply six years and mark the regular term's end in 2031."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "정규 임기는 6년입니다. 잔여 임기나 하원 임기 기준을 사용한 달력을 수정하세요.",
+                "en": "The regular term is six years. Correct the calendar using a remaining term or House term."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "Class I list explicitly includes Schiff; regular term Jan 3 2025–Jan 3 2031 (lines 9,24)",
+      "official_sources": [
+        "https://www.senate.gov/senators/Class_I.htm"
+      ],
+      "required_wording": "Use scheduled end date, not a prediction of actual tenure.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-090",
+      "learningTarget": "The 119th Congress majority leader is Thune.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Schumer's minority role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-04.json",
+        "sha": "870da5101a672ea627db4a2213d5d31a24402140",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "제119대 의회의 가상 일정 협의망에 새 지도부를 반영합니다.",
+              "en": "I'm updating simulated scheduling contacts for the 119th Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이전 회기의 지도부와 현재 직책을 구분하세요.",
+              "en": "Distinguish the prior Congress's leadership from current offices."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "공식 다수당 지도자 명부를 확인하세요.",
+              "en": "Verify the official majority leader."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "튠에게 다수당 일정 요청을 배정하고 슈머의 소수당 협의 역할을 유지하세요.",
+                "en": "Assign majority scheduling to Thune and retain Schumer's minority role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제119대 다수당 지도자는 튠입니다. 이전 지도자의 연락처를 복사한 표를 수정하세요.",
+                "en": "Thune was majority leader in the 119th Congress. Correct the chart copied from the preceding leadership."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "119th Congress Thune majority, Schumer minority (line 97)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-092",
+      "learningTarget": "The Republican whip in the 119th Congress is Barrasso.",
+      "prior_core_status": "R2 carried forward",
+      "expression": "Thune's scheduling role",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-04.json",
+        "sha": "870da5101a672ea627db4a2213d5d31a24402140",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "제119대 공화당의 가상 표결 준비에서 출석 확인 담당자를 선택합니다.",
+              "en": "I'm choosing the simulated Republican attendance coordinator for a 119th Congress vote."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "원내대표의 일정 조정과 원내총무의 출석 조정은 구분됩니다.",
+              "en": "Scheduling and whip attendance coordination are distinct."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "공식 원내총무 명부를 확인하세요.",
+              "en": "Verify the official whip roster."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "배러소에게 출석 확인을 배정하고 튠의 일정 역할은 분리하세요.",
+                "en": "Assign attendance coordination to Barrasso and keep Thune's scheduling role separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "공화당 원내총무는 배러소입니다. 지도자와 원내총무를 뒤바꾼 배정을 수정하세요.",
+                "en": "Barrasso was Republican whip. Correct the reversed assignments."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "pass",
+      "finding": "119th Congress Thune majority, Barrasso whip (leadership list lines 37–45)",
+      "official_sources": [
+        "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+        "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+        "https://www.senate.gov/senators/leadership.htm"
+      ],
+      "required_wording": "No change.",
+      "application_status": "historically eligible; I1 protected field replay and HQ approval required",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-334",
+      "learningTarget": "Rule XI, adopted in 1934, allowed a committee to receive evidence and testimony when ordered by the Senate.",
+      "prior_core_status": "independently supported by source in this review; R3 counted once only in core shard",
+      "expression": "committee evidence hearings while retaining final Senate judgment",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-14.json",
+        "sha": "e20920a4d257158fd3214db4c4a127d009b8d0f1",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "탄핵재판의 증인 심리를 위원회에 맡기는 가상 절차를 검토합니다.",
+              "en": "I'm reviewing a simulated arrangement delegating witness hearings in an impeachment trial."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "증거 수집을 맡기는 것과 최종 판단 권한을 이전하는 것은 다릅니다.",
+              "en": "Delegating evidence gathering differs from transferring final judgment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1934년 Rule XI가 허용한 범위에 맞게 절차를 선택하세요.",
+              "en": "Choose the arrangement allowed under the 1934 Rule XI."
+            }
+          ],
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "위원회 증거 심리를 허용하되 최종 상원 판단은 별도로 유지하세요.",
+                "en": "Allow committee evidence hearings while retaining final Senate judgment."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "Rule XI는 위원회 증거 수집을 허용했습니다. 최종 판단을 이전한 절차를 취소하세요.",
+                "en": "Rule XI allowed committee evidence gathering. Undo the transfer of final judgment."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "revise",
+      "finding": "Senate historical overview lines 18–22: Rule XI requires Senate order before presiding officer appoints committee; final Senate judgment retained.",
+      "official_sources": [
+        "https://www.senate.gov/about/powers-procedures/impeachment/overview.htm"
+      ],
+      "required_wording": "KO: 상원이 명령한 경우에만 의장이 위원회를 임명하여 증거와 증언을 받게 하고, 최종 판단은 상원에 남겨 두세요. EN: If the Senate so orders, the presiding officer appoints a committee to receive evidence and testimony; final judgment remains with the Senate.",
+      "application_status": "revise before I1 review",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    },
+    {
+      "id": "P02-393",
+      "learningTarget": "The 1970 law allowed a majority of members to call meetings without chair approval.",
+      "prior_core_status": "independently supported by source in this review; R3 counted once only in core shard",
+      "expression": "eight or more constitutes a majority in the simulation and check the calling requirements",
+      "source_patch": {
+        "path": "docs/audits/P02-Q4-R2-PART-16.json",
+        "sha": "bb77de66c0be7820f480b8d54618a80f56db4a88",
+        "after": {
+          "opening": [
+            {
+              "speaker": "player",
+              "ko": "가상의 15인 위원회에서 위원장이 회의 소집을 거부했습니다.",
+              "en": "In a simulated 15-member committee the chair refuses to call a meeting."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "위원장 개인 권한과 위원 다수의 절차적 권한을 구분하세요.",
+              "en": "Distinguish the chair's authority from the procedural rights of a majority."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1970년 개편이 허용한 대체 소집 경로를 적용하세요.",
+              "en": "Apply the alternative meeting procedure provided by the 1970 reform."
+            }
+          ],
+          "response": {
+            "speaker": "player",
+            "ko": "허용되는 경로는 {{blank}}입니다.",
+            "en": "The permitted route is that {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "소수 위원 한 명이 단독으로 회의를 소집",
+                "en": "one minority member may call a meeting alone"
+              },
+              {
+                "id": "B",
+                "ko": "위원 전원의 만장일치가 있어야 소집",
+                "en": "all members must unanimously call a meeting"
+              },
+              {
+                "id": "C",
+                "ko": "위원장의 승인 없이는 소집 불가",
+                "en": "no meeting without the chair's approval"
+              },
+              {
+                "id": "D",
+                "ko": "위원 과반수로 위원장 승인 없이 소집",
+                "en": "a majority may call a meeting without chair approval"
+              }
+            ],
+            "correct": "D"
+          },
+          "followup": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "위원 8명 이상이 다수라는 가상 계산을 확인하고 소집 요건을 검토하세요.",
+                "en": "Verify that eight or more constitutes a majority in the simulation and check the calling requirements."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "위원 과반이 위원장 승인 없이 소집할 수 있습니다. 위원장만 가능하다고 한 가상 지침을 수정하세요.",
+                "en": "A majority may call a meeting without chair approval. Revise the chair-only simulated guideline."
+              }
+            ]
+          }
+        }
+      },
+      "historical_status": "revise",
+      "finding": "Public Law 91-510 §102(a), 84 Stat. 1143–44 (extracted text lines 181–191): three members submit written request; chair has three calendar days to call meeting within seven calendar days; if not, majority files written notice with date/hour and clerk notifies all.",
+      "official_sources": [
+        "https://www.govinfo.gov/content/pkg/STATUTE-84/pdf/STATUTE-84-Pg1140.pdf",
+        "https://www.rules.senate.gov/rules-of-the-senate",
+        "https://www.senate.gov/about/origins-foundations/committee-system/overview.htm"
+      ],
+      "required_wording": "KO: 15인 위원회에서 8명은 과반입니다. 최소 3인의 서면 요청, 3일 이내 소집 결정 및 7일 이내 개최 조건 불충족, 과반의 서면 통지와 위원 전원 통지를 확인하세요. EN: Eight of fifteen is a majority. Verify the written request by at least three members, the chair's failure to call within three calendar days a meeting to be held within seven calendar days, then majority written notice and notification of all members.",
+      "application_status": "revise before I1 review",
+      "uncertainty": "Simulation not actual meeting. For P02-393 PDF screenshot failed due to 12 MB limit; statutory text corroborated by Senate rules.",
+      "applied": false,
+      "new_core_credit": 0
+    }
+  ]
+}
