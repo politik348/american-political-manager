@@ -2,7 +2,7 @@ import {chromium,devices} from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../data/'+p,import.meta.url)));
-const seed=read('v18-news.json'),meta=read('v18-news-metadata.json');
+const seed=read('v18-news.json'),meta={schema:1,events:Object.fromEntries(seed.events.map(n=>[n.id,read('v18-news-metadata.json').events[n.id]]))};
 for(const [id,date,tier] of [['fixture-day','1960-01-03',3],['fixture-major-off','1960-01-05',2],['fixture-break-a','1960-01-10',1],['fixture-break-b','1960-01-10',1],['fixture-major-on','1960-01-12',2],['fixture-future','1960-01-20',3]]){
  seed.events.push({id,date,ko:'테스트 '+id,en:'Synthetic '+id,bodyKo:'검증용',bodyEn:'Test-only fictional fixture',source:'https://example.invalid/test',precision:'day',historical:true});meta.events[id]={tier,category:'other'};
 }

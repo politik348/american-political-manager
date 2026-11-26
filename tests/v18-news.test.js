@@ -6,7 +6,7 @@ import {newGame} from '../engine.js';
 import {calendar18,continueCalendar,ackNews,currentEvent,setPace} from '../v18-calendar.js';
 import {buildNewsIndex,loadNewsRegistry,sha256,searchNews,newsOnDate,markNews,visibleLinks,teamRanges,validatePack,validDate} from '../v18-news.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../data/'+p,import.meta.url)));
-const seed=read('v18-news.json'),seedMeta=read('v18-news-metadata.json');
+const seed=read('v18-news.json'),seedMeta={schema:1,events:Object.fromEntries(seed.events.map(n=>[n.id,read('v18-news-metadata.json').events[n.id]]))};
 const row=(id,date)=>({id,date,ko:'테스트 '+id,en:'Synthetic '+id,bodyKo:'검증 전용 가상 자료',bodyEn:'Test-only fixture, not historical content',source:'https://example.invalid/test',precision:'day',historical:true});
 const meta=(tier=3)=>({tier,category:'other'});
 const game=()=>newGame('Test','CA','Independent',1960,'staff');
