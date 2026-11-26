@@ -1,0 +1,26 @@
+name: I1 approved portrait acquisition
+on:
+  push:
+    branches: [hq-i1-pilot-integration]
+    paths: ['scripts/vendor-i1-portraits.py', 'docs/I1-R5-PORTRAIT-LOCAL-POLICY.json', '.github/workflows/i1-portrait-acquisition.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/hq-i1-pilot-integration'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - run: python scripts/vendor-i1-portraits.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/i1-approved-portraits data/dialogue-packs/i1-index.json
+          git diff --cached --quiet && exit 0
+          git commit -m "I1 R5: vendor verified approved original portrait bytes"
+          git push origin HEAD:refs/heads/hq-i1-pilot-integration
