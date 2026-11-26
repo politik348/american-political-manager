@@ -82,3 +82,10 @@
 .encounter-footer{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin:12px 0}
 .encounter-footer a{font-size:.85rem}.encounter-disclaimer{display:block;font-size:.75rem;color:#a5b6c7;margin-top:10px}
 @media(max-width:600px){.v18-readable-encounter .encounter-profile{padding:10px;gap:10px}.v18-readable-encounter .encounter-profile .portrait{width:70px;height:90px}.encounter-footer button{width:100%}.v18-readable-encounter .encounter-options{grid-template-columns:1fr}}
+
+/* Keep the historical portrait beside the identity on every encounter. */
+.v18-readable-encounter .encounter-profile{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}
+.v18-readable-encounter .encounter-identity{min-width:0}
+.v18-readable-encounter .encounter-portrait-slot{margin:0;justify-self:end;width:clamp(108px,15vw,144px);aspect-ratio:4/5;overflow:hidden;display:grid;place-items:center;background:#142638;border:1px solid #7b94aa;border-radius:9px}
+.v18-readable-encounter .encounter-portrait-slot .portrait{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;border:0;border-radius:0;background:transparent}
+@media(max-width:600px){.v18-readable-encounter .encounter-profile{gap:10px}.v18-readable-encounter .encounter-portrait-slot{width:clamp(70px,23vw,100px)}}
