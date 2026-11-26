@@ -32,7 +32,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "618cf3b5543a47f77caf1be9da890788105b5329"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-07.json",
@@ -45,7 +46,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "5d0c8e3f9434a657998b1793456d432c04fa4310"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-08.json",
@@ -58,7 +60,8 @@
         "pending": 0,
         "corrected": 1,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "3a3cf81b3934b0ead861d7d038299772d33a7fe4"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-09.json",
@@ -71,7 +74,8 @@
         "pending": 0,
         "corrected": 1,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "0ae216445535ebb61222b1a34e29e3f8486e22c4"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-10.json",
@@ -84,7 +88,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "7e0538875ff4f579048ab0b7f4dc75210e298510"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-83.json",
@@ -96,7 +101,8 @@
         "corrected": 0,
         "full_axis_clearance": 0
       },
-      "source_branch_note": "New Q5 file audited from pinned main; not copied into R1 branch."
+      "source_branch_note": "New Q5 file audited from pinned main; not copied into R1 branch.",
+      "audit_blob_sha": "8d55941cd8813857f2fd5d32ac7415d3c701304e"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-21.json",
@@ -107,7 +113,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "66015a022ee05544bf4cbce5dafb34d024774ac8"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-22.json",
@@ -118,7 +125,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "60d45e353aa08a39d318c8e83ef2430ba89e8674"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-23.json",
@@ -129,7 +137,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "927b6ef44144338b1ca985b2879c9dd3818d17a9"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-24.json",
@@ -140,7 +149,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "b5caf0c35ad4de73b6450caa3de4e069daff808b"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-25.json",
@@ -151,7 +161,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "a2a88890497c21ba93abfaede1146cde5d26aed7"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-26.json",
@@ -162,7 +173,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "39f4d3a06fe5856fcc2e6bd3113b6207e8663f3a"
     },
     {
       "path": "docs/audits/P01-Q2-C-R2-PART-27.json",
@@ -173,7 +185,8 @@
         "pending": 0,
         "corrected": 0,
         "full_axis_clearance": 0
-      }
+      },
+      "audit_blob_sha": "117710ee76a8e26de23640433d3d9594a890fbbd"
     }
   ],
   "new_verified_ids": [
@@ -479,7 +492,21 @@
     "P01-178",
     "P01-210"
   ],
-  "conflict_notes": [],
+  "conflict_notes": [
+    {
+      "main_observed": "e49434f5b63a42614cb1051e2bf98296b091948e",
+      "branch_before_final_index": "d73435b08ecd1689e2d1cfa5ea746b190d59c0f6",
+      "status": "diverged",
+      "ahead": 9,
+      "behind": 23,
+      "source_edits_checked": [
+        "part-05",
+        "part-08",
+        "part-09"
+      ],
+      "finding": "Current main blobs equal pinned main blobs on these 3 paths; no newly observed overlapping source edits on these paths. P02 and Q3 audit changes on main after pinned commit. No merge/rebase performed; not a clean-merge guarantee. Part83 audited from pinned main without copying source file into branch."
+    }
+  ],
   "progress": {
     "new_unique": 296,
     "cumulative_unique": 1825,
@@ -490,5 +517,27 @@
     "full_axis_clearance": 0,
     "id_only_edits": 0
   },
-  "policy": "Only actual core answer corroboration counts; ancillary claims and full-axis clearance separate. Main pinned for source, branch edits only when relevant scene exactly matches."
+  "policy": "Only actual core answer corroboration counts; ancillary claims and full-axis clearance separate. Main pinned for source, branch edits only when relevant scene exactly matches.",
+  "verification_readback": {
+    "shards_read_back": 13,
+    "verified_records": 296,
+    "unique_verified_ids": 296,
+    "index_exact_match": true,
+    "scope_exact_match": true,
+    "baseline_unique": 1529,
+    "baseline_overlap": 0,
+    "cumulative_unique": 1825,
+    "remaining_ids": "P01-251–500",
+    "handoff_blob_sha": "f3e01c5f50903aa4ba03a9e63cadee1345cfcb11",
+    "R1_index_blob_sha": "62c6d5a77010130e2a482e62442146f5fde8bb6c",
+    "R1_part05_blob_sha": "15d1686e79dbd51dc69ba063f7a7508348802378",
+    "original_modified_ids": [
+      "P01-178",
+      "P01-210"
+    ],
+    "official_id_check_records": 30,
+    "unique_official_ids_recorded": 14,
+    "full_axis_clearance": 0,
+    "engine_release_certified": 0
+  }
 }
