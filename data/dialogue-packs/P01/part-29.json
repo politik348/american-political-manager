@@ -35,19 +35,19 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "새 회기에는 상원에서 일합니다.",
-          "en": "I'll serve in the Senate next term."
+          "ko": "이번 회기가 끝나면 저는 하원을 떠납니다. 새 직책으로 연락하려는 방문객에게 어느 주의 상원의원으로 선출됐는지 알려 주세요.",
+          "en": "I'll leave the House when this Congress ends. Tell visitors hoping to contact me in my new office which state elected me to the Senate."
         },
         {
           "speaker": "npc:1",
-          "ko": "하원 자료와 상원 자료를 구별해야겠군요.",
-          "en": "We'll need to separate House and Senate papers."
+          "ko": "하원에서 이어지는 논의와 상원으로 가는 연락은 따로 받으면 되겠군요.",
+          "en": "We can distinguish matters continuing in the House from correspondence going to the Senate."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "언더우드가 상원에서 대표할 주는 {{blank}}입니다.",
-        "en": "Underwood will represent {{blank}} in the Senate.",
+        "ko": "언더우드 의원님은 {{blank}}의 상원의원으로 선출되셨습니다.",
+        "en": "You were elected to the Senate from {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -76,15 +76,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "두 기관의 기록을 나눠 보관하죠.",
-            "en": "Keep separate records for the two chambers."
+            "ko": "앨라배마에서 1914년에 선출됐습니다. 새 회기에는 상원에서 만나죠.",
+            "en": "Alabama elected me in 1914. We can meet in the Senate in the next Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하원 쪽 문의는 여기에 남기세요.",
+            "en": "Leave House inquiries here."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1914년에 앨라배마 상원의원으로 선출됐습니다.",
-            "en": "I was elected to the Senate from Alabama in 1914."
+            "ko": "앨라배마입니다. 1914년에 선출됐죠. 새 회기가 시작되기 전까지는 하원 기록과 구별해 주세요.",
+            "en": "Alabama. I was elected in 1914. Keep that distinct from my House record until the next Congress begins."
           }
         ]
       },
@@ -528,8 +533,8 @@
         "en": "Exposition souvenir gathering"
       },
       "context": {
-        "ko": "1893년 기념품을 본 블룸이 다가온다.",
-        "en": "Bloom approaches upon seeing an 1893 souvenir."
+        "ko": "1893년 박람회 기념품의 의미를 블룸에게 묻는다.",
+        "en": "Ask Bloom about the meaning of an 1893 exposition souvenir."
       },
       "cast": [
         {
@@ -542,20 +547,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저도 그 박람회에서 미드웨이 건설을 감독했어요.",
-          "en": "I supervised construction of the Midway there."
+          "speaker": "host",
+          "ko": "기념품의 미드웨이 그림을 본 방문객이 어느 박람회의 물건인지 묻습니다.",
+          "en": "A visitor sees a Midway image on a souvenir and asks which exposition it came from."
         },
         {
-          "speaker": "player",
-          "ko": "기념품에 개최 도시를 표시할게요.",
-          "en": "I'll label the souvenir with the city."
+          "speaker": "npc:0",
+          "ko": "그곳의 건설을 감독했습니다. 개최 도시부터 확인하면 이야기의 맥락을 알 수 있겠죠.",
+          "en": "I supervised its construction. Identifying the host city will put the story in context."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1893년 그 박람회는 {{blank}}에서 열렸습니다.",
-        "en": "That 1893 exposition was held in {{blank}}.",
+        "ko": "1893년 박람회는 {{blank}}에서 열렸습니다.",
+        "en": "The 1893 exposition was held in {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -584,15 +589,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "의회 이전 경력을 보여 주는 물건이네요.",
-            "en": "It illustrates my pre-Congress career."
+            "ko": "시카고였습니다. 미드웨이 건설 경험을 보여 주는 물건이군요. 방문객에게 이 그림을 설명해 보죠.",
+            "en": "Chicago. The souvenir illustrates my Midway construction experience. Let's explain the picture to the visitor."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1893년 시카고 세계박람회였습니다.",
-            "en": "It was the 1893 World's Columbian Exposition in Chicago."
+            "ko": "1893년 시카고 세계박람회였습니다. 미드웨이 그림을 다시 보면서 당시 역할을 구별해 보죠.",
+            "en": "It was the 1893 Chicago World's Fair. Look again at the Midway image and distinguish my role."
           }
         ]
       },
@@ -1304,20 +1309,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 6월 4일 의장으로 선출됐습니다.",
-          "en": "I was elected Speaker on June 4."
+          "speaker": "host",
+          "ko": "6월 4일 이후 본회의 운영 문의의 수신인을 바꿔야 합니다. 예전 번스 의장 명단을 그대로 사용해서는 안 되겠죠.",
+          "en": "After June 4, we need to change the recipient for questions about House proceedings. We shouldn't keep using the old directory naming Speaker Byrns."
         },
         {
-          "speaker": "player",
-          "ko": "지도부 명단을 바꾸어야겠군요.",
-          "en": "The leadership directory needs updating."
+          "speaker": "npc:0",
+          "ko": "지도부가 바뀌어도 이전 의장의 기록을 지우면 안 됩니다. 새 문의는 누구에게 보내겠습니까?",
+          "en": "A leadership change doesn't erase the former Speaker's records. Who should receive the new inquiry?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "번스를 이어 의장이 된 분은 {{blank}}입니다.",
-        "en": "Byrns's successor as Speaker is {{blank}}.",
+        "ko": "이번 문의는 {{blank}} 의장님께 전달하겠습니다.",
+        "en": "I'll send the inquiry to Speaker {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1346,15 +1351,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "새 이름으로 안내문을 고쳐 주세요.",
-            "en": "Update the notice with the new name."
+            "ko": "뱅크헤드입니다. 6월 4일에 의장으로 선출됐죠. 이전 의장 기록은 그대로 보존하세요.",
+            "en": "Bankhead. I was elected Speaker on June 4. Preserve the previous Speaker's record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "뱅크헤드가 6월 4일 의장으로 선출됐습니다.",
-            "en": "Bankhead was elected Speaker on June 4."
+            "ko": "6월 4일에 선출된 의장은 저, 윌리엄 뱅크헤드입니다. 새 문의를 제게 보내고 번스 의장의 과거 기록을 보존하세요.",
+            "en": "The Speaker elected June 4 was me, William Bankhead. Send the new inquiry to me and preserve former Speaker Byrns's records."
           }
         ]
       },
@@ -1623,20 +1628,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저도 이제 하원에서 일하게 됐습니다.",
-          "en": "I now serve in the House too."
+          "speaker": "npc:1",
+          "ko": "방문객이 번스라는 이름을 듣고 제 전임 의장을 떠올렸습니다. 오늘 만난 분은 그분의 아들입니다.",
+          "en": "A visitor heard the name Byrns and thought of my predecessor as Speaker. Today's member is his son."
         },
         {
-          "speaker": "npc:1",
-          "ko": "아버님은 제 전임 의장이셨죠.",
-          "en": "Your father preceded me as Speaker."
+          "speaker": "npc:0",
+          "ko": "아버지의 기록과 제 첫 임기를 구별해 소개해 주시겠어요?",
+          "en": "Would you distinguish my father's record from my own first House term?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "번스 주니어의 첫 하원 회기는 {{blank}} 의회입니다.",
-        "en": "Byrns Jr.'s first House term is in the {{blank}} Congress.",
+        "ko": "번스 주니어 의원님은 {{blank}} 의회에서 처음 하원에 들어오셨습니다.",
+        "en": "Representative Byrns Jr., you first entered the House in the {{blank}} Congress.",
         "choices": [
           {
             "id": "A",
@@ -1665,15 +1670,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "두 세대의 기록을 구별해 주세요.",
-            "en": "Keep the two generations' records distinct."
+            "ko": "1939년에 시작한 제76대 의회였습니다.",
+            "en": "The 76th Congress, beginning in 1939."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그러면 전임 의장의 기록과 혼동하지 않겠군요. 이제 새 의원에게 질문해 보세요.",
+            "en": "That distinguishes him from my predecessor. Now ask the new member your question."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주니어는 1939년 제76대 의회에 들어왔습니다.",
-            "en": "Byrns Jr. entered the 76th Congress in 1939."
+            "ko": "제 첫 회기는 1939년의 제76대 의회입니다. 아버지의 경력과 별개로 봐 주세요.",
+            "en": "My first Congress was the 76th, in 1939. Please distinguish it from my father's career."
           }
         ]
       },
@@ -1724,20 +1734,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 뉴욕 박람회에서도 공식 역할을 맡고 있죠.",
-          "en": "I have an official role at this New York fair too."
+          "speaker": "host",
+          "ko": "관람객이 1893년 박람회 기념품과 올해 뉴욕 박람회 안내를 나란히 보고 같은 사람이 두 행사에서 어떤 역할을 했는지 묻습니다.",
+          "en": "A visitor sees a souvenir from the 1893 exposition beside this year's New York fair program and asks how the same person was involved in both."
         },
         {
-          "speaker": "player",
-          "ko": "두 박람회에서의 역할을 따로 기록하겠습니다.",
-          "en": "I'll distinguish the roles at the two fairs."
+          "speaker": "npc:0",
+          "ko": "1893년에는 미드웨이 건설을 감독했습니다. 이번 뉴욕 박람회에서 제가 맡은 역할을 소개해 주시겠어요?",
+          "en": "In 1893 I supervised construction of the Midway. Would you introduce my role at this year's New York fair?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "블룸의 이번 역할은 {{blank}}입니다.",
-        "en": "Bloom's role at this fair is {{blank}}.",
+        "ko": "이번에는 블룸 의원님이 {{blank}}으로 참여하셨습니다.",
+        "en": "At this fair you are serving as {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1766,15 +1776,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "이번 기념품도 보관하면 좋겠네요.",
-            "en": "Keep a souvenir from this fair too."
+            "ko": "이사 겸 미국 위원입니다. 두 행사에서 맡은 일이 같지는 않았죠. 관람객에게 각각의 자료를 보여 줍시다.",
+            "en": "Director and U.S. commissioner. My roles at the two fairs were different. Let's show the visitor the respective materials."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1939년 박람회의 이사이자 미국 위원입니다.",
-            "en": "I'm a director and US commissioner at the 1939 fair."
+            "ko": "이번에는 이사 겸 미국 위원입니다. 1893년의 미드웨이 건설 감독과 구별해 설명해 주세요.",
+            "en": "This time I'm a director and U.S. commissioner. Distinguish that from supervising Midway construction in 1893."
           }
         ]
       },
@@ -2220,20 +2230,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "헌츠빌에서 시 정부의 법률 업무를 맡았죠.",
-          "en": "I handled legal work for Huntsville's city government."
+          "speaker": "host",
+          "ko": "헌츠빌 방문객이 의원님의 옛 시 정부 경력을 듣고 싶어 합니다. 1898년부터 1902년 사이의 직책을 소개해 주세요.",
+          "en": "A visitor from Huntsville wants to hear about your former city-government experience. Begin with the office you held from 1898 to 1902."
         },
         {
-          "speaker": "player",
-          "ko": "지방정부 경력에 정확한 직책을 적겠습니다.",
-          "en": "I'll record the exact local position."
+          "speaker": "npc:0",
+          "ko": "그때 공직을 이후의 법률 실무와 구별해 소개해 주시겠어요?",
+          "en": "Would you introduce that public office separately from my later legal practice?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "뱅크헤드는 1898년부터 1902년까지 헌츠빌 {{blank}}이었습니다.",
-        "en": "Bankhead served Huntsville from 1898 to 1902 as {{blank}}.",
+        "ko": "그 기간 뱅크헤드 의원님은 헌츠빌의 {{blank}}이었습니다.",
+        "en": "During that period you served Huntsville as {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2262,15 +2272,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "재스퍼의 법률 실무와 구별해 주세요.",
-            "en": "Distinguish it from my later Jasper practice."
+            "ko": "시 법률고문이었습니다. 그 시기부터 방문객과 이야기해 보죠.",
+            "en": "City attorney. Let's begin the conversation with that period."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "당시 헌츠빌 시 법률고문이었습니다.",
-            "en": "I was Huntsville's city attorney."
+            "ko": "헌츠빌 시 법률고문이었습니다. 1898년부터 1902년까지였죠. 이제 방문객의 질문을 듣겠습니다.",
+            "en": "I was Huntsville's city attorney from 1898 to 1902. Now let's hear the visitor's question."
           }
         ]
       },

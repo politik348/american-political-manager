@@ -1138,13 +1138,13 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "두 의원에게 지역 법률 경력 자료를 받아 왔습니다.",
-          "en": "I have local legal-service records for both representatives."
+          "ko": "두 의원의 지방 법률 경력을 소개한 보고서에 관할 카운티가 서로 뒤바뀌었습니다.",
+          "en": "A report on the members' local legal careers has swapped their jurisdictions."
         },
         {
-          "speaker": "npc:1",
-          "ko": "브라운은 워파카, 포이트는 시보이건에서 검사로 일했습니다.",
-          "en": "Browne served as prosecutor in Waupaca and Voigt in Sheboygan."
+          "speaker": "npc:0",
+          "ko": "브라운 의원이 검사로 일한 관할을 확인해 각자의 법률 경력을 분리하세요.",
+          "en": "Identify Browne's prosecutorial jurisdiction and separate the two legal careers."
         }
       ],
       "response": {
@@ -1178,21 +1178,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "두 지역의 법률 기록을 서로 다른 서랍에 넣겠습니다.",
-            "en": "I'll file the legal records in separate county folders."
+            "speaker": "npc:0",
+            "ko": "워파카 카운티 검사 기록을 바로잡고 포이트의 시보이건 시 법률고문 기록을 별도로 보관하세요.",
+            "en": "Correct the Waupaca County prosecutorial record and keep Voigt's Sheboygan city attorney record separate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "브라운은 1898~1905년 워파카 카운티 검사였습니다.",
-            "en": "Browne was Waupaca County district attorney from 1898 to 1905."
-          },
-          {
-            "speaker": "player",
-            "ko": "두 지역의 법률 기록을 서로 다른 서랍에 넣겠습니다.",
-            "en": "I'll file the legal records in separate county folders."
+            "speaker": "host",
+            "ko": "브라운은 워파카 카운티 검사였습니다. 지역과 지방 직책을 뒤바꿔 소개하면 안 됩니다.",
+            "en": "Browne was Waupaca County district attorney. Do not swap jurisdictions and local roles."
           }
         ]
       },

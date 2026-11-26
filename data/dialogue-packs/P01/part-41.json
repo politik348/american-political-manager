@@ -1476,8 +1476,8 @@
         "en": "Chicago constituent reception"
       },
       "context": {
-        "ko": "시카고 주민 환영회",
-        "en": "Chicago constituent reception"
+        "ko": "은퇴 의원의 후원과 실제 선거 결과를 따로 확인한다.",
+        "en": "Distinguish a retiring member's endorsement from the election result."
       },
       "cast": [
         {
@@ -1490,14 +1490,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해 은퇴를 결정한 도슨 의원의 지지를 받았습니다.",
-          "en": "I received support from Representative Dawson when he decided to retire last year."
+          "speaker": "host",
+          "ko": "새 의원이 이전 의원의 지지를 받았다고 해서 의석을 자동으로 승계한 것은 아니겠죠.",
+          "en": "Support from a predecessor doesn't mean a new member automatically inherited the seat."
         },
         {
-          "speaker": "player",
-          "ko": "정치적 후원과 실제 당선을 분리해 기록하겠습니다.",
-          "en": "I'll distinguish political sponsorship from election."
+          "speaker": "npc:0",
+          "ko": "지난해 은퇴한 의원 중 제 출마를 지지한 사람이 누구인지 확인해 주세요. 제 당선 결과도 별도로 기록합시다.",
+          "en": "Identify the retiring member who backed my candidacy last year. Record my election result separately."
         }
       ],
       "response": {
@@ -1532,20 +1532,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "도슨 의원의 지원으로 출마했고 1970년 당선됐습니다.",
-            "en": "Dawson backed my candidacy, and I won in 1970."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 대표 계보에 두 사람의 임기를 연결하세요.",
-            "en": "Link the two terms in the district's representation history."
+            "ko": "윌리엄 도슨 의원입니다. 그의 후원과 제가 1970년 선거에서 당선된 사실은 별개입니다.",
+            "en": "Representative William Dawson. His backing and my victory in the 1970 election are distinct."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "도슨 의원의 지원으로 출마했고 1970년 당선됐습니다.",
-            "en": "Dawson backed my candidacy, and I won in 1970."
+            "ko": "도슨 의원의 지지를 받았습니다. 다만 지지를 받은 것 자체가 선거 승리를 의미하지는 않습니다.",
+            "en": "I received Dawson's support. His backing alone was not the election victory."
           }
         ]
       },
@@ -1764,8 +1759,8 @@
         "en": "Black congressional members' meeting"
       },
       "context": {
-        "ko": "흑인 의원 모임",
-        "en": "Black congressional members' meeting"
+        "ko": "공동 의원 조직의 활동과 정식 위원회 절차를 구분한다.",
+        "en": "Distinguish a congressional caucus from formal committee procedure."
       },
       "cast": [
         {
@@ -1786,13 +1781,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "올해 흑인 의원들의 공동 모임이 출범했습니다.",
-          "en": "A joint organization of Black members was established this year."
+          "ko": "올해 출범한 의원들의 공동 조직에서 여러 도시의 문제를 논의할 수 있습니다.",
+          "en": "A new organization of members formed this year can discuss concerns across cities."
         },
         {
           "speaker": "npc:1",
-          "ko": "오하이오의 주민 문제도 함께 논의하죠.",
-          "en": "Let's include Ohio constituents' concerns."
+          "ko": "오하이오와 일리노이의 주민 요청을 함께 살피되, 이 모임을 상임위원회로 기록하지는 맙시다.",
+          "en": "Let's consider Ohio and Illinois concerns together, but not record this group as a standing committee."
         }
       ],
       "response": {
@@ -1826,21 +1821,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "1971년 흑인 의원 코커스에서 함께 활동했습니다.",
-            "en": "We served together in the Congressional Black Caucus in 1971."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "다음 모임의 공동 자료를 준비하세요.",
-            "en": "Prepare the joint briefing for the next meeting."
+            "speaker": "npc:1",
+            "ko": "흑인 의원 코커스입니다. 두 의원의 참여는 공통 의제 논의의 사례로 기록합시다.",
+            "en": "The Congressional Black Caucus. Record our participation as an example of discussing shared issues."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1971년 흑인 의원 코커스에서 함께 활동했습니다.",
-            "en": "We served together in the Congressional Black Caucus in 1971."
+            "ko": "1971년 흑인 의원 코커스에 참여했습니다. 주지사 조직이나 상원 위원회가 아닙니다.",
+            "en": "We participated in the Congressional Black Caucus in 1971, not a governors' organization or Senate committee."
           }
         ]
       },

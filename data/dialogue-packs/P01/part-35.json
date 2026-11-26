@@ -1048,8 +1048,8 @@
         "en": "Democratic leadership meeting"
       },
       "context": {
-        "ko": "민주당 지도부 회의에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
-        "en": "At the democratic leadership meeting, the conversation draws on the actual political record."
+        "ko": "다수당 일정과 본회의 주재에 관한 요청을 구분한다.",
+        "en": "Separate requests about majority scheduling and presiding over the House."
       },
       "cast": [
         {
@@ -1070,13 +1070,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "본회의에서 질서를 유지하는 직책과 다수당 의사일정을 조율하는 직책은 다릅니다.",
-          "en": "Presiding over the House and coordinating the majority's floor agenda are distinct offices."
+          "ko": "본회의 주재 관련 문의는 제게 두세요.",
+          "en": "Keep the question about presiding over the House with me."
         },
         {
           "speaker": "npc:1",
-          "ko": "다수당의 의사일정 협의는 제 역할입니다.",
-          "en": "Coordinating the majority's agenda is my role."
+          "ko": "다수당 일정에 관한 요청은 별도 지도부 업무입니다. 담당자를 정확히 소개해 주세요.",
+          "en": "The majority schedule is a separate leadership matter. Identify the person responsible."
         }
       ],
       "response": {
@@ -1110,16 +1110,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "번스 의장과 뱅크헤드 다수당 원내대표를 구분하겠습니다.",
-            "en": "I'll distinguish Speaker Byrns from Majority Leader Bankhead."
+            "speaker": "npc:1",
+            "ko": "뱅크헤드입니다. 일정에 관한 문의를 듣겠습니다.",
+            "en": "I'm Bankhead. I'll hear the scheduling inquiry."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 번스 의장입니다. 본회의 주재 관련 문의를 받죠.",
+            "en": "I'm Speaker Byrns. I'll take the question about presiding."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "번스는 의장, 뱅크헤드는 다수당 원내대표였습니다.",
-            "en": "Byrns was Speaker; Bankhead was majority leader."
+            "speaker": "npc:1",
+            "ko": "제가 다수당 원내대표 뱅크헤드입니다. 번스 의원은 의장입니다. 두 요청을 다시 나누어 주세요.",
+            "en": "I'm Majority Leader Bankhead; Byrns is Speaker. Separate the two requests."
           }
         ]
       },
