@@ -18,7 +18,7 @@ prev=load(report,{})
 if state.get('targetAttempts')==1000 and state.get('status')=='complete_or_queue_exhausted' and state.get('totalAttempts',0)>=1000:
     state['status']='expand'
 state['targetAttempts']=None
-state['mode']='wikipedia_first_full_roster'
+state['mode']='wikipedia_only_full_roster'
 state['pilotGateRequired']=False
 if state.get('status') in ('pilot100','pilot_gate_not_met'): state['status']='expand'
 state['scope']='all eligible static game-roster IDs (1900–2026 Congress, historical records, dialogue cast)'

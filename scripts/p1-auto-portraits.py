@@ -8,10 +8,8 @@ from PIL import Image, ImageOps
 from p1_wikipedia_batch import Batch, key, filekey
 
 ROOT=Path(__file__).resolve().parents[1]
-WD='https://www.wikidata.org/w/api.php'
 WP='https://en.wikipedia.org/w/api.php'
-CM='https://commons.wikimedia.org/w/api.php'
-UA='AmericanPoliticalManager-Portraits/2.0 (https://github.com/politik348/american-political-manager; repository issues)'
+UA='AmericanPoliticalManager-PortraitsBot/3.1 (https://github.com/politik348/american-political-manager; repository issues)'
 session=requests.Session()
 session.headers['User-Agent']=UA
 BATCH=None
@@ -34,6 +32,7 @@ def digest(b): return hashlib.sha256(b).hexdigest()
 def clean(s): return html.unescape(re.sub(r'<[^>]*>',' ',str(s or ''))).strip()
 def norm(s): return ' '.join(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',s or '').encode('ascii','ignore').decode().lower()))
 def request(url,params=None,binary=False):
+    if not binary and url!=WP: raise Hold('Wikipedia-only API policy')
     key=digest(json.dumps([url,params],sort_keys=True).encode())
     f=cache/(key+'.json')
     if not binary and f.exists() and time.time()-f.stat().st_mtime<7*86400: return json.loads(f.read_text())
@@ -73,18 +72,6 @@ def request(url,params=None,binary=False):
             time.sleep(5*2**attempt)
     raise RatePause('rate limit or maxlag retries exhausted')
 def api(url,**p): return request(url,dict(format='json',formatversion=2,maxlag=5,**p))
-def claims(e,k):
-    return [c['mainsnak']['datavalue']['value'] for c in e.get('claims',{}).get(k,[]) if c.get('rank')!='deprecated' and 'datavalue' in c.get('mainsnak',{})]
-def year(e,k):
-    vals=claims(e,k)
-    return int(vals[0]['time'][1:5]) if vals else None
-def entity(q):
-    if not re.fullmatch(r'Q[0-9]+',q or ''): raise Hold('invalid QID')
-    if BATCH and q in BATCH.entities: return BATCH.entities[q]
-    return api(WD,action='wbgetentities',ids=q,props='labels|aliases|claims|sitelinks',languages='en',sitefilter='enwiki')['entities'][q]
-def page(title):
-    if BATCH and key(title) in BATCH.pages: return BATCH.pages[key(title)]
-    return api(WP,action='query',titles=title,redirects=1,prop='pageprops|pageimages',piprop='name',pilicense='free')['query']['pages'][0]
 def inventory():
     people={}; bywiki={}; unresolved=[]; overlap=set()
     for f in ('legislators-historical.json','legislators-current.json'):
@@ -117,64 +104,25 @@ def inventory():
                     if k not in people: people[k]={'id':k,'name':cast.get('name'),'aliases':[k]}
                 elif not k: unresolved.append({'scene':scene['id'],'name':cast.get('name')})
     return people,overlap,slots,unresolved,cast_counts
-OFFICES={'prez':{'Q11696'},'vp':{'Q11699'},'justice':{'Q11144','Q11147'},'chief':{'Q11147'}}
-def official_office_match(p,e,title):
-    # Require exact stored article and documented office with overlapping term.
-    if not p.get('wiki') or norm(p['wiki'])!=norm(title): return False
-    for t in p.get('terms',[]):
-        allowed=OFFICES.get(t.get('type'),set())
-        if not allowed or not str(t.get('source','')).startswith(('https://www.whitehouse.gov/','https://www.senate.gov/','https://www.supremecourt.gov/')): continue
-        start=str(t.get('start',''))[:4]; end=str(t.get('end',''))[:4]
-        if not start.isdigit() or not end.isdigit(): continue
-        for c in e.get('claims',{}).get('P39',[]):
-            if c.get('rank')=='deprecated' or c.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') not in allowed: continue
-            qs=c.get('qualifiers',{})
-            def y(key):
-                try: return int(qs[key][0]['datavalue']['value']['time'][1:5])
-                except (KeyError,IndexError,ValueError): return None
-            a,z=y('P580'),y('P582')
-            if a is not None and int(start)-1<=a<=int(end)+1 and (z is None or z>=int(start)-1): return True
-    return False
 def identity(p):
-    q=p.get('qid'); wp=None
-    if p.get('wiki'):
-        wp=page(p['wiki']); props=wp.get('pageprops',{})
-        if 'missing' not in wp and 'disambiguation' not in props:
-            page_q=props.get('wikibase_item')
-            if q and page_q and q!=page_q: raise Hold('stored Wikidata and Wikipedia QID disagree')
-            q=q or page_q
-    if not q:
-        # Bioguide P1157 lookup, then exact Wikipedia title (not fuzzy auto-approval).
-        if p.get('bioguide'):
-            s=api(WD,action='query',list='search',srsearch='haswbstatement:P1157='+p['bioguide'],srnamespace=0,srlimit=5)
-            hits=[x['title'] for x in s['query']['search'] if re.fullmatch(r'Q\d+',x['title'])]
-            if len(hits)==1: q=hits[0]
-        if not q:
-            wp=page(p.get('wiki') or p['name']); props=wp.get('pageprops',{})
-            if 'disambiguation' not in props: q=props.get('wikibase_item')
-    if not q: raise Hold('no unambiguous Wikidata match')
-    e=entity(q)
-    if not any(x.get('id')=='Q5' for x in claims(e,'P31')): raise Hold('not a Wikidata human')
-    names=[e.get('labels',{}).get('en',{}).get('value','')]+[x['value'] for x in e.get('aliases',{}).get('en',[])]
-    title=e.get('sitelinks',{}).get('enwiki',{}).get('title')
-    if title: names.append(re.sub(r' \([^)]*\)$','',title))
-    for field,prop in [('birth','P569'),('death','P570')]:
-        if p.get(field) and year(e,prop)!=int(p[field]): raise Hold(field+' mismatch or missing')
-    if p.get('bioguide'):
-        if p['bioguide'] not in claims(e,'P1157'): raise Hold('Bioguide P1157 mismatch')
-    else:
-        if norm(p['name']) not in [norm(n) for n in names] or not ((p.get('birth') and (p.get('death') or p.get('wiki'))) or official_office_match(p,e,title)):
-            raise Hold('non-Bioguide match needs exact alias, birth year and death year or stored Wikipedia title')
-        if not claims(e,'P106') and not claims(e,'P39'): raise Hold('occupation/office missing')
-    return q,e,title
+    # Trust only a stored article mapping or a roster QID matching the article's pageprops.
+    # No live Wikidata lookups. Exact title resolution is not final independent review.
+    lookup=p.get('wiki') or p.get('name')
+    wp=BATCH.pages.get(key(lookup),{})
+    props=wp.get('pageprops',{})
+    q=props.get('wikibase_item')
+    if not wp or 'missing' in wp or wp.get('ns',0)!=0 or 'disambiguation' in props or not re.fullmatch(r'Q\d+',str(q or '')):
+        raise Hold('no unambiguous Wikipedia article')
+    if p.get('qid') and p['qid']!=q: raise Hold('stored QID and Wikipedia page disagree')
+    if not p.get('wiki') and not p.get('qid'): raise Hold('no stored Wikipedia article or QID; name-only match requires review')
+    title=wp['title']
+    if not wp.get('pageimage'): raise Hold('Wikipedia has no freely licensed representative image')
+    return q,wp,title
 BAD=re.compile(r'\b(group|grave|tomb|statue|bust|monument|signature|autograph|document|cartoon|memorial|building|headstone|coin|stamp|plaque|family|with|and wife|and husband)\b',re.I)
 def metadata(file):
     p=BATCH.files.get(filekey(file)) if BATCH else None
-    if p is None:
-        result=api(CM,action='query',titles=filekey(file),redirects=1,prop='imageinfo',iiprop='url|mime|size|extmetadata|sha1',iiurlwidth=768)
-        p=result['query']['pages'][0]
-    rows=p.get('imageinfo',[])
-    if not rows: raise Hold('not a Commons image')
+    rows=(p or {}).get('imageinfo',[])
+    if not rows: raise Hold('Wikipedia file information unavailable; rights require review')
     i=rows[0]; m=i.get('extmetadata',{})
     val=lambda k:clean(m.get(k,{}).get('value',''))
     lic=val('LicenseShortName'); licurl=val('LicenseUrl'); author=val('Artist'); source=val('Credit')
@@ -186,66 +134,43 @@ def metadata(file):
     if min(i['width'],i['height'])<120: raise Hold('source too small')
     desc=val('ImageDescription')
     if BAD.search(p['title'].replace('_',' ')): raise Hold('non-portrait filename signal')
-    return i,dict(commons=i['descriptionurl'],original=i['url'],author=author,source=source,license=lic,licenseUrl=licurl,date=val('DateTimeOriginal'),description=desc,commonsSha1=i.get('sha1'),fileTitle=p['title'])
+    return i,dict(commons=i.get('descriptionurl',''),original=i['url'],author=author,source=source,license=lic,licenseUrl=licurl,date=val('DateTimeOriginal'),description=desc,commonsSha1=i.get('sha1'),fileTitle=p['title'])
 def collect(p,records):
-    q,e,title=identity(p)
-    candidates=[]
-    if p.get('wiki'):
-        wp=page(p['wiki']); props=wp.get('pageprops',{})
-        if 'missing' not in wp and 'disambiguation' not in props and props.get('wikibase_item')==q and wp.get('pageimage'):
-            candidates.append((wp['pageimage'],'Wikipedia PageImages'))
-    candidates.extend((f,'P18') for f in claims(e,'P18'))
-    # Exact, independently sourced official-photo lead for the priority subject.
-    if p.get('bioguide')=='S001136':
-        candidates.insert(0,('Portrait of W. Stuart Symington.jpg','NARA-confirmed Commons file'))
-    if p.get('bioguide')=='M000851':
-        candidates.insert(0,('Walter Mondale 1977 vice presidential portrait.jpg','Senate-sourced Commons file'))
-    if title and not candidates:
-        wp=page(title)
-        if wp.get('pageprops',{}).get('wikibase_item')==q and wp.get('pageimage'): candidates.append((wp['pageimage'],'Wikipedia PageImages'))
-    # Discover additional leads but never auto-publish a mere search hit.
-    if not candidates:
-        s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
-        raise Hold('no P18/PageImages; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
-    notes=[]
-    for file,method in sorted(dict(reversed(candidates)).items(),key=lambda pair: 0 if pair[1]=='Wikipedia PageImages' else 1 if pair[1]=='P18' else 2):
-        try:
-            i,m=metadata(file)
-            # Association is source metadata, not facial recognition. Reject ambiguous descriptive evidence.
-            tokens=norm(p['name']).split()
-            surname=next((x for x in reversed(tokens) if x not in ('jr','sr','ii','iii','iv')), '')
-            evidence=norm(m['fileTitle']+' '+m['description'])
-            if not surname or surname not in evidence.split(): raise Hold('portrait description lacks surname')
-            if BAD.search(m['fileTitle']) or method not in ('P18','Wikipedia PageImages','NARA-confirmed Commons file','Senate-sourced Commons file'): raise Hold('requires individual-portrait review')
-            # A linked P18 is a candidate, not independent visual confirmation.
-            # Commons sometimes returns thumbnail error or alternate URLs. Prefer only validated HTTPS upload URLs; fall back to the original when the thumbnail is unusable.
-            def trusted(u):
-                v=urlparse(u or '')
-                return v.scheme=='https' and v.hostname=='upload.wikimedia.org' and v.path.startswith('/wikipedia/commons/')
-            urls=[u for u in (i.get('thumburl'),i.get('url')) if trusted(u)]
-            if not urls: raise Hold('unexpected download host: thumb='+str(urlparse(i.get('thumburl') or '').hostname)+', original='+str(urlparse(i.get('url') or '').hostname))
-            url=urls[0]
-            raw=request(url,binary=True)
-            im=Image.open(io.BytesIO(raw)); im.verify()
-            im=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
-            if min(im.size)<120: raise Hold('decoded source too small')
-            im.thumbnail((768,768)); out=io.BytesIO(); im.save(out,format='WEBP',quality=85,method=6)
-            b=out.getvalue()
-            if len(b)>150000:
-                out=io.BytesIO(); im.save(out,format='WEBP',quality=72,method=6); b=out.getvalue()
-            if digest(b) in {v['sha256'] for v in records.values() if v.get('qid')!=q}: raise Hold('duplicate image across different QIDs')
-            for v in records.values():
-                if v.get('qid')==q and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256']: return dict(v,aliases=sorted(set(v['aliases']+p['aliases'])))
-            path='assets/p1-portraits/'+q+'-'+digest(b)[:16]+'.webp'
-            (ROOT/path).parent.mkdir(parents=True,exist_ok=True)
-            (ROOT/path).write_bytes(b)
-            return dict(m,id=p['id'],name=p['name'],aliases=p['aliases'],bioguide=p.get('bioguide'),qid=q,wikipedia='https://en.wikipedia.org/wiki/'+quote(title.replace(' ','_')) if title else None,method=method,path=path,sha256=digest(b),downloadSha256=digest(raw),width=im.width,height=im.height,bytes=len(b),modified='EXIF orientation, proportional resize if needed, WebP encoding',status='metadata_matched_visual_review_pending')
-        except Hold as ex: notes.append(str(ex))
-    s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
-    raise Hold('; '.join(notes)+'; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
+    q,wp,title=identity(p)
+    file=wp['pageimage']; method='Wikipedia PageImages direct'
+    i,m=metadata(file)
+    # Association is source metadata, not facial recognition. Reject ambiguous descriptive evidence.
+    tokens=norm(p['name']).split()
+    surname=next((x for x in reversed(tokens) if x not in ('jr','sr','ii','iii','iv')), '')
+    evidence=norm(m['fileTitle']+' '+m['description'])
+    if not surname or surname not in evidence.split(): raise Hold('portrait description lacks surname')
+    if BAD.search(m['fileTitle']): raise Hold('requires individual-portrait review')
+    # A linked P18 is a candidate, not independent visual confirmation.
+    # Commons sometimes returns thumbnail error or alternate URLs. Prefer only validated HTTPS upload URLs; fall back to the original when the thumbnail is unusable.
+    def trusted(u):
+        v=urlparse(u or '')
+        return v.scheme=='https' and v.hostname=='upload.wikimedia.org' and v.path.startswith('/wikipedia/commons/')
+    urls=[u for u in (i.get('thumburl'),i.get('url')) if trusted(u)]
+    if not urls: raise Hold('unexpected download host: thumb='+str(urlparse(i.get('thumburl') or '').hostname)+', original='+str(urlparse(i.get('url') or '').hostname))
+    url=urls[0]
+    raw=request(url,binary=True)
+    im=Image.open(io.BytesIO(raw)); im.verify()
+    im=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
+    if min(im.size)<120: raise Hold('decoded source too small')
+    im.thumbnail((768,768)); out=io.BytesIO(); im.save(out,format='WEBP',quality=85,method=6)
+    b=out.getvalue()
+    if len(b)>150000:
+        out=io.BytesIO(); im.save(out,format='WEBP',quality=72,method=6); b=out.getvalue()
+    if digest(b) in {v['sha256'] for v in records.values() if v.get('qid')!=q}: raise Hold('duplicate image across different QIDs')
+    for v in records.values():
+        if v.get('qid')==q and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256']: return dict(v,aliases=sorted(set(v['aliases']+p['aliases'])))
+    path='assets/p1-portraits/'+q+'-'+digest(b)[:16]+'.webp'
+    (ROOT/path).parent.mkdir(parents=True,exist_ok=True)
+    (ROOT/path).write_bytes(b)
+    return dict(m,identityEvidence={'storedWikipediaTitle':p.get('wiki'),'storedQid':p.get('qid'),'resolvedWikipediaTitle':title,'source':'Wikipedia pageprops; independent review pending'},id=p['id'],name=p['name'],aliases=p['aliases'],bioguide=p.get('bioguide'),qid=q,wikipedia='https://en.wikipedia.org/wiki/'+quote(title.replace(' ','_')) if title else None,method=method,path=path,sha256=digest(b),downloadSha256=digest(raw),width=im.width,height=im.height,bytes=len(b),modified='EXIF orientation, proportional resize if needed, WebP encoding',status='metadata_matched_visual_review_pending')
 def main():
     global BATCH
-    BATCH=Batch(api,WP,WD,CM)
+    BATCH=Batch(api,WP)
     parser=argparse.ArgumentParser()
     parser.add_argument('--limit',type=int,default=20)
     parser.add_argument('--expand',action='store_true')
@@ -290,7 +215,7 @@ def main():
         if k in excluded: continue
         if any(a in valid for a in p['aliases']) or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
         old=previous.get(k,{})
-        retry=args.retry_improved and (k=='M000851' or old.get('status')=='temporary_error' or ('non-Bioguide match needs' in old.get('reason','') and any(t.get('type') in OFFICES for t in p.get('terms',[]))))
+        retry=args.retry_improved and (k=='M000851' or old.get('status')=='temporary_error' or ('non-Bioguide match needs' in old.get('reason','') and p.get('wiki')))
         if args.expand and old.get('status') in ('review_required','temporary_error','technical_error') and not retry: continue
         eligible.append(p)
     eligible_total=len(eligible)
@@ -302,7 +227,7 @@ def main():
         except RatePause as ex:
             pause_until=ex.until; checkpoint(); print('Batch metadata backoff:',ex,flush=True); break
         except (Hold,Temporary) as ex:
-            print('Batch metadata unavailable; using conservative individual fallback:',ex,flush=True)
+            print('Batch metadata unavailable; holding missing data for review:',ex,flush=True)
         for p in group:
             k=p['id']; attempted+=1; run_ids.append(k)
             try:

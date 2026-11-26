@@ -1,5 +1,5 @@
 # Direct full-roster collection; 100-person chunks are checkpoints, not pilot gates.
-name: P1 Wikipedia-first DIRECT full-roster collection
+name: P1 Wikipedia ONLY full-roster collection
 on:
   push:
     branches: [hq-p1-portrait-recovery]
@@ -9,7 +9,7 @@ permissions:
   contents: write
 concurrency:
   group: p1-portrait-recovery
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   collect:
     if: github.ref == 'refs/heads/hq-p1-portrait-recovery'
@@ -59,7 +59,7 @@ jobs:
         if: steps.gate.outputs.collect == 'true'
       - run: python tests/p1-wikipedia-batch.py
         if: steps.gate.outputs.collect == 'true'
-      - name: Collect next full-roster chunk (no pilot gate)
+      - name: Collect Wikipedia-only chunk (no Wikidata or Commons API)
         if: steps.gate.outputs.collect == 'true'
         run: python scripts/p1-campaign.py
       - name: Commit candidate files and checkpoint
