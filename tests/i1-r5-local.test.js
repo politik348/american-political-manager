@@ -15,3 +15,11 @@ test('I1 R5 unresolved cast cannot receive a photo, chain or appointment even wi
  const from={id:'P01-001',date:'2020-01-01',cast:[{id:null,name:'Unknown'}]},to={id:'P01-002',date:'2020-02-01',cast:[{id:null,name:'Unknown'}]},c={scenes:[from,to],photos:[{sceneId:to.id,castIndex:0,id:null,name:'Unknown',url:'https://example.org/image.jpg',metadata:'https://example.org'}],chains:[{from:from.id,to:to.id,person:null,ko:'x',en:'x',fallbackKo:'x',fallbackEn:'x'}]};
  assert.equal(approvedPhoto(c,to,0),null);assert.equal(chainIntro({},c,to),null);assert.equal(appointmentTerms(to,new Map([[null,{terms:[{type:'rep',state:'CA',start:'2019-01-01',end:'2021-01-01'}]}]]),'2020-02-15'),null);
 });
+
+test('I1 R5 editorial accounting retains prior unique applications and avoids double credit',()=>{
+ const prev=['I1-Q4-PILOT-REPORT','I1-R2-Q4-BATCH-A','I1-R2-Q4-BATCH-B','I1-R2-Q4-BATCH-C','I1-R3-Q4-A','I1-R3-Q4-B','I1-R3-Q4-C','I1-R3-Q4-D','I1-R4-Q4-BATCH-A','I1-R4-Q4-BATCH-A2','I1-R4-Q4-BATCH-B','I1-R4-Q4-BATCH-C','I1-R4-Q4-BATCH-D'].flatMap(p=>read('docs/'+p+'.json').applied);
+ const rows=['P01-P0','P01-BATCH-A','P01-BATCH-B','P01-BATCH-C','P01-BATCH-D','P01-BATCH-E','P01-BATCH-F','P01-BATCH-G','P01-HOLDS','P01-BATCH-H','P01-BATCH-I'].flatMap(p=>read('docs/I1-R5-'+p+'.json').applied);
+ const senate=['P02-BATCH-B','P02-BATCH-C'].flatMap(p=>read('docs/I1-R5-'+p+'.json').applied);
+ const prevIds=new Set(prev.map(x=>x.id)), ids=new Set(rows.map(x=>x.id));assert.equal(prevIds.size,546);assert.equal(rows.length,261);assert.equal(ids.size,261);assert.ok(rows.every(x=>!prevIds.has(x.id)));assert.equal(rows.filter(x=>x.partial).length,22);assert.equal(new Set(senate.map(x=>x.id)).size,95);
+ console.log('I1 R5 editorial accounting '+JSON.stringify({p01Prior:prevIds.size,p01New:ids.size,p01Total:prevIds.size+ids.size,partial:rows.filter(x=>x.partial).length,p02New:senate.length}));
+});

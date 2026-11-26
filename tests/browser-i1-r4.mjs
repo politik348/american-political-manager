@@ -69,6 +69,7 @@ try{
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
   assert.equal(offline.ok,true);assert.equal(offline.parts,103);
+  const local=await page.evaluate(async()=>{const m=await (await fetch('./data/dialogue-packs/i1-index.json')).json();return Promise.all(m.photos.filter(p=>p.localPath).map(async p=>{const r=await fetch(p.localPath);return {id:p.id,ok:r.ok,bytes:(await r.arrayBuffer()).byteLength}}))});assert.ok(local.some(p=>p.id==='L000004'&&p.ok&&p.bytes===1007628),'local original must survive offline');console.log('I1 R5 offline local images '+JSON.stringify(local));
   console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:true,portraitCachePreserved:true,offlineManifest:offline.parts}));
  }finally{await context.close()}
 }finally{await browser.close()}
