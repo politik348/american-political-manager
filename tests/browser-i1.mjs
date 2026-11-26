@@ -2,6 +2,19 @@ import {chromium} from 'playwright';import assert from 'node:assert/strict';impo
 const root=new URL('../data/dialogue-packs/',import.meta.url),manifest=JSON.parse(fs.readFileSync(new URL('i1-index.json',root),'utf8'));
 const scene=id=>JSON.parse(fs.readFileSync(new URL(id.split('-')[0]+'/part-'+String(Math.ceil(+id.split('-')[1]/25)).padStart(2,'0')+'.json',root),'utf8')).scenes.find(x=>x.id===id);
 const browser=await chromium.launch({headless:true});try{
+ const menuPage=await browser.newPage({serviceWorkers:'block'});await menuPage.goto(new URL('index.html',process.env.APM_URL||'http://127.0.0.1:8000/').href);
+ await menuPage.locator('[data-action="lobby:tutorial"]').click();await menuPage.locator('[data-action="lobby:back"]').click();
+ await menuPage.locator('[data-action="lobby:career"]').click();await menuPage.locator('#startform input[name=name]').fill('Old Career');await menuPage.locator('#startform button[type=submit]').click();await menuPage.locator('[data-action="lobby:back"]').click();
+ const saves=()=>menuPage.evaluate(()=>({career:localStorage.getItem('apm-save-v1'),second:localStorage.getItem('apm-career-v179-slot-2'),tutorial:localStorage.getItem('apm-tutorial-v176')}));
+ await menuPage.evaluate(()=>{const v=JSON.parse(localStorage.getItem('apm-tutorial-v176'));v.restartTestMarker=true;localStorage.setItem('apm-tutorial-v176',JSON.stringify(v))});const before=await saves();assert.ok(before.career&&before.tutorial);assert.equal(before.second,null);
+ await menuPage.locator('[data-action="lobby:new:career"]').click();await menuPage.locator('#startform').waitFor();assert.deepEqual(await saves(),before);await menuPage.locator('[data-action="lobby:back"]').click();assert.deepEqual(await saves(),before);
+ menuPage.once('dialog',d=>d.dismiss());await menuPage.locator('[data-action="lobby:new:tutorial"]').click();assert.deepEqual(await saves(),before);
+ await menuPage.locator('[data-action="lobby:new:career"]').click();await menuPage.locator('#startform input[name=name]').fill('New Career');await menuPage.locator('#startform button[type=submit]').click();await menuPage.locator('[data-action="lobby:back"]').click();const after=await saves();assert.equal(JSON.parse(after.second).name,'New Career');assert.equal(after.career,before.career);assert.equal(after.tutorial,before.tutorial);
+ await menuPage.reload();await menuPage.locator('[data-action="lobby:career"]').click();assert.equal(JSON.parse((await saves()).second).name,'New Career');await menuPage.locator('[data-action="lobby:back"]').click();
+ await menuPage.locator('[data-action="lobby:load:1"]').click();assert.equal(await menuPage.evaluate(()=>localStorage.getItem('apm-career-selected')),'1');await menuPage.locator('[data-action="lobby:back"]').click();
+ const old=await saves();menuPage.once('dialog',d=>d.accept());await menuPage.locator('[data-action="lobby:new:tutorial"]').click();await menuPage.locator('[data-action="lobby:back"]').click();const restarted=await saves();assert.equal(restarted.career,old.career);assert.equal(restarted.second,old.second);assert.equal(JSON.parse(restarted.tutorial).restartTestMarker,undefined);
+ await menuPage.locator('[data-action="lobby:load:2"]').click();assert.equal(await menuPage.evaluate(()=>localStorage.getItem('apm-career-selected')),'2');await menuPage.locator('[data-action="lobby:back"]').click();await menuPage.close();
+ console.log('Lobby regression: two isolated careers, cancel setup, reload, select, tutorial restart');
  const page=await browser.newPage({serviceWorkers:'block'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(new URL('index.html',process.env.APM_URL||'http://127.0.0.1:8000/').href);
  await page.locator('[data-action="lobby:career"]').click();await page.locator('#startyear').selectOption('2026');await page.locator('#startform').locator('select[name=mode]').selectOption('alternate');await page.locator('#startform button[type=submit]').click();
