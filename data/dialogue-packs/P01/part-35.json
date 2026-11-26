@@ -1913,8 +1913,8 @@
         "en": "Intelligence oversight meeting"
       },
       "context": {
-        "ko": "정보 감독 자료 접견에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
-        "en": "At the intelligence oversight meeting, the conversation draws on the actual political record."
+        "ko": "이전 정부기관 근무와 현 의회 감독 권한을 비교한다.",
+        "en": "Compare former agency work with current congressional oversight."
       },
       "cast": [
         {
@@ -1927,20 +1927,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "정보기관에서 근무했던 경험과 의회의 정보기관 감독은 서로 다른 역할입니다.",
-          "en": "Prior work inside an intelligence agency differs from congressional oversight of intelligence."
+          "speaker": "host",
+          "ko": "학생이 과거 행정부 근무와 현재 의회 감독을 같은 권한이라고 생각합니다.",
+          "en": "A student treats prior executive-branch service and current congressional oversight as the same authority."
         },
         {
-          "speaker": "host",
-          "ko": "118대 의회에서 해당 감독 업무를 맡는 위원회를 확인해 주세요.",
-          "en": "Identify the committee responsible for that oversight in the 118th Congress."
+          "speaker": "npc:0",
+          "ko": "제118대 의회에서 제가 참여한 위원회를 먼저 확인해 주세요. 과거 기관 근무와는 다른 역할입니다.",
+          "en": "First identify the committee I serve on in the 118th Congress. It is distinct from my earlier agency work."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "제118대 의회에서 스팬버거가 참여한 관련 위원회는 {{blank}}입니다.",
-        "en": "In the 118th Congress Spanberger serves on the {{blank}}.",
+        "ko": "스팬버거 의원님은 {{blank}}에 참여하십니다.",
+        "en": "Representative Spanberger serves on the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1968,16 +1968,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "정보기관 실무와 의회 정보위원회 감독의 차이를 정리하겠습니다.",
-            "en": "I'll distinguish intelligence agency work from congressional intelligence oversight."
+            "speaker": "npc:0",
+            "ko": "정보특별위원회입니다. 과거 정보기관 실무와 현재 감독 역할을 구별해 토론하죠.",
+            "en": "Permanent Select Committee on Intelligence. Let's distinguish agency work from congressional oversight."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제118대 의회 정보특별위원회에 참여했습니다.",
-            "en": "I served on the House Intelligence Committee in the 118th Congress."
+            "ko": "하원 정보특별위원회입니다. 행정부에서 일한 경험과 의회의 감독 권한은 별개입니다.",
+            "en": "House Permanent Select Committee on Intelligence. Executive-branch experience and legislative oversight are distinct."
           }
         ]
       },

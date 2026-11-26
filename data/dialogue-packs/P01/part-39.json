@@ -1062,8 +1062,8 @@
         "en": "Rio Grande Valley small business discussion"
       },
       "context": {
-        "ko": "소기업의 재정 위험을 토론하던 델라크루스가 이전 사업 경험을 공유한다.",
-        "en": "De La Cruz shares her former business experience during a discussion of small-business financial risks."
+        "ko": "리오그란데 밸리의 창업 경험을 소재로 소기업 질문을 준비한다.",
+        "en": "Prepare small-business questions using experience in the Rio Grande Valley."
       },
       "cast": [
         {
@@ -1076,14 +1076,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이곳에서 사업을 운영하다가 연방의회에 왔습니다.",
-          "en": "I ran a business here before coming to Congress."
+          "speaker": "host",
+          "ko": "지역에서 사업을 시작하려는 주민이 의원의 창업 경험을 알고 싶어 합니다.",
+          "en": "A resident considering a local business asks about the member's business experience."
         },
         {
-          "speaker": "player",
-          "ko": "사업주가 고객의 재정 위험을 다루는 업종이었군요.",
-          "en": "It was an industry dealing with customers' financial risk."
+          "speaker": "npc:0",
+          "ko": "리오그란데 밸리에서 제가 운영했던 업종부터 확인해 주세요. 그 뒤에 어떤 운영 과제를 물어볼지 정합시다.",
+          "en": "Identify the kind of business I operated in the Rio Grande Valley, then choose which operational questions to discuss."
         }
       ],
       "response": {
@@ -1118,15 +1118,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "보험 소비자와 사업주의 경험을 비교해 보세요.",
-            "en": "Compare the experiences of insurance consumers and business owners."
+            "ko": "보험 대리점이었습니다. 고객과 사업주가 겪는 위험 문제를 구분해 질문해 보세요.",
+            "en": "An insurance agency. Distinguish the risks facing customers from those facing business owners."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "리오그란데 밸리의 보험 대리점입니다.",
-            "en": "An insurance agency in the Rio Grande Valley."
+            "ko": "보험 대리점을 운영했습니다. 다른 사업 사례와 구별해 주세요.",
+            "en": "I operated an insurance agency. Keep that distinct from other business examples."
           }
         ]
       },
@@ -2090,8 +2090,8 @@
         "en": "North Carolina veterans housing discussion"
       },
       "context": {
-        "ko": "노스캐롤라이나 의원 세 명이 참전군인 주거시설을 위한 공동 입법을 검토한다.",
-        "en": "Three North Carolina representatives review joint legislative work on a veterans home."
+        "ko": "참전군인 주거시설 제안의 위치와 입법 상태를 확인한다.",
+        "en": "Identify the location and legislative status of a proposed veterans home."
       },
       "cast": [
         {
@@ -2119,13 +2119,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "8월에 제출된 법안은 주 정부가 재향군인 시설을 건설할 수 있도록 토지 이전을 승인하려는 것입니다.",
-          "en": "The bill introduced in August would authorize a land transfer enabling the state to build a veterans facility."
+          "ko": "참전군인 주거시설을 위한 토지 이전 법안을 주민이 문의했습니다.",
+          "en": "A resident asks about legislation for a land transfer for a veterans home."
         },
         {
-          "speaker": "player",
-          "ko": "법안이 지정하는 카운티를 확인하겠습니다. 시설이 이미 운영된다는 뜻은 아니겠지요.",
-          "en": "I'll identify the county named in the bill; this does not mean the facility is already operating."
+          "speaker": "npc:1",
+          "ko": "제안된 시설의 카운티를 확인해야 합니다.",
+          "en": "We need to identify the county of the proposed facility."
+        },
+        {
+          "speaker": "npc:2",
+          "ko": "공동발의 지지와 실제 시설 개원을 혼동하지 않도록 안내해 주세요.",
+          "en": "Keep cosponsorship and an actual facility opening distinct in the update."
         }
       ],
       "response": {
@@ -2159,16 +2164,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "토지 이전 승인과 실제 시설 건설 및 개원을 별도 단계로 기록하겠습니다.",
-            "en": "I'll distinguish land-transfer authorization, construction, and opening."
+            "speaker": "npc:2",
+            "ko": "하넷 카운티입니다. 해당 지역과 법안의 현재 단계를 함께 표시합시다.",
+            "en": "Harnett County. Identify the location and the bill's current stage together."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "하넷 카운티입니다. 법안의 진행 상태는 별도로 확인해야 합니다.",
-            "en": "Harnett County. The bill's procedural status should be checked separately."
+            "speaker": "npc:1",
+            "ko": "제안된 위치는 하넷 카운티입니다. 다른 카운티에 이미 운영 중인 시설이라고 안내하면 안 됩니다.",
+            "en": "The proposed location is Harnett County. Do not present it as an operating facility in another county."
           }
         ]
       },
