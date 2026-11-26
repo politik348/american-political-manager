@@ -16,9 +16,17 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: hq-p1-portrait-recovery
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: .p1-cache
+          key: p1-api-${{ github.run_id }}
+          restore-keys: p1-api-
       - run: python -m pip install requests Pillow
       - run: python -m py_compile scripts/p1-auto-portraits.py
       - run: python scripts/p1-auto-portraits.py --limit 20
@@ -30,4 +38,14 @@ jobs:
           if test -d assets/p1-portraits; then git add assets/p1-portraits; fi
           git diff --cached --quiet && exit 0
           git commit -m "P1 R2: record Wikimedia pilot candidates and provenance"
+          git pull --rebase origin hq-p1-portrait-recovery
           git push origin HEAD:refs/heads/hq-p1-portrait-recovery
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: p1-pilot-results
+          path: |
+            data/p1-portraits.json
+            docs/P1-AUTO-R2-REPORT.json
+            assets/p1-portraits/
+          if-no-files-found: warn

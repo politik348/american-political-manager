@@ -17,6 +17,7 @@ cache=ROOT/'.p1-cache'
 cache.mkdir(exist_ok=True)
 Image.MAX_IMAGE_PIXELS=40_000_000
 class Temporary(Exception): pass
+class RatePause(Temporary): pass
 class Hold(Exception): pass
 def read(p): return json.loads((ROOT/p).read_text())
 def save(p,obj):
@@ -31,7 +32,7 @@ def norm(s): return ' '.join(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD
 def request(url,params=None,binary=False):
     key=digest(json.dumps([url,params],sort_keys=True).encode())
     f=cache/(key+'.json')
-    if not binary and f.exists(): return json.loads(f.read_text())
+    if not binary and f.exists() and time.time()-f.stat().st_mtime<7*86400: return json.loads(f.read_text())
     for attempt in range(4):
         time.sleep(1.5)
         try:
@@ -45,7 +46,7 @@ def request(url,params=None,binary=False):
                         try: delay=max(0,(parsedate_to_datetime(delay)-datetime.now(timezone.utc)).total_seconds())
                         except Exception: delay=0
                     # Stop this run rather than ignore a long server-requested delay.
-                    if delay>120: raise Temporary('Retry-After exceeds run budget')
+                    if delay>120: raise RatePause('Retry-After exceeds run budget')
                     time.sleep(max(delay,5*2**attempt)); continue
                 res.raise_for_status()
                 if binary:
@@ -64,7 +65,7 @@ def request(url,params=None,binary=False):
             if getattr(e.response,'status_code',None) in (400,403,404): raise Temporary(str(e))
             if attempt==3: raise Temporary(str(e))
             time.sleep(5*2**attempt)
-    raise Temporary('rate limit or maxlag retries exhausted')
+    raise RatePause('rate limit or maxlag retries exhausted')
 def api(url,**p): return request(url,dict(format='json',formatversion=2,maxlag=5,**p))
 def claims(e,k):
     return [c['mainsnak']['datavalue']['value'] for c in e.get('claims',{}).get(k,[]) if c.get('rank')!='deprecated' and 'datavalue' in c.get('mainsnak',{})]
@@ -154,6 +155,9 @@ def metadata(file):
 def collect(p,records):
     q,e,title=identity(p)
     candidates=[(f,'P18') for f in claims(e,'P18')]
+    # Exact, independently sourced official-photo lead for the priority subject.
+    if p.get('bioguide')=='S001136':
+        candidates.insert(0,('Portrait of W. Stuart Symington.jpg','NARA-confirmed Commons file'))
     if title:
         wp=page(title)
         if wp.get('pageimage'): candidates.append((wp['pageimage'],'PageImages'))
@@ -162,7 +166,7 @@ def collect(p,records):
         s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
         raise Hold('no P18/PageImages; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
     notes=[]
-    for file,method in dict(reversed(candidates)).items():
+    for file,method in sorted(dict(reversed(candidates)).items(),key=lambda pair: (0 if pair[1]=='NARA-confirmed Commons file' else 1 if pair[1]=='P18' else 2)):
         try:
             i,m=metadata(file)
             # Association is source metadata, not facial recognition. Reject ambiguous descriptive evidence.
@@ -170,7 +174,7 @@ def collect(p,records):
             surname=next((x for x in reversed(tokens) if x not in ('jr','sr','ii','iii','iv')), '')
             evidence=norm(m['fileTitle']+' '+m['description'])
             if not surname or surname not in evidence.split(): raise Hold('portrait description lacks surname')
-            if BAD.search(m['fileTitle']) or method!='P18': raise Hold('requires individual-portrait review')
+            if BAD.search(m['fileTitle']) or method not in ('P18','NARA-confirmed Commons file'): raise Hold('requires individual-portrait review')
             # A linked P18 is a candidate, not independent visual confirmation.
             url=i.get('thumburl') or i['url']
             if urlparse(url).hostname!='upload.wikimedia.org' or urlparse(url).scheme!='https': raise Hold('unexpected download host')
@@ -190,7 +194,8 @@ def collect(p,records):
             (ROOT/path).write_bytes(b)
             return dict(m,id=p['id'],name=p['name'],aliases=p['aliases'],bioguide=p.get('bioguide'),qid=q,wikipedia='https://en.wikipedia.org/wiki/'+quote(title.replace(' ','_')) if title else None,method=method,path=path,sha256=digest(b),downloadSha256=digest(raw),width=im.width,height=im.height,bytes=len(b),modified='EXIF orientation, proportional resize if needed, WebP encoding',status='metadata_matched_visual_review_pending')
         except Hold as ex: notes.append(str(ex))
-    raise Hold('; '.join(notes))
+    s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
+    raise Hold('; '.join(notes)+'; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--limit',type=int,default=20)
@@ -235,5 +240,8 @@ def main():
             previous[k]={'name':p['name'],'status':'technical_error','reason':repr(ex)}
         checkpoint()
         print(k,previous[k],flush=True)
+        if previous[k].get('status')=='temporary_error' and ('Retry-After' in previous[k].get('reason','') or 'rate limit or maxlag' in previous[k].get('reason','')):
+            print('Stopping batch on server-requested backoff; resume in later run',flush=True)
+            break
     checkpoint()
 if __name__=='__main__': main()

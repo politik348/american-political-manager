@@ -1,0 +1,22 @@
+name: P1 approved photo browser verification
+on:
+  push:
+    branches: [hq-p1-portrait-recovery]
+    paths: ['data/p1-approved.json','assets/p1-portraits/**','p1-portrait-index.js','i1-pilot-app.js','i1-pilot-ui.js','tests/browser-p1-approved.mjs','.github/workflows/p1-browser.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: node --check i1-pilot-app.js && node --check i1-pilot-ui.js && node --test tests/p1-portrait-index.test.js
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          python -m http.server 8000 > server.log 2>&1 &
+          node tests/browser-p1-approved.mjs
