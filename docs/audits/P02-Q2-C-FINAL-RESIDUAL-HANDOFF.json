@@ -24,7 +24,9 @@
       "sourceBlobSha": "af33dad8eefac9da377b10eb91a45b1cf9b3422c",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-05.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "d01507f77dc1a1790aecdac300499a55c40e45ae",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-151",
@@ -38,7 +40,9 @@
       "sourceBlobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-07.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "4128cde2dc52ee904e9277ecabcd9cf00e2a7461",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-201",
@@ -52,7 +56,9 @@
       "sourceBlobSha": "b6b273c2710eb879fd076a1db5ee303ee67f2206",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-09.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "6facdfbafec152442034023bef3d749ee2bf60c6",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-215",
@@ -66,7 +72,9 @@
       "sourceBlobSha": "b6b273c2710eb879fd076a1db5ee303ee67f2206",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-09.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "6facdfbafec152442034023bef3d749ee2bf60c6",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-259",
@@ -80,7 +88,9 @@
       "sourceBlobSha": "d4b56e6ed1e32687e52ea844e135810488562571",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-11.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "9a027547d7546c505890c7c9cdbbc3eb98d6dc74",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-273",
@@ -97,7 +107,9 @@
       "sourceBlobSha": "d4b56e6ed1e32687e52ea844e135810488562571",
       "proposalRef": "q4-p02-r1-dialogue-audit",
       "proposalPath": "docs/audits/P02-Q4-R3-PART-11.json",
-      "action": "Apply only reviewed row.after fields, exact before and protected checks. Preserve correct ID."
+      "action": "Apply reviewed Q4 after only if row.before matches current fields, otherwise reconcile individually; no overwrite of protected changes.",
+      "latestSourceBlobSha": "9a027547d7546c505890c7c9cdbbc3eb98d6dc74",
+      "latestApplication": "not_applied"
     },
     {
       "id": "P02-334",
@@ -344,14 +356,15 @@
       "edits": {
         "response.ko": "2026년 7월 14일 상원의원 선서를 한 임명자는 {{blank}}입니다.",
         "response.en": "The appointee who took the Senate oath on July 14, 2026 was {{blank}}.",
-        "opening.1.ko": "2026년 7월 14일 상원의원 선서를 한 임명자는 …입니다.",
-        "opening.1.en": "The appointee who took the Senate oath on July 14, 2026 was ….",
-        "followup.correct.0.ko": "달라인 그레이엄의 임명 효력일은 2026년 7월 13일, 선서일은 7월 14일입니다.",
-        "followup.correct.0.en": "Darline Graham's appointment took effect July 13, 2026; she took the oath July 14.",
+        "opening.1.ko": "7월 14일 상원의원 선서 기록을 확인하세요.",
+        "opening.1.en": "Check the July 14 Senate oath record.",
         "followup.incorrect.0.ko": "달라인 그레이엄의 임명 효력일은 2026년 7월 13일, 선서일은 7월 14일입니다.",
-        "followup.incorrect.0.en": "Darline Graham's appointment took effect July 13, 2026; she took the oath July 14."
+        "followup.incorrect.0.en": "Darline Graham's appointment took effect July 13, 2026; she took the oath July 14.",
+        "followup.correct.1.ko": "달라인 그레이엄의 임명 효력일은 2026년 7월 13일, 선서일은 7월 14일입니다.",
+        "followup.correct.1.en": "Darline Graham's appointment took effect July 13, 2026; she took the oath July 14."
       },
-      "action": "Fieldwise edits only; preserve correct ID/choices."
+      "action": "Use rebased field paths on latestSourceBlobSha, preserve player correct line, aide incorrect line, answer ID and choices; do not use old positional edits.",
+      "latestSourceBlobSha": "5486218293569790370240e08e4a255b3e38eafc"
     },
     {
       "id": "P02-300",
@@ -366,14 +379,15 @@
       "edits": {
         "response.ko": "2025년 1월 21일 상원의원 선서를 한 임명자는 {{blank}}입니다.",
         "response.en": "The appointee who took the Senate oath on January 21, 2025 was {{blank}}.",
-        "opening.1.ko": "2025년 1월 21일 상원의원 선서를 한 임명자는 …입니다.",
-        "opening.1.en": "The appointee who took the Senate oath on January 21, 2025 was ….",
-        "followup.correct.0.ko": "존 허스테드의 임명 효력일은 2025년 1월 18일, 선서일은 1월 21일입니다.",
-        "followup.correct.0.en": "Jon Husted's appointment took effect January 18, 2025; he took the oath January 21.",
+        "opening.1.ko": "1월 21일 선서 기록을 정규선거와 구분하세요.",
+        "opening.1.en": "Distinguish the January 21 oath record from regular election.",
         "followup.incorrect.0.ko": "존 허스테드의 임명 효력일은 2025년 1월 18일, 선서일은 1월 21일입니다.",
-        "followup.incorrect.0.en": "Jon Husted's appointment took effect January 18, 2025; he took the oath January 21."
+        "followup.incorrect.0.en": "Jon Husted's appointment took effect January 18, 2025; he took the oath January 21.",
+        "followup.correct.1.ko": "존 허스테드의 임명 효력일은 2025년 1월 18일, 선서일은 1월 21일입니다.",
+        "followup.correct.1.en": "Jon Husted's appointment took effect January 18, 2025; he took the oath January 21."
       },
-      "action": "Fieldwise edits only; preserve correct ID/choices."
+      "action": "Use rebased field paths on latestSourceBlobSha, preserve player correct line, aide incorrect line, answer ID and choices; do not use old positional edits.",
+      "latestSourceBlobSha": "5486218293569790370240e08e4a255b3e38eafc"
     },
     {
       "id": "P02-404",
@@ -433,7 +447,7 @@
       "id": "P02-453",
       "path": "data/dialogue-packs/P02/part-19.json",
       "status": "revise",
-      "finding": "I1 wrong vote object confirmed; official vote 144 July 10 1990 was motion to table amendment 2112, failed 18–74, Dole and Mitchell Nay. Preserve existing Q2 corrected source.",
+      "finding": "I1 wrong vote object confirmed; official vote 144 July 10 1990 was motion to table amendment 2112, failed 18–74, Dole and Mitchell Nay. Preserve existing Q2 corrected source. Later I1 head has already incorporated the complete corrected source; do not reapply.",
       "sources": [
         "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1012/vote_101_2_00144.htm"
       ],
@@ -522,8 +536,27 @@
           }
         ]
       },
-      "action": "Copy five specified fields after guard; correct D unchanged; never copy whole scene."
+      "action": "DO_NOT_REAPPLY; current I1 part-19 blob exactly equals corrected Q2 source. Preserve correction.",
+      "latestSourceBlobSha": "2bf0c897efa0c9a81ab41a7a1730fcee2bd9293a",
+      "latestApplication": "exact_corrected_blob_applied"
     }
   ],
-  "guard": "Exact source blob or compare current before/protected fields against pinned I1. Choice edits keyed by ID. Preserve cast, portrait, date, outcome and correct IDs. For six reviewed Q4 rows use referenced row.after only. No main/engine change; HQ approval required. Historical pass is not release approval."
+  "guard": "Exact source blob or compare current before/protected fields against pinned I1. Choice edits keyed by ID. Preserve cast, portrait, date, outcome and correct IDs. For six reviewed Q4 rows use referenced row.after only. No main/engine change; HQ approval required. Historical pass is not release approval.",
+  "latestRecheck": {
+    "i1Head": "8c1f30ed2be5444936dfd48f35ae8149c8cee282",
+    "priorHead": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+    "changedTargetFiles": [
+      "part-05",
+      "part-07",
+      "part-09",
+      "part-11",
+      "part-12",
+      "part-19"
+    ],
+    "finding": "Six Q4 proposals still not applied; correct IDs unchanged. P02-453 corrected part-19 blob exactly matches Q2 branch. P02-285/300 have newer editorial changes, rebased instruction below. Other target files unchanged in commit comparison."
+  },
+  "applicationCounts": {
+    "alreadyAppliedHistoricalCorrection": 1,
+    "pending": 12
+  }
 }
