@@ -147,19 +147,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "1907년의 주 선거 안내문에 주민 여론 조사와 공식 상원의원 선출 기록이 섞여 있습니다.",
+          "en": "A 1907 state election notice mixes public preference and formal Senate selection."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "주민 의견과 법적 선출권을 구별합시다.",
-          "en": "Distinguish public opinion from legal election authority."
+          "ko": "주민이 표시한 선호가 곧 헌법상 공식 선출인지는 구분해야 합니다.",
+          "en": "Distinguish a public expression of preference from formal constitutional selection."
         },
         {
           "speaker": "npc:1",
-          "ko": "헌법상 공식 선출 주체를 확인해야 합니다.",
-          "en": "We need to establish the formal constitutional electing body."
-        },
-        {
-          "speaker": "player",
-          "ko": "시행 전후를 비교하죠.",
-          "en": "Let's compare the systems."
+          "ko": "이 날짜에 법적 선출권을 가진 주체를 확인해 안내문을 고쳐 주세요.",
+          "en": "Identify the body with formal electing authority on this date and correct the notice."
         }
       ],
       "response": {
@@ -193,26 +193,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "맞습니다. 그 구분을 유지합시다.",
-            "en": "Exactly. Keep that distinction clear."
-          },
-          {
-            "speaker": "player",
-            "ko": "시행 전후를 비교하죠.",
-            "en": "Let's compare the systems."
+            "speaker": "npc:1",
+            "ko": "1907년에는 주 의회가 공식적으로 상원의원을 선출했습니다. 안내문에서 주민 선호와 법적 선출 절차를 분리하세요.",
+            "en": "In 1907, state legislatures formally elected senators. Separate popular preferences from the legal election process in the notice."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1907년 상원의원 공식 선출 주체는 주 의회입니다.",
-            "en": "There is a distinction to make here. In 1907 senators are constitutionally elected by state legislatures."
-          },
-          {
-            "speaker": "player",
-            "ko": "시행 전후를 비교하죠.",
-            "en": "Let's compare the systems."
+            "ko": "1907년 헌법상 공식 선출 주체는 주 의회입니다. 주민 선호와 공식 선출을 구분해 안내문을 수정하세요.",
+            "en": "In 1907 the formal constitutional electing body was the state legislature. Revise the notice to distinguish popular preferences from formal election."
           }
         ]
       },
