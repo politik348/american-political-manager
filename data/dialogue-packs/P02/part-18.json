@@ -1,0 +1,2832 @@
+{
+  "schema": 1,
+  "pack": "P02",
+  "part": 18,
+  "scenes": [
+    {
+      "id": "P02-426",
+      "mechanism": "certificate-effective",
+      "learningTarget": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001.",
+      "date": "2001-01-04",
+      "venue": {
+        "ko": "임명장 확인",
+        "en": "Credential check"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "C001043",
+          "name": "Jean Carnahan",
+          "ko": "진 카너핸",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        },
+        {
+          "id": "B000611",
+          "name": "Christopher Bond",
+          "ko": "킷 본드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MO/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "지난달 작성된 임명장과 이번 회기의 선서 기록이 서로 다른 날짜입니다.",
+          "en": "The appointment certificate and oath record have different dates."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "작성일을 임기 시작일로 옮기면 공석 계산이 달라집니다.",
+          "en": "Using the certificate date as the start changes the vacancy calculation."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇다면 실제 효력 발생일을 쓰세요.",
+          "en": "Then enter the effective date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "카너핸의 임명 효력은 {{blank}}에 발생했습니다.",
+        "en": "Carnahan's appointment became effective on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2000년 12월 4일",
+            "en": "December 4, 2000"
+          },
+          {
+            "id": "B",
+            "ko": "2000년 11월 7일",
+            "en": "November 7, 2000"
+          },
+          {
+            "id": "C",
+            "ko": "2001년 1월 3일",
+            "en": "January 3, 2001"
+          },
+          {
+            "id": "D",
+            "ko": "2001년 1월 20일",
+            "en": "January 20, 2001"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "카너핸의 임명장은 2000년 12월 4일 작성됐지만 효력 및 선서는 2001년 1월 3일이었다. 임명장과 취임일을 별도 필드에 보존하세요.",
+            "en": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001. Preserve the certificate and effective date separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "카너핸의 임명장은 2000년 12월 4일 작성됐지만 효력 및 선서는 2001년 1월 3일이었다. 공석 계산표를 회수하고 날짜를 다시 대조하세요.",
+            "en": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001. Recall the vacancy calculation and reconcile the dates."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001.",
+          "asOf": "2001-01-04"
+        },
+        {
+          "url": "https://www.senate.gov/states/MO/senators.htm",
+          "claim": "Official state delegation history: Jean Carnahan",
+          "asOf": "2001-01-04"
+        },
+        {
+          "url": "https://www.senate.gov/states/MO/senators.htm",
+          "claim": "Official state delegation history: Christopher Bond",
+          "asOf": "2001-01-04"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-426-certificate-effective"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-427",
+      "mechanism": "oath-location",
+      "learningTarget": "Dean Barkley took the oath in Minnesota on November 5, 2002.",
+      "date": "2002-11-06",
+      "venue": {
+        "ko": "선서 기록 인계",
+        "en": "Oath record handoff"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "B001237",
+          "name": "Dean Barkley",
+          "ko": "딘 바클리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MN/senators.htm"
+        },
+        {
+          "id": "D000064",
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "어제 새 미네소타 의원의 선서 자료가 접수됐습니다.",
+          "en": "Yesterday's oath record for the relevant procedure's new senator has arrived."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "워싱턴 본회의 기록만 찾으면 누락될 수 있습니다.",
+          "en": "Looking only at the Senate chamber record may miss it."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇죠. 최초 선서 장소를 따로 기록합시다.",
+          "en": "Right. Record the initial oath location separately."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "바클리의 11월 5일 최초 선서는 {{blank}}에서 이루어졌습니다.",
+        "en": "Barkley's initial November 5 oath occurred in {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "워싱턴 상원 본회의장",
+            "en": "the Senate chamber in Washington"
+          },
+          {
+            "id": "B",
+            "ko": "미네소타주",
+            "en": "Minnesota"
+          },
+          {
+            "id": "C",
+            "ko": "연방 대법원",
+            "en": "the Supreme Court"
+          },
+          {
+            "id": "D",
+            "ko": "뉴욕주",
+            "en": "New York"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "딘 바클리는 2002년 11월 5일 미네소타에서 선서했다. 최초 선서 기록을 지역별로 보존하세요.",
+            "en": "Dean Barkley took the oath in Minnesota on November 5, 2002. Preserve the initial oath by location."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "딘 바클리는 2002년 11월 5일 미네소타에서 선서했다. 본회의 선서 기록과 최초 선서를 혼동한 항목을 정정하세요.",
+            "en": "Dean Barkley took the oath in Minnesota on November 5, 2002. Correct the entry confusing the chamber oath with the initial oath."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Dean Barkley took the oath in Minnesota on November 5, 2002.",
+          "asOf": "2002-11-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "Official state delegation history: Dean Barkley",
+          "asOf": "2002-11-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Official state delegation history: Tom Daschle",
+          "asOf": "2002-11-06"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-427-oath-location"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-428",
+      "mechanism": "second-oath",
+      "learningTarget": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5.",
+      "date": "2002-11-13",
+      "venue": {
+        "ko": "본회의 선서 연혁",
+        "en": "Chamber oath chronology"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "B001237",
+          "name": "Dean Barkley",
+          "ko": "딘 바클리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MN/senators.htm"
+        },
+        {
+          "id": "D000064",
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "이미 선서한 의원의 새로운 본회의 기록이 나왔습니다.",
+          "en": "A chamber record has appeared for a senator already sworn in."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이전 기록을 지우지 말아야 합니다.",
+          "en": "Do not delete the previous record."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇습니다. 본회의에서 다시 선서한 날짜를 추가하세요.",
+          "en": "Exactly. Add the date of the chamber oath."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "바클리의 공개 상원 회기 선서는 {{blank}}입니다.",
+        "en": "Barkley's oath in open Senate session was on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2002년 11월 12일",
+            "en": "November 12, 2002"
+          },
+          {
+            "id": "B",
+            "ko": "2002년 11월 5일",
+            "en": "November 5, 2002"
+          },
+          {
+            "id": "C",
+            "ko": "2002년 11월 4일",
+            "en": "November 4, 2002"
+          },
+          {
+            "id": "D",
+            "ko": "2003년 1월 3일",
+            "en": "January 3, 2003"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "바클리는 11월 5일 미네소타 선서 후 11월 12일 상원 공개 회기에서 선서했다. 두 선서 기록을 시간순으로 연결하세요.",
+            "en": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5. Link both oath records chronologically."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "바클리는 11월 5일 미네소타 선서 후 11월 12일 상원 공개 회기에서 선서했다. 하나의 선서만 있었다는 기록을 보류하세요.",
+            "en": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5. Hold the record asserting only one oath."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5.",
+          "asOf": "2002-11-13"
+        },
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "Official state delegation history: Dean Barkley",
+          "asOf": "2002-11-13"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Official state delegation history: Tom Daschle",
+          "asOf": "2002-11-13"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-428-second-oath"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-429",
+      "mechanism": "credential-dispute",
+      "learningTarget": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15.",
+      "date": "2009-01-15",
+      "venue": {
+        "ko": "자격증명 검토",
+        "en": "Credentials review"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "B001266",
+          "name": "Roland Burris",
+          "ko": "롤런드 버리스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        },
+        {
+          "id": "D000563",
+          "name": "Dick Durbin",
+          "ko": "딕 더빈",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/IL/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "임명장 발급 이후 자격 확인이 지연되었습니다.",
+          "en": "Credential review took longer than the certificate issuance."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "임명장 날짜와 자격 확인은 별개입니다.",
+          "en": "The certificate date and credential acceptance are distinct."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그러면 자격 서류가 적합하다고 확인된 날짜를 찾으세요.",
+          "en": "Then find when the credentials were accepted."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "버리스의 자격 확인일은 {{blank}}입니다.",
+        "en": "Burris's credentials were found in order on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2008년 12월 31일",
+            "en": "December 31, 2008"
+          },
+          {
+            "id": "B",
+            "ko": "2009년 1월 15일",
+            "en": "January 15, 2009"
+          },
+          {
+            "id": "C",
+            "ko": "2009년 1월 20일",
+            "en": "January 20, 2009"
+          },
+          {
+            "id": "D",
+            "ko": "2009년 1월 12일",
+            "en": "January 12, 2009"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "버리스의 임명장은 2008년 12월 31일자였고 2009년 1월 12일 자격이 확인됐으며 15일 선서했다. 자격 확인과 선서를 구분해 기록하세요.",
+            "en": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15. Record credential acceptance separately from the oath."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "버리스의 임명장은 2008년 12월 31일자였고 2009년 1월 12일 자격이 확인됐으며 15일 선서했다. 임명장만으로 자격 확인을 완료했다는 표시를 지우세요.",
+            "en": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15. Remove the premature acceptance mark."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15.",
+          "asOf": "2009-01-15"
+        },
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "Official state delegation history: Roland Burris",
+          "asOf": "2009-01-15"
+        },
+        {
+          "url": "https://www.senate.gov/states/IL/senators.htm",
+          "claim": "Official state delegation history: Dick Durbin",
+          "asOf": "2009-01-15"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-429-credential-dispute"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-430",
+      "mechanism": "house-resignation",
+      "learningTarget": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26.",
+      "date": "2009-01-27",
+      "venue": {
+        "ko": "양원 전환 서류",
+        "en": "Chamber transition paperwork"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "G000555",
+          "name": "Kirsten Gillibrand",
+          "ko": "커스틴 질리브랜드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        },
+        {
+          "id": "S000148",
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "지난주 임명 발표 이후 하원 직책 정리가 있었습니다.",
+          "en": "The House office was resolved after last week's appointment announcement."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "두 원의 재임을 같은 날 자동으로 중첩시키지 마세요.",
+          "en": "Do not automatically overlap service in both chambers."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "맞습니다. 상원 임명의 실제 효력 발생일을 적으세요.",
+          "en": "Right. Enter the actual effective date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "질리브랜드의 임명 효력은 {{blank}}입니다.",
+        "en": "Gillibrand's appointment took effect on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2009년 1월 23일",
+            "en": "January 23, 2009"
+          },
+          {
+            "id": "B",
+            "ko": "2009년 1월 27일",
+            "en": "January 27, 2009"
+          },
+          {
+            "id": "C",
+            "ko": "2009년 1월 26일",
+            "en": "January 26, 2009"
+          },
+          {
+            "id": "D",
+            "ko": "2009년 1월 20일",
+            "en": "January 20, 2009"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "질리브랜드는 1월 23일 임명 발표 후 26일 하원에서 사직하면서 상원 임명이 효력을 얻었다. 하원 퇴임과 상원 효력을 연결하세요.",
+            "en": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26. Link House resignation and Senate effectiveness."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "질리브랜드는 1월 23일 임명 발표 후 26일 하원에서 사직하면서 상원 임명이 효력을 얻었다. 발표일을 효력일로 쓴 경력표를 수정하세요.",
+            "en": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26. Correct the career record using the announcement date."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26.",
+          "asOf": "2009-01-27"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Official state delegation history: Kirsten Gillibrand",
+          "asOf": "2009-01-27"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Official state delegation history: Chuck Schumer",
+          "asOf": "2009-01-27"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-430-house-resignation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-431",
+      "mechanism": "transition-audit",
+      "learningTarget": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9.",
+      "date": "2011-05-09",
+      "venue": {
+        "ko": "네바다 의회 경력 대조",
+        "en": "Nevada congressional career audit"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "H001041",
+          "name": "Dean Heller",
+          "ko": "딘 헬러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NV/senators.htm"
+        },
+        {
+          "id": "R000146",
+          "name": "Harry Reid",
+          "ko": "해리 리드",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NV/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "임명 발표일과 하원 사임일이 다릅니다.",
+          "en": "The appointment announcement and House resignation dates differ."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "실제 상원 재임 기록은 두 날짜 중 어느 쪽인지 확인해야 합니다.",
+          "en": "We need to identify the actual effective date."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "선서 기록까지 대조해 주세요.",
+          "en": "Compare the oath record as well."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "헬러의 상원 임명 효력과 선서는 {{blank}}입니다.",
+        "en": "Heller's effective appointment and oath occurred on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2011년 5월 3일",
+            "en": "May 3, 2011"
+          },
+          {
+            "id": "B",
+            "ko": "2011년 5월 9일",
+            "en": "May 9, 2011"
+          },
+          {
+            "id": "C",
+            "ko": "2011년 1월 3일",
+            "en": "January 3, 2011"
+          },
+          {
+            "id": "D",
+            "ko": "2012년 11월 6일",
+            "en": "November 6, 2012"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "헬러는 5월 3일 임명 발표 후 5월 9일 하원 사임과 상원 선서를 했다. 실제 전환일을 경력표에 반영하세요.",
+            "en": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9. Enter the actual transition date."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "헬러는 5월 3일 임명 발표 후 5월 9일 하원 사임과 상원 선서를 했다. 임명 발표일로 확정한 항목을 수정하세요.",
+            "en": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9. Correct the entry using the announcement date."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9.",
+          "asOf": "2011-05-09"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Official state delegation history: Dean Heller",
+          "asOf": "2011-05-09"
+        },
+        {
+          "url": "https://www.senate.gov/states/NV/senators.htm",
+          "claim": "Official state delegation history: Harry Reid",
+          "asOf": "2011-05-09"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-431-transition-audit"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-432",
+      "mechanism": "temporary-to-elected",
+      "learningTarget": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election.",
+      "date": "2010-11-16",
+      "venue": {
+        "ko": "델라웨어 의석 인수",
+        "en": "Delaware seat transition"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "C001088",
+          "name": "Chris Coons",
+          "ko": "크리스 쿤스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/DE/senators.htm"
+        },
+        {
+          "id": "C001021",
+          "name": "Thomas Carper",
+          "ko": "톰 카퍼",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/DE/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "임시 임명 의원의 경력 종료와 새 의원의 선출을 연결합니다.",
+          "en": "I am linking a temporary appointee's departure to the elected successor."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "정규 선거와 임기 잔여분을 구별합시다.",
+          "en": "Distinguish a regular term from the remainder of a term."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "이전 임명 의원이 누구였는지 확인하세요.",
+          "en": "Identify the previous appointee."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "쿤스 직전의 임명 의원은 {{blank}}입니다.",
+        "en": "The appointee immediately preceding Coons was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "테드 코프먼",
+            "en": "Ted Kaufman"
+          },
+          {
+            "id": "B",
+            "ko": "조 바이든",
+            "en": "Joe Biden"
+          },
+          {
+            "id": "C",
+            "ko": "톰 카퍼",
+            "en": "Tom Carper"
+          },
+          {
+            "id": "D",
+            "ko": "윌리엄 로스",
+            "en": "William Roth"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "코프먼은 바이든의 공석을 임시로 채웠고 쿤스는 2010년 특별선거 후 의석을 이어받았다. 임시 임명 단계와 특별선거 단계를 연결하세요.",
+            "en": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election. Link the interim appointment and special election."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "코프먼은 바이든의 공석을 임시로 채웠고 쿤스는 2010년 특별선거 후 의석을 이어받았다. 바이든에서 쿤스로 바로 연결한 기록을 수정하세요.",
+            "en": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election. Correct the record skipping the interim appointee."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election.",
+          "asOf": "2010-11-16"
+        },
+        {
+          "url": "https://www.senate.gov/states/DE/senators.htm",
+          "claim": "Official state delegation history: Chris Coons",
+          "asOf": "2010-11-16"
+        },
+        {
+          "url": "https://www.senate.gov/states/DE/senators.htm",
+          "claim": "Official state delegation history: Thomas Carper",
+          "asOf": "2010-11-16"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-432-temporary-to-elected"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-433",
+      "mechanism": "interim-designation",
+      "learningTarget": "LeMieux's appointment took effect September 9, 2009, followed by his oath September 10.",
+      "date": "2009-09-10",
+      "venue": {
+        "ko": "플로리다 대표단 인계",
+        "en": "Florida delegation handoff"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "L000572",
+          "name": "George LeMieux",
+          "ko": "조지 르미외",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/FL/senators.htm"
+        },
+        {
+          "id": "N000032",
+          "name": "Bill Nelson",
+          "ko": "빌 넬슨",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/FL/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새 상원 의원의 첫 임기 유형을 분류하겠습니다.",
+          "en": "I am classifying the new senator's initial tenure."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "정규 선거를 치른 경우와 임명된 경우를 구분하세요.",
+          "en": "Distinguish a regular election from appointment."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇죠. 이번 공석에 적용된 절차를 적으세요.",
+          "en": "Right. Record the procedure used for this vacancy."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "르미외의 상원 진입은 {{blank}}이었습니다.",
+        "en": "LeMieux entered the Senate by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정규 6년 임기 선거",
+            "en": "regular six-year election"
+          },
+          {
+            "id": "B",
+            "ko": "상원 자체 선출",
+            "en": "election by the Senate"
+          },
+          {
+            "id": "C",
+            "ko": "하원에서 자동 승계",
+            "en": "automatic succession from the House"
+          },
+          {
+            "id": "D",
+            "ko": "주지사의 공석 임명",
+            "en": "gubernatorial vacancy appointment"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "르미외는 2009년 9월 9일 임명되어 10일 선서했다. 공석 임명 기록으로 분류하세요.",
+            "en": "LeMieux's appointment took effect September 9, 2009, followed by his oath September 10. File it as a vacancy appointment."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "르미외는 2009년 9월 9일 임명되어 10일 선서했다. 정규 선거 당선 기록을 삭제하세요.",
+            "en": "LeMieux's appointment took effect September 9, 2009, followed by his oath September 10. Remove the regular-election classification."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "LeMieux's appointment took effect September 9, 2009, followed by his oath September 10.",
+          "asOf": "2009-09-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/FL/senators.htm",
+          "claim": "Official state delegation history: George LeMieux",
+          "asOf": "2009-09-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/FL/senators.htm",
+          "claim": "Official state delegation history: Bill Nelson",
+          "asOf": "2009-09-10"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-433-interim-designation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-434",
+      "mechanism": "interim-oath",
+      "learningTarget": "Kirk was appointed September 24, 2009, and took the oath September 25.",
+      "date": "2009-09-25",
+      "venue": {
+        "ko": "매사추세츠 명부 갱신",
+        "en": "Massachusetts roster update"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "K000374",
+          "name": "Paul Kirk",
+          "ko": "폴 커크",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MA/senators.htm"
+        },
+        {
+          "id": "K000148",
+          "name": "John Kerry",
+          "ko": "존 케리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MA/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새 임명 의원의 선서 확인서를 받았습니다.",
+          "en": "I received the oath certificate of the new appointee."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "주지사 임명과 상원 선서는 별개 기록입니다.",
+          "en": "Appointment and Senate oath are separate records."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그러면 오늘의 실제 행위를 표시해 주세요.",
+          "en": "Then identify today's actual act."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "폴 커크의 9월 25일 기록은 {{blank}}입니다.",
+        "en": "Paul Kirk's September 25 entry records {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "특별선거 당선",
+            "en": "special-election victory"
+          },
+          {
+            "id": "B",
+            "ko": "임명장 최초 발급",
+            "en": "initial appointment certificate"
+          },
+          {
+            "id": "C",
+            "ko": "상원 의원 선서",
+            "en": "the Senate oath"
+          },
+          {
+            "id": "D",
+            "ko": "정규 임기 종료",
+            "en": "regular term expiration"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "커크는 2009년 9월 24일 임명되고 25일 선서했다. 선서 완료로 기록하세요.",
+            "en": "Kirk was appointed September 24, 2009, and took the oath September 25. Record completion of the oath."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "커크는 2009년 9월 24일 임명되고 25일 선서했다. 선거 결과로 잘못 분류한 기록을 정정하세요.",
+            "en": "Kirk was appointed September 24, 2009, and took the oath September 25. Correct the record labeled election results."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Kirk was appointed September 24, 2009, and took the oath September 25.",
+          "asOf": "2009-09-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Official state delegation history: Paul Kirk",
+          "asOf": "2009-09-25"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Official state delegation history: John Kerry",
+          "asOf": "2009-09-25"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-434-interim-oath"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-435",
+      "mechanism": "vacancy-oath",
+      "learningTarget": "Goodwin was appointed July 16, 2010, and took the oath July 20.",
+      "date": "2010-07-20",
+      "venue": {
+        "ko": "웨스트버지니아 공석 기록",
+        "en": "West Virginia vacancy record"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "G000561",
+          "name": "Carte Goodwin",
+          "ko": "카트 굿윈",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/WV/senators.htm"
+        },
+        {
+          "id": "R000150",
+          "name": "Jay Rockefeller",
+          "ko": "제이 록펠러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/WV/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "금요일 임명 기록 이후 새로운 문서가 도착했습니다.",
+          "en": "A new document has arrived after Friday's appointment."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "공석을 채운 사람의 선서 여부도 확인해야 합니다.",
+          "en": "We also need to verify the oath of the appointee."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오늘 날짜로 무엇을 확정할 수 있습니까?",
+          "en": "What can we certify today?"
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "굿윈의 7월 20일 기록은 {{blank}}입니다.",
+        "en": "Goodwin's July 20 entry records {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정규 선거 승리",
+            "en": "regular election victory"
+          },
+          {
+            "id": "B",
+            "ko": "상원 선서",
+            "en": "Senate oath"
+          },
+          {
+            "id": "C",
+            "ko": "임명 철회",
+            "en": "withdrawal of appointment"
+          },
+          {
+            "id": "D",
+            "ko": "정당 변경",
+            "en": "party switch"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "굿윈은 2010년 7월 16일 임명되고 20일 선서했다. 선서 확인을 완료하세요.",
+            "en": "Goodwin was appointed July 16, 2010, and took the oath July 20. Complete the oath verification."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "굿윈은 2010년 7월 16일 임명되고 20일 선서했다. 선거 승리로 표시한 항목을 수정하세요.",
+            "en": "Goodwin was appointed July 16, 2010, and took the oath July 20. Correct the entry labeled election victory."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Goodwin was appointed July 16, 2010, and took the oath July 20.",
+          "asOf": "2010-07-20"
+        },
+        {
+          "url": "https://www.senate.gov/states/WV/senators.htm",
+          "claim": "Official state delegation history: Carte Goodwin",
+          "asOf": "2010-07-20"
+        },
+        {
+          "url": "https://www.senate.gov/states/WV/senators.htm",
+          "claim": "Official state delegation history: Jay Rockefeller",
+          "asOf": "2010-07-20"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-435-vacancy-oath"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-436",
+      "mechanism": "successor-reconciliation",
+      "learningTarget": "Goodwin temporarily filled Byrd's vacancy; Manchin succeeded him after the 2010 special election.",
+      "date": "2010-11-16",
+      "venue": {
+        "ko": "웨스트버지니아 대표단 인수",
+        "en": "West Virginia delegation transition"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "M001183",
+          "name": "Joe Manchin",
+          "ko": "조 맨친",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/WV/senators.htm"
+        },
+        {
+          "id": "R000150",
+          "name": "Jay Rockefeller",
+          "ko": "제이 록펠러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/WV/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "올해 여름부터 유지한 임시 의석 기록을 마감하려 합니다.",
+          "en": "I need to close the interim seat record maintained since summer."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "새 의원과 전임 임명 의원을 분리해 주세요.",
+          "en": "Separate the elected successor from the interim appointee."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇습니다. 두 사람 사이의 인계 관계를 복원하세요.",
+          "en": "Yes. Restore the succession relationship."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "맨친 직전 임명 의원은 {{blank}}입니다.",
+        "en": "Manchin's immediate appointed predecessor was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "카트 굿윈",
+            "en": "Carte Goodwin"
+          },
+          {
+            "id": "B",
+            "ko": "로버트 버드",
+            "en": "Robert Byrd"
+          },
+          {
+            "id": "C",
+            "ko": "제이 록펠러",
+            "en": "Jay Rockefeller"
+          },
+          {
+            "id": "D",
+            "ko": "로버트 키셀",
+            "en": "Robert Kissell"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "굿윈은 버드의 공석을 임시로 채웠고 맨친은 2010년 특별선거 뒤 이어받았다. 임시 승계 단계를 포함해 연혁을 완성하세요.",
+            "en": "Goodwin temporarily filled Byrd's vacancy; Manchin succeeded him after the 2010 special election. Complete the chronology including the interim service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "굿윈은 버드의 공석을 임시로 채웠고 맨친은 2010년 특별선거 뒤 이어받았다. 공석 발생 의원과 직접 전임자를 구분하세요.",
+            "en": "Goodwin temporarily filled Byrd's vacancy; Manchin succeeded him after the 2010 special election. Distinguish the original incumbent from the immediate predecessor."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-division.shtml",
+          "claim": "Goodwin temporarily filled Byrd's vacancy; Manchin succeeded him after the 2010 special election.",
+          "asOf": "2010-11-16"
+        },
+        {
+          "url": "https://www.senate.gov/states/WV/senators.htm",
+          "claim": "Official state delegation history: Joe Manchin",
+          "asOf": "2010-11-16"
+        },
+        {
+          "url": "https://www.senate.gov/states/WV/senators.htm",
+          "claim": "Official state delegation history: Jay Rockefeller",
+          "asOf": "2010-11-16"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-436-successor-reconciliation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-437",
+      "mechanism": "temporary-colleague",
+      "learningTarget": "Cowan was appointed February 1, 2013, and sworn February 7.",
+      "date": "2013-02-07",
+      "venue": {
+        "ko": "매사추세츠 신규 동료 소개",
+        "en": "Massachusetts colleague introduction"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "C001099",
+          "name": "William Cowan",
+          "ko": "모 코언",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MA/senators.htm"
+        },
+        {
+          "id": "W000817",
+          "name": "Elizabeth Warren",
+          "ko": "엘리자베스 워런",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MA/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "이번 달 새 동료의 진입 방식에 관한 소개문을 준비합니다.",
+          "en": "I am preparing an introduction explaining this month's new colleague's entry."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "정규 선거 당선자와 임시 공석 담당은 다릅니다.",
+          "en": "Regular election and interim vacancy service differ."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그러면 공식 취임 근거를 넣으세요.",
+          "en": "Then include the official basis of entry."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "코언은 {{blank}}으로 상원에 진입했습니다.",
+        "en": "Cowan entered the Senate through {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "상원 정규 선거",
+            "en": "regular Senate election"
+          },
+          {
+            "id": "B",
+            "ko": "하원 임기 자동 연장",
+            "en": "automatic extension of House service"
+          },
+          {
+            "id": "C",
+            "ko": "상원 지도부 선출",
+            "en": "party leadership election"
+          },
+          {
+            "id": "D",
+            "ko": "주지사 임명",
+            "en": "gubernatorial appointment"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "코언은 2013년 2월 1일 임명되어 7일 선서했다. 임시 임명 소개문을 확정하세요.",
+            "en": "Cowan was appointed February 1, 2013, and sworn February 7. Finalize the interim appointment introduction."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "코언은 2013년 2월 1일 임명되어 7일 선서했다. 정규 선거 당선자로 소개한 자료를 회수하세요.",
+            "en": "Cowan was appointed February 1, 2013, and sworn February 7. Withdraw the introduction misidentifying a regular election."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Cowan was appointed February 1, 2013, and sworn February 7.",
+          "asOf": "2013-02-07"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Official state delegation history: William Cowan",
+          "asOf": "2013-02-07"
+        },
+        {
+          "url": "https://www.senate.gov/states/MA/senators.htm",
+          "claim": "Official state delegation history: Elizabeth Warren",
+          "asOf": "2013-02-07"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-437-temporary-colleague"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-438",
+      "mechanism": "new-credentials",
+      "learningTarget": "Chiesa was appointed June 6, 2013, and took the oath June 10.",
+      "date": "2013-06-10",
+      "venue": {
+        "ko": "뉴저지 의석 접수",
+        "en": "New Jersey seat intake"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "C001100",
+          "name": "Jeffrey Chiesa",
+          "ko": "제프리 키에사",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        },
+        {
+          "id": "M000639",
+          "name": "Robert Menendez",
+          "ko": "로버트 메넨데스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새 공석 임명자의 서류를 접수했습니다.",
+          "en": "I received the vacancy appointee's paperwork."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "임명 발표와 공식 선서는 날짜가 다르지요.",
+          "en": "Appointment and oath dates may differ."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오늘의 문서가 어떤 절차를 확인하는지 표시하세요.",
+          "en": "Identify which stage today's record confirms."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "키에사의 6월 10일 기록은 {{blank}}입니다.",
+        "en": "Chiesa's June 10 entry confirms {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "특별선거 당선",
+            "en": "special-election victory"
+          },
+          {
+            "id": "B",
+            "ko": "임명 발표",
+            "en": "appointment announcement"
+          },
+          {
+            "id": "C",
+            "ko": "선서 완료",
+            "en": "completion of the oath"
+          },
+          {
+            "id": "D",
+            "ko": "하원의원 사직",
+            "en": "House resignation"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "키에사는 2013년 6월 6일 임명되고 10일 선서했다. 선서 기록을 명부에 연결하세요.",
+            "en": "Chiesa was appointed June 6, 2013, and took the oath June 10. Link the oath to the roster."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "키에사는 2013년 6월 6일 임명되고 10일 선서했다. 임명 발표일로 기록한 날짜를 고치세요.",
+            "en": "Chiesa was appointed June 6, 2013, and took the oath June 10. Correct the date entered as the announcement."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Chiesa was appointed June 6, 2013, and took the oath June 10.",
+          "asOf": "2013-06-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: Jeffrey Chiesa",
+          "asOf": "2013-06-10"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: Robert Menendez",
+          "asOf": "2013-06-10"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-438-new-credentials"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-439",
+      "mechanism": "cross-party-succession",
+      "learningTarget": "Booker succeeded Republican appointee Chiesa after the 2013 special election.",
+      "date": "2013-10-31",
+      "venue": {
+        "ko": "뉴저지 대표단 기록",
+        "en": "New Jersey delegation record"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "B001288",
+          "name": "Cory Booker",
+          "ko": "코리 부커",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        },
+        {
+          "id": "M000639",
+          "name": "Robert Menendez",
+          "ko": "로버트 메넨데스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새로 선출된 의원의 의석 이력을 복원합니다.",
+          "en": "I am reconstructing the newly elected senator's seat history."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "당적 변동이 있었으므로 직전 임명자도 보존해야 합니다.",
+          "en": "The party changed, so preserve the interim appointee too."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇죠. 직접 전임자를 명시하세요.",
+          "en": "Exactly. Name the immediate predecessor."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "부커의 직전 임명 의원은 {{blank}}입니다.",
+        "en": "Booker's immediate appointed predecessor was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "프랭크 로텐버그",
+            "en": "Frank Lautenberg"
+          },
+          {
+            "id": "B",
+            "ko": "제프리 키에사",
+            "en": "Jeffrey Chiesa"
+          },
+          {
+            "id": "C",
+            "ko": "로버트 메넨데스",
+            "en": "Robert Menendez"
+          },
+          {
+            "id": "D",
+            "ko": "존 코자인",
+            "en": "Jon Corzine"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "부커는 2013년 특별선거 후 공화당 임명 의원 키에사의 의석을 이어받았다. 정당 변화와 의석 승계를 기록하세요.",
+            "en": "Booker succeeded Republican appointee Chiesa after the 2013 special election. Record both the party change and succession."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "부커는 2013년 특별선거 후 공화당 임명 의원 키에사의 의석을 이어받았다. 최초 공석 발생자와 직접 전임자를 다시 나누세요.",
+            "en": "Booker succeeded Republican appointee Chiesa after the 2013 special election. Separate the original vacancy from the immediate predecessor."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-division.shtml",
+          "claim": "Booker succeeded Republican appointee Chiesa after the 2013 special election.",
+          "asOf": "2013-10-31"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: Cory Booker",
+          "asOf": "2013-10-31"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: Robert Menendez",
+          "asOf": "2013-10-31"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-439-cross-party-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-440",
+      "mechanism": "appointment-entry",
+      "learningTarget": "Walsh was appointed February 9, 2014, and sworn February 11.",
+      "date": "2014-02-11",
+      "venue": {
+        "ko": "몬태나 의석 소개",
+        "en": "Montana seat introduction"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "W000818",
+          "name": "John Walsh",
+          "ko": "존 월시",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MT/senators.htm"
+        },
+        {
+          "id": "T000464",
+          "name": "Jon Tester",
+          "ko": "존 테스터",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MT/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새 동료가 어떤 방식으로 상원에 진출했는지 소개하려 합니다.",
+          "en": "I am introducing how the new colleague entered the Senate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "현직 임기만 보고 정규 선거라고 단정하지 마세요.",
+          "en": "Do not infer regular election from current service."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "오늘의 자격 서류를 기준으로 적으세요.",
+          "en": "Use today's credential record."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "월시의 첫 상원 진입 방식은 {{blank}}입니다.",
+        "en": "Walsh first entered the Senate through {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공석 임명",
+            "en": "vacancy appointment"
+          },
+          {
+            "id": "B",
+            "ko": "정규 선거",
+            "en": "regular election"
+          },
+          {
+            "id": "C",
+            "ko": "상원 원내총무 선출",
+            "en": "election as whip"
+          },
+          {
+            "id": "D",
+            "ko": "연방 하원 승계",
+            "en": "House succession"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "월시는 2014년 2월 9일 임명되어 11일 선서했다. 공석 임명으로 기록하세요.",
+            "en": "Walsh was appointed February 9, 2014, and sworn February 11. Record a vacancy appointment."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "월시는 2014년 2월 9일 임명되어 11일 선서했다. 정규 선거 이력을 잘못 추가하지 마세요.",
+            "en": "Walsh was appointed February 9, 2014, and sworn February 11. Remove the erroneous regular-election history."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Walsh was appointed February 9, 2014, and sworn February 11.",
+          "asOf": "2014-02-11"
+        },
+        {
+          "url": "https://www.senate.gov/states/MT/senators.htm",
+          "claim": "Official state delegation history: John Walsh",
+          "asOf": "2014-02-11"
+        },
+        {
+          "url": "https://www.senate.gov/states/MT/senators.htm",
+          "claim": "Official state delegation history: Jon Tester",
+          "asOf": "2014-02-11"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-440-appointment-entry"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-441",
+      "mechanism": "nomination-versus-election",
+      "learningTarget": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate.",
+      "date": "2017-09-27",
+      "venue": {
+        "ko": "앨라배마 선거 일정실",
+        "en": "Alabama election calendar"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "S001202",
+          "name": "Luther Strange",
+          "ko": "루서 스트레인지",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AL/senators.htm"
+        },
+        {
+          "id": "S000320",
+          "name": "Richard Shelby",
+          "ko": "리처드 셸비",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AL/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "어제 경선 결선 결과를 일반선거 일정과 대조하고 있습니다.",
+          "en": "I am comparing yesterday's primary runoff with the general election calendar."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "경선에서의 결과가 곧 상원 의석 상실은 아닙니다.",
+          "en": "A primary result is not immediate loss of the Senate seat."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇다면 어제의 실제 결과를 분류해 주세요.",
+          "en": "Then classify yesterday's result."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스트레인지의 9월 26일 결과는 {{blank}}입니다.",
+        "en": "Strange's September 26 result was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "일반선거 패배",
+            "en": "general-election defeat"
+          },
+          {
+            "id": "B",
+            "ko": "상원 제명",
+            "en": "Senate expulsion"
+          },
+          {
+            "id": "C",
+            "ko": "정규 선거 당선",
+            "en": "regular-election victory"
+          },
+          {
+            "id": "D",
+            "ko": "공화당 경선 결선 패배",
+            "en": "defeat in the Republican primary runoff"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "스트레인지는 2017년 9월 26일 공화당 경선 결선에서 패배하여 일반선거 후보가 되지 못했다. 경선 결과만 확정하고 재임은 별도로 유지하세요.",
+            "en": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate. Certify the primary result while retaining the separate tenure record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "스트레인지는 2017년 9월 26일 공화당 경선 결선에서 패배하여 일반선거 후보가 되지 못했다. 의석 즉시 상실 표시를 철회하세요.",
+            "en": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate. Remove the immediate seat-loss label."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate.",
+          "asOf": "2017-09-27"
+        },
+        {
+          "url": "https://www.senate.gov/states/AL/senators.htm",
+          "claim": "Official state delegation history: Luther Strange",
+          "asOf": "2017-09-27"
+        },
+        {
+          "url": "https://www.senate.gov/states/AL/senators.htm",
+          "claim": "Official state delegation history: Richard Shelby",
+          "asOf": "2017-09-27"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-441-nomination-versus-election"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-442",
+      "mechanism": "state-office-transition",
+      "learningTarget": "Tina Smith resigned as lieutenant governor late January 2, 2018; her appointment and oath occurred January 3.",
+      "date": "2018-01-03",
+      "venue": {
+        "ko": "미네소타 취임 서류",
+        "en": "Minnesota inauguration paperwork"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "S001203",
+          "name": "Tina Smith",
+          "ko": "티나 스미스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MN/senators.htm"
+        },
+        {
+          "id": "K000367",
+          "name": "Amy Klobuchar",
+          "ko": "에이미 클로버샤",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MN/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "주정부 직책에서 물러난 기록과 연방 취임 기록을 연결하려 합니다.",
+          "en": "I am linking a state office resignation to federal service."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "주정부 경력과 상원 임명을 구분해야 합니다.",
+          "en": "Distinguish state service from Senate appointment."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "맞습니다. 직전 직책을 명시하세요.",
+          "en": "Right. Identify the prior office."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "스미스가 상원 진출 직전 맡은 직책은 {{blank}}입니다.",
+        "en": "Smith's immediate prior office was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "미네소타 주지사",
+            "en": "Minnesota governor"
+          },
+          {
+            "id": "B",
+            "ko": "연방 하원의장",
+            "en": "House speaker"
+          },
+          {
+            "id": "C",
+            "ko": "미네소타 부지사",
+            "en": "Minnesota lieutenant governor"
+          },
+          {
+            "id": "D",
+            "ko": "미네소타 연방지방법원 판사",
+            "en": "federal district judge in Minnesota"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "티나 스미스는 2018년 1월 2일 밤 부지사직에서 물러나 3일 상원 임명이 효력을 얻고 선서했다. 주정부에서 연방 의회로 이어지는 경력을 연결하세요.",
+            "en": "Tina Smith resigned as lieutenant governor late January 2, 2018; her appointment and oath occurred January 3. Link state and federal service."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "티나 스미스는 2018년 1월 2일 밤 부지사직에서 물러나 3일 상원 임명이 효력을 얻고 선서했다. 주지사와 부지사 직책을 구별하여 수정하세요.",
+            "en": "Tina Smith resigned as lieutenant governor late January 2, 2018; her appointment and oath occurred January 3. Correct the office distinction."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Tina Smith resigned as lieutenant governor late January 2, 2018; her appointment and oath occurred January 3.",
+          "asOf": "2018-01-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "Official state delegation history: Tina Smith",
+          "asOf": "2018-01-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/MN/senators.htm",
+          "claim": "Official state delegation history: Amy Klobuchar",
+          "asOf": "2018-01-03"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-442-state-office-transition"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-443",
+      "mechanism": "runoff-confirmation",
+      "learningTarget": "Hyde-Smith won the November 27, 2018 special-election runoff following her appointment.",
+      "date": "2018-11-28",
+      "venue": {
+        "ko": "미시시피 선거 연혁",
+        "en": "Mississippi election chronology"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "H001079",
+          "name": "Cindy Hyde-Smith",
+          "ko": "신디 하이드스미스",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MS/senators.htm"
+        },
+        {
+          "id": "W000437",
+          "name": "Roger Wicker",
+          "ko": "로저 위커",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MS/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "봄의 임명 기록과 어제 선거 결과를 연결하겠습니다.",
+          "en": "I am connecting the spring appointment to yesterday's election result."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "임명 상태에서 유권자의 판단을 받은 절차를 구분합시다.",
+          "en": "Distinguish appointment from the subsequent voters' decision."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "네. 어떤 유형의 선거였는지 기록하세요.",
+          "en": "Yes. Record the election type."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "하이드스미스는 11월 27일 {{blank}}에서 승리했습니다.",
+        "en": "Hyde-Smith won the November 27 {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정당 경선 결선",
+            "en": "party primary runoff"
+          },
+          {
+            "id": "B",
+            "ko": "특별선거 결선",
+            "en": "special-election runoff"
+          },
+          {
+            "id": "C",
+            "ko": "대통령 선거",
+            "en": "presidential election"
+          },
+          {
+            "id": "D",
+            "ko": "연방 하원 선거",
+            "en": "House election"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "하이드스미스는 2018년 임명 후 11월 27일 특별선거 결선에서 승리했다. 임명과 선출 기록을 연결하세요.",
+            "en": "Hyde-Smith won the November 27, 2018 special-election runoff following her appointment. Link appointment and electoral victory."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "하이드스미스는 2018년 임명 후 11월 27일 특별선거 결선에서 승리했다. 경선으로 분류한 결과를 수정하세요.",
+            "en": "Hyde-Smith won the November 27, 2018 special-election runoff following her appointment. Correct the result labeled primary."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Hyde-Smith won the November 27, 2018 special-election runoff following her appointment.",
+          "asOf": "2018-11-28"
+        },
+        {
+          "url": "https://www.senate.gov/states/MS/senators.htm",
+          "claim": "Official state delegation history: Cindy Hyde-Smith",
+          "asOf": "2018-11-28"
+        },
+        {
+          "url": "https://www.senate.gov/states/MS/senators.htm",
+          "claim": "Official state delegation history: Roger Wicker",
+          "asOf": "2018-11-28"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-443-runoff-confirmation"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-444",
+      "mechanism": "returning-senator",
+      "learningTarget": "After earlier Senate service, Kyl was appointed September 4, 2018, and sworn September 5.",
+      "date": "2018-09-05",
+      "venue": {
+        "ko": "애리조나 재취임 기록",
+        "en": "Arizona return-to-service record"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "K000352",
+          "name": "Jon Kyl",
+          "ko": "존 카일",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        },
+        {
+          "id": "F000444",
+          "name": "Jeff Flake",
+          "ko": "제프 플레이크",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "이름이 이미 과거 상원 명부에 있습니다. 신규 의원 기록으로만 분류할까요?",
+          "en": "His name already appears in an earlier roster. Is this solely a first-time entry?"
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이전 재임과 새 임명은 모두 보존해야 합니다.",
+          "en": "Preserve prior service and the new appointment."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇다면 이번 진입의 성격을 표시하세요.",
+          "en": "Then classify the nature of this return."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "카일의 2018년 진입은 {{blank}}입니다.",
+        "en": "Kyl's 2018 entry was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "전직 상원의원의 공석 임명 복귀",
+            "en": "a former senator returning by vacancy appointment"
+          },
+          {
+            "id": "B",
+            "ko": "첫 상원 정규 선거 당선",
+            "en": "a first regular Senate election"
+          },
+          {
+            "id": "C",
+            "ko": "연방 하원에서 자동 승계",
+            "en": "automatic House succession"
+          },
+          {
+            "id": "D",
+            "ko": "주지사 선거 승리",
+            "en": "a gubernatorial victory"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "카일은 이전 상원 재임 이후 2018년 9월 4일 임명되어 5일 선서했다. 이전 임기와 복귀 임기를 분리하세요.",
+            "en": "After earlier Senate service, Kyl was appointed September 4, 2018, and sworn September 5. Separate the earlier and returning terms."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "카일은 이전 상원 재임 이후 2018년 9월 4일 임명되어 5일 선서했다. 최초 상원 진출로 표시한 경력표를 수정하세요.",
+            "en": "After earlier Senate service, Kyl was appointed September 4, 2018, and sworn September 5. Correct the first-entry label."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "After earlier Senate service, Kyl was appointed September 4, 2018, and sworn September 5.",
+          "asOf": "2018-09-05"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Jon Kyl",
+          "asOf": "2018-09-05"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Jeff Flake",
+          "asOf": "2018-09-05"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-444-returning-senator"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-445",
+      "mechanism": "dual-entry",
+      "learningTarget": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election.",
+      "date": "2019-01-03",
+      "venue": {
+        "ko": "애리조나 신임 의원 인사",
+        "en": "Arizona new senator introductions"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "M001197",
+          "name": "Martha McSally",
+          "ko": "마사 맥샐리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        },
+        {
+          "id": "S001191",
+          "name": "Kyrsten Sinema",
+          "ko": "커스틴 시네마",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "두 의원이 오늘 같은 주의 상원 대표단에 합류합니다.",
+          "en": "Both senators join the state's delegation today."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "같은 취임일이 곧 같은 선출 방식이라는 뜻은 아닙니다.",
+          "en": "A shared entry date does not imply an identical route."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇죠. 두 사람의 진입 경로를 구별하세요.",
+          "en": "Right. Distinguish the routes."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "맥샐리와 시네마의 진입은 각각 {{blank}}입니다.",
+        "en": "McSally and Sinema entered respectively by {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "정규 선거와 임명",
+            "en": "regular election and appointment"
+          },
+          {
+            "id": "B",
+            "ko": "두 사람 모두 임명",
+            "en": "two appointments"
+          },
+          {
+            "id": "C",
+            "ko": "두 사람 모두 특별선거",
+            "en": "two special elections"
+          },
+          {
+            "id": "D",
+            "ko": "임명과 정규 선거",
+            "en": "appointment and regular election"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "맥샐리는 2019년 1월 3일 공석 임명으로 취임했고 시네마는 2018년 정규 선거 승리로 상원에 진입했다. 두 경력의 진입 방식을 별도로 표시하세요.",
+            "en": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election. Mark the two entry routes separately."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "맥샐리는 2019년 1월 3일 공석 임명으로 취임했고 시네마는 2018년 정규 선거 승리로 상원에 진입했다. 같은 날짜를 동일한 선출 방식으로 추정하지 마세요.",
+            "en": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election. Do not infer identical selection from a shared date."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election.",
+          "asOf": "2019-01-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Martha McSally",
+          "asOf": "2019-01-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Kyrsten Sinema",
+          "asOf": "2019-01-03"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-445-dual-entry"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-446",
+      "mechanism": "seat-turnover",
+      "learningTarget": "Kelly replaced appointee McSally after the 2020 special election.",
+      "date": "2020-12-03",
+      "venue": {
+        "ko": "애리조나 의석 인계",
+        "en": "Arizona seat turnover"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "K000377",
+          "name": "Mark Kelly",
+          "ko": "마크 켈리",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        },
+        {
+          "id": "S001191",
+          "name": "Kyrsten Sinema",
+          "ko": "커스틴 시네마",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/AZ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "올해 특별선거 결과에 따라 대표단의 의석 명부를 바꿉니다.",
+          "en": "I am changing the roster following this year's special election."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2019년 임명 기록을 지우면 이전 경력이 사라집니다.",
+          "en": "Deleting the 2019 appointment would erase earlier service."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "네. 새 의원의 직접 전임자를 연결하세요.",
+          "en": "Yes. Link the immediate predecessor."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "켈리가 이어받은 의석의 전임자는 {{blank}}입니다.",
+        "en": "Kelly's immediate predecessor in the seat was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "존 카일",
+            "en": "Jon Kyl"
+          },
+          {
+            "id": "B",
+            "ko": "존 매케인",
+            "en": "John McCain"
+          },
+          {
+            "id": "C",
+            "ko": "마사 맥샐리",
+            "en": "Martha McSally"
+          },
+          {
+            "id": "D",
+            "ko": "제프 플레이크",
+            "en": "Jeff Flake"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "켈리는 2020년 특별선거 후 임명 의원 맥샐리를 대체했다. 의석별 승계 기록을 확정하세요.",
+            "en": "Kelly replaced appointee McSally after the 2020 special election. Finalize the seat succession record."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "켈리는 2020년 특별선거 후 임명 의원 맥샐리를 대체했다. 다른 애리조나 의석 전임자를 연결한 표를 수정하세요.",
+            "en": "Kelly replaced appointee McSally after the 2020 special election. Correct the table linking the wrong Arizona seat."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/parties-leadership/party-division.shtml",
+          "claim": "Kelly replaced appointee McSally after the 2020 special election.",
+          "asOf": "2020-12-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Mark Kelly",
+          "asOf": "2020-12-03"
+        },
+        {
+          "url": "https://www.senate.gov/states/AZ/senators.htm",
+          "claim": "Official state delegation history: Kyrsten Sinema",
+          "asOf": "2020-12-03"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-446-seat-turnover"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-447",
+      "mechanism": "effective-before-oath",
+      "learningTarget": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6.",
+      "date": "2020-01-06",
+      "venue": {
+        "ko": "조지아 취임 기록",
+        "en": "Georgia entry record"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "L000594",
+          "name": "Kelly Loeffler",
+          "ko": "켈리 뢰플러",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/GA/senators.htm"
+        },
+        {
+          "id": "P000612",
+          "name": "David Perdue",
+          "ko": "데이비드 퍼듀",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/GA/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "새 동료의 임명 효력과 선서 날짜가 서로 다릅니다.",
+          "en": "The new colleague's appointment and oath dates differ."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "오늘 선서했다고 오늘 임명이 처음 효력을 얻은 것은 아닙니다.",
+          "en": "Today's oath does not mean the appointment first became effective today."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇습니다. 실제 효력일을 표시하세요.",
+          "en": "Yes. Mark the effective date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "뢰플러의 임명 효력일은 {{blank}}입니다.",
+        "en": "Loeffler's appointment became effective on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2020년 1월 6일",
+            "en": "January 6, 2020"
+          },
+          {
+            "id": "B",
+            "ko": "2020년 1월 1일",
+            "en": "January 1, 2020"
+          },
+          {
+            "id": "C",
+            "ko": "2019년 12월 31일",
+            "en": "December 31, 2019"
+          },
+          {
+            "id": "D",
+            "ko": "2020년 1월 3일",
+            "en": "January 3, 2020"
+          }
+        ],
+        "correct": "B"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "뢰플러의 임명은 2020년 1월 1일 효력을 얻었고 6일 선서했다. 두 날짜를 모두 저장하세요.",
+            "en": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6. Save both dates."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "뢰플러의 임명은 2020년 1월 1일 효력을 얻었고 6일 선서했다. 선서일로 효력일을 덮어쓴 기록을 수정하세요.",
+            "en": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6. Correct the effective date overwritten by the oath date."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6.",
+          "asOf": "2020-01-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/GA/senators.htm",
+          "claim": "Official state delegation history: Kelly Loeffler",
+          "asOf": "2020-01-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/GA/senators.htm",
+          "claim": "Official state delegation history: David Perdue",
+          "asOf": "2020-01-06"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-447-effective-before-oath"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-448",
+      "mechanism": "runoff-succession",
+      "learningTarget": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff.",
+      "date": "2021-01-21",
+      "venue": {
+        "ko": "조지아 의석 정리",
+        "en": "Georgia seat reconciliation"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "W000790",
+          "name": "Raphael Warnock",
+          "ko": "라파엘 워녹",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/GA/senators.htm"
+        },
+        {
+          "id": "S000148",
+          "name": "Chuck Schumer",
+          "ko": "척 슈머",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NY/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "결선 후 의석을 이어받은 의원의 이전 명부를 확인합니다.",
+          "en": "I am checking the previous roster for the seat filled after the runoff."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "같은 주의 다른 의석과 혼동하지 마세요.",
+          "en": "Do not confuse the other seat from the same state."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그렇죠. 이 의석의 바로 전 임명자를 찾아 주세요.",
+          "en": "Right. Find the immediate appointee in this seat."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "워녹이 이어받은 의석의 전임자는 {{blank}}입니다.",
+        "en": "Warnock's immediate predecessor was {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "켈리 뢰플러",
+            "en": "Kelly Loeffler"
+          },
+          {
+            "id": "B",
+            "ko": "데이비드 퍼듀",
+            "en": "David Perdue"
+          },
+          {
+            "id": "C",
+            "ko": "색스비 챔블리스",
+            "en": "Saxby Chambliss"
+          },
+          {
+            "id": "D",
+            "ko": "조니 아이잭슨",
+            "en": "Johnny Isakson"
+          }
+        ],
+        "correct": "A"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "워녹은 2021년 1월 5일 특별선거 결선에서 임명 의원 뢰플러를 꺾었다. 특별선거 승계를 정확한 의석에 연결하세요.",
+            "en": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff. Link the special-election succession to the correct seat."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "워녹은 2021년 1월 5일 특별선거 결선에서 임명 의원 뢰플러를 꺾었다. 다른 조지아 의석과 섞인 항목을 재검토하세요.",
+            "en": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff. Recheck the record mixing Georgia's two seats."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff.",
+          "asOf": "2021-01-21"
+        },
+        {
+          "url": "https://www.senate.gov/states/GA/senators.htm",
+          "claim": "Official state delegation history: Raphael Warnock",
+          "asOf": "2021-01-21"
+        },
+        {
+          "url": "https://www.senate.gov/states/NY/senators.htm",
+          "claim": "Official state delegation history: Chuck Schumer",
+          "asOf": "2021-01-21"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-448-runoff-succession"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-449",
+      "mechanism": "late-oath",
+      "learningTarget": "Helmy was appointed effective August 23, 2024, and took the oath September 9.",
+      "date": "2024-09-09",
+      "venue": {
+        "ko": "뉴저지 임명 일정",
+        "en": "New Jersey appointment calendar"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "H001097",
+          "name": "George Helmy",
+          "ko": "조지 헬미",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        },
+        {
+          "id": "B001288",
+          "name": "Cory Booker",
+          "ko": "코리 부커",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/NJ/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "8월 임명 기록과 오늘 선서 기록을 받았습니다.",
+          "en": "I received an August appointment record and today's oath record."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "의석 이력을 작성할 때 두 날짜가 필요합니다.",
+          "en": "Both dates matter for the seat history."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "그러면 임명의 효력일을 정확히 표시하세요.",
+          "en": "Then mark the appointment's effective date."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "헬미의 임명 효력일은 {{blank}}입니다.",
+        "en": "Helmy's appointment became effective on {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "2024년 9월 9일",
+            "en": "September 9, 2024"
+          },
+          {
+            "id": "B",
+            "ko": "2024년 11월 5일",
+            "en": "November 5, 2024"
+          },
+          {
+            "id": "C",
+            "ko": "2024년 12월 1일",
+            "en": "December 1, 2024"
+          },
+          {
+            "id": "D",
+            "ko": "2024년 8월 23일",
+            "en": "August 23, 2024"
+          }
+        ],
+        "correct": "D"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "헬미는 2024년 8월 23일 임명되어 9월 9일 선서했다. 임명과 선서 자료를 별도 날짜로 보관하세요.",
+            "en": "Helmy was appointed effective August 23, 2024, and took the oath September 9. Retain appointment and oath as separate dates."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "헬미는 2024년 8월 23일 임명되어 9월 9일 선서했다. 선서일만 재임 시작으로 표시한 기록을 재검토하세요.",
+            "en": "Helmy was appointed effective August 23, 2024, and took the oath September 9. Review the entry using only the oath date."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+          "claim": "Helmy was appointed effective August 23, 2024, and took the oath September 9.",
+          "asOf": "2024-09-09"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: George Helmy",
+          "asOf": "2024-09-09"
+        },
+        {
+          "url": "https://www.senate.gov/states/NJ/senators.htm",
+          "claim": "Official state delegation history: Cory Booker",
+          "asOf": "2024-09-09"
+        }
+      ],
+      "outcome": {
+        "kind": "notebook",
+        "key": "p02-449-late-oath"
+      },
+      "fictional": true
+    },
+    {
+      "id": "P02-450",
+      "mechanism": "shared-committee-organization",
+      "learningTarget": "In 2001 Daschle and Lott negotiated equal committee membership and staffing.",
+      "date": "2001-01-06",
+      "venue": {
+        "ko": "동수 상원 협상",
+        "en": "Evenly divided Senate talks"
+      },
+      "context": {
+        "ko": "공식 역사 기록에 따른 가상 대화이며 실제 발언이나 만남을 재현하지 않는다.",
+        "en": "Fictional dialogue grounded in public historical records, not an actual meeting or quotation."
+      },
+      "cast": [
+        {
+          "id": "D000064",
+          "name": "Tom Daschle",
+          "ko": "톰 대슐",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/SD/senators.htm"
+        },
+        {
+          "id": "L000447",
+          "name": "Trent Lott",
+          "ko": "트렌트 로트",
+          "portrait": null,
+          "source": "https://www.senate.gov/states/MS/senators.htm"
+        }
+      ],
+      "opening": [
+        {
+          "speaker": "player",
+          "ko": "두 당이 같은 의석 수를 보유한 상황의 위원회 운영 합의서를 검토합니다.",
+          "en": "I am reviewing the committee agreement in an evenly divided Senate."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "단순히 다수당이 모든 위원회 자리를 차지하는 방식은 적합하지 않습니다.",
+          "en": "Simply assigning all committee seats to one party would not describe this agreement."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "맞습니다. 합의의 위원회 구성 원칙을 적으세요.",
+          "en": "Exactly. Record the committee composition principle."
+        }
+      ],
+      "response": {
+        "speaker": "player",
+        "ko": "대슐과 로트의 합의는 {{blank}}을 제공했습니다.",
+        "en": "The Daschle–Lott agreement provided {{blank}}.",
+        "choices": [
+          {
+            "id": "A",
+            "ko": "공화당의 모든 위원회 독점",
+            "en": "Republican monopoly over all committees"
+          },
+          {
+            "id": "B",
+            "ko": "민주당만 직원 고용",
+            "en": "Democratic-only staffing"
+          },
+          {
+            "id": "C",
+            "ko": "양당 동일한 위원 및 인력 수",
+            "en": "equal committee membership and staffing for both parties"
+          },
+          {
+            "id": "D",
+            "ko": "위원회 전체 폐지",
+            "en": "abolition of all committees"
+          }
+        ],
+        "correct": "C"
+      },
+      "followup": {
+        "correct": [
+          {
+            "speaker": "npc:1",
+            "ko": "2001년 대슐과 로트는 양당에 같은 수의 위원과 직원을 배정하는 합의를 마련했다. 합의에 맞춰 양당 좌석과 인력을 배정하세요.",
+            "en": "In 2001 Daschle and Lott negotiated equal committee membership and staffing. Allocate seats and staff under the agreement."
+          }
+        ],
+        "incorrect": [
+          {
+            "speaker": "npc:0",
+            "ko": "2001년 대슐과 로트는 양당에 같은 수의 위원과 직원을 배정하는 합의를 마련했다. 일반 다수당 배정표를 보류하고 합의서를 다시 읽으세요.",
+            "en": "In 2001 Daschle and Lott negotiated equal committee membership and staffing. Hold the ordinary majority allocation and review the agreement."
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.senate.gov/about/origins-foundations/idea-of-the-senate/2003Daschle.htm",
+          "claim": "In 2001 Daschle and Lott negotiated equal committee membership and staffing.",
+          "asOf": "2001-01-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/SD/senators.htm",
+          "claim": "Official state delegation history: Tom Daschle",
+          "asOf": "2001-01-06"
+        },
+        {
+          "url": "https://www.senate.gov/states/MS/senators.htm",
+          "claim": "Official state delegation history: Trent Lott",
+          "asOf": "2001-01-06"
+        }
+      ],
+      "outcome": {
+        "kind": "document",
+        "key": "p02-450-shared-committee-organization"
+      },
+      "fictional": true
+    }
+  ]
+}
