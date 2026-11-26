@@ -35,18 +35,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "세출 심의의 소수당 측 의견서를 접수합니다.",
-          "en": "We are receiving minority input on appropriations."
-        },
-        {
-          "speaker": "player",
-          "ko": "세출위원회 부위원장 …에게 전달하겠습니다.",
-          "en": "I will send it to Appropriations vice chair …."
+          "ko": "예산 심의에서 소수당 의견을 청취하는 가상 요청입니다.",
+          "en": "A simulated request seeks minority input on appropriations."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "위원장과 부위원장의 직책을 구분하여 소수당 요청을 전달하세요.",
+          "en": "Distinguish chair and vice chair when routing minority input."
         }
       ],
       "response": {
@@ -80,6 +75,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "머리에게 부위원장 자격으로 요청합니다.",
+            "en": "Route the request to Murray as vice chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "머리는 119대 세출위원회 부위원장입니다.",
             "en": "Murray is Appropriations vice chair in the 119th Congress."
@@ -90,6 +90,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 머리는 119대 세출위원회 부위원장입니다.",
             "en": "Let's review the record. Murray is Appropriations vice chair in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다수당 위원장과 소수당 연락 직책을 혼동하지 마세요.",
+            "en": "Do not confuse majority chair and minority contact."
           }
         ]
       },
@@ -153,18 +158,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "농업 청문회에 소수당 측 증언 자료를 냅니다.",
-          "en": "Submit minority testimony material for an agriculture hearing."
-        },
-        {
-          "speaker": "player",
-          "ko": "농업위원회 간사 …에게 전달하겠습니다.",
-          "en": "Send it to Agriculture ranking member …."
+          "ko": "농업 정책의 가상 청문회에서 소수당 증언 요청을 받았습니다.",
+          "en": "A simulated agriculture hearing receives a minority testimony request."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "소수당 선임위원과 주 대표단의 일반 연락처를 구분하세요.",
+          "en": "Distinguish the ranking member from ordinary delegation contacts."
         }
       ],
       "response": {
@@ -198,6 +198,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "클로버샤에게 선임위원 자격으로 요청합니다.",
+            "en": "Route the request to Klobuchar as ranking member."
+          },
+          {
             "speaker": "npc:1",
             "ko": "클로버샤는 119대 농업위원회 간사입니다.",
             "en": "Klobuchar is Agriculture ranking member in the 119th Congress."
@@ -208,6 +213,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 클로버샤는 119대 농업위원회 간사입니다.",
             "en": "Let's review the record. Klobuchar is Agriculture ranking member in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "일반 의원 연락처로 보낸 요청을 수정하세요.",
+            "en": "Redirect the request from an ordinary senator's contact."
           }
         ]
       },
@@ -271,18 +281,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "정당 소속과 원내 협력 관계를 구분합니다.",
-          "en": "Separate party affiliation from caucus cooperation."
-        },
-        {
-          "speaker": "player",
-          "ko": "공식 무소속으로 분류할 의원은 …입니다.",
-          "en": "The senator to classify as formally independent is …."
+          "ko": "원내 의석 집계와 협력 관계를 별도 표로 준비합니다.",
+          "en": "Prepare separate counts for formal affiliation and caucus cooperation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "협력 정당이 공식 당적을 대신하지는 않습니다.",
+          "en": "Caucus cooperation does not replace formal affiliation."
         }
       ],
       "response": {
@@ -316,6 +321,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "샌더스를 무소속으로 분류합니다.",
+            "en": "Classify Sanders as independent."
+          },
+          {
             "speaker": "npc:1",
             "ko": "샌더스는 무소속입니다.",
             "en": "Sanders is an independent."
@@ -326,6 +336,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 샌더스는 무소속입니다.",
             "en": "Let's review the record. Sanders is an independent."
+          },
+          {
+            "speaker": "aide",
+            "ko": "원내 협력 관계를 공식 당적으로 바꾸지 마세요.",
+            "en": "Do not turn caucus alignment into formal affiliation."
           }
         ]
       },
@@ -389,18 +404,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "국방 감독 자료를 소수당 군사위원회에 전달합니다.",
-          "en": "Deliver defense oversight materials to Armed Services minority leadership."
-        },
-        {
-          "speaker": "player",
-          "ko": "군사위원회 간사 …에게 보내겠습니다.",
-          "en": "Send them to Armed Services ranking member …."
+          "ko": "국방 감독의 가상 청문회에서 소수당 검토를 요청합니다.",
+          "en": "Seek minority review for a simulated defense oversight hearing."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "군사위원회의 선임위원과 다른 위원회 직책을 구분하세요.",
+          "en": "Distinguish Armed Services ranking leadership from other committee offices."
         }
       ],
       "response": {
@@ -434,6 +444,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "리드에게 선임위원 자격으로 제출합니다.",
+            "en": "Submit the request to Reed as ranking member."
+          },
+          {
             "speaker": "npc:1",
             "ko": "리드는 119대 군사위원회 간사입니다.",
             "en": "Reed is Armed Services ranking member in the 119th Congress."
@@ -444,6 +459,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 리드는 119대 군사위원회 간사입니다.",
             "en": "Let's review the record. Reed is Armed Services ranking member in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 위원회 명부를 사용한 제출을 수정하세요.",
+            "en": "Correct the submission routed using another committee roster."
           }
         ]
       },
@@ -507,18 +527,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "공화당 본회의 표결 참석 일정을 조율합니다.",
-          "en": "Coordinate Republican floor voting attendance."
-        },
-        {
-          "speaker": "player",
-          "ko": "다수당 원내총무 …에게 연락합니다.",
-          "en": "Contact majority whip …."
+          "ko": "가상 본회의 표결 전에 공화당 출석을 확인합니다.",
+          "en": "Check Republican attendance before a simulated floor vote."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "위원회 의제와 원내총무의 출석 조정은 다른 업무입니다.",
+          "en": "Committee agendas differ from whip attendance coordination."
         }
       ],
       "response": {
@@ -552,6 +567,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "배러소에게 출석 조정을 요청합니다.",
+            "en": "Request attendance coordination from Barrasso."
+          },
+          {
             "speaker": "npc:1",
             "ko": "바라소는 119대 다수당 원내총무입니다.",
             "en": "Barrasso is majority whip in the 119th Congress."
@@ -562,6 +582,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 바라소는 119대 다수당 원내총무입니다.",
             "en": "Let's review the record. Barrasso is majority whip in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "위원회 직책에 전달한 요청을 돌려보내세요.",
+            "en": "Redirect requests misrouted to a committee office."
           }
         ]
       },
@@ -625,18 +650,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "군사위원회의 감독 청문회를 준비합니다.",
-          "en": "Prepare an Armed Services oversight hearing."
-        },
-        {
-          "speaker": "player",
-          "ko": "위원장 …에게 자료를 전달합니다.",
-          "en": "Deliver the packet to Chair …."
+          "ko": "국방 정책 감독의 가상 청문회를 준비합니다.",
+          "en": "Prepare a simulated defense oversight hearing."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "군사위원장과 일반 의원 사무실을 구분하세요.",
+          "en": "Distinguish the Armed Services chair from ordinary offices."
         }
       ],
       "response": {
@@ -670,6 +690,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "위커에게 위원장 자격으로 요청합니다.",
+            "en": "Route the request to Wicker as chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "위커는 119대 군사위원장입니다.",
             "en": "Wicker chairs Armed Services in the 119th Congress."
@@ -680,6 +705,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 위커는 119대 군사위원장입니다.",
             "en": "Let's review the record. Wicker chairs Armed Services in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 위원회로 보낸 요청을 수정하세요.",
+            "en": "Redirect the request from another committee."
           }
         ]
       },
@@ -743,18 +773,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "세출위원회 다수당 측 심의 담당을 확인합니다.",
-          "en": "Identify majority-side leadership for an appropriations hearing."
-        },
-        {
-          "speaker": "player",
-          "ko": "위원장 …에게 면담을 요청합니다.",
-          "en": "Request a meeting with Chair …."
+          "ko": "가상 예산 심의에서 다수당 측 청문회 요청을 준비합니다.",
+          "en": "Prepare a majority-side hearing request in a simulated appropriations process."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "위원장과 소수당 측 직책을 구분하세요.",
+          "en": "Distinguish the chair from minority leadership."
         }
       ],
       "response": {
@@ -788,6 +813,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "콜린스에게 위원장 자격으로 요청합니다.",
+            "en": "Request a meeting with Collins as chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "콜린스는 119대 세출위원장입니다.",
             "en": "Collins chairs Appropriations in the 119th Congress."
@@ -798,6 +828,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 콜린스는 119대 세출위원장입니다.",
             "en": "Let's review the record. Collins chairs Appropriations in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "소수당 직책을 위원장으로 처리하지 마세요.",
+            "en": "Do not treat a minority office as chair."
           }
         ]
       },
@@ -861,18 +896,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "텍사스의 2026년 정기 선거 대상 의석을 표시합니다.",
-          "en": "Mark the Texas seat up for regular election in 2026."
-        },
-        {
-          "speaker": "player",
-          "ko": "Class II 의석의 현역 의원은 …입니다.",
-          "en": "The incumbent Class II senator is …."
+          "ko": "텍사스의 2026년 정규선거에 대비한 가상 일정입니다.",
+          "en": "A simulated schedule prepares for Texas's 2026 regular election."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "선거 준비는 현직 기록을 확인하는 것이지 결과 예측이 아닙니다.",
+          "en": "Election preparation checks incumbency rather than predicting results."
         }
       ],
       "response": {
@@ -906,6 +936,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "코닌의 Class II 의석에 일정을 연결합니다.",
+            "en": "Link the schedule to Cornyn's Class II seat."
+          },
+          {
             "speaker": "npc:1",
             "ko": "코닌은 Class II 의원입니다.",
             "en": "Cornyn holds Class II."
@@ -916,6 +951,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 코닌은 Class II 의원입니다.",
             "en": "Let's review the record. Cornyn holds Class II."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의석의 선거 주기를 적용하지 마세요.",
+            "en": "Do not apply the other seat's election cycle."
           }
         ]
       },
@@ -1097,18 +1137,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "전직 원내대표의 기록을 현재 지도부와 구분합니다.",
-          "en": "Distinguish former floor leadership from current leadership."
-        },
-        {
-          "speaker": "player",
-          "ko": "2025년 튠에게 원내대표직을 넘긴 인물은 …입니다.",
-          "en": "The leader succeeded by Thune in 2025 was …."
+          "ko": "2025년 원내 지도부 교체 전후를 비교합니다.",
+          "en": "Compare floor leadership before and after the 2025 transition."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "현재 지도자와 전임 지도자의 재임 구간을 구분하세요.",
+          "en": "Distinguish current and former leadership tenure."
         }
       ],
       "response": {
@@ -1142,6 +1177,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "맥코널을 튠 이전 지도자로 확인합니다.",
+            "en": "Identify McConnell as Thune's predecessor."
+          },
+          {
             "speaker": "npc:1",
             "ko": "매코널은 2025년 이전 공화당 원내대표였습니다.",
             "en": "McConnell was Republican Senate leader before 2025."
@@ -1152,6 +1192,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 매코널은 2025년 이전 공화당 원내대표였습니다.",
             "en": "Let's review the record. McConnell was Republican Senate leader before 2025."
+          },
+          {
+            "speaker": "aide",
+            "ko": "전임자를 현직으로 표시하지 마세요.",
+            "en": "Do not mark the predecessor as current."
           }
         ]
       },
@@ -1215,18 +1260,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "조세정책에 대한 소수당 재무위원회 의견을 듣습니다.",
-          "en": "Seek minority Finance Committee input on tax policy."
-        },
-        {
-          "speaker": "player",
-          "ko": "재무위원회 간사 …에게 요청합니다.",
-          "en": "Request input from Finance ranking member …."
+          "ko": "세제 정책에 대한 소수당 검토가 필요한 가상 요청입니다.",
+          "en": "A simulated tax-policy request needs minority review."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "재무위원회의 선임위원과 다른 위원회 직책을 구별하세요.",
+          "en": "Distinguish Finance ranking leadership from other committee offices."
         }
       ],
       "response": {
@@ -1260,6 +1300,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "와이든에게 선임위원 자격으로 제출합니다.",
+            "en": "Submit the request to Wyden as ranking member."
+          },
+          {
             "speaker": "npc:1",
             "ko": "와이든은 119대 재무위원회 간사입니다.",
             "en": "Wyden is Finance ranking member in the 119th Congress."
@@ -1270,6 +1315,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 와이든은 119대 재무위원회 간사입니다.",
             "en": "Let's review the record. Wyden is Finance ranking member in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 위원회의 소수당 연락망으로 보낸 요청을 수정하세요.",
+            "en": "Redirect a request sent to another committee's minority contact."
           }
         ]
       },
@@ -1333,18 +1383,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "세입 자료가 외교위원회로 잘못 전달됐습니다.",
-          "en": "A revenue packet was misrouted to Foreign Relations."
-        },
-        {
-          "speaker": "player",
-          "ko": "재무위원장 …에게 다시 보냅니다.",
-          "en": "Reroute it to Finance chair …."
+          "ko": "세입 정책 자료가 외교위원회에 잘못 전달됐습니다.",
+          "en": "Revenue-policy materials were misrouted to Foreign Relations in this simulation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "관할을 확인하고 재무위원장에게 전달하세요.",
+          "en": "Check jurisdiction and route them to the Finance chair."
         }
       ],
       "response": {
@@ -1378,6 +1423,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "크레이포에게 가상 자료를 전달합니다.",
+            "en": "Route the simulated materials to Crapo."
+          },
+          {
             "speaker": "npc:1",
             "ko": "크레이포는 119대 재무위원장입니다.",
             "en": "Crapo chairs Finance in the 119th Congress."
@@ -1388,6 +1438,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 크레이포는 119대 재무위원장입니다.",
             "en": "Let's review the record. Crapo chairs Finance in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "외교 관할에 세입 요청을 그대로 두지 마세요.",
+            "en": "Do not leave the revenue request in foreign affairs jurisdiction."
           }
         ]
       },
@@ -1451,18 +1506,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "뉴햄프셔의 두 의석 선거일을 구분합니다.",
-          "en": "Separate New Hampshire's two election dates."
-        },
-        {
-          "speaker": "player",
-          "ko": "2026년 정기 선거 대상 의석은 …의 의석입니다.",
-          "en": "The seat up in 2026 is held by …."
+          "ko": "뉴햄프셔의 2026년 선거 준비 의석을 확인합니다.",
+          "en": "Identify New Hampshire's seat facing the 2026 election."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "현재 재임과 선거 결과는 별개의 사실입니다.",
+          "en": "Incumbency and election outcome are separate facts."
         }
       ],
       "response": {
@@ -1496,6 +1546,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "섀힌의 Class II 의석에 일정을 적용합니다.",
+            "en": "Apply the schedule to Shaheen's Class II seat."
+          },
+          {
             "speaker": "npc:1",
             "ko": "섀힌은 Class II 의원입니다.",
             "en": "Shaheen holds Class II."
@@ -1506,6 +1561,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 섀힌은 Class II 의원입니다.",
             "en": "Let's review the record. Shaheen holds Class II."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의석의 주기를 사용하지 마세요.",
+            "en": "Do not use the other seat's cycle."
           }
         ]
       },
@@ -1569,18 +1629,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "정보위원회 소수당 지도부의 감독 자료를 준비합니다.",
-          "en": "Prepare Intelligence Committee minority oversight material."
-        },
-        {
-          "speaker": "player",
-          "ko": "부위원장 …에게 전달합니다.",
-          "en": "Deliver it to vice chair …."
+          "ko": "정보기관 감독에 관한 가상 소수당 검토를 요청합니다.",
+          "en": "Seek simulated minority review of intelligence oversight."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "정보위원회 부위원장과 일반 주 대표단 연락을 구분하세요.",
+          "en": "Distinguish the Intelligence vice chair from ordinary delegation contacts."
         }
       ],
       "response": {
@@ -1614,6 +1669,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "워너에게 부위원장 자격으로 제출합니다.",
+            "en": "Submit the request to Warner as vice chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "워너는 119대 정보위원회 부위원장입니다.",
             "en": "Warner is Intelligence vice chair in the 119th Congress."
@@ -1624,6 +1684,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 워너는 119대 정보위원회 부위원장입니다.",
             "en": "Let's review the record. Warner is Intelligence vice chair in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "일반 대표단 사무실을 해당 직책으로 대신하지 마세요.",
+            "en": "Do not substitute an ordinary delegation office for that role."
           }
         ]
       },
@@ -1687,18 +1752,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "민주당 본회의 안건 일정 협의를 요청합니다.",
-          "en": "Request Democratic floor agenda coordination."
-        },
-        {
-          "speaker": "player",
-          "ko": "소수당 원내대표 …에게 요청합니다.",
-          "en": "Send the request to minority leader …."
+          "ko": "민주당의 가상 본회의 의제 협의를 요청합니다.",
+          "en": "Request simulated Democratic floor-agenda coordination."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "소수당 원내대표와 개별 의원 사무실의 업무를 구분하세요.",
+          "en": "Distinguish minority floor leadership from individual Senate offices."
         }
       ],
       "response": {
@@ -1732,6 +1792,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "슈머에게 원내대표 자격으로 전달합니다.",
+            "en": "Route the request to Schumer as minority leader."
+          },
+          {
             "speaker": "npc:1",
             "ko": "슈머는 119대 상원 소수당 원내대표입니다.",
             "en": "Schumer is minority leader in the 119th Congress."
@@ -1742,6 +1807,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 슈머는 119대 상원 소수당 원내대표입니다.",
             "en": "Let's review the record. Schumer is minority leader in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "개별 의원에게 보낸 지도부 요청을 수정하세요.",
+            "en": "Redirect the leadership request from an individual office."
           }
         ]
       },
@@ -1805,18 +1875,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "과거 하원 인물 기록을 델라웨어 상원 기록과 연결합니다.",
-          "en": "Link a former House record to Delaware's Senate record."
-        },
-        {
-          "speaker": "player",
-          "ko": "하원 기록의 인물은 …입니다.",
-          "en": "The former House member is …."
+          "ko": "델라웨어 대표단의 양원 입법 경험을 비교합니다.",
+          "en": "Compare bicameral legislative experience in Delaware's delegation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "하원과 상원의 재임을 별도로 확인하세요.",
+          "en": "Verify House and Senate service separately."
         }
       ],
       "response": {
@@ -1850,6 +1915,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "블런트 로체스터의 하원 경력을 연결합니다.",
+            "en": "Link Blunt Rochester's House service."
+          },
+          {
             "speaker": "npc:1",
             "ko": "블런트 로체스터는 연방 하원 재임 후 상원에 진출했습니다.",
             "en": "Blunt Rochester served in the House before the Senate."
@@ -1860,6 +1930,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 블런트 로체스터는 연방 하원 재임 후 상원에 진출했습니다.",
             "en": "Let's review the record. Blunt Rochester served in the House before the Senate."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의원의 하원 경력을 가져오지 마세요.",
+            "en": "Do not substitute another senator's House service."
           }
         ]
       },
@@ -1923,18 +1998,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "위스콘신 주민의 공동 청원을 양당에 제출합니다.",
-          "en": "Submit a Wisconsin constituent petition to both parties."
-        },
-        {
-          "speaker": "player",
-          "ko": "민주당 측 수신자는 …입니다.",
-          "en": "The Democratic recipient is …."
+          "ko": "위스콘신 주민의 청원을 양당 의원에게 각각 전달합니다.",
+          "en": "Route a Wisconsin constituent petition to both party offices."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "같은 주 대표의 실제 표결은 서로 다를 수 있습니다.",
+          "en": "Senators from one state may vote differently."
         }
       ],
       "response": {
@@ -1968,6 +2038,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "볼드윈에게 민주당 측 요청을 전달합니다.",
+            "en": "Route the Democratic request to Baldwin."
+          },
+          {
             "speaker": "npc:1",
             "ko": "볼드윈은 민주당, 존슨은 공화당입니다.",
             "en": "Baldwin is Democratic and Johnson Republican."
@@ -1978,6 +2053,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 볼드윈은 민주당, 존슨은 공화당입니다.",
             "en": "Let's review the record. Baldwin is Democratic and Johnson Republican."
+          },
+          {
+            "speaker": "aide",
+            "ko": "정당을 정책 찬반으로 간주하지 마세요.",
+            "en": "Do not treat affiliation as proof of a policy position."
           }
         ]
       },
@@ -2041,18 +2121,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "콜로라도의 2028년 정기 선거 대상 기록을 분리합니다.",
-          "en": "Separate Colorado's seat record for the 2028 election."
-        },
-        {
-          "speaker": "player",
-          "ko": "Class III 의원은 …입니다.",
-          "en": "The Class III senator is …."
+          "ko": "콜로라도의 2028년 정규선거 일정에 해당하는 의석을 찾습니다.",
+          "en": "Identify Colorado's seat corresponding to the 2028 election cycle."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "현재 재임자를 기준으로 확인하되 미래 선거 결과는 가정하지 마세요.",
+          "en": "Check the incumbent without assuming a future election outcome."
         }
       ],
       "response": {
@@ -2086,6 +2161,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "베넷의 Class III 의석에 일정을 연결합니다.",
+            "en": "Link the schedule to Bennet's Class III seat."
+          },
+          {
             "speaker": "npc:1",
             "ko": "베넷은 Class III 의원입니다.",
             "en": "Bennet holds Class III."
@@ -2096,6 +2176,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 베넷은 Class III 의원입니다.",
             "en": "Let's review the record. Bennet holds Class III."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의석 주기를 적용하지 마세요.",
+            "en": "Do not apply the other seat's cycle."
           }
         ]
       },
@@ -2159,18 +2244,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "테네시의 과거 연방 하원 인물 카드와 상원 기록을 연결합니다.",
-          "en": "Link Tennessee's former U.S. House member to the Senate file."
-        },
-        {
-          "speaker": "player",
-          "ko": "해당 의원은 …입니다.",
-          "en": "The former representative is …."
+          "ko": "테네시 두 의원의 이전 입법 경험을 비교합니다.",
+          "en": "Compare prior legislative experience of Tennessee's senators."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "하원 경력과 다른 공직 경력을 구분하세요.",
+          "en": "Distinguish House service from other public offices."
         }
       ],
       "response": {
@@ -2204,6 +2284,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "블랙번의 하원 경력을 연결합니다.",
+            "en": "Link Blackburn's House service."
+          },
+          {
             "speaker": "npc:1",
             "ko": "블랙번은 상원 진출 전 연방 하원에 재임했습니다.",
             "en": "Blackburn served in the House before the Senate."
@@ -2214,6 +2299,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 블랙번은 상원 진출 전 연방 하원에 재임했습니다.",
             "en": "Let's review the record. Blackburn served in the House before the Senate."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의원의 경력을 복사하지 마세요.",
+            "en": "Do not copy another senator's career."
           }
         ]
       },
@@ -2277,18 +2367,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "코네티컷 두 의원의 이전 연방의회 경력을 비교합니다.",
-          "en": "Compare the Connecticut senators' earlier congressional service."
-        },
-        {
-          "speaker": "player",
-          "ko": "연방 하원 경력을 가진 의원은 …입니다.",
-          "en": "The senator with U.S. House service is …."
+          "ko": "코네티컷 대표단의 하원 입법 경험을 비교합니다.",
+          "en": "Compare House legislative experience in Connecticut's delegation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "공식 양원 재임 구간을 확인하세요.",
+          "en": "Check official service intervals in both chambers."
         }
       ],
       "response": {
@@ -2322,6 +2407,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "머피의 하원 경력을 연결합니다.",
+            "en": "Link Murphy's House service."
+          },
+          {
             "speaker": "npc:1",
             "ko": "머피는 연방 하원 재임 후 상원에 진출했습니다.",
             "en": "Murphy served in the House before the Senate."
@@ -2332,6 +2422,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 머피는 연방 하원 재임 후 상원에 진출했습니다.",
             "en": "Let's review the record. Murphy served in the House before the Senate."
+          },
+          {
+            "speaker": "aide",
+            "ko": "상원 재임만으로 하원 경력을 추정하지 마세요.",
+            "en": "Do not infer House experience from Senate tenure alone."
           }
         ]
       },
@@ -2395,18 +2490,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "농업 심의와 정보기관 감독 자료가 섞였습니다.",
-          "en": "Agriculture and intelligence oversight packets were mixed."
-        },
-        {
-          "speaker": "player",
-          "ko": "농업 자료를 위원장 …에게 보냅니다.",
-          "en": "Send the agriculture packet to Chair …."
+          "ko": "농업과 정보기관 감독 자료가 섞였습니다.",
+          "en": "Agriculture and intelligence oversight materials have been mixed in the simulation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "농업 자료는 해당 위원회의 위원장 직책에 전달하세요.",
+          "en": "Route agriculture material to its committee chair."
         }
       ],
       "response": {
@@ -2440,6 +2530,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "부즈먼에게 농업 자료를 전달합니다.",
+            "en": "Route agriculture material to Boozman."
+          },
+          {
             "speaker": "npc:1",
             "ko": "부즈먼은 119대 농업위원장입니다.",
             "en": "Boozman chairs Agriculture in the 119th Congress."
@@ -2450,6 +2545,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 부즈먼은 119대 농업위원장입니다.",
             "en": "Let's review the record. Boozman chairs Agriculture in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "정보기관 감독 자료와 농업 자료를 분리하세요.",
+            "en": "Separate intelligence oversight from agricultural material."
           }
         ]
       },
@@ -2513,18 +2613,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "환경 및 공공사업위원회 청문회 자료를 전달합니다.",
-          "en": "Deliver an Environment and Public Works hearing packet."
-        },
-        {
-          "speaker": "player",
-          "ko": "위원장 …에게 보냅니다.",
-          "en": "Send it to Chair …."
+          "ko": "환경·공공사업 관련 가상 청문회를 준비합니다.",
+          "en": "Prepare a simulated Environment and Public Works hearing."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "위원장 직책과 일반 주 대표단 연락처를 구분하세요.",
+          "en": "Distinguish the chair's office from ordinary delegation contacts."
         }
       ],
       "response": {
@@ -2558,6 +2653,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "캐피토에게 위원장 자격으로 제출합니다.",
+            "en": "Submit the request to Capito as chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "캐피토는 119대 환경 및 공공사업위원장입니다.",
             "en": "Capito chairs Environment and Public Works in the 119th Congress."
@@ -2568,6 +2668,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 캐피토는 119대 환경 및 공공사업위원장입니다.",
             "en": "Let's review the record. Capito chairs Environment and Public Works in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 위원회 직책으로 보낸 요청을 수정하세요.",
+            "en": "Redirect the request from another committee office."
           }
         ]
       },
@@ -2749,18 +2854,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "연방 법관 지명자 청문회를 준비합니다.",
-          "en": "Prepare a federal judicial nominee hearing."
-        },
-        {
-          "speaker": "player",
-          "ko": "법사위원장 …에게 자료를 제출합니다.",
-          "en": "Submit the briefing to Judiciary chair …."
+          "ko": "연방 사법 지명에 관한 가상 청문회 요청을 준비합니다.",
+          "en": "Prepare a simulated hearing request for a federal judicial nomination."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "법사위원장과 다른 위원회 지도부를 구분하세요.",
+          "en": "Distinguish the Judiciary chair from other committee leadership."
         }
       ],
       "response": {
@@ -2794,6 +2894,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "그래슬리에게 법사위원장 자격으로 요청합니다.",
+            "en": "Route the request to Grassley as Judiciary chair."
+          },
+          {
             "speaker": "npc:1",
             "ko": "그래슬리는 119대 법사위원장입니다.",
             "en": "Grassley chairs Judiciary in the 119th Congress."
@@ -2804,6 +2909,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 그래슬리는 119대 법사위원장입니다.",
             "en": "Let's review the record. Grassley chairs Judiciary in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 위원회 직책에 제출하지 마세요.",
+            "en": "Do not submit it to another committee office."
           }
         ]
       },
@@ -2867,18 +2977,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "뉴멕시코 두 의석의 임기 만료를 표시합니다.",
-          "en": "Mark the staggered terms of New Mexico's seats."
-        },
-        {
-          "speaker": "player",
-          "ko": "2027년 1월 정기 임기 만료 대상은 …입니다.",
-          "en": "The regular term ending in January 2027 is held by …."
+          "ko": "뉴멕시코의 2027년 1월 정규 임기 종료 의석을 확인합니다.",
+          "en": "Identify New Mexico's seat with a regular term ending January 2027."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "선거 연도와 임기 종료를 구분하세요.",
+          "en": "Distinguish election year from term end."
         }
       ],
       "response": {
@@ -2912,6 +3017,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "루한의 Class II 의석에 일정을 적용합니다.",
+            "en": "Apply the schedule to Luján's Class II seat."
+          },
+          {
             "speaker": "npc:1",
             "ko": "루한은 Class II 의원입니다.",
             "en": "Luján holds Class II."
@@ -2922,6 +3032,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 루한은 Class II 의원입니다.",
             "en": "Let's review the record. Luján holds Class II."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의석의 임기 종료를 사용하지 마세요.",
+            "en": "Do not use the other seat's term end."
           }
         ]
       },
