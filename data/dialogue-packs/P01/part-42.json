@@ -820,8 +820,8 @@
         "en": "Michigan social workers' visit"
       },
       "context": {
-        "ko": "미시간 사회복지 종사자 방문",
-        "en": "Michigan social workers' visit"
+        "ko": "지역 복지 서비스 질문에 의원의 전문 교육 배경을 활용한다.",
+        "en": "Use a member's professional education to frame questions about local social services."
       },
       "cast": [
         {
@@ -834,14 +834,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "사회복지 현장에서 일하던 분들이 찾아오셨군요.",
-          "en": "Colleagues from social services have arrived."
+          "speaker": "host",
+          "ko": "복지 서비스를 조사하는 학생이 관련 분야의 전문 교육에 관해 묻습니다.",
+          "en": "A student studying social services asks about relevant professional education."
         },
         {
-          "speaker": "player",
-          "ko": "지역 복지 경험을 의원 소개문에 연결하겠습니다.",
-          "en": "I'll link your social-service background to the introduction."
+          "speaker": "npc:0",
+          "ko": "1975년 미시간주립대에서 받은 제 석사학위 분야를 확인해 주세요.",
+          "en": "Identify the field of my 1975 master's degree at Michigan State."
         }
       ],
       "response": {
@@ -876,20 +876,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "미시간주립대에서 사회복지학 석사를 받았습니다.",
-            "en": "I earned an MSW at Michigan State."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "주민의 복지 문의를 접견 자료에 남겨 주세요.",
-            "en": "Retain the residents' social-service inquiries for the meeting."
+            "ko": "사회복지학입니다. 교육 배경과 의원의 현재 입법 책임을 구분해서 질문하세요.",
+            "en": "Social work. Frame questions that distinguish professional training from current legislative responsibility."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "미시간주립대에서 사회복지학 석사를 받았습니다.",
-            "en": "I earned an MSW at Michigan State."
+            "ko": "사회복지학 석사학위를 받았습니다. 법학이나 경제학 석사로 기록하지 마세요.",
+            "en": "I earned a master's in social work, not law or economics."
           }
         ]
       },
@@ -1012,8 +1007,8 @@
         "en": "1994 election class gathering"
       },
       "context": {
-        "ko": "1994년 선거 입성 동기",
-        "en": "1994 election class gathering"
+        "ko": "동기 의원들이 각 주의 신입 의원 연락처를 교차 확인한다.",
+        "en": "Three freshman members cross-check state contacts for their cohort."
       },
       "cast": [
         {
@@ -1041,18 +1036,23 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "같은 선거를 통해 입성한 그레이엄과 챔블리스 의원을 소개합니다.",
-          "en": "Let me introduce Graham and Chambliss, who entered after the same election."
+          "ko": "함께 들어온 신임 의원들을 처음 만나면 주부터 구분하는 게 좋겠습니다.",
+          "en": "When meeting fellow freshmen, start by distinguishing the states."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 사우스캐롤라이나에서 왔습니다.",
-          "en": "I represent South Carolina."
+          "ko": "사우스캐롤라이나 주민의 요청은 제 쪽입니다.",
+          "en": "South Carolina requests go to my office."
         },
         {
           "speaker": "npc:2",
-          "ko": "저는 조지아에서 왔죠.",
-          "en": "I represent Georgia."
+          "ko": "조지아 주민의 요청은 제가 받겠습니다.",
+          "en": "I'll take Georgia constituent inquiries."
+        },
+        {
+          "speaker": "host",
+          "ko": "남은 코번 의원의 주를 확인해 세 의원의 접견을 분리합시다.",
+          "en": "Identify Coburn's remaining state to separate the three appointments."
         }
       ],
       "response": {
@@ -1087,20 +1087,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "오클라호마의 공화당 의원입니다.",
-            "en": "I am a Republican from Oklahoma."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "세 사람의 주별 연락처를 신입 의원 명부에 넣어 주세요.",
-            "en": "Add the three state contacts to the freshman roster."
+            "ko": "오클라호마입니다. 같은 회기에 입성한 공화당 의원이라도 각자의 주민을 따로 대표합니다.",
+            "en": "Oklahoma. Republican members entering together still represent separate constituencies."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "오클라호마의 공화당 의원입니다.",
-            "en": "I am a Republican from Oklahoma."
+            "speaker": "npc:1",
+            "ko": "코번 의원은 오클라호마 대표입니다. 저는 사우스캐롤라이나, 챔블리스 의원은 조지아를 대표합니다.",
+            "en": "Coburn represents Oklahoma, I represent South Carolina, and Chambliss represents Georgia."
           }
         ]
       },
@@ -1233,8 +1228,8 @@
         "en": "Oklahoma manufacturing gathering"
       },
       "context": {
-        "ko": "오클라호마 지역 제조업 간담회",
-        "en": "Oklahoma manufacturing gathering"
+        "ko": "의원 경력에 관한 제조업 종사자와 의료인의 질문을 구분한다.",
+        "en": "Separate questions from manufacturers and healthcare professionals about a member's background."
       },
       "cast": [
         {
@@ -1247,14 +1242,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "의학을 공부하기 전에는 제조업 현장에서 일했습니다.",
-          "en": "Before medical training I worked in manufacturing."
+          "speaker": "host",
+          "ko": "두 방문단이 의원의 경력에 대해 문의했습니다. 한쪽은 의료, 다른 쪽은 제조업 경험에 관심이 있습니다.",
+          "en": "Two groups ask about your background: one is interested in medicine, the other in manufacturing."
         },
         {
-          "speaker": "host",
-          "ko": "이전 업종을 지역 경제 자료에 포함하죠.",
-          "en": "Include the previous industry in our local economic record."
+          "speaker": "npc:0",
+          "ko": "1970~1978년 제가 관리한 제조 부문의 제품부터 확인하면 두 질문을 구분할 수 있습니다.",
+          "en": "Identify the product division I managed from 1970 to 1978 to distinguish the questions."
         }
       ],
       "response": {
@@ -1289,20 +1284,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1970~1978년 광학제품 제조 부문 관리자로 일했습니다.",
-            "en": "I managed an ophthalmic manufacturing division from 1970 to 1978."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "제조업과 의료 경력을 따로 기록하세요.",
-            "en": "Record the manufacturing and medical careers separately."
+            "ko": "안과용 광학제품입니다. 제조업 관리 경력과 그 이후 의학 경력을 별도로 설명하죠.",
+            "en": "Ophthalmic products. Explain the manufacturing management experience separately from my subsequent medical career."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1970~1978년 광학제품 제조 부문 관리자로 일했습니다.",
-            "en": "I managed an ophthalmic manufacturing division from 1970 to 1978."
+            "ko": "광학제품 제조 부문에서 일했습니다. 철강이나 농기계 업체의 경력으로 적지 마세요.",
+            "en": "I worked in ophthalmic manufacturing, not steel or farm equipment."
           }
         ]
       },
