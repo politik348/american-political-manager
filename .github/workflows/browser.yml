@@ -19,7 +19,7 @@ jobs:
           python -m http.server 8000 > server.log 2>&1 &
           set +e
           status=0
-          for script in tests/browser.mjs tests/browser-v7.mjs tests/browser-v176.mjs tests/browser-i1.mjs tests/browser-i1-rc.mjs tests/browser-i1-r4.mjs; do
+          for script in tests/browser.mjs tests/browser-v7.mjs tests/browser-v176.mjs tests/browser-i1.mjs tests/browser-i1-rc.mjs tests/browser-i1-r4.mjs tests/browser-i1-r7-notebook.mjs; do
             echo "Running $script"
             node "$script" || status=1
           done
