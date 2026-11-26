@@ -7,15 +7,15 @@
   "independentAuditHead": "4f15ac3a65217fab78c2712e99052c2236f39af1",
   "hashAlgorithm": "SHA-256 of UTF-8 JSON.stringify(event) using original property order; verified against abc test vector",
   "correctionDate": "2026-11-26",
-  "status": "PARTIAL_CORRECTION_HOLD",
+  "status": "CORRECTIONS_APPLIED_INDEPENDENT_CLEARANCE_HOLD",
   "summary": {
     "mandatory": 16,
-    "mandatoryCorrected": 13,
+    "mandatoryCorrected": 15,
     "conditionalEvidence": 1,
-    "mandatoryBlocked": 2,
+    "mandatoryBlocked": 0,
     "notesReviewed": 23,
-    "changed": 33,
-    "unchanged": 6,
+    "changed": 35,
+    "unchanged": 4,
     "changedIds": [
       "N01-0011",
       "N01-0013",
@@ -49,6 +49,8 @@
       "N01-0234",
       "N01-0244",
       "N01-0245",
+      "N01-0246",
+      "N01-0247",
       "N01-0248"
     ]
   },
@@ -59,7 +61,7 @@
     "unchangedPASS": 211,
     "uniqueDateTitle": 250,
     "requiredFieldsAndDates": true,
-    "limitations": "No full semantic re-audit. 0244 source provenance uncertain, 0246/0247 alternate access outstanding, 0183/0227 optional precision deferred, 0200 catalogue screenshot unavailable."
+    "limitations": "No full semantic re-audit. 0244 underlying source independence uncertain; independent release hold. 0183/0227 optional precision deferred; 0200 catalogue screenshot unavailable; 0013 secondary source recheck failed."
   },
   "records": [
     {
@@ -1429,20 +1431,23 @@
         "en": "National suffrage demonstration",
         "bodyKo": "각 주 대표단이 워싱턴에서 행진하고 참정권 결의안을 연방의회에 전달했다.",
         "bodyEn": "State delegations marched in Washington and delivered suffrage resolutions to Congress.",
-        "source": "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf",
+        "source": "https://static.lib.ou.edu/microformguides/Proquest_700.pdf",
         "precision": "day",
         "historical": true
       },
       "beforeContentHash": "30ffe03c1173ff795279cb822c342c508b252d9db55e3d918cf586212cff2921",
-      "afterContentHash": "30ffe03c1173ff795279cb822c342c508b252d9db55e3d918cf586212cff2921",
+      "afterContentHash": "6fc3094f4ef80f0fa1b046f1293b376b14fe8c8842926e34c47d1f71f499efe4",
       "sources": [
-        "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf"
+        "https://static.lib.ou.edu/microformguides/Proquest_700.pdf",
+        "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf",
+        "https://lewissuffragecollection.omeka.net/items/show/1277"
       ],
-      "evidence": "LOC p6 recovered and visually confirms march/resolutions. Alternate official photo item pages returned 403; source repair pending direct alternative access.",
+      "evidence": "University of Oklahoma Libraries-hosted 1981 National Woman's Party Papers microfilm guide, printed p11 (PDF page index 18), visually verified May 9 march and resolutions. LOC chronology p6 and archival 1914 flier catalog support.",
       "legislationModified": false,
-      "result": "BLOCKED_SOURCE_REPAIR",
+      "result": "CORRECTED_PENDING_REAUDIT",
       "requiresIndependentReaudit": true,
-      "correctedOn": "2026-11-26"
+      "correctedOn": "2026-11-26",
+      "priorCorrectionCommit": "1be8cecc996dca1b5d2b64aa491fdc361ef8b515"
     },
     {
       "id": "N01-0247",
@@ -1466,20 +1471,23 @@
         "en": "Suffragists launch anti-Democratic campaign",
         "bodyKo": "의회연합 조직가들이 여성 투표권이 있는 주의 민주당 연방의원 후보에 반대하는 선거운동에 나섰다.",
         "bodyEn": "Congressional Union organizers departed to campaign against Democratic congressional candidates in suffrage states.",
-        "source": "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf",
+        "source": "https://static.lib.ou.edu/microformguides/Proquest_700.pdf",
         "precision": "day",
         "historical": true
       },
       "beforeContentHash": "3ae4bce87b9f25d10a19017996a700a7ae661cd729e5b159a6f955cd0f74c948",
-      "afterContentHash": "3ae4bce87b9f25d10a19017996a700a7ae661cd729e5b159a6f955cd0f74c948",
+      "afterContentHash": "f6060a6815096f325a442c457d04e2355f21914ff001bbfd7de4414763dd1a38",
       "sources": [
-        "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf"
+        "https://static.lib.ou.edu/microformguides/Proquest_700.pdf",
+        "https://www.loc.gov/static/collections/women-of-protest/images/detchron.pdf",
+        "https://storage.googleapis.com/mnhs-finding-aids-public/library/findaids/00756/pdfa/00756-00077.pdf"
       ],
-      "evidence": "LOC p6 recovered and visually confirms departure. Alternate historical account date not located on recheck; source repair pending.",
+      "evidence": "University of Oklahoma Libraries-hosted 1981 National Woman's Party Papers microfilm guide printed p11 (PDF index 18) visually verified September 14 departure and anti-Democratic strategy; LOC chronology p6 visually verified; Minnesota Historical Society collection text also confirms departure (supplemental text only).",
       "legislationModified": false,
-      "result": "BLOCKED_SOURCE_REPAIR",
+      "result": "CORRECTED_PENDING_REAUDIT",
       "requiresIndependentReaudit": true,
-      "correctedOn": "2026-11-26"
+      "correctedOn": "2026-11-26",
+      "priorCorrectionCommit": "1be8cecc996dca1b5d2b64aa491fdc361ef8b515"
     },
     {
       "id": "N01-0248",
