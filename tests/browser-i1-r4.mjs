@@ -65,14 +65,31 @@ try{
  try{
   const page=await context.newPage();await page.goto(new URL('icon.svg',url).href);
   await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-shell-v17.9-i1-rc5');await caches.open('apm-shell-v17.9-i1-rc6');await caches.open('apm-shell-v17.9-i1-rc7');await caches.open('apm-shell-v17.9-i1-rc8-careers');await caches.open('apm-shell-v18-preview1');await caches.open('apm-shell-v18-preview2-calendar');await caches.open('apm-shell-v18-news-engine1');await caches.open('apm-portraits-v1')});
+  await page.evaluate(async()=>{await caches.open('apm-shell-v18-release-candidate1')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v18-release-candidate1')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3','apm-shell-v17.9-i1-rc4','apm-shell-v17.9-i1-rc5','apm-shell-v17.9-i1-rc6','apm-shell-v17.9-i1-rc7','apm-shell-v17.9-i1-rc8-careers','apm-shell-v18-preview1','apm-shell-v18-preview2-calendar','apm-shell-v18-news-engine1'].some(k=>keys.includes(k))},{},{timeout:45000});
-  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v18-release-candidate1');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html'),careerModules:!!await cache.match('./i1-career-saves.js')&&!!await cache.match('./i1-onboarding-ui.js'),newsPack:!!await cache.match('./data/v18-news-packs/N07/part-10.json')}});
-  console.log('V18 original cache diagnostic '+JSON.stringify({...result,...await page.evaluate(async()=>{const cache=await caches.open('apm-shell-v18-release-candidate1');return {controller:navigator.serviceWorker.controller?.scriptURL,cacheURLs:(await cache.keys()).map(r=>r.url),checks:Object.fromEntries(await Promise.all(['./data/v18-news-packs/N07/part-10.json','./i1-career-saves.js','./i1-onboarding-ui.js','./data/dialogue-packs/i1-index.json','./index.html'].map(async p=>[p,!!await cache.match(new URL(p,location.href).href)])))}})}));
-  assert.ok(result.newsPack&&result.careerModules&&result.manifest&&result.entry,JSON.stringify(result));assert.ok(result.keys.includes('apm-portraits-v1'));
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v18-release-candidate2')&&keys.filter(k=>k.startsWith('apm-shell-')).length===1},{},{timeout:60000});
+  const result=await page.evaluate(async()=>{
+   const keys=await caches.keys(),cache=await caches.open('apm-shell-v18-release-candidate2'),base=(await navigator.serviceWorker.ready).scope;
+   const check=async p=>{const r=await cache.match(new URL(p,base).href);return !!r&&r.ok};
+   const paths=['./data/dialogue-packs/i1-index.json','./index.html','./i1-career-saves.js','./i1-onboarding-ui.js','./data/v18-news-index.json','./data/v18-news-metadata.json','./data/v18-news.json','./v18-news.js','./data/v18-news-packs/N07/part-10.json','./__apm_shell_ready__'];
+   const checks=Object.fromEntries(await Promise.all(paths.map(async p=>[p,await check(p)])));
+   const news=await (await cache.match(new URL('./data/v18-news-index.json',base).href)).json();
+   const missing=[];for(const p of news.packs)if(!await check('./data/'+p.path))missing.push(p.path);
+   return {keys,checks,packCount:news.packs.length,missing,controller:navigator.serviceWorker.controller?.scriptURL};
+  });
+  console.log('V18 cache inventory '+JSON.stringify(result));
+  for(const [p,ok] of Object.entries(result.checks))assert.equal(ok,true,'Missing cache entry '+p);
+  assert.equal(result.packCount,70);assert.deepEqual(result.missing,[]);assert.ok(result.keys.includes('apm-portraits-v1'));
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
   assert.equal(offline.ok,true);assert.equal(offline.parts,103);
+  const offlineNews=await page.evaluate(async()=>{
+   const n=await import(new URL('./v18-news.js',location.href).href),idx=await n.loadNewsRegistry();
+   const c={date:'1960-01-01',newsArchive:idx.rows.map(x=>({id:x.id,date:x.date})),seenNews:[]};
+   return {count:idx.rows.length,hold:idx.byId.has('N01-0244'),future:n.searchNews(c,idx).some(x=>x.date>c.date),sorted:idx.rows.every((x,i)=>!i||idx.rows[i-1].date<=x.date)};
+  });assert.deepEqual(offlineNews,{count:1768,hold:false,future:false,sorted:true});
+  console.log('V18 offline registry '+JSON.stringify(offlineNews));
+  await page.reload();await page.locator('[data-action="lobby:career"]').waitFor({timeout:45000});
   const local=await page.evaluate(async()=>{const m=await (await fetch('./data/dialogue-packs/i1-index.json')).json();return Promise.all(m.photos.filter(p=>p.localPath).map(async p=>{const r=await fetch(p.localPath);return {id:p.id,ok:r.ok,bytes:(await r.arrayBuffer()).byteLength}}))});assert.ok(local.some(p=>p.id==='L000004'&&p.ok&&p.bytes===1007628),'local original must survive offline');console.log('I1 R5 offline local images '+JSON.stringify(local));
   console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:true,portraitCachePreserved:true,offlineManifest:offline.parts}));
  }finally{await context.close()}
