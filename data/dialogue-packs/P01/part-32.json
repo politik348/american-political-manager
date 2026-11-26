@@ -1134,8 +1134,8 @@
         "en": "Housing administration meeting"
       },
       "context": {
-        "ko": "주택 관련 행정 접견",
-        "en": "Housing administration meeting"
+        "ko": "하원 의원 시절의 연락처를 행정부 임명 이후 구분한다.",
+        "en": "Distinguish a former House contact from an executive appointment."
       },
       "cast": [
         {
@@ -1148,20 +1148,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이제 뉴욕의 하원 의원이 아니라 행정부에서 일합니다.",
-          "en": "I now serve in the executive branch, not as a New York House member."
+          "speaker": "host",
+          "ko": "예전 하원 사무실로 온 연락을 새 행정부 직책과 구별해야 합니다.",
+          "en": "An inquiry to your former House office needs to be distinguished from your new executive position."
         },
         {
-          "speaker": "player",
-          "ko": "지역 주택 문의의 연락처도 달라졌겠군요.",
-          "en": "The contact for housing issues has changed too."
+          "speaker": "npc:0",
+          "ko": "1989년에 맡게 된 새 부처를 알려 주세요. 하원의원 임기와 같은 것으로 취급하면 안 됩니다.",
+          "en": "Identify the department I took charge of in 1989. Don't treat it as part of my House term."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "켐프의 새 직책은 {{blank}} 장관입니다.",
-        "en": "Kemp's new office is Secretary of {{blank}}.",
+        "ko": "켐프 장관님은 {{blank}}부를 맡으셨습니다.",
+        "en": "Secretary Kemp heads the Department of {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1189,26 +1189,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1989년에 주택도시개발부 장관으로 취임했습니다.",
-            "en": "I became HUD secretary in 1989."
+            "ko": "주택도시개발부입니다. 행정부 직책으로 문의를 구별해 주세요.",
+            "en": "Housing and Urban Development. Distinguish the inquiry as executive-branch business."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1989년에 주택도시개발부 장관으로 취임했습니다.",
-            "en": "I became HUD secretary in 1989."
+            "ko": "주택도시개발부 장관입니다. 이전 하원의원 기록은 그대로 두고 현재 직책을 바로잡으세요.",
+            "en": "I'm Secretary of Housing and Urban Development. Keep my House record and correct the current office."
           }
         ]
       },

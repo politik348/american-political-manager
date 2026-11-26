@@ -815,20 +815,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "의원이 되기 전에도 하원 절차를 다루는 일을 했습니다.",
-          "en": "I worked with House procedure before becoming a member."
+          "speaker": "host",
+          "ko": "방문객이 하원 절차에 대한 조언을 하는 직원과 본회의를 주재하는 의원이 같은 직책인지 묻습니다.",
+          "en": "A visitor asks whether the staff member who advises on House procedure holds the same office as the member who presides."
         },
         {
-          "speaker": "player",
-          "ko": "당시의 직책을 정확히 기록하겠습니다.",
-          "en": "I'll record that position accurately."
+          "speaker": "npc:0",
+          "ko": "저도 의원이 되기 전에 하원에서 일했습니다. 1891년부터 1895년까지 맡았던 직책을 소개해 주시겠어요?",
+          "en": "I worked in the House before becoming a member. Would you identify the office I held from 1891 to 1895?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "크리스프는 1891년부터 1895년까지 하원 {{blank}}이었습니다.",
-        "en": "Crisp was House {{blank}} from 1891 to 1895.",
+        "ko": "크리스프 의원님은 당시 하원 {{blank}}이었습니다.",
+        "en": "At the time you were the House {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -857,15 +857,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "선출직과 전문 직원의 차이도 살펴보죠.",
-            "en": "Let's examine the distinction between elected and professional roles."
+            "ko": "의사절차 자문관이었죠. 제 선출직 경력과는 구분해서 설명하면 됩니다.",
+            "en": "Parliamentarian. Explain that separately from my elected service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "그때는 하원 의사절차 자문관이었습니다.",
-            "en": "I was the House parliamentarian then."
+            "ko": "하원 의사절차 자문관이었습니다. 선출직 의원이나 본회의 의장과는 구분되는 직책이죠.",
+            "en": "I was House parliamentarian, distinct from an elected member or the presiding officer."
           }
         ]
       },
@@ -2103,8 +2103,8 @@
         "en": "Public records consultation"
       },
       "context": {
-        "ko": "두 위원장 경력의 자료를 회기별로 찾는다.",
-        "en": "Locate committee chair records by Congress."
+        "ko": "공동위원회 자료와 단일 하원 위원회 자료를 구분한다.",
+        "en": "Distinguish joint-committee material from House-only committee material."
       },
       "cast": [
         {
@@ -2124,20 +2124,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "세입위원회 외에 공동위원회도 맡고 있습니다.",
-          "en": "Besides Ways and Means I also chair a joint committee."
+          "speaker": "npc:1",
+          "ko": "상원도 참여하는 위원회의 문의가 들어왔습니다. 하원 위원회 문의와는 별개겠죠.",
+          "en": "An inquiry concerns a committee involving the Senate too. That's distinct from a House committee inquiry."
         },
         {
-          "speaker": "npc:1",
-          "ko": "상하원 공동위원회라는 점을 기록해야겠군요.",
-          "en": "We should note that this is a joint House-Senate body."
+          "speaker": "npc:0",
+          "ko": "세입위원회 외에 제가 맡고 있는 공동위원회 이름을 확인해 주세요.",
+          "en": "Identify the joint committee I chair besides Ways and Means."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "도턴은 1951년 {{blank}} 공동위원장입니다.",
-        "en": "In 1951 Doughton chairs the Joint Committee on {{blank}}.",
+        "ko": "{{blank}} 공동위원회 관련 문의입니다.",
+        "en": "This concerns the Joint Committee on {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2166,15 +2166,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "상하원 공동위원회 기록은 별도 분류하죠.",
-            "en": "File joint committee records separately."
+            "ko": "내국세입니다. 공동기관 자료와 하원 세입위원회 자료를 구별해서 검토하죠.",
+            "en": "Internal Revenue Taxation. Let's review joint-committee material separately from House Ways and Means material."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "내국세 공동위원회 위원장을 맡고 있습니다.",
-            "en": "I chair the Joint Committee on Internal Revenue Taxation."
+            "ko": "내국세 공동위원회입니다. 상하원 공동기관이라는 점을 잊지 마세요.",
+            "en": "The Joint Committee on Internal Revenue Taxation. Remember that it is a joint body of both chambers."
           }
         ]
       },
@@ -2388,8 +2388,8 @@
         "en": "North Carolina alumni gathering"
       },
       "context": {
-        "ko": "학생이 대학 시절을 중심으로 인물 소개를 준비한다.",
-        "en": "A student prepares a profile focused on the member's college years."
+        "ko": "학생이 키친의 대학과 이후 법률 경력의 관계를 묻는다.",
+        "en": "A student prepares a question about Kitchin's college and subsequent legal career."
       },
       "cast": [
         {
@@ -2402,20 +2402,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "노스캐롤라이나에서 대학을 마치고 법을 공부했죠.",
-          "en": "I graduated from college in North Carolina and studied law."
+          "speaker": "host",
+          "ko": "학생이 법률 실무를 시작하기 전에 어떤 대학을 다니셨는지 알고 싶어 합니다.",
+          "en": "A student wants to know which college you attended before beginning legal practice."
         },
         {
-          "speaker": "player",
-          "ko": "동문들에게 정확한 학교를 소개할게요.",
-          "en": "I'll name the school for the alumni."
+          "speaker": "npc:0",
+          "ko": "1888년 졸업 학교부터 알려 주세요. 그러고 나서 스코틀랜드넥에서의 법률 경력을 이야기하죠.",
+          "en": "Identify my 1888 graduation first, then we can discuss my legal career in Scotland Neck."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "키친은 1888년 {{blank}}을 졸업했습니다.",
-        "en": "Kitchin graduated from {{blank}} in 1888.",
+        "ko": "1888년에 {{blank}}을 졸업하셨습니다.",
+        "en": "You graduated from {{blank}} in 1888.",
         "choices": [
           {
             "id": "A",
@@ -2444,15 +2444,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "이어서 스코틀랜드넥 법률 경력도 소개하죠.",
-            "en": "Next introduce my law practice in Scotland Neck."
+            "ko": "웨이크포리스트 칼리지입니다. 이제 법률 경력에 관한 질문을 들어 보죠.",
+            "en": "Wake Forest College. Now let's hear the question about legal work."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "웨이크포리스트 칼리지를 졸업했습니다.",
-            "en": "I graduated from Wake Forest College."
+            "ko": "웨이크포리스트 칼리지였습니다. 학교 이름을 바로잡고 다음 질문으로 넘어가죠.",
+            "en": "It was Wake Forest College. Correct the name and move to the next question."
           }
         ]
       },

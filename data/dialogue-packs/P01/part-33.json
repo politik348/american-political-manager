@@ -1732,8 +1732,8 @@
         "en": "Rogers school visit"
       },
       "context": {
-        "ko": "로저스 학교 방문에 참석해 의원과 대화한다.",
-        "en": "You attend the rogers school visit and speak with the member."
+        "ko": "학교 운영 관련 문의를 과거 지방 공직과 구별한다.",
+        "en": "Distinguish a school-governance inquiry from former local office."
       },
       "cast": [
         {
@@ -1746,20 +1746,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "예전에 학교 관련 회의에서 만났었죠.",
-          "en": "We met at earlier school meetings."
+          "speaker": "host",
+          "ko": "교육 관련 질문을 가진 주민이 의원님의 과거 학교 운영 경험을 알고 싶어 합니다.",
+          "en": "A resident with an education question wants to know about your earlier school-governance experience."
         },
         {
-          "speaker": "player",
-          "ko": "교육 관련 지방 공직도 맡으셨군요.",
-          "en": "You held local education office too."
+          "speaker": "npc:0",
+          "ko": "제가 어느 지역 교육위원회에서 일했는지 소개하면 질문을 준비하는 데 도움이 되겠군요.",
+          "en": "Identifying the school board I served on will help frame the question."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "부즈먼이 활동한 교육위원회는 아칸소 {{blank}}에 있었습니다.",
-        "en": "Boozman served on the school board in {{blank}}, Arkansas.",
+        "ko": "아칸소 {{blank}} 교육위원회에서 일하셨습니다.",
+        "en": "You served on the school board in {{blank}}, Arkansas.",
         "choices": [
           {
             "id": "A",
@@ -1788,20 +1788,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "로저스 교육위원회에서 일했습니다.",
-            "en": "I served on the Rogers school board."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "로저스입니다. 그 경험과 현재 연방 하원 직책을 구분해 질문하세요.",
+            "en": "Rogers. Distinguish that experience from my current federal office when asking your question."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "로저스 교육위원회에서 일했습니다.",
-            "en": "I served on the Rogers school board."
+            "ko": "로저스 교육위원회였습니다. 지역 교육위원회와 연방 하원을 혼동하지 않도록 하죠.",
+            "en": "The Rogers school board. Let's keep local school-board service distinct from the federal House."
           }
         ]
       },
