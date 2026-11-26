@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "team": "P1",
+  "round": "R1",
+  "base": "08ab4df0d605d8d6306aed7250e214c817bddda3",
+  "scope": "Static repository inspection; no independent browser session. Do not equate index or file presence with actual successful rendering or verified identity.",
+  "metrics": {
+    "treeEntries": 2029,
+    "congressHistorical": 12231,
+    "congressCurrent": 539,
+    "congressDistinctIdsAllYears": 12770,
+    "congressDistinctIds1900To2026": 6628,
+    "congressLocalIndexed": 1295,
+    "congressLocalMissing": 5333,
+    "congressNoLocalButI1Overlay": 46,
+    "congressNoLocalOrI1Overlay": 5287,
+    "localIndexMissingFiles": 0,
+    "baseHistoricalRecords": 136,
+    "baseAllDistinctIds": 143,
+    "combinedDistinctIdsAllYears": 12906,
+    "i1RegisteredParts": 103,
+    "i1ScenePhotoRecords": 37,
+    "i1NotebookPhotoRecords": 28,
+    "i1DedicatedLocalImageFiles": 1,
+    "uniqueActualPeopleAllSources": null,
+    "independentlyRendered": null,
+    "externalUrlFailures": null,
+    "incorrectIdentityImages": null,
+    "qualityIssues": null,
+    "userSupplied": 0,
+    "newPhotosRegistered": 0,
+    "newPhotosBrowserVerified": 0
+  },
+  "limitations": [
+    "Governors are fetched dynamically; their cross-source identities are not counted here.",
+    "Historical aliases and unresolved dialogue cast identities need cross-source deduplication.",
+    "Candidate batch entries 2–20 have no matching bundled portrait or I1 overlay found; remote fallback rendering remains unverified. Only Symington has user-reported missing rendering.",
+    "No binary file checks or actual browser output check performed in R1.",
+    "No game code or existing asset changed."
+  ],
+  "findings": [
+    "S001136 is absent from local index, local tree and both I1 overlay lists. General photo() depends on remote congressional image and Wikimedia fallback.",
+    "General photo index accepts only Bioguide-shaped IDs and exact-name aliases; I1 scene and notebook use separate photo lists. A unified explicit ID/alias resolver is needed for future asset integration."
+  ],
+  "batch": {
+    "id": "P1-001",
+    "status": "provisional-local-recovery-queue",
+    "entries": [
+      {
+        "number": 1,
+        "name": "Stuart Symington",
+        "years": "1901–1988",
+        "role": "1960 Democratic nomination contender; Missouri senator",
+        "bioguide": "S001136",
+        "historicalId": null,
+        "suggestedUploadFilename": "S001136.jpg",
+        "status": "user_reported_missing_and_no_local_asset",
+        "source": "https://bioguide.congress.gov/search/bio/S001136"
+      },
+      {
+        "number": 2,
+        "name": "William Jennings Bryan",
+        "years": "1860–1925",
+        "role": "1900, 1908 Democratic presidential nominee",
+        "bioguide": "B000995",
+        "historicalId": "hist:william-jennings-bryan",
+        "suggestedUploadFilename": "B000995.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/B000995"
+      },
+      {
+        "number": 3,
+        "name": "Alton B. Parker",
+        "years": "1852–1926",
+        "role": "1904 Democratic presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:alton-b-parker",
+        "suggestedUploadFilename": "hist-alton-b-parker.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 4,
+        "name": "Charles Evans Hughes",
+        "years": "1862–1948",
+        "role": "1916 Republican presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:charles-evans-hughes",
+        "suggestedUploadFilename": "hist-charles-evans-hughes.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 5,
+        "name": "James M. Cox",
+        "years": "1870–1957",
+        "role": "1920 Democratic presidential nominee",
+        "bioguide": "C000835",
+        "historicalId": "hist:james-m-cox",
+        "suggestedUploadFilename": "C000835.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/C000835"
+      },
+      {
+        "number": 6,
+        "name": "John W. Davis",
+        "years": "1873–1955",
+        "role": "1924 Democratic presidential nominee",
+        "bioguide": "D000121",
+        "historicalId": "hist:john-w-davis",
+        "suggestedUploadFilename": "D000121.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/D000121"
+      },
+      {
+        "number": 7,
+        "name": "Al Smith",
+        "years": "1873–1944",
+        "role": "1928 Democratic presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:al-smith",
+        "suggestedUploadFilename": "hist-al-smith.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 8,
+        "name": "Alf Landon",
+        "years": "1887–1987",
+        "role": "1936 Republican presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:alf-landon",
+        "suggestedUploadFilename": "hist-alf-landon.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 9,
+        "name": "Wendell Willkie",
+        "years": "1892–1944",
+        "role": "1940 Republican presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:wendell-willkie",
+        "suggestedUploadFilename": "hist-wendell-willkie.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 10,
+        "name": "Thomas E. Dewey",
+        "years": "1902–1971",
+        "role": "1944, 1948 Republican presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:thomas-e-dewey",
+        "suggestedUploadFilename": "hist-thomas-e-dewey.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 11,
+        "name": "Adlai Stevenson II",
+        "years": "1900–1965",
+        "role": "1952, 1956 Democratic presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:adlai-stevenson-ii",
+        "suggestedUploadFilename": "hist-adlai-stevenson-ii.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 12,
+        "name": "Strom Thurmond",
+        "years": "1902–2003",
+        "role": "1948 States' Rights Democratic presidential nominee",
+        "bioguide": "T000254",
+        "historicalId": "hist:strom-thurmond",
+        "suggestedUploadFilename": "T000254.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/T000254"
+      },
+      {
+        "number": 13,
+        "name": "Barry Goldwater",
+        "years": "1909–1998",
+        "role": "1964 Republican presidential nominee",
+        "bioguide": "G000267",
+        "historicalId": "hist:barry-goldwater",
+        "suggestedUploadFilename": "G000267.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/G000267"
+      },
+      {
+        "number": 14,
+        "name": "Hubert Humphrey",
+        "years": "1911–1978",
+        "role": "1968 Democratic presidential nominee",
+        "bioguide": "H000953",
+        "historicalId": "hist:hubert-humphrey",
+        "suggestedUploadFilename": "H000953.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/H000953"
+      },
+      {
+        "number": 15,
+        "name": "George Wallace",
+        "years": "1919–1998",
+        "role": "1968 American Independent presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:george-wallace",
+        "suggestedUploadFilename": "hist-george-wallace.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 16,
+        "name": "George McGovern",
+        "years": "1922–2012",
+        "role": "1972 Democratic presidential nominee",
+        "bioguide": "M000452",
+        "historicalId": "hist:george-mcgovern",
+        "suggestedUploadFilename": "M000452.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/M000452"
+      },
+      {
+        "number": 17,
+        "name": "Walter Mondale",
+        "years": "1928–2021",
+        "role": "1984 Democratic presidential nominee",
+        "bioguide": "M000851",
+        "historicalId": "hist:walter-mondale",
+        "suggestedUploadFilename": "M000851.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/M000851"
+      },
+      {
+        "number": 18,
+        "name": "Michael Dukakis",
+        "years": "1933–",
+        "role": "1988 Democratic presidential nominee",
+        "bioguide": null,
+        "historicalId": "hist:michael-dukakis",
+        "suggestedUploadFilename": "hist-michael-dukakis.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://guides.loc.gov/also-rans/chronological"
+      },
+      {
+        "number": 19,
+        "name": "Bob Dole",
+        "years": "1923–2021",
+        "role": "1996 Republican presidential nominee",
+        "bioguide": "D000401",
+        "historicalId": "hist:bob-dole",
+        "suggestedUploadFilename": "D000401.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/D000401"
+      },
+      {
+        "number": 20,
+        "name": "Al Gore",
+        "years": "1948–",
+        "role": "2000 Democratic presidential nominee",
+        "bioguide": "G000321",
+        "historicalId": "hist:al-gore",
+        "suggestedUploadFilename": "G000321.jpg",
+        "status": "no_local_asset_remote_render_unverified",
+        "source": "https://bioguide.congress.gov/search/bio/G000321"
+      }
+    ]
+  },
+  "sources": [
+    "https://github.com/politik348/american-political-manager/tree/08ab4df0d605d8d6306aed7250e214c817bddda3",
+    "https://guides.loc.gov/also-rans/chronological",
+    "https://en.wikipedia.org/wiki/List_of_unsuccessful_major_party_candidates_for_President_of_the_United_States",
+    "https://www.trumanlibrary.gov/library/personal-papers/stuart-symington-papers",
+    "https://www.nga.org/governor/george-corley-wallace/"
+  ]
+}
