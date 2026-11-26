@@ -19,7 +19,7 @@ export async function loadCatalog(fetcher=fetch,base='./data/dialogue-packs/'){
  const m=await read('i1-index.json'),parts=[];
  if(!Array.isArray(m.parts)||new Set(m.parts).size!==m.parts.length||!m.parts.every(p=>/^P0[12]\/part-\d+\.json$/.test(p)))throw Error('Invalid manifest');
  for(let i=0;i<m.parts.length;i+=8)parts.push(...await Promise.all(m.parts.slice(i,i+8).map(read)));
- return {...catalog(parts),chains:m.chains||[],photos:m.photos||[]};
+ return {...catalog(parts),chains:m.chains||[],photos:m.photos||[],appointmentPilot:m.appointmentPilot||[]};
 }
 export function pilotBook(s){return s.i1Pilot||(s.i1Pilot={version:1,active:null,history:{},pack:'all',page:0})}
 export function eligible(c,date,pack='all'){return c.scenes.filter(s=>s.date<=date&&(pack==='all'||s.id.startsWith(pack+'-')))}
@@ -27,3 +27,26 @@ export function startPilot(s,c,id,date){const v=c.scenes.find(x=>x.id===id&&x.da
 export function answerPilot(s,c,choice,date){const b=pilotBook(s),a=b.active,v=c.scenes.find(x=>x.id===a?.id&&x.date<=date);if(!v||a.selected!==null||!v.response.choices.some(x=>x.id===choice))return false;a.selected=choice;a.correct=choice===v.response.correct;b.history[v.id]={correct:a.correct,sceneDate:v.date,playedAt:date,outcome:v.outcome.key};return true}
 export function chainIntro(s,c,v,date=v.date){const b=pilotBook(s),link=c.chains.find(x=>x.to===v.id),from=link&&c.scenes.find(x=>x.id===link.from);if(!from||from.date>=v.date||!from.cast.some(x=>x.id===link.person)||!v.cast.some(x=>x.id===link.person))return null;const prior=b.history[from.id];return prior&&prior.sceneDate===from.date&&prior.playedAt<=date?{ko:link.ko,en:link.en}:{ko:link.fallbackKo,en:link.fallbackEn}}
 export function approvedPhoto(c,v,i){const p=c.photos.find(x=>x.sceneId===v.id&&x.castIndex===i&&x.id===v.cast[i]?.id&&x.name===v.cast[i]?.name);return p&&/^https:\/\//.test(p.url)&&/^https:\/\//.test(p.metadata)?p:null}
+
+ // Optional dated archive invitation beside, not in place of, a generated encounter.
+const quarterOf=d=>Math.ceil(Number(d.slice(5,7))/3);
+export function suggestPilot(s,c,people,date,slot,place='career'){
+ const b=pilotBook(s);if(b.active||b.appointments?.[slot]||!['career','congress','race','relations','party'].includes(place)||s.development?.retired)return null;
+ const contacts=new Set(Object.values(s.encounters?.contacts||{}).map(x=>x.id).filter(Boolean));
+ const records=new Map(people.filter(p=>p.id&&!p.sample).map(p=>[p.id,p]));
+ const candidates=c.scenes.filter(v=>{
+  if(!c.appointmentPilot?.includes(v.id)||b.history[v.id]||v.date>date||v.date.slice(0,4)!==date.slice(0,4)||quarterOf(v.date)!==quarterOf(date))return false;
+  const terms=v.cast.map(x=>records.get(x.id)?.terms?.filter(t=>['rep','sen'].includes(t.type)&&t.start&&t.end&&t.start<=v.date&&t.end>=date)||[]);
+  if(terms.some(t=>!t.length))return false;
+  const chamber=v.id.startsWith('P01-')?'rep':'sen';
+  if(!terms.some(ts=>ts.some(t=>t.type===chamber)))return false;
+  if(place==='congress'&&!['rep','sen'].includes(s.office))return false;
+  if(place==='congress'&&s.office!==chamber&&!v.cast.some(x=>contacts.has(x.id)))return false;
+  return terms.some(ts=>ts.some(t=>t.state===s.state))||v.cast.some(x=>contacts.has(x.id));
+ });
+ return candidates.sort((a,b)=>Number(b.cast.some(x=>contacts.has(x.id)))-Number(a.cast.some(x=>contacts.has(x.id)))||b.date.localeCompare(a.date)||a.id.localeCompare(b.id))[0]||null;
+}
+export function startSuggested(s,c,people,date,slot,place,id){
+ const v=suggestPilot(s,c,people,date,slot,place);if(!v||v.id!==id||!startPilot(s,c,id,date))return false;
+ const b=pilotBook(s);(b.appointments||(b.appointments={}))[slot]=id;b.active.kind='appointment-archive';return true;
+}
