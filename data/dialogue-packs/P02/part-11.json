@@ -1019,18 +1019,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "민주당 표결 일정 조율 담당을 찾습니다.",
-          "en": "Identify the Democratic floor attendance coordinator."
-        },
-        {
-          "speaker": "player",
-          "ko": "민주당 원내총무 …에게 연락합니다.",
-          "en": "Contact Democratic whip …."
+          "ko": "민주당의 가상 표결 준비에서 출석 확인을 맡을 직책을 찾습니다.",
+          "en": "Identify the attendance coordinator for simulated Democratic vote preparation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "원내총무와 일반 의원 연락처를 구분하세요.",
+          "en": "Distinguish the whip from ordinary Senate contacts."
         }
       ],
       "response": {
@@ -1045,8 +1040,8 @@
           },
           {
             "id": "B",
-            "ko": "달라인 그레이엄",
-            "en": "Darline Graham"
+            "ko": "존 배러소",
+            "en": "John Barrasso"
           },
           {
             "id": "C",
@@ -1064,6 +1059,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "더빈에게 출석 확인을 요청합니다.",
+            "en": "Request attendance coordination from Durbin."
+          },
+          {
             "speaker": "npc:1",
             "ko": "더빈은 119대 민주당 원내총무입니다.",
             "en": "Durbin is Democratic whip in the 119th Congress."
@@ -1074,6 +1074,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 더빈은 119대 민주당 원내총무입니다.",
             "en": "Let's review the record. Durbin is Democratic whip in the 119th Congress."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 의원에게 보낸 요청을 회수하세요.",
+            "en": "Retrieve the request misrouted to another senator."
           }
         ]
       },
@@ -2736,18 +2741,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "루이지애나 두 의원의 이전 하원 경력을 확인합니다.",
-          "en": "Check the Louisiana senators' previous House service."
-        },
-        {
-          "speaker": "player",
-          "ko": "연방 하원 경력은 …에게 연결합니다.",
-          "en": "Link earlier U.S. House service to …."
+          "ko": "루이지애나 대표단의 양원 입법 경험을 비교합니다.",
+          "en": "Compare bicameral legislative experience in Louisiana's delegation."
         },
         {
           "speaker": "npc:1",
-          "ko": "공식 기록에 맞게 처리해 주세요.",
-          "en": "Please use the official record to complete the task."
+          "ko": "하원 재임은 공식 경력 기록으로 확인하세요.",
+          "en": "Verify House service in official career records."
         }
       ],
       "response": {
@@ -2767,8 +2767,8 @@
           },
           {
             "id": "C",
-            "ko": "달라인 그레이엄",
-            "en": "Darline Graham"
+            "ko": "빌 해거티",
+            "en": "Bill Hagerty"
           },
           {
             "id": "D",
@@ -2781,6 +2781,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "캐시디의 하원 경력을 연결합니다.",
+            "en": "Link Cassidy's House service."
+          },
+          {
             "speaker": "npc:1",
             "ko": "캐시디는 상원 전에 연방 하원 의원이었습니다.",
             "en": "Cassidy served in the House before the Senate."
@@ -2791,6 +2796,11 @@
             "speaker": "npc:0",
             "ko": "기록을 다시 확인하겠습니다. 캐시디는 상원 전에 연방 하원 의원이었습니다.",
             "en": "Let's review the record. Cassidy served in the House before the Senate."
+          },
+          {
+            "speaker": "aide",
+            "ko": "다른 주 의원의 경력을 옮기지 마세요.",
+            "en": "Do not import a senator's career from another state."
           }
         ]
       },

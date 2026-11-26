@@ -35,18 +35,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "법원 인사 기록을 갱신해야 합니다.",
-          "en": "The judicial appointment record needs updating."
-        },
-        {
-          "speaker": "player",
-          "ko": "보크의 지명 결과를 …으로 기록하죠.",
-          "en": "Record Bork's nomination as …."
+          "ko": "지명 청문회가 끝났습니다. 상원의 최종 처분을 판단하세요.",
+          "en": "The nomination hearings have concluded. Determine the Senate's final disposition."
         },
         {
           "speaker": "npc:1",
-          "ko": "기록과 대조해서 결정합시다.",
-          "en": "Let's make the decision against the record."
+          "ko": "위원회 심사와 본회의 결정은 별개입니다.",
+          "en": "Committee review differs from the floor decision."
         }
       ],
       "response": {
@@ -66,19 +61,24 @@
           },
           {
             "id": "C",
-            "ko": "철회",
+            "ko": "지명 철회",
             "en": "withdrawn"
           },
           {
             "id": "D",
-            "ko": "계류",
-            "en": "pending"
+            "ko": "표결 없이 보류",
+            "en": "held without a vote"
           }
         ],
         "correct": "B"
       },
       "followup": {
         "correct": [
+          {
+            "speaker": "player",
+            "ko": "부결 상태로 인준 절차를 종료합니다.",
+            "en": "Close the confirmation process as rejected."
+          },
           {
             "speaker": "npc:1",
             "ko": "보크 지명은 상원에서 부결되었습니다.",
@@ -90,6 +90,11 @@
             "speaker": "npc:0",
             "ko": "다시 확인해 봅시다. 보크 지명은 상원에서 부결되었습니다.",
             "en": "Let's check again. The Senate rejected Bork's nomination."
+          },
+          {
+            "speaker": "aide",
+            "ko": "청문회 개최만으로 인준된 것으로 처리하지 마세요.",
+            "en": "Do not treat a hearing as confirmation."
           }
         ]
       },
@@ -1672,39 +1677,34 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "대통령 탄핵심판 결과를 공직 기록에 반영합니다.",
-          "en": "Update the presidential record after the impeachment trial."
-        },
-        {
-          "speaker": "player",
-          "ko": "클린턴 대통령은 …되었습니다.",
-          "en": "President Clinton was …."
+          "ko": "대통령 탄핵재판 결과의 법적 효과를 판단합니다.",
+          "en": "Determine the effect of the presidential impeachment verdict."
         },
         {
           "speaker": "npc:1",
-          "ko": "기록과 대조해서 결정합시다.",
-          "en": "Let's make the decision against the record."
+          "ko": "하원의 탄핵소추와 상원의 최종 판단을 구분하세요.",
+          "en": "Distinguish House impeachment from the Senate verdict."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "클린턴 대통령은 {{blank}}되었습니다.",
-        "en": "President Clinton was {{blank}}.",
+        "ko": "클린턴 대통령에 대한 상원의 최종 판단: {{blank}}.",
+        "en": "The Senate's final disposition for President Clinton: {{blank}}.",
         "choices": [
           {
             "id": "A",
-            "ko": "파면",
-            "en": "removed"
+            "ko": "유죄 판단 후 파면",
+            "en": "convicted and removed"
           },
           {
             "id": "B",
-            "ko": "재선",
-            "en": "reelected"
+            "ko": "최종 판단 없이 재판 종료",
+            "en": "trial closed without a verdict"
           },
           {
             "id": "C",
-            "ko": "지명",
-            "en": "nominated"
+            "ko": "상원 판단 연기",
+            "en": "verdict deferred"
           },
           {
             "id": "D",
@@ -1717,6 +1717,11 @@
       "followup": {
         "correct": [
           {
+            "speaker": "player",
+            "ko": "무죄 판단으로 대통령직 유지 상태를 인정합니다.",
+            "en": "Recognize acquittal without removal."
+          },
+          {
             "speaker": "npc:1",
             "ko": "상원은 1999년 클린턴을 파면하지 않았습니다.",
             "en": "The Senate acquitted Clinton in 1999."
@@ -1727,6 +1732,11 @@
             "speaker": "npc:0",
             "ko": "다시 확인해 봅시다. 상원은 1999년 클린턴을 파면하지 않았습니다.",
             "en": "Let's check again. The Senate acquitted Clinton in 1999."
+          },
+          {
+            "speaker": "aide",
+            "ko": "탄핵소추 자체를 파면으로 처리하지 마세요.",
+            "en": "Do not treat impeachment itself as removal."
           }
         ]
       },
