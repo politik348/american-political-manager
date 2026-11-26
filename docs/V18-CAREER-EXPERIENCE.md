@@ -17,3 +17,11 @@ Election: full counting broadcast, debate pacing and optional timer, fictional l
 Living history: sourced news chronology, era-specific visuals/audio with mute/reduced motion, achievement catalog, retirement and career chronicle.
 
 No new historical facts or invented real-person quotations added. Preview is not release approval; verify Node and Chromium on exact candidate head and reconcile concurrent portrait work before merge.
+
+## Preview 2 — Living Political World
+- Protected staff and State 51 careers now have a UTC day-level calendar; ordinary dates jump to the next scheduled conversation, registered exact-date news or quarter end. Quarterly action budgets remain underneath. Three pacing presets: 4/8/16 days; registered news always interrupts regardless of pace.
+- 19 starter historical newspaper editions independently date-checked against the National Archives, archived White House and Miller Center. Coverage is NOT comprehensive. Undated annual records are not assigned guessed dates. News is reconstructed text, not a real newspaper facsimile.
+- P01/P02 scenes are automatically offered as explicitly fictional archive reenactments, only if the existing appointment-core audit filter admits them and their original date is within the preceding 30 days. Existing chain and answer history are reused; generic fictional colleague dialogue fills gaps. No implication of a real appointment or quotation.
+- News acknowledgment, dialogue response, contacts, calendar date and archive persist per protected save. News data unavailable pauses time rather than skips events. Legacy/alternate mode keeps existing quarter/campaign clock in this preview; shared calendar integration and campaign-specific scheduling are a future milestone.
+- Newspaper styles vary by era; no new historical portrait, original newspaper scan or audio asset is included. Existing photo assets are untouched.
+- Tests cover news priority, mandatory interrupts, archive/reload, pace, protected record invariants and desktop/mobile. Full historical news coverage, relationship-driven unique narratives, actual audio/animation, and broader UX remain pending.
