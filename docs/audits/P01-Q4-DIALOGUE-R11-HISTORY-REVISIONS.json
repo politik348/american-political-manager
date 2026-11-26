@@ -1,0 +1,1038 @@
+{
+  "schema": 1,
+  "round": 11,
+  "sourceHandoffSha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+  "rows": [
+    {
+      "id": "P01-440",
+      "path": "data/dialogue-packs/P01/part-18.json",
+      "originalBlobSha": "63ae712d864e99add8e70675025107b8b7ac9940",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R7-part-18.json",
+        "sha": "dec537de6823a6076313d650ac28986dd7c676a9"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://www.govinfo.gov/content/pkg/CDIR-2024-04-25/pdf/CDIR-2024-04-25.pdf",
+          "https://www.cantwell.senate.gov/about/biography"
+        ],
+        "requiredWording": "Player English 'my House years' incorrectly implies player was the member; use 'your House years'. Label photo as fictional example, not authenticated artifact."
+      },
+      "legacyProtectedReconstructed": false,
+      "priorProtectedDifferences": [],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 사진은 제가 하원에 있던 시절입니다.",
+              "en": "That photo dates to my House service."
+            },
+            {
+              "speaker": "host",
+              "ko": "오늘은 상원의원으로 소개해야겠군요.",
+              "en": "Today we'll introduce you as a senator."
+            },
+            {
+              "speaker": "player",
+              "ko": "사진에는 그 당시 직함을 남기겠습니다.",
+              "en": "I'll retain the title at the date of the photograph."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "의원님의 하원 시절을 가정한 예시 사진에 현재 상원의원 직함이 잘못 붙어 있습니다.",
+              "en": "A fictional example photo from your House years has been mislabeled with your current Senate title."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "사진의 당시 직책과 2001년 현재 직책을 각각 확인하세요.",
+              "en": "Verify the office at the time of the photograph and the current office in 2001."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "옛 사진과 현재 소개가 모두 정확하네요.",
+                "en": "Both the old photo and current introduction are accurate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마리아 캔트웰: 1994-12-01 WA-1 하원의원, 2001-02-05 WA 상원의원.",
+                "en": "Maria Cantwell: House WA-1 on 1994-12-01; Senate WA on 2001-02-05."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "사진에는 WA-1 하원 직함을 유지하고 현재 상원 소개는 별도로 표시하세요.",
+                "en": "Retain the WA-1 House title on the photograph and list the current Senate introduction separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "이전 하원 의석은 WA-1이었습니다. 사진을 상원 재임 자료로 바꾸지 마세요.",
+                "en": "My earlier House seat was WA-1. Do not recatalog the photograph as Senate service."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-440",
+        "mechanism": "career-transition",
+        "learningTarget": "Maria Cantwell: House WA-1 on 1994-12-01; Senate WA on 2001-02-05.",
+        "date": "2001-02-05",
+        "venue": {
+          "ko": "워싱턴주 대학 동문 행사",
+          "en": "Washington State alumni event"
+        },
+        "context": {
+          "ko": "동문이 1990년대 하원 방문 사진을 가져온다.",
+          "en": "An alumnus brings a 1990s House visit photograph."
+        },
+        "cast": [
+          {
+            "name": "Maria Cantwell",
+            "ko": "마리아 캔트웰",
+            "id": "C000127",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000127.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C000127"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1993년 사진의 소속은 {{blank}}입니다.",
+          "en": "The affiliation in the 1993 photo is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원 WA-3",
+              "en": "House WA-3"
+            },
+            {
+              "id": "B",
+              "ko": "하원 WA-8",
+              "en": "House WA-8"
+            },
+            {
+              "id": "C",
+              "ko": "하원 WA-1",
+              "en": "House WA-1"
+            },
+            {
+              "id": "D",
+              "ko": "상원",
+              "en": "Senate"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://github.com/unitedstates/congress-legislators/blob/main/legislators-current.yaml",
+            "claim": "Maria Cantwell: House WA-1 on 1994-12-01; Senate WA on 2001-02-05.",
+            "asOf": "2001-02-05"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/C000127",
+            "claim": "Maria Cantwell: House WA-1 on 1994-12-01; Senate WA on 2001-02-05.",
+            "asOf": "2001-02-05"
+          }
+        ],
+        "fictional": true,
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-440-career-transition"
+        }
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    },
+    {
+      "id": "P01-2001",
+      "path": "data/dialogue-packs/P01/part-81.json",
+      "originalBlobSha": "61163abcf548deec3186a0e9d32a15926d1494a3",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R7-part-81.json",
+        "sha": "6a9109d1544781b991c3852e2d3ab43ab06542af"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://clerk.house.gov/members/G000607"
+        ],
+        "requiredWording": "Korean '새 임기' and incorrect EN 'new term' -> '잔여 임기 재임 기록' / 'service for the remainder of the existing congressional term'."
+      },
+      "legacyProtectedReconstructed": false,
+      "priorProtectedDifferences": [
+        {
+          "field": "evidence",
+          "before": [
+            {
+              "url": "https://clerk.house.gov/members/G000607",
+              "claim": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+              "asOf": "2026-06-11"
+            },
+            {
+              "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+              "claim": "Official oath chronology.",
+              "asOf": "2026-06-11"
+            },
+            {
+              "url": "https://clerk.house.gov/images/members/G000607.jpg",
+              "claim": "Official Clerk portrait linked directly from the verified member profile; portrait reference may postdate encounter.",
+              "asOf": "2026-11-25"
+            }
+          ],
+          "current": [
+            {
+              "url": "https://clerk.house.gov/members/G000607",
+              "claim": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+              "asOf": "2026-06-11"
+            },
+            {
+              "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+              "claim": "Official oath chronology.",
+              "asOf": "2026-06-11"
+            }
+          ]
+        }
+      ],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "갱신된 재임 기록을 보관합시다.",
+                "en": "File the updated service record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "6월 10일 CA-01에 취임한 사람은 갤러거입니다.",
+                "en": "Gallagher took the oath for CA-01 on June 10."
+              },
+              {
+                "speaker": "player",
+                "ko": "기록을 바로잡겠습니다.",
+                "en": "I'll correct the record."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "6월 10일 선서 기록을 근거로 공석 표시를 종료하고 기존 의회 임기의 잔여기간 재임 기록을 시작해 주세요.",
+                "en": "Use the June 10 oath record to close the vacancy entry and begin the record of service for the remainder of the existing congressional term."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "선서한 사람은 제임스 갤러거입니다. 전임자의 재임과 기존 의회 임기의 잔여기간 재임을 구별하고 공석 기록을 다시 확인하세요.",
+                "en": "James Gallagher took the oath. Distinguish the predecessor's service from service for the remainder of the existing congressional term, and recheck the vacancy entry."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-2001",
+        "mechanism": "vacancy-to-member-file",
+        "learningTarget": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+        "date": "2026-06-11",
+        "venue": {
+          "ko": "의석 승계 기록실",
+          "en": "Seat succession archive"
+        },
+        "context": {
+          "ko": "실제 기록을 바탕으로 구성된 가상 만남. 의석 승계 기록실에서 자료를 확인합니다.",
+          "en": "Fictional encounter based on historical records, set at the seat succession archive."
+        },
+        "cast": [
+          {
+            "id": "G000607",
+            "name": "James Gallagher",
+            "ko": "제임스 갤러거",
+            "portrait": "https://clerk.house.gov/images/members/G000607.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/G000607"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "aide",
+            "ko": "CA-01 기록이 공석으로 남아 있어요.",
+            "en": "The CA-01 entry still shows a vacancy."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "6월 10일 선서 기록부터 확인합시다.",
+            "en": "Check the June 10 oath record first."
+          },
+          {
+            "speaker": "player",
+            "ko": "선거 결과와 실제 취임 기록을 나누어 보관하겠습니다.",
+            "en": "I'll keep the election result separate from the oath record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 현직 의원의 이름은 {{blank}}로 기록하겠습니다.",
+          "en": "I'll enter {{blank}} as the newly sworn representative.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제임스 갤러거",
+              "en": "James Gallagher"
+            },
+            {
+              "id": "B",
+              "ko": "더그 라말파",
+              "en": "Doug LaMalfa"
+            },
+            {
+              "id": "C",
+              "ko": "케빈 카일리",
+              "en": "Kevin Kiley"
+            },
+            {
+              "id": "D",
+              "ko": "마이크 톰프슨",
+              "en": "Mike Thompson"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://clerk.house.gov/members/G000607",
+            "claim": "James Gallagher was sworn in on June 10, 2026, to represent CA-01; a vacant seat is distinct from a sworn member.",
+            "asOf": "2026-06-11"
+          },
+          {
+            "url": "https://clerk.house.gov/Members/ViewMemberOaths",
+            "claim": "Official oath chronology.",
+            "asOf": "2026-06-11"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-2001-vacancy-to-member-file"
+        },
+        "fictional": true,
+        "assetProvenance": [
+          {
+            "url": "https://clerk.house.gov/images/members/G000607.jpg",
+            "claim": "Official Clerk portrait linked directly from the verified member profile; portrait reference may postdate encounter.",
+            "asOf": "2026-11-25",
+            "role": "asset_provenance_not_in_world_fact",
+            "retrievedAt": "2026-11-25",
+            "assetCreationDate": "unknown",
+            "sourcePublicationDate": "unknown",
+            "classification": "portrait_date_unconfirmed"
+          }
+        ]
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    },
+    {
+      "id": "P01-2008",
+      "path": "data/dialogue-packs/P01/part-81.json",
+      "originalBlobSha": "61163abcf548deec3186a0e9d32a15926d1494a3",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R7-part-81.json",
+        "sha": "6a9109d1544781b991c3852e2d3ab43ab06542af"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://sherman.house.gov/services",
+          "https://clerk.house.gov/Members/ViewMemberList"
+        ],
+        "requiredWording": "Do not imply walk-in/in-person submission authorized. Opening: 'A resident wants to submit federal-agency assistance paperwork; check whether in-person submission is available.' Incorrect followup: 'The listed district office is in the San Fernando Valley; confirm the submission method before directing the resident.'"
+      },
+      "legacyProtectedReconstructed": false,
+      "priorProtectedDifferences": [],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "aide",
+              "ko": "연방기관 지원 양식을 직접 제출하려는 주민이 있습니다.",
+              "en": "A resident wants to submit federal-agency assistance paperwork in person."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "우리 지역구 사무실 위치를 공식 서비스 페이지에서 찾을 수 있습니다.",
+              "en": "The service page identifies our district office."
+            },
+            {
+              "speaker": "player",
+              "ko": "의원실 방문 안내와 피해 지역의 경계 판단을 구분하겠습니다.",
+              "en": "I'll distinguish office directions from determining disaster-area boundaries."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "aide",
+              "ko": "연방기관 지원 양식을 제출하려는 주민이 있습니다. 직접 제출이 가능한지 확인해야 합니다.",
+              "en": "A resident wants to submit federal-agency assistance paperwork; check whether in-person submission is available."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "우리 지역구 사무실 위치를 공식 서비스 페이지에서 찾을 수 있습니다.",
+              "en": "The service page identifies our district office."
+            },
+            {
+              "speaker": "player",
+              "ko": "방문 위치와 주민의 지역구 관할을 별도로 확인하겠습니다.",
+              "en": "I'll check the office location separately from the resident's district jurisdiction."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주민에게 방문 위치를 알려주고 주소 확인 절차를 남깁시다.",
+                "en": "Give the visitor directions and keep address verification separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "공식 서비스 페이지는 샌퍼낸도 밸리 지역구 사무실을 안내합니다.",
+                "en": "The service page directs visitors to the San Fernando Valley district office."
+              },
+              {
+                "speaker": "player",
+                "ko": "기록을 바로잡겠습니다.",
+                "en": "I'll correct the record."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "샌퍼낸도 밸리 사무실의 안내를 확인하고 주소 관할과 실제 제출 방법을 따로 확인하세요.",
+                "en": "Check the San Fernando Valley office instructions, and separately verify address jurisdiction and the actual submission method."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "안내된 지역구 사무실은 샌퍼낸도 밸리에 있습니다. 주민을 안내하기 전에 제출 방법을 확인하세요.",
+                "en": "The listed district office is in the San Fernando Valley; confirm the submission method before directing the resident."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-2008",
+        "mechanism": "wildfire-guide-dispatch",
+        "learningTarget": "Brad Sherman represents CA-32; his office offers federal-agency casework through its San Fernando Valley district office.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "산불 복구 안내소",
+          "en": "Wildfire recovery information desk"
+        },
+        "context": {
+          "ko": "실제 기록을 바탕으로 구성된 가상 만남. 산불 복구 안내소에서 자료를 확인합니다.",
+          "en": "Fictional encounter based on historical records, set at the wildfire recovery information desk."
+        },
+        "cast": [
+          {
+            "id": "S000344",
+            "name": "Brad Sherman",
+            "ko": "브래드 셔먼",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S000344.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S000344"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "CA-32 셔먼 의원의 방문 안내에 적을 지역 사무실은 {{blank}}입니다.",
+          "en": "Sherman's CA-32 in-person casework guidance identifies the {{blank}} office.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "샌디에이고 북부",
+              "en": "North San Diego County"
+            },
+            {
+              "id": "B",
+              "ko": "프레즈노",
+              "en": "Fresno"
+            },
+            {
+              "id": "C",
+              "ko": "새크라멘토",
+              "en": "Sacramento"
+            },
+            {
+              "id": "D",
+              "ko": "샌퍼낸도 밸리",
+              "en": "San Fernando Valley"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://sherman.house.gov/services",
+            "claim": "Brad Sherman represents CA-32; his office offers federal-agency casework through its San Fernando Valley district office.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/Members/ViewMemberList",
+            "claim": "119th Congress member, party and district.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-2008-wildfire-guide-dispatch"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    },
+    {
+      "id": "P01-2013",
+      "path": "data/dialogue-packs/P01/part-81.json",
+      "originalBlobSha": "61163abcf548deec3186a0e9d32a15926d1494a3",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R7-part-81.json",
+        "sha": "6a9109d1544781b991c3852e2d3ab43ab06542af"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://levin.house.gov/media/press-releases/after-26-years-rep-mike-levin-and-army-corps-secure-federal-plan-to-bring-sand-back-to-oceansides-beaches"
+        ],
+        "requiredWording": "Label 'June 2026 draft long-term plan', not verified current November status; do not conflate completed dredge with proposed long-term project."
+      },
+      "legacyProtectedReconstructed": false,
+      "priorProtectedDifferences": [],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "해안 지도에 공사 완료가 아닌 계획으로 표기합니다.",
+                "en": "Mark the plan rather than completed works on the map."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "공식 발표는 오션사이드 해변의 모래 복원 계획을 다룹니다.",
+                "en": "The announcement addresses sand restoration at Oceanside's beaches."
+              },
+              {
+                "speaker": "player",
+                "ko": "기록을 바로잡겠습니다.",
+                "en": "I'll correct the record."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "오션사이드 해안 지도에 2026년 6월 장기계획 초안으로 표시하세요. 완료된 준설과 장기계획은 별도로 기록하고 이후 진행 상황은 확인하세요.",
+                "en": "Label Oceanside on the map as the June 2026 draft long-term plan. Record completed dredging separately from the long-term plan and verify later progress."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2026년 6월 장기계획 초안의 대상은 오션사이드입니다. 완료된 준설을 장기계획 전체의 완료로 표시하지 마세요.",
+                "en": "The June 2026 draft long-term plan concerns Oceanside. Do not label completed dredging as completion of the entire long-term plan."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-2013",
+        "mechanism": "coastal-restoration-brief",
+        "learningTarget": "Mike Levin of CA-49 announced a federal plan for beach sand restoration in Oceanside in 2026.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "해안 침식 현장 지도실",
+          "en": "Coastal erosion map room"
+        },
+        "context": {
+          "ko": "실제 기록을 바탕으로 구성된 가상 만남. 해안 침식 현장 지도실에서 자료를 확인합니다.",
+          "en": "Fictional encounter based on historical records, set at the coastal erosion map room."
+        },
+        "cast": [
+          {
+            "id": "L000593",
+            "name": "Mike Levin",
+            "ko": "마이크 레빈",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000593.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000593"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "모래 복원 계획이 발표된 해안 도시를 지도에 표시해 주세요.",
+            "en": "Mark the coastal city named in the sand-restoration announcement."
+          },
+          {
+            "speaker": "aide",
+            "ko": "계획 확정과 공사 완료는 다른 단계입니다.",
+            "en": "A plan and completed construction are different stages."
+          },
+          {
+            "speaker": "player",
+            "ko": "공식 발표에서 도시를 확인하고 계획 단계로 기록하겠습니다.",
+            "en": "I'll verify the city and label the project as a plan."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "CA-49 레빈의 해안 복원 계획이 다룬 도시는 {{blank}}입니다.",
+          "en": "Levin's CA-49 beach-restoration plan concerns {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "오션사이드",
+              "en": "Oceanside"
+            },
+            {
+              "id": "B",
+              "ko": "롱비치",
+              "en": "Long Beach"
+            },
+            {
+              "id": "C",
+              "ko": "샌타모니카",
+              "en": "Santa Monica"
+            },
+            {
+              "id": "D",
+              "ko": "샌프란시스코",
+              "en": "San Francisco"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://levin.house.gov/media/press-releases/after-26-years-rep-mike-levin-and-army-corps-secure-federal-plan-to-bring-sand-back-to-oceansides-beaches",
+            "claim": "Mike Levin of CA-49 announced a federal plan for beach sand restoration in Oceanside in 2026.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/Members/ViewMemberList",
+            "claim": "119th Congress member, party and district.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-2013-coastal-restoration-brief"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    },
+    {
+      "id": "P01-2036",
+      "path": "data/dialogue-packs/P01/part-82.json",
+      "originalBlobSha": "1c60a4bd0692d7cff97dfb00ffce8fb13b592159",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R7-part-82.json",
+        "sha": "dfdf1af1822fe893f07c083f09852342de13c658"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://strickland.house.gov/2025/02/16/what-can-democrats-do-about-trump-and-musks-policy-blitz-heres-what-washington-lawmakers-say/",
+          "https://clerk.house.gov/Members/ViewMemberList"
+        ],
+        "requiredWording": "Use 'parts of the Kitsap and Olympic Peninsulas within WA-6'; avoid shading both whole peninsulas; check exact boundaries."
+      },
+      "legacyProtectedReconstructed": false,
+      "priorProtectedDifferences": [],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "반도 지역을 포함한 새 지도를 준비합니다.",
+                "en": "Prepare an updated map including the peninsulas."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "공개 설명은 킷샙과 올림픽 반도를 함께 언급합니다.",
+                "en": "The published description names the Kitsap and Olympic Peninsulas."
+              },
+              {
+                "speaker": "player",
+                "ko": "그 내용을 반영해 정정하겠습니다.",
+                "en": "I'll revise the entry accordingly."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "WA-6에 포함되는 킷샙 및 올림픽 반도의 일부 지역과 타코마 일부를 공식 지도에 따라 표시하세요.",
+                "en": "Mark the parts of the Kitsap and Olympic Peninsulas and parts of Tacoma within WA-6 using the official map."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 반도는 킷샙과 올림픽입니다. 반도 전체가 아닌 WA-6에 포함되는 부분만 공식 경계에 맞춰 표시하세요.",
+                "en": "The two peninsulas are Kitsap and Olympic. Mark only the portions within WA-6 using the official boundaries, not the entire peninsulas."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-2036",
+        "mechanism": "peninsula-representation",
+        "learningTarget": "Emily Randall represents WA-06, including parts of Tacoma and the Kitsap and Olympic Peninsulas.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "워싱턴 반도 지역 지도실",
+          "en": "Washington peninsula map room"
+        },
+        "context": {
+          "ko": "공식 기록에 근거한 가상 정치 RPG 만남. 워싱턴 반도 지역 지도실에서 자료를 정리합니다.",
+          "en": "Fictional political RPG encounter grounded in official records, set at the washington peninsula map room."
+        },
+        "cast": [
+          {
+            "id": "R000621",
+            "name": "Emily Randall",
+            "ko": "에밀리 랜들",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/R000621.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/R000621"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구는 도시뿐 아니라 두 반도에 걸쳐 있습니다.",
+            "en": "My district extends beyond a city to two peninsulas."
+          },
+          {
+            "speaker": "host",
+            "ko": "타코마만 표시한 지역 자료로는 반도 지역이 빠집니다.",
+            "en": "A Tacoma-only brief leaves out the peninsulas."
+          },
+          {
+            "speaker": "player",
+            "ko": "공개 대표단 소개 자료를 확인해 해안 지리를 반영하겠습니다.",
+            "en": "I'll check the published delegation profile and account for coastal geography."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "WA-06 랜들의 지역 설명은 올림픽 반도와 {{blank}} 반도를 함께 포함합니다.",
+          "en": "Randall's WA-06 description includes the Olympic and {{blank}} Peninsulas.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "플로리다",
+              "en": "Florida"
+            },
+            {
+              "id": "B",
+              "ko": "델마바",
+              "en": "Delmarva"
+            },
+            {
+              "id": "C",
+              "ko": "어퍼",
+              "en": "Upper"
+            },
+            {
+              "id": "D",
+              "ko": "킷샙",
+              "en": "Kitsap"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://strickland.house.gov/2025/02/16/what-can-democrats-do-about-trump-and-musks-policy-blitz-heres-what-washington-lawmakers-say/",
+            "claim": "Emily Randall represents WA-06, including parts of Tacoma and the Kitsap and Olympic Peninsulas.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/Members/ViewMemberList",
+            "claim": "119th Congress member, party and district/territory.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-2036-peninsula-representation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    },
+    {
+      "id": "P01-1485",
+      "path": "data/dialogue-packs/P01/part-60.json",
+      "originalBlobSha": "b2048315aa3e18d3beeb7d6898316053239f3642",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitObserved": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R5-part-60.json",
+        "sha": "f37a1ea21a0af56480e23132ab55c7d8333f5e06"
+      },
+      "historicalHandoff": {
+        "sha": "1ec6bef7267b575100735fa06319d723d66d9b2b",
+        "sources": [
+          "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+          "https://www.govinfo.gov/content/pkg/CRPT-116hrpt698/html/CRPT-116hrpt698.htm"
+        ],
+        "requiredWording": "Proposal historically sound; clarify explicitly that Watkins remained a House member but was former committee member. Legacy patch protected fields absent; I1 must check response before-values."
+      },
+      "legacyProtectedReconstructed": true,
+      "priorProtectedDifferences": [],
+      "priorProtectedDifferencesCleared": true,
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "퇴역군인이 양원 중 어디에서 보훈 문제를 다루는지 묻습니다.",
+              "en": "A veteran asks where veterans' policy is handled in Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 하원 보훈위원회 위원이었지만, 7월 20일 위원직에서 물러났습니다.",
+              "en": "I served on House Veterans' Affairs, but resigned from the committee on July 20."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "상원의 보훈위원회는 제가 위원장을 맡고 있지요.",
+              "en": "I chair Senate Veterans' Affairs."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "퇴역군인 대표단이 동일한 보훈법안의 심의 상황을 두 곳에서 확인하려 합니다.",
+              "en": "A veterans' delegation wants to track the same bill at two points in Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "저는 여전히 하원의원이지만 지난 7월 보훈위원회에서 사임했습니다. 제 이전 위원회 기록과 모런 의원의 현직 기록을 구분하세요.",
+              "en": "I am still a House member, but I resigned from Veterans' Affairs in July. Distinguish my former committee service from Senator Moran's current role."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "우선 두 위원회가 같은 입법 기관 안에 있는지 구분해 주세요.",
+              "en": "First determine whether the two committees belong to the same legislative chamber."
+            }
+          ]
+        },
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "두 위원회는 {{blank}}에 속합니다.",
+            "en": "The two committees belong to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "동일한 하원",
+                "en": "the same House"
+              },
+              {
+                "id": "B",
+                "ko": "서로 다른 원",
+                "en": "different chambers"
+              },
+              {
+                "id": "C",
+                "ko": "캔자스 주 의회",
+                "en": "Kansas legislature"
+              },
+              {
+                "id": "D",
+                "ko": "연방 법원",
+                "en": "the federal courts"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "두 보훈위원회는 {{blank}}에 속합니다.",
+            "en": "The two veterans' committees belong to {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "동일한 하원",
+                "en": "the same House"
+              },
+              {
+                "id": "B",
+                "ko": "서로 다른 원",
+                "en": "different chambers"
+              },
+              {
+                "id": "C",
+                "ko": "캔자스 주 의회",
+                "en": "Kansas legislature"
+              },
+              {
+                "id": "D",
+                "ko": "연방 법원",
+                "en": "the federal courts"
+              }
+            ],
+            "correct": "B"
+          }
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법안이 양원에서 어떻게 심의되는지 다음에 살펴보죠.",
+                "en": "Next we'll examine how legislation is considered by both chambers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "왓킨스는 전 하원 보훈위원회 위원이고, 모런은 현 상원 보훈위원장입니다.",
+                "en": "Watkins formerly served on the House committee; Moran chairs the Senate committee."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "각 원의 심의 경로를 따로 추적하세요. 왓킨스 의원은 현직 하원의원이지만 전직 보훈위원이라는 점도 구분하세요.",
+                "en": "Track each chamber's proceedings separately. Representative Watkins remains a House member but is a former Veterans' Affairs committee member."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 기록은 하원 보훈위원회이고 모런 의원은 상원 보훈위원회를 이끌고 있습니다. 하나의 위원회가 아닙니다.",
+                "en": "My record is with House Veterans' Affairs; Senator Moran chairs Senate Veterans' Affairs. They are not one committee."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1485",
+        "mechanism": "veteran-inquiry",
+        "learningTarget": "Watkins served on House Veterans' Affairs until his resignation was accepted on July 20, 2020; Moran chaired Senate Veterans' Affairs in 2020.",
+        "date": "2020-08-19",
+        "venue": {
+          "ko": "퇴역군인 상담 부스",
+          "en": "Veterans assistance booth"
+        },
+        "context": {
+          "ko": "공식 기록을 바탕으로 구성한 가상의 지역 정치 만남입니다.",
+          "en": "A fictional regional political encounter based on the official record."
+        },
+        "cast": [
+          {
+            "id": "W000824",
+            "name": "Steve Watkins",
+            "ko": "스티브 왓킨스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/W000824.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/W000824"
+          },
+          {
+            "id": "M000934",
+            "name": "Jerry Moran",
+            "ko": "제리 모런",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M000934.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M000934"
+          }
+        ],
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2020-07-22/html/CDIR-2020-07-22-KS.htm",
+            "claim": "Moran chaired Senate Veterans' Affairs in 2020; Watkins had served on House Veterans' Affairs.",
+            "asOf": "2020-08-19"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CRPT-116hrpt698/html/CRPT-116hrpt698.htm",
+            "claim": "Watkins resigned his House Veterans' Affairs Committee membership on July 20, 2020.",
+            "asOf": "2020-08-19"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CREC-2020-07-20/pdf/CREC-2020-07-20-pt1-PgH3584-7.pdf",
+            "claim": "The House accepted Watkins's committee resignations on July 20, 2020.",
+            "asOf": "2020-08-19"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1485-veteran-inquiry"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_pending_I1_HQ"
+    }
+  ]
+}
