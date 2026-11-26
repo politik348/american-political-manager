@@ -1,0 +1,3150 @@
+{
+  "schema": 1,
+  "team": "Q4-P02",
+  "round": 1,
+  "scope": "P02-401–425",
+  "source": {
+    "path": "data/dialogue-packs/P02/part-17.json",
+    "blobSha": "5615f1ce408b06b981dd80b2fa1588cede56ff50"
+  },
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "scoring": "0 absent/poor, 1 partial, 2 strong. Continuity 1 for recognizable documented candidate or staged bridge, 0 absent; 2 requires substantive playable connection. Score source, not proposal. No external historical recertification.",
+  "entries": [
+    {
+      "id": "P02-401",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Hatch's chair cue nearly supplies the answer; Wyden only confirms. House/Senate release is an authentic premise but wrong offices are implausible.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "공동 발표문에 세 사람의 이름은 있는데 직책 표기가 빠졌군요.",
+            "en": "The joint release lists three names, but their offices are missing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원의 라이언 항목은 따로 두세요. 상원 표를 먼저 검토합시다.",
+            "en": "Keep Ryan's House entry separate. Let's examine the Senate panel first."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 상원 직책의 순서를 확인한 뒤 공동 발표문에 붙일 표를 완성해 주세요.",
+            "en": "Check the order of the two Senate offices, then finish the table for the joint release."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해치와 와이든의 관계는 {{blank}}입니다.",
+          "en": "Hatch and Wyden participated as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "다수당 원내대표와 소수당 원내대표",
+              "en": "majority leader and minority leader"
+            },
+            {
+              "id": "B",
+              "ko": "위원장과 소수당 선임위원",
+              "en": "chair and ranking member"
+            },
+            {
+              "id": "C",
+              "ko": "소수당 선임위원과 위원장",
+              "en": "ranking member and chair"
+            },
+            {
+              "id": "D",
+              "ko": "같은 당의 두 소위원장",
+              "en": "two subcommittee chairs from the same party"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "좋습니다. 해치와 와이든의 직책을 나란히 두고 라이언은 하원 열로 보내죠.",
+              "en": "Good. Put Hatch and Wyden side by side, with Ryan in the House column."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "잠깐, 원내 지도부와 위원회 지도부는 다른 직책입니다. 해치는 위원장, 와이든은 선임위원입니다. 표의 머리글부터 바꿔 주세요.",
+              "en": "Wait: floor leadership and committee leadership are different offices. Hatch was chair and Wyden ranking member. Correct the column headings first."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2015-04-16",
+          "learningTarget": "On April 16, 2015, Finance chair Hatch and ranking member Wyden introduced trade promotion legislation with House Ways and Means chair Ryan.",
+          "cast": [
+            {
+              "id": "H000338",
+              "name": "Orrin Hatch",
+              "ko": "오린 해치",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/H000338"
+            },
+            {
+              "id": "W000779",
+              "name": "Ron Wyden",
+              "ko": "론 와이든",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/W000779"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.finance.senate.gov/chairmans-news/hatch-wyden-and-ryan-introduce-trade-promotion-authority-legislation",
+              "claim": "On April 16, 2015, Finance chair Hatch and ranking member Wyden introduced trade promotion legislation with House Ways and Means chair Ryan.",
+              "asOf": "2015-04-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/H000338",
+              "claim": "Congressional biography: Orrin Hatch",
+              "asOf": "2015-04-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/W000779",
+              "claim": "Congressional biography: Ron Wyden",
+              "asOf": "2015-04-16"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-401-joint-introduction"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-402",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Filing motive is generic; unrelated labor and pension laws make D obvious. Both branches repeat the tally rather than use the replacement relationship.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "새 교육법에 대한 안내문을 받은 학교가 이전 안내문도 계속 써야 하는지 묻습니다.",
+            "en": "A school receiving guidance on the new education bill asks whether its old guide still applies."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "오늘 상원 표결은 처리 단계에 넣고, 이전 법률은 별도의 칸에 적어 봅시다.",
+            "en": "Put today's Senate vote under legislative status and the earlier law in a separate box."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "학교에 보낼 비교 자료는 어떤 법의 체계를 바꾸는지부터 분명해야 합니다.",
+            "en": "The comparison for the school needs to identify which legal framework is being replaced."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원의 공동 작업은 {{blank}}의 개편입니다.",
+          "en": "Their joint work concerned revision of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "고등교육법의 학자금 대출만",
+              "en": "only student loans under the Higher Education Act"
+            },
+            {
+              "id": "B",
+              "ko": "장애인교육법(IDEA)",
+              "en": "Individuals with Disabilities Education Act (IDEA)"
+            },
+            {
+              "id": "C",
+              "ko": "직업·기술교육법",
+              "en": "Career and technical education legislation"
+            },
+            {
+              "id": "D",
+              "ko": "낙오학생방지법",
+              "en": "No Child Left Behind"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "이전 안내문과 새 법안의 비교표를 첨부합시다. 오늘 상원 표결은 85대 12였습니다.",
+              "en": "Attach the old-to-new comparison. Today's Senate vote was 85–12."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "낙오학생방지법이 교체 대상입니다. 학자금 지원이나 다른 교육 프로그램 안내문은 이 비교표에서 분리해 주세요.",
+              "en": "No Child Left Behind is the framework being replaced. Remove guidance on student aid or other education programs from this comparison."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2015-12-09",
+          "learningTarget": "Alexander and Murray led the Every Student Succeeds Act, replacing No Child Left Behind; the Senate approved it 85–12 on December 9, 2015.",
+          "cast": [
+            {
+              "id": "A000360",
+              "name": "Lamar Alexander",
+              "ko": "라마 알렉산더",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/A000360"
+            },
+            {
+              "id": "M001111",
+              "name": "Patty Murray",
+              "ko": "패티 머리",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M001111"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.help.senate.gov/rep/newsroom/press/alexander-murray-senate-passes-bill-to-fix-no-child-left-behind-85-12",
+              "claim": "Alexander and Murray led the Every Student Succeeds Act, replacing No Child Left Behind; the Senate approved it 85–12 on December 9, 2015.",
+              "asOf": "2015-12-09"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/A000360",
+              "claim": "Congressional biography: Lamar Alexander",
+              "asOf": "2015-12-09"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M001111",
+              "claim": "Congressional biography: Patty Murray",
+              "asOf": "2015-12-09"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-402-conference-handoff"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-403",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "The stated question is about duration but the answer is policy subject. Durbin echoes Grassley; a sentencing versus corrections distinction could ground a genuine task.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "기자가 공동 발표를 법관 인사 기사에 넣으려 합니다. 제목을 확인해 볼까요?",
+            "en": "A reporter is about to file this joint announcement under judicial appointments. Shall we check the headline?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "기사에 법원 판결과 의회의 입법 제안을 구별하는 설명이 필요합니다.",
+            "en": "The article needs to distinguish court judgments from congressional proposals."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "오늘 발표문은 형사사법 제도에 관한 것이지만 법관 임명 기사는 아닙니다. 어떤 분야인지 제목을 정해 주세요.",
+            "en": "Today's announcement concerns criminal justice, not judicial appointments. Choose a headline identifying its policy scope."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그래슬리와 더빈은 {{blank}}을 공동으로 추진했습니다.",
+          "en": "Grassley and Durbin jointly pursued {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 형량과 교정제도 개혁",
+              "en": "federal sentencing and corrections reform"
+            },
+            {
+              "id": "B",
+              "ko": "연방 형사재판의 배심원 선발 절차만",
+              "en": "only federal criminal jury selection"
+            },
+            {
+              "id": "C",
+              "ko": "연방 법관 임기 제한",
+              "en": "term limits for federal judges"
+            },
+            {
+              "id": "D",
+              "ko": "연방 검찰 조직 개편만",
+              "en": "only reorganization of federal prosecutors"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 제목으로 발표일을 협력 연혁의 첫 칸에 넣으세요. 이후 개정안은 별도 사건으로 남길 수 있습니다.",
+              "en": "Use that headline and enter the announcement as the first milestone. Later revisions can have separate entries."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "대상은 연방 형량과 교정제도입니다. 기사 제목을 고친 뒤 법관 인사 자료는 원래 폴더로 돌려보내세요.",
+              "en": "The proposal concerns federal sentencing and corrections. Correct the headline and return the judicial appointments material to its own file."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2015-10-01",
+          "learningTarget": "In 2015 Grassley and Durbin introduced a bipartisan federal sentencing and corrections proposal.",
+          "cast": [
+            {
+              "id": "G000386",
+              "name": "Chuck Grassley",
+              "ko": "척 그래슬리",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/G000386"
+            },
+            {
+              "id": "D000563",
+              "name": "Dick Durbin",
+              "ko": "딕 더빈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000563"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.durbin.senate.gov/newsroom/press-releases/senators-introduce-landmark-bipartisan-sentencing-reform-and-corrections-act-of-2015",
+              "claim": "In 2015 Grassley and Durbin introduced a bipartisan federal sentencing and corrections proposal.",
+              "asOf": "2015-10-01"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/G000386",
+              "claim": "Congressional biography: Chuck Grassley",
+              "asOf": "2015-10-01"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000563",
+              "claim": "Congressional biography: Dick Durbin",
+              "asOf": "2015-10-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-403-compromise-origin"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-404",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Opening explicitly contrasts original authors and added support; second NPC says Agreed. Correct and incorrect records differ only in clerical wording.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "지난해 발표와 오늘 수정안의 이름표를 겹쳐 놓으니 추가된 이름이 보입니다.",
+            "en": "Overlaying last year's announcement with today's revision reveals additional names."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제안의 작성 이력은 원문에서 지우지 않는 편이 좋겠습니다.",
+            "en": "Keep the authorship history visible in the original document."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 명단에는 의회 입법 절차상 어떤 자격으로 이름이 올라갔는지 적어 주세요.",
+            "en": "Label the capacity in which the names appear on the new legislative roster."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코닌과 리히는 새 발표에서 {{blank}}으로 등장합니다.",
+          "en": "Cornyn and Leahy appear in the new announcement as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "원안의 단독 발의자들",
+              "en": "sole sponsors of the original proposal"
+            },
+            {
+              "id": "B",
+              "ko": "수정안의 반대 표결 의원들",
+              "en": "senators recorded as voting against the revision"
+            },
+            {
+              "id": "C",
+              "ko": "공동 발의 지지자",
+              "en": "cosponsors"
+            },
+            {
+              "id": "D",
+              "ko": "하원 협의위원들",
+              "en": "House conferees"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "새 공동 발의 명단을 2015년 원안 옆에 붙이세요. 다음 수정본을 읽을 때 두 명단을 비교할 수 있습니다.",
+              "en": "Attach the new cosponsor roster beside the 2015 original so it can be compared with later revisions."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "코닌과 리히는 수정 제안의 공동 발의자로 기록해야 합니다. 원 발의자와 동일한 항목에 덮어쓰지 말고 추가 명단을 복원하세요.",
+              "en": "Cornyn and Leahy belong on the revised proposal's cosponsor list. Restore that list without overwriting the original authorship entry."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2016-04-28",
+          "learningTarget": "In April 2016 Cornyn and Leahy joined the revised Grassley–Durbin sentencing proposal as cosponsors.",
+          "cast": [
+            {
+              "id": "C001056",
+              "name": "John Cornyn",
+              "ko": "존 코닌",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001056"
+            },
+            {
+              "id": "L000174",
+              "name": "Patrick Leahy",
+              "ko": "패트릭 리히",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/L000174"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.durbin.senate.gov/newsroom/press-releases/grassley-durbin-sentencing-reform-and-corrections-act-expands-bipartisan-support",
+              "claim": "In April 2016 Cornyn and Leahy joined the revised Grassley–Durbin sentencing proposal as cosponsors.",
+              "asOf": "2016-04-28"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001056",
+              "claim": "Congressional biography: John Cornyn",
+              "asOf": "2016-04-28"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/L000174",
+              "claim": "Congressional biography: Patrick Leahy",
+              "asOf": "2016-04-28"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-404-expanded-coalition"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-405",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Player already says prison reform and Senate negotiations; response repeats the juxtaposition and all other pairs are unrelated.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "하원에서 온 자료와 상원 수정안을 하나의 브리핑으로 묶어 달라는 요청이 왔습니다.",
+            "en": "A briefing request asks me to reconcile the House material with the revised Senate proposal."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 원의 문서를 별도로 읽고 나서 겹치는 부분을 표시해 보죠.",
+            "en": "Read the two chambers' documents separately before marking their overlap."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 제안이 하나로 묶은 두 형사정책 분야를 제목으로 써 주세요.",
+            "en": "Give the combined proposal a heading that identifies both criminal justice policy areas."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "리와 부커가 참여한 수정안은 {{blank}}을 결합했습니다.",
+          "en": "The revised measure involving Lee and Booker combined {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 법관 인준과 검찰 인사",
+              "en": "federal judicial confirmations and prosecutor appointments"
+            },
+            {
+              "id": "B",
+              "ko": "교도소 개혁과 형량 개혁",
+              "en": "prison and sentencing reforms"
+            },
+            {
+              "id": "C",
+              "ko": "교정시설 예산과 법원 행정만",
+              "en": "only prison budgets and court administration"
+            },
+            {
+              "id": "D",
+              "ko": "주 형법과 지방경찰 조직 개편",
+              "en": "state criminal codes and local police reorganization"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "두 경로를 합친 비교 자료로 전달하세요. 나중에 상원 통과 기록이 나오면 이 자료에 연결할 수 있습니다.",
+              "en": "Send the comparison of the two tracks. A later Senate passage record can be attached when available."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "결합한 것은 교도소 개혁과 형량 개혁입니다. 두 원의 자료를 한쪽 정책으로 축소하지 말고 제목을 다시 작성하세요.",
+              "en": "The combination is prison and sentencing reforms. Revise the heading without reducing both chambers' documents to only one policy area."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2018-11-15",
+          "learningTarget": "Lee and Booker joined the November 2018 revised First Step Act announcement, combining House prison reforms with Senate sentencing proposals.",
+          "cast": [
+            {
+              "id": "L000577",
+              "name": "Mike Lee",
+              "ko": "마이크 리",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/L000577"
+            },
+            {
+              "id": "B001288",
+              "name": "Cory Booker",
+              "ko": "코리 부커",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001288"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.judiciary.senate.gov/press/rep/releases/senators-unveil-revised-bipartisan-prison-sentencing-legislation",
+              "claim": "Lee and Booker joined the November 2018 revised First Step Act announcement, combining House prison reforms with Senate sentencing proposals.",
+              "asOf": "2018-11-15"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/L000577",
+              "claim": "Congressional biography: Mike Lee",
+              "asOf": "2018-11-15"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001288",
+              "claim": "Congressional biography: Cory Booker",
+              "asOf": "2018-11-15"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-405-merge-proposals"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-406",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "No evidence cue for act identification beyond generic cross-party support. The vote milestone can instead close the earlier revision chain.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "상원 통과 소식이 왔습니다. 11월에 보관한 수정안과 같은 법안인지 확인하려 합니다.",
+            "en": "Word of Senate passage has arrived. I need to check whether it matches the revision archived in November."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "발표 참여 기록은 통과 기록과 같은 것이 아닙니다. 두 문서를 따로 두세요.",
+            "en": "Participation in an announcement is not the same as a passage record. Keep both documents."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "형사사법 개혁 자료의 표지에 법안명을 넣으면 앞선 공동 발표를 찾아갈 수 있겠군요.",
+            "en": "A bill title on the criminal justice file will let readers locate the earlier joint announcement."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그레이엄과 화이트하우스의 공동 발표는 {{blank}}과 연결됩니다.",
+          "en": "Graham and Whitehouse's joint announcement is linked to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Sentencing Reform and Corrections Act",
+              "en": "Sentencing Reform and Corrections Act"
+            },
+            {
+              "id": "B",
+              "ko": "Second Chance Act",
+              "en": "Second Chance Act"
+            },
+            {
+              "id": "C",
+              "ko": "Fair Sentencing Act",
+              "en": "Fair Sentencing Act"
+            },
+            {
+              "id": "D",
+              "ko": "First Step Act",
+              "en": "First Step Act"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "11월 수정안과 12월 상원 통과 기록을 연결하세요. 대통령 서명은 이 장면에서 확정하지 않습니다.",
+              "en": "Link the November revision to the December Senate passage record. Do not mark presidential signature in this scene."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "First Step Act입니다. 다른 법률의 통과 자료는 분리하고 11월 공동 발표 명단을 다시 찾아보세요.",
+              "en": "It is the First Step Act. Separate the other law's passage record and locate the November announcement roster again."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2018-12-19",
+          "learningTarget": "Graham and Whitehouse both participated in announcing the revised First Step Act before its 2018 Senate passage.",
+          "cast": [
+            {
+              "id": "G000359",
+              "name": "Lindsey Graham",
+              "ko": "린지 그레이엄",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/G000359"
+            },
+            {
+              "id": "W000802",
+              "name": "Sheldon Whitehouse",
+              "ko": "셸던 화이트하우스",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/W000802"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.durbin.senate.gov/newsroom/press-releases/senate-passes-landmark-criminal-justice-reform-",
+              "claim": "Graham and Whitehouse both participated in announcing the revised First Step Act before its 2018 Senate passage.",
+              "asOf": "2018-12-19"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/G000359",
+              "claim": "Congressional biography: Lindsey Graham",
+              "asOf": "2018-12-19"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/W000802",
+              "claim": "Congressional biography: Sheldon Whitehouse",
+              "asOf": "2018-12-19"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-406-passage-attribution"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-407",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Anniversary prompt effectively reveals introduction by excluding passage; options include unrelated judicial and election events.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "지난해 이민개혁 연혁에 기념일을 표시하려는데 발의일과 표결일이 섞여 있습니다.",
+            "en": "The immigration reform chronology mixes introduction and vote dates, and I need to mark an anniversary."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "오늘 공동 발표가 회고하는 절차는 원래 법안의 이력에서 확인하세요.",
+            "en": "Use the original bill history to identify the step recalled in today's joint statement."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "기념 자료는 이미 법률이 성립했다고 오해하게 해서는 안 됩니다. 어떤 이정표인지 표시해 주세요.",
+            "en": "The anniversary note must not imply that the bill became law. Label the milestone."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2014년 4월 공동 발표가 기념한 것은 {{blank}}입니다.",
+          "en": "The April 2014 joint statement commemorated {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "S.744 발의 1주년",
+              "en": "one year since S.744 was introduced"
+            },
+            {
+              "id": "B",
+              "ko": "S.744 상원 본회의 통과 1주년",
+              "en": "one year since S.744 passed the Senate"
+            },
+            {
+              "id": "C",
+              "ko": "S.744 상원 법사위원회 처리 1주년",
+              "en": "one year since Senate Judiciary Committee action on S.744"
+            },
+            {
+              "id": "D",
+              "ko": "S.744 대통령 서명 1주년",
+              "en": "one year since presidential signature of S.744"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "S.744 발의 기념일로 표시하고 상원 통과일은 따로 두세요.",
+              "en": "Mark the anniversary of S.744's introduction and retain its Senate passage date separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2014년 4월 발표는 S.744 발의 1주년을 기념합니다. 상원 통과나 대통령 서명 칸에 넣지 마세요.",
+              "en": "The April 2014 statement marked one year since S.744 was introduced. Do not file it under Senate passage or presidential signature."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2014-04-16",
+          "learningTarget": "Bennet and Durbin joined the April 2014 statement marking the first anniversary of S.744's introduction.",
+          "cast": [
+            {
+              "id": "B001267",
+              "name": "Michael Bennet",
+              "ko": "마이클 베넷",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001267"
+            },
+            {
+              "id": "D000563",
+              "name": "Dick Durbin",
+              "ko": "딕 더빈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000563"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.bennet.senate.gov/2014/04/16/press-releases-id-428e9cee-340c-3f26-03cf-704dec6b2203/",
+              "claim": "Bennet and Durbin joined the April 2014 statement marking the first anniversary of S.744's introduction.",
+              "asOf": "2014-04-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001267",
+              "claim": "Congressional biography: Michael Bennet",
+              "asOf": "2014-04-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000563",
+              "claim": "Congressional biography: Dick Durbin",
+              "asOf": "2014-04-16"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-407-anniversary-check"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-408",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Florida plus Republican clue narrows to Rubio versus later Scott; choices partly plausible, but same roster task and agreement. Explicit historical cutoff valuable.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2017년 회고 기사에 2013년 협상자 명단을 붙이려는데 플로리다 항목이 비어 있습니다.",
+            "en": "A 2017 retrospective needs the 2013 negotiator roster, but the Florida entry is missing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2013년 당시 재임 자료만 놓고 확인하세요. 나중의 선거 결과를 끌어오면 안 됩니다.",
+            "en": "Use the membership record as it stood in 2013, not later election results."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "또 재임했다는 사실과 이민법안 공동 작성에 참여했다는 사실은 별개입니다. 두 명단을 대조해 주세요.",
+            "en": "Holding office and joining the immigration proposal are separate facts. Compare both rosters."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "누락된 공화당 공동 저자는 {{blank}}입니다.",
+          "en": "The missing Republican coauthor is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "빌 넬슨",
+              "en": "Bill Nelson"
+            },
+            {
+              "id": "B",
+              "ko": "존 매케인",
+              "en": "John McCain"
+            },
+            {
+              "id": "C",
+              "ko": "마코 루비오",
+              "en": "Marco Rubio"
+            },
+            {
+              "id": "D",
+              "ko": "린지 그레이엄",
+              "en": "Lindsey Graham"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "마코 루비오를 2013년 공동 작성자 명단에 복원하고 회고 자료에 원본 연도를 표시하세요.",
+              "en": "Restore Marco Rubio to the 2013 coauthor list and label the original year in the retrospective."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "루비오가 해당 공화당 공동 작성자였습니다. 2013년 재임 명부와 협상 명단을 다시 대조해 잘못된 이름을 제거하세요.",
+              "en": "Rubio was the Republican coauthor in question. Compare the 2013 membership and negotiation rosters again and remove the incorrect name."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2017-06-27",
+          "learningTarget": "Marco Rubio was among the Republican coauthors in the 2013 Gang of Eight.",
+          "cast": [
+            {
+              "id": "B001267",
+              "name": "Michael Bennet",
+              "ko": "마이클 베넷",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001267"
+            },
+            {
+              "id": "D000563",
+              "name": "Dick Durbin",
+              "ko": "딕 더빈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000563"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.bennet.senate.gov/2017/06/27/press-releases-id-9b0b82aa-b7d0-c22d-4ffc-7e39064faba6/",
+              "claim": "Marco Rubio was among the Republican coauthors in the 2013 Gang of Eight.",
+              "asOf": "2017-06-27"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001267",
+              "claim": "Congressional biography: Michael Bennet",
+              "asOf": "2017-06-27"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000563",
+              "claim": "Congressional biography: Dick Durbin",
+              "asOf": "2017-06-27"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-408-identify-missing-partner"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-409",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Opening already calls the measure conservation; distractors are unrelated. Same-party regional cooperation should not be presented as bipartisan.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "서부 두 주에서 온 공동 입법 자료를 지역 대표단 브리핑에 넣으려 합니다.",
+            "en": "A joint legislative file from two western states needs a place in a delegation briefing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "몬태나와 콜로라도 자료를 한 묶음으로 두되 의원 이름은 각각 남겨 주세요.",
+            "en": "Keep the Montana and Colorado materials together while preserving each senator's name."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의원이 추진한 2020년 법안의 정책 분야를 적으면 지역 협력의 성격이 드러날 겁니다.",
+            "en": "Identify the policy area of the 2020 bill to explain the nature of their regional cooperation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "가드너와 데인스의 협력 대상은 {{blank}}입니다.",
+          "en": "Gardner and Daines cooperated on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공공토지의 광물 채굴 허가만",
+              "en": "only mineral extraction permits on public land"
+            },
+            {
+              "id": "B",
+              "ko": "공공토지 보전 및 야외 휴양",
+              "en": "public-land conservation and outdoor recreation"
+            },
+            {
+              "id": "C",
+              "ko": "농업 관개시설의 물 배분만",
+              "en": "only irrigation water allocation"
+            },
+            {
+              "id": "D",
+              "ko": "연방 산불 대응 지휘체계만",
+              "en": "only federal wildfire command structure"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "공공토지 보전과 야외 휴양 자료로 분류하고 두 주의 기록을 함께 연결하세요.",
+              "en": "File it under public-land conservation and outdoor recreation and link the two state records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "이 공동 입법은 Great American Outdoors Act에 관한 것입니다. 공공토지 보전·야외 휴양 분야로 분류하고 다른 서부 정책 자료와 분리하세요.",
+              "en": "This joint effort concerns the Great American Outdoors Act. Classify it under public-land conservation and outdoor recreation rather than unrelated western policy."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2020-03-11",
+          "learningTarget": "Gardner and Daines worked on the Great American Outdoors Act in 2020.",
+          "cast": [
+            {
+              "id": "D000618",
+              "name": "Steve Daines",
+              "ko": "스티브 데인스",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000618"
+            },
+            {
+              "id": "G000562",
+              "name": "Cory Gardner",
+              "ko": "코리 가드너",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/G000562"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.daines.senate.gov/2020/03/11/gardner-daines-propose-bipartisan-great-american-outdoors-act/",
+              "claim": "Gardner and Daines worked on the Great American Outdoors Act in 2020.",
+              "asOf": "2020-03-11"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000618",
+              "claim": "Congressional biography: Steve Daines",
+              "asOf": "2020-03-11"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/G000562",
+              "claim": "Congressional biography: Cory Gardner",
+              "asOf": "2020-03-11"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-409-regional-alliance"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-410",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "NPC explicitly names parks maintenance and only one title relates to parks; prior bill lineage is a useful genuine continuity cue.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "새 보전법안에 선행 제안 하나가 포함되었다는 자료가 왔습니다. 원문을 찾아야겠습니다.",
+            "en": "A new conservation bill incorporates an earlier proposal. I need to locate the predecessor."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "새 법안 번호로 예전 자료를 덮어쓰지 마세요.",
+            "en": "Do not overwrite the earlier record with the new bill number."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "워너와 알렉산더가 참여한 선행 제안 명단을 비교해 정확한 제목을 찾아 주세요.",
+            "en": "Compare the roster of the earlier proposal involving Warner and Alexander to recover its title."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "킹과 포트먼이 참여한 선행 제안은 {{blank}}입니다.",
+          "en": "The earlier proposal involving King and Portman was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Land and Water Conservation Fund Permanent Funding Act",
+              "en": "Land and Water Conservation Fund Permanent Funding Act"
+            },
+            {
+              "id": "B",
+              "ko": "National Parks Restoration Act",
+              "en": "National Parks Restoration Act"
+            },
+            {
+              "id": "C",
+              "ko": "Great American Outdoors Act",
+              "en": "Great American Outdoors Act"
+            },
+            {
+              "id": "D",
+              "ko": "Restore Our Parks Act",
+              "en": "Restore Our Parks Act"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "Restore Our Parks Act의 선행 문서를 별도로 연결하세요. 새 법안의 처리 결과가 나오면 함께 볼 수 있습니다.",
+              "en": "Attach Restore Our Parks Act as a separate predecessor document so it can be viewed with the new bill's later status."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "찾는 선행 제안은 Restore Our Parks Act입니다. 비슷한 보전 법안의 이름만 보고 동일 법안이라고 표시하지 마세요.",
+              "en": "The predecessor is the Restore Our Parks Act. Do not equate different conservation bills merely because their titles sound related."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2020-03-11",
+          "learningTarget": "King and Portman worked with Warner and Alexander on the Restore Our Parks Act.",
+          "cast": [
+            {
+              "id": "K000383",
+              "name": "Angus King",
+              "ko": "앵거스 킹",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/K000383"
+            },
+            {
+              "id": "P000449",
+              "name": "Rob Portman",
+              "ko": "롭 포트먼",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/P000449"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.warner.senate.gov/newsroom/press-releases/warner-leads-bipartisan-group-to-introduce-the-great-american-outdoors-act/",
+              "claim": "King and Portman worked with Warner and Alexander on the Restore Our Parks Act.",
+              "asOf": "2020-03-11"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/K000383",
+              "claim": "Congressional biography: Angus King",
+              "asOf": "2020-03-11"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/P000449",
+              "claim": "Congressional biography: Rob Portman",
+              "asOf": "2020-03-11"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-410-trace-earlier-bill"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-411",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Correct stage requires procedural distinction; branches remain nearly identical. Concrete publication status task can avoid implying cross-coalition personal continuity.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "공동 성명에 맞춰 보전법안의 공개 진행표를 갱신해야 합니다.",
+            "en": "The conservation bill's public status board needs updating to match the joint statement."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "상원 자료와 최종 법률 등록 자료를 별도 칸에 두세요.",
+            "en": "Keep Senate records and final enactment records in separate columns."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "오늘 성명이 확인한 사건만 진행표에 표시해 주세요.",
+            "en": "Mark only the event confirmed by today's statement."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "더빈과 덕워스는 오늘 {{blank}}을 환영했습니다.",
+          "en": "Durbin and Duckworth welcomed {{blank}} today.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "상원의 보전법안 통과",
+              "en": "Senate passage of the conservation bill"
+            },
+            {
+              "id": "B",
+              "ko": "대통령의 법률 서명",
+              "en": "presidential signature"
+            },
+            {
+              "id": "C",
+              "ko": "상원 위원회 보고",
+              "en": "Senate committee reporting"
+            },
+            {
+              "id": "D",
+              "ko": "하원 본회의 통과",
+              "en": "House floor passage"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "상원 통과 칸만 완료로 표시하고 다음 절차는 아직 열린 상태로 남겨 두세요.",
+              "en": "Mark Senate passage complete and leave the later procedural steps open."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오늘 확인된 것은 상원 통과입니다. 대통령 서명이나 하원 처리 여부를 자동으로 확정하지 말고 진행표를 복구하세요.",
+              "en": "Today's confirmed event is Senate passage. Restore the status board without automatically marking signature or House action complete."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2020-06-17",
+          "learningTarget": "On June 17, 2020, Durbin and Duckworth welcomed Senate passage of the Great American Outdoors Act.",
+          "cast": [
+            {
+              "id": "D000563",
+              "name": "Dick Durbin",
+              "ko": "딕 더빈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000563"
+            },
+            {
+              "id": "D000622",
+              "name": "Tammy Duckworth",
+              "ko": "태미 덕워스",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/D000622"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.durbin.senate.gov/newsroom/press-releases/durbin-duckworth-applaud-senate-passage-of-bipartisan-great-american-outdoors-act",
+              "claim": "On June 17, 2020, Durbin and Duckworth welcomed Senate passage of the Great American Outdoors Act.",
+              "asOf": "2020-06-17"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000563",
+              "claim": "Congressional biography: Dick Durbin",
+              "asOf": "2020-06-17"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/D000622",
+              "claim": "Congressional biography: Tammy Duckworth",
+              "asOf": "2020-06-17"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-411-delegation-statement"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-412",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Technology clue still broad but distractors largely obvious; agreement instead of distinct supply chain and security perspectives.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "산업 브리핑의 담당 분야를 고르려는데 경제와 안보 자료가 함께 도착했습니다.",
+            "en": "Economic and security files have both arrived, and I need to route the industrial briefing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "공급망 자료에는 생산 분야를, 안보 자료에는 기술 의존 문제를 표시할 자리가 있습니다.",
+            "en": "The supply-chain file has a space for the production sector; the security file has one for technological dependence."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 자료에 공통으로 들어갈 이번 법안의 제조 분야를 지정해 주세요.",
+            "en": "Identify the manufacturing sector that belongs in both files for today's proposal."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "워너와 코닌의 제안은 {{blank}}에 초점을 맞췄습니다.",
+          "en": "Warner and Cornyn's proposal focused on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "통신망 장비 조립만",
+              "en": "only communications equipment assembly"
+            },
+            {
+              "id": "B",
+              "ko": "전기차 배터리 생산만",
+              "en": "only electric vehicle battery production"
+            },
+            {
+              "id": "C",
+              "ko": "반도체 제조",
+              "en": "semiconductor manufacturing"
+            },
+            {
+              "id": "D",
+              "ko": "의약품 원료 생산만",
+              "en": "only pharmaceutical ingredient production"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "반도체 제조를 두 자료의 공통 색인으로 연결하고 6월 10일 발표 기록을 첨부하세요.",
+              "en": "Link semiconductor manufacturing as the shared index and attach the June 10 announcement."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "CHIPS for America Act가 대상으로 삼은 분야는 반도체 제조입니다. 다른 전략산업 항목은 별도 분류로 돌려보내세요.",
+              "en": "The CHIPS for America Act focused on semiconductor manufacturing. Return the other strategic industries to their separate categories."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2020-06-10",
+          "learningTarget": "On June 10, 2020, Warner and Cornyn announced the CHIPS for America Act.",
+          "cast": [
+            {
+              "id": "W000805",
+              "name": "Mark Warner",
+              "ko": "마크 워너",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/W000805"
+            },
+            {
+              "id": "C001056",
+              "name": "John Cornyn",
+              "ko": "존 코닌",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001056"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.warner.senate.gov/newsroom/press-releases/bipartisan-bicameral-bill-will-help-bring-production-of-semiconductors-critical-to-national-security-back-to-u-s/",
+              "claim": "On June 10, 2020, Warner and Cornyn announced the CHIPS for America Act.",
+              "asOf": "2020-06-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/W000805",
+              "claim": "Congressional biography: Mark Warner",
+              "asOf": "2020-06-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001056",
+              "claim": "Congressional biography: John Cornyn",
+              "asOf": "2020-06-10"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-412-industry-cooperation"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-413",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Balanced party options useful; no roster interaction, just recall. Preserve initial membership as dated baseline.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "인프라 협상 참가자 표의 정당별 합계가 비어 있습니다.",
+            "en": "The party totals in the infrastructure negotiating roster are blank."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "민주당 열에는 오늘 명단에 있는 사람만 넣으세요.",
+            "en": "Count only those on today's list in the Democratic column."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공화당 열도 같은 기준으로 세어야 합니다. 전체 상원 찬성표와는 다른 표입니다.",
+            "en": "Apply the same rule to the Republican column; this is not the full Senate vote tally."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "맨친과 롬니가 참여한 초기 그룹은 {{blank}}이었습니다.",
+          "en": "The initial group including Manchin and Romney consisted of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당 8명과 공화당 2명",
+              "en": "eight Democrats and two Republicans"
+            },
+            {
+              "id": "B",
+              "ko": "양당 각각 5명",
+              "en": "five senators from each party"
+            },
+            {
+              "id": "C",
+              "ko": "민주당 6명과 공화당 4명",
+              "en": "six Democrats and four Republicans"
+            },
+            {
+              "id": "D",
+              "ko": "공화당 의원 10명",
+              "en": "ten Republicans"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "양당 다섯 명씩인 초기 10인 명단을 기준 자료로 고정하세요. 추가 지지자는 나중에 별도 버전으로 기록합니다.",
+              "en": "Freeze the initial ten-person roster, five from each party, as the baseline. Later supporters belong in a separate version."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "오늘 구성은 민주당 5명, 공화당 5명입니다. 정당별 숫자를 다시 맞춘 뒤 합계가 10인지 확인하세요.",
+              "en": "Today's composition is five Democrats and five Republicans. Reconcile the party totals and confirm that they sum to ten."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2021-06-10",
+          "learningTarget": "The June 10, 2021 infrastructure negotiating group had five senators from each party.",
+          "cast": [
+            {
+              "id": "M001183",
+              "name": "Joe Manchin",
+              "ko": "조 맨친",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M001183"
+            },
+            {
+              "id": "R000615",
+              "name": "Mitt Romney",
+              "ko": "밋 롬니",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/R000615"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.collins.senate.gov/newsroom/senators%E2%80%99-statement-infrastructure",
+              "claim": "The June 10, 2021 infrastructure negotiating group had five senators from each party.",
+              "asOf": "2021-06-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M001183",
+              "claim": "Congressional biography: Joe Manchin",
+              "asOf": "2021-06-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/R000615",
+              "claim": "Congressional biography: Mitt Romney",
+              "asOf": "2021-06-10"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-413-coalition-balance"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-414",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Expanded roster is a distinct temporal lesson, but 'calculate' supplies no counts and second speaker agrees. Keep negotiation vs support separate.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "6월 10일 표에 새 지지자 명단을 덧붙이려 합니다. 원래 표를 덮어쓸까요?",
+            "en": "I have a new supporter list to attach to the June 10 roster. Should I overwrite it?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "기존 협상 명단과 새 지지 명단을 서로 다른 버전으로 남기세요.",
+            "en": "Keep the original negotiating roster and new support roster as distinct versions."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "확대된 명단 전체의 규모를 표지에 표시하되 본회의 찬성자 수로 부르지는 마세요.",
+            "en": "Label the total size of the expanded roster without calling it a floor-vote count."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "쿤스와 모런을 포함한 6월 16일 그룹은 {{blank}}입니다.",
+          "en": "The June 16 group including Coons and Moran numbered {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "10명",
+              "en": "10 senators"
+            },
+            {
+              "id": "B",
+              "ko": "16명",
+              "en": "16 senators"
+            },
+            {
+              "id": "C",
+              "ko": "22명",
+              "en": "22 senators"
+            },
+            {
+              "id": "D",
+              "ko": "20명",
+              "en": "20 senators"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "20명 버전을 10명 원본 뒤에 저장하세요. 다음 본회의 표결은 세 번째 기록이 됩니다.",
+              "en": "Save the twenty-person version after the ten-person original. A later floor vote will be a third record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "6월 16일 확대 명단은 20명입니다. 초기 10명 표를 지우지 말고 확대 버전의 숫자만 고치세요.",
+              "en": "The expanded June 16 group numbered twenty. Keep the original ten-person roster and correct only the expanded version."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2021-06-16",
+          "learningTarget": "On June 16, 2021, the original group expanded to twenty, including Coons and Moran.",
+          "cast": [
+            {
+              "id": "C001088",
+              "name": "Chris Coons",
+              "ko": "크리스 쿤스",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001088"
+            },
+            {
+              "id": "M000934",
+              "name": "Jerry Moran",
+              "ko": "제리 모런",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M000934"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.collins.senate.gov/newsroom/senator-collins-announces-10-additional-senators-support-bipartisan-infrastructure-package",
+              "claim": "On June 16, 2021, the original group expanded to twenty, including Coons and Moran.",
+              "asOf": "2021-06-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001088",
+              "claim": "Congressional biography: Chris Coons",
+              "asOf": "2021-06-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M000934",
+              "claim": "Congressional biography: Jerry Moran",
+              "asOf": "2021-06-16"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-414-network-growth"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-415",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Plausible numeric distractors and explicit negotiation/vote distinction; branches repeat same fact. Need different action rather than a second archive command.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "공개 브리핑에 협상 그룹 인원과 본회의 표결 숫자가 섞여 들어갔습니다.",
+            "en": "The public briefing has mixed the negotiation-group size with the floor-vote totals."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "협상자 명단은 역할을 보여 주는 자료로 남겨 주세요.",
+            "en": "Retain the negotiator roster as a record of roles."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "통과 결과에는 오늘의 상원 찬반 집계를 사용해야 합니다. 어느 숫자를 발표할까요?",
+            "en": "Use today's Senate yeas and nays for the passage result. Which tally should be published?"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "섀힌과 캐시디가 환영한 통과 표결은 {{blank}}입니다.",
+          "en": "The passage vote welcomed by Shaheen and Cassidy was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "69 대 30",
+              "en": "69–30"
+            },
+            {
+              "id": "B",
+              "ko": "68 대 32",
+              "en": "68–32"
+            },
+            {
+              "id": "C",
+              "ko": "85 대 12",
+              "en": "85–12"
+            },
+            {
+              "id": "D",
+              "ko": "60 대 39",
+              "en": "60–39"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "69대 30을 표결 칸에 넣고 협상 그룹 자료는 별도 첨부하세요.",
+              "en": "Enter 69–30 under the vote and attach the negotiating roster separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "오늘 상원 통과 표결은 69대 30입니다. 잘못된 숫자로 만든 발표 초안을 보류하고 표결 집계를 다시 확인하세요.",
+              "en": "Today's Senate passage vote was 69–30. Hold the draft with the wrong tally and recheck the floor-vote record."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2021-08-10",
+          "learningTarget": "Shaheen and Cassidy, lead negotiators, welcomed the August 10, 2021 Senate passage by 69–30.",
+          "cast": [
+            {
+              "id": "S001181",
+              "name": "Jeanne Shaheen",
+              "ko": "진 섀힌",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/S001181"
+            },
+            {
+              "id": "C001075",
+              "name": "Bill Cassidy",
+              "ko": "빌 캐시디",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001075"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.collins.senate.gov/newsroom/senator-collins-other-lead-negotiators-historic-infrastructure-package-release-joint",
+              "claim": "Shaheen and Cassidy, lead negotiators, welcomed the August 10, 2021 Senate passage by 69–30.",
+              "asOf": "2021-08-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/S001181",
+              "claim": "Congressional biography: Jeanne Shaheen",
+              "asOf": "2021-08-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001075",
+              "claim": "Congressional biography: Bill Cassidy",
+              "asOf": "2021-08-10"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-415-rollcall-result"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-416",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 10,
+      "finding": "Constituent export delay gives a better purpose and appointment reward. Two speakers could independently route transport and commerce work; committee options mostly plausible.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "수출업자가 선박 운송 지연을 어디에 문의해야 하는지 묻습니다.",
+            "en": "An exporter asks where to take a question about shipping delays."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "해상 운송 문제와 수출 거래 문제를 같은 의회 연락 경로로 검토할 수 있는지 보세요.",
+            "en": "Check whether shipping and export concerns can be reviewed through the same congressional channel."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "상원 위원회 명부에서 두 의원의 공통 소속을 찾으면 브리핑 연락처를 정할 수 있습니다.",
+            "en": "Find the committee shared by both senators to identify the briefing contact."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "튠과 클로버샤의 공동 기반은 {{blank}}입니다.",
+          "en": "Thune and Klobuchar share membership on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "외교위원회",
+              "en": "Foreign Relations"
+            },
+            {
+              "id": "B",
+              "ko": "농업·영양·산림위원회",
+              "en": "Agriculture, Nutrition and Forestry"
+            },
+            {
+              "id": "C",
+              "ko": "상무·과학·교통위원회",
+              "en": "Commerce, Science and Transportation"
+            },
+            {
+              "id": "D",
+              "ko": "군사위원회",
+              "en": "Armed Services"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "상무·과학·교통위원회로 가상 브리핑 요청을 전달하세요. 해상운송 개혁안 자료도 첨부하면 됩니다.",
+              "en": "Route the simulated briefing request to Commerce, Science and Transportation and attach the Ocean Shipping Reform Act file."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "공통 소속은 상무·과학·교통위원회입니다. 잘못 작성한 연락 요청을 보류하고 위원회 명부부터 확인하세요.",
+              "en": "Their shared committee is Commerce, Science and Transportation. Hold the misrouted request and check the committee roster first."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-02-04",
+          "learningTarget": "Thune and Klobuchar, Commerce Committee members, introduced the Ocean Shipping Reform Act in February 2022.",
+          "cast": [
+            {
+              "id": "T000250",
+              "name": "John Thune",
+              "ko": "존 튠",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/T000250"
+            },
+            {
+              "id": "K000367",
+              "name": "Amy Klobuchar",
+              "ko": "에이미 클로버샤",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/K000367"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.thune.senate.gov/news/press-releases/thune-klobuchar-introduce-bipartisan-legislation-to-ease-export-shipping-backlogs-boost-u-s-exports/",
+              "claim": "Thune and Klobuchar, Commerce Committee members, introduced the Ocean Shipping Reform Act in February 2022.",
+              "asOf": "2022-02-04"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/T000250",
+              "claim": "Congressional biography: John Thune",
+              "asOf": "2022-02-04"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/K000367",
+              "claim": "Congressional biography: Amy Klobuchar",
+              "asOf": "2022-02-04"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-416-committee-network"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-417",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Shipping concern gives away sole shipping option; same archive task. A February roster recall in June can distinguish sponsorship from later developments.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "6월의 운송 관련 자료에 2월 공동 발의 이력을 붙이고 싶습니다.",
+            "en": "I want to attach February sponsorship history to the June transport file."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "생산자 의견서에 나온 정책명과 공식 발의 기록의 제목이 일치하는지 확인하세요.",
+            "en": "Check whether the title in the producers' file matches the formal introduction record."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2월에 두 의원이 참여한 법안만 선행 기록으로 연결해 주세요.",
+            "en": "Link only the bill in which both senators participated in February."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "호번과 볼드윈은 {{blank}}에 참여했습니다.",
+          "en": "Hoeven and Baldwin participated in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "CHIPS for America Act",
+              "en": "CHIPS for America Act"
+            },
+            {
+              "id": "B",
+              "ko": "Ocean Shipping Reform Act",
+              "en": "Ocean Shipping Reform Act"
+            },
+            {
+              "id": "C",
+              "ko": "Infrastructure Investment and Jobs Act",
+              "en": "Infrastructure Investment and Jobs Act"
+            },
+            {
+              "id": "D",
+              "ko": "Ocean Shipping Antitrust Enforcement Act",
+              "en": "Ocean Shipping Antitrust Enforcement Act"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "Ocean Shipping Reform Act의 2월 발의 기록을 6월 자료에 첨부하세요.",
+              "en": "Attach the February Ocean Shipping Reform Act introduction to the June file."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "해당 공동 발의는 Ocean Shipping Reform Act입니다. 공급망 분야라는 공통점만으로 다른 법안을 연결하지 마세요.",
+              "en": "The relevant introduction was the Ocean Shipping Reform Act. Do not link another bill simply because it also concerns supply chains."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-06-16",
+          "learningTarget": "Hoeven and Baldwin joined the February 2022 Ocean Shipping Reform Act introduction.",
+          "cast": [
+            {
+              "id": "H001061",
+              "name": "John Hoeven",
+              "ko": "존 호번",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/H001061"
+            },
+            {
+              "id": "B001230",
+              "name": "Tammy Baldwin",
+              "ko": "태미 볼드윈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001230"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.hoeven.senate.gov/newsroom/press-releases/hoeven-helps-introduce-legislation-to-ease-export-shipping-backlogs-boost-us-exports",
+              "claim": "Hoeven and Baldwin joined the February 2022 Ocean Shipping Reform Act introduction.",
+              "asOf": "2022-06-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/H001061",
+              "claim": "Congressional biography: John Hoeven",
+              "asOf": "2022-06-16"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001230",
+              "claim": "Congressional biography: Tammy Baldwin",
+              "asOf": "2022-06-16"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-417-export-coalition"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-418",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 8,
+      "finding": "Missing names task has plausible alternative bipartisan pairs but no distinct NPC duties; names must be attributed to documented announcement, not private bargaining.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "공개 발표 자료에 발표자 네 명을 넣어야 하는데 초안에는 두 명만 있습니다.",
+            "en": "The public announcement needs four names, but the draft contains only two."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다른 법안의 초당적 명단을 복사해 넣지는 마세요.",
+            "en": "Do not copy a bipartisan roster from a different bill."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공개 발표문에 함께 이름을 올린 나머지 두 의원을 확인한 뒤 자막을 완성해 주세요.",
+            "en": "Check the other two senators named in the public announcement before completing the caption."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "머피와 코닌 외 발표자는 {{blank}}입니다.",
+          "en": "The other announcers alongside Murphy and Cornyn are {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "볼드윈과 콜린스",
+              "en": "Baldwin and Collins"
+            },
+            {
+              "id": "B",
+              "ko": "워너와 포트먼",
+              "en": "Warner and Portman"
+            },
+            {
+              "id": "C",
+              "ko": "머리와 알렉산더",
+              "en": "Murray and Alexander"
+            },
+            {
+              "id": "D",
+              "ko": "시네마와 틸리스",
+              "en": "Sinema and Tillis"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "시네마와 틸리스를 추가해 네 사람의 발표 명단을 완성하세요. 발표자와 전체 찬성자는 따로 표시합니다.",
+              "en": "Add Sinema and Tillis to complete the four-person announcement roster; distinguish announcers from all supporters."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "빠진 사람은 시네마와 틸리스입니다. 다른 협상팀의 이름을 지우고 공개 발표 자료에 맞춰 자막을 수정하세요.",
+              "en": "The missing senators are Sinema and Tillis. Remove names from the other negotiating team and correct the caption against the public release."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-06-21",
+          "learningTarget": "Murphy, Cornyn, Sinema and Tillis announced the Bipartisan Safer Communities Act on June 21, 2022.",
+          "cast": [
+            {
+              "id": "M001169",
+              "name": "Chris Murphy",
+              "ko": "크리스 머피",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M001169"
+            },
+            {
+              "id": "C001056",
+              "name": "John Cornyn",
+              "ko": "존 코닌",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001056"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.murphy.senate.gov/newsroom/press-releases/bipartisan-group-of-senators-announce-bipartisan-safer-communities-act",
+              "claim": "Murphy, Cornyn, Sinema and Tillis announced the Bipartisan Safer Communities Act on June 21, 2022.",
+              "asOf": "2022-06-21"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M001169",
+              "claim": "Congressional biography: Chris Murphy",
+              "asOf": "2022-06-21"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001056",
+              "claim": "Congressional biography: John Cornyn",
+              "asOf": "2022-06-21"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-418-negotiating-team"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-419",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Republican names are plausible but same-party prompt plus two generic statements. Distinguish initial announcer from later supporters.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "7월 18일 발표문에 의원 세 사람의 이름을 정확히 넣어야 합니다.",
+            "en": "The July 18 announcement needs an accurate three-senator byline."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "나중에 표결에 찬성할 사람과 오늘 발표 명단에 있는 사람은 같은 범주가 아닙니다.",
+            "en": "Later yes voters and today's named announcers are different categories."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공개 발표문을 기준으로 빈 세 번째 이름을 채워 주세요.",
+            "en": "Fill the third name from the public announcement."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "볼드윈과 파인스타인과 함께 발표한 의원은 {{blank}}입니다.",
+          "en": "The senator announcing the proposal with Baldwin and Feinstein was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "수전 콜린스",
+              "en": "Susan Collins"
+            },
+            {
+              "id": "B",
+              "ko": "리사 머카우스키",
+              "en": "Lisa Murkowski"
+            },
+            {
+              "id": "C",
+              "ko": "조니 언스트",
+              "en": "Joni Ernst"
+            },
+            {
+              "id": "D",
+              "ko": "셸리 무어 캐피토",
+              "en": "Shelley Moore Capito"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "수전 콜린스를 발표 명단에 추가하세요. 추후 수정안 참여 명단은 별도 문서로 남겨야 합니다.",
+              "en": "Add Susan Collins to the announcement roster. Keep any later amendment participants in a separate document."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오늘 발표에 함께한 사람은 콜린스입니다. 다른 의원의 지지 여부를 추정하지 말고 발표 명단만 고치세요.",
+              "en": "Collins joined today's announcement. Correct the byline without inferring any other senator's support."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-07-18",
+          "learningTarget": "Baldwin, Feinstein and Collins announced the Respect for Marriage Act on July 18, 2022.",
+          "cast": [
+            {
+              "id": "B001230",
+              "name": "Tammy Baldwin",
+              "ko": "태미 볼드윈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001230"
+            },
+            {
+              "id": "F000062",
+              "name": "Dianne Feinstein",
+              "ko": "다이앤 파인스타인",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/F000062"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.baldwin.senate.gov/news/press-releases/senators-baldwin-feinstein-collins-introduce-bipartisan-respect-for-marriage-act",
+              "claim": "Baldwin, Feinstein and Collins announced the Respect for Marriage Act on July 18, 2022.",
+              "asOf": "2022-07-18"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001230",
+              "claim": "Congressional biography: Tammy Baldwin",
+              "asOf": "2022-07-18"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/F000062",
+              "claim": "Congressional biography: Dianne Feinstein",
+              "asOf": "2022-07-18"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-419-original-announcement"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-420",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 8,
+      "finding": "Competing federal election statutes are reasonable; state vs federal distinction creates learning value, but agreement and file-only task remain.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "주 대표단의 공동 선거법 브리핑을 의회 절차 자료와 유권자 등록 자료 중 어디에 연결할지 고민입니다.",
+            "en": "I'm deciding whether the delegation's joint election-law briefing belongs with congressional procedure or voter registration."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "투표를 하는 단계와 의회가 결과를 처리하는 단계는 나눠 보세요.",
+            "en": "Separate the act of voting from Congress's handling of the results."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이번 7월 제안이 손보려는 기존 연방법의 이름으로 분류를 정해 주세요.",
+            "en": "Classify this July proposal by the existing federal statute it seeks to revise."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "캐피토와 맨친의 협력은 {{blank}} 개혁입니다.",
+          "en": "Capito and Manchin cooperated on reform of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1965년 투표권법",
+              "en": "Voting Rights Act of 1965"
+            },
+            {
+              "id": "B",
+              "ko": "1971년 연방선거운동법",
+              "en": "Federal Election Campaign Act of 1971"
+            },
+            {
+              "id": "C",
+              "ko": "1887년 선거인단 집계법",
+              "en": "Electoral Count Act of 1887"
+            },
+            {
+              "id": "D",
+              "ko": "1993년 유권자등록법",
+              "en": "National Voter Registration Act of 1993"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1887년 선거인단 집계법 개혁으로 연결하세요. 주 대표단의 공동 발표 자료는 의회 절차에 첨부합니다.",
+              "en": "Link it to reform of the 1887 Electoral Count Act and attach the delegation announcement to congressional procedure."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "개혁 대상은 1887년 선거인단 집계법입니다. 등록법이나 선거운동법 자료에 잘못 보낸 브리핑을 돌려받으세요.",
+              "en": "The target is the Electoral Count Act of 1887. Retrieve the briefing if it was routed to registration or campaign-finance materials."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-07-20",
+          "learningTarget": "Capito and Manchin participated in the July 2022 Electoral Count Act reform proposal.",
+          "cast": [
+            {
+              "id": "C001047",
+              "name": "Shelley Moore Capito",
+              "ko": "셸리 무어 캐피토",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/C001047"
+            },
+            {
+              "id": "M001183",
+              "name": "Joe Manchin",
+              "ko": "조 맨친",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M001183"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.capito.senate.gov/news/press-releases/capito-manchin-introduce-bipartisan-reforms-to-electoral-count-act-of-1887",
+              "claim": "Capito and Manchin participated in the July 2022 Electoral Count Act reform proposal.",
+              "asOf": "2022-07-20"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/C001047",
+              "claim": "Congressional biography: Shelley Moore Capito",
+              "asOf": "2022-07-20"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M001183",
+              "claim": "Congressional biography: Joe Manchin",
+              "asOf": "2022-07-20"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-420-state-delegation-alliance"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-421",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "The amendment's scope is only non-absurd answer; original bill versus negotiated protection is useful, but NPCs simply agree.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "원안 설명문에 상원 수정안의 추가 내용을 별도 단락으로 넣으려 합니다.",
+            "en": "I need a separate paragraph in the original bill guide for the Senate amendment."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "혼인 관련 원안 전체를 수정안 하나로 설명해서는 안 됩니다.",
+            "en": "Do not describe the entire marriage bill solely through one amendment."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "추가 보호가 어떤 법적 관심사를 다뤘는지 단락의 제목으로 정해 주세요.",
+            "en": "Give the paragraph a heading identifying the legal concern addressed by the additional protections."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "포트먼과 시네마가 참여한 수정안은 {{blank}}을 다뤘습니다.",
+          "en": "The amendment involving Portman and Sinema addressed {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주별 혼인 허가 수수료 통일",
+              "en": "uniform state marriage-license fees"
+            },
+            {
+              "id": "B",
+              "ko": "종교적 자유 보호",
+              "en": "religious liberty protections"
+            },
+            {
+              "id": "C",
+              "ko": "연방 혼인 신고 기한 변경",
+              "en": "changes to federal marriage-reporting deadlines"
+            },
+            {
+              "id": "D",
+              "ko": "혼인 관련 연방 소득세율 변경",
+              "en": "changes to federal income tax rates for marriage"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "종교적 자유 보호 항목을 원안 설명과 분리해 넣고 수정안 참여 기록에 연결하세요.",
+              "en": "Add religious liberty protections separately from the original bill summary and link the amendment participation record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "수정안의 초점은 종교적 자유 보호입니다. 원안 전체를 바꾸는 설명은 보류하고 추가 보호 단락만 다시 작성하세요.",
+              "en": "The amendment addressed religious liberty protections. Hold the broader rewrite and revise only the additional-protections paragraph."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-11-29",
+          "learningTarget": "Portman and Sinema worked with Baldwin, Collins and Tillis on religious liberty protections.",
+          "cast": [
+            {
+              "id": "P000449",
+              "name": "Rob Portman",
+              "ko": "롭 포트먼",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/P000449"
+            },
+            {
+              "id": "S001191",
+              "name": "Kyrsten Sinema",
+              "ko": "커스틴 시네마",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/S001191"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.collins.senate.gov/newsroom/senate-passes-baldwin-collins-marriage-equality-bill",
+              "claim": "Portman and Sinema worked with Baldwin, Collins and Tillis on religious liberty protections.",
+              "asOf": "2022-11-29"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/P000449",
+              "claim": "Congressional biography: Rob Portman",
+              "asOf": "2022-11-29"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/S001191",
+              "claim": "Congressional biography: Kyrsten Sinema",
+              "asOf": "2022-11-29"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-421-amendment-bargain"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-422",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Veterans group supplies purpose but other options mainly unrelated; signing vs negotiating distinction is not tested by response.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "보훈단체가 오늘 서명된 법률이 어떤 참전용사에게 관련되는지 안내문을 요청했습니다.",
+            "en": "A veterans organization requests a guide explaining whom today's signed law concerns."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "법률 서명일은 입법 연혁에 적고 의원들의 협력 기록은 따로 남기세요.",
+            "en": "Put the signature date in the legislative chronology and keep the senators' collaboration record separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "안내문 첫 줄에는 이번 법률의 의료·급여 대상이 누구인지 들어가야 합니다.",
+            "en": "The first line of the guide needs to identify the group whose care and benefits are addressed."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "테스터와 모런은 {{blank}}을 위한 법안을 추진했습니다.",
+          "en": "Tester and Moran advanced legislation concerning {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해외 주둔 현역 군인의 투표 지원",
+              "en": "voting assistance for active-duty personnel overseas"
+            },
+            {
+              "id": "B",
+              "ko": "참전용사의 주택 대출만",
+              "en": "only veterans' home loans"
+            },
+            {
+              "id": "C",
+              "ko": "퇴역 군인의 대학 학비 지원만",
+              "en": "only college tuition assistance for veterans"
+            },
+            {
+              "id": "D",
+              "ko": "유해물질 노출 참전용사의 의료와 급여",
+              "en": "care and benefits for toxic-exposed veterans"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "유해물질 노출 참전용사의 의료와 급여 안내문으로 작성하고 PACT Act 서명 기록을 붙이세요.",
+              "en": "Prepare the guide for toxic-exposed veterans' care and benefits and attach the PACT Act signature record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "PACT Act의 대상은 유해물질에 노출된 참전용사의 의료와 급여입니다. 다른 보훈 프로그램 안내를 보내지 말고 대상 항목을 수정하세요.",
+              "en": "The PACT Act concerns care and benefits for toxic-exposed veterans. Correct the eligible-group description instead of sending guidance about another program."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-08-10",
+          "learningTarget": "Tester and Moran worked together on the PACT Act signed on August 10, 2022.",
+          "cast": [
+            {
+              "id": "T000464",
+              "name": "Jon Tester",
+              "ko": "존 테스터",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/T000464"
+            },
+            {
+              "id": "M000934",
+              "name": "Jerry Moran",
+              "ko": "제리 모런",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/M000934"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.moran.senate.gov/public/index.cfm/2022/8/signed-into-law-historic-bipartisan-legislation-providing-health-care-benefits-for-toxic-exposed-veterans",
+              "claim": "Tester and Moran worked together on the PACT Act signed on August 10, 2022.",
+              "asOf": "2022-08-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/T000464",
+              "claim": "Congressional biography: Jon Tester",
+              "asOf": "2022-08-10"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/M000934",
+              "claim": "Congressional biography: Jerry Moran",
+              "asOf": "2022-08-10"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-422-committee-partnership"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-423",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 8,
+      "finding": "Good specificity and a plausible 2001 AUMF foil; no concrete stakes beyond recording. Both branches repeat full learning target.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "상원 통과 소식을 전하는 설명문에 모든 군사력 사용 권한이 없어졌다고 쓰여 있습니다.",
+            "en": "A draft about Senate passage says that all authorizations for military force have disappeared."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "폐지 대상으로 삼은 권한과 폐지되지 않은 권한을 구분해야 합니다.",
+            "en": "Separate the authorizations targeted for repeal from those not targeted."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "상원 통과와 법률 성립도 다른 단계입니다. 우선 이번 법안의 대상부터 정확히 적으세요.",
+            "en": "Senate passage and enactment are also distinct. Start by specifying what this bill targets."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "영과 케인의 법안은 {{blank}}을 대상으로 합니다.",
+          "en": "Young and Kaine's bill targets {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1991년과 2002년 이라크 관련 AUMF",
+              "en": "the 1991 and 2002 Iraq-related AUMFs"
+            },
+            {
+              "id": "B",
+              "ko": "2001년 AUMF만",
+              "en": "only the 2001 AUMF"
+            },
+            {
+              "id": "C",
+              "ko": "1947년 국가안보법",
+              "en": "the National Security Act of 1947"
+            },
+            {
+              "id": "D",
+              "ko": "1973년 전쟁권한결의 전체",
+              "en": "the entire 1973 War Powers Resolution"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1991년과 2002년 이라크 관련 AUMF만 대상이라고 수정하고, 상태는 상원 통과로 남기세요.",
+              "en": "Correct the draft to name only the 1991 and 2002 Iraq-related AUMFs and leave the status as Senate passage."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "대상은 1991년과 2002년 AUMF입니다. 2001년 권한이나 전쟁권한결의 전체를 폐지했다고 한 문장을 회수하세요.",
+              "en": "The targets are the 1991 and 2002 AUMFs. Withdraw the sentence claiming repeal of the 2001 authority or the entire War Powers Resolution."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-03-29",
+          "learningTarget": "Young and Kaine's proposal to repeal the 1991 and 2002 AUMFs passed the Senate on March 29, 2023.",
+          "cast": [
+            {
+              "id": "Y000064",
+              "name": "Todd Young",
+              "ko": "토드 영",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/Y000064"
+            },
+            {
+              "id": "K000384",
+              "name": "Tim Kaine",
+              "ko": "팀 케인",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/K000384"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.kaine.senate.gov/press-releases/kaine-and-young-applaud-senate-passage-of-their-bill-to-repeal-1991_2002-aumfs-formally-end-gulf--iraq-wars",
+              "claim": "Young and Kaine's proposal to repeal the 1991 and 2002 AUMFs passed the Senate on March 29, 2023.",
+              "asOf": "2023-03-29"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/Y000064",
+              "claim": "Congressional biography: Todd Young",
+              "asOf": "2023-03-29"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/K000384",
+              "claim": "Congressional biography: Tim Kaine",
+              "asOf": "2023-03-29"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-423-authorization-followup"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-424",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Oversight explicitly stated before answer; other policy fields implausible. Differentiate oversight from funding response in later scene.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "보훈부 관련 감사 자료 뒤에 새 법안 발표를 첨부하려 합니다.",
+            "en": "I need to attach a new bill announcement to a VA audit file."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "감사에서 확인하는 기관 운영과 급여 지급 규모는 서로 다른 자료입니다.",
+            "en": "Agency operations and the amount spent on benefits are different categories of records."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이번 LEAD Act가 기관의 어떤 측면을 개선하려는 것인지 설명문에 표시해 주세요.",
+            "en": "Identify the aspect of agency performance the LEAD Act aims to improve."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "라운즈와 테스터의 LEAD Act는 {{blank}}을 강화하려 했습니다.",
+          "en": "Rounds and Tester's LEAD Act sought to strengthen {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "보훈 의료시설의 신규 건설만",
+              "en": "only construction of new VA medical facilities"
+            },
+            {
+              "id": "B",
+              "ko": "보훈 급여의 일괄 인상",
+              "en": "across-the-board increases in veterans' benefits"
+            },
+            {
+              "id": "C",
+              "ko": "보훈부의 감독과 책임성",
+              "en": "VA oversight and accountability"
+            },
+            {
+              "id": "D",
+              "ko": "군 복무 중 급여의 조정",
+              "en": "adjustment of active-duty military pay"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "감독과 책임성 자료로 분류하고 모런을 포함한 발의 기록에 감사 문서를 연결하세요.",
+              "en": "File it under oversight and accountability and attach the audit file to the introduction record that includes Moran."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "LEAD Act의 목적은 보훈부 감독과 책임성 개선입니다. 단순 급여 증액 항목에서 분리하여 기관 운영 자료에 넣으세요.",
+              "en": "The LEAD Act aims to improve VA oversight and accountability. Move it from benefit increases to agency operations."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-08-31",
+          "learningTarget": "Rounds joined Tester and Moran in introducing the 2023 LEAD Act to improve VA accountability.",
+          "cast": [
+            {
+              "id": "R000605",
+              "name": "Mike Rounds",
+              "ko": "마이크 라운즈",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/R000605"
+            },
+            {
+              "id": "T000464",
+              "name": "Jon Tester",
+              "ko": "존 테스터",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/T000464"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.veterans.senate.gov/2023/8/increasing-accountability-oversight-at-va-is-aim-of-bipartisan-tester-moran-rounds-bill",
+              "claim": "Rounds joined Tester and Moran in introducing the 2023 LEAD Act to improve VA accountability.",
+              "asOf": "2023-08-31"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/R000605",
+              "claim": "Congressional biography: Mike Rounds",
+              "asOf": "2023-08-31"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/T000464",
+              "claim": "Congressional biography: Jon Tester",
+              "asOf": "2023-08-31"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-424-oversight-evidence"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    },
+    {
+      "id": "P02-425",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Funding shortfall and existing benefits cue almost exact answer; other options absurd. Use budget status and entitlement distinction, not mere repetition.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "보훈 급여 지급에 관한 질문이 들어왔습니다. 예산 조치인지 자격 변경인지 안내문을 구분해야 합니다.",
+            "en": "A question about veterans' payments has arrived. The guide must distinguish a budget action from an eligibility change."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "이미 존재하는 급여의 지급 기록은 신규 자격의 법률 기록과 다른 칸에 놓으세요.",
+            "en": "Keep payment records for existing benefits separate from legislation creating new eligibility."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "7월 공동 제안이 어떤 종류의 의회 조치인지 확인해 주세요.",
+            "en": "Identify the type of congressional action in the July joint proposal."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "부즈먼과 브라운의 2024년 7월 제안은 {{blank}}입니다.",
+          "en": "Boozman and Brown's July 2024 proposal concerns {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "보훈 급여 신규 자격 창설",
+              "en": "creation of new eligibility for veterans' benefits"
+            },
+            {
+              "id": "B",
+              "ko": "보훈 급여 지급을 위한 추가 세출",
+              "en": "supplemental appropriations to protect veterans' benefits"
+            },
+            {
+              "id": "C",
+              "ko": "보훈부 조직의 감독 제도 개편",
+              "en": "reform of VA oversight arrangements"
+            },
+            {
+              "id": "D",
+              "ko": "군인 기본급의 정규 세출",
+              "en": "regular appropriations for military base pay"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "기존 보훈 급여 지급을 보호하는 추가 세출 제안으로 표시하세요. 제안이 성립했다는 표시는 하지 않습니다.",
+              "en": "Label it supplemental appropriations to protect existing veterans' payments; do not mark the proposal as enacted."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "추가 세출을 통해 보훈 급여 지급을 보호하려는 제안입니다. 신규 급여 자격을 만들었다는 잘못된 안내를 회수하세요.",
+              "en": "The proposal sought supplemental appropriations to protect veterans' payments. Withdraw the incorrect guide suggesting new benefit eligibility."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-07-31",
+          "learningTarget": "Boozman and Brown announced a supplemental veterans appropriations proposal in July 2024.",
+          "cast": [
+            {
+              "id": "B001236",
+              "name": "John Boozman",
+              "ko": "존 부즈먼",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B001236"
+            },
+            {
+              "id": "B000944",
+              "name": "Sherrod Brown",
+              "ko": "셰러드 브라운",
+              "portrait": null,
+              "source": "https://bioguide.congress.gov/search/bio/B000944"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.boozman.senate.gov/public/index.cfm/2024/7/boozman-brown-colleagues-introduce-bill-to-protect-and-fully-fund-veterans-care-earned-benefits",
+              "claim": "Boozman and Brown announced a supplemental veterans appropriations proposal in July 2024.",
+              "asOf": "2024-07-31"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B001236",
+              "claim": "Congressional biography: John Boozman",
+              "asOf": "2024-07-31"
+            },
+            {
+              "url": "https://bioguide.congress.gov/search/bio/B000944",
+              "claim": "Congressional biography: Sherrod Brown",
+              "asOf": "2024-07-31"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-425-budget-shortfall-response"
+          }
+        },
+        "implementationNote": "Proposed dialogue only. Retain original context/venue and historical factual debrief from source; no new claims of actual meetings. Continuity references are optional design intent, not implemented triggers."
+      }
+    }
+  ]
+}

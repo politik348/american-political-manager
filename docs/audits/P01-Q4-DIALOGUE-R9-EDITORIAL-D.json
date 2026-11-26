@@ -1,0 +1,3531 @@
+{
+  "schema": "q4-r9-editorial-v1",
+  "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+  "rows": [
+    {
+      "id": "P01-1198",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
+              "en": "I came from Scotland in 1881."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "클리블랜드의 지역사회 자료에 이민 경력을 추가하세요.",
+              "en": "Add the immigration background to the community records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
+              "en": "I came from Scotland in 1881."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
+                "en": "I came from Scotland in 1881."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "클리블랜드의 지역사회 자료에 이민 경력을 추가하세요.",
+                "en": "Add the immigration background to the community records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
+                "en": "I came from Scotland in 1881."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "스코틀랜드에서 이주한 뒤 클리블랜드에서 법률 일을 하게 된 경로를 이민자 가족들과 이야기하겠습니다.",
+                "en": "I'll discuss my journey from Scotland to practicing law in Cleveland with immigrant families."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1881년에 스코틀랜드에서 왔습니다. 다른 나라의 이민 사례로 배정한 소개 순서를 바꿔 주세요.",
+                "en": "I came from Scotland in 1881. Change the program that assigned me to another country's immigration story."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1198",
+        "mechanism": "immigrant-local-root",
+        "learningTarget": "Crosser immigrated from Scotland in 1881 and later practiced law in Cleveland.",
+        "date": "1913-04-12",
+        "venue": {
+          "ko": "클리블랜드 이민자 주민 환영회",
+          "en": "Cleveland immigrant reception"
+        },
+        "context": {
+          "ko": "클리블랜드 이민자 주민 환영회",
+          "en": "Cleveland immigrant reception"
+        },
+        "cast": [
+          {
+            "id": "C000932",
+            "name": "Robert Crosser",
+            "ko": "로버트 크로서",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11620"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저도 어린 시절 가족과 함께 이주했습니다.",
+            "en": "I immigrated with my family as a child."
+          },
+          {
+            "speaker": "host",
+            "ko": "의원의 이민 배경을 지역 주민에게 소개하죠.",
+            "en": "Introduce the member's immigration background to residents."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "크로서는 {{blank}}에서 이주했습니다.",
+          "en": "Crosser immigrated from {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "독일",
+              "en": "Germany"
+            },
+            {
+              "id": "B",
+              "ko": "이탈리아",
+              "en": "Italy"
+            },
+            {
+              "id": "C",
+              "ko": "스코틀랜드",
+              "en": "Scotland"
+            },
+            {
+              "id": "D",
+              "ko": "프랑스",
+              "en": "France"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11620",
+            "claim": "Crosser immigrated from Scotland in 1881 and later practiced law in Cleveland.",
+            "asOf": "1913-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1198-immigrant-local-root"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1203",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "엘크혼에서 발간한 The Forgotten Man's Handbook입니다.",
+              "en": "It is The Forgotten Man's Handbook, published in Elkhorn."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 자료실의 열람 목록에 추가하세요.",
+              "en": "Add it to the local reading list."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "엘크혼에서 발간한 The Forgotten Man's Handbook입니다.",
+              "en": "It is The Forgotten Man's Handbook, published in Elkhorn."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘크혼에서 발간한 The Forgotten Man's Handbook입니다.",
+                "en": "It is The Forgotten Man's Handbook, published in Elkhorn."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 자료실의 열람 목록에 추가하세요.",
+                "en": "Add it to the local reading list."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘크혼에서 발간한 The Forgotten Man's Handbook입니다.",
+                "en": "It is The Forgotten Man's Handbook, published in Elkhorn."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 책을 열람대에 놓고 주민들의 경제위기 경험을 토론합시다.",
+                "en": "Let's put that book on the reading table and discuss residents' experiences of the Depression."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1936년 엘크혼에서 발간한 The Forgotten Man's Handbook입니다. 다른 책을 꺼냈다면 돌려놓으세요.",
+                "en": "It is The Forgotten Man's Handbook, published in Elkhorn in 1936. Return any different book you selected."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1203",
+        "mechanism": "printed-program",
+        "learningTarget": "Amlie published The Forgotten Man's Handbook in Elkhorn in 1936.",
+        "date": "1936-09-12",
+        "venue": {
+          "ko": "엘크혼 주민 자료실",
+          "en": "Elkhorn community reading room"
+        },
+        "context": {
+          "ko": "엘크혼 주민 자료실",
+          "en": "Elkhorn community reading room"
+        },
+        "cast": [
+          {
+            "id": "A000176",
+            "name": "Thomas Ryum Amlie",
+            "ko": "토머스 앰리",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8502"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "경제위기 속 주민의 관심사를 담은 올해 책을 지역 자료실에 비치하려 합니다.",
+            "en": "I want to place this year's book on constituents' Depression-era concerns in the reading room."
+          },
+          {
+            "speaker": "host",
+            "ko": "표지의 제목을 목록에 입력해 주세요.",
+            "en": "Enter its title in the catalog."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1936년 앰리의 책은 {{blank}}입니다.",
+          "en": "Amlie's 1936 book is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "The New Freedom",
+              "en": "The New Freedom"
+            },
+            {
+              "id": "B",
+              "ko": "The Federalist",
+              "en": "The Federalist"
+            },
+            {
+              "id": "C",
+              "ko": "Democracy in America",
+              "en": "Democracy in America"
+            },
+            {
+              "id": "D",
+              "ko": "The Forgotten Man's Handbook",
+              "en": "The Forgotten Man's Handbook"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8502",
+            "claim": "Amlie published The Forgotten Man's Handbook in Elkhorn in 1936.",
+            "asOf": "1936-09-12"
+          },
+          {
+            "url": "https://constitutioncenter.org/the-constitution/historic-document-library/detail/woodrow-wilson-the-new-freedom-1913",
+            "claim": "Woodrow Wilson's The New Freedom dates to 1913, making it a period-appropriate incorrect option.",
+            "asOf": "1936-09-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1203-printed-program"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1204",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "마라톤 카운티에서 일했습니다.",
+              "en": "I worked in Marathon County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지방 사법 문의와 연방 민원을 구분하세요.",
+              "en": "Separate local legal inquiries from federal constituent work."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "마라톤 카운티에서 일했습니다.",
+              "en": "I worked in Marathon County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "마라톤 카운티에서 일했습니다.",
+                "en": "I worked in Marathon County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지방 사법 문의와 연방 민원을 구분하세요.",
+                "en": "Separate local legal inquiries from federal constituent work."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마라톤 카운티에서 일했습니다.",
+                "en": "I worked in Marathon County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "마라톤 카운티 법조인들의 지방 사법 질문을 먼저 듣고 연방 입법 토론은 별도로 진행하죠.",
+                "en": "Let's hear the Marathon County lawyers' local justice questions first, then hold a separate federal legislation discussion."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마라톤 카운티 검사로 일했습니다. 다른 카운티 법조인들을 대상으로 만든 소개는 바꾸세요.",
+                "en": "I was district attorney in Marathon County. Revise the introduction prepared for lawyers from another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1204",
+        "mechanism": "local-justice-memory",
+        "learningTarget": "Boileau was Marathon County district attorney from 1926 to 1931.",
+        "date": "1931-04-12",
+        "venue": {
+          "ko": "마라톤 카운티 방문",
+          "en": "Marathon County visit"
+        },
+        "context": {
+          "ko": "마라톤 카운티 방문",
+          "en": "Marathon County visit"
+        },
+        "cast": [
+          {
+            "id": "B000598",
+            "name": "Gerald John Boileau",
+            "ko": "제럴드 볼로",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/B/BOILEAU,-Gerald-John-(B000598)/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 법조 동료가 새 연방 사무실까지 찾아왔군요.",
+            "en": "My county legal colleagues have come to the new federal office."
+          },
+          {
+            "speaker": "player",
+            "ko": "어떤 지역에서 함께 일했는지 기록하겠습니다.",
+            "en": "I'll record the county where you worked together."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "볼로가 1926~1931년 검사로 근무한 곳은 {{blank}} 카운티입니다.",
+          "en": "Boileau was district attorney of {{blank}} County in 1926–1931.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마라톤",
+              "en": "Marathon"
+            },
+            {
+              "id": "B",
+              "ko": "데인",
+              "en": "Dane"
+            },
+            {
+              "id": "C",
+              "ko": "밀워키",
+              "en": "Milwaukee"
+            },
+            {
+              "id": "D",
+              "ko": "오나이다",
+              "en": "Oneida"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/B/BOILEAU,-Gerald-John-(B000598)/",
+            "claim": "Boileau was Marathon County district attorney from 1926 to 1931.",
+            "asOf": "1931-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1204-local-justice-memory"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1206",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제74대 의회 노스다코타 공화당 동료입니다.",
+              "en": "We are Republican colleagues from North Dakota in the 74th Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 방문단에게 두 의원의 연락망을 안내하세요.",
+              "en": "Give the rural delegation both congressional contacts."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제74대 의회 노스다코타 공화당 동료입니다.",
+              "en": "We are Republican colleagues from North Dakota in the 74th Congress."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제74대 의회 노스다코타 공화당 동료입니다.",
+                "en": "We are Republican colleagues from North Dakota in the 74th Congress."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농촌 방문단에게 두 의원의 연락망을 안내하세요.",
+                "en": "Give the rural delegation both congressional contacts."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제74대 의회 노스다코타 공화당 동료입니다.",
+                "en": "We are Republican colleagues from North Dakota in the 74th Congress."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공화당 소속이라는 공통점이 있지만 농촌 방문단의 질문에는 각자 답하겠습니다.",
+                "en": "We share Republican affiliation, but we'll each answer the rural delegation's questions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제74대 의회에서 두 사람은 노스다코타 공화당 의원입니다. 잘못된 정당 표지를 떼고 다시 소개해 주세요.",
+                "en": "We are North Dakota Republicans in the 74th Congress. Remove the incorrect party labels and introduce us again."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1206",
+        "mechanism": "plains-delegation",
+        "learningTarget": "Lemke and Burdick were Republicans serving North Dakota in the 74th Congress.",
+        "date": "1935-04-12",
+        "venue": {
+          "ko": "노스다코타 농촌 대표단",
+          "en": "North Dakota rural delegation"
+        },
+        "context": {
+          "ko": "노스다코타 농촌 대표단",
+          "en": "North Dakota rural delegation"
+        },
+        "cast": [
+          {
+            "id": "L000238",
+            "name": "William Lemke",
+            "ko": "윌리엄 렘키",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16888"
+          },
+          {
+            "id": "B001079",
+            "name": "Usher Lloyd Burdick",
+            "ko": "어셔 버딕",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10168"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "버딕 의원도 노스다코타에서 왔습니다.",
+            "en": "Burdick also comes from North Dakota."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이번 의회에서 두 사람 모두 같은 주의 주민을 대표합니다.",
+            "en": "We both represent residents of the same state in this Congress."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원이 속한 당시 정당은 {{blank}}입니다.",
+          "en": "The party of both members at this time is the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "Socialist Party"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "D",
+              "ko": "농민노동당",
+              "en": "Farmer-Labor Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16888",
+            "claim": "Lemke and Burdick were Republicans serving North Dakota in the 74th Congress.",
+            "asOf": "1935-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/10168",
+            "claim": "Lemke and Burdick were Republicans serving North Dakota in the 74th Congress.",
+            "asOf": "1935-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1206-plains-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1207",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "전국 비당파연맹입니다.",
+              "en": "It was the National Nonpartisan League."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농민 조직 자료를 지역대표 역사 기록에 추가하세요.",
+              "en": "Add those farm organization records to the district history."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "전국 비당파연맹입니다.",
+              "en": "It was the National Nonpartisan League."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹입니다.",
+                "en": "It was the National Nonpartisan League."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농민 조직 자료를 지역대표 역사 기록에 추가하세요.",
+                "en": "Add those farm organization records to the district history."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹입니다.",
+                "en": "It was the National Nonpartisan League."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "비당파연맹에서 활동했던 경험과 현재 연방 의원의 역할을 비교하는 토론을 시작하죠.",
+                "en": "Let's begin a discussion comparing my Nonpartisan League experience with my current congressional role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹의 집행위원으로 활동했습니다. 다른 단체의 자료와 혼합한 전시를 분리해 주세요.",
+                "en": "I served on the National Nonpartisan League's executive committee. Separate the exhibit materials mixed with another organization's records."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1207",
+        "mechanism": "agrarian-network",
+        "learningTarget": "Lemke served on the National Nonpartisan League's national executive committee in 1917–1921.",
+        "date": "1933-04-12",
+        "venue": {
+          "ko": "노스다코타 농민 조직 기록",
+          "en": "North Dakota farm organization records"
+        },
+        "context": {
+          "ko": "노스다코타 농민 조직 기록",
+          "en": "North Dakota farm organization records"
+        },
+        "cast": [
+          {
+            "id": "L000238",
+            "name": "William Lemke",
+            "ko": "윌리엄 렘키",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16888"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농촌 주민들이 과거 함께 활동한 조직의 자료를 가져왔습니다.",
+            "en": "Rural visitors have brought records of an organization I once served."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 전국 조직의 이름을 확인하겠습니다.",
+            "en": "I'll identify that national organization."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1917~1921년 렘키가 집행위원으로 활동한 조직은 {{blank}}입니다.",
+          "en": "Lemke served on the executive committee of the {{blank}} in 1917–1921.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "전국 제조업협회",
+              "en": "National Association of Manufacturers"
+            },
+            {
+              "id": "B",
+              "ko": "전국 여성당",
+              "en": "National Woman's Party"
+            },
+            {
+              "id": "C",
+              "ko": "전국 도시연맹",
+              "en": "National Urban League"
+            },
+            {
+              "id": "D",
+              "ko": "전국 비당파연맹",
+              "en": "National Nonpartisan League"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16888",
+            "claim": "Lemke served on the National Nonpartisan League's national executive committee in 1917–1921.",
+            "asOf": "1933-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1207-agrarian-network"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1210",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "가축 사육과 농업에 종사했습니다.",
+              "en": "I engaged in livestock breeding and farming."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 방문단의 생계 자료를 지역 경제철에 넣으세요.",
+              "en": "Add the rural delegation's livelihood papers to the economic file."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "가축 사육과 농업에 종사했습니다.",
+              "en": "I engaged in livestock breeding and farming."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "가축 사육과 농업에 종사했습니다.",
+                "en": "I engaged in livestock breeding and farming."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농촌 방문단의 생계 자료를 지역 경제철에 넣으세요.",
+                "en": "Add the rural delegation's livelihood papers to the economic file."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "가축 사육과 농업에 종사했습니다.",
+                "en": "I engaged in livestock breeding and farming."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "가축 사육 경험을 바탕으로 농가의 생계 문제부터 듣겠습니다.",
+                "en": "I'll begin by hearing farm livelihood concerns, drawing on my livestock-breeding experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "가축 사육과 농업에 종사했습니다. 다른 작물이나 어업 경험을 전제로 한 질문은 빼 주세요.",
+                "en": "I engaged in livestock breeding and farming. Remove questions premised on other crops or fisheries."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1210",
+        "mechanism": "agriculture-background",
+        "learningTarget": "Burdick combined law practice with livestock breeding and farming.",
+        "date": "1935-05-12",
+        "venue": {
+          "ko": "윌리스턴 농가 접견",
+          "en": "Williston farm gathering"
+        },
+        "context": {
+          "ko": "윌리스턴 농가 접견",
+          "en": "Williston farm gathering"
+        },
+        "cast": [
+          {
+            "id": "B001079",
+            "name": "Usher Lloyd Burdick",
+            "ko": "어셔 버딕",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10168"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "법률 업무뿐 아니라 농가의 생업도 경험해 왔습니다.",
+            "en": "My background includes rural livelihoods as well as law."
+          },
+          {
+            "speaker": "host",
+            "ko": "주민들에게 의원의 실제 농업 경력을 소개해 주세요.",
+            "en": "Explain the member's agricultural background to residents."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "버딕이 종사한 농업은 {{blank}}을 포함했습니다.",
+          "en": "Burdick's agricultural work included {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "감귤 재배",
+              "en": "citrus growing"
+            },
+            {
+              "id": "B",
+              "ko": "사탕수수 제당",
+              "en": "sugarcane refining"
+            },
+            {
+              "id": "C",
+              "ko": "가축 사육",
+              "en": "livestock breeding"
+            },
+            {
+              "id": "D",
+              "ko": "해양 어업",
+              "en": "marine fisheries"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/10168",
+            "claim": "Burdick combined law practice with livestock breeding and farming.",
+            "asOf": "1935-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1210-agriculture-background"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1214",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "샌안토니오 시장이 되었습니다.",
+              "en": "I became mayor of San Antonio."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "시정 관련 자료를 현 사무실로 안내하세요.",
+              "en": "Route municipal documents to the current office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "샌안토니오 시장이 되었습니다.",
+              "en": "I became mayor of San Antonio."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "샌안토니오 시장이 되었습니다.",
+                "en": "I became mayor of San Antonio."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "시정 관련 자료를 현 사무실로 안내하세요.",
+                "en": "Route municipal documents to the current office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "샌안토니오 시장이 되었습니다.",
+                "en": "I became mayor of San Antonio."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시장으로서 받을 시정 문의부터 처리합시다. 과거 연방 의원의 권한으로 답할 수는 없습니다.",
+                "en": "Let's first take municipal inquiries in my role as mayor. I cannot answer them with my former congressional authority."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1939년 샌안토니오 시장이 됐습니다. 다른 정부 기관에 보내려던 주민을 시청의 해당 절차로 안내해 주세요.",
+                "en": "I became mayor of San Antonio in 1939. Redirect the visitor from the wrong government institution to the appropriate city procedure."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1214",
+        "mechanism": "municipal-return",
+        "learningTarget": "After losing renomination in 1938, Maverick became San Antonio mayor in 1939.",
+        "date": "1940-04-12",
+        "venue": {
+          "ko": "샌안토니오 시청 재회",
+          "en": "San Antonio city hall reunion"
+        },
+        "context": {
+          "ko": "샌안토니오 시청 재회",
+          "en": "San Antonio city hall reunion"
+        },
+        "cast": [
+          {
+            "id": "M000263",
+            "name": "Fontaine Maury Maverick",
+            "ko": "모리 매버릭",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/17648"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "워싱턴에서 뵙던 분들을 이제 시청에서 만나는군요.",
+            "en": "I meet people from Washington now at city hall."
+          },
+          {
+            "speaker": "player",
+            "ko": "연방의원과 도시 행정의 권한은 구분하겠습니다.",
+            "en": "I'll distinguish congressional and municipal responsibilities."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1939년 매버릭이 맡은 직책은 샌안토니오 {{blank}}입니다.",
+          "en": "In 1939 Maverick became San Antonio's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "B",
+              "ko": "카운티 보안관",
+              "en": "county sheriff"
+            },
+            {
+              "id": "C",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "D",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/17648",
+            "claim": "After losing renomination in 1938, Maverick became San Antonio mayor in 1939.",
+            "asOf": "1940-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1214-municipal-return"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1218",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "originalBlobSha": "ef535fcef72650680e8578367163275b083c8909",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1910~1917년 철광석 광부로 일했습니다.",
+              "en": "I worked as an iron-ore miner in 1910–1917."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "광산 노동자 방문 자료를 지역 산업 기록에 연결하세요.",
+              "en": "Link the miners' briefing to regional industry records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1910~1917년 철광석 광부로 일했습니다.",
+              "en": "I worked as an iron-ore miner in 1910–1917."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1910~1917년 철광석 광부로 일했습니다.",
+                "en": "I worked as an iron-ore miner in 1910–1917."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "광산 노동자 방문 자료를 지역 산업 기록에 연결하세요.",
+                "en": "Link the miners' briefing to regional industry records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1910~1917년 철광석 광부로 일했습니다.",
+                "en": "I worked as an iron-ore miner in 1910–1917."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "철광석 광산에서 일했던 경험을 바탕으로 광산 노동자들의 질문부터 듣겠습니다.",
+                "en": "I'll hear the miners' questions first, drawing on my iron-ore mining experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1910~1917년 철광석 광부로 일했습니다. 다른 광종을 전제로 한 산업 간담회 질문을 다시 작성하세요.",
+                "en": "I worked as an iron-ore miner from 1910 to 1917. Rewrite the industry meeting questions premised on a different mineral."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1218",
+        "mechanism": "mining-constituency",
+        "learningTarget": "Bernard worked as an iron-ore miner in 1910–1917 before representing Minnesota.",
+        "date": "1937-04-12",
+        "venue": {
+          "ko": "아이언레인지 광산 노동자 모임",
+          "en": "Iron Range miners' meeting"
+        },
+        "context": {
+          "ko": "아이언레인지 광산 노동자 모임",
+          "en": "Iron Range miners' meeting"
+        },
+        "cast": [
+          {
+            "id": "B000411",
+            "name": "John Toussaint Bernard",
+            "ko": "존 버나드",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9310"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "광산에서 일하던 시절에 알던 주민들이군요.",
+            "en": "I know some of these visitors from my mining years."
+          },
+          {
+            "speaker": "player",
+            "ko": "어떤 광산 산업이었는지 정확히 설명하겠습니다.",
+            "en": "I'll identify the industry accurately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "버나드가 종사한 광업은 {{blank}} 채굴입니다.",
+          "en": "Bernard worked in {{blank}} mining.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "석유",
+              "en": "petroleum"
+            },
+            {
+              "id": "B",
+              "ko": "금",
+              "en": "gold"
+            },
+            {
+              "id": "C",
+              "ko": "철광석",
+              "en": "iron ore"
+            },
+            {
+              "id": "D",
+              "ko": "석탄",
+              "en": "coal"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9310",
+            "claim": "Bernard worked as an iron-ore miner in 1910–1917 before representing Minnesota.",
+            "asOf": "1937-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1218-mining-constituency"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1226",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "주의회 소수당 원내대표였습니다.",
+              "en": "I was the state Assembly minority leader."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주정부와 연방정부의 주민 민원 경로를 구분하세요.",
+              "en": "Distinguish the state and federal constituent-service routes."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "주의회 소수당 원내대표였습니다.",
+              "en": "I was the state Assembly minority leader."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주의회 소수당 원내대표였습니다.",
+                "en": "I was the state Assembly minority leader."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "주정부와 연방정부의 주민 민원 경로를 구분하세요.",
+                "en": "Distinguish the state and federal constituent-service routes."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "주의회 소수당 원내대표였습니다.",
+                "en": "I was the state Assembly minority leader."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주의회 소수당 원내대표 경험을 주제로 다수당과 야당의 역할 차이를 설명하겠습니다.",
+                "en": "I'll discuss majority and minority roles using my experience as state Assembly minority leader."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1954년 뉴저지 주하원 소수당 원내대표였습니다. 연방 지도부 직책을 넣은 소개를 철회하세요.",
+                "en": "I was New Jersey Assembly minority leader in 1954. Withdraw the introduction assigning me a federal leadership role."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1226",
+        "mechanism": "local-legislature-transition",
+        "learningTarget": "Thompson was New Jersey Assembly minority leader in 1954 before entering Congress.",
+        "date": "1955-04-12",
+        "venue": {
+          "ko": "트렌턴 주민 모임",
+          "en": "Trenton constituent meeting"
+        },
+        "context": {
+          "ko": "트렌턴 주민 모임",
+          "en": "Trenton constituent meeting"
+        },
+        "cast": [
+          {
+            "id": "T000200",
+            "name": "Frank Thompson Jr.",
+            "ko": "프랭크 톰프슨 주니어",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22878"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "작년 주의회 자료를 가져왔습니다. 새 연방 사무실 기록과 구분해야겠군요.",
+            "en": "I brought last year's state legislative papers. We should distinguish them from my new federal office records."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 직책을 정확하게 표시하겠습니다.",
+            "en": "I'll label your previous role accurately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1954년 톰프슨의 직책은 뉴저지 주하원 {{blank}}이었습니다.",
+          "en": "In 1954 Thompson was the New Jersey Assembly {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "B",
+              "ko": "연방 하원의장",
+              "en": "U.S. House Speaker"
+            },
+            {
+              "id": "C",
+              "ko": "소수당 원내대표",
+              "en": "minority leader"
+            },
+            {
+              "id": "D",
+              "ko": "주상원의장",
+              "en": "state Senate president"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22878",
+            "claim": "Thompson was New Jersey Assembly minority leader in 1954 before entering Congress.",
+            "asOf": "1955-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1226-local-legislature-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1227",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오의 의원입니다.",
+              "en": "I'm a member from Ohio."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 지역 연락망을 나누어 등록하세요.",
+              "en": "Register both constituent contacts separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오의 의원입니다.",
+              "en": "I'm a member from Ohio."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오의 의원입니다.",
+                "en": "I'm a member from Ohio."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역 연락망을 나누어 등록하세요.",
+                "en": "Register both constituent contacts separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오의 의원입니다.",
+                "en": "I'm a member from Ohio."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "오하이오 방문단은 제게 연결해 주세요. 뉴저지 주민의 질문은 톰프슨 의원이 받으면 됩니다.",
+                "en": "Route the Ohio delegation to me and the New Jersey constituents' questions to Representative Thompson."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 오하이오를 대표합니다. 다른 주의 방문단으로 배정한 접견 순서를 고쳐 주세요.",
+                "en": "I represent Ohio. Correct the appointment schedule that assigns me to another state's delegation."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1227",
+        "mechanism": "new-member-cross-state",
+        "learningTarget": "Thompson and Vanik entered the House in January 1955 from New Jersey and Ohio respectively.",
+        "date": "1955-06-12",
+        "venue": {
+          "ko": "새 의원 안내",
+          "en": "New member orientation"
+        },
+        "context": {
+          "ko": "새 의원 안내",
+          "en": "New member orientation"
+        },
+        "cast": [
+          {
+            "id": "T000200",
+            "name": "Frank Thompson Jr.",
+            "ko": "프랭크 톰프슨 주니어",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22878"
+          },
+          {
+            "id": "V000047",
+            "name": "Charles A. Vanik",
+            "ko": "찰스 바닉",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20932"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "같은 해에 들어온 바닉 의원을 소개합니다.",
+            "en": "Let me introduce Mr. Vanik, who arrived in the same year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "클리블랜드에서 왔습니다. 뉴저지와 다른 주입니다.",
+            "en": "I'm from Cleveland, in a different state from New Jersey."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "바닉 의원은 {{blank}}주를 대표합니다.",
+          "en": "Vanik represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴저지",
+              "en": "New Jersey"
+            },
+            {
+              "id": "B",
+              "ko": "인디애나",
+              "en": "Indiana"
+            },
+            {
+              "id": "C",
+              "ko": "미시간",
+              "en": "Michigan"
+            },
+            {
+              "id": "D",
+              "ko": "오하이오",
+              "en": "Ohio"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22878",
+            "claim": "Thompson and Vanik entered the House in January 1955 from New Jersey and Ohio respectively.",
+            "asOf": "1955-06-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/20932",
+            "claim": "Thompson and Vanik entered the House in January 1955 from New Jersey and Ohio respectively.",
+            "asOf": "1955-06-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1227-new-member-cross-state"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1229",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "디트로이트와 매콤 카운티입니다.",
+              "en": "Detroit and Macomb County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 연고 자료를 주민 안내서에 추가하세요.",
+              "en": "Add those local ties to the constituent guide."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "디트로이트와 매콤 카운티입니다.",
+              "en": "Detroit and Macomb County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "디트로이트와 매콤 카운티입니다.",
+                "en": "Detroit and Macomb County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 연고 자료를 주민 안내서에 추가하세요.",
+                "en": "Add those local ties to the constituent guide."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "디트로이트와 매콤 카운티입니다.",
+                "en": "Detroit and Macomb County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "디트로이트와 매콤 카운티에서의 법률 업무를 주제로 지역 법조인들의 질문을 받겠습니다.",
+                "en": "I'll take local lawyers' questions about my practice in Detroit and Macomb County."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "디트로이트와 매콤 카운티에서 법률 일을 했습니다. 다른 카운티를 넣은 경력 지도를 수정하세요.",
+                "en": "I practiced law in Detroit and Macomb County. Correct the career map listing another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1229",
+        "mechanism": "county-law-reunion",
+        "learningTarget": "O'Hara practiced law in Detroit and Macomb County before entering Congress in 1959.",
+        "date": "1959-04-12",
+        "venue": {
+          "ko": "디트로이트 법조인 모임",
+          "en": "Detroit legal gathering"
+        },
+        "context": {
+          "ko": "디트로이트 법조인 모임",
+          "en": "Detroit legal gathering"
+        },
+        "cast": [
+          {
+            "id": "O000055",
+            "name": "James Grant O'Hara",
+            "ko": "제임스 오하라",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19136"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "법조계에서 함께 일했던 분들이 찾아왔습니다.",
+            "en": "Colleagues from my legal career have arrived."
+          },
+          {
+            "speaker": "host",
+            "ko": "의정 활동 이전의 지역 연고를 소개해 주세요.",
+            "en": "Please describe his local ties before Congress."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "오하라의 지역 법률 업무는 디트로이트와 {{blank}} 카운티에서 이루어졌습니다.",
+          "en": "O'Hara practiced law in Detroit and {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "쿡",
+              "en": "Cook"
+            },
+            {
+              "id": "B",
+              "ko": "매콤",
+              "en": "Macomb"
+            },
+            {
+              "id": "C",
+              "ko": "나소",
+              "en": "Nassau"
+            },
+            {
+              "id": "D",
+              "ko": "오렌지",
+              "en": "Orange"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/19136",
+            "claim": "O'Hara practiced law in Detroit and Macomb County before entering Congress in 1959.",
+            "asOf": "1959-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1229-county-law-reunion"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1230",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 미시간 대표입니다.",
+              "en": "I represent Michigan."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 주의 신규 의원 기록을 함께 보관하세요.",
+              "en": "Keep both freshman records together."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 미시간 대표입니다.",
+              "en": "I represent Michigan."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 미시간 대표입니다.",
+                "en": "I represent Michigan."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 주의 신규 의원 기록을 함께 보관하세요.",
+                "en": "Keep both freshman records together."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 미시간 대표입니다.",
+                "en": "I represent Michigan."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미시간 주민의 질문은 제가 받고 인디애나 주민의 질문은 브레이디머스 의원에게 넘기겠습니다.",
+                "en": "I'll take Michigan constituents' questions and leave Indiana questions to Representative Brademas."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 미시간 대표입니다. 두 신임 의원의 접견 배정을 다시 확인해 주세요.",
+                "en": "I represent Michigan. Check the constituent appointments assigned to the two freshmen again."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1230",
+        "mechanism": "regional-newcomers",
+        "learningTarget": "O'Hara and Brademas began House service in 1959 from Michigan and Indiana respectively.",
+        "date": "1959-05-12",
+        "venue": {
+          "ko": "중서부 신임 의원 간담회",
+          "en": "Midwestern freshman meeting"
+        },
+        "context": {
+          "ko": "중서부 신임 의원 간담회",
+          "en": "Midwestern freshman meeting"
+        },
+        "cast": [
+          {
+            "id": "O000055",
+            "name": "James Grant O'Hara",
+            "ko": "제임스 오하라",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19136"
+          },
+          {
+            "id": "B000736",
+            "name": "John Brademas",
+            "ko": "존 브레이디머스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9734"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "브레이디머스 의원도 이번 의회에 들어왔습니다.",
+            "en": "Mr. Brademas also entered this Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 인디애나에서 왔습니다.",
+            "en": "I'm from Indiana."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "오하라 의원의 대표 주는 {{blank}}입니다.",
+          "en": "O'Hara represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "인디애나",
+              "en": "Indiana"
+            },
+            {
+              "id": "B",
+              "ko": "오하이오",
+              "en": "Ohio"
+            },
+            {
+              "id": "C",
+              "ko": "미시간",
+              "en": "Michigan"
+            },
+            {
+              "id": "D",
+              "ko": "일리노이",
+              "en": "Illinois"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/19136",
+            "claim": "O'Hara and Brademas began House service in 1959 from Michigan and Indiana respectively.",
+            "asOf": "1959-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9734",
+            "claim": "O'Hara and Brademas began House service in 1959 from Michigan and Indiana respectively.",
+            "asOf": "1959-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1230-regional-newcomers"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1233",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "페루 리마였습니다.",
+              "en": "Lima, Peru."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "회의 자료와 지역 대표의 역할을 함께 설명하세요.",
+              "en": "Explain the conference alongside the member's representative role."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "페루 리마였습니다.",
+              "en": "Lima, Peru."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "페루 리마였습니다.",
+                "en": "Lima, Peru."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "회의 자료와 지역 대표의 역할을 함께 설명하세요.",
+                "en": "Explain the conference alongside the member's representative role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "페루 리마였습니다.",
+                "en": "Lima, Peru."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "리마에서 열린 회의 경험을 토대로 국제회의와 지역 대표 역할에 관한 토론을 시작하죠.",
+                "en": "Let's begin a discussion of international conferences and constituent representation using my Lima conference experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1959년 회의는 페루 리마에서 열렸습니다. 다른 개최 도시의 지도를 치워 주세요.",
+                "en": "The 1959 conference was held in Lima, Peru. Remove the map of the wrong host city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1233",
+        "mechanism": "international-delegation",
+        "learningTarget": "Brademas joined the First Inter-American Conference in Lima, Peru, in 1959.",
+        "date": "1960-04-12",
+        "venue": {
+          "ko": "의회 대표단 기록",
+          "en": "Congressional delegation archive"
+        },
+        "context": {
+          "ko": "의회 대표단 기록",
+          "en": "Congressional delegation archive"
+        },
+        "cast": [
+          {
+            "id": "B000736",
+            "name": "John Brademas",
+            "ko": "존 브레이디머스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9734"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 국제회의 대표단의 기록을 주민에게 설명하려 합니다.",
+            "en": "I'd like to explain last year's international delegation to constituents."
+          },
+          {
+            "speaker": "player",
+            "ko": "회의 장소를 자료에 적겠습니다.",
+            "en": "I'll label the conference location."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1959년 브레이디머스가 참여한 회의의 개최 도시는 {{blank}}입니다.",
+          "en": "The 1959 conference Brademas attended was in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "보고타",
+              "en": "Bogotá"
+            },
+            {
+              "id": "B",
+              "ko": "리마",
+              "en": "Lima"
+            },
+            {
+              "id": "C",
+              "ko": "멕시코시티",
+              "en": "Mexico City"
+            },
+            {
+              "id": "D",
+              "ko": "부에노스아이레스",
+              "en": "Buenos Aires"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9734",
+            "claim": "Brademas joined the First Inter-American Conference in Lima, Peru, in 1959.",
+            "asOf": "1960-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1233-international-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1234",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 원내총무입니다.",
+              "en": "I'm majority whip."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 주민용 의회 지도부 안내를 작성하세요.",
+              "en": "Prepare a constituent guide to House leadership."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 원내총무입니다.",
+              "en": "I'm majority whip."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "다수당 원내총무입니다.",
+                "en": "I'm majority whip."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 주민용 의회 지도부 안내를 작성하세요.",
+                "en": "Prepare a constituent guide to House leadership."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "다수당 원내총무입니다.",
+                "en": "I'm majority whip."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "다수당 원내총무의 의사 조율 업무부터 설명하겠습니다. 하원의장 직권과는 구별해 주세요.",
+                "en": "I'll explain the majority whip's coordination role first; distinguish it from the Speaker's authority."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제95대 의회에서 다수당 원내총무였습니다. 의장이나 야당 지도부로 분류한 토론 안내를 수정하세요.",
+                "en": "I was majority whip in the 95th Congress. Revise the discussion guide classifying me as Speaker or minority leadership."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1234",
+        "mechanism": "leadership-milestone",
+        "learningTarget": "Brademas was majority whip in the 95th Congress.",
+        "date": "1977-04-12",
+        "venue": {
+          "ko": "의회 원내 연락실",
+          "en": "House floor liaison office"
+        },
+        "context": {
+          "ko": "의회 원내 연락실",
+          "en": "House floor liaison office"
+        },
+        "cast": [
+          {
+            "id": "B000736",
+            "name": "John Brademas",
+            "ko": "존 브레이디머스",
+            "portrait": "https://upload.wikimedia.org/wikipedia/commons/a/ab/John_Brademas.jpg",
+            "source": "https://history.house.gov/People/Detail/9734"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 주민에게 새 원내 직책을 설명할 자료가 필요합니다.",
+            "en": "Constituents need an explanation of my new floor leadership role."
+          },
+          {
+            "speaker": "player",
+            "ko": "다수당의 의사 조율 직책을 확인하겠습니다.",
+            "en": "I'll identify the majority's coordination role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제95대 의회에서 브레이디머스는 {{blank}}입니다.",
+          "en": "In the 95th Congress Brademas is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원의장",
+              "en": "Speaker"
+            },
+            {
+              "id": "B",
+              "ko": "소수당 원내대표",
+              "en": "minority leader"
+            },
+            {
+              "id": "C",
+              "ko": "다수당 원내총무",
+              "en": "majority whip"
+            },
+            {
+              "id": "D",
+              "ko": "상원 의장",
+              "en": "Senate president"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9734",
+            "claim": "Brademas was majority whip in the 95th Congress.",
+            "asOf": "1977-04-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:John_Brademas.jpg",
+            "claim": "Portrait of John Brademas; PD-US federal government, 92nd Congress pictorial directory",
+            "asOf": "1977-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1234-leadership-milestone"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1235",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "노트 카운티입니다.",
+              "en": "Knott County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "카운티의 법률 문의와 의회 민원을 분리하세요.",
+              "en": "Separate county legal inquiries from congressional requests."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "노트 카운티입니다.",
+              "en": "Knott County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "노트 카운티입니다.",
+                "en": "Knott County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "카운티의 법률 문의와 의회 민원을 분리하세요.",
+                "en": "Separate county legal inquiries from congressional requests."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노트 카운티입니다.",
+                "en": "Knott County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "노트 카운티 주민의 지방 법률 문의와 제가 하원에서 받을 요청을 나눠 상담합시다.",
+                "en": "Let's separate Knott County residents' local legal inquiries from matters I can address in the House."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노트 카운티 검사였습니다. 다른 카운티와 연결된 상담 안내를 취소해 주세요.",
+                "en": "I served as Knott County attorney. Cancel the consultation instructions linked to another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1235",
+        "mechanism": "county-transition",
+        "learningTarget": "Perkins was Knott County attorney before his resignation on January 1, 1948.",
+        "date": "1949-04-12",
+        "venue": {
+          "ko": "노트 카운티 주민 접견",
+          "en": "Knott County constituent visit"
+        },
+        "context": {
+          "ko": "노트 카운티 주민 접견",
+          "en": "Knott County constituent visit"
+        },
+        "cast": [
+          {
+            "id": "P000230",
+            "name": "Carl D. Perkins",
+            "ko": "칼 퍼킨스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19564"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티에서 알던 주민이 워싱턴까지 왔군요.",
+            "en": "A constituent I knew in the county has come to Washington."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 지방 직책과 현 연방 직책을 구분하겠습니다.",
+            "en": "I'll distinguish your former local office from your federal office."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "퍼킨스가 검사로 일한 카운티는 {{blank}}입니다.",
+          "en": "Perkins served as county attorney in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해럴런",
+              "en": "Harlan"
+            },
+            {
+              "id": "B",
+              "ko": "파이크",
+              "en": "Pike"
+            },
+            {
+              "id": "C",
+              "ko": "제퍼슨",
+              "en": "Jefferson"
+            },
+            {
+              "id": "D",
+              "ko": "노트",
+              "en": "Knott"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/19564",
+            "claim": "Perkins was Knott County attorney before his resignation on January 1, 1948.",
+            "asOf": "1949-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1235-county-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1238",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "상무위원회에서 교통 관련 법률 업무를 했습니다.",
+              "en": "I handled traction matters at the Commerce Commission."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "교통행정 자료를 지역 대표 기록과 연결하세요.",
+              "en": "Link transport administration records to the local representation archive."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "상무위원회에서 교통 관련 법률 업무를 했습니다.",
+              "en": "I handled traction matters at the Commerce Commission."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상무위원회에서 교통 관련 법률 업무를 했습니다.",
+                "en": "I handled traction matters at the Commerce Commission."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "교통행정 자료를 지역 대표 기록과 연결하세요.",
+                "en": "Link transport administration records to the local representation archive."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "상무위원회에서 교통 관련 법률 업무를 했습니다.",
+                "en": "I handled traction matters at the Commerce Commission."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "상무위원회에서 맡았던 교통 법률 업무를 바탕으로 시카고 교통 문제를 토론하겠습니다.",
+                "en": "I'll discuss Chicago transportation issues drawing on my legal work on traction at the Commerce Commission."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이 상무위원회에서 교통 관련 법률 업무를 맡았습니다. 다른 기관으로 표시된 자료를 교체하세요.",
+                "en": "I handled traction matters at the Illinois Commerce Commission. Replace the material attributing the work to another agency."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1238",
+        "mechanism": "transport-regulatory-memory",
+        "learningTarget": "Yates was an Illinois Commerce Commission attorney for traction matters from 1937 to 1940.",
+        "date": "1949-05-12",
+        "venue": {
+          "ko": "시카고 교통 자료실",
+          "en": "Chicago transport archive"
+        },
+        "context": {
+          "ko": "시카고 교통 자료실",
+          "en": "Chicago transport archive"
+        },
+        "cast": [
+          {
+            "id": "Y000013",
+            "name": "Sidney Yates",
+            "ko": "시드니 예이츠",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21048"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "시카고 교통 관련 오래된 법률 자료가 있군요.",
+            "en": "Here are older legal papers about Chicago transportation."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 소속 기관을 기록하겠습니다.",
+            "en": "I'll label the agency involved."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "예이츠의 1937~1940년 근무 기관은 일리노이 {{blank}}입니다.",
+          "en": "Yates worked for the Illinois {{blank}} in 1937–1940.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "대법원",
+              "en": "Supreme Court"
+            },
+            {
+              "id": "B",
+              "ko": "교육위원회",
+              "en": "Board of Education"
+            },
+            {
+              "id": "C",
+              "ko": "상무위원회",
+              "en": "Commerce Commission"
+            },
+            {
+              "id": "D",
+              "ko": "주상원",
+              "en": "Senate"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21048",
+            "claim": "Yates was an Illinois Commerce Commission attorney for traction matters from 1937 to 1940.",
+            "asOf": "1949-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1238-transport-regulatory-memory"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1241",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 위스콘신입니다.",
+              "en": "I'm from Wisconsin."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 의원의 1949년 기록과 1965년 기록을 비교하세요.",
+              "en": "Compare their 1949 and 1965 records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 위스콘신입니다.",
+              "en": "I'm from Wisconsin."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 위스콘신입니다.",
+                "en": "I'm from Wisconsin."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 의원의 1949년 기록과 1965년 기록을 비교하세요.",
+                "en": "Compare their 1949 and 1965 records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 위스콘신입니다.",
+                "en": "I'm from Wisconsin."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "위스콘신의 제 경력과 일리노이 예이츠 의원의 복귀 경력을 나눠 토론합시다.",
+                "en": "Let's discuss my Wisconsin career separately from Representative Yates's return to represent Illinois."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 위스콘신 대표입니다. 일리노이와 위스콘신을 바꿔 배치한 연표를 수정하세요.",
+                "en": "I represent Wisconsin. Correct the timeline that swaps Illinois and Wisconsin."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1241",
+        "mechanism": "midwestern-reunion",
+        "learningTarget": "Zablocki of Wisconsin and Yates of Illinois both began House service in 1949; Yates returned in 1965.",
+        "date": "1965-05-12",
+        "venue": {
+          "ko": "중서부 대표단 재회",
+          "en": "Midwestern delegation reunion"
+        },
+        "context": {
+          "ko": "중서부 대표단 재회",
+          "en": "Midwestern delegation reunion"
+        },
+        "cast": [
+          {
+            "id": "Z000001",
+            "name": "Clement Zablocki",
+            "ko": "클레먼트 자블로키",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21111"
+          },
+          {
+            "id": "Y000013",
+            "name": "Sidney Yates",
+            "ko": "시드니 예이츠",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21048"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1949년에 함께 의회에 들어왔던 예이츠 의원이 돌아왔습니다.",
+            "en": "Mr. Yates, who entered Congress with me in 1949, has returned."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "중간에 재임 공백이 있었지만 다시 일리노이를 대표합니다.",
+            "en": "There was a gap in my service, but I represent Illinois again."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "자블로키의 대표 주는 {{blank}}입니다.",
+          "en": "Zablocki represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "일리노이",
+              "en": "Illinois"
+            },
+            {
+              "id": "B",
+              "ko": "위스콘신",
+              "en": "Wisconsin"
+            },
+            {
+              "id": "C",
+              "ko": "미시간",
+              "en": "Michigan"
+            },
+            {
+              "id": "D",
+              "ko": "인디애나",
+              "en": "Indiana"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21111",
+            "claim": "Zablocki of Wisconsin and Yates of Illinois both began House service in 1949; Yates returned in 1965.",
+            "asOf": "1965-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/21048",
+            "claim": "Zablocki of Wisconsin and Yates of Illinois both began House service in 1949; Yates returned in 1965.",
+            "asOf": "1965-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1241-midwestern-reunion"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1243",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "클리블랜드입니다.",
+              "en": "Cleveland."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "시의회와 연방의회의 권한을 구별한 안내를 작성하세요.",
+              "en": "Write a guide distinguishing local and federal legislative responsibilities."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "클리블랜드입니다.",
+              "en": "Cleveland."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "클리블랜드입니다.",
+                "en": "Cleveland."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "시의회와 연방의회의 권한을 구별한 안내를 작성하세요.",
+                "en": "Write a guide distinguishing local and federal legislative responsibilities."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "클리블랜드입니다.",
+                "en": "Cleveland."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "클리블랜드 시의회 동료들과 지방 입법과 연방 입법의 차이를 먼저 이야기하겠습니다.",
+                "en": "I'll first discuss differences between municipal and federal legislation with my former Cleveland council colleagues."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "클리블랜드 시의원이었습니다. 다른 도시에서 온 것으로 소개한 방문단의 안내를 바꾸세요.",
+                "en": "I served on Cleveland City Council. Correct the program that introduces the delegation as coming from another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1243",
+        "mechanism": "municipal-representation",
+        "learningTarget": "Vanik served on Cleveland City Council in 1938–1939.",
+        "date": "1955-04-12",
+        "venue": {
+          "ko": "클리블랜드 시정 기록",
+          "en": "Cleveland municipal records"
+        },
+        "context": {
+          "ko": "클리블랜드 시정 기록",
+          "en": "Cleveland municipal records"
+        },
+        "cast": [
+          {
+            "id": "V000047",
+            "name": "Charles A. Vanik",
+            "ko": "찰스 바닉",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20932"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "시의회에서 함께 일한 분들이 새 사무실을 방문했습니다.",
+            "en": "People I served with on the city council have visited my new office."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 의정 경험부터 확인하겠습니다.",
+            "en": "I'll identify the earlier local legislative experience."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "바닉이 시의원으로 일한 도시는 {{blank}}입니다.",
+          "en": "Vanik served on the city council of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "콜럼버스",
+              "en": "Columbus"
+            },
+            {
+              "id": "B",
+              "ko": "톨레도",
+              "en": "Toledo"
+            },
+            {
+              "id": "C",
+              "ko": "신시내티",
+              "en": "Cincinnati"
+            },
+            {
+              "id": "D",
+              "ko": "클리블랜드",
+              "en": "Cleveland"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20932",
+            "claim": "Vanik served on Cleveland City Council in 1938–1939.",
+            "asOf": "1955-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1243-municipal-representation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1246",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "원내 부대표였습니다.",
+              "en": "I was assistant floor leader."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "연표에 각 기관의 이름도 표시하세요.",
+              "en": "Label each institution on the timeline."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "원내 부대표였습니다.",
+              "en": "I was assistant floor leader."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "원내 부대표였습니다.",
+                "en": "I was assistant floor leader."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "연표에 각 기관의 이름도 표시하세요.",
+                "en": "Label each institution on the timeline."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "원내 부대표였습니다.",
+                "en": "I was assistant floor leader."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "캘리포니아 주하원 원내 부대표 경험을 먼저 설명한 뒤 연방 입법 경력으로 넘어가죠.",
+                "en": "I'll explain my California Assembly assistant floor leader experience before moving to my federal legislative career."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1949~1952년 주하원 원내 부대표였습니다. 연방 지도부 직책과 섞어 표시한 연표를 바로잡으세요.",
+                "en": "I was assistant floor leader in the state Assembly from 1949 to 1952. Correct the timeline that conflates it with a federal leadership office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1246",
+        "mechanism": "district-career-record",
+        "learningTarget": "Moss served in the California Assembly as assistant floor leader in 1949–1952 before his long House career.",
+        "date": "1978-11-12",
+        "venue": {
+          "ko": "새크라멘토 지역 기록실",
+          "en": "Sacramento district archive"
+        },
+        "context": {
+          "ko": "새크라멘토 지역 기록실",
+          "en": "Sacramento district archive"
+        },
+        "cast": [
+          {
+            "id": "M001035",
+            "name": "John E. Moss",
+            "ko": "존 모스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18623"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "주의회 시절부터 주민을 대표한 자료를 한 연표로 정리해 주세요.",
+            "en": "Please organize records from my state legislative years onward into a timeline."
+          },
+          {
+            "speaker": "player",
+            "ko": "주와 연방의 직책을 구분하겠습니다.",
+            "en": "I'll distinguish state and federal roles."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1949~1952년 모스의 주의회 직책은 {{blank}}이었습니다.",
+          "en": "Moss was an {{blank}} in the California Assembly in 1949–1952.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "B",
+              "ko": "하원의장",
+              "en": "U.S. House Speaker"
+            },
+            {
+              "id": "C",
+              "ko": "원내 부대표",
+              "en": "assistant floor leader"
+            },
+            {
+              "id": "D",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18623",
+            "claim": "Moss served in the California Assembly as assistant floor leader in 1949–1952 before his long House career.",
+            "asOf": "1978-11-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1246-district-career-record"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1247",
+      "path": "data/dialogue-packs/P01/part-50.json",
+      "originalBlobSha": "4ef691027b657fff063c129b6ba0608476004048",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "기계공으로 일했습니다.",
+              "en": "I worked as a machinist."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 직업교육 방문단과 접견 일정을 잡으세요.",
+              "en": "Schedule a meeting with the vocational education delegation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기계공으로 일했습니다.",
+              "en": "I worked as a machinist."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "기계공으로 일했습니다.",
+                "en": "I worked as a machinist."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 직업교육 방문단과 접견 일정을 잡으세요.",
+                "en": "Schedule a meeting with the vocational education delegation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "기계공으로 일했습니다.",
+                "en": "I worked as a machinist."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "기계공 시절의 경험을 바탕으로 직업교육 방문단의 질문부터 받겠습니다.",
+                "en": "I'll start with the vocational education delegation's questions, drawing on my experience as a machinist."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "기계공으로 일했습니다. 다른 직업군으로 배정한 학생 패널을 바꿔 주세요.",
+                "en": "I worked as a machinist. Change the student panel assigned to a different occupation."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1247",
+        "mechanism": "industrial-community",
+        "learningTarget": "Conte graduated from a vocational high school in Pittsfield in 1940 and worked as a machinist.",
+        "date": "1959-04-12",
+        "venue": {
+          "ko": "피츠필드 직업학교 모임",
+          "en": "Pittsfield vocational school gathering"
+        },
+        "context": {
+          "ko": "피츠필드 직업학교 모임",
+          "en": "Pittsfield vocational school gathering"
+        },
+        "cast": [
+          {
+            "id": "C000709",
+            "name": "Silvio Conte",
+            "ko": "실비오 콘테",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11342"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "직업학교 동문들이 워싱턴에 왔습니다.",
+            "en": "Vocational school alumni have arrived in Washington."
+          },
+          {
+            "speaker": "host",
+            "ko": "의원의 산업 현장 경험을 소개합시다.",
+            "en": "Let's introduce the member's industrial experience."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "콘테는 의회 진출 이전에 {{blank}}으로 일했습니다.",
+          "en": "Before Congress Conte worked as a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "은행장",
+              "en": "bank president"
+            },
+            {
+              "id": "B",
+              "ko": "외교관",
+              "en": "diplomat"
+            },
+            {
+              "id": "C",
+              "ko": "연방 판사",
+              "en": "federal judge"
+            },
+            {
+              "id": "D",
+              "ko": "기계공",
+              "en": "machinist"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11342",
+            "claim": "Conte graduated from a vocational high school in Pittsfield in 1940 and worked as a machinist.",
+            "asOf": "1959-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1247-industrial-community"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1251",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "밴더빌트대학교입니다.",
+              "en": "Vanderbilt University."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "대학 관계자 접견 자료를 준비하세요.",
+              "en": "Prepare a briefing for the university delegation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "밴더빌트대학교입니다.",
+              "en": "Vanderbilt University."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "밴더빌트대학교입니다.",
+                "en": "Vanderbilt University."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "대학 관계자 접견 자료를 준비하세요.",
+                "en": "Prepare a briefing for the university delegation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "밴더빌트대학교입니다.",
+                "en": "Vanderbilt University."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "밴더빌트대 관계자들과 대학 교육 경험 및 공직에 관한 토론을 시작하겠습니다.",
+                "en": "I'll begin a discussion with Vanderbilt University visitors about teaching experience and public service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1995~2002년 밴더빌트대에서 겸임교수로 일했습니다. 다른 대학으로 보낸 접견 초청을 회수해 주세요.",
+                "en": "I taught as an adjunct at Vanderbilt from 1995 to 2002. Retrieve the meeting invitation sent to another university."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1251",
+        "mechanism": "district-university-contact",
+        "learningTarget": "Cooper was an adjunct professor at Vanderbilt University's Owen School of Management from 1995 to 2002.",
+        "date": "2003-04-14",
+        "venue": {
+          "ko": "내슈빌 지역 접견",
+          "en": "Nashville constituent meeting"
+        },
+        "context": {
+          "ko": "내슈빌 지역 접견",
+          "en": "Nashville constituent meeting"
+        },
+        "cast": [
+          {
+            "id": "C000754",
+            "name": "Jim Cooper",
+            "ko": "짐 쿠퍼",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000754.jpg",
+            "source": "https://history.house.gov/People/Detail/11401"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 대학과 의회 사이의 연락처를 정리합시다.",
+            "en": "Let's organize contacts between the local university and Congress."
+          },
+          {
+            "speaker": "host",
+            "ko": "내슈빌의 학교 명칭을 확인해 주세요.",
+            "en": "Please identify the Nashville university."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "쿠퍼가 1995년부터 2002년까지 겸임교수로 재직한 대학은 {{blank}}입니다.",
+          "en": "Cooper taught as an adjunct professor from 1995 to 2002 at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "미시간대학교",
+              "en": "University of Michigan"
+            },
+            {
+              "id": "B",
+              "ko": "스탠퍼드대학교",
+              "en": "Stanford University"
+            },
+            {
+              "id": "C",
+              "ko": "오리건대학교",
+              "en": "University of Oregon"
+            },
+            {
+              "id": "D",
+              "ko": "밴더빌트대학교",
+              "en": "Vanderbilt University"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2007-08-09/html/CDIR-2007-08-09-TN-H-5.htm",
+            "claim": "Cooper was an adjunct professor at Vanderbilt University's Owen School of Management from 1995 to 2002.",
+            "asOf": "2003-04-14"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Jim Cooper; Public domain per upstream repository",
+            "asOf": "2003-04-14"
+          },
+          {
+            "url": "https://news.vanderbilt.edu/2005/10/04/rep-jim-cooper-to-teach-in-vanderbilts-health-care-mba-program-59223-2/",
+            "claim": "Cooper was an adjunct professor at Vanderbilt University's Owen School of Management from 1995 to 2002.",
+            "asOf": "2003-04-14"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1251-district-university-contact"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1257",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시 위원이었습니다.",
+              "en": "I was a city commissioner."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "시정부와 의회 연락처를 함께 정리하세요.",
+              "en": "Organize the municipal and congressional contacts."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "시 위원이었습니다.",
+              "en": "I was a city commissioner."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 위원이었습니다.",
+                "en": "I was a city commissioner."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "시정부와 의회 연락처를 함께 정리하세요.",
+                "en": "Organize the municipal and congressional contacts."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 위원이었습니다.",
+                "en": "I was a city commissioner."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시 위원 시절 경험을 바탕으로 도시가 처리할 사안과 의회가 다룰 사안을 비교합시다.",
+                "en": "Let's compare city matters and congressional matters using my experience as a city commissioner."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포틀랜드 시 위원이었습니다. 시장의 권한을 전제로 작성한 소개를 수정하세요.",
+                "en": "I was a Portland city commissioner. Revise the introduction premised on mayoral authority."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1257",
+        "mechanism": "municipal-to-federal",
+        "learningTarget": "Blumenauer served as Portland city commissioner from 1986 to 1996.",
+        "date": "1997-04-12",
+        "venue": {
+          "ko": "포틀랜드 도시행정 회고",
+          "en": "Portland municipal government review"
+        },
+        "context": {
+          "ko": "포틀랜드 도시행정 회고",
+          "en": "Portland municipal government review"
+        },
+        "cast": [
+          {
+            "id": "B000574",
+            "name": "Earl Blumenauer",
+            "ko": "얼 블루메나워",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B000574.jpg",
+            "source": "https://history.house.gov/People/Detail/9518"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "도시에서 처리하던 민원과 연방 의회에 보내는 민원을 구분합시다.",
+            "en": "Let's distinguish requests handled by the city from those directed to Congress."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 지방 공직을 정확히 기록하겠습니다.",
+            "en": "I'll identify your former local office."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1986~1996년 블루메나워는 포틀랜드 {{blank}}이었습니다.",
+          "en": "From 1986 to 1996 Blumenauer was a Portland {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "시 위원",
+              "en": "city commissioner"
+            },
+            {
+              "id": "C",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "D",
+              "ko": "연방 판사",
+              "en": "federal judge"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9518",
+            "claim": "Blumenauer served as Portland city commissioner from 1986 to 1996.",
+            "asOf": "1997-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Earl Blumenauer; Public domain per upstream repository",
+            "asOf": "1997-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1257-municipal-to-federal"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1258",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; successful branch opens a relevant interaction while wrong branch corrects misunderstanding and changes requested action. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 오리건 대표입니다.",
+              "en": "I represent Oregon."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 입성 날짜를 별도 기록하세요.",
+              "en": "Record both entry dates separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 오리건 대표입니다.",
+              "en": "I represent Oregon."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 오리건 대표입니다.",
+                "en": "I represent Oregon."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 입성 날짜를 별도 기록하세요.",
+                "en": "Record both entry dates separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 오리건 대표입니다.",
+                "en": "I represent Oregon."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "오리건 주민은 제게, 위스콘신 주민은 카인드 의원에게 질문하도록 토론을 나누겠습니다.",
+                "en": "I'll split the discussion so Oregon constituents question me and Wisconsin constituents question Representative Kind."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 오리건을 대표합니다. 두 의원의 입성 연도와 대표 주를 혼동한 소개를 다시 작성하세요.",
+                "en": "I represent Oregon. Rewrite the introduction that confuses our states and entry years."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1258",
+        "mechanism": "new-generation-introduction",
+        "learningTarget": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+        "date": "1997-05-12",
+        "venue": {
+          "ko": "신임 대표단 회의",
+          "en": "New member delegation meeting"
+        },
+        "context": {
+          "ko": "신임 대표단 회의",
+          "en": "New member delegation meeting"
+        },
+        "cast": [
+          {
+            "id": "B000574",
+            "name": "Earl Blumenauer",
+            "ko": "얼 블루메나워",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B000574.jpg",
+            "source": "https://history.house.gov/People/Detail/9518"
+          },
+          {
+            "id": "K000188",
+            "name": "Ron Kind",
+            "ko": "론 카인드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+            "source": "https://history.house.gov/People/Detail/16313"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 특별선거로 들어왔습니다. 올해는 카인드 의원이 합류했군요.",
+            "en": "I arrived through a special election last year. Mr. Kind joined this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 위스콘신에서 왔습니다.",
+            "en": "I'm from Wisconsin."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "블루메나워 의원의 대표 주는 {{blank}}입니다.",
+          "en": "Blumenauer represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "위스콘신",
+              "en": "Wisconsin"
+            },
+            {
+              "id": "B",
+              "ko": "워싱턴",
+              "en": "Washington"
+            },
+            {
+              "id": "C",
+              "ko": "오리건",
+              "en": "Oregon"
+            },
+            {
+              "id": "D",
+              "ko": "캘리포니아",
+              "en": "California"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9518",
+            "claim": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+            "asOf": "1997-05-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Earl Blumenauer; Public domain per upstream repository",
+            "asOf": "1997-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/16313",
+            "claim": "Blumenauer began House service in 1996 from Oregon; Kind entered in 1997 from Wisconsin.",
+            "asOf": "1997-05-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+            "asOf": "1997-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1258-new-generation-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ],
+  "limitations": [
+    "23 individual bilingual branch revisions, not playtested; opening clues and distractors may require separate later edits."
+  ]
+}

@@ -521,8 +521,8 @@
         "en": "Rural animal health forum"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 대화입니다.",
-        "en": "A fictional conversation grounded in official records."
+        "ko": "농업 방문단의 동물보건과 법률 문의 분류",
+        "en": "Separate an agricultural delegation's animal-health and legal questions"
       },
       "cast": [
         {
@@ -542,14 +542,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "농장뿐 아니라 동물 진료도 경험했습니다. 학생들에게 직업적 배경을 소개해 주세요.",
-          "en": "My background includes both farming and animal care. Could you introduce it to the students?"
+          "speaker": "npc:1",
+          "ko": "저는 농업과 법률 실무 경험이 있습니다.",
+          "en": "My background includes farming and legal work."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 농업과 법률 업무를 했습니다. 농촌 대표들의 배경도 다양하죠.",
-          "en": "I worked in farming and law. Rural representatives have diverse backgrounds."
+          "speaker": "player",
+          "ko": "슈레이더 의원의 농업 외 전문직도 확인해 어떤 질문이 각자의 경험과 관련되는지 구분하겠습니다.",
+          "en": "I'll identify Schrader's other profession to distinguish which questions relate to each background."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "전문직 경험을 실제 정책 입장과 동일시하지 마세요.",
+          "en": "Do not equate professional experience with a policy position."
         }
       ],
       "response": {
@@ -584,15 +589,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "동물보건 현장에 대한 경험과 연방 정책 결정은 별도로 구분해야 합니다.",
-            "en": "Distinguish practical animal health experience from federal policymaking."
+            "ko": "수의사였습니다. 동물보건 관련 질문을 준비하되 정책 입장은 별도 증거로 확인하세요.",
+            "en": "A veterinarian. Prepare animal-health questions, but use separate evidence to establish policy positions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "슈레이더는 수의사이자 농업인으로 일한 경력이 있습니다.",
-            "en": "Schrader's background included veterinary practice and farming."
+            "speaker": "npc:1",
+            "ko": "슈레이더 의원은 수의사이고 저는 법률 실무 경험이 있습니다. 서로의 전문직을 뒤바꾸지 마세요.",
+            "en": "Schrader was a veterinarian; my background includes law. Do not reverse our professions."
           }
         ]
       },
@@ -1227,8 +1232,8 @@
         "en": "Women in local political leadership forum"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 대화입니다.",
-        "en": "A fictional conversation grounded in official records."
+        "ko": "여성 공직자 전시의 대표성 이정표 범위 확인",
+        "en": "Check the institutional scope of two women's representation milestones"
       },
       "cast": [
         {
@@ -1248,19 +1253,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "여성 공직자 역사 전시를 준비 중입니다. 두 사람의 경력에서 서로 다른 이정표를 기록하고 싶어요.",
-          "en": "We're preparing an exhibit on women in public office. We'd like to record distinct milestones from your careers."
+          "speaker": "npc:1",
+          "ko": "저는 2014년 웨스트버지니아에서 처음으로 연방 상원에 당선된 여성입니다.",
+          "en": "In 2014 I became the first woman elected to the U.S. Senate from West Virginia."
+        },
+        {
+          "speaker": "player",
+          "ko": "밀러 의원의 기록은 최초 여성 다수당 원내총무라는 이정표군요. 어느 기관의 기록인지 확인하겠습니다.",
+          "en": "Miller's milestone was becoming the first female majority whip. I'll identify the institution."
         },
         {
           "speaker": "npc:0",
-          "ko": "주 하원에서 여성 최초로 다수당 원내총무를 맡았습니다.",
-          "en": "I became the first woman to serve as majority whip in our state House."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "저는 웨스트버지니아에서 최초로 연방 상원에 당선된 여성이었습니다. 서로 다른 기관의 기록이죠.",
-          "en": "I was the first woman elected to the U.S. Senate from West Virginia. These are different institutional milestones."
+          "ko": "두 이정표는 정부 수준과 직책이 다릅니다.",
+          "en": "The two milestones concern different levels and offices."
         }
       ],
       "response": {
@@ -1295,20 +1300,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "여성 대표성의 변화도 어느 기관인지 정확히 적어야 합니다.",
-            "en": "Record the institution precisely when studying women's representation."
-          },
-          {
-            "speaker": "npc:1",
-            "ko": "주 의회와 연방 상원의 기록을 각각 표시하면 됩니다.",
-            "en": "Label the state legislature and U.S. Senate records separately."
+            "ko": "웨스트버지니아 주 하원입니다. 연방 상원 당선 기록과 별도로 표시하세요.",
+            "en": "The West Virginia House of Delegates. Record it separately from election to the U.S. Senate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "밀러는 웨스트버지니아 주 하원의 첫 여성 다수당 원내총무가 됐습니다.",
-            "en": "Miller became the first female majority whip of the West Virginia House of Delegates."
+            "speaker": "npc:1",
+            "ko": "밀러 의원의 최초 여성 원내총무 기록은 웨스트버지니아 주 하원입니다. 두 기록을 합치지 마세요.",
+            "en": "Miller's milestone was in the West Virginia House of Delegates. Do not combine the two records."
           }
         ]
       },
@@ -1433,8 +1433,8 @@
         "en": "Colorado consumer regulation seminar"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 대화입니다.",
-        "en": "A fictional conversation grounded in official records."
+        "ko": "주 행정부 규제 문의와 연방의회 정책 요청을 구분",
+        "en": "Distinguish a state administrative inquiry from a federal legislative request"
       },
       "cast": [
         {
@@ -1454,14 +1454,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "2015년부터 2017년까지 주 행정부의 규제 업무를 담당했습니다.",
-          "en": "From 2015 to 2017 I directed regulatory work in the state executive branch."
+          "speaker": "player",
+          "ko": "사업자가 주정부의 행정 절차와 연방 위원회에서 논의되는 규제 정책을 같은 것으로 이해하고 있습니다.",
+          "en": "A business owner treats state administrative processes and regulatory policy discussed by a federal committee as the same."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 연방 에너지·상무위원회에서 일합니다. 같은 정책 분야라도 기관의 기능은 다르죠.",
-          "en": "I serve on federal Energy and Commerce. Institutions can play different roles in related policy areas."
+          "ko": "저는 하원 에너지·상무위원회 소속입니다. 주정부 기관의 업무와는 다릅니다.",
+          "en": "I serve on House Energy and Commerce. State agency work is distinct."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2015~2017년 제가 책임졌던 콜로라도 부처를 확인하면 두 역할을 비교할 수 있겠죠.",
+          "en": "Identify the Colorado department I headed in 2015–2017 to compare the roles."
         }
       ],
       "response": {
@@ -1496,15 +1501,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "행정부의 규제 업무와 입법부의 위원회 활동을 구분하세요.",
-            "en": "Distinguish executive regulatory work from legislative committee work."
+            "ko": "규제기관부입니다. 주 행정부의 규제 업무와 연방 입법위원회를 구별하세요.",
+            "en": "Regulatory Agencies. Distinguish state administrative regulation from federal committee work."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "네구스는 2015~2017년 Colorado Department of Regulatory Agencies의 책임자였습니다.",
-            "en": "Neguse directed the Colorado Department of Regulatory Agencies from 2015 to 2017."
+            "speaker": "npc:1",
+            "ko": "네구스 의원은 콜로라도 규제기관부의 책임자였습니다. 연방 상무위원회 활동과 같은 직책이 아닙니다.",
+            "en": "Neguse headed Colorado's Department of Regulatory Agencies. That is distinct from federal committee membership."
           }
         ]
       },
@@ -1685,15 +1690,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "검찰 경력에 관할 지역과 정부 수준을 같이 표시해 주세요.",
-            "en": "Record jurisdiction and level of government with the prosecution experience."
+            "ko": "웰드 카운티 검사장 경험과 연방 법무부에서의 업무를 비교해 학생들의 질문을 받겠습니다.",
+            "en": "I'll compare my experience as Weld County district attorney with my work at the federal Justice Department, then take student questions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "벅은 웰드 카운티 검사장이었습니다.",
-            "en": "Buck served as district attorney for Weld County."
+            "ko": "2004~2014년 웰드 카운티 검사장이었습니다. 다른 카운티의 관할을 넣은 모의 사례를 수정하세요.",
+            "en": "I was Weld County district attorney from 2004 to 2014. Correct the case study that names a different jurisdiction."
           }
         ]
       },
@@ -2019,8 +2024,8 @@
         "en": "Albuquerque federal representation exchange"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 대화입니다. 이전 장면 P01-1128 (2012-03-15): 뉴멕시코 제1구를 대표했던 하인리히를 상원의원으로 다시 만납니다.",
-        "en": "A fictional conversation grounded in official records. Earlier scene P01-1128 (2012-03-15): Meet Heinrich again as a senator after his earlier service in NM-1."
+        "ko": "2012년과 2022년 서로 다른 연방의원의 의석 기록 비교",
+        "en": "Compare House records for two members from 2012 and 2022"
       },
       "cast": [
         {
@@ -2041,23 +2046,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "전에 제1구를 대표했던 하인리히 의원님을 기억합니다. 새 하원의원과 함께 뵙네요.",
-          "en": "I remember when Heinrich represented district one. Now I'm meeting him alongside a newer representative."
+          "ko": "두 의원의 하원 재임 기록에 같은 지역구 번호가 등장합니다. 같은 번호라 해도 경계가 같다고 단정하지 않겠습니다.",
+          "en": "The same district number appears in both House records. I won't assume the boundaries remained identical."
         },
         {
           "speaker": "npc:0",
-          "ko": "제 지역구에서 과거 하원 의원으로 일한 상원의원을 소개할게요.",
-          "en": "Let me introduce a senator who once served my House district."
+          "ko": "저는 2021년 하원에 당선됐습니다. 이전 의원의 임기와 분리해서 기록해 주세요.",
+          "en": "I was elected to the House in 2021. Keep my term separate from that of the former member."
         },
         {
           "speaker": "npc:1",
-          "ko": "2009년부터 2012년까지 이 의석에서 일했습니다. 현재는 상원에 있죠.",
-          "en": "I served that seat from 2009 through 2012. I am now in the Senate."
-        },
-        {
-          "speaker": "aide",
-          "ko": "같은 번호라도 연도별 경계는 달라질 수 있다는 점을 잊지 마세요.",
-          "en": "Remember that boundaries associated with a district number can change over time."
+          "ko": "저는 2009~2012년 하원에서 일했고 지금은 상원에 있습니다.",
+          "en": "I served in the House in 2009–2012 and now serve in the Senate."
         }
       ],
       "response": {
@@ -2092,15 +2092,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "같은 번호가 시대마다 같은 경계였다고 가정하지는 마세요.",
-            "en": "Do not assume the same number had identical boundaries across eras."
+            "ko": "NM-1입니다. 두 시점의 지도와 주민 주소를 각각 확인하세요.",
+            "en": "NM-1. Check the maps and constituent addresses for each period separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "하인리히와 스탠즈베리 모두 서로 다른 시기에 뉴멕시코 1구를 대표했습니다.",
-            "en": "Heinrich and Stansbury represented NM-1 at different times."
+            "speaker": "npc:1",
+            "ko": "두 사람 모두 서로 다른 시기에 뉴멕시코 1구를 대표했습니다. 현재 상원 대표와 과거 하원 의석을 구별하세요.",
+            "en": "Both of us represented New Mexico's First at different times. Distinguish current Senate representation from the former House seat."
           }
         ]
       },
@@ -2225,8 +2225,8 @@
         "en": "New Mexico tribal-government policy roundtable"
       },
       "context": {
-        "ko": "공식 기록에 근거한 가상의 대화입니다. 이전 장면 P01-1150 (2021-07-01): 하원에서 상원으로 이동한 루한과 새 하원의원 레헤르 페르난데스의 정책 업무를 비교합니다.",
-        "en": "A fictional conversation grounded in official records. Earlier scene P01-1150 (2021-07-01): Compare policy work by Luján after his move to the Senate and his House successor Leger Fernandez."
+        "ko": "부족정부 정책을 연구하는 학생이 양원 위원회 자료를 찾는다.",
+        "en": "A student studying tribal-government policy seeks committee materials from both chambers."
       },
       "cast": [
         {
@@ -2246,24 +2246,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "부족정부 정책을 연구하는 학생들이 양원의 역할을 묻습니다.",
-          "en": "Students studying tribal-government policy ask how the two chambers differ."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "지난번 제 하원 의석의 후임자를 만나셨죠. 이제 저는 상원에서 부족 관련 정책을 다루는 위원회에 소속되어 있습니다.",
-          "en": "You met the successor to my House seat earlier. I now serve on a Senate committee concerned with tribal policy."
-        },
-        {
           "speaker": "player",
-          "ko": "현직 위원회부터 확인하겠습니다.",
-          "en": "I'll identify your current committees first."
+          "ko": "부족정부 정책 자료를 모으고 있습니다. 상원과 하원의 위원회가 같은 이름을 쓰는지 확인하겠습니다.",
+          "en": "I'm gathering materials on tribal-government policy. I'll check whether the House and Senate committees share the same name."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 하원 천연자원위원회에 있습니다. 주민의 정책 질문을 양원에 구분하여 전달해 주세요.",
-          "en": "I serve on House Natural Resources. Please distinguish the chambers when routing residents' policy questions."
+          "ko": "하원에서는 천연자원위원회 소속입니다.",
+          "en": "In the House I serve on Natural Resources."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "상원에서 제가 참여하는 관련 위원회의 이름은 별도로 확인하세요.",
+          "en": "Identify the relevant Senate committee I serve on separately."
         }
       ],
       "response": {
@@ -2298,15 +2293,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 저는 상원 인디언 사무위원회에 있습니다.",
-            "en": "Correct. I serve on Senate Indian Affairs."
+            "ko": "인디언 사무위원회입니다. 두 원의 위원회 자료를 각각 확인하세요.",
+            "en": "Indian Affairs. Consult the committee materials of each chamber separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "상원 인디언 사무위원회와 하원 천연자원위원회를 구분합시다.",
-            "en": "Distinguish Senate Indian Affairs from House Natural Resources."
+            "ko": "루한 의원은 상원 인디언 사무위원회, 저는 하원 천연자원위원회입니다. 두 위원회를 동일 기관으로 기록하지 마세요.",
+            "en": "Luján serves on Senate Indian Affairs and I serve on House Natural Resources. Do not record them as one body."
           }
         ]
       },
@@ -2354,14 +2349,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "학생 진로 행사에서 두 분의 선거 이전 공직 경험을 비교하고 싶습니다.",
+          "en": "I'd like to compare your pre-election public-service experience at a student career event."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "클린턴 행정부 시기에 백악관에서 연수 프로그램에 참여했습니다.",
-          "en": "I participated in a White House fellowship during the Clinton administration."
+          "ko": "제 경우 클린턴 행정부 시기의 경험을 소개해 주세요.",
+          "en": "In my case, please describe my experience during the Clinton administration."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 이후 다른 행정부 시기에 예산관리국에서 일했습니다. 두 경력의 성격이 다르죠.",
-          "en": "I later worked at the Office of Management and Budget. These are different experiences."
+          "ko": "제 예산관리국 경력은 별도의 진로 사례로 다루면 좋겠습니다.",
+          "en": "My Office of Management and Budget experience would make a separate career example."
         }
       ],
       "response": {
@@ -2396,15 +2396,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "공직 진로에는 선거 외에도 여러 경험 경로가 있습니다.",
-            "en": "Public-service careers include experiences beyond elected office."
+            "ko": "그 프로그램을 학생들에게 소개해 주세요. 선출직 경력과는 구분해서요.",
+            "en": "Introduce that fellowship program to the students, separately from elected office."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "레헤르 페르난데스는 클린턴 행정부 당시 White House fellow였습니다.",
-            "en": "Leger Fernandez was a White House fellow during the Clinton administration."
+            "ko": "저는 클린턴 행정부 당시 백악관 펠로였습니다. 비서실장이나 선출직은 아니었습니다.",
+            "en": "I was a White House fellow during the Clinton administration, not chief of staff or an elected official."
+          },
+          {
+            "speaker": "player",
+            "ko": "권한이 다른 직책을 같은 경력으로 소개한 부분을 삭제하겠습니다.",
+            "en": "I'll remove the part that conflates roles with different authority."
           }
         ]
       },

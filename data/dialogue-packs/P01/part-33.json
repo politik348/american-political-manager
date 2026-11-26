@@ -13,8 +13,8 @@
         "en": "Washington delegation dinner"
       },
       "context": {
-        "ko": "워싱턴주 대표단 만찬에 참석해 의원과 대화한다.",
-        "en": "You attend the washington delegation dinner and speak with the member."
+        "ko": "워싱턴주 주민들의 양당 공개 질의",
+        "en": "A bipartisan public question session for Washington residents"
       },
       "cast": [
         {
@@ -34,25 +34,20 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "두 분의 지역 대표라는 공통점과 정당 소속은 따로 소개하겠습니다.",
+          "en": "I'll introduce your shared state representation separately from party affiliation."
+        },
+        {
           "speaker": "host",
-          "ko": "워싱턴주 대표단과의 정책 토론에 두 정당의 관점이 필요합니다.",
-          "en": "A discussion with Washington's delegation needs perspectives from both parties."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "저는 공화당 의원입니다. 같은 주의 동료도 다른 정당일 수 있죠.",
-          "en": "I am a Republican. A colleague from the same state can belong to another party."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "제 소속 정당도 별도로 확인해 주세요.",
-          "en": "Identify my party separately."
+          "ko": "두 의원에게 각자의 질문 시간을 배정하기 전에 당적 표기를 확인하세요.",
+          "en": "Confirm their party labels before assigning separate question periods."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "스미스 의원은 {{blank}} 소속이군요.",
-        "en": "Smith belongs to the {{blank}}.",
+        "ko": "스미스 의원은 {{blank}} 소속입니다.",
+        "en": "Representative Smith belongs to the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -80,16 +75,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "두 의원을 같은 주의 서로 다른 정당 의원으로 소개하겠습니다.",
-            "en": "I'll introduce the two members as representatives of the same state from different parties."
+            "speaker": "npc:1",
+            "ko": "맞습니다. 저는 민주당입니다. 지역 현안 질문부터 듣겠습니다.",
+            "en": "Correct. I'm a Democrat. Let's hear the local question first."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "스미스는 민주당, 로저스는 공화당 의원입니다.",
-            "en": "Smith is a Democrat; Rodgers is a Republican."
+            "ko": "저는 공화당이고 스미스 의원은 민주당입니다. 같은 주라는 이유로 의견까지 같다고 가정하지 마세요.",
+            "en": "I'm a Republican and Smith is a Democrat. Don't assume shared views just because we represent one state."
           }
         ]
       },
@@ -273,20 +268,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "워싱턴 주하원에서 일했습니다.",
-            "en": "I served in the Washington state House."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "주하원 경험을 주제로 첫 순서를 맡겠습니다. 연방 의회와 다른 입법 범위를 질문해 주세요.",
+            "en": "I'll open with my state House experience. Ask how its legislative scope differs from Congress."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "워싱턴 주하원에서 일했습니다.",
-            "en": "I served in the Washington state House."
+            "ko": "주의회의 두 원을 혼동했군요. 워싱턴 주하원이었습니다. 소개문을 고친 뒤 옛 동료들에게 배포하세요.",
+            "en": "You've confused the two state chambers. I served in the Washington state House. Correct the program before distributing it."
           }
         ]
       },
@@ -460,20 +450,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "에너지·상무위원회 위원장입니다.",
-            "en": "I chair Energy and Commerce."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "전력 관련 위원회 질의는 제게 주시고, 지역 민원은 별도 접수합시다.",
+            "en": "Bring the committee questions about power policy to me and handle constituent cases separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "에너지·상무위원회 위원장입니다.",
-            "en": "I chair Energy and Commerce."
+            "ko": "제118대 의회에서는 에너지·상무위원회를 맡았습니다. 다른 위원회에 보내려던 질의서를 회수하세요.",
+            "en": "I chaired Energy and Commerce in the 118th Congress. Retrieve the questions you were about to send elsewhere."
           }
         ]
       },
@@ -596,8 +581,8 @@
         "en": "Olympia colleagues' reunion"
       },
       "context": {
-        "ko": "올림피아 동료 재회에 참석해 의원과 대화한다.",
-        "en": "You attend the olympia colleagues' reunion and speak with the member."
+        "ko": "초선 의원에게 주 입법 경력에 관한 방문객 질문이 들어온다.",
+        "en": "A visitor asks a new federal member about his state legislative background."
       },
       "cast": [
         {
@@ -610,20 +595,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "올림피아에서 여러분과 함께 일했었죠.",
-          "en": "We worked together in Olympia."
+          "speaker": "host",
+          "ko": "방문객이 워싱턴주 입법 경험과 연방 하원 임기를 같은 것으로 생각합니다.",
+          "en": "A visitor confuses Washington state legislative service with the federal House term."
         },
         {
-          "speaker": "host",
-          "ko": "이제는 연방 하원에서 만나게 됐군요.",
-          "en": "Now we meet in the federal House."
+          "speaker": "npc:0",
+          "ko": "1991년부터 1996년까지 제가 속했던 주 입법기관을 먼저 구별해 주세요.",
+          "en": "First distinguish the state legislative chamber in which I served from 1991 to 1996."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1991~1996년 의원님은 워싱턴 {{blank}}에서 재임하셨죠.",
-        "en": "From 1991 to 1996 you served in Washington's {{blank}}.",
+        "ko": "스미스 의원님은 워싱턴 {{blank}}에서 일하셨습니다.",
+        "en": "Representative Smith served in Washington's {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -652,20 +637,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "워싱턴 주상원에서 연방 하원으로 왔습니다.",
-            "en": "I came to Congress from the Washington state Senate."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "주상원이었습니다. 이제 연방 하원에 관한 질문을 듣겠습니다.",
+            "en": "State Senate. Now let's take questions about my federal House service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "워싱턴 주상원에서 연방 하원으로 왔습니다.",
-            "en": "I came to Congress from the Washington state Senate."
+            "ko": "워싱턴 주상원입니다. 연방 상원이나 현재 하원과는 다릅니다.",
+            "en": "Washington state Senate, distinct from the U.S. Senate or my present House office."
           }
         ]
       },
@@ -947,20 +927,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "메릴랜드 주상원 의장이었습니다.",
-            "en": "I presided over the Maryland state Senate."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "주의회 지도부 경험을 묻는 토론부터 시작하죠. 연방 하원 지도부 경험과 구분해 질문해 주세요.",
+            "en": "Start with the discussion of state legislative leadership, and distinguish it from my U.S. House leadership experience."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "메릴랜드 주상원 의장이었습니다.",
-            "en": "I presided over the Maryland state Senate."
+            "ko": "메릴랜드 주상원 의장이었습니다. 연방 직책으로 소개한 부분은 삭제하고 다시 사회를 맡아 주세요.",
+            "en": "I presided over the Maryland state Senate. Remove the federal title and introduce me again."
           }
         ]
       },
@@ -1095,8 +1070,8 @@
         "en": "Veterans' delegation"
       },
       "context": {
-        "ko": "참전군인 방문단에 참석해 의원과 대화한다.",
-        "en": "You attend the veterans' delegation and speak with the member."
+        "ko": "참전군인 지원 신청과 연방 정책 문의가 동시에 들어온 상황",
+        "en": "A benefits application and a federal policy inquiry arrive together"
       },
       "cast": [
         {
@@ -1109,20 +1084,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지역 참전군인들의 서류를 가져오셨군요.",
-          "en": "You've brought correspondence from local veterans."
+          "speaker": "player",
+          "ko": "개별 지원 신청은 행정 절차로, 제도 개선 요청은 의회 정책 문의로 나누겠습니다.",
+          "en": "I'll separate the individual benefits application from a policy request to Congress."
         },
         {
-          "speaker": "player",
-          "ko": "관련 위원회 자료에 연결하겠습니다.",
-          "en": "I'll route it to the appropriate committee records."
+          "speaker": "npc:0",
+          "ko": "제103대 의회에서 배정받은 위원회가 정책 질문의 배경이 됩니다.",
+          "en": "My committee assignment in the 103rd Congress provides context for the policy question."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1993년 클라이번이 배정받은 위원회는 {{blank}}입니다.",
-        "en": "In 1993 Clyburn was assigned to {{blank}}.",
+        "ko": "1993년 배정 위원회는 {{blank}}입니다.",
+        "en": "The 1993 committee assignment was {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1151,20 +1126,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "제103대 의회 보훈위원회 위원이었습니다.",
-            "en": "I served on Veterans' Affairs in the 103rd Congress."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "보훈입니다. 위원회 활동이 개별 신청의 승인 자체는 아니라는 점을 설명하세요.",
+            "en": "Veterans' Affairs. Explain that committee service is not approval of an individual application."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제103대 의회 보훈위원회 위원이었습니다.",
-            "en": "I served on Veterans' Affairs in the 103rd Congress."
+            "ko": "보훈위원회였습니다. 지원 신청을 처리하는 행정기관과 입법위원회를 구별해야 합니다.",
+            "en": "It was Veterans' Affairs. Distinguish the administering agency from the legislative committee."
           }
         ]
       },
@@ -1338,20 +1308,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
-            "en": "I came to the U.S. House from the Ohio state Senate."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "그때의 주상원 경험을 먼저 이야기하겠습니다. 이후 연방 하원의 역할과 비교해 보죠.",
+            "en": "I'll discuss my state Senate experience first. Then we can compare it with the federal House role."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
-            "en": "I came to the U.S. House from the Ohio state Senate."
+            "ko": "오하이오 주상원에서 왔습니다. 다른 원의 의정 경험을 전제로 만든 질문은 바꿔 주세요.",
+            "en": "I came from the Ohio state Senate. Replace the questions that assume experience in another chamber."
           }
         ]
       },
@@ -1434,20 +1399,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 나일스에서 태어났습니다.",
-            "en": "I was born in Niles, Ohio."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "나일스 주민들의 질문부터 듣고, 다른 오하이오 도시에서 온 참석자들도 차례로 만나겠습니다.",
+            "en": "I'll hear from Niles residents first and then meet attendees from other Ohio cities."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 나일스에서 태어났습니다.",
-            "en": "I was born in Niles, Ohio."
+            "ko": "제 출생지는 나일스입니다. 출생지 표지판을 교체하고 다른 도시 대표로 소개하지 마세요.",
+            "en": "I was born in Niles. Replace the birthplace sign rather than introducing me as a native of another city."
           }
         ]
       },
@@ -1626,20 +1586,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "허친슨이 사임한 자리에 특별선거로 당선됐습니다.",
-            "en": "I won the special election for Hutchinson's vacancy."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "허친슨의 사임에 이은 특별선거였죠. 이전 의원의 민원과 제 임기의 신규 요청을 구분해서 받겠습니다.",
+            "en": "That was the special election following Hutchinson's resignation. I'll separate cases from the previous member's term from new requests."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "허친슨이 사임한 자리에 특별선거로 당선됐습니다.",
-            "en": "I won the special election for Hutchinson's vacancy."
+            "ko": "허친슨의 공석을 특별선거로 채웠습니다. 잘못된 전임자를 넣은 의석 인계 설명을 철회하세요.",
+            "en": "I filled Hutchinson's vacancy in a special election. Withdraw the handover explanation naming the wrong predecessor."
           }
         ]
       },
@@ -1666,8 +1621,8 @@
         "en": "Local eye-care gathering"
       },
       "context": {
-        "ko": "지역 의료 간담회에 참석해 의원과 대화한다.",
-        "en": "You attend the local eye-care gathering and speak with the member."
+        "ko": "의료 진로 학생이 의원의 의회 이전 직업을 묻는다.",
+        "en": "A student exploring healthcare careers asks about the member's former profession."
       },
       "cast": [
         {
@@ -1680,20 +1635,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "의회에 오기 전 환자의 시력 검사를 했습니다.",
-          "en": "Before Congress I examined patients' vision."
+          "speaker": "host",
+          "ko": "학생이 의원님의 의료 경력에 관해 질문하고 싶습니다.",
+          "en": "A student wants to ask about your healthcare background."
         },
         {
-          "speaker": "host",
-          "ko": "이전 의료 경력도 소개하겠습니다.",
-          "en": "We'll introduce your medical background."
+          "speaker": "npc:0",
+          "ko": "제가 의회 이전에 했던 일을 먼저 소개해 주시겠어요?",
+          "en": "Would you introduce the work I did before Congress?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "부즈먼의 전문 직업은 {{blank}}이었습니다.",
-        "en": "Boozman's profession was {{blank}}.",
+        "ko": "부즈먼 의원님은 {{blank}}로 일하셨습니다.",
+        "en": "Representative Boozman worked as a {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1722,20 +1677,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "검안사로 일했습니다.",
-            "en": "I practiced optometry."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "검안사였습니다. 학생이 궁금한 의료 진로 질문을 듣죠.",
+            "en": "Optometrist. Let's hear the student's healthcare-career question."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "검안사로 일했습니다.",
-            "en": "I practiced optometry."
+            "ko": "검안사였습니다. 다른 의료 직종과 구별해 소개해 주세요.",
+            "en": "Optometrist. Distinguish that from other healthcare professions."
           }
         ]
       },
@@ -1762,8 +1712,8 @@
         "en": "Rogers school visit"
       },
       "context": {
-        "ko": "로저스 학교 방문에 참석해 의원과 대화한다.",
-        "en": "You attend the rogers school visit and speak with the member."
+        "ko": "학교 운영 관련 문의를 과거 지방 공직과 구별한다.",
+        "en": "Distinguish a school-governance inquiry from former local office."
       },
       "cast": [
         {
@@ -1776,20 +1726,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "예전에 학교 관련 회의에서 만났었죠.",
-          "en": "We met at earlier school meetings."
+          "speaker": "host",
+          "ko": "교육 관련 질문을 가진 주민이 의원님의 과거 학교 운영 경험을 알고 싶어 합니다.",
+          "en": "A resident with an education question wants to know about your earlier school-governance experience."
         },
         {
-          "speaker": "player",
-          "ko": "교육 관련 지방 공직도 맡으셨군요.",
-          "en": "You held local education office too."
+          "speaker": "npc:0",
+          "ko": "제가 어느 지역 교육위원회에서 일했는지 소개하면 질문을 준비하는 데 도움이 되겠군요.",
+          "en": "Identifying the school board I served on will help frame the question."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "부즈먼이 활동한 교육위원회는 아칸소 {{blank}}에 있었습니다.",
-        "en": "Boozman served on the school board in {{blank}}, Arkansas.",
+        "ko": "아칸소 {{blank}} 교육위원회에서 일하셨습니다.",
+        "en": "You served on the school board in {{blank}}, Arkansas.",
         "choices": [
           {
             "id": "A",
@@ -1818,20 +1768,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "로저스 교육위원회에서 일했습니다.",
-            "en": "I served on the Rogers school board."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "로저스입니다. 그 경험과 현재 연방 하원 직책을 구분해 질문하세요.",
+            "en": "Rogers. Distinguish that experience from my current federal office when asking your question."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "로저스 교육위원회에서 일했습니다.",
-            "en": "I served on the Rogers school board."
+            "ko": "로저스 교육위원회였습니다. 지역 교육위원회와 연방 하원을 혼동하지 않도록 하죠.",
+            "en": "The Rogers school board. Let's keep local school-board service distinct from the federal House."
           }
         ]
       },
@@ -1966,8 +1911,8 @@
         "en": "Kansas business gathering"
       },
       "context": {
-        "ko": "캔자스 기업 간담회에 참석해 의원과 대화한다.",
-        "en": "You attend the kansas business gathering and speak with the member."
+        "ko": "사업자 방문단의 정책 의견을 공공기관 결정과 구별",
+        "en": "Distinguish business advocacy from governmental decisions"
       },
       "cast": [
         {
@@ -1980,20 +1925,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해부터 캔자스 기업 관계자들과 일했습니다.",
-          "en": "I worked with Kansas business representatives beginning last year."
+          "speaker": "host",
+          "ko": "방문단의 정책 제안서를 주정부의 공식 결정문으로 잘못 분류했습니다.",
+          "en": "A delegation's policy proposal has been mislabeled as an official state decision."
         },
         {
-          "speaker": "host",
-          "ko": "당시 참여한 조직을 소개해 주세요.",
-          "en": "Introduce the organization you served."
+          "speaker": "npc:0",
+          "ko": "1996~1997년 제가 이사로 활동한 조직의 성격을 확인해 주세요.",
+          "en": "Identify the nature of the organization on whose board I served in 1996–1997."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "모런은 1996~1997년 캔자스 {{blank}} 이사회에서 일했습니다.",
-        "en": "Moran served on the Kansas {{blank}} board in 1996–1997.",
+        "ko": "모런이 활동한 곳은 캔자스 {{blank}}입니다.",
+        "en": "Moran served on the Kansas {{blank}} board.",
         "choices": [
           {
             "id": "A",
@@ -2022,20 +1967,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "상공회의소 이사회 경력이 있습니다.",
-            "en": "I served on the chamber of commerce and industry board."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "상공회의소입니다. 방문단 의견을 듣되 정부 결정과는 구별하세요.",
+            "en": "The chamber of commerce and industry. Hear the delegation's views without treating them as government decisions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "상공회의소 이사회 경력이 있습니다.",
-            "en": "I served on the chamber of commerce and industry board."
+            "ko": "캔자스 상공회의소 이사회였습니다. 민간 경제단체와 선출직 정부기관을 구분해 주세요.",
+            "en": "It was the Kansas chamber of commerce and industry board. Distinguish a business organization from a government office."
           }
         ]
       },
@@ -2214,20 +2154,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주하원 재임 후 연방 하원에 왔습니다.",
-            "en": "I came to the U.S. House after state House service."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "웨스트버지니아 주하원에서의 경험을 먼저 설명하고, 연방 의원으로 받은 새 질문은 그 뒤에 받겠습니다.",
+            "en": "I'll explain my West Virginia state House experience first, then take questions for my new federal role."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주하원 재임 후 연방 하원에 왔습니다.",
-            "en": "I came to the U.S. House after state House service."
+            "ko": "주의회에서 맡았던 곳은 주하원이었습니다. 상원 경력 등을 전제로 한 질문은 다시 작성해 주세요.",
+            "en": "I served in the state House. Rewrite the questions that assume Senate or other experience."
           }
         ]
       },
@@ -2317,20 +2252,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "2001년 1월 개원한 제107대 의회입니다.",
-            "en": "The 107th Congress began in January 2001."
-          },
-          {
-            "speaker": "player",
-            "ko": "그 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll use that record at our next meeting."
+            "ko": "제107대 의회의 신입 의원 경험을 두 사람에게 각각 물어보세요. 입성 이후 경력은 달라졌으니까요.",
+            "en": "Ask each of us about entering the 107th Congress; our careers subsequently took different paths."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2001년 1월 개원한 제107대 의회입니다.",
-            "en": "The 107th Congress began in January 2001."
+            "ko": "두 사람 모두 2001년 1월 제107대 의회에 입성했습니다. 잘못된 회기 동기 모임 안내를 정정해 주세요.",
+            "en": "We both entered the 107th Congress in January 2001. Correct the reunion announcement listing the wrong Congress."
           }
         ]
       },

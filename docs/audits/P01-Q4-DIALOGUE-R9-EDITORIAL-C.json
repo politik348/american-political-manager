@@ -1,0 +1,4581 @@
+{
+  "schema": "q4-r9-editorial-v1",
+  "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+  "rows": [
+    {
+      "id": "P01-1008",
+      "path": "data/dialogue-packs/P01/part-41.json",
+      "originalBlobSha": "2cb5b5b19696f59717ca5466aaf33acfe09a35b4",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "닉스는 펜실베이니아, 디그스는 미시간 대표입니다.",
+              "en": "Nix represents Pennsylvania; Diggs represents Michigan."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 사무실의 문의 유형을 기록해 두세요.",
+              "en": "Record which inquiries belong to each office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "닉스는 펜실베이니아, 디그스는 미시간 대표입니다.",
+              "en": "Nix represents Pennsylvania; Diggs represents Michigan."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "닉스는 펜실베이니아, 디그스는 미시간 대표입니다.",
+                "en": "Nix represents Pennsylvania; Diggs represents Michigan."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 사무실의 문의 유형을 기록해 두세요.",
+                "en": "Record which inquiries belong to each office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "닉스는 펜실베이니아, 디그스는 미시간 대표입니다.",
+                "en": "Nix represents Pennsylvania; Diggs represents Michigan."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "펜실베이니아 주민 질의는 제게, 미시간 주민 질의는 디그스 의원에게 연결해 주세요.",
+                "en": "Send Pennsylvania constituent questions to me and Michigan constituent questions to Representative Diggs."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 펜실베이니아 대표이고 디그스 의원은 미시간 대표입니다. 두 의원실의 방문단을 다시 배정하세요.",
+                "en": "I represent Pennsylvania; Representative Diggs represents Michigan. Reassign the delegations to the two offices."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1008",
+        "mechanism": "committee-contact-exchange",
+        "learningTarget": "Nix chaired Post Office and Civil Service in the 95th Congress while Diggs represented Michigan.",
+        "date": "1977-04-12",
+        "venue": {
+          "ko": "도시 대표단 우편 접견",
+          "en": "Urban delegation postal briefing"
+        },
+        "context": {
+          "ko": "도시 대표단 우편 접견",
+          "en": "Urban delegation postal briefing"
+        },
+        "cast": [
+          {
+            "id": "N000113",
+            "name": "Robert Nelson Cornelius Nix Sr.",
+            "ko": "로버트 닉스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18971"
+          },
+          {
+            "id": null,
+            "name": "Charles Coles Diggs Jr.",
+            "ko": "찰스 디그스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/12254"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "우편 및 공무원 관련 위원회 자료는 제 쪽으로 보내 주세요.",
+            "en": "Send Post Office and Civil Service papers to my office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "미시간 주민의 관련 요청을 전달할 수 있겠군요.",
+            "en": "Then I can route relevant Michigan constituent inquiries."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제95대 의회에서 위원장인 닉스의 대표 주는 {{blank}}입니다.",
+          "en": "Chair Nix represents {{blank}} in the 95th Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "펜실베이니아",
+              "en": "Pennsylvania"
+            },
+            {
+              "id": "B",
+              "ko": "미시간",
+              "en": "Michigan"
+            },
+            {
+              "id": "C",
+              "ko": "뉴욕",
+              "en": "New York"
+            },
+            {
+              "id": "D",
+              "ko": "일리노이",
+              "en": "Illinois"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18971",
+            "claim": "Nix chaired Post Office and Civil Service in the 95th Congress while Diggs represented Michigan.",
+            "asOf": "1977-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/12254",
+            "claim": "Nix chaired Post Office and Civil Service in the 95th Congress while Diggs represented Michigan.",
+            "asOf": "1977-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1008-committee-contact-exchange"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1015",
+      "path": "data/dialogue-packs/P01/part-41.json",
+      "originalBlobSha": "2cb5b5b19696f59717ca5466aaf33acfe09a35b4",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제104대 의회에서 명칭이 바뀐 경제·교육기회위원회의 제1야당 간사를 맡게 되었습니다.",
+              "en": "I became ranking minority member of the renamed Committee on Economic and Educational Opportunities in the 104th Congress."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "새 위원회 연락망을 갱신해 주세요.",
+              "en": "Update the committee contact list."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제104대 의회에서 명칭이 바뀐 경제·교육기회위원회의 제1야당 간사를 맡게 되었습니다.",
+              "en": "I became ranking minority member of the renamed Committee on Economic and Educational Opportunities in the 104th Congress."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제104대 의회에서 명칭이 바뀐 경제·교육기회위원회의 제1야당 간사를 맡게 되었습니다.",
+                "en": "I became ranking minority member of the renamed Committee on Economic and Educational Opportunities in the 104th Congress."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "새 위원회 연락망을 갱신해 주세요.",
+                "en": "Update the committee contact list."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제104대 의회에서 명칭이 바뀐 경제·교육기회위원회의 제1야당 간사를 맡게 되었습니다.",
+                "en": "I became ranking minority member of the renamed Committee on Economic and Educational Opportunities in the 104th Congress."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "야당 간사로서 위원회 안건에 대한 질의를 준비하겠습니다. 위원장 직권을 갖는 것으로 소개하지는 마세요.",
+                "en": "As ranking minority member I'll prepare questions on committee business; don't introduce me as holding the chair's authority."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제104대 의회 경제·교육기회위원회의 제1야당 간사였습니다. 다수당 지도부로 배정한 소개를 철회하세요.",
+                "en": "I became ranking minority member of Economic and Educational Opportunities in the 104th Congress. Withdraw the introduction placing me in majority leadership."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1015",
+        "mechanism": "majority-change",
+        "learningTarget": "In the 104th Congress Clay became ranking minority member of the Committee on Economic and Educational Opportunities, the renamed Education and Labor Committee.",
+        "date": "1995-03-10",
+        "venue": {
+          "ko": "의회 다수당 변경 후 회의",
+          "en": "Meeting after majority change"
+        },
+        "context": {
+          "ko": "의회 다수당 변경 후 회의",
+          "en": "Meeting after majority change"
+        },
+        "cast": [
+          {
+            "id": "C000488",
+            "name": "William Lacy Clay Sr.",
+            "ko": "윌리엄 레이시 클레이",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11058"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 의회에서는 위원회 지도부 역할이 달라졌습니다.",
+            "en": "The new Congress changed my committee leadership role."
+          },
+          {
+            "speaker": "player",
+            "ko": "위원회 활동과 다수당 지위 변화를 구분하겠습니다.",
+            "en": "I'll distinguish committee service from majority status."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1995년 클레이는 교육·노동 분야 위원회에서 {{blank}}이 되었습니다.",
+          "en": "In 1995 Clay became the committee's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원의장",
+              "en": "Speaker"
+            },
+            {
+              "id": "B",
+              "ko": "다수당 원내총무",
+              "en": "majority whip"
+            },
+            {
+              "id": "C",
+              "ko": "상원의원",
+              "en": "senator"
+            },
+            {
+              "id": "D",
+              "ko": "소수당 간사",
+              "en": "ranking minority member"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11058",
+            "claim": "In the 104th Congress Clay became ranking minority member of the Committee on Economic and Educational Opportunities, the renamed Education and Labor Committee.",
+            "asOf": "1995-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1015-majority-change"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1020",
+      "path": "data/dialogue-packs/P01/part-41.json",
+      "originalBlobSha": "2cb5b5b19696f59717ca5466aaf33acfe09a35b4",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "더 엄격한 소비자 보호 입법을 촉구했습니다.",
+              "en": "I urged tougher consumer protection legislation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "소비자 안전 사례를 다음 접견 자료로 묶으세요.",
+              "en": "Collect consumer safety examples for the next appointment."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "더 엄격한 소비자 보호 입법을 촉구했습니다.",
+              "en": "I urged tougher consumer protection legislation."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "더 엄격한 소비자 보호 입법을 촉구했습니다.",
+                "en": "I urged tougher consumer protection legislation."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "소비자 안전 사례를 다음 접견 자료로 묶으세요.",
+                "en": "Collect consumer safety examples for the next appointment."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "더 엄격한 소비자 보호 입법을 촉구했습니다.",
+                "en": "I urged tougher consumer protection legislation."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "소비자 안전 사례를 들으며 더 엄격한 보호 입법에 필요한 문제를 토론하겠습니다.",
+                "en": "I'll hear consumer safety cases and discuss issues relevant to stronger protection legislation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1962년에 강조한 것은 소비자 보호 입법입니다. 다른 정책 분야에 맞춰 작성한 간담회 질문은 바꾸세요.",
+                "en": "In 1962 I emphasized consumer protection legislation. Replace the meeting questions aimed at another policy area."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1020",
+        "mechanism": "consumer-delegation",
+        "learningTarget": "Sullivan urged tougher consumer protection legislation in 1962.",
+        "date": "1962-04-12",
+        "venue": {
+          "ko": "세인트루이스 소비자 모임",
+          "en": "St. Louis consumer gathering"
+        },
+        "context": {
+          "ko": "세인트루이스 소비자 모임",
+          "en": "St. Louis consumer gathering"
+        },
+        "cast": [
+          {
+            "id": null,
+            "name": "Leonor Kretzer Sullivan",
+            "ko": "리어노어 설리번",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22444"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "식품과 의약품 등 소비자가 구매하는 상품의 안전 자료를 가져오셨군요.",
+            "en": "You've brought safety information on goods consumers purchase, including food and medicine."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 주민 요구의 공통점을 정리하겠습니다.",
+            "en": "I'll summarize the residents' shared concerns."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1962년 설리번이 강조한 정책 분야는 {{blank}}입니다.",
+          "en": "In 1962 Sullivan emphasized {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "소비자 보호",
+              "en": "consumer protection"
+            },
+            {
+              "id": "B",
+              "ko": "항공 관제",
+              "en": "air traffic control"
+            },
+            {
+              "id": "C",
+              "ko": "국방 조달",
+              "en": "defense procurement"
+            },
+            {
+              "id": "D",
+              "ko": "외국 원조",
+              "en": "foreign aid"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22444",
+            "claim": "Sullivan urged tougher consumer protection legislation in 1962.",
+            "asOf": "1962-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1020-consumer-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1037",
+      "path": "data/dialogue-packs/P01/part-42.json",
+      "originalBlobSha": "708fd9a5983c325b89fcfff00961a95e9f3beb4c",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제2선거구에 속하며 머스코기 사무실이 있습니다.",
+              "en": "I represent District 2 and have a Muskogee office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "의료 관련 주민 문의와 사무실 정보를 연결하세요.",
+              "en": "Link the healthcare requests to the district office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제2선거구에 속하며 머스코기 사무실이 있습니다.",
+              "en": "I represent District 2 and have a Muskogee office."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제2선거구에 속하며 머스코기 사무실이 있습니다.",
+                "en": "I represent District 2 and have a Muskogee office."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "의료 관련 주민 문의와 사무실 정보를 연결하세요.",
+                "en": "Link the healthcare requests to the district office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제2선거구에 속하며 머스코기 사무실이 있습니다.",
+                "en": "I represent District 2 and have a Muskogee office."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제2선거구 머스코기 사무실에서 의료 관련 주민 요청을 받도록 연결합시다.",
+                "en": "Let's direct the healthcare inquiries to the Muskogee office in District 2."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2000년 명부상 제2선거구입니다. 다른 지역구로 보낸 의료 관련 접견 요청은 회수해 주세요.",
+                "en": "The 2000 directory lists District 2. Retrieve the healthcare appointment request sent to another district."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1037",
+        "mechanism": "district-service-routing",
+        "learningTarget": "The October 2000 directory places physician Coburn in Oklahoma District 2 and lists a Muskogee district office.",
+        "date": "2000-10-12",
+        "venue": {
+          "ko": "머스코기 의료인 접견",
+          "en": "Muskogee medical delegation"
+        },
+        "context": {
+          "ko": "머스코기 의료인 접견",
+          "en": "Muskogee medical delegation"
+        },
+        "cast": [
+          {
+            "id": "C000560",
+            "name": "Tom Coburn",
+            "ko": "톰 코번",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000560.jpg",
+            "source": "https://history.house.gov/People/Listing/C/COBURN,-Thomas-Allen-(C000560)/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "머스코기 지역 주민의 의료 관련 서류를 지역 사무실로 보내 주세요.",
+            "en": "Send the Muskogee healthcare inquiries to the district office."
+          },
+          {
+            "speaker": "player",
+            "ko": "2000년 명부에서 해당 지역구를 확인하겠습니다.",
+            "en": "I'll check the district in the 2000 directory."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코번은 당시 오클라호마 {{blank}} 선거구 의원입니다.",
+          "en": "Coburn represents Oklahoma's {{blank}} District at that time.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제1",
+              "en": "1st"
+            },
+            {
+              "id": "B",
+              "ko": "제2",
+              "en": "2nd"
+            },
+            {
+              "id": "C",
+              "ko": "제3",
+              "en": "3rd"
+            },
+            {
+              "id": "D",
+              "ko": "제5",
+              "en": "5th"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/C/COBURN,-Thomas-Allen-(C000560)/",
+            "claim": "The October 2000 directory places physician Coburn in Oklahoma District 2 and lists a Muskogee district office.",
+            "asOf": "2000-10-12"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2000-10-01/html/CDIR-2000-10-01-OK.htm",
+            "claim": "The October 2000 directory places physician Coburn in Oklahoma District 2 and lists a Muskogee district office.",
+            "asOf": "2000-10-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1037-district-service-routing"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1040",
+      "path": "data/dialogue-packs/P01/part-42.json",
+      "originalBlobSha": "708fd9a5983c325b89fcfff00961a95e9f3beb4c",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "2000년 명부의 제3선거구입니다.",
+              "en": "It is District 3 in the 2000 directory."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "방문단의 요청을 지역 사무실 자료에 넣으세요.",
+              "en": "Place the delegation's requests in the district office packet."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2000년 명부의 제3선거구입니다.",
+              "en": "It is District 3 in the 2000 directory."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "2000년 명부의 제3선거구입니다.",
+                "en": "It is District 3 in the 2000 directory."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "방문단의 요청을 지역 사무실 자료에 넣으세요.",
+                "en": "Place the delegation's requests in the district office packet."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2000년 명부의 제3선거구입니다.",
+                "en": "It is District 3 in the 2000 directory."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤더슨 카운티 주민의 요청은 제3선거구 접견 일정에 넣어 주세요.",
+                "en": "Put the Anderson County delegation's requests on the District 3 meeting schedule."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2000년 명부의 제3선거구입니다. 다른 의원실로 안내한 방문단을 다시 연결해 주세요.",
+                "en": "The 2000 directory identifies District 3. Redirect the delegation that was sent to another member's office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1040",
+        "mechanism": "county-map",
+        "learningTarget": "The October 2000 directory identifies Graham as SC-3, including Anderson County.",
+        "date": "2000-10-12",
+        "venue": {
+          "ko": "앤더슨 카운티 주민 면담",
+          "en": "Anderson County constituent meeting"
+        },
+        "context": {
+          "ko": "앤더슨 카운티 주민 면담",
+          "en": "Anderson County constituent meeting"
+        },
+        "cast": [
+          {
+            "id": "G000359",
+            "name": "Lindsey Graham",
+            "ko": "린지 그레이엄",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/G000359.jpg",
+            "source": "https://history.house.gov/People/Detail/14015"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "앤더슨 카운티 방문단이 오셨군요. 지역구 지도도 확인해 주세요.",
+            "en": "The Anderson County visitors are here. Please check our district map."
+          },
+          {
+            "speaker": "player",
+            "ko": "2000년 의회 명부를 기준으로 확인하겠습니다.",
+            "en": "I'll consult the 2000 congressional directory."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "앤더슨 카운티가 포함된 그레이엄의 선거구는 사우스캐롤라이나 제{{blank}}선거구입니다.",
+          "en": "Graham's district including Anderson County is South Carolina's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "3",
+              "en": "3rd"
+            },
+            {
+              "id": "B",
+              "ko": "1",
+              "en": "1st"
+            },
+            {
+              "id": "C",
+              "ko": "2",
+              "en": "2nd"
+            },
+            {
+              "id": "D",
+              "ko": "6",
+              "en": "6th"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/14015",
+            "claim": "The October 2000 directory identifies Graham as SC-3, including Anderson County.",
+            "asOf": "2000-10-12"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2000-10-01/html/CDIR-2000-10-01-SC.htm",
+            "claim": "The October 2000 directory identifies Graham as SC-3, including Anderson County.",
+            "asOf": "2000-10-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1040-county-map"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1043",
+      "path": "data/dialogue-packs/P01/part-42.json",
+      "originalBlobSha": "708fd9a5983c325b89fcfff00961a95e9f3beb4c",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제8선거구입니다.",
+              "en": "It is the Eighth District."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 사무실의 지역 주민 접견을 분리해 준비하세요.",
+              "en": "Prepare separate constituent appointments at both offices."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제8선거구입니다.",
+              "en": "It is the Eighth District."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제8선거구입니다.",
+                "en": "It is the Eighth District."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 사무실의 지역 주민 접견을 분리해 준비하세요.",
+                "en": "Prepare separate constituent appointments at both offices."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제8선거구입니다.",
+                "en": "It is the Eighth District."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제8선거구 주민의 메이컨과 웨이크로스 접견을 따로 배정합시다.",
+                "en": "Let's arrange separate District 8 constituent meetings for Macon and Waycross."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2000년에는 제8선거구를 대표했습니다. 잘못된 지역구 명의로 예약한 일정을 취소하세요.",
+                "en": "I represented District 8 in 2000. Cancel the appointment made under the wrong district."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1043",
+        "mechanism": "district-identity",
+        "learningTarget": "In October 2000 Chambliss represented GA-8, with offices in Macon and Waycross.",
+        "date": "2000-10-15",
+        "venue": {
+          "ko": "메이컨 지역 대표 접견",
+          "en": "Macon district reception"
+        },
+        "context": {
+          "ko": "메이컨 지역 대표 접견",
+          "en": "Macon district reception"
+        },
+        "cast": [
+          {
+            "id": "C000286",
+            "name": "Saxby Chambliss",
+            "ko": "색스비 챔블리스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000286.jpg",
+            "source": "https://history.house.gov/People/Detail/10813"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "메이컨과 웨이크로스 사무실 방문 일정을 확인해 주세요.",
+            "en": "Please check the visits to the Macon and Waycross offices."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 명부에 나온 지역구를 확인하겠습니다.",
+            "en": "I'll consult the district in the contemporary directory."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2000년 챔블리스가 대표한 조지아 선거구는 제{{blank}}입니다.",
+          "en": "In 2000 Chambliss represents Georgia's {{blank}} District.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2",
+              "en": "2nd"
+            },
+            {
+              "id": "B",
+              "ko": "5",
+              "en": "5th"
+            },
+            {
+              "id": "C",
+              "ko": "11",
+              "en": "11th"
+            },
+            {
+              "id": "D",
+              "ko": "8",
+              "en": "8th"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/10813",
+            "claim": "In October 2000 Chambliss represented GA-8, with offices in Macon and Waycross.",
+            "asOf": "2000-10-15"
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2000-10-01/html/CDIR-2000-10-01-GA.htm",
+            "claim": "In October 2000 Chambliss represented GA-8, with offices in Macon and Waycross.",
+            "asOf": "2000-10-15"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1043-district-identity"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1071",
+      "path": "data/dialogue-packs/P01/part-43.json",
+      "originalBlobSha": "020c5575d36b6882f3e77e00705052582f9fc8dd",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "철강 산업 관련 기록입니다.",
+              "en": "These are steel industry records."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주민 서신과 산업 자료를 서로 참조하도록 등록하세요.",
+              "en": "Cross-reference constituent letters and industry records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "철강 산업 관련 기록입니다.",
+              "en": "These are steel industry records."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "철강 산업 관련 기록입니다.",
+                "en": "These are steel industry records."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "주민 서신과 산업 자료를 서로 참조하도록 등록하세요.",
+                "en": "Cross-reference constituent letters and industry records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "철강 산업 관련 기록입니다.",
+                "en": "These are steel industry records."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "철강 산업 자료와 게리 주민의 서신을 나란히 놓고 정책 토론을 시작합시다.",
+                "en": "Let's begin the policy discussion with steel industry records alongside letters from Gary constituents."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "이 자료는 철강 산업에 관한 것입니다. 다른 산업으로 분류해 연결한 주민 서신은 다시 분류하세요.",
+                "en": "These are steel industry records. Reclassify the constituent letters linked to the wrong industry."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1071",
+        "mechanism": "industrial-constituency",
+        "learningTarget": "Visclosky's 1985–1989 congressional papers contain steel-industry files and constituent correspondence.",
+        "date": "1989-06-12",
+        "venue": {
+          "ko": "인디애나 산업지역 접견",
+          "en": "Indiana industrial region meeting"
+        },
+        "context": {
+          "ko": "인디애나 산업지역 접견",
+          "en": "Indiana industrial region meeting"
+        },
+        "cast": [
+          {
+            "id": "V000108",
+            "name": "Peter J. Visclosky",
+            "ko": "피터 비스클로스키",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/V000108.jpg",
+            "source": "https://history.house.gov/People/Detail/21005"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "게리 주민의 산업 관련 서신을 정책 자료와 연결해 주세요.",
+            "en": "Link letters from Gary constituents to the industrial policy files."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 산업 분류를 만들겠습니다.",
+            "en": "I'll create a category for the local industry."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "비스클로스키의 초기 의정 기록에 포함된 산업은 {{blank}}입니다.",
+          "en": "An industry documented in Visclosky's early congressional records is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "사탕수수",
+              "en": "sugarcane"
+            },
+            {
+              "id": "B",
+              "ko": "조선",
+              "en": "shipbuilding"
+            },
+            {
+              "id": "C",
+              "ko": "감귤",
+              "en": "citrus"
+            },
+            {
+              "id": "D",
+              "ko": "철강",
+              "en": "steel"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21005",
+            "claim": "Visclosky's 1985–1989 congressional papers contain steel-industry files and constituent correspondence.",
+            "asOf": "1989-06-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1071-industrial-constituency"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1176",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
+              "en": "Milwaukee has representatives from different parties."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 사람의 명찰을 별도 보관하고 지역 간담회에 참석합시다.",
+              "en": "Keep both badges distinct and join the local meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
+              "en": "Milwaukee has representatives from different parties."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
+                "en": "Milwaukee has representatives from different parties."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 사람의 명찰을 별도 보관하고 지역 간담회에 참석합시다.",
+                "en": "Keep both badges distinct and join the local meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
+                "en": "Milwaukee has representatives from different parties."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 사회당 명찰과 캐리 의원의 공화당 명찰을 각각 붙이고, 밀워키의 공동 관심사를 토론합시다.",
+                "en": "Use my Socialist badge and Representative Cary's Republican badge separately, then discuss Milwaukee's shared concerns."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 사회당, 캐리 의원은 공화당입니다. 같은 정당으로 소개한 명찰을 교체하세요.",
+                "en": "I am a Socialist; Representative Cary is a Republican. Replace the badges identifying us as members of the same party."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1176",
+        "mechanism": "delegation-party-introduction",
+        "learningTarget": "Berger entered the 62nd House as a Socialist while Cary served Wisconsin as a Republican.",
+        "date": "1911-04-15",
+        "venue": {
+          "ko": "밀워키 대표단 소개",
+          "en": "Milwaukee delegation introduction"
+        },
+        "context": {
+          "ko": "밀워키 대표단 소개",
+          "en": "Milwaukee delegation introduction"
+        },
+        "cast": [
+          {
+            "id": "B000407",
+            "name": "Victor Luitpold Berger",
+            "ko": "빅터 버거",
+            "portrait": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Victor_L._Berger.jpg/250px-Victor_L._Berger.jpg",
+            "source": "https://history.house.gov/People/Listing/B/BERGER,-Victor-Luitpold-(B000407)/"
+          },
+          {
+            "id": "C000218",
+            "name": "William Joseph Cary",
+            "ko": "윌리엄 캐리",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10727"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "밀워키에서 온 캐리 의원을 소개하죠. 같은 도시 출신이라고 당까지 같지는 않습니다.",
+            "en": "Meet Mr. Cary from Milwaukee. Sharing a city does not mean sharing a party."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 공화당입니다. 두 대표의 명찰을 구분해 주시죠.",
+            "en": "I'm a Republican. Please distinguish our badges."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "버거 의원의 명찰에는 {{blank}}이라고 적겠습니다.",
+          "en": "I'll label Berger's badge {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "사회당",
+              "en": "Socialist"
+            },
+            {
+              "id": "B",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "C",
+              "ko": "민주당",
+              "en": "Democrat"
+            },
+            {
+              "id": "D",
+              "ko": "금주당",
+              "en": "Prohibition"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/B/BERGER,-Victor-Luitpold-(B000407)/",
+            "claim": "Berger entered the 62nd House as a Socialist while Cary served Wisconsin as a Republican.",
+            "asOf": "1911-04-15"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Victor_L._Berger.jpg",
+            "claim": "Portrait of Victor Luitpold Berger; Harris & Ewing; LOC hec.16979; Commons PD-US, no known publication restrictions; undated",
+            "asOf": "1911-04-15"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/10727",
+            "claim": "Berger entered the 62nd House as a Socialist while Cary served Wisconsin as a Republican.",
+            "asOf": "1911-04-15"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1176-delegation-party-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1184",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
+              "en": "It concerned banking conditions in Sacramento."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "서한과 지역 은행 현황 자료를 함께 보관하세요.",
+              "en": "File the letter with the local banking records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
+              "en": "It concerned banking conditions in Sacramento."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
+                "en": "It concerned banking conditions in Sacramento."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "서한과 지역 은행 현황 자료를 함께 보관하세요.",
+                "en": "File the letter with the local banking records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
+                "en": "It concerned banking conditions in Sacramento."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "새크라멘토 은행 현황에 대한 서한을 토대로 지역 경제 질문을 받겠습니다.",
+                "en": "I'll take regional economic questions based on the letter about Sacramento banking conditions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "재무장관에게 보낸 서한은 새크라멘토의 은행 현황에 관한 것입니다. 다른 도시 사례로 만든 요약을 교체하세요.",
+                "en": "My letter to the Treasury Secretary concerned Sacramento banking conditions. Replace the summary prepared for another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1184",
+        "mechanism": "banking-investigation",
+        "learningTarget": "Kent's August 25, 1911 letter to the Treasury Secretary reported on Sacramento banking conditions.",
+        "date": "1911-09-12",
+        "venue": {
+          "ko": "새크라멘토 은행 현안",
+          "en": "Sacramento banking inquiry"
+        },
+        "context": {
+          "ko": "새크라멘토 은행 현안",
+          "en": "Sacramento banking inquiry"
+        },
+        "cast": [
+          {
+            "id": "K000127",
+            "name": "William Kent",
+            "ko": "윌리엄 켄트",
+            "portrait": "https://cdn.loc.gov/service/pnp/hec/17000/17013v.jpg",
+            "source": "https://history.house.gov/People/Detail/16236"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난달 재무장관에게 은행 현황을 조사한 결과를 전달했습니다.",
+            "en": "Last month I reported the findings of a banking inquiry to the Treasury Secretary."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 경제 자료에 조사 도시를 명시하겠습니다.",
+            "en": "I'll label the regional economic records with the city."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "켄트의 1911년 은행 조사 대상 도시는 {{blank}}입니다.",
+          "en": "Kent's 1911 banking inquiry concerned {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "새크라멘토",
+              "en": "Sacramento"
+            },
+            {
+              "id": "B",
+              "ko": "시카고",
+              "en": "Chicago"
+            },
+            {
+              "id": "C",
+              "ko": "로스앤젤레스",
+              "en": "Los Angeles"
+            },
+            {
+              "id": "D",
+              "ko": "샌디에이고",
+              "en": "San Diego"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16236",
+            "claim": "Kent's August 25, 1911 letter to the Treasury Secretary reported on Sacramento banking conditions.",
+            "asOf": "1911-09-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:KENT,_WILLIAM._HONORABLE_LCCN2016858077_Alt_Crop.jpg",
+            "claim": "Portrait of William Kent; Harris & Ewing; LOC LCCN 2016858077; Commons public domain, no known restrictions; date uncertain",
+            "asOf": "1911-09-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1184-banking-investigation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1187",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
+              "en": "Cary was sheriff; I was Sparta city treasurer."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "방문단 소개문에 두 공직을 구분해 주세요.",
+              "en": "Distinguish those offices in the delegation introduction."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
+              "en": "Cary was sheriff; I was Sparta city treasurer."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
+                "en": "Cary was sheriff; I was Sparta city treasurer."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "방문단 소개문에 두 공직을 구분해 주세요.",
+                "en": "Distinguish those offices in the delegation introduction."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
+                "en": "Cary was sheriff; I was Sparta city treasurer."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 보안관 경험과 에슈 의원의 시 재무관 경험을 각각 질문해 주세요.",
+                "en": "Ask me about my sheriff experience and Representative Esch about his city treasurer experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 밀워키 카운티 보안관이었습니다. 에슈 의원의 시 재무관 직책과 바꿔 소개하지 마세요.",
+                "en": "I was Milwaukee County sheriff. Don't swap my role with Representative Esch's city treasurer office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1187",
+        "mechanism": "local-career-contrast",
+        "learningTarget": "Esch had served as Sparta city treasurer in 1885; Cary served as Milwaukee County sheriff 1904–1906.",
+        "date": "1907-12-12",
+        "venue": {
+          "ko": "위스콘신 도시 대표 소개",
+          "en": "Wisconsin city representatives"
+        },
+        "context": {
+          "ko": "위스콘신 도시 대표 소개",
+          "en": "Wisconsin city representatives"
+        },
+        "cast": [
+          {
+            "id": "E000212",
+            "name": "John Jacob Esch",
+            "ko": "존 에슈",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/12862"
+          },
+          {
+            "id": "C000218",
+            "name": "William Joseph Cary",
+            "ko": "윌리엄 캐리",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10727"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "캐리 의원과 저는 지방 공직 경험이 서로 다릅니다.",
+            "en": "Mr. Cary and I have different local public-service backgrounds."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 경우에는 1904년부터 카운티에서 치안 업무를 맡았습니다.",
+            "en": "I handled county law enforcement starting in 1904."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "캐리가 맡았던 직책은 밀워키 카운티 {{blank}}입니다.",
+          "en": "Cary served as Milwaukee County {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "재무관",
+              "en": "treasurer"
+            },
+            {
+              "id": "B",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "C",
+              "ko": "판사",
+              "en": "judge"
+            },
+            {
+              "id": "D",
+              "ko": "보안관",
+              "en": "sheriff"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/12862",
+            "claim": "Esch had served as Sparta city treasurer in 1885; Cary served as Milwaukee County sheriff 1904–1906.",
+            "asOf": "1907-12-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/10727",
+            "claim": "Esch had served as Sparta city treasurer in 1885; Cary served as Milwaukee County sheriff 1904–1906.",
+            "asOf": "1907-12-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1187-local-career-contrast"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1188",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "주간·대외통상위원회입니다.",
+              "en": "It is Interstate and Foreign Commerce."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "교통 관련 자료를 위원회 접견철에 넣으세요.",
+              "en": "Add the transportation papers to the committee briefing."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "주간·대외통상위원회입니다.",
+              "en": "It is Interstate and Foreign Commerce."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주간·대외통상위원회입니다.",
+                "en": "It is Interstate and Foreign Commerce."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "교통 관련 자료를 위원회 접견철에 넣으세요.",
+                "en": "Add the transportation papers to the committee briefing."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "주간·대외통상위원회입니다.",
+                "en": "It is Interstate and Foreign Commerce."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주간·대외통상위원회에서 다룰 교통 문제를 먼저 논의하겠습니다.",
+                "en": "I'll first discuss the transportation issues for Interstate and Foreign Commerce."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제66대 의회 주간·대외통상위원장입니다. 다른 위원회의 관할로 준비한 교통 질의는 재배정하세요.",
+                "en": "I chair Interstate and Foreign Commerce in the 66th Congress. Reassign the transportation questions prepared for another committee."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1188",
+        "mechanism": "transport-jurisdiction",
+        "learningTarget": "Esch chaired Interstate and Foreign Commerce in the 66th Congress.",
+        "date": "1920-03-12",
+        "venue": {
+          "ko": "위스콘신 교통 접견",
+          "en": "Wisconsin transportation meeting"
+        },
+        "context": {
+          "ko": "위스콘신 교통 접견",
+          "en": "Wisconsin transportation meeting"
+        },
+        "cast": [
+          {
+            "id": "E000212",
+            "name": "John Jacob Esch",
+            "ko": "존 에슈",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/12862"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "주 경계를 넘는 교통 관련 주민 자료가 도착했습니다.",
+            "en": "Constituent papers about interstate transportation have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "이번 의회에서 맡으신 위원회와 연결하겠습니다.",
+            "en": "I'll route them according to your current committee role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제66대 의회 에슈 위원장 직책은 {{blank}}입니다.",
+          "en": "Esch chairs {{blank}} in the 66th Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주간·대외통상",
+              "en": "Interstate and Foreign Commerce"
+            },
+            {
+              "id": "B",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "C",
+              "ko": "규칙",
+              "en": "Rules"
+            },
+            {
+              "id": "D",
+              "ko": "세출",
+              "en": "Appropriations"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/12862",
+            "claim": "Esch chaired Interstate and Foreign Commerce in the 66th Congress.",
+            "asOf": "1920-03-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1188-transport-jurisdiction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1193",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "미주리주 캔자스시티에서 참여했습니다.",
+              "en": "I took part in Kansas City, Missouri."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "도시의 과거 지도와 헌장 기록을 함께 전시합시다.",
+              "en": "Display the city's old map beside its charter records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "미주리주 캔자스시티에서 참여했습니다.",
+              "en": "I took part in Kansas City, Missouri."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미주리주 캔자스시티에서 참여했습니다.",
+                "en": "I took part in Kansas City, Missouri."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "도시의 과거 지도와 헌장 기록을 함께 전시합시다.",
+                "en": "Display the city's old map beside its charter records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미주리주 캔자스시티에서 참여했습니다.",
+                "en": "I took part in Kansas City, Missouri."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미주리주 캔자스시티의 1898년 헌장 자료와 당시 도시 지도를 함께 살펴봅시다.",
+                "en": "Let's examine the 1898 charter materials alongside the historical map of Kansas City, Missouri."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미주리주 캔자스시티의 헌장 작성에 참여했습니다. 캔자스주 동명 도시의 지도를 가져왔다면 교체하세요.",
+                "en": "I helped draft the charter in Kansas City, Missouri. Replace any map of the namesake city in Kansas."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1193",
+        "mechanism": "municipal-charter",
+        "learningTarget": "Borland helped draft Kansas City's charter as a freeholder in 1898.",
+        "date": "1909-04-12",
+        "venue": {
+          "ko": "캔자스시티 시 헌장 기록",
+          "en": "Kansas City charter records"
+        },
+        "context": {
+          "ko": "캔자스시티 시 헌장 기록",
+          "en": "Kansas City charter records"
+        },
+        "cast": [
+          {
+            "id": "B000643",
+            "name": "William Patterson Borland",
+            "ko": "윌리엄 볼런드",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9615"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1898년 시 헌장 작성에 참여했던 기록을 주민에게 소개하고 싶습니다.",
+            "en": "I'd like residents to see my records from the 1898 charter process."
+          },
+          {
+            "speaker": "player",
+            "ko": "같은 이름의 캔자스주 도시와 혼동하지 않겠습니다.",
+            "en": "I'll avoid confusing it with the city of the same name in Kansas."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "볼런드가 참여한 시 헌장 작성은 {{blank}}주의 캔자스시티입니다.",
+          "en": "Borland helped draft the charter of Kansas City, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "캔자스",
+              "en": "Kansas"
+            },
+            {
+              "id": "B",
+              "ko": "미주리",
+              "en": "Missouri"
+            },
+            {
+              "id": "C",
+              "ko": "네브래스카",
+              "en": "Nebraska"
+            },
+            {
+              "id": "D",
+              "ko": "오클라호마",
+              "en": "Oklahoma"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9615",
+            "claim": "Borland helped draft Kansas City's charter as a freeholder in 1898.",
+            "asOf": "1909-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1193-municipal-charter"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1194",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
+              "en": "I was dean of the Kansas City School of Law."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "동문 방문단의 의회 견학을 예약하세요.",
+              "en": "Arrange a Capitol visit for the alumni."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
+              "en": "I was dean of the Kansas City School of Law."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
+                "en": "I was dean of the Kansas City School of Law."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "동문 방문단의 의회 견학을 예약하세요.",
+                "en": "Arrange a Capitol visit for the alumni."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
+                "en": "I was dean of the Kansas City School of Law."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법학교 학장 시절의 경험을 먼저 이야기하고, 이후 동문 방문단의 의회 질문을 받겠습니다.",
+                "en": "I'll discuss my time as law school dean first, then take the alumni delegation's congressional questions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캔자스시티 법학교의 학장이었습니다. 다른 지방 공직으로 소개한 학교 행사의 안내문을 수정하세요.",
+                "en": "I was dean of the Kansas City School of Law. Correct the event program describing a different local office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1194",
+        "mechanism": "education-institution",
+        "learningTarget": "Borland helped organize Kansas City School of Law and was dean from 1895 to 1909.",
+        "date": "1910-04-12",
+        "venue": {
+          "ko": "지역 법학교 동문 모임",
+          "en": "Local law school reunion"
+        },
+        "context": {
+          "ko": "지역 법학교 동문 모임",
+          "en": "Local law school reunion"
+        },
+        "cast": [
+          {
+            "id": "B000643",
+            "name": "William Patterson Borland",
+            "ko": "윌리엄 볼런드",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9615"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해까지 함께 일했던 법학교 동료들이 방문했습니다.",
+            "en": "Colleagues from the law school I served until last year have arrived."
+          },
+          {
+            "speaker": "host",
+            "ko": "지역 교육기관의 발전과 의원의 역할을 소개합시다.",
+            "en": "Let's explain the local institution and the member's role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "볼런드는 1895~1909년 학교의 {{blank}}이었습니다.",
+          "en": "Borland was the school's {{blank}} from 1895 to 1909.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "재무관",
+              "en": "treasurer"
+            },
+            {
+              "id": "C",
+              "ko": "학장",
+              "en": "dean"
+            },
+            {
+              "id": "D",
+              "ko": "교육감",
+              "en": "superintendent"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9615",
+            "claim": "Borland helped organize Kansas City School of Law and was dean from 1895 to 1909.",
+            "asOf": "1910-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1194-education-institution"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1197",
+      "path": "data/dialogue-packs/P01/part-48.json",
+      "originalBlobSha": "a4dd5b32f1f4463571d4be4a7cf573055d0938c1",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "당시 명칭은 Invalid Pensions입니다.",
+              "en": "Its contemporary name is Invalid Pensions."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주민 요청 목록을 별도로 정리해 주세요.",
+              "en": "Prepare a separate list of the constituent requests."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "당시 명칭은 Invalid Pensions입니다.",
+              "en": "Its contemporary name is Invalid Pensions."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 명칭은 Invalid Pensions입니다.",
+                "en": "Its contemporary name is Invalid Pensions."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "주민 요청 목록을 별도로 정리해 주세요.",
+                "en": "Prepare a separate list of the constituent requests."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 명칭은 Invalid Pensions입니다.",
+                "en": "Its contemporary name is Invalid Pensions."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "Invalid Pensions 위원회와 관련된 연금 질문을 먼저 듣고, 개인별 요청은 별도로 받겠습니다.",
+                "en": "I'll take pension questions relevant to Invalid Pensions first, then handle individual requests separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제71대 의회 당시 정식 명칭은 Invalid Pensions였습니다. 다른 위원회로 보내려던 연금 자료를 회수하세요.",
+                "en": "The formal name in the 71st Congress was Invalid Pensions. Retrieve the pension papers destined for another committee."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1197",
+        "mechanism": "pension-delegation",
+        "learningTarget": "Nelson chaired Invalid Pensions in the 71st Congress.",
+        "date": "1929-05-12",
+        "venue": {
+          "ko": "위스콘신 연금 관련 주민 접견",
+          "en": "Wisconsin pension meeting"
+        },
+        "context": {
+          "ko": "위스콘신 연금 관련 주민 접견",
+          "en": "Wisconsin pension meeting"
+        },
+        "cast": [
+          {
+            "id": "N000039",
+            "name": "John Mandt Nelson",
+            "ko": "존 넬슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18883"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연금 관련 주민 자료를 검토하고 있습니다. 이번 의회의 위원회 역할을 확인해 주세요.",
+            "en": "I'm reviewing constituents' pension papers. Please check my committee role this Congress."
+          },
+          {
+            "speaker": "player",
+            "ko": "위원회 정식 명칭으로 자료를 분류하겠습니다.",
+            "en": "I'll use the committee's contemporary formal name."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "넬슨의 제71대 의회 위원회는 {{blank}}입니다.",
+          "en": "Nelson chairs {{blank}} in the 71st Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "B",
+              "ko": "장애연금",
+              "en": "Invalid Pensions"
+            },
+            {
+              "id": "C",
+              "ko": "규칙",
+              "en": "Rules"
+            },
+            {
+              "id": "D",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18883",
+            "claim": "Nelson chaired Invalid Pensions in the 71st Congress.",
+            "asOf": "1929-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1197-pension-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-857",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
+              "en": "I came to Congress from the Ohio state Senate."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
+              "en": "I came to Congress from the Ohio state Senate."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
+                "en": "I came to Congress from the Ohio state Senate."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오 주상원에서 연방 하원으로 왔습니다.",
+                "en": "I came to Congress from the Ohio state Senate."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주상원에서 함께 일했던 분들의 질문을 먼저 받죠. 연방 입법에 관한 질문은 별도로 받겠습니다.",
+                "en": "Let's hear first from my former state Senate colleagues, then take separate questions about federal legislation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오 주상원에서 왔습니다. 다른 원의 경력을 전제로 한 소개를 다시 작성해 주세요.",
+                "en": "I came from the Ohio state Senate. Rewrite the introduction that assumes service in another chamber."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-857",
+        "mechanism": "institutional-transition",
+        "learningTarget": "Longworth served in the Ohio state Senate in 1901–1903 before entering the House.",
+        "date": "1903-12-10",
+        "venue": {
+          "ko": "오하이오 주의회 동료",
+          "en": "Ohio statehouse colleagues"
+        },
+        "context": {
+          "ko": "오하이오 주의회 동료에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the ohio statehouse colleagues, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "L000433",
+            "name": "Nicholas Longworth",
+            "ko": "니컬러스 롱워스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/17133"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해까지 주의회에서 일하다 연방 하원에 왔습니다.",
+            "en": "I served in the state legislature until this year before entering Congress."
+          },
+          {
+            "speaker": "host",
+            "ko": "이전과 현재의 입법기관을 구분해 소개하죠.",
+            "en": "Let's distinguish your former and current legislatures."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1901~1903년 롱워스는 오하이오 {{blank}} 의원이었습니다.",
+          "en": "From 1901 to 1903 Longworth served in the Ohio {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주하원",
+              "en": "state House"
+            },
+            {
+              "id": "B",
+              "ko": "연방상원",
+              "en": "U.S. Senate"
+            },
+            {
+              "id": "C",
+              "ko": "시의회",
+              "en": "city council"
+            },
+            {
+              "id": "D",
+              "ko": "주상원",
+              "en": "state Senate"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/L/LONGWORTH%2C-Nicholas-%28L000433%29/",
+            "claim": "Ohio state Senate 1901–03; House service began March 4, 1903.",
+            "asOf": "1903-12-10"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-857-institutional-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-860",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "포츠담에서 Canton Lumber Company를 조직했습니다.",
+              "en": "I organized the Canton Lumber Company in Potsdam."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "포츠담에서 Canton Lumber Company를 조직했습니다.",
+              "en": "I organized the Canton Lumber Company in Potsdam."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "포츠담에서 Canton Lumber Company를 조직했습니다.",
+                "en": "I organized the Canton Lumber Company in Potsdam."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포츠담에서 Canton Lumber Company를 조직했습니다.",
+                "en": "I organized the Canton Lumber Company in Potsdam."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "목재업 동료들과 지역 산업의 어려움부터 토론하겠습니다.",
+                "en": "I'll begin by discussing local industry challenges with my former lumber-business colleagues."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포츠담에서 Canton Lumber Company를 조직했습니다. 다른 업종으로 배정한 토론 패널은 바꿔 주세요.",
+                "en": "I organized the Canton Lumber Company in Potsdam. Change the panel assignment based on the wrong industry."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-860",
+        "mechanism": "industry-link",
+        "learningTarget": "Snell organized the Canton Lumber Company in Potsdam in 1904.",
+        "date": "1916-03-10",
+        "venue": {
+          "ko": "포츠담 지역 기업 방문",
+          "en": "Potsdam business visit"
+        },
+        "context": {
+          "ko": "포츠담 지역 기업 방문에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the potsdam business visit, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "S000652",
+            "name": "Bertrand Hollis Snell",
+            "ko": "버트런드 스넬",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21938"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역에서 사업을 운영하던 때의 동료들이군요.",
+            "en": "I recognize colleagues from my business years here."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 산업과 의원님의 이전 경력을 연결하겠습니다.",
+            "en": "I'll relate local industry to your earlier career."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1904년 스넬이 조직한 회사는 {{blank}} 회사였습니다.",
+          "en": "The company Snell organized in 1904 was a {{blank}} company.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "목재",
+              "en": "lumber"
+            },
+            {
+              "id": "B",
+              "ko": "자동차",
+              "en": "automobile"
+            },
+            {
+              "id": "C",
+              "ko": "항공기",
+              "en": "aircraft"
+            },
+            {
+              "id": "D",
+              "ko": "통신",
+              "en": "telecommunications"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21938",
+            "claim": "Organized Canton Lumber Company in Potsdam in 1904.",
+            "asOf": "1916-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-860-industry-link"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-861",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "메릿의 사망으로 생긴 공석에 당선됐습니다.",
+              "en": "I won the vacancy created by Merritt's death."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "메릿의 사망으로 생긴 공석에 당선됐습니다.",
+              "en": "I won the vacancy created by Merritt's death."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "메릿의 사망으로 생긴 공석에 당선됐습니다.",
+                "en": "I won the vacancy created by Merritt's death."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "메릿의 사망으로 생긴 공석에 당선됐습니다.",
+                "en": "I won the vacancy created by Merritt's death."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "메릿의 사망과 특별선거 사이의 공석을 설명하고, 새 대표에게 전달할 주민 질의를 받겠습니다.",
+                "en": "I'll explain the vacancy following Merritt's death and take constituent questions for the new representative."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "메릿의 사망으로 생긴 공석이었습니다. 다른 전임자를 넣은 의석 인계 설명을 폐기해 주세요.",
+                "en": "It was the vacancy created by Merritt's death. Discard the handover account naming a different predecessor."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-861",
+        "mechanism": "succession",
+        "learningTarget": "Snell entered Congress in November 1915 following Edwin A. Merritt Jr.'s death.",
+        "date": "1916-04-14",
+        "venue": {
+          "ko": "뉴욕 북부 주민 사무실",
+          "en": "Northern New York district office"
+        },
+        "context": {
+          "ko": "뉴욕 북부 주민 사무실에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the northern new york district office, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "S000652",
+            "name": "Bertrand Hollis Snell",
+            "ko": "버트런드 스넬",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21938"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 특별선거로 공석을 채웠습니다.",
+            "en": "I filled the vacancy in last year's special election."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 대표의 연락처와 전임자 기록을 함께 보관하겠습니다.",
+            "en": "I'll retain the new contact and predecessor record together."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스넬이 승계한 의석의 전임자는 {{blank}}입니다.",
+          "en": "Snell succeeded {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "윌리엄 뱅크헤드",
+              "en": "William Bankhead"
+            },
+            {
+              "id": "B",
+              "ko": "니컬러스 롱워스",
+              "en": "Nicholas Longworth"
+            },
+            {
+              "id": "C",
+              "ko": "칼 빈슨",
+              "en": "Carl Vinson"
+            },
+            {
+              "id": "D",
+              "ko": "에드윈 메릿",
+              "en": "Edwin Merritt"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21938",
+            "claim": "House service began Nov 2, 1915, filling vacancy caused by death of Edwin A. Merritt Jr.",
+            "asOf": "1916-04-14"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-861-succession"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-864",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "윈터파크의 롤린스 칼리지에서 근무했습니다.",
+              "en": "I taught at Rollins College in Winter Park."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "윈터파크의 롤린스 칼리지에서 근무했습니다.",
+              "en": "I taught at Rollins College in Winter Park."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "윈터파크의 롤린스 칼리지에서 근무했습니다.",
+                "en": "I taught at Rollins College in Winter Park."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "윈터파크의 롤린스 칼리지에서 근무했습니다.",
+                "en": "I taught at Rollins College in Winter Park."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "롤린스 칼리지 동료들과 교육 경험을 주제로 간담회를 시작하겠습니다.",
+                "en": "I'll open the discussion with my Rollins College colleagues on my teaching experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "윈터파크의 롤린스 칼리지에서 가르쳤습니다. 다른 대학에 보낸 초청을 취소해 주세요.",
+                "en": "I taught at Rollins College in Winter Park. Cancel the invitation addressed to another college."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-864",
+        "mechanism": "career-recall",
+        "learningTarget": "Murphy taught at Rollins College in Winter Park, Florida from 2014 to 2016.",
+        "date": "2017-04-12",
+        "venue": {
+          "ko": "플로리다 대학 동료",
+          "en": "Florida college colleagues"
+        },
+        "context": {
+          "ko": "플로리다 대학 동료에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the florida college colleagues, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "M001202",
+            "name": "Stephanie Murphy",
+            "ko": "스테퍼니 머피",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001202.jpg",
+            "source": "https://history.house.gov/People/Detail/15032440939"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "작년까지 대학에서 함께 일했던 분들이 오셨군요.",
+            "en": "Colleagues from my college years have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역에서 활동한 경력이 새 대표직에 이어지는군요.",
+            "en": "Your local work preceded your new representative role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2014~2016년 머피가 근무한 대학은 {{blank}}입니다.",
+          "en": "From 2014 to 2016 Murphy taught at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "롤린스 칼리지",
+              "en": "Rollins College"
+            },
+            {
+              "id": "B",
+              "ko": "마케트대",
+              "en": "Marquette University"
+            },
+            {
+              "id": "C",
+              "ko": "미시간대",
+              "en": "University of Michigan"
+            },
+            {
+              "id": "D",
+              "ko": "텍사스 웨슬리언대",
+              "en": "Texas Wesleyan University"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Oral-History/Women/Representative-SMurphy/",
+            "claim": "Rollins College faculty 2014–16.",
+            "asOf": "2017-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-864-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-865",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1978년 호찌민시에서 태어났습니다.",
+              "en": "I was born in Ho Chi Minh City in 1978."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1978년 호찌민시에서 태어났습니다.",
+              "en": "I was born in Ho Chi Minh City in 1978."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1978년 호찌민시에서 태어났습니다.",
+                "en": "I was born in Ho Chi Minh City in 1978."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1978년 호찌민시에서 태어났습니다.",
+                "en": "I was born in Ho Chi Minh City in 1978."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "호찌민시에서 태어난 제 경험과 가족의 미국 이주 이야기를 주민들과 나누겠습니다.",
+                "en": "I'll share my experience of being born in Ho Chi Minh City and my family's immigration story."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1978년 호찌민시에서 태어났습니다. 다른 도시를 출발점으로 표시한 전기 지도를 바꿔 주세요.",
+                "en": "I was born in Ho Chi Minh City in 1978. Replace the biography map that starts in another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-865",
+        "mechanism": "identity-recall",
+        "learningTarget": "Murphy was born in Ho Chi Minh City, Vietnam in 1978.",
+        "date": "2017-06-15",
+        "venue": {
+          "ko": "이민자 주민 환영회",
+          "en": "Immigrant constituent reception"
+        },
+        "context": {
+          "ko": "이민자 주민 환영회에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the immigrant constituent reception, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "M001202",
+            "name": "Stephanie Murphy",
+            "ko": "스테퍼니 머피",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001202.jpg",
+            "source": "https://history.house.gov/People/Detail/15032440939"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "가족과 함께 미국으로 이주한 경험을 주민들과 이야기하고 싶습니다.",
+            "en": "I'd like to discuss my family's immigration experience with residents."
+          },
+          {
+            "speaker": "host",
+            "ko": "의원님의 출생지도 소개해 주세요.",
+            "en": "Introduce her birthplace as well."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "머피 의원의 출생지는 베트남 {{blank}}입니다.",
+          "en": "Murphy was born in {{blank}}, Vietnam.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하노이",
+              "en": "Hanoi"
+            },
+            {
+              "id": "B",
+              "ko": "다낭",
+              "en": "Da Nang"
+            },
+            {
+              "id": "C",
+              "ko": "후에",
+              "en": "Hue"
+            },
+            {
+              "id": "D",
+              "ko": "호찌민시",
+              "en": "Ho Chi Minh City"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Oral-History/Women/Representative-SMurphy/",
+            "claim": "Born Ho Chi Minh City, Vietnam, Sept 16, 1978.",
+            "asOf": "2017-06-15"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-865-identity-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-866",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "국방부의 외교 업무 전문가였습니다.",
+              "en": "I was a foreign affairs specialist at the Department of Defense."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "국방부의 외교 업무 전문가였습니다.",
+              "en": "I was a foreign affairs specialist at the Department of Defense."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "국방부의 외교 업무 전문가였습니다.",
+                "en": "I was a foreign affairs specialist at the Department of Defense."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "국방부의 외교 업무 전문가였습니다.",
+                "en": "I was a foreign affairs specialist at the Department of Defense."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "국방부에서 외교 업무를 담당했던 경험을 바탕으로 행정부와 의회의 역할 차이를 토론하죠.",
+                "en": "Let's discuss the executive and congressional roles using my foreign-affairs experience at Defense."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "국방부의 외교 업무 전문가였습니다. 다른 부처의 정책 권한을 전제로 한 질문을 철회해 주세요.",
+                "en": "I was a foreign affairs specialist at the Department of Defense. Withdraw questions premised on another department's authority."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-866",
+        "mechanism": "career-transition",
+        "learningTarget": "Murphy was a foreign affairs specialist at the U.S. Department of Defense from 2004 to 2008.",
+        "date": "2018-03-12",
+        "venue": {
+          "ko": "전직 정책 전문가 모임",
+          "en": "Former policy specialists' gathering"
+        },
+        "context": {
+          "ko": "전직 정책 전문가 모임에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the former policy specialists' gathering, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "M001202",
+            "name": "Stephanie Murphy",
+            "ko": "스테퍼니 머피",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001202.jpg",
+            "source": "https://history.house.gov/People/Detail/15032440939"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방 행정부에서 외교 관련 업무를 했던 시절도 있습니다.",
+            "en": "I previously worked on foreign affairs in the executive branch."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 행정부 근무와 하원 임기를 구분하겠습니다.",
+            "en": "I'll distinguish your executive-branch work from your House service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2004~2008년 머피가 근무한 부처는 {{blank}}입니다.",
+          "en": "From 2004 to 2008 Murphy worked at the Department of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "재무",
+              "en": "Treasury"
+            },
+            {
+              "id": "B",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "C",
+              "ko": "국방",
+              "en": "Defense"
+            },
+            {
+              "id": "D",
+              "ko": "노동",
+              "en": "Labor"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Oral-History/Women/Representative-SMurphy/",
+            "claim": "Foreign affairs specialist at Defense Department 2004–08.",
+            "asOf": "2018-03-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-866-career-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-867",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "라우던 카운티에서 검사로 근무했습니다.",
+              "en": "I served as an assistant commonwealth attorney in Loudoun County."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "라우던 카운티에서 검사로 근무했습니다.",
+              "en": "I served as an assistant commonwealth attorney in Loudoun County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "라우던 카운티에서 검사로 근무했습니다.",
+                "en": "I served as an assistant commonwealth attorney in Loudoun County."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라우던 카운티에서 검사로 근무했습니다.",
+                "en": "I served as an assistant commonwealth attorney in Loudoun County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "라우던의 법조인들과 카운티 검찰 경험을 먼저 토론하겠습니다.",
+                "en": "I'll discuss my county prosecution experience first with the Loudoun legal colleagues."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라우던 카운티에서 검사로 일했습니다. 다른 카운티 법조인으로 작성한 소개는 수정하세요.",
+                "en": "I was an assistant commonwealth attorney in Loudoun County. Correct the introduction associating me with another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-867",
+        "mechanism": "local-service",
+        "learningTarget": "Wexton served as assistant commonwealth attorney in Loudoun County from 2001 to 2005.",
+        "date": "2019-03-12",
+        "venue": {
+          "ko": "라우던 카운티 법조인 재회",
+          "en": "Loudoun County legal reunion"
+        },
+        "context": {
+          "ko": "라우던 카운티 법조인 재회에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the loudoun county legal reunion, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "W000825",
+            "name": "Jennifer Wexton",
+            "ko": "제니퍼 웩스턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/W000825.jpg",
+            "source": "https://history.house.gov/People/Detail/25769805228"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "예전 카운티에서 함께 일한 법조인들이 오셨네요.",
+            "en": "Colleagues from my county legal work have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 근무지의 지역명도 기억하겠습니다.",
+            "en": "I'll remember the county where you worked."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2001~2005년 웩스턴의 검사 근무지는 버지니아 {{blank}} 카운티입니다.",
+          "en": "Wexton served as assistant commonwealth attorney in {{blank}} County, Virginia, from 2001 to 2005.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "페어팩스",
+              "en": "Fairfax"
+            },
+            {
+              "id": "B",
+              "ko": "라우던",
+              "en": "Loudoun"
+            },
+            {
+              "id": "C",
+              "ko": "알링턴",
+              "en": "Arlington"
+            },
+            {
+              "id": "D",
+              "ko": "헨라이코",
+              "en": "Henrico"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Oral-History/Women/Representative-Wexton/",
+            "claim": "Assistant commonwealth attorney, Loudoun County, 2001–05.",
+            "asOf": "2019-03-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-867-local-service"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-873",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "셰릴은 해군, 몰턴은 해병대 출신입니다.",
+              "en": "Sherrill served in the Navy and Moulton in the Marines."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "셰릴은 해군, 몰턴은 해병대 출신입니다.",
+              "en": "Sherrill served in the Navy and Moulton in the Marines."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "셰릴은 해군, 몰턴은 해병대 출신입니다.",
+                "en": "Sherrill served in the Navy and Moulton in the Marines."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "셰릴은 해군, 몰턴은 해병대 출신입니다.",
+                "en": "Sherrill served in the Navy and Moulton in the Marines."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 해병대, 셰릴 의원은 해군 경험을 이야기하겠습니다. 같은 질문을 두 군종의 관점에서 해 보세요.",
+                "en": "I'll discuss my Marine Corps experience and Representative Sherrill her Navy experience. Ask us the same question from both perspectives."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 복무 군종은 해병대입니다. 셰릴 의원과 같은 군종으로 분류한 발표 순서를 바꿔 주세요.",
+                "en": "I served in the Marine Corps. Change the program that groups me in Representative Sherrill's branch."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-873",
+        "mechanism": "cross-state-introduction",
+        "learningTarget": "Sherrill served in the Navy and Moulton in the Marine Corps before their House careers.",
+        "date": "2019-05-14",
+        "venue": {
+          "ko": "재향군인 의원 모임",
+          "en": "Veteran members' gathering"
+        },
+        "context": {
+          "ko": "재향군인 의원 모임에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the veteran members' gathering, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "S001207",
+            "name": "Mikie Sherrill",
+            "ko": "마이키 셰릴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001207.jpg",
+            "source": "https://history.house.gov/People/Detail/25769805191"
+          },
+          {
+            "id": "M001196",
+            "name": "Seth Moulton",
+            "ko": "세스 몰턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001196.jpg",
+            "source": "https://history.house.gov/People/Detail/15032410092"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "몰턴 의원도 군 복무 경험이 있습니다.",
+            "en": "Moulton also has military service experience."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하지만 저희의 군종은 서로 다릅니다.",
+            "en": "Our branches of service were different."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해군 출신 셰릴과 달리 몰턴의 군종은 {{blank}}입니다.",
+          "en": "Unlike Navy veteran Sherrill, Moulton served in the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해군",
+              "en": "Navy"
+            },
+            {
+              "id": "B",
+              "ko": "공군",
+              "en": "Air Force"
+            },
+            {
+              "id": "C",
+              "ko": "해안경비대",
+              "en": "Coast Guard"
+            },
+            {
+              "id": "D",
+              "ko": "해병대",
+              "en": "Marine Corps"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/25769805191",
+            "claim": "U.S. Navy 1994–2003.",
+            "asOf": "2019-05-14"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/15032410092",
+            "claim": "Marine Corps 2002–08.",
+            "asOf": "2019-05-14"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-873-cross-state-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-875",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "앤도버의 필립스 아카데미를 졸업했습니다.",
+              "en": "I graduated from Phillips Academy in Andover."
+            },
+            {
+              "speaker": "player",
+              "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+              "en": "I'll keep that in mind for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "앤도버의 필립스 아카데미를 졸업했습니다.",
+              "en": "I graduated from Phillips Academy in Andover."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤도버의 필립스 아카데미를 졸업했습니다.",
+                "en": "I graduated from Phillips Academy in Andover."
+              },
+              {
+                "speaker": "player",
+                "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
+                "en": "I'll keep that in mind for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤도버의 필립스 아카데미를 졸업했습니다.",
+                "en": "I graduated from Phillips Academy in Andover."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤도버의 필립스 아카데미 학생들과 졸업 이후의 진로를 이야기하겠습니다.",
+                "en": "I'll talk with Phillips Academy Andover students about my path after graduation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1997년 앤도버의 필립스 아카데미를 졸업했습니다. 다른 학교 동문으로 보낸 초청장을 회수하세요.",
+                "en": "I graduated from Phillips Academy in Andover in 1997. Retrieve the invitation identifying me as an alumnus elsewhere."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-875",
+        "mechanism": "career-recall",
+        "learningTarget": "Moulton graduated from Phillips Academy Andover in 1997.",
+        "date": "2015-04-14",
+        "venue": {
+          "ko": "매사추세츠 고향 학교 방문",
+          "en": "Massachusetts school visit"
+        },
+        "context": {
+          "ko": "매사추세츠 고향 학교 방문에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
+          "en": "At the massachusetts school visit, the conversation draws on the actual political record."
+        },
+        "cast": [
+          {
+            "id": "M001196",
+            "name": "Seth Moulton",
+            "ko": "세스 몰턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001196.jpg",
+            "source": "https://history.house.gov/People/Detail/15032410092"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "고향에서 학교를 다니던 시절이 생각납니다.",
+            "en": "I remember my school years here in Massachusetts."
+          },
+          {
+            "speaker": "host",
+            "ko": "학생들에게 신임 의원의 학교 경력을 소개해 주세요.",
+            "en": "Introduce the new member's school background to the students."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1997년 몰턴이 졸업한 곳은 {{blank}}입니다.",
+          "en": "Moulton graduated in 1997 from {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "세인트 어슐라 아카데미",
+              "en": "St. Ursula Academy"
+            },
+            {
+              "id": "B",
+              "ko": "필립스 아카데미 앤도버",
+              "en": "Phillips Academy Andover"
+            },
+            {
+              "id": "C",
+              "ko": "브롱크스 과학고",
+              "en": "Bronx High School of Science"
+            },
+            {
+              "id": "D",
+              "ko": "해군사관학교",
+              "en": "U.S. Naval Academy"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/15032410092",
+            "claim": "Phillips Academy Andover graduation 1997.",
+            "asOf": "2015-04-14"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-875-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-982",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "모독 카운티에서 판사로 근무하다 1910년 12월 19일 사임했습니다.",
+              "en": "I resigned as Modoc County judge on December 19, 1910."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 주민의 새 의회 연락처를 알려 주세요.",
+              "en": "Give the local visitors their new congressional contact."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "모독 카운티에서 판사로 근무하다 1910년 12월 19일 사임했습니다.",
+              "en": "I resigned as Modoc County judge on December 19, 1910."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "모독 카운티에서 판사로 근무하다 1910년 12월 19일 사임했습니다.",
+                "en": "I resigned as Modoc County judge on December 19, 1910."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 주민의 새 의회 연락처를 알려 주세요.",
+                "en": "Give the local visitors their new congressional contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "모독 카운티에서 판사로 근무하다 1910년 12월 19일 사임했습니다.",
+                "en": "I resigned as Modoc County judge on December 19, 1910."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "모독 카운티 주민에게는 새 의회 연락 경로를 안내합시다. 법원 사임일과 의회 임기 시작일은 따로 설명하고요.",
+                "en": "Give Modoc County visitors the new congressional contact, explaining the court resignation and House term dates separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1910년 12월 19일 모독 카운티 판사직에서 사임했습니다. 다른 카운티에 배정한 방문단 안내를 바꾸세요.",
+                "en": "I resigned as Modoc County judge on December 19, 1910. Correct the delegation instructions assigned to another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-982",
+        "mechanism": "county-to-house",
+        "learningTarget": "Raker resigned as Modoc County superior court judge on December 19, 1910 before entering Congress March 4, 1911.",
+        "date": "1911-12-15",
+        "venue": {
+          "ko": "모독 카운티 주민 방문",
+          "en": "Modoc County delegation"
+        },
+        "context": {
+          "ko": "지난해 12월 카운티 법원을 떠났습니다.",
+          "en": "I left the county court last December."
+        },
+        "cast": [
+          {
+            "id": "R000019",
+            "name": "John Edward Raker",
+            "ko": "존 레이커",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20098"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 12월 카운티 법원을 떠났습니다.",
+            "en": "I left the county court last December."
+          },
+          {
+            "speaker": "player",
+            "ko": "법원 사임과 연방 의원 임기 시작 날짜를 나누겠습니다.",
+            "en": "I'll distinguish the resignation from the start of the House term."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "레이커는 {{blank}} 카운티 상급법원 판사였습니다.",
+          "en": "Raker was a superior court judge in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "머세드",
+              "en": "Merced"
+            },
+            {
+              "id": "B",
+              "ko": "샌디에이고",
+              "en": "San Diego"
+            },
+            {
+              "id": "C",
+              "ko": "모독",
+              "en": "Modoc"
+            },
+            {
+              "id": "D",
+              "ko": "마린",
+              "en": "Marin"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20098",
+            "claim": "Raker resigned as Modoc County superior court judge on December 19, 1910 before entering Congress March 4, 1911.",
+            "asOf": "1911-12-15"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-982-county-to-house"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-985",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "군사위원장을 맡고 있습니다.",
+              "en": "I chair Military Affairs."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "전후 관련 민원과 위원회 자료를 구분해 보관하세요.",
+              "en": "Keep postwar constituent requests separate from committee materials."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "군사위원장을 맡고 있습니다.",
+              "en": "I chair Military Affairs."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "군사위원장을 맡고 있습니다.",
+                "en": "I chair Military Affairs."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "전후 관련 민원과 위원회 자료를 구분해 보관하세요.",
+                "en": "Keep postwar constituent requests separate from committee materials."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "군사위원장을 맡고 있습니다.",
+                "en": "I chair Military Affairs."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "군사위원회에서 검토할 행정 문제와 전후 주민 민원을 나눠 받겠습니다.",
+                "en": "I'll separate military administration issues for committee review from postwar constituent cases."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제66대 의회 군사위원장입니다. 해군위원회나 다른 위원회로 보내려던 서류는 회수하세요.",
+                "en": "I chair Military Affairs in the 66th Congress. Retrieve papers destined for Naval Affairs or another committee."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-985",
+        "mechanism": "committee-routing",
+        "learningTarget": "Kahn chaired Military Affairs in the 66th Congress.",
+        "date": "1920-03-10",
+        "venue": {
+          "ko": "전후 군사 행정 접견",
+          "en": "Postwar military affairs meeting"
+        },
+        "context": {
+          "ko": "전쟁이 끝났지만 군 관련 행정 서류는 계속 도착합니다.",
+          "en": "The war has ended, but military administration documents keep arriving."
+        },
+        "cast": [
+          {
+            "id": "K000003",
+            "name": "Julius Kahn",
+            "ko": "줄리어스 칸",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16077"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "전쟁이 끝났지만 군 관련 행정 서류는 계속 도착합니다.",
+            "en": "The war has ended, but military administration documents keep arriving."
+          },
+          {
+            "speaker": "player",
+            "ko": "담당 위원회를 확인해 전달하겠습니다.",
+            "en": "I'll route the documents to the appropriate committee."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제66대 의회에서 칸은 {{blank}} 위원장입니다.",
+          "en": "In the 66th Congress Kahn chairs {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해군",
+              "en": "Naval Affairs"
+            },
+            {
+              "id": "B",
+              "ko": "군사",
+              "en": "Military Affairs"
+            },
+            {
+              "id": "C",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "D",
+              "ko": "세출",
+              "en": "Appropriations"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16077",
+            "claim": "Kahn chaired Military Affairs in the 66th Congress.",
+            "asOf": "1920-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-985-committee-routing"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-991",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제5사법구 검사로 1924~1929년 재임했습니다.",
+              "en": "I served as district attorney of the fifth judicial district in 1924–1929."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 행정 구역의 기록을 따로 보관하세요.",
+              "en": "Keep separate records for the two jurisdictions."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제5사법구 검사로 1924~1929년 재임했습니다.",
+              "en": "I served as district attorney of the fifth judicial district in 1924–1929."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제5사법구 검사로 1924~1929년 재임했습니다.",
+                "en": "I served as district attorney of the fifth judicial district in 1924–1929."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 행정 구역의 기록을 따로 보관하세요.",
+                "en": "Keep separate records for the two jurisdictions."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제5사법구 검사로 1924~1929년 재임했습니다.",
+                "en": "I served as district attorney of the fifth judicial district in 1924–1929."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제5사법구 검사 경험을 먼저 설명하죠. 주민들에게 연방 선거구와 사법 관할이 다르다는 점도 알려 주세요.",
+                "en": "I'll explain my fifth judicial district experience first. Tell residents how judicial jurisdiction differs from a congressional district."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "텍사스 제5사법구 검사였습니다. 의회 선거구 번호로 사법구 지도를 대신한 자료를 수정하세요.",
+                "en": "I was district attorney of Texas's fifth judicial district. Correct the material substituting the congressional district number for judicial jurisdiction."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-991",
+        "mechanism": "new-deal-prelude",
+        "learningTarget": "Patman was district attorney of Texas's fifth judicial district in 1924–1929 before entering Congress.",
+        "date": "1929-04-12",
+        "venue": {
+          "ko": "텍사스 신임 의원 접견",
+          "en": "Texas freshman reception"
+        },
+        "context": {
+          "ko": "올해 연방 하원에 오기 전까지 검사로 일했습니다.",
+          "en": "I worked as a district attorney until entering the House this year."
+        },
+        "cast": [
+          {
+            "id": "P000103",
+            "name": "John William Wright Patman",
+            "ko": "라이트 팻먼",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/P/PATMAN,-John-William-Wright-(P000103)/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 연방 하원에 오기 전까지 검사로 일했습니다.",
+            "en": "I worked as a district attorney until entering the House this year."
+          },
+          {
+            "speaker": "player",
+            "ko": "사법구와 연방 선거구를 같은 번호라고 가정하지 않겠습니다.",
+            "en": "I won't assume judicial and congressional districts use the same number."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "팻먼의 이전 관할은 텍사스 제{{blank}}사법구입니다.",
+          "en": "Patman's earlier jurisdiction was Texas's {{blank}} judicial district.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1",
+              "en": "1st"
+            },
+            {
+              "id": "B",
+              "ko": "10",
+              "en": "10th"
+            },
+            {
+              "id": "C",
+              "ko": "14",
+              "en": "14th"
+            },
+            {
+              "id": "D",
+              "ko": "5",
+              "en": "5th"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/P/PATMAN,-John-William-Wright-(P000103)/",
+            "claim": "Patman was district attorney of Texas's fifth judicial district in 1924–1929 before entering Congress.",
+            "asOf": "1929-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-991-new-deal-prelude"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-992",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "팰리세이드에서 복숭아 과수 산업에 종사했습니다.",
+              "en": "I worked in the peach-orchard industry in Palisade."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농가의 용수 관련 자료를 접견 목록에 넣어 주세요.",
+              "en": "Add the growers' water-related papers to the meeting list."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "팰리세이드에서 복숭아 과수 산업에 종사했습니다.",
+              "en": "I worked in the peach-orchard industry in Palisade."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "팰리세이드에서 복숭아 과수 산업에 종사했습니다.",
+                "en": "I worked in the peach-orchard industry in Palisade."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농가의 용수 관련 자료를 접견 목록에 넣어 주세요.",
+                "en": "Add the growers' water-related papers to the meeting list."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "팰리세이드에서 복숭아 과수 산업에 종사했습니다.",
+                "en": "I worked in the peach-orchard industry in Palisade."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "복숭아 농가의 용수 문제부터 듣겠습니다. 다른 작물의 재배 조건과는 구별해 질문해 주세요.",
+                "en": "I'll hear the peach growers' water concerns first; distinguish their growing conditions from those of other crops."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "팰리세이드에서 복숭아 과수 산업에 종사했습니다. 다른 작물을 전제로 작성한 농가 질문을 바꾸세요.",
+                "en": "I worked in the peach-orchard industry in Palisade. Replace the farm questions premised on a different crop."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-992",
+        "mechanism": "industry-bridge",
+        "learningTarget": "Aspinall engaged in the peach-orchard industry in Palisade before Congress.",
+        "date": "1949-03-10",
+        "venue": {
+          "ko": "콜로라도 과수 농가 방문",
+          "en": "Colorado orchard delegation"
+        },
+        "context": {
+          "ko": "팰리세이드 과수 농가에서 오신 분들이군요.",
+          "en": "Visitors from the Palisade orchards have arrived."
+        },
+        "cast": [
+          {
+            "id": "A000225",
+            "name": "Wayne Norviel Aspinall",
+            "ko": "웨인 애스피널",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8577"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "팰리세이드 과수 농가에서 오신 분들이군요.",
+            "en": "Visitors from the Palisade orchards have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "의원님의 지역 산업 경험을 소개하겠습니다.",
+            "en": "I'll introduce your experience in the local industry."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "애스피널이 종사한 과수 산업은 {{blank}} 재배입니다.",
+          "en": "Aspinall worked in the {{blank}} orchard industry.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "복숭아",
+              "en": "peach"
+            },
+            {
+              "id": "B",
+              "ko": "사과",
+              "en": "apple"
+            },
+            {
+              "id": "C",
+              "ko": "오렌지",
+              "en": "orange"
+            },
+            {
+              "id": "D",
+              "ko": "아보카도",
+              "en": "avocado"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8577",
+            "claim": "Aspinall engaged in the peach-orchard industry in Palisade before Congress.",
+            "asOf": "1949-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-992-industry-bridge"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-997",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "내무·도서지역위원장입니다.",
+              "en": "I chair Interior and Insular Affairs."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "서부 주민의 자료를 접견용 문서로 준비하세요.",
+              "en": "Prepare the western constituents' briefing materials."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "내무·도서지역위원장입니다.",
+              "en": "I chair Interior and Insular Affairs."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "내무·도서지역위원장입니다.",
+                "en": "I chair Interior and Insular Affairs."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "서부 주민의 자료를 접견용 문서로 준비하세요.",
+                "en": "Prepare the western constituents' briefing materials."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "내무·도서지역위원장입니다.",
+                "en": "I chair Interior and Insular Affairs."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "내무·도서지역위원회에서 검토할 공공 토지 질문을 먼저 받겠습니다. 주민 개인 민원은 별도로 다루죠.",
+                "en": "I'll take public-land questions for Interior and Insular Affairs first, then handle individual constituent cases separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제86대 의회 내무·도서지역위원장입니다. 다른 관할로 분류한 공공 토지 자료를 되돌려 주세요.",
+                "en": "I chair Interior and Insular Affairs in the 86th Congress. Retrieve the public-land papers assigned to the wrong jurisdiction."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-997",
+        "mechanism": "regional-policy-request",
+        "learningTarget": "Aspinall chaired Interior and Insular Affairs from the 86th Congress.",
+        "date": "1959-04-12",
+        "venue": {
+          "ko": "서부 지역 자원 정책 접견",
+          "en": "Western resources policy meeting"
+        },
+        "context": {
+          "ko": "서부 지역의 공공 토지 및 자원 관련 자료를 검토해야 합니다.",
+          "en": "We need to review public-land and resource materials from the West."
+        },
+        "cast": [
+          {
+            "id": "A000225",
+            "name": "Wayne Norviel Aspinall",
+            "ko": "웨인 애스피널",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8577"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "서부 지역의 공공 토지 및 자원 관련 자료를 검토해야 합니다.",
+            "en": "We need to review public-land and resource materials from the West."
+          },
+          {
+            "speaker": "player",
+            "ko": "위원회 담당자에게 보내겠습니다.",
+            "en": "I'll send them to the appropriate committee staff."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "제86대 의회에서 애스피널이 이끄는 위원회는 {{blank}}입니다.",
+          "en": "In the 86th Congress Aspinall chairs {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            },
+            {
+              "id": "B",
+              "ko": "내무·도서지역",
+              "en": "Interior and Insular Affairs"
+            },
+            {
+              "id": "C",
+              "ko": "세입",
+              "en": "Ways and Means"
+            },
+            {
+              "id": "D",
+              "ko": "규칙",
+              "en": "Rules"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8577",
+            "claim": "Aspinall chaired Interior and Insular Affairs from the 86th Congress.",
+            "asOf": "1959-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-997-regional-policy-request"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-998",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "3월 19일 법사위원장 초상화가 공개됐습니다.",
+              "en": "The Judiciary chair portrait was unveiled on March 19."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "전시 자료에 기념 연도와 위원회를 넣으세요.",
+              "en": "Include the anniversary and committee in the display."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "3월 19일 법사위원장 초상화가 공개됐습니다.",
+              "en": "The Judiciary chair portrait was unveiled on March 19."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "3월 19일 법사위원장 초상화가 공개됐습니다.",
+                "en": "The Judiciary chair portrait was unveiled on March 19."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "전시 자료에 기념 연도와 위원회를 넣으세요.",
+                "en": "Include the anniversary and committee in the display."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "3월 19일 법사위원장 초상화가 공개됐습니다.",
+                "en": "The Judiciary chair portrait was unveiled on March 19."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법사위원장 초상화라는 설명과 3월 19일 공개 일자를 넣어 전시를 시작합시다.",
+                "en": "Let's open the exhibit with its Judiciary chair caption and March 19 unveiling date."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "3월 19일 공개된 초상화는 법사위원장 직책을 기념합니다. 다른 위원장으로 표시한 전시 표지를 교체하세요.",
+                "en": "The portrait unveiled March 19 commemorates the Judiciary chairmanship. Replace the exhibit sign naming another chairmanship."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-998",
+        "mechanism": "portrait-caption",
+        "learningTarget": "Celler's Judiciary chair portrait was unveiled March 19, 1963 marking 40 years in the House.",
+        "date": "1963-03-21",
+        "venue": {
+          "ko": "셀러 초상화 전시",
+          "en": "Celler portrait display"
+        },
+        "context": {
+          "ko": "이번 주 제 하원 재임 40주년을 기념하는 초상화가 공개됐습니다.",
+          "en": "My portrait was unveiled this week to mark forty years in the House."
+        },
+        "cast": [
+          {
+            "id": "C000264",
+            "name": "Emanuel Celler",
+            "ko": "이매뉴얼 셀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10788"
+          },
+          {
+            "id": "A000225",
+            "name": "Wayne Norviel Aspinall",
+            "ko": "웨인 애스피널",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8577"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 주 제 하원 재임 40주년을 기념하는 초상화가 공개됐습니다.",
+            "en": "My portrait was unveiled this week to mark forty years in the House."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "콜로라도의 대표로서 뉴욕 동료의 전시 안내문을 함께 살펴보겠습니다.",
+            "en": "As a Colorado member, I'll review the New York colleague's exhibition caption."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "셀러의 초상화가 기념한 위원장 직책은 {{blank}}입니다.",
+          "en": "Celler's portrait commemorates his chairmanship of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "세출",
+              "en": "Appropriations"
+            },
+            {
+              "id": "B",
+              "ko": "농업",
+              "en": "Agriculture"
+            },
+            {
+              "id": "C",
+              "ko": "법사",
+              "en": "Judiciary"
+            },
+            {
+              "id": "D",
+              "ko": "외교",
+              "en": "Foreign Affairs"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/10788",
+            "claim": "Celler's Judiciary chair portrait was unveiled March 19, 1963 marking 40 years in the House.",
+            "asOf": "1963-03-21"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/8577",
+            "claim": "Celler's Judiciary chair portrait was unveiled March 19, 1963 marking 40 years in the House.",
+            "asOf": "1963-03-21"
+          },
+          {
+            "url": "https://history.house.gov/Collection/Detail/29007?ret=True",
+            "claim": "Celler's Judiciary chair portrait was unveiled March 19, 1963 marking 40 years in the House.",
+            "asOf": "1963-03-21"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-998-portrait-caption"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-999",
+      "path": "data/dialogue-packs/P01/part-40.json",
+      "originalBlobSha": "4bb9c1d15767b9433f8760e29aaed18319efe65f",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate correct interaction and explicit recovery from wrong answer. Retain response and protected fields.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제71대 의회에 입성해 올해 재임 40년째를 맞았습니다.",
+              "en": "I entered the 71st Congress and am now in my fortieth year."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "기념 행사 기록에 첫 임기를 추가합시다.",
+              "en": "Add the first term to the ceremony record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제71대 의회에 입성해 올해 재임 40년째를 맞았습니다.",
+              "en": "I entered the 71st Congress and am now in my fortieth year."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제71대 의회에 입성해 올해 재임 40년째를 맞았습니다.",
+                "en": "I entered the 71st Congress and am now in my fortieth year."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "기념 행사 기록에 첫 임기를 추가합시다.",
+                "en": "Add the first term to the ceremony record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제71대 의회에 입성해 올해 재임 40년째를 맞았습니다.",
+                "en": "I entered the 71st Congress and am now in my fortieth year."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "제71대 의회 입성부터 올해 행사까지의 연표로 방문객을 안내하겠습니다.",
+                "en": "I'll guide visitors through the timeline from my entry in the 71st Congress to this year's ceremony."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1929년 제71대 의회에 들어왔습니다. 잘못된 개원 회기로 계산한 기념 연표를 다시 작성하세요.",
+                "en": "I entered the 71st Congress in 1929. Rework the anniversary timeline calculated from the wrong Congress."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-999",
+        "mechanism": "anniversary-recognition",
+        "learningTarget": "A ceremony on March 5, 1968 marked Patman's 40th year of service in Congress.",
+        "date": "1968-03-06",
+        "venue": {
+          "ko": "의회 재임 기념 행사",
+          "en": "Congressional service anniversary"
+        },
+        "context": {
+          "ko": "어제 제 의회 재임 40년째를 기념하는 행사가 열렸습니다.",
+          "en": "Yesterday a ceremony marked my fortieth year in Congress."
+        },
+        "cast": [
+          {
+            "id": "P000103",
+            "name": "John William Wright Patman",
+            "ko": "라이트 팻먼",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/P/PATMAN,-John-William-Wright-(P000103)/"
+          },
+          {
+            "id": "C000264",
+            "name": "Emanuel Celler",
+            "ko": "이매뉴얼 셀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10788"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 제 의회 재임 40년째를 기념하는 행사가 열렸습니다.",
+            "en": "Yesterday a ceremony marked my fortieth year in Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 뉴욕에서 오래 재임했지만 각자의 기록은 다릅니다.",
+            "en": "I've served New York for many years too, but our records differ."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "팻먼은 제{{blank}}대 의회인 1929년에 하원에 들어왔습니다.",
+          "en": "Patman entered the House in 1929 in the {{blank}} Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "68",
+              "en": "68th"
+            },
+            {
+              "id": "B",
+              "ko": "75",
+              "en": "75th"
+            },
+            {
+              "id": "C",
+              "ko": "81",
+              "en": "81st"
+            },
+            {
+              "id": "D",
+              "ko": "71",
+              "en": "71st"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/P/PATMAN,-John-William-Wright-(P000103)/",
+            "claim": "A ceremony on March 5, 1968 marked Patman's 40th year of service in Congress.",
+            "asOf": "1968-03-06"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/10788",
+            "claim": "A ceremony on March 5, 1968 marked Patman's 40th year of service in Congress.",
+            "asOf": "1968-03-06"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-999-anniversary-recognition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ],
+  "limitations": [
+    "Thirty individual bilingual branch revisions, not playtested; opening clues and distractors may require separate later edits."
+  ]
+}

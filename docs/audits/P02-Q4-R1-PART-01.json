@@ -1,0 +1,3056 @@
+{
+  "schema": 1,
+  "team": "Q4-P02",
+  "round": 1,
+  "scope": "P02-001–025",
+  "source": {
+    "path": "data/dialogue-packs/P02/part-01.json",
+    "blobSha": "466f9f30e5f3046347f83ae48394635bb6c1312c"
+  },
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "scoring": "0 absent/poor, 1 partial, 2 strong; continuity 1 recognizes bridge, not playable implementation. No external historical recertification.",
+  "entries": [
+    {
+      "id": "P02-001",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "NPC explicitly states 'whole state' before the blank. Correct branch repeats player action and never explains why; choices too easy. Real routing problem can replace exposed answer.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "서로 다른 하원 지역구에서 같은 주의 청원 두 통이 왔습니다. 상원용 봉투를 몇 개로 나눌지 결정해야 합니다.",
+            "en": "Two petitions arrived from different House districts in the same state. I need to decide how to organize the Senate delivery."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원 지역구 표시는 청원 원본에 그대로 두세요.",
+            "en": "Keep the House district labels on the original petitions."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "상원 대표 단위가 무엇인지 확인한 뒤 두 청원의 전달 경로를 정하세요.",
+            "en": "Determine the Senate constituency before routing both petitions."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "청원 전달의 대표 단위는 {{blank}}입니다.",
+          "en": "The Senate constituency for these petitions is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주 전체",
+              "en": "the whole state"
+            },
+            {
+              "id": "B",
+              "ko": "하원 지역구",
+              "en": "a House district"
+            },
+            {
+              "id": "C",
+              "ko": "카운티",
+              "en": "a county"
+            },
+            {
+              "id": "D",
+              "ko": "사법구",
+              "en": "a judicial district"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "상원의 대표 단위는 주 전체입니다. 두 청원을 같은 주의 상원 대표단 자료에 연결하세요.",
+              "en": "The Senate constituency is the whole state. Link both petitions to the same state's Senate delegation file."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "하원 지역구는 상원 대표 단위가 아닙니다. 주 전체를 대표하는 상원 자료로 잘못 분류한 청원을 옮기세요.",
+              "en": "A House district is not the Senate constituency. Move the misrouted petitions to the statewide Senate file."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1902-06-01",
+          "learningTarget": "The Senate constituency for these petitions is the whole state.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Henry Cabot Lodge",
+              "ko": "헨리 캐벗 로지",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "George F. Hoar",
+              "ko": "조지 호어",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "The Senate constituency for these petitions is the whole state.",
+              "asOf": "1902-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1902-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/civics/constitution_item/constitution.htm",
+              "claim": "Article I establishes two senators from each state.",
+              "asOf": "1902-06-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-001-petition-routing"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-002",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Formal constitutional authority versus public opinion has value; options omit the strongest misconception, direct popular election. Generic 'exactly' and duplicated player close.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1907년의 주 선거 안내문에 주민 여론 조사와 공식 상원의원 선출 기록이 섞여 있습니다.",
+            "en": "A 1907 state election notice mixes public preference and formal Senate selection."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민이 표시한 선호가 곧 헌법상 공식 선출인지는 구분해야 합니다.",
+            "en": "Distinguish a public expression of preference from formal constitutional selection."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이 날짜에 법적 선출권을 가진 주체를 확인해 안내문을 고쳐 주세요.",
+            "en": "Identify the body with formal electing authority on this date and correct the notice."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1907년 상원의원 공식 선출 주체는 {{blank}}입니다.",
+          "en": "In 1907 senators are constitutionally elected by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주민의 직접 투표",
+              "en": "direct popular vote"
+            },
+            {
+              "id": "B",
+              "ko": "주 의회",
+              "en": "state legislatures"
+            },
+            {
+              "id": "C",
+              "ko": "연방 상원의 자체 선출",
+              "en": "election by the U.S. Senate"
+            },
+            {
+              "id": "D",
+              "ko": "주지사 단독",
+              "en": "governors alone"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1907년에는 주 의회가 공식적으로 상원의원을 선출했습니다. 안내문에서 주민 선호와 법적 선출 절차를 분리하세요.",
+              "en": "In 1907, state legislatures formally elected senators. Separate popular preferences from the legal election process in the notice."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 시기의 헌법상 공식 선출 주체는 주 의회입니다. 직접선거로 표시한 부분을 보류하고 시대별 규칙을 다시 확인하세요.",
+              "en": "The formal electing body at this time was the state legislature. Hold any direct-election label and recheck the period-specific rule."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1907-06-01",
+          "learningTarget": "In 1907 senators are constitutionally elected by state legislatures.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Robert M. La Follette",
+              "ko": "로버트 라폴레트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "William E. Borah",
+              "ko": "윌리엄 보라",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/origins-foundations/electing-appointing-senators/overview.htm",
+              "claim": "In 1907 senators are constitutionally elected by state legislatures.",
+              "asOf": "1907-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/WI/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1907-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1907-06-01"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-002-legislature-election"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-003",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 8,
+      "finding": "One-day chair rotation is a meaningful dated institutional episode; absent personal roles, stock praise, and repeated agenda line. Cast alone narrows answer.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "오늘의 본회의 가상 의사일정에 임시의장 이름이 비어 있습니다.",
+            "en": "Today's simulated floor agenda has no name in the president pro tempore field."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "장기적인 직책 명부만 보지 말고 오늘 하루의 선출 기록을 확인하세요.",
+            "en": "Check the election record for this particular day rather than only the long-term office roster."
+          },
+          {
+            "speaker": "host",
+            "ko": "교착을 해결하기 위한 절충 일정에서 오늘의 담당자를 표시해 주세요.",
+            "en": "Identify today's presiding officer in the compromise schedule."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "오늘 하루 임시의장을 맡는 사람은 {{blank}}입니다.",
+          "en": "The one-day president pro tempore today is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "프라이",
+              "en": "Frye"
+            },
+            {
+              "id": "B",
+              "ko": "보라",
+              "en": "Borah"
+            },
+            {
+              "id": "C",
+              "ko": "베이컨",
+              "en": "Bacon"
+            },
+            {
+              "id": "D",
+              "ko": "로지",
+              "en": "Lodge"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "오늘 하루의 임시의장은 베이컨입니다. 8월 14일 일정표에만 그 이름을 넣으세요.",
+              "en": "Bacon is the one-day president pro tempore. Enter his name on the August 14 agenda only."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "오늘의 담당자는 베이컨입니다. 교대 계획을 장기 임시의장 재임으로 처리한 일정표를 수정하세요.",
+              "en": "Bacon was today's officer. Correct any agenda that treated the rotation as a long-term tenure."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1911-08-14",
+          "learningTarget": "The one-day president pro tempore today is Bacon.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Augustus O. Bacon",
+              "ko": "오거스터스 베이컨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/GA/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Henry Cabot Lodge",
+              "ko": "헨리 캐벗 로지",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/officers-staff/president-pro-tempore/presidents-pro-tempore.htm",
+              "claim": "The one-day president pro tempore today is Bacon.",
+              "asOf": "1911-08-14"
+            },
+            {
+              "url": "https://www.senate.gov/states/GA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1911-08-14"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1911-08-14"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-003-chair-rotation"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-004",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Numbered amendment question useful, but 18th/19th not enacted in 1913 and distractors time-inappropriate. No concrete update after response; opportunity to follow 002.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "새 수정헌법 비준 소식에 맞춰 1907년 상원의원 선출 안내문을 갱신하려 합니다.",
+            "en": "I need to update the 1907 Senate-election guide after ratification of a new amendment."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "이전의 공식 선출권 기록은 역사 자료로 그대로 남겨 주세요.",
+            "en": "Preserve the former electing-authority record as historical material."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 직접선거 규칙의 헌법적 근거를 확인해 새 안내문에 표시하세요.",
+            "en": "Verify the constitutional basis for the new direct-election rule in the revised guide."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "직선제를 확립한 것은 {{blank}}입니다.",
+          "en": "Direct election of senators was established by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제16조",
+              "en": "the Sixteenth Amendment"
+            },
+            {
+              "id": "B",
+              "ko": "제14조",
+              "en": "the Fourteenth Amendment"
+            },
+            {
+              "id": "C",
+              "ko": "제15조",
+              "en": "the Fifteenth Amendment"
+            },
+            {
+              "id": "D",
+              "ko": "수정헌법 제17조",
+              "en": "the Seventeenth Amendment"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "수정헌법 제17조를 새 직접선거의 근거로 표시하고 이전 방식과 날짜를 나누세요.",
+              "en": "Cite the Seventeenth Amendment as the basis for direct election and date the former system separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "근거는 제17조입니다. 다른 수정헌법의 내용과 혼동한 안내문을 회수하고 직접선거의 법적 근거를 다시 표시하세요.",
+              "en": "The basis is the Seventeenth Amendment. Withdraw the notice that confused it with another amendment and correct the legal authority."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1913-05-01",
+          "learningTarget": "Direct election of senators was established by the Seventeenth Amendment.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Robert M. La Follette",
+              "ko": "로버트 라폴레트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "William E. Borah",
+              "ko": "윌리엄 보라",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/origins-foundations/electing-appointing-senators/overview.htm",
+              "claim": "Direct election of senators was established by the Seventeenth Amendment.",
+              "asOf": "1913-05-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/WI/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1913-05-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1913-05-01"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-004-constitutional-transition"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-005",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Role itself introduced but identity recall not grounded in a dated record. Two generic NPC prompts; repeated liaison line after both answers.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "당 회의와 본회의를 잇는 새 직책의 연락표를 작성합니다. 첫 담당자의 이름이 비어 있습니다.",
+            "en": "I'm preparing a contact sheet for the new role linking the party conference and the floor. The first officeholder's name is blank."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "당의 원내 지도자와 출석·표결 조정을 맡는 원내총무는 별도 직책입니다.",
+            "en": "The party floor leader and the whip coordinating attendance and votes are separate offices."
+          },
+          {
+            "speaker": "host",
+            "ko": "1913년 원내총무 직책의 첫 재임자를 공식 명부에서 확인하세요.",
+            "en": "Find the first whip in the official 1913 leadership roster."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "최초의 정당 원내총무는 {{blank}}입니다.",
+          "en": "The first Senate party whip is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "루이스",
+              "en": "Lewis"
+            },
+            {
+              "id": "B",
+              "ko": "컨",
+              "en": "Kern"
+            },
+            {
+              "id": "C",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "D",
+              "ko": "로지",
+              "en": "Lodge"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "루이스를 최초 원내총무로 표시하고 원내 지도자 연락표는 유지하세요.",
+              "en": "List Lewis as the first whip and keep the floor-leader contact separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "최초 원내총무는 루이스입니다. 지도자나 이후 원내총무의 이름을 잘못 옮긴 연락표를 수정하세요.",
+              "en": "Lewis was the first whip. Correct the sheet that borrowed the name of a leader or later whip."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1913-06-01",
+          "learningTarget": "The first Senate party whip is Lewis.",
+          "cast": [
+            {
+              "id": null,
+              "name": "James Hamilton Lewis",
+              "ko": "제임스 해밀턴 루이스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IL/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "John W. Kern",
+              "ko": "존 컨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IN/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+              "claim": "The first Senate party whip is Lewis.",
+              "asOf": "1913-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/IL/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1913-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/IN/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1913-06-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-005-whip-inauguration"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-006",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Vacancy vs other seat is a meaningful distinction; both NPCs generic, no actual successor chain, and same line on both branches.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "베일리 사임으로 텍사스의 한 의석만 변경해야 합니다. 임명 기록을 받아 왔습니다.",
+            "en": "Bailey's resignation requires updating only one Texas seat. I have the appointment record."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 재임 구간은 변경하지 마세요.",
+            "en": "Leave the other seat's service interval unchanged."
+          },
+          {
+            "speaker": "host",
+            "ko": "공석 임명과 이후의 선거를 구별해 이번 임명자의 이름을 넣어 주세요.",
+            "en": "Enter this appointee's name, distinguishing the appointment from a later election."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "베일리의 공석에 임명된 사람은 {{blank}}입니다.",
+          "en": "Bailey's appointed replacement is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "칠턴",
+              "en": "Chilton"
+            },
+            {
+              "id": "B",
+              "ko": "존스턴",
+              "en": "Johnston"
+            },
+            {
+              "id": "C",
+              "ko": "컬버슨",
+              "en": "Culberson"
+            },
+            {
+              "id": "D",
+              "ko": "셰퍼드",
+              "en": "Sheppard"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "존스턴을 베일리 공석의 임명자로 넣고 두 의석의 기록을 분리하세요.",
+              "en": "Enter Johnston as the appointee to Bailey's vacancy and retain separate seat records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "베일리 공석의 임명자는 존스턴입니다. 다른 의석 또는 후속 선거 기록에 붙인 이름을 원래 칸으로 돌리세요.",
+              "en": "Johnston was the appointee to Bailey's vacancy. Restore any name incorrectly moved from another seat or later election."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1913-01-20",
+          "learningTarget": "Bailey's appointed replacement is Johnston.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Rienzi M. Johnston",
+              "ko": "리엔지 존스턴",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Charles A. Culberson",
+              "ko": "찰스 컬버슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "Bailey's appointed replacement is Johnston.",
+              "asOf": "1913-01-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1913-01-20"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-006-temporary-credentials"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-007",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Opening describes debate ending and only one terminological choice matches. Distinction from bill passage useful but correct feedback merely praises.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "3월에 바뀐 상원 규칙을 절차 카드에 반영하려 합니다.",
+            "en": "I'm updating the procedure card for the Senate rule changed in March."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "토론을 마치는 절차와 법안에 대한 최종 표결은 별도 카드로 만들어야 합니다.",
+            "en": "Create separate cards for ending debate and voting on final passage."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 토론 종료 절차의 공식 용어를 확인해 첫 카드에 넣어 주세요.",
+            "en": "Use the formal term for the new debate-ending procedure on the first card."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 토론 종결 절차는 {{blank}}입니다.",
+          "en": "The newly adopted debate-ending procedure is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "탄핵",
+              "en": "impeachment"
+            },
+            {
+              "id": "B",
+              "ko": "인준",
+              "en": "confirmation"
+            },
+            {
+              "id": "C",
+              "ko": "클로처",
+              "en": "cloture"
+            },
+            {
+              "id": "D",
+              "ko": "재의결",
+              "en": "veto override"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "클로처를 토론종결 카드에 넣으세요. 이후 법안 가결은 별도 결과입니다.",
+              "en": "Label the debate-ending card cloture. Final passage remains a separate outcome."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "새 절차는 클로처입니다. 인준이나 재의결을 토론종결로 표시한 카드를 수정하세요.",
+              "en": "The new procedure is cloture. Correct any card identifying confirmation or veto override as debate termination."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1917-03-20",
+          "learningTarget": "The newly adopted debate-ending procedure is cloture.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Robert M. La Follette",
+              "ko": "로버트 라폴레트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Henry Cabot Lodge",
+              "ko": "헨리 캐벗 로지",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm",
+              "claim": "The newly adopted debate-ending procedure is cloture.",
+              "asOf": "1917-03-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/WI/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1917-03-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1917-03-20"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-007-debate-rule"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-008",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Treaty names plausible historical distractors, but first-use significance not operationalized. Both branches repeat same player line. Link 1917 rule to its historical application without suggesting ratification.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1917년 토론종결 규칙 카드에 첫 실제 적용 사례를 연결할 문서가 필요합니다.",
+            "en": "I need a document linking the 1917 cloture-rule card to its first actual use."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "조약 관련 토론종결 기록과 상원의 동의 표결을 별도로 확인하세요.",
+            "en": "Check the treaty cloture record separately from the Senate's consent vote."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1919년 첫 적용 당시 심의했던 조약의 제목을 확인해 주세요.",
+            "en": "Identify the treaty under debate at the first application in 1919."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그 조약은 {{blank}}입니다.",
+          "en": "The treaty was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "포츠머스 조약",
+              "en": "the Treaty of Portsmouth"
+            },
+            {
+              "id": "B",
+              "ko": "1898년 파리 조약",
+              "en": "the Treaty of Paris of 1898"
+            },
+            {
+              "id": "C",
+              "ko": "브레스트리토프스크 조약",
+              "en": "the Treaty of Brest-Litovsk"
+            },
+            {
+              "id": "D",
+              "ko": "베르사유 조약",
+              "en": "the Treaty of Versailles"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "베르사유 조약의 클로처 적용 기록을 연결하세요. 토론종결을 조약 비준으로 표시하지 않습니다.",
+              "en": "Link the cloture record for the Treaty of Versailles without labeling it treaty ratification."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "첫 적용 조약은 베르사유 조약입니다. 다른 조약 문서에 붙인 토론종결 기록을 옮기세요.",
+              "en": "The treaty at first application was Versailles. Move the cloture record from the unrelated treaty file."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1919-11-20",
+          "learningTarget": "The treaty was the Treaty of Versailles.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Henry Cabot Lodge",
+              "ko": "헨리 캐벗 로지",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "William E. Borah",
+              "ko": "윌리엄 보라",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm",
+              "claim": "The treaty was the Treaty of Versailles.",
+              "asOf": "1919-11-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1919-11-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1919-11-20"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-008-treaty-debate"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-009",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Only cast member says she took oath, practically answering the name question. Stock 'route it' reply unrelated to timeline. Identity display itself may expose answer; cannot solve without engine behavior.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "상원에 재임한 최초 여성의 기록과 선거에서 승리한 최초 여성의 기록을 구분하는 가상 전시입니다.",
+            "en": "This simulated exhibit distinguishes the first woman to serve in the Senate from the first woman to win a Senate election."
+          },
+          {
+            "speaker": "player",
+            "ko": "1922년 11월 21일 선서 자료의 이름표를 확인하겠습니다.",
+            "en": "I'll verify the nameplate for the November 21, 1922 oath record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "최초 여성 상원의원은 {{blank}}입니다.",
+          "en": "The first woman to serve in the Senate is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "펠턴",
+              "en": "Felton"
+            },
+            {
+              "id": "B",
+              "ko": "캐러웨이",
+              "en": "Caraway"
+            },
+            {
+              "id": "C",
+              "ko": "스미스",
+              "en": "Smith"
+            },
+            {
+              "id": "D",
+              "ko": "롱",
+              "en": "Long"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "펠턴을 상원에 재임한 최초 여성으로 표시하세요. 선거 승리의 최초 사례는 별도 기록입니다.",
+              "en": "Label Felton as the first woman to serve. The first woman elected belongs in a separate entry."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "host",
+              "ko": "최초 여성 상원의원은 펠턴입니다. 최초 재임과 최초 선거 승리를 같은 사건으로 처리한 전시 설명을 수정하세요.",
+              "en": "Felton was the first woman to serve in the Senate. Correct any exhibit that merged first service with first election victory."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1922-11-21",
+          "learningTarget": "The first woman to serve in the Senate is Felton.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Rebecca Latimer Felton",
+              "ko": "리베카 펠턴",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/GA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/artandhistory/history/common/briefing/women_senators.htm",
+              "claim": "The first woman to serve in the Senate is Felton.",
+              "asOf": "1922-11-21"
+            },
+            {
+              "url": "https://www.senate.gov/states/GA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1922-11-21"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-009-historic-oath"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-010",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Majority/minority distinction useful; two cast names and stock scheduling answer make rote matching. Avoid implying actual private consultation.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1926년 상원 원내 지도부 조직도에 다수당 지도자 항목이 누락됐습니다.",
+            "en": "The 1926 floor-leadership chart is missing the majority leader."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "소수당 지도부도 별도 직책으로 남겨야 합니다.",
+            "en": "Retain the minority leadership as a distinct office."
+          },
+          {
+            "speaker": "host",
+            "ko": "당시의 공식 지도부 명부로 다수당 지도자의 이름을 확인하세요.",
+            "en": "Check the official leadership roster for the majority leader on that date."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1926년 다수당 지도자는 {{blank}}입니다.",
+          "en": "The majority leader in 1926 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "맥내리",
+              "en": "McNary"
+            },
+            {
+              "id": "B",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "C",
+              "ko": "로빈슨",
+              "en": "Robinson"
+            },
+            {
+              "id": "D",
+              "ko": "바클리",
+              "en": "Barkley"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "커티스를 다수당 지도자로 표시하고 소수당 지도부의 항목은 별도로 유지하세요.",
+              "en": "Mark Curtis as majority leader and retain a separate minority-leadership entry."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "1926년 다수당 지도자는 커티스입니다. 다른 시기의 지도자를 복사한 조직도를 수정하세요.",
+              "en": "Curtis was majority leader in 1926. Correct the chart if it borrowed a leader from another period."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1926-06-01",
+          "learningTarget": "The majority leader in 1926 is Curtis.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Charles Curtis",
+              "ko": "찰스 커티스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/KS/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Joseph T. Robinson",
+              "ko": "조지프 로빈슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+              "claim": "The majority leader in 1926 is Curtis.",
+              "asOf": "1926-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/KS/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1926-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1926-06-01"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-010-party-desk"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-011",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "Copeland says 'I remain in office' and Wadsworth says he left: exact answer shown by speaker. Both branches repeat action with no tenure explanation.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1928년 뉴욕 대표단의 현재 재임 명부와 이전 재임 명부가 섞여 있습니다.",
+            "en": "The 1928 New York delegation file mixes the current and former members."
+          },
+          {
+            "speaker": "host",
+            "ko": "이 가상 명부 확인에서는 사람의 현재 화면 등장 여부가 아니라 실제 재임 기간을 사용합니다.",
+            "en": "In this simulated roster check, use the actual service interval, not whoever appears on screen."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1928년 현직 뉴욕 상원의원은 {{blank}}입니다.",
+          "en": "The sitting New York senator in 1928 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "루트",
+              "en": "Root"
+            },
+            {
+              "id": "B",
+              "ko": "플랫",
+              "en": "Platt"
+            },
+            {
+              "id": "C",
+              "ko": "코플랜드",
+              "en": "Copeland"
+            },
+            {
+              "id": "D",
+              "ko": "워즈워스",
+              "en": "Wadsworth"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "코플랜드를 현직으로 분류하고 워즈워스의 이전 재임 기록은 보존하세요.",
+              "en": "Classify Copeland as sitting and preserve Wadsworth's previous service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "host",
+              "ko": "1928년 제시된 현직 의원은 코플랜드입니다. 전직 명부에서 옮긴 이름을 되돌리고 날짜를 대조하세요.",
+              "en": "Copeland is the sitting member among these options in 1928. Restore the misplaced former-member entry and reconcile the dates."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1928-06-01",
+          "learningTarget": "The sitting New York senator in 1928 is Copeland.",
+          "cast": [
+            {
+              "id": null,
+              "name": "James W. Wadsworth Jr.",
+              "ko": "제임스 워즈워스 주니어",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NY/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Royal S. Copeland",
+              "ko": "로열 코플랜드",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NY/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/NY/senators.htm",
+              "claim": "The sitting New York senator in 1928 is Copeland.",
+              "asOf": "1928-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/NY/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1928-06-01"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-011-former-member-reunion"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-012",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Caraway personally discloses appointment plus election, making correct identity obvious. Correct branch generic, misses distinction from Felton.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "여성 상원의원 역사 전시에서 최초 재임과 최초 선거 승리를 나누어 기록합니다.",
+            "en": "The women-in-the-Senate exhibit separates first service from first election victory."
+          },
+          {
+            "speaker": "player",
+            "ko": "1932년 1월 선거 결과표를 보고 두 번째 유형의 최초 사례를 확인하겠습니다.",
+            "en": "I'll use the January 1932 election record to identify the first example of the second category."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "임명장과 선거 결과표는 서로 다른 근거입니다.",
+            "en": "An appointment certificate and election returns are different kinds of evidence."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "상원 선거에서 처음 승리한 여성은 {{blank}}입니다.",
+          "en": "The first woman to win a Senate election is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "펠턴",
+              "en": "Felton"
+            },
+            {
+              "id": "B",
+              "ko": "스미스",
+              "en": "Smith"
+            },
+            {
+              "id": "C",
+              "ko": "롱",
+              "en": "Long"
+            },
+            {
+              "id": "D",
+              "ko": "캐러웨이",
+              "en": "Caraway"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "캐러웨이를 상원 선거에서 처음 승리한 여성으로 표시하고 임명 기록은 별도로 보존하세요.",
+              "en": "Label Caraway as the first woman to win a Senate election and preserve her appointment separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "최초 선거 승리는 캐러웨이입니다. 펠턴의 최초 재임 사례와 섞인 전시 표지를 분리하세요.",
+              "en": "Caraway was the first woman to win a Senate election. Separate that label from Felton's first-service entry."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1932-01-20",
+          "learningTarget": "The first woman to win a Senate election is Caraway.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Hattie W. Caraway",
+              "ko": "해티 캐러웨이",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Joseph T. Robinson",
+              "ko": "조지프 로빈슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/artandhistory/history/common/briefing/women_senators.htm",
+              "claim": "The first woman to win a Senate election is Caraway.",
+              "asOf": "1932-01-20"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1932-01-20"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-012-special-election"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-013",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Democratic majority cue plus visible cast affiliation preselects Robinson; stock answer and repeated scheduling text. Political turnover relationship to earlier leadership worth preserving.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "새 의회의 원내 지도부 표를 이전 회기 표와 비교하려 합니다.",
+            "en": "I need to compare the new Congress's floor-leadership chart with the preceding Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다수당과 소수당 직책을 이름만으로 이어 붙이지 마세요.",
+            "en": "Do not transfer majority and minority offices merely by matching names."
+          },
+          {
+            "speaker": "host",
+            "ko": "1933년 새 의회의 공식 다수당 지도자를 확인하세요.",
+            "en": "Verify the new Congress's official majority leader in 1933."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "다수당 지도자는 {{blank}}입니다.",
+          "en": "The majority leader is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로빈슨",
+              "en": "Robinson"
+            },
+            {
+              "id": "B",
+              "ko": "맥내리",
+              "en": "McNary"
+            },
+            {
+              "id": "C",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "D",
+              "ko": "화이트",
+              "en": "White"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "로빈슨을 다수당 지도자로 등록하고 이전 회기의 지도부 표를 별도로 보존하세요.",
+              "en": "Enter Robinson as majority leader and preserve the preceding Congress's chart separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "새 다수당 지도자는 로빈슨입니다. 이전 회기의 다수당·소수당 직책을 복사한 표를 바로잡으세요.",
+              "en": "The new majority leader was Robinson. Correct any chart that copied earlier majority or minority offices."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1933-06-01",
+          "learningTarget": "The majority leader is Robinson.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Joseph T. Robinson",
+              "ko": "조지프 로빈슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Charles L. McNary",
+              "ko": "찰스 맥내리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/OR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+              "claim": "The majority leader is Robinson.",
+              "asOf": "1933-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1933-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/OR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1933-06-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-013-majority-change"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-014",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Class III is substantive and classes I/II plausible; Class IV impossible. No calendar consequence beyond stock line. Connect 021 later without assuming implementation.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "아칸소의 두 의석을 서로 다른 정규 선거 달력에 배치해야 합니다.",
+            "en": "I need to put Arkansas's two seats on separate regular-election calendars."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "캐러웨이의 선거 주기는 그 의석의 클래스에 따라 기록하세요.",
+            "en": "Record Caraway's election cycle according to her seat class."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의원이 같은 주를 대표한다는 이유로 같은 선거 주기를 부여하지 마세요.",
+            "en": "Do not assign the same election cycle merely because both senators represent the same state."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "캐러웨이의 의석은 {{blank}}입니다.",
+          "en": "Caraway's seat belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "의석 클래스가 지정되지 않음",
+              "en": "no seat class assigned"
+            },
+            {
+              "id": "B",
+              "ko": "Class III",
+              "en": "Class III"
+            },
+            {
+              "id": "C",
+              "ko": "Class I",
+              "en": "Class I"
+            },
+            {
+              "id": "D",
+              "ko": "Class II",
+              "en": "Class II"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "캐러웨이의 의석을 Class III로 분류하고 다른 의석의 달력과 분리하세요.",
+              "en": "Classify Caraway's seat as Class III and retain a separate calendar for the other seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "캐러웨이 의석은 Class III입니다. 두 의석을 같은 클래스로 표시한 달력을 수정하세요.",
+              "en": "Caraway's seat is Class III. Correct the calendar that assigned both seats the same class."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1934-06-01",
+          "learningTarget": "Caraway's seat belongs to Class III.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Hattie W. Caraway",
+              "ko": "해티 캐러웨이",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Joseph T. Robinson",
+              "ko": "조지프 로빈슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Caraway's seat belongs to Class III.",
+              "asOf": "1934-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1934-06-01"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-014-seat-class"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-015",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "McNary explicitly says no separate whip elected, exposing unfilled answer; other choices absurd. Correct and wrong repeat same no-contact line.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1935년 공화당 지도부 연락표에서 원내총무 이름이 비어 있습니다. 빈 칸이 오류인지 확인해야 합니다.",
+            "en": "The 1935 Republican leadership sheet has no whip name. I need to determine whether the blank is an error."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다른 정당의 직책 명부에서 이름을 복사해서 채우지 마세요.",
+            "en": "Do not fill the blank by copying a name from another party's roster."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "당시 공화당의 공식 원내총무 기록을 확인해 그 상태를 표시하세요.",
+            "en": "Check the official Republican whip record for that date and label its status."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1935년 공화당 원내총무 자리는 {{blank}}입니다.",
+          "en": "In 1935 the Republican whip position is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "정당 원내대표가 공식적으로 겸임",
+              "en": "formally held concurrently by the party floor leader"
+            },
+            {
+              "id": "B",
+              "ko": "별도 원내총무가 선출됨",
+              "en": "filled by a separately elected whip"
+            },
+            {
+              "id": "C",
+              "ko": "공석",
+              "en": "unfilled"
+            },
+            {
+              "id": "D",
+              "ko": "직무대행 원내총무가 지정됨",
+              "en": "filled by a designated acting whip"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1935년 공화당 원내총무는 공석입니다. 이름을 만들어 넣지 말고 비어 있는 직책으로 표시하세요.",
+              "en": "The Republican whip position was unfilled in 1935. Mark the office as vacant without inventing an officeholder."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 직책은 당시 공석입니다. 다른 직책의 재임자를 원내총무로 잘못 넣은 연락표를 삭제하고 빈 직책을 복원하세요.",
+              "en": "The office was unfilled then. Remove the officeholder copied from another position and restore the vacant entry."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1935-06-01",
+          "learningTarget": "In 1935 the Republican whip position is unfilled.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Joseph T. Robinson",
+              "ko": "조지프 로빈슨",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Charles L. McNary",
+              "ko": "찰스 맥내리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/OR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+              "claim": "In 1935 the Republican whip position is unfilled.",
+              "asOf": "1935-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1935-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/OR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1935-06-01"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-015-whip-absence"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-016",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Leadership succession dated and relevant; previous majority leader named, but answer largely inferred from present cast. Generic feedback doesn't explain transition.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "로빈슨 사망 이후 원내 지도부 조직도를 새로 작성하려 합니다.",
+            "en": "I need to update the floor-leadership chart after Robinson's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "소수당 지도부의 기존 항목은 그대로 두고 변경된 다수당 직책만 확인하세요.",
+            "en": "Retain minority leadership and verify only the changed majority office."
+          },
+          {
+            "speaker": "host",
+            "ko": "공식 지도부 승계 기록에서 로빈슨의 후임을 찾아 주세요.",
+            "en": "Identify Robinson's successor in the official leadership record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "로빈슨의 후임 다수당 지도자는 {{blank}}입니다.",
+          "en": "Robinson's successor as majority leader is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "맥내리",
+              "en": "McNary"
+            },
+            {
+              "id": "B",
+              "ko": "화이트",
+              "en": "White"
+            },
+            {
+              "id": "C",
+              "ko": "로지",
+              "en": "Lodge"
+            },
+            {
+              "id": "D",
+              "ko": "바클리",
+              "en": "Barkley"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "바클리를 후임 다수당 지도자로 표시하고 로빈슨의 이전 재임 구간을 보존하세요.",
+              "en": "List Barkley as the succeeding majority leader and preserve Robinson's earlier tenure."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "후임은 바클리입니다. 소수당 지도자를 다수당 후임으로 잘못 연결한 조직도를 수정하세요.",
+              "en": "Barkley succeeded Robinson. Correct any chart that linked the minority leader as the majority successor."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1937-09-01",
+          "learningTarget": "Robinson's successor as majority leader is Barkley.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Alben W. Barkley",
+              "ko": "앨번 바클리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/KY/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Charles L. McNary",
+              "ko": "찰스 맥내리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/OR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+              "claim": "Robinson's successor as majority leader is Barkley.",
+              "asOf": "1937-09-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/KY/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1937-09-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/OR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1937-09-01"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-016-leader-succession"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-017",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Single cast; other three entry routes implausible after 17th Amendment. Historical House-to-Senate path useful, but same praise and repeated player line.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "힐의 하원 경력과 1938년 상원 취임 자료를 연결하고 있습니다.",
+            "en": "I'm linking Hill's House career to his 1938 Senate entry record."
+          },
+          {
+            "speaker": "host",
+            "ko": "하원 재임이 끝났다는 사실만으로 상원 진입 방법을 알 수는 없습니다. 자격 기록을 확인하세요.",
+            "en": "The end of House service alone does not establish the route into the Senate. Check the credentials."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "힐의 상원 진입 방식은 {{blank}}입니다.",
+          "en": "Hill entered the Senate through {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공석 임명",
+              "en": "appointment to a vacancy"
+            },
+            {
+              "id": "B",
+              "ko": "정규 상원선거 당선",
+              "en": "victory in a regular Senate election"
+            },
+            {
+              "id": "C",
+              "ko": "공석을 위한 특별선거 당선",
+              "en": "victory in a special election for the vacancy"
+            },
+            {
+              "id": "D",
+              "ko": "주 의회에 의한 직접 선출",
+              "en": "direct election by the state legislature"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "공석 임명으로 상원에 진입했습니다. 하원 경력과 임명에 따른 상원 재임을 별도 구간으로 연결하세요.",
+              "en": "I entered through appointment to a vacancy. Link House service to the separate appointed Senate interval."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "host",
+              "ko": "힐의 진입 방식은 공석 임명입니다. 선거 당선자로 표시한 경력 카드를 임명 기록으로 수정하세요.",
+              "en": "Hill entered through a vacancy appointment. Correct the career card that labeled his entry an election victory."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1938-02-01",
+          "learningTarget": "Hill entered the Senate through appointment to a vacancy.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Lister Hill",
+              "ko": "리스터 힐",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AL/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+              "claim": "Hill entered the Senate through appointment to a vacancy.",
+              "asOf": "1938-02-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AL/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1938-02-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-017-house-to-senate"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-018",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Borah's death and separate seat helpful; Thomas present, other historical names mostly remote. Both outcomes identical player claim.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "보라 사망으로 생긴 아이다호 공석의 승계 계보를 확인합니다.",
+            "en": "I'm checking the succession lineage for the Idaho vacancy created by Borah's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 아이다호 의석은 변경하지 마세요.",
+            "en": "Do not change the other Idaho seat."
+          },
+          {
+            "speaker": "host",
+            "ko": "1940년 임명 자료에서 공석을 맡은 사람을 확인하세요.",
+            "en": "Identify the appointee from the 1940 appointment record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "보라 사망 후 임명된 사람은 {{blank}}입니다.",
+          "en": "The senator appointed after Borah's death is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "슈프",
+              "en": "Shoup"
+            },
+            {
+              "id": "B",
+              "ko": "토머스",
+              "en": "Thomas"
+            },
+            {
+              "id": "C",
+              "ko": "클라크",
+              "en": "Clark"
+            },
+            {
+              "id": "D",
+              "ko": "듀보이스",
+              "en": "Dubois"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "토머스를 보라 사망 후 임명된 의원으로 연결하고 선거 이력은 별도로 남겨 주세요.",
+              "en": "Link Thomas as the appointee after Borah's death and keep election records separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "임명된 사람은 토머스입니다. 다른 아이다호 의석의 현직을 공석 후임으로 잘못 넣은 계보를 복원하세요.",
+              "en": "Thomas was appointed. Restore any lineage that incorrectly placed the other Idaho incumbent into the vacancy."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1940-02-01",
+          "learningTarget": "The senator appointed after Borah's death is Thomas.",
+          "cast": [
+            {
+              "id": null,
+              "name": "John W. Thomas",
+              "ko": "존 토머스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "D. Worth Clark",
+              "ko": "워스 클라크",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "The senator appointed after Borah's death is Thomas.",
+              "asOf": "1940-02-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1940-02-01"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-018-vacancy-not-election"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-019",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Immediate appointed successor versus later elected candidate is a substantive distinction; generic NPC self-reference and duplicated branch. Link to 020 as seat history.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "셰퍼드 사망 후 텍사스 공석을 채운 첫 기록을 작성하고 있습니다.",
+            "en": "I'm entering the first record filling the Texas vacancy after Sheppard's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 텍사스 의석의 재임 기록은 유지하세요.",
+            "en": "Retain the other Texas seat's service record."
+          },
+          {
+            "speaker": "host",
+            "ko": "현재 확인된 임명 후임을 기록하고 이후 선거 결과는 아직 넣지 마세요.",
+            "en": "Record the confirmed appointee and leave any later election outcome unentered."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "셰퍼드의 임명 후임은 {{blank}}입니다.",
+          "en": "Sheppard's appointed successor is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "오대니얼",
+              "en": "O'Daniel"
+            },
+            {
+              "id": "B",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "C",
+              "ko": "휴스턴",
+              "en": "Houston"
+            },
+            {
+              "id": "D",
+              "ko": "코널리",
+              "en": "Connally"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "휴스턴을 셰퍼드의 임명 후임으로 추가하세요. 이후의 승계는 새로운 기록이 필요합니다.",
+              "en": "Add Houston as Sheppard's appointed successor. Later succession requires a new record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "임명 후임은 휴스턴입니다. 다른 재임자나 아직 확인하지 않은 선거 결과로 공석을 채운 표를 수정하세요.",
+              "en": "The appointee was Houston. Correct any table that filled the vacancy with another incumbent or unconfirmed election result."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1941-05-01",
+          "learningTarget": "Sheppard's appointed successor is Houston.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Andrew J. Houston",
+              "ko": "앤드루 휴스턴",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Tom Connally",
+              "ko": "톰 코널리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "Sheppard's appointed successor is Houston.",
+              "asOf": "1941-05-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1941-05-01"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-019-interim-seat"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-020",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "O'Daniel explicitly says service began last month; named cast leaks answer. Texas seat sequence can distinguish appointed and elected periods.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "8월에 새로 시작된 텍사스 상원 재임 구간을 이전 임명 기록과 연결하겠습니다.",
+            "en": "I'll link the Texas Senate service interval beginning in August to the preceding appointment history."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "특별선거 의석과 나머지 텍사스 의석은 별도로 유지하세요.",
+            "en": "Keep the special-election seat separate from the other Texas seat."
+          },
+          {
+            "speaker": "host",
+            "ko": "1941년 8월 실제로 진입한 의원의 이름을 확인하세요.",
+            "en": "Identify the senator who actually entered in August 1941."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1941년 8월 텍사스 상원에 진입한 사람은 {{blank}}입니다.",
+          "en": "The Texan entering the Senate in August 1941 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "코널리",
+              "en": "Connally"
+            },
+            {
+              "id": "B",
+              "ko": "휴스턴",
+              "en": "Houston"
+            },
+            {
+              "id": "C",
+              "ko": "셰퍼드",
+              "en": "Sheppard"
+            },
+            {
+              "id": "D",
+              "ko": "오대니얼",
+              "en": "O'Daniel"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "오대니얼을 8월 진입자로 연결하고 앞선 공석 임명 이력을 지우지 마세요.",
+              "en": "Link O'Daniel as the August entrant without deleting the earlier appointment history."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "8월 진입자는 오대니얼입니다. 앞선 재임자와 새로운 진입자를 같은 기간으로 합친 기록을 분리하세요.",
+              "en": "O'Daniel was the August entrant. Separate the earlier officeholder and new entrant if their terms were merged."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1941-09-01",
+          "learningTarget": "The Texan entering the Senate in August 1941 is O'Daniel.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Pappy O'Daniel",
+              "ko": "패피 오대니얼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Tom Connally",
+              "ko": "톰 코널리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TX/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "The Texan entering the Senate in August 1941 is O'Daniel.",
+              "asOf": "1941-09-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/TX/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1941-09-01"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-020-special-result"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-021",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "McClellan explicitly identifies his own new term; Caraway says she remains, making answer exact. Need independent seat data rather than visible speakers.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1943년 아칸소 대표단 명부에서 계속 재임한 의석과 새 임기가 시작된 의석을 구분합니다.",
+            "en": "I'm distinguishing the continuing Arkansas seat from the seat with a new term in 1943."
+          },
+          {
+            "speaker": "host",
+            "ko": "이전의 Class III 기록을 보존하면서 새 진입자의 이름을 공식 재임 자료에서 확인하세요.",
+            "en": "Retain the earlier Class III record while verifying the new entrant from the service roster."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1943년 새 아칸소 상원의원은 {{blank}}입니다.",
+          "en": "The new Arkansas senator in 1943 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "매클렐런",
+              "en": "McClellan"
+            },
+            {
+              "id": "B",
+              "ko": "캐러웨이",
+              "en": "Caraway"
+            },
+            {
+              "id": "C",
+              "ko": "로빈슨",
+              "en": "Robinson"
+            },
+            {
+              "id": "D",
+              "ko": "스펜서",
+              "en": "Spencer"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "매클렐런을 새 의원으로 추가하고 캐러웨이의 계속 재임하는 의석은 보존하세요.",
+              "en": "Add McClellan as the new senator and preserve Caraway's continuing seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "host",
+              "ko": "1943년 새 아칸소 의원은 매클렐런입니다. 계속 재임한 의석까지 교체한 명부를 원상 복구하세요.",
+              "en": "McClellan was the new Arkansas senator in 1943. Restore any roster that also replaced the continuing seat."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1943-06-01",
+          "learningTarget": "The new Arkansas senator in 1943 is McClellan.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Hattie W. Caraway",
+              "ko": "해티 캐러웨이",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "John L. McClellan",
+              "ko": "존 매클렐런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AR/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "The new Arkansas senator in 1943 is McClellan.",
+              "asOf": "1943-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AR/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1943-06-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-021-parallel-delegation"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-022",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Wartime leadership change is specific but generic NPC prompts and no date-based consequence. Earlier leader McNary plausible.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1944년 6월의 상원 지도부 연락표를 이전 회기의 표와 비교하고 있습니다.",
+            "en": "I'm comparing the June 1944 Senate leadership sheet with its predecessor."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다수당 지도부의 기록은 유지하되 바뀐 소수당 직책을 별도로 확인하세요.",
+            "en": "Retain the majority leadership entry while verifying the changed minority office."
+          },
+          {
+            "speaker": "host",
+            "ko": "6월의 공식 소수당 지도자 이름으로 연락표를 갱신하세요.",
+            "en": "Update the sheet with the official minority leader for June."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1944년 6월 소수당 지도자는 {{blank}}입니다.",
+          "en": "The minority leader in June 1944 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "커티스",
+              "en": "Curtis"
+            },
+            {
+              "id": "B",
+              "ko": "화이트",
+              "en": "White"
+            },
+            {
+              "id": "C",
+              "ko": "바클리",
+              "en": "Barkley"
+            },
+            {
+              "id": "D",
+              "ko": "맥내리",
+              "en": "McNary"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "화이트를 1944년 6월 소수당 지도자로 표시하고 이전 명부를 날짜별로 보관하세요.",
+              "en": "List White as minority leader in June 1944 and retain the earlier roster by date."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "당시 소수당 지도자는 화이트입니다. 이전 지도자를 계속 재임자로 표시한 연락표를 수정하세요.",
+              "en": "White was minority leader then. Correct the sheet that retained an earlier leader as incumbent."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1944-06-01",
+          "learningTarget": "The minority leader in June 1944 is White.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Alben W. Barkley",
+              "ko": "앨번 바클리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/KY/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Wallace H. White Jr.",
+              "ko": "월리스 화이트 주니어",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ME/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+              "claim": "The minority leader in June 1944 is White.",
+              "asOf": "1944-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/KY/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1944-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/ME/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1944-06-01"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-022-minority-replacement"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-023",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Knowland personally identifies recent oath; other candidates mostly later, so cast leaks identity. Date vs entry pathway premise doesn't match question precisely.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1945년 캘리포니아 상원의 임명에 따른 진입 기록을 확인합니다.",
+            "en": "I'm checking the 1945 California Senate entry by appointment."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "임명장과 선서 자료의 날짜는 각각 보존하세요.",
+            "en": "Retain the appointment and oath dates separately."
+          },
+          {
+            "speaker": "host",
+            "ko": "당시 임명으로 진입한 의원의 이름을 공식 기록에서 확인하세요.",
+            "en": "Identify the senator who entered through appointment from the official record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1945년 임명으로 상원에 진입한 사람은 {{blank}}입니다.",
+          "en": "The appointee who entered the Senate in 1945 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "닉슨",
+              "en": "Nixon"
+            },
+            {
+              "id": "B",
+              "ko": "쿠첼",
+              "en": "Kuchel"
+            },
+            {
+              "id": "C",
+              "ko": "놀랜드",
+              "en": "Knowland"
+            },
+            {
+              "id": "D",
+              "ko": "다우니",
+              "en": "Downey"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "놀랜드를 1945년 임명 진입자로 등록하고 이전 의석 재임자와 혼동하지 마세요.",
+              "en": "Register Knowland as the 1945 appointee without conflating him with the previous seat holder."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "임명으로 진입한 의원은 놀랜드입니다. 다른 캘리포니아 의원의 경력을 이 임명 기록에 붙이지 마세요.",
+              "en": "Knowland entered by appointment. Remove any other California senator's career from this appointment record."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1945-10-01",
+          "learningTarget": "The appointee who entered the Senate in 1945 is Knowland.",
+          "cast": [
+            {
+              "id": null,
+              "name": "William F. Knowland",
+              "ko": "윌리엄 놀랜드",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CA/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Sheridan Downey",
+              "ko": "셰리던 다우니",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+              "claim": "The appointee who entered the Senate in 1945 is Knowland.",
+              "asOf": "1945-10-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/CA/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1945-10-01"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-023-military-to-senate"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-024",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Term-length numeric alternatives plausible; class/calendar context genuine, but no calendar operation beyond stock followup. Use an explicitly fictional example to calculate.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "상원 정규 임기가 시작되는 가상 기준일을 1915년으로 잡았습니다. 다음 정규 임기 시작 연도를 계산하려 합니다.",
+            "en": "For a simulated calendar, I set a regular Senate term's starting year to 1915. I need to calculate the next regular term start."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "공석을 채우는 남은 임기와 정규 임기를 혼동하지 마세요.",
+            "en": "Do not confuse the remainder of a vacant term with a regular term."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "정규 임기의 길이를 적용해 이 가상 달력을 완성하세요.",
+            "en": "Apply the regular term length to complete the simulated calendar."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "정규 상원 임기는 {{blank}}입니다.",
+          "en": "A regular Senate term lasts {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2년",
+              "en": "two years"
+            },
+            {
+              "id": "B",
+              "ko": "4년",
+              "en": "four years"
+            },
+            {
+              "id": "C",
+              "ko": "8년",
+              "en": "eight years"
+            },
+            {
+              "id": "D",
+              "ko": "6년",
+              "en": "six years"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "정규 임기는 6년입니다. 1915년을 기준으로 한 가상 달력의 다음 시작 연도를 1921년으로 두세요.",
+              "en": "A regular term lasts six years. Set 1921 as the next start year in the simulated calendar beginning in 1915."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "정규 임기는 6년입니다. 특별선거의 잔여 임기나 하원 임기와 혼동한 가상 달력을 다시 계산하세요.",
+              "en": "A regular Senate term lasts six years. Recalculate the simulation if you confused it with a remaining vacancy term or a House term."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1915-06-01",
+          "learningTarget": "A regular Senate term lasts six years.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Robert M. La Follette",
+              "ko": "로버트 라폴레트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "Paul O. Husting",
+              "ko": "폴 허스팅",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/origins-foundations/senate-and-constitution/senate-classes.htm",
+              "claim": "A regular Senate term lasts six years.",
+              "asOf": "1915-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/WI/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1915-06-01"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-024-staggered-cycle"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    },
+    {
+      "id": "P02-025",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Historically specific cloture threshold useful, distractors meaningful, but 'calculate' provides no numbers and correct reply 'route it' is unrelated. Add actual hypothetical denominator while retaining question.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1917년 규칙을 적용하는 가상 표결입니다. 출석해 투표한 의원이 90명이라면 어떤 기준을 써야 합니까?",
+            "en": "This is a simulated vote applying the 1917 rule. With 90 senators present and voting, what threshold applies?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "법안 자체의 가결과 토론종결은 다른 절차입니다.",
+            "en": "Final passage and cloture are distinct procedures."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "당시 규칙의 분모와 비율을 적용해 필요한 표를 계산해 주세요.",
+            "en": "Apply the denominator and fraction in the rule at that date to calculate the required votes."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1917년 토론 종결 기준은 {{blank}}입니다.",
+          "en": "The cloture threshold under the 1917 rule is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "출석하여 투표한 의원의 3분의 2",
+              "en": "two-thirds of senators present and voting"
+            },
+            {
+              "id": "B",
+              "ko": "단순 과반",
+              "en": "a simple majority"
+            },
+            {
+              "id": "C",
+              "ko": "4분의 3",
+              "en": "three-fourths"
+            },
+            {
+              "id": "D",
+              "ko": "만장일치",
+              "en": "unanimity"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "출석하여 투표한 의원의 3분의 2가 필요합니다. 가상 표결의 90명 중 60표가 문턱입니다.",
+              "en": "Two-thirds of senators present and voting are required. In the simulated vote, the threshold is 60 out of 90."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1917년 기준은 출석·투표자의 3분의 2입니다. 가상 90명에 단순 과반이나 다른 비율을 적용한 계산표를 수정하세요.",
+              "en": "The 1917 threshold is two-thirds of those present and voting. Correct the simulation if it used a simple majority or another fraction."
+            }
+          ]
+        },
+        "protected": {
+          "date": "1917-04-01",
+          "learningTarget": "The cloture threshold under the 1917 rule is two-thirds of senators present and voting.",
+          "cast": [
+            {
+              "id": null,
+              "name": "Robert M. La Follette",
+              "ko": "로버트 라폴레트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WI/senators.htm"
+            },
+            {
+              "id": null,
+              "name": "William E. Borah",
+              "ko": "윌리엄 보라",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ID/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm",
+              "claim": "The cloture threshold under the 1917 rule is two-thirds of senators present and voting.",
+              "asOf": "1917-04-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/WI/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1917-04-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/ID/senators.htm",
+              "claim": "Senate service and state delegation history.",
+              "asOf": "1917-04-01"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-025-cloture-threshold"
+          }
+        },
+        "implementationNote": "Proposed educational simulation; preserve original factual evidence, context, date and cast. Identity questions may still leak through visible portrait/name labels; no engine changes authorized. No new historical quotation or meeting is asserted."
+      }
+    }
+  ]
+}

@@ -163,29 +163,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "지역 수출입 문제를 대표단에 묻습니다.",
-          "en": "We ask the delegation about local trade."
+          "speaker": "player",
+          "ko": "뉴햄프셔의 수입업자가 대표단 서한을 읽고 관세가 이미 시행됐다고 주장합니다.",
+          "en": "A New Hampshire importer reads the delegation letter and says the tariffs are already in effect."
         },
         {
           "speaker": "npc:0",
-          "ko": "대통령에게 관세 계획 관련 서한을 보냈습니다.",
-          "en": "We sent the president a letter about planned tariffs."
+          "ko": "서한이 반대한 정책 계획과 실제 시행을 구분해야 합니다.",
+          "en": "Distinguish the policy plan opposed in the letter from implementation."
         },
         {
           "speaker": "npc:1",
-          "ko": "캐나다는 우리 주의 중요한 교역 상대입니다.",
-          "en": "Canada is a major trading partner for our state."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "서한은 계획 철회를 요청합니다.",
-          "en": "The letter asks that the plan not proceed."
-        },
-        {
-          "speaker": "npc:3",
-          "ko": "실제 관세 시행 여부와 구별하세요.",
-          "en": "Distinguish the request from actual implementation."
+          "ko": "교역 상대와 세율을 정확히 확인해 보도 내용을 고쳐 주세요.",
+          "en": "Verify the trading partners and rate before correcting the report."
         }
       ],
       "response": {
@@ -219,16 +209,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "이 관세 서한은 요청 당시의 정책 논쟁으로 분류해 주세요.",
-            "en": "Classify the tariff letter as a policy dispute at the time of the request."
+            "speaker": "npc:2",
+            "ko": "반대한 계획을 명시하고 서한 발송 당시 실제 시행 여부는 별도로 확인합시다.",
+            "en": "Identify the opposed plan and check its implementation separately as of the letter date."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "뉴햄프셔 대표단은 캐나다와 멕시코에 대한 25% 관세 계획에 반대했습니다.",
-            "en": "The delegation opposed planned 25% tariffs on Canada and Mexico."
+            "speaker": "npc:3",
+            "ko": "캐나다와 멕시코에 대한 25% 관세 계획이 대상입니다. 주 소득세나 선거구 문제와 관련되지 않습니다.",
+            "en": "The target was planned 25% tariffs on Canada and Mexico, not state taxes or redistricting."
           }
         ]
       },
@@ -496,29 +486,24 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "섬 지역 주민이 하와이 재난 복구 법안과 국제 협력 법안을 같은 정책이라고 생각합니다.",
+          "en": "An island resident thinks a Hawaii disaster-recovery bill and an international partnership bill are the same policy."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "지난 마우이 복구 논의와 달리 이번에는 태평양 섬 국가들과의 관계입니다.",
-          "en": "Unlike the earlier Maui recovery discussion, this concerns relations with Pacific Island countries."
+          "ko": "이번 제안의 지리적 대상부터 구분해 주세요.",
+          "en": "Identify the geographic focus of this proposal first."
         },
         {
           "speaker": "npc:1",
-          "ko": "미국령 사모아에서도 지역 이해관계가 있습니다.",
-          "en": "American Samoa has regional interests here."
+          "ko": "미국령 사모아의 지역 이해관계도 있지만 협력 상대를 정확히 밝혀야 합니다.",
+          "en": "American Samoa has regional interests, but identify the intended partners precisely."
         },
         {
           "speaker": "npc:2",
-          "ko": "상원에서도 참여했습니다.",
-          "en": "The Senate participated too."
-        },
-        {
-          "speaker": "npc:3",
-          "ko": "양원 법안임을 기록하세요.",
-          "en": "Note its bicameral nature."
-        },
-        {
-          "speaker": "player",
-          "ko": "대상 지역을 구별하겠습니다.",
-          "en": "I'll distinguish the geographic focus."
+          "ko": "상원에서도 참여했으니 양원의 입법 기록은 따로 확인하죠.",
+          "en": "Members of the Senate joined too; check each chamber's legislative record separately."
         }
       ],
       "response": {
@@ -552,16 +537,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "하와이와 미국령 사모아의 지역 연결을 태평양 정책 노트에 추가하세요.",
-            "en": "Add the Hawaii–American Samoa connection to the Pacific policy notebook."
+            "speaker": "npc:3",
+            "ko": "그 지역과의 국제 협력 제안으로 분류하고 국내 재난 복구와 구별합시다.",
+            "en": "Classify it as international partnership with that region, distinct from domestic disaster recovery."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "2025년 5월 두 원의 의원들이 태평양 도서국과의 협력 법안을 발의했습니다.",
-            "en": "Members of both chambers introduced a Pacific Islands partnership bill in May 2025."
+            "speaker": "npc:0",
+            "ko": "이 법안의 대상은 태평양 도서국입니다. 오대호나 국내 유역 개발 사업이 아닙니다.",
+            "en": "The bill focuses on Pacific Island nations, not Great Lakes or domestic river development."
           }
         ]
       },
@@ -1658,29 +1643,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "농촌 통신업체가 의원 서한을 근거로 새 투자 규칙이 이미 효력을 갖는다고 주장합니다.",
+          "en": "A rural telecom provider claims that the congressional letter itself put new investment rules into effect."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "농촌 인터넷 투자 확대를 위한 서한 이후 새 기관 발표가 있었습니다.",
-          "en": "An agency announcement followed our letter on rural broadband investment."
+          "ko": "서한과 후속 기관 발표를 구별해야 합니다.",
+          "en": "Separate the congressional letter from the subsequent agency announcement."
         },
         {
           "speaker": "npc:1",
-          "ko": "이번에는 의원 요청이 아니라 기관의 정책 변경입니다.",
-          "en": "This time it is an agency policy change, not just a request."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "미시시피에서도 서명했습니다.",
-          "en": "I signed from Mississippi."
-        },
-        {
-          "speaker": "npc:3",
-          "ko": "테네시에서도 참여했죠.",
-          "en": "Tennessee joined."
-        },
-        {
-          "speaker": "npc:4",
-          "ko": "발표 기관을 확인하세요.",
-          "en": "Identify the announcing agency."
+          "ko": "11월 1일에 정책 변경을 발표한 기관을 확인해 주세요.",
+          "en": "Identify the agency that announced the change on November 1."
         }
       ],
       "response": {
@@ -1714,16 +1689,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "서한 뒤의 NTIA 발표를 별도 정책 이행 기록으로 추가해 주세요.",
-            "en": "Add the subsequent NTIA announcement as a separate policy implementation record."
+            "speaker": "npc:2",
+            "ko": "기관 발표를 이행 기록으로 따로 검토하고 서한 자체가 규칙을 바꿨다고 쓰지 마세요.",
+            "en": "Review the agency announcement as a separate implementation record; do not say the letter itself changed the rules."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "2023년 11월 1일 NTIA가 정책 변경을 발표했습니다.",
-            "en": "NTIA announced the policy change November 1, 2023."
+            "speaker": "npc:0",
+            "ko": "NTIA가 발표한 정책 변경입니다. 재난·항공·식품 기관의 발표와 혼동하면 안 됩니다.",
+            "en": "The change was announced by NTIA, not a disaster, aviation, or food agency."
           }
         ]
       },
@@ -1785,29 +1760,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "대표단 서한의 목적을 기록합니다.",
-          "en": "We're recording the purpose of the delegation letter."
+          "speaker": "player",
+          "ko": "오클라호마 대표단의 서한을 군사 예산 법안으로 분류한 보고가 올라왔습니다.",
+          "en": "A report classifies the Oklahoma delegation's letter as a military appropriations bill."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 주의 주방위군에 보냈습니다.",
-          "en": "It was addressed to our state's National Guard."
+          "ko": "의사당 근무에 관한 감사의 대상이 누구였는지 확인하세요.",
+          "en": "Identify whom we thanked for Capitol service."
         },
         {
           "speaker": "npc:1",
-          "ko": "의사당 근무에 대한 감사 서한입니다.",
-          "en": "It expressed thanks for Capitol service."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "새 군사 예산 법안이 아닙니다.",
-          "en": "It isn't a new military appropriations bill."
-        },
-        {
-          "speaker": "npc:3",
-          "ko": "서한의 수신인을 기록하세요.",
-          "en": "Record its recipient."
+          "ko": "감사 서한이 새 예산을 승인한 것은 아닙니다.",
+          "en": "A letter of thanks did not authorize new appropriations."
         }
       ],
       "response": {
@@ -1841,16 +1806,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "감사 서한은 예산 법안과 다른 유형의 대표단 활동으로 분류하세요.",
-            "en": "Classify the thank-you letter as a different type of delegation activity from legislation."
+            "speaker": "npc:2",
+            "ko": "감사 서한으로 정정하고 입법 기록과 분리해 주세요.",
+            "en": "Correct it to a thank-you letter and separate it from legislative records."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "2021년 2월 대표단은 오클라호마 주방위군에 감사 서한을 보냈습니다.",
-            "en": "The delegation sent a thank-you letter to the Oklahoma National Guard."
+            "speaker": "npc:3",
+            "ko": "오클라호마 주방위군에게 보낸 감사 서한입니다. 교통부나 주 상원에 보낸 법안이 아닙니다.",
+            "en": "It was a thank-you letter to the Oklahoma National Guard, not legislation sent to DOT or the state Senate."
           }
         ]
       },
@@ -2014,18 +1979,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "섬 지역과 본토 농촌은 의료 접근에서 어떤 공통점이 있나요?",
-          "en": "What do islands and mainland rural areas share in health access?"
+          "ko": "섬 지역과 본토 농촌의 의료 인력 부족을 함께 논의할 초당적 협의회를 마련하려 합니다.",
+          "en": "I want to convene a bipartisan discussion on health workforce shortages in island and mainland rural communities."
         },
         {
           "speaker": "npc:0",
-          "ko": "의료인력 부족과 접근 문제가 있습니다.",
-          "en": "Workforce shortages and access are issues."
+          "ko": "하와이 주민의 접근성 문제와 본토의 거리 문제를 각각 들을 수 있겠죠.",
+          "en": "We can hear Hawaii's access concerns and mainland travel-distance concerns separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "우리는 초당적 농촌 의료 코커스를 공동으로 이끕니다.",
-          "en": "We co-chair a bipartisan rural health caucus."
+          "ko": "저희가 공동의장을 맡은 의원 모임을 확인해 초청을 준비하세요.",
+          "en": "Identify the member group we co-chair before preparing invitations."
         }
       ],
       "response": {
@@ -2060,15 +2025,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "하와이와 테네시의 의료 모임 연락 기록을 연결해 주세요.",
-            "en": "Connect the Hawaii and Tennessee rural health contacts."
+            "ko": "그 모임에서 두 지역의 공통 문제와 지역별 차이를 함께 토론합시다.",
+            "en": "Let's discuss both shared problems and regional differences through that group."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "두 의원은 농촌 의료 코커스 공동의장으로 의료의 날을 기념했습니다.",
-            "en": "They marked Rural Health Day as caucus co-chairs."
+            "ko": "Bipartisan Rural Health Caucus입니다. 윤리위나 상원 금융위와 같은 정식 위원회가 아닙니다.",
+            "en": "It is the Bipartisan Rural Health Caucus, not a formal committee like Ethics or Senate Finance."
           }
         ]
       },
@@ -2224,19 +2189,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "새 의회에서 델라웨어를 대표하게 됐습니다.",
-          "en": "I've begun representing Delaware in the new Congress."
-        },
-        {
           "speaker": "player",
-          "ko": "주 안의 특정 번호 지역구인가요?",
-          "en": "A numbered district within the state?"
+          "ko": "델라웨어 주민이 도시별 하원 의원실을 여러 곳에 배정해 달라고 합니다.",
+          "en": "A Delaware resident asks to assign separate House offices by city."
         },
         {
           "speaker": "npc:0",
-          "ko": "델라웨어는 주 전체를 하나의 하원 지역구로 둡니다.",
-          "en": "Delaware has a statewide House district."
+          "ko": "2025년 새 의회에서 제 대표 범위를 정확히 확인해 주민에게 설명해 주세요.",
+          "en": "Verify the scope of my representation in the new Congress of 2025 and explain it to residents."
         }
       ],
       "response": {
@@ -2271,15 +2231,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "델라웨어 주민 안내에는 단일 주 전체 지역구를 표시해 주세요.",
-            "en": "Label Delaware's constituent directory as one statewide district."
+            "ko": "모든 델라웨어 주민의 하원 문의에 같은 전주 지역구를 적용하되 개별 민원은 별도로 접수합시다.",
+            "en": "Use the same statewide district for Delaware House inquiries while keeping individual cases separate."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "맥브라이드는 델라웨어 주 전체를 대표하는 하원의원입니다.",
-            "en": "McBride represents Delaware at large."
+            "ko": "델라웨어는 당시 단일 전주 하원 지역구였습니다. DE-2, DE-3, DE-4를 만들면 존재하지 않는 의석을 안내하게 됩니다.",
+            "en": "Delaware had one statewide House district. DE-2, DE-3, and DE-4 would refer residents to nonexistent seats."
           }
         ]
       },
@@ -2321,18 +2281,13 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "델라웨어처럼 버몬트에도 주 전체 지역구가 있나요?",
-          "en": "Like Delaware, does Vermont have a statewide district?"
+          "ko": "2025년 버몬트 새 의회 출범 행사에서 밸린트 의원을 초선으로 소개하려는 초안이 나왔습니다.",
+          "en": "A draft introduction for Vermont's new congressional term in 2025 calls Balint a freshman."
         },
         {
           "speaker": "npc:0",
-          "ko": "그렇습니다. 이번에는 제 두 번째 하원 임기입니다.",
-          "en": "Yes. This is my second House term."
-        },
-        {
-          "speaker": "aide",
-          "ko": "신임과 연임을 구분해 기록하겠습니다.",
-          "en": "I'll distinguish a first term from a return."
+          "ko": "이전 임기와 이번 임기를 확인해 소개문을 정정해 주세요.",
+          "en": "Check my earlier term and the current one before correcting the introduction."
         }
       ],
       "response": {
@@ -2367,15 +2322,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "버몬트 연임 기록을 새 의원 취임 자료와 별도로 보관하세요.",
-            "en": "File Vermont's returning-member record separately from freshman inaugurations."
+            "ko": "연임 의원으로 소개하고 첫 임기와 이번 임기의 활동을 분리해 설명하세요.",
+            "en": "Introduce me as a returning member and distinguish the work of the two terms."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "밸린트는 2025년 1월 두 번째 하원 임기를 시작했습니다.",
-            "en": "Balint began her second House term in January 2025."
+            "ko": "2025년 1월에 시작한 것은 제 두 번째 하원 임기입니다. 새 회기 시작을 초선 입성으로 착각하지 마세요.",
+            "en": "January 2025 began my second House term. Do not mistake a new Congress for a first election."
           }
         ]
       },
@@ -2437,29 +2392,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "여러 주의 보궐선거 결과를 날짜순으로 배열합니다.",
-          "en": "Let's arrange special election results from several states by date."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "몬태나 선거는 5월에 치러졌습니다.",
-          "en": "Montana's election took place in May."
+          "speaker": "player",
+          "ko": "2017년 특별선거 당선인 네 명을 취임 순서가 아닌 당선 순서로 소개할 방송을 준비합니다.",
+          "en": "We are preparing a broadcast introducing four 2017 special-election winners by election order, not oath order."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 선거는 6월 20일이었습니다.",
-          "en": "Mine was June 20."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "저도 같은 날 선거를 치렀습니다.",
-          "en": "Mine was the same day."
+          "ko": "당선일과 취임일은 각각 확인해야 합니다.",
+          "en": "Election and oath dates need separate verification."
         },
         {
           "speaker": "npc:3",
-          "ko": "저는 6월 6일에 당선됐습니다.",
-          "en": "I won June 6."
+          "ko": "네 주의 선거일을 당시 기록에서 비교해 첫 당선인을 선택하세요.",
+          "en": "Compare the four states' election dates in the historical record and select the earliest winner."
         }
       ],
       "response": {
@@ -2494,15 +2439,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "네 지역의 보궐선거 결과를 당선일 순서로 배열하고 취임일도 따로 적으세요.",
-            "en": "Arrange the four special elections by election date and record oath dates separately."
+            "ko": "제 5월 25일 선거 기록부터 시작하고 6월 선거 결과는 이후에 배치하세요.",
+            "en": "Start with my May 25 election record, then place the June results afterward."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "지언포르테는 2017년 5월 25일 몬태나 보궐선거에서 당선됐습니다.",
-            "en": "Gianforte won the Montana special election May 25, 2017."
+            "speaker": "npc:2",
+            "ko": "지언포르테가 5월 25일 당선됐고 나머지 선거는 6월이었습니다. 취임일 순서로 바꿔 기록하지 마세요.",
+            "en": "Gianforte won May 25; the other elections were in June. Do not substitute oath-date order."
           }
         ]
       },
@@ -2543,24 +2488,24 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "노스다코타 지역 단체가 첫 100일 활동 보고서에 나온 화상간담회를 후속 정책 토론의 출발점으로 삼으려 합니다.",
+          "en": "A North Dakota group wants to use the virtual roundtable in the first-100-days report as a starting point for a policy discussion."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "취임 후 농업 지도자들과 진행한 화상간담회 자료입니다.",
-          "en": "Here are the materials from a virtual roundtable with agriculture leaders after taking office."
+          "ko": "제가 초청한 하원 위원장이 어느 위원회를 이끌었는지 확인해 주세요. 간담회 참석과 법안 통과를 혼동해서는 안 됩니다.",
+          "en": "Identify the House committee led by the chair I invited. Attending a roundtable is not the same as passing a bill."
         },
         {
           "speaker": "player",
-          "ko": "지역 농업계 외에 의회에서 어떤 위원회가 참여했나요?",
-          "en": "Which congressional committee was represented alongside local agriculture leaders?"
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "위원장을 초대해 농작물 보험과 수출 지원 등 농업법 우선순위를 논의했습니다.",
-          "en": "I invited the chair to discuss Farm Bill priorities such as crop insurance and export support."
+          "ko": "위원회 관할을 확인하고 후속 정책 질문을 준비하겠습니다.",
+          "en": "I'll identify the committee's jurisdiction and prepare follow-up policy questions."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "간담회에 초대된 위원장은 하원 {{blank}}위원장입니다.",
+        "ko": "당시 초청된 위원장은 하원 {{blank}}위원회를 이끌었습니다.",
         "en": "The invited chair led the House Committee on {{blank}}.",
         "choices": [
           {
@@ -2590,15 +2535,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "농업계가 의회 위원장과 직접 의견을 나눈 기록을 자료집에 추가하세요.",
-            "en": "Add this record of agricultural leaders communicating with a committee chair to the dossier."
+            "ko": "맞습니다. 이제 농작물 보험과 수출 지원 등 농업법 우선순위에 관한 질문을 준비합시다. 간담회에서 의견을 나눴다는 사실만으로 입법이 완료된 것은 아닙니다.",
+            "en": "Correct. Now prepare questions on Farm Bill priorities such as crop insurance and export support. Discussion at the roundtable does not mean legislation was enacted."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2025년 4월 14일 첫 100일 보고에는 하원 농업위원장 GT 톰슨과의 화상간담회가 기록돼 있습니다.",
-            "en": "The April 14 first-100-days report records a virtual roundtable with House Agriculture Chair GT Thompson."
+            "ko": "당시 초청한 사람은 하원 농업위원장 GT 톰슨이었습니다. 다른 위원회의 권한으로 설명하지 말고 후속 질문을 다시 준비해 주세요.",
+            "en": "The invited member was House Agriculture Chair GT Thompson. Please revise the follow-up questions rather than attributing the discussion to another committee."
           }
         ]
       },

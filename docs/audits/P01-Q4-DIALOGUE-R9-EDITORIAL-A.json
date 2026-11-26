@@ -1,0 +1,1959 @@
+{
+  "schema": "q4-r9-editorial-v1",
+  "round": 9,
+  "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+  "rows": [
+    {
+      "id": "P01-112",
+      "path": "data/dialogue-packs/P01/part-05.json",
+      "originalBlobSha": "15d1686e79dbd51dc69ba063f7a7508348802378",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "R8 incorrect branch would undo corrected 1977 resignation date; opening contains a role-category clue. Preserve date correction verbatim and use neutral introduction.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "의사당에서 뵈었는데 오늘은 시청이군요.",
+            "en": "We met at the Capitol, but today we're at City Hall."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원에서 사임하고 시 정부로 옮겼습니다.",
+            "en": "I resigned from the House to join city government."
+          },
+          {
+            "speaker": "aide",
+            "ko": "예전 뉴욕 지역구 기록은 따로 남기죠.",
+            "en": "Let's preserve his former New York district record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "다음에는 시청에서 뵙죠.",
+              "en": "See you at City Hall next time."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1977년 12월 31일 하원에서 사임하고 1978년 뉴욕시 부시장이 됐습니다.",
+              "en": "I resigned from the House on December 31, 1977, and became New York City deputy mayor in 1978."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "의사당에서 뵈었는데 오늘은 시청이군요.",
+              "en": "We met at the Capitol, but today we're at City Hall."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "하원에서 사임하고 시 정부로 옮겼습니다.",
+              "en": "I resigned from the House to join city government."
+            },
+            {
+              "speaker": "aide",
+              "ko": "예전 뉴욕 지역구 기록은 따로 남기죠.",
+              "en": "Let's preserve his former New York district record."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "행사 소개문에 예전 직함을 그대로 써도 될까요?",
+              "en": "May I reuse your former title in the event program?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "경력이 바뀌었으니 오늘의 직함을 확인해 주세요.",
+              "en": "My career has changed; please check my current title."
+            },
+            {
+              "speaker": "aide",
+              "ko": "소개문에는 현재 직함 하나만 들어갑니다.",
+              "en": "There is room for one current title in the introduction."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "다음에는 시청에서 뵙죠.",
+                "en": "See you at City Hall next time."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1977년 12월 31일 하원에서 사임하고 1978년 뉴욕시 부시장이 됐습니다.",
+                "en": "I resigned from the House on December 31, 1977, and became New York City deputy mayor in 1978."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 직함으로 소개해 주세요. 하원 경력은 1977년 12월 31일까지의 별도 기록입니다.",
+                "en": "Use that title. My House service belongs in a separate record ending December 31, 1977."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1977년 12월 31일 하원에서 사임하고 1978년 뉴욕시 부시장이 됐습니다.",
+                "en": "I resigned from the House on December 31, 1977, and became New York City deputy mayor in 1978."
+              },
+              {
+                "speaker": "player",
+                "ko": "소개문 인쇄를 멈추겠습니다. 이전 직함과 현재 직함을 혼동했습니다.",
+                "en": "I'll stop the program from going to print. I confused the former and current offices."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-112",
+        "mechanism": "career-transition",
+        "learningTarget": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+        "date": "1978-02-06",
+        "venue": {
+          "ko": "뉴욕시청",
+          "en": "New York City Hall"
+        },
+        "context": {
+          "ko": "하원의원으로 만났던 사람을 시청에서 다시 만난다.",
+          "en": "You encounter a former House member at City Hall."
+        },
+        "cast": [
+          {
+            "id": "B000025",
+            "name": "Herman Badillo",
+            "ko": "허먼 바디요",
+            "portrait": "https://historycms.house.gov/uploadedImages/People/Listing/B/B000025.jpg",
+            "source": "https://history.house.gov/People/Detail/8806"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이번에 바디요님은 {{blank}}으로 소개해야겠군요.",
+          "en": "Today I should introduce you as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴욕주 주지사",
+              "en": "New York governor"
+            },
+            {
+              "id": "B",
+              "ko": "뉴욕주 상원의원",
+              "en": "New York state senator"
+            },
+            {
+              "id": "C",
+              "ko": "연방 하원의장",
+              "en": "Speaker of the House"
+            },
+            {
+              "id": "D",
+              "ko": "뉴욕시 부시장",
+              "en": "New York City deputy mayor"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8806",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          },
+          {
+            "url": "https://history.house.gov/Collection/Detail/15032397075",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-career-transition-112"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-130",
+      "path": "data/dialogue-packs/P01/part-06.json",
+      "originalBlobSha": "76d4467ce81cd5cd0f7476a806178e31daafaf11",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "Cast restoration retained; direct mother/House disclosure removed from dialogue, but two surnames and options still make this easy.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:1",
+            "ko": "오늘은 어머니와 같은 주 대표단으로 이 자리에 왔습니다.",
+            "en": "Today I'm here with my mother as part of the same state delegation."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "각자 선거를 통해 하원에 왔으니 한 사람의 수행원으로 소개하면 안 되겠지요.",
+            "en": "Each of us was elected to the House, so neither should be introduced as the other's attendant."
+          },
+          {
+            "speaker": "host",
+            "ko": "두 분을 함께 모시는 이유를 어떻게 설명하면 될까요?",
+            "en": "How should I explain why you're both here?"
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "대표단 연락처도 각각 두시면 되겠습니다.",
+              "en": "Keep separate contacts for us in the delegation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1953년부터 저와 아들 올리버 모두 오하이오 하원의원입니다.",
+              "en": "Since January 1953, Oliver and I have both served Ohio in the House."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:1",
+              "ko": "오늘은 어머니와 같은 주 대표단으로 이 자리에 왔습니다.",
+              "en": "Today I'm here with my mother as part of the same state delegation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "각자 선거를 통해 하원에 왔으니 한 사람의 수행원으로 소개하면 안 되겠지요.",
+              "en": "Each of us was elected to the House, so neither should be introduced as the other's attendant."
+            },
+            {
+              "speaker": "host",
+              "ko": "두 분을 함께 모시는 이유를 어떻게 설명하면 될까요?",
+              "en": "How should I explain why you're both here?"
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "두 분이 참석하는 행사인데 소개를 한 문장으로 해야 합니다.",
+              "en": "Both of you are attending, and I need a one-sentence introduction."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "한 사람을 다른 사람의 수행원으로 소개하지는 마세요.",
+              "en": "Please don't introduce one of us as the other's attendant."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 분의 실제 관계와 공직을 함께 설명하겠습니다.",
+              "en": "I'll describe both your actual relationship and your public offices."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "대표단 연락처도 각각 두시면 되겠습니다.",
+                "en": "Keep separate contacts for us in the delegation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1953년부터 저와 아들 올리버 모두 오하이오 하원의원입니다.",
+                "en": "Since January 1953, Oliver and I have both served Ohio in the House."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "좋습니다. 질의 시간도 저희 두 사람에게 각각 배정해 주세요.",
+                "en": "Good. Give each of us a separate slot for questions."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "가족이라도 각자의 선거를 통해 이 자리에 왔으니까요.",
+                "en": "Family ties do not replace our separate elections."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "올리버는 제 아들이며 1953년부터 저와 함께 오하이오 하원의원으로 재임하고 있습니다.",
+                "en": "Oliver is my son, and since 1953 we have both served Ohio in the House."
+              },
+              {
+                "speaker": "host",
+                "ko": "한 사람의 직함을 빼고 작성한 소개는 폐기하겠습니다.",
+                "en": "I'll discard the introduction that omits one person's office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-130",
+        "mechanism": "family-delegation",
+        "learningTarget": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+        "date": "1953-02-16",
+        "venue": {
+          "ko": "워싱턴 D.C. · 오하이오 대표단 오찬",
+          "en": "Washington, DC · Ohio delegation luncheon"
+        },
+        "context": {
+          "ko": "손님이 모자 관계인 두 참석자가 의원과 보좌관인지 묻는다.",
+          "en": "A guest wonders whether one of a mother-and-son pair is the other's aide."
+        },
+        "cast": [
+          {
+            "id": "B000607",
+            "name": "Frances Payne Bolton",
+            "ko": "프랜시스 페인 볼턴",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9566"
+          },
+          {
+            "id": null,
+            "name": "Oliver Payne Bolton",
+            "ko": "올리버 페인 볼턴",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9568"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 분은 오하이오에서 {{blank}} 관계입니다.",
+          "en": "You are {{blank}} from Ohio.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "상원과 하원의 부녀",
+              "en": "a father-daughter pair in different chambers"
+            },
+            {
+              "id": "B",
+              "ko": "현직 하원의원인 모자",
+              "en": "a mother and son both serving in the House"
+            },
+            {
+              "id": "C",
+              "ko": "주지사와 비서",
+              "en": "a governor and secretary"
+            },
+            {
+              "id": "D",
+              "ko": "현직과 보좌관",
+              "en": "a member and an aide"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Institution/Firsts-Milestones/Family-Firsts/",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9566",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9568",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-130-family-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-138",
+      "path": "data/dialogue-packs/P01/part-06.json",
+      "originalBlobSha": "76d4467ce81cd5cd0f7476a806178e31daafaf11",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "Retain corrected cast; remove explicit suburban answer; geography options remain heterogeneous.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "새 흑인 다수 선거구들은 모두 도심에 생긴 건가요?",
+            "en": "Were all the new majority-Black districts created in city centers?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제가 지난해 당선된 메릴랜드 지역구는 워싱턴 D.C. 주변의 교외를 포함합니다.",
+            "en": "The Maryland district I won last year includes suburban communities outside Washington, DC."
+          },
+          {
+            "speaker": "player",
+            "ko": "도시 중심부만 보면 대표성 변화를 놓치겠군요.",
+            "en": "Looking only at urban centers would miss some changes in representation."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "도심과 교외를 비교하는 후속 자료를 준비하겠습니다.",
+              "en": "I'll prepare a follow-up comparing city centers and suburbs."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다.",
+              "en": "My district covers Maryland suburbs near Washington."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "새 흑인 다수 선거구들은 모두 도심에 생긴 건가요?",
+              "en": "Were all the new majority-Black districts created in city centers?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 지난해 당선된 메릴랜드 지역구는 워싱턴 D.C. 주변의 교외를 포함합니다.",
+              "en": "The Maryland district I won last year includes suburban communities outside Washington, DC."
+            },
+            {
+              "speaker": "player",
+              "ko": "도시 중심부만 보면 대표성 변화를 놓치겠군요.",
+              "en": "Looking only at urban centers would miss some changes in representation."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "host",
+              "ko": "새 선거구의 대표성을 다루는 토론에 어떤 지리적 사례를 넣을까요?",
+              "en": "What geographic case should we include in a discussion of representation in new districts?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지난해 제가 당선된 메릴랜드 지역구를 사례로 삼아 보세요.",
+              "en": "Use the Maryland district I won last year as your example."
+            },
+            {
+              "speaker": "player",
+              "ko": "선거구의 인구 구성과 지리적 유형을 구별해 설명하겠습니다.",
+              "en": "I'll distinguish the district's demographics from its geographic setting."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "도심과 교외를 비교하는 후속 자료를 준비하겠습니다.",
+                "en": "I'll prepare a follow-up comparing city centers and suburbs."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다.",
+                "en": "My district covers Maryland suburbs near Washington."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇습니다. 도심에 국한하지 않고 교외 사례도 토론에 포함합시다.",
+                "en": "Exactly. Let's include suburban cases rather than limit the discussion to city centers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다. 수도 자체를 대표하는 것은 아닙니다.",
+                "en": "My district covers Maryland suburbs near Washington; it does not represent the capital itself."
+              },
+              {
+                "speaker": "host",
+                "ko": "비교 사례를 잘못 골랐으니 토론 순서를 바꾸겠습니다.",
+                "en": "We selected the wrong comparison case, so I'll rearrange the discussion."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-138",
+        "mechanism": "community-history",
+        "learningTarget": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+        "date": "1993-03-15",
+        "venue": {
+          "ko": "메릴랜드 · 지역사회 정책 포럼",
+          "en": "Maryland · community policy forum"
+        },
+        "context": {
+          "ko": "방문객이 흑인 다수 선거구는 모두 대도시 중심부에 있다고 가정한다.",
+          "en": "A visitor assumes all majority-Black districts are urban cores."
+        },
+        "cast": [
+          {
+            "id": "W000784",
+            "name": "Albert Russell Wynn",
+            "ko": "앨버트 윈",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/24158"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "윈 의원의 사례는 {{blank}}에서도 새 대표성이 형성된 것을 보여 줍니다.",
+          "en": "Wynn's election shows new representation emerging in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "교외 지역",
+              "en": "suburban communities"
+            },
+            {
+              "id": "B",
+              "ko": "미국 해외 영토",
+              "en": "U.S. overseas territories"
+            },
+            {
+              "id": "C",
+              "ko": "연방 수도 자체",
+              "en": "the federal capital itself"
+            },
+            {
+              "id": "D",
+              "ko": "연방 상원",
+              "en": "the U.S. Senate"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/24158",
+            "claim": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+            "asOf": "1993-03-15"
+          },
+          {
+            "url": "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Power-Diversity/Introduction/",
+            "claim": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+            "asOf": "1993-03-15"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-138-community-history"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-164",
+      "path": "data/dialogue-packs/P01/part-07.json",
+      "originalBlobSha": "8e7b03428bfd1b255a71a793ea15e54ad62fff7a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "Correct false speaker attribution: Carrie cannot identify herself as her own mother. Avoid name-based hints beyond unchanged cast and response.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:1",
+            "ko": "어머니가 선거와 주민 서비스에 대해 많은 조언을 해 주십니다.",
+            "en": "My mother offers advice on campaigns and constituent service."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주민들의 목소리를 듣는 일이 기본입니다.",
+            "en": "Listening to constituents comes first."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 만남을 두 분의 서로 다른 의정 경력과 연결하겠습니다.",
+            "en": "I'll link our earlier meeting to your distinct careers."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "가족의 경험은 이어지지만 각자의 책임은 별개입니다.",
+              "en": "Family experience carries forward, but our responsibilities are distinct."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "캐리 미크는 제 어머니이며 2003년 제가 하원에 들어왔습니다.",
+              "en": "Carrie Meek is my mother, and I entered the House in 2003."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:1",
+              "ko": "어머니가 선거와 주민 서비스에 대해 많은 조언을 해 주십니다.",
+              "en": "My mother offers advice on campaigns and constituent service."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주민들의 목소리를 듣는 일이 기본입니다.",
+              "en": "Listening to constituents comes first."
+            },
+            {
+              "speaker": "player",
+              "ko": "이전 만남을 두 분의 서로 다른 의정 경력과 연결하겠습니다.",
+              "en": "I'll link our earlier meeting to your distinct careers."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:1",
+              "ko": "선거 이후 주민 민원을 어떻게 처리할지 조언을 듣고 있습니다.",
+              "en": "I've been seeking advice on handling constituent concerns after the election."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "먼저 어떤 문제를 해결할 수 있는지 주민에게 설명해야 합니다.",
+              "en": "Start by explaining to constituents what you can actually help resolve."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 조언을 전한 분의 의정 경험도 소개하겠습니다.",
+              "en": "I'll introduce the congressional experience of the person offering that advice."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "가족의 경험은 이어지지만 각자의 책임은 별개입니다.",
+                "en": "Family experience carries forward, but our responsibilities are distinct."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캐리 미크는 제 어머니이며 2003년 제가 하원에 들어왔습니다.",
+                "en": "Carrie Meek is my mother, and I entered the House in 2003."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "맞습니다. 어머니의 경험을 참고하되 제 임기의 민원은 제가 책임지겠습니다.",
+                "en": "That's right. I'll draw on my mother's experience, but take responsibility for constituent cases during my own term."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 어머니는 캐리 미크입니다. 2003년 제가 그 뒤를 이어 하원에 들어왔습니다.",
+                "en": "Carrie Meek is my mother. I succeeded her in the House in 2003."
+              },
+              {
+                "speaker": "player",
+                "ko": "다른 의원에게 귀속한 조언은 소개에서 빼겠습니다.",
+                "en": "I'll remove the advice I mistakenly attributed to another member."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-164",
+        "mechanism": "office-handover",
+        "learningTarget": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+        "date": "2003-02-05",
+        "venue": {
+          "ko": "마이애미 민원 상담실",
+          "en": "Miami constituent service office"
+        },
+        "context": {
+          "ko": "어머니와 아들이 세대가 바뀐 의원실에서 민원 처리 경험을 나눈다.",
+          "en": "Mother and son discuss constituent service after a generational change."
+        },
+        "cast": [
+          {
+            "id": "M000628",
+            "name": "Carrie P. Meek",
+            "ko": "캐리 미크",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18110"
+          },
+          {
+            "id": "M001148",
+            "name": "Kendrick B. Meek",
+            "ko": "켄드릭 미크",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001148.jpg",
+            "source": "https://history.house.gov/People/Detail/18768"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "켄드릭 의원의 어머니는 {{blank}}입니다.",
+          "en": "Kendrick's mother is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "맥신 워터스",
+              "en": "Maxine Waters"
+            },
+            {
+              "id": "B",
+              "ko": "캐리 미크",
+              "en": "Carrie Meek"
+            },
+            {
+              "id": "C",
+              "ko": "에디 버니스 존슨",
+              "en": "Eddie Bernice Johnson"
+            },
+            {
+              "id": "D",
+              "ko": "셜리 치점",
+              "en": "Shirley Chisholm"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18110",
+            "claim": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+            "asOf": "2003-02-05"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/18768",
+            "claim": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+            "asOf": "2003-02-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-p01-164"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-205",
+      "path": "data/dialogue-packs/P01/part-09.json",
+      "originalBlobSha": "439d19f084d0fe4b05000503e73985b104214b4c",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "Original opening states lawsuit; avoid direct answer and preserve cast, learning target and litigation/election distinction.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "변호사로 일할 때 찰스 루커스와 함께 오하이오 지도를 문제 삼았습니다.",
+            "en": "As a lawyer, I joined Charles Lucas in challenging Ohio's map."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 소송이 선거구 변화로 이어졌군요.",
+            "en": "That lawsuit led to a change in the district arrangement."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제가 당선된 1968년의 지역구가 어떻게 생겼는지 기억해 주세요.",
+            "en": "Remember how the district that elected me in 1968 came into being."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "법률가와 의원 시절을 같은 인물 기록으로 이어 주세요.",
+              "en": "Link my legal and congressional careers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오 지도에 대한 소송이 성공한 결과입니다.",
+              "en": "It resulted from a successful challenge to Ohio's map."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "변호사로 일할 때 찰스 루커스와 함께 오하이오 지도를 문제 삼았습니다.",
+              "en": "As a lawyer, I joined Charles Lucas in challenging Ohio's map."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 소송이 선거구 변화로 이어졌군요.",
+              "en": "That lawsuit led to a change in the district arrangement."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 당선된 1968년의 지역구가 어떻게 생겼는지 기억해 주세요.",
+              "en": "Remember how the district that elected me in 1968 came into being."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "의원님의 법률가 경력과 1968년 선거를 하나의 발표에서 연결하려 합니다.",
+              "en": "I'd like to connect your legal career and the 1968 election in one presentation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 사건 사이에 무엇이 바뀌었는지 정확하게 설명해 주세요.",
+              "en": "Please explain precisely what changed between those events."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "법률가와 의원 시절을 같은 인물 기록으로 이어 주세요.",
+                "en": "Link my legal and congressional careers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오 지도에 대한 소송이 성공한 결과입니다.",
+                "en": "It resulted from a successful challenge to Ohio's map."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "소송으로 선거구가 달라진 과정부터 설명하고, 그 뒤 실제 선거 결과를 다룹시다.",
+                "en": "Start with how litigation changed the district, then discuss the actual election result."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "오하이오 재획정에 대한 성공적인 소송이 계기였습니다. 공직 임명으로 얻은 의석이 아닙니다.",
+                "en": "A successful challenge to Ohio's redistricting was the turning point. The seat was not obtained by appointment."
+              },
+              {
+                "speaker": "player",
+                "ko": "발표에서 선거구 형성과 당선 경위를 다시 구분하겠습니다.",
+                "en": "I'll revise the presentation to distinguish district creation from election."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-205",
+        "mechanism": "legal-event",
+        "learningTarget": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+        "date": "1969-02-03",
+        "venue": {
+          "ko": "클리블랜드 시민권 자료실",
+          "en": "Cleveland civil rights records room"
+        },
+        "context": {
+          "ko": "법률가의 과거 소송 자료를 의원 당선 기록과 연결한다.",
+          "en": "A lawyer's earlier court case is connected to his election record."
+        },
+        "cast": [
+          {
+            "id": "S000948",
+            "name": "Louis Stokes",
+            "ko": "루이스 스토크스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22311"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스토크스의 당선 지역은 {{blank}}로 생긴 흑인 다수 선거구였습니다.",
+          "en": "Stokes won a majority-Black district created through {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "성공적인 재획정 소송",
+              "en": "a successful redistricting challenge"
+            },
+            {
+              "id": "B",
+              "ko": "상원 임명",
+              "en": "a Senate appointment"
+            },
+            {
+              "id": "C",
+              "ko": "시의회 합병",
+              "en": "a council merger"
+            },
+            {
+              "id": "D",
+              "ko": "주 승격",
+              "en": "statehood"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22311",
+            "claim": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+            "asOf": "1969-02-03"
+          },
+          {
+            "url": "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Permanent-Interest/Precongressional-Experience/",
+            "claim": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+            "asOf": "1969-02-03"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "P01-205-document"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-207",
+      "path": "data/dialogue-packs/P01/part-09.json",
+      "originalBlobSha": "439d19f084d0fe4b05000503e73985b104214b4c",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R8_conflict_rebase",
+      "note": "Remove father/son and January current-term giveaway; identity choices inherently obvious if player knows Jr/Sr.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오래 맡았던 의석을 이제 아들이 맡았습니다.",
+            "en": "My son now holds the seat I held for many years."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 임기는 지난달부터입니다. 아버지의 의정 기록과는 구분해 주세요.",
+            "en": "My term began last month. Keep it distinct from my father's record."
+          },
+          {
+            "speaker": "player",
+            "ko": "옛 연락 기록을 버리지 않고 두 인물의 관계를 표시하겠습니다.",
+            "en": "I'll retain the old contact and show the relationship between the two people."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그렇게 두 임기를 나눠 두면 혼동이 없겠지요.",
+              "en": "That distinction prevents confusion."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "주니어입니다. 저는 2001년에 물러났습니다.",
+              "en": "Junior. I left the House in 2001."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "오래 맡았던 의석을 이제 아들이 맡았습니다.",
+              "en": "My son now holds the seat I held for many years."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 임기는 지난달부터입니다. 아버지의 의정 기록과는 구분해 주세요.",
+              "en": "My term began last month. Keep it distinct from my father's record."
+            },
+            {
+              "speaker": "player",
+              "ko": "옛 연락 기록을 버리지 않고 두 인물의 관계를 표시하겠습니다.",
+              "en": "I'll retain the old contact and show the relationship between the two people."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "미주리의 이전 의석 담당자에게 보내던 주민 질의가 아직 남아 있습니다.",
+              "en": "A constituent inquiry addressed to the former holder of the Missouri seat is still outstanding."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이전 의정 기록과 현재 담당자를 구별하는 것이 중요합니다.",
+              "en": "It's important to distinguish the previous congressional record from the current officeholder."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "2001년의 실제 승계 기록을 기준으로 전달해 주세요.",
+              "en": "Route it using the actual 2001 succession record."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇게 두 임기를 나눠 두면 혼동이 없겠지요.",
+                "en": "That distinction prevents confusion."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "주니어입니다. 저는 2001년에 물러났습니다.",
+                "en": "Junior. I left the House in 2001."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "제가 현재 질의를 맡겠습니다. 이전 임기의 사례는 아버지의 기록으로 남겨 주세요.",
+                "en": "I'll take the current inquiry. Keep cases from the earlier term under my father's record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 2001년에 물러났고 주니어가 그 뒤를 이었습니다.",
+                "en": "I left the House in 2001, and Junior succeeded me."
+              },
+              {
+                "speaker": "player",
+                "ko": "전임자에게 보내려던 질의를 회수해 현직 사무실로 돌리겠습니다.",
+                "en": "I'll retrieve the inquiry meant for the former member and redirect it to the incumbent's office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-207",
+        "mechanism": "family-delegation",
+        "learningTarget": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+        "date": "2001-02-05",
+        "venue": {
+          "ko": "미주리 대표단 방문",
+          "en": "Missouri delegation visit"
+        },
+        "context": {
+          "ko": "같은 성명을 가진 두 세대의 기록을 정확히 나눈다.",
+          "en": "Separate the records of two generations sharing a name."
+        },
+        "cast": [
+          {
+            "id": "C000488",
+            "name": "William Lacy Clay Sr.",
+            "ko": "윌리엄 레이시 클레이 시니어",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11058"
+          },
+          {
+            "id": "C001049",
+            "name": "William Lacy Clay Jr.",
+            "ko": "윌리엄 레이시 클레이 주니어",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001049.jpg",
+            "source": "https://history.house.gov/People/Detail/11766"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2001년 미주리 의석을 승계한 사람은 {{blank}}입니다.",
+          "en": "The person who succeeded to the Missouri seat in 2001 was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "찰스 딕스",
+              "en": "Charles Diggs"
+            },
+            {
+              "id": "B",
+              "ko": "루이스 스토크스",
+              "en": "Louis Stokes"
+            },
+            {
+              "id": "C",
+              "ko": "윌리엄 레이시 클레이 주니어",
+              "en": "William Lacy Clay Jr."
+            },
+            {
+              "id": "D",
+              "ko": "윌리엄 레이시 클레이 시니어",
+              "en": "William Lacy Clay Sr."
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11058",
+            "claim": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+            "asOf": "2001-02-05"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/11766",
+            "claim": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+            "asOf": "2001-02-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "P01-207-revisit"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1324",
+      "path": "data/dialogue-packs/P01/part-53.json",
+      "originalBlobSha": "d3088c8135432777c571a5205047bbdc99ccc823",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "English says fellowship before question; Korean paraphrase also strongly cues it. Remove direct program reference in both languages.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "클린턴 행정부 시기에 백악관에서 연수 프로그램에 참여했습니다.",
+            "en": "I participated in a White House fellowship during the Clinton administration."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 이후 다른 행정부 시기에 예산관리국에서 일했습니다. 두 경력의 성격이 다르죠.",
+            "en": "I later worked at the Office of Management and Budget. These are different experiences."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "공직 진로에는 선거 외에도 여러 경험 경로가 있습니다.",
+              "en": "Public-service careers include experiences beyond elected office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "레헤르 페르난데스는 클린턴 행정부 당시 White House fellow였습니다.",
+              "en": "Leger Fernandez was a White House fellow during the Clinton administration."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "클린턴 행정부 시기에 백악관에서 연수 프로그램에 참여했습니다.",
+              "en": "I participated in a White House fellowship during the Clinton administration."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 이후 다른 행정부 시기에 예산관리국에서 일했습니다. 두 경력의 성격이 다르죠.",
+              "en": "I later worked at the Office of Management and Budget. These are different experiences."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "학생 진로 행사에서 두 분의 선거 이전 공직 경험을 비교하고 싶습니다.",
+              "en": "I'd like to compare your pre-election public-service experience at a student career event."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 경우 클린턴 행정부 시기의 경험을 소개해 주세요.",
+              "en": "In my case, please describe my experience during the Clinton administration."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 예산관리국 경력은 별도의 진로 사례로 다루면 좋겠습니다.",
+              "en": "My Office of Management and Budget experience would make a separate career example."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공직 진로에는 선거 외에도 여러 경험 경로가 있습니다.",
+                "en": "Public-service careers include experiences beyond elected office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "레헤르 페르난데스는 클린턴 행정부 당시 White House fellow였습니다.",
+                "en": "Leger Fernandez was a White House fellow during the Clinton administration."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 프로그램을 학생들에게 소개해 주세요. 선출직 경력과는 구분해서요.",
+                "en": "Introduce that fellowship program to the students, separately from elected office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 클린턴 행정부 당시 백악관 펠로였습니다. 비서실장이나 선출직은 아니었습니다.",
+                "en": "I was a White House fellow during the Clinton administration, not chief of staff or an elected official."
+              },
+              {
+                "speaker": "player",
+                "ko": "권한이 다른 직책을 같은 경력으로 소개한 부분을 삭제하겠습니다.",
+                "en": "I'll remove the part that conflates roles with different authority."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1324",
+        "mechanism": "public-service-fellowship",
+        "learningTarget": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+        "date": "2022-12-06",
+        "venue": {
+          "ko": "산타페 청년 공직 멘토링",
+          "en": "Santa Fe public service mentoring"
+        },
+        "context": {
+          "ko": "공식 기록에 근거한 가상의 대화입니다.",
+          "en": "A fictional conversation grounded in official records."
+        },
+        "cast": [
+          {
+            "id": "L000273",
+            "name": "Teresa Leger Fernandez",
+            "ko": "테레사 레헤르 페르난데스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000273"
+          },
+          {
+            "id": "S001218",
+            "name": "Melanie Stansbury",
+            "ko": "멜러니 스탠즈베리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001218"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "레헤르 페르난데스 의원의 과거 경력은 {{blank}}이었습니다.",
+          "en": "Leger Fernandez previously served as a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "백악관 펠로",
+              "en": "White House fellow"
+            },
+            {
+              "id": "B",
+              "ko": "대통령 비서실장",
+              "en": "White House chief of staff"
+            },
+            {
+              "id": "C",
+              "ko": "연방 대법관",
+              "en": "Supreme Court justice"
+            },
+            {
+              "id": "D",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+            "claim": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+            "asOf": "2022-12-06"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1324-public-service-fellowship"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1416",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Both languages disclose county; remove it. Branch actions distinguish birthplace and municipal career.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "카터 의원도 툴레어 카운티에 연고가 있습니다.",
+            "en": "Mr. Carter also has ties to Tulare County."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하지만 지방 공직은 오클랜드에서 맡았습니다.",
+            "en": "My local office was in Oakland."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터의 출생 연고는 툴레어입니다.",
+              "en": "Carter's birthplace is in Tulare County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "출생지와 정치 활동 지역을 분리해 표시하세요.",
+              "en": "Mark birthplace separately from political activity."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터의 출생 연고는 툴레어입니다.",
+              "en": "Carter's birthplace is in Tulare County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터 의원도 툴레어 카운티에 연고가 있습니다.",
+              "en": "Mr. Carter also has ties to Tulare County."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "하지만 지방 공직은 오클랜드에서 맡았습니다.",
+              "en": "My local office was in Oakland."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터 의원과 제 전기를 나란히 전시하려는데 출생지와 지방 공직이 혼동되기 쉽습니다.",
+              "en": "We're exhibiting Mr. Carter's biography alongside mine, and birthplace can easily be confused with local office."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 지방 공직은 오클랜드에서 맡았습니다. 출생지는 다른 항목으로 표시해 주세요.",
+              "en": "My local office was in Oakland. Please label my birthplace separately."
+            },
+            {
+              "speaker": "player",
+              "ko": "레먼코브가 속한 카운티부터 확인하겠습니다.",
+              "en": "I'll identify the county containing Lemoncove first."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "카터의 출생 연고는 툴레어입니다.",
+                "en": "Carter's birthplace is in Tulare County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "출생지와 정치 활동 지역을 분리해 표시하세요.",
+                "en": "Mark birthplace separately from political activity."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "카터의 출생 연고는 툴레어입니다.",
+                "en": "Carter's birthplace is in Tulare County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그곳을 출생지 표시에 넣고, 오클랜드 공직에는 별도의 표지를 붙입시다.",
+                "en": "Use that county on the birthplace label and a separate label for his Oakland office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 출생지 레먼코브는 툴레어 카운티에 있습니다.",
+                "en": "My birthplace, Lemoncove, is in Tulare County."
+              },
+              {
+                "speaker": "player",
+                "ko": "지방 공직을 맡았던 도시와 출생지를 섞은 전시 지도를 교체하겠습니다.",
+                "en": "I'll replace the exhibit map that confuses the city where you held office with your birthplace."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1416",
+        "mechanism": "shared-county-different-careers",
+        "learningTarget": "Elliott chaired Tulare County supervisors; Carter was born near Visalia in Tulare County and served Oakland as public works commissioner.",
+        "date": "1938-04-12",
+        "venue": {
+          "ko": "툴레어 카운티 출신 의원 접견",
+          "en": "Tulare County connections"
+        },
+        "context": {
+          "ko": "툴레어 카운티 출신 의원 접견",
+          "en": "Tulare County connections"
+        },
+        "cast": [
+          {
+            "id": "E000119",
+            "name": "Alfred James Elliott",
+            "ko": "앨프리드 엘리엇",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/12741"
+          },
+          {
+            "id": "C000195",
+            "name": "Albert Edward Carter",
+            "ko": "앨버트 카터",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/C/CARTER%2C-Albert-Edward-%28C000195%29/"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카터가 태어난 레먼코브는 {{blank}} 카운티입니다.",
+          "en": "Carter's birthplace Lemoncove is in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "툴레어",
+              "en": "Tulare"
+            },
+            {
+              "id": "B",
+              "ko": "앨러미다",
+              "en": "Alameda"
+            },
+            {
+              "id": "C",
+              "ko": "로스앤젤레스",
+              "en": "Los Angeles"
+            },
+            {
+              "id": "D",
+              "ko": "요로",
+              "en": "Yolo"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/12741",
+            "claim": "Elliott chaired Tulare County supervisors; Carter was born near Visalia in Tulare County and served Oakland as public works commissioner.",
+            "asOf": "1938-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Listing/C/CARTER%2C-Albert-Edward-%28C000195%29/",
+            "claim": "Elliott chaired Tulare County supervisors; Carter was born near Visalia in Tulare County and served Oakland as public works commissioner.",
+            "asOf": "1938-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1416-shared-county-different-careers"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1423",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Explicit state leak in both languages and identical first branch; remove state mention and use separate farm delegation tasks.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농촌 의료와 농업을 경험한 의원으로서 엘리엇 의원을 소개합니다.",
+            "en": "As a member with rural health and farming experience, let me introduce Elliott."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 캘리포니아에서 농업과 축산에 종사했습니다.",
+            "en": "I farmed and raised livestock in California."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "엘리엇은 캘리포니아 대표입니다.",
+              "en": "Elliott represents California."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 주의 농가 자료를 구분해 검토하세요.",
+              "en": "Review the farm materials separately by state."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "엘리엇은 캘리포니아 대표입니다.",
+              "en": "Elliott represents California."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 의료와 농업을 경험한 의원으로서 엘리엇 의원을 소개합니다.",
+              "en": "As a member with rural health and farming experience, let me introduce Elliott."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 캘리포니아에서 농업과 축산에 종사했습니다.",
+              "en": "I farmed and raised livestock in California."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 지역의 농촌 문제를 비교하는 간담회에 엘리엇 의원을 모셨습니다.",
+              "en": "I've invited Mr. Elliott to a discussion comparing rural issues in two regions."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 농업과 축산에 종사한 경험을 바탕으로 말씀드리겠습니다.",
+              "en": "I'll speak from my experience in farming and livestock."
+            },
+            {
+              "speaker": "player",
+              "ko": "각 의원이 대표하는 주에 맞춰 질문을 배정하겠습니다.",
+              "en": "I'll assign questions according to the state each member represents."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘리엇은 캘리포니아 대표입니다.",
+                "en": "Elliott represents California."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 주의 농가 자료를 구분해 검토하세요.",
+                "en": "Review the farm materials separately by state."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘리엇은 캘리포니아 대표입니다.",
+                "en": "Elliott represents California."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "캘리포니아 농가에 관한 질문은 제게 주시고, 밀러 의원의 주와 비교해 보죠.",
+                "en": "Give me the California farm questions, and we'll compare them with Mr. Miller's state."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘리엇 의원은 캘리포니아 대표이고 저는 네브래스카 대표입니다.",
+                "en": "Mr. Elliott represents California; I represent Nebraska."
+              },
+              {
+                "speaker": "player",
+                "ko": "잘못 배정한 농가 질문을 거두고 두 주의 사례를 나누겠습니다.",
+                "en": "I'll withdraw the misassigned farm questions and separate the cases by state."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1423",
+        "mechanism": "rural-industry-exchange",
+        "learningTarget": "Miller engaged in agriculture in Nebraska; Elliott farmed and raised livestock in California; both served in 1944.",
+        "date": "1944-04-12",
+        "venue": {
+          "ko": "서부 농촌 경제 회의",
+          "en": "Western rural economy meeting"
+        },
+        "context": {
+          "ko": "서부 농촌 경제 회의",
+          "en": "Western rural economy meeting"
+        },
+        "cast": [
+          {
+            "id": "M000715",
+            "name": "Arthur Lewis Miller",
+            "ko": "아서 루이스 밀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18227"
+          },
+          {
+            "id": "E000119",
+            "name": "Alfred James Elliott",
+            "ko": "앨프리드 엘리엇",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/12741"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "엘리엇의 대표 주는 {{blank}}입니다.",
+          "en": "Elliott represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "네브래스카",
+              "en": "Nebraska"
+            },
+            {
+              "id": "B",
+              "ko": "미네소타",
+              "en": "Minnesota"
+            },
+            {
+              "id": "C",
+              "ko": "아이오와",
+              "en": "Iowa"
+            },
+            {
+              "id": "D",
+              "ko": "캘리포니아",
+              "en": "California"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18227",
+            "claim": "Miller engaged in agriculture in Nebraska; Elliott farmed and raised livestock in California; both served in 1944.",
+            "asOf": "1944-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/12741",
+            "claim": "Miller engaged in agriculture in Nebraska; Elliott farmed and raised livestock in California; both served in 1944.",
+            "asOf": "1944-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1423-rural-industry-exchange"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1450",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "0c636eb1ac37e664fd0e8d589eb37edd2f653c3e",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Both openings give Cincinnati; incorrect branch incorrectly attributes Clancy municipal service to Burke. Correct speaker without altering history.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "클랜시 의원의 지방 행정 경험과 제 주의회 경험을 비교해 봅시다.",
+            "en": "Let's compare Mr. Clancy's municipal experience with my state legislative work."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 신시내티 시청에서 일했습니다.",
+            "en": "I worked at Cincinnati city hall."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+              "en": "I served on Cincinnati City Council and as mayor."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "도시·주·연방의 주민대표 경로를 나눠 설명합시다.",
+              "en": "Explain municipal, state and federal representation separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+              "en": "I served on Cincinnati City Council and as mayor."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "클랜시 의원의 지방 행정 경험과 제 주의회 경험을 비교해 봅시다.",
+              "en": "Let's compare Mr. Clancy's municipal experience with my state legislative work."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 신시내티 시청에서 일했습니다.",
+              "en": "I worked at Cincinnati city hall."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "주 의회와 시 행정의 경험을 비교하는 토론을 준비하고 있습니다.",
+              "en": "I'm preparing a discussion comparing state legislative and municipal experience."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 하원에 오기 전 시의회와 시 행정을 경험했습니다.",
+              "en": "Before entering the House, I served in city government and on a city council."
+            },
+            {
+              "speaker": "player",
+              "ko": "클랜시 의원의 지방 공직이 어느 도시였는지 확인한 뒤 토론을 시작하겠습니다.",
+              "en": "I'll identify the city where Mr. Clancy held local office before beginning the discussion."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+                "en": "I served on Cincinnati City Council and as mayor."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "도시·주·연방의 주민대표 경로를 나눠 설명합시다.",
+                "en": "Explain municipal, state and federal representation separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+                "en": "I served on Cincinnati City Council and as mayor."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "그 도시의 시의회와 시장 경험을 먼저 설명하겠습니다. 이후 버크 의원의 주의회 경험과 비교하죠.",
+                "en": "I'll explain my city council and mayoral experience there first, then compare it with Ms. Burke's state legislative work."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 신시내티의 시의원과 시장으로 활동했습니다.",
+                "en": "I served on Cincinnati City Council and as mayor."
+              },
+              {
+                "speaker": "player",
+                "ko": "다른 도시 사례로 준비한 질문은 빼고 신시내티의 사례로 바꾸겠습니다.",
+                "en": "I'll withdraw the questions prepared for the wrong city and substitute Cincinnati's case."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1450",
+        "mechanism": "urban-municipal-experience",
+        "learningTarget": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+        "date": "1976-05-12",
+        "venue": {
+          "ko": "도시 대표의 지방경험 비교",
+          "en": "Urban representatives' local experience"
+        },
+        "context": {
+          "ko": "도시 대표의 지방경험 비교",
+          "en": "Urban representatives' local experience"
+        },
+        "cast": [
+          {
+            "id": "B001102",
+            "name": "Yvonne Brathwaite Burke",
+            "ko": "이본 버크",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/7693"
+          },
+          {
+            "id": "C000409",
+            "name": "Donald Daniel Clancy",
+            "ko": "도널드 클랜시",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/10964"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "클랜시의 이전 대표 도시는 {{blank}}입니다.",
+          "en": "Clancy's former municipal office was in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로스앤젤레스",
+              "en": "Los Angeles"
+            },
+            {
+              "id": "B",
+              "ko": "오벌린",
+              "en": "Oberlin"
+            },
+            {
+              "id": "C",
+              "ko": "신시내티",
+              "en": "Cincinnati"
+            },
+            {
+              "id": "D",
+              "ko": "산타애나",
+              "en": "Santa Ana"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/7693",
+            "claim": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+            "asOf": "1976-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/10964",
+            "claim": "Burke served the California Assembly and Clancy served Cincinnati City Council and mayor before their House careers.",
+            "asOf": "1976-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1450-urban-municipal-experience"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ],
+  "limitations": [
+    "Bilingual proposals, exact before snapshots; no historical re-verification or gameplay. Identity clues in fixed cast/choices may remain."
+  ]
+}

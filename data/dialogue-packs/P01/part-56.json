@@ -277,21 +277,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "저는 민주당, 리비스는 공화당입니다.",
-            "en": "I am a Democrat; Reavis is a Republican."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 의원에게 공통 지역 문의를 각각 전달합시다.",
-            "en": "Route the shared state inquiry to both offices."
+            "speaker": "npc:1",
+            "ko": "저는 공화당이고 셸런버거 의원은 민주당입니다. 같은 주의 현안에는 두 관점에서 답하겠습니다.",
+            "en": "I'm a Republican and Representative Shallenberger is a Democrat. We'll answer questions about our state from both perspectives."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "저는 민주당, 리비스는 공화당입니다.",
-            "en": "I am a Democrat; Reavis is a Republican."
+            "speaker": "npc:1",
+            "ko": "제 당적은 공화당입니다. 두 의원을 같은 정당으로 표시한 방문단 안내를 수정하세요.",
+            "en": "I'm a Republican. Correct the delegation program that lists both of us in the same party."
           }
         ]
       },
@@ -323,8 +318,8 @@
         "en": "Alma records exhibit"
       },
       "context": {
-        "ko": "앨마 기록 전시",
-        "en": "Alma records exhibit"
+        "ko": "1918년 선거 뒤 재임 기록의 공백 확인",
+        "en": "Check interrupted House service after the 1918 election"
       },
       "cast": [
         {
@@ -337,14 +332,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "또 의회에 돌아왔군요. 지난 선거 패배 이후의 공백도 전시에 남겨 주십시오.",
-          "en": "I'm back again. Keep the gap after my earlier defeat in the exhibit."
+          "speaker": "player",
+          "ko": "기록에 1918년 낙선이 있는데 이후의 재임을 연속된 임기로 표시할 수 있을까요?",
+          "en": "The record shows a 1918 defeat. Can later service be shown as continuous?"
         },
         {
-          "speaker": "player",
-          "ko": "연속 재임으로 표시하지 않겠습니다.",
-          "en": "I won't label it continuous service."
+          "speaker": "npc:0",
+          "ko": "새로 돌아온 연도를 확인한 뒤 재임 공백을 표시하세요.",
+          "en": "Identify the year I returned, then mark the interruption."
         }
       ],
       "response": {
@@ -379,20 +374,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1923년 복귀입니다.",
-            "en": "I returned in 1923."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "이전 1915년의 만남과 새 기록을 이어 봅시다.",
-            "en": "Connect our 1915 meeting with this new record."
+            "ko": "1923년입니다. 공백은 없애지 말고 복귀 이후의 실제 재임을 추가하세요.",
+            "en": "1923. Keep the interruption and add the actual service after my return."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1923년 복귀입니다.",
-            "en": "I returned in 1923."
+            "ko": "1923년에 복귀했습니다. 1918년 낙선 뒤 모든 해를 현직으로 계산하면 안 됩니다.",
+            "en": "I returned in 1923. Do not count every year after the 1918 defeat as sitting service."
           }
         ]
       },
@@ -475,20 +465,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
-            "en": "I worked in grain and brick and tile manufacturing."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 산업 방문단의 요청을 나눠 받겠습니다.",
-            "en": "We'll receive the two industries' requests separately."
+            "ko": "벽돌·타일 제조업 관계자의 질문을 먼저 듣고 곡물업 문제는 별도로 논의합시다.",
+            "en": "Let's hear brick and tile manufacturers first and discuss grain trading separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
-            "en": "I worked in grain and brick and tile manufacturing."
+            "ko": "곡물업과 벽돌·타일 제조에 참여했습니다. 다른 공장 업종으로 표시한 산업 지도를 바꿔 주세요.",
+            "en": "I worked in grain trading and brick and tile manufacturing. Replace the industry map identifying the wrong manufacturing sector."
           }
         ]
       },
@@ -623,8 +608,8 @@
         "en": "Former member reception"
       },
       "context": {
-        "ko": "전직 의원 접견",
-        "en": "Former member reception"
+        "ko": "전직 의원 앞으로 온 행정 문의의 연락처 확인",
+        "en": "Identify the new office for an administrative inquiry addressed to a former member"
       },
       "cast": [
         {
@@ -637,14 +622,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이민 행정 관련 새 업무를 맡았습니다. 예전 지역 사무실에 서류를 보내지 마세요.",
-          "en": "I have a new immigration administration role. Don't send those papers to my former district office."
+          "speaker": "player",
+          "ko": "이전 하원 연락처로 온 문의에 1925년 5월 15일 새 임명 기록이 붙어 있습니다. 현재 직책을 확인하겠습니다.",
+          "en": "An inquiry sent to an old House address includes a May 15, 1925 appointment record. I'll identify the current office."
         },
         {
-          "speaker": "player",
-          "ko": "새 직책으로 안내하겠습니다.",
-          "en": "I'll direct visitors to the new office."
+          "speaker": "npc:0",
+          "ko": "이전 하원 대표 업무와 현재 연방 행정 업무를 구별하세요.",
+          "en": "Distinguish my former House representation from my present federal administrative work."
         }
       ],
       "response": {
@@ -679,20 +664,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "5월 15일 임명되었습니다.",
-            "en": "I was appointed May 15."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 대표와 행정기관의 연락처를 분리합시다.",
-            "en": "Separate the district representative's contact from the agency."
+            "ko": "이민총감입니다. 이전 지역구 의원실에 행정 문의를 보내지 마세요.",
+            "en": "Commissioner General of Immigration. Do not send an administrative inquiry to my former district office."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "5월 15일 임명되었습니다.",
-            "en": "I was appointed May 15."
+            "ko": "1925년 5월 15일 이민총감에 임명됐습니다. 하원의장이나 상원의원 직책으로 복귀한 것은 아닙니다.",
+            "en": "I was appointed Commissioner General of Immigration on May 15, 1925, not returned to Congress as Speaker or senator."
           }
         ]
       },
@@ -780,20 +760,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "리처드슨 카운티입니다.",
-            "en": "Richardson County."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 법률 문제와 의회 민원을 구분해 설명합시다.",
-            "en": "Explain the difference between local legal and congressional matters."
+            "ko": "리처드슨 카운티 법조인들과 지방 사법 경험을 이야기하고 연방 입법 질문을 별도로 받겠습니다.",
+            "en": "I'll discuss local legal experience with Richardson County lawyers and take federal legislative questions separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "리처드슨 카운티입니다.",
-            "en": "Richardson County."
+            "ko": "리처드슨 카운티 검사였습니다. 다른 카운티 관할로 적은 소개를 철회해 주세요.",
+            "en": "I was Richardson County prosecutor. Withdraw the introduction naming a different jurisdiction."
           }
         ]
       },
@@ -820,8 +795,8 @@
         "en": "Nebraska vacancy handoff"
       },
       "context": {
-        "ko": "네브래스카 공석 인계",
-        "en": "Nebraska vacancy handoff"
+        "ko": "1922년 6월 사임 및 11월 잔여 임기 선거의 기록 대조",
+        "en": "Compare a June resignation and November remainder-term election in 1922"
       },
       "cast": [
         {
@@ -841,14 +816,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "6월에 떠난 의석의 기록을 소프 의원에게 넘겨야겠군요.",
-          "en": "The records of the seat I left in June should go to Mr. Thorpe."
+          "speaker": "player",
+          "ko": "6월 3일 사임 기록과 11월 7일 시작된 잔여 임기 기록을 대조하겠습니다.",
+          "en": "I'll compare the June 3 resignation record with the remainder term that began November 7."
         },
         {
           "speaker": "npc:1",
-          "ko": "11월 7일부터 잔여 임기를 맡았습니다.",
-          "en": "I began the remaining term on November 7."
+          "ko": "제 임기는 11월 7일부터 시작했습니다. 사임한 전임자의 기록과 구분해 주세요.",
+          "en": "My term began November 7. Distinguish it from the resigned predecessor's record."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이전 사임 기록의 이름을 확인하세요.",
+          "en": "Identify the name on the earlier resignation record."
         }
       ],
       "response": {
@@ -882,21 +862,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "리비스가 사임했고 소프가 잔여 임기를 맡았습니다.",
-            "en": "Reavis resigned and Thorpe filled the remaining term."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "미결 주민 요청을 새 의원에게 인계합시다.",
-            "en": "Transfer pending constituent requests to the incoming member."
+            "speaker": "npc:1",
+            "ko": "리비스 의원입니다. 공석이 생긴 때와 제가 임기를 시작한 때를 따로 표시하세요.",
+            "en": "Reavis. Mark the vacancy date separately from the beginning of my term."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "리비스가 사임했고 소프가 잔여 임기를 맡았습니다.",
-            "en": "Reavis resigned and Thorpe filled the remaining term."
+            "ko": "제가 6월 3일 사임했고 소프 의원은 11월 7일 잔여 임기를 시작했습니다.",
+            "en": "I resigned June 3, and Thorpe began the remainder term November 7."
           }
         ]
       },
@@ -1204,21 +1179,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
-            "en": "I was president of York College in 1913–1918."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 지역의 교육·법조 방문단을 별도로 안내합시다.",
-            "en": "Arrange separate contacts for the educational and legal visitors."
+            "speaker": "npc:1",
+            "ko": "요크 칼리지 총장으로 일한 경험에 대한 질문을 받겠습니다. 법률 경력 질문은 제프리스 의원에게 주시죠.",
+            "en": "I'll take questions about my experience as president of York College; direct legal-career questions to Representative Jefferis."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
-            "en": "I was president of York College in 1913–1918."
+            "speaker": "npc:1",
+            "ko": "1913~1918년 요크 칼리지 총장이었습니다. 다른 교육기관이나 사법기관의 직책으로 소개한 부분을 수정하세요.",
+            "en": "I was president of York College from 1913 to 1918. Correct the introduction assigning me a role in a different educational or judicial institution."
           }
         ]
       },
@@ -1311,20 +1281,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1913년 요크로 옮겼습니다.",
-            "en": "I moved to York in 1913."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "대학과 지역 대표의 연결을 안내문에 남겨 주세요.",
-            "en": "Record the connection between the college and local representation."
+            "ko": "1913년 요크로 옮긴 이후 대학과 지역사회에서의 경험을 학생들과 이야기하겠습니다.",
+            "en": "I'll discuss my experience in the college and community after moving to York in 1913."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1913년 요크로 옮겼습니다.",
-            "en": "I moved to York in 1913."
+            "ko": "요크로 옮긴 해는 1913년입니다. 총장 경력과 의회 입성 시기를 뒤섞은 연표를 바로잡으세요.",
+            "en": "I moved to York in 1913. Correct the timeline that conflates my college presidency and entry into Congress."
           }
         ]
       },
@@ -1351,8 +1316,8 @@
         "en": "Midwestern education visit"
       },
       "context": {
-        "ko": "중서부 교육기관 방문",
-        "en": "Midwestern education visit"
+        "ko": "두 지역 교육기관의 운영 기록을 비교",
+        "en": "Compare governance records from two regional educational institutions"
       },
       "cast": [
         {
@@ -1373,13 +1338,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "교육기관의 지역사회 역할을 비교해 봅시다.",
-          "en": "Let's compare how colleges serve their communities."
+          "ko": "저는 요크 칼리지의 총장을 지냈습니다.",
+          "en": "I served as president of York College."
+        },
+        {
+          "speaker": "player",
+          "ko": "코프 의원의 1908년 이후 대학 이사회 경력도 기관별로 구분하겠습니다.",
+          "en": "I'll distinguish Kopp's college trustee service beginning in 1908 by institution."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 아이오와 웨슬리언의 이사회에도 참여합니다.",
-          "en": "I also serve on Iowa Wesleyan's board."
+          "ko": "두 학교가 위치한 주를 같은 것으로 기록하면 안 됩니다.",
+          "en": "Do not record both institutions as being in the same state."
         }
       ],
       "response": {
@@ -1413,21 +1383,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "코프의 대학은 아이오와에 있습니다.",
-            "en": "Kopp's college is in Iowa."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 학교의 방문 요청을 따로 기록해 주세요.",
-            "en": "Record both institutions' visit requests separately."
+            "speaker": "npc:1",
+            "ko": "아이오와입니다. 학교 운영 경험을 연방의원직과 별개로 소개하세요.",
+            "en": "Iowa. Introduce college governance separately from elected House service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "코프의 대학은 아이오와에 있습니다.",
-            "en": "Kopp's college is in Iowa."
+            "ko": "코프 의원의 대학은 아이오와에 있고 제 요크 칼리지 경력과는 다른 기관입니다.",
+            "en": "Kopp's college is in Iowa, distinct from my York College background."
           }
         ]
       },
@@ -1719,20 +1684,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "헨리 카운티입니다.",
-            "en": "Henry County."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "법률 문의는 지방 기관의 권한을 먼저 확인하세요.",
-            "en": "Check local jurisdiction for legal inquiries first."
+            "ko": "헨리 카운티에서 맡았던 검사 업무와 연방 의원의 역할 차이를 설명하겠습니다.",
+            "en": "I'll explain how my prosecutorial work in Henry County differed from my congressional role."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "헨리 카운티입니다.",
-            "en": "Henry County."
+            "ko": "헨리 카운티 검사였습니다. 다른 카운티 관할로 보낼 지방 법률 문의를 회수해 주세요.",
+            "en": "I was Henry County prosecuting attorney. Retrieve the local legal inquiry routed to a different county."
           }
         ]
       },
@@ -1759,8 +1719,8 @@
         "en": "Iowa labor delegation"
       },
       "context": {
-        "ko": "아이오와 노동자 접견",
-        "en": "Iowa labor delegation"
+        "ko": "1926년 주민 방문단 자료의 의회 관할 판단",
+        "en": "Determine congressional jurisdiction for a 1926 delegation's materials"
       },
       "cast": [
         {
@@ -1773,14 +1733,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "노동자 방문단의 자료를 어디에 보낼지 함께 결정합시다.",
-          "en": "Let's decide where the workers' delegation papers belong."
+          "speaker": "player",
+          "ko": "지역 주민의 개별 고용 관련 요청과 전국적인 정책 제안이 함께 들어왔습니다. 두 문의의 처리 경로가 같은지 확인하겠습니다.",
+          "en": "Individual employment-related requests and a nationwide policy proposal arrived together. I'll determine whether their handling channels are the same."
         },
         {
-          "speaker": "player",
-          "ko": "이번 의회의 위원회 명칭을 확인하죠.",
-          "en": "Let's check the committee's name in this Congress."
+          "speaker": "npc:0",
+          "ko": "제69대 의회의 위원장직을 확인한 다음 위원회 정책 활동과 개별 주민 문의를 나누세요.",
+          "en": "Identify my chairmanship in the 69th Congress, then separate committee policy work from individual constituent inquiries."
         }
       ],
       "response": {
@@ -1815,20 +1775,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "제69대 의회 노동위원장입니다.",
-            "en": "I chair Labor in the 69th Congress."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 근로자 요청과 위원회 자료를 함께 검토합시다.",
-            "en": "Review the local workers' requests alongside committee materials."
+            "ko": "노동위원회입니다. 정책 제안은 위원회 관할과 연결하고 개별 요청은 별도의 담당 기관을 확인하세요.",
+            "en": "Labor. Connect policy proposals with committee jurisdiction and check the responsible institution for individual requests separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제69대 의회 노동위원장입니다.",
-            "en": "I chair Labor in the 69th Congress."
+            "ko": "노동위원장입니다. 농업·외교·세출위원회 기록에 해당 제안을 잘못 넣지 마세요.",
+            "en": "I chair Labor. Don't misfile the proposal under Agriculture, Foreign Affairs or Appropriations."
           }
         ]
       },
@@ -1855,8 +1810,8 @@
         "en": "Midwestern farm and labor meeting"
       },
       "context": {
-        "ko": "중서부 농업·노동 회의",
-        "en": "Midwestern farm and labor meeting"
+        "ko": "노동·농업 관련 두 주의 방문단을 각각 연결",
+        "en": "Connect two state delegations presenting labor and agricultural concerns"
       },
       "cast": [
         {
@@ -1877,13 +1832,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "노동위원회 자료와 농촌 경제 경험을 비교해 봅시다.",
-          "en": "Let's compare labor committee materials with rural economic experience."
+          "ko": "노동위원장으로서 정책 자료를 받겠습니다. 주별 주민 문의는 해당 대표와 따로 연결하세요.",
+          "en": "As Labor Committee chair, I'll review policy materials. Route state-specific constituent inquiries separately."
+        },
+        {
+          "speaker": "player",
+          "ko": "존슨 의원이 대표하는 주를 확인한 뒤 농촌 방문단의 문의를 전달하겠습니다.",
+          "en": "I'll identify Johnson's state before routing the agricultural delegation's inquiry."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 네브래스카에서 농업에도 종사했습니다.",
-          "en": "I also engaged in agriculture in Nebraska."
+          "ko": "위원회 관할과 지역 대표 범위는 별개입니다.",
+          "en": "Committee jurisdiction and geographic representation are different."
         }
       ],
       "response": {
@@ -1917,21 +1877,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "존슨은 네브래스카, 코프는 아이오와 대표입니다.",
-            "en": "Johnson represents Nebraska and Kopp Iowa."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 주의 주민 방문 자료를 나누어 정리하세요.",
-            "en": "Sort the constituent materials by state."
+            "speaker": "npc:1",
+            "ko": "네브래스카입니다. 코프 의원의 아이오와 주민 문의와 구분하세요.",
+            "en": "Nebraska. Keep it separate from Iowa constituent inquiries for Kopp."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "존슨은 네브래스카, 코프는 아이오와 대표입니다.",
-            "en": "Johnson represents Nebraska and Kopp Iowa."
+            "ko": "존슨 의원은 네브래스카를, 저는 아이오와를 대표합니다. 위원회 정책과 지역구 문의를 혼동하지 마세요.",
+            "en": "Johnson represents Nebraska and I represent Iowa. Do not conflate committee policy with constituent inquiries."
           }
         ]
       },
@@ -2019,20 +1974,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "더뷰크입니다.",
-            "en": "Dubuque."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 금융 방문단의 자료를 접수합시다.",
-            "en": "Let's receive the local finance delegation's papers."
+            "ko": "더뷰크의 보험·금융 관계자들과 지역 경제 경험에 관한 토론을 시작합시다.",
+            "en": "Let's begin a discussion of local economic experience with insurance and banking visitors from Dubuque."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "더뷰크입니다.",
-            "en": "Dubuque."
+            "ko": "고향은 더뷰크입니다. 다른 도시 방문단으로 잘못 소개한 행사 순서를 수정하세요.",
+            "en": "My hometown is Dubuque. Revise the program introducing the delegation as coming from another city."
           }
         ]
       },
@@ -2230,20 +2180,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "헐은 아이오와 대표입니다.",
-            "en": "Hull represents Iowa."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "방문단 자료를 주별로 분류합시다.",
-            "en": "Sort the visitor papers by state."
+            "ko": "아이오와 방문단은 제가 만나고 네브래스카 방문단은 리비스 의원에게 연결하겠습니다.",
+            "en": "I'll meet the Iowa delegation and direct the Nebraska delegation to Representative Reavis."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "헐은 아이오와 대표입니다.",
-            "en": "Hull represents Iowa."
+            "ko": "저는 아이오와 대표입니다. 같은 정당이라고 두 주의 주민 요청을 합친 접견 배정을 다시 나누세요.",
+            "en": "I represent Iowa. Separate the constituent appointments that were combined just because we share a party."
           }
         ]
       },
@@ -2383,8 +2328,8 @@
         "en": "Rural economic papers exchange"
       },
       "context": {
-        "ko": "농촌 경제 자료 교환",
-        "en": "Rural economic papers exchange"
+        "ko": "축산 농가와 곡물 유통업자의 정책 질의",
+        "en": "Policy questions from livestock farmers and grain traders"
       },
       "cast": [
         {
@@ -2404,14 +2349,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "두 산업 방문단의 질문이 다릅니다. 곡물 거래 경험을 가진 의원에게 해당 산업의 질문을 먼저 하겠습니다.",
+          "en": "The two delegations have different questions. I'll direct the grain-trade question first to the member with that background."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "네브래스카 축산 자료와 아이오와 곡물 자료를 함께 봅시다.",
-          "en": "Let's look at Nebraska livestock and Iowa grain records together."
+          "ko": "저의 축산 경험과 다른 지역 산업 경력을 구분하세요.",
+          "en": "Distinguish my stock-raising experience from the other member's industry background."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 이전 사업 경험도 곡물 거래였습니다.",
-          "en": "My earlier business included grain trading."
+          "ko": "직업 경험과 실제 정책 입장은 별도로 확인해야 합니다.",
+          "en": "Occupational experience and actual policy positions must be checked separately."
         }
       ],
       "response": {
@@ -2445,21 +2395,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "헐이 곡물업에 종사했습니다.",
-            "en": "Hull worked in the grain business."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 지역의 경제 자료를 서로 연결하세요.",
-            "en": "Cross-reference the regional economic records."
+            "speaker": "npc:1",
+            "ko": "제가 곡물 거래에 종사했습니다. 산업별 질문을 구분해 주세요.",
+            "en": "I worked in grain trading. Separate the industry-specific questions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "헐이 곡물업에 종사했습니다.",
-            "en": "Hull worked in the grain business."
+            "ko": "헐 의원이 곡물 거래 경험을 갖고 있습니다. 제 축산 경력과는 다른 배경입니다.",
+            "en": "Hull had grain-trading experience, distinct from my stock-raising background."
           }
         ]
       },
@@ -2491,8 +2436,8 @@
         "en": "Nebraska legislative records exhibit"
       },
       "context": {
-        "ko": "역사적 사실에 기반한 가상 대화. P01-1390 (1929-12-12)에서 부지사 경력을 확인한 뒤 주의회 경력을 살펴봅니다.",
-        "en": "Fictional encounter based on historical facts. After P01-1390 (1929-12-12), the player examines Johnson's state legislative service."
+        "ko": "1919~1920년 명부와 1929년 연방 의회 기록 비교",
+        "en": "Compare a 1919–1920 roster with the 1929 congressional record"
       },
       "cast": [
         {
@@ -2506,18 +2451,13 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난번 부지사 경력을 들었는데 이 명부에는 1919년과 1920년이 적혀 있네요.",
-          "en": "We discussed your lieutenant governorship earlier, but this roster is dated 1919 and 1920."
+          "ko": "1919~1920년 명부와 올해 연방 의회 기록에 같은 이름이 나옵니다. 그 시기의 기관부터 확인하겠습니다.",
+          "en": "The 1919–1920 roster and this year's House record list the same name. I'll identify the earlier institution first."
         },
         {
           "speaker": "npc:0",
-          "ko": "그 시기에는 주의회에서 일했습니다. 연방 의회 기록과는 다릅니다.",
-          "en": "I served in the state legislature then, not the federal Congress."
-        },
-        {
-          "speaker": "host",
-          "ko": "명부를 올바른 의회에 분류해 주시겠습니까?",
-          "en": "Could you file this roster under the correct chamber?"
+          "ko": "이전 주 공직과 올해 시작한 연방 하원 재임을 합치지 마세요.",
+          "en": "Do not combine earlier state office with my House service beginning this year."
         }
       ],
       "response": {
@@ -2552,15 +2492,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 그 두 해에는 주상원에서 활동했습니다.",
-            "en": "That's right. I served in the state senate in those two years."
+            "ko": "네브래스카 주상원입니다. 부지사 재임과 현재 연방 하원 기록도 별도로 관리하세요.",
+            "en": "Nebraska state senate. Keep the lieutenant governorship and current House service separate as well."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "그 명부는 네브래스카 주상원 기록입니다. 연방 하원 임기는 올해 시작했습니다.",
-            "en": "That roster belongs to the Nebraska state senate. My U.S. House term began this year."
+            "ko": "1919~1920년 네브래스카 주상원 기록입니다. 연방 상원이나 올해 하원 임기로 계산하면 안 됩니다.",
+            "en": "It is the Nebraska state senate record for 1919–1920, not the U.S. Senate or this year's House term."
           }
         ]
       },

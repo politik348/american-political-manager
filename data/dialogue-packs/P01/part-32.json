@@ -13,8 +13,8 @@
         "en": "District office transition"
       },
       "context": {
-        "ko": "지역 사무실 인계",
-        "en": "District office transition"
+        "ko": "시스크가 은퇴한 이후 주민 문의를 후임 의원에게 넘긴다.",
+        "en": "Transfer a constituent inquiry from retired Sisk to his successor."
       },
       "cast": [
         {
@@ -34,20 +34,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "주민이 예전 시스크 의원실을 찾아왔습니다. 이제 그 의석을 맡은 의원에게 문의해야 합니다.",
+          "en": "A resident has come looking for Sisk's former office. The inquiry needs to go to the member who now holds that seat."
+        },
+        {
           "speaker": "npc:1",
-          "ko": "저는 은퇴했고, 오래 함께 일한 보좌관이 새 의원이 됐습니다.",
-          "en": "I retired, and a longtime aide has become the new member."
+          "ko": "저는 은퇴했습니다. 제 보좌진으로 일했던 후임 의원에게 연결해 주세요.",
+          "en": "I've retired. Connect the resident with my successor, who worked on my staff."
         },
         {
           "speaker": "npc:0",
-          "ko": "이제 주민의 요청에 직접 책임지겠습니다.",
-          "en": "I now answer directly to constituents."
+          "ko": "주민의 이야기를 직접 듣겠습니다.",
+          "en": "I'll hear the constituent's concern directly."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "시스크 의원의 후임은 {{blank}}입니다.",
-        "en": "Sisk's successor is {{blank}}.",
+        "ko": "1979년 후임 의원인 {{blank}}에게 연결하겠습니다.",
+        "en": "I'll connect you with Representative {{blank}}, the 1979 successor.",
         "choices": [
           {
             "id": "A",
@@ -75,26 +80,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
+            "speaker": "npc:0",
+            "ko": "토니 코엘류입니다. 이제 주민의 문의를 듣겠습니다.",
+            "en": "I'm Tony Coelho. Let's hear the resident's inquiry."
           },
           {
-            "speaker": "npc:0",
-            "ko": "오랜 보좌 경험을 가진 코엘류가 1979년 후임으로 취임했습니다.",
-            "en": "Coelho, his former aide, succeeded him in 1979."
+            "speaker": "npc:1",
+            "ko": "이전 기록과 현재 연락처는 구별해 두세요.",
+            "en": "Keep the earlier record separate from the current contact."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "오랜 보좌 경험을 가진 코엘류가 1979년 후임으로 취임했습니다.",
-            "en": "Coelho, his former aide, succeeded him in 1979."
+            "speaker": "npc:1",
+            "ko": "제 후임은 토니 코엘류입니다. 이제 그에게 문의를 전달하면 됩니다.",
+            "en": "My successor is Tony Coelho. Forward the inquiry to him now."
           }
         ]
       },
@@ -181,26 +181,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "그 학교의 1960년 졸업생입니다.",
-            "en": "I was a 1960 graduate of Dos Palos High School."
+            "ko": "도스팔로스 고등학교 후배들에게 졸업 이후의 공직 진로를 이야기하겠습니다.",
+            "en": "I'll talk with Dos Palos High School students about my path into public service after graduation."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "그 학교의 1960년 졸업생입니다.",
-            "en": "I was a 1960 graduate of Dos Palos High School."
+            "ko": "1960년 도스팔로스 고등학교를 졸업했습니다. 다른 학교로 보낼 동문 초청장을 회수하세요.",
+            "en": "I graduated from Dos Palos High School in 1960. Retrieve the alumni invitation addressed to another school."
           }
         ]
       },
@@ -282,26 +272,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "샌호아킨밸리 식품 가공 공장에서 일했습니다.",
-            "en": "I worked in a San Joaquin Valley food processing plant."
+            "ko": "식품 가공 노동자들의 질문을 먼저 듣겠습니다. 제가 일했던 샌호아킨밸리 공장 경험을 토대로 이야기하죠.",
+            "en": "I'll hear food-processing workers' questions first, drawing on my experience in a San Joaquin Valley plant."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "샌호아킨밸리 식품 가공 공장에서 일했습니다.",
-            "en": "I worked in a San Joaquin Valley food processing plant."
+            "ko": "식품 가공 공장에서 일했습니다. 다른 업종의 경험을 전제로 한 토론 질문을 바꿔 주세요.",
+            "en": "I worked in a food-processing plant. Replace the discussion questions premised on another industry."
           }
         ]
       },
@@ -328,8 +308,8 @@
         "en": "Visalia training field reunion"
       },
       "context": {
-        "ko": "비살리아 항공 훈련 동료",
-        "en": "Visalia training field reunion"
+        "ko": "민간인 전시 근무를 군인 복무와 혼동하지 않도록 설명한다.",
+        "en": "Explain wartime civilian work without confusing it with military service."
       },
       "cast": [
         {
@@ -342,14 +322,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "전시에는 비살리아의 훈련장에서 민간인으로 근무했습니다.",
-          "en": "During the war I worked as a civilian at the training field in Visalia."
+          "speaker": "host",
+          "ko": "학생이 비살리아 훈련장에서의 전시 근무를 군인 복무로 잘못 소개하려 합니다.",
+          "en": "A student is about to describe your wartime work at the Visalia training field as military service."
         },
         {
-          "speaker": "host",
-          "ko": "그때 담당했던 업무도 기억해 주세요.",
-          "en": "Remember the work he did there."
+          "speaker": "npc:0",
+          "ko": "1941년부터 1945년까지 그곳에서 민간인으로 일했습니다. 맡았던 직무를 구별해 주세요.",
+          "en": "I worked there as a civilian from 1941 to 1945. Identify the job I held."
         }
       ],
       "response": {
@@ -383,26 +363,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1941~1945년 항공 운항관리원으로 일했습니다.",
-            "en": "I was a civilian flight dispatcher from 1941 to 1945."
+            "ko": "항공 운항관리원이었습니다. 군인 신분이었다고 쓰지 않도록 해 주세요.",
+            "en": "Flight dispatcher. Don't describe it as military service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1941~1945년 항공 운항관리원으로 일했습니다.",
-            "en": "I was a civilian flight dispatcher from 1941 to 1945."
+            "ko": "민간 항공 운항관리원이었습니다. 훈련장에서 일했다는 사실만으로 군 복무를 뜻하지는 않습니다.",
+            "en": "Civilian flight dispatcher. Working at a training field doesn't by itself establish military service."
           }
         ]
       },
@@ -429,8 +399,8 @@
         "en": "House leadership meeting"
       },
       "context": {
-        "ko": "하원 지도부 회의",
-        "en": "House leadership meeting"
+        "ko": "의사일정 문의와 당내 표결 연락을 구분한다.",
+        "en": "Distinguish floor scheduling inquiries from internal vote coordination."
       },
       "cast": [
         {
@@ -441,7 +411,7 @@
           "source": "https://history.house.gov/People/Detail/11178"
         },
         {
-          "id": null,
+          "id": "W000763",
           "name": "James Claude Wright Jr.",
           "ko": "짐 라이트",
           "portrait": null,
@@ -451,13 +421,13 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "본회의 일정은 의장실에서 조정하죠.",
-          "en": "The Speaker's office will coordinate floor business."
+          "ko": "본회의 운영에 관한 문의는 의장실에 두세요.",
+          "en": "Keep the inquiry about floor proceedings with the Speaker's office."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 의원들의 표결 의사를 파악하는 지도부 직책을 맡았습니다.",
-          "en": "My leadership role involves tracking members' voting intentions."
+          "ko": "소속 의원들과 연락해 표결 의향을 파악해야 하는 요청은 제 쪽으로 주세요. 어떤 직책인지 설명해 주시겠어요?",
+          "en": "Send me the request involving contact with members about their voting intentions. Explain my role."
         }
       ],
       "response": {
@@ -491,26 +461,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
+            "speaker": "npc:0",
+            "ko": "원내총무입니다. 당내 표결 연락을 따로 받겠습니다.",
+            "en": "Whip. I'll handle the internal voting inquiry."
           },
           {
-            "speaker": "npc:0",
-            "ko": "라이트는 의장, 저는 원내총무입니다.",
-            "en": "Wright is Speaker; I am majority whip."
+            "speaker": "npc:1",
+            "ko": "본회의 운영 문의는 제가 받죠.",
+            "en": "I'll take the floor proceedings question."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "라이트는 의장, 저는 원내총무입니다.",
-            "en": "Wright is Speaker; I am majority whip."
+            "ko": "저는 다수당 원내총무이고 라이트 의원은 의장입니다. 두 요청을 다시 나눠 주세요.",
+            "en": "I'm majority whip; Wright is Speaker. Route the two requests separately."
           }
         ]
       },
@@ -542,8 +507,8 @@
         "en": "Caucus agenda routing"
       },
       "context": {
-        "ko": "당 회의 안건 분류",
-        "en": "Caucus agenda routing"
+        "ko": "의원총회와 표결 연락의 담당자를 구분한다.",
+        "en": "Distinguish the member meeting from vote coordination."
       },
       "cast": [
         {
@@ -554,7 +519,7 @@
           "source": "https://history.house.gov/People/Detail/11178"
         },
         {
-          "id": null,
+          "id": "G000132",
           "name": "Richard Andrew Gephardt",
           "ko": "리처드 게파트",
           "portrait": null,
@@ -564,13 +529,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "표결 연락망과 당 의원총회의 안건을 구분합시다.",
-          "en": "Let's separate vote coordination from caucus business."
+          "ko": "표결 연락 요청은 제게 두세요. 당 전체 의원이 모이는 내부 회의 요청은 별개입니다.",
+          "en": "Keep the vote coordination request with me. An internal meeting of the party's members is a separate matter."
         },
         {
           "speaker": "npc:1",
-          "ko": "당 의원총회 업무는 제가 맡고 있습니다.",
-          "en": "I am responsible for the party caucus."
+          "ko": "그 회의의 담당 직책을 소개해 주세요.",
+          "en": "Identify the leadership office responsible for that meeting."
         }
       ],
       "response": {
@@ -604,26 +569,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "게파트는 코커스 의장, 코엘류는 원내총무였습니다.",
-            "en": "Gephardt chaired the caucus; Coelho was whip."
+            "speaker": "npc:1",
+            "ko": "코커스 의장입니다. 당내 회의에 관한 문의를 듣죠.",
+            "en": "Caucus chair. I'll hear the internal meeting question."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "게파트는 코커스 의장, 코엘류는 원내총무였습니다.",
-            "en": "Gephardt chaired the caucus; Coelho was whip."
+            "speaker": "npc:1",
+            "ko": "코커스 의장입니다. 코엘류 의원의 원내총무 업무와는 구별합니다.",
+            "en": "Caucus chair. That differs from Coelho's whip duties."
           }
         ]
       },
@@ -660,7 +615,7 @@
       },
       "cast": [
         {
-          "id": null,
+          "id": "M000692",
           "name": "Robert Henry Michel",
           "ko": "로버트 미셸",
           "portrait": null,
@@ -710,16 +665,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "브래들리 졸업 기록을 지역 연고와 연결하겠습니다.",
-            "en": "I'll connect his Bradley graduation to his local roots."
+            "speaker": "npc:0",
+            "ko": "브래들리대 동문들에게 대학 졸업 이후 보좌관으로 일했던 경험을 소개하겠습니다.",
+            "en": "I'll tell Bradley alumni about my work as a congressional aide after graduation."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "정확한 답은 브래들리 대학교입니다. 브래들리 졸업 기록을 지역 연고와 연결하겠습니다.",
-            "en": "The correct answer is Bradley University. I'll connect his Bradley graduation to his local roots."
+            "ko": "1948년 브래들리 대학교를 졸업했습니다. 다른 대학의 동문으로 표시한 행사 소개는 수정하세요.",
+            "en": "I graduated from Bradley University in 1948. Correct the event introduction listing another alma mater."
           }
         ]
       },
@@ -751,14 +706,14 @@
       },
       "cast": [
         {
-          "id": null,
+          "id": "M000692",
           "name": "Robert Henry Michel",
           "ko": "로버트 미셸",
           "portrait": null,
           "source": "https://history.house.gov/People/Detail/18193"
         },
         {
-          "id": null,
+          "id": "W000763",
           "name": "James Claude Wright Jr.",
           "ko": "짐 라이트",
           "portrait": null,
@@ -864,7 +819,7 @@
       },
       "cast": [
         {
-          "id": null,
+          "id": "M000692",
           "name": "Robert Henry Michel",
           "ko": "로버트 미셸",
           "portrait": null,
@@ -950,8 +905,8 @@
         "en": "Freshman gathering"
       },
       "context": {
-        "ko": "신입 의원 모임",
-        "en": "Freshman gathering"
+        "ko": "제92대 의회의 신임 의원 오리엔테이션",
+        "en": "Freshman orientation for the 92nd Congress"
       },
       "cast": [
         {
@@ -971,19 +926,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "신임 의원 교육에서 정당별 대표를 초청합니다. 민주당에는 여러 대표가 있습니다.",
-          "en": "Orientation invites party freshman leaders; Democrats have several representatives."
+          "speaker": "player",
+          "ko": "신임 의원들에게 양당의 대표를 각각 소개하고 질문 시간을 배정하려 합니다. 공화당 측은 켐프 의원으로 확인했습니다.",
+          "en": "I'm introducing representatives of each party's freshmen and assigning question periods. Kemp is confirmed for the Republican group."
         },
         {
           "speaker": "npc:0",
-          "ko": "공화당 신임 의원 그룹은 제가 대표합니다.",
-          "en": "I represent the Republican freshman group."
+          "ko": "민주당에는 여러 대표가 있으므로 한 사람만 전체 지도자라고 소개하지 마세요.",
+          "en": "Democrats have several representatives, so do not introduce one person as their sole leader."
         },
         {
           "speaker": "npc:1",
-          "ko": "민주당 측 대표도 함께 참석합니다.",
-          "en": "Democratic representatives also attend."
+          "ko": "이번 장면에 참석한 민주당 대표의 이름을 확인하세요.",
+          "en": "Identify the Democratic representative attending this encounter."
         }
       ],
       "response": {
@@ -1017,16 +972,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "애스핀을 민주당 대표 중 한 명으로 소개하겠습니다.",
-            "en": "I'll introduce Aspin as one of the Democratic leaders."
+            "speaker": "npc:1",
+            "ko": "애스핀입니다. 공화당 대표와 민주당 대표 중 한 명이라는 역할을 구별해 질문 순서를 정하세요.",
+            "en": "Aspin. Distinguish the Republican representative from one of the Democratic representatives when arranging questions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "저 애스핀은 민주당 지도자 중 한 명입니다. 켐프는 공화당 지도자입니다.",
-            "en": "I, Aspin, am one of the Democratic leaders. Kemp leads the Republican group."
+            "speaker": "npc:0",
+            "ko": "여기 참석한 민주당 대표는 애스핀 의원입니다. 공화당 신임 의원 지도부와 혼동하지 마세요.",
+            "en": "The Democratic representative here is Aspin. Do not confuse him with the Republican freshman leadership."
           }
         ]
       },
@@ -1118,26 +1073,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1957~1970년 프로 미식축구 선수였습니다.",
-            "en": "I played professional football from 1957 to 1970."
+            "ko": "미식축구 선수 시절과 의정 활동의 차이를 학생들과 토론하겠습니다.",
+            "en": "I'll discuss the differences between my football career and congressional service with students."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1957~1970년 프로 미식축구 선수였습니다.",
-            "en": "I played professional football from 1957 to 1970."
+            "ko": "1957~1970년 프로 미식축구 선수였습니다. 다른 종목의 경력을 전제로 준비한 질문은 바꿔 주세요.",
+            "en": "I played professional football from 1957 to 1970. Replace questions premised on another sport."
           }
         ]
       },
@@ -1164,8 +1109,8 @@
         "en": "Housing administration meeting"
       },
       "context": {
-        "ko": "주택 관련 행정 접견",
-        "en": "Housing administration meeting"
+        "ko": "하원 의원 시절의 연락처를 행정부 임명 이후 구분한다.",
+        "en": "Distinguish a former House contact from an executive appointment."
       },
       "cast": [
         {
@@ -1178,20 +1123,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이제 뉴욕의 하원 의원이 아니라 행정부에서 일합니다.",
-          "en": "I now serve in the executive branch, not as a New York House member."
+          "speaker": "host",
+          "ko": "예전 하원 사무실로 온 연락을 새 행정부 직책과 구별해야 합니다.",
+          "en": "An inquiry to your former House office needs to be distinguished from your new executive position."
         },
         {
-          "speaker": "player",
-          "ko": "지역 주택 문의의 연락처도 달라졌겠군요.",
-          "en": "The contact for housing issues has changed too."
+          "speaker": "npc:0",
+          "ko": "1989년에 맡게 된 새 부처를 알려 주세요. 하원의원 임기와 같은 것으로 취급하면 안 됩니다.",
+          "en": "Identify the department I took charge of in 1989. Don't treat it as part of my House term."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "켐프의 새 직책은 {{blank}} 장관입니다.",
-        "en": "Kemp's new office is Secretary of {{blank}}.",
+        "ko": "켐프 장관님은 {{blank}}부를 맡으셨습니다.",
+        "en": "Secretary Kemp heads the Department of {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1219,26 +1164,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1989년에 주택도시개발부 장관으로 취임했습니다.",
-            "en": "I became HUD secretary in 1989."
+            "ko": "주택도시개발부입니다. 행정부 직책으로 문의를 구별해 주세요.",
+            "en": "Housing and Urban Development. Distinguish the inquiry as executive-branch business."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1989년에 주택도시개발부 장관으로 취임했습니다.",
-            "en": "I became HUD secretary in 1989."
+            "ko": "주택도시개발부 장관입니다. 이전 하원의원 기록은 그대로 두고 현재 직책을 바로잡으세요.",
+            "en": "I'm Secretary of Housing and Urban Development. Keep my House record and correct the current office."
           }
         ]
       },
@@ -1320,26 +1255,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1969~1970년 마케트대에서 경제학을 가르쳤습니다.",
-            "en": "I taught economics at Marquette in 1969–1970."
+            "ko": "마케트대에서 경제학을 가르쳤던 경험을 토대로 지역 경제 문제를 토론하겠습니다.",
+            "en": "I'll discuss local economic issues drawing on my experience teaching economics at Marquette."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1969~1970년 마케트대에서 경제학을 가르쳤습니다.",
-            "en": "I taught economics at Marquette in 1969–1970."
+            "ko": "1969~1970년 마케트대에서 가르쳤습니다. 다른 학교의 교수로 소개한 토론 안내를 수정하세요.",
+            "en": "I taught at Marquette in 1969–1970. Correct the discussion program identifying me as a professor at another school."
           }
         ]
       },
@@ -1366,8 +1291,8 @@
         "en": "Wisconsin constituent inquiry"
       },
       "context": {
-        "ko": "신임 국방장관의 이전 경제정책 경험을 살펴본다.",
-        "en": "Review the new defense secretary's earlier economic-policy experience."
+        "ko": "1963년 경제자문 자료와 새 국방장관의 직책을 비교",
+        "en": "Compare 1963 economic advisory records with the new Defense secretary's office"
       },
       "cast": [
         {
@@ -1380,14 +1305,14 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "신임 국방장관의 이전 경제정책 경험을 살펴본다.",
-          "en": "Review the new defense secretary's earlier economic-policy experience."
+          "speaker": "player",
+          "ko": "1963년 대통령 경제자문위원회 자료를 새 국방부 장관의 공식 기록과 분리하려고 합니다. 당시 위원장의 이름을 확인하겠습니다.",
+          "en": "I'm separating 1963 Council of Economic Advisers materials from official records of the new Defense secretary. I'll identify the chairman at the time."
         },
         {
           "speaker": "npc:0",
-          "ko": "1963년에는 대통령 경제자문위원회 위원장의 보좌진으로 일했습니다.",
-          "en": "In 1963 I worked on the staff of the chair of the President's Council of Economic Advisers."
+          "ko": "제가 당시 보좌진으로 일했던 위원장의 이름을 확인하면 문서의 작성 주체를 구별할 수 있습니다.",
+          "en": "Identifying the chairman for whom I worked will help distinguish the source of those documents."
         }
       ],
       "response": {
@@ -1421,16 +1346,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "경제자문 경험과 현재 국방부 직책을 구분하겠습니다.",
-            "en": "I'll distinguish that economic advisory experience from his current Defense Department role."
+            "speaker": "npc:0",
+            "ko": "월터 헬러입니다. 경제 자문 업무와 현재 국방부 행정 업무를 한 직책으로 기록하지 마세요.",
+            "en": "Walter Heller. Do not combine economic advisory work with my current defense administration office."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "정확한 답은 월터 헬러입니다. 경제자문 경험과 현재 국방부 직책을 구분하겠습니다.",
-            "en": "The correct answer is Walter Heller. I'll distinguish that economic advisory experience from his current Defense Department role."
+            "ko": "1963년 위원장은 월터 헬러였습니다. 후대 경제 정책 담당자의 자료와 혼동하지 마세요.",
+            "en": "The chairman in 1963 was Walter Heller. Do not confuse these records with those of later economic policymakers."
           }
         ]
       },
@@ -1462,7 +1387,7 @@
       },
       "cast": [
         {
-          "id": null,
+          "id": "H001022",
           "name": "Henry Hyde",
           "ko": "헨리 하이드",
           "portrait": null,
@@ -1512,16 +1437,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "해군 현역과 예비군 복무 기간을 구분하겠습니다.",
-            "en": "I'll distinguish his active Navy and Naval Reserve service."
+            "speaker": "npc:0",
+            "ko": "해군 현역 복무와 예비군 경력을 구분해 소개하고 복무 경험에 관한 질문을 받겠습니다.",
+            "en": "I'll describe my active Navy and Naval Reserve service separately, then take questions about that experience."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "정확한 답은 해군입니다. 해군 현역과 예비군 복무 기간을 구분하겠습니다.",
-            "en": "The correct answer is Navy. I'll distinguish his active Navy and Naval Reserve service."
+            "ko": "군종은 해군입니다. 다른 군종에 배정한 현역·예비군 경력 전시 표지를 교체하세요.",
+            "en": "My branch was the Navy. Replace the exhibit label assigning my active and reserve service to another branch."
           }
         ]
       },
@@ -1548,12 +1473,12 @@
         "en": "Lawyer-legislators reception"
       },
       "context": {
-        "ko": "법조인 의원 접견",
-        "en": "Lawyer-legislators reception"
+        "ko": "두 의원의 법학 교육 경험을 비교하는 기자의 질문.",
+        "en": "A reporter compares the two members' legal education."
       },
       "cast": [
         {
-          "id": null,
+          "id": "H001022",
           "name": "Henry Hyde",
           "ko": "헨리 하이드",
           "portrait": null,
@@ -1570,19 +1495,19 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "시카고에서 법학 교육을 받았습니다.",
-          "en": "I studied law in Chicago."
+          "ko": "저는 로욜라에서 법학 교육을 받았습니다. 같은 법학 경력이라도 학교는 다를 수 있죠.",
+          "en": "I studied law at Loyola. Legal backgrounds need not come from the same school."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 법학 학위는 매사추세츠에서 받았습니다.",
-          "en": "My law degree came from Massachusetts."
+          "ko": "제 법학대학원은 어디였는지 먼저 소개해 주세요. 그다음 각자의 질문을 받죠.",
+          "en": "Identify my law school first. Then we can take separate questions."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "프랭크 의원이 졸업한 법학대학원은 {{blank}}입니다.",
-        "en": "Frank graduated from {{blank}} Law School.",
+        "ko": "프랭크 의원님은 {{blank}} 법학대학원을 졸업하셨습니다.",
+        "en": "Representative Frank graduated from {{blank}} Law School.",
         "choices": [
           {
             "id": "A",
@@ -1610,26 +1535,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "프랭크는 1977년 하버드 법학대학원을 졸업했습니다.",
-            "en": "Frank received his Harvard law degree in 1977."
+            "speaker": "npc:1",
+            "ko": "하버드였습니다. 1977년에 졸업했죠. 기자의 질문을 듣겠습니다.",
+            "en": "Harvard, in 1977. Let's hear the reporter's question."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "프랭크는 1977년 하버드 법학대학원을 졸업했습니다.",
-            "en": "Frank received his Harvard law degree in 1977."
+            "speaker": "npc:1",
+            "ko": "하버드 법학대학원입니다. 하이드 의원의 로욜라와 구분해 주세요.",
+            "en": "Harvard Law School. Distinguish it from Hyde's Loyola background."
           }
         ]
       },
@@ -1661,8 +1576,8 @@
         "en": "Boston municipal reunion"
       },
       "context": {
-        "ko": "보스턴 시정 동료",
-        "en": "Boston municipal reunion"
+        "ko": "시청 경력에 관한 기자의 질문을 준비한다.",
+        "en": "Prepare a reporter's question about city-hall service."
       },
       "cast": [
         {
@@ -1675,20 +1590,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "시청에서 일하던 시절을 기억하시는군요.",
-          "en": "You remember my years at city hall."
+          "speaker": "host",
+          "ko": "기자가 의원님의 1968~1971년 보스턴 시청 경력을 조사하고 있습니다.",
+          "en": "A reporter is researching your Boston city-hall service from 1968 to 1971."
         },
         {
-          "speaker": "player",
-          "ko": "그때 맡았던 시장 보좌 업무도 소개하겠습니다.",
-          "en": "I'll include your work for the mayor."
+          "speaker": "npc:0",
+          "ko": "당시 어느 시장을 보좌했는지 먼저 소개하면 인터뷰를 준비할 수 있겠죠.",
+          "en": "Identifying the mayor I assisted then will help prepare the interview."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1968~1971년 프랭크는 {{blank}} 시장을 보좌했습니다.",
-        "en": "From 1968 to 1971 Frank worked for Mayor {{blank}}.",
+        "ko": "프랭크 의원님은 {{blank}} 시장을 보좌하셨습니다.",
+        "en": "Representative Frank assisted Mayor {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1716,26 +1631,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "보스턴의 케빈 화이트 시장 보좌진이었습니다.",
-            "en": "I worked for Boston mayor Kevin White."
+            "ko": "케빈 화이트였습니다. 이제 보스턴 시청 경력에 관한 질문을 들어 보죠.",
+            "en": "Kevin White. Now let's hear the question about my Boston service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "보스턴의 케빈 화이트 시장 보좌진이었습니다.",
-            "en": "I worked for Boston mayor Kevin White."
+            "ko": "보스턴의 케빈 화이트 시장을 보좌했습니다. 그 기록을 기준으로 질문하세요.",
+            "en": "I assisted Boston mayor Kevin White. Use that record to frame your question."
           }
         ]
       },
@@ -1762,8 +1667,8 @@
         "en": "Financial oversight briefing"
       },
       "context": {
-        "ko": "금융기관 감독 브리핑",
-        "en": "Financial oversight briefing"
+        "ko": "위원회 감독과 지역구 문의의 경로를 구분한다.",
+        "en": "Distinguish a committee oversight inquiry from constituent correspondence."
       },
       "cast": [
         {
@@ -1776,20 +1681,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "금융기관 관련 자료를 위원회 담당자에게 전달해 주세요.",
-          "en": "Please route the financial institution papers to the committee staff."
+          "speaker": "host",
+          "ko": "한 문의는 매사추세츠 주민의 지역구 사안이고, 다른 문의는 금융기관에 관한 의회 감독 사안입니다.",
+          "en": "One inquiry concerns a Massachusetts constituent matter; another concerns congressional oversight of financial institutions."
         },
         {
-          "speaker": "player",
-          "ko": "매사추세츠 지역구 업무와 위원장 업무는 구분하겠습니다.",
-          "en": "I'll separate district work from the chairmanship."
+          "speaker": "npc:0",
+          "ko": "두 요청을 같은 것으로 처리하지 마세요. 제가 맡은 위원회를 알려 주세요.",
+          "en": "Don't treat those requests as identical. Identify the committee I chair."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "프랭크 의원이 이끄는 위원회는 {{blank}}입니다.",
-        "en": "Frank chairs the House {{blank}} Committee.",
+        "ko": "감독 관련 문의는 하원 {{blank}} 위원회 쪽으로 구분하겠습니다.",
+        "en": "I'll distinguish the oversight inquiry as House {{blank}} Committee business.",
         "choices": [
           {
             "id": "A",
@@ -1817,26 +1722,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "제110·111대 의회 금융서비스위원장을 맡았습니다.",
-            "en": "I chaired Financial Services in the 110th and 111th Congresses."
+            "ko": "금융서비스위원회입니다. 지역구 문의는 별도로 처리하죠.",
+            "en": "Financial Services. Keep the constituent inquiry separate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "제110·111대 의회 금융서비스위원장을 맡았습니다.",
-            "en": "I chaired Financial Services in the 110th and 111th Congresses."
+            "ko": "금융서비스위원회입니다. 제110대와 제111대 의회에서 맡았죠. 두 종류의 문의를 다시 나눠 주세요.",
+            "en": "Financial Services, which I chaired in the 110th and 111th Congresses. Separate the two inquiries again."
           }
         ]
       },
@@ -1863,8 +1758,8 @@
         "en": "Pennsylvania statehouse colleagues"
       },
       "context": {
-        "ko": "펜실베이니아 주의회 동료",
-        "en": "Pennsylvania statehouse colleagues"
+        "ko": "펜실베이니아 주의회 기록에 대한 주민 문의",
+        "en": "A resident's inquiry about Pennsylvania legislative records"
       },
       "cast": [
         {
@@ -1877,14 +1772,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "최근까지 주의회에서 여러분과 함께 일했습니다.",
-          "en": "Until recently I worked with you in the state legislature."
+          "speaker": "player",
+          "ko": "1969~1974년의 표결 기록이 연방 하원 기록에 합쳐져 있습니다. 당시 의원님의 소속 기관을 확인하겠습니다.",
+          "en": "Voting records from 1969 to 1974 have been merged with federal House records. I'll identify your institution at the time."
         },
         {
-          "speaker": "player",
-          "ko": "연방 대표직으로 바뀐 시점을 따로 기록하겠습니다.",
-          "en": "I'll note the transition to federal representation."
+          "speaker": "npc:0",
+          "ko": "그 기간의 펜실베이니아 입법직은 현재 연방 대표직과 다른 기록입니다.",
+          "en": "The Pennsylvania legislative office for those years is distinct from my present federal office."
         }
       ],
       "response": {
@@ -1918,26 +1813,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "주하원에서 재임한 뒤 연방 하원에 왔습니다.",
-            "en": "I served in the state House before entering Congress."
+            "ko": "주 하원입니다. 주민이 찾는 표결이 주법인지 연방법인지부터 확인하세요.",
+            "en": "The state House. First determine whether the vote the resident seeks concerned state or federal law."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "주하원에서 재임한 뒤 연방 하원에 왔습니다.",
-            "en": "I served in the state House before entering Congress."
+            "ko": "1969~1974년에는 펜실베이니아 주 하원에서 재임했습니다. 주 상원이나 연방 하원의 기록으로 분류하면 안 됩니다.",
+            "en": "I served in the Pennsylvania state House from 1969 to 1974. Do not file it as state Senate or federal House service."
           }
         ]
       },
@@ -1964,8 +1849,8 @@
         "en": "Veterans' delegation"
       },
       "context": {
-        "ko": "재향군인 방문단",
-        "en": "Veterans' delegation"
+        "ko": "참전군인이 의원의 복무 경력을 비교하고 싶어 한다.",
+        "en": "A veteran wants to compare the member's military background."
       },
       "cast": [
         {
@@ -1978,20 +1863,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "군 복무 경험이 있는 분들이 오셨군요.",
-          "en": "I see visitors with military service experience."
+          "speaker": "host",
+          "ko": "참전군인이 머사 의원님의 두 현역 복무 기간이 같은 군종이었는지 묻습니다.",
+          "en": "A veteran asks whether your two periods of active service were in the same branch."
         },
         {
-          "speaker": "host",
-          "ko": "의원님의 복무 군종도 기억해 주세요.",
-          "en": "Remember the branch in which the member served."
+          "speaker": "npc:0",
+          "ko": "1952~1955년과 1966~1967년의 복무를 어떤 군종으로 설명하시겠어요?",
+          "en": "How would you identify my branch of service in 1952–1955 and 1966–1967?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "머사가 현역으로 복무한 군종은 {{blank}}입니다.",
-        "en": "Murtha served on active duty in the {{blank}}.",
+        "ko": "두 기간 모두 {{blank}}에서 복무하셨습니다.",
+        "en": "Both periods were in the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2019,26 +1904,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1952~1955년과 1966~1967년에 해병대에서 복무했습니다.",
-            "en": "I served in the Marines in 1952–1955 and 1966–1967."
+            "ko": "해병대였습니다. 두 기간을 구별해서 기억해 주세요. 이제 복무에 관한 질문을 듣죠.",
+            "en": "The Marine Corps. Keep the two periods distinct. Now let's hear your question about service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1952~1955년과 1966~1967년에 해병대에서 복무했습니다.",
-            "en": "I served in the Marines in 1952–1955 and 1966–1967."
+            "ko": "두 현역 복무 기간 모두 해병대였습니다. 연도를 함께 기억하면 혼동을 줄일 수 있죠.",
+            "en": "Both active-duty periods were in the Marine Corps. Remember the dates with the branch."
           }
         ]
       },
@@ -2161,12 +2036,12 @@
         "en": "Texas municipal delegation"
       },
       "context": {
-        "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
-        "en": "The Speaker reflects on cooperation among municipalities."
+        "ko": "여러 텍사스 도시의 공통 관심사에 대한 지방정부 협력",
+        "en": "Municipal cooperation on a shared concern in Texas"
       },
       "cast": [
         {
-          "id": null,
+          "id": "W000763",
           "name": "James Claude Wright Jr.",
           "ko": "짐 라이트",
           "portrait": null,
@@ -2175,20 +2050,20 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "의장이 지방정부 간 협력 경험을 돌아본다.",
-          "en": "The Speaker reflects on cooperation among municipalities."
+          "speaker": "player",
+          "ko": "여러 시의 담당자가 함께 논의하려면 개별 시청과 별도의 협력 조직이 필요하겠습니다.",
+          "en": "A joint discussion among cities calls for an organization distinct from a single city hall."
         },
         {
           "speaker": "npc:0",
-          "ko": "웨더퍼드 시장이던 1953년에는 텍사스 지방자치단체 협력 조직을 이끌었습니다.",
-          "en": "While mayor of Weatherford in 1953, I headed an organization for cooperation among Texas municipalities."
+          "ko": "1953년 제가 대표했던 조직의 경력을 참고해 보세요.",
+          "en": "Consider the organization I led in 1953."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "그 조직은 {{blank}}입니다.",
-        "en": "That organization was the {{blank}}.",
+        "ko": "참고할 조직은 {{blank}}입니다.",
+        "en": "The organization to consult is the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2216,16 +2091,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
-            "en": "I'll distinguish the municipal office from intermunicipal leadership."
+            "speaker": "npc:0",
+            "ko": "맞습니다. 도시 간 협력과 연방 입법은 서로 다른 경로죠.",
+            "en": "Right. Intercity cooperation and federal lawmaking are distinct channels."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "정확한 답은 텍사스 지방자치단체 연맹입니다. 개별 시청과 도시 간 협력 조직의 대표직을 구분하겠습니다.",
-            "en": "The correct answer is League of Texas Municipalities. I'll distinguish the municipal office from intermunicipal leadership."
+            "ko": "텍사스 지방자치단체 연맹입니다. 주정부나 연방 의회의 직책으로 분류하면 안 됩니다.",
+            "en": "The League of Texas Municipalities. It was not a state or federal legislative office."
           }
         ]
       },
@@ -2257,7 +2132,7 @@
       },
       "cast": [
         {
-          "id": null,
+          "id": "G000132",
           "name": "Richard Andrew Gephardt",
           "ko": "리처드 게파트",
           "portrait": null,
@@ -2365,8 +2240,8 @@
         "en": "Wisconsin budget meeting"
       },
       "context": {
-        "ko": "위스콘신 예산 면담",
-        "en": "Wisconsin budget meeting"
+        "ko": "학교와 보건 분야의 연방 예산 자료를 관련 위원회와 연결한다.",
+        "en": "Connect education and health budget documents to the relevant committee."
       },
       "cast": [
         {
@@ -2379,20 +2254,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "학교와 보건 시설 관련 예산 자료를 따로 주세요.",
-          "en": "Separate the budget materials for schools and health services."
+          "speaker": "host",
+          "ko": "주민이 학교와 보건 시설에 관한 연방 예산 자료를 가져왔습니다. 정책 권한과 지출을 다루는 절차를 혼동하고 있어요.",
+          "en": "A resident brought federal budget materials for schools and health facilities and is confusing policy jurisdiction with spending review."
         },
         {
-          "speaker": "player",
-          "ko": "위스콘신의 지역 요구를 전국 예산과 연결하는 업무군요.",
-          "en": "That connects Wisconsin's local needs with national appropriations."
+          "speaker": "npc:0",
+          "ko": "제가 활동한 위원회가 어느 쪽인지 먼저 구별해 주세요.",
+          "en": "Identify the committee where I worked on these matters."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "오비 의원의 주요 활동 위원회는 {{blank}}입니다.",
-        "en": "Obey's major committee work is in {{blank}}.",
+        "ko": "노동·보건·교육 관련 지출 자료는 {{blank}} 위원회 기록에서 확인하겠습니다.",
+        "en": "I'll consult the {{blank}} Committee records for labor, health, and education spending.",
         "choices": [
           {
             "id": "A",
@@ -2420,26 +2295,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "세출위원회에서 노동·보건·교육 등의 예산을 다뤘습니다.",
-            "en": "My Appropriations work includes labor, health, and education funding."
+            "ko": "세출위원회입니다. 이제 지출 자료를 분야별로 검토하죠.",
+            "en": "Appropriations. Now let's examine the spending materials by area."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "세출위원회에서 노동·보건·교육 등의 예산을 다뤘습니다.",
-            "en": "My Appropriations work includes labor, health, and education funding."
+            "ko": "세출위원회입니다. 예산과 일반 정책 권한을 같은 것으로 보지 않도록 하세요.",
+            "en": "Appropriations. Don't treat spending review and general policy jurisdiction as identical."
           }
         ]
       },
@@ -2466,8 +2331,8 @@
         "en": "Rural constituency introduction"
       },
       "context": {
-        "ko": "농촌 지역 대표 소개",
-        "en": "Rural constituency introduction"
+        "ko": "캘리포니아와 중서부 지역 방문단의 개별 의원 접견",
+        "en": "Separate constituent meetings for California and Midwestern delegations"
       },
       "cast": [
         {
@@ -2487,14 +2352,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "두 지역 방문단이 각각 자기 주의 대표와 면담을 요청했습니다. 코엘류 의원은 캘리포니아 대표로 확인했습니다.",
+          "en": "Two delegations request meetings with the representatives from their respective states. Coelho is confirmed as representing California."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "캘리포니아 내륙의 주민들과 일하고 있습니다.",
-          "en": "I work with inland California communities."
+          "ko": "오비 의원의 대표 주를 확인하고 두 주민 접견을 구분하세요.",
+          "en": "Identify Obey's state and keep the constituent meetings separate."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 중서부의 다른 주에서 왔습니다.",
-          "en": "I come from a different Midwestern state."
+          "ko": "제100대 의회 명부를 기준으로 연결해야 합니다.",
+          "en": "Use the directory for the 100th Congress."
         }
       ],
       "response": {
@@ -2528,26 +2398,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "오비는 위스콘신, 코엘류는 캘리포니아 의원입니다.",
-            "en": "Obey represents Wisconsin and Coelho represents California."
+            "speaker": "npc:1",
+            "ko": "위스콘신입니다. 그 주의 요청을 제 사무실과 연결하고 캘리포니아 문의는 코엘류 의원에게 구분하세요.",
+            "en": "Wisconsin. Connect that state's inquiries to my office and keep California inquiries separate for Coelho."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "오비는 위스콘신, 코엘류는 캘리포니아 의원입니다.",
-            "en": "Obey represents Wisconsin and Coelho represents California."
+            "ko": "오비 의원은 위스콘신입니다. 중서부라는 이유로 다른 주의 주민 요청을 전달하지 마세요.",
+            "en": "Obey represents Wisconsin. Do not route inquiries from another state merely because it is in the Midwest."
           }
         ]
       },

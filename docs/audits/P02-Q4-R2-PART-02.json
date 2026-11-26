@@ -1,0 +1,4540 @@
+{
+  "schema": 2,
+  "team": "Q4-P02",
+  "round": 2,
+  "scope": "P02-026–050",
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "source": {
+    "path": "data/dialogue-packs/P02/part-02.json",
+    "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3",
+    "ref": "main"
+  },
+  "entries": [
+    {
+      "id": "P02-026",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "Majority party disclosed and cast makes answer easy; stock feedback.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "공화당이 이번 의회 다수당입니다.",
+            "en": "Republicans hold the majority in this Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "민주당 원내 지도부는 야당 역할을 맡습니다.",
+            "en": "Democratic leadership serves in opposition."
+          },
+          {
+            "speaker": "player",
+            "ko": "의사일정 요청을 전달하죠.",
+            "en": "I'll deliver the scheduling request."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 그 구분을 유지합시다.",
+              "en": "Exactly. Keep that distinction clear."
+            },
+            {
+              "speaker": "player",
+              "ko": "의사일정 요청을 전달하죠.",
+              "en": "I'll deliver the scheduling request."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1947년 다수당 지도자는 화이트입니다.",
+              "en": "There is a distinction to make here. The majority leader in 1947 is White."
+            },
+            {
+              "speaker": "player",
+              "ko": "의사일정 요청을 전달하죠.",
+              "en": "I'll deliver the scheduling request."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "새 의회의 양당 발언 요청을 접수했습니다.",
+            "en": "I have requests for floor time from both parties."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "원내대표에게 보낼 요청과 위원회 요청을 구분하세요.",
+            "en": "Distinguish floor-leader requests from committee requests."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1947년 다수당 지도자의 공식 직책을 확인하세요.",
+            "en": "Verify the official majority leader in 1947."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "화이트에게 다수당 일정 요청을 보내고 바클리의 야당 연락망은 따로 유지하세요.",
+              "en": "Send the simulated majority scheduling request to White; preserve Barkley's opposition contact."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1947년 다수당 지도자는 화이트입니다. 소수당 연락처로 보낸 요청을 회수하세요.",
+              "en": "White was majority leader in 1947. Retrieve the request sent to the minority contact."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-026",
+        "date": "1947-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Wallace H. White Jr.",
+            "ko": "월리스 화이트",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/ME/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Alben W. Barkley",
+            "ko": "앨번 바클리",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/KY/senators.htm"
+          }
+        ],
+        "learningTarget": "The majority leader in 1947 is White.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+            "claim": "The majority leader in 1947 is White.",
+            "asOf": "1947-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/ME/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1947-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/KY/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1947-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1947년 다수당 지도자는 {{blank}}입니다.",
+          "en": "The majority leader in 1947 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "화이트",
+              "en": "White"
+            },
+            {
+              "id": "B",
+              "ko": "바클리",
+              "en": "Barkley"
+            },
+            {
+              "id": "C",
+              "ko": "태프트",
+              "en": "Taft"
+            },
+            {
+              "id": "D",
+              "ko": "노울랜드",
+              "en": "Knowland"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-026-floor-agenda-reversal"
+        },
+        "venue": {
+          "ko": "80대 의회 일정",
+          "en": "80th Congress agenda"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-022.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-022."
+        },
+        "mechanism": "floor-agenda-reversal",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-027",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Smith identifies herself before answer; other options include male senator and generic praise.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 하원에 이어 상원에서 일하게 됐습니다.",
+            "en": "I've moved from the House to the Senate."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "메인주의 두 상원 의석을 함께 소개합시다.",
+            "en": "Introduce both Maine Senate seats together."
+          },
+          {
+            "speaker": "player",
+            "ko": "하원 기록과 연결하죠.",
+            "en": "I'll link the House record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
+              "en": "Good. We can move on to the next step."
+            },
+            {
+              "speaker": "player",
+              "ko": "하원 기록과 연결하죠.",
+              "en": "I'll link the House record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 두 연방의회에서 모두 일한 최초 여성은 스미스입니다.",
+              "en": "There is a distinction to make here. The first woman to serve in both chambers is Smith."
+            },
+            {
+              "speaker": "player",
+              "ko": "하원 기록과 연결하죠.",
+              "en": "I'll link the House record."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "여성의 의회 진출 역사에서 첫 상원 재임과 양원 재임을 구분합니다.",
+            "en": "I'm distinguishing first Senate service from first service in both chambers in women's congressional history."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원과 상원의 실제 재임 기록이 모두 있는지 확인하세요.",
+            "en": "Check for documented service in both chambers."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1949년까지의 경력 기록에서 해당 인물을 선택하세요.",
+            "en": "Identify the person from records through 1949."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "스미스의 양원 경력을 연결하고 펠턴의 최초 상원 재임은 별도 기록으로 남기세요.",
+              "en": "Link Smith's service in both chambers; retain Felton's first Senate service separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "양원 최초 여성은 스미스입니다. 상원 최초 재임과 혼동한 분류를 수정하세요.",
+              "en": "Smith was the first woman to serve in both chambers. Correct the classification conflating the two firsts."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-027",
+        "date": "1949-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Margaret Chase Smith",
+            "ko": "마거릿 체이스 스미스",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/ME/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Owen Brewster",
+            "ko": "오언 브루스터",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/ME/senators.htm"
+          }
+        ],
+        "learningTarget": "The first woman to serve in both chambers is Smith.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/artandhistory/history/common/briefing/women_senators.htm",
+            "claim": "The first woman to serve in both chambers is Smith.",
+            "asOf": "1949-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/ME/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1949-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 연방의회에서 모두 일한 최초 여성은 {{blank}}입니다.",
+          "en": "The first woman to serve in both chambers is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "펠턴",
+              "en": "Felton"
+            },
+            {
+              "id": "B",
+              "ko": "스미스",
+              "en": "Smith"
+            },
+            {
+              "id": "C",
+              "ko": "브루스터",
+              "en": "Brewster"
+            },
+            {
+              "id": "D",
+              "ko": "캐러웨이",
+              "en": "Caraway"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-027-chamber-transition"
+        },
+        "venue": {
+          "ko": "메인 대표단 환영",
+          "en": "Maine delegation welcome"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "chamber-transition",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-028",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Party identification has minimal reasoning; no distinction between joint petition and independent votes.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 임기는 1949년에 시작됐습니다.",
+            "en": "My term began in 1949."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 텍사스의 다른 의석을 맡고 있습니다.",
+            "en": "I hold Texas's other seat."
+          },
+          {
+            "speaker": "player",
+            "ko": "공동 청원 전달처를 정하죠.",
+            "en": "I'll route the joint petition."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 기록이 정확합니다.",
+              "en": "That is the correct record."
+            },
+            {
+              "speaker": "player",
+              "ko": "공동 청원 전달처를 정하죠.",
+              "en": "I'll route the joint petition."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1950년 두 텍사스 의원이 함께 소속된 정당은 민주당입니다.",
+              "en": "There is a distinction to make here. In 1950 both Texas senators belong to the Democratic Party."
+            },
+            {
+              "speaker": "player",
+              "ko": "공동 청원 전달처를 정하죠.",
+              "en": "I'll route the joint petition."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "텍사스 주민들이 두 상원의원에게 공동 청원을 제출했습니다.",
+            "en": "Texas residents submitted a joint petition to both senators."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "같은 주의 대표라도 각 의원의 표결은 독립적으로 기록합니다.",
+            "en": "Even senators from one state have independent voting records."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1950년 두 사람의 당시 소속을 확인하세요.",
+            "en": "Verify their party affiliation in 1950."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "두 사람 모두 민주당으로 표시하되 청원에 대한 지지 여부는 추정하지 마세요.",
+              "en": "Label both Democrats without inferring support for the petition."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1950년 두 의원은 민주당이었습니다. 주 대표단의 정당 분류를 수정하세요.",
+              "en": "Both were Democrats in 1950. Correct the delegation's party classification."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-028",
+        "date": "1950-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Lyndon B. Johnson",
+            "ko": "린든 존슨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/TX/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Tom Connally",
+            "ko": "톰 코널리",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/TX/senators.htm"
+          }
+        ],
+        "learningTarget": "In 1950 both Texas senators belong to the Democratic Party.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/TX/senators.htm",
+            "claim": "In 1950 both Texas senators belong to the Democratic Party.",
+            "asOf": "1950-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/TX/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1950-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1950년 두 텍사스 의원이 함께 소속된 정당은 {{blank}}입니다.",
+          "en": "In 1950 both Texas senators belong to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "진보당",
+              "en": "the Progressive Party"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "the Socialist Party"
+            },
+            {
+              "id": "C",
+              "ko": "민주당",
+              "en": "the Democratic Party"
+            },
+            {
+              "id": "D",
+              "ko": "공화당",
+              "en": "the Republican Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-028-same-party-texas-pair"
+        },
+        "venue": {
+          "ko": "텍사스 대표단 오찬",
+          "en": "Texas delegation luncheon"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-020.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-020."
+        },
+        "mechanism": "same-party-texas-pair",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-029",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "First-person entry directly leaks name; seat-succession distinction valuable.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "닉슨 의원의 사임으로 제가 상원에 왔습니다.",
+            "en": "I entered the Senate following Nixon's resignation."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의석은 별도로 유지됩니다.",
+            "en": "My seat remains separate."
+          },
+          {
+            "speaker": "player",
+            "ko": "공석만 갱신하죠.",
+            "en": "I'll update only the vacant seat."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네. 그 기준으로 일정을 정합시다.",
+              "en": "Yes. Let's use that basis to set the schedule."
+            },
+            {
+              "speaker": "player",
+              "ko": "공석만 갱신하죠.",
+              "en": "I'll update only the vacant seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 닉슨의 공석을 채운 임명 의원은 쿠첼입니다.",
+              "en": "There is a distinction to make here. Nixon's appointed replacement is Kuchel."
+            },
+            {
+              "speaker": "player",
+              "ko": "공석만 갱신하죠.",
+              "en": "I'll update only the vacant seat."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "닉슨 사임 이후 캘리포니아 의석 하나의 승계 기록을 복원합니다.",
+            "en": "I'm restoring one California seat's succession after Nixon resigned."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다른 의석의 기존 임기는 변경할 필요가 없습니다.",
+            "en": "The other seat's existing term need not change."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 임명 기록에서 닉슨의 후임을 확인하세요.",
+            "en": "Identify Nixon's replacement from the appointment record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "쿠첼을 임명 후임으로 연결하고 다른 의석을 유지하세요.",
+              "en": "Link Kuchel as the appointed replacement and retain the other seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "후임은 쿠첼입니다. 두 의석을 모두 갱신한 변경을 취소하세요.",
+              "en": "Kuchel was the replacement. Undo any change to both seats."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-029",
+        "date": "1953-02-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Thomas H. Kuchel",
+            "ko": "토머스 쿠첼",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "William F. Knowland",
+            "ko": "윌리엄 놀랜드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          }
+        ],
+        "learningTarget": "Nixon's appointed replacement is Kuchel.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Nixon's appointed replacement is Kuchel.",
+            "asOf": "1953-02-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1953-02-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "닉슨의 공석을 채운 임명 의원은 {{blank}}입니다.",
+          "en": "Nixon's appointed replacement is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "놀랜드",
+              "en": "Knowland"
+            },
+            {
+              "id": "B",
+              "ko": "다우니",
+              "en": "Downey"
+            },
+            {
+              "id": "C",
+              "ko": "브라운",
+              "en": "Brown"
+            },
+            {
+              "id": "D",
+              "ko": "쿠첼",
+              "en": "Kuchel"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-029-vice-presidential-vacancy"
+        },
+        "venue": {
+          "ko": "캘리포니아 의석 승계",
+          "en": "California seat succession"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-023.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-023."
+        },
+        "mechanism": "vice-presidential-vacancy",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-030",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Party and cast cue identity; stock answer; distinct two-party scheduling roles needed.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "민주당이 이번 의회 다수당입니다.",
+            "en": "Democrats hold the majority in this Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공화당 지도부와 일정 협의를 해야 합니다.",
+            "en": "Scheduling still requires discussions with Republican leadership."
+          },
+          {
+            "speaker": "player",
+            "ko": "양당 회의에 연락하죠.",
+            "en": "I'll contact both leadership offices."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "정확합니다. 두 역할을 혼동하지 않겠군요.",
+              "en": "Correct. That keeps the roles distinct."
+            },
+            {
+              "speaker": "player",
+              "ko": "양당 회의에 연락하죠.",
+              "en": "I'll contact both leadership offices."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1955년 다수당 지도자는 존슨입니다.",
+              "en": "There is a distinction to make here. The majority leader in 1955 is Johnson."
+            },
+            {
+              "speaker": "player",
+              "ko": "양당 회의에 연락하죠.",
+              "en": "I'll contact both leadership offices."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1955년 본회의 일정 협의에 양당의 요청이 들어왔습니다.",
+            "en": "Both parties have requests for the simulated 1955 floor schedule."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다수당 지도부의 일정 역할과 소수당의 협의 역할을 나누세요.",
+            "en": "Separate majority scheduling leadership from minority consultation."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "해당 의회의 실제 다수당 지도자를 확인하세요.",
+            "en": "Identify the actual majority leader for this Congress."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "존슨에게 다수당 일정 요청을 배정하고 노울랜드의 소수당 연락은 유지하세요.",
+              "en": "Assign the majority scheduling request to Johnson and retain Knowland's minority contact."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "다수당 지도자는 존슨입니다. 양당 직책을 뒤집은 연락표를 고치세요.",
+              "en": "Johnson was majority leader. Correct the reversed leadership contacts."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-030",
+        "date": "1955-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Lyndon B. Johnson",
+            "ko": "린든 존슨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/TX/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "William F. Knowland",
+            "ko": "윌리엄 놀랜드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          }
+        ],
+        "learningTarget": "The majority leader in 1955 is Johnson.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+            "claim": "The majority leader in 1955 is Johnson.",
+            "asOf": "1955-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/TX/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1955-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1955-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1955년 다수당 지도자는 {{blank}}입니다.",
+          "en": "The majority leader in 1955 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "B",
+              "ko": "놀랜드",
+              "en": "Knowland"
+            },
+            {
+              "id": "C",
+              "ko": "더크슨",
+              "en": "Dirksen"
+            },
+            {
+              "id": "D",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-030-majority-desk-switch"
+        },
+        "venue": {
+          "ko": "양당 의사일정 조율",
+          "en": "Bipartisan scheduling"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-029.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-029."
+        },
+        "mechanism": "majority-desk-switch",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-031",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Whip versus floor leader useful; cue and generic reward weaken.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "공화당 의원들의 참석 여부를 파악해야 합니다.",
+            "en": "Republican attendance needs to be checked."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "원내 지도자와 원내총무의 업무를 구분합시다.",
+            "en": "Distinguish floor leadership from whipping duties."
+          },
+          {
+            "speaker": "player",
+            "ko": "출석 집계 담당을 정하죠.",
+            "en": "I'll identify the attendance coordinator."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 그 내용을 반영해 주세요.",
+              "en": "Good. Please incorporate that detail."
+            },
+            {
+              "speaker": "player",
+              "ko": "출석 집계 담당을 정하죠.",
+              "en": "I'll identify the attendance coordinator."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1957년 공화당 원내총무는 더크슨입니다.",
+              "en": "There is a distinction to make here. The Republican whip in 1957 is Dirksen."
+            },
+            {
+              "speaker": "player",
+              "ko": "출석 집계 담당을 정하죠.",
+              "en": "I'll identify the attendance coordinator."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "본회의 표결 전 가상 출석 확인 요청이 들어왔습니다.",
+            "en": "A simulated attendance request arrived before a floor vote."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "원내대표의 일정 협의와 원내총무의 출석 조정은 다릅니다.",
+            "en": "Floor scheduling and whip attendance coordination are different responsibilities."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1957년 공화당의 원내총무를 확인하세요.",
+            "en": "Identify the Republican whip in 1957."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "더크슨에게 출석 확인을 배정하고 원내대표 연락은 분리하세요.",
+              "en": "Assign attendance coordination to Dirksen and separate the floor leader contact."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "원내총무는 더크슨입니다. 원내대표에게 잘못 보낸 출석 요청을 수정하세요.",
+              "en": "Dirksen was whip. Redirect the attendance request misrouted to the floor leader."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-031",
+        "date": "1957-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Everett M. Dirksen",
+            "ko": "에버렛 더크슨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/IL/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "William F. Knowland",
+            "ko": "윌리엄 놀랜드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          }
+        ],
+        "learningTarget": "The Republican whip in 1957 is Dirksen.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+            "claim": "The Republican whip in 1957 is Dirksen.",
+            "asOf": "1957-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/IL/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1957-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1957-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1957년 공화당 원내총무는 {{blank}}입니다.",
+          "en": "The Republican whip in 1957 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스콧",
+              "en": "Scott"
+            },
+            {
+              "id": "B",
+              "ko": "더크슨",
+              "en": "Dirksen"
+            },
+            {
+              "id": "C",
+              "ko": "놀랜드",
+              "en": "Knowland"
+            },
+            {
+              "id": "D",
+              "ko": "쿠첼",
+              "en": "Kuchel"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-031-whip-headcount"
+        },
+        "venue": {
+          "ko": "표결 인원 점검",
+          "en": "Vote attendance check"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-030.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-030."
+        },
+        "mechanism": "whip-headcount",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-032",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Equal representation cue nearly gives answer; actual apportionment comparison useful.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 알래스카의 첫 상원의원으로 선서했습니다.",
+            "en": "Yesterday we took the oath as Alaska's first senators."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새로운 주에도 동등한 대표권이 있습니다.",
+            "en": "The new state has equal representation."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 주의 대표권을 지도에 표시하죠.",
+            "en": "I'll add the new state's representation to the map."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
+              "en": "That's right. Keep it in mind for our next meeting."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 주의 대표권을 지도에 표시하죠.",
+              "en": "I'll add the new state's representation to the map."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 알래스카에 배정된 상원 의석은 2개입니다.",
+              "en": "There is a distinction to make here. Alaska is entitled to two Senate seats."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 주의 대표권을 지도에 표시하죠.",
+              "en": "I'll add the new state's representation to the map."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "알래스카의 주 승격 후 상원 의석 배정 문제를 검토합니다.",
+            "en": "I'm reviewing Alaska's Senate allocation after statehood."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원 의석 배분과 상원 대표성의 기준은 다릅니다.",
+            "en": "House apportionment and Senate representation use different principles."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "인구 수와 무관하게 적용되는 상원 의석 수를 선택하세요.",
+            "en": "Apply the Senate allocation regardless of population."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "두 의석을 배정하고 하원 인구 비례 방식은 따로 표시하세요.",
+              "en": "Assign two seats and distinguish House population-based apportionment."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "각 주는 상원 두 의석을 갖습니다. 인구에 따라 바꾼 가상 배정을 취소하세요.",
+              "en": "Each state has two Senate seats. Undo the simulated population-based allocation."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-032",
+        "date": "1959-01-08",
+        "cast": [
+          {
+            "id": null,
+            "name": "Bob Bartlett",
+            "ko": "밥 바틀릿",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AK/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Ernest Gruening",
+            "ko": "어니스트 그루닝",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AK/senators.htm"
+          }
+        ],
+        "learningTarget": "Alaska is entitled to two Senate seats.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/AK/intro.htm",
+            "claim": "Alaska is entitled to two Senate seats.",
+            "asOf": "1959-01-08"
+          },
+          {
+            "url": "https://www.senate.gov/states/AK/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1959-01-08"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "알래스카에 배정된 상원 의석은 {{blank}}입니다.",
+          "en": "Alaska is entitled to {{blank}} Senate seats.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "3개",
+              "en": "three"
+            },
+            {
+              "id": "B",
+              "ko": "인구 비례",
+              "en": "population-based"
+            },
+            {
+              "id": "C",
+              "ko": "2개",
+              "en": "two"
+            },
+            {
+              "id": "D",
+              "ko": "1개",
+              "en": "one"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-032-new-state-seating"
+        },
+        "venue": {
+          "ko": "알래스카 선서 이후",
+          "en": "After Alaska's oath"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "new-state-seating",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-033",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "Both named NPCs explicitly identify first delegation; alternate pairs future or other state.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 상원에서 선서했습니다.",
+            "en": "We took the Senate oath yesterday."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 대표단이 의회에 합류했습니다.",
+            "en": "A new delegation has joined Congress."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 신임 의원을 함께 소개하죠.",
+            "en": "I'll introduce the two new members together."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네, 그렇게 전달하면 됩니다.",
+              "en": "Yes, that is the right way to route it."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 신임 의원을 함께 소개하죠.",
+              "en": "I'll introduce the two new members together."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 하와이 최초 상원의원 두 명은 퐁과 롱입니다.",
+              "en": "There is a distinction to make here. Hawaii's first two senators are Fong and Long."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 신임 의원을 함께 소개하죠.",
+              "en": "I'll introduce the two new members together."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "하와이 주 승격 직후의 대표단을 당시 선서 기록으로 복원합니다.",
+            "en": "I'm reconstructing Hawaii's first delegation using contemporary oath records."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "알래스카와 하와이의 주 승격 기록은 구분하세요.",
+            "en": "Distinguish Alaska's statehood records from Hawaii's."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1959년 8월의 실제 하와이 상원 대표단을 확인하세요.",
+            "en": "Verify Hawaii's actual Senate delegation in August 1959."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "퐁과 롱을 최초 대표단으로 등록하고 다른 주 대표단은 유지하세요.",
+              "en": "Register Fong and Long as the first delegation and retain other state entries."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "최초 두 의원은 퐁과 롱입니다. 다른 주 또는 이후 시대의 대표단을 옮긴 항목을 수정하세요.",
+              "en": "Fong and Long were the first two. Correct an entry copied from another state or period."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-033",
+        "date": "1959-08-25",
+        "cast": [
+          {
+            "id": null,
+            "name": "Hiram Fong",
+            "ko": "하이럼 퐁",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/HI/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Oren Long",
+            "ko": "오런 롱",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/HI/senators.htm"
+          }
+        ],
+        "learningTarget": "Hawaii's first two senators are Fong and Long.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/HI/intro.htm",
+            "claim": "Hawaii's first two senators are Fong and Long.",
+            "asOf": "1959-08-25"
+          },
+          {
+            "url": "https://www.senate.gov/states/HI/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1959-08-25"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "하와이 최초 상원의원 두 명은 {{blank}}입니다.",
+          "en": "Hawaii's first two senators are {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "이노우에와 아카카",
+              "en": "Inouye and Akaka"
+            },
+            {
+              "id": "B",
+              "ko": "바틀릿과 그루닝",
+              "en": "Bartlett and Gruening"
+            },
+            {
+              "id": "C",
+              "ko": "스티븐스와 그래블",
+              "en": "Stevens and Gravel"
+            },
+            {
+              "id": "D",
+              "ko": "퐁과 롱",
+              "en": "Fong and Long"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-033-admission-pair"
+        },
+        "venue": {
+          "ko": "하와이 주 승격 환영",
+          "en": "Hawaii statehood reception"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "admission-pair",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-034",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "Party difference and Kennedy cue nearly determine answer; fringe alternatives.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "우리 둘 다 매사추세츠를 대표합니다.",
+            "en": "Both of us represent Massachusetts."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그러나 같은 정당 소속은 아닙니다.",
+            "en": "But we belong to different parties."
+          },
+          {
+            "speaker": "player",
+            "ko": "정당별 의견을 별도로 듣죠.",
+            "en": "I'll hear from each party separately."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 그 구분을 유지합시다.",
+              "en": "Exactly. Keep that distinction clear."
+            },
+            {
+              "speaker": "player",
+              "ko": "정당별 의견을 별도로 듣죠.",
+              "en": "I'll hear from each party separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 솔턴스톨의 정당은 공화당입니다.",
+              "en": "There is a distinction to make here. Saltonstall belongs to the Republican Party."
+            },
+            {
+              "speaker": "player",
+              "ko": "정당별 의견을 별도로 듣죠.",
+              "en": "I'll hear from each party separately."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "매사추세츠의 두 상원의원에게 같은 주민 의견이 전달됐습니다.",
+            "en": "The same constituent concern reaches both Massachusetts senators."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "주 대표성은 같아도 정당 소속과 입장은 별개입니다.",
+            "en": "Shared state representation does not imply shared affiliation or positions."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "솔턴스톨의 당시 정당 소속을 확인하세요.",
+            "en": "Verify Saltonstall's affiliation at the time."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "공화당으로 표시하고 두 의원의 실제 표결은 따로 확인하세요.",
+              "en": "Mark Republican affiliation and verify each senator's actual vote separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "솔턴스톨은 공화당입니다. 공동 대표성만으로 민주당으로 분류한 오류를 수정하세요.",
+              "en": "Saltonstall was Republican. Correct the Democratic label inferred from shared representation."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-034",
+        "date": "1960-06-01",
+        "cast": [
+          {
+            "id": "K000393",
+            "name": "John F. Kennedy",
+            "ko": "존 F. 케네디",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000393.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/K000393"
+          },
+          {
+            "id": null,
+            "name": "Leverett Saltonstall",
+            "ko": "레버렛 솔턴스톨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MA/senators.htm"
+          }
+        ],
+        "learningTarget": "Saltonstall belongs to the Republican Party.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MA/senators.htm",
+            "claim": "Saltonstall belongs to the Republican Party.",
+            "asOf": "1960-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1960-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "솔턴스톨의 정당은 {{blank}}입니다.",
+          "en": "Saltonstall belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "the Republican Party"
+            },
+            {
+              "id": "B",
+              "ko": "민주당",
+              "en": "the Democratic Party"
+            },
+            {
+              "id": "C",
+              "ko": "진보당",
+              "en": "the Progressive Party"
+            },
+            {
+              "id": "D",
+              "ko": "사회당",
+              "en": "the Socialist Party"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-034-same-state-party-balance"
+        },
+        "venue": {
+          "ko": "초당적 지역 청원",
+          "en": "Cross-party state petition"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "same-state-party-balance",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-035",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Succession after Johnson valuable; cast cue; stock feedback.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "존슨은 부통령으로 이동했습니다.",
+            "en": "Johnson has moved to the vice presidency."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 다수당 지도부와 협의합니다.",
+            "en": "We consult with the new majority leadership."
+          },
+          {
+            "speaker": "player",
+            "ko": "부통령 취임 전후를 연결하죠.",
+            "en": "I'll link the records before and after the inauguration."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
+              "en": "Good. We can move on to the next step."
+            },
+            {
+              "speaker": "player",
+              "ko": "부통령 취임 전후를 연결하죠.",
+              "en": "I'll link the records before and after the inauguration."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1961년 다수당 지도자는 맨스필드입니다.",
+              "en": "There is a distinction to make here. The majority leader in 1961 is Mansfield."
+            },
+            {
+              "speaker": "player",
+              "ko": "부통령 취임 전후를 연결하죠.",
+              "en": "I'll link the records before and after the inauguration."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "존슨의 부통령 취임 후 상원 다수당 지도부의 연락망을 갱신합니다.",
+            "en": "I'm updating Senate majority leadership contacts after Johnson became vice president."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "부통령과 원내대표의 직책은 서로 다른 권한입니다.",
+            "en": "Vice presidency and floor leadership are separate offices."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1961년 공식 후임 지도자를 확인하세요.",
+            "en": "Identify the official successor in 1961."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "맨스필드를 새 지도자로 연결하고 존슨의 이전 직책은 역사 기록으로 남기세요.",
+              "en": "Link Mansfield as the new leader; preserve Johnson's former office historically."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1961년 다수당 지도자는 맨스필드입니다. 부통령에게 보낸 일정 요청을 수정하세요.",
+              "en": "Mansfield was majority leader in 1961. Redirect the scheduling request sent to the vice president."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-035",
+        "date": "1961-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Everett M. Dirksen",
+            "ko": "에버렛 더크슨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/IL/senators.htm"
+          }
+        ],
+        "learningTarget": "The majority leader in 1961 is Mansfield.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+            "claim": "The majority leader in 1961 is Mansfield.",
+            "asOf": "1961-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1961-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/IL/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1961-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1961년 다수당 지도자는 {{blank}}입니다.",
+          "en": "The majority leader in 1961 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "바클리",
+              "en": "Barkley"
+            },
+            {
+              "id": "B",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            },
+            {
+              "id": "C",
+              "ko": "더크슨",
+              "en": "Dirksen"
+            },
+            {
+              "id": "D",
+              "ko": "험프리",
+              "en": "Humphrey"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-035-leader-after-vp"
+        },
+        "venue": {
+          "ko": "부통령 취임 뒤 원내 회의",
+          "en": "Floor meeting after vice presidential inauguration"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-031.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-031."
+        },
+        "mechanism": "leader-after-vp",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-036",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Two first-person tenure lines directly identify Inouye.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 이번 1월 상원에 들어왔습니다.",
+            "en": "I entered the Senate this January."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 1959년부터 재임 중입니다.",
+            "en": "I have served since 1959."
+          },
+          {
+            "speaker": "player",
+            "ko": "신임 의원 소개 순서를 바꾸죠.",
+            "en": "I'll change the introduction order."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 기록이 정확합니다.",
+              "en": "That is the correct record."
+            },
+            {
+              "speaker": "player",
+              "ko": "신임 의원 소개 순서를 바꾸죠.",
+              "en": "I'll change the introduction order."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1963년 신임 하와이 상원의원은 이노우에입니다.",
+              "en": "There is a distinction to make here. The new Hawaii senator in 1963 is Inouye."
+            },
+            {
+              "speaker": "player",
+              "ko": "신임 의원 소개 순서를 바꾸죠.",
+              "en": "I'll change the introduction order."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "하와이 대표단의 1959년과 1963년 명부를 비교합니다.",
+            "en": "I'm comparing Hawaii's 1959 and 1963 delegations."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "기존 의석 재임과 새 의석 진입을 따로 표시하세요.",
+            "en": "Separate continuing service from new entry."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1963년 새로 진입한 의원을 당시 기록에서 확인하세요.",
+            "en": "Identify the new entrant from the 1963 record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "이노우에를 새 의원으로 추가하고 퐁의 계속된 재임은 유지하세요.",
+              "en": "Add Inouye and preserve Fong's continuing service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "신임은 이노우에입니다. 퐁의 의석까지 변경한 기록을 복원하세요.",
+              "en": "Inouye was the new senator. Restore the record if Fong's seat was also changed."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-036",
+        "date": "1963-06-01",
+        "cast": [
+          {
+            "id": "I000025",
+            "name": "Daniel Inouye",
+            "ko": "대니얼 이노우에",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/I000025.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/I000025"
+          },
+          {
+            "id": null,
+            "name": "Hiram Fong",
+            "ko": "하이럼 퐁",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/HI/senators.htm"
+          }
+        ],
+        "learningTarget": "The new Hawaii senator in 1963 is Inouye.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/HI/senators.htm",
+            "claim": "The new Hawaii senator in 1963 is Inouye.",
+            "asOf": "1963-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/HI/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1963-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1963년 신임 하와이 상원의원은 {{blank}}입니다.",
+          "en": "The new Hawaii senator in 1963 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "롱",
+              "en": "Long"
+            },
+            {
+              "id": "B",
+              "ko": "아카카",
+              "en": "Akaka"
+            },
+            {
+              "id": "C",
+              "ko": "이노우에",
+              "en": "Inouye"
+            },
+            {
+              "id": "D",
+              "ko": "퐁",
+              "en": "Fong"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-036-island-delegation"
+        },
+        "venue": {
+          "ko": "하와이 공동 지역회의",
+          "en": "Hawaii joint regional meeting"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-033.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-033."
+        },
+        "mechanism": "island-delegation",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-037",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Direct calendar route substantive but prompt simply names leader; distinguish managers and referral.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "하원에서 넘어온 법안을 본회의 일정에 올렸습니다.",
+            "en": "The House bill has been placed on the floor calendar."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "위원회 회부와 본회의 심의는 다른 경로입니다.",
+            "en": "Committee referral and floor consideration are different routes."
+          },
+          {
+            "speaker": "player",
+            "ko": "법안 경로를 그려보죠.",
+            "en": "I'll chart the bill's route."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네. 그 기준으로 일정을 정합시다.",
+              "en": "Yes. Let's use that basis to set the schedule."
+            },
+            {
+              "speaker": "player",
+              "ko": "법안 경로를 그려보죠.",
+              "en": "I'll chart the bill's route."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 민권법안을 위원회 회부 없이 일정에 올린 지도자는 맨스필드입니다.",
+              "en": "There is a distinction to make here. The leader who placed the civil rights bill directly on the calendar is Mansfield."
+            },
+            {
+              "speaker": "player",
+              "ko": "법안 경로를 그려보죠.",
+              "en": "I'll chart the bill's route."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "민권법안의 상원 처리 경로를 재구성합니다.",
+            "en": "I'm reconstructing the Senate route for the civil rights bill."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "법사위원회 회부와 본회의 일정에 직접 올리는 방식은 다릅니다.",
+            "en": "Judiciary referral differs from direct placement on the floor calendar."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그 경로를 사용한 원내 지도자를 확인하세요.",
+            "en": "Identify the floor leader who used that route."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "맨스필드의 일정 배치 기록을 연결하고 법안 관리 담당자의 역할은 별도로 두세요.",
+              "en": "Link Mansfield's calendar action and distinguish the bill managers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "맨스필드가 직접 일정에 올렸습니다. 위원회 처리 또는 관리 담당자와 혼동한 경로를 수정하세요.",
+              "en": "Mansfield placed it directly on the calendar. Correct a route confusing committee action or managers."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-037",
+        "date": "1964-03-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Hubert Humphrey",
+            "ko": "휴버트 험프리",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MN/senators.htm"
+          }
+        ],
+        "learningTarget": "The leader who placed the civil rights bill directly on the calendar is Mansfield.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/artandhistory/history/common/generic/CivilRightsAct1964.htm",
+            "claim": "The leader who placed the civil rights bill directly on the calendar is Mansfield.",
+            "asOf": "1964-03-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-03-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MN/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-03-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "민권법안을 위원회 회부 없이 일정에 올린 지도자는 {{blank}}입니다.",
+          "en": "The leader who placed the civil rights bill directly on the calendar is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "험프리",
+              "en": "Humphrey"
+            },
+            {
+              "id": "B",
+              "ko": "더크슨",
+              "en": "Dirksen"
+            },
+            {
+              "id": "C",
+              "ko": "이스트랜드",
+              "en": "Eastland"
+            },
+            {
+              "id": "D",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-037-calendar-bypass"
+        },
+        "venue": {
+          "ko": "민권법 본회의 일정",
+          "en": "Civil rights floor scheduling"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-035.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-035."
+        },
+        "mechanism": "calendar-bypass",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-038",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Relevant competing thresholds, but no denominator; frame dated 1964 case not universal rule.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 토론 종결 표결이 이루어졌습니다.",
+            "en": "The cloture vote occurred yesterday."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "양당의 표를 모으는 일이 중요했습니다.",
+            "en": "Votes from both parties were essential."
+          },
+          {
+            "speaker": "player",
+            "ko": "표결 기준을 계산하죠.",
+            "en": "I'll calculate the threshold."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "정확합니다. 두 역할을 혼동하지 않겠군요.",
+              "en": "Correct. That keeps the roles distinct."
+            },
+            {
+              "speaker": "player",
+              "ko": "표결 기준을 계산하죠.",
+              "en": "I'll calculate the threshold."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 당시 필요한 종결 찬성표는 67표입니다.",
+              "en": "There is a distinction to make here. The required number of cloture votes at the time was 67."
+            },
+            {
+              "speaker": "player",
+              "ko": "표결 기준을 계산하죠.",
+              "en": "I'll calculate the threshold."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1964년 6월 10일 토론종결 표결을 가상 의사일정에 적용합니다.",
+            "en": "I'm applying the June 10, 1964 cloture vote to a simulated floor schedule."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "일반 법안 가결 문턱과 당시 토론종결 문턱을 구별하세요.",
+            "en": "Distinguish ordinary passage from the cloture threshold then in force."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그 역사적 표결에서 필요했던 찬성표 수를 확인하세요.",
+            "en": "Verify the required affirmative votes in that historical vote."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "67표를 해당 표결의 문턱으로 설정하세요. 최종 가결은 별도입니다.",
+              "en": "Set 67 as the threshold for that vote; passage is separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 표결의 문턱은 67표였습니다. 이후 시대의 60표 기준을 적용한 설정을 수정하세요.",
+              "en": "That vote required 67. Correct a setting using the later 60-vote threshold."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-038",
+        "date": "1964-06-11",
+        "cast": [
+          {
+            "id": null,
+            "name": "Hubert Humphrey",
+            "ko": "휴버트 험프리",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MN/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Thomas H. Kuchel",
+            "ko": "토머스 쿠첼",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          }
+        ],
+        "learningTarget": "The required number of cloture votes at the time was 67.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/filibusters-cloture/civil-rights-filibuster-ended.htm",
+            "claim": "The required number of cloture votes at the time was 67.",
+            "asOf": "1964-06-11"
+          },
+          {
+            "url": "https://www.senate.gov/states/MN/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-06-11"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-06-11"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "당시 필요한 종결 찬성표는 {{blank}}입니다.",
+          "en": "The required number of cloture votes at the time was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "67표",
+              "en": "67"
+            },
+            {
+              "id": "B",
+              "ko": "60표",
+              "en": "60"
+            },
+            {
+              "id": "C",
+              "ko": "51표",
+              "en": "51"
+            },
+            {
+              "id": "D",
+              "ko": "100표",
+              "en": "100"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-038-cloture-coalition"
+        },
+        "venue": {
+          "ko": "민권법 종결 표결 이후",
+          "en": "After civil rights cloture"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-037.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-037."
+        },
+        "mechanism": "cloture-coalition",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-039",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Opening says Senate passage verbatim; procedural sequence useful.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "상원이 어제 법안을 가결했습니다.",
+            "en": "The Senate passed the bill yesterday."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지난번 토론 종결과는 별도의 표결입니다.",
+            "en": "It was separate from the earlier cloture vote."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 표결 기록을 분리하죠.",
+            "en": "I'll separate the two votes."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 그 내용을 반영해 주세요.",
+              "en": "Good. Please incorporate that detail."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 표결 기록을 분리하죠.",
+              "en": "I'll separate the two votes."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 6월 19일 기록의 성격은 상원 최종 가결입니다.",
+              "en": "There is a distinction to make here. The June 19 record concerns final Senate passage."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 표결 기록을 분리하죠.",
+              "en": "I'll separate the two votes."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "6월의 민권법 표결 두 건을 구별해야 합니다.",
+            "en": "I need to distinguish two June votes on the civil rights bill."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "6월 10일의 토론종결 기록을 이전 단계로 남기세요.",
+            "en": "Retain June 10 cloture as the earlier stage."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "6월 19일 호명표가 확인하는 절차를 선택하세요.",
+            "en": "Identify the procedure documented by the June 19 roll call."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "상원 최종 가결을 표시하고 대통령 서명은 별도로 추적하세요.",
+              "en": "Mark final Senate passage and track presidential signature separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "6월 19일은 상원 가결입니다. 법률 서명으로 조기 표시한 상태를 되돌리세요.",
+              "en": "June 19 was Senate passage. Undo the premature signature status."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-039",
+        "date": "1964-06-20",
+        "cast": [
+          {
+            "id": null,
+            "name": "Everett M. Dirksen",
+            "ko": "에버렛 더크슨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/IL/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          }
+        ],
+        "learningTarget": "The June 19 record concerns final Senate passage.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/artandhistory/history/common/generic/CivilRightsAct1964.htm",
+            "claim": "The June 19 record concerns final Senate passage.",
+            "asOf": "1964-06-20"
+          },
+          {
+            "url": "https://www.senate.gov/states/IL/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-06-20"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-06-20"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "6월 19일 기록의 성격은 {{blank}}입니다.",
+          "en": "The June 19 record concerns {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원 선거",
+              "en": "a House election"
+            },
+            {
+              "id": "B",
+              "ko": "상원 최종 가결",
+              "en": "final Senate passage"
+            },
+            {
+              "id": "C",
+              "ko": "대통령 서명",
+              "en": "presidential signature"
+            },
+            {
+              "id": "D",
+              "ko": "대법원 판결",
+              "en": "a Supreme Court ruling"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-039-final-vote-distinction"
+        },
+        "venue": {
+          "ko": "민권법 가결 이후",
+          "en": "After civil rights passage"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-037.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-037."
+        },
+        "mechanism": "final-vote-distinction",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-040",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Dissent independent of delegation important; future Alaska senators weak alternatives.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 결의안에 반대표가 나왔습니다.",
+            "en": "There were dissenting votes on yesterday's resolution."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "같은 주 대표단도 표결을 따로 행사합니다.",
+            "en": "Each member of a state delegation votes separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "각 의원의 표를 따로 기록하죠.",
+            "en": "I'll record each senator's vote separately."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
+              "en": "That's right. Keep it in mind for our next meeting."
+            },
+            {
+              "speaker": "player",
+              "ko": "각 의원의 표를 따로 기록하죠.",
+              "en": "I'll record each senator's vote separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 알래스카에서 반대표를 던진 의원은 그루닝입니다.",
+              "en": "There is a distinction to make here. The Alaska senator who voted against the resolution is Gruening."
+            },
+            {
+              "speaker": "player",
+              "ko": "각 의원의 표를 따로 기록하죠.",
+              "en": "I'll record each senator's vote separately."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "통킹만 결의 표결에서 알래스카 대표단의 두 표를 따로 확인합니다.",
+            "en": "I'm verifying Alaska's two votes on the Tonkin resolution separately."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "같은 주를 대표한다고 동일하게 투표하는 것은 아닙니다.",
+            "en": "Representing the same state does not establish identical votes."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "8월 7일 호명표에서 반대 의원을 확인하세요.",
+            "en": "Identify the dissenting senator from the August 7 roll call."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "그루닝의 반대 기록을 보존하고 바틀릿의 표와 합치지 마세요.",
+              "en": "Preserve Gruening's dissent separately from Bartlett's vote."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "반대 의원은 그루닝입니다. 대표단 전체를 하나의 표로 처리한 기록을 수정하세요.",
+              "en": "Gruening dissented. Correct the record treating the delegation as a single vote."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-040",
+        "date": "1964-08-08",
+        "cast": [
+          {
+            "id": null,
+            "name": "Ernest Gruening",
+            "ko": "어니스트 그루닝",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AK/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Bob Bartlett",
+            "ko": "밥 바틀릿",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AK/senators.htm"
+          }
+        ],
+        "learningTarget": "The Alaska senator who voted against the resolution is Gruening.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/AK/timeline.htm",
+            "claim": "The Alaska senator who voted against the resolution is Gruening.",
+            "asOf": "1964-08-08"
+          },
+          {
+            "url": "https://www.senate.gov/states/AK/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1964-08-08"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "알래스카에서 반대표를 던진 의원은 {{blank}}입니다.",
+          "en": "The Alaska senator who voted against the resolution is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스티븐스",
+              "en": "Stevens"
+            },
+            {
+              "id": "B",
+              "ko": "그래블",
+              "en": "Gravel"
+            },
+            {
+              "id": "C",
+              "ko": "그루닝",
+              "en": "Gruening"
+            },
+            {
+              "id": "D",
+              "ko": "바틀릿",
+              "en": "Bartlett"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-040-dissent-roll-call"
+        },
+        "venue": {
+          "ko": "통킹만 결의 기록",
+          "en": "Gulf of Tonkin resolution record"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-032.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-032."
+        },
+        "mechanism": "dissent-roll-call",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-041",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Offices distinction useful; visible cast and repeated feedback.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "임시의장과 다수당 지도자는 다른 직책입니다.",
+            "en": "President pro tempore and majority leader are different offices."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "본회의 의사일정은 지도부의 일입니다.",
+            "en": "Floor scheduling is leadership business."
+          },
+          {
+            "speaker": "player",
+            "ko": "의장석 명패를 확인하죠.",
+            "en": "I'll check the chair's nameplate."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네, 그렇게 전달하면 됩니다.",
+              "en": "Yes, that is the right way to route it."
+            },
+            {
+              "speaker": "player",
+              "ko": "의장석 명패를 확인하죠.",
+              "en": "I'll check the chair's nameplate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1967년 임시의장은 헤이든입니다.",
+              "en": "There is a distinction to make here. The president pro tempore in 1967 is Hayden."
+            },
+            {
+              "speaker": "player",
+              "ko": "의장석 명패를 확인하죠.",
+              "en": "I'll check the chair's nameplate."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "상원 의장석의 대행과 본회의 일정 요청을 각각 배정합니다.",
+            "en": "I'm assigning simulated presiding and floor-scheduling requests separately."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "원내대표는 임시의장 직책과 동일하지 않습니다.",
+            "en": "Floor leader and president pro tempore are distinct offices."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1967년 임시의장 명부를 확인하세요.",
+            "en": "Consult the 1967 president pro tempore roster."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "헤이든의 임시의장 직책에 의장석 관련 요청을 연결하세요.",
+              "en": "Route the presiding-office request to Hayden's president pro tempore role."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "임시의장은 헤이든입니다. 일정 담당 원내대표와 혼동한 배정을 수정하세요.",
+              "en": "Hayden was president pro tempore. Correct the assignment confusing the role with floor leader."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-041",
+        "date": "1967-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Carl Hayden",
+            "ko": "칼 헤이든",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AZ/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          }
+        ],
+        "learningTarget": "The president pro tempore in 1967 is Hayden.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/officers-staff/president-pro-tempore/presidents-pro-tempore.htm",
+            "claim": "The president pro tempore in 1967 is Hayden.",
+            "asOf": "1967-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/AZ/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1967-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1967-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1967년 임시의장은 {{blank}}입니다.",
+          "en": "The president pro tempore in 1967 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            },
+            {
+              "id": "B",
+              "ko": "더크슨",
+              "en": "Dirksen"
+            },
+            {
+              "id": "C",
+              "ko": "러셀",
+              "en": "Russell"
+            },
+            {
+              "id": "D",
+              "ko": "헤이든",
+              "en": "Hayden"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-041-presiding-role"
+        },
+        "venue": {
+          "ko": "의장석과 지도부",
+          "en": "Chair and floor leader"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-039.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-039."
+        },
+        "mechanism": "presiding-role",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-042",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "First-person whip claim gives exact answer; irrelevant generic praise.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번 의회에 원내총무를 맡았습니다.",
+            "en": "I have taken the whip role this Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지도자는 별도 직책입니다.",
+            "en": "The floor leader is a separate office."
+          },
+          {
+            "speaker": "player",
+            "ko": "표결 연락 담당을 표시하죠.",
+            "en": "I'll mark the vote liaison."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 그 구분을 유지합시다.",
+              "en": "Exactly. Keep that distinction clear."
+            },
+            {
+              "speaker": "player",
+              "ko": "표결 연락 담당을 표시하죠.",
+              "en": "I'll mark the vote liaison."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1969년 민주당 원내총무는 케네디입니다.",
+              "en": "There is a distinction to make here. The Democratic whip in 1969 is Kennedy."
+            },
+            {
+              "speaker": "player",
+              "ko": "표결 연락 담당을 표시하죠.",
+              "en": "I'll mark the vote liaison."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1969년 민주당 표결 준비 연락망을 새로 구성합니다.",
+            "en": "I'm setting up a simulated Democratic vote-preparation contact list for 1969."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "일정 결정과 의원 출석 확인을 다른 역할로 구분하세요.",
+            "en": "Distinguish scheduling from attendance coordination."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "해당 의회의 원내총무를 공식 명부로 확인하세요.",
+            "en": "Verify that Congress's whip from the official roster."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "케네디에게 원내총무 업무를 배정하고 맨스필드의 지도자 역할을 유지하세요.",
+              "en": "Assign whip duties to Kennedy while retaining Mansfield's leadership role."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1969년 원내총무는 케네디입니다. 지도자 명부와 바뀐 연락망을 수정하세요.",
+              "en": "Kennedy was whip in 1969. Correct the contact list that swapped the offices."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-042",
+        "date": "1969-06-01",
+        "cast": [
+          {
+            "id": "K000105",
+            "name": "Edward M. Kennedy",
+            "ko": "에드워드 케네디",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000105.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/K000105"
+          },
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          }
+        ],
+        "learningTarget": "The Democratic whip in 1969 is Kennedy.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+            "claim": "The Democratic whip in 1969 is Kennedy.",
+            "asOf": "1969-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1969-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1969-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1969년 민주당 원내총무는 {{blank}}입니다.",
+          "en": "The Democratic whip in 1969 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "케네디",
+              "en": "Kennedy"
+            },
+            {
+              "id": "B",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            },
+            {
+              "id": "C",
+              "ko": "버드",
+              "en": "Byrd"
+            },
+            {
+              "id": "D",
+              "ko": "크랜스턴",
+              "en": "Cranston"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-042-assistant-leadership"
+        },
+        "venue": {
+          "ko": "민주당 표결 연락",
+          "en": "Democratic vote liaison"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-041.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-041."
+        },
+        "mechanism": "assistant-leadership",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-043",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Earlier chair change good; visible identity cue and generic feedback.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 초 임시의장직이 바뀌었습니다.",
+            "en": "The presidency pro tempore changed hands early this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다수당 지도직과 구분해 기록합시다.",
+            "en": "Record it separately from the majority leadership."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 임시의장 연표를 만들죠.",
+            "en": "I'll update the presiding-office timeline."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
+              "en": "Good. We can move on to the next step."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 임시의장 연표를 만들죠.",
+              "en": "I'll update the presiding-office timeline."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1971년 6월 임시의장은 엘렌더입니다.",
+              "en": "There is a distinction to make here. The president pro tempore in June 1971 is Ellender."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 임시의장 연표를 만들죠.",
+              "en": "I'll update the presiding-office timeline."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1971년 의장단 명부를 갱신할 때 기존 임시의장의 이력을 보존합니다.",
+            "en": "I'm updating the 1971 presiding-officer roster while preserving the earlier tenure."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다수당 지도부 변경과 임시의장 변경은 같은 사건이 아닙니다.",
+            "en": "Changes in floor leadership and president pro tempore are not the same event."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "6월 당시 임시의장을 확인하세요.",
+            "en": "Identify the officeholder in June."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "엘렌더를 당시 임시의장으로 등록하고 이전 재임 구간을 유지하세요.",
+              "en": "Register Ellender as president pro tempore and preserve the prior interval."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "당시 임시의장은 엘렌더입니다. 원내대표 이름으로 갱신한 명부를 수정하세요.",
+              "en": "Ellender was president pro tempore. Correct the roster updated with the floor leader's name."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-043",
+        "date": "1971-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Allen J. Ellender",
+            "ko": "앨런 엘렌더",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/LA/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          }
+        ],
+        "learningTarget": "The president pro tempore in June 1971 is Ellender.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/officers-staff/president-pro-tempore/presidents-pro-tempore.htm",
+            "claim": "The president pro tempore in June 1971 is Ellender.",
+            "asOf": "1971-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/LA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1971-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1971-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1971년 6월 임시의장은 {{blank}}입니다.",
+          "en": "The president pro tempore in June 1971 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "이스트랜드",
+              "en": "Eastland"
+            },
+            {
+              "id": "B",
+              "ko": "엘렌더",
+              "en": "Ellender"
+            },
+            {
+              "id": "C",
+              "ko": "맨스필드",
+              "en": "Mansfield"
+            },
+            {
+              "id": "D",
+              "ko": "러셀",
+              "en": "Russell"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-043-presiding-succession"
+        },
+        "venue": {
+          "ko": "임시의장 인수",
+          "en": "Presiding-office handover"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-042.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-042."
+        },
+        "mechanism": "presiding-succession",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-044",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Seat class options include nonexistent IV; apply election calendar distinction.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 이번 1월 새로 취임했습니다.",
+            "en": "I took office this January."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석은 별도 임기를 갖습니다.",
+            "en": "The other seat has its own term."
+          },
+          {
+            "speaker": "player",
+            "ko": "선거 달력을 둘로 나누죠.",
+            "en": "I'll split the election calendar."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 기록이 정확합니다.",
+              "en": "That is the correct record."
+            },
+            {
+              "speaker": "player",
+              "ko": "선거 달력을 둘로 나누죠.",
+              "en": "I'll split the election calendar."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 바이든의 델라웨어 의석은 Class II입니다.",
+              "en": "There is a distinction to make here. Biden's Delaware seat is in Class II."
+            },
+            {
+              "speaker": "player",
+              "ko": "선거 달력을 둘로 나누죠.",
+              "en": "I'll split the election calendar."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "델라웨어의 두 의석에 서로 다른 정규선거 달력을 적용합니다.",
+            "en": "I'm applying separate regular-election calendars to Delaware's two seats."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "같은 주의 두 의원은 서로 다른 의석 클래스에 속할 수 있습니다.",
+            "en": "Two senators from a state can belong to different seat classes."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "바이든의 의석 클래스를 해당 선거 기록으로 확인하세요.",
+            "en": "Identify Biden's seat class from the election record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "Class II 달력에 바이든의 의석을 연결하고 다른 의석 주기는 유지하세요.",
+              "en": "Link Biden's seat to the Class II calendar and retain the other cycle."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "바이든의 의석은 Class II입니다. 두 의석을 같은 클래스로 표시한 달력을 수정하세요.",
+              "en": "Biden's seat is Class II. Correct the calendar conflating the two classes."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-044",
+        "date": "1973-06-01",
+        "cast": [
+          {
+            "id": "B000444",
+            "name": "Joe Biden",
+            "ko": "조 바이든",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B000444.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B000444"
+          },
+          {
+            "id": null,
+            "name": "William V. Roth Jr.",
+            "ko": "윌리엄 로스",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/DE/senators.htm"
+          }
+        ],
+        "learningTarget": "Biden's Delaware seat is in Class II.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/DE/senators.htm",
+            "claim": "Biden's Delaware seat is in Class II.",
+            "asOf": "1973-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/DE/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1973-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "바이든의 델라웨어 의석은 {{blank}}입니다.",
+          "en": "Biden's Delaware seat is in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Class III",
+              "en": "Class III"
+            },
+            {
+              "id": "B",
+              "ko": "Class IV",
+              "en": "Class IV"
+            },
+            {
+              "id": "C",
+              "ko": "Class II",
+              "en": "Class II"
+            },
+            {
+              "id": "D",
+              "ko": "Class I",
+              "en": "Class I"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-044-senate-class-contrast"
+        },
+        "venue": {
+          "ko": "델라웨어 선거 일정",
+          "en": "Delaware election calendar"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "senate-class-contrast",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-045",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "First-person appointment gives exact answer; independent seat succession useful.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "색스비 의원이 사임한 뒤 제가 임명됐습니다.",
+            "en": "I was appointed after Senator Saxbe resigned."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의석은 그대로입니다.",
+            "en": "My seat is unchanged."
+          },
+          {
+            "speaker": "player",
+            "ko": "임명 기록을 연결하죠.",
+            "en": "I'll link the appointment record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네. 그 기준으로 일정을 정합시다.",
+              "en": "Yes. Let's use that basis to set the schedule."
+            },
+            {
+              "speaker": "player",
+              "ko": "임명 기록을 연결하죠.",
+              "en": "I'll link the appointment record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 색스비의 공석을 채운 임명 의원은 메첸바움입니다.",
+              "en": "There is a distinction to make here. Saxbe's appointed replacement is Metzenbaum."
+            },
+            {
+              "speaker": "player",
+              "ko": "임명 기록을 연결하죠.",
+              "en": "I'll link the appointment record."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "색스비 사임으로 생긴 오하이오 공석에 임명 기록이 도착했습니다.",
+            "en": "An appointment record arrives for Ohio's vacancy after Saxbe resigned."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "기존 다른 의석의 재임 구간은 그대로 둡니다.",
+            "en": "Keep the other seat's service interval unchanged."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 임명자 이름을 확인하세요.",
+            "en": "Identify the official appointee."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "메첸바움을 공석 후임으로 연결하고 다른 의석은 유지하세요.",
+              "en": "Link Metzenbaum as the vacancy appointee and retain the other seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "임명 후임은 메첸바움입니다. 정규선거 당선과 혼동한 항목을 수정하세요.",
+              "en": "Metzenbaum was appointed. Correct any entry treating this as a regular election victory."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-045",
+        "date": "1974-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Howard Metzenbaum",
+            "ko": "하워드 메첸바움",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/OH/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Robert Taft Jr.",
+            "ko": "로버트 태프트 주니어",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/OH/senators.htm"
+          }
+        ],
+        "learningTarget": "Saxbe's appointed replacement is Metzenbaum.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Saxbe's appointed replacement is Metzenbaum.",
+            "asOf": "1974-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/OH/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1974-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "색스비의 공석을 채운 임명 의원은 {{blank}}입니다.",
+          "en": "Saxbe's appointed replacement is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "태프트",
+              "en": "Taft"
+            },
+            {
+              "id": "B",
+              "ko": "글렌",
+              "en": "Glenn"
+            },
+            {
+              "id": "C",
+              "ko": "브라운",
+              "en": "Brown"
+            },
+            {
+              "id": "D",
+              "ko": "메첸바움",
+              "en": "Metzenbaum"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-045-cabinet-vacancy"
+        },
+        "venue": {
+          "ko": "오하이오 공석 처리",
+          "en": "Ohio vacancy processing"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "cabinet-vacancy",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-046",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "100 filled denominator concrete; correct branch generic and no calculation.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 종결 요건이 바뀌었습니다.",
+            "en": "The cloture threshold changed this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "100명이 모두 재임하는 일반 법안의 경우를 계산합시다.",
+            "en": "Calculate for ordinary legislation with all 100 seats filled."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 규칙으로 계산하죠.",
+            "en": "I'll calculate under the new rule."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "정확합니다. 두 역할을 혼동하지 않겠군요.",
+              "en": "Correct. That keeps the roles distinct."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 규칙으로 계산하죠.",
+              "en": "I'll calculate under the new rule."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 새 종결 기준은 60표입니다.",
+              "en": "There is a distinction to make here. The new cloture threshold is 60 votes."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 규칙으로 계산하죠.",
+              "en": "I'll calculate under the new rule."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1975년 새 규칙으로 100석이 모두 채워진 가상 법안 토론을 진행합니다.",
+            "en": "I'm running a simulated legislative debate with all 100 seats filled under the new 1975 rule."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "일반 법안의 토론종결 기준과 이전 기준을 구별하세요.",
+            "en": "Distinguish the new ordinary-legislation cloture rule from the former one."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "해당 가정에서 필요한 표를 선택하세요.",
+            "en": "Select the required votes under those assumptions."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "60표를 가상 토론종결 문턱으로 설정하고 최종 가결은 별도로 진행하세요.",
+              "en": "Set 60 as simulated cloture threshold and conduct passage separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 가정에서 문턱은 60표입니다. 과거 67표나 단순 과반을 적용한 설정을 고치세요.",
+              "en": "The threshold is 60 under these assumptions. Correct the use of 67 or a simple majority."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-046",
+        "date": "1975-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Mike Mansfield",
+            "ko": "마이크 맨스필드",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/MT/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Hugh Scott",
+            "ko": "휴 스콧",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/PA/senators.htm"
+          }
+        ],
+        "learningTarget": "The new cloture threshold is 60 votes.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm",
+            "claim": "The new cloture threshold is 60 votes.",
+            "asOf": "1975-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1975-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/PA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1975-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 종결 기준은 {{blank}}입니다.",
+          "en": "The new cloture threshold is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "60표",
+              "en": "60 votes"
+            },
+            {
+              "id": "B",
+              "ko": "67표",
+              "en": "67 votes"
+            },
+            {
+              "id": "C",
+              "ko": "51표",
+              "en": "51 votes"
+            },
+            {
+              "id": "D",
+              "ko": "100표",
+              "en": "100 votes"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-046-rule-threshold-reform"
+        },
+        "venue": {
+          "ko": "종결 규칙 비교",
+          "en": "Cloture-rule comparison"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-043.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-043."
+        },
+        "mechanism": "rule-threshold-reform",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-047",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Special election and separate seat distinction; cast cue; generic reward.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "9월 특별선거 이후 새 의원이 취임했습니다.",
+            "en": "A new senator took office after the September special election."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석은 계속 유지됩니다.",
+            "en": "The other seat continues unchanged."
+          },
+          {
+            "speaker": "player",
+            "ko": "특별선거 결과만 반영하죠.",
+            "en": "I'll record only the special-election result."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "좋습니다. 그 내용을 반영해 주세요.",
+              "en": "Good. Please incorporate that detail."
+            },
+            {
+              "speaker": "player",
+              "ko": "특별선거 결과만 반영하죠.",
+              "en": "I'll record only the special-election result."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1975년 9월 특별선거 승자는 더킨입니다.",
+              "en": "There is a distinction to make here. The winner of the September 1975 special election is Durkin."
+            },
+            {
+              "speaker": "player",
+              "ko": "특별선거 결과만 반영하죠.",
+              "en": "I'll record only the special-election result."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "9월 특별선거 결과에 따라 뉴햄프셔 의석 하나를 갱신합니다.",
+            "en": "I'm updating one New Hampshire seat after the September special election."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다른 의석의 임기에는 변경이 없습니다.",
+            "en": "The other seat's term is unchanged."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1975년 특별선거 공식 결과에서 승자를 확인하세요.",
+            "en": "Verify the winner from the official special-election returns."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "더킨을 특별선거 승자로 연결하고 다른 의석을 그대로 두세요.",
+              "en": "Link Durkin as special-election winner and leave the other seat unchanged."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "승자는 더킨입니다. 이전 분쟁이나 다른 의석의 기록으로 대체한 내용을 수정하세요.",
+              "en": "Durkin won. Correct an entry substituted from the earlier dispute or other seat."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-047",
+        "date": "1975-10-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "John Durkin",
+            "ko": "존 더킨",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/NH/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Thomas J. McIntyre",
+            "ko": "토머스 매킨타이어",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/NH/senators.htm"
+          }
+        ],
+        "learningTarget": "The winner of the September 1975 special election is Durkin.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/NH/senators.htm",
+            "claim": "The winner of the September 1975 special election is Durkin.",
+            "asOf": "1975-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/NH/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1975-10-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1975년 9월 특별선거 승자는 {{blank}}입니다.",
+          "en": "The winner of the September 1975 special election is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "매킨타이어",
+              "en": "McIntyre"
+            },
+            {
+              "id": "B",
+              "ko": "더킨",
+              "en": "Durkin"
+            },
+            {
+              "id": "C",
+              "ko": "와이먼",
+              "en": "Wyman"
+            },
+            {
+              "id": "D",
+              "ko": "코튼",
+              "en": "Cotton"
+            }
+          ],
+          "correct": "B"
+        },
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-047-contested-election-resolution"
+        },
+        "venue": {
+          "ko": "뉴햄프셔 선거 분쟁 종료",
+          "en": "New Hampshire election dispute resolved"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "contested-election-resolution",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-048",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 0
+      },
+      "total": 4,
+      "finding": "Cranston states whip duty directly; stock close.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "표결 참석 조율을 맡겠습니다.",
+            "en": "I'll coordinate vote attendance."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "본회의 일정은 다수당 지도부에서 맡습니다.",
+            "en": "Majority leadership handles floor scheduling."
+          },
+          {
+            "speaker": "player",
+            "ko": "지도부 업무를 구분하죠.",
+            "en": "I'll distinguish leadership duties."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
+              "en": "That's right. Keep it in mind for our next meeting."
+            },
+            {
+              "speaker": "player",
+              "ko": "지도부 업무를 구분하죠.",
+              "en": "I'll distinguish leadership duties."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1977년 민주당 원내총무는 크랜스턴입니다.",
+              "en": "There is a distinction to make here. The Democratic whip in 1977 is Cranston."
+            },
+            {
+              "speaker": "player",
+              "ko": "지도부 업무를 구분하죠.",
+              "en": "I'll distinguish leadership duties."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1977년 민주당의 가상 표결 준비 업무를 배분합니다.",
+            "en": "I'm allocating simulated Democratic vote-preparation tasks in 1977."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "다수당 지도자의 일정 관리와 원내총무의 출석 조정을 구분하세요.",
+            "en": "Distinguish majority scheduling from whip attendance coordination."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 원내총무 명부에 따라 담당자를 선택하세요.",
+            "en": "Select the coordinator using the official whip roster."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "크랜스턴에게 출석 조정을 배정하고 버드의 원내 지도부 역할을 유지하세요.",
+              "en": "Assign attendance to Cranston and retain Byrd's floor leadership role."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "원내총무는 크랜스턴입니다. 지도자 직책으로 보낸 출석 요청을 수정하세요.",
+              "en": "Cranston was whip. Redirect the attendance request sent to the leader."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-048",
+        "date": "1977-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "Alan Cranston",
+            "ko": "앨런 크랜스턴",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/CA/senators.htm"
+          },
+          {
+            "id": "B001210",
+            "name": "Robert C. Byrd",
+            "ko": "로버트 버드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001210.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001210"
+          }
+        ],
+        "learningTarget": "The Democratic whip in 1977 is Cranston.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/party-whips.htm",
+            "claim": "The Democratic whip in 1977 is Cranston.",
+            "asOf": "1977-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1977-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/WV/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1977-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1977년 민주당 원내총무는 {{blank}}입니다.",
+          "en": "The Democratic whip in 1977 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "케네디",
+              "en": "Kennedy"
+            },
+            {
+              "id": "B",
+              "ko": "포드",
+              "en": "Ford"
+            },
+            {
+              "id": "C",
+              "ko": "크랜스턴",
+              "en": "Cranston"
+            },
+            {
+              "id": "D",
+              "ko": "버드",
+              "en": "Byrd"
+            }
+          ],
+          "correct": "C"
+        },
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-048-new-whip-team"
+        },
+        "venue": {
+          "ko": "새 지도부 업무 분담",
+          "en": "New leadership assignments"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P01 교차 팩 후보(인물 일치, 경력 검토 필요): P01-1967.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P01 cross-pack candidates (matched person; career review pending): P01-1967."
+        },
+        "mechanism": "new-whip-team",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-049",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Canal cue leaves two options; different treaty vs ordinary legislation useful; redundant with 325 as factual topic but distinct focus.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 운하 조약에 대한 상원 동의가 이루어졌습니다.",
+            "en": "The Senate gave consent to the canal treaty yesterday."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "양당 지도부가 수정안을 통해 쟁점을 조율했습니다.",
+            "en": "Party leaders worked through amendments to resolve disputes."
+          },
+          {
+            "speaker": "player",
+            "ko": "조약과 일반 법안을 구별하죠.",
+            "en": "I'll distinguish treaties from ordinary legislation."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네, 그렇게 전달하면 됩니다.",
+              "en": "Yes, that is the right way to route it."
+            },
+            {
+              "speaker": "player",
+              "ko": "조약과 일반 법안을 구별하죠.",
+              "en": "I'll distinguish treaties from ordinary legislation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 조약의 대상은 파나마 운하입니다.",
+              "en": "There is a distinction to make here. The treaty concerns the Panama Canal."
+            },
+            {
+              "speaker": "player",
+              "ko": "조약과 일반 법안을 구별하죠.",
+              "en": "I'll distinguish treaties from ordinary legislation."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "4월 18일 상원의 동의 표결이 어떤 국제 조약에 해당하는지 확인합니다.",
+            "en": "I'm identifying the treaty covered by the April 18 Senate consent vote."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "조약에 대한 동의와 일반 법안 가결은 다른 헌법 절차입니다.",
+            "en": "Treaty consent and ordinary passage are different constitutional procedures."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "당시 조약 제목과 대상 지역을 확인하세요.",
+            "en": "Verify the treaty and its geographic subject."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "파나마 운하 조약의 동의 기록으로 분류하세요. 일반 법안 서명 절차는 적용하지 않습니다.",
+              "en": "Classify it as consent to the Panama Canal treaty, not ordinary bill signature."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "대상은 파나마 운하입니다. 다른 조약의 동의 기록을 연결한 오류를 수정하세요.",
+              "en": "The subject was the Panama Canal. Correct the link to another treaty."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-049",
+        "date": "1978-04-19",
+        "cast": [
+          {
+            "id": "B001210",
+            "name": "Robert C. Byrd",
+            "ko": "로버트 버드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001210.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001210"
+          },
+          {
+            "id": null,
+            "name": "Howard Baker",
+            "ko": "하워드 베이커",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/TN/senators.htm"
+          }
+        ],
+        "learningTarget": "The treaty concerns the Panama Canal.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/treaties/senate-leaders-and-the-panama-canal-treaties.htm",
+            "claim": "The treaty concerns the Panama Canal.",
+            "asOf": "1978-04-19"
+          },
+          {
+            "url": "https://www.senate.gov/states/WV/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1978-04-19"
+          },
+          {
+            "url": "https://www.senate.gov/states/TN/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1978-04-19"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "조약의 대상은 {{blank}}입니다.",
+          "en": "The treaty concerns {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "수에즈 운하",
+              "en": "the Suez Canal"
+            },
+            {
+              "id": "B",
+              "ko": "북대서양조약",
+              "en": "NATO"
+            },
+            {
+              "id": "C",
+              "ko": "베르사유",
+              "en": "Versailles"
+            },
+            {
+              "id": "D",
+              "ko": "파나마 운하",
+              "en": "the Panama Canal"
+            }
+          ],
+          "correct": "D"
+        },
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-049-treaty-negotiation"
+        },
+        "venue": {
+          "ko": "운하 조약 심의 이후",
+          "en": "After canal treaty consideration"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님. P02 연속 사건 후보(공통 인물, 미통합): P02-048. P01 교차 팩 후보(인물 일치, 경력 검토 필요): P01-1967.",
+          "en": "Fictional meeting based on Senate records; not actual quotations. P02 continuity candidate (shared cast; not integrated): P02-048. P01 cross-pack candidates (matched person; career review pending): P01-1967."
+        },
+        "mechanism": "treaty-negotiation",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    },
+    {
+      "id": "P02-050",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 0,
+        "continuity": 1
+      },
+      "total": 5,
+      "finding": "Pryor directly says he entered; cast-based answer exposure; same roster exercise as 36.",
+      "classification": "full-rewrite-proposal",
+      "source": {
+        "path": "data/dialogue-packs/P02/part-02.json",
+        "blobSha": "23313fd83c4392539c2892541ce1b9c2ee1daef3"
+      },
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 이번 1월 상원에 들어왔습니다.",
+            "en": "I entered the Senate this January."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의석은 1975년부터 이어지고 있습니다.",
+            "en": "My seat dates from 1975."
+          },
+          {
+            "speaker": "player",
+            "ko": "대표단의 새 연락처를 연결하죠.",
+            "en": "I'll link the new delegation contact."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "맞습니다. 그 구분을 유지합시다.",
+              "en": "Exactly. Keep that distinction clear."
+            },
+            {
+              "speaker": "player",
+              "ko": "대표단의 새 연락처를 연결하죠.",
+              "en": "I'll link the new delegation contact."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "여기서 구별할 점이 있습니다. 1979년 신임 아칸소 의원은 프라이어입니다.",
+              "en": "There is a distinction to make here. The new Arkansas senator in 1979 is Pryor."
+            },
+            {
+              "speaker": "player",
+              "ko": "대표단의 새 연락처를 연결하죠.",
+              "en": "I'll link the new delegation contact."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "1979년 아칸소 대표단에 새 재임 구간을 추가합니다.",
+            "en": "I'm adding the new service interval to Arkansas's 1979 delegation."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "계속 재임하는 의석은 따로 유지합니다.",
+            "en": "Retain the continuing seat separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1월 새로 취임한 의원을 공식 재임 기록에서 확인하세요.",
+            "en": "Identify the January entrant from the official service record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "프라이어의 새 재임을 추가하고 범퍼스의 기존 의석을 보존하세요.",
+              "en": "Add Pryor's new service and preserve Bumpers's existing seat."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "신임 의원은 프라이어입니다. 기존 의원의 재임 구간을 덮어쓴 변경을 취소하세요.",
+              "en": "Pryor was the new senator. Undo the change overwriting the continuing senator's tenure."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-050",
+        "date": "1979-06-01",
+        "cast": [
+          {
+            "id": null,
+            "name": "David Pryor",
+            "ko": "데이비드 프라이어",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AR/senators.htm"
+          },
+          {
+            "id": null,
+            "name": "Dale Bumpers",
+            "ko": "데일 범퍼스",
+            "portrait": null,
+            "source": "https://www.senate.gov/states/AR/senators.htm"
+          }
+        ],
+        "learningTarget": "The new Arkansas senator in 1979 is Pryor.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/AR/senators.htm",
+            "claim": "The new Arkansas senator in 1979 is Pryor.",
+            "asOf": "1979-06-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/AR/senators.htm",
+            "claim": "Senate service and state delegation history.",
+            "asOf": "1979-06-01"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1979년 신임 아칸소 의원은 {{blank}}입니다.",
+          "en": "The new Arkansas senator in 1979 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "프라이어",
+              "en": "Pryor"
+            },
+            {
+              "id": "B",
+              "ko": "범퍼스",
+              "en": "Bumpers"
+            },
+            {
+              "id": "C",
+              "ko": "매클렐런",
+              "en": "McClellan"
+            },
+            {
+              "id": "D",
+              "ko": "호지스",
+              "en": "Hodges"
+            }
+          ],
+          "correct": "A"
+        },
+        "outcome": {
+          "kind": "document",
+          "key": "p02-050-new-delegation-contact"
+        },
+        "venue": {
+          "ko": "아칸소 신임 대표단",
+          "en": "Arkansas new delegation"
+        },
+        "context": {
+          "ko": "상원 기록에 근거한 가상 만남. 실제 발언 아님.",
+          "en": "Fictional meeting based on Senate records; not actual quotations."
+        },
+        "mechanism": "new-delegation-contact",
+        "fictional": true
+      },
+      "application": "Exact before-field match required; preserve factual debrief and choices. Simulated instructional dialogue, no historical quotation. Identity questions may still be exposed by cast display; engine review required."
+    }
+  ]
+}

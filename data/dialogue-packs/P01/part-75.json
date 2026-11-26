@@ -34,14 +34,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해 네바다 최초의 여성 연방 공직 당선자가 됐습니다.",
-          "en": "Last year I became Nevada's first woman elected to federal office."
+          "speaker": "player",
+          "ko": "네바다 여성의 정치 진출을 소개하는 1983년 안내문에서 첫 여성 연방 공직 당선자를 확인합니다.",
+          "en": "A 1983 guide to women's political participation in Nevada needs to identify its first woman elected to federal office."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 뉴멕시코에서 하원에 왔습니다. 두 주의 대표 기록을 나누어 주세요.",
-          "en": "I came to the House from New Mexico. Separate our state records."
+          "speaker": "npc:0",
+          "ko": "1982년 선거 결과와 새 임기 기록을 대조해 해당 인물을 확인하세요.",
+          "en": "Compare the 1982 returns with the new-term record to identify the member."
         }
       ],
       "response": {
@@ -75,16 +75,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "대표성 연표에 네바다의 이정표를 표시하겠습니다.",
-            "en": "I will mark this Nevada milestone in the representation timeline."
+            "speaker": "npc:0",
+            "ko": "그 이정표를 네바다의 연방 공직 선거 기록에 한정해 소개합시다.",
+            "en": "Describe that milestone specifically in Nevada's federal election history."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "부카노비치는 1982년 네바다 최초 여성 연방 공직 당선자가 됐다.",
-            "en": "Vucanovich became Nevada's first woman elected to federal office in 1982."
+            "speaker": "npc:1",
+            "ko": "부카노비치가 1982년 네바다 최초 여성 연방 공직 당선자였습니다. 다른 주의 기록을 사용하지 마세요.",
+            "en": "Vucanovich was Nevada's first woman elected to federal office in 1982. Do not substitute another state's record."
           }
         ]
       },
@@ -147,14 +147,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "농장과 목장 관련 민원은 별도 분류해 주세요.",
-          "en": "Keep farm and ranch correspondence in its own file."
+          "speaker": "player",
+          "ko": "농장 대표와 교사 단체가 몬태나 의원들의 서로 다른 의회 이전 경험에 관해 질문합니다.",
+          "en": "Farm and teacher groups ask about the Montana members' different pre-House careers."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 뷰트에서 교사로 일한 경력도 있습니다.",
-          "en": "I also have teaching experience in Butte."
+          "speaker": "npc:0",
+          "ko": "농장·목장 경력을 가진 사람을 확인해 첫 질문을 배정하세요.",
+          "en": "Identify the member with farm and ranch experience before assigning the first question."
         }
       ],
       "response": {
@@ -188,16 +188,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "산업별 민원과 대표 기록을 연결하겠습니다.",
-            "en": "I will cross-reference the sector correspondence with the delegation."
+            "speaker": "npc:0",
+            "ko": "해당 경력을 바탕으로 질문하되 농업 정책 입장은 실제 입법 기록에서 확인하세요.",
+            "en": "Ask about that background; verify agricultural policy positions in the actual legislative record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "말리니는 농장과 목장 경력을 갖고 몬태나 하원 의원으로 활동했다.",
-            "en": "Marlenee served in the House after working as a farmer and rancher."
+            "speaker": "npc:1",
+            "ko": "말리니가 농장·목장 경력을 갖고 있습니다. 윌리엄스의 교사 경험과 구분하세요.",
+            "en": "Marlenee had farm and ranch experience; distinguish it from Williams's teaching."
           }
         ]
       },
@@ -363,14 +363,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "1988년 11월 8일의 선거 결과를 한 개의 정기선거 기록으로 합치려 합니다.",
+          "en": "The November 8, 1988 returns are about to be merged into one regular-election record."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "지난해 11월 8일에 특별선거와 정기선거를 각각 치렀습니다.",
-          "en": "Two separate elections were held on November 8 last year."
+          "ko": "잔여 임기와 다음 정규 임기 두 선거의 승리자를 확인하세요.",
+          "en": "Verify the winner of both the unexpired-term and next full-term elections."
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 1980년에 특별선거로 의회에 왔습니다. 임기 기록을 따로 쓰세요.",
-          "en": "I entered through a special election in 1980. Record the terms separately."
+          "ko": "제1980년 특별선거 기록과 비교하더라도 두 선거의 임기를 합치면 안 됩니다.",
+          "en": "Even when comparing my 1980 special election, do not merge the two terms."
         }
       ],
       "response": {
@@ -404,16 +409,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "잔여 임기와 새 임기를 분리하겠습니다.",
-            "en": "I will distinguish the unexpired term from the new term."
+            "speaker": "npc:0",
+            "ko": "두 선거를 별도 기록으로 유지하고 같은 당선인으로 연결합시다.",
+            "en": "Keep the two election records separate and link them to the same winner."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "덩컨은 1988년 11월 8일 특별선거와 정기선거에 모두 당선됐다.",
-            "en": "Duncan won separate special and regular elections on November 8, 1988."
+            "speaker": "npc:1",
+            "ko": "덩컨이 특별선거와 정기선거에서 모두 당선됐습니다. 같은 날짜라고 임기를 합치면 안 됩니다.",
+            "en": "Duncan won both special and regular elections. A shared date does not merge the terms."
           }
         ]
       },
@@ -471,14 +476,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "올해 재선에서 패배했습니다. 아직 임기 종료 전입니다.",
-          "en": "I lost reelection this year, but my term has not ended."
+          "speaker": "player",
+          "ko": "선거 직후 몬태나 주민 안내문에 두 의원이 모두 다음 임기를 맡는다고 적혔습니다.",
+          "en": "A post-election Montana guide says both members will serve in the next Congress."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 다음 의회에도 몬태나를 대표하게 됐습니다.",
-          "en": "I will continue representing Montana in the next Congress."
+          "speaker": "npc:0",
+          "ko": "1992년 선거 결과와 아직 남은 현 임기를 구별해 주세요.",
+          "en": "Distinguish the 1992 election results from the remaining current term."
         }
       ],
       "response": {
@@ -512,16 +517,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1984년 두 의원의 기록을 새 임기 기준으로 갱신하겠습니다.",
-            "en": "I will update the two-member file from 1984 for the next term."
+            "speaker": "npc:0",
+            "ko": "패배 기록을 표시하되 현재 임기가 끝날 때까지 현직 표기를 유지하세요.",
+            "en": "Mark the defeat while retaining incumbent status until the current term ends."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "말리니는 1992년 재선에 실패했고 윌리엄스는 재선됐다.",
-            "en": "Marlenee lost reelection in 1992 while Williams won another term."
+            "speaker": "npc:1",
+            "ko": "말리니는 재선에 실패했고 윌리엄스는 재선됐습니다. 두 결과를 동일하게 기록하면 안 됩니다.",
+            "en": "Marlenee lost reelection while Williams won. Do not record identical outcomes."
           }
         ]
       },
@@ -687,14 +692,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 의회가 제 첫 임기입니다.",
-          "en": "This Congress is my first term."
+          "speaker": "player",
+          "ko": "미시시피 새 회기 소개문에 두 의원을 모두 1995년 초선으로 표시했습니다.",
+          "en": "Mississippi's new-Congress guide lists both members as freshmen in 1995."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 이미 직전 의회에서 제2선거구를 대표했습니다.",
-          "en": "I represented the Second District in the preceding Congress."
+          "speaker": "npc:0",
+          "ko": "두 의원의 첫 하원 임기 시작일을 따로 확인하세요.",
+          "en": "Verify the first House entry date for each member."
         }
       ],
       "response": {
@@ -728,16 +733,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "미시시피 신임과 재임 의원을 구분하겠습니다.",
-            "en": "I will distinguish first-term and continuing Mississippi members."
+            "speaker": "npc:0",
+            "ko": "1995년 신규 입성을 별도 표시하고 기존 의원의 재임 기록은 보존하세요.",
+            "en": "Mark the new entry in 1995 separately and retain the incumbent's prior service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "위커는 1995년 1월 3일 첫 하원 임기를 시작했다.",
-            "en": "Wicker began his first House term on January 3, 1995."
+            "speaker": "npc:1",
+            "ko": "위커가 1995년 첫 임기를 시작했습니다. 톰프슨은 직전 의회에서 이미 재임했습니다.",
+            "en": "Wicker began his first term in 1995; Thompson already served in the preceding Congress."
           }
         ]
       },
@@ -908,14 +913,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "5월 특별선거에서 당선되어 의석을 맡았습니다.",
-          "en": "I took the seat through the May special election."
+          "speaker": "player",
+          "ko": "뉴멕시코 주민이 리처드슨의 2월 사임 이후에도 기존 의원실 안내를 사용합니다.",
+          "en": "A New Mexico resident continues using Richardson's old office guide after his February resignation."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 2월에 하원에서 사임했습니다.",
-          "en": "I resigned from the House in February."
+          "speaker": "npc:0",
+          "ko": "5월 13일 특별선거의 당선자를 확인해 현직 문의 창구를 정정하세요.",
+          "en": "Verify the winner of the May 13 special election and correct the current contact."
         }
       ],
       "response": {
@@ -949,16 +954,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1987년 지역 대표 기록을 의석 인계 문서에 연결하겠습니다.",
-            "en": "I will link the 1987 representation file to the seat transfer."
+            "speaker": "npc:0",
+            "ko": "특별선거 당선인에게 현재 하원 문의를 연결하고 전임 기록은 보존하세요.",
+            "en": "Route current House inquiries to the special-election winner and preserve the predecessor's record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "레드먼드는 1997년 5월 13일 특별선거로 리처드슨의 공석을 채웠다.",
-            "en": "Redmond filled Richardson's vacancy through the May 13, 1997 special election."
+            "speaker": "npc:1",
+            "ko": "레드먼드가 특별선거로 공석을 채웠습니다. 리처드슨을 계속 현직 하원으로 안내하면 안 됩니다.",
+            "en": "Redmond filled the vacancy through a special election. Do not list Richardson as the sitting House member."
           }
         ]
       },
@@ -1016,14 +1021,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번 의회부터 제3선거구를 맡았습니다.",
-          "en": "I represent the Third District in this Congress."
+          "speaker": "player",
+          "ko": "1997년 특별선거 안내를 그대로 사용해 1999년 주민 문의를 처리하고 있습니다.",
+          "en": "A 1997 special-election guide is still being used for constituent inquiries in 1999."
         },
         {
-          "speaker": "npc:1",
-          "ko": "지난해 재선에서 패배해 제 임기가 끝났습니다.",
-          "en": "I lost reelection last year and my term ended."
+          "speaker": "npc:0",
+          "ko": "1998년 정기선거 결과와 제106대 의회의 현직을 확인하세요.",
+          "en": "Check the 1998 general-election result and the incumbent in the 106th Congress."
         }
       ],
       "response": {
@@ -1057,16 +1062,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1997년 특별선거 기록에 정기선거 결과를 이어 붙이겠습니다.",
-            "en": "I will append the regular-election result to the 1997 special-election file."
+            "speaker": "npc:0",
+            "ko": "새 대표에게 현재 문의를 전달하고 1997년 특별선거 기록은 따로 보존하세요.",
+            "en": "Refer current cases to the new representative and retain the 1997 special-election record separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "유돌은 제106대 의회에 당선됐고 레드먼드는 1998년 재선에 실패했다.",
-            "en": "Udall entered the 106th Congress and Redmond lost reelection in 1998."
+            "speaker": "npc:1",
+            "ko": "1999년 제3구는 유돌이 대표합니다. 레드먼드는 1998년 재선에 실패했습니다.",
+            "en": "Udall represents district three in 1999; Redmond lost reelection in 1998."
           }
         ]
       },
@@ -1129,14 +1134,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "리 카운티는 제1선거구 명부에 포함됩니다.",
-          "en": "Lee County appears in the First District roster."
+          "speaker": "player",
+          "ko": "볼리버 카운티 주민의 편지가 리 카운티 사무실 안내와 함께 분류됐습니다.",
+          "en": "A Bolivar County letter is filed with the office guide for Lee County."
         },
         {
-          "speaker": "npc:1",
-          "ko": "제2선거구 명부에는 볼리버 카운티가 있습니다.",
-          "en": "Bolivar County appears in the Second District roster."
+          "speaker": "npc:0",
+          "ko": "1999년 공식 명부에서 두 카운티의 선거구를 대조해 주세요.",
+          "en": "Compare the two counties' districts in the 1999 directory."
         }
       ],
       "response": {
@@ -1170,16 +1175,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "카운티별 민원 전달 경로를 분리하겠습니다.",
-            "en": "I will route constituent cases by county."
+            "speaker": "npc:0",
+            "ko": "볼리버 문의를 해당 의원실로 보내고 리 카운티 문의는 별도로 처리하세요.",
+            "en": "Send Bolivar inquiries to the appropriate office and handle Lee County separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "1999년 공식 명부에서 볼리버는 MS-2, 리는 MS-1에 속했다.",
-            "en": "The 1999 directory places Bolivar in MS-2 and Lee in MS-1."
+            "speaker": "npc:1",
+            "ko": "볼리버는 MS-2의 톰프슨, 리는 MS-1의 위커와 관련됩니다. 명부를 바꾸지 마세요.",
+            "en": "Bolivar is in Thompson's MS-2; Lee is in Wicker's MS-1. Do not swap the listings."
           }
         ]
       },
@@ -1365,14 +1370,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "뉴올리언스의 제2선거구 민주당 의원입니다.",
-          "en": "I am the Democratic representative of the Second District."
+          "speaker": "player",
+          "ko": "루이지애나 제2구와 제3구의 대표 및 당적이 뒤바뀐 주민 안내문을 검토합니다.",
+          "en": "We're reviewing a Louisiana guide that swaps the representatives and parties of districts two and three."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 티보도의 제3선거구 공화당 의원입니다.",
-          "en": "I am the Republican representative of the Third District from Thibodaux."
+          "speaker": "npc:0",
+          "ko": "1999년 공식 명부에서 LA-2 대표를 확인하세요.",
+          "en": "Verify the LA-2 representative in the 1999 directory."
         }
       ],
       "response": {
@@ -1406,16 +1411,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "도시와 인접 지역의 대표 기록을 별도 보존하겠습니다.",
-            "en": "I will preserve separate records for the city and neighboring district."
+            "speaker": "npc:0",
+            "ko": "두 의석의 주민 문의와 정당 기록을 분리해 정정하겠습니다.",
+            "en": "I'll correct the district contacts and party records separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "1999년 제퍼슨은 LA-2 민주당, 토진은 LA-3 공화당 의원이었다.",
-            "en": "In 1999 Jefferson was the Democrat from LA-2 and Tauzin the Republican from LA-3."
+            "speaker": "npc:1",
+            "ko": "제퍼슨은 LA-2 민주당, 토진은 LA-3 공화당이었습니다. 두 명부를 바꾸면 안 됩니다.",
+            "en": "Jefferson was the Democrat from LA-2; Tauzin the Republican from LA-3. Do not swap the records."
           }
         ]
       },
@@ -1581,14 +1586,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "앨라배마 농가 대표가 연방 농업법의 심의 절차와 개별 지원 자격을 묻습니다.",
+          "en": "An Alabama farm delegation asks about federal farm legislation and eligibility for individual assistance."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "저는 하원 농업위원회에도 소속돼 있습니다.",
-          "en": "I also serve on the House Agriculture Committee."
+          "ko": "1999년 AL-2 대표 중 농업위원회 소속 의원을 확인하세요.",
+          "en": "Identify the AL-2 member serving on Agriculture in 1999."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 선거구에는 채터누가와 오크리지가 포함됩니다.",
-          "en": "My district includes Chattanooga and Oak Ridge."
+          "ko": "제 테네시 지역구의 주민 문제와 앨라배마 농업 입법 문의는 구분하세요.",
+          "en": "Separate my Tennessee constituent concerns from Alabama agricultural legislative inquiries."
         }
       ],
       "response": {
@@ -1622,16 +1632,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1993년 신임 의원 기록에 위원회 경력을 추가하겠습니다.",
-            "en": "I will add committee service to the 1993 freshman file."
+            "speaker": "npc:0",
+            "ko": "농업 입법 질문은 해당 의원에게 전달하고 개별 신청 자격은 담당 기관에서 확인하세요.",
+            "en": "Route legislative questions to that member and have the relevant agency verify individual eligibility."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "에버렛은 1999년 AL-2 의원으로 농업위원회에 소속됐다.",
-            "en": "Everett served on Agriculture while representing AL-2 in 1999."
+            "speaker": "npc:1",
+            "ko": "AL-2의 에버렛이 농업위원회 소속이었습니다. 위원회 배정만으로 보조금 지급을 약속할 수 없습니다.",
+            "en": "Everett of AL-2 served on Agriculture. Committee membership does not guarantee individual payments."
           }
         ]
       },
@@ -1807,14 +1817,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1979~1982년 말리니 의원의 보좌진으로 일했습니다.",
-          "en": "I worked on Marlenee's staff from 1979 to 1982."
+          "speaker": "player",
+          "ko": "보좌진으로 근무했던 기간까지 하원 재임으로 합산한 몬태나 인물 소개를 정정합니다.",
+          "en": "We're correcting a Montana biography that counts staff service as House tenure."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저도 과거 존 멜처 의원의 보좌관이었습니다. 의원 임기와 구분합시다.",
-          "en": "I also once assisted John Melcher. Separate staff service from House terms."
+          "speaker": "npc:0",
+          "ko": "2001년 실제 취임한 의원과 과거 보좌진 경력을 구분하세요.",
+          "en": "Identify the actual 2001 entrant separately from prior staff experience."
         }
       ],
       "response": {
@@ -1848,16 +1858,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1992년 몬태나 의원 기록에 보좌진 경력의 연결점을 추가하겠습니다.",
-            "en": "I will cross-reference the staff connection in the 1992 Montana file."
+            "speaker": "npc:0",
+            "ko": "레버그의 보좌진 경력과 2001년 하원 임기를 별도로 소개합시다.",
+            "en": "Describe Rehberg's staff service and 2001 House entry separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "레버그는 말리니 보좌진 경력을 거쳐 2001년 하원에 취임했다.",
-            "en": "Rehberg entered the House in 2001 after earlier service on Marlenee's staff."
+            "speaker": "npc:1",
+            "ko": "레버그가 2001년 하원에 취임했습니다. 보좌진 근무를 의원 재임으로 합산하면 안 됩니다.",
+            "en": "Rehberg entered the House in 2001. Staff service cannot be counted as elected service."
           }
         ]
       },
@@ -1915,14 +1925,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해 11월 선거로 제2선거구 대표가 됐습니다.",
-          "en": "I won the Second District seat last November."
+          "speaker": "player",
+          "ko": "뉴멕시코의 1998년 특별선거와 2002년 정기선거 기록에 새 의원의 이름이 뒤바뀌었습니다.",
+          "en": "A New Mexico guide swaps the names in the 1998 special-election and 2002 general-election records."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 1998년 특별선거로 제1선거구 대표가 됐습니다.",
-          "en": "I entered through a 1998 special election in the First District."
+          "speaker": "npc:0",
+          "ko": "2003년 새로 입성한 의원의 실제 당선 기록을 확인하세요.",
+          "en": "Check the election record of the member who entered in 2003."
         }
       ],
       "response": {
@@ -1956,16 +1966,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "제1선거구와 제2선거구의 취임 시점을 구분하겠습니다.",
-            "en": "I will distinguish the entry dates of districts one and two."
+            "speaker": "npc:0",
+            "ko": "새 임기를 해당 의석에 추가하고 1998년 특별선거 기록은 보존하세요.",
+            "en": "Add the new term to its seat and retain the 1998 special-election record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "피어스는 2002년 11월 5일 제108대 의회에 당선됐다.",
-            "en": "Pearce was elected to the 108th Congress on November 5, 2002."
+            "speaker": "npc:1",
+            "ko": "피어스가 2002년 당선되어 2003년 하원에 입성했습니다. 윌슨의 1998년 입성과 구별하세요.",
+            "en": "Pearce won in 2002 and entered in 2003. Distinguish Wilson's 1998 entry."
           }
         ]
       },
@@ -2028,14 +2038,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "제1선거구에는 토런스 카운티가 들어 있습니다.",
-          "en": "The First District includes Torrance County."
+          "speaker": "player",
+          "ko": "토런스 카운티 주민이 산타페 의원실에 문의를 보내려 합니다. 당시 관할을 확인하겠습니다.",
+          "en": "A Torrance County resident plans to contact the Santa Fe office. I'll verify jurisdiction at the time."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 제3선거구의 산타페에 지역 사무실을 두고 있습니다.",
-          "en": "My Third District has a district office in Santa Fe."
+          "speaker": "npc:0",
+          "ko": "2005년 공식 명부에서 토런스가 포함된 의석을 찾아주세요.",
+          "en": "Locate the seat containing Torrance in the 2005 directory."
         }
       ],
       "response": {
@@ -2069,16 +2079,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "2003년 의석 기록에 카운티 민원 경로를 추가하겠습니다.",
-            "en": "I will add county routing to the 2003 seat records."
+            "speaker": "npc:0",
+            "ko": "해당 의원실을 안내하고 개인 주소는 당시 경계로 별도 확인하세요.",
+            "en": "Identify the relevant office and verify the individual address using the dated boundaries."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2005년 공식 명부에서 토런스 카운티는 윌슨의 NM-1에 포함됐다.",
-            "en": "The 2005 directory lists Torrance County in Wilson's NM-1."
+            "speaker": "npc:1",
+            "ko": "당시 토런스는 윌슨의 NM-1 명부에 있었습니다. 산타페 사무실 위치만으로 관할을 판단하지 마세요.",
+            "en": "Torrance was listed in Wilson's NM-1 then. Do not infer jurisdiction merely from the Santa Fe office location."
           }
         ]
       },
@@ -2141,14 +2151,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 하원 자원위원회 소속입니다.",
-          "en": "I serve on the House Resources Committee."
+          "speaker": "player",
+          "ko": "수자원 관련 공개 토론에서 두 의원이 같은 위원회 소속이라는 이유로 같은 입장이라고 소개하려 합니다.",
+          "en": "A water-policy forum assumes two members agree because they share a committee."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저 역시 같은 위원회 소속이지만 제3선거구를 대표합니다.",
-          "en": "I also serve on that committee but represent the Third District."
+          "speaker": "npc:0",
+          "ko": "2005년 당시 공통 위원회의 명칭을 확인하되 정책 합의는 별도로 검토하세요.",
+          "en": "Verify their shared committee's name in 2005, but check any policy agreement separately."
         }
       ],
       "response": {
@@ -2182,16 +2192,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "선거구별 민원과 공동 위원회 기록을 연결하겠습니다.",
-            "en": "I will link district correspondence with their shared committee service."
+            "speaker": "npc:0",
+            "ko": "해당 위원회 관할에 맞춰 질문하고 각자의 입장은 실제 기록에서 확인합시다.",
+            "en": "Prepare questions on that committee's remit and verify each member's position from the record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2005년 피어스와 유돌은 하원 자원위원회에 소속됐다.",
-            "en": "Pearce and Udall both served on House Resources in 2005."
+            "speaker": "npc:1",
+            "ko": "당시 공통 소속은 하원 자원위원회였습니다. 위원회 소속만으로 정책 합의를 단정하지 마세요.",
+            "en": "Their shared assignment was House Resources. Committee membership does not establish policy agreement."
           }
         ]
       },
@@ -2367,14 +2377,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해 12월 31일 하원에서 사임하고 상원 임명을 받았습니다.",
-          "en": "I resigned from the House on December 31 and accepted a Senate appointment."
+          "speaker": "player",
+          "ko": "미시시피 주민 안내문이 2008년에도 위커를 제1구 현직 하원의원으로 표시합니다.",
+          "en": "A Mississippi guide still lists Wicker as the sitting district-one House member in 2008."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 제2선거구 하원의원으로 계속 일합니다.",
-          "en": "I continue representing the Second District in the House."
+          "speaker": "npc:0",
+          "ko": "2007년 12월 31일의 하원 사임과 새 연방 직책을 확인하세요.",
+          "en": "Check the House resignation of December 31, 2007, and the new federal office."
         }
       ],
       "response": {
@@ -2408,16 +2418,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "1995년 첫 임기 기록과 1999년 카운티 문서에 직책 전환을 표시하겠습니다.",
-            "en": "I will mark the office transition on the 1995 and 1999 files."
+            "speaker": "npc:0",
+            "ko": "상원 임명으로 정정하고 현재 하원 문의는 별도 창구로 안내합시다.",
+            "en": "Correct it to a Senate appointment and route current House inquiries separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "위커는 2007년 12월 31일 상원 임명을 받아 하원에서 사임했다.",
-            "en": "Wicker resigned December 31, 2007 to accept a Senate appointment."
+            "speaker": "npc:1",
+            "ko": "위커가 상원 임명을 받아 하원을 사임했습니다. 현직 하원의원인 톰프슨과 구별하세요.",
+            "en": "Wicker resigned to accept a Senate appointment. Distinguish him from sitting House member Thompson."
           }
         ]
       },
@@ -2480,14 +2490,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 볼턴 시장으로 근무했습니다.",
-          "en": "I served as mayor of Bolton."
+          "speaker": "player",
+          "ko": "지방정부 설명회에서 볼턴 시장 경력을 루이지애나 주의회 경험으로 잘못 소개합니다.",
+          "en": "A local-government forum misidentifies the Bolton mayoral record as Louisiana legislative service."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 루이지애나 주 상원에서 일했습니다.",
-          "en": "I served in the Louisiana Senate."
+          "speaker": "npc:0",
+          "ko": "1973~1979년 볼턴의 시장 경력을 가진 의원을 확인해 주세요.",
+          "en": "Identify the member who served as mayor of Bolton in 1973–79."
         }
       ],
       "response": {
@@ -2521,16 +2531,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "남부 지역의 지방정부 경력과 연방 의석을 구분하겠습니다.",
-            "en": "I will distinguish local-government service from federal seats."
+            "speaker": "npc:0",
+            "ko": "지방 집행부와 주의회 경험을 서로 다른 질문으로 비교합시다.",
+            "en": "Compare local executive and state legislative experience with separate questions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "톰프슨은 1973~1979년 볼턴 시장이었다.",
-            "en": "Thompson served as mayor of Bolton from 1973 to 1979."
+            "speaker": "npc:1",
+            "ko": "톰프슨이 볼턴 시장이었습니다. 제퍼슨의 주상원 경력으로 바꾸면 안 됩니다.",
+            "en": "Thompson was mayor of Bolton. Do not substitute Jefferson's state Senate service."
           }
         ]
       },
@@ -2598,14 +2608,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1980년부터 1991년 초까지 루이지애나 주 상원에 있었습니다.",
-          "en": "I served in the Louisiana Senate from 1980 until early 1991."
+          "speaker": "player",
+          "ko": "두 의원의 지방 및 주정부 경력이 한 가지 직책으로 합쳐진 소개문을 수정합니다.",
+          "en": "A guide merges the members' local and state experience into one office."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 하원에 오기 전 하인즈 카운티 감독위원회에서 활동했습니다.",
-          "en": "Before the House I served on the Hinds County Board of Supervisors."
+          "speaker": "npc:0",
+          "ko": "1980년부터 1991년 초까지 루이지애나 주의회에서 활동한 의원을 확인하세요.",
+          "en": "Identify the member who served in Louisiana's legislature from 1980 to early 1991."
         }
       ],
       "response": {
@@ -2639,16 +2649,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "두 지역 대표의 공직 경로를 비교한 자료를 완성하겠습니다.",
-            "en": "I will complete the comparison of their pathways to Congress."
+            "speaker": "npc:0",
+            "ko": "주의회 경력과 카운티 감독위원회 경력을 구별해 토론을 준비합시다.",
+            "en": "Prepare discussion questions distinguishing state legislative service from county board service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "제퍼슨은 1980년 3월부터 1991년 1월 2일까지 루이지애나 주 상원의원이었다.",
-            "en": "Jefferson served in the Louisiana Senate from March 1980 to January 2, 1991."
+            "speaker": "npc:1",
+            "ko": "제퍼슨은 루이지애나 주상원 출신입니다. 톰프슨의 하인즈 카운티 경력과 구별하세요.",
+            "en": "Jefferson served in the Louisiana Senate. Distinguish Thompson's Hinds County service."
           }
         ]
       },

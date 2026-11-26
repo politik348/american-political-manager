@@ -723,19 +723,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "학생이 법안에 별도 신청이 필요한지 묻습니다.",
-          "en": "A student asks whether the proposal requires an application."
+          "speaker": "player",
+          "ko": "2025년 대출 법안에서 기존 차입자가 새 금리를 받으려면 별도 신청을 해야 하는지 확인하고 있습니다.",
+          "en": "I'm checking whether existing borrowers would need a separate application under the 2025 student-loan proposal."
         },
         {
-          "speaker": "player",
-          "ko": "2025년 법안의 설계부터 확인하겠습니다.",
-          "en": "I'll check the design of the 2025 proposal."
+          "speaker": "npc:0",
+          "ko": "금리 수준과 재융자 방식은 별도 조항입니다. 법안 원문을 확인하세요.",
+          "en": "The rate and refinancing mechanism are separate provisions. Consult the introduced text."
         },
         {
           "speaker": "npc:1",
-          "ko": "대출자가 원하지 않을 경우 거부할 수 있는 조항도 있습니다.",
-          "en": "It also allows borrowers to opt out."
+          "ko": "제안의 적용 절차를 현행 대출 절차로 안내하지 마세요.",
+          "en": "Do not present the proposed procedure as an existing loan procedure."
         }
       ],
       "response": {
@@ -770,15 +770,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "현행 절차라고 오해하지 않도록 법안 설명임을 명시하겠습니다.",
-            "en": "We'll label it as the proposal, not a current procedure."
+            "ko": "자동 재융자와 거부 가능성을 제안한 조항으로 설명하고 실제 법안 상태는 별도 확인하세요.",
+            "en": "Describe the provision proposing automatic refinancing with an opt-out, and verify the bill's actual status separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "법안은 자동 재융자와 선택적 거부를 제안했습니다.",
-            "en": "The bill proposed automatic refinancing with an opt-out."
+            "ko": "모든 대출 즉시 탕감이 아니라 자동 재융자 및 거부 선택을 제안했습니다. 안내문을 수정하세요.",
+            "en": "It proposed automatic refinancing with an opt-out, not cancellation of all loans. Correct the guidance."
           }
         ]
       },
@@ -845,29 +845,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "군인 유가족이 재혼하면 혜택이 끊기는지 걱정합니다.",
-          "en": "A military survivor worries that remarriage will cost benefits."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "2025년 법안은 나이에 관계없는 보호를 제안했습니다.",
-          "en": "The 2025 bill proposed protection regardless of age."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "현재 규칙과 법안의 변경을 분리해야 합니다.",
-          "en": "Separate existing rules from proposed changes."
-        },
-        {
           "speaker": "player",
-          "ko": "그 차이를 설명하겠습니다.",
-          "en": "I'll explain that distinction."
+          "ko": "군인 유족 상담 안내문이 Love Lives On Act의 제안을 현행 혜택 규칙으로 표시했습니다.",
+          "en": "A military-survivor guide treats the Love Lives On Act proposal as a current benefits rule."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "혜택을 유지하도록 제안한 생애 사건을 법안에서 확인하세요.",
+          "en": "Identify the life event after which the bill would preserve benefits."
         },
         {
           "speaker": "npc:3",
-          "ko": "민간 연방 공무원 유족과도 범위가 다릅니다.",
-          "en": "The scope also differs from civilian federal survivors."
+          "ko": "민간 연방 공무원 유족의 규칙까지 동일하게 적용된다고 단정하면 안 됩니다.",
+          "en": "Do not assume identical rules for civilian federal survivors."
         }
       ],
       "response": {
@@ -901,16 +891,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "가족에게 법안 상태와 현행 자격을 따로 확인하도록 안내하죠.",
-            "en": "Direct the family to verify current eligibility and bill status separately."
+            "speaker": "npc:2",
+            "ko": "법안이 재혼 이후 보호를 제안했다는 설명과 현재 기관의 자격 안내를 분리하세요.",
+            "en": "Separate the proposed protection after remarriage from current agency eligibility guidance."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "Love Lives On Act는 재혼 시 나이와 관계없이 군인 유족 혜택 보호를 제안했습니다.",
-            "en": "It proposed preserving military survivor benefits after remarriage regardless of age."
+            "ko": "재혼 시 나이와 관계없는 보호를 제안했습니다. 아직 확인하지 않은 현행 권리로 안내하면 안 됩니다.",
+            "en": "It proposed protection after remarriage regardless of age. Do not present it as an unverified existing entitlement."
           }
         ]
       },
@@ -964,18 +954,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "모든 연방 공무원 유족에게 똑같이 적용되는 법안이라고 설명해도 되나요?",
-          "en": "Can we say the proposal applies equally to all federal survivors?"
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "군인 유족에 초점을 맞춘 법안입니다.",
-          "en": "It focuses on military survivors."
+          "ko": "군인 유족과 민간 연방 공무원 유족의 재혼 관련 문의를 같은 법안 안내문으로 처리하려 합니다.",
+          "en": "A benefits guide uses the same bill explanation for remarriage questions from military and civilian federal survivors."
         },
         {
           "speaker": "npc:1",
-          "ko": "민간 연방 인력의 재혼 규정까지 없애는 것은 아닙니다.",
-          "en": "It does not eliminate civilian federal remarriage rules."
+          "ko": "서로 다른 유족 급여 제도를 하나로 취급하면 안 됩니다.",
+          "en": "Do not treat distinct survivor-benefit systems as one."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "2025년 발의 법안의 직접 적용 대상을 확인하세요.",
+          "en": "Identify the direct beneficiaries in the 2025 introduced bill."
         }
       ],
       "response": {
@@ -1010,15 +1000,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "해당 범위를 벗어나는 문의는 다른 제도와 구별하죠.",
-            "en": "Separate other inquiries from this bill's scope."
+            "ko": "군인 유족 관련 법안 설명과 민간 제도 문의를 별도 안내로 나누세요.",
+            "en": "Separate the military-survivor proposal explanation from civilian-benefit inquiries."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "민간 연방 공무원 유족의 재혼 불이익 폐지는 포함되지 않았습니다.",
-            "en": "It did not eliminate the civilian federal survivor remarriage penalty."
+            "ko": "군인 유족을 대상으로 한 제안입니다. 민간 연방 공무원 유족의 재혼 불이익 폐지는 포함되지 않았습니다.",
+            "en": "It concerns military survivors; it did not eliminate the civilian federal survivor remarriage penalty."
           }
         ]
       },
@@ -1407,19 +1397,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:1",
-          "ko": "주민이 오래된 공공임대 고층건물의 안전 문제를 제기했습니다.",
-          "en": "Residents raised safety concerns in older public high-rises."
+          "speaker": "player",
+          "ko": "노후 공공임대 고층건물 주민들이 안전 개선 요청을 가져왔습니다. 당장 필요한 안전 대응과 입법 검토를 구분하겠습니다.",
+          "en": "Residents of older public high-rises bring safety concerns. I'll distinguish immediate safety needs from legislative review."
         },
         {
-          "speaker": "player",
-          "ko": "새로운 건물뿐 아니라 기존 건물에도 관련되는 제안이죠?",
-          "en": "Does the proposal address existing buildings too?"
+          "speaker": "npc:1",
+          "ko": "2025년 재발의 법안은 주택기관을 지원하는 제안입니다. 이미 보조금을 받았다는 의미는 아닙니다.",
+          "en": "The reintroduced 2025 bill proposes assistance to housing authorities; it does not mean a grant has already been awarded."
         },
         {
           "speaker": "npc:0",
-          "ko": "2025년 제안은 주택기관의 설비 개선을 지원합니다.",
-          "en": "The 2025 proposal would fund upgrades by housing authorities."
+          "ko": "HUD 보조금으로 설치하려는 핵심 설비를 법안에서 확인하세요.",
+          "en": "Identify the equipment the bill would support through HUD grants."
         }
       ],
       "response": {
@@ -1454,15 +1444,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주민의 즉각적인 안전 문제와 법안은 구분해 논의하겠습니다.",
-            "en": "We'll distinguish immediate safety concerns from the legislation."
+            "ko": "스프링클러 설치 제안을 설명하고 즉각적인 안전 문제와 실제 지원 여부는 담당 기관에 별도로 문의하도록 안내하세요.",
+            "en": "Explain the sprinkler proposal and direct immediate safety concerns and actual funding questions to the appropriate agencies separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "HUD 보조금으로 노후 고층 공공주택의 스프링클러 설치를 지원하는 제안입니다.",
-            "en": "It proposed HUD grants for retrofitting sprinklers."
+            "ko": "자동 스프링클러 설치를 지원하는 제안입니다. 다른 설비를 지원 대상으로 안내하거나 시행됐다고 약속하지 마세요.",
+            "en": "It proposes support for automatic sprinkler installation. Do not identify unrelated equipment or promise enactment."
           }
         ]
       },
@@ -1516,18 +1506,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지역 주민이 2025년 법안의 핵심 내용을 문의했습니다.",
-          "en": "A resident asks about the core of the 2025 proposal."
+          "ko": "주민 설명문이 2025년 DHS 관련 법안의 요구 사항과 현행법을 혼동합니다.",
+          "en": "A resident briefing confuses the requirements proposed in a 2025 DHS-related bill with existing law."
         },
         {
           "speaker": "npc:1",
-          "ko": "당시 법안은 DHS의 특정 단속 활동에 적용됩니다.",
-          "en": "The proposal covers specified DHS enforcement activities."
+          "ko": "특정 단속 활동에 관한 제안의 범위를 먼저 확인해야 합니다.",
+          "en": "First verify the scope of the proposal concerning specified enforcement activities."
         },
         {
           "speaker": "npc:0",
-          "ko": "신원 확인이 핵심이었습니다.",
-          "en": "Clear identification was central."
+          "ko": "법안이 무엇을 명확히 표시하도록 요구했는지 원문을 확인하세요.",
+          "en": "Consult the introduced text for what the bill would require to be clearly displayed."
         }
       ],
       "response": {
@@ -1562,15 +1552,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "제안과 현행법을 구별해 주민에게 설명하겠습니다.",
-            "en": "We'll distinguish the proposal from existing law."
+            "ko": "제안된 식별 요건을 설명하고 현재 법적 의무는 별도로 확인하도록 안내합시다.",
+            "en": "Explain the proposed identification requirement and direct readers to verify current legal obligations separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "2025년 법안은 명확한 식별 표시를 요구했습니다.",
-            "en": "The 2025 proposal required clear identification."
+            "ko": "신분 표식과 식별 정보의 명확한 표시입니다. 세금 신고서나 선거 결과에 관한 법안이 아닙니다.",
+            "en": "It concerns clear identification and insignia, not tax returns or election results."
           }
         ]
       },
@@ -2084,19 +2074,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "뉴욕과 위스콘신 낙농가의 문의를 학생 대출 법안 안내 자료에 잘못 연결했습니다.",
+          "en": "A legislative guide mistakenly links New York and Wisconsin dairy farmers' questions to a student-loan bill."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "뉴욕 낙농가가 우유 가격 관련 입법을 문의했습니다.",
-          "en": "New York dairy farmers asked about milk-price legislation."
+          "ko": "2025년 발의 문서 H.R.295의 제목을 확인해 주세요.",
+          "en": "Verify the title of the introduced H.R.295."
         },
         {
           "speaker": "npc:1",
-          "ko": "위스콘신의 동료 농업 지역도 이 법안에 참여합니다.",
-          "en": "Wisconsin farm communities are represented on the bill too."
-        },
-        {
-          "speaker": "player",
-          "ko": "법안 번호와 제목을 정확히 전달하겠습니다.",
-          "en": "I'll give the exact bill number and title."
+          "ko": "공동 참여 기록과 실제 우유 가격 결정은 구별해야 합니다.",
+          "en": "Distinguish joint participation from actual milk-price determination."
         }
       ],
       "response": {
@@ -2131,15 +2121,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "농가에 법안 원문을 제공하고 가격 결정 과정은 별도로 설명하죠.",
-            "en": "Provide the introduced text and explain pricing separately."
+            "ko": "해당 법안 원문을 농가에 전달하고 실제 가격 및 시행 규정은 별도 자료로 확인하세요.",
+            "en": "Give farmers the introduced text and verify actual pricing and implementation rules separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "H.R.295의 발의 문서에는 랭워디와 반 오든이 명시됩니다.",
-            "en": "H.R.295 names Langworthy and Van Orden."
+            "ko": "H.R.295는 Fair Milk Pricing for Farmers Act입니다. 대출·주택·유족 관련 법안과 혼동하지 마세요.",
+            "en": "H.R.295 is the Fair Milk Pricing for Farmers Act, not a loan, housing, or survivor-benefit bill."
           }
         ]
       },
@@ -2301,18 +2291,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "휴스턴의 제18구 보궐선거 결과가 예전 지도에 누락됐습니다.",
-          "en": "The old Houston map omits the district eighteen special election result."
+          "ko": "휴스턴 주민 안내문에 제18구 공석 이후의 당선 결과가 아직 반영되지 않았습니다.",
+          "en": "A Houston constituent guide has not incorporated the election result after the district-eighteen vacancy."
         },
         {
           "speaker": "npc:1",
-          "ko": "제7구와 제18구는 별개의 의석입니다.",
-          "en": "District seven is distinct from district eighteen."
+          "ko": "제7구와 제18구는 다른 의석입니다. 2026년 1월 31일 결과를 확인하세요.",
+          "en": "District seven and district eighteen are separate seats. Check the January 31, 2026 result."
         },
         {
           "speaker": "npc:0",
-          "ko": "2026년 1월 31일 보궐선거로 당선됐습니다.",
-          "en": "I won the January 31, 2026 special election."
+          "ko": "터너 의원의 공석을 채우는 선거의 당선자와 선서일을 각각 확인해야 합니다.",
+          "en": "Verify the winner of the election to fill Turner's vacancy separately from the oath date."
         }
       ],
       "response": {
@@ -2347,15 +2337,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "지도에 선거 결과를 반영하되 취임일은 별도로 기록하죠.",
-            "en": "Update the map while recording the oath separately."
+            "ko": "당선 기록을 갱신하고 선서일은 별도의 공식 자료에서 확인하세요.",
+            "en": "Update the election record and verify the oath date from a separate official record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "메네피는 TX-18 보궐선거 당선자입니다.",
-            "en": "Menefee won the TX-18 special election."
+            "ko": "메네피가 TX-18 보궐선거에서 당선됐습니다. 제7구와 혼동하지 마세요.",
+            "en": "Menefee won the TX-18 special election. Do not confuse it with district seven."
           }
         ]
       },
@@ -2732,24 +2722,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "11월 선거 이후 소개 문구에 상원의원이라고 적었습니다.",
-          "en": "After the November election the caption says Senator."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "공식 약력은 상원의원 당선인으로 표시합니다.",
-          "en": "My official biography says Senator-elect."
+          "speaker": "player",
+          "ko": "11월 선거 직후 방송 자막에서 새 직책과 현재 재임 중인 직책을 하나로 표시하려 합니다.",
+          "en": "A post-election broadcast caption merges the new election-related title with the currently held office."
         },
         {
           "speaker": "npc:1",
-          "ko": "새 임기와 현재 의회의 임기를 구분해야 합니다.",
-          "en": "Distinguish the new term from this Congress."
+          "ko": "선거 결과와 실제 취임은 날짜가 다른 사건입니다.",
+          "en": "Election results and accession to office are distinct dated events."
         },
         {
-          "speaker": "player",
-          "ko": "아직 취임하지 않은 직책을 현직으로 부르지 않겠습니다.",
-          "en": "I won't call an office already held when it has not begun."
+          "speaker": "npc:0",
+          "ko": "11월 25일 기준 공식 약력이 사용하는 선거 관련 직함을 확인하세요.",
+          "en": "Verify the election-related title in my official biography as of November 25."
         }
       ],
       "response": {
@@ -2784,15 +2769,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "선거 결과와 실제 취임을 별도 기록으로 남기겠습니다.",
-            "en": "We'll keep election results separate from taking office."
+            "ko": "그 직함으로 정정하고 현직 하원 재임과 새 임기 시작은 따로 표시하세요.",
+            "en": "Correct the title and separately identify current House service and the beginning of the new term."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "공식 약력은 Barr를 Senator-elect로 표시합니다.",
-            "en": "His official biography identifies him as Senator-elect."
+            "ko": "공식 약력의 표기는 Senator-elect입니다. 아직 시작하지 않은 직책을 현직 상원의원이라고 표시하면 안 됩니다.",
+            "en": "The official biography uses Senator-elect. Do not label a not-yet-begun office as sitting Senator."
           }
         ]
       },

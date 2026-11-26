@@ -76,20 +76,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
-            "en": "Milwaukee has representatives from different parties."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 사람의 명찰을 별도 보관하고 지역 간담회에 참석합시다.",
-            "en": "Keep both badges distinct and join the local meeting."
+            "ko": "제 사회당 명찰과 캐리 의원의 공화당 명찰을 각각 붙이고, 밀워키의 공동 관심사를 토론합시다.",
+            "en": "Use my Socialist badge and Representative Cary's Republican badge separately, then discuss Milwaukee's shared concerns."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "밀워키에는 서로 다른 정당의 대표가 있죠.",
-            "en": "Milwaukee has representatives from different parties."
+            "ko": "저는 사회당, 캐리 의원은 공화당입니다. 같은 정당으로 소개한 명찰을 교체하세요.",
+            "en": "I am a Socialist; Representative Cary is a Republican. Replace the badges identifying us as members of the same party."
           }
         ]
       },
@@ -227,8 +222,8 @@
         "en": "Credentials records desk"
       },
       "context": {
-        "ko": "의석 자격 기록실",
-        "en": "Credentials records desk"
+        "ko": "당선 증명서와 하원의 자격 결정문을 대조한다.",
+        "en": "Compare election credentials with the House's decision on membership."
       },
       "cast": [
         {
@@ -241,14 +236,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "당선 증명서를 가져왔지만 그제 하원이 제 선서를 허용하지 않았습니다.",
-          "en": "I brought my election credentials, but two days ago the House refused to let me take the oath."
+          "speaker": "player",
+          "ko": "당선 증명서만 보면 현직 의원으로 분류할 수 있을 것 같습니다. 11월 10일 하원의 결정을 먼저 확인하겠습니다.",
+          "en": "Election credentials alone might suggest sitting membership. I'll check the House's November 10 decision first."
         },
         {
-          "speaker": "player",
-          "ko": "당선과 실제 재임을 구분해서 기록하겠습니다.",
-          "en": "I'll distinguish election from actual service."
+          "speaker": "npc:0",
+          "ko": "선거 결과와 선서 및 재임 여부를 각각 구분해야 합니다.",
+          "en": "Election results, the oath, and actual service must be distinguished."
         }
       ],
       "response": {
@@ -283,20 +278,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "당선 자체와 하원 의석 자격 결정은 별개입니다.",
-            "en": "Election and the House's seating decision are distinct."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "자격 결정문을 주민 안내서에 첨부하세요.",
-            "en": "Attach the credentials ruling to the constituent briefing."
+            "ko": "당선됐지만 선서를 허용받지 못했습니다. 주민에게 실제 현직 의원인지 설명할 때 결정문을 함께 확인하세요.",
+            "en": "I was elected but denied the oath. Consult the decision when explaining whether I actually hold the seat."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "당선 자체와 하원 의석 자격 결정은 별개입니다.",
-            "en": "Election and the House's seating decision are distinct."
+            "ko": "당선인이지 선서를 마친 현직 의원이 아닙니다. 증명서만으로 하원 재임을 확정하면 안 됩니다.",
+            "en": "I was a member-elect denied the oath, not a sworn sitting member. Credentials alone do not establish House service."
           }
         ]
       },
@@ -328,8 +318,8 @@
         "en": "Reunion after special election"
       },
       "context": {
-        "ko": "특별선거 이후 재회",
-        "en": "Reunion after special election"
+        "ko": "특별선거 결과와 1920년 1월 하원 결정의 관계를 판별한다.",
+        "en": "Determine the relationship between the special election and the House's January 1920 decision."
       },
       "cast": [
         {
@@ -343,13 +333,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "공석을 채우기 위한 선거에서 다시 당선됐지만 지난 10일 하원은 같은 결정을 내렸습니다.",
-          "en": "I won the vacancy election, but on the 10th the House reached the same decision."
+          "ko": "공석을 채우기 위한 선거에서 다시 당선됐습니다.",
+          "en": "I was reelected in the election to fill the vacancy."
         },
         {
           "speaker": "player",
-          "ko": "두 번의 의석 자격 기록을 섞지 않겠습니다.",
-          "en": "I'll keep the two credentials records separate."
+          "ko": "그렇다면 자동으로 의석을 얻은 것인지, 1월 10일 하원이 별도로 어떤 결정을 내렸는지 확인하겠습니다.",
+          "en": "I'll check whether the election automatically conferred the seat or the House made a separate decision on January 10."
         }
       ],
       "response": {
@@ -384,20 +374,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "다시 의석을 허용하지 않았습니다.",
-            "en": "The House again refused the seat."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "앞선 1919년 결정과 이번 결정문을 연결하세요.",
-            "en": "Link this ruling to the earlier 1919 decision."
+            "ko": "하원은 다시 의석을 허용하지 않았습니다. 선거 승리와 재임 여부를 구별한 판단이 맞습니다.",
+            "en": "The House again refused to seat me. You correctly distinguished election victory from actual service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "다시 의석을 허용하지 않았습니다.",
-            "en": "The House again refused the seat."
+            "ko": "1월 10일에도 의석을 허용하지 않았습니다. 재당선이 이전 결정을 자동으로 뒤집은 것은 아닙니다.",
+            "en": "The House again refused the seat on January 10. Reelection did not automatically reverse the earlier decision."
           }
         ]
       },
@@ -542,8 +527,8 @@
         "en": "New York garment workers' meeting"
       },
       "context": {
-        "ko": "뉴욕 의류 노동자 접견",
-        "en": "New York garment workers' meeting"
+        "ko": "노동자 방문단의 산업별 요구를 역사적 파업 자료와 연결한다.",
+        "en": "Connect workers' concerns to the historical record of a strike by industry."
       },
       "cast": [
         {
@@ -556,14 +541,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1910년 파업 때 만났던 분들이 오셨군요. 지금은 의회에 주민의 이야기를 전달할 수 있습니다.",
-          "en": "People I met during the 1910 strike are here. Now I can bring constituents' concerns to Congress."
+          "speaker": "player",
+          "ko": "노동자 방문단의 요구를 당시 파업 기록과 연결하려고 합니다. 1910년 뉴욕에서 의원님이 이끈 파업부터 확인하겠습니다.",
+          "en": "I'd like to connect workers' concerns to the strike record. I'll identify the 1910 New York strike you led."
         },
         {
-          "speaker": "host",
-          "ko": "어떤 산업에서 함께 행동했는지 자료에 적어 주세요.",
-          "en": "Please record the industry involved."
+          "speaker": "npc:0",
+          "ko": "산업마다 노동 조건이 다르므로 기록을 정확히 구별하세요.",
+          "en": "Working conditions vary across industries, so distinguish the records accurately."
         }
       ],
       "response": {
@@ -598,20 +583,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "뉴욕의 의류 노동자 파업입니다.",
-            "en": "It was the New York garment workers' strike."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "방문단의 임금 관련 요청을 노동 기록에 첨부하세요.",
-            "en": "Attach the delegation's wage inquiries to the labor file."
+            "ko": "의류 노동자 파업입니다. 방문단의 구체적인 요구와 당시 파업의 기록을 따로 살펴보세요.",
+            "en": "Garment workers. Examine the delegation's specific concerns separately from the historical strike record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "뉴욕의 의류 노동자 파업입니다.",
-            "en": "It was the New York garment workers' strike."
+            "ko": "1910년 파업은 의류 노동자들이 참여한 사건입니다. 광산이나 철도 파업과 혼동하지 마세요.",
+            "en": "The 1910 strike involved garment workers. Do not confuse it with mining or railway strikes."
           }
         ]
       },
@@ -901,20 +881,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
-            "en": "It concerned banking conditions in Sacramento."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "서한과 지역 은행 현황 자료를 함께 보관하세요.",
-            "en": "File the letter with the local banking records."
+            "ko": "새크라멘토 은행 현황에 대한 서한을 토대로 지역 경제 질문을 받겠습니다.",
+            "en": "I'll take regional economic questions based on the letter about Sacramento banking conditions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "새크라멘토의 은행 상황을 검토한 서한입니다.",
-            "en": "It concerned banking conditions in Sacramento."
+            "ko": "재무장관에게 보낸 서한은 새크라멘토의 은행 현황에 관한 것입니다. 다른 도시 사례로 만든 요약을 교체하세요.",
+            "en": "My letter to the Treasury Secretary concerned Sacramento banking conditions. Replace the summary prepared for another city."
           }
         ]
       },
@@ -1210,21 +1185,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
-            "en": "Cary was sheriff; I was Sparta city treasurer."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "방문단 소개문에 두 공직을 구분해 주세요.",
-            "en": "Distinguish those offices in the delegation introduction."
+            "speaker": "npc:1",
+            "ko": "제 보안관 경험과 에슈 의원의 시 재무관 경험을 각각 질문해 주세요.",
+            "en": "Ask me about my sheriff experience and Representative Esch about his city treasurer experience."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "캐리는 보안관, 저는 스파르타 시 재무관이었습니다.",
-            "en": "Cary was sheriff; I was Sparta city treasurer."
+            "speaker": "npc:1",
+            "ko": "저는 밀워키 카운티 보안관이었습니다. 에슈 의원의 시 재무관 직책과 바꿔 소개하지 마세요.",
+            "en": "I was Milwaukee County sheriff. Don't swap my role with Representative Esch's city treasurer office."
           }
         ]
       },
@@ -1312,20 +1282,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주간·대외통상위원회입니다.",
-            "en": "It is Interstate and Foreign Commerce."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "교통 관련 자료를 위원회 접견철에 넣으세요.",
-            "en": "Add the transportation papers to the committee briefing."
+            "ko": "주간·대외통상위원회에서 다룰 교통 문제를 먼저 논의하겠습니다.",
+            "en": "I'll first discuss the transportation issues for Interstate and Foreign Commerce."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주간·대외통상위원회입니다.",
-            "en": "It is Interstate and Foreign Commerce."
+            "ko": "제66대 의회 주간·대외통상위원장입니다. 다른 위원회의 관할로 준비한 교통 질의는 재배정하세요.",
+            "en": "I chair Interstate and Foreign Commerce in the 66th Congress. Reassign the transportation questions prepared for another committee."
           }
         ]
       },
@@ -1352,8 +1317,8 @@
         "en": "Transportation regulation outside Congress"
       },
       "context": {
-        "ko": "의회 밖 교통 감독 업무",
-        "en": "Transportation regulation outside Congress"
+        "ko": "교통 정책 문의가 전직 의원의 새 사무실로 왔다.",
+        "en": "A transportation-policy inquiry reaches a former member's new office."
       },
       "cast": [
         {
@@ -1366,14 +1331,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난 의회에서 만났던 교통 관계자들이군요. 지금은 하원에 있지 않습니다.",
-          "en": "I recognize our transportation visitors from the last Congress. I am no longer in the House."
+          "speaker": "player",
+          "ko": "이전 하원 위원장 직책으로 편지를 보내려 했지만 올해 공직이 바뀌었다는 기록을 발견했습니다.",
+          "en": "I was about to address a letter to your former House chairmanship, but found a record of a new office this year."
         },
         {
-          "speaker": "player",
-          "ko": "새 기관의 이름을 확인해 연락망을 갱신하겠습니다.",
-          "en": "I'll update the contacts with your new agency."
+          "speaker": "npc:0",
+          "ko": "3월 11일 임명된 기관을 확인하세요. 현재 저는 하원의원이 아닙니다.",
+          "en": "Identify the body to which I was appointed on March 11. I am no longer a House member."
         }
       ],
       "response": {
@@ -1408,20 +1373,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주간통상위원회에 3월 11일 임명됐습니다.",
-            "en": "I was appointed to the ICC on March 11."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "의회와 행정 감독기관의 연락처를 분리합시다.",
-            "en": "Separate legislative and regulatory contacts."
+            "ko": "주간통상위원회입니다. 의회 입법 관련 문의와 행정 감독 관련 문의를 분리하세요.",
+            "en": "Interstate Commerce Commission. Separate legislative inquiries from regulatory matters."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주간통상위원회에 3월 11일 임명됐습니다.",
-            "en": "I was appointed to the ICC on March 11."
+            "ko": "주간통상위원회에 임명됐습니다. 하원 주간·대외통상위원장과 이름이 유사해도 기관은 다릅니다.",
+            "en": "I was appointed to the Interstate Commerce Commission, which is distinct from the similarly named House committee."
           }
         ]
       },
@@ -1453,8 +1413,8 @@
         "en": "Pueblo newspaper gathering"
       },
       "context": {
-        "ko": "푸에블로 언론인 모임",
-        "en": "Pueblo newspaper gathering"
+        "ko": "1912년 지역신문 자료를 정리하는 언론 연구자",
+        "en": "A press researcher sorting local newspaper records from 1912"
       },
       "cast": [
         {
@@ -1467,14 +1427,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난해 푸에블로로 이주했을 때 만난 언론인들이군요.",
-          "en": "I recognize journalists I met when I moved to Pueblo last year."
+          "speaker": "player",
+          "ko": "1912년 신문 인수 기록을 의회 입성 이후 자료와 분리하고 있습니다. 푸에블로로 이주한 시기의 소유 기록을 확인하겠습니다.",
+          "en": "I'm separating the 1912 newspaper acquisition record from later congressional material. I'll check the ownership record associated with your move to Pueblo."
         },
         {
-          "speaker": "host",
-          "ko": "이전 신문의 이름을 행사에 넣죠.",
-          "en": "Include your newspaper's name in the program."
+          "speaker": "npc:0",
+          "ko": "제가 인수한 신문을 확인하면 당시 지역 보도 자료의 출처를 구별할 수 있습니다.",
+          "en": "Identifying the paper I acquired will help distinguish the sources of contemporary local reporting."
         }
       ],
       "response": {
@@ -1509,20 +1469,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "Pueblo Leader를 인수했습니다.",
-            "en": "I acquired the Pueblo Leader."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "신문 경력과 새 의정 활동의 연표를 전시하세요.",
-            "en": "Display a timeline linking the newspaper and congressional careers."
+            "ko": "Pueblo Leader입니다. 신문사 기록의 시기와 새 하원 임기를 구별해 보관하세요.",
+            "en": "Pueblo Leader. Preserve its ownership record separately from my new House term."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "Pueblo Leader를 인수했습니다.",
-            "en": "I acquired the Pueblo Leader."
+            "ko": "Pueblo Leader를 인수했습니다. 다른 도시 신문의 소유 기록을 제 경력에 합치지 마세요.",
+            "en": "I acquired the Pueblo Leader. Do not attach another city's newspaper ownership record to my career."
           }
         ]
       },
@@ -1554,8 +1509,8 @@
         "en": "Municipal and state reform discussion"
       },
       "context": {
-        "ko": "도시·주 제도 개혁 토론",
-        "en": "Municipal and state reform discussion"
+        "ko": "두 정치인의 서로 다른 제도 개혁 회의 문서를 비교한다.",
+        "en": "Compare documents from two different institutional reform conventions."
       },
       "cast": [
         {
@@ -1576,13 +1531,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "덴버 시 헌장 논의에 참여했을 때의 기록입니다.",
-          "en": "These are my records from Denver's charter discussions."
+          "ko": "1903년 덴버 시 헌장 논의에 참여했습니다.",
+          "en": "I participated in Denver's 1903 charter convention."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 1912년 오하이오 주 헌법회의에 참여했습니다.",
-          "en": "I participated in Ohio's 1912 constitutional convention."
+          "ko": "1912년 오하이오에서 제가 참여한 회의는 도시 수준을 넘어서는 제도적 논의였습니다.",
+          "en": "The Ohio convention I attended in 1912 concerned institutions beyond the municipal level."
+        },
+        {
+          "speaker": "player",
+          "ko": "두 회의의 권한 범위를 구별해 주민에게 설명하겠습니다.",
+          "en": "I'll explain the different levels of authority to residents."
         }
       ],
       "response": {
@@ -1616,21 +1576,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "오하이오의 제4차 헌법회의였습니다.",
-            "en": "It was Ohio's fourth constitutional convention."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 기록을 정부 수준별로 분리해 시민에게 보여 주세요.",
-            "en": "Display the records by level of government."
+            "speaker": "npc:1",
+            "ko": "오하이오 주 헌법에 관한 회의였습니다. 시 헌장과 주 헌법의 개정 절차를 구별하세요.",
+            "en": "It concerned Ohio's state constitution. Distinguish municipal charters from state constitutional revision."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오의 제4차 헌법회의였습니다.",
-            "en": "It was Ohio's fourth constitutional convention."
+            "ko": "제 경우는 시 헌장이고 크로서 의원은 주 헌법 관련 회의였습니다. 연방 헌법회의나 국제협정과는 다릅니다.",
+            "en": "Mine concerned a city charter; Crosser's concerned the state constitution, not a federal constitutional convention or international treaty."
           }
         ]
       },
@@ -1667,8 +1622,8 @@
         "en": "Colorado postal service inquiry"
       },
       "context": {
-        "ko": "콜로라도 우편 서비스 문의",
-        "en": "Colorado postal service inquiry"
+        "ko": "개별 우편 서비스 불만과 부처 지출 감독 문의가 함께 접수됐다.",
+        "en": "An individual service complaint arrives alongside a departmental expenditure inquiry."
       },
       "cast": [
         {
@@ -1681,14 +1636,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지역 우편 서비스 예산 관련 서류가 있습니까?",
-          "en": "Do you have the documents about local postal service spending?"
+          "speaker": "player",
+          "ko": "주민의 개인적인 서비스 불만과 연방부처의 지출 내역 문의를 따로 처리하겠습니다.",
+          "en": "I'll separate a resident's service complaint from a question about departmental expenditures."
         },
         {
-          "speaker": "player",
-          "ko": "일반 우편 문의와 지출 감독 자료를 구분하겠습니다.",
-          "en": "I'll separate general postal inquiries from expenditure oversight."
+          "speaker": "npc:0",
+          "ko": "제65대 의회에서 맡은 지출위원회가 어느 부처를 대상으로 했는지 확인해 주세요.",
+          "en": "Identify the department covered by the expenditures committee I chair in the 65th Congress."
         }
       ],
       "response": {
@@ -1723,20 +1678,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "제65대 의회 우체국부 지출위원장입니다.",
-            "en": "I chair the Post Office expenditure committee."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "해당 주민 서류를 접수하고 후속 면담을 준비하세요.",
-            "en": "Log the constituent papers and prepare a follow-up."
+            "ko": "우체국부입니다. 위원회의 지출 감독과 개별 배달 문제의 해결은 다릅니다.",
+            "en": "Post Office Department. Committee expenditure oversight differs from resolving an individual delivery problem."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제65대 의회 우체국부 지출위원장입니다.",
-            "en": "I chair the Post Office expenditure committee."
+            "ko": "우체국부 지출위원회입니다. 다른 부처의 기록이거나 우편 업무의 직접 집행이라고 생각하면 안 됩니다.",
+            "en": "Expenditures in the Post Office Department. Do not confuse it with another department's records or direct administration of mail."
           }
         ]
       },
@@ -1824,20 +1774,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "미주리주 캔자스시티에서 참여했습니다.",
-            "en": "I took part in Kansas City, Missouri."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "도시의 과거 지도와 헌장 기록을 함께 전시합시다.",
-            "en": "Display the city's old map beside its charter records."
+            "ko": "미주리주 캔자스시티의 1898년 헌장 자료와 당시 도시 지도를 함께 살펴봅시다.",
+            "en": "Let's examine the 1898 charter materials alongside the historical map of Kansas City, Missouri."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "미주리주 캔자스시티에서 참여했습니다.",
-            "en": "I took part in Kansas City, Missouri."
+            "ko": "미주리주 캔자스시티의 헌장 작성에 참여했습니다. 캔자스주 동명 도시의 지도를 가져왔다면 교체하세요.",
+            "en": "I helped draft the charter in Kansas City, Missouri. Replace any map of the namesake city in Kansas."
           }
         ]
       },
@@ -1920,20 +1865,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
-            "en": "I was dean of the Kansas City School of Law."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "동문 방문단의 의회 견학을 예약하세요.",
-            "en": "Arrange a Capitol visit for the alumni."
+            "ko": "법학교 학장 시절의 경험을 먼저 이야기하고, 이후 동문 방문단의 의회 질문을 받겠습니다.",
+            "en": "I'll discuss my time as law school dean first, then take the alumni delegation's congressional questions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "캔자스시티 법학교의 학장을 맡았습니다.",
-            "en": "I was dean of the Kansas City School of Law."
+            "ko": "캔자스시티 법학교의 학장이었습니다. 다른 지방 공직으로 소개한 학교 행사의 안내문을 수정하세요.",
+            "en": "I was dean of the Kansas City School of Law. Correct the event program describing a different local office."
           }
         ]
       },
@@ -2220,20 +2160,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "당시 명칭은 Invalid Pensions입니다.",
-            "en": "Its contemporary name is Invalid Pensions."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "주민 요청 목록을 별도로 정리해 주세요.",
-            "en": "Prepare a separate list of the constituent requests."
+            "ko": "Invalid Pensions 위원회와 관련된 연금 질문을 먼저 듣고, 개인별 요청은 별도로 받겠습니다.",
+            "en": "I'll take pension questions relevant to Invalid Pensions first, then handle individual requests separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "당시 명칭은 Invalid Pensions입니다.",
-            "en": "Its contemporary name is Invalid Pensions."
+            "ko": "제71대 의회 당시 정식 명칭은 Invalid Pensions였습니다. 다른 위원회로 보내려던 연금 자료를 회수하세요.",
+            "en": "The formal name in the 71st Congress was Invalid Pensions. Retrieve the pension papers destined for another committee."
           }
         ]
       },
@@ -2316,20 +2251,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
-            "en": "I came from Scotland in 1881."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "클리블랜드의 지역사회 자료에 이민 경력을 추가하세요.",
-            "en": "Add the immigration background to the community records."
+            "ko": "스코틀랜드에서 이주한 뒤 클리블랜드에서 법률 일을 하게 된 경로를 이민자 가족들과 이야기하겠습니다.",
+            "en": "I'll discuss my journey from Scotland to practicing law in Cleveland with immigrant families."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1881년 스코틀랜드에서 미국으로 왔습니다.",
-            "en": "I came from Scotland in 1881."
+            "ko": "1881년에 스코틀랜드에서 왔습니다. 다른 나라의 이민 사례로 배정한 소개 순서를 바꿔 주세요.",
+            "en": "I came from Scotland in 1881. Change the program that assigned me to another country's immigration story."
           }
         ]
       },
@@ -2452,8 +2382,8 @@
         "en": "Urban representation discussion"
       },
       "context": {
-        "ko": "도시 대표 회고 모임",
-        "en": "Urban representation discussion"
+        "ko": "두 정치인의 현재 지위를 확인하고 주민 문의를 전달한다.",
+        "en": "Identify the two politicians' current status before routing a constituent inquiry."
       },
       "cast": [
         {
@@ -2473,14 +2403,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 이번 의회에서 뉴욕의 사회당 대표입니다.",
-          "en": "I am a Socialist representative from New York in this Congress."
+          "speaker": "npc:1",
+          "ko": "제 오하이오 하원 임기는 1919년에 끝났습니다.",
+          "en": "My Ohio House term ended in 1919."
         },
         {
-          "speaker": "npc:1",
-          "ko": "저는 오하이오에서 민주당 의원으로 일했던 시절의 자료를 가지고 있습니다.",
-          "en": "I have records of my earlier Democratic House service from Ohio."
+          "speaker": "player",
+          "ko": "그렇다면 1922년 현재 현직인 런던 의원의 대표 주를 확인해서 의원실 문의를 전달하겠습니다.",
+          "en": "Then I'll identify the sitting member London's state in 1922 before routing the House inquiry."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "이번 의회의 제 의석과 이전 의원 경력을 분리하세요.",
+          "en": "Distinguish my seat in this Congress from former members' service."
         }
       ],
       "response": {
@@ -2515,20 +2450,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "런던은 뉴욕 현직 의원이고 크로서는 이 시점에 전직 의원입니다.",
-            "en": "London is a sitting New York member and Crosser a former member at this date."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "현직과 전직 표기를 구분해 도시 대표 기록을 보관하세요.",
-            "en": "Keep the sitting and former-member labels distinct."
+            "ko": "뉴욕입니다. 크로서 의원의 이전 오하이오 재임과 현재 의원실을 구분하세요.",
+            "en": "New York. Keep Crosser's former Ohio service separate from the current office."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "런던은 뉴욕 현직 의원이고 크로서는 이 시점에 전직 의원입니다.",
-            "en": "London is a sitting New York member and Crosser a former member at this date."
+            "speaker": "npc:1",
+            "ko": "현재 뉴욕의 사회당 하원의원은 런던입니다. 저는 이 시점에 오하이오 전직 의원입니다.",
+            "en": "London is the sitting Socialist member from New York; I am a former Ohio member at this point."
           }
         ]
       },

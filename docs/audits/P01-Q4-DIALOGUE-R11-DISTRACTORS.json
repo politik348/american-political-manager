@@ -1,0 +1,1428 @@
+{
+  "schema": 1,
+  "round": 11,
+  "sourceHandoffSha": "2e0d2b91748b4fced369710a9f2fde703c559c96",
+  "rows": [
+    {
+      "id": "P01-112",
+      "path": "data/dialogue-packs/P01/part-05.json",
+      "sourceBlobSha": "d583f401374a58f5c701463228b5819f4d320e8f",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "conditional",
+      "q2Recommendation": "Specify 'in February 1978' and 'New York City relocation commissioner' rather than generic department commissioner; council member and comptroller are distinct plausible wrong titles.",
+      "status": "CONDITIONS_ADDRESSED_PENDING_HQ",
+      "sources": [
+        "https://history.house.gov/People/Detail/8806"
+      ],
+      "note": "No choice applied. Fresh replay and HQ required.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "이번에 바디요님은 {{blank}}으로 소개해야겠군요.",
+            "en": "Today I should introduce you as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴욕주 주지사",
+                "en": "New York governor"
+              },
+              {
+                "id": "B",
+                "ko": "뉴욕주 상원의원",
+                "en": "New York state senator"
+              },
+              {
+                "id": "C",
+                "ko": "연방 하원의장",
+                "en": "Speaker of the House"
+              },
+              {
+                "id": "D",
+                "ko": "뉴욕시 부시장",
+                "en": "New York City deputy mayor"
+              }
+            ],
+            "correct": "D"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1978년 2월 바디요 의원님의 새 직책은 {{blank}}입니다.",
+            "en": "In February 1978, your new office was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "뉴욕시 이주 담당 국장",
+                "en": "New York City relocation commissioner"
+              },
+              {
+                "id": "B",
+                "ko": "뉴욕시의원",
+                "en": "New York City council member"
+              },
+              {
+                "id": "C",
+                "ko": "뉴욕시 감사관",
+                "en": "New York City comptroller"
+              },
+              {
+                "id": "D",
+                "ko": "뉴욕시 부시장",
+                "en": "New York City deputy mayor"
+              }
+            ],
+            "correct": "D"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-112",
+        "mechanism": "career-transition",
+        "learningTarget": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+        "date": "1978-02-06",
+        "venue": {
+          "ko": "뉴욕시청",
+          "en": "New York City Hall"
+        },
+        "context": {
+          "ko": "하원의원으로 만났던 사람을 시청에서 다시 만난다.",
+          "en": "You encounter a former House member at City Hall."
+        },
+        "cast": [
+          {
+            "id": "B000025",
+            "name": "Herman Badillo",
+            "ko": "허먼 바디요",
+            "portrait": "https://historycms.house.gov/uploadedImages/People/Listing/B/B000025.jpg",
+            "source": "https://history.house.gov/People/Detail/8806"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "행사 소개문에 이전 직함을 그대로 써도 될까요?",
+            "en": "May I reuse your former title in the event program?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "경력이 바뀌었으니 오늘의 직함을 확인해 주세요.",
+            "en": "My career has changed; please check my current title."
+          },
+          {
+            "speaker": "aide",
+            "ko": "소개문에는 현재 직함 하나만 들어갑니다.",
+            "en": "There is room for one current title in the introduction."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "다음에는 시청에서 뵙죠.",
+              "en": "See you at City Hall next time."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1977년 12월 31일 하원에서 사임하고 1978년 뉴욕시 부시장이 됐습니다.",
+              "en": "I resigned from the House on December 31, 1977, and became New York City deputy mayor in 1978."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8806",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          },
+          {
+            "url": "https://history.house.gov/Collection/Detail/15032397075",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-career-transition-112"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-130",
+      "path": "data/dialogue-packs/P01/part-06.json",
+      "sourceBlobSha": "69b3bbeff8bab20f8a2b99df74822d2b90c72276",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "pass_design",
+      "q2Recommendation": "Ask relationship AND simultaneous service; alternatives sequential service or different chambers are false for scene date.",
+      "status": "DESIGN_IMPLEMENTED_PENDING_HQ",
+      "sources": [
+        "https://history.house.gov/Institution/Firsts-Milestones/Family-Firsts/"
+      ],
+      "note": "No choice applied. Fresh replay and HQ required.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "두 분은 오하이오에서 {{blank}} 관계입니다.",
+            "en": "You are {{blank}} from Ohio.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "상원과 하원의 부녀",
+                "en": "a father-daughter pair in different chambers"
+              },
+              {
+                "id": "B",
+                "ko": "현직 하원의원인 모자",
+                "en": "a mother and son both serving in the House"
+              },
+              {
+                "id": "C",
+                "ko": "주지사와 비서",
+                "en": "a governor and secretary"
+              },
+              {
+                "id": "D",
+                "ko": "현직과 보좌관",
+                "en": "a member and an aide"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1953년 2월 두 분의 가족 관계와 공직은 {{blank}}입니다.",
+            "en": "In February 1953, your relationship and offices were {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "서로 다른 시기에 하원의원으로 재임한 모자",
+                "en": "a mother and son who served in the House at different times"
+              },
+              {
+                "id": "B",
+                "ko": "현직 하원의원인 모자",
+                "en": "a mother and son both serving in the House"
+              },
+              {
+                "id": "C",
+                "ko": "어머니는 하원, 아들은 상원에 재임한 모자",
+                "en": "a mother in the House and a son in the Senate"
+              },
+              {
+                "id": "D",
+                "ko": "어머니는 상원, 아들은 하원에 재임한 모자",
+                "en": "a mother in the Senate and a son in the House"
+              }
+            ],
+            "correct": "B"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-130",
+        "mechanism": "family-delegation",
+        "learningTarget": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+        "date": "1953-02-16",
+        "venue": {
+          "ko": "워싱턴 D.C. · 오하이오 대표단 오찬",
+          "en": "Washington, DC · Ohio delegation luncheon"
+        },
+        "context": {
+          "ko": "손님이 모자 관계인 두 참석자가 의원과 보좌관인지 묻는다.",
+          "en": "A guest wonders whether one of a mother-and-son pair is the other's aide."
+        },
+        "cast": [
+          {
+            "id": "B000607",
+            "name": "Frances Payne Bolton",
+            "ko": "프랜시스 페인 볼턴",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9566"
+          },
+          {
+            "id": null,
+            "name": "Oliver Payne Bolton",
+            "ko": "올리버 페인 볼턴",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9568"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "두 분이 참석하는 행사인데 소개를 한 문장으로 해야 합니다.",
+            "en": "Both of you are attending, and I need a one-sentence introduction."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "한 사람을 다른 사람의 수행원으로 소개하지는 마세요.",
+            "en": "Please don't introduce one of us as the other's attendant."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 분의 실제 관계와 공직을 함께 설명하겠습니다.",
+            "en": "I'll describe both your actual relationship and your public offices."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "좋습니다. 질의 시간도 저희 두 사람에게 각각 배정해 주세요.",
+              "en": "Good. Give each of us a separate slot for questions."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "가족이라도 각자의 선거를 통해 이 자리에 왔으니까요.",
+              "en": "Family ties do not replace our separate elections."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "올리버는 제 아들이며 1953년부터 저와 함께 오하이오 하원의원으로 재임하고 있습니다.",
+              "en": "Oliver is my son, and since 1953 we have both served Ohio in the House."
+            },
+            {
+              "speaker": "host",
+              "ko": "한 사람의 직함을 빼고 작성한 소개는 폐기하겠습니다.",
+              "en": "I'll discard the introduction that omits one person's office."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/Institution/Firsts-Milestones/Family-Firsts/",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9566",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9568",
+            "claim": "Frances and Oliver Bolton simultaneously served as Ohio House members starting January 3, 1953.",
+            "asOf": "1953-02-16"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-130-family-delegation"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-138",
+      "path": "data/dialogue-packs/P01/part-06.json",
+      "sourceBlobSha": "69b3bbeff8bab20f8a2b99df74822d2b90c72276",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "conditional",
+      "q2Recommendation": "Ask 'how House historian characterizes the new district' rather than imply every locality is suburban; central-city, rural and small-town dominant categories may overlap.",
+      "status": "CONDITIONS_ADDRESSED_PENDING_HQ",
+      "sources": [
+        "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Power-Diversity/Introduction/"
+      ],
+      "note": "No choice applied. Fresh replay and HQ required.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "윈 의원의 사례는 {{blank}}에서도 새 대표성이 형성된 것을 보여 줍니다.",
+            "en": "Wynn's election shows new representation emerging in {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "교외 지역",
+                "en": "suburban communities"
+              },
+              {
+                "id": "B",
+                "ko": "미국 해외 영토",
+                "en": "U.S. overseas territories"
+              },
+              {
+                "id": "C",
+                "ko": "연방 수도 자체",
+                "en": "the federal capital itself"
+              },
+              {
+                "id": "D",
+                "ko": "연방 상원",
+                "en": "the U.S. Senate"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "하원 역사 자료가 설명하는 윈 의원의 1992년 신설 지역구의 주된 지리적 유형은 {{blank}}입니다.",
+            "en": "The House historian characterizes Wynn's new 1992 district primarily as {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "교외 지역",
+                "en": "suburban communities"
+              },
+              {
+                "id": "B",
+                "ko": "도심 중심 지역",
+                "en": "central-city communities"
+              },
+              {
+                "id": "C",
+                "ko": "농촌 중심 지역",
+                "en": "predominantly rural communities"
+              },
+              {
+                "id": "D",
+                "ko": "소도시 중심 지역",
+                "en": "small-town communities"
+              }
+            ],
+            "correct": "A"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-138",
+        "mechanism": "community-history",
+        "learningTarget": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+        "date": "1993-03-15",
+        "venue": {
+          "ko": "메릴랜드 · 지역사회 정책 포럼",
+          "en": "Maryland · community policy forum"
+        },
+        "context": {
+          "ko": "방문객이 흑인 다수 선거구는 모두 대도시 중심부에 있다고 가정한다.",
+          "en": "A visitor assumes all majority-Black districts are urban cores."
+        },
+        "cast": [
+          {
+            "id": "W000784",
+            "name": "Albert Russell Wynn",
+            "ko": "앨버트 윈",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/24158"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "새 선거구의 대표성을 다루는 토론에 어떤 지리적 사례를 넣을까요?",
+            "en": "What geographic case should we include in a discussion of representation in new districts?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 제가 당선된 메릴랜드 지역구를 사례로 삼아 보세요.",
+            "en": "Use the Maryland district I won last year as your example."
+          },
+          {
+            "speaker": "player",
+            "ko": "선거구의 인구 구성과 지리적 유형을 구별해 설명하겠습니다.",
+            "en": "I'll distinguish the district's demographics from its geographic setting."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그렇습니다. 도심에 국한하지 않고 교외 사례도 토론에 포함합시다.",
+              "en": "Exactly. Let's include suburban cases rather than limit the discussion to city centers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다. 수도 자체를 대표하는 것은 아닙니다.",
+              "en": "My district covers Maryland suburbs near Washington; it does not represent the capital itself."
+            },
+            {
+              "speaker": "host",
+              "ko": "비교 사례를 잘못 골랐으니 토론 순서를 바꾸겠습니다.",
+              "en": "We selected the wrong comparison case, so I'll rearrange the discussion."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/24158",
+            "claim": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+            "asOf": "1993-03-15"
+          },
+          {
+            "url": "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Power-Diversity/Introduction/",
+            "claim": "Albert Wynn was elected in 1992 from a newly created predominantly Black suburban Maryland district bordering Washington, DC.",
+            "asOf": "1993-03-15"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-138-community-history"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-164",
+      "path": "data/dialogue-packs/P01/part-07.json",
+      "sourceBlobSha": "35bbcc4edee38e8c4631a0f60f589888aee18cc2",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "pass_design",
+      "q2Recommendation": "Use elected succession in same chamber vs concurrent service or appointment; change target/response only with HQ approval.",
+      "status": "DESIGN_ONLY_HQ_TARGET_APPROVAL_REQUIRED",
+      "sources": [
+        "https://history.house.gov/People/Detail/18768",
+        "https://history.house.gov/OralHistory/Detail?id=25769814264"
+      ],
+      "note": "Change of question construct requires HQ authorization; response proposal only; review followup alignment and learningTarget before applying.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "켄드릭 의원의 어머니는 {{blank}}입니다.",
+            "en": "Kendrick's mother is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "맥신 워터스",
+                "en": "Maxine Waters"
+              },
+              {
+                "id": "B",
+                "ko": "캐리 미크",
+                "en": "Carrie Meek"
+              },
+              {
+                "id": "C",
+                "ko": "에디 버니스 존슨",
+                "en": "Eddie Bernice Johnson"
+              },
+              {
+                "id": "D",
+                "ko": "셜리 치점",
+                "en": "Shirley Chisholm"
+              }
+            ],
+            "correct": "B"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2003년 켄드릭 의원이 캐리 의원의 의석을 맡게 된 방식은 {{blank}}입니다.",
+            "en": "In 2003, Kendrick succeeded Carrie through {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주지사 임명",
+                "en": "gubernatorial appointment"
+              },
+              {
+                "id": "B",
+                "ko": "정기선거를 통한 같은 원의 승계",
+                "en": "electoral succession in the same chamber"
+              },
+              {
+                "id": "C",
+                "ko": "두 사람의 동시 하원 재임",
+                "en": "concurrent House service"
+              },
+              {
+                "id": "D",
+                "ko": "상원 의석으로의 승계",
+                "en": "succession to a Senate seat"
+              }
+            ],
+            "correct": "B"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-164",
+        "mechanism": "office-handover",
+        "learningTarget": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+        "date": "2003-02-05",
+        "venue": {
+          "ko": "마이애미 민원 상담실",
+          "en": "Miami constituent service office"
+        },
+        "context": {
+          "ko": "어머니와 아들이 세대가 바뀐 의원실에서 민원 처리 경험을 나눈다.",
+          "en": "Mother and son discuss constituent service after a generational change."
+        },
+        "cast": [
+          {
+            "id": "M000628",
+            "name": "Carrie P. Meek",
+            "ko": "캐리 미크",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18110"
+          },
+          {
+            "id": "M001148",
+            "name": "Kendrick B. Meek",
+            "ko": "켄드릭 미크",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001148.jpg",
+            "source": "https://history.house.gov/People/Detail/18768"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:1",
+            "ko": "선거 이후 주민 민원을 어떻게 처리할지 조언을 듣고 있습니다.",
+            "en": "I've been seeking advice on handling constituent concerns after the election."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "먼저 어떤 문제를 해결할 수 있는지 주민에게 설명해야 합니다.",
+            "en": "Start by explaining to constituents what you can actually help resolve."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 조언을 전한 분의 의정 경험도 소개하겠습니다.",
+            "en": "I'll introduce the congressional experience of the person offering that advice."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "맞습니다. 어머니의 경험을 참고하되 제 임기의 민원은 제가 책임지겠습니다.",
+              "en": "That's right. I'll draw on my mother's experience, but take responsibility for constituent cases during my own term."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "제 어머니는 캐리 미크입니다. 2003년 제가 그 뒤를 이어 하원에 들어왔습니다.",
+              "en": "Carrie Meek is my mother. I succeeded her in the House in 2003."
+            },
+            {
+              "speaker": "player",
+              "ko": "다른 의원에게 귀속한 조언은 소개에서 빼겠습니다.",
+              "en": "I'll remove the advice I mistakenly attributed to another member."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18110",
+            "claim": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+            "asOf": "2003-02-05"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/18768",
+            "claim": "Kendrick Meek succeeded his mother Carrie in Congress in 2003 and recalled her constituent-service advice.",
+            "asOf": "2003-02-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-p01-164"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": true
+    },
+    {
+      "id": "P01-205",
+      "path": "data/dialogue-packs/P01/part-09.json",
+      "sourceBlobSha": "f8b5ecb48a1539f5a780e705bec15730699fd6ca",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "conditional",
+      "q2Recommendation": "Prompt must ask which process was decisive, not who ultimately drew boundaries. Keep no-judicial-intervention alternative; do not imply Congress drew district or that judicial action was the sole legislative step.",
+      "status": "CONDITIONS_ADDRESSED_PENDING_HQ",
+      "sources": [
+        "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Permanent-Interest/Precongressional-Experience/"
+      ],
+      "note": "No choice applied. Fresh replay and HQ required.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "스토크스의 당선 지역은 {{blank}}로 생긴 흑인 다수 선거구였습니다.",
+            "en": "Stokes won a majority-Black district created through {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "성공적인 재획정 소송",
+                "en": "a successful redistricting challenge"
+              },
+              {
+                "id": "B",
+                "ko": "상원 임명",
+                "en": "a Senate appointment"
+              },
+              {
+                "id": "C",
+                "ko": "시의회 합병",
+                "en": "a council merger"
+              },
+              {
+                "id": "D",
+                "ko": "주 승격",
+                "en": "statehood"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1968년 스토크스가 당선된 흑인 다수 선거구 형성에 결정적 계기가 된 과정은 {{blank}}입니다.",
+            "en": "The decisive process helping create the majority-Black district that elected Stokes in 1968 was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "성공적인 재획정 소송",
+                "en": "a successful redistricting challenge"
+              },
+              {
+                "id": "B",
+                "ko": "사법 개입 없이 주의회가 독자 채택한 재획정",
+                "en": "state-legislative redistricting without judicial intervention"
+              },
+              {
+                "id": "C",
+                "ko": "주 헌법 개정에 따른 재획정",
+                "en": "redistricting following a state constitutional amendment"
+              },
+              {
+                "id": "D",
+                "ko": "연방 의회의 직접 선거구 획정",
+                "en": "direct congressional drawing of the district"
+              }
+            ],
+            "correct": "A"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-205",
+        "mechanism": "legal-event",
+        "learningTarget": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+        "date": "1969-02-03",
+        "venue": {
+          "ko": "클리블랜드 시민권 자료실",
+          "en": "Cleveland civil rights records room"
+        },
+        "context": {
+          "ko": "법률가의 과거 소송 자료를 의원 당선 기록과 연결한다.",
+          "en": "A lawyer's earlier court case is connected to his election record."
+        },
+        "cast": [
+          {
+            "id": "S000948",
+            "name": "Louis Stokes",
+            "ko": "루이스 스토크스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22311"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "의원님의 법률가 경력과 1968년 선거를 하나의 발표에서 연결하려 합니다.",
+            "en": "I'd like to connect your legal career and the 1968 election in one presentation."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 사건 사이에 무엇이 바뀌었는지 정확하게 설명해 주세요.",
+            "en": "Please explain precisely what changed between those events."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "소송으로 선거구가 달라진 과정부터 설명하고, 그 뒤 실제 선거 결과를 다룹시다.",
+              "en": "Start with how litigation changed the district, then discuss the actual election result."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "오하이오 재획정에 대한 성공적인 소송이 계기였습니다. 공직 임명으로 얻은 의석이 아닙니다.",
+              "en": "A successful challenge to Ohio's redistricting was the turning point. The seat was not obtained by appointment."
+            },
+            {
+              "speaker": "player",
+              "ko": "발표에서 선거구 형성과 당선 경위를 다시 구분하겠습니다.",
+              "en": "I'll revise the presentation to distinguish district creation from election."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22311",
+            "claim": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+            "asOf": "1969-02-03"
+          },
+          {
+            "url": "https://history.house.gov/Exhibitions-and-Publications/BAIC/Historical-Essays/Permanent-Interest/Precongressional-Experience/",
+            "claim": "Louis Stokes successfully challenged Ohio's redistricting plan as a lawyer, helping create the majority-Black district that elected him in 1968.",
+            "asOf": "1969-02-03"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "P01-205-document"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-207",
+      "path": "data/dialogue-packs/P01/part-09.json",
+      "sourceBlobSha": "f8b5ecb48a1539f5a780e705bec15730699fd6ca",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "pass_design",
+      "q2Recommendation": "Contrast regular election for next term with appointment or special election; do not call succession inherited.",
+      "status": "DESIGN_ONLY_HQ_TARGET_APPROVAL_REQUIRED",
+      "sources": [
+        "https://history.house.gov/People/Detail/11766",
+        "https://history.house.gov/Oral-History/Rainey/Representative-Clay-Sr/"
+      ],
+      "note": "Change of question construct requires HQ authorization; response proposal only; review followup alignment and learningTarget before applying.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "2001년 미주리 의석을 승계한 사람은 {{blank}}입니다.",
+            "en": "The person who succeeded to the Missouri seat in 2001 was {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "찰스 딕스",
+                "en": "Charles Diggs"
+              },
+              {
+                "id": "B",
+                "ko": "루이스 스토크스",
+                "en": "Louis Stokes"
+              },
+              {
+                "id": "C",
+                "ko": "윌리엄 레이시 클레이 주니어",
+                "en": "William Lacy Clay Jr."
+              },
+              {
+                "id": "D",
+                "ko": "윌리엄 레이시 클레이 시니어",
+                "en": "William Lacy Clay Sr."
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "2001년 윌리엄 레이시 클레이 주니어가 아버지의 의석을 맡은 과정은 {{blank}}입니다.",
+            "en": "William Lacy Clay Jr. succeeded his father in 2001 through {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주지사 임명",
+                "en": "gubernatorial appointment"
+              },
+              {
+                "id": "B",
+                "ko": "임기 중 공석을 채우는 특별선거",
+                "en": "a special election filling a midterm vacancy"
+              },
+              {
+                "id": "C",
+                "ko": "2000년 정기선거 당선",
+                "en": "victory in the 2000 regular election"
+              },
+              {
+                "id": "D",
+                "ko": "가족 관계에 따른 자동 승계",
+                "en": "automatic succession by family relationship"
+              }
+            ],
+            "correct": "C"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-207",
+        "mechanism": "family-delegation",
+        "learningTarget": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+        "date": "2001-02-05",
+        "venue": {
+          "ko": "미주리 대표단 방문",
+          "en": "Missouri delegation visit"
+        },
+        "context": {
+          "ko": "같은 성명을 가진 두 세대의 기록을 정확히 나눈다.",
+          "en": "Separate the records of two generations sharing a name."
+        },
+        "cast": [
+          {
+            "id": "C000488",
+            "name": "William Lacy Clay Sr.",
+            "ko": "윌리엄 레이시 클레이 시니어",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11058"
+          },
+          {
+            "id": "C001049",
+            "name": "William Lacy Clay Jr.",
+            "ko": "윌리엄 레이시 클레이 주니어",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001049.jpg",
+            "source": "https://history.house.gov/People/Detail/11766"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "미주리의 이전 의석 담당자에게 보내던 주민 질의가 아직 남아 있습니다.",
+            "en": "A constituent inquiry addressed to the former holder of the Missouri seat is still outstanding."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "이전 의정 기록과 현재 담당자를 구별하는 것이 중요합니다.",
+            "en": "It's important to distinguish the previous congressional record from the current officeholder."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2001년의 실제 승계 기록을 기준으로 전달해 주세요.",
+            "en": "Route it using the actual 2001 succession record."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "제가 현재 질의를 맡겠습니다. 이전 임기의 사례는 아버지의 기록으로 남겨 주세요.",
+              "en": "I'll take the current inquiry. Keep cases from the earlier term under my father's record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 2001년에 물러났고 주니어가 그 뒤를 이었습니다.",
+              "en": "I left the House in 2001, and Junior succeeded me."
+            },
+            {
+              "speaker": "player",
+              "ko": "전임자에게 보내려던 질의를 회수해 현직 사무실로 돌리겠습니다.",
+              "en": "I'll retrieve the inquiry meant for the former member and redirect it to the incumbent's office."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11058",
+            "claim": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+            "asOf": "2001-02-05"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/11766",
+            "claim": "William Lacy Clay Jr. succeeded his father William Lacy Clay Sr. in Congress in 2001.",
+            "asOf": "2001-02-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "P01-207-revisit"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": true
+    },
+    {
+      "id": "P01-1324",
+      "path": "data/dialogue-packs/P01/part-53.json",
+      "sourceBlobSha": "8f03f3ef5724031a37d1fa0505d6a419bd205ad9",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "hold",
+      "q2Recommendation": "Executive-department counsel and generic policy staff/researcher may overlap unverified actual work. Specify named program/role and era; no three-choice approval without independent personnel history.",
+      "status": "HOLD_HISTORY",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+      ],
+      "note": "No choice applied. Fresh replay and HQ required.",
+      "changes": [],
+      "protectedFields": {
+        "id": "P01-1324",
+        "mechanism": "public-service-fellowship",
+        "learningTarget": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+        "date": "2022-12-06",
+        "venue": {
+          "ko": "산타페 청년 공직 멘토링",
+          "en": "Santa Fe public service mentoring"
+        },
+        "context": {
+          "ko": "공식 기록에 근거한 가상의 대화입니다.",
+          "en": "A fictional conversation grounded in official records."
+        },
+        "cast": [
+          {
+            "id": "L000273",
+            "name": "Teresa Leger Fernandez",
+            "ko": "테레사 레헤르 페르난데스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000273.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000273"
+          },
+          {
+            "id": "S001218",
+            "name": "Melanie Stansbury",
+            "ko": "멜러니 스탠즈베리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001218.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001218"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "학생 진로 행사에서 두 분의 선거 이전 공직 경험을 비교하고 싶습니다.",
+            "en": "I'd like to compare your pre-election public-service experience at a student career event."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제 경우 클린턴 행정부 시기의 경험을 소개해 주세요.",
+            "en": "In my case, please describe my experience during the Clinton administration."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 예산관리국 경력은 별도의 진로 사례로 다루면 좋겠습니다.",
+            "en": "My Office of Management and Budget experience would make a separate career example."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그 프로그램을 학생들에게 소개해 주세요. 선출직 경력과는 구분해서요.",
+              "en": "Introduce that fellowship program to the students, separately from elected office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 클린턴 행정부 당시 백악관 펠로였습니다. 비서실장이나 선출직은 아니었습니다.",
+              "en": "I was a White House fellow during the Clinton administration, not chief of staff or an elected official."
+            },
+            {
+              "speaker": "player",
+              "ko": "권한이 다른 직책을 같은 경력으로 소개한 부분을 삭제하겠습니다.",
+              "en": "I'll remove the part that conflates roles with different authority."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm",
+            "claim": "Leger Fernandez White House fellow during Clinton administration; Stansbury worked at OMB 2011–2015.",
+            "asOf": "2022-12-06"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1324-public-service-fellowship"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-1214",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "sourceBlobSha": "2fc7f4dda1a42f0b7b8576ea707b029d17cd0075",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "reject_as_written",
+      "q2Recommendation": "City manager anachronistic for 1939; council-member terminology inappropriate for commission system. Replace distractors with distinct contemporaneous commission portfolios only after verifying 1939 titles.",
+      "status": "REVISED_REJECTED_DRAFT_PENDING_HQ",
+      "sources": [
+        "https://www.sa.gov/Directory/Departments/OCC/Archives-Records/History/Elected-Officials",
+        "https://www.sa.gov/Directory/Departments/CAO/City-Charter",
+        "https://www.sa.gov/files/assets/main/v/1/occ/documents/municipal-archives-records/finding-aids/city-san-antonio-election-results-1856-2021.pdf"
+      ],
+      "note": "1939 May 10 ordinance OI-379, printed page 19, identifies mayor and contemporaneous commissioner portfolios; indexed text verified, screenshot attempt 403. Prior city-manager/council-member draft withdrawn.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "1939년 매버릭이 맡은 직책은 샌안토니오 {{blank}}입니다.",
+            "en": "In 1939 Maverick became San Antonio's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "주지사",
+                "en": "governor"
+              },
+              {
+                "id": "B",
+                "ko": "카운티 보안관",
+                "en": "county sheriff"
+              },
+              {
+                "id": "C",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "D",
+                "ko": "연방 상원의원",
+                "en": "U.S. senator"
+              }
+            ],
+            "correct": "C"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "1939년 매버릭이 맡은 직책은 샌안토니오 {{blank}}입니다.",
+            "en": "In 1939 Maverick became San Antonio's {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "조세 담당 시 위원",
+                "en": "commissioner of taxation"
+              },
+              {
+                "id": "B",
+                "ko": "도로 및 공공개선 담당 시 위원",
+                "en": "commissioner of streets and public improvements"
+              },
+              {
+                "id": "C",
+                "ko": "시장",
+                "en": "mayor"
+              },
+              {
+                "id": "D",
+                "ko": "소방 및 경찰 담당 시 위원",
+                "en": "commissioner of fire and police"
+              }
+            ],
+            "correct": "C"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1214",
+        "mechanism": "municipal-return",
+        "learningTarget": "After losing renomination in 1938, Maverick became San Antonio mayor in 1939.",
+        "date": "1940-04-12",
+        "venue": {
+          "ko": "샌안토니오 시청 재회",
+          "en": "San Antonio city hall reunion"
+        },
+        "context": {
+          "ko": "샌안토니오 시청 재회",
+          "en": "San Antonio city hall reunion"
+        },
+        "cast": [
+          {
+            "id": "M000263",
+            "name": "Fontaine Maury Maverick",
+            "ko": "모리 매버릭",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/17648"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "워싱턴에서 뵙던 분들을 이제 시청에서 만나는군요.",
+            "en": "I meet people from Washington now at city hall."
+          },
+          {
+            "speaker": "player",
+            "ko": "연방의원과 도시 행정의 권한은 구분하겠습니다.",
+            "en": "I'll distinguish congressional and municipal responsibilities."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시장으로서 받을 시정 문의부터 처리합시다. 과거 연방 의원의 권한으로 답할 수는 없습니다.",
+              "en": "Let's first take municipal inquiries in my role as mayor. I cannot answer them with my former congressional authority."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1939년 샌안토니오 시장이 됐습니다. 다른 정부 기관에 보내려던 주민을 시청의 해당 절차로 안내해 주세요.",
+              "en": "I became mayor of San Antonio in 1939. Redirect the visitor from the wrong government institution to the appropriate city procedure."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/17648",
+            "claim": "After losing renomination in 1938, Maverick became San Antonio mayor in 1939.",
+            "asOf": "1940-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1214-municipal-return"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-1422",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "sourceBlobSha": "28863cbc411acffa2d9eb78e9bf12196c0a8249f",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "pass_design",
+      "q2Recommendation": "Remove direct answer giveaway in opening. Do not invent other health administration positions; retain current choices pending historically specific distractors.",
+      "status": "KEEP_CHOICES_PENDING_OPENING_REVIEW",
+      "sources": [
+        "https://history.house.gov/People/Detail/18227"
+      ],
+      "note": "No verified new distractors; opening improvement belongs to dialogue workflow, not choices.",
+      "changes": [],
+      "protectedFields": {
+        "id": "P01-1422",
+        "mechanism": "rural-health",
+        "learningTarget": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+        "date": "1943-04-12",
+        "venue": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "context": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "cast": [
+          {
+            "id": "M000715",
+            "name": "Arthur Lewis Miller",
+            "ko": "아서 루이스 밀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18227"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농촌의 의료 문제를 주정부에서 다루다가 의회에 왔습니다.",
+            "en": "I came to Congress after working on health in state government."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 주정부 직책을 확인하겠습니다.",
+            "en": "I'll identify the earlier state office."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네브래스카 주 보건 책임자 경험을 토대로 농촌 의료 방문단의 질문을 받겠습니다.",
+              "en": "I'll take questions from the rural health delegation based on my experience as Nebraska's state health director."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1941~1942년 주 보건 책임자였습니다. 다른 주정부 부처의 권한을 전제로 작성한 질문은 바꾸세요.",
+              "en": "I was state health director in 1941–1942. Replace questions premised on another state department's authority."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18227",
+            "claim": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+            "asOf": "1943-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1422-rural-health"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": false
+    },
+    {
+      "id": "P01-1412",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "sourceBlobSha": "28863cbc411acffa2d9eb78e9bf12196c0a8249f",
+      "sourceRef": "hq-i1-pilot-integration",
+      "q2Status": "pass_design",
+      "q2Recommendation": "Paired assignment question is supported. Pittenger born on Indiana farm, so specify occupational activity near Tyler not generic farm origin. HQ approves response rewrite.",
+      "status": "DESIGN_ONLY_HQ_TARGET_APPROVAL_REQUIRED",
+      "sources": [
+        "https://history.house.gov/People/Detail/8507",
+        "https://history.house.gov/People/Detail/19739"
+      ],
+      "note": "Change of question construct requires HQ authorization; response proposal only; review followup alignment and learningTarget before applying.",
+      "changes": [
+        {
+          "field": "response",
+          "before": {
+            "speaker": "player",
+            "ko": "타일러 농가와 연결된 의원은 {{blank}}입니다.",
+            "en": "The member with farm ties near Tyler is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "앤더슨",
+                "en": "Andersen"
+              },
+              {
+                "id": "B",
+                "ko": "피텐저",
+                "en": "Pittenger"
+              },
+              {
+                "id": "C",
+                "ko": "런딘",
+                "en": "Lundeen"
+              },
+              {
+                "id": "D",
+                "ko": "크발레",
+                "en": "Kvale"
+              }
+            ],
+            "correct": "A"
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "두 의원의 의회 입성 전 직업과 지역을 올바르게 연결한 것은 {{blank}}입니다.",
+            "en": "The correct pairing of pre-congressional occupations and locations is {{blank}}.",
+            "choices": [
+              {
+                "id": "A",
+                "ko": "앤더슨: 타일러 인근 농업 / 피텐저: 덜루스 법률 실무",
+                "en": "Andersen: farming near Tyler / Pittenger: legal practice in Duluth"
+              },
+              {
+                "id": "B",
+                "ko": "피텐저: 타일러 인근 농업 / 앤더슨: 덜루스 법률 실무",
+                "en": "Pittenger: farming near Tyler / Andersen: legal practice in Duluth"
+              },
+              {
+                "id": "C",
+                "ko": "두 사람 모두 타일러 인근 농업",
+                "en": "both farmed near Tyler"
+              },
+              {
+                "id": "D",
+                "ko": "두 사람 모두 덜루스 법률 실무",
+                "en": "both practiced law in Duluth"
+              }
+            ],
+            "correct": "A"
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1412",
+        "mechanism": "farm-city-contrast",
+        "learningTarget": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+        "date": "1939-05-12",
+        "venue": {
+          "ko": "미네소타 농촌·도시 간담회",
+          "en": "Minnesota rural and city meeting"
+        },
+        "context": {
+          "ko": "미네소타 농촌·도시 간담회",
+          "en": "Minnesota rural and city meeting"
+        },
+        "cast": [
+          {
+            "id": "A000179",
+            "name": "Herman Carl Andersen",
+            "ko": "허먼 칼 앤더슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8507"
+          },
+          {
+            "id": "P000371",
+            "name": "William Alvin Pittenger",
+            "ko": "윌리엄 피텐저",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19739"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "두 방문단에게 의원들의 이전 직업 경험에 맞춰 질문을 배정하려 합니다.",
+            "en": "I'd like to assign the delegations' questions according to the members' prior careers."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 지역의 경력을 혼동하지 말아 주세요.",
+            "en": "Please don't confuse our experiences in the two communities."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "어느 의원의 경험을 먼저 듣는지 결정해 주세요.",
+            "en": "Decide whose experience you want to hear first."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "타일러 인근 농가에서의 경험을 바탕으로 먼저 질문을 받겠습니다. 둘루스 법률 문제는 피텐저 의원이 답할 수 있습니다.",
+              "en": "I'll take questions first based on my farming experience near Tyler. Representative Pittenger can answer questions about his Duluth legal experience."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "타일러 인근에서 농업에 종사한 사람은 저입니다. 두 의원의 직업 경험에 맞게 질문을 다시 배정하세요.",
+              "en": "I'm the one who farmed near Tyler. Reassign the questions according to our respective career experiences."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8507",
+            "claim": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+            "asOf": "1939-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/19739",
+            "claim": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+            "asOf": "1939-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1412-farm-city-contrast"
+        },
+        "fictional": true
+      },
+      "correctIdUnchanged": true,
+      "correctChoiceChanged": true
+    }
+  ],
+  "limitations": "Separate response proposals only; no source change; 1324 remains on hold; 1422 retain choices; design changes require HQ and followup alignment."
+}

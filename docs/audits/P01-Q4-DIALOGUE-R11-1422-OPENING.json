@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "round": 11,
+  "rows": [
+    {
+      "id": "P01-1422",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "28863cbc411acffa2d9eb78e9bf12196c0a8249f",
+      "sourceCommit": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+      "priorPatch": {
+        "path": "docs/audits/P01-Q4-DIALOGUE-R9-EDITORIAL-E.json",
+        "sha": "dd8e7337d305e813c2c300edd84652bf9e33b1ef"
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "농촌의 의료 문제를 주정부에서 다루다가 의회에 왔습니다.",
+              "en": "I came to Congress after working on health in state government."
+            },
+            {
+              "speaker": "player",
+              "ko": "이전 주정부 직책을 확인하겠습니다.",
+              "en": "I'll identify the earlier state office."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "연방의회 이전에는 네브래스카 주정부에서 일했습니다.",
+              "en": "Before Congress I served in Nebraska's state government."
+            },
+            {
+              "speaker": "player",
+              "ko": "당시 직책과 연방의원으로서의 책임을 구분해 소개하겠습니다.",
+              "en": "I'll distinguish your earlier state office from your responsibilities in Congress."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "네브래스카 주 보건 책임자 경험을 토대로 농촌 의료 방문단의 질문을 받겠습니다.",
+                "en": "I'll take questions from the rural health delegation based on my experience as Nebraska's state health director."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1941~1942년 주 보건 책임자였습니다. 다른 주정부 부처의 권한을 전제로 작성한 질문은 바꾸세요.",
+                "en": "I was state health director in 1941–1942. Replace questions premised on another state department's authority."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "네브래스카 주 보건 책임자 경험을 토대로 농촌 의료 방문단의 질문을 받겠습니다.",
+                "en": "I'll take questions from the rural health delegation based on my experience as Nebraska's state health director."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1941~1942년 주 보건 책임자였습니다. 다른 주정부 부처의 권한을 전제로 작성한 질문은 바꾸세요.",
+                "en": "I was state health director in 1941–1942. Replace questions premised on another state department's authority."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1422",
+        "mechanism": "rural-health",
+        "learningTarget": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+        "date": "1943-04-12",
+        "venue": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "context": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "cast": [
+          {
+            "id": "M000715",
+            "name": "Arthur Lewis Miller",
+            "ko": "아서 루이스 밀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18227"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1941~1942년 밀러의 직책은 주 {{blank}}였습니다.",
+          "en": "In 1941–1942 Miller served as state {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업 장관",
+              "en": "agriculture secretary"
+            },
+            {
+              "id": "B",
+              "ko": "법무장관",
+              "en": "attorney general"
+            },
+            {
+              "id": "C",
+              "ko": "보건 책임자",
+              "en": "health director"
+            },
+            {
+              "id": "D",
+              "ko": "교육감",
+              "en": "school superintendent"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18227",
+            "claim": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+            "asOf": "1943-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1422-rural-health"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_pending_I1_HQ",
+      "note": "Q2-C distractor handoff: remove direct health domain answer cue; retain all response choices and correct ID. Include R9 followup in cumulative active proposal."
+    }
+  ]
+}
