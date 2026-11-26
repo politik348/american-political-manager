@@ -1304,8 +1304,8 @@
         "en": "Connecticut policy lunch"
       },
       "context": {
-        "ko": "코네티컷 의원 두 명이 주내 서로 다른 지역의 정책 현안을 비교한다.",
-        "en": "Two Connecticut representatives compare policy issues in different parts of their state."
+        "ko": "공동 주민 접견에서 한 주의 두 지역구 요청을 분리한다.",
+        "en": "A joint constituent meeting separates requests from two districts in one state."
       },
       "cast": [
         {
@@ -1326,13 +1326,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "제 지역구는 코네티컷 2구입니다. 동부 지역의 대표이죠.",
-          "en": "My seat is Connecticut's Second, in the east."
+          "ko": "제2선거구 주민의 요청부터 받겠습니다.",
+          "en": "I'll take requests from the Second District first."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 하트퍼드 중심의 1구입니다.",
-          "en": "I represent the First, centered on Hartford."
+          "ko": "제1선거구의 요청은 제게 주세요. 같은 주라도 담당 의원은 다릅니다.",
+          "en": "I'll take the First District requests. The same state can have different representatives."
+        },
+        {
+          "speaker": "host",
+          "ko": "주 단위 공동 회의 제목은 무엇으로 붙일까요?",
+          "en": "What state should we put on the joint meeting agenda?"
         }
       ],
       "response": {
@@ -1366,16 +1371,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "같은 주의 서로 다른 지역 현안을 비교하죠.",
-            "en": "Let's compare different regional issues within the state."
+            "speaker": "npc:1",
+            "ko": "코네티컷입니다. 이제 두 지역구의 주소를 확인하고 각각 접견 시간을 배정합시다.",
+            "en": "Connecticut. Now check addresses and assign separate meeting slots."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "코네티컷입니다. 두 의석은 별개입니다.",
-            "en": "Connecticut. These are separate seats."
+            "ko": "두 사람 모두 코네티컷 의원입니다. 저는 CT-2, 라슨 의원은 CT-1입니다.",
+            "en": "We're both Connecticut members: I'm CT-2 and Larson is CT-1."
           }
         ]
       },
@@ -1915,8 +1920,8 @@
         "en": "Congressional technology reform workshop"
       },
       "context": {
-        "ko": "기술정책을 이야기했던 델베네와 다시 만나 의회 운영 개혁을 논의한다.",
-        "en": "A reunion with DelBene after a technology discussion turns to congressional modernization."
+        "ko": "의원실의 오래된 업무 절차를 개선할 제도적 경로를 찾는다.",
+        "en": "Identify an institutional route for improving outdated House office processes."
       },
       "cast": [
         {
@@ -1929,14 +1934,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "의회 자체의 인력, 절차, 기술을 개선하는 초당적 특별위원회에 1월 29일 임명되었습니다.",
-          "en": "On January 29 I was appointed to a bipartisan select committee examining improvements to congressional staffing, procedure and technology."
+          "speaker": "host",
+          "ko": "신입 직원이 복잡한 업무 절차와 오래된 기술 때문에 어려움을 겪습니다.",
+          "en": "New staff are struggling with cumbersome procedures and outdated technology."
         },
         {
-          "speaker": "player",
-          "ko": "일반 산업정책 위원회가 아니라 의회 운영 개선을 위한 위원회를 찾겠습니다.",
-          "en": "I'll identify the committee concerned with improving Congress itself rather than regulating an industry."
+          "speaker": "npc:0",
+          "ko": "1월 29일 제가 임명된 초당적 특별위원회를 찾아 보세요. 농업이나 법원 문제를 다루는 상임위원회와는 다릅니다.",
+          "en": "Find the bipartisan select committee I joined on January 29. It is distinct from standing committees dealing with agriculture or courts."
         }
       ],
       "response": {
@@ -1970,16 +1975,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "의회 현대화 특별위원회의 제도 개선 업무를 기록하겠습니다.",
-            "en": "I'll record the institutional reform work of the Select Committee on the Modernization of Congress."
+            "speaker": "npc:0",
+            "ko": "의회 현대화입니다. 문제를 의회 내부 운영의 개선 과제로 정리해 보죠.",
+            "en": "Modernization of Congress. Frame the issue as improving how Congress itself works."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "의회 현대화 특별위원회입니다. 2019년 1월 임명됐습니다.",
-            "en": "The Select Committee on the Modernization of Congress. I was appointed in January 2019."
+            "ko": "제가 임명된 곳은 의회 현대화 특별위원회입니다. 법률의 실체적 정책보다 의회 운영 자체를 살피는 맥락입니다.",
+            "en": "I was appointed to the Select Committee on the Modernization of Congress. The focus here is Congress's own operations."
           }
         ]
       },
@@ -2097,8 +2102,8 @@
         "en": "Kentucky student discussion"
       },
       "context": {
-        "ko": "제조업 세미나에서 만났던 거스리가 주 상원 경력을 이어서 이야기한다.",
-        "en": "Guthrie follows up on a manufacturing seminar by discussing his state Senate career."
+        "ko": "켄터키 주 의회 기록과 연방 의회 기록을 비교한다.",
+        "en": "Compare Kentucky state legislative records with federal congressional records."
       },
       "cast": [
         {
@@ -2111,14 +2116,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "제조업에 관한 지난 이야기를 기억하나요? 주 입법부에서도 일했습니다.",
-          "en": "Remember our manufacturing discussion? I also served in the state legislature."
+          "speaker": "host",
+          "ko": "두 선거 기록에 숫자만 남아 있어 주민이 같은 의석으로 오해합니다.",
+          "en": "A resident thinks two numbered election records refer to the same seat."
         },
         {
-          "speaker": "player",
-          "ko": "지역 경제와 주 정책의 연결을 토론하고 싶습니다.",
-          "en": "I'd like to discuss the link between local industry and state policy."
+          "speaker": "npc:0",
+          "ko": "제 연방 하원 기록과 이전 켄터키 주 상원 기록을 분리해 주세요.",
+          "en": "Separate my federal House record from my earlier Kentucky Senate record."
         }
       ],
       "response": {
@@ -2153,15 +2158,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "연방 하원 번호와 주 상원 번호를 구별합시다.",
-            "en": "Distinguish federal House and state Senate numbers."
+            "ko": "32구입니다. 주 상원 번호와 연방 하원 번호를 같은 것으로 처리하지 마세요.",
+            "en": "District 32. Do not treat state Senate and federal House district numbers as interchangeable."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주 상원 32구였습니다. 연방 하원에서는 켄터키 2구입니다.",
-            "en": "State Senate District 32. In Congress I represent KY-2."
+            "ko": "켄터키 주 상원 제32선거구였습니다. 연방 의석을 찾을 때는 별도의 명부를 확인해야 합니다.",
+            "en": "It was Kentucky Senate District 32. Use a separate directory for the federal seat."
           }
         ]
       },

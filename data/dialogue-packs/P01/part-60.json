@@ -962,24 +962,24 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "퇴역군인이 양원 중 어디에서 보훈 문제를 다루는지 묻습니다.",
-          "en": "A veteran asks where veterans' policy is handled in Congress."
+          "ko": "퇴역군인 대표단이 동일한 보훈법안의 심의 상황을 두 곳에서 확인하려 합니다.",
+          "en": "A veterans' delegation wants to track the same bill at two points in Congress."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 하원 보훈위원회 위원이었지만, 7월 20일 위원직에서 물러났습니다.",
-          "en": "I served on House Veterans' Affairs, but resigned from the committee on July 20."
+          "ko": "저는 여전히 하원의원이지만 지난 7월 보훈위원회에서 사임했습니다. 제 이전 위원회 기록과 모런 의원의 현직 기록을 구분하세요.",
+          "en": "I am still a House member, but I resigned from Veterans' Affairs in July. Distinguish my former committee service from Senator Moran's current role."
         },
         {
           "speaker": "npc:1",
-          "ko": "상원의 보훈위원회는 제가 위원장을 맡고 있지요.",
-          "en": "I chair Senate Veterans' Affairs."
+          "ko": "우선 두 위원회가 같은 입법 기관 안에 있는지 구분해 주세요.",
+          "en": "First determine whether the two committees belong to the same legislative chamber."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "두 위원회는 {{blank}}에 속합니다.",
-        "en": "The two committees belong to {{blank}}.",
+        "ko": "두 보훈위원회는 {{blank}}에 속합니다.",
+        "en": "The two veterans' committees belong to {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1007,16 +1007,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "법안이 양원에서 어떻게 심의되는지 다음에 살펴보죠.",
-            "en": "Next we'll examine how legislation is considered by both chambers."
+            "speaker": "npc:1",
+            "ko": "각 원의 심의 경로를 따로 추적하세요. 왓킨스 의원은 현직 하원의원이지만 전직 보훈위원이라는 점도 구분하세요.",
+            "en": "Track each chamber's proceedings separately. Representative Watkins remains a House member but is a former Veterans' Affairs committee member."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "왓킨스는 전 하원 보훈위원회 위원이고, 모런은 현 상원 보훈위원장입니다.",
-            "en": "Watkins formerly served on the House committee; Moran chairs the Senate committee."
+            "speaker": "npc:0",
+            "ko": "제 기록은 하원 보훈위원회이고 모런 의원은 상원 보훈위원회를 이끌고 있습니다. 하나의 위원회가 아닙니다.",
+            "en": "My record is with House Veterans' Affairs; Senator Moran chairs Senate Veterans' Affairs. They are not one committee."
           }
         ]
       },
