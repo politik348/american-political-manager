@@ -433,19 +433,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "변호사로 일할 때 찰스 루커스와 함께 오하이오 지도를 문제 삼았습니다.",
-          "en": "As a lawyer, I joined Charles Lucas in challenging Ohio's map."
-        },
-        {
           "speaker": "player",
-          "ko": "그 소송이 선거구 변화로 이어졌군요.",
-          "en": "That lawsuit led to a change in the district arrangement."
+          "ko": "의원님의 법률가 경력과 1968년 선거를 하나의 발표에서 연결하려 합니다.",
+          "en": "I'd like to connect your legal career and the 1968 election in one presentation."
         },
         {
           "speaker": "npc:0",
-          "ko": "제가 당선된 1968년의 지역구가 어떻게 생겼는지 기억해 주세요.",
-          "en": "Remember how the district that elected me in 1968 came into being."
+          "ko": "두 사건 사이에 무엇이 바뀌었는지 정확하게 설명해 주세요.",
+          "en": "Please explain precisely what changed between those events."
         }
       ],
       "response": {
@@ -480,15 +475,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "법률가와 의원 시절을 같은 인물 기록으로 이어 주세요.",
-            "en": "Link my legal and congressional careers."
+            "ko": "소송으로 선거구가 달라진 과정부터 설명하고, 그 뒤 실제 선거 결과를 다룹시다.",
+            "en": "Start with how litigation changed the district, then discuss the actual election result."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 지도에 대한 소송이 성공한 결과입니다.",
-            "en": "It resulted from a successful challenge to Ohio's map."
+            "ko": "오하이오 재획정에 대한 성공적인 소송이 계기였습니다. 공직 임명으로 얻은 의석이 아닙니다.",
+            "en": "A successful challenge to Ohio's redistricting was the turning point. The seat was not obtained by appointment."
+          },
+          {
+            "speaker": "player",
+            "ko": "발표에서 선거구 형성과 당선 경위를 다시 구분하겠습니다.",
+            "en": "I'll revise the presentation to distinguish district creation from election."
           }
         ]
       },
@@ -637,19 +637,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "미주리의 이전 의석 담당자에게 보내던 주민 질의가 아직 남아 있습니다.",
+          "en": "A constituent inquiry addressed to the former holder of the Missouri seat is still outstanding."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "오래 맡았던 의석을 이제 아들이 맡았습니다.",
-          "en": "My son now holds the seat I held for many years."
+          "ko": "이전 의정 기록과 현재 담당자를 구별하는 것이 중요합니다.",
+          "en": "It's important to distinguish the previous congressional record from the current officeholder."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 임기는 지난달부터입니다. 아버지의 의정 기록과는 구분해 주세요.",
-          "en": "My term began last month. Keep it distinct from my father's record."
-        },
-        {
-          "speaker": "player",
-          "ko": "옛 연락 기록을 버리지 않고 두 인물의 관계를 표시하겠습니다.",
-          "en": "I'll retain the old contact and show the relationship between the two people."
+          "ko": "2001년의 실제 승계 기록을 기준으로 전달해 주세요.",
+          "en": "Route it using the actual 2001 succession record."
         }
       ],
       "response": {
@@ -683,16 +683,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "그렇게 두 임기를 나눠 두면 혼동이 없겠지요.",
-            "en": "That distinction prevents confusion."
+            "speaker": "npc:1",
+            "ko": "제가 현재 질의를 맡겠습니다. 이전 임기의 사례는 아버지의 기록으로 남겨 주세요.",
+            "en": "I'll take the current inquiry. Keep cases from the earlier term under my father's record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "주니어입니다. 저는 2001년에 물러났습니다.",
-            "en": "Junior. I left the House in 2001."
+            "ko": "저는 2001년에 물러났고 주니어가 그 뒤를 이었습니다.",
+            "en": "I left the House in 2001, and Junior succeeded me."
+          },
+          {
+            "speaker": "player",
+            "ko": "전임자에게 보내려던 질의를 회수해 현직 사무실로 돌리겠습니다.",
+            "en": "I'll retrieve the inquiry meant for the former member and redirect it to the incumbent's office."
           }
         ]
       },

@@ -477,19 +477,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:1",
-          "ko": "오늘은 어머니와 같은 주 대표단으로 이 자리에 왔습니다.",
-          "en": "Today I'm here with my mother as part of the same state delegation."
+          "speaker": "host",
+          "ko": "두 분이 참석하는 행사인데 소개를 한 문장으로 해야 합니다.",
+          "en": "Both of you are attending, and I need a one-sentence introduction."
         },
         {
           "speaker": "npc:0",
-          "ko": "각자 선거를 통해 하원에 왔으니 한 사람의 수행원으로 소개하면 안 되겠지요.",
-          "en": "Each of us was elected to the House, so neither should be introduced as the other's attendant."
+          "ko": "한 사람을 다른 사람의 수행원으로 소개하지는 마세요.",
+          "en": "Please don't introduce one of us as the other's attendant."
         },
         {
-          "speaker": "host",
-          "ko": "두 분을 함께 모시는 이유를 어떻게 설명하면 될까요?",
-          "en": "How should I explain why you're both here?"
+          "speaker": "player",
+          "ko": "두 분의 실제 관계와 공직을 함께 설명하겠습니다.",
+          "en": "I'll describe both your actual relationship and your public offices."
         }
       ],
       "response": {
@@ -524,15 +524,25 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "대표단 연락처도 각각 두시면 되겠습니다.",
-            "en": "Keep separate contacts for us in the delegation."
+            "ko": "좋습니다. 질의 시간도 저희 두 사람에게 각각 배정해 주세요.",
+            "en": "Good. Give each of us a separate slot for questions."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "가족이라도 각자의 선거를 통해 이 자리에 왔으니까요.",
+            "en": "Family ties do not replace our separate elections."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1953년부터 저와 아들 올리버 모두 오하이오 하원의원입니다.",
-            "en": "Since January 1953, Oliver and I have both served Ohio in the House."
+            "ko": "올리버는 제 아들이며 1953년부터 저와 함께 오하이오 하원의원으로 재임하고 있습니다.",
+            "en": "Oliver is my son, and since 1953 we have both served Ohio in the House."
+          },
+          {
+            "speaker": "host",
+            "ko": "한 사람의 직함을 빼고 작성한 소개는 폐기하겠습니다.",
+            "en": "I'll discard the introduction that omits one person's office."
           }
         ]
       },
@@ -1317,18 +1327,18 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "새 흑인 다수 선거구들은 모두 도심에 생긴 건가요?",
-          "en": "Were all the new majority-Black districts created in city centers?"
+          "ko": "새 선거구의 대표성을 다루는 토론에 어떤 지리적 사례를 넣을까요?",
+          "en": "What geographic case should we include in a discussion of representation in new districts?"
         },
         {
           "speaker": "npc:0",
-          "ko": "제가 지난해 당선된 메릴랜드 지역구는 워싱턴 D.C. 주변의 교외를 포함합니다.",
-          "en": "The Maryland district I won last year includes suburban communities outside Washington, DC."
+          "ko": "지난해 제가 당선된 메릴랜드 지역구를 사례로 삼아 보세요.",
+          "en": "Use the Maryland district I won last year as your example."
         },
         {
           "speaker": "player",
-          "ko": "도시 중심부만 보면 대표성 변화를 놓치겠군요.",
-          "en": "Looking only at urban centers would miss some changes in representation."
+          "ko": "선거구의 인구 구성과 지리적 유형을 구별해 설명하겠습니다.",
+          "en": "I'll distinguish the district's demographics from its geographic setting."
         }
       ],
       "response": {
@@ -1362,16 +1372,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "도심과 교외를 비교하는 후속 자료를 준비하겠습니다.",
-            "en": "I'll prepare a follow-up comparing city centers and suburbs."
+            "speaker": "npc:0",
+            "ko": "그렇습니다. 도심에 국한하지 않고 교외 사례도 토론에 포함합시다.",
+            "en": "Exactly. Let's include suburban cases rather than limit the discussion to city centers."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다.",
-            "en": "My district covers Maryland suburbs near Washington."
+            "ko": "제 지역구는 메릴랜드의 워싱턴 인접 교외 지역입니다. 수도 자체를 대표하는 것은 아닙니다.",
+            "en": "My district covers Maryland suburbs near Washington; it does not represent the capital itself."
+          },
+          {
+            "speaker": "host",
+            "ko": "비교 사례를 잘못 골랐으니 토론 순서를 바꾸겠습니다.",
+            "en": "We selected the wrong comparison case, so I'll rearrange the discussion."
           }
         ]
       },

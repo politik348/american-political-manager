@@ -1581,13 +1581,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "카터 의원도 툴레어 카운티에 연고가 있습니다.",
-          "en": "Mr. Carter also has ties to Tulare County."
+          "ko": "카터 의원과 제 전기를 나란히 전시하려는데 출생지와 지방 공직이 혼동되기 쉽습니다.",
+          "en": "We're exhibiting Mr. Carter's biography alongside mine, and birthplace can easily be confused with local office."
         },
         {
           "speaker": "npc:1",
-          "ko": "하지만 지방 공직은 오클랜드에서 맡았습니다.",
-          "en": "My local office was in Oakland."
+          "ko": "제 지방 공직은 오클랜드에서 맡았습니다. 출생지는 다른 항목으로 표시해 주세요.",
+          "en": "My local office was in Oakland. Please label my birthplace separately."
+        },
+        {
+          "speaker": "player",
+          "ko": "레먼코브가 속한 카운티부터 확인하겠습니다.",
+          "en": "I'll identify the county containing Lemoncove first."
         }
       ],
       "response": {
@@ -1622,20 +1627,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "카터의 출생 연고는 툴레어입니다.",
-            "en": "Carter's birthplace is in Tulare County."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "출생지와 정치 활동 지역을 분리해 표시하세요.",
-            "en": "Mark birthplace separately from political activity."
+            "ko": "그곳을 출생지 표시에 넣고, 오클랜드 공직에는 별도의 표지를 붙입시다.",
+            "en": "Use that county on the birthplace label and a separate label for his Oakland office."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "카터의 출생 연고는 툴레어입니다.",
-            "en": "Carter's birthplace is in Tulare County."
+            "speaker": "npc:1",
+            "ko": "제 출생지 레먼코브는 툴레어 카운티에 있습니다.",
+            "en": "My birthplace, Lemoncove, is in Tulare County."
+          },
+          {
+            "speaker": "player",
+            "ko": "지방 공직을 맡았던 도시와 출생지를 섞은 전시 지도를 교체하겠습니다.",
+            "en": "I'll replace the exhibit map that confuses the city where you held office with your birthplace."
           }
         ]
       },
@@ -2289,13 +2294,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "농촌 의료와 농업을 경험한 의원으로서 엘리엇 의원을 소개합니다.",
-          "en": "As a member with rural health and farming experience, let me introduce Elliott."
+          "ko": "두 지역의 농촌 문제를 비교하는 간담회에 엘리엇 의원을 모셨습니다.",
+          "en": "I've invited Mr. Elliott to a discussion comparing rural issues in two regions."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 캘리포니아에서 농업과 축산에 종사했습니다.",
-          "en": "I farmed and raised livestock in California."
+          "ko": "저는 농업과 축산에 종사한 경험을 바탕으로 말씀드리겠습니다.",
+          "en": "I'll speak from my experience in farming and livestock."
+        },
+        {
+          "speaker": "player",
+          "ko": "각 의원이 대표하는 주에 맞춰 질문을 배정하겠습니다.",
+          "en": "I'll assign questions according to the state each member represents."
         }
       ],
       "response": {
@@ -2329,21 +2339,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "엘리엇은 캘리포니아 대표입니다.",
-            "en": "Elliott represents California."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 주의 농가 자료를 구분해 검토하세요.",
-            "en": "Review the farm materials separately by state."
+            "speaker": "npc:1",
+            "ko": "캘리포니아 농가에 관한 질문은 제게 주시고, 밀러 의원의 주와 비교해 보죠.",
+            "en": "Give me the California farm questions, and we'll compare them with Mr. Miller's state."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "엘리엇은 캘리포니아 대표입니다.",
-            "en": "Elliott represents California."
+            "ko": "엘리엇 의원은 캘리포니아 대표이고 저는 네브래스카 대표입니다.",
+            "en": "Mr. Elliott represents California; I represent Nebraska."
+          },
+          {
+            "speaker": "player",
+            "ko": "잘못 배정한 농가 질문을 거두고 두 주의 사례를 나누겠습니다.",
+            "en": "I'll withdraw the misassigned farm questions and separate the cases by state."
           }
         ]
       },

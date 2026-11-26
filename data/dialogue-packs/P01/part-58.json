@@ -2510,13 +2510,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "클랜시 의원의 지방 행정 경험과 제 주의회 경험을 비교해 봅시다.",
-          "en": "Let's compare Mr. Clancy's municipal experience with my state legislative work."
+          "ko": "주 의회와 시 행정의 경험을 비교하는 토론을 준비하고 있습니다.",
+          "en": "I'm preparing a discussion comparing state legislative and municipal experience."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 신시내티 시청에서 일했습니다.",
-          "en": "I worked at Cincinnati city hall."
+          "ko": "저는 하원에 오기 전 시의회와 시 행정을 경험했습니다.",
+          "en": "Before entering the House, I served in city government and on a city council."
+        },
+        {
+          "speaker": "player",
+          "ko": "클랜시 의원의 지방 공직이 어느 도시였는지 확인한 뒤 토론을 시작하겠습니다.",
+          "en": "I'll identify the city where Mr. Clancy held local office before beginning the discussion."
         }
       ],
       "response": {
@@ -2550,21 +2555,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "신시내티 시장과 시의원으로 활동했습니다.",
-            "en": "I served on Cincinnati City Council and as mayor."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "도시·주·연방의 주민대표 경로를 나눠 설명합시다.",
-            "en": "Explain municipal, state and federal representation separately."
+            "speaker": "npc:1",
+            "ko": "그 도시의 시의회와 시장 경험을 먼저 설명하겠습니다. 이후 버크 의원의 주의회 경험과 비교하죠.",
+            "en": "I'll explain my city council and mayoral experience there first, then compare it with Ms. Burke's state legislative work."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "신시내티 시장과 시의원으로 활동했습니다.",
+            "speaker": "npc:1",
+            "ko": "저는 신시내티의 시의원과 시장으로 활동했습니다.",
             "en": "I served on Cincinnati City Council and as mayor."
+          },
+          {
+            "speaker": "player",
+            "ko": "다른 도시 사례로 준비한 질문은 빼고 신시내티의 사례로 바꾸겠습니다.",
+            "en": "I'll withdraw the questions prepared for the wrong city and substitute Cincinnati's case."
           }
         ]
       },
