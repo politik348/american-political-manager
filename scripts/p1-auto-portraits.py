@@ -283,17 +283,18 @@ def main():
         excluded={i for c in read('docs/P1-CAMPAIGN-R5.json').get('chunks',[]) for i in c.get('attemptedIds',[])}
     def checkpoint():
         save(manifest,records)
-        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'thisRunIds':run_ids,'batchStats':BATCH.stats,'pauseUntil':pause_until,'queueSize':len(queue),'results':previous,'browserVerified':None,'manualRequests':0})
+        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'thisRunIds':run_ids,'batchStats':BATCH.stats,'pauseUntil':pause_until,'queueSize':len(queue),'remainingEligibleAfterChunk':max(0,eligible_total-attempted),'results':previous,'browserVerified':None,'manualRequests':0})
     eligible=[]
     for p in queue:
         k=p['id']
-        if len(eligible)>=args.limit: break
         if k in excluded: continue
         if any(a in valid for a in p['aliases']) or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
         old=previous.get(k,{})
         retry=args.retry_improved and (k=='M000851' or old.get('status')=='temporary_error' or ('non-Bioguide match needs' in old.get('reason','') and any(t.get('type') in OFFICES for t in p.get('terms',[]))))
         if args.expand and old.get('status') in ('review_required','temporary_error','technical_error') and not retry: continue
         eligible.append(p)
+    eligible_total=len(eligible)
+    eligible=eligible[:args.limit]
     # Prefetch metadata for bounded groups; checkpoint without counting unattempted IDs if the server pauses.
     for offset in range(0,len(eligible),50):
         group=eligible[offset:offset+50]

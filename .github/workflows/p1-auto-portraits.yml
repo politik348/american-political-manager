@@ -1,4 +1,4 @@
-name: P1 resumable 100-to-1000 portrait campaign
+name: P1 Wikipedia-first full-roster campaign
 on:
   push:
     branches: [hq-p1-portrait-recovery]
@@ -18,16 +18,33 @@ jobs:
       max-parallel: 1
       fail-fast: true
       matrix:
-        slot: [1,2,3,4,5,6,7,8,9,10]
+        slot: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]
     steps:
       - uses: actions/checkout@v5
         with:
           ref: hq-p1-portrait-recovery
           fetch-depth: 0
+      - name: Check whether this slot needs to collect
+        id: gate
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path('docs/P1-CAMPAIGN-R5.json')
+          s=json.loads(p.read_text()) if p.exists() else {}
+          same=s.get('lastRun',s.get('run'))==os.environ['GITHUB_RUN_ID']
+          status=s.get('status')
+          old_cap=status=='complete_or_queue_exhausted' and s.get('targetAttempts')==1000 and s.get('totalAttempts',0)>=1000
+          stop=(status in ('pilot_gate_not_met','primary_queue_exhausted','complete_or_queue_exhausted') and not old_cap) or (status=='server_pause' and same)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('collect='+str(not stop).lower()+'\n')
+          print('Slot gate:',status,'collect:',not stop)
+          PY
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.collect == 'true'
         with:
           python-version: '3.12'
       - uses: actions/cache@v4
+        if: steps.gate.outputs.collect == 'true'
         with:
           path: .p1-cache
           key: p1-api-r5-${{ github.run_id }}-${{ matrix.slot }}
@@ -36,11 +53,16 @@ jobs:
             p1-api-r5-
             p1-api-
       - run: python -m pip install requests Pillow
+        if: steps.gate.outputs.collect == 'true'
       - run: python -m py_compile scripts/p1-auto-portraits.py scripts/p1-campaign.py scripts/p1_wikipedia_batch.py
+        if: steps.gate.outputs.collect == 'true'
       - run: python tests/p1-wikipedia-batch.py
+        if: steps.gate.outputs.collect == 'true'
       - name: Check campaign gate and collect one serial chunk
+        if: steps.gate.outputs.collect == 'true'
         run: python scripts/p1-campaign.py
       - name: Commit candidate files and checkpoint
+        if: steps.gate.outputs.collect == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -51,7 +73,7 @@ jobs:
           git pull --rebase origin hq-p1-portrait-recovery
           git push origin HEAD:refs/heads/hq-p1-portrait-recovery
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.gate.outputs.collect == 'true'
         with:
           name: p1-r5-results-${{ matrix.slot }}
           path: |

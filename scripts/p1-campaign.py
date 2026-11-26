@@ -12,12 +12,19 @@ run=os.environ['GITHUB_RUN_ID']
 def load(path,default):
     return json.loads(path.read_text()) if path.exists() else default
 def write(x): p.write_text(json.dumps(x,indent=2)+'\n')
-state=load(p,{'run':run,'targetAttempts':1000,'chunks':[],'status':'pilot100','threshold':60})
+state=load(p,{'run':run,'targetAttempts':None,'chunks':[],'status':'pilot100','threshold':60})
 prev=load(report,{})
+# Migrate the old 1000 cap without changing any attempted IDs or success counts.
+if state.get('targetAttempts')==1000 and state.get('status')=='complete_or_queue_exhausted' and state.get('totalAttempts',0)>=1000:
+    state['status']='expand'
+state['targetAttempts']=None
+state['scope']='all eligible static game-roster IDs (1900–2026 Congress, historical records, dialogue cast)'
+state['milestones']=[100,1000]
+
 # Stop after a new pause in this run; a later authorized run resumes from this checkpoint.
 if state.get('status')=='server_pause' and state.get('lastRun',state.get('run'))==run:
     print('Campaign paused in this run; no network requests'); raise SystemExit(0)
-if state['status'] in ('pilot_gate_not_met','complete_or_queue_exhausted'):
+if state['status'] in ('pilot_gate_not_met','complete_or_queue_exhausted','primary_queue_exhausted'):
     print('Campaign stopped:',state['status']); raise SystemExit(0)
 pause=prev.get('pauseUntil') or 0
 if pause>time.time():
@@ -28,11 +35,10 @@ if pause>time.time():
     time.sleep(delay)
 n0=sum(c['attempted'] for c in state['chunks'])
 added0=sum(c['newCandidates'] for c in state['chunks'])
-if n0>=1000: raise SystemExit(0)
 if n0>=100 and not state.get('pilotPassed'):
     # Old checkpoint had no complete 100-person gate; never assume success.
     state['status']='pilot_gate_not_met'; write(state); raise SystemExit(0)
-limit=min(100-(n0%100),1000-n0)
+limit=100-(n0%100)
 before=load(manifest,{})
 cmd=['python','scripts/p1-auto-portraits.py','--expand','--limit',str(limit),'--exclude-campaign']
 if n0<100: cmd.append('--retry-improved')
@@ -57,11 +63,16 @@ state['chunks'].append(chunk)
 state['lastRun']=run
 state['totalAttempts']=n0+n
 state['newCandidates']=added0+added
+state['milestone1000Reached']=n0+n>=1000
+state['remainingEligibleEstimate']=res.get('remainingEligibleAfterChunk')
+state['queueSize']=res.get('queueSize')
+state['reviewRequired']=sum(x.get('status')=='review_required' for x in res.get('results',{}).values())
+state['retryRequired']=sum(x.get('status') in ('temporary_error','technical_error') for x in res.get('results',{}).values())
 if n0<100 and n0+n==100:
     state['pilotPassed']=added0+added>=state['threshold']
 if n0+n>=100 and not state.get('pilotPassed'): state['status']='pilot_gate_not_met'
 elif res.get('pauseUntil'): state['status']='server_pause'
-elif n0+n>=1000 or n<limit: state['status']='complete_or_queue_exhausted'
+elif n<limit: state['status']='primary_queue_exhausted'
 else: state['status']='expand' if state.get('pilotPassed') else 'pilot100'
 write(state)
 print(json.dumps(chunk),state['status'],flush=True)
