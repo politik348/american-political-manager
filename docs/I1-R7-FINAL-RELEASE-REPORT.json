@@ -23,7 +23,7 @@
     "chains": "b3db6ce4cfdd33c843c9a20dd7cc0b3b49bfdef9"
   },
   "p01": {
-    "cumulativeUniqueChangeLedger": 1103,
+    "cumulativeUniqueChangeLedger": 1104,
     "ledgerBreakdown": {
       "throughR4": 546,
       "r5": 261,
@@ -851,6 +851,7 @@
       "P01-1582",
       "P01-1584",
       "P01-1585",
+      "P01-1586",
       "P01-1587",
       "P01-1588",
       "P01-1596",
@@ -1675,17 +1676,6 @@
           "kind": "indexed_proposal",
           "blobSha": "2d1c2270eef320a6fde1d1d6e2bd784d212c1bb8"
         }
-      },
-      {
-        "id": "P01-1586",
-        "indexStatus": "history_hold",
-        "reason": "HOLD_HISTORY_DO_NOT_OVERWRITE",
-        "active": {
-          "round": 5,
-          "path": "docs/audits/P01-Q4-DIALOGUE-R5-part-64.json",
-          "kind": "indexed_proposal",
-          "blobSha": "accb88cac4318a25738473f0d360887d8b907790"
-        }
       }
     ],
     "uncreditedMeaning": "No recorded cumulative change credit; not a verified current-field nonapplication finding.",
@@ -1725,7 +1715,12 @@
       "P01-784",
       "P01-983",
       "P01-1018"
-    ]
+    ],
+    "ledgerCorrection": {
+      "id": "P01-1586",
+      "source": "docs/I1-R6-P01-REBASE.json",
+      "reason": "Existing R6 applied entry omitted during range transcription; no new credit."
+    }
   },
   "p02": {
     "classified": 500,
@@ -5272,7 +5267,33 @@
     ],
     "lodge": "approved existing remote/fallback, no independently verified original bytes",
     "report": "docs/I1-R7-NOTEBOOK-PHOTO-REPORT.json",
-    "limitation": "R10 acquisition handoff requires binary and checksum before deployment; remote registrations are not verified final assets."
+    "limitation": "R10 acquisition handoff requires binary and checksum before deployment; remote registrations are not verified final assets.",
+    "intermediateBrowser": {
+      "run": 45746144055,
+      "head": "87519ce1ae23163ce21d0fec08503cee6a41eb5c",
+      "displayed": 13,
+      "fallback": 15,
+      "failedIds": [
+        "M000355",
+        "B000634",
+        "M001245",
+        "L000593",
+        "C001080",
+        "C001039",
+        "U000013",
+        "V000105",
+        "E000023",
+        "C000932",
+        "Z000001",
+        "L000007",
+        "U000002",
+        "M000692",
+        "G000387"
+      ],
+      "required": 20,
+      "result": "failure",
+      "remediation": "Standard display-size derivative of the same approved original; retain original and fallback. No alternate photo or rights promotion."
+    }
   },
   "chains": {
     "previous": 87,
@@ -5303,6 +5324,15 @@
         "Chromium"
       ],
       "headRule": "All three must report success on the actual current PR head; record observed results in PR conversation, not a self-referential SHA in this file."
+    },
+    "lastValidated": {
+      "head": "6c45efea016c162848ce1be474d0308d8cebcc3e",
+      "node": 45746562496,
+      "pr": 45746568112,
+      "nodeStatus": "success",
+      "prStatus": "success",
+      "browser": 45746562499,
+      "browserStatus": "in_progress at inspection"
     }
   },
   "remaining": [
