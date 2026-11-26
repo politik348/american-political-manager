@@ -35,18 +35,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "하원과 상원이 함께 발표한 자료인데 상원 쪽 책임자를 구분해야겠습니다.",
-          "en": "This is a joint House–Senate announcement; I need to distinguish the Senate roles."
+          "ko": "공동 발표문에 세 사람의 이름은 있는데 직책 표기가 빠졌군요.",
+          "en": "The joint release lists three names, but their offices are missing."
         },
         {
           "speaker": "npc:0",
-          "ko": "위원장 명의로만 기록하면 상대 당의 참여를 놓칩니다.",
-          "en": "Listing only the chair would omit the other party's role."
+          "ko": "하원의 라이언 항목은 따로 두세요. 상원 표를 먼저 검토합시다.",
+          "en": "Keep Ryan's House entry separate. Let's examine the Senate panel first."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 우리 재무위원회의 양당 지도부 관계를 표시해 주세요.",
-          "en": "Exactly. Mark the relationship between our two Finance Committee leaders."
+          "ko": "두 상원 직책의 순서를 확인한 뒤 공동 발표문에 붙일 표를 완성해 주세요.",
+          "en": "Check the order of the two Senate offices, then finish the table for the joint release."
         }
       ],
       "response": {
@@ -81,15 +81,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2015년 4월 16일 재무위원장 해치와 선임위원 와이든은 하원 세입위원장 라이언과 무역촉진권한 법안을 발표했다. 양원 협력표에 두 상원 직책을 연결하세요.",
-            "en": "On April 16, 2015, Finance chair Hatch and ranking member Wyden introduced trade promotion legislation with House Ways and Means chair Ryan. Link both Senate offices on the bicameral chart."
+            "ko": "좋습니다. 해치와 와이든의 직책을 나란히 두고 라이언은 하원 열로 보내죠.",
+            "en": "Good. Put Hatch and Wyden side by side, with Ryan in the House column."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2015년 4월 16일 재무위원장 해치와 선임위원 와이든은 하원 세입위원장 라이언과 무역촉진권한 법안을 발표했다. 하원 직책과 상원 직책을 다시 나누어 기록하세요.",
-            "en": "On April 16, 2015, Finance chair Hatch and ranking member Wyden introduced trade promotion legislation with House Ways and Means chair Ryan. Separate House and Senate roles before releasing the chart."
+            "ko": "잠깐, 원내 지도부와 위원회 지도부는 다른 직책입니다. 해치는 위원장, 와이든은 선임위원입니다. 표의 머리글부터 바꿔 주세요.",
+            "en": "Wait: floor leadership and committee leadership are different offices. Hatch was chair and Wyden ranking member. Correct the column headings first."
           }
         ]
       },
@@ -148,18 +148,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "교육법 조정안이 상원을 통과했습니다. 양당의 공동 설명을 어느 정책 분야에 넣을까요?",
-          "en": "The education conference report passed. Where should I file the bipartisan explanation?"
+          "ko": "새 교육법에 대한 안내문을 받은 학교가 이전 안내문도 계속 써야 하는지 묻습니다.",
+          "en": "A school receiving guidance on the new education bill asks whether its old guide still applies."
         },
         {
           "speaker": "npc:0",
-          "ko": "상원에서 함께 협의한 기록도 남겨야죠.",
-          "en": "Keep the record of our Senate collaboration too."
+          "ko": "오늘 상원 표결은 처리 단계에 넣고, 이전 법률은 별도의 칸에 적어 봅시다.",
+          "en": "Put today's Senate vote under legislative status and the earlier law in a separate box."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇다면 이전 연방 교육법과의 연결이 분명해야 합니다.",
-          "en": "Then its connection to the earlier federal education law must be clear."
+          "ko": "학교에 보낼 비교 자료는 어떤 법의 체계를 바꾸는지부터 분명해야 합니다.",
+          "en": "The comparison for the school needs to identify which legal framework is being replaced."
         }
       ],
       "response": {
@@ -193,16 +193,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "알렉산더와 머리가 주도한 Every Student Succeeds Act는 2015년 12월 9일 상원을 85대12로 통과했다. 교육 개혁의 전후 문안을 연결하세요.",
-            "en": "Alexander and Murray led the Every Student Succeeds Act, replacing No Child Left Behind; the Senate approved it 85–12 on December 9, 2015. Connect the previous and revised education frameworks."
+            "speaker": "npc:0",
+            "ko": "이전 안내문과 새 법안의 비교표를 첨부합시다. 오늘 상원 표결은 85대 12였습니다.",
+            "en": "Attach the old-to-new comparison. Today's Senate vote was 85–12."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "알렉산더와 머리가 주도한 Every Student Succeeds Act는 2015년 12월 9일 상원을 85대12로 통과했다. 다른 교육법의 개정 이력과 섞인 자료를 분리하세요.",
-            "en": "Alexander and Murray led the Every Student Succeeds Act, replacing No Child Left Behind; the Senate approved it 85–12 on December 9, 2015. Separate the unrelated education statutes."
+            "speaker": "npc:1",
+            "ko": "낙오학생방지법이 교체 대상입니다. 학자금 지원이나 다른 교육 프로그램 안내문은 이 비교표에서 분리해 주세요.",
+            "en": "No Child Left Behind is the framework being replaced. Remove guidance on student aid or other education programs from this comparison."
           }
         ]
       },
@@ -261,18 +261,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "공동 발표가 일회성 합의인지 장기 협의인지 설명해야 합니다.",
-          "en": "I need to explain whether the joint announcement was an isolated deal or a longer negotiation."
+          "ko": "기자가 공동 발표를 법관 인사 기사에 넣으려 합니다. 제목을 확인해 볼까요?",
+          "en": "A reporter is about to file this joint announcement under judicial appointments. Shall we check the headline?"
         },
         {
           "speaker": "npc:0",
-          "ko": "오늘 발표만 보고 과정 전체를 판단하기 어렵습니다.",
-          "en": "Today's announcement alone cannot explain the whole process."
+          "ko": "기사에 법원 판결과 의회의 입법 제안을 구별하는 설명이 필요합니다.",
+          "en": "The article needs to distinguish court judgments from congressional proposals."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 협상의 결과로 어떤 분야가 연결됐는지 적으세요.",
-          "en": "Right. Identify the policy areas connected by the compromise."
+          "ko": "오늘 발표문은 형사사법 제도에 관한 것이지만 법관 임명 기사는 아닙니다. 어떤 분야인지 제목을 정해 주세요.",
+          "en": "Today's announcement concerns criminal justice, not judicial appointments. Choose a headline identifying its policy scope."
         }
       ],
       "response": {
@@ -306,16 +306,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2015년 그래슬리와 더빈은 연방 형사 형량 및 교정 개혁안을 발표했다. 공동 추진 이력의 시작점을 기록하세요.",
-            "en": "In 2015 Grassley and Durbin introduced a bipartisan federal sentencing and corrections proposal. Record the starting point of their joint effort."
+            "speaker": "npc:0",
+            "ko": "그 제목으로 발표일을 협력 연혁의 첫 칸에 넣으세요. 이후 개정안은 별도 사건으로 남길 수 있습니다.",
+            "en": "Use that headline and enter the announcement as the first milestone. Later revisions can have separate entries."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2015년 그래슬리와 더빈은 연방 형사 형량 및 교정 개혁안을 발표했다. 법원 인사 기록에서 형사정책 협력 기록으로 옮기세요.",
-            "en": "In 2015 Grassley and Durbin introduced a bipartisan federal sentencing and corrections proposal. Move the entry from judicial personnel to criminal justice cooperation."
+            "speaker": "npc:1",
+            "ko": "대상은 연방 형량과 교정제도입니다. 기사 제목을 고친 뒤 법관 인사 자료는 원래 폴더로 돌려보내세요.",
+            "en": "The proposal concerns federal sentencing and corrections. Correct the headline and return the judicial appointments material to its own file."
           }
         ]
       },
@@ -492,18 +492,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "하원에서 이미 처리한 교도소 개혁과 상원 협상을 하나의 자료로 연결하겠습니다.",
-          "en": "I want to connect earlier House prison reform to Senate negotiations."
+          "ko": "하원에서 온 자료와 상원 수정안을 하나의 브리핑으로 묶어 달라는 요청이 왔습니다.",
+          "en": "A briefing request asks me to reconcile the House material with the revised Senate proposal."
         },
         {
           "speaker": "npc:0",
-          "ko": "두 경로를 구분해 두면 새 협력의 의미가 보입니다.",
-          "en": "Keeping the two paths distinct will explain the new cooperation."
+          "ko": "두 원의 문서를 별도로 읽고 나서 겹치는 부분을 표시해 보죠.",
+          "en": "Read the two chambers' documents separately before marking their overlap."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 오늘의 공동 발표가 다룬 결합을 명시하세요.",
-          "en": "Yes. Identify the combination in today's joint proposal."
+          "ko": "새 제안이 하나로 묶은 두 형사정책 분야를 제목으로 써 주세요.",
+          "en": "Give the combined proposal a heading that identifies both criminal justice policy areas."
         }
       ],
       "response": {
@@ -538,15 +538,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "리와 부커는 2018년 11월 수정 First Step Act의 공동 발표자였다. 두 입법 경로를 공동 제안에 연결하세요.",
-            "en": "Lee and Booker joined the November 2018 revised First Step Act announcement, combining House prison reforms with Senate sentencing proposals. Link both legislative tracks to the joint proposal."
+            "ko": "두 경로를 합친 비교 자료로 전달하세요. 나중에 상원 통과 기록이 나오면 이 자료에 연결할 수 있습니다.",
+            "en": "Send the comparison of the two tracks. A later Senate passage record can be attached when available."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "리와 부커는 2018년 11월 수정 First Step Act의 공동 발표자였다. 단일 위원회 법안으로만 처리하지 말고 두 경로를 복원하세요.",
-            "en": "Lee and Booker joined the November 2018 revised First Step Act announcement, combining House prison reforms with Senate sentencing proposals. Restore both tracks rather than treating it as a single committee bill."
+            "ko": "결합한 것은 교도소 개혁과 형량 개혁입니다. 두 원의 자료를 한쪽 정책으로 축소하지 말고 제목을 다시 작성하세요.",
+            "en": "The combination is prison and sentencing reforms. Revise the heading without reducing both chambers' documents to only one policy area."
           }
         ]
       },
@@ -605,18 +605,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "통과 소식을 기록하면서 공동 발의자 명단도 정리합니다.",
-          "en": "I am recording passage and organizing the sponsors."
+          "ko": "상원 통과 소식이 왔습니다. 11월에 보관한 수정안과 같은 법안인지 확인하려 합니다.",
+          "en": "Word of Senate passage has arrived. I need to check whether it matches the revision archived in November."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 두 사람이 속한 정당은 다르지만 공동 제안에 참여했습니다.",
-          "en": "We belong to different parties but participated in the joint proposal."
+          "ko": "발표 참여 기록은 통과 기록과 같은 것이 아닙니다. 두 문서를 따로 두세요.",
+          "en": "Participation in an announcement is not the same as a passage record. Keep both documents."
         },
         {
           "speaker": "npc:1",
-          "ko": "그 관계가 드러나는 정책명을 명시해 주세요.",
-          "en": "Name the measure so that relationship is visible."
+          "ko": "형사사법 개혁 자료의 표지에 법안명을 넣으면 앞선 공동 발표를 찾아갈 수 있겠군요.",
+          "en": "A bill title on the criminal justice file will let readers locate the earlier joint announcement."
         }
       ],
       "response": {
@@ -651,15 +651,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "그레이엄과 화이트하우스는 2018년 상원을 통과한 First Step Act의 수정안 발표에 함께 참여했다. 공동 발의와 통과 기록을 연결하세요.",
-            "en": "Graham and Whitehouse both participated in announcing the revised First Step Act before its 2018 Senate passage. Connect the joint proposal to passage."
+            "ko": "11월 수정안과 12월 상원 통과 기록을 연결하세요. 대통령 서명은 이 장면에서 확정하지 않습니다.",
+            "en": "Link the November revision to the December Senate passage record. Do not mark presidential signature in this scene."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "그레이엄과 화이트하우스는 2018년 상원을 통과한 First Step Act의 수정안 발표에 함께 참여했다. 다른 법률의 연혁을 연결한 설명을 수정하세요.",
-            "en": "Graham and Whitehouse both participated in announcing the revised First Step Act before its 2018 Senate passage. Correct the unrelated legislative timeline."
+            "ko": "First Step Act입니다. 다른 법률의 통과 자료는 분리하고 11월 공동 발표 명단을 다시 찾아보세요.",
+            "en": "It is the First Step Act. Separate the other law's passage record and locate the November announcement roster again."
           }
         ]
       },
@@ -718,18 +718,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난해 초당적 이민법안의 기념 자료를 만들고 있습니다.",
-          "en": "I am preparing an anniversary record for last year's bipartisan immigration bill."
+          "ko": "지난해 이민개혁 연혁에 기념일을 표시하려는데 발의일과 표결일이 섞여 있습니다.",
+          "en": "The immigration reform chronology mixes introduction and vote dates, and I need to mark an anniversary."
         },
         {
           "speaker": "npc:0",
-          "ko": "통과 기록과 발의 기록은 분리해 두세요.",
-          "en": "Keep passage and introduction separate."
+          "ko": "오늘 공동 발표가 회고하는 절차는 원래 법안의 이력에서 확인하세요.",
+          "en": "Use the original bill history to identify the step recalled in today's joint statement."
         },
         {
           "speaker": "npc:1",
-          "ko": "네, 오늘 발표가 기념하는 원래 사건을 적어 주세요.",
-          "en": "Yes. Identify the original event commemorated today."
+          "ko": "기념 자료는 이미 법률이 성립했다고 오해하게 해서는 안 됩니다. 어떤 이정표인지 표시해 주세요.",
+          "en": "The anniversary note must not imply that the bill became law. Label the milestone."
         }
       ],
       "response": {
@@ -763,16 +763,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "베넷과 더빈은 2014년 4월 S.744 발의 1주년 공동 발표에 참여했다. 발의와 상원 통과를 별도 날짜로 보존하세요.",
-            "en": "Bennet and Durbin joined the April 2014 statement marking the first anniversary of S.744's introduction. Preserve separate introduction and passage dates."
+            "speaker": "npc:0",
+            "ko": "S.744 발의 기념일로 표시하고 상원 통과일은 따로 두세요.",
+            "en": "Mark the anniversary of S.744's introduction and retain its Senate passage date separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "베넷과 더빈은 2014년 4월 S.744 발의 1주년 공동 발표에 참여했다. 법률 성립으로 표기한 오류를 고치세요.",
-            "en": "Bennet and Durbin joined the April 2014 statement marking the first anniversary of S.744's introduction. Remove the erroneous enactment label."
+            "speaker": "npc:1",
+            "ko": "2014년 4월 발표는 S.744 발의 1주년을 기념합니다. 상원 통과나 대통령 서명 칸에 넣지 마세요.",
+            "en": "The April 2014 statement marked one year since S.744 was introduced. Do not file it under Senate passage or presidential signature."
           }
         ]
       },
@@ -831,18 +831,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "2013년 이민개혁 협력자 중 공화당 의원 한 명이 누락됐습니다.",
-          "en": "A Republican participant is missing from our 2013 immigration coalition roster."
+          "ko": "2017년 회고 기사에 2013년 협상자 명단을 붙이려는데 플로리다 항목이 비어 있습니다.",
+          "en": "A 2017 retrospective needs the 2013 negotiator roster, but the Florida entry is missing."
         },
         {
           "speaker": "npc:0",
-          "ko": "현재의 당직만으로 당시 공동 저자를 판단하지 마세요.",
-          "en": "Do not infer the earlier authorship from current offices."
+          "ko": "2013년 당시 재임 자료만 놓고 확인하세요. 나중의 선거 결과를 끌어오면 안 됩니다.",
+          "en": "Use the membership record as it stood in 2013, not later election results."
         },
         {
           "speaker": "npc:1",
-          "ko": "네. 플로리다 상원의원 기록을 대조해 주세요.",
-          "en": "Yes. Check the Florida Senate record."
+          "ko": "또 재임했다는 사실과 이민법안 공동 작성에 참여했다는 사실은 별개입니다. 두 명단을 대조해 주세요.",
+          "en": "Holding office and joining the immigration proposal are separate facts. Compare both rosters."
         }
       ],
       "response": {
@@ -876,16 +876,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2013년 Gang of Eight의 공화당 공동 저자에는 마코 루비오가 포함됐다. 공동 저자 명단을 복원하세요.",
-            "en": "Marco Rubio was among the Republican coauthors in the 2013 Gang of Eight. Restore the coauthor roster."
+            "speaker": "npc:0",
+            "ko": "마코 루비오를 2013년 공동 작성자 명단에 복원하고 회고 자료에 원본 연도를 표시하세요.",
+            "en": "Restore Marco Rubio to the 2013 coauthor list and label the original year in the retrospective."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2013년 Gang of Eight의 공화당 공동 저자에는 마코 루비오가 포함됐다. 2013년 당시 재임 명부를 다시 확인하세요.",
-            "en": "Marco Rubio was among the Republican coauthors in the 2013 Gang of Eight. Recheck the 2013 membership roster."
+            "speaker": "npc:1",
+            "ko": "루비오가 해당 공화당 공동 작성자였습니다. 2013년 재임 명부와 협상 명단을 다시 대조해 잘못된 이름을 제거하세요.",
+            "en": "Rubio was the Republican coauthor in question. Compare the 2013 membership and negotiation rosters again and remove the incorrect name."
           }
         ]
       },
@@ -944,18 +944,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "서부 두 주의 의원들이 함께 참여한 보전 입법 자료입니다.",
-          "en": "This conservation proposal involves senators from two western states."
+          "ko": "서부 두 주에서 온 공동 입법 자료를 지역 대표단 브리핑에 넣으려 합니다.",
+          "en": "A joint legislative file from two western states needs a place in a delegation briefing."
         },
         {
           "speaker": "npc:0",
-          "ko": "지역 공통 이해와 당파를 구별해 기록하세요.",
-          "en": "Distinguish regional interests from party affiliation."
+          "ko": "몬태나와 콜로라도 자료를 한 묶음으로 두되 의원 이름은 각각 남겨 주세요.",
+          "en": "Keep the Montana and Colorado materials together while preserving each senator's name."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇다면 2020년 제안의 주요 분야도 함께 적어야겠습니다.",
-          "en": "Then identify the central policy area of the 2020 proposal."
+          "ko": "두 의원이 추진한 2020년 법안의 정책 분야를 적으면 지역 협력의 성격이 드러날 겁니다.",
+          "en": "Identify the policy area of the 2020 bill to explain the nature of their regional cooperation."
         }
       ],
       "response": {
@@ -989,16 +989,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "가드너와 데인스는 2020년 Great American Outdoors Act를 추진했다. 두 주의 공공토지 정책 기록을 연결하세요.",
-            "en": "Gardner and Daines worked on the Great American Outdoors Act in 2020. Link the two states' public-land records."
+            "speaker": "npc:0",
+            "ko": "공공토지 보전과 야외 휴양 자료로 분류하고 두 주의 기록을 함께 연결하세요.",
+            "en": "File it under public-land conservation and outdoor recreation and link the two state records."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "가드너와 데인스는 2020년 Great American Outdoors Act를 추진했다. 관련 없는 세금 정책 자료를 분리하세요.",
-            "en": "Gardner and Daines worked on the Great American Outdoors Act in 2020. Separate unrelated tax files."
+            "speaker": "npc:1",
+            "ko": "이 공동 입법은 Great American Outdoors Act에 관한 것입니다. 공공토지 보전·야외 휴양 분야로 분류하고 다른 서부 정책 자료와 분리하세요.",
+            "en": "This joint effort concerns the Great American Outdoors Act. Classify it under public-land conservation and outdoor recreation rather than unrelated western policy."
           }
         ]
       },
@@ -1057,18 +1057,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "새 보전법안에 이전 협력안이 포함됐습니다.",
-          "en": "An earlier bipartisan proposal is incorporated in the new conservation bill."
+          "ko": "새 보전법안에 선행 제안 하나가 포함되었다는 자료가 왔습니다. 원문을 찾아야겠습니다.",
+          "en": "A new conservation bill incorporates an earlier proposal. I need to locate the predecessor."
         },
         {
           "speaker": "npc:0",
-          "ko": "이전 문서를 별도로 표시해야 협력의 연속성이 보입니다.",
-          "en": "Mark the earlier document separately to show continuity."
+          "ko": "새 법안 번호로 예전 자료를 덮어쓰지 마세요.",
+          "en": "Do not overwrite the earlier record with the new bill number."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 국립공원 유지보수 분야의 이름을 복원해 주세요.",
-          "en": "Exactly. Restore the name of the parks maintenance initiative."
+          "ko": "워너와 알렉산더가 참여한 선행 제안 명단을 비교해 정확한 제목을 찾아 주세요.",
+          "en": "Compare the roster of the earlier proposal involving Warner and Alexander to recover its title."
         }
       ],
       "response": {
@@ -1102,16 +1102,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "킹과 포트먼은 워너·알렉산더와 Restore Our Parks Act를 주도했다. 이전 제안과 새 보전법안의 관계를 저장하세요.",
-            "en": "King and Portman worked with Warner and Alexander on the Restore Our Parks Act. Save the relationship between the earlier and newer proposals."
+            "speaker": "npc:0",
+            "ko": "Restore Our Parks Act의 선행 문서를 별도로 연결하세요. 새 법안의 처리 결과가 나오면 함께 볼 수 있습니다.",
+            "en": "Attach Restore Our Parks Act as a separate predecessor document so it can be viewed with the new bill's later status."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "킹과 포트먼은 워너·알렉산더와 Restore Our Parks Act를 주도했다. 정책 분야별로 선행 제안을 다시 찾아 연결하세요.",
-            "en": "King and Portman worked with Warner and Alexander on the Restore Our Parks Act. Reidentify the prior measure by policy area."
+            "speaker": "npc:1",
+            "ko": "찾는 선행 제안은 Restore Our Parks Act입니다. 비슷한 보전 법안의 이름만 보고 동일 법안이라고 표시하지 마세요.",
+            "en": "The predecessor is the Restore Our Parks Act. Do not equate different conservation bills merely because their titles sound related."
           }
         ]
       },
@@ -1170,18 +1170,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "두 의원의 공동 발표를 법안 처리 연혁에 넣겠습니다.",
-          "en": "I am entering your joint statement in the legislative chronology."
+          "ko": "공동 성명에 맞춰 보전법안의 공개 진행표를 갱신해야 합니다.",
+          "en": "The conservation bill's public status board needs updating to match the joint statement."
         },
         {
           "speaker": "npc:0",
-          "ko": "의회 한 원의 승인과 최종 법률 성립은 다릅니다.",
-          "en": "Approval in one chamber is not enactment."
+          "ko": "상원 자료와 최종 법률 등록 자료를 별도 칸에 두세요.",
+          "en": "Keep Senate records and final enactment records in separate columns."
         },
         {
           "speaker": "npc:1",
-          "ko": "그 차이를 오늘의 발표에 반영해 주세요.",
-          "en": "Reflect that distinction in today's entry."
+          "ko": "오늘 성명이 확인한 사건만 진행표에 표시해 주세요.",
+          "en": "Mark only the event confirmed by today's statement."
         }
       ],
       "response": {
@@ -1216,15 +1216,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2020년 6월 17일 더빈과 덕워스는 Great American Outdoors Act의 상원 통과를 환영했다. 상원 통과 단계만 확정하세요.",
-            "en": "On June 17, 2020, Durbin and Duckworth welcomed Senate passage of the Great American Outdoors Act. Certify only the Senate passage milestone."
+            "ko": "상원 통과 칸만 완료로 표시하고 다음 절차는 아직 열린 상태로 남겨 두세요.",
+            "en": "Mark Senate passage complete and leave the later procedural steps open."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2020년 6월 17일 더빈과 덕워스는 Great American Outdoors Act의 상원 통과를 환영했다. 법률 성립 표시는 보류하세요.",
-            "en": "On June 17, 2020, Durbin and Duckworth welcomed Senate passage of the Great American Outdoors Act. Hold the enactment entry."
+            "ko": "오늘 확인된 것은 상원 통과입니다. 대통령 서명이나 하원 처리 여부를 자동으로 확정하지 말고 진행표를 복구하세요.",
+            "en": "Today's confirmed event is Senate passage. Restore the status board without automatically marking signature or House action complete."
           }
         ]
       },
@@ -1283,18 +1283,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "공급망과 안보를 함께 다루는 양당 법안이 접수됐습니다.",
-          "en": "A bipartisan proposal connects supply chains and security."
+          "ko": "산업 브리핑의 담당 분야를 고르려는데 경제와 안보 자료가 함께 도착했습니다.",
+          "en": "Economic and security files have both arrived, and I need to route the industrial briefing."
         },
         {
           "speaker": "npc:0",
-          "ko": "기술 분야를 너무 넓게 분류하지 마세요.",
-          "en": "Do not classify the technological field too broadly."
+          "ko": "공급망 자료에는 생산 분야를, 안보 자료에는 기술 의존 문제를 표시할 자리가 있습니다.",
+          "en": "The supply-chain file has a space for the production sector; the security file has one for technological dependence."
         },
         {
           "speaker": "npc:1",
-          "ko": "동의합니다. 우리가 발표한 제조 분야를 명확히 적으세요.",
-          "en": "Agreed. Specify the manufacturing sector in our announcement."
+          "ko": "두 자료에 공통으로 들어갈 이번 법안의 제조 분야를 지정해 주세요.",
+          "en": "Identify the manufacturing sector that belongs in both files for today's proposal."
         }
       ],
       "response": {
@@ -1328,16 +1328,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2020년 6월 10일 워너와 코닌은 CHIPS for America Act를 발표했다. 산업안보 협력 기록에 연결하세요.",
-            "en": "On June 10, 2020, Warner and Cornyn announced the CHIPS for America Act. Link it to the industrial-security cooperation file."
+            "speaker": "npc:0",
+            "ko": "반도체 제조를 두 자료의 공통 색인으로 연결하고 6월 10일 발표 기록을 첨부하세요.",
+            "en": "Link semiconductor manufacturing as the shared index and attach the June 10 announcement."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2020년 6월 10일 워너와 코닌은 CHIPS for America Act를 발표했다. 다른 공급망 산업 자료와 분리하세요.",
-            "en": "On June 10, 2020, Warner and Cornyn announced the CHIPS for America Act. Separate the unrelated supply-chain sector."
+            "speaker": "npc:1",
+            "ko": "CHIPS for America Act가 대상으로 삼은 분야는 반도체 제조입니다. 다른 전략산업 항목은 별도 분류로 돌려보내세요.",
+            "en": "The CHIPS for America Act focused on semiconductor manufacturing. Return the other strategic industries to their separate categories."
           }
         ]
       },
@@ -1509,18 +1509,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "기존 10인 협상 그룹의 지지 범위가 달라졌습니다.",
-          "en": "The original ten-member group's support has expanded."
+          "ko": "6월 10일 표에 새 지지자 명단을 덧붙이려 합니다. 원래 표를 덮어쓸까요?",
+          "en": "I have a new supporter list to attach to the June 10 roster. Should I overwrite it?"
         },
         {
           "speaker": "npc:0",
-          "ko": "초기 협상자와 추가 지지자를 같은 역할로 표시하지 맙시다.",
-          "en": "Do not assign identical roles to original negotiators and later supporters."
+          "ko": "기존 협상 명단과 새 지지 명단을 서로 다른 버전으로 남기세요.",
+          "en": "Keep the original negotiating roster and new support roster as distinct versions."
         },
         {
           "speaker": "npc:1",
-          "ko": "좋습니다. 확대된 그룹의 규모를 계산해 주세요.",
-          "en": "Good. Calculate the expanded group's size."
+          "ko": "확대된 명단 전체의 규모를 표지에 표시하되 본회의 찬성자 수로 부르지는 마세요.",
+          "en": "Label the total size of the expanded roster without calling it a floor-vote count."
         }
       ],
       "response": {
@@ -1555,15 +1555,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2021년 6월 16일 기존 10인 그룹은 쿤스·모런 등을 포함한 20명으로 확대됐다. 초기 협상과 확대 지지 명단을 별도 보관하세요.",
-            "en": "On June 16, 2021, the original group expanded to twenty, including Coons and Moran. Preserve separate initial and expanded rosters."
+            "ko": "20명 버전을 10명 원본 뒤에 저장하세요. 다음 본회의 표결은 세 번째 기록이 됩니다.",
+            "en": "Save the twenty-person version after the ten-person original. A later floor vote will be a third record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2021년 6월 16일 기존 10인 그룹은 쿤스·모런 등을 포함한 20명으로 확대됐다. 지지 확대를 최종 표결로 잘못 기록하지 마세요.",
-            "en": "On June 16, 2021, the original group expanded to twenty, including Coons and Moran. Do not mistake expanded support for final passage."
+            "ko": "6월 16일 확대 명단은 20명입니다. 초기 10명 표를 지우지 말고 확대 버전의 숫자만 고치세요.",
+            "en": "The expanded June 16 group numbered twenty. Keep the original ten-person roster and correct only the expanded version."
           }
         ]
       },
@@ -1735,18 +1735,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "농산물 수출 지연 문제를 상원에서 다룰 연락 경로를 찾습니다.",
-          "en": "I am identifying the Senate channel for agricultural export delays."
+          "ko": "수출업자가 선박 운송 지연을 어디에 문의해야 하는지 묻습니다.",
+          "en": "An exporter asks where to take a question about shipping delays."
         },
         {
           "speaker": "npc:0",
-          "ko": "해상 운송 정책도 연결되는 문제입니다.",
-          "en": "Ocean transport policy is also involved."
+          "ko": "해상 운송 문제와 수출 거래 문제를 같은 의회 연락 경로로 검토할 수 있는지 보세요.",
+          "en": "Check whether shipping and export concerns can be reviewed through the same congressional channel."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇다면 우리 두 사람이 공유하는 위원회 기반을 표시하세요.",
-          "en": "Then identify the committee we share."
+          "ko": "상원 위원회 명부에서 두 의원의 공통 소속을 찾으면 브리핑 연락처를 정할 수 있습니다.",
+          "en": "Find the committee shared by both senators to identify the briefing contact."
         }
       ],
       "response": {
@@ -1781,15 +1781,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "튠과 클로버샤는 상무위원회 소속으로 2022년 Ocean Shipping Reform Act를 발의했다. 공동 연락 경로를 상무위로 지정하세요.",
-            "en": "Thune and Klobuchar, Commerce Committee members, introduced the Ocean Shipping Reform Act in February 2022. Route the joint briefing through Commerce."
+            "ko": "상무·과학·교통위원회로 가상 브리핑 요청을 전달하세요. 해상운송 개혁안 자료도 첨부하면 됩니다.",
+            "en": "Route the simulated briefing request to Commerce, Science and Transportation and attach the Ocean Shipping Reform Act file."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "튠과 클로버샤는 상무위원회 소속으로 2022년 Ocean Shipping Reform Act를 발의했다. 위원회 명부를 다시 대조하세요.",
-            "en": "Thune and Klobuchar, Commerce Committee members, introduced the Ocean Shipping Reform Act in February 2022. Recheck committee membership."
+            "ko": "공통 소속은 상무·과학·교통위원회입니다. 잘못 작성한 연락 요청을 보류하고 위원회 명부부터 확인하세요.",
+            "en": "Their shared committee is Commerce, Science and Transportation. Hold the misrouted request and check the committee roster first."
           }
         ]
       },
@@ -1848,18 +1848,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "중서부 생산자의 운송 문제에 대한 양당 협력 기록을 정리합니다.",
-          "en": "I am documenting cross-party cooperation on Midwestern producers' shipping concerns."
+          "ko": "6월의 운송 관련 자료에 2월 공동 발의 이력을 붙이고 싶습니다.",
+          "en": "I want to attach February sponsorship history to the June transport file."
         },
         {
           "speaker": "npc:0",
-          "ko": "주별 이해가 다르더라도 공통 운송 문제가 있을 수 있습니다.",
-          "en": "Different states can share a transport problem."
+          "ko": "생산자 의견서에 나온 정책명과 공식 발의 기록의 제목이 일치하는지 확인하세요.",
+          "en": "Check whether the title in the producers' file matches the formal introduction record."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 우리 두 사람이 참여한 2월 법안명을 기록하세요.",
-          "en": "Right. Record the February proposal in which we participated."
+          "ko": "2월에 두 의원이 참여한 법안만 선행 기록으로 연결해 주세요.",
+          "en": "Link only the bill in which both senators participated in February."
         }
       ],
       "response": {
@@ -1893,16 +1893,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "호번과 볼드윈은 2022년 2월 해상운송 개혁안 발의에 참여했다. 수출 관련 공동 발의 기록을 저장하세요.",
-            "en": "Hoeven and Baldwin joined the February 2022 Ocean Shipping Reform Act introduction. Save the export-related sponsorship record."
+            "speaker": "npc:0",
+            "ko": "Ocean Shipping Reform Act의 2월 발의 기록을 6월 자료에 첨부하세요.",
+            "en": "Attach the February Ocean Shipping Reform Act introduction to the June file."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "호번과 볼드윈은 2022년 2월 해상운송 개혁안 발의에 참여했다. 산업안보 법안과 운송법안을 분리하세요.",
-            "en": "Hoeven and Baldwin joined the February 2022 Ocean Shipping Reform Act introduction. Separate industrial-security and shipping proposals."
+            "speaker": "npc:1",
+            "ko": "해당 공동 발의는 Ocean Shipping Reform Act입니다. 공급망 분야라는 공통점만으로 다른 법안을 연결하지 마세요.",
+            "en": "The relevant introduction was the Ocean Shipping Reform Act. Do not link another bill simply because it also concerns supply chains."
           }
         ]
       },
@@ -2300,18 +2300,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "상원 통과 전에 공동 수정안이 발표됐는데 협력 내용을 설명해야 합니다.",
-          "en": "I need to explain the joint amendment issued before Senate passage."
+          "ko": "원안 설명문에 상원 수정안의 추가 내용을 별도 단락으로 넣으려 합니다.",
+          "en": "I need a separate paragraph in the original bill guide for the Senate amendment."
         },
         {
           "speaker": "npc:0",
-          "ko": "원안의 목적과 수정안이 다룬 추가 보호를 구분하세요.",
-          "en": "Distinguish the original purpose from the additional protection."
+          "ko": "혼인 관련 원안 전체를 수정안 하나로 설명해서는 안 됩니다.",
+          "en": "Do not describe the entire marriage bill solely through one amendment."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 함께 작성한 수정안의 초점을 적으세요.",
-          "en": "Yes. State the focus of the amendment we helped write."
+          "ko": "추가 보호가 어떤 법적 관심사를 다뤘는지 단락의 제목으로 정해 주세요.",
+          "en": "Give the paragraph a heading identifying the legal concern addressed by the additional protections."
         }
       ],
       "response": {
@@ -2346,15 +2346,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "포트먼과 시네마는 볼드윈·콜린스·틸리스와 종교적 자유 보호 수정안을 작성했다. 협상 수정안과 원안의 차이를 보존하세요.",
-            "en": "Portman and Sinema worked with Baldwin, Collins and Tillis on religious liberty protections. Preserve the distinction between the original and negotiated amendment."
+            "ko": "종교적 자유 보호 항목을 원안 설명과 분리해 넣고 수정안 참여 기록에 연결하세요.",
+            "en": "Add religious liberty protections separately from the original bill summary and link the amendment participation record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "포트먼과 시네마는 볼드윈·콜린스·틸리스와 종교적 자유 보호 수정안을 작성했다. 관련 없는 개혁 내용을 제거하세요.",
-            "en": "Portman and Sinema worked with Baldwin, Collins and Tillis on religious liberty protections. Remove unrelated reform material."
+            "ko": "수정안의 초점은 종교적 자유 보호입니다. 원안 전체를 바꾸는 설명은 보류하고 추가 보호 단락만 다시 작성하세요.",
+            "en": "The amendment addressed religious liberty protections. Hold the broader rewrite and revise only the additional-protections paragraph."
           }
         ]
       },
@@ -2413,18 +2413,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "보훈단체가 입법 협력의 담당 상원 의원을 묻습니다.",
-          "en": "A veterans group asks which senators led the legislative effort."
+          "ko": "보훈단체가 오늘 서명된 법률이 어떤 참전용사에게 관련되는지 안내문을 요청했습니다.",
+          "en": "A veterans organization requests a guide explaining whom today's signed law concerns."
         },
         {
           "speaker": "npc:0",
-          "ko": "서명한 대통령과 협상한 의원의 역할은 다릅니다.",
-          "en": "The president who signs and the senators who negotiate have different roles."
+          "ko": "법률 서명일은 입법 연혁에 적고 의원들의 협력 기록은 따로 남기세요.",
+          "en": "Put the signature date in the legislative chronology and keep the senators' collaboration record separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 우리 위원회에서 추진한 핵심 정책을 설명하세요.",
-          "en": "Exactly. Explain the policy pursued through our committee."
+          "ko": "안내문 첫 줄에는 이번 법률의 의료·급여 대상이 누구인지 들어가야 합니다.",
+          "en": "The first line of the guide needs to identify the group whose care and benefits are addressed."
         }
       ],
       "response": {
@@ -2458,16 +2458,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "테스터와 모런은 2022년 8월 10일 서명된 PACT Act를 함께 추진했다. 보훈위원회 협력 이력에 법률 성립을 연결하세요.",
-            "en": "Tester and Moran worked together on the PACT Act signed on August 10, 2022. Connect enactment to the veterans committee partnership."
+            "speaker": "npc:0",
+            "ko": "유해물질 노출 참전용사의 의료와 급여 안내문으로 작성하고 PACT Act 서명 기록을 붙이세요.",
+            "en": "Prepare the guide for toxic-exposed veterans' care and benefits and attach the PACT Act signature record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "테스터와 모런은 2022년 8월 10일 서명된 PACT Act를 함께 추진했다. 다른 보훈 정책의 처리 기록과 분리하세요.",
-            "en": "Tester and Moran worked together on the PACT Act signed on August 10, 2022. Separate the unrelated veterans policy."
+            "speaker": "npc:1",
+            "ko": "PACT Act의 대상은 유해물질에 노출된 참전용사의 의료와 급여입니다. 다른 보훈 프로그램 안내를 보내지 말고 대상 항목을 수정하세요.",
+            "en": "The PACT Act concerns care and benefits for toxic-exposed veterans. Correct the eligible-group description instead of sending guidance about another program."
           }
         ]
       },
@@ -2639,18 +2639,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "감사 결과와 청문회 기록을 새 입법 제안에 연결하려 합니다.",
-          "en": "I want to connect audit findings and hearings to the new proposal."
+          "ko": "보훈부 관련 감사 자료 뒤에 새 법안 발표를 첨부하려 합니다.",
+          "en": "I need to attach a new bill announcement to a VA audit file."
         },
         {
           "speaker": "npc:0",
-          "ko": "단순한 지원금 확대와 기관 운영 감독을 구분합시다.",
-          "en": "Distinguish funding expansion from institutional oversight."
+          "ko": "감사에서 확인하는 기관 운영과 급여 지급 규모는 서로 다른 자료입니다.",
+          "en": "Agency operations and the amount spent on benefits are different categories of records."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 이번 공동 제안의 목적을 적어 주세요.",
-          "en": "Exactly. Identify the aim of this joint effort."
+          "ko": "이번 LEAD Act가 기관의 어떤 측면을 개선하려는 것인지 설명문에 표시해 주세요.",
+          "en": "Identify the aspect of agency performance the LEAD Act aims to improve."
         }
       ],
       "response": {
@@ -2685,15 +2685,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "라운즈는 테스터·모런과 함께 2023년 LEAD Act를 발의했다. 감사 자료와 감독 입법을 연결하세요.",
-            "en": "Rounds joined Tester and Moran in introducing the 2023 LEAD Act to improve VA accountability. Link audit evidence and oversight legislation."
+            "ko": "감독과 책임성 자료로 분류하고 모런을 포함한 발의 기록에 감사 문서를 연결하세요.",
+            "en": "File it under oversight and accountability and attach the audit file to the introduction record that includes Moran."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "라운즈는 테스터·모런과 함께 2023년 LEAD Act를 발의했다. 단순 예산 증액 기록으로 처리하지 마세요.",
-            "en": "Rounds joined Tester and Moran in introducing the 2023 LEAD Act to improve VA accountability. Do not classify it merely as a funding increase."
+            "ko": "LEAD Act의 목적은 보훈부 감독과 책임성 개선입니다. 단순 급여 증액 항목에서 분리하여 기관 운영 자료에 넣으세요.",
+            "en": "The LEAD Act aims to improve VA oversight and accountability. Move it from benefit increases to agency operations."
           }
         ]
       },
@@ -2752,18 +2752,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "기관의 예산 부족이 급여 지급에 미칠 영향을 검토 중입니다.",
-          "en": "I am reviewing how an agency funding shortfall could affect benefits."
+          "ko": "보훈 급여 지급에 관한 질문이 들어왔습니다. 예산 조치인지 자격 변경인지 안내문을 구분해야 합니다.",
+          "en": "A question about veterans' payments has arrived. The guide must distinguish a budget action from an eligibility change."
         },
         {
           "speaker": "npc:0",
-          "ko": "기존 급여 권리와 신규 프로그램을 구별해야 합니다.",
-          "en": "Distinguish existing benefits from new programs."
+          "ko": "이미 존재하는 급여의 지급 기록은 신규 자격의 법률 기록과 다른 칸에 놓으세요.",
+          "en": "Keep payment records for existing benefits separate from legislation creating new eligibility."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 이번 공동 법안의 성격을 명시하세요.",
-          "en": "Right. Identify the character of our joint proposal."
+          "ko": "7월 공동 제안이 어떤 종류의 의회 조치인지 확인해 주세요.",
+          "en": "Identify the type of congressional action in the July joint proposal."
         }
       ],
       "response": {
@@ -2797,16 +2797,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "부즈먼과 브라운은 2024년 7월 보훈 급여 지급을 보호하기 위한 추가 세출 법안을 발표했다. 급여 지급과 예산 부족 대응을 연결하세요.",
-            "en": "Boozman and Brown announced a supplemental veterans appropriations proposal in July 2024. Link benefit payments to the funding response."
+            "speaker": "npc:0",
+            "ko": "기존 보훈 급여 지급을 보호하는 추가 세출 제안으로 표시하세요. 제안이 성립했다는 표시는 하지 않습니다.",
+            "en": "Label it supplemental appropriations to protect existing veterans' payments; do not mark the proposal as enacted."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "부즈먼과 브라운은 2024년 7월 보훈 급여 지급을 보호하기 위한 추가 세출 법안을 발표했다. 새 급여 자격 창설과 혼동하지 마세요.",
-            "en": "Boozman and Brown announced a supplemental veterans appropriations proposal in July 2024. Do not confuse this with creating new benefit eligibility."
+            "speaker": "npc:1",
+            "ko": "추가 세출을 통해 보훈 급여 지급을 보호하려는 제안입니다. 신규 급여 자격을 만들었다는 잘못된 안내를 회수하세요.",
+            "en": "The proposal sought supplemental appropriations to protect veterans' payments. Withdraw the incorrect guide suggesting new benefit eligibility."
           }
         ]
       },
