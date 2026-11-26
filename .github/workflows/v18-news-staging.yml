@@ -1,0 +1,33 @@
+name: HQ news draft snapshot validation
+on:
+  push:
+    branches: [hq-v18-news-engine-stabilization]
+    paths:
+      - '.github/workflows/v18-news-staging.yml'
+      - 'scripts/stage-v18-news-review.sh'
+      - 'scripts/validate-v18-news.mjs'
+      - 'v18-news.js'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v18-news-staging-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  draft-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Validate pinned team snapshots without approval or merge
+        shell: bash
+        run: |
+          set -o pipefail
+          bash scripts/stage-v18-news-review.sh | tee v18-news-draft-report.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v18-news-draft-validation
+          path: v18-news-draft-report.txt

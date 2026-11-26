@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --check app.js && node --check sw.js && node --check v7.js && node --check v11.js && node --check v17.js && node --check v17-ui.js && node --check onboarding.js && node --check onboarding-ui.js && node --check dynamics.js && node --check encounters.js && node --check encounters-ui.js && node scripts/check-release.mjs && node --test tests/*.test.js"
+    "test": "node --check app.js && node --check sw.js && node --check v7.js && node --check v11.js && node --check v17.js && node --check v17-ui.js && node --check onboarding.js && node --check onboarding-ui.js && node --check dynamics.js && node --check encounters.js && node --check encounters-ui.js && node scripts/check-release.mjs && node --check i1-pilot-app.js && node --check v18-calendar-ui.js && node --check v18-news-ui.js && node scripts/validate-v18-news.mjs && node --test tests/*.test.js",
+    "news:validate": "node scripts/validate-v18-news.mjs",
+    "news:release": "node scripts/validate-v18-news.mjs --full --release"
   }
 }
