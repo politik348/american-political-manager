@@ -97,18 +97,21 @@ def inventory():
         else: people[k]={'id':k,'name':n,'wiki':p.get('wiki'),'aliases':[k],'terms':p.get('terms',[])}
     aliasmap={a:k for k,p in people.items() for a in p['aliases']}
     parts=read('data/dialogue-packs/i1-index.json')['parts']
-    slots=0
+    slots=0; cast_counts={}
     for part in parts:
         for scene in read('data/dialogue-packs/'+part)['scenes']:
             for cast in scene.get('cast',[]):
                 slots+=1; k=cast.get('id')
+                if k:
+                    canonical=aliasmap.get(k,k)
+                    cast_counts[canonical]=cast_counts.get(canonical,0)+1
                 if k and k not in aliasmap:
                     if k not in people: people[k]={'id':k,'name':cast.get('name'),'aliases':[k]}
                 elif not k: unresolved.append({'scene':scene['id'],'name':cast.get('name')})
-    return people,overlap,slots,unresolved
+    return people,overlap,slots,unresolved,cast_counts
 def identity(p):
     q=p.get('qid'); wp=None
-    if not q and p.get('wiki'):
+    if not q and p.get('wiki') and not p.get('bioguide'):
         wp=page(p['wiki']); props=wp.get('pageprops',{})
         if 'disambiguation' not in props: q=props.get('wikibase_item')
     if not q:
@@ -118,7 +121,7 @@ def identity(p):
             hits=[x['title'] for x in s['query']['search'] if re.fullmatch(r'Q\d+',x['title'])]
             if len(hits)==1: q=hits[0]
         if not q:
-            wp=page(p['name']); props=wp.get('pageprops',{})
+            wp=page(p.get('wiki') or p['name']); props=wp.get('pageprops',{})
             if 'disambiguation' not in props: q=props.get('wikibase_item')
     if not q: raise Hold('no unambiguous Wikidata match')
     e=entity(q)
@@ -193,7 +196,7 @@ def collect(p,records):
                 out=io.BytesIO(); im.save(out,format='WEBP',quality=72,method=6); b=out.getvalue()
             if digest(b) in {v['sha256'] for v in records.values() if v.get('qid')!=q}: raise Hold('duplicate image across different QIDs')
             for v in records.values():
-                if v.get('qid')==q: return dict(v,aliases=sorted(set(v['aliases']+p['aliases'])))
+                if v.get('qid')==q and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256']: return dict(v,aliases=sorted(set(v['aliases']+p['aliases'])))
             path='assets/p1-portraits/'+q+'-'+digest(b)[:16]+'.webp'
             (ROOT/path).parent.mkdir(parents=True,exist_ok=True)
             (ROOT/path).write_bytes(b)
@@ -206,7 +209,7 @@ def main():
     parser.add_argument('--limit',type=int,default=20)
     parser.add_argument('--expand',action='store_true')
     args=parser.parse_args()
-    people,overlap,slots,unresolved=inventory()
+    people,overlap,slots,unresolved,cast_counts=inventory()
     local=read('data/portraits.json')
     valid={x['id'] for x in local if (ROOT/x['file']).is_file()}
     manifest='data/p1-portraits.json'; report='docs/P1-AUTO-R2-REPORT.json'
@@ -224,17 +227,22 @@ def main():
         if len(ys)>1: p['death']=ys[1]
         p['aliases']=sorted(set(p['aliases']+[a for a in (x.get('historicalId'),x.get('bioguide')) if a]))
         queue.append(p)
-    if args.expand: queue+=sorted((p for k,p in people.items() if k in overlap and k not in valid),key=lambda p:p['id'])
+    if args.expand:
+        def priority(p):
+            roles={t.get('type') for t in p.get('terms',[])}
+            rank=0 if roles&{'prez','vp','candidate','chief','justice','cabinet'} else 1 if cast_counts.get(p['id']) else 2 if 'sen' in roles else 3
+            return (rank,-cast_counts.get(p['id'],0),p['id'])
+        queue+=sorted((p for k,p in people.items() if (k in overlap or k in cast_counts or k.startswith('hist:')) and not any(a in valid for a in p['aliases'])),key=priority)
     seen=set(); queue=[p for p in queue if not (p['id'] in seen or seen.add(p['id']))]
     attempted=0
     def checkpoint():
         save(manifest,records)
-        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'results':previous,'browserVerified':None,'manualRequests':0})
+        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'queueSize':len(queue),'results':previous,'browserVerified':None,'manualRequests':0})
     for p in queue:
         k=p['id']
         if attempted>=args.limit: break
-        if k in valid or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
-        if args.expand and previous.get(k,{}).get('status')=='review_required': continue
+        if any(a in valid for a in p['aliases']) or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
+        if args.expand and previous.get(k,{}).get('status') in ('review_required','temporary_error','technical_error'): continue
         attempted+=1
         try:
             v=collect(p,records); records[v['qid']]=v

@@ -13,7 +13,7 @@ jobs:
   collect:
     if: github.ref == 'refs/heads/hq-p1-portrait-recovery'
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
         with:
@@ -29,7 +29,8 @@ jobs:
           restore-keys: p1-api-
       - run: python -m pip install requests Pillow
       - run: python -m py_compile scripts/p1-auto-portraits.py
-      - run: python scripts/p1-auto-portraits.py --limit 20
+      - name: Recover initial 20-person batch
+        run: python scripts/p1-auto-portraits.py --limit 20
       - name: Commit downloaded candidates and evidence (not active in game)
         run: |
           git config user.name 'github-actions[bot]'
@@ -38,6 +39,25 @@ jobs:
           if test -d assets/p1-portraits; then git add assets/p1-portraits; fi
           git diff --cached --quiet && exit 0
           git commit -m "P1 R2: record Wikimedia pilot candidates and provenance"
+          git pull --rebase origin hq-p1-portrait-recovery
+          git push origin HEAD:refs/heads/hq-p1-portrait-recovery
+      - name: Expand by up to 100 new people after pilot is safely committed
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess
+          rows=json.load(open('data/p1-portraits.json'))
+          report=json.load(open('docs/P1-AUTO-R2-REPORT.json'))
+          if len(rows)<10 or any('rate limit or maxlag' in x.get('reason','') or 'Retry-After' in x.get('reason','') for x in report['results'].values() if x.get('status')=='temporary_error'):
+              print('Expansion held: insufficient pilot downloads or server-requested pause')
+          else:
+              subprocess.run(['python','scripts/p1-auto-portraits.py','--expand','--limit','100'],check=True)
+          PY
+      - name: Commit expansion candidates and audit trail
+        run: |
+          git add data/p1-portraits.json docs/P1-AUTO-R2-REPORT.json
+          if test -d assets/p1-portraits; then git add assets/p1-portraits; fi
+          git diff --cached --quiet && exit 0
+          git commit -m "P1 R4: expand portrait acquisition queue with priority roster"
           git pull --rebase origin hq-p1-portrait-recovery
           git push origin HEAD:refs/heads/hq-p1-portrait-recovery
       - uses: actions/upload-artifact@v4
