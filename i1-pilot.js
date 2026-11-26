@@ -29,8 +29,8 @@ export function answerPilot(s,c,choice,date){const b=pilotBook(s),a=b.active,v=c
  const docs=b.documents||(b.documents={});docs[v.id]={key:v.outcome.key,sceneDate:v.date,playedAt:date,correct:a.correct};
  const contacts=b.archiveContacts||(b.archiveContacts={});for(const x of v.cast){if(!x.id)continue;const p=contacts[x.id]||(contacts[x.id]={id:x.id,name:x.name,scenes:{},appointments:{}});p.scenes[v.id]=v.date;if(a.kind==='appointment-archive')p.appointments[v.id]=date}
  return true}
-export function chainIntro(s,c,v,date=v.date){const b=pilotBook(s),link=c.chains.find(x=>x.to===v.id),from=link&&c.scenes.find(x=>x.id===link.from);if(!from||from.date>=v.date||!from.cast.some(x=>x.id===link.person)||!v.cast.some(x=>x.id===link.person))return null;const prior=b.history[from.id];return prior&&prior.sceneDate===from.date&&prior.playedAt<=date?{ko:link.ko,en:link.en}:{ko:link.fallbackKo,en:link.fallbackEn}}
-export function approvedPhoto(c,v,i){const p=c.photos.find(x=>x.sceneId===v.id&&x.castIndex===i&&x.id===v.cast[i]?.id&&x.name===v.cast[i]?.name);return p&&/^https:\/\//.test(p.url)&&/^https:\/\//.test(p.metadata)?p:null}
+export function chainIntro(s,c,v,date=v.date){const b=pilotBook(s),link=c.chains.find(x=>x.to===v.id),from=link&&c.scenes.find(x=>x.id===link.from);if(!from||!(/^[A-Z][0-9]{6}$/.test(link.person||''))||from.date>=v.date||!from.cast.some(x=>x.id===link.person)||!v.cast.some(x=>x.id===link.person))return null;const prior=b.history[from.id];return prior&&prior.sceneDate===from.date&&prior.playedAt<=date?{ko:link.ko,en:link.en}:{ko:link.fallbackKo,en:link.fallbackEn}}
+export function approvedPhoto(c,v,i){if(!/^[A-Z][0-9]{6}$/.test(v.cast[i]?.id||''))return null;const p=c.photos.find(x=>x.sceneId===v.id&&x.castIndex===i&&x.id===v.cast[i]?.id&&x.name===v.cast[i]?.name);return p&&/^https:\/\//.test(p.url)&&/^https:\/\//.test(p.metadata)?p:null}
 
  // Optional dated archive invitation beside, not in place of, a generated encounter.
 export function archiveDate(s,liveDate,horizon){return !s.politics?.active||s.politics.active.finished?s.year===2026&&s.quarter===4&&isDate(horizon)&&horizon.slice(0,4)==='2026'&&horizon>liveDate?horizon:liveDate:liveDate}
@@ -42,6 +42,7 @@ export function appointmentCore(c,v){
 }
 export function appointmentTerms(v,records,date){
  if(v.date>date||Date.parse(date)-Date.parse(v.date)>92*86400000)return null;
+ if(v.cast.some(x=>!(/^[A-Z][0-9]{6}$/.test(x.id||''))))return null;
  const terms=v.cast.map(x=>records.get(x.id)?.terms?.filter(t=>['rep','sen'].includes(t.type)&&t.precision!=='year'&&isDate(t.start)&&isDate(t.end)&&t.start<=v.date&&t.end>=date)||[]);
  if(terms.some(t=>!t.length))return null;
  const chamber=v.id.startsWith('P01-')?'rep':'sen';return terms.some(ts=>ts.some(t=>t.type===chamber))?terms:null;
@@ -66,4 +67,4 @@ export function startSuggested(s,c,people,date,slot,place,id){
 }
 
 // A display-size derivative of the exact approved Wikimedia file, not a new portrait.
-export function portraitUrls(p){if(/^\.\/assets\/i1-approved-portraits\/[A-Z][0-9]{6}-[a-f0-9]{16}\.(jpg|png)$/.test(p.localPath||'')&&/^[a-f0-9]{64}$/.test(p.localSha256||'')&&p.localPath.includes('/'+p.id+'-'+p.localSha256.slice(0,16)+'.'))return [p.localPath];const primary=p.url;if(!p.displayDerivative)return [primary];try{const u=new URL(primary);const match=u.pathname.match(/^\/wikipedia\/commons\/([a-f0-9])\/([a-f0-9]{2})\/([^/]+\.(?:jpg|jpeg|png))$/i);if(u.hostname!=='upload.wikimedia.org'||!match)return [primary];const [,a,b,file]=match,thumb=u.origin+'/wikipedia/commons/thumb/'+a+'/'+b+'/'+file+'/330px-'+file;return [...new Set([thumb,primary,u.origin+u.pathname])]}catch{return [primary]}}
+export function portraitUrls(p){if(/^\.\/assets\/i1-approved-portraits\/[A-Z][0-9]{6}-[a-f0-9]{16}\.(jpg|png)$/.test(p.localPath||'')&&/^[a-f0-9]{64}$/.test(p.localSha256||'')&&p.localPath.includes('/'+p.id+'-'+p.localSha256.slice(0,16)+'.'))return [p.localPath];const primary=p.url;if(!p.displayDerivative){try{const u=new URL(primary);return u.hostname==='upload.wikimedia.org'?[...new Set([primary,u.origin+u.pathname])]:[primary]}catch{return [primary]}}try{const u=new URL(primary);const match=u.pathname.match(/^\/wikipedia\/commons\/([a-f0-9])\/([a-f0-9]{2})\/([^/]+\.(?:jpg|jpeg|png))$/i);if(u.hostname!=='upload.wikimedia.org'||!match)return [primary];const [,a,b,file]=match,thumb=u.origin+'/wikipedia/commons/thumb/'+a+'/'+b+'/'+file+'/330px-'+file;return [...new Set([thumb,primary,u.origin+u.pathname])]}catch{return [primary]}}

@@ -61,10 +61,10 @@ try{
  const context=await browser.newContext();
  try{
   const page=await context.newPage();await page.goto(new URL('icon.svg',url).href);
-  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-portraits-v1')});
+  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-portraits-v1')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc3')&&!keys.includes('apm-shell-v17.9-i1-rc1')},{},{timeout:45000});
-  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc3');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc4')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3'].some(k=>keys.includes(k))},{},{timeout:45000});
+  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc4');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
   assert.ok(result.manifest&&result.entry);assert.ok(result.keys.includes('apm-portraits-v1'));
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
