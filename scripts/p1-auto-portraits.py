@@ -36,7 +36,7 @@ def request(url,params=None,binary=False):
     f=cache/(key+'.json')
     if not binary and f.exists() and time.time()-f.stat().st_mtime<7*86400: return json.loads(f.read_text())
     for attempt in range(4):
-        time.sleep(7.0)  # single worker; <= 9 requests/min even if classified as unidentified
+        time.sleep(12.0)  # single worker, slower after repeated server backoff
         try:
             with session.get(url,params=params,timeout=(15,60),stream=binary) as res:
                 if res.status_code in (429,503):
@@ -233,6 +233,7 @@ def main():
     parser.add_argument('--limit',type=int,default=20)
     parser.add_argument('--expand',action='store_true')
     parser.add_argument('--retry-improved',action='store_true')
+    parser.add_argument('--exclude-campaign',action='store_true')
     args=parser.parse_args()
     people,overlap,slots,unresolved,cast_counts=inventory()
     local=read('data/portraits.json')
@@ -260,12 +261,16 @@ def main():
         queue+=sorted((p for k,p in people.items() if (k in overlap or k in cast_counts or k.startswith('hist:')) and not any(a in valid for a in p['aliases'])),key=priority)
     seen=set(); queue=[p for p in queue if not (p['id'] in seen or seen.add(p['id']))]
     attempted=0; pause_until=None; run_ids=[]
+    excluded=set()
+    if args.exclude_campaign and (ROOT/'docs/P1-CAMPAIGN-R5.json').exists():
+        excluded={i for c in read('docs/P1-CAMPAIGN-R5.json').get('chunks',[]) for i in c.get('attemptedIds',[])}
     def checkpoint():
         save(manifest,records)
         save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'thisRunIds':run_ids,'pauseUntil':pause_until,'queueSize':len(queue),'results':previous,'browserVerified':None,'manualRequests':0})
     for p in queue:
         k=p['id']
         if attempted>=args.limit: break
+        if k in excluded: continue
         if any(a in valid for a in p['aliases']) or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
         old=previous.get(k,{})
         retry=args.retry_improved and (k=='M000851' or old.get('status')=='temporary_error' or ('non-Bioguide match needs' in old.get('reason','') and any(t.get('type') in OFFICES for t in p.get('terms',[]))))

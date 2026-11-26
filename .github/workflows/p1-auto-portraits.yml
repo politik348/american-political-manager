@@ -1,4 +1,4 @@
-name: P1 serial 100-to-1000 portrait campaign
+name: P1 resumable 100-to-1000 portrait campaign
 on:
   push:
     branches: [hq-p1-portrait-recovery]
@@ -13,7 +13,7 @@ jobs:
   collect:
     if: github.ref == 'refs/heads/hq-p1-portrait-recovery'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     strategy:
       max-parallel: 1
       fail-fast: true
