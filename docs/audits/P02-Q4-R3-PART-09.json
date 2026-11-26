@@ -73,6 +73,34 @@
               "en": "Let's check again. The Senate rejected Bork's nomination."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "보크의 지명 결과를 {{blank}}으로 기록하죠.",
+          "en": "Record Bork's nomination as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "인준",
+              "en": "confirmed"
+            },
+            {
+              "id": "B",
+              "ko": "부결",
+              "en": "rejected"
+            },
+            {
+              "id": "C",
+              "ko": "철회",
+              "en": "withdrawn"
+            },
+            {
+              "id": "D",
+              "ko": "계류",
+              "en": "pending"
+            }
+          ],
+          "correct": "B"
         }
       },
       "after": {
@@ -113,6 +141,34 @@
               "en": "Do not treat a hearing as confirmation."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "보크의 지명 결과를 {{blank}}으로 기록하죠.",
+          "en": "Record Bork's nomination as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "인준",
+              "en": "confirmed"
+            },
+            {
+              "id": "B",
+              "ko": "부결",
+              "en": "rejected"
+            },
+            {
+              "id": "C",
+              "ko": "지명 철회",
+              "en": "withdrawn"
+            },
+            {
+              "id": "D",
+              "ko": "표결 없이 보류",
+              "en": "held without a vote"
+            }
+          ],
+          "correct": "B"
         }
       },
       "protected": {
@@ -223,7 +279,8 @@
         "changedFields": [],
         "status": "field-match-HQ-review"
       },
-      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only."
+      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only.",
+      "choiceReview": "Distinguish rejection from nomination withdrawal and no vote; preserve answer."
     },
     {
       "id": "P02-202",
@@ -320,18 +377,18 @@
         ],
         "response": {
           "speaker": "player",
-          "ko": "타워는 상원의 {{blank}}을 받지 못했습니다.",
-          "en": "Tower failed to obtain Senate {{blank}}.",
+          "ko": "타워 지명자가 취임하기 위해 필요했지만 얻지 못한 것은 {{blank}}입니다.",
+          "en": "The Senate approval Tower failed to obtain was {{blank}}.",
           "choices": [
             {
               "id": "A",
-              "ko": "비준",
-              "en": "ratification"
+              "ko": "조약 비준",
+              "en": "treaty ratification"
             },
             {
               "id": "B",
-              "ko": "탄핵",
-              "en": "impeachment"
+              "ko": "위원회 자체의 임명",
+              "en": "appointment by the committee"
             },
             {
               "id": "C",
@@ -340,8 +397,8 @@
             },
             {
               "id": "D",
-              "ko": "재선",
-              "en": "reelection"
+              "ko": "상원의 선거",
+              "en": "election by the Senate"
             }
           ],
           "correct": "C"
@@ -481,7 +538,8 @@
         "changedFields": [],
         "status": "field-match-HQ-review"
       },
-      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only."
+      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only.",
+      "choiceReview": "Clarify approval type; alternatives are procedural misconceptions."
     },
     {
       "id": "P02-203",
@@ -533,6 +591,34 @@
               "en": "Let's check again. The Senate confirmed Clarence Thomas."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "토머스는 {{blank}}되었다고 기록하죠.",
+          "en": "Record Thomas as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부결",
+              "en": "rejected"
+            },
+            {
+              "id": "B",
+              "ko": "탄핵",
+              "en": "impeached"
+            },
+            {
+              "id": "C",
+              "ko": "철회",
+              "en": "withdrawn"
+            },
+            {
+              "id": "D",
+              "ko": "인준",
+              "en": "confirmed"
+            }
+          ],
+          "correct": "D"
         }
       },
       "after": {
@@ -573,6 +659,34 @@
               "en": "Do not copy Bork's rejection into this case."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "토머스는 {{blank}}되었다고 기록하죠.",
+          "en": "Record Thomas as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부결",
+              "en": "rejected"
+            },
+            {
+              "id": "B",
+              "ko": "표결 없이 심사 종료",
+              "en": "closed without a vote"
+            },
+            {
+              "id": "C",
+              "ko": "철회",
+              "en": "withdrawn"
+            },
+            {
+              "id": "D",
+              "ko": "인준",
+              "en": "confirmed"
+            }
+          ],
+          "correct": "D"
         }
       },
       "protected": {
@@ -683,7 +797,8 @@
         "changedFields": [],
         "status": "field-match-HQ-review"
       },
-      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only."
+      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only.",
+      "choiceReview": "Remove impeachment as irrelevant to nomination disposition."
     },
     {
       "id": "P02-204",
@@ -3405,6 +3520,34 @@
               "en": "Let's check again. The Senate acquitted Clinton in 1999."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "클린턴 대통령은 {{blank}}되었습니다.",
+          "en": "President Clinton was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "파면",
+              "en": "removed"
+            },
+            {
+              "id": "B",
+              "ko": "재선",
+              "en": "reelected"
+            },
+            {
+              "id": "C",
+              "ko": "지명",
+              "en": "nominated"
+            },
+            {
+              "id": "D",
+              "ko": "무죄",
+              "en": "acquitted"
+            }
+          ],
+          "correct": "D"
         }
       },
       "after": {
@@ -3445,6 +3588,34 @@
               "en": "Do not treat impeachment itself as removal."
             }
           ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "클린턴 대통령은 {{blank}}되었습니다.",
+          "en": "President Clinton was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "유죄 판단 후 파면",
+              "en": "convicted and removed"
+            },
+            {
+              "id": "B",
+              "ko": "최종 판단 없이 재판 종료",
+              "en": "trial closed without a verdict"
+            },
+            {
+              "id": "C",
+              "ko": "상원 판단 연기",
+              "en": "verdict deferred"
+            },
+            {
+              "id": "D",
+              "ko": "무죄",
+              "en": "acquitted"
+            }
+          ],
+          "correct": "D"
         }
       },
       "protected": {
@@ -3555,7 +3726,8 @@
         "changedFields": [],
         "status": "field-match-HQ-review"
       },
-      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only."
+      "historicalReview": "Q2-C R2 core verified; preserve actual facts, simulated actions only.",
+      "choiceReview": "Compare possible trial dispositions, rather than unrelated elections or nominations."
     },
     {
       "id": "P02-216",
