@@ -219,19 +219,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이번엔 워싱턴의 표결 일정이 아니라 시정 업무입니다.",
-          "en": "This time it's city business, not votes in Washington."
-        },
-        {
           "speaker": "player",
-          "ko": "새로운 기관에서 만나네요.",
-          "en": "We're meeting in a different institution."
+          "ko": "뉴욕 주민이 예전 하원 의원실에 시정 민원을 보내려 합니다.",
+          "en": "A New Yorker plans to send a municipal complaint to the former House office."
         },
         {
-          "speaker": "aide",
-          "ko": "이번 접견에는 현재 직책을 적으세요.",
-          "en": "Enter his current title for this meeting."
+          "speaker": "npc:0",
+          "ko": "1934년 현재 제 직책을 확인해 문의의 관할부터 구분하세요.",
+          "en": "Verify my current office in 1934 before routing the inquiry."
         }
       ],
       "response": {
@@ -266,15 +261,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "시민 생활 문제로 다시 만나죠.",
-            "en": "Let's meet again about city life."
+            "ko": "시정 문의는 해당 시정부 절차로 보내고 과거 연방 임기는 따로 보존하세요.",
+            "en": "Route municipal inquiries through city procedures and retain my former federal terms separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1934년 뉴욕시장에 취임했습니다.",
-            "en": "I became New York mayor in 1934."
+            "ko": "저는 1934년 뉴욕시장이 됐습니다. 주정부나 연방 의회로 분류한 안내를 고치세요.",
+            "en": "I became New York City mayor in 1934. Correct any guide identifying my office as state or federal legislative."
+          },
+          {
+            "speaker": "player",
+            "ko": "시정 민원을 연방 의원실로 보내려던 주민에게 시정부 연락 경로를 다시 안내하겠습니다.",
+            "en": "I'll redirect the constituent who was about to send a city complaint to the federal office."
           }
         ]
       },

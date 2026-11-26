@@ -1622,19 +1622,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이 지역에는 통근자가 많이 사는 교외 도시들이 있습니다.",
-          "en": "Many commuters live in this district's suburban communities."
-        },
-        {
-          "speaker": "host",
-          "ko": "지역 교통 문제를 도시 전체 문제로만 보기는 어렵죠.",
-          "en": "Transportation here is not just a central-city issue."
-        },
-        {
           "speaker": "player",
-          "ko": "새 지역구의 지리적 특성을 기록하겠습니다.",
-          "en": "I will note the geography of the constituency."
+          "ko": "통근자 교통 회의가 도심 거주자만 대상으로 준비됐습니다.",
+          "en": "A commuter transport forum was prepared only for downtown residents."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1996년 새 지역구의 지리와 통근 생활권을 확인하세요.",
+          "en": "Identify the new district's 1996 geography and commuting communities."
         }
       ],
       "response": {
@@ -1669,15 +1664,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "통근 주민의 이야기를 더 듣죠.",
-            "en": "Let us hear more from the commuters."
+            "ko": "델타 교외 주민의 통근 질문을 별도로 받고 도시 전체의 교통 문제와 구별하세요.",
+            "en": "Take delta suburban commuters' questions separately from central-city transportation issues."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "델타 지역의 교외 생활권입니다. 이곳에서 지역 대표 활동을 합니다.",
-            "en": "It is a delta district of suburban communities."
+            "ko": "베이 지역 델타의 교외 생활권입니다. 도심 금융가로 소개하지 마세요.",
+            "en": "It is a Bay Area delta suburban constituency, not a downtown financial district."
+          },
+          {
+            "speaker": "player",
+            "ko": "도심 거주자에게만 보낸 초청장을 수정해 델타 생활권 주민도 초청하겠습니다.",
+            "en": "I'll revise the invitation that went only to downtown residents to include the delta communities."
           }
         ]
       },
@@ -1826,19 +1826,14 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "예전 지역 설명에는 공화당 성향이 더 강했다고 합니다.",
-          "en": "The old district description says it leaned more Republican."
+          "speaker": "player",
+          "ko": "재획정 전후의 정당 구성 자료가 같은 시점으로 표시됐습니다.",
+          "en": "Party-composition descriptions before and after redistricting have the same date."
         },
         {
           "speaker": "npc:0",
-          "ko": "2002년 선거에 적용된 지도는 달라졌죠.",
-          "en": "The map used in 2002 changed the district."
-        },
-        {
-          "speaker": "player",
-          "ko": "이전 구성부터 명확히 설명하겠습니다.",
-          "en": "I will describe the earlier political makeup clearly."
+          "ko": "2002년 선거에 적용된 새 지도 이전의 지역 설명을 확인하세요.",
+          "en": "Check the description of the district before the map used in the 2002 election."
         }
       ],
       "response": {
@@ -1873,15 +1868,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "그렇게 이전 지도와 현재 지도를 구분하죠.",
-            "en": "Let us distinguish the old and current maps."
+            "ko": "당시 공화당 성향이 더 강했다는 설명을 이전 지도에 붙이고 이후 성향은 별도 자료로 확인하세요.",
+            "en": "Attach the description of stronger Republican leaning to the earlier map and verify later composition separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "재편 전에는 민주당보다 공화당 성향이 강한 지역이었습니다.",
-            "en": "Before reapportionment the district was more Republican than Democratic."
+            "ko": "재편 전에는 공화당 성향이 더 강했습니다. 이 설명을 현재 득표율로 사용하면 안 됩니다.",
+            "en": "Before redistricting it leaned more Republican. Do not treat that description as a current vote share."
+          },
+          {
+            "speaker": "player",
+            "ko": "현재 선거 자료에 잘못 붙인 과거 정당 성향 설명을 제거하겠습니다.",
+            "en": "I'll remove the historical party description from the current election material."
           }
         ]
       },

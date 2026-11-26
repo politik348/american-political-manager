@@ -526,19 +526,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "미시시피에서 태어나셨다고 들었습니다.",
-          "en": "I heard you were born in Mississippi."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "그렇지만 우리의 의회 활동 기반은 뉴올리언스 쪽이죠.",
-          "en": "But our congressional work is based around New Orleans."
+          "speaker": "player",
+          "ko": "보그스 부부의 소개문에서 출생지와 현재 대표 지역이 뒤바뀌었습니다.",
+          "en": "A biography of the Boggs family swaps birthplace and current constituency."
         },
         {
           "speaker": "npc:0",
-          "ko": "출생지와 선거구는 구분해 주세요.",
-          "en": "Please distinguish birthplace and constituency."
+          "ko": "제 출생지는 미시시피입니다. 현재 하원 대표 주는 별도로 확인하세요.",
+          "en": "My birthplace is Mississippi. Verify my current House constituency separately."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "가족의 기록과 현직 의원의 기록도 분리해 주세요.",
+          "en": "Keep family records separate from the sitting member's service record."
         }
       ],
       "response": {
@@ -572,16 +572,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "좋습니다. 지역 주민들과 인사를 나누죠.",
-            "en": "Good. Let us greet the local residents."
+            "speaker": "npc:0",
+            "ko": "루이지애나 주민의 접견으로 안내하고 출생지 기록은 따로 남기세요.",
+            "en": "Route the meeting to Louisiana constituents and retain the birthplace record separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "루이지애나를 대표합니다. 미시시피는 출생지입니다.",
+            "ko": "저는 루이지애나를 대표합니다. 미시시피는 출생지입니다.",
             "en": "I represent Louisiana; Mississippi is my birthplace."
+          },
+          {
+            "speaker": "player",
+            "ko": "출생지로 분류한 접견 요청을 취소하고 루이지애나 주민으로 다시 배정하겠습니다.",
+            "en": "I'll cancel the meeting assigned by birthplace and route it to Louisiana constituents."
           }
         ]
       },
