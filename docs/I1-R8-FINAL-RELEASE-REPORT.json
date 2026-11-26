@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "round": "I1-B R8",
-  "releaseDecision": "HOLD_PENDING_FINAL_SAME_HEAD_CI_AND_HQ",
+  "releaseDecision": "CONTENT_RC_ALL_THREE_CI_PASSED_PENDING_HQ_APPROVAL_AND_REPORT_ONLY_HEAD_CI",
   "baseR7": "0a535db274e234e8afa68734082fd6f0ec86994c",
   "identitySourceCommit": "bd3f52aac2094cde3f71ebec3c5b6d0388f5efa8",
   "identity": {
@@ -29,6 +29,15 @@
       "R1": 227,
       "R2": 157,
       "rebased": 4
+    },
+    "finalVerified": {
+      "scenes": 2575,
+      "registered": 4295,
+      "total": 4295,
+      "R1": 227,
+      "R2": 157,
+      "rebased": 4,
+      "sourceRun": 45748049373
     }
   },
   "p01": {
@@ -1911,7 +1920,20 @@
       "browserRun": 45746691109
     },
     "changes": 0,
-    "lodge": "approved remote and fallback retained"
+    "lodge": "approved remote and fallback retained",
+    "r8Verified": {
+      "head": "8f707b36e4fccd10e4483b06843d95ff9b43156c",
+      "run": 45748049426,
+      "job": 139668810505,
+      "historicalRegistered": 37,
+      "historicalDisplayed": 37,
+      "notebookRegistered": 28,
+      "notebookDisplayed": 27,
+      "notebookFallback": 1,
+      "fallbackId": "W000784",
+      "forcedFallbackTest": "success",
+      "normalOutputNote": "R7 65/65 verified; same photo paths retained. R8 actual 64/65 normal display; W000784 fallback, no HTTP response captured; precise cause unconfirmed. No new photo work or path changes."
+    }
   },
   "chains": 90,
   "recommendation": {
@@ -1948,7 +1970,15 @@
       "P02-011"
     ],
     "expectedFinal": 2110,
-    "final": "pending CI"
+    "final": 2110,
+    "actual": {
+      "head": "8f707b36e4fccd10e4483b06843d95ff9b43156c",
+      "nodeRun": 45748049373,
+      "eligible": 2110,
+      "coreMatchedAfterRoleGuard": 2551,
+      "improperNonIncumbentRecommendations": 0,
+      "nonIncumbentExclusions": 20
+    }
   },
   "auditIntegration": "docs/I1-R8-AUDIT-PR-INTEGRATION.json",
   "mainAtInspection": "8c2f0b6232ffca187f8a4ba55aeb34c3abd26c92",
@@ -1957,24 +1987,44 @@
     "alternate": "https://politik348.github.io/american-political-manager/start.html",
     "legacy": "https://politik348.github.io/american-political-manager/play-17.8.html",
     "method": "GitHub Pages main / root after HQ approval, static HTTPS; documented in DEPLOY.md. Pages enabled; exact current deployment config not independently read.",
-    "status": "not deployed by R8; V17.9 RC entry files use i1-pilot-app.js"
+    "status": "R8 not deployed; Pages URL inferred from documented main/root setup and repository owner/name; actual Pages settings could not be read, public URL fetch unavailable."
   },
   "ci": {
-    "status": "pending final commit",
+    "testedContentCommit": "8f707b36e4fccd10e4483b06843d95ff9b43156c",
+    "node": {
+      "run": 45748049373,
+      "result": "success",
+      "tests": 53
+    },
+    "pullRequest": {
+      "run": 45748056701,
+      "result": "success"
+    },
+    "chromium": {
+      "run": 45748049426,
+      "job": 139668810505,
+      "result": "success"
+    },
+    "allSameHead": true,
+    "reportOnlyHead": "The commit containing this finalized report changes only this document. Its own SHA cannot be embedded in itself. Same-head final check results and SHA are recorded in the PR #3 handoff comment after verification.",
     "checks": "https://github.com/politik348/american-political-manager/pull/3/checks",
-    "intermediate": {
-      "head": "7805f519b3fa7e23df7b67ddc30acb07ecc4dec4",
-      "node": 45747923510,
-      "pr": 45747929316,
-      "browser": 45747923307,
-      "conclusion": "failure of new role guard test only; identity and editorial classification logged; targeted recommendation eligibility guard corrected"
+    "prior": {
+      "status": "pending final commit",
+      "checks": "https://github.com/politik348/american-political-manager/pull/3/checks",
+      "intermediate": {
+        "head": "7805f519b3fa7e23df7b67ddc30acb07ecc4dec4",
+        "node": 45747923510,
+        "pr": 45747929316,
+        "browser": 45747923307,
+        "conclusion": "failure of new role guard test only; identity and editorial classification logged; targeted recommendation eligibility guard corrected"
+      }
     }
   },
   "risks": [
-    "External images remain network-dependent; fallback retained",
-    "R7 photos validated, R8 Chromium must verify on final head",
-    "No new historical audit or content development; editorial holds not a release blocker",
-    "HQ approval and final CI required"
+    "External portrait retrieval remains network-dependent; R8 64/65 normal output, W000784 fallback; cause not confirmed. R7 65/65 verified.",
+    "46 P01 proposals unapplied and 4 safe holds; all 1153 classified; not release gate.",
+    "GitHub Pages enabled according to repository metadata; configuration and live URL not independently confirmed (access blocked); no deployment performed.",
+    "HQ approval and report-only HEAD CI required."
   ],
   "prohibitions": {
     "mergeMain": false,
@@ -1982,5 +2032,6 @@
     "p03": false,
     "newDevelopment": false
   },
-  "serviceWorker": "rc7; prior shell eviction; portrait cache retained"
+  "serviceWorker": "rc7; prior shell eviction; portrait cache retained",
+  "testedContentCommit": "8f707b36e4fccd10e4483b06843d95ff9b43156c"
 }
