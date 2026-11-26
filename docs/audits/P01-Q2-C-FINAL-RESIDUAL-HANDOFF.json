@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "team": "Q2-C",
+  "scope": "final residual history only",
+  "i1Head": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+  "baselineCore": 2075,
+  "newCoreCredit": 0,
+  "counts": {
+    "pass": 11,
+    "revise": 3,
+    "hold": 1
+  },
+  "rows": [
+    {
+      "id": "P01-1776",
+      "path": "data/dialogue-packs/P01/part-72.json",
+      "sourceBlobSha": "6c2cdc091117feb2bede9be231759c706727b996",
+      "correctId": "A",
+      "legacyAfterMatch": true,
+      "status": "revise",
+      "finding": "Future knowledge: Public Lands chairmanship was 60th–61st, not yet held in 1905. Core answer valid; do not reuse old after.",
+      "sources": [
+        "https://history.house.gov/People/Listing/M/MONDELL,-Frank-Wheeler-(M000852)/"
+      ],
+      "changes": [
+        {
+          "field": "followup.incorrect.0",
+          "before": {
+            "speaker": "npc:0",
+            "ko": "건조지 관개위원회가 맞습니다. 다른 회기의 공공토지위원장 경력을 적용하면 안 됩니다.",
+            "en": "Irrigation of Arid Lands is correct. Do not substitute my Public Lands chairmanship from another Congress."
+          },
+          "after": {
+            "speaker": "npc:0",
+            "ko": "건조지 관개위원회가 맞습니다. 제59대 의회의 관개 청원을 일반 공공토지 청원과 혼동하지 마세요.",
+            "en": "Irrigation of Arid Lands is correct. Do not confuse irrigation petitions with general public-land petitions in the 59th Congress."
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1786",
+      "path": "data/dialogue-packs/P01/part-72.json",
+      "sourceBlobSha": "6c2cdc091117feb2bede9be231759c706727b996",
+      "correctId": "C",
+      "legacyAfterMatch": true,
+      "status": "revise",
+      "finding": "At-large 1916 confirmed; 1917 redistricting approved before war vote; do not say numbered districts did not exist on scene date.",
+      "sources": [
+        "https://history.house.gov/Blog/Detail/15032451896"
+      ],
+      "changes": [
+        {
+          "field": "followup.correct.0",
+          "before": {
+            "speaker": "npc:0",
+            "ko": "두 전주 의석의 별도 대표를 표시하고 존재하지 않는 번호 지역구로 주민을 나누지 마세요.",
+            "en": "Identify the separate statewide members and do not divide residents by nonexistent numbered districts."
+          },
+          "after": {
+            "speaker": "npc:0",
+            "ko": "1916년 주 전체에서 선출된 두 현직 의원을 각각 표시하고, 이후 지역구 개편 기록과 구분하세요.",
+            "en": "Identify the two sitting members elected statewide in 1916, separately from the redistricting record."
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1804",
+      "path": "data/dialogue-packs/P01/part-73.json",
+      "sourceBlobSha": "4fad7b19b0d5776fe2d3be26d5d573b92b3bd97b",
+      "correctId": "D",
+      "legacyAfterMatch": false,
+      "status": "pass",
+      "finding": "R6 proposal historically suitable but not applied. Resignation effective March 2, 1935; judge confirmed; apply opening/followup only after before/protected check.",
+      "sources": [
+        "https://www.fjc.gov/history/judges/mcduffie-john",
+        "https://history.house.gov/People/Detail/17861"
+      ],
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난달 하원을 떠나 연방 법원으로 옮겼습니다.",
+              "en": "I left the House last month for the federal court."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 미시시피 하원 현직입니다. 공직 유형을 구별해야겠군요.",
+              "en": "I remain in the House for Mississippi. Distinguish the offices."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "앨라배마 주민이 맥더피 의원의 예전 하원 주소로 입법 문의를 보내려 합니다.",
+              "en": "An Alabama resident plans to send a legislative inquiry to McDuffie's former House address."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1935년 3월 2일 하원 사임 이후의 새 직책을 확인해 주세요.",
+              "en": "Identify my new office following my House resignation on March 2, 1935."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "현직 의원의 입법 역할과 사법부의 직무는 구별해야 합니다.",
+              "en": "Distinguish a sitting legislator's responsibilities from judicial duties."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "이전 앨라배마 하원 기록을 전직으로 전환하겠습니다.",
+                "en": "I'll move the Alabama House record to former members."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "맥더피는 연방 지방법원 판사로 임명되어 1935년 3월 2일 하원을 사임했다.",
+                "en": "McDuffie resigned effective March 2, 1935, after appointment as a federal district judge."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "입법 문의는 현직 의원에게 전달하고 제 새 직책은 별도 기록으로 남기세요.",
+                "en": "Route the legislative inquiry to a sitting member and keep my new office in a separate record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "맥더피는 연방 지방법원 판사로 임명됐습니다. 전직 하원 기록을 현직으로 돌려놓지 마세요.",
+                "en": "McDuffie was appointed a federal district judge. Do not restore his former House record as incumbent."
+              }
+            ]
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1814",
+      "path": "data/dialogue-packs/P01/part-73.json",
+      "sourceBlobSha": "4fad7b19b0d5776fe2d3be26d5d573b92b3bd97b",
+      "correctId": "B",
+      "legacyAfterMatch": false,
+      "status": "pass",
+      "finding": "R6 proposal historically suitable but not applied; November 16 oath, successor Riley January 3; distinguish special and regular election. Current incorrect line also has incomplete English; use reviewed R6 opening/followup after guard.",
+      "sources": [
+        "https://history.house.gov/People/Detail/13499",
+        "https://history.house.gov/People/Detail/20408"
+      ],
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번 달 남편의 남은 임기를 채우기 위해 취임했습니다.",
+              "en": "I took office this month to finish my husband's remaining term."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 다음 정기 임기의 당선인입니다. 같은 날 선거였지만 임기는 다릅니다.",
+              "en": "I won the next full term. The elections took place the same day but cover different terms."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "11월 선거 결과를 보도한 신문이 윌라 풀머가 남편의 의석을 자동으로 물려받았다고 적었습니다.",
+              "en": "A newspaper says Willa Fulmer automatically inherited her husband's seat after the November election."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 취임을 가족 관계만으로 설명하지 말고 선거 기록을 확인해 주세요.",
+              "en": "Check the election record rather than explaining my accession solely by family relationship."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "같은 날의 제 정기 임기 당선 기록은 별도로 남겨야 합니다.",
+              "en": "Keep my election to the next full term on the same day as a separate record."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "두 선거 결과와 인계 일정을 별도 보존하겠습니다.",
+                "en": "I'll keep separate election and handover records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "윌라 풀머는 남편 사망으로 생긴 잔여 임기를 채웠고 라일리는 다음 임기에 당선됐다.",
+                "en": "Willa Fulmer filled her husband's unexpired term"
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "잔여 임기 선거와 다음 정기 임기 선거를 각각 표시한 정정문을 내세요.",
+                "en": "Issue a correction distinguishing the unexpired-term election from the next full-term election."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "윌라 풀머는 잔여 임기 보궐선거에 당선됐고 저는 다음 정기 임기에 당선됐습니다. 자동 승계가 아닙니다.",
+                "en": "Willa Fulmer won the special election for the unexpired term; I won the next full term. It was not automatic succession."
+              }
+            ]
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1831",
+      "path": "data/dialogue-packs/P01/part-74.json",
+      "sourceBlobSha": "34b9e232d3f173446687d43727e3799cea070c67",
+      "correctId": "B",
+      "legacyAfterMatch": true,
+      "status": "revise",
+      "finding": "Core chair title correct; modern committee name dialogue is retrospective in dated 1965 scene. Remove future viewpoint.",
+      "sources": [
+        "https://history.house.gov/People/Detail/8577"
+      ],
+      "changes": [
+        {
+          "field": "opening.0",
+          "before": {
+            "speaker": "player",
+            "ko": "서부 공공토지 청원에 현대 위원회 명칭을 소급 적용한 보고가 있습니다.",
+            "en": "A report retroactively applies a modern committee name to a western public-land petition."
+          },
+          "after": {
+            "speaker": "player",
+            "ko": "서부 공공토지 청원에 위원회 명칭이 잘못 표시되어 있습니다.",
+            "en": "A western public-land petition lists the wrong committee name."
+          }
+        },
+        {
+          "field": "followup.incorrect.0",
+          "before": {
+            "speaker": "npc:0",
+            "ko": "애스피널은 내무 및 도서 문제 위원회 의장이었습니다. 현대 명칭으로 바꾸지 마세요.",
+            "en": "Aspinall chaired Interior and Insular Affairs. Do not substitute a modern committee name."
+          },
+          "after": {
+            "speaker": "npc:0",
+            "ko": "애스피널은 내무 및 도서 문제 위원회 의장입니다. 제89대 의회의 공식 명칭을 사용하세요.",
+            "en": "Aspinall chairs Interior and Insular Affairs. Use the official title in the 89th Congress."
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1849",
+      "path": "data/dialogue-packs/P01/part-74.json",
+      "sourceBlobSha": "34b9e232d3f173446687d43727e3799cea070c67",
+      "correctId": "D",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Young resigned January 29, 1977 and served as UN ambassador; current wording distinguishes diplomatic and House service.",
+      "sources": [
+        "https://history.house.gov/People/Detail/21064",
+        "https://history.house.gov/People/Detail/22025"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1854",
+      "path": "data/dialogue-packs/P01/part-75.json",
+      "sourceBlobSha": "01ace27b319cb2e37efde3081cef4ca0b8f3bb4d",
+      "correctId": "D",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Duncan won both elections Nov 8, 1988; Tauzin special election May 17, 1980 confirmed.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2000-10-01/html/CDIR-2000-10-01-TN-H-2.htm",
+        "https://history.house.gov/People/Listing/T/TAUZIN%2C-Wilbert-Joseph-%28Billy%29-%28T000058%29/"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1865",
+      "path": "data/dialogue-packs/P01/part-75.json",
+      "sourceBlobSha": "01ace27b319cb2e37efde3081cef4ca0b8f3bb4d",
+      "correctId": "C",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "1999 directory AL-2 Agriculture; committee work not individual benefit eligibility.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/CDIR-1999-06-15/html/CDIR-1999-06-15-AL.htm"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1907",
+      "path": "data/dialogue-packs/P01/part-77.json",
+      "sourceBlobSha": "8e60ff88fc6fc2d33bb1d85c4affa725e43989d4",
+      "correctId": "D",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Sponsor March 17 2025 confirms automatic refinance with opt-out; proposal, not current law.",
+      "sources": [
+        "https://moskowitz.house.gov/posts/federal-student-loan-interest-rates"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1909",
+      "path": "data/dialogue-packs/P01/part-77.json",
+      "sourceBlobSha": "8e60ff88fc6fc2d33bb1d85c4affa725e43989d4",
+      "correctId": "B",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Sponsor explicitly excludes civilian federal surviving spouses; military-survivor answer refers to surviving spouses, not every relative. Preserve proposal framing.",
+      "sources": [
+        "https://morrison.house.gov/media/press-releases/us-rep-kelly-morrison-introduces-bipartisan-bill-support-surviving-spouses"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1913",
+      "path": "data/dialogue-packs/P01/part-77.json",
+      "sourceBlobSha": "8e60ff88fc6fc2d33bb1d85c4affa725e43989d4",
+      "correctId": "B",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "July 10 2025 reintroduction; sprinkler retrofit funding proposal, no grant/enactment claim.",
+      "sources": [
+        "https://watsoncoleman.house.gov/newsroom/press-releases/reps-bonnie-watson-coleman-and-john-rutherford-introduce-bipartisan-legislation-to-equip-public-housing-units-with-fire-sprinklers"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1926",
+      "path": "data/dialogue-packs/P01/part-78.json",
+      "sourceBlobSha": "37698dc6e7a5aa4d4ffd5ccf328f3ffe151ff8ce",
+      "correctId": "C",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Clerk petition 21 May 12 2026 H.R.4889 targets Judiciary; distinct from passage.",
+      "sources": [
+        "https://clerk.house.gov/DischargePetition/2026051221?Page=3"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1940",
+      "path": "data/dialogue-packs/P01/part-78.json",
+      "sourceBlobSha": "37698dc6e7a5aa4d4ffd5ccf328f3ffe151ff8ce",
+      "correctId": "A",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "Exact indexed official Rules Committee record vote 321 confirms Neguse motion on Van Orden amendment 253 to H.R.7567, defeated 4–9, Langworthy Nay. Direct page fetch 403 but the search extraction reproduced the complete vote 321 table. No floor passage claim.",
+      "sources": [
+        "https://rules.house.gov/bill/119/hr-7567"
+      ],
+      "changes": [],
+      "action": "CLEAR_HISTORICAL_HOLD_NO_REAPPLY",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1214",
+      "path": "data/dialogue-packs/P01/part-49.json",
+      "sourceBlobSha": "2fc7f4dda1a42f0b7b8576ea707b029d17cd0075",
+      "correctId": "C",
+      "legacyAfterMatch": true,
+      "status": "pass",
+      "finding": "1939 ordinance OI-379 election canvass confirms Maverick mayor and all three alternative commission titles; extracted municipal PDF text verified, screenshot 403. Approve revised distractor draft historically only, subject HQ.",
+      "sources": [
+        "https://www.sa.gov/files/assets/main/v/1/occ/documents/municipal-archives-records/finding-aids/city-san-antonio-election-results-1856-2021.pdf",
+        "https://history.house.gov/People/Detail/17648"
+      ],
+      "changes": [
+        {
+          "field": "response.choices.A",
+          "before": {
+            "id": "A",
+            "ko": "주지사",
+            "en": "governor"
+          },
+          "after": {
+            "id": "A",
+            "ko": "조세 담당 시 위원",
+            "en": "commissioner of taxation"
+          }
+        },
+        {
+          "field": "response.choices.B",
+          "before": {
+            "id": "B",
+            "ko": "카운티 보안관",
+            "en": "county sheriff"
+          },
+          "after": {
+            "id": "B",
+            "ko": "도로 및 공공개선 담당 시 위원",
+            "en": "commissioner of streets and public improvements"
+          }
+        },
+        {
+          "field": "response.choices.D",
+          "before": {
+            "id": "D",
+            "ko": "연방 상원의원",
+            "en": "U.S. senator"
+          },
+          "after": {
+            "id": "D",
+            "ko": "소방 및 경찰 담당 시 위원",
+            "en": "commissioner of fire and police"
+          }
+        }
+      ],
+      "action": "HQ_REVIEW_THEN_APPLY_FIELDWISE",
+      "newCoreCredit": 0
+    },
+    {
+      "id": "P01-1324",
+      "path": "data/dialogue-packs/P01/part-53.json",
+      "sourceBlobSha": "8f03f3ef5724031a37d1fa0505d6a419bd205ad9",
+      "correctId": "A",
+      "legacyAfterMatch": true,
+      "status": "hold",
+      "finding": "Congressional Directory confirms White House fellow in Clinton administration. No evidence ruling out overlapping generic executive counsel/policy staff roles. Do not apply alternative distractors; retain existing response A.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-NM.htm"
+      ],
+      "changes": [],
+      "action": "DO_NOT_APPLY",
+      "newCoreCredit": 0
+    }
+  ],
+  "guard": "Exact before checks; choice paths keyed by ID; preserve cast, correct ID, evidence unless specifically instructed; no main or engine change; HQ approval required. Status applies only to specified historical expression, not full release approval."
+}

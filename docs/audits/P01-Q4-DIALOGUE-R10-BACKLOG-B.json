@@ -1,0 +1,2038 @@
+{
+  "schema": "q4-r10-backlog-v1",
+  "rows": [
+    {
+      "id": "P01-858",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 신시내티 법학대학원을 졸업한 뒤 이곳에서 실무를 시작했습니다.",
+                "en": "Correct. I graduated from Cincinnati Law School and began practicing here."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "신시내티입니다. 1894년에 그곳에서 법학 공부를 마치고 실무를 시작했죠.",
+                "en": "Cincinnati. I completed my law degree and began practicing there in 1894."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "신시내티 법조계 동료들의 질문부터 받겠습니다. 당시 법학 교육과 개업 경험을 함께 이야기하죠.",
+                "en": "I'll take questions from Cincinnati legal colleagues first, discussing my legal education and entry into practice."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1894년에 신시내티에서 실무를 시작했습니다. 다른 도시의 법조인으로 소개한 행사 안내를 고쳐 주세요.",
+                "en": "I began practicing in Cincinnati in 1894. Correct the program identifying me with another city's legal community."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-858",
+        "mechanism": "hometown-profession",
+        "learningTarget": "Longworth graduated from Cincinnati Law School and began practicing law in Cincinnati in 1894.",
+        "date": "1904-04-12",
+        "venue": {
+          "ko": "신시내티 법률가 모임",
+          "en": "Cincinnati legal community gathering"
+        },
+        "context": {
+          "ko": "신임 하원의원을 초청한 지역 법률가들이 그의 지역사회 경력을 소개하려 한다.",
+          "en": "Local lawyers invite the relatively new House member and prepare to introduce his professional ties to the community."
+        },
+        "cast": [
+          {
+            "id": "L000433",
+            "name": "Nicholas Longworth",
+            "ko": "니컬러스 롱워스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/17133"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방 의회에 오기 전에는 여러분처럼 지역에서 법률 업무를 했습니다.",
+            "en": "Before Congress, I practiced law locally, as many of you do."
+          },
+          {
+            "speaker": "host",
+            "ko": "그의 1894년 법률 교육과 실무 출발지를 프로그램에 넣어 주세요.",
+            "en": "Please include the city where he completed his legal studies and began practicing in 1894."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "롱워스 의원의 법률 실무는 {{blank}}에서 시작되었습니다.",
+          "en": "Representative Longworth began his legal practice in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "클리블랜드",
+              "en": "Cleveland"
+            },
+            {
+              "id": "B",
+              "ko": "콜럼버스",
+              "en": "Columbus"
+            },
+            {
+              "id": "C",
+              "ko": "신시내티",
+              "en": "Cincinnati"
+            },
+            {
+              "id": "D",
+              "ko": "데이턴",
+              "en": "Dayton"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/L/LONGWORTH%2C-Nicholas-%28L000433%29/",
+            "claim": "Cincinnati Law School graduation and admission to bar in 1894; practiced in Cincinnati.",
+            "asOf": "1904-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-858-hometown-profession"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-869",
+      "path": "data/dialogue-packs/P01/part-35.json",
+      "originalBlobSha": "4fd8ce7424f973a67ccb1af5f360ea12882d988f",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "no_new_proposal",
+      "note": "Current bilingual opening is already an applied editorial-style rewrite: distinct speakers, neutral Congress-number prompt, correct response connects Congress to January 3, 2019, incorrect branch gives the correction; no redundant acknowledgement. No new patch justified.",
+      "reviewedFields": [
+        "opening",
+        "response",
+        "followup"
+      ],
+      "status": "retain_current_I1"
+    },
+    {
+      "id": "P01-880",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 경험을 두 정부 수준의 비교에 활용하세요.",
+                "en": "Use that experience to compare state and federal government."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 웨스트버지니아 주 재무관이었습니다.",
+                "en": "I was West Virginia's state treasurer."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 재무관 시절의 재정 관리 경험을 바탕으로 주정부와 연방 의회의 역할을 비교해 보죠.",
+                "en": "Let's compare state government and Congress using my experience managing public finances as state treasurer."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "웨스트버지니아 주 재무관이었습니다. 주지사나 감사관의 권한을 전제로 만든 질문을 수정하세요.",
+                "en": "I was West Virginia's state treasurer. Revise questions premised on the governor's or auditor's powers."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-880",
+        "mechanism": "state-finance",
+        "learningTarget": "Moore was West Virginia's 25th state treasurer.",
+        "date": "2025-03-10",
+        "venue": {
+          "ko": "직업훈련 재정 토론",
+          "en": "Vocational finance discussion"
+        },
+        "context": {
+          "ko": "직업훈련 재원 토론에서 무어가 주 재정 경험을 비교 사례로 제시한다.",
+          "en": "Moore offers his state finance experience as a comparison during a workforce funding discussion."
+        },
+        "cast": [
+          {
+            "id": "M001235",
+            "name": "Riley M. Moore",
+            "ko": "라일리 무어",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001235.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001235"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회 직전에는 웨스트버지니아의 재정 관련 선출직에 있었습니다.",
+            "en": "Before Congress I held an elected finance office in West Virginia."
+          },
+          {
+            "speaker": "player",
+            "ko": "재정 관리와 입법의 차이가 궁금합니다.",
+            "en": "I wonder how financial administration differs from legislation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "당시 직책은 {{blank}}이었습니다.",
+          "en": "Your previous office was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "B",
+              "ko": "주 재무관",
+              "en": "state treasurer"
+            },
+            {
+              "id": "C",
+              "ko": "주 법무장관",
+              "en": "state attorney general"
+            },
+            {
+              "id": "D",
+              "ko": "주 감사관",
+              "en": "state auditor"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://rileymoore.house.gov/about",
+            "claim": "25th state treasurer of West Virginia before House service.",
+            "asOf": "2025-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-880-state-finance"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-883",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 차이를 모의수업에 적용해 보죠.",
+                "en": "Apply that distinction in the mock class."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "세인트루이스 카운티 검사장이었습니다.",
+                "en": "I was St. Louis County prosecuting attorney."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "세인트루이스 카운티 검찰 경험을 바탕으로 모의재판의 지방검찰 역할을 설명하겠습니다.",
+                "en": "I'll explain the local prosecutor's role in the mock trial using my St. Louis County experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "세인트루이스 카운티 검사장이었습니다. 다른 관할에서 일한 것으로 설정한 모의 사건의 배경을 수정하세요.",
+                "en": "I was St. Louis County prosecuting attorney. Correct the mock case's setting if it assigns me to another jurisdiction."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-883",
+        "mechanism": "justice-roleplay",
+        "learningTarget": "Bell served as St. Louis County prosecuting attorney.",
+        "date": "2025-03-17",
+        "venue": {
+          "ko": "세인트루이스 법률 클리닉",
+          "en": "St. Louis legal clinic"
+        },
+        "context": {
+          "ko": "법률 클리닉의 역할극에서 벨이 지방검찰과 연방의회의 권한을 구분한다.",
+          "en": "Bell distinguishes local prosecution from federal legislative authority during a legal clinic roleplay."
+        },
+        "cast": [
+          {
+            "id": "B001324",
+            "name": "Wesley Bell",
+            "ko": "웨슬리 벨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001324"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 과거 지방검찰을 책임졌습니다.",
+            "en": "I previously led a local prosecutor's office."
+          },
+          {
+            "speaker": "player",
+            "ko": "모의재판에서 지방검찰과 연방 입법을 구분할게요.",
+            "en": "I'll distinguish local prosecution from federal lawmaking in our simulation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "검사장을 지낸 곳은 {{blank}}입니다.",
+          "en": "You served as prosecuting attorney of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "세인트찰스 카운티",
+              "en": "St. Charles County"
+            },
+            {
+              "id": "B",
+              "ko": "캔자스시티",
+              "en": "Kansas City"
+            },
+            {
+              "id": "C",
+              "ko": "세인트루이스 카운티",
+              "en": "St. Louis County"
+            },
+            {
+              "id": "D",
+              "ko": "잭슨 카운티",
+              "en": "Jackson County"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://bell.house.gov/about/biography",
+            "claim": "Former St. Louis County prosecuting attorney.",
+            "asOf": "2025-03-17"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-883-justice-roleplay"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-886",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "no_new_proposal",
+      "note": "Both versions conceal the engineering specialty; player frames policy relevance, correct branch invites student experiments while incorrect branch explains electrical engineering. Existing interaction is distinct and natural; no new patch needed.",
+      "reviewedFields": [
+        "opening",
+        "response",
+        "followup"
+      ],
+      "status": "retain_current_I1"
+    },
+    {
+      "id": "P01-889",
+      "path": "data/dialogue-packs/P01/part-36.json",
+      "originalBlobSha": "7fa7b1386e9cc4873f96625f8decd931ab70e078",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주 의회와 연방 절차를 비교해 보죠.",
+                "en": "Let's compare state and federal procedures."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "텍사스 주 하원에서 세 임기를 지냈습니다.",
+                "en": "I served three terms in the Texas House."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "텍사스 주하원 경험을 토대로 모의회의에서 주 입법 절차를 먼저 비교해 봅시다.",
+                "en": "Let's use my Texas House experience to compare state legislative procedures in the mock session first."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "텍사스 주하원에서 세 임기를 지냈습니다. 다른 원의 규칙을 전제로 준비한 모의회의 계획을 바꿔 주세요.",
+                "en": "I served three terms in the Texas House. Change the mock session plan based on another chamber's rules."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-889",
+        "mechanism": "mock-legislature",
+        "learningTarget": "Julie Johnson served three terms in the Texas House.",
+        "date": "2025-04-01",
+        "venue": {
+          "ko": "텍사스 청년의회",
+          "en": "Texas youth legislature"
+        },
+        "context": {
+          "ko": "청년의회 참가자에게 존슨이 주 입법과 연방 입법의 차이를 이야기한다.",
+          "en": "Johnson discusses state and federal lawmaking with a youth legislature participant."
+        },
+        "cast": [
+          {
+            "id": "J000310",
+            "name": "Julie Johnson",
+            "ko": "줄리 존슨",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/J000310.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/J000310"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방의회에서는 신임이지만 이전 입법기관에서 세 임기를 보냈습니다.",
+            "en": "I am new to Congress but served three terms in another legislature."
+          },
+          {
+            "speaker": "player",
+            "ko": "모의회의에 그 경험을 활용하고 싶어요.",
+            "en": "I'd like to use that experience for our mock session."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "{{blank}}의 경험을 참고하겠습니다.",
+          "en": "We'll draw on your experience in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "텍사스 주 하원",
+              "en": "the Texas House"
+            },
+            {
+              "id": "B",
+              "ko": "텍사스 주 상원",
+              "en": "the Texas Senate"
+            },
+            {
+              "id": "C",
+              "ko": "연방 상원",
+              "en": "the U.S. Senate"
+            },
+            {
+              "id": "D",
+              "ko": "댈러스 시의회",
+              "en": "Dallas City Council"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://juliejohnson.house.gov/about",
+            "claim": "Three terms in Texas House before Congress.",
+            "asOf": "2025-04-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-889-mock-legislature"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-908",
+      "path": "data/dialogue-packs/P01/part-37.json",
+      "originalBlobSha": "d0f0101cc1e46646e4548160f3d5f042ba97339d",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이제 통신기술의 변화가 정책에 미치는 영향을 토론하죠.",
+                "en": "Now discuss how changing communications technology affects policy."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마이크로소프트에서 일했습니다.",
+                "en": "I worked at Microsoft."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "마이크로소프트에서의 기술 기업 경험을 바탕으로 통신정책 토론의 질문을 받아 보겠습니다.",
+                "en": "I'll take questions on communications policy drawing on my technology-industry experience at Microsoft."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "마이크로소프트에서 12년간 일했습니다. 다른 기업의 경력을 전제로 만든 패널 질문을 교체하세요.",
+                "en": "I spent twelve years at Microsoft. Replace panel questions premised on a career at another company."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-908",
+        "mechanism": "technical-debate",
+        "learningTarget": "DelBene spent twelve years at Microsoft before Congress.",
+        "date": "2017-04-18",
+        "venue": {
+          "ko": "기술 정책 토론",
+          "en": "Technology policy discussion"
+        },
+        "context": {
+          "ko": "기술 기업의 역할을 묻는 참가자에게 델베네가 민간기업 경력을 이야기한다.",
+          "en": "DelBene shares her private-sector experience with a participant asking about technology companies."
+        },
+        "cast": [
+          {
+            "id": "D000617",
+            "name": "Suzan K. DelBene",
+            "ko": "수잔 델베네",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/D000617.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/D000617"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 모바일 통신 사업의 기업 임원으로 일한 적이 있습니다.",
+            "en": "I previously worked as an executive in mobile communications."
+          },
+          {
+            "speaker": "player",
+            "ko": "기술 기업의 경험을 정책 토론에 연결할 수 있겠군요.",
+            "en": "That experience could inform policy discussion."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "델베네 의원이 12년간 근무한 기업은 {{blank}}입니다.",
+          "en": "DelBene spent twelve years at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "애플",
+              "en": "Apple"
+            },
+            {
+              "id": "B",
+              "ko": "인텔",
+              "en": "Intel"
+            },
+            {
+              "id": "C",
+              "ko": "IBM",
+              "en": "IBM"
+            },
+            {
+              "id": "D",
+              "ko": "마이크로소프트",
+              "en": "Microsoft"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://delbene.house.gov/news/documentsingle.aspx?DocumentID=1495",
+            "claim": "Spent 12 years at Microsoft before Congress.",
+            "asOf": "2017-04-18"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-908-technical-debate"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-910",
+      "path": "data/dialogue-packs/P01/part-37.json",
+      "originalBlobSha": "d0f0101cc1e46646e4548160f3d5f042ba97339d",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Opening gave answer or eliminated an option; neutralize in both languages and differentiate followup.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "제 4구에는 미네소타의 주도가 있습니다.",
+              "en": "My Fourth District includes Minnesota's state capital."
+            },
+            {
+              "speaker": "player",
+              "ko": "미니애폴리스와 주도를 혼동하는 사람이 많더군요.",
+              "en": "People often confuse Minneapolis and the capital."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "제4구에는 미네소타의 주도가 있습니다.",
+              "en": "My Fourth District includes Minnesota's capital."
+            },
+            {
+              "speaker": "player",
+              "ko": "주도 주민 방문단의 일정을 잡기 전에 도시 이름을 확인하겠습니다.",
+              "en": "I'll identify the city before arranging the capital's delegation visit."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 도시의 행정 기능도 비교해 봅시다.",
+                "en": "Let's compare the cities' administrative roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "세인트폴입니다. 미네소타의 주도죠.",
+                "en": "Saint Paul, Minnesota's capital."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "세인트폴 주민의 요청을 먼저 받겠습니다. 미니애폴리스의 문의와는 별도 관할로 확인해 주세요.",
+                "en": "I'll take Saint Paul residents' requests first. Check Minneapolis inquiries separately by jurisdiction."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미네소타의 주도는 세인트폴입니다. 잘못된 도시로 안내한 주민 방문 일정을 수정하세요.",
+                "en": "Minnesota's capital is Saint Paul. Correct the visitor schedule that sends residents to the wrong city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-910",
+        "mechanism": "capital-city",
+        "learningTarget": "McCollum represents Saint Paul in MN-4.",
+        "date": "2024-05-13",
+        "venue": {
+          "ko": "미네소타 수도 행사",
+          "en": "Minnesota capital gathering"
+        },
+        "context": {
+          "ko": "주도를 방문한 참가자에게 매컬럼이 지역구와 주도의 관계를 설명한다.",
+          "en": "McCollum explains how her district relates to the state capital to a visitor."
+        },
+        "cast": [
+          {
+            "id": "M001143",
+            "name": "Betty McCollum",
+            "ko": "베티 매컬럼",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001143.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001143"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "매컬럼 의원이 대표하는 주도는 {{blank}}입니다.",
+          "en": "The capital McCollum represents is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로체스터",
+              "en": "Rochester"
+            },
+            {
+              "id": "B",
+              "ko": "세인트폴",
+              "en": "Saint Paul"
+            },
+            {
+              "id": "C",
+              "ko": "미니애폴리스",
+              "en": "Minneapolis"
+            },
+            {
+              "id": "D",
+              "ko": "덜루스",
+              "en": "Duluth"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://mccollum.house.gov/about-betty/biography",
+            "claim": "MN-4 includes state capital Saint Paul.",
+            "asOf": "2024-05-13"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-910-capital-city"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-914",
+      "path": "data/dialogue-packs/P01/part-37.json",
+      "originalBlobSha": "d0f0101cc1e46646e4548160f3d5f042ba97339d",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "당적과 조사 역할을 구분해 살펴보죠.",
+                "en": "Let's distinguish party affiliation from investigative responsibility."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 펜실베이니아 16구이고 코레아 의원은 캘리포니아 의원입니다.",
+                "en": "I represent PA-16; Correa represents California."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "펜실베이니아 주민의 질문은 제가 받고 캘리포니아 주민의 질문은 코레아 의원에게 넘기겠습니다. 조사 역할은 별도로 설명하죠.",
+                "en": "I'll take Pennsylvania constituents' questions and leave California questions to Representative Correa; we'll explain our investigative roles separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 펜실베이니아 16구를 대표합니다. 코레아 의원과 대표 주를 바꿔 쓴 토론 안내를 수정하세요.",
+                "en": "I represent Pennsylvania's 16th District. Correct the discussion guide that swaps our states."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-914",
+        "mechanism": "joint-public-work",
+        "learningTarget": "Kelly and Correa were named to the bipartisan House task force in July 2024.",
+        "date": "2024-09-05",
+        "venue": {
+          "ko": "초당적 조사위원회 토론",
+          "en": "Bipartisan task force discussion"
+        },
+        "context": {
+          "ko": "두 의원이 실제 특별 조사 태스크포스의 구성과 역할을 토론한다.",
+          "en": "Two representatives discuss the membership and role of an actual investigative task force."
+        },
+        "cast": [
+          {
+            "id": "K000376",
+            "name": "Mike Kelly",
+            "ko": "마이크 켈리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000376.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/K000376"
+          },
+          {
+            "id": "C001110",
+            "name": "J. Luis Correa",
+            "ko": "루 코레아",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001110.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C001110"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "7월에 양당 지도부가 특별 조사 태스크포스의 구성원을 발표했습니다.",
+            "en": "In July the House leaders announced membership of a bipartisan investigative task force."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 그 명단에 포함됐습니다.",
+            "en": "I was included in that group too."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코레아 의원과 함께 발표된 켈리 의원의 주는 {{blank}}입니다.",
+          "en": "Kelly, named alongside Correa, represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "플로리다",
+              "en": "Florida"
+            },
+            {
+              "id": "B",
+              "ko": "펜실베이니아",
+              "en": "Pennsylvania"
+            },
+            {
+              "id": "C",
+              "ko": "캘리포니아",
+              "en": "California"
+            },
+            {
+              "id": "D",
+              "ko": "뉴욕",
+              "en": "New York"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://jeffries.house.gov/2024/07/29/speaker-johnson-and-leader-jeffries-announce-members-leading-bipartisan-task-force-to-investigate-the-attempted-assassination-of-donald-trump/",
+            "claim": "July 29, 2024 bipartisan investigative task force roster included Kelly (PA-16) and Correa (CA-46).",
+            "asOf": "2024-09-05"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-914-joint-public-work"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-920",
+      "path": "data/dialogue-packs/P01/part-37.json",
+      "originalBlobSha": "d0f0101cc1e46646e4548160f3d5f042ba97339d",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "남부 캘리포니아 안에서도 지역이 서로 다르군요.",
+                "en": "Even within Southern California the communities differ."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "캘리포니아입니다. 39구와 44구는 별개죠.",
+                "en": "California. The 39th and 44th are separate."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "캘리포니아 제39구 주민의 질문은 제가 받겠습니다.",
+                "en": "I'll take questions from California's 39th District."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "제44구의 질문은 제게 주세요. 두 지역의 현안을 비교하죠.",
+                "en": "Give me the 44th District's questions, and let's compare the two communities."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 의원 모두 캘리포니아 대표입니다. 다른 주의 대표단으로 소개한 간담회 안내를 다시 작성하세요.",
+                "en": "We both represent California. Rewrite the meeting program that identifies us with another state's delegation."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-920",
+        "mechanism": "regional-peer-exchange",
+        "learningTarget": "Takano represented CA-39 and Barragán CA-44 in 2024.",
+        "date": "2024-08-15",
+        "venue": {
+          "ko": "남부 캘리포니아 토론",
+          "en": "Southern California discussion"
+        },
+        "context": {
+          "ko": "타카노와 바라간이 남부 캘리포니아의 각 지역을 비교하며 서로를 소개한다.",
+          "en": "Takano and Barragán introduce their different Southern California districts."
+        },
+        "cast": [
+          {
+            "id": "T000472",
+            "name": "Mark Takano",
+            "ko": "마크 타카노",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/T000472.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/T000472"
+          },
+          {
+            "id": "B001300",
+            "name": "Nanette Diaz Barragán",
+            "ko": "내넷 바라간",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001300.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001300"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구는 리버사이드 일대의 39구입니다.",
+            "en": "My district is the 39th, in the Riverside area."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 같은 주의 44구를 대표합니다.",
+            "en": "I represent the 44th in the same state."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 분이 함께 속한 주 대표단은 {{blank}}입니다.",
+          "en": "You both belong to the delegation of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "애리조나",
+              "en": "Arizona"
+            },
+            {
+              "id": "B",
+              "ko": "네바다",
+              "en": "Nevada"
+            },
+            {
+              "id": "C",
+              "ko": "오리건",
+              "en": "Oregon"
+            },
+            {
+              "id": "D",
+              "ko": "캘리포니아",
+              "en": "California"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://takano.house.gov/newsroom/press-releases/rep-mark-takano-is-sworn-in-to-the-118th-congress",
+            "claim": "Takano CA-39 in 118th.",
+            "asOf": "2024-08-15"
+          },
+          {
+            "url": "https://barragan.house.gov/the-44th-district-of-california/",
+            "claim": "Barragán CA-44.",
+            "asOf": "2024-08-15"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-920-regional-peer-exchange"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-936",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "작은 도시의 행정 경험도 들어 봅시다.",
+                "en": "Let's hear about small-town government experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노스캐롤라이나 스노힐입니다. 7년간 시장을 지냈죠.",
+                "en": "Snow Hill, North Carolina. I served as mayor for seven years."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "스노힐의 시장 경험을 토대로 소도시 주민과 행정의 관계를 토론하겠습니다.",
+                "en": "I'll discuss small-town government and its relationship with residents using my experience as mayor of Snow Hill."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "노스캐롤라이나 스노힐에서 7년간 시장을 지냈습니다. 다른 도시의 행정 경력을 전제로 한 질문은 빼 주세요.",
+                "en": "I served as mayor of Snow Hill, North Carolina, for seven years. Remove questions assuming municipal experience elsewhere."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-936",
+        "mechanism": "local-politics-recollection",
+        "learningTarget": "Davis was mayor of Snow Hill for seven years.",
+        "date": "2023-04-05",
+        "venue": {
+          "ko": "스노힐 청년정치 행사",
+          "en": "Snow Hill youth politics event"
+        },
+        "context": {
+          "ko": "청년 참가자에게 데이비스가 소도시 시장으로 정치에 입문한 경험을 이야기한다.",
+          "en": "Davis tells a young participant about entering politics as a small-town mayor."
+        },
+        "cast": [
+          {
+            "id": "D000230",
+            "name": "Donald G. Davis",
+            "ko": "돈 데이비스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/D000230.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/D000230"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "스물아홉 살에 고향의 시장이 됐습니다.",
+            "en": "I became mayor of my hometown at twenty-nine."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역정치에서 시작한 경력이군요.",
+            "en": "You began in local politics."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그 고향 도시는 {{blank}}입니다.",
+          "en": "Your hometown is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "더럼",
+              "en": "Durham"
+            },
+            {
+              "id": "B",
+              "ko": "스노힐",
+              "en": "Snow Hill"
+            },
+            {
+              "id": "C",
+              "ko": "롤리",
+              "en": "Raleigh"
+            },
+            {
+              "id": "D",
+              "ko": "샬럿",
+              "en": "Charlotte"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://dondavis.house.gov/about",
+            "claim": "Snow Hill upbringing; mayor at 29, served seven years.",
+            "asOf": "2023-04-05"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-936-local-politics-recollection"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-940",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역 소방 훈련의 이야기를 더 들어 보죠.",
+                "en": "Let's hear more about local firefighter training."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이 머피즈버러입니다.",
+                "en": "Murphysboro, Illinois."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "머피즈버러 소방관 시절의 경험으로 지역 응급 대응에 관한 질문부터 받겠습니다.",
+                "en": "I'll take questions on local emergency response first, drawing on my time as a Murphysboro firefighter."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이 머피즈버러에서 소방관으로 일했습니다. 다른 도시 소방서와 연결한 방문 계획을 수정하세요.",
+                "en": "I worked as a firefighter in Murphysboro, Illinois. Revise the visit plan connecting me to another city's fire department."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-940",
+        "mechanism": "first-responder-meeting",
+        "learningTarget": "Bost served as a Murphysboro firefighter.",
+        "date": "2023-05-10",
+        "venue": {
+          "ko": "머피즈버러 소방 교육",
+          "en": "Murphysboro fire service training"
+        },
+        "context": {
+          "ko": "소방 교육 현장에서 보스트가 지역 응급 대응 경험을 회고한다.",
+          "en": "Bost recalls local emergency response experience during firefighter training."
+        },
+        "cast": [
+          {
+            "id": "B001295",
+            "name": "Mike Bost",
+            "ko": "마이크 보스트",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001295.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001295"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저도 이곳 소방서에서 근무했던 경험이 있습니다.",
+            "en": "I once worked in the fire department here."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 응급 대응과 연방 정책을 연결해 생각해 보겠습니다.",
+            "en": "I'll connect local emergency response to federal policy."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "보스트 의원이 소방관으로 일한 도시는 {{blank}}입니다.",
+          "en": "Bost worked as a firefighter in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "록퍼드",
+              "en": "Rockford"
+            },
+            {
+              "id": "B",
+              "ko": "머피즈버러",
+              "en": "Murphysboro"
+            },
+            {
+              "id": "C",
+              "ko": "스프링필드",
+              "en": "Springfield"
+            },
+            {
+              "id": "D",
+              "ko": "시카고",
+              "en": "Chicago"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://bost.house.gov/biography",
+            "claim": "Murphysboro Fire Department service.",
+            "asOf": "2023-05-10"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-940-first-responder-meeting"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-943",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "대학과 노동 현장 경험을 구분해 이야기하죠.",
+                "en": "Let's discuss university and workplace experience separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이대 어배너-섐페인입니다.",
+                "en": "University of Illinois Urbana-Champaign."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이대 어배너-섐페인 학생들에게 대학 이후 노동 현장으로 이어진 진로를 이야기하겠습니다.",
+                "en": "I'll discuss my path from college into labor work with University of Illinois Urbana-Champaign students."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "일리노이대 어배너-섐페인을 졸업했습니다. 다른 학교의 동문으로 작성한 초청장을 회수하세요.",
+                "en": "I graduated from the University of Illinois Urbana-Champaign. Retrieve the invitation identifying me as an alumna elsewhere."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-943",
+        "mechanism": "workforce-recollection",
+        "learningTarget": "Budzinski graduated from University of Illinois Urbana-Champaign before her labor work.",
+        "date": "2023-06-07",
+        "venue": {
+          "ko": "일리노이 노동 교육 모임",
+          "en": "Illinois labor education gathering"
+        },
+        "context": {
+          "ko": "노동교육 참가자에게 버진스키가 대학 이후 노동운동에 참여한 경로를 이야기한다.",
+          "en": "Budzinski tells a labor education participant how she entered the labor movement after college."
+        },
+        "cast": [
+          {
+            "id": "B001315",
+            "name": "Nikki Budzinski",
+            "ko": "니키 버진스키",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001315.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001315"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "대학 졸업 뒤 노동운동에서 일했습니다. 소방관과 식료품점 노동자도 만났죠.",
+            "en": "After college I worked in the labor movement with firefighters and grocery workers."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역 노동 경험을 더 이해하고 싶습니다.",
+            "en": "I'd like to understand your local labor background."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "버진스키 의원이 졸업한 학교는 {{blank}}입니다.",
+          "en": "Budzinski graduated from {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시카고대",
+              "en": "University of Chicago"
+            },
+            {
+              "id": "B",
+              "ko": "퍼듀대",
+              "en": "Purdue University"
+            },
+            {
+              "id": "C",
+              "ko": "일리노이대 어배너-섐페인",
+              "en": "University of Illinois Urbana-Champaign"
+            },
+            {
+              "id": "D",
+              "ko": "노스웨스턴대",
+              "en": "Northwestern University"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://budzinski.house.gov/about",
+            "claim": "University of Illinois Urbana-Champaign graduate; labor movement career.",
+            "asOf": "2023-06-07"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-943-workforce-recollection"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-945",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Opening gave answer or eliminated an option; neutralize in both languages and differentiate followup.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "1월에 목재 관련 공장을 방문하며 산림산업 인력 부족 문제도 이야기했습니다.",
+              "en": "In January I visited a plant and discussed forestry workforce shortages."
+            },
+            {
+              "speaker": "player",
+              "ko": "청년들이 그 분야에서 어떤 일을 할 수 있을지 알아보고 싶습니다.",
+              "en": "I'd like to know what careers young people could pursue there."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "1월에 지역 공장을 방문해 인력 부족에 관한 이야기를 들었습니다.",
+              "en": "In January I visited a local plant and heard concerns about workforce shortages."
+            },
+            {
+              "speaker": "player",
+              "ko": "그 방문과 관련 법안의 대상 산업을 확인한 뒤 청년들의 진로 질문을 준비하겠습니다.",
+              "en": "I'll identify the industry covered by the related bill and the visit before preparing career questions for young people."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "지역 직업교육과 산업 수요를 비교해 보세요.",
+                "en": "Compare vocational training with local industry demand."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "산림과 목재 산업의 인력 문제입니다.",
+                "en": "It addresses forestry and timber workforce needs."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "산림·목재 산업의 직업교육 수요를 중심으로 청년 방문단의 질문을 받아 보죠.",
+                "en": "Let's take the youth delegation's questions on training needs in forestry and timber."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "이 법안은 산림과 목재 산업의 인력 문제를 다룹니다. 다른 산업을 대상으로 작성한 직업교육 질문을 바꿔 주세요.",
+                "en": "The bill addresses workforce needs in forestry and timber. Replace training questions aimed at another industry."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-945",
+        "mechanism": "forest-workforce",
+        "learningTarget": "Gluesenkamp Perez discussed Jobs in the Woods Act and forestry workforce shortages during a January 2024 visit.",
+        "date": "2024-02-08",
+        "venue": {
+          "ko": "목재 산업 진로 행사",
+          "en": "Timber industry careers event"
+        },
+        "context": {
+          "ko": "산림산업 진로 행사에서 의원이 지역 공장 방문과 인력 수요를 연결한다.",
+          "en": "At a forestry careers event, the representative connects a plant visit with workforce needs."
+        },
+        "cast": [
+          {
+            "id": "G000600",
+            "name": "Marie Gluesenkamp Perez",
+            "ko": "마리 글루센캠프 페레스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/G000600.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/G000600"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Jobs in the Woods Act의 대상 산업은 {{blank}}입니다.",
+          "en": "The Jobs in the Woods Act focuses on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "산림·목재 산업",
+              "en": "forestry and timber"
+            },
+            {
+              "id": "B",
+              "ko": "반도체 산업",
+              "en": "semiconductors"
+            },
+            {
+              "id": "C",
+              "ko": "호텔 산업",
+              "en": "hospitality"
+            },
+            {
+              "id": "D",
+              "ko": "항공 우주 산업",
+              "en": "aerospace"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://gluesenkampperez.house.gov/posts/gluesenkamp-perez-tours-box-plant-visits-with-community-leaders-and-first-responders-in-cowlitz-and-lewis-counties",
+            "claim": "January 24 release describes January 23 visit and Jobs in the Woods Act addressing forestry labor shortages.",
+            "asOf": "2024-02-08"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-945-forest-workforce"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-949",
+      "path": "data/dialogue-packs/P01/part-38.json",
+      "originalBlobSha": "b412a5abcb28bbdaa49dfde63dc1bc15e0fc41d7",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Opening gave answer or eliminated an option; neutralize in both languages and differentiate followup.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "연방의회 이전에 참전군인으로서의 경험과 법률 실무가 있었습니다.",
+              "en": "Before Congress I had military and legal experience."
+            },
+            {
+              "speaker": "player",
+              "ko": "선거 제도와 법률의 연결도 토론해 보고 싶습니다.",
+              "en": "I'd like to discuss how law and elections intersect."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "연방의회 이전에 군 복무와 법률 실무 경험이 있었습니다.",
+              "en": "Before Congress I had military and legal experience."
+            },
+            {
+              "speaker": "player",
+              "ko": "어떤 법적 권리를 다뤘는지 토론의 출발점으로 삼겠습니다.",
+              "en": "I'll use the type of legal rights you worked on as the starting point for our discussion."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "선거제도와 법적 권리를 나누어 살펴보세요.",
+                "en": "Examine election systems and legal rights separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "투표권 관련 변호사였습니다.",
+                "en": "I worked as a voting rights attorney."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "투표권 변호사로 일했던 경험을 바탕으로 선거 접근성과 법적 권리를 토론하겠습니다.",
+                "en": "I'll discuss electoral access and legal rights drawing on my work as a voting rights attorney."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "투표권 관련 변호사였습니다. 다른 법률 전문 분야로 배정한 토론 질문을 수정하세요.",
+                "en": "I worked as a voting rights attorney. Revise the discussion questions assigned to another legal specialty."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-949",
+        "mechanism": "legal-policy-discussion",
+        "learningTarget": "Deluzio was a voting rights attorney before Congress.",
+        "date": "2023-06-15",
+        "venue": {
+          "ko": "선거법 세미나",
+          "en": "Election law seminar"
+        },
+        "context": {
+          "ko": "선거법 세미나에서 델루지오가 변호사로서의 업무 경험을 소개한다.",
+          "en": "Deluzio describes his legal work during an election law seminar."
+        },
+        "cast": [
+          {
+            "id": "D000530",
+            "name": "Christopher R. Deluzio",
+            "ko": "크리스 델루지오",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/D000530.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/D000530"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "델루지오 의원의 법률 실무 분야는 {{blank}}입니다.",
+          "en": "Deluzio's legal background included {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "투표권",
+              "en": "voting rights"
+            },
+            {
+              "id": "B",
+              "ko": "해상보험",
+              "en": "marine insurance"
+            },
+            {
+              "id": "C",
+              "ko": "특허 심사",
+              "en": "patent examination"
+            },
+            {
+              "id": "D",
+              "ko": "상표 디자인",
+              "en": "trademark design"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://deluzio.house.gov/about",
+            "claim": "Voting rights attorney before congressional service.",
+            "asOf": "2023-06-15"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-949-legal-policy-discussion"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-953",
+      "path": "data/dialogue-packs/P01/part-39.json",
+      "originalBlobSha": "04d0fa0e3e274555dcc2c44084359397b17bf978",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주민의 문의를 해당 기관에 맞춰 처리해야 합니다.",
+                "en": "Residents' questions should go to the appropriate institution."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미시시피 잭슨 카운티 보안관이었습니다.",
+                "en": "I was sheriff of Jackson County, Mississippi."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "잭슨 카운티 보안관 경험을 토대로 지방 치안 문의와 연방 입법 질문을 나누어 받겠습니다.",
+                "en": "I'll distinguish local law-enforcement inquiries from federal legislative questions, drawing on my experience as Jackson County sheriff."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "미시시피 잭슨 카운티 보안관이었습니다. 다른 카운티의 치안 기관으로 안내한 요청을 다시 연결해 주세요.",
+                "en": "I was sheriff of Jackson County, Mississippi. Redirect requests sent to a law-enforcement agency in another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-953",
+        "mechanism": "local-law-enforcement",
+        "learningTarget": "Ezell served as Jackson County sheriff before Congress.",
+        "date": "2023-06-05",
+        "venue": {
+          "ko": "미시시피 해안 지역 치안 간담회",
+          "en": "Mississippi coastal public safety discussion"
+        },
+        "context": {
+          "ko": "해안 지역 치안 간담회에서 이젤이 지방 보안관 시절의 역할을 회고한다.",
+          "en": "Ezell recalls his role as a local sheriff at a coastal public safety discussion."
+        },
+        "cast": [
+          {
+            "id": "E000235",
+            "name": "Mike Ezell",
+            "ko": "마이크 이젤",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/E000235.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/E000235"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "40년 넘게 법 집행 분야에서 일하다 하원으로 왔습니다.",
+            "en": "I entered the House after more than forty years in law enforcement."
+          },
+          {
+            "speaker": "player",
+            "ko": "지방 보안관과 연방 의원은 권한이 다르겠군요.",
+            "en": "A local sheriff and federal legislator have different powers."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이젤 의원이 마지막으로 보안관을 지낸 곳은 {{blank}}입니다.",
+          "en": "Ezell last served as sheriff of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "핸콕 카운티",
+              "en": "Hancock County"
+            },
+            {
+              "id": "B",
+              "ko": "하인즈 카운티",
+              "en": "Hinds County"
+            },
+            {
+              "id": "C",
+              "ko": "잭슨 카운티",
+              "en": "Jackson County"
+            },
+            {
+              "id": "D",
+              "ko": "해리슨 카운티",
+              "en": "Harrison County"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://ezell.house.gov/about/",
+            "claim": "Over forty years in law enforcement; last served as Jackson County sheriff.",
+            "asOf": "2023-06-05"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-953-local-law-enforcement"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-959",
+      "path": "data/dialogue-packs/P01/part-39.json",
+      "originalBlobSha": "04d0fa0e3e274555dcc2c44084359397b17bf978",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "국제교류와 지역사회의 경험을 함께 이야기해 보죠.",
+                "en": "Let's discuss international exchange alongside local experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "대한민국 서울입니다.",
+                "en": "Seoul, South Korea."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "서울에서의 봉사 경험을 주제로 학생들과 국제교류에 관한 이야기를 나누겠습니다.",
+                "en": "I'll discuss international exchange with students using my mission experience in Seoul."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "대한민국 서울에서 봉사했습니다. 다른 도시로 표시한 해외 경험 지도를 교체하세요.",
+                "en": "I served my mission in Seoul, South Korea. Replace the map marking my overseas experience in another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-959",
+        "mechanism": "cross-cultural-recollection",
+        "learningTarget": "Blake Moore served a religious mission in Seoul before graduating from University of Utah.",
+        "date": "2021-03-08",
+        "venue": {
+          "ko": "유타 국제교류 행사",
+          "en": "Utah international exchange event"
+        },
+        "context": {
+          "ko": "국제교류 행사에서 블레이크 무어가 해외 봉사 경험을 이야기한다.",
+          "en": "Blake Moore recounts his overseas service at an international exchange event."
+        },
+        "cast": [
+          {
+            "id": "M001213",
+            "name": "Blake D. Moore",
+            "ko": "블레이크 무어",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001213.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001213"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "대학을 마치기 전 해외에서 종교 봉사 활동을 했습니다.",
+            "en": "Before finishing college I served a religious mission abroad."
+          },
+          {
+            "speaker": "player",
+            "ko": "어느 도시에서 경험을 쌓으셨는지 궁금해요.",
+            "en": "I'm curious which city you spent time in."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "무어 의원이 봉사 활동을 한 도시는 {{blank}}입니다.",
+          "en": "Moore served his mission in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "서울",
+              "en": "Seoul"
+            },
+            {
+              "id": "B",
+              "ko": "도쿄",
+              "en": "Tokyo"
+            },
+            {
+              "id": "C",
+              "ko": "마닐라",
+              "en": "Manila"
+            },
+            {
+              "id": "D",
+              "ko": "방콕",
+              "en": "Bangkok"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://blakemoore.house.gov/media/press-releases/congressman-blake-moore-sworn-117th-congress-represent-utahs-first-district-us",
+            "claim": "117th Congress swearing-in release: mission in Seoul before University of Utah graduation.",
+            "asOf": "2021-03-08"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-959-cross-cultural-recollection"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-960",
+      "path": "data/dialogue-packs/P01/part-39.json",
+      "originalBlobSha": "04d0fa0e3e274555dcc2c44084359397b17bf978",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Current correct branch is generic/repeats the same fact; add a specific interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "팀 스포츠와 협업에 관한 이야기도 나눠 보죠.",
+                "en": "Let's talk about teamwork too."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "NFL에서 세이프티로 뛰었습니다.",
+                "en": "I played safety in the NFL."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "NFL에서 세이프티로 뛰었던 경험을 바탕으로 선수들과 팀워크에 관한 토론을 시작하겠습니다.",
+                "en": "I'll begin a discussion of teamwork with athletes, drawing on my experience playing safety in the NFL."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "NFL에서 세이프티로 뛰었습니다. 다른 종목의 선수 경력으로 준비한 소개를 바꿔 주세요.",
+                "en": "I played safety in the NFL. Change the introduction describing a career in another sport."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-960",
+        "mechanism": "unexpected-recognition",
+        "learningTarget": "Owens was a 1973 NFL first-round draft pick and played safety.",
+        "date": "2021-05-04",
+        "venue": {
+          "ko": "유타 체육 행사",
+          "en": "Utah sports event"
+        },
+        "context": {
+          "ko": "체육 행사에서 오언스가 경기장을 계기로 프로 선수 경력을 회고한다.",
+          "en": "At a sporting event, the playing field prompts Owens to recall his professional career."
+        },
+        "cast": [
+          {
+            "id": "O000086",
+            "name": "Burgess Owens",
+            "ko": "버지스 오언스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/O000086.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/O000086"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "경기장을 보니 제 의회 이전 경력이 생각나는군요. 1973년에 프로 지명을 받았죠.",
+            "en": "This field reminds me of my pre-Congress career. I was drafted in 1973."
+          },
+          {
+            "speaker": "player",
+            "ko": "어떤 종목이었는지 스포츠 팬들에게 소개하고 싶습니다.",
+            "en": "I'd like to introduce that sport to the fans."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "오언스 의원은 {{blank}} 선수였습니다.",
+          "en": "Owens played professionally in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농구 NBA",
+              "en": "the NBA"
+            },
+            {
+              "id": "B",
+              "ko": "야구 MLB",
+              "en": "Major League Baseball"
+            },
+            {
+              "id": "C",
+              "ko": "아이스하키 NHL",
+              "en": "the NHL"
+            },
+            {
+              "id": "D",
+              "ko": "미식축구 NFL",
+              "en": "the NFL"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://owens.house.gov/about-burgess",
+            "claim": "1973 first-round NFL draft pick; played safety.",
+            "asOf": "2021-05-04"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-960-unexpected-recognition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ]
+}

@@ -1,0 +1,2325 @@
+{
+  "schema": "q4-r10-backlog-v1",
+  "rows": [
+    {
+      "id": "P01-1334",
+      "path": "data/dialogue-packs/P01/part-54.json",
+      "originalBlobSha": "4c8fe96e11e1dd219ac0cc2f8924c3bac16f19df",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "1970년대에 교실에서 일했습니다.",
+              "en": "I worked in classrooms in the 1970s."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 법률 업무를 경험했지요. 두 진로를 비교해 보세요.",
+              "en": "I worked in law. Compare those career paths."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 의원의 공직 이전 진로를 비교하고 싶습니다.",
+              "en": "I'd like to compare your paths before public office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 1970년대 직업 경험부터 소개해 주세요.",
+              "en": "Please introduce my work experience in the 1970s first."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 법률 경력과 구별해서 질문해 주세요.",
+              "en": "Distinguish it from my legal career when preparing questions."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "라슨은 1972~1977년 고등학교 교사였습니다.",
+                "en": "Larson taught high school from 1972 to 1977."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라슨은 1972~1977년 고등학교 교사였습니다.",
+                "en": "Larson taught high school from 1972 to 1977."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "고등학교 교사 경험을 바탕으로 학생들의 교육정책 질문을 받겠습니다.",
+                "en": "I'll take students' education-policy questions drawing on my high school teaching experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1972~1977년 고등학교 교사였습니다. 다른 직업으로 소개한 진로 행사 안내를 고쳐 주세요.",
+                "en": "I taught high school from 1972 to 1977. Correct the career event program naming another occupation."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1334",
+        "mechanism": "teacher-to-lawmaker",
+        "learningTarget": "Larson taught high school in 1972–1977.",
+        "date": "2018-08-17",
+        "venue": {
+          "ko": "학교 진로 교실",
+          "en": "School careers classroom"
+        },
+        "context": {
+          "ko": "해당 시기 지역 행사에서의 가상 만남입니다.",
+          "en": "A fictional encounter at a regional event in this period."
+        },
+        "cast": [
+          {
+            "id": "L000557",
+            "name": "John B. Larson",
+            "ko": "존 라슨",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000557.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000557"
+          },
+          {
+            "id": "C001069",
+            "name": "Joe Courtney",
+            "ko": "조 코트니",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001069.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C001069"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "라슨 의원은 {{blank}}였습니다.",
+          "en": "Larson was a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "고등학교 교사",
+              "en": "high school teacher"
+            },
+            {
+              "id": "B",
+              "ko": "시 소방관",
+              "en": "municipal firefighter"
+            },
+            {
+              "id": "C",
+              "ko": "주 판사",
+              "en": "state judge"
+            },
+            {
+              "id": "D",
+              "ko": "해군 장교",
+              "en": "naval officer"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-CT.htm",
+            "claim": "Larson taught high school in 1972–1977.",
+            "asOf": "2018-08-17"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1334-teacher-to-lawmaker"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1337",
+      "path": "data/dialogue-packs/P01/part-54.json",
+      "originalBlobSha": "4c8fe96e11e1dd219ac0cc2f8924c3bac16f19df",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "1980~1987년 도드 상원의원의 비서실장이었습니다.",
+                "en": "She was Dodd's chief of staff from 1980 to 1987."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1980~1987년 도드 상원의원의 비서실장이었습니다.",
+                "en": "She was Dodd's chief of staff from 1980 to 1987."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "도드 상원의원실의 비서실장 경험을 토대로 보좌진과 의원의 책임을 비교하겠습니다.",
+                "en": "I'll compare staff and member responsibilities using my experience as Senator Dodd's chief of staff."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1980~1987년 크리스토퍼 도드 상원의원의 비서실장이었습니다. 다른 의원실로 연결한 경력 소개를 수정하세요.",
+                "en": "I was Senator Christopher Dodd's chief of staff from 1980 to 1987. Correct the career summary linking me to another office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1337",
+        "mechanism": "staff-to-member-history",
+        "learningTarget": "DeLauro was Senator Christopher Dodd's chief of staff 1980–1987.",
+        "date": "2018-08-23",
+        "venue": {
+          "ko": "의회 인턴 행사",
+          "en": "Congressional intern event"
+        },
+        "context": {
+          "ko": "해당 시기 지역 행사에서의 가상 만남입니다. 이전 장면 P01-172 (1991-02-07): 델라우로의 뉴헤이븐 지방정부 경력에 이어 연방 상원 보좌진 경력을 이야기합니다.",
+          "en": "A fictional encounter at a regional event in this period. Earlier scene P01-172 (1991-02-07): Follow up on DeLauro's New Haven municipal experience with her Senate staff career."
+        },
+        "cast": [
+          {
+            "id": "D000216",
+            "name": "Rosa L. DeLauro",
+            "ko": "로사 델라우로",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/D000216.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/D000216"
+          },
+          {
+            "id": "L000557",
+            "name": "John B. Larson",
+            "ko": "존 라슨",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000557.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000557"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "하원의원이 되기 전에 상원의원실에서 일했습니다.",
+            "en": "Before the House I worked in a Senate office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "어느 의원실인지 기록하면 좋겠군요.",
+            "en": "It would help to record whose office it was."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "델라우로 의원은 {{blank}}의 비서실장이었습니다.",
+          "en": "DeLauro was chief of staff to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 매케인",
+              "en": "John McCain"
+            },
+            {
+              "id": "B",
+              "ko": "수전 콜린스",
+              "en": "Susan Collins"
+            },
+            {
+              "id": "C",
+              "ko": "앵거스 킹",
+              "en": "Angus King"
+            },
+            {
+              "id": "D",
+              "ko": "크리스토퍼 도드",
+              "en": "Christopher Dodd"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-CT.htm",
+            "claim": "DeLauro was Senator Christopher Dodd's chief of staff 1980–1987.",
+            "asOf": "2018-08-23"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1337-staff-to-member-history"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1340",
+      "path": "data/dialogue-packs/P01/part-54.json",
+      "originalBlobSha": "4c8fe96e11e1dd219ac0cc2f8924c3bac16f19df",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "헬러 의원이 떠난 의석의 보궐선거에서 당선됐습니다.",
+              "en": "I won the special election for the House seat Heller left."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "당시 저는 연방 상원으로 이동했지요.",
+              "en": "At that time I moved to the Senate."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "헬러 의원이 떠난 하원 의석의 승계 과정을 설명하려 합니다.",
+              "en": "I'd like to explain how the House seat vacated by Senator Heller was filled."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 상원 이동과 후임자의 하원 입성을 별도로 다뤄 주세요.",
+              "en": "Treat my move to the Senate separately from my successor's entry into the House."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "어떤 절차로 제가 하원에 들어왔는지 확인해 주세요.",
+              "en": "Verify the procedure by which I entered the House."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "아모데이는 2011년 하원 보궐선거에서 당선됐습니다.",
+                "en": "Amodei won the 2011 House special election."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "아모데이는 2011년 하원 보궐선거에서 당선됐습니다.",
+                "en": "Amodei won the 2011 House special election."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "2011년 특별선거 이후 하원 주민 문의는 제가 맡겠습니다. 헬러 의원의 상원 업무와 구분해 주세요.",
+                "en": "I'll handle House constituent inquiries after the 2011 special election. Distinguish them from Senator Heller's work."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2011년 하원 특별선거에서 당선됐습니다. 임명으로 의석을 얻었다는 소개를 철회하세요.",
+                "en": "I won the 2011 House special election. Withdraw the account saying I obtained the seat by appointment."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1340",
+        "mechanism": "vacancy-succession",
+        "learningTarget": "Amodei won a 2011 special election after Heller moved to the Senate.",
+        "date": "2018-08-29",
+        "venue": {
+          "ko": "북부 네바다 의회 역사 행사",
+          "en": "Northern Nevada congressional history event"
+        },
+        "context": {
+          "ko": "해당 시기 지역 행사에서의 가상 만남입니다.",
+          "en": "A fictional encounter at a regional event in this period."
+        },
+        "cast": [
+          {
+            "id": "A000369",
+            "name": "Mark E. Amodei",
+            "ko": "마크 아모데이",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/A000369.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/A000369"
+          },
+          {
+            "id": "H001041",
+            "name": "Dean Heller",
+            "ko": "딘 헬러",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/H001041.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/H001041"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "아모데이 의원은 {{blank}}를 통해 하원에 진출했죠.",
+          "en": "Amodei entered the House through {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주지사 임명",
+              "en": "a gubernatorial appointment"
+            },
+            {
+              "id": "B",
+              "ko": "2012년 정기선거",
+              "en": "the 2012 general election"
+            },
+            {
+              "id": "C",
+              "ko": "2011년 보궐선거",
+              "en": "a 2011 special election"
+            },
+            {
+              "id": "D",
+              "ko": "상원 인준",
+              "en": "Senate confirmation"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-NV.htm",
+            "claim": "Amodei won a 2011 special election after Heller moved to the Senate.",
+            "asOf": "2018-08-29"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1340-vacancy-succession"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1347",
+      "path": "data/dialogue-packs/P01/part-54.json",
+      "originalBlobSha": "4c8fe96e11e1dd219ac0cc2f8924c3bac16f19df",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "2018년 두 의원은 공화당 소속입니다.",
+                "en": "Both are Republicans in 2018."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2018년 두 의원은 공화당 소속입니다.",
+                "en": "Both are Republicans in 2018."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공화당이라는 공통점은 있지만 제1구와 제2구의 주민 질문은 각각 받겠습니다.",
+                "en": "We share Republican affiliation, but we'll take constituent questions from districts one and two separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 사람 모두 2018년 공화당 의원입니다. 정당과 지역구를 혼동한 소개를 정정하세요.",
+                "en": "We are both Republicans in 2018. Correct the introduction that confuses party and district."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1347",
+        "mechanism": "regional-delegation-party",
+        "learningTarget": "Labrador and Simpson were Republican House members in 2018.",
+        "date": "2018-09-12",
+        "venue": {
+          "ko": "아이다호 대표단 오찬",
+          "en": "Idaho delegation lunch"
+        },
+        "context": {
+          "ko": "해당 시기 지역 행사에서의 가상 만남입니다.",
+          "en": "A fictional encounter at a regional event in this period."
+        },
+        "cast": [
+          {
+            "id": "L000573",
+            "name": "Raúl R. Labrador",
+            "ko": "라울 래브라도",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000573.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000573"
+          },
+          {
+            "id": "S001148",
+            "name": "Michael K. Simpson",
+            "ko": "마이크 심프슨",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001148.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001148"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 제1구를 대표합니다.",
+            "en": "I represent district one."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 제2구를 맡고 있습니다. 같은 당이라고 같은 지역은 아니죠.",
+            "en": "I represent district two. Shared party does not mean shared district."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원 모두 {{blank}} 소속입니다.",
+          "en": "Both representatives belong to the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "B",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "C",
+              "ko": "자유당",
+              "en": "Libertarian Party"
+            },
+            {
+              "id": "D",
+              "ko": "녹색당",
+              "en": "Green Party"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2018-07-27/html/CDIR-2018-07-27-ID.htm",
+            "claim": "Labrador and Simpson were Republican House members in 2018.",
+            "asOf": "2018-09-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1347-regional-delegation-party"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1351",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "번은 주 2년제 대학 시스템의 총장을 지냈습니다.",
+                "en": "Byrne was chancellor of the state's two-year college system."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "번은 주 2년제 대학 시스템의 총장을 지냈습니다.",
+                "en": "Byrne was chancellor of the state's two-year college system."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "2년제 대학 시스템을 이끈 경험에 대해 학생들의 질문을 받겠습니다. 시정부 업무는 로비 의원에게 질문해 주세요.",
+                "en": "I'll take students' questions about leading the two-year college system. Ask Representative Roby about municipal government."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "앨라배마 2년제 대학 시스템의 총장이었습니다. 다른 주 기관의 권한을 전제로 한 질문을 바꾸세요.",
+                "en": "I was chancellor of Alabama's two-year college system. Replace questions based on the authority of a different state agency."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1351",
+        "mechanism": "community-college-visit",
+        "learningTarget": "Byrne served as chancellor of Alabama's two-year college system.",
+        "date": "2016-03-01",
+        "venue": {
+          "ko": "지역 전문대학 방문",
+          "en": "Community college visit"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "B001289",
+            "name": "Bradley Byrne",
+            "ko": "브래들리 번",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001289.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001289"
+          },
+          {
+            "id": "R000591",
+            "name": "Martha Roby",
+            "ko": "마사 로비",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/R000591.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/R000591"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "학생들과 이야기하기 전에 제가 맡았던 교육행정 직책을 소개해 주세요.",
+            "en": "Before we meet the students, introduce my former educational administrative role."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 몽고메리 시의원 출신입니다. 두 경력은 다른 정부 영역에 속하죠.",
+            "en": "I came from Montgomery city council. Our backgrounds differ."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "번 의원은 앨라배마의 {{blank}}를 이끌었습니다.",
+          "en": "Byrne led Alabama's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "주 대법원",
+              "en": "state supreme court"
+            },
+            {
+              "id": "B",
+              "ko": "2년제 대학 시스템",
+              "en": "two-year college system"
+            },
+            {
+              "id": "C",
+              "ko": "주 경찰청",
+              "en": "state police agency"
+            },
+            {
+              "id": "D",
+              "ko": "항만청",
+              "en": "port authority"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+            "claim": "Byrne served as chancellor of Alabama's two-year college system.",
+            "asOf": "2016-03-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1351-community-college-visit"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1353",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "스웰은 클레먼 연방 지방법원 판사의 재판연구원이었습니다.",
+                "en": "Sewell clerked for federal district judge Clemon."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "스웰은 클레먼 연방 지방법원 판사의 재판연구원이었습니다.",
+                "en": "Sewell clerked for federal district judge Clemon."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "클레먼 판사의 재판연구원 경험을 바탕으로 법원과 의회의 역할을 비교하겠습니다.",
+                "en": "I'll compare courts and Congress using my experience clerking for Judge Clemon."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "버밍햄 연방 지방법원의 클레먼 판사 밑에서 일했습니다. 선출직으로 소개한 부분을 수정하세요.",
+                "en": "I clerked for federal district judge Clemon in Birmingham. Correct the introduction describing that work as elected office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1353",
+        "mechanism": "judicial-career-interview",
+        "learningTarget": "Sewell clerked for federal district judge U.W. Clemon in Birmingham.",
+        "date": "2016-03-05",
+        "venue": {
+          "ko": "법률 진로 인터뷰",
+          "en": "Legal career interview"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "S001185",
+            "name": "Terri A. Sewell",
+            "ko": "테리 스웰",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001185.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001185"
+          },
+          {
+            "id": "B001289",
+            "name": "Bradley Byrne",
+            "ko": "브래들리 번",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001289.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001289"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 법률 경력에서 버밍햄의 연방 법원 경험도 중요합니다.",
+            "en": "My legal career included experience at a federal court in Birmingham."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저 역시 법학을 공부했지요. 학생에게 법원과 의회 역할을 설명합시다.",
+            "en": "I also studied law. Let's explain the difference between courts and Congress."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스웰 의원은 U.W. 클레먼 판사의 {{blank}}로 일했습니다.",
+          "en": "Sewell worked for Judge U.W. Clemon as a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 상원의원",
+              "en": "U.S. senator"
+            },
+            {
+              "id": "B",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "C",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "D",
+              "ko": "재판연구원",
+              "en": "law clerk"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AL.htm",
+            "claim": "Sewell clerked for federal district judge U.W. Clemon in Birmingham.",
+            "asOf": "2016-03-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1353-judicial-career-interview"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1361",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "정치에 오기 전에 기술기업에서 일했어요.",
+              "en": "Before Congress I worked at a technology company."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 해안 복원 분야에서 일했지요. 학생들에게 서로 다른 경력을 소개합시다.",
+              "en": "I worked in coastal restoration. Let's introduce our different backgrounds."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "정치에 오기 전 다른 분야에서 일했습니다.",
+              "en": "Before politics I worked in another field."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 해안 복원 분야에서 일했지요.",
+              "en": "I worked in coastal restoration."
+            },
+            {
+              "speaker": "player",
+              "ko": "서로 다른 직업 경험을 토대로 학생들의 질문을 준비하겠습니다.",
+              "en": "I'll prepare student questions based on your distinct career backgrounds."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "스컬리스는 기술기업의 컴퓨터 프로그래머였습니다.",
+                "en": "Scalise was a computer programmer at a technology company."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "스컬리스는 기술기업의 컴퓨터 프로그래머였습니다.",
+                "en": "Scalise was a computer programmer at a technology company."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "프로그래머 경험을 바탕으로 기술 분야 학생의 질문부터 듣겠습니다.",
+                "en": "I'll hear technology students' questions first, drawing on my experience as a programmer."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "컴퓨터 프로그래머로 일했습니다. 다른 전문직을 전제로 만든 질문을 교체하세요.",
+                "en": "I worked as a computer programmer. Replace questions premised on another profession."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1361",
+        "mechanism": "technology-background",
+        "learningTarget": "Scalise worked as a computer programmer before Congress.",
+        "date": "2016-03-21",
+        "venue": {
+          "ko": "지역 기술기업 진로 행사",
+          "en": "Technology career event"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "S001176",
+            "name": "Steve Scalise",
+            "ko": "스티브 스컬리스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001176.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001176"
+          },
+          {
+            "id": "G000577",
+            "name": "Garret Graves",
+            "ko": "개릿 그레이브스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/G000577.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/G000577"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "스컬리스 의원은 {{blank}}로 일했습니다.",
+          "en": "Scalise worked as a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "수의사",
+              "en": "veterinarian"
+            },
+            {
+              "id": "B",
+              "ko": "시 검사",
+              "en": "city prosecutor"
+            },
+            {
+              "id": "C",
+              "ko": "산림관리사",
+              "en": "forester"
+            },
+            {
+              "id": "D",
+              "ko": "컴퓨터 프로그래머",
+              "en": "computer programmer"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-LA.htm",
+            "claim": "Scalise worked as a computer programmer before Congress.",
+            "asOf": "2016-03-21"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1361-technology-background"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1363",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "농업 현장에서 방송을 통해 소식을 전하던 때가 생각납니다.",
+              "en": "I remember conveying agricultural news through broadcasting."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 금융 분야에서 일했죠. 지역 경제 경력은 다양한 모습입니다.",
+              "en": "I worked in finance. Regional economic careers vary."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "KFIN-FM에서 맡았던 역할을 소개해 주세요.",
+              "en": "Please introduce my role at KFIN-FM."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 금융 분야에서 일했죠.",
+              "en": "I worked in finance."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 사람의 직업 경험이 지역 경제와 어떻게 연결되는지 토론하겠습니다.",
+              "en": "I'll lead a discussion of how your career experiences connect to the local economy."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "크로퍼드는 KFIN-FM 농업 방송 책임자였습니다.",
+                "en": "Crawford was farm director at KFIN-FM."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "크로퍼드는 KFIN-FM 농업 방송 책임자였습니다.",
+                "en": "Crawford was farm director at KFIN-FM."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "KFIN-FM에서 농업 소식을 전한 경험으로 농촌 주민과 언론의 관계를 토론하겠습니다.",
+                "en": "I'll discuss rural communities and the media using my experience covering agriculture at KFIN-FM."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "KFIN-FM 농업 방송 책임자였습니다. 금융기관이나 선출직 경력으로 소개한 내용을 바꾸세요.",
+                "en": "I was farm director at KFIN-FM. Correct the introduction attributing a financial or elected office to me."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1363",
+        "mechanism": "farm-broadcasting",
+        "learningTarget": "Crawford worked as farm director at KFIN-FM.",
+        "date": "2016-03-25",
+        "venue": {
+          "ko": "농업 라디오 행사",
+          "en": "Agricultural radio event"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "C001087",
+            "name": "Eric A. \"Rick\" Crawford",
+            "ko": "릭 크로퍼드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001087.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C001087"
+          },
+          {
+            "id": "H001072",
+            "name": "J. French Hill",
+            "ko": "프렌치 힐",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/H001072.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/H001072"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "크로퍼드 의원은 KFIN-FM에서 {{blank}}로 일했습니다.",
+          "en": "Crawford worked at KFIN-FM as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "농업 방송 책임자",
+              "en": "farm director"
+            },
+            {
+              "id": "C",
+              "ko": "은행장",
+              "en": "bank president"
+            },
+            {
+              "id": "D",
+              "ko": "주 판사",
+              "en": "state judge"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-AR.htm",
+            "claim": "Crawford worked as farm director at KFIN-FM.",
+            "asOf": "2016-03-25"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1363-farm-broadcasting"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1370",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "라이스는 2010~2012년 호리 카운티 의회 의장이었습니다.",
+                "en": "Rice chaired Horry County Council from 2010 to 2012."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라이스는 2010~2012년 호리 카운티 의회 의장이었습니다.",
+                "en": "Rice chaired Horry County Council from 2010 to 2012."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "호리 카운티 의회 의장 경험을 설명하고 클라이번 의원의 주정부 행정 경험과 비교하겠습니다.",
+                "en": "I'll discuss chairing Horry County Council and compare it with Representative Clyburn's state administrative experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2010~2012년 호리 카운티 의회 의장이었습니다. 다른 입법기관으로 소개한 내용을 수정하세요.",
+                "en": "I chaired Horry County Council from 2010 to 2012. Correct the introduction naming another legislative body."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1370",
+        "mechanism": "county-tourism-governance",
+        "learningTarget": "Rice chaired Horry County Council from 2010 to 2012.",
+        "date": "2016-04-08",
+        "venue": {
+          "ko": "머틀비치 지역행정 설명회",
+          "en": "Myrtle Beach local-government event"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "R000597",
+            "name": "Tom Rice",
+            "ko": "톰 라이스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/R000597.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/R000597"
+          },
+          {
+            "id": "C000537",
+            "name": "James E. Clyburn",
+            "ko": "제임스 클라이번",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000537.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C000537"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방 하원에 오기 전에 카운티 의회를 이끌었습니다.",
+            "en": "Before Congress I chaired a county council."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 주 인적자원 관련 행정을 경험했습니다. 지방과 주를 구별해 주세요.",
+            "en": "I worked in state human-resource administration. Distinguish local from state government."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "라이스 의원은 {{blank}} 의장이었습니다.",
+          "en": "Rice chaired the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "호리 카운티 의회",
+              "en": "Horry County Council"
+            },
+            {
+              "id": "B",
+              "ko": "찰스턴 시의회",
+              "en": "Charleston City Council"
+            },
+            {
+              "id": "C",
+              "ko": "주 상원",
+              "en": "state senate"
+            },
+            {
+              "id": "D",
+              "ko": "연방 하원",
+              "en": "U.S. House"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-SC.htm",
+            "claim": "Rice chaired Horry County Council from 2010 to 2012.",
+            "asOf": "2016-04-08"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1370-county-tourism-governance"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1373",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "야머스는 LEO Newsweekly의 창립자이자 편집자였습니다.",
+                "en": "Yarmuth founded and edited LEO Newsweekly."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "야머스는 LEO Newsweekly의 창립자이자 편집자였습니다.",
+                "en": "Yarmuth founded and edited LEO Newsweekly."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "LEO Newsweekly를 창립하고 편집했던 경험으로 지역 언론과 의회에 관한 토론을 시작하겠습니다.",
+                "en": "I'll open a discussion about local journalism and Congress using my experience founding and editing LEO Newsweekly."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제가 창립한 매체는 LEO Newsweekly입니다. 다른 기업의 창립자로 소개한 부분을 고쳐 주세요.",
+                "en": "I founded LEO Newsweekly. Correct the introduction naming me as founder of another company."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1373",
+        "mechanism": "local-press-career",
+        "learningTarget": "Yarmuth founded, edited and wrote LEO Newsweekly from 1990 to 2005.",
+        "date": "2016-04-14",
+        "venue": {
+          "ko": "루이빌 지역신문 행사",
+          "en": "Louisville local press event"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "Y000062",
+            "name": "John A. Yarmuth",
+            "ko": "존 야머스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/Y000062.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/Y000062"
+          },
+          {
+            "id": "M001184",
+            "name": "Thomas Massie",
+            "ko": "토머스 매시",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001184"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "정치에 오기 전 지역 언론에서 일했어요.",
+            "en": "Before politics I worked in local journalism."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 발명과 공학 분야에 있었습니다. 서로 다른 경로군요.",
+            "en": "I came from invention and engineering. Different paths indeed."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "야머스 의원이 창립한 지역 매체는 {{blank}}입니다.",
+          "en": "Yarmuth founded {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Kentucky State Senate",
+              "en": "Kentucky State Senate"
+            },
+            {
+              "id": "B",
+              "ko": "SensAble Devices",
+              "en": "SensAble Devices"
+            },
+            {
+              "id": "C",
+              "ko": "Delta Trust",
+              "en": "Delta Trust"
+            },
+            {
+              "id": "D",
+              "ko": "LEO Newsweekly",
+              "en": "LEO Newsweekly"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+            "claim": "Yarmuth founded, edited and wrote LEO Newsweekly from 1990 to 2005.",
+            "asOf": "2016-04-14"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1373-local-press-career"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1374",
+      "path": "data/dialogue-packs/P01/part-55.json",
+      "originalBlobSha": "f0c757a96461a0f0ccf0d67687654a54652a7241",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "거스리는 Trace Die Cast 부사장이었습니다.",
+                "en": "Guthrie was vice president of Trace Die Cast."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "거스리는 Trace Die Cast 부사장이었습니다.",
+                "en": "Guthrie was vice president of Trace Die Cast."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "Trace Die Cast에서의 제조업 경험을 바탕으로 산업 현장의 질문을 받겠습니다.",
+                "en": "I'll take industry questions drawing on my manufacturing experience at Trace Die Cast."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1991~2009년 Trace Die Cast 부사장이었습니다. 다른 기업으로 연결한 경력 소개를 수정하세요.",
+                "en": "I was vice president of Trace Die Cast from 1991 to 2009. Correct the career introduction linking me to another business."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1374",
+        "mechanism": "manufacturing-career",
+        "learningTarget": "Guthrie was vice president of Trace Die Cast from 1991 to 2009.",
+        "date": "2016-04-16",
+        "venue": {
+          "ko": "제조업 기술 진로 행사",
+          "en": "Manufacturing careers event"
+        },
+        "context": {
+          "ko": "지역 행사에서 나누는 역사적 사실에 근거한 가상 대화입니다.",
+          "en": "A fictional regional encounter grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "G000558",
+            "name": "Brett Guthrie",
+            "ko": "브렛 거스리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/G000558.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/G000558"
+          },
+          {
+            "id": "M001184",
+            "name": "Thomas Massie",
+            "ko": "토머스 매시",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001184.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001184"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1991~2009년 제조업 기업에서 임원을 맡았습니다.",
+            "en": "I was an executive at a manufacturing company from 1991 to 2009."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저도 엔지니어이자 발명가로 일했지요. 기업을 구별해 주세요.",
+            "en": "I worked as an engineer and inventor. Keep the companies distinct."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "거스리 의원이 일한 기업은 {{blank}}입니다.",
+          "en": "Guthrie worked for {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Trace Die Cast",
+              "en": "Trace Die Cast"
+            },
+            {
+              "id": "B",
+              "ko": "SensAble Devices",
+              "en": "SensAble Devices"
+            },
+            {
+              "id": "C",
+              "ko": "Delta Trust",
+              "en": "Delta Trust"
+            },
+            {
+              "id": "D",
+              "ko": "LEO Newsweekly",
+              "en": "LEO Newsweekly"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2016-02-12/html/CDIR-2016-02-12-KY.htm",
+            "claim": "Guthrie was vice president of Trace Die Cast from 1991 to 2009.",
+            "asOf": "2016-04-16"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1374-manufacturing-career"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1414",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "c2dc0aace589d37e8107bcd407f8c27887b71adc",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하버드에서 1912년에 법학 공부를 마쳤습니다.",
+                "en": "I completed law school at Harvard in 1912."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "host",
+                "ko": "정확한 학교는 하버드 로스쿨입니다. 와배시는 학부 과정입니다.",
+                "en": "The law school was Harvard; Wabash was his undergraduate institution."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하버드 법학 동문들에게 1912년 졸업 이후 법률 경력을 이야기하겠습니다.",
+                "en": "I'll discuss my legal career after graduating in 1912 with Harvard Law alumni."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "법학은 하버드에서 공부했습니다. 다른 학교에 보낸 동문 초청장을 회수하세요.",
+                "en": "I studied law at Harvard. Retrieve the alumni invitation addressed to another school."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1414",
+        "date": "1939-06-12",
+        "mechanism": "alumni-letter-identification",
+        "learningTarget": "Pittenger earned his law degree at Harvard Law School in 1912.",
+        "venue": {
+          "ko": "덜루스 법조인 동문 행사",
+          "en": "Duluth legal alumni gathering"
+        },
+        "context": {
+          "ko": "역사 기록을 토대로 구성한 가상 만남입니다.",
+          "en": "A fictional meeting grounded in the historical record."
+        },
+        "cast": [
+          {
+            "id": "P000371",
+            "name": "William Alvin Pittenger",
+            "ko": "윌리엄 피텐저",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19739"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "1912년 법학 졸업생에게 보낼 초청장이 왔습니다. 학교 명칭이 빠졌네요.",
+            "en": "An invitation for the law class of 1912 arrived, but the school name is missing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "인디애나의 와배시 대학에서 학부를 마치고 다른 학교에서 법학을 공부했지요.",
+            "en": "I finished college at Wabash in Indiana before studying law elsewhere."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "법학 동문 초청장은 {{blank}}에 연결해야겠습니다.",
+          "en": "The law alumni invitation belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "예일 로스쿨",
+              "en": "Yale Law School"
+            },
+            {
+              "id": "B",
+              "ko": "미네소타대 로스쿨",
+              "en": "University of Minnesota Law School"
+            },
+            {
+              "id": "C",
+              "ko": "컬럼비아 로스쿨",
+              "en": "Columbia Law School"
+            },
+            {
+              "id": "D",
+              "ko": "하버드 로스쿨",
+              "en": "Harvard Law School"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/19739",
+            "claim": "Pittenger earned his law degree at Harvard Law School in 1912.",
+            "asOf": "1939-06-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1414-alumni-letter-identification"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1431",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "147b085e68cde4b35a5781e05e3124345329b985",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "도시 갈등에 대한 전국 조사 자료를 주민에게 설명하고 싶습니다.",
+              "en": "I'd like residents to understand the national inquiry into urban unrest."
+            },
+            {
+              "speaker": "host",
+              "ko": "조사의 주제를 안내문에 적어 주세요.",
+              "en": "Identify the commission's topic in the program."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "1967~1968년 전국 조사위원회 자료를 주민들과 살펴보고 싶습니다.",
+              "en": "I'd like to examine materials from the 1967–1968 national commission with residents."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제가 참여했던 조사위원회의 주제를 정확하게 소개해 주세요.",
+              "en": "Please introduce the subject of the commission on which I served."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "대통령의 민간 소요 자문위원회였습니다.",
+                "en": "It was the President's advisory commission on civil disorders."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "주민들의 지역 경험을 조사 보고서와 함께 토론합시다.",
+                "en": "Discuss local experiences alongside the report."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "대통령의 민간 소요 자문위원회였습니다.",
+                "en": "It was the President's advisory commission on civil disorders."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시민 소요에 대한 위원회 조사와 주민의 지역 갈등 경험을 함께 토론하겠습니다.",
+                "en": "I'll discuss the commission's inquiry into civil disorders alongside residents' experiences of local unrest."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1967~1968년 대통령의 시민 소요 자문위원회에 참여했습니다. 다른 조사 주제를 적은 안내를 교체하세요.",
+                "en": "I served on the President's advisory commission on civil disorders in 1967–1968. Replace the program listing another topic."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1431",
+        "mechanism": "commission-document",
+        "learningTarget": "Corman served on the President's National Advisory Commission on Civil Disorders, 1967–1968.",
+        "date": "1968-06-12",
+        "venue": {
+          "ko": "밴나이스 주민 토론",
+          "en": "Van Nuys community discussion"
+        },
+        "context": {
+          "ko": "밴나이스 주민 토론",
+          "en": "Van Nuys community discussion"
+        },
+        "cast": [
+          {
+            "id": "C000780",
+            "name": "James Charles Corman",
+            "ko": "제임스 코먼",
+            "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/5c/James_C._Corman%2C_1963.jpg",
+            "source": "https://history.house.gov/People/Detail/11430"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코먼이 참여한 1967~1968년 위원회는 {{blank}}을 조사했습니다.",
+          "en": "Corman's 1967–1968 commission examined {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농산물 가격",
+              "en": "crop prices"
+            },
+            {
+              "id": "B",
+              "ko": "철도 요금",
+              "en": "rail rates"
+            },
+            {
+              "id": "C",
+              "ko": "해군 함정",
+              "en": "naval vessels"
+            },
+            {
+              "id": "D",
+              "ko": "시민 소요",
+              "en": "civil disorders"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11430",
+            "claim": "Corman served on the President's National Advisory Commission on Civil Disorders, 1967–1968.",
+            "asOf": "1968-06-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:James_C._Corman,_1963.jpg",
+            "claim": "Portrait of James Charles Corman; California State Printing Office, California Blue Book 1963; Commons PD-US-no notice",
+            "asOf": "1968-06-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1431-commission-document"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1434",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "147b085e68cde4b35a5781e05e3124345329b985",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1963년 제88대 의회입니다.",
+                "en": "The 88th Congress, in 1963."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역 대표의 주의회와 연방 경력표를 따로 작성하세요.",
+                "en": "Prepare separate state and federal career records."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1963년 제88대 의회입니다.",
+                "en": "The 88th Congress, in 1963."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1963년 제88대 의회 입성 경험을 각자 이야기하겠습니다. 주의회 경력은 별도로 질문해 주세요.",
+                "en": "We'll each describe entering the 88th Congress in 1963. Ask separately about our state Assembly careers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 사람은 1963년 제88대 의회에 입성했습니다. 잘못된 회기의 신입 의원 행사 소개를 수정하세요.",
+                "en": "We entered the 88th Congress in 1963. Correct the freshman event program naming the wrong Congress."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1434",
+        "mechanism": "assembly-to-house-cohort",
+        "learningTarget": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+        "date": "1963-05-12",
+        "venue": {
+          "ko": "캘리포니아 신입 의원 소개",
+          "en": "California freshman introductions"
+        },
+        "context": {
+          "ko": "캘리포니아 신입 의원 소개",
+          "en": "California freshman introductions"
+        },
+        "cast": [
+          {
+            "id": "H000367",
+            "name": "Augustus Freeman Hawkins",
+            "ko": "거스 호킨스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/14733"
+          },
+          {
+            "id": "W000571",
+            "name": "Charles Herbert Wilson",
+            "ko": "찰스 허버트 윌슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "윌슨 의원도 저처럼 주하원에서 일한 뒤 이번 의회에 왔습니다.",
+            "en": "Wilson, like me, came to this Congress after state Assembly service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "우리의 주의회 임기는 서로 다르지만 연방 입성 시점은 같습니다.",
+            "en": "Our Assembly careers differ, but our federal entry dates coincide."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원의 첫 연방 의회는 제{{blank}}대입니다.",
+          "en": "Both entered the {{blank}} Congress.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "87",
+              "en": "87th"
+            },
+            {
+              "id": "B",
+              "ko": "89",
+              "en": "89th"
+            },
+            {
+              "id": "C",
+              "ko": "88",
+              "en": "88th"
+            },
+            {
+              "id": "D",
+              "ko": "90",
+              "en": "90th"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/14733",
+            "claim": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+            "asOf": "1963-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/",
+            "claim": "Hawkins and Wilson both entered the U.S. House in 1963 after serving in the California Assembly.",
+            "asOf": "1963-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1434-assembly-to-house-cohort"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1435",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "147b085e68cde4b35a5781e05e3124345329b985",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Answer leakage/categorical cue reduced in both languages; branch actions and speaker attribution differentiated.",
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "대니얼슨 의원이 주의회에서 연방의회로 왔군요.",
+              "en": "Mr. Danielson has moved from the state legislature to Congress."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 주하원에 이어 주상원도 거쳤습니다.",
+              "en": "I served in the state Senate after the Assembly."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "대니얼슨 의원도 주의회 경험을 거쳐 연방의회에 왔군요.",
+              "en": "Representative Danielson also came to Congress after serving in the state legislature."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 두 주의회 경력 중 마지막 직책을 확인해 주세요.",
+              "en": "Please identify the later of my two state legislative roles."
+            },
+            {
+              "speaker": "player",
+              "ko": "두 의원의 입법 경험을 시간 순서로 비교하겠습니다.",
+              "en": "I'll compare your legislative experience chronologically."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1967~1971년 캘리포니아 주상원의원입니다.",
+                "en": "California state senator, 1967–1971."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 사람의 지역 의정 경력 차이를 기록합시다.",
+                "en": "Record their different paths to federal representation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1967~1971년 캘리포니아 주상원의원입니다.",
+                "en": "California state senator, 1967–1971."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "캘리포니아 주상원 시절의 입법 업무를 설명하고 윌슨 의원의 주하원 경험과 비교하겠습니다.",
+                "en": "I'll describe my California Senate work and compare it with Representative Wilson's Assembly experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "1967~1971년 캘리포니아 주상원의원이었습니다. 연방 상원 경력으로 소개한 부분을 바꾸세요.",
+                "en": "I served in the California Senate from 1967 to 1971. Correct the introduction describing U.S. Senate service."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1435",
+        "mechanism": "legislative-route-contrast",
+        "learningTarget": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+        "date": "1971-05-12",
+        "venue": {
+          "ko": "캘리포니아 주의회 동료 재회",
+          "en": "California legislative colleagues"
+        },
+        "context": {
+          "ko": "캘리포니아 주의회 동료 재회",
+          "en": "California legislative colleagues"
+        },
+        "cast": [
+          {
+            "id": "W000571",
+            "name": "Charles Herbert Wilson",
+            "ko": "찰스 허버트 윌슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/"
+          },
+          {
+            "id": "D000043",
+            "name": "George Elmore Danielson",
+            "ko": "조지 대니얼슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11883"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "대니얼슨의 연방의회 직전 공직은 {{blank}}입니다.",
+          "en": "Danielson's last legislative office before Congress was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 상원",
+              "en": "U.S. Senate"
+            },
+            {
+              "id": "B",
+              "ko": "시의회",
+              "en": "city council"
+            },
+            {
+              "id": "C",
+              "ko": "카운티 위원회",
+              "en": "county board"
+            },
+            {
+              "id": "D",
+              "ko": "캘리포니아 주상원",
+              "en": "California Senate"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/W/WILSON%2C-Charles-Herbert-%28W000571%29/",
+            "claim": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+            "asOf": "1971-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/11883",
+            "claim": "Wilson served in the California Assembly 1954–1962; Danielson served in Assembly 1963–1967 and state Senate 1967–1971.",
+            "asOf": "1971-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1435-legislative-route-contrast"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1436",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "147b085e68cde4b35a5781e05e3124345329b985",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "산타애나 시장을 지냈습니다.",
+                "en": "I was mayor of Santa Ana."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "시정 문의와 의회 민원을 나누세요.",
+                "en": "Separate municipal requests from federal casework."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "산타애나 시장을 지냈습니다.",
+                "en": "I was mayor of Santa Ana."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "산타애나 시장 경험을 토대로 시정 문제와 연방 주민 문의를 나누어 상담하겠습니다.",
+                "en": "I'll distinguish municipal issues from federal constituent inquiries using my experience as mayor of Santa Ana."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1973~1975년 산타애나 시장이었습니다. 다른 정부 수준의 권한을 전제로 한 안내를 수정하세요.",
+                "en": "I was mayor of Santa Ana from 1973 to 1975. Correct the guide premised on authority at another level of government."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1436",
+        "mechanism": "municipal-transition",
+        "learningTarget": "Patterson was mayor of Santa Ana in 1973–1975 before House service.",
+        "date": "1975-05-12",
+        "venue": {
+          "ko": "산타애나 시정 방문",
+          "en": "Santa Ana municipal visit"
+        },
+        "context": {
+          "ko": "산타애나 시정 방문",
+          "en": "Santa Ana municipal visit"
+        },
+        "cast": [
+          {
+            "id": "P000121",
+            "name": "Jerry Mumford Patterson",
+            "ko": "제리 패터슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "얼마 전까지 산타애나 시청에서 일하던 동료들이 오셨습니다.",
+            "en": "My recent colleagues from Santa Ana city hall have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "시민들이 새 연방 대표와 지방정부를 구분하도록 돕겠습니다.",
+            "en": "I'll help residents distinguish their new federal member from city government."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "패터슨의 이전 직책은 산타애나 {{blank}}입니다.",
+          "en": "Patterson's prior office was Santa Ana {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "시장",
+              "en": "mayor"
+            },
+            {
+              "id": "B",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "C",
+              "ko": "연방판사",
+              "en": "federal judge"
+            },
+            {
+              "id": "D",
+              "ko": "상원의원",
+              "en": "senator"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/",
+            "claim": "Patterson was mayor of Santa Ana in 1973–1975 before House service.",
+            "asOf": "1975-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1436-municipal-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1437",
+      "path": "data/dialogue-packs/P01/part-58.json",
+      "originalBlobSha": "147b085e68cde4b35a5781e05e3124345329b985",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Identical or nearly identical feedback; use correct speaker, distinct interaction and correction.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "패터슨은 산타애나에서 일했습니다.",
+                "en": "Patterson served in Santa Ana."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 도시의 주민 대표 기관을 지도에 표시하세요.",
+                "en": "Mark both municipal institutions on the map."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "패터슨은 산타애나에서 일했습니다.",
+                "en": "Patterson served in Santa Ana."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "산타애나 시의회 경험부터 이야기하겠습니다. 로스앤젤레스 사례는 코먼 의원에게 질문해 주세요.",
+                "en": "I'll start with my Santa Ana city council experience; ask Representative Corman about Los Angeles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 산타애나 시의회에서 일했습니다. 두 도시의 경력을 바꿔 쓴 안내문을 교체하세요.",
+                "en": "I served on Santa Ana City Council. Replace the program that swaps our municipal careers."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1437",
+        "mechanism": "city-representation-exchange",
+        "learningTarget": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+        "date": "1975-07-12",
+        "venue": {
+          "ko": "남부 캘리포니아 도시 대표 회의",
+          "en": "Southern California urban delegation meeting"
+        },
+        "context": {
+          "ko": "남부 캘리포니아 도시 대표 회의",
+          "en": "Southern California urban delegation meeting"
+        },
+        "cast": [
+          {
+            "id": "P000121",
+            "name": "Jerry Mumford Patterson",
+            "ko": "제리 패터슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/"
+          },
+          {
+            "id": "C000780",
+            "name": "James Charles Corman",
+            "ko": "제임스 코먼",
+            "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/5c/James_C._Corman%2C_1963.jpg",
+            "source": "https://history.house.gov/People/Detail/11430"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "코먼 의원도 지방 의회 경험이 있습니다.",
+            "en": "Mr. Corman has city council experience too."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 시의회는 로스앤젤레스였습니다.",
+            "en": "Mine was in Los Angeles."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "패터슨이 활동했던 시의회는 {{blank}}입니다.",
+          "en": "Patterson served on the city council of {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로스앤젤레스",
+              "en": "Los Angeles"
+            },
+            {
+              "id": "B",
+              "ko": "산타애나",
+              "en": "Santa Ana"
+            },
+            {
+              "id": "C",
+              "ko": "롱비치",
+              "en": "Long Beach"
+            },
+            {
+              "id": "D",
+              "ko": "로즈빌",
+              "en": "Roseville"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/P/PATTERSON%2C-Jerry-Mumford-%28P000121%29/",
+            "claim": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+            "asOf": "1975-07-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/11430",
+            "claim": "Patterson served Santa Ana City Council; Corman served Los Angeles City Council before Congress.",
+            "asOf": "1975-07-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:James_C._Corman,_1963.jpg",
+            "claim": "Portrait of James Charles Corman; California State Printing Office, California Blue Book 1963; Commons PD-US-no notice",
+            "asOf": "1975-07-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1437-city-representation-exchange"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ]
+}

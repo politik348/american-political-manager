@@ -1,0 +1,3619 @@
+{
+  "schema": "q4-r9-editorial-v1",
+  "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+  "rows": [
+    {
+      "id": "P01-1259",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "라크로스 카운티입니다.",
+              "en": "La Crosse County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "주 법률 문의와 연방 의회 문의를 각각 안내하세요.",
+              "en": "Direct state legal and federal congressional inquiries separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "라크로스 카운티입니다.",
+              "en": "La Crosse County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "라크로스 카운티입니다.",
+                "en": "La Crosse County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "주 법률 문의와 연방 의회 문의를 각각 안내하세요.",
+                "en": "Direct state legal and federal congressional inquiries separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라크로스 카운티입니다.",
+                "en": "La Crosse County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "라크로스의 지방 법률 문제를 먼저 듣고, 연방 의원으로 처리할 수 있는 사안은 따로 상담합시다.",
+                "en": "Let's hear La Crosse's local legal concerns first, then discuss matters a federal member can address."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라크로스 카운티 검찰에서 일했습니다. 다른 카운티의 담당 기관을 안내했다면 바로잡으세요.",
+                "en": "I worked in the La Crosse County district attorney's office. Correct any referral to an agency in another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1259",
+        "mechanism": "county-service-routing",
+        "learningTarget": "Kind served as state prosecutor in La Crosse County district attorney's office in 1992–1996.",
+        "date": "1997-04-12",
+        "venue": {
+          "ko": "라크로스 주민 접견",
+          "en": "La Crosse constituent meeting"
+        },
+        "context": {
+          "ko": "라크로스 주민 접견",
+          "en": "La Crosse constituent meeting"
+        },
+        "cast": [
+          {
+            "id": "K000188",
+            "name": "Ron Kind",
+            "ko": "론 카인드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+            "source": "https://history.house.gov/People/Detail/16313"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티에서 일할 때 알던 주민들이 찾아왔습니다.",
+            "en": "Residents I knew from county work have arrived."
+          },
+          {
+            "speaker": "host",
+            "ko": "지방 법률 업무와 연방 민원을 나눕시다.",
+            "en": "Let's separate local legal matters from federal casework."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카인드가 검사로 일한 카운티는 {{blank}}입니다.",
+          "en": "Kind worked as a prosecutor in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "데인",
+              "en": "Dane"
+            },
+            {
+              "id": "B",
+              "ko": "쿡",
+              "en": "Cook"
+            },
+            {
+              "id": "C",
+              "ko": "녹스",
+              "en": "Knox"
+            },
+            {
+              "id": "D",
+              "ko": "라크로스",
+              "en": "La Crosse"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16313",
+            "claim": "Kind served as state prosecutor in La Crosse County district attorney's office in 1992–1996.",
+            "asOf": "1997-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+            "asOf": "1997-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1259-county-service-routing"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1260",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "위스콘신입니다.",
+              "en": "Wisconsin."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 대표 안내서의 지명을 수정하세요.",
+              "en": "Update the geographic label in the representative guide."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "위스콘신입니다.",
+              "en": "Wisconsin."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "위스콘신입니다.",
+                "en": "Wisconsin."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 대표 안내서의 지명을 수정하세요.",
+                "en": "Update the geographic label in the representative guide."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "위스콘신입니다.",
+                "en": "Wisconsin."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "위스콘신 라크로스에서 온 주민들과 고향 및 지역 대표 역할을 주제로 이야기하겠습니다.",
+                "en": "I'll discuss my hometown and representation with visitors from La Crosse, Wisconsin."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "라크로스는 위스콘신에 있습니다. 다른 주에 표시한 출생지 지도를 교체하세요.",
+                "en": "La Crosse is in Wisconsin. Replace the birthplace map marking it in another state."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1260",
+        "mechanism": "local-roots-briefing",
+        "learningTarget": "Kind was born in La Crosse and represented Wisconsin in the House.",
+        "date": "1998-04-12",
+        "venue": {
+          "ko": "위스콘신 지역 소개",
+          "en": "Wisconsin district introduction"
+        },
+        "context": {
+          "ko": "위스콘신 지역 소개",
+          "en": "Wisconsin district introduction"
+        },
+        "cast": [
+          {
+            "id": "K000188",
+            "name": "Ron Kind",
+            "ko": "론 카인드",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000188.jpg",
+            "source": "https://history.house.gov/People/Detail/16313"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지역 방문단에게 제 출생지와 대표 주를 정확히 소개해 주세요.",
+            "en": "Please introduce my birthplace and state of representation accurately."
+          },
+          {
+            "speaker": "player",
+            "ko": "동명의 다른 도시와 혼동하지 않겠습니다.",
+            "en": "I'll avoid confusing it with another place."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카인드의 출생지 라크로스는 {{blank}}주에 있습니다.",
+          "en": "Kind's birthplace of La Crosse is in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "위스콘신",
+              "en": "Wisconsin"
+            },
+            {
+              "id": "B",
+              "ko": "미네소타",
+              "en": "Minnesota"
+            },
+            {
+              "id": "C",
+              "ko": "일리노이",
+              "en": "Illinois"
+            },
+            {
+              "id": "D",
+              "ko": "아이오와",
+              "en": "Iowa"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16313",
+            "claim": "Kind was born in La Crosse and represented Wisconsin in the House.",
+            "asOf": "1998-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Ron Kind; Public domain per upstream repository",
+            "asOf": "1998-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1260-local-roots-briefing"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1261",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "해밀턴 카운티입니다.",
+              "en": "Hamilton County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지방정부 업무 자료를 별도로 보관하세요.",
+              "en": "File local government documents separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "해밀턴 카운티입니다.",
+              "en": "Hamilton County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "해밀턴 카운티입니다.",
+                "en": "Hamilton County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지방정부 업무 자료를 별도로 보관하세요.",
+                "en": "File local government documents separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "해밀턴 카운티입니다.",
+                "en": "Hamilton County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "해밀턴 카운티 위원으로 일한 경험을 토대로 카운티와 연방의 업무 차이를 설명하죠.",
+                "en": "Let's explain the difference between county and federal responsibilities using my experience as a Hamilton County commissioner."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "해밀턴 카운티 위원이었습니다. 다른 카운티의 공직 기록을 제 경력에 붙인 자료를 철회하세요.",
+                "en": "I was a Hamilton County commissioner. Withdraw the material attributing another county's office to me."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1261",
+        "mechanism": "county-council-transition",
+        "learningTarget": "Chabot served as Hamilton County commissioner in 1990–1994 before entering Congress.",
+        "date": "1995-04-12",
+        "venue": {
+          "ko": "신시내티 지방행정 회고",
+          "en": "Cincinnati local government review"
+        },
+        "context": {
+          "ko": "신시내티 지방행정 회고",
+          "en": "Cincinnati local government review"
+        },
+        "cast": [
+          {
+            "id": "C000266",
+            "name": "Steve Chabot",
+            "ko": "스티브 섀벗",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000266.jpg",
+            "source": "https://history.house.gov/People/Detail/10791"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "카운티 위원회 자료를 지역 사무실에 가져왔습니다.",
+            "en": "I brought county commission records to the district office."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 공직과 현재 하원 직책을 구별하겠습니다.",
+            "en": "I'll distinguish the earlier office from your House role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "섀벗이 1990~1994년 위원으로 활동한 곳은 {{blank}} 카운티입니다.",
+          "en": "Chabot served as commissioner in {{blank}} County in 1990–1994.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "프랭클린",
+              "en": "Franklin"
+            },
+            {
+              "id": "B",
+              "ko": "해밀턴",
+              "en": "Hamilton"
+            },
+            {
+              "id": "C",
+              "ko": "쿡",
+              "en": "Cook"
+            },
+            {
+              "id": "D",
+              "ko": "미들랜드",
+              "en": "Midland"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/10791",
+            "claim": "Chabot served as Hamilton County commissioner in 1990–1994 before entering Congress.",
+            "asOf": "1995-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Steve Chabot; Public domain per upstream repository",
+            "asOf": "1995-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1261-county-council-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1263",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "데이비드 스톡먼 의원입니다.",
+              "en": "Representative David Stockman."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "보좌진 시절과 의원 재임기간을 구분하세요.",
+              "en": "Distinguish staff service from elected service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "데이비드 스톡먼 의원입니다.",
+              "en": "Representative David Stockman."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "데이비드 스톡먼 의원입니다.",
+                "en": "Representative David Stockman."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "보좌진 시절과 의원 재임기간을 구분하세요.",
+                "en": "Distinguish staff service from elected service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "데이비드 스톡먼 의원입니다.",
+                "en": "Representative David Stockman."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "스톡먼 의원실에서 일했던 경험과 선출직이 된 이후의 책임을 비교하는 질문을 받겠습니다.",
+                "en": "I'll take questions comparing my experience in Stockman's office with my responsibilities after election."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "데이비드 스톡먼 의원의 보좌진이었습니다. 다른 의원의 사무실에서 근무한 것으로 소개한 경력은 수정해 주세요.",
+                "en": "I worked on Representative David Stockman's staff. Correct the biography assigning me to another member's office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1263",
+        "mechanism": "staff-to-member",
+        "learningTarget": "Upton worked for Michigan Representative David Stockman in 1976–1980 before entering the House.",
+        "date": "1987-04-12",
+        "venue": {
+          "ko": "미시간 의회 보좌진 재회",
+          "en": "Michigan congressional staff reunion"
+        },
+        "context": {
+          "ko": "미시간 의회 보좌진 재회",
+          "en": "Michigan congressional staff reunion"
+        },
+        "cast": [
+          {
+            "id": "U000031",
+            "name": "Fred Upton",
+            "ko": "프레드 업턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+            "source": "https://history.house.gov/People/Detail/20868"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이전에 다른 미시간 의원의 사무실에서 일했습니다.",
+            "en": "I previously worked in another Michigan member's office."
+          },
+          {
+            "speaker": "player",
+            "ko": "보좌진 경력을 대표단 연표에 넣겠습니다.",
+            "en": "I'll add the staff experience to the delegation timeline."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "업턴이 보좌한 의원은 {{blank}}입니다.",
+          "en": "Upton worked for Representative {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "짐 센센브레너",
+              "en": "Jim Sensenbrenner"
+            },
+            {
+              "id": "B",
+              "ko": "데이브 캠프",
+              "en": "Dave Camp"
+            },
+            {
+              "id": "C",
+              "ko": "짐 쿠퍼",
+              "en": "Jim Cooper"
+            },
+            {
+              "id": "D",
+              "ko": "데이비드 스톡먼",
+              "en": "David Stockman"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20868",
+            "claim": "Upton worked for Michigan Representative David Stockman in 1976–1980 before entering the House.",
+            "asOf": "1987-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Fred Upton; Public domain per upstream repository",
+            "asOf": "1987-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1263-staff-to-member"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1265",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+              "en": "1991. Mr. Upton entered in 1987."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "대표단 명부를 첫 임기 순으로 정리하세요.",
+              "en": "Sort the delegation roster by first term."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+              "en": "1991. Mr. Upton entered in 1987."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+                "en": "1991. Mr. Upton entered in 1987."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "대표단 명부를 첫 임기 순으로 정리하세요.",
+                "en": "Sort the delegation roster by first term."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1991년입니다. 업턴 의원은 1987년에 입성했습니다.",
+                "en": "1991. Mr. Upton entered in 1987."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 1991년에 들어왔고 업턴 의원은 1987년입니다. 신임 의원으로 받은 질문부터 답하겠습니다.",
+                "en": "I entered in 1991 and Representative Upton in 1987. I'll take the questions directed to a new member first."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 입성은 1991년입니다. 업턴 의원과 같은 기수로 소개한 모임 안내를 고쳐 주세요.",
+                "en": "I entered in 1991. Correct the event program that places us in the same entering class."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1265",
+        "mechanism": "state-delegation-seniority",
+        "learningTarget": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+        "date": "1991-04-12",
+        "venue": {
+          "ko": "미시간 대표단 소개",
+          "en": "Michigan delegation introduction"
+        },
+        "context": {
+          "ko": "미시간 대표단 소개",
+          "en": "Michigan delegation introduction"
+        },
+        "cast": [
+          {
+            "id": "U000031",
+            "name": "Fred Upton",
+            "ko": "프레드 업턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+            "source": "https://history.house.gov/People/Detail/20868"
+          },
+          {
+            "id": "C000071",
+            "name": "Dave Camp",
+            "ko": "데이브 캠프",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000071.jpg",
+            "source": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "캠프 의원이 새로 들어왔습니다. 우리 둘은 같은 주에서 왔습니다.",
+            "en": "Mr. Camp has just arrived. We come from the same state."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하지만 첫 재임 연도는 서로 다릅니다.",
+            "en": "Our first years of service differ."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "캠프의 하원 입성 연도는 {{blank}}입니다.",
+          "en": "Camp entered the House in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1987",
+              "en": "1987"
+            },
+            {
+              "id": "B",
+              "ko": "1991",
+              "en": "1991"
+            },
+            {
+              "id": "C",
+              "ko": "1995",
+              "en": "1995"
+            },
+            {
+              "id": "D",
+              "ko": "1983",
+              "en": "1983"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20868",
+            "claim": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+            "asOf": "1991-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Fred Upton; Public domain per upstream repository",
+            "asOf": "1991-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/",
+            "claim": "Upton entered the House in 1987 and Camp in 1991, both Republicans from Michigan.",
+            "asOf": "1991-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Dave Camp; Public domain per upstream repository",
+            "asOf": "1991-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1265-state-delegation-seniority"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1266",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "빌 슈트 의원입니다.",
+              "en": "Representative Bill Schuette."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 사무실 업무 인수인계 자료를 준비하세요.",
+              "en": "Prepare a district-office transition briefing."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "빌 슈트 의원입니다.",
+              "en": "Representative Bill Schuette."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "빌 슈트 의원입니다.",
+                "en": "Representative Bill Schuette."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 사무실 업무 인수인계 자료를 준비하세요.",
+                "en": "Prepare a district-office transition briefing."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "빌 슈트 의원입니다.",
+                "en": "Representative Bill Schuette."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "슈트 의원실에서 배운 보좌 업무와 지금 제가 의원으로 맡는 책임을 비교해 봅시다.",
+                "en": "Let's compare the staff work I learned in Representative Schuette's office with my current responsibilities as a member."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1984~1987년 빌 슈트 의원을 보좌했습니다. 다른 의원의 보좌진 명단으로 연결한 경력 소개를 바꾸세요.",
+                "en": "I worked for Representative Bill Schuette from 1984 to 1987. Correct the career summary linking me to another staff roster."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1266",
+        "mechanism": "constituent-office-apprenticeship",
+        "learningTarget": "Camp was on Michigan Representative Bill Schuette's staff in 1984–1987.",
+        "date": "1991-05-12",
+        "venue": {
+          "ko": "미들랜드 의회 사무실",
+          "en": "Midland congressional office"
+        },
+        "context": {
+          "ko": "미들랜드 의회 사무실",
+          "en": "Midland congressional office"
+        },
+        "cast": [
+          {
+            "id": "C000071",
+            "name": "Dave Camp",
+            "ko": "데이브 캠프",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C000071.jpg",
+            "source": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이전 의원 사무실에서 배운 업무 경험을 새 사무실에도 활용하겠습니다.",
+            "en": "I'll apply what I learned working in another member's office."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 보좌 의원의 이름을 기록하겠습니다.",
+            "en": "I'll record the previous member's name."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "캠프가 1984~1987년 보좌한 의원은 {{blank}}입니다.",
+          "en": "From 1984 to 1987 Camp worked for {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "프레드 업턴",
+              "en": "Fred Upton"
+            },
+            {
+              "id": "B",
+              "ko": "론 카인드",
+              "en": "Ron Kind"
+            },
+            {
+              "id": "C",
+              "ko": "빌 슈트",
+              "en": "Bill Schuette"
+            },
+            {
+              "id": "D",
+              "ko": "짐 쿠퍼",
+              "en": "Jim Cooper"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/C/CAMP%2C-David-Lee-%28C000071%29/",
+            "claim": "Camp was on Michigan Representative Bill Schuette's staff in 1984–1987.",
+            "asOf": "1991-05-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Dave Camp; Public domain per upstream repository",
+            "asOf": "1991-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1266-constituent-office-apprenticeship"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1271",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "녹스 카운티입니다.",
+              "en": "Knox County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "법원 문의와 연방 주민 민원을 분리하세요.",
+              "en": "Separate court inquiries from federal casework."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "녹스 카운티입니다.",
+              "en": "Knox County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "녹스 카운티입니다.",
+                "en": "Knox County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "법원 문의와 연방 주민 민원을 분리하세요.",
+                "en": "Separate court inquiries from federal casework."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "녹스 카운티입니다.",
+                "en": "Knox County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "녹스 카운티 법원에서의 경험을 주제로 사법과 입법의 역할 차이를 질문해 주세요.",
+                "en": "Use my Knox County court experience to ask about the difference between judicial and legislative roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "녹스 카운티에서 주 법원 판사로 근무했습니다. 다른 카운티 법원의 사건으로 분류한 안내를 수정하세요.",
+                "en": "I served as a state trial judge in Knox County. Correct the guide associating the cases with another county court."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1271",
+        "mechanism": "local-court-reunion",
+        "learningTarget": "Duncan Jr. served as state trial judge in Knox County from 1981 to 1988.",
+        "date": "1989-04-12",
+        "venue": {
+          "ko": "녹스 카운티 법조인 방문",
+          "en": "Knox County legal delegation"
+        },
+        "context": {
+          "ko": "녹스 카운티 법조인 방문",
+          "en": "Knox County legal delegation"
+        },
+        "cast": [
+          {
+            "id": "D000533",
+            "name": "John J. Duncan Jr.",
+            "ko": "존 덩컨 주니어",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/D000533.jpg",
+            "source": "https://history.house.gov/People/Detail/12493"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "법원에서 알던 지역 주민들이 방문했습니다.",
+            "en": "People I knew from the local courthouse have arrived."
+          },
+          {
+            "speaker": "player",
+            "ko": "전직 사법 업무와 현재 의회 업무를 구분하겠습니다.",
+            "en": "I'll distinguish your judicial and legislative roles."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "덩컨 주니어가 판사로 근무한 카운티는 {{blank}}입니다.",
+          "en": "Duncan Jr. served as a judge in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "데이비드슨",
+              "en": "Davidson"
+            },
+            {
+              "id": "B",
+              "ko": "윌슨",
+              "en": "Wilson"
+            },
+            {
+              "id": "C",
+              "ko": "해밀턴",
+              "en": "Hamilton"
+            },
+            {
+              "id": "D",
+              "ko": "녹스",
+              "en": "Knox"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/12493",
+            "claim": "Duncan Jr. served as state trial judge in Knox County from 1981 to 1988.",
+            "asOf": "1989-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of John J. Duncan Jr.; Public domain per upstream repository",
+            "asOf": "1989-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1271-local-court-reunion"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1275",
+      "path": "data/dialogue-packs/P01/part-51.json",
+      "originalBlobSha": "fd3cff66e0876f9285d9bb62421baa8d342c363b",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "소수당 원내부대표였습니다.",
+              "en": "I was assistant minority leader."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 의회 지도부의 직책을 비교하는 자료를 만드세요.",
+              "en": "Prepare a comparison of state and federal leadership roles."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "소수당 원내부대표였습니다.",
+              "en": "I was assistant minority leader."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "소수당 원내부대표였습니다.",
+                "en": "I was assistant minority leader."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 의회 지도부의 직책을 비교하는 자료를 만드세요.",
+                "en": "Prepare a comparison of state and federal leadership roles."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "소수당 원내부대표였습니다.",
+                "en": "I was assistant minority leader."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주의회 소수당 원내부대표로서의 경험부터 소개하고 연방 의원의 책임과 비교하겠습니다.",
+                "en": "I'll describe my state Senate assistant minority leader experience before comparing it with federal legislative responsibilities."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "위스콘신 주상원 소수당 원내부대표였습니다. 다수당 지도부로 소개한 부분을 빼 주세요.",
+                "en": "I was assistant minority leader in Wisconsin's state Senate. Remove the introduction placing me in majority leadership."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1275",
+        "mechanism": "state-party-leadership-memory",
+        "learningTarget": "Sensenbrenner was assistant minority leader in Wisconsin's state Senate in 1977–1979.",
+        "date": "1980-04-12",
+        "venue": {
+          "ko": "위스콘신 주의회 동료 접견",
+          "en": "Wisconsin legislative colleagues meeting"
+        },
+        "context": {
+          "ko": "위스콘신 주의회 동료 접견",
+          "en": "Wisconsin legislative colleagues meeting"
+        },
+        "cast": [
+          {
+            "id": "S000244",
+            "name": "Jim Sensenbrenner",
+            "ko": "짐 센센브레너",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S000244.jpg",
+            "source": "https://history.house.gov/People/Detail/21438"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이전 주상원 지도부 동료들과 다시 만났습니다.",
+            "en": "I've reunited with colleagues from state Senate leadership."
+          },
+          {
+            "speaker": "player",
+            "ko": "주의회 직책과 현재 연방의회 직책을 구별하겠습니다.",
+            "en": "I'll distinguish your former state role from your current federal role."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1977~1979년 센센브레너는 위스콘신 주상원 {{blank}}이었습니다.",
+          "en": "From 1977 to 1979 Sensenbrenner was Wisconsin state Senate {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "다수당 원내대표",
+              "en": "majority leader"
+            },
+            {
+              "id": "B",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "C",
+              "ko": "의장",
+              "en": "president"
+            },
+            {
+              "id": "D",
+              "ko": "소수당 원내부대표",
+              "en": "assistant minority leader"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21438",
+            "claim": "Sensenbrenner was assistant minority leader in Wisconsin's state Senate in 1977–1979.",
+            "asOf": "1980-04-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Jim Sensenbrenner; Public domain per upstream repository",
+            "asOf": "1980-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1275-state-party-leadership-memory"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1378",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 민주당, 리비스는 공화당입니다.",
+              "en": "I am a Democrat; Reavis is a Republican."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 의원에게 공통 지역 문의를 각각 전달합시다.",
+              "en": "Route the shared state inquiry to both offices."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 민주당, 리비스는 공화당입니다.",
+              "en": "I am a Democrat; Reavis is a Republican."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 민주당, 리비스는 공화당입니다.",
+                "en": "I am a Democrat; Reavis is a Republican."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 의원에게 공통 지역 문의를 각각 전달합시다.",
+                "en": "Route the shared state inquiry to both offices."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 민주당, 리비스는 공화당입니다.",
+                "en": "I am a Democrat; Reavis is a Republican."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "저는 공화당이고 셸런버거 의원은 민주당입니다. 같은 주의 현안에는 두 관점에서 답하겠습니다.",
+                "en": "I'm a Republican and Representative Shallenberger is a Democrat. We'll answer questions about our state from both perspectives."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "제 당적은 공화당입니다. 두 의원을 같은 정당으로 표시한 방문단 안내를 수정하세요.",
+                "en": "I'm a Republican. Correct the delegation program that lists both of us in the same party."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1378",
+        "mechanism": "same-state-opposite-party",
+        "learningTarget": "Shallenberger and Reavis served Nebraska in the 64th House as Democrat and Republican respectively.",
+        "date": "1916-04-12",
+        "venue": {
+          "ko": "네브래스카 대표단 접견",
+          "en": "Nebraska delegation reception"
+        },
+        "context": {
+          "ko": "네브래스카 대표단 접견",
+          "en": "Nebraska delegation reception"
+        },
+        "cast": [
+          {
+            "id": "S000280",
+            "name": "Ashton Cokayne Shallenberger",
+            "ko": "애슈턴 셸런버거",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21485"
+          },
+          {
+            "id": "R000101",
+            "name": "Charles Frank Reavis",
+            "ko": "찰스 리비스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20208"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "리비스 의원도 우리 주에서 왔습니다. 당은 다르죠.",
+            "en": "Mr. Reavis comes from our state, though not my party."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "방문단에 제 당적도 정확히 알려 주십시오.",
+            "en": "Please give the delegation my correct party affiliation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "리비스 의원은 {{blank}} 소속입니다.",
+          "en": "Mr. Reavis is a {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당",
+              "en": "Democrat"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "Socialist"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "D",
+              "ko": "진보당",
+              "en": "Progressive"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21485",
+            "claim": "Shallenberger and Reavis served Nebraska in the 64th House as Democrat and Republican respectively.",
+            "asOf": "1916-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/20208",
+            "claim": "Shallenberger and Reavis served Nebraska in the 64th House as Democrat and Republican respectively.",
+            "asOf": "1916-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1378-same-state-opposite-party"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1380",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
+              "en": "I worked in grain and brick and tile manufacturing."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 산업 방문단의 요청을 나눠 받겠습니다.",
+              "en": "We'll receive the two industries' requests separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
+              "en": "I worked in grain and brick and tile manufacturing."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
+                "en": "I worked in grain and brick and tile manufacturing."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 산업 방문단의 요청을 나눠 받겠습니다.",
+                "en": "We'll receive the two industries' requests separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "곡물업과 벽돌·타일 제조에 참여했습니다.",
+                "en": "I worked in grain and brick and tile manufacturing."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "벽돌·타일 제조업 관계자의 질문을 먼저 듣고 곡물업 문제는 별도로 논의합시다.",
+                "en": "Let's hear brick and tile manufacturers first and discuss grain trading separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "곡물업과 벽돌·타일 제조에 참여했습니다. 다른 공장 업종으로 표시한 산업 지도를 바꿔 주세요.",
+                "en": "I worked in grain trading and brick and tile manufacturing. Replace the industry map identifying the wrong manufacturing sector."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1380",
+        "mechanism": "local-industry-map",
+        "learningTarget": "Hull was involved in grain trading and brick and tile manufacturing in Williamsburg, Iowa.",
+        "date": "1915-12-12",
+        "venue": {
+          "ko": "윌리엄스버그 산업 지도",
+          "en": "Williamsburg industry map"
+        },
+        "context": {
+          "ko": "윌리엄스버그 산업 지도",
+          "en": "Williamsburg industry map"
+        },
+        "cast": [
+          {
+            "id": "H000941",
+            "name": "Harry Edward Hull",
+            "ko": "해리 헐",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/H/HULL%2C-Harry-Edward-%28H000941%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "곡물 창고 외에 지역 공장도 지도에 표시해 주시죠.",
+            "en": "Mark the local factories as well as grain warehouses on the map."
+          },
+          {
+            "speaker": "host",
+            "ko": "의원이 실제 참여했던 제조업을 확인합시다.",
+            "en": "Let's identify the manufacturing business he knew."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "헐의 제조업 경험은 {{blank}} 생산입니다.",
+          "en": "Hull's manufacturing experience involved {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "벽돌과 타일",
+              "en": "brick and tile"
+            },
+            {
+              "id": "B",
+              "ko": "자동차",
+              "en": "automobiles"
+            },
+            {
+              "id": "C",
+              "ko": "면직물",
+              "en": "cotton textiles"
+            },
+            {
+              "id": "D",
+              "ko": "철도차량",
+              "en": "rail cars"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/H/HULL%2C-Harry-Edward-%28H000941%29/",
+            "claim": "Hull was involved in grain trading and brick and tile manufacturing in Williamsburg, Iowa.",
+            "asOf": "1915-12-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1380-local-industry-map"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1383",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "리처드슨 카운티입니다.",
+              "en": "Richardson County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 법률 문제와 의회 민원을 구분해 설명합시다.",
+              "en": "Explain the difference between local legal and congressional matters."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "리처드슨 카운티입니다.",
+              "en": "Richardson County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "리처드슨 카운티입니다.",
+                "en": "Richardson County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 법률 문제와 의회 민원을 구분해 설명합시다.",
+                "en": "Explain the difference between local legal and congressional matters."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "리처드슨 카운티입니다.",
+                "en": "Richardson County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "리처드슨 카운티 법조인들과 지방 사법 경험을 이야기하고 연방 입법 질문을 별도로 받겠습니다.",
+                "en": "I'll discuss local legal experience with Richardson County lawyers and take federal legislative questions separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "리처드슨 카운티 검사였습니다. 다른 카운티 관할로 적은 소개를 철회해 주세요.",
+                "en": "I was Richardson County prosecutor. Withdraw the introduction naming a different jurisdiction."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1383",
+        "mechanism": "county-public-service",
+        "learningTarget": "Reavis was Richardson County prosecutor from 1894 to 1896.",
+        "date": "1915-12-12",
+        "venue": {
+          "ko": "폴스시티 주민 방문",
+          "en": "Falls City visit"
+        },
+        "context": {
+          "ko": "폴스시티 주민 방문",
+          "en": "Falls City visit"
+        },
+        "cast": [
+          {
+            "id": "R000101",
+            "name": "Charles Frank Reavis",
+            "ko": "찰스 리비스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20208"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "폴스시티의 옛 법조 동료들이군요.",
+            "en": "My old legal colleagues from Falls City are here."
+          },
+          {
+            "speaker": "player",
+            "ko": "당시 지방 관할을 안내문에 적겠습니다.",
+            "en": "I'll put your earlier jurisdiction in the program."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "리비스가 검사로 일한 곳은 {{blank}} 카운티입니다.",
+          "en": "Reavis was prosecutor of {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해럴런",
+              "en": "Harlan"
+            },
+            {
+              "id": "B",
+              "ko": "더글러스",
+              "en": "Douglas"
+            },
+            {
+              "id": "C",
+              "ko": "요크",
+              "en": "York"
+            },
+            {
+              "id": "D",
+              "ko": "리처드슨",
+              "en": "Richardson"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20208",
+            "claim": "Reavis was Richardson County prosecutor from 1894 to 1896.",
+            "asOf": "1915-12-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1383-county-public-service"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1387",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
+              "en": "I was president of York College in 1913–1918."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 지역의 교육·법조 방문단을 별도로 안내합시다.",
+              "en": "Arrange separate contacts for the educational and legal visitors."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
+              "en": "I was president of York College in 1913–1918."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
+                "en": "I was president of York College in 1913–1918."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역의 교육·법조 방문단을 별도로 안내합시다.",
+                "en": "Arrange separate contacts for the educational and legal visitors."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913~1918년 요크 칼리지 총장이었습니다.",
+                "en": "I was president of York College in 1913–1918."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "요크 칼리지 총장으로 일한 경험에 대한 질문을 받겠습니다. 법률 경력 질문은 제프리스 의원에게 주시죠.",
+                "en": "I'll take questions about my experience as president of York College; direct legal-career questions to Representative Jefferis."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "1913~1918년 요크 칼리지 총장이었습니다. 다른 교육기관이나 사법기관의 직책으로 소개한 부분을 수정하세요.",
+                "en": "I was president of York College from 1913 to 1918. Correct the introduction assigning me a role in a different educational or judicial institution."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1387",
+        "mechanism": "freshman-community-contrast",
+        "learningTarget": "Jefferis practiced law in Omaha; McLaughlin had been president of York College before both entered in 1919.",
+        "date": "1919-12-12",
+        "venue": {
+          "ko": "네브래스카 신임 의원 교류",
+          "en": "Nebraska freshman exchange"
+        },
+        "context": {
+          "ko": "네브래스카 신임 의원 교류",
+          "en": "Nebraska freshman exchange"
+        },
+        "cast": [
+          {
+            "id": "J000067",
+            "name": "Albert Webb Jefferis",
+            "ko": "앨버트 제퍼리스",
+            "portrait": "https://upload.wikimedia.org/wikipedia/commons/8/82/A.W._Jefferis_LCCN2014714305.jpg",
+            "source": "https://history.house.gov/People/Detail/15777"
+          },
+          {
+            "id": "M000541",
+            "name": "Melvin Orlando McLaughlin",
+            "ko": "멜빈 매클로플린",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18003"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오마하 법조계에서 일하다 의회에 왔습니다.",
+            "en": "I came to Congress from Omaha's legal community."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 요크의 교육기관에서 일했습니다.",
+            "en": "I came from an educational institution in York."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "매클로플린이 이끌었던 기관은 {{blank}}입니다.",
+          "en": "McLaughlin led {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "아이오와 웨슬리언",
+              "en": "Iowa Wesleyan"
+            },
+            {
+              "id": "B",
+              "ko": "네브래스카 주 대법원",
+              "en": "Nebraska Supreme Court"
+            },
+            {
+              "id": "C",
+              "ko": "앨마 은행",
+              "en": "Alma bank"
+            },
+            {
+              "id": "D",
+              "ko": "요크 칼리지",
+              "en": "York College"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/15777",
+            "claim": "Jefferis practiced law in Omaha; McLaughlin had been president of York College before both entered in 1919.",
+            "asOf": "1919-12-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/18003",
+            "claim": "Jefferis practiced law in Omaha; McLaughlin had been president of York College before both entered in 1919.",
+            "asOf": "1919-12-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:A.W._Jefferis_LCCN2014714305.jpg",
+            "claim": "Portrait of Albert Webb Jefferis. Bain collection, Library of Congress LCCN 2014714305, catalog date 1900; no known publication restrictions; public domain.",
+            "asOf": "1919-12-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1387-freshman-community-contrast"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1388",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1913년 요크로 옮겼습니다.",
+              "en": "I moved to York in 1913."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "대학과 지역 대표의 연결을 안내문에 남겨 주세요.",
+              "en": "Record the connection between the college and local representation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1913년 요크로 옮겼습니다.",
+              "en": "I moved to York in 1913."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913년 요크로 옮겼습니다.",
+                "en": "I moved to York in 1913."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "대학과 지역 대표의 연결을 안내문에 남겨 주세요.",
+                "en": "Record the connection between the college and local representation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913년 요크로 옮겼습니다.",
+                "en": "I moved to York in 1913."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913년 요크로 옮긴 이후 대학과 지역사회에서의 경험을 학생들과 이야기하겠습니다.",
+                "en": "I'll discuss my experience in the college and community after moving to York in 1913."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "요크로 옮긴 해는 1913년입니다. 총장 경력과 의회 입성 시기를 뒤섞은 연표를 바로잡으세요.",
+                "en": "I moved to York in 1913. Correct the timeline that conflates my college presidency and entry into Congress."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1388",
+        "mechanism": "community-institution",
+        "learningTarget": "McLaughlin moved to York in 1913 and led York College until 1918.",
+        "date": "1920-04-12",
+        "venue": {
+          "ko": "요크 대학 동문 접견",
+          "en": "York alumni reception"
+        },
+        "context": {
+          "ko": "요크 대학 동문 접견",
+          "en": "York alumni reception"
+        },
+        "cast": [
+          {
+            "id": "M000541",
+            "name": "Melvin Orlando McLaughlin",
+            "ko": "멜빈 매클로플린",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18003"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "요크의 학생들이 방문했군요. 제가 총장으로 재임했던 기록을 찾아봅시다.",
+            "en": "Students from York are visiting. Let's find my college presidency record."
+          },
+          {
+            "speaker": "host",
+            "ko": "언제 요크로 이주하셨나요?",
+            "en": "When did you move to York?"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그 이주 시점은 {{blank}}년이군요.",
+          "en": "That move was in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1913",
+              "en": "1913"
+            },
+            {
+              "id": "B",
+              "ko": "1900",
+              "en": "1900"
+            },
+            {
+              "id": "C",
+              "ko": "1919",
+              "en": "1919"
+            },
+            {
+              "id": "D",
+              "ko": "1927",
+              "en": "1927"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18003",
+            "claim": "McLaughlin moved to York in 1913 and led York College until 1918.",
+            "asOf": "1920-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1388-community-institution"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1392",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "헨리 카운티입니다.",
+              "en": "Henry County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "법률 문의는 지방 기관의 권한을 먼저 확인하세요.",
+              "en": "Check local jurisdiction for legal inquiries first."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "헨리 카운티입니다.",
+              "en": "Henry County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "헨리 카운티입니다.",
+                "en": "Henry County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "법률 문의는 지방 기관의 권한을 먼저 확인하세요.",
+                "en": "Check local jurisdiction for legal inquiries first."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "헨리 카운티입니다.",
+                "en": "Henry County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "헨리 카운티에서 맡았던 검사 업무와 연방 의원의 역할 차이를 설명하겠습니다.",
+                "en": "I'll explain how my prosecutorial work in Henry County differed from my congressional role."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "헨리 카운티 검사였습니다. 다른 카운티 관할로 보낼 지방 법률 문의를 회수해 주세요.",
+                "en": "I was Henry County prosecuting attorney. Retrieve the local legal inquiry routed to a different county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1392",
+        "mechanism": "regional-legal-contact",
+        "learningTarget": "Kopp served as Henry County prosecuting attorney 1895–1899.",
+        "date": "1921-05-12",
+        "venue": {
+          "ko": "헨리 카운티 법률 방문",
+          "en": "Henry County legal visit"
+        },
+        "context": {
+          "ko": "헨리 카운티 법률 방문",
+          "en": "Henry County legal visit"
+        },
+        "cast": [
+          {
+            "id": "K000314",
+            "name": "William Frederick Kopp",
+            "ko": "윌리엄 코프",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16476"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "옛 카운티 법률 기록이군요. 연방의원 경력과 혼동하지 마세요.",
+            "en": "These are my old county legal records. Don't confuse them with federal service."
+          },
+          {
+            "speaker": "player",
+            "ko": "근무 카운티부터 표시하겠습니다.",
+            "en": "I'll identify the county first."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코프의 이전 관할은 {{blank}} 카운티입니다.",
+          "en": "Kopp's former jurisdiction was {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "헨리",
+              "en": "Henry"
+            },
+            {
+              "id": "B",
+              "ko": "리처드슨",
+              "en": "Richardson"
+            },
+            {
+              "id": "C",
+              "ko": "쿡",
+              "en": "Cook"
+            },
+            {
+              "id": "D",
+              "ko": "해럴런",
+              "en": "Harlan"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16476",
+            "claim": "Kopp served as Henry County prosecuting attorney 1895–1899.",
+            "asOf": "1921-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1392-regional-legal-contact"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1395",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "더뷰크입니다.",
+              "en": "Dubuque."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 금융 방문단의 자료를 접수합시다.",
+              "en": "Let's receive the local finance delegation's papers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "더뷰크입니다.",
+              "en": "Dubuque."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "더뷰크입니다.",
+                "en": "Dubuque."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 금융 방문단의 자료를 접수합시다.",
+                "en": "Let's receive the local finance delegation's papers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "더뷰크입니다.",
+                "en": "Dubuque."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "더뷰크의 보험·금융 관계자들과 지역 경제 경험에 관한 토론을 시작합시다.",
+                "en": "Let's begin a discussion of local economic experience with insurance and banking visitors from Dubuque."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "고향은 더뷰크입니다. 다른 도시 방문단으로 잘못 소개한 행사 순서를 수정하세요.",
+                "en": "My hometown is Dubuque. Revise the program introducing the delegation as coming from another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1395",
+        "mechanism": "river-city-introduction",
+        "learningTarget": "Connolly was born in Dubuque and engaged in insurance and banking before entering the House in 1913.",
+        "date": "1913-12-12",
+        "venue": {
+          "ko": "더뷰크 주민 환영",
+          "en": "Dubuque constituent reception"
+        },
+        "context": {
+          "ko": "더뷰크 주민 환영",
+          "en": "Dubuque constituent reception"
+        },
+        "cast": [
+          {
+            "id": "C000699",
+            "name": "Maurice Connolly",
+            "ko": "모리스 코널리",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11330"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "고향에서 온 보험·금융 관계자들이군요.",
+            "en": "Insurance and banking visitors from my hometown have arrived."
+          },
+          {
+            "speaker": "host",
+            "ko": "고향 도시를 행사 자료에 밝혀 주세요.",
+            "en": "Name his hometown in the program."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코널리의 고향은 아이오와 {{blank}}입니다.",
+          "en": "Connolly's hometown is {{blank}}, Iowa.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "윌리엄스버그",
+              "en": "Williamsburg"
+            },
+            {
+              "id": "B",
+              "ko": "마운트플레전트",
+              "en": "Mount Pleasant"
+            },
+            {
+              "id": "C",
+              "ko": "시더래피즈",
+              "en": "Cedar Rapids"
+            },
+            {
+              "id": "D",
+              "ko": "더뷰크",
+              "en": "Dubuque"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11330",
+            "claim": "Connolly was born in Dubuque and engaged in insurance and banking before entering the House in 1913.",
+            "asOf": "1913-12-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1395-river-city-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1397",
+      "path": "data/dialogue-packs/P01/part-56.json",
+      "originalBlobSha": "653193febed03e753a72986b1892478fa1fe591a",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "헐은 아이오와 대표입니다.",
+              "en": "Hull represents Iowa."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "방문단 자료를 주별로 분류합시다.",
+              "en": "Sort the visitor papers by state."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "헐은 아이오와 대표입니다.",
+              "en": "Hull represents Iowa."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "헐은 아이오와 대표입니다.",
+                "en": "Hull represents Iowa."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "방문단 자료를 주별로 분류합시다.",
+                "en": "Sort the visitor papers by state."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "헐은 아이오와 대표입니다.",
+                "en": "Hull represents Iowa."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "아이오와 방문단은 제가 만나고 네브래스카 방문단은 리비스 의원에게 연결하겠습니다.",
+                "en": "I'll meet the Iowa delegation and direct the Nebraska delegation to Representative Reavis."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 아이오와 대표입니다. 같은 정당이라고 두 주의 주민 요청을 합친 접견 배정을 다시 나누세요.",
+                "en": "I represent Iowa. Separate the constituent appointments that were combined just because we share a party."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1397",
+        "mechanism": "state-delegation-cross-introduction",
+        "learningTarget": "Hull served Iowa and Reavis Nebraska as Republicans in the 65th Congress.",
+        "date": "1917-04-12",
+        "venue": {
+          "ko": "중서부 지역 대표 접견",
+          "en": "Midwestern delegation visit"
+        },
+        "context": {
+          "ko": "중서부 지역 대표 접견",
+          "en": "Midwestern delegation visit"
+        },
+        "cast": [
+          {
+            "id": "H000941",
+            "name": "Harry Edward Hull",
+            "ko": "해리 헐",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/H/HULL%2C-Harry-Edward-%28H000941%29/"
+          },
+          {
+            "id": "R000101",
+            "name": "Charles Frank Reavis",
+            "ko": "찰스 리비스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20208"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "리비스 의원도 같은 당이지만 다른 주에서 왔습니다.",
+            "en": "Reavis belongs to my party but represents another state."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "네브래스카 주민의 연락처를 따로 두시죠.",
+            "en": "Keep the Nebraska constituents' contact separate."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "헐은 {{blank}} 대표입니다.",
+          "en": "Hull represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "네브래스카",
+              "en": "Nebraska"
+            },
+            {
+              "id": "B",
+              "ko": "아이오와",
+              "en": "Iowa"
+            },
+            {
+              "id": "C",
+              "ko": "미주리",
+              "en": "Missouri"
+            },
+            {
+              "id": "D",
+              "ko": "캔자스",
+              "en": "Kansas"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/H/HULL%2C-Harry-Edward-%28H000941%29/",
+            "claim": "Hull served Iowa and Reavis Nebraska as Republicans in the 65th Congress.",
+            "asOf": "1917-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/20208",
+            "claim": "Hull served Iowa and Reavis Nebraska as Republicans in the 65th Congress.",
+            "asOf": "1917-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1397-state-delegation-cross-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1404",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "전국 비당파연맹입니다.",
+              "en": "The National Nonpartisan League."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 조직과 의원 경력의 연결을 기록하세요.",
+              "en": "Record the link between farm organizing and representation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "전국 비당파연맹입니다.",
+              "en": "The National Nonpartisan League."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹입니다.",
+                "en": "The National Nonpartisan League."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농촌 조직과 의원 경력의 연결을 기록하세요.",
+                "en": "Record the link between farm organizing and representation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹입니다.",
+                "en": "The National Nonpartisan League."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹의 서기 경험과 의회 대표 역할의 차이를 농촌 방문단에게 이야기하겠습니다.",
+                "en": "I'll discuss how my experience as secretary of the National Nonpartisan League differs from congressional representation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "전국 비당파연맹에서 서기로 일했습니다. 다른 조직의 기록과 섞어 준비한 발표 자료를 분리하세요.",
+                "en": "I served as secretary of the National Nonpartisan League. Separate the presentation materials mixed with another organization's records."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1404",
+        "mechanism": "rural-organizing-memory",
+        "learningTarget": "Teigan was secretary of the National Nonpartisan League in 1916–1923.",
+        "date": "1937-04-12",
+        "venue": {
+          "ko": "농촌 조직 서류",
+          "en": "Farm organization papers"
+        },
+        "context": {
+          "ko": "농촌 조직 서류",
+          "en": "Farm organization papers"
+        },
+        "cast": [
+          {
+            "id": "T000112",
+            "name": "Henry George Teigan",
+            "ko": "헨리 타이건",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22771"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농민 조직에서 활동하던 기록을 주민들이 가져왔습니다.",
+            "en": "Residents brought records of my work with a farm organization."
+          },
+          {
+            "speaker": "player",
+            "ko": "조직 명칭을 확인하겠습니다.",
+            "en": "I'll identify the organization."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "타이건의 1916~1923년 조직은 {{blank}}입니다.",
+          "en": "Teigan served as secretary of the {{blank}} in 1916–1923.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "전국 비당파연맹",
+              "en": "National Nonpartisan League"
+            },
+            {
+              "id": "B",
+              "ko": "전국 제조업협회",
+              "en": "National Association of Manufacturers"
+            },
+            {
+              "id": "C",
+              "ko": "미국 재향군인회",
+              "en": "American Legion"
+            },
+            {
+              "id": "D",
+              "ko": "미국 변호사협회",
+              "en": "American Bar Association"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22771",
+            "claim": "Teigan was secretary of the National Nonpartisan League in 1916–1923.",
+            "asOf": "1937-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1404-rural-organizing-memory"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1407",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "1928년 Organized Farmer입니다.",
+              "en": "Organized Farmer in 1928."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역 농촌 언론의 지도를 완성하세요.",
+              "en": "Complete the map of rural newspapers."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1928년 Organized Farmer입니다.",
+              "en": "Organized Farmer in 1928."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "1928년 Organized Farmer입니다.",
+                "en": "Organized Farmer in 1928."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "지역 농촌 언론의 지도를 완성하세요.",
+                "en": "Complete the map of rural newspapers."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1928년 Organized Farmer입니다.",
+                "en": "Organized Farmer in 1928."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "레드윙의 Organized Farmer를 먼저 살펴보고 크베일 의원의 벤슨 신문과 비교합시다.",
+                "en": "Let's examine Red Wing's Organized Farmer first and compare it with Representative Kvale's Benson newspaper."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "1928년 제가 편집한 신문은 Organized Farmer입니다. 벤슨 신문과 뒤바꾼 전시 표지를 교체하세요.",
+                "en": "The paper I edited in 1928 was Organized Farmer. Replace the exhibit labels that swap it with the Benson newspaper."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1407",
+        "mechanism": "rural-press-comparison",
+        "learningTarget": "Shoemaker edited Organized Farmer in Red Wing in 1928; Kvale had edited Swift County News in Benson.",
+        "date": "1934-06-12",
+        "venue": {
+          "ko": "농촌 신문 교류",
+          "en": "Rural newspaper exchange"
+        },
+        "context": {
+          "ko": "농촌 신문 교류",
+          "en": "Rural newspaper exchange"
+        },
+        "cast": [
+          {
+            "id": "K000350",
+            "name": "Paul John Kvale",
+            "ko": "폴 크발레",
+            "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/55/Paul_John_Kvale_1932.jpg",
+            "source": "https://history.house.gov/People/Detail/16526"
+          },
+          {
+            "id": "S000374",
+            "name": "Francis Henry Shoemaker",
+            "ko": "프랜시스 슈메이커",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21602"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "벤슨 신문과 레드윙 신문은 별개입니다.",
+            "en": "The Benson and Red Wing newspapers are distinct."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 1928년 신문은 레드윙에서 발간했죠.",
+            "en": "My 1928 newspaper was published in Red Wing."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "슈메이커의 레드윙 신문은 {{blank}}입니다.",
+          "en": "Shoemaker's Red Wing paper was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Swift County News",
+              "en": "Swift County News"
+            },
+            {
+              "id": "B",
+              "ko": "People's Voice",
+              "en": "People's Voice"
+            },
+            {
+              "id": "C",
+              "ko": "Tulare Daily News",
+              "en": "Tulare Daily News"
+            },
+            {
+              "id": "D",
+              "ko": "Organized Farmer",
+              "en": "Organized Farmer"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16526",
+            "claim": "Shoemaker edited Organized Farmer in Red Wing in 1928; Kvale had edited Swift County News in Benson.",
+            "asOf": "1934-06-12"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Paul_John_Kvale_1932.jpg",
+            "claim": "Portrait of Paul John Kvale; 1932 Harris & Ewing; LOC hec.36782; no known copyright restrictions, Commons public domain",
+            "asOf": "1934-06-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/21602",
+            "claim": "Shoemaker edited Organized Farmer in Red Wing in 1928; Kvale had edited Swift County News in Benson.",
+            "asOf": "1934-06-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1407-rural-press-comparison"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1408",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "렌빌 카운티 플로라 타운십입니다.",
+              "en": "Flora Township, Renville County."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 대표 자료에 지명을 등록하세요.",
+              "en": "Add the place to the rural representation file."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "렌빌 카운티 플로라 타운십입니다.",
+              "en": "Flora Township, Renville County."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "렌빌 카운티 플로라 타운십입니다.",
+                "en": "Flora Township, Renville County."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농촌 대표 자료에 지명을 등록하세요.",
+                "en": "Add the place to the rural representation file."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "렌빌 카운티 플로라 타운십입니다.",
+                "en": "Flora Township, Renville County."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "렌빌 카운티 플로라 타운십의 농촌 출신이라는 배경부터 소개하고 농가 주민의 질문을 듣겠습니다.",
+                "en": "I'll introduce my farm background in Flora Township, Renville County, then hear questions from rural residents."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "렌빌 카운티 플로라 타운십에서 태어났습니다. 다른 카운티로 표시한 출생지 지도를 바꾸세요.",
+                "en": "I was born in Flora Township, Renville County. Replace the birthplace map marking another county."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1408",
+        "mechanism": "farm-origin",
+        "learningTarget": "Shoemaker was born on a farm in Flora Township, Renville County, Minnesota.",
+        "date": "1933-05-12",
+        "venue": {
+          "ko": "렌빌 카운티 주민 모임",
+          "en": "Renville County community meeting"
+        },
+        "context": {
+          "ko": "렌빌 카운티 주민 모임",
+          "en": "Renville County community meeting"
+        },
+        "cast": [
+          {
+            "id": "S000374",
+            "name": "Francis Henry Shoemaker",
+            "ko": "프랜시스 슈메이커",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21602"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농촌 출신 의원이라는 소개에 정확한 장소도 넣어 주세요.",
+            "en": "Please give the exact place in my introduction as a farm-born member."
+          },
+          {
+            "speaker": "player",
+            "ko": "타운십과 카운티를 함께 적겠습니다.",
+            "en": "I'll include both township and county."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "슈메이커의 출생 농가는 {{blank}} 카운티에 있었습니다.",
+          "en": "Shoemaker's birthplace was a farm in {{blank}} County.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "렌빌",
+              "en": "Renville"
+            },
+            {
+              "id": "B",
+              "ko": "스위프트",
+              "en": "Swift"
+            },
+            {
+              "id": "C",
+              "ko": "세인트루이스",
+              "en": "St. Louis"
+            },
+            {
+              "id": "D",
+              "ko": "키트슨",
+              "en": "Kittson"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21602",
+            "claim": "Shoemaker was born on a farm in Flora Township, Renville County, Minnesota.",
+            "asOf": "1933-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1408-farm-origin"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1409",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "피텐저는 공화당입니다.",
+              "en": "Pittenger is a Republican."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "대표단의 양당 연락처를 나누세요.",
+              "en": "Keep both parties' delegation contacts separate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "피텐저는 공화당입니다.",
+              "en": "Pittenger is a Republican."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "피텐저는 공화당입니다.",
+                "en": "Pittenger is a Republican."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "대표단의 양당 연락처를 나누세요.",
+                "en": "Keep both parties' delegation contacts separate."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "피텐저는 공화당입니다.",
+                "en": "Pittenger is a Republican."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공화당인 저와 농민노동당인 런딘 의원에게 같은 지역 현안을 각각 질문해 보세요.",
+                "en": "Ask me as a Republican and Representative Lundeen as a Farmer-Labor member about the same local issue."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 공화당 소속입니다. 런딘 의원의 당적과 바꾸어 표시한 명찰을 교체해 주세요.",
+                "en": "I am a Republican. Replace the badges that swap my affiliation with Representative Lundeen's."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1409",
+        "mechanism": "opposite-party-delegates",
+        "learningTarget": "Pittenger returned in 1935 as a Republican while Lundeen served as Farmer-Labor.",
+        "date": "1935-04-12",
+        "venue": {
+          "ko": "미네소타 지역대표 회의",
+          "en": "Minnesota representatives' meeting"
+        },
+        "context": {
+          "ko": "미네소타 지역대표 회의",
+          "en": "Minnesota representatives' meeting"
+        },
+        "cast": [
+          {
+            "id": "P000371",
+            "name": "William Alvin Pittenger",
+            "ko": "윌리엄 피텐저",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19739"
+          },
+          {
+            "id": "L000514",
+            "name": "Ernest Lundeen",
+            "ko": "어니스트 런딘",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/17234"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "둘루스에서 다시 의회로 왔습니다. 런딘 의원과는 정당이 다릅니다.",
+            "en": "I'm back from Duluth, in a different party from Lundeen."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 농민노동당 소속입니다.",
+            "en": "I'm a Farmer-Labor member."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "피텐저 의원은 {{blank}} 소속입니다.",
+          "en": "Pittenger belongs to the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농민노동당",
+              "en": "Farmer-Labor Party"
+            },
+            {
+              "id": "B",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "C",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "D",
+              "ko": "사회당",
+              "en": "Socialist Party"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/19739",
+            "claim": "Pittenger returned in 1935 as a Republican while Lundeen served as Farmer-Labor.",
+            "asOf": "1935-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/17234",
+            "claim": "Pittenger returned in 1935 as a Republican while Lundeen served as Farmer-Labor.",
+            "asOf": "1935-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1409-opposite-party-delegates"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1412",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "타일러 농가 경험과 둘루스 법률 경험을 비교해 봅시다.",
+            "en": "Let's compare farm experience near Tyler with Duluth legal experience."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 둘루스에서 법률 실무를 했습니다.",
+            "en": "I practiced law in Duluth."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "앤더슨은 타일러 인근 농업에 종사했습니다.",
+              "en": "Andersen farmed near Tyler."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 방문단의 지역 특성을 구분합시다.",
+              "en": "Distinguish the two delegations' local backgrounds."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "앤더슨은 타일러 인근 농업에 종사했습니다.",
+              "en": "Andersen farmed near Tyler."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "타일러 농가 경험과 둘루스 법률 경험을 비교해 봅시다.",
+              "en": "Let's compare farm experience near Tyler with Duluth legal experience."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 둘루스에서 법률 실무를 했습니다.",
+              "en": "I practiced law in Duluth."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "두 방문단에게 의원들의 이전 직업 경험에 맞춰 질문을 배정하려 합니다.",
+              "en": "I'd like to assign the delegations' questions according to the members' prior careers."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "두 지역의 경력을 혼동하지 말아 주세요.",
+              "en": "Please don't confuse our experiences in the two communities."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "어느 의원의 경험을 먼저 듣는지 결정해 주세요.",
+              "en": "Decide whose experience you want to hear first."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤더슨은 타일러 인근 농업에 종사했습니다.",
+                "en": "Andersen farmed near Tyler."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "두 방문단의 지역 특성을 구분합시다.",
+                "en": "Distinguish the two delegations' local backgrounds."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "앤더슨은 타일러 인근 농업에 종사했습니다.",
+                "en": "Andersen farmed near Tyler."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "타일러 인근 농가에서의 경험을 바탕으로 먼저 질문을 받겠습니다. 둘루스 법률 문제는 피텐저 의원이 답할 수 있습니다.",
+                "en": "I'll take questions first based on my farming experience near Tyler. Representative Pittenger can answer questions about his Duluth legal experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "타일러 인근에서 농업에 종사한 사람은 저입니다. 두 의원의 직업 경험에 맞게 질문을 다시 배정하세요.",
+                "en": "I'm the one who farmed near Tyler. Reassign the questions according to our respective career experiences."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1412",
+        "mechanism": "farm-city-contrast",
+        "learningTarget": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+        "date": "1939-05-12",
+        "venue": {
+          "ko": "미네소타 농촌·도시 간담회",
+          "en": "Minnesota rural and city meeting"
+        },
+        "context": {
+          "ko": "미네소타 농촌·도시 간담회",
+          "en": "Minnesota rural and city meeting"
+        },
+        "cast": [
+          {
+            "id": "A000179",
+            "name": "Herman Carl Andersen",
+            "ko": "허먼 칼 앤더슨",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8507"
+          },
+          {
+            "id": "P000371",
+            "name": "William Alvin Pittenger",
+            "ko": "윌리엄 피텐저",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/19739"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "타일러 농가와 연결된 의원은 {{blank}}입니다.",
+          "en": "The member with farm ties near Tyler is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "앤더슨",
+              "en": "Andersen"
+            },
+            {
+              "id": "B",
+              "ko": "피텐저",
+              "en": "Pittenger"
+            },
+            {
+              "id": "C",
+              "ko": "런딘",
+              "en": "Lundeen"
+            },
+            {
+              "id": "D",
+              "ko": "크발레",
+              "en": "Kvale"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8507",
+            "claim": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+            "asOf": "1939-05-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/19739",
+            "claim": "Andersen farmed near Tyler and Pittenger practiced law in Duluth before both served in 1939.",
+            "asOf": "1939-05-12"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1412-farm-city-contrast"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1418",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터는 공화당입니다.",
+              "en": "Carter is a Republican."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "도시 대표단의 정당을 함께 표시하세요.",
+              "en": "Label both urban members' parties."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "카터는 공화당입니다.",
+              "en": "Carter is a Republican."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "카터는 공화당입니다.",
+                "en": "Carter is a Republican."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "도시 대표단의 정당을 함께 표시하세요.",
+                "en": "Label both urban members' parties."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "카터는 공화당입니다.",
+                "en": "Carter is a Republican."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 공화당, 코스텔로 의원은 민주당입니다. 도시 현안을 당적이 다른 두 의원에게 각각 질문해 주세요.",
+                "en": "I'm a Republican and Representative Costello is a Democrat. Ask each of us about the urban issues from our respective perspectives."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제74대 의회에서 저는 공화당입니다. 코스텔로 의원과 당적을 혼동한 토론 안내를 수정하세요.",
+                "en": "In the 74th Congress I am a Republican. Correct the discussion guide that confuses my party with Representative Costello's."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1418",
+        "mechanism": "coastal-urban-delegation",
+        "learningTarget": "Carter represented California as a Republican and Costello as a Democrat in the 74th Congress.",
+        "date": "1936-04-12",
+        "venue": {
+          "ko": "캘리포니아 도시 대표단",
+          "en": "California urban delegation"
+        },
+        "context": {
+          "ko": "캘리포니아 도시 대표단",
+          "en": "California urban delegation"
+        },
+        "cast": [
+          {
+            "id": "C000195",
+            "name": "Albert Edward Carter",
+            "ko": "앨버트 카터",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/C/CARTER%2C-Albert-Edward-%28C000195%29/"
+          },
+          {
+            "id": "C000795",
+            "name": "John Martin Costello",
+            "ko": "존 코스텔로",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Listing/C/COSTELLO%2C-John-Martin-%28C000795%29/"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "로스앤젤레스의 코스텔로 의원과 도시 문제를 논의합니다.",
+            "en": "I'm discussing urban issues with Mr. Costello of Los Angeles."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 민주당 의원입니다.",
+            "en": "I'm a Democrat."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카터의 당시 소속은 {{blank}}입니다.",
+          "en": "Carter's party at this date is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당",
+              "en": "Democratic Party"
+            },
+            {
+              "id": "B",
+              "ko": "농민노동당",
+              "en": "Farmer-Labor Party"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "Republican Party"
+            },
+            {
+              "id": "D",
+              "ko": "사회당",
+              "en": "Socialist Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/C/CARTER%2C-Albert-Edward-%28C000195%29/",
+            "claim": "Carter represented California as a Republican and Costello as a Democrat in the 74th Congress.",
+            "asOf": "1936-04-12"
+          },
+          {
+            "url": "https://history.house.gov/People/Listing/C/COSTELLO%2C-John-Martin-%28C000795%29/",
+            "claim": "Carter represented California as a Republican and Costello as a Democrat in the 74th Congress.",
+            "asOf": "1936-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1418-coastal-urban-delegation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-1422",
+      "path": "data/dialogue-packs/P01/part-57.json",
+      "originalBlobSha": "7ae3f3c40a3dee6c1aa5cace4df335a257d5d222",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "new_backlog_proposal",
+      "note": "Same first feedback; differentiate successful interaction and correction. Check speaker attribution; in 1412 remove direct role contrast before answer.",
+      "originalFields": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "네브래스카 보건 책임자였습니다.",
+              "en": "I was Nebraska's state health director."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "농촌 의료 방문단의 요청을 기록하세요.",
+              "en": "Record the rural health delegation's concerns."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "네브래스카 보건 책임자였습니다.",
+              "en": "I was Nebraska's state health director."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "네브래스카 보건 책임자였습니다.",
+                "en": "I was Nebraska's state health director."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "농촌 의료 방문단의 요청을 기록하세요.",
+                "en": "Record the rural health delegation's concerns."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "네브래스카 보건 책임자였습니다.",
+                "en": "I was Nebraska's state health director."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "네브래스카 주 보건 책임자 경험을 토대로 농촌 의료 방문단의 질문을 받겠습니다.",
+                "en": "I'll take questions from the rural health delegation based on my experience as Nebraska's state health director."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1941~1942년 주 보건 책임자였습니다. 다른 주정부 부처의 권한을 전제로 작성한 질문은 바꾸세요.",
+                "en": "I was state health director in 1941–1942. Replace questions premised on another state department's authority."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1422",
+        "mechanism": "rural-health",
+        "learningTarget": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+        "date": "1943-04-12",
+        "venue": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "context": {
+          "ko": "킴볼 의료인 접견",
+          "en": "Kimball medical delegation"
+        },
+        "cast": [
+          {
+            "id": "M000715",
+            "name": "Arthur Lewis Miller",
+            "ko": "아서 루이스 밀러",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18227"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "농촌의 의료 문제를 주정부에서 다루다가 의회에 왔습니다.",
+            "en": "I came to Congress after working on health in state government."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 주정부 직책을 확인하겠습니다.",
+            "en": "I'll identify the earlier state office."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1941~1942년 밀러의 직책은 주 {{blank}}였습니다.",
+          "en": "In 1941–1942 Miller served as state {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "농업 장관",
+              "en": "agriculture secretary"
+            },
+            {
+              "id": "B",
+              "ko": "법무장관",
+              "en": "attorney general"
+            },
+            {
+              "id": "C",
+              "ko": "보건 책임자",
+              "en": "health director"
+            },
+            {
+              "id": "D",
+              "ko": "교육감",
+              "en": "school superintendent"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18227",
+            "claim": "Miller practiced medicine in Kimball in 1919–1942 and was Nebraska state health director 1941–1942.",
+            "asOf": "1943-04-12"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1422-rural-health"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ],
+  "limitations": [
+    "23 individual bilingual branch revisions, not playtested; fixed choices/cast and remaining opening hints may still reduce difficulty."
+  ]
+}

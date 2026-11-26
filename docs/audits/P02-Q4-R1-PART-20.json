@@ -1,0 +1,3150 @@
+{
+  "schema": 1,
+  "team": "Q4-P02",
+  "round": 1,
+  "scope": "P02-476–500",
+  "source": {
+    "path": "data/dialogue-packs/P02/part-20.json",
+    "blobSha": "4e577d64910f9e0052992f250f9752d0b622bbc9"
+  },
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "scoring": "0 absent/poor, 1 partial, 2 strong; continuity 1 denotes recognizable candidate, not implemented; no external historical recertification.",
+  "entries": [
+    {
+      "id": "P02-476",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Decades cue helps eliminate 2002 but 1976/1982 are reasonable; generic welcome caption misses opportunity to retrieve earlier House card.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "마키 의원의 상원 취임 카드를 기존 하원 경력 카드에 연결하겠습니다. 첫 당선 연도가 필요합니다.",
+            "en": "I'll link Markey's Senate entry card to his existing House career card. I need his first election year."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원에서 시작한 경력은 상원 취임으로 덮어쓰지 마세요.",
+            "en": "Don't overwrite the House career with Senate entry."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 선출 기록에서 상원 취임보다 앞선 첫 하원 당선 연도를 확인하세요.",
+            "en": "Use the official election record to establish the first House election year before Senate entry."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "마키의 하원 첫 당선 연도는 {{blank}}입니다.",
+          "en": "Markey first won election to the House in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "1982년",
+              "en": "1982"
+            },
+            {
+              "id": "B",
+              "ko": "1994년",
+              "en": "1994"
+            },
+            {
+              "id": "C",
+              "ko": "2002년",
+              "en": "2002"
+            },
+            {
+              "id": "D",
+              "ko": "1976년",
+              "en": "1976"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1976년 하원 당선 기록과 2013년 7월 16일 상원 선서를 연결하세요.",
+              "en": "Link the 1976 House election to the July 16, 2013 Senate oath."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "첫 하원 당선은 1976년입니다. 상원 취임 카드를 기존 인물의 경력 이력으로 돌려보내세요.",
+              "en": "The first House election was in 1976. Return the Senate entry card to the existing person's career history."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2013-07-16",
+          "learningTarget": "Markey was elected to the House in 1976 and sworn into the Senate on July 16, 2013.",
+          "cast": [
+            {
+              "id": "M000133",
+              "name": "Ed Markey",
+              "ko": "에드 마키",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            },
+            {
+              "id": "W000817",
+              "name": "Elizabeth Warren",
+              "ko": "엘리자베스 워런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.markey.senate.gov/news/press-releases/markey-sworn-in-as-us-senator-by-vice-president-biden",
+              "claim": "Markey was elected to the House in 1976 and sworn into the Senate on July 16, 2013.",
+              "asOf": "2013-07-16"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Official state Senate roster: Ed Markey",
+              "asOf": "2013-07-16"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Official state Senate roster: Elizabeth Warren",
+              "asOf": "2013-07-16"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-476-career-oath"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-477",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Plausible Massachusetts officeholders; distinguishes original vacancy from full term, but lacks use of prior scene. Do not call Kerry immediate predecessor.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2013년 특별선거와 정규 임기를 한 줄로 합친 기록을 분리하려 합니다.",
+            "en": "I need to separate a record that merged the 2013 special election and the full term."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "최초 공석을 만든 전임자와 직전 재임자를 같은 개념으로 쓰지 마세요.",
+            "en": "Do not equate the original vacancy's incumbent with the immediate predecessor."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "특별선거의 출발점이 된 공석의 원래 의원을 확인하세요.",
+            "en": "Identify the original senator whose vacancy led to the special election."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "마키가 2013년 특별선거로 이어받은 의석의 원래 의원은 {{blank}}입니다.",
+          "en": "The original senator whose vacancy Markey filled by special election was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "에드워드 케네디",
+              "en": "Edward Kennedy"
+            },
+            {
+              "id": "B",
+              "ko": "스콧 브라운",
+              "en": "Scott Brown"
+            },
+            {
+              "id": "C",
+              "ko": "존 케리",
+              "en": "John Kerry"
+            },
+            {
+              "id": "D",
+              "ko": "윌리엄 웰드",
+              "en": "William Weld"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "케리의 공석을 표시하고 특별선거 당선과 후속 정규 임기를 별도 구간으로 연결하세요.",
+              "en": "Mark Kerry's vacancy and link the special-election win and later full term as distinct intervals."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "원래 공석은 존 케리의 의석입니다. 다른 매사추세츠 의석으로 연결한 선을 수정하세요.",
+              "en": "The original vacancy was John Kerry's seat. Correct the link to the other Massachusetts seat."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2015-01-06",
+          "learningTarget": "Markey won the 2013 special election for Kerry's vacant seat and subsequently won a full term.",
+          "cast": [
+            {
+              "id": "M000133",
+              "name": "Ed Markey",
+              "ko": "에드 마키",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            },
+            {
+              "id": "W000817",
+              "name": "Elizabeth Warren",
+              "ko": "엘리자베스 워런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-sworn-in-to-114th-congress-by-vice-president-joe-biden",
+              "claim": "Markey won the 2013 special election for Kerry's vacant seat and subsequently won a full term.",
+              "asOf": "2015-01-06"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Official state Senate roster: Ed Markey",
+              "asOf": "2015-01-06"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Official state Senate roster: Elizabeth Warren",
+              "asOf": "2015-01-06"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-477-special-to-full-term"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-478",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Specific subcommittee foils are plausible; generic question misses transfer of expertise and P01 career cross-link.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "상원 보훈 관련 브리핑 연락처를 만들기 전에 모런의 이전 하원 담당 업무를 확인합니다.",
+            "en": "Before creating a Senate veterans briefing contact, I'll verify Moran's former House responsibilities."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "하원 시절의 소위원회 직책과 현재 상원 경력을 분리하세요.",
+            "en": "Separate the House subcommittee role from current Senate service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이전 보훈위 소위원장 직책을 정확히 기록하면 분야별 경험을 확인할 수 있습니다.",
+            "en": "Identify the former Veterans' Affairs subcommittee chairmanship to document his subject experience."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "모런은 하원 보훈위원회에서 {{blank}} 소위원장을 지냈습니다.",
+          "en": "Moran chaired the House Veterans' Affairs Subcommittee on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "경제기회",
+              "en": "Economic Opportunity"
+            },
+            {
+              "id": "B",
+              "ko": "보건",
+              "en": "Health"
+            },
+            {
+              "id": "C",
+              "ko": "감독 및 조사",
+              "en": "Oversight and Investigations"
+            },
+            {
+              "id": "D",
+              "ko": "장애보상",
+              "en": "Disability Assistance"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "보건소위원장 이력을 하원 경력으로 추가하고 2011년 상원 진출과 연결하세요.",
+              "en": "Add the Health Subcommittee chairmanship to House service and link it to Senate entry in 2011."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "하원 보훈위 보건소위원장 경력입니다. 상원에서 같은 직책을 맡았다고 적은 자료를 분리하세요.",
+              "en": "It was the House Veterans' Affairs Health Subcommittee chairmanship. Separate any entry assigning the same office in the Senate."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2011-01-05",
+          "learningTarget": "Moran entered the Senate in 2011 after chairing the House Veterans' Affairs Health Subcommittee.",
+          "cast": [
+            {
+              "id": "M000934",
+              "name": "Jerry Moran",
+              "ko": "제리 모런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/KS/senators.htm"
+            },
+            {
+              "id": "R000307",
+              "name": "Pat Roberts",
+              "ko": "팻 로버츠",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/KS/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.moran.senate.gov/public/index.cfm/news-releases?ID=c1f159f8-f2c2-4dfe-acb5-2940dea390ac",
+              "claim": "Moran entered the Senate in 2011 after chairing the House Veterans' Affairs Health Subcommittee.",
+              "asOf": "2011-01-05"
+            },
+            {
+              "url": "https://www.senate.gov/states/KS/senators.htm",
+              "claim": "Official state Senate roster: Jerry Moran",
+              "asOf": "2011-01-05"
+            },
+            {
+              "url": "https://www.senate.gov/states/KS/senators.htm",
+              "claim": "Official state Senate roster: Pat Roberts",
+              "asOf": "2011-01-05"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-478-subcommittee-experience"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-479",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 10,
+      "finding": "Leadership vs statewide electoral office useful, but loser NPC agreement risks implying real meeting or shared view; distractors C/D obviously not senators.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2004년 선거 결과 카드에 패배한 의원의 당시 원내 직책을 넣겠습니다.",
+            "en": "I'll add the defeated senator's floor office to the 2004 election-result card."
+          },
+          {
+            "speaker": "host",
+            "ko": "이것은 공개 선거 결과와 당시 지도부 명부를 대조하는 가상 기록 실습입니다.",
+            "en": "This is a simulated comparison of the public election result and the leadership roster."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "선거 결과를 기록할 때 상원 다수당과 소수당의 직책을 구분하세요.",
+            "en": "Distinguish majority and minority leadership when entering the result."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "튠은 2004년 {{blank}}를 꺾었습니다.",
+          "en": "Thune defeated {{blank}} in 2004.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "현직 상원 소수당 지도자",
+              "en": "the sitting Senate minority leader"
+            },
+            {
+              "id": "B",
+              "ko": "현직 상원 다수당 지도자",
+              "en": "the sitting Senate majority leader"
+            },
+            {
+              "id": "C",
+              "ko": "현직 상원 소수당 원내총무",
+              "en": "the sitting Senate minority whip"
+            },
+            {
+              "id": "D",
+              "ko": "현직 상원 다수당 원내총무",
+              "en": "the sitting Senate majority whip"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "host",
+              "ko": "현직 소수당 지도자 대슐의 선거 패배를 표시하고 지도부 이력과 연결하세요.",
+              "en": "Mark sitting minority leader Daschle's election defeat and link the leadership history."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "2004년 당시 대슐은 상원 소수당 지도자였습니다. 다수당 지도자로 표시한 카드를 수정하세요.",
+              "en": "In 2004 Daschle was Senate minority leader. Correct the card that labeled him majority leader."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2005-01-04",
+          "learningTarget": "Thune defeated incumbent Democratic Senate minority leader Tom Daschle in 2004.",
+          "cast": [
+            {
+              "id": "T000250",
+              "name": "John Thune",
+              "ko": "존 튠",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/SD/senators.htm"
+            },
+            {
+              "id": "D000064",
+              "name": "Tom Daschle",
+              "ko": "톰 대슐",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/SD/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.thune.senate.gov/about/",
+              "claim": "Thune defeated incumbent Democratic Senate minority leader Tom Daschle in 2004.",
+              "asOf": "2005-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/SD/senators.htm",
+              "claim": "Official state Senate roster: John Thune",
+              "asOf": "2005-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/SD/senators.htm",
+              "claim": "Official state Senate roster: Tom Daschle",
+              "asOf": "2005-01-04"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-479-leadership-election-upset"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-480",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "House Speaker versus assistant speaker is good near foil; repetitive introduction, prior service needs Congress-specific linkage.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "116대 의회 하원 지도부 조직도에 루한의 이전 직책을 연결하려 합니다.",
+            "en": "I'll link Luján's former office to the 116th Congress House leadership chart."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "대표 지역구와 지도부 직책은 별도 항목으로 기록하세요.",
+            "en": "Record the represented district and leadership office separately."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하원의장과 그 밖의 지도부 직책을 혼동하지 않도록 정확한 명칭을 확인하세요.",
+            "en": "Verify the exact title rather than conflating it with Speaker."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "루한의 이전 하원 지도부 직책은 {{blank}}입니다.",
+          "en": "Luján's former House leadership office was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하원의장",
+              "en": "House speaker"
+            },
+            {
+              "id": "B",
+              "ko": "하원 소수당 지도자",
+              "en": "House minority leader"
+            },
+            {
+              "id": "C",
+              "ko": "하원 다수당 원내총무",
+              "en": "House majority whip"
+            },
+            {
+              "id": "D",
+              "ko": "하원 Assistant Speaker",
+              "en": "House assistant speaker"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "Assistant Speaker를 116대 하원 조직도에 표시하고 2021년 상원 진출 자료를 연결하세요.",
+              "en": "Mark Assistant Speaker on the 116th House chart and link the 2021 Senate entry."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이전 직책은 House Assistant Speaker입니다. 하원의장이나 상원 지도부로 분류한 항목을 고치세요.",
+              "en": "The former office was House Assistant Speaker. Correct any Speaker or Senate leadership classification."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2021-01-04",
+          "learningTarget": "Luján served as House assistant speaker in the 116th Congress before entering the Senate in 2021.",
+          "cast": [
+            {
+              "id": "L000570",
+              "name": "Ben Ray Luján",
+              "ko": "벤 레이 루한",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NM/senators.htm"
+            },
+            {
+              "id": "H001046",
+              "name": "Martin Heinrich",
+              "ko": "마틴 하인리히",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NM/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.lujan.senate.gov/newsroom/press-releases/lujan-sworn-in-as-u-s-senator-highlights-priorities-for-new-mexico/",
+              "claim": "Luján served as House assistant speaker in the 116th Congress before entering the Senate in 2021.",
+              "asOf": "2021-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/NM/senators.htm",
+              "claim": "Official state Senate roster: Ben Ray Luján",
+              "asOf": "2021-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/NM/senators.htm",
+              "claim": "Official state Senate roster: Martin Heinrich",
+              "asOf": "2021-01-04"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-480-house-leadership-transfer"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-481",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Party organization cue makes only DSCC option plausible. Distinguish party committee from chamber office rather than repeat explanation.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2016년 11월의 정당 조직 인선과 2017년 상원 취임을 구분해 경력 카드를 작성합니다.",
+            "en": "I'm separating a November 2016 party-organizational appointment from the 2017 Senate entry."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "상임위원회 명부와 정당 조직 인선 기록은 서로 다른 자료입니다.",
+            "en": "Standing committee rosters and party organizational selections are different records."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "11월 16일 실제로 맡도록 선택된 조직의 명칭을 확인하세요.",
+            "en": "Identify the organization he was selected to chair on November 16."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "밴홀런은 {{blank}} 위원장으로 선택됐습니다.",
+          "en": "Van Hollen was selected to chair the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "민주당 하원 선거운동위원회",
+              "en": "Democratic Congressional Campaign Committee"
+            },
+            {
+              "id": "B",
+              "ko": "민주당 전국위원회",
+              "en": "Democratic National Committee"
+            },
+            {
+              "id": "C",
+              "ko": "민주당 상원 선거운동위원회",
+              "en": "Democratic Senatorial Campaign Committee"
+            },
+            {
+              "id": "D",
+              "ko": "민주당 상원 정책위원회",
+              "en": "Senate Democratic Policy Committee"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "민주당 상원 선거운동위원회 직책을 정당 조직 경력으로 추가하세요.",
+              "en": "Add the Democratic Senatorial Campaign Committee chairmanship under party organization."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "선택된 직책은 민주당 상원 선거운동위원장입니다. 상임위원장 항목에서 해당 기록을 제거하세요.",
+              "en": "He was selected to chair the DSCC. Remove that entry from the standing-committee chair list."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2017-01-04",
+          "learningTarget": "Van Hollen was chosen to chair the Democratic Senatorial Campaign Committee on November 16, 2016.",
+          "cast": [
+            {
+              "id": "V000128",
+              "name": "Chris Van Hollen",
+              "ko": "크리스 밴홀런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MD/senators.htm"
+            },
+            {
+              "id": "C000141",
+              "name": "Ben Cardin",
+              "ko": "벤 카딘",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MD/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.senate.gov/states/MD/timeline.shtml",
+              "claim": "Van Hollen was chosen to chair the Democratic Senatorial Campaign Committee on November 16, 2016.",
+              "asOf": "2017-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/MD/senators.htm",
+              "claim": "Official state Senate roster: Chris Van Hollen",
+              "asOf": "2017-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/MD/senators.htm",
+              "claim": "Official state Senate roster: Ben Cardin",
+              "asOf": "2017-01-04"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-481-campaign-committee-role"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-482",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Republican caucus versus irrelevant Democratic groups makes B almost automatic; real caucus vs standing committee distinction underused.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "뱅크스의 이전 하원 활동에 관한 조직도에서 의원 모임과 공식 위원회를 분리하고 있습니다.",
+            "en": "I'm separating House member groups from formal committees on Banks's earlier career chart."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "117대 의회 당시 조직의 실제 명칭을 확인해 주세요.",
+            "en": "Verify the organization's actual name in the 117th Congress."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "조직 유형도 함께 기록해야 공식 상임위원장 직책으로 잘못 읽히지 않습니다.",
+            "en": "Record its organizational type so the entry is not mistaken for a standing committee chairmanship."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "뱅크스가 이끈 하원 조직은 {{blank}}입니다.",
+          "en": "Banks chaired the House {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "Republican Main Street Caucus",
+              "en": "Republican Main Street Caucus"
+            },
+            {
+              "id": "B",
+              "ko": "Republican Study Committee",
+              "en": "Republican Study Committee"
+            },
+            {
+              "id": "C",
+              "ko": "House Republican Conference",
+              "en": "House Republican Conference"
+            },
+            {
+              "id": "D",
+              "ko": "House Freedom Caucus",
+              "en": "House Freedom Caucus"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "Republican Study Committee를 의원 모임으로 표시하고 이전 하원 활동에 연결하세요.",
+              "en": "Label the Republican Study Committee as a member group and link it to the earlier House career."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "뱅크스가 이끈 조직은 Republican Study Committee입니다. 상임위원회로 분류한 조직도를 수정하세요.",
+              "en": "Banks chaired the Republican Study Committee. Correct the chart that treated it as a standing committee."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2025-01-04",
+          "learningTarget": "Banks chaired the Republican Study Committee in the 117th Congress.",
+          "cast": [
+            {
+              "id": "B001299",
+              "name": "Jim Banks",
+              "ko": "짐 뱅크스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IN/senators.htm"
+            },
+            {
+              "id": "Y000064",
+              "name": "Todd Young",
+              "ko": "토드 영",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IN/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.banks.senate.gov/about/",
+              "claim": "Banks chaired the Republican Study Committee in the 117th Congress.",
+              "asOf": "2025-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/IN/senators.htm",
+              "claim": "Official state Senate roster: Jim Banks",
+              "asOf": "2025-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/IN/senators.htm",
+              "claim": "Official state Senate roster: Todd Young",
+              "asOf": "2025-01-04"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-482-house-caucus-background"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-483",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 10,
+      "finding": "Prior municipal working relationship offers meaningful personal history, but governor/US attorney general obviously not mayor staff; possible 484 link must not infer causal cooperation.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "두 의원의 공동 경력 전시에서 상원 이전에 확인되는 연결점을 찾아야 합니다.",
+            "en": "The career exhibit needs a documented connection predating Senate service."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "덴버 시정부에서의 제 직책을 공식 경력 자료로 확인하세요.",
+            "en": "Verify my Denver municipal position using the biographical record."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "시장과 다른 시정부 직책의 관계를 정확히 표시하되 이후 정치적 입장을 추정하지 마세요.",
+            "en": "Label the municipal relationship accurately without inferring later political positions."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "베넷은 히켄루퍼의 덴버 시장 재임 중 {{blank}}으로 일했습니다.",
+          "en": "Bennet worked for Denver Mayor Hickenlooper as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "비서실장",
+              "en": "chief of staff"
+            },
+            {
+              "id": "B",
+              "ko": "시정부 예산국장",
+              "en": "municipal budget director"
+            },
+            {
+              "id": "C",
+              "ko": "시정부 법률고문",
+              "en": "municipal legal counsel"
+            },
+            {
+              "id": "D",
+              "ko": "시정부 정책자문관",
+              "en": "municipal policy adviser"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "베넷의 시장 비서실장 경력을 연결하고 이후 상원 활동은 독립 사건으로 남기세요.",
+              "en": "Link Bennet's service as mayoral chief of staff and preserve later Senate activity as a separate event."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "베넷은 히켄루퍼 시장의 비서실장이었습니다. 다른 시정부 직책으로 적은 전시 설명을 수정하세요.",
+              "en": "Bennet served as Mayor Hickenlooper's chief of staff. Correct the caption assigning another municipal office."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2021-01-04",
+          "learningTarget": "Bennet served as chief of staff to Denver Mayor Hickenlooper.",
+          "cast": [
+            {
+              "id": "B001267",
+              "name": "Michael Bennet",
+              "ko": "마이클 베넷",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            },
+            {
+              "id": "H000273",
+              "name": "John Hickenlooper",
+              "ko": "존 히켄루퍼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.bennet.senate.gov/about/",
+              "claim": "Bennet served as chief of staff to Denver Mayor Hickenlooper.",
+              "asOf": "2021-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: Michael Bennet",
+              "asOf": "2021-01-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: John Hickenlooper",
+              "asOf": "2021-01-04"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-483-prior-working-relationship"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-484",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "One geographically relevant option; regional collaboration is potentially meaningful but no need to attribute to earlier municipal employment.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "콜로라도 대표단의 2023년 공개 요청을 지역 정책 브리핑에 넣어야 합니다.",
+            "en": "I need to place the Colorado delegation's 2023 public request in a regional policy briefing."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "공개 요청과 실제 본회의 처리 결과는 별개로 표시하세요.",
+            "en": "Distinguish the public request from actual floor action."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "CORE Act의 정책 대상에 맞는 지역 브리핑을 선택해 주세요.",
+            "en": "Choose the regional briefing that matches the CORE Act's policy target."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 의원의 CORE Act는 {{blank}}을 중심으로 합니다.",
+          "en": "The senators' CORE Act focuses on {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "콜로라도 주간 고속도로 확장",
+              "en": "Colorado interstate highway expansion"
+            },
+            {
+              "id": "B",
+              "ko": "콜로라도 농업 관개 지원",
+              "en": "Colorado agricultural irrigation assistance"
+            },
+            {
+              "id": "C",
+              "ko": "콜로라도 광물 채굴 허가 확대",
+              "en": "expansion of Colorado mineral extraction permits"
+            },
+            {
+              "id": "D",
+              "ko": "콜로라도 공공토지 보전",
+              "en": "Colorado public-land conservation"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "콜로라도 공공토지 보전 브리핑에 상원 처리 요청을 첨부하세요. 법률 성립은 표시하지 않습니다.",
+              "en": "Attach the request for Senate action to the Colorado public-land conservation briefing; do not mark enactment."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "CORE Act의 대상은 콜로라도 공공토지 보전입니다. 다른 지역 경제·인프라 정책에 넣은 기록을 수정하세요.",
+              "en": "The CORE Act concerns Colorado public-land conservation. Correct the file that placed it under another regional policy."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-06-16",
+          "learningTarget": "In 2023 Bennet and Hickenlooper urged Senate action on the CORE Act to protect Colorado public lands.",
+          "cast": [
+            {
+              "id": "B001267",
+              "name": "Michael Bennet",
+              "ko": "마이클 베넷",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            },
+            {
+              "id": "H000273",
+              "name": "John Hickenlooper",
+              "ko": "존 히켄루퍼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.bennet.senate.gov/2023/06/16/press-releases-id-dff7422c-eef5-42b3-a805-2b1fb463f54b/",
+              "claim": "In 2023 Bennet and Hickenlooper urged Senate action on the CORE Act to protect Colorado public lands.",
+              "asOf": "2023-06-16"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: Michael Bennet",
+              "asOf": "2023-06-16"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: John Hickenlooper",
+              "asOf": "2023-06-16"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-484-delegation-policy"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-485",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "College-only cue gives away apprenticeship; 'intern elections' implausible; education-to-work premise could support constituent briefing.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "고등학교를 마친 학생이 어떤 직업교육 관련 상원 제안이 있는지 묻습니다.",
+            "en": "A student leaving high school asks what Senate proposal concerns workforce training."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "7월 25일 공개 제안의 지원 경로를 먼저 확인하세요.",
+            "en": "First check the pathway supported by the July 25 proposal."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새로 제안된 지원과 이미 받을 수 있는 지원을 혼동하지 않도록 안내문을 작성하세요.",
+            "en": "Prepare guidance without confusing proposed support with existing benefits."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "히켄루퍼와 브라운의 법안은 {{blank}} 확대를 목표로 했습니다.",
+          "en": "Hickenlooper and Braun sought to expand {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "지역 전문대학 학위 과정",
+              "en": "community college degree programs"
+            },
+            {
+              "id": "B",
+              "ko": "성인 재취업 직업훈련",
+              "en": "adult retraining programs"
+            },
+            {
+              "id": "C",
+              "ko": "청년 도제교육",
+              "en": "youth apprenticeships"
+            },
+            {
+              "id": "D",
+              "ko": "대학원 연구 장학금",
+              "en": "graduate research fellowships"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "청년 도제교육 확대 제안을 안내문에 넣고 아직 발의 단계라고 표시하세요.",
+              "en": "Include the youth-apprenticeship expansion proposal and mark it as introduced."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "공동 제안의 지원 대상은 청년 도제교육입니다. 대학 학위 지원이나 다른 직업훈련으로 표시한 안내문을 고치세요.",
+              "en": "The proposal targets youth apprenticeships. Correct any guidance describing degree assistance or another training pathway."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-07-25",
+          "learningTarget": "Hickenlooper and Braun introduced a youth apprenticeship bill on July 25, 2023.",
+          "cast": [
+            {
+              "id": "H000273",
+              "name": "John Hickenlooper",
+              "ko": "존 히켄루퍼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            },
+            {
+              "id": "B001310",
+              "name": "Mike Braun",
+              "ko": "마이크 브라운",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IN/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-braun-introduce-bill-to-expand-youth-apprenticeships/",
+              "claim": "Hickenlooper and Braun introduced a youth apprenticeship bill on July 25, 2023.",
+              "asOf": "2023-07-25"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: John Hickenlooper",
+              "asOf": "2023-07-25"
+            },
+            {
+              "url": "https://www.senate.gov/states/IN/senators.htm",
+              "claim": "Official state Senate roster: Mike Braun",
+              "asOf": "2023-07-25"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-485-workforce-alliance"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-486",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Immunity clue and unrelated answers reveal Section 230. Valuable hearing-to-introduction distinction if made explicit and legal concepts comparable.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "AI 감독 청문회 자료와 6월 공동 발의 자료를 비교해 법적 쟁점을 표시하겠습니다.",
+            "en": "I'll compare the AI oversight hearing with the June joint proposal to identify its legal issue."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "청문회에서 제기된 모든 문제가 하나의 법안에 포함된 것은 아닙니다.",
+            "en": "Not every issue raised at a hearing appears in one bill."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "발의 자료에 근거해 생성형 AI와 관련된 어떤 법적 제도가 대상인지 골라 주세요.",
+            "en": "Use the introduction record to identify the legal regime addressed for generative AI."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "홀리와 블루먼솔의 법안은 생성형 AI 관련 {{blank}}을 다뤘습니다.",
+          "en": "Hawley and Blumenthal's bill addressed {{blank}} for generative AI.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "저작권 보호기간",
+              "en": "copyright duration"
+            },
+            {
+              "id": "B",
+              "ko": "통신품위법 제230조 면책",
+              "en": "Section 230 immunity"
+            },
+            {
+              "id": "C",
+              "ko": "개인정보의 연방 사생활 보호",
+              "en": "federal privacy protections for personal information"
+            },
+            {
+              "id": "D",
+              "ko": "연방 반독점법상의 기업결합 심사",
+              "en": "federal antitrust merger review"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "제230조 면책에 관한 제안으로 표시하고 5월 청문회와 6월 발의 자료를 별도로 연결하세요.",
+              "en": "Label the proposal as addressing Section 230 immunity and link the May hearing and June introduction separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "대상은 생성형 AI 관련 제230조 면책입니다. 다른 기술 법제 항목으로 분류한 자료를 바로잡고 발의 상태를 유지하세요.",
+              "en": "The issue was Section 230 immunity for generative AI. Correct the other legal category and retain introduction status."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-06-30",
+          "learningTarget": "Following their 2023 AI oversight hearing, Hawley and Blumenthal introduced a bill addressing Section 230 immunity for generative AI.",
+          "cast": [
+            {
+              "id": "H001089",
+              "name": "Josh Hawley",
+              "ko": "조시 홀리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MO/senators.htm"
+            },
+            {
+              "id": "B001277",
+              "name": "Richard Blumenthal",
+              "ko": "리처드 블루먼솔",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CT/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bipartisan-legislation-protect-consumers-and-deny-ai-companies-section/",
+              "claim": "Following their 2023 AI oversight hearing, Hawley and Blumenthal introduced a bill addressing Section 230 immunity for generative AI.",
+              "asOf": "2023-06-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/MO/senators.htm",
+              "claim": "Official state Senate roster: Josh Hawley",
+              "asOf": "2023-06-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/CT/senators.htm",
+              "claim": "Official state Senate roster: Richard Blumenthal",
+              "asOf": "2023-06-30"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-486-oversight-to-proposal"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-487",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Ethics context useful but distractors weak; distinguish proposed restrictions from enacted law without alleging any individual's misconduct.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "공직자 윤리 관련 제안들을 비교하는 설명표가 필요합니다.",
+            "en": "I need a comparison chart of government ethics proposals."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "이 자료는 제안의 내용에 관한 것이지 특정 의원의 사적 행위를 주장하는 것이 아닙니다.",
+            "en": "This material concerns proposed rules, not allegations about any senator's private conduct."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2023년 공동 제안이 대상으로 삼은 행위를 정확히 표시하세요.",
+            "en": "Identify the conduct targeted by the 2023 joint proposal."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "홀리와 질리브랜드의 공동 제안은 {{blank}}을 제한하려 했습니다.",
+          "en": "Hawley and Gillibrand sought to restrict {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공직자의 주식 거래",
+              "en": "stock trading by government officials"
+            },
+            {
+              "id": "B",
+              "ko": "공직자의 외부 유급 고용",
+              "en": "paid outside employment by government officials"
+            },
+            {
+              "id": "C",
+              "ko": "공직자의 로비스트 선물 수령",
+              "en": "acceptance of lobbyist gifts by officials"
+            },
+            {
+              "id": "D",
+              "ko": "공직자의 퇴직 후 로비 활동",
+              "en": "post-government lobbying by officials"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "공직자의 주식 거래 제한을 제안 칸에 표시하고 제정 여부는 별도로 확인하세요.",
+              "en": "Mark restrictions on government officials' stock trading as proposed, with enactment checked separately."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "공동 제안의 대상은 공직자의 주식 거래입니다. 다른 윤리 규정과 합쳐 실제 법률처럼 표시한 기록을 수정하세요.",
+              "en": "The proposal concerned stock trading by government officials. Correct the merged ethics entry that treated it as enacted law."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-01-09",
+          "learningTarget": "Hawley and Gillibrand jointly pursued a 2023 bill restricting government officials' stock trading.",
+          "cast": [
+            {
+              "id": "H001089",
+              "name": "Josh Hawley",
+              "ko": "조시 홀리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MO/senators.htm"
+            },
+            {
+              "id": "G000555",
+              "name": "Kirsten Gillibrand",
+              "ko": "커스틴 질리브랜드",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NY/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.hawley.senate.gov/2023-recap-hawley-delivers-legislative-and-casework-wins-missourians/",
+              "claim": "Hawley and Gillibrand jointly pursued a 2023 bill restricting government officials' stock trading.",
+              "asOf": "2024-01-09"
+            },
+            {
+              "url": "https://www.senate.gov/states/MO/senators.htm",
+              "claim": "Official state Senate roster: Josh Hawley",
+              "asOf": "2024-01-09"
+            },
+            {
+              "url": "https://www.senate.gov/states/NY/senators.htm",
+              "claim": "Official state Senate roster: Kirsten Gillibrand",
+              "asOf": "2024-01-09"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-487-ethics-cooperation"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-488",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Original versus later participants is useful; alternative pairs imported from unrelated scenes. Coalition chain should preserve original roster.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "3월 최초 발의 명단과 확대 명단의 이름을 서로 다른 색으로 표시하고 있습니다.",
+            "en": "I'm distinguishing the March original sponsors from the expanded roster."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "5월 현재 지지자 명단을 최초 발의자 전체로 사용하지 마세요.",
+            "en": "Do not substitute the May supporters for the original sponsorship list."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "코테즈 매스토와 홀리 외의 최초 두 발의자를 찾아 기준 명단을 완성하세요.",
+            "en": "Find the other two original sponsors alongside Cortez Masto and Hawley to complete the baseline roster."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "코테즈 매스토와 홀리 외 초기 제안자는 {{blank}}입니다.",
+          "en": "The other original participants alongside Cortez Masto and Hawley were {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "머리와 콜린스",
+              "en": "Murray and Collins"
+            },
+            {
+              "id": "B",
+              "ko": "워너와 코커",
+              "en": "Warner and Corker"
+            },
+            {
+              "id": "C",
+              "ko": "영과 케인",
+              "en": "Young and Kaine"
+            },
+            {
+              "id": "D",
+              "ko": "워런과 브라운",
+              "en": "Warren and Braun"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "워런과 브라운을 추가해 3월 최초 네 명을 보존하세요. 이후 참여자는 확대 명단에 기록합니다.",
+              "en": "Add Warren and Braun to preserve the original four in March; record later participants in the expanded roster."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "초기 나머지 두 사람은 워런과 브라운입니다. 확대 명단에서 잘못 옮겨온 이름을 제거하세요.",
+              "en": "The remaining original participants were Warren and Braun. Remove names improperly copied from the expanded roster."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-05-31",
+          "learningTarget": "Cortez Masto, Warren, Hawley and Braun originally introduced the Failed Bank Executives Clawback Act in March 2023.",
+          "cast": [
+            {
+              "id": "C001113",
+              "name": "Catherine Cortez Masto",
+              "ko": "캐서린 코테즈 매스토",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NV/senators.htm"
+            },
+            {
+              "id": "H001089",
+              "name": "Josh Hawley",
+              "ko": "조시 홀리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MO/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.cortezmasto.senate.gov/news/press-releases/cortez-masto-and-colleagues-push-bipartisan-legislation-to-claw-back-big-failed-bank-executive-pay/",
+              "claim": "Cortez Masto, Warren, Hawley and Braun originally introduced the Failed Bank Executives Clawback Act in March 2023.",
+              "asOf": "2023-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/NV/senators.htm",
+              "claim": "Official state Senate roster: Catherine Cortez Masto",
+              "asOf": "2023-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/MO/senators.htm",
+              "claim": "Official state Senate roster: Josh Hawley",
+              "asOf": "2023-05-31"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-488-initial-coalition"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-489",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Banking committee cue plus only bank answer makes C obvious; repeated generic bipartisan claim. Need new-participant relationship to baseline.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "기존 파산 은행 대응 제안의 확대 명단에 새 의원들의 활동을 추가하고 있습니다.",
+            "en": "I'm adding new senators' activities to the expanded roster of a failed-bank response proposal."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "브릿과 페터먼을 처음 발의한 의원으로 표시하지 마세요.",
+            "en": "Do not label Britt and Fetterman as original sponsors."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 사람이 추가로 참여한 제안의 구체적 조치를 확인하세요.",
+            "en": "Identify the specific measure that both later joined."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "브릿과 페터먼이 참여한 제안은 {{blank}}입니다.",
+          "en": "The proposal involving Britt and Fetterman concerned {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "파산 은행 예금보험료 조정",
+              "en": "adjusting deposit-insurance assessments for failed banks"
+            },
+            {
+              "id": "B",
+              "ko": "은행 합병 심사기준 개정",
+              "en": "revising bank merger review standards"
+            },
+            {
+              "id": "C",
+              "ko": "파산 은행 경영진 보수 환수",
+              "en": "clawback of failed bank executives' compensation"
+            },
+            {
+              "id": "D",
+              "ko": "은행 자본요건의 일률적 완화",
+              "en": "uniform relaxation of bank capital requirements"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "파산 은행 경영진 보수 환수 제안의 확대 명단에 두 사람을 추가하세요.",
+              "en": "Add both senators to the expanded roster of the failed-bank executive compensation clawback proposal."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "해당 조치는 파산 은행 경영진 보수 환수입니다. 다른 은행 감독 제안에 붙인 이름을 옮기고 최초 발의 명단을 보존하세요.",
+              "en": "The measure concerned clawbacks of failed-bank executive compensation. Move the names from the wrong oversight proposal and preserve the original sponsors."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-06-01",
+          "learningTarget": "Britt and Fetterman joined the expanded 2023 failed-bank executive compensation clawback proposal.",
+          "cast": [
+            {
+              "id": "B001319",
+              "name": "Katie Britt",
+              "ko": "케이티 브릿",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AL/senators.htm"
+            },
+            {
+              "id": "F000479",
+              "name": "John Fetterman",
+              "ko": "존 페터먼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/PA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.britt.senate.gov/news/press-releases/u-s-senator-katie-britt-colleagues-introduce-bipartisan-bill-to-claw-back-compensation-from-reckless-executives-who-cause-bank-failures/",
+              "claim": "Britt and Fetterman joined the expanded 2023 failed-bank executive compensation clawback proposal.",
+              "asOf": "2023-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/AL/senators.htm",
+              "claim": "Official state Senate roster: Katie Britt",
+              "asOf": "2023-06-01"
+            },
+            {
+              "url": "https://www.senate.gov/states/PA/senators.htm",
+              "claim": "Official state Senate roster: John Fetterman",
+              "asOf": "2023-06-01"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-489-freshman-committee-alliance"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-490",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Only bank-related act title plausible. Good point that committee membership does not establish joint participation; repeated chain needs distinct evidence check.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "은행위원회 명부에 있는 두 의원의 실제 공동 발의 여부를 확인하려 합니다.",
+            "en": "I need to verify documented joint participation by two senators on the Banking Committee roster."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "같은 위원회에 있다는 사실만으로 공동 발의라고 표시하지 마세요.",
+            "en": "Shared committee membership alone is not evidence of joint sponsorship."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지난해 확대된 공동 제안의 공식 명칭을 찾아 두 기록을 연결하세요.",
+            "en": "Find the official title of the expanded proposal from last year before linking the records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "크레이머와 밴홀런은 {{blank}}에 참여했습니다.",
+          "en": "Cramer and Van Hollen joined {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "RECOUP Act",
+              "en": "RECOUP Act"
+            },
+            {
+              "id": "B",
+              "ko": "Failed Bank Executives Clawback Act",
+              "en": "Failed Bank Executives Clawback Act"
+            },
+            {
+              "id": "C",
+              "ko": "Bank Merger Review Modernization Act",
+              "en": "Bank Merger Review Modernization Act"
+            },
+            {
+              "id": "D",
+              "ko": "Federal Reserve Accountability Act",
+              "en": "Federal Reserve Accountability Act"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "Failed Bank Executives Clawback Act 참여 기록을 위원회 경력과 연결하되 각각 별도로 보존하세요.",
+              "en": "Link participation in the Failed Bank Executives Clawback Act to committee service while retaining separate records."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "두 사람은 Failed Bank Executives Clawback Act 확대 제안에 참여했습니다. 다른 은행 법안의 참여자로 붙인 항목을 수정하세요.",
+              "en": "Both joined the expanded Failed Bank Executives Clawback Act proposal. Correct the entry assigning them to another banking bill."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-03-31",
+          "learningTarget": "Cramer and Van Hollen joined the expanded 2023 failed-bank executives clawback proposal.",
+          "cast": [
+            {
+              "id": "C001096",
+              "name": "Kevin Cramer",
+              "ko": "케빈 크레이머",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ND/senators.htm"
+            },
+            {
+              "id": "V000128",
+              "name": "Chris Van Hollen",
+              "ko": "크리스 밴홀런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MD/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.warren.senate.gov/newsroom/press-releases/one-year-after-svb-collapse-warren-calls-on-banking-regulators-to-deliver-on-commitments-to-strengthen-regulations-for-big-banks/",
+              "claim": "Cramer and Van Hollen joined the expanded 2023 failed-bank executives clawback proposal.",
+              "asOf": "2024-03-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/ND/senators.htm",
+              "claim": "Official state Senate roster: Kevin Cramer",
+              "asOf": "2024-03-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/MD/senators.htm",
+              "claim": "Official state Senate roster: Chris Van Hollen",
+              "asOf": "2024-03-31"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-490-committee-network-recall"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-491",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Inspector-general clue and only relevant office disclose answer; appointment vs compensation concept useful if comparable oversight offices.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "은행 파산 대응 관련 제안 중 감독기관의 인사 구조를 바꾸려는 자료를 찾았습니다.",
+            "en": "I found a bank-failure response proposal concerning oversight appointments."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "경영진 보수 환수와 감독 인사 제안은 따로 분류하세요.",
+            "en": "Classify executive compensation clawbacks separately from oversight appointments."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "대통령 지명과 상원 인준을 요구하려는 감사 직책을 확인하세요.",
+            "en": "Identify the oversight office for which presidential appointment and Senate confirmation were proposed."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "워런과 스콧은 {{blank}} 관련 제안을 발표했습니다.",
+          "en": "Warren and Scott proposed changes concerning {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연준 및 소비자금융보호국 감사관",
+              "en": "the Federal Reserve and CFPB inspector general"
+            },
+            {
+              "id": "B",
+              "ko": "재무부 감사관",
+              "en": "Treasury inspector general"
+            },
+            {
+              "id": "C",
+              "ko": "연방예금보험공사 감사관",
+              "en": "FDIC inspector general"
+            },
+            {
+              "id": "D",
+              "ko": "증권거래위원회 감사관",
+              "en": "SEC inspector general"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "연준·소비자금융보호국 감사관 제안으로 표시하고 2023년 발표 자료를 첨부하세요.",
+              "en": "Label the proposal for the Federal Reserve and CFPB inspector general and attach the 2023 announcement."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "대상은 연준 및 CFPB 감사관입니다. 다른 금융 감독기관의 직책으로 잘못 표시한 관계도를 수정하세요.",
+              "en": "The target was the Federal Reserve and CFPB inspector general. Correct the diagram assigning another financial oversight office."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-03-31",
+          "learningTarget": "Warren and Rick Scott proposed a presidentially appointed, Senate-confirmed inspector general in 2023.",
+          "cast": [
+            {
+              "id": "W000817",
+              "name": "Elizabeth Warren",
+              "ko": "엘리자베스 워런",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/MA/senators.htm"
+            },
+            {
+              "id": "S001217",
+              "name": "Rick Scott",
+              "ko": "릭 스콧",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/FL/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.warren.senate.gov/newsroom/press-releases/one-year-after-svb-collapse-warren-calls-on-banking-regulators-to-deliver-on-commitments-to-strengthen-regulations-for-big-banks/",
+              "claim": "Warren and Rick Scott proposed a presidentially appointed, Senate-confirmed inspector general in 2023.",
+              "asOf": "2024-03-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/MA/senators.htm",
+              "claim": "Official state Senate roster: Elizabeth Warren",
+              "asOf": "2024-03-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/FL/senators.htm",
+              "claim": "Official state Senate roster: Rick Scott",
+              "asOf": "2024-03-31"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-491-inspector-general-cooperation"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-492",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Extraction versus processing almost reveals D; unrelated alternatives. Distinguish supply-chain stages using plausible adjacent policies.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "핵심 광물 공급망 정책을 채굴·가공·운송·재활용으로 구분한 설명표를 만들고 있습니다.",
+            "en": "I'm mapping critical-mineral policy into extraction, processing, transport, and recycling."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "공동 제안의 실제 지원 내용을 기준으로 해당 단계를 선택하세요.",
+            "en": "Select the stage supported by the actual joint proposal."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지원하는 단계 외에 공급망 전체에 대한 법률이 성립했다고 쓰지 마세요.",
+            "en": "Do not infer enactment of legislation covering the entire supply chain."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "영과 히켄루퍼의 법안은 {{blank}}을 지원하려 했습니다.",
+          "en": "Young and Hickenlooper sought support for {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "해외 핵심 광물 채굴",
+              "en": "overseas critical mineral extraction"
+            },
+            {
+              "id": "B",
+              "ko": "국내 핵심 광물의 철도운송만",
+              "en": "only domestic rail transport of critical minerals"
+            },
+            {
+              "id": "C",
+              "ko": "폐배터리 재활용만",
+              "en": "only recycling of spent batteries"
+            },
+            {
+              "id": "D",
+              "ko": "국내 핵심 광물 가공",
+              "en": "domestic critical mineral processing"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "국내 핵심 광물 가공을 지원 대상으로 표시하고 Critical Materials Future Act 발의 자료를 붙이세요.",
+              "en": "Mark domestic critical-mineral processing as the target and attach the Critical Materials Future Act introduction."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "제안의 대상은 국내 핵심 광물 가공입니다. 공급망의 다른 단계에 잘못 표시한 지원 항목을 수정하세요.",
+              "en": "The proposal targets domestic critical-mineral processing. Correct the support marker assigned to another supply-chain stage."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-09-30",
+          "learningTarget": "Young and Hickenlooper introduced the Critical Materials Future Act in 2024.",
+          "cast": [
+            {
+              "id": "Y000064",
+              "name": "Todd Young",
+              "ko": "토드 영",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IN/senators.htm"
+            },
+            {
+              "id": "H000273",
+              "name": "John Hickenlooper",
+              "ko": "존 히켄루퍼",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CO/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-bipartisan-bill-to-support-domestic-processing-of-critical-minerals/",
+              "claim": "Young and Hickenlooper introduced the Critical Materials Future Act in 2024.",
+              "asOf": "2024-09-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/IN/senators.htm",
+              "claim": "Official state Senate roster: Todd Young",
+              "asOf": "2024-09-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/CO/senators.htm",
+              "claim": "Official state Senate roster: John Hickenlooper",
+              "asOf": "2024-09-30"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-492-critical-materials-partnership"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-493",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Technology clue makes NIST easy versus FEC/NPS/FBI. Nonprofit foundation versus agency dissolution is not tested. Use adjacent science agencies.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "민관 협력 재단의 지원 대상 기관을 설명하는 도식에 빈 칸이 있습니다.",
+            "en": "A public-private foundation diagram is missing the agency it would support."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "재단과 정부 기관을 같은 법적 조직으로 표시하지 마세요.",
+            "en": "Do not depict the foundation and the government agency as the same legal organization."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2024년 공동 발의 자료에서 지원 대상 기관을 확인해 주세요.",
+            "en": "Verify the supported agency in the 2024 joint proposal."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "쿤스와 피셔 등이 제안한 재단은 {{blank}}을 지원합니다.",
+          "en": "The proposed foundation involving Coons and Fischer would support {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "국립과학재단 NSF",
+              "en": "National Science Foundation"
+            },
+            {
+              "id": "B",
+              "ko": "국립보건원 NIH",
+              "en": "National Institutes of Health"
+            },
+            {
+              "id": "C",
+              "ko": "국립표준기술연구소 NIST",
+              "en": "the National Institute of Standards and Technology"
+            },
+            {
+              "id": "D",
+              "ko": "국립항공우주국 NASA",
+              "en": "National Aeronautics and Space Administration"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "NIST를 지원 대상으로 연결하고 네 의원의 발의 기록을 첨부하세요.",
+              "en": "Link NIST as the supported agency and attach the four senators' introduction record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "재단의 지원 대상은 국립표준기술연구소입니다. 다른 과학기술 기관으로 연결한 선을 고치세요.",
+              "en": "The foundation would support NIST. Correct the link to another science or technology agency."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-07-10",
+          "learningTarget": "Coons, Fischer, Young and Hickenlooper introduced a bill for a nonprofit foundation supporting NIST in 2024.",
+          "cast": [
+            {
+              "id": "C001088",
+              "name": "Chris Coons",
+              "ko": "크리스 쿤스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/DE/senators.htm"
+            },
+            {
+              "id": "F000463",
+              "name": "Deb Fischer",
+              "ko": "데브 피셔",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NE/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-bipartisan-bicameral-bill-to-create-foundation-to-support-u-s-leadership-in-emerging-technology/",
+              "claim": "Coons, Fischer, Young and Hickenlooper introduced a bill for a nonprofit foundation supporting NIST in 2024.",
+              "asOf": "2024-07-10"
+            },
+            {
+              "url": "https://www.senate.gov/states/DE/senators.htm",
+              "claim": "Official state Senate roster: Chris Coons",
+              "asOf": "2024-07-10"
+            },
+            {
+              "url": "https://www.senate.gov/states/NE/senators.htm",
+              "claim": "Official state Senate roster: Deb Fischer",
+              "asOf": "2024-07-10"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-493-technology-foundation"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-494",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Exhibit premise offers purpose but 'entire' forces easy choice. Different historic honorees can require authentic recognition rather than unrelated benefits.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "의회 금메달 역사 전시의 새 설명판에 수여 대상을 정확히 표시해야 합니다.",
+            "en": "The Congressional Gold Medal exhibit needs an accurate caption for a newly recognized group."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2019년 입법 추진 기록과 2022년 성립 기록을 구분해서 보관하세요.",
+            "en": "Retain the 2019 legislative effort and the 2022 enactment as separate records."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의원의 공개 입법 기록이 명시한 수여 대상을 찾아 주세요.",
+            "en": "Identify the honorees specified in the documented legislative effort."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "언스트와 덕워스의 공동 노력은 {{blank}}에 의회 금메달을 수여하는 것이었습니다.",
+          "en": "Ernst and Duckworth sought a Congressional Gold Medal for {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제2차 세계대전 터스키기 공군대",
+              "en": "World War II Tuskegee Airmen"
+            },
+            {
+              "id": "B",
+              "ko": "제2차 세계대전 육군 레인저",
+              "en": "World War II Army Rangers"
+            },
+            {
+              "id": "C",
+              "ko": "제2차 세계대전 상선 선원",
+              "en": "World War II Merchant Mariners"
+            },
+            {
+              "id": "D",
+              "ko": "제2차 세계대전 여성 공군 조종사",
+              "en": "World War II Women Airforce Service Pilots"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "제2차 세계대전 육군 레인저를 수여 대상으로 표시하고 2019~2022년 입법 이력을 첨부하세요.",
+              "en": "Name the World War II Army Rangers and attach the 2019–2022 legislative history."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "수여 대상은 제2차 세계대전 육군 레인저입니다. 다른 기념 입법의 설명판을 이 사건에 붙이지 마세요.",
+              "en": "The honorees were World War II Army Rangers. Do not attach a caption from a different commemorative measure."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2022-06-30",
+          "learningTarget": "Ernst and Duckworth pursued legislation introduced in 2019 awarding World War II Army Rangers a Congressional Gold Medal, enacted in 2022.",
+          "cast": [
+            {
+              "id": "E000295",
+              "name": "Joni Ernst",
+              "ko": "조니 언스트",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IA/senators.htm"
+            },
+            {
+              "id": "D000622",
+              "name": "Tammy Duckworth",
+              "ko": "태미 덕워스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/IL/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.ernst.senate.gov/news/press-releases/video-ernsts-long-time-bipartisan-effort-to-honor-wwii-army-rangers-becomes-law",
+              "claim": "Ernst and Duckworth pursued legislation introduced in 2019 awarding World War II Army Rangers a Congressional Gold Medal, enacted in 2022.",
+              "asOf": "2022-06-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/IA/senators.htm",
+              "claim": "Official state Senate roster: Joni Ernst",
+              "asOf": "2022-06-30"
+            },
+            {
+              "url": "https://www.senate.gov/states/IL/senators.htm",
+              "claim": "Official state Senate roster: Tammy Duckworth",
+              "asOf": "2022-06-30"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-494-veteran-recognition"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-495",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Recruitment and vetting stated before blank; only law enforcement option fits. Later separate child protection effort should not be a same-bill link.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "지방 공공안전 기관에서 인력 관련 입법 제안의 요약문을 요청했습니다.",
+            "en": "A local public-safety agency asks for a summary of a workforce-related proposal."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2023년 3월 발표한 자료의 적용 대상과 제안된 조치를 함께 확인하세요.",
+            "en": "Check both the covered organization and proposed action in the March 2023 release."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이미 시행 중인 지원으로 안내하지 말고 제안된 정책만 설명하세요.",
+            "en": "Describe the proposed policy without presenting it as an existing program."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "블랙번과 오소프는 {{blank}}을 다루는 법안을 발표했습니다.",
+          "en": "Blackburn and Ossoff announced legislation concerning {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "법집행기관 공석 및 신규 인력 검증",
+              "en": "law enforcement vacancies and recruit vetting"
+            },
+            {
+              "id": "B",
+              "ko": "소방관 인력 충원과 자격 검증",
+              "en": "firefighter recruitment and credential screening"
+            },
+            {
+              "id": "C",
+              "ko": "교정시설 직원의 보수 기준",
+              "en": "pay standards for correctional staff"
+            },
+            {
+              "id": "D",
+              "ko": "응급의료 인력의 교육 지원",
+              "en": "training support for emergency medical staff"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "법집행기관 공석과 신규 인력 검증을 다룬 제안으로 요약해 공개 발표 자료를 첨부하세요.",
+              "en": "Summarize the proposal as addressing law enforcement vacancies and recruit vetting, and attach the public release."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "대상은 법집행기관 인력 충원과 검증입니다. 다른 공공안전 직종이나 정책으로 분류한 요약문을 수정하세요.",
+              "en": "The proposal concerned law enforcement recruitment and vetting. Correct the summary if it classified another public-safety occupation or policy."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2023-03-24",
+          "learningTarget": "Blackburn and Ossoff announced a bipartisan recruitment and vetting proposal on March 24, 2023.",
+          "cast": [
+            {
+              "id": "B001243",
+              "name": "Marsha Blackburn",
+              "ko": "마샤 블랙번",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TN/senators.htm"
+            },
+            {
+              "id": "O000174",
+              "name": "Jon Ossoff",
+              "ko": "존 오소프",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/GA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.blackburn.senate.gov/index.php/2023/3/issues/crime/blackburn-ossoff-introduce-bipartisan-bill-to-fill-law-enforcement-vacancies-and-strengthen-vetting-of-recruits",
+              "claim": "Blackburn and Ossoff announced a bipartisan recruitment and vetting proposal on March 24, 2023.",
+              "asOf": "2023-03-24"
+            },
+            {
+              "url": "https://www.senate.gov/states/TN/senators.htm",
+              "claim": "Official state Senate roster: Marsha Blackburn",
+              "asOf": "2023-03-24"
+            },
+            {
+              "url": "https://www.senate.gov/states/GA/senators.htm",
+              "claim": "Official state Senate roster: Jon Ossoff",
+              "asOf": "2023-03-24"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-495-public-safety-collaboration"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-496",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Unrelated distractors and agreement; important distinct bill and enacted status, not continuation of recruitment proposal.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "같은 두 의원의 이름이 2023년 제안과 2024년 성립 법률에 모두 나옵니다.",
+            "en": "The same two senators appear in a 2023 proposal and a 2024 enacted law."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "두 기록의 법안이 다르므로 하나의 처리 연혁으로 합치지 마세요.",
+            "en": "The measures differ; do not merge them into a single legislative history."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "5월에 성립한 법률이 대상으로 삼은 온라인 안전 조치를 확인하세요.",
+            "en": "Identify the online safety measure addressed by the law enacted in May."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "블랙번과 오소프의 2024년 법률은 {{blank}}을 다룹니다.",
+          "en": "Blackburn and Ossoff's 2024 law concerns {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "아동의 온라인 계정 연령 제한만",
+              "en": "only age restrictions for children's online accounts"
+            },
+            {
+              "id": "B",
+              "ko": "학교의 인터넷 접속 보조금",
+              "en": "school internet-access subsidies"
+            },
+            {
+              "id": "C",
+              "ko": "성인 이용자의 데이터 광고 제한",
+              "en": "restrictions on advertising with adult users' data"
+            },
+            {
+              "id": "D",
+              "ko": "온라인 아동 보호를 위한 신고 의무",
+              "en": "reporting obligations to protect children online"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "온라인 아동 보호 신고 의무의 성립 기록을 별도 법률로 보존하세요. 이전 치안 인력 제안은 인물 관계만 연결합니다.",
+              "en": "Preserve enactment of the online child-protection reporting obligation as a separate law. Link the earlier staffing proposal only through the recurring participants."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "2024년 법률은 온라인 아동 보호를 위한 신고 의무를 다룹니다. 2023년 제안과 합쳐 놓은 문서를 분리하세요.",
+              "en": "The 2024 law concerns reporting obligations for online child protection. Separate it from the merged 2023 proposal file."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-05-31",
+          "learningTarget": "Blackburn and Ossoff's online child protection legislation became law in May 2024.",
+          "cast": [
+            {
+              "id": "B001243",
+              "name": "Marsha Blackburn",
+              "ko": "마샤 블랙번",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/TN/senators.htm"
+            },
+            {
+              "id": "O000174",
+              "name": "Jon Ossoff",
+              "ko": "존 오소프",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/GA/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.blackburn.senate.gov/2024/5/issues/human-trafficking/signed-into-law-blackburn-ossoff-bill-to-protect-missing-and-exploited-children",
+              "claim": "Blackburn and Ossoff's online child protection legislation became law in May 2024.",
+              "asOf": "2024-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/TN/senators.htm",
+              "claim": "Official state Senate roster: Marsha Blackburn",
+              "asOf": "2024-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/GA/senators.htm",
+              "claim": "Official state Senate roster: Jon Ossoff",
+              "asOf": "2024-05-31"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-496-online-protection-enactment"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-497",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 9,
+      "finding": "Plausible senators but missing independent affiliation clue and dialogue echoes. Correct learning about actual three principal negotiators.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2월 4일 공개 합의에 참여한 핵심 상원 협상자의 명단을 점검합니다.",
+            "en": "I'm checking the roster of principal Senate negotiators for the February 4 public agreement."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "공화당과 민주당 협상자 두 명의 이름만으로는 명단이 완성되지 않습니다.",
+            "en": "The Republican and Democratic negotiators alone do not complete the roster."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "정당·무소속 표시는 실제 그 날짜의 소속으로 적고 세 번째 이름을 찾아 주세요.",
+            "en": "Use affiliations as of that date and locate the third name."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "랭크퍼드와 머피 외 협상자는 {{blank}}입니다.",
+          "en": "The other senator negotiating with Lankford and Murphy was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "수전 콜린스",
+              "en": "Susan Collins"
+            },
+            {
+              "id": "B",
+              "ko": "리사 머카우스키",
+              "en": "Lisa Murkowski"
+            },
+            {
+              "id": "C",
+              "ko": "커스틴 시네마",
+              "en": "Kyrsten Sinema"
+            },
+            {
+              "id": "D",
+              "ko": "패티 머리",
+              "en": "Patty Murray"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시네마를 추가해 랭크퍼드·머피·시네마의 세 협상자 명단을 완성하세요.",
+              "en": "Add Sinema to complete the Lankford–Murphy–Sinema roster."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "세 번째 핵심 협상자는 커스틴 시네마입니다. 다른 협상팀에서 옮긴 이름을 지우고 공개 합의 기록을 확인하세요.",
+              "en": "The third principal negotiator was Kyrsten Sinema. Remove the name from an unrelated coalition and recheck the public record."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-02-04",
+          "learningTarget": "Lankford, Murphy and Sinema were the principal Senate negotiators of the 2024 border agreement.",
+          "cast": [
+            {
+              "id": "L000575",
+              "name": "James Lankford",
+              "ko": "제임스 랭크퍼드",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/OK/senators.htm"
+            },
+            {
+              "id": "M001169",
+              "name": "Chris Murphy",
+              "ko": "크리스 머피",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CT/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.murphy.senate.gov/newsroom/press-releases/murphy-we-produced-a-bipartisan-agreement-to-help-fix-our-broken-asylum-system",
+              "claim": "Lankford, Murphy and Sinema were the principal Senate negotiators of the 2024 border agreement.",
+              "asOf": "2024-02-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/OK/senators.htm",
+              "claim": "Official state Senate roster: James Lankford",
+              "asOf": "2024-02-04"
+            },
+            {
+              "url": "https://www.senate.gov/states/CT/senators.htm",
+              "claim": "Official state Senate roster: Chris Murphy",
+              "asOf": "2024-02-04"
+            }
+          ],
+          "correct": "C",
+          "outcome": {
+            "kind": "revisit",
+            "key": "p02-497-negotiation-third-member"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-498",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Appropriations leadership stated before response; competing chair combinations partly plausible. Distinguish policy negotiation versus funding responsibility.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "추가예산안 설명 자료에 국경정책 협상자와 예산 조정 담당자를 각각 표시해야 합니다.",
+            "en": "The supplemental package briefing needs separate labels for border-policy negotiators and funding coordinators."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "세 사람의 정책 협상 명단은 앞쪽 자료에 그대로 둡시다.",
+            "en": "Retain the three-person policy negotiating roster in the earlier file."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "이번 표에는 머리와 콜린스가 당시 맡은 위원회 지도부 직책을 이름 순서대로 적으세요.",
+            "en": "For this table, enter Murray's and Collins's committee leadership offices in name order."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "머리와 콜린스의 당시 역할은 {{blank}}입니다.",
+          "en": "Murray and Collins served as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "세출 부위원장과 위원장",
+              "en": "Appropriations vice chair and chair"
+            },
+            {
+              "id": "B",
+              "ko": "세출위원장과 부위원장",
+              "en": "Appropriations chair and vice chair"
+            },
+            {
+              "id": "C",
+              "ko": "상원 다수당과 소수당 지도자",
+              "en": "majority and minority leaders"
+            },
+            {
+              "id": "D",
+              "ko": "예산위원장과 소수당 선임위원",
+              "en": "Budget chair and ranking member"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "세출위원장과 부위원장을 표시하고 국경 협상 명단과 다른 열로 유지하세요.",
+              "en": "Mark Appropriations chair and vice chair in a column separate from the border negotiators."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "당시 두 직책은 세출위원장과 부위원장이었습니다. 정책 협상자나 다른 위원회 지도부로 잘못 분류한 표를 수정하세요.",
+              "en": "Their offices were Appropriations chair and vice chair. Correct any entry identifying them as policy negotiators or another committee's leadership."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-02-05",
+          "learningTarget": "In 2024 Murray and Collins, Appropriations chair and vice chair, worked on the supplemental package.",
+          "cast": [
+            {
+              "id": "M001111",
+              "name": "Patty Murray",
+              "ko": "패티 머리",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/WA/senators.htm"
+            },
+            {
+              "id": "C001035",
+              "name": "Susan Collins",
+              "ko": "수전 콜린스",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/ME/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.coons.senate.gov/news/press-releases/senator-coons-statement-on-bipartisan-senate-agreement-on-national-security/",
+              "claim": "In 2024 Murray and Collins, Appropriations chair and vice chair, worked on the supplemental package.",
+              "asOf": "2024-02-05"
+            },
+            {
+              "url": "https://www.senate.gov/states/WA/senators.htm",
+              "claim": "Official state Senate roster: Patty Murray",
+              "asOf": "2024-02-05"
+            },
+            {
+              "url": "https://www.senate.gov/states/ME/senators.htm",
+              "claim": "Official state Senate roster: Susan Collins",
+              "asOf": "2024-02-05"
+            }
+          ],
+          "correct": "B",
+          "outcome": {
+            "kind": "document",
+            "key": "p02-498-separate-negotiating-tracks"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-499",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 10,
+      "finding": "Substantive distinction between deal and advancement; outcome options not equally plausible, both branches repeat. Must not infer subsequent fate.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "2월 4일 공개 합의를 법률 성립으로 표시하라는 초안을 받았습니다. 오늘 상원 기록을 확인하겠습니다.",
+            "en": "A draft marks the February 4 public agreement as law. I'll check today's Senate record."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "정책 합의와 본회의 절차 결과는 서로 다른 사건입니다.",
+            "en": "A negotiated policy agreement and a floor procedural result are distinct events."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2월 7일 표결이 어떤 처리 상태를 만들었는지 정확히 표시해 주세요.",
+            "en": "Label the procedural status established by the February 7 vote."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2월 7일 추가예산안의 결과는 {{blank}}입니다.",
+          "en": "The February 7 supplemental outcome was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "심의 진행을 위한 절차 표결 실패",
+              "en": "failure of the procedural vote to advance consideration"
+            },
+            {
+              "id": "B",
+              "ko": "심의 진행을 위한 절차 표결 성공",
+              "en": "success of the procedural vote to advance consideration"
+            },
+            {
+              "id": "C",
+              "ko": "상원 본회의 최종 통과",
+              "en": "final passage on the Senate floor"
+            },
+            {
+              "id": "D",
+              "ko": "상원 본회의 최종 부결",
+              "en": "defeat on final Senate passage"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "심의 진행을 위한 절차 표결 실패로 표시하고 2월 4일 합의 자료는 유지하세요.",
+              "en": "Mark failure of the procedural vote to advance consideration and retain the February 4 agreement record."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "상원은 2월 7일 심의 진행을 저지했습니다. 성립 표시를 철회하고 협상·표결 두 기록을 분리하세요.",
+              "en": "The Senate blocked advancement on February 7. Withdraw the enactment label and separate the negotiation and vote records."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-02-07",
+          "learningTarget": "On February 7, 2024, the Senate blocked advancement of the negotiated national security supplemental.",
+          "cast": [
+            {
+              "id": "M001169",
+              "name": "Chris Murphy",
+              "ko": "크리스 머피",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/CT/senators.htm"
+            },
+            {
+              "id": "S001191",
+              "name": "Kyrsten Sinema",
+              "ko": "커스틴 시네마",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/AZ/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.murphy.senate.gov/newsroom/press-releases/murphy-statement-on-republicans-blocking-bipartisan-national-security-supplemental",
+              "claim": "On February 7, 2024, the Senate blocked advancement of the negotiated national security supplemental.",
+              "asOf": "2024-02-07"
+            },
+            {
+              "url": "https://www.senate.gov/states/CT/senators.htm",
+              "claim": "Official state Senate roster: Chris Murphy",
+              "asOf": "2024-02-07"
+            },
+            {
+              "url": "https://www.senate.gov/states/AZ/senators.htm",
+              "claim": "Official state Senate roster: Kyrsten Sinema",
+              "asOf": "2024-02-07"
+            }
+          ],
+          "correct": "A",
+          "outcome": {
+            "kind": "notebook",
+            "key": "p02-499-agreement-not-enactment"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    },
+    {
+      "id": "P02-500",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 8,
+      "finding": "Roster completion with plausible pairs but repeated template; roadmap not legislative enactment, should use type distinction and precise participants.",
+      "classification": "full-rewrite-proposal",
+      "proposal": {
+        "fictional": true,
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "AI 정책 로드맵 표지에 작업반의 네 이름을 넣으려 합니다.",
+            "en": "I'm preparing a four-name byline for the AI policy roadmap."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "로드맵 발표자와 별개 AI 법안의 발의자 명단을 섞지 마세요.",
+            "en": "Do not mix the roadmap authors with sponsors of separate AI legislation."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "라운즈와 하인리히 외에 발표에 참여한 두 사람을 찾아 주세요.",
+            "en": "Find the other two senators who released the roadmap alongside Rounds and Heinrich."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "라운즈와 하인리히 외 로드맵 발표자는 {{blank}}입니다.",
+          "en": "The other roadmap authors alongside Rounds and Heinrich were {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "튠과 클로버샤",
+              "en": "Thune and Klobuchar"
+            },
+            {
+              "id": "B",
+              "ko": "워너와 코닌",
+              "en": "Warner and Cornyn"
+            },
+            {
+              "id": "C",
+              "ko": "머리와 콜린스",
+              "en": "Murray and Collins"
+            },
+            {
+              "id": "D",
+              "ko": "슈머와 영",
+              "en": "Schumer and Young"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "슈머와 영을 추가해 네 사람의 로드맵 발표 명단을 완성하세요. 법률 성립 기록으로는 분류하지 않습니다.",
+              "en": "Add Schumer and Young to complete the four-person roadmap roster; do not classify it as enacted legislation."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:1",
+              "ko": "다른 두 발표자는 슈머와 영입니다. 별개 AI 법안에서 가져온 이름을 제거하고 로드맵 표지를 수정하세요.",
+              "en": "The other two authors were Schumer and Young. Remove names copied from another AI bill and correct the roadmap byline."
+            }
+          ]
+        },
+        "protected": {
+          "date": "2024-05-31",
+          "learningTarget": "Schumer, Rounds, Heinrich and Young released the 2024 AI policy roadmap.",
+          "cast": [
+            {
+              "id": "R000605",
+              "name": "Mike Rounds",
+              "ko": "마이크 라운즈",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/SD/senators.htm"
+            },
+            {
+              "id": "H001046",
+              "name": "Martin Heinrich",
+              "ko": "마틴 하인리히",
+              "portrait": null,
+              "source": "https://www.senate.gov/states/NM/senators.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "url": "https://www.klobuchar.senate.gov/public/index.cfm/news-releases?ID=B2E26559-36D5-46B9-A4D8-137655CF6708",
+              "claim": "Schumer, Rounds, Heinrich and Young released the 2024 AI policy roadmap.",
+              "asOf": "2024-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/SD/senators.htm",
+              "claim": "Official state Senate roster: Mike Rounds",
+              "asOf": "2024-05-31"
+            },
+            {
+              "url": "https://www.senate.gov/states/NM/senators.htm",
+              "claim": "Official state Senate roster: Martin Heinrich",
+              "asOf": "2024-05-31"
+            }
+          ],
+          "correct": "D",
+          "outcome": {
+            "kind": "appointment",
+            "key": "p02-500-policy-working-group"
+          }
+        },
+        "implementationNote": "Proposal only; retain source factual debrief, original fictional disclaimer, context and venue. Distinguish proposals and enactment. No new private conduct asserted; no gameplay implementation."
+      }
+    }
+  ]
+}

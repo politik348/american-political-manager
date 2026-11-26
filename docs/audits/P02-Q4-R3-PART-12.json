@@ -1,0 +1,6042 @@
+{
+  "schema": 3,
+  "team": "Q4-P02",
+  "round": 3,
+  "scope": "P02-276–300",
+  "source": {
+    "path": "data/dialogue-packs/P02/part-12.json",
+    "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+    "mainCommit": "0d6de1266c0d156f2e6c0c464a230b2a38016142",
+    "i1Commit": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+    "i1BlobSha": "d91690da9c2006ac8603ca86e76927e26159dccb"
+  },
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "entries": [
+    {
+      "id": "P02-276",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "House experience useful but repeated stem.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "하와이 대표단의 과거 연방 하원 기록을 연결합니다.",
+            "en": "Connect Hawaii's former House record to Senate service."
+          },
+          {
+            "speaker": "player",
+            "ko": "해당 의원은 …입니다.",
+            "en": "The former representative is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The former representative is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "메이지 히로노",
+              "en": "Mazie K. Hirono"
+            },
+            {
+              "id": "B",
+              "ko": "브라이언 샤츠",
+              "en": "Brian Schatz"
+            },
+            {
+              "id": "C",
+              "ko": "조시 홀리",
+              "en": "Josh Hawley"
+            },
+            {
+              "id": "D",
+              "ko": "수전 콜린스",
+              "en": "Susan M. Collins"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "히로노는 상원 진출 전 연방 하원에서 재임했습니다.",
+              "en": "Hirono served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 히로노는 상원 진출 전 연방 하원에서 재임했습니다.",
+              "en": "Let's review the record. Hirono served in the House before the Senate."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "하와이 대표단의 양원 경험을 비교합니다.",
+            "en": "Compare Hawaii's bicameral experience."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하원 재임과 상원 재임은 별개입니다.",
+            "en": "House and Senate service are separate."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The former representative is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "메이지 히로노",
+              "en": "Mazie K. Hirono"
+            },
+            {
+              "id": "B",
+              "ko": "브라이언 샤츠",
+              "en": "Brian Schatz"
+            },
+            {
+              "id": "C",
+              "ko": "조시 홀리",
+              "en": "Josh Hawley"
+            },
+            {
+              "id": "D",
+              "ko": "수전 콜린스",
+              "en": "Susan M. Collins"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "히로노의 하원 경력을 연결합니다.",
+              "en": "Link Hirono's House service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "히로노는 상원 진출 전 연방 하원에서 재임했습니다.",
+              "en": "Hirono served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 히로노는 상원 진출 전 연방 하원에서 재임했습니다.",
+              "en": "Let's review the record. Hirono served in the House before the Senate."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의원의 경력을 혼동하지 마세요.",
+              "en": "Do not conflate the two careers."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-276",
+        "date": "2026-10-01",
+        "mechanism": "island-career",
+        "learningTarget": "Hirono served in the House before the Senate.",
+        "evidence": [
+          {
+            "url": "https://bioguide.congress.gov/search/bio/H001042",
+            "claim": "Hirono served in the House before the Senate.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/HI/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/H001042",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001194",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-276-island-career"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1147, P01-533, P01-540.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1147, P01-533, P01-540."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "H001042",
+            "name": "Mazie K. Hirono",
+            "ko": "메이지 히로노",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001042"
+          },
+          {
+            "id": "S001194",
+            "name": "Brian Schatz",
+            "ko": "브라이언 샤츠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001194"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "메이지 히로노",
+          "en": "Mazie K. Hirono"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The former representative is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "메이지 히로노",
+              "en": "Mazie K. Hirono"
+            },
+            {
+              "id": "B",
+              "ko": "브라이언 샤츠",
+              "en": "Brian Schatz"
+            },
+            {
+              "id": "C",
+              "ko": "조시 홀리",
+              "en": "Josh Hawley"
+            },
+            {
+              "id": "D",
+              "ko": "수전 콜린스",
+              "en": "Susan M. Collins"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "H001042",
+            "name": "Mazie K. Hirono",
+            "ko": "메이지 히로노",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001042"
+          },
+          {
+            "id": "S001194",
+            "name": "Brian Schatz",
+            "ko": "브라이언 샤츠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001194"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-277",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Character card framing shallow; House-to-Senate link useful.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스다코타의 이전 연방 하원 인물 카드를 복원합니다.",
+            "en": "Restore an earlier North Dakota House character card."
+          },
+          {
+            "speaker": "player",
+            "ko": "카드의 인물은 …입니다.",
+            "en": "The card belongs to …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카드의 인물은 {{blank}}입니다.",
+          "en": "The card belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 호번",
+              "en": "John Hoeven"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "D",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "크레이머는 연방 하원 재임 후 상원에 진출했습니다.",
+              "en": "Cramer served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 크레이머는 연방 하원 재임 후 상원에 진출했습니다.",
+              "en": "Let's review the record. Cramer served in the House before the Senate."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스다코타의 이전 하원 대표 경험을 확인합니다.",
+            "en": "Identify earlier House representation in North Dakota."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "양원의 공식 재임 자료를 대조하세요.",
+            "en": "Compare the two chambers' official service records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "카드의 인물은 {{blank}}입니다.",
+          "en": "The card belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 호번",
+              "en": "John Hoeven"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "D",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "크레이머의 하원 경력을 연결합니다.",
+              "en": "Link Cramer's House service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "크레이머는 연방 하원 재임 후 상원에 진출했습니다.",
+              "en": "Cramer served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 크레이머는 연방 하원 재임 후 상원에 진출했습니다.",
+              "en": "Let's review the record. Cramer served in the House before the Senate."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의원의 하원 경력을 부여하지 마세요.",
+              "en": "Do not assign House service to another senator."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-277",
+        "date": "2026-10-01",
+        "mechanism": "house-card",
+        "learningTarget": "Cramer served in the House before the Senate.",
+        "evidence": [
+          {
+            "url": "https://bioguide.congress.gov/search/bio/C001096",
+            "claim": "Cramer served in the House before the Senate.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/ND/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/H001061",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/C001096",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-277-house-card"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1127.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1127."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "H001061",
+            "name": "John Hoeven",
+            "ko": "존 호번",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001061"
+          },
+          {
+            "id": "C001096",
+            "name": "Kevin Cramer",
+            "ko": "케빈 크레이머",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001096"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "케빈 크레이머",
+          "en": "Kevin Cramer"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "카드의 인물은 {{blank}}입니다.",
+          "en": "The card belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 호번",
+              "en": "John Hoeven"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "D",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "H001061",
+            "name": "John Hoeven",
+            "ko": "존 호번",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001061"
+          },
+          {
+            "id": "C001096",
+            "name": "Kevin Cramer",
+            "ko": "케빈 크레이머",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001096"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-278",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Dated appointment core needs verification.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오클라호마의 2026년 공석 승계 기록을 갱신합니다.",
+            "en": "Update Oklahoma's 2026 vacancy record."
+          },
+          {
+            "speaker": "player",
+            "ko": "3월 24일 임명으로 취임한 인물은 …입니다.",
+            "en": "The senator seated by appointment March 24 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "3월 24일 임명으로 취임한 인물은 {{blank}}입니다.",
+          "en": "The senator seated by appointment March 24 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제임스 랭크퍼드",
+              "en": "James Lankford"
+            },
+            {
+              "id": "B",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "C",
+              "ko": "앨런 암스트롱",
+              "en": "Alan Armstrong"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "암스트롱은 2026년 3월 24일 상원에 취임했습니다.",
+              "en": "Armstrong entered the Senate by appointment March 24, 2026."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 암스트롱은 2026년 3월 24일 상원에 취임했습니다.",
+              "en": "Let's review the record. Armstrong entered the Senate by appointment March 24, 2026."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오클라호마 공석의 임명 기록을 검토합니다.",
+            "en": "Review Oklahoma's vacancy appointment record."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "3월 24일자 자료의 명의자와 진입 경로를 확인하세요.",
+            "en": "Check the March 24 record for the entrant and entry route."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "3월 24일 임명으로 취임한 인물은 {{blank}}입니다.",
+          "en": "The senator seated by appointment March 24 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제임스 랭크퍼드",
+              "en": "James Lankford"
+            },
+            {
+              "id": "B",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "C",
+              "ko": "앨런 암스트롱",
+              "en": "Alan Armstrong"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "원본의 암스트롱 임명 기록을 선택합니다.",
+              "en": "Select Armstrong's appointment in the source record."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "암스트롱은 2026년 3월 24일 상원에 취임했습니다.",
+              "en": "Armstrong entered the Senate by appointment March 24, 2026."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 암스트롱은 2026년 3월 24일 상원에 취임했습니다.",
+              "en": "Let's review the record. Armstrong entered the Senate by appointment March 24, 2026."
+            },
+            {
+              "speaker": "aide",
+              "ko": "선거 결과와 임명을 혼동하지 마세요.",
+              "en": "Do not conflate election and appointment."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-278",
+        "date": "2026-10-01",
+        "mechanism": "appointment-vacancy",
+        "learningTarget": "Armstrong entered the Senate by appointment March 24, 2026.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Armstrong entered the Senate by appointment March 24, 2026.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/OK/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/L000575",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/A000383",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-278-appointment-vacancy"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1131, P01-1130.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1131, P01-1130."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "L000575",
+            "name": "James Lankford",
+            "ko": "제임스 랭크퍼드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000575"
+          },
+          {
+            "id": "A000383",
+            "name": "Alan Armstrong",
+            "ko": "앨런 암스트롱",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000383"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "앨런 암스트롱",
+          "en": "Alan Armstrong"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "3월 24일 임명으로 취임한 인물은 {{blank}}입니다.",
+          "en": "The senator seated by appointment March 24 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제임스 랭크퍼드",
+              "en": "James Lankford"
+            },
+            {
+              "id": "B",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "C",
+              "ko": "앨런 암스트롱",
+              "en": "Alan Armstrong"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "L000575",
+            "name": "James Lankford",
+            "ko": "제임스 랭크퍼드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000575"
+          },
+          {
+            "id": "A000383",
+            "name": "Alan Armstrong",
+            "ko": "앨런 암스트롱",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000383"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-279",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Career transition useful, repeated question.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "유타의 신임 상원의원과 하원 시절 기록을 연결합니다.",
+            "en": "Link Utah's freshman senator with his prior House record."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 신임 의원은 …입니다.",
+            "en": "The 2025 freshman is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마이크 리",
+              "en": "Mike Lee"
+            },
+            {
+              "id": "B",
+              "ko": "신디 하이드스미스",
+              "en": "Cindy Hyde-Smith"
+            },
+            {
+              "id": "C",
+              "ko": "론 존슨",
+              "en": "Ron Johnson"
+            },
+            {
+              "id": "D",
+              "ko": "존 커티스",
+              "en": "John R. Curtis"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "커티스는 하원 재임 후 2025년 상원에 취임했습니다.",
+              "en": "Curtis entered the Senate in 2025 after House service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 커티스는 하원 재임 후 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Curtis entered the Senate in 2025 after House service."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "유타 신규 상원의원의 이전 입법 경험을 비교합니다.",
+            "en": "Compare the new Utah senator's legislative experience."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2025년 상원 진입과 하원 재임을 분리하세요.",
+            "en": "Distinguish 2025 Senate entry from House service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마이크 리",
+              "en": "Mike Lee"
+            },
+            {
+              "id": "B",
+              "ko": "신디 하이드스미스",
+              "en": "Cindy Hyde-Smith"
+            },
+            {
+              "id": "C",
+              "ko": "론 존슨",
+              "en": "Ron Johnson"
+            },
+            {
+              "id": "D",
+              "ko": "존 커티스",
+              "en": "John R. Curtis"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "커티스의 양원 재임을 연결합니다.",
+              "en": "Link Curtis's service in both chambers."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "커티스는 하원 재임 후 2025년 상원에 취임했습니다.",
+              "en": "Curtis entered the Senate in 2025 after House service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 커티스는 하원 재임 후 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Curtis entered the Senate in 2025 after House service."
+            },
+            {
+              "speaker": "aide",
+              "ko": "계속 재임자의 진입 기록을 복사하지 마세요.",
+              "en": "Do not copy the continuing member's entry."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-279",
+        "date": "2026-10-01",
+        "mechanism": "freshman-reunion",
+        "learningTarget": "Curtis entered the Senate in 2025 after House service.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Curtis entered the Senate in 2025 after House service.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/UT/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/L000577",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/C001114",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-279-freshman-reunion"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1480, P01-1479, P01-1477.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1480, P01-1479, P01-1477."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "L000577",
+            "name": "Mike Lee",
+            "ko": "마이크 리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000577"
+          },
+          {
+            "id": "C001114",
+            "name": "John R. Curtis",
+            "ko": "존 커티스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001114"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "존 커티스",
+          "en": "John R. Curtis"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마이크 리",
+              "en": "Mike Lee"
+            },
+            {
+              "id": "B",
+              "ko": "신디 하이드스미스",
+              "en": "Cindy Hyde-Smith"
+            },
+            {
+              "id": "C",
+              "ko": "론 존슨",
+              "en": "Ron Johnson"
+            },
+            {
+              "id": "D",
+              "ko": "존 커티스",
+              "en": "John R. Curtis"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "L000577",
+            "name": "Mike Lee",
+            "ko": "마이크 리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000577"
+          },
+          {
+            "id": "C001114",
+            "name": "John R. Curtis",
+            "ko": "존 커티스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001114"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-280",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 11,
+      "finding": "Banking minority jurisdiction meaningful; generic feedback.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "금융 감독 자료를 은행위원회 소수당 측에 제출합니다.",
+            "en": "Submit financial oversight materials to Banking minority leadership."
+          },
+          {
+            "speaker": "player",
+            "ko": "은행위원회 간사 …에게 전달합니다.",
+            "en": "Send them to Banking ranking member …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "워런은 119대 은행위원회 간사입니다.",
+              "en": "Warren is Banking ranking member in the 119th Congress."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 워런은 119대 은행위원회 간사입니다.",
+              "en": "Let's review the record. Warren is Banking ranking member in the 119th Congress."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "금융 감독의 가상 소수당 검토를 요청합니다.",
+            "en": "Seek simulated minority review of financial oversight."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "은행위원회 선임위원과 일반 의원 사무실을 구분하세요.",
+            "en": "Distinguish Banking ranking leadership from ordinary offices."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "워런에게 선임위원 자격으로 요청합니다.",
+              "en": "Route the request to Warren as ranking member."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "워런은 119대 은행위원회 간사입니다.",
+              "en": "Warren is Banking ranking member in the 119th Congress."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 워런은 119대 은행위원회 간사입니다.",
+              "en": "Let's review the record. Warren is Banking ranking member in the 119th Congress."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 위원회 직책으로 보내지 마세요.",
+              "en": "Do not route it to another committee office."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-280",
+        "date": "2026-10-01",
+        "mechanism": "banking-minority",
+        "learningTarget": "Warren is Banking ranking member in the 119th Congress.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/committees/",
+            "claim": "Warren is Banking ranking member in the 119th Congress.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MA/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M000133",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/W000817",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-280-banking-minority"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-078. P01 교차 팩 후보(하원 재임 확인): P01-1060, P01-1059.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-078. P01 cross-pack candidates (House service checked): P01-1060, P01-1059."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M000133",
+            "name": "Edward J. Markey",
+            "ko": "에드 마키",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000133"
+          },
+          {
+            "id": "W000817",
+            "name": "Elizabeth Warren",
+            "ko": "엘리자베스 워런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000817"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "엘리자베스 워런",
+          "en": "Elizabeth Warren"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "은행위원회 간사 {{blank}}에게 전달합니다.",
+          "en": "Send them to Banking ranking member {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "엘리자베스 워런",
+              "en": "Elizabeth Warren"
+            },
+            {
+              "id": "B",
+              "ko": "에드 마키",
+              "en": "Edward J. Markey"
+            },
+            {
+              "id": "C",
+              "ko": "미치 매코널",
+              "en": "Mitch McConnell"
+            },
+            {
+              "id": "D",
+              "ko": "존 부즈먼",
+              "en": "John Boozman"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "M000133",
+            "name": "Edward J. Markey",
+            "ko": "에드 마키",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000133"
+          },
+          {
+            "id": "W000817",
+            "name": "Elizabeth Warren",
+            "ko": "엘리자베스 워런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000817"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-281",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Membership vs delegation distinct; dated announcement.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "재무위원회 신규 위원 발표와 지역 대표단 기록을 연결합니다.",
+            "en": "Link the Finance Committee's new membership to the state delegation."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 신규 위원으로 발표된 인물은 …입니다.",
+            "en": "The senator announced as a new Finance member in 2025 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "재무위원회는 2025년 마셜의 합류를 발표했습니다.",
+              "en": "Finance announced Marshall as a new member in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 재무위원회는 2025년 마셜의 합류를 발표했습니다.",
+              "en": "Let's review the record. Finance announced Marshall as a new member in 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "재무위원회 신규 구성에 맞춰 가상 협의 대상을 확인합니다.",
+            "en": "Identify a simulated policy contact using the new Finance membership."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "같은 주라는 이유로 위원회 소속을 추정하지 마세요.",
+            "en": "Do not infer membership from shared state."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "마셜을 신규 위원으로 선택합니다.",
+              "en": "Select Marshall as the new member."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "재무위원회는 2025년 마셜의 합류를 발표했습니다.",
+              "en": "Finance announced Marshall as a new member in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 재무위원회는 2025년 마셜의 합류를 발표했습니다.",
+              "en": "Let's review the record. Finance announced Marshall as a new member in 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "2025년 공식 발표를 다시 확인하세요.",
+              "en": "Recheck the official 2025 announcement."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-281",
+        "date": "2026-10-01",
+        "mechanism": "finance-membership",
+        "learningTarget": "Finance announced Marshall as a new member in 2025.",
+        "evidence": [
+          {
+            "url": "https://www.finance.senate.gov/chairmans-news/crapo-welcomes-new-finance-committee-members",
+            "claim": "Finance announced Marshall as a new member in 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/KS/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M000934",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M001198",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-281-finance-membership"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-820, P01-821, P01-1484, P01-1482, P01-1481.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-820, P01-821, P01-1484, P01-1482, P01-1481."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M000934",
+            "name": "Jerry Moran",
+            "ko": "제리 모런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000934"
+          },
+          {
+            "id": "M001198",
+            "name": "Roger Marshall",
+            "ko": "로저 마셜",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001198"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "로저 마셜",
+          "en": "Roger Marshall"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신규 위원으로 발표된 인물은 {{blank}}입니다.",
+          "en": "The senator announced as a new Finance member in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "제리 모런",
+              "en": "Jerry Moran"
+            },
+            {
+              "id": "B",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            },
+            {
+              "id": "C",
+              "ko": "매기 해선",
+              "en": "Margaret Wood Hassan"
+            },
+            {
+              "id": "D",
+              "ko": "조니 언스트",
+              "en": "Joni Ernst"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "M000934",
+            "name": "Jerry Moran",
+            "ko": "제리 모런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000934"
+          },
+          {
+            "id": "M001198",
+            "name": "Roger Marshall",
+            "ko": "로저 마셜",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001198"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-282",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Initial appointment vs election meaningful.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "알래스카 두 의원의 최초 상원 진입 방식을 비교합니다.",
+            "en": "Compare the Alaska senators' initial entry into office."
+          },
+          {
+            "speaker": "player",
+            "ko": "2002년 임명으로 진입한 의원은 …입니다.",
+            "en": "The senator first seated by appointment in 2002 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "머카우스키는 2002년 임명으로 상원에 진출했습니다.",
+              "en": "Murkowski first entered the Senate by appointment in 2002."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 머카우스키는 2002년 임명으로 상원에 진출했습니다.",
+              "en": "Let's review the record. Murkowski first entered the Senate by appointment in 2002."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "알래스카 의원들의 최초 상원 진입 경로를 비교합니다.",
+            "en": "Compare Alaska senators' initial entry routes."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "최초 임명과 이후 선거를 구분하세요.",
+            "en": "Distinguish initial appointment from later elections."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "머카우스키의 2002년 임명 진입을 선택합니다.",
+              "en": "Select Murkowski's 2002 appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "머카우스키는 2002년 임명으로 상원에 진출했습니다.",
+              "en": "Murkowski first entered the Senate by appointment in 2002."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 머카우스키는 2002년 임명으로 상원에 진출했습니다.",
+              "en": "Let's review the record. Murkowski first entered the Senate by appointment in 2002."
+            },
+            {
+              "speaker": "aide",
+              "ko": "이후 선거를 최초 진입으로 처리하지 마세요.",
+              "en": "Do not substitute a later election for first entry."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-282",
+        "date": "2026-10-01",
+        "mechanism": "appointment-history",
+        "learningTarget": "Murkowski first entered the Senate by appointment in 2002.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Murkowski first entered the Senate by appointment in 2002.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/AK/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M001153",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001198",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-282-appointment-history"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-077, P02-066.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-077, P02-066."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M001153",
+            "name": "Lisa Murkowski",
+            "ko": "리사 머카우스키",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001153"
+          },
+          {
+            "id": "S001198",
+            "name": "Dan Sullivan",
+            "ko": "댄 설리번",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001198"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "리사 머카우스키",
+          "en": "Lisa Murkowski"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2002년 임명으로 진입한 의원은 {{blank}}입니다.",
+          "en": "The senator first seated by appointment in 2002 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "댄 설리번",
+              "en": "Dan Sullivan"
+            },
+            {
+              "id": "B",
+              "ko": "태미 볼드윈",
+              "en": "Tammy Baldwin"
+            },
+            {
+              "id": "C",
+              "ko": "리사 머카우스키",
+              "en": "Lisa Murkowski"
+            },
+            {
+              "id": "D",
+              "ko": "제임스 랭크퍼드",
+              "en": "James Lankford"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "M001153",
+            "name": "Lisa Murkowski",
+            "ko": "리사 머카우스키",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001153"
+          },
+          {
+            "id": "S001198",
+            "name": "Dan Sullivan",
+            "ko": "댄 설리번",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001198"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-283",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Freshman identity cue; generic feedback.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "미시간 신임 의원에게 상원 안내 자료를 전달합니다.",
+            "en": "Deliver Senate orientation materials to Michigan's freshman."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 신임 의원은 …입니다.",
+            "en": "The 2025 freshman is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "게리 피터스",
+              "en": "Gary C. Peters"
+            },
+            {
+              "id": "B",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "C",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            },
+            {
+              "id": "D",
+              "ko": "엘리사 슬롯킨",
+              "en": "Elissa Slotkin"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "슬롯킨은 2025년 상원에 취임했습니다.",
+              "en": "Slotkin entered the Senate in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 슬롯킨은 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Slotkin entered the Senate in 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "미시간 신임 의원에게 가상 절차 안내를 전달합니다.",
+            "en": "Route simulated orientation to Michigan's new senator."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2025년 신규 진입과 계속 재임을 구분하세요.",
+            "en": "Distinguish 2025 entry from continuing service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "게리 피터스",
+              "en": "Gary C. Peters"
+            },
+            {
+              "id": "B",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "C",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            },
+            {
+              "id": "D",
+              "ko": "엘리사 슬롯킨",
+              "en": "Elissa Slotkin"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "슬롯킨에게 신규 안내를 보냅니다.",
+              "en": "Send orientation to Slotkin."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "슬롯킨은 2025년 상원에 취임했습니다.",
+              "en": "Slotkin entered the Senate in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 슬롯킨은 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Slotkin entered the Senate in 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "기존 재임자에게 안내를 보내지 마세요.",
+              "en": "Do not send orientation to the continuing incumbent."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-283",
+        "date": "2026-10-01",
+        "mechanism": "freshman-orientation",
+        "learningTarget": "Slotkin entered the Senate in 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Slotkin entered the Senate in 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MI/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/P000595",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001208",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-283-freshman-orientation"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1172, P01-1171, P01-076, P01-1743.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1172, P01-1171, P01-076, P01-1743."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "P000595",
+            "name": "Gary C. Peters",
+            "ko": "게리 피터스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000595"
+          },
+          {
+            "id": "S001208",
+            "name": "Elissa Slotkin",
+            "ko": "엘리사 슬롯킨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001208"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "엘리사 슬롯킨",
+          "en": "Elissa Slotkin"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The 2025 freshman is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "게리 피터스",
+              "en": "Gary C. Peters"
+            },
+            {
+              "id": "B",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "C",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            },
+            {
+              "id": "D",
+              "ko": "엘리사 슬롯킨",
+              "en": "Elissa Slotkin"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "P000595",
+            "name": "Gary C. Peters",
+            "ko": "게리 피터스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000595"
+          },
+          {
+            "id": "S001208",
+            "name": "Elissa Slotkin",
+            "ko": "엘리사 슬롯킨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001208"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-284",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Special and regular election distinct.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "캘리포니아의 2024년 특별선거와 정기 선거 기록을 연결합니다.",
+            "en": "Link California's 2024 special and regular election records."
+          },
+          {
+            "speaker": "player",
+            "ko": "2024년 12월 취임한 신임 의원은 …입니다.",
+            "en": "The new senator seated in December 2024 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "시프는 2024년 12월 상원에 취임했습니다.",
+              "en": "Schiff entered the Senate in December 2024."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 시프는 2024년 12월 상원에 취임했습니다.",
+              "en": "Let's review the record. Schiff entered the Senate in December 2024."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "캘리포니아의 특별선거와 정규선거 재임 효과를 비교합니다.",
+            "en": "Compare the service effects of California's special and regular elections."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "12월 진입과 정규 임기 시작을 분리하세요.",
+            "en": "Separate December entry from regular-term commencement."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "시프의 12월 진입을 인정합니다.",
+              "en": "Recognize Schiff's December entry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "시프는 2024년 12월 상원에 취임했습니다.",
+              "en": "Schiff entered the Senate in December 2024."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 시프는 2024년 12월 상원에 취임했습니다.",
+              "en": "Let's review the record. Schiff entered the Senate in December 2024."
+            },
+            {
+              "speaker": "aide",
+              "ko": "정규 임기 시작만을 최초 진입으로 처리하지 마세요.",
+              "en": "Do not mark only the regular term's start as first entry."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-284",
+        "date": "2026-10-01",
+        "mechanism": "special-term-overlap",
+        "learningTarget": "Schiff entered the Senate in December 2024.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Schiff entered the Senate in December 2024.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/CA/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001150",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/P000145",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-284-special-term-overlap"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-087, P02-086.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-087, P02-086."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "S001150",
+            "name": "Adam B. Schiff",
+            "ko": "애덤 시프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001150"
+          },
+          {
+            "id": "P000145",
+            "name": "Alex Padilla",
+            "ko": "알렉스 파디야",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000145"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "애덤 시프",
+          "en": "Adam B. Schiff"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2024년 12월 취임한 신임 의원은 {{blank}}입니다.",
+          "en": "The new senator seated in December 2024 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "애덤 시프",
+              "en": "Adam B. Schiff"
+            },
+            {
+              "id": "B",
+              "ko": "알렉스 파디야",
+              "en": "Alex Padilla"
+            },
+            {
+              "id": "C",
+              "ko": "척 그래슬리",
+              "en": "Chuck Grassley"
+            },
+            {
+              "id": "D",
+              "ko": "존 튠",
+              "en": "John Thune"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "S001150",
+            "name": "Adam B. Schiff",
+            "ko": "애덤 시프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001150"
+          },
+          {
+            "id": "P000145",
+            "name": "Alex Padilla",
+            "ko": "알렉스 파디야",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000145"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-285",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Dated 2026 appointee requires Q2 verification.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "사우스캐롤라이나의 2026년 공석 승계 자료를 정리합니다.",
+            "en": "Organize South Carolina's 2026 vacancy succession record."
+          },
+          {
+            "speaker": "player",
+            "ko": "7월 14일 임명직으로 취임한 의원은 …입니다.",
+            "en": "The appointee seated July 14 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "7월 14일 임명직으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated July 14 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "팀 스콧",
+              "en": "Tim Scott"
+            },
+            {
+              "id": "B",
+              "ko": "달라인 그레이엄",
+              "en": "Darline Graham"
+            },
+            {
+              "id": "C",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "D",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "달라인 그레이엄은 2026년 7월 14일 상원에 취임했습니다.",
+              "en": "Darline Graham entered the Senate July 14, 2026."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 달라인 그레이엄은 2026년 7월 14일 상원에 취임했습니다.",
+              "en": "Let's review the record. Darline Graham entered the Senate July 14, 2026."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "사우스캐롤라이나 공석 임명 자료를 검토합니다.",
+            "en": "Review South Carolina's vacancy appointment material."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "7월 14일 기록의 진입 경로를 확인하세요.",
+            "en": "Check the entry route in the July 14 record."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "7월 14일 임명직으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated July 14 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "팀 스콧",
+              "en": "Tim Scott"
+            },
+            {
+              "id": "B",
+              "ko": "달라인 그레이엄",
+              "en": "Darline Graham"
+            },
+            {
+              "id": "C",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "D",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "원본의 그레이엄 임명 진입을 선택합니다.",
+              "en": "Select Graham's appointed entry in the source."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "달라인 그레이엄은 2026년 7월 14일 상원에 취임했습니다.",
+              "en": "Darline Graham entered the Senate July 14, 2026."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 달라인 그레이엄은 2026년 7월 14일 상원에 취임했습니다.",
+              "en": "Let's review the record. Darline Graham entered the Senate July 14, 2026."
+            },
+            {
+              "speaker": "aide",
+              "ko": "공식 임명 근거를 다시 확인하세요.",
+              "en": "Recheck the official appointment evidence."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-285",
+        "date": "2026-10-01",
+        "mechanism": "vacancy-succession",
+        "learningTarget": "Darline Graham entered the Senate July 14, 2026.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Darline Graham entered the Senate July 14, 2026.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/SC/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001184",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/G000608",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-285-vacancy-succession"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "S001184",
+            "name": "Tim Scott",
+            "ko": "팀 스콧",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001184"
+          },
+          {
+            "id": "G000608",
+            "name": "Darline Graham",
+            "ko": "달라인 그레이엄",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000608"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "달라인 그레이엄",
+          "en": "Darline Graham"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "7월 14일 임명직으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated July 14 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "팀 스콧",
+              "en": "Tim Scott"
+            },
+            {
+              "id": "B",
+              "ko": "달라인 그레이엄",
+              "en": "Darline Graham"
+            },
+            {
+              "id": "C",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "D",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "S001184",
+            "name": "Tim Scott",
+            "ko": "팀 스콧",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001184"
+          },
+          {
+            "id": "G000608",
+            "name": "Darline Graham",
+            "ko": "달라인 그레이엄",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000608"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-286",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 11,
+      "finding": "Floor scheduling distinct from committee; generic close.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "본회의 다수당 일정 협의 요청서를 전달합니다.",
+            "en": "Deliver a majority-side floor scheduling request."
+          },
+          {
+            "speaker": "player",
+            "ko": "다수당 원내대표 …에게 보냅니다.",
+            "en": "Send it to majority leader …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "튠은 119대 상원 다수당 원내대표입니다.",
+              "en": "Thune is majority leader in the 119th Congress."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 튠은 119대 상원 다수당 원내대표입니다.",
+              "en": "Let's review the record. Thune is majority leader in the 119th Congress."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "다수당 측 가상 본회의 일정 협의를 요청합니다.",
+            "en": "Request simulated majority-side floor scheduling."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "원내대표와 위원회 지도부를 구분하세요.",
+            "en": "Distinguish floor and committee leadership."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "튠에게 원내대표 자격으로 전달합니다.",
+              "en": "Route it to Thune as majority leader."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "튠은 119대 상원 다수당 원내대표입니다.",
+              "en": "Thune is majority leader in the 119th Congress."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 튠은 119대 상원 다수당 원내대표입니다.",
+              "en": "Let's review the record. Thune is majority leader in the 119th Congress."
+            },
+            {
+              "speaker": "aide",
+              "ko": "일반 사무실에 보낸 일정 요청을 수정하세요.",
+              "en": "Redirect a request sent to an ordinary office."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-286",
+        "date": "2026-10-01",
+        "mechanism": "majority-floor-agenda",
+        "learningTarget": "Thune is majority leader in the 119th Congress.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/leadership.htm",
+            "claim": "Thune is majority leader in the 119th Congress.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/SD/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/T000250",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/R000605",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-286-majority-floor-agenda"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-092, P02-091. P01 교차 팩 후보(하원 재임 확인): P01-1986.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-092, P02-091. P01 cross-pack candidates (House service checked): P01-1986."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "T000250",
+            "name": "John Thune",
+            "ko": "존 튠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000250"
+          },
+          {
+            "id": "R000605",
+            "name": "Mike Rounds",
+            "ko": "마이크 라운즈",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000605"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "존 튠",
+          "en": "John Thune"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "다수당 원내대표 {{blank}}에게 보냅니다.",
+          "en": "Send it to majority leader {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마이크 라운즈",
+              "en": "Mike Rounds"
+            },
+            {
+              "id": "B",
+              "ko": "제리 모런",
+              "en": "Jerry Moran"
+            },
+            {
+              "id": "C",
+              "ko": "존 튠",
+              "en": "John Thune"
+            },
+            {
+              "id": "D",
+              "ko": "톰 틸리스",
+              "en": "Thom Tillis"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "T000250",
+            "name": "John Thune",
+            "ko": "존 튠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000250"
+          },
+          {
+            "id": "R000605",
+            "name": "Mike Rounds",
+            "ko": "마이크 라운즈",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000605"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-287",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "New entrant identity and generic praise.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "메릴랜드 대표단 신임 의원을 소개합니다.",
+            "en": "Introduce Maryland's freshman senator."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 처음 취임한 의원은 …입니다.",
+            "en": "The senator who first entered in 2025 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 처음 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who first entered in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "크리스 밴홀런",
+              "en": "Chris Van Hollen"
+            },
+            {
+              "id": "B",
+              "ko": "알렉스 파디야",
+              "en": "Alex Padilla"
+            },
+            {
+              "id": "C",
+              "ko": "에릭 슈미트",
+              "en": "Eric Schmitt"
+            },
+            {
+              "id": "D",
+              "ko": "앤절라 올소브룩스",
+              "en": "Angela D. Alsobrooks"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "올소브룩스는 2025년 상원에 취임했습니다.",
+              "en": "Alsobrooks entered the Senate in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 올소브룩스는 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Alsobrooks entered the Senate in 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "메릴랜드 신규 의원의 가상 소개를 준비합니다.",
+            "en": "Prepare a simulated introduction for Maryland's new senator."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "2025년 진입과 기존 재임을 구분하세요.",
+            "en": "Distinguish 2025 entry from continuing service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 처음 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who first entered in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "크리스 밴홀런",
+              "en": "Chris Van Hollen"
+            },
+            {
+              "id": "B",
+              "ko": "알렉스 파디야",
+              "en": "Alex Padilla"
+            },
+            {
+              "id": "C",
+              "ko": "에릭 슈미트",
+              "en": "Eric Schmitt"
+            },
+            {
+              "id": "D",
+              "ko": "앤절라 올소브룩스",
+              "en": "Angela D. Alsobrooks"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "올소브룩스를 소개합니다.",
+              "en": "Introduce Alsobrooks."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "올소브룩스는 2025년 상원에 취임했습니다.",
+              "en": "Alsobrooks entered the Senate in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 올소브룩스는 2025년 상원에 취임했습니다.",
+              "en": "Let's review the record. Alsobrooks entered the Senate in 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "기존 의원을 신규로 분류하지 마세요.",
+              "en": "Do not classify the continuing member as new."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-287",
+        "date": "2026-10-01",
+        "mechanism": "freshman-introduction",
+        "learningTarget": "Alsobrooks entered the Senate in 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Alsobrooks entered the Senate in 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MD/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/V000128",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/A000382",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-287-freshman-introduction"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-096.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-096."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "V000128",
+            "name": "Chris Van Hollen",
+            "ko": "크리스 밴홀런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/V000128"
+          },
+          {
+            "id": "A000382",
+            "name": "Angela D. Alsobrooks",
+            "ko": "앤절라 올소브룩스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000382"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "앤절라 올소브룩스",
+          "en": "Angela D. Alsobrooks"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 처음 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who first entered in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "크리스 밴홀런",
+              "en": "Chris Van Hollen"
+            },
+            {
+              "id": "B",
+              "ko": "알렉스 파디야",
+              "en": "Alex Padilla"
+            },
+            {
+              "id": "C",
+              "ko": "에릭 슈미트",
+              "en": "Eric Schmitt"
+            },
+            {
+              "id": "D",
+              "ko": "앤절라 올소브룩스",
+              "en": "Angela D. Alsobrooks"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "V000128",
+            "name": "Chris Van Hollen",
+            "ko": "크리스 밴홀런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/V000128"
+          },
+          {
+            "id": "A000382",
+            "name": "Angela D. Alsobrooks",
+            "ko": "앤절라 올소브룩스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000382"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-288",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Class I turnover useful, generic stem.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "인디애나 Class I 의석의 이름표를 갱신합니다.",
+            "en": "Update Indiana's Class I seat nameplate."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 신임 의원은 …입니다.",
+            "en": "The new senator in 2025 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The new senator in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "B",
+              "ko": "토드 영",
+              "en": "Todd Young"
+            },
+            {
+              "id": "C",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "D",
+              "ko": "버니 모레노",
+              "en": "Bernie Moreno"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "뱅크스는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Banks entered as a Class I senator in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 뱅크스는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Let's review the record. Banks entered as a Class I senator in 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "인디애나 Class I 신규 재임을 확인합니다.",
+            "en": "Verify new service in Indiana's Class I seat."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 재임은 유지하세요.",
+            "en": "Retain the other seat's service."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The new senator in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "B",
+              "ko": "토드 영",
+              "en": "Todd Young"
+            },
+            {
+              "id": "C",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "D",
+              "ko": "버니 모레노",
+              "en": "Bernie Moreno"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "뱅크스의 2025년 진입을 인정합니다.",
+              "en": "Recognize Banks's 2025 entry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "뱅크스는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Banks entered as a Class I senator in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 뱅크스는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Let's review the record. Banks entered as a Class I senator in 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의석을 함께 갱신하지 마세요.",
+              "en": "Do not update both seats."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-288",
+        "date": "2026-10-01",
+        "mechanism": "seat-transition",
+        "learningTarget": "Banks entered as a Class I senator in 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Banks entered as a Class I senator in 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/IN/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/Y000064",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/B001299",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-288-seat-transition"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "Y000064",
+            "name": "Todd Young",
+            "ko": "토드 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000064"
+          },
+          {
+            "id": "B001299",
+            "name": "Jim Banks",
+            "ko": "짐 뱅크스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001299"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "짐 뱅크스",
+          "en": "Jim Banks"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 신임 의원은 {{blank}}입니다.",
+          "en": "The new senator in 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "B",
+              "ko": "토드 영",
+              "en": "Todd Young"
+            },
+            {
+              "id": "C",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "D",
+              "ko": "버니 모레노",
+              "en": "Bernie Moreno"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "Y000064",
+            "name": "Todd Young",
+            "ko": "토드 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000064"
+          },
+          {
+            "id": "B001299",
+            "name": "Jim Banks",
+            "ko": "짐 뱅크스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001299"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-289",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "2024 election vs 2025 entry distinct.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "몬태나의 2024년 선거 뒤 의석 지도를 갱신합니다.",
+            "en": "Update Montana's seat map after the 2024 election."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 Class I 의원은 …입니다.",
+            "en": "The new Class I senator is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 Class I 의원은 {{blank}}입니다.",
+          "en": "The new Class I senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "B",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            },
+            {
+              "id": "C",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "D",
+              "ko": "피터 웰치",
+              "en": "Peter Welch"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "시히는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Sheehy entered as a Class I senator in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 시히는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Let's review the record. Sheehy entered as a Class I senator in 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "몬태나의 2024년 선거와 2025년 재임을 구분합니다.",
+            "en": "Distinguish Montana's 2024 election from 2025 service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class I의 신규 재임자를 확인하세요.",
+            "en": "Verify the new Class I incumbent."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 Class I 의원은 {{blank}}입니다.",
+          "en": "The new Class I senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "B",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            },
+            {
+              "id": "C",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "D",
+              "ko": "피터 웰치",
+              "en": "Peter Welch"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "시히의 신규 재임을 인정합니다.",
+              "en": "Recognize Sheehy's new service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "시히는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Sheehy entered as a Class I senator in 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 시히는 2025년 Class I 의원으로 취임했습니다.",
+              "en": "Let's review the record. Sheehy entered as a Class I senator in 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석을 변경하지 마세요.",
+              "en": "Do not change the other seat."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-289",
+        "date": "2026-10-01",
+        "mechanism": "election-succession",
+        "learningTarget": "Sheehy entered as a Class I senator in 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Sheehy entered as a Class I senator in 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MT/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/D000618",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001232",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-289-election-succession"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1127, P01-1126.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1127, P01-1126."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "D000618",
+            "name": "Steve Daines",
+            "ko": "스티브 데인스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/D000618"
+          },
+          {
+            "id": "S001232",
+            "name": "Tim Sheehy",
+            "ko": "팀 시히",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001232"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "팀 시히",
+          "en": "Tim Sheehy"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "새 Class I 의원은 {{blank}}입니다.",
+          "en": "The new Class I senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스티브 데인스",
+              "en": "Steve Daines"
+            },
+            {
+              "id": "B",
+              "ko": "팀 시히",
+              "en": "Tim Sheehy"
+            },
+            {
+              "id": "C",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "D",
+              "ko": "피터 웰치",
+              "en": "Peter Welch"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "D000618",
+            "name": "Steve Daines",
+            "ko": "스티브 데인스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/D000618"
+          },
+          {
+            "id": "S001232",
+            "name": "Tim Sheehy",
+            "ko": "팀 시히",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001232"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-290",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Initial appointment vs election useful.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "네브래스카의 공석 임명과 정기 선거 기록을 구분합니다.",
+            "en": "Separate Nebraska's appointment and regular election records."
+          },
+          {
+            "speaker": "player",
+            "ko": "2023년 임명으로 처음 진출한 의원은 …입니다.",
+            "en": "The senator first seated by appointment in 2023 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "리키츠는 2023년 임명으로 상원에 진출했습니다.",
+              "en": "Ricketts first entered the Senate by appointment in 2023."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 리키츠는 2023년 임명으로 상원에 진출했습니다.",
+              "en": "Let's review the record. Ricketts first entered the Senate by appointment in 2023."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "네브래스카의 최초 임명 진입과 이후 선거를 비교합니다.",
+            "en": "Compare Nebraska's initial appointment with subsequent elections."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "최초 진입 방식은 이후 선거로 바뀌지 않습니다.",
+            "en": "Later elections do not change the initial entry route."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "리케츠의 2023년 임명 진입을 선택합니다.",
+              "en": "Select Ricketts's 2023 appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "리키츠는 2023년 임명으로 상원에 진출했습니다.",
+              "en": "Ricketts first entered the Senate by appointment in 2023."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 리키츠는 2023년 임명으로 상원에 진출했습니다.",
+              "en": "Let's review the record. Ricketts first entered the Senate by appointment in 2023."
+            },
+            {
+              "speaker": "aide",
+              "ko": "정규선거를 최초 진입으로 표시하지 마세요.",
+              "en": "Do not mark a regular election as the initial entry."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-290",
+        "date": "2026-10-01",
+        "mechanism": "appointment-versus-election",
+        "learningTarget": "Ricketts first entered the Senate by appointment in 2023.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Ricketts first entered the Senate by appointment in 2023.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/NE/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/F000463",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/R000618",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-290-appointment-versus-election"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "F000463",
+            "name": "Deb Fischer",
+            "ko": "데브 피셔",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000463"
+          },
+          {
+            "id": "R000618",
+            "name": "Pete Ricketts",
+            "ko": "피트 리키츠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000618"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "피트 리키츠",
+          "en": "Pete Ricketts"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2023년 임명으로 처음 진출한 의원은 {{blank}}입니다.",
+          "en": "The senator first seated by appointment in 2023 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "데브 피셔",
+              "en": "Deb Fischer"
+            },
+            {
+              "id": "B",
+              "ko": "조시 홀리",
+              "en": "Josh Hawley"
+            },
+            {
+              "id": "C",
+              "ko": "피트 리키츠",
+              "en": "Pete Ricketts"
+            },
+            {
+              "id": "D",
+              "ko": "수전 콜린스",
+              "en": "Susan M. Collins"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "F000463",
+            "name": "Deb Fischer",
+            "ko": "데브 피셔",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000463"
+          },
+          {
+            "id": "R000618",
+            "name": "Pete Ricketts",
+            "ko": "피트 리키츠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000618"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-291",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "House transition distinct, card framing shallow.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "뉴저지의 하원 시절 인물과 상원 신임 인물 기록을 연결합니다.",
+            "en": "Link New Jersey's House-era character with the new Senate record."
+          },
+          {
+            "speaker": "player",
+            "ko": "해당 인물은 …입니다.",
+            "en": "The former House member is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 인물은 {{blank}}입니다.",
+          "en": "The former House member is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "코리 부커",
+              "en": "Cory A. Booker"
+            },
+            {
+              "id": "B",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "C",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            },
+            {
+              "id": "D",
+              "ko": "앤디 김",
+              "en": "Andy Kim"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "김은 연방 하원 재임 후 2024년 12월 상원에 취임했습니다.",
+              "en": "Kim entered the Senate in December 2024 after House service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 김은 연방 하원 재임 후 2024년 12월 상원에 취임했습니다.",
+              "en": "Let's review the record. Kim entered the Senate in December 2024 after House service."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "뉴저지의 하원 경험과 신규 상원 재임을 연결합니다.",
+            "en": "Connect New Jersey House experience with new Senate service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "양원 재임 구간을 구분하세요.",
+            "en": "Distinguish service intervals in both chambers."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 인물은 {{blank}}입니다.",
+          "en": "The former House member is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "코리 부커",
+              "en": "Cory A. Booker"
+            },
+            {
+              "id": "B",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "C",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            },
+            {
+              "id": "D",
+              "ko": "앤디 김",
+              "en": "Andy Kim"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "김의 하원 경력과 2024년 12월 진입을 연결합니다.",
+              "en": "Link Kim's House service and December 2024 entry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "김은 연방 하원 재임 후 2024년 12월 상원에 취임했습니다.",
+              "en": "Kim entered the Senate in December 2024 after House service."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 김은 연방 하원 재임 후 2024년 12월 상원에 취임했습니다.",
+              "en": "Let's review the record. Kim entered the Senate in December 2024 after House service."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의원의 경력을 복사하지 마세요.",
+              "en": "Do not copy another member's career."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-291",
+        "date": "2026-10-01",
+        "mechanism": "house-senate-reunion",
+        "learningTarget": "Kim entered the Senate in December 2024 after House service.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/NewSenators.htm",
+            "claim": "Kim entered the Senate in December 2024 after House service.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/NJ/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/B001288",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/K000394",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-291-house-senate-reunion"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-471, P01-1490, P01-1489.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-471, P01-1490, P01-1489."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "B001288",
+            "name": "Cory A. Booker",
+            "ko": "코리 부커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001288"
+          },
+          {
+            "id": "K000394",
+            "name": "Andy Kim",
+            "ko": "앤디 김",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000394"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "앤디 김",
+          "en": "Andy Kim"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "해당 인물은 {{blank}}입니다.",
+          "en": "The former House member is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "코리 부커",
+              "en": "Cory A. Booker"
+            },
+            {
+              "id": "B",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            },
+            {
+              "id": "C",
+              "ko": "랜드 폴",
+              "en": "Rand Paul"
+            },
+            {
+              "id": "D",
+              "ko": "앤디 김",
+              "en": "Andy Kim"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "B001288",
+            "name": "Cory A. Booker",
+            "ko": "코리 부커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001288"
+          },
+          {
+            "id": "K000394",
+            "name": "Andy Kim",
+            "ko": "앤디 김",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000394"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-292",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Career contrast useful, generic.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "애리조나 대표단의 하원 경력과 다른 경력 경로를 구별합니다.",
+            "en": "Distinguish Arizona's former House service from other career paths."
+          },
+          {
+            "speaker": "player",
+            "ko": "연방 하원 기록을 연결할 의원은 …입니다.",
+            "en": "The senator with a former House record is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연방 하원 기록을 연결할 의원은 {{blank}}입니다.",
+          "en": "The senator with a former House record is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "루벤 가예고",
+              "en": "Ruben Gallego"
+            },
+            {
+              "id": "B",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "C",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "가예고는 하원 재임 후 상원에 진출했습니다.",
+              "en": "Gallego served in the House before entering the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 가예고는 하원 재임 후 상원에 진출했습니다.",
+              "en": "Let's review the record. Gallego served in the House before entering the Senate."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "애리조나 두 의원의 이전 공직 경험을 비교합니다.",
+            "en": "Compare Arizona senators' prior public service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "하원 재임 여부를 공식 경력에서 확인하세요.",
+            "en": "Verify House service in official career records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연방 하원 기록을 연결할 의원은 {{blank}}입니다.",
+          "en": "The senator with a former House record is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "루벤 가예고",
+              "en": "Ruben Gallego"
+            },
+            {
+              "id": "B",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "C",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "갤리고의 하원 경력을 연결합니다.",
+              "en": "Link Gallego's House experience."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "가예고는 하원 재임 후 상원에 진출했습니다.",
+              "en": "Gallego served in the House before entering the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 가예고는 하원 재임 후 상원에 진출했습니다.",
+              "en": "Let's review the record. Gallego served in the House before entering the Senate."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 경력을 하원 재임으로 처리하지 마세요.",
+              "en": "Do not treat other experience as House service."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-292",
+        "date": "2026-10-01",
+        "mechanism": "career-path-contrast",
+        "learningTarget": "Gallego served in the House before entering the Senate.",
+        "evidence": [
+          {
+            "url": "https://bioguide.congress.gov/search/bio/G000574",
+            "claim": "Gallego served in the House before entering the Senate.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/AZ/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/G000574",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/K000377",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-292-career-path-contrast"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-093. P01 교차 팩 후보(하원 재임 확인): P01-018.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-093. P01 cross-pack candidates (House service checked): P01-018."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "G000574",
+            "name": "Ruben Gallego",
+            "ko": "루벤 가예고",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000574"
+          },
+          {
+            "id": "K000377",
+            "name": "Mark Kelly",
+            "ko": "마크 켈리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000377"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "루벤 가예고",
+          "en": "Ruben Gallego"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연방 하원 기록을 연결할 의원은 {{blank}}입니다.",
+          "en": "The senator with a former House record is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "루벤 가예고",
+              "en": "Ruben Gallego"
+            },
+            {
+              "id": "B",
+              "ko": "마크 켈리",
+              "en": "Mark Kelly"
+            },
+            {
+              "id": "C",
+              "ko": "버니 샌더스",
+              "en": "Bernard Sanders"
+            },
+            {
+              "id": "D",
+              "ko": "마크 워너",
+              "en": "Mark R. Warner"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "G000574",
+            "name": "Ruben Gallego",
+            "ko": "루벤 가예고",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000574"
+          },
+          {
+            "id": "K000377",
+            "name": "Mark Kelly",
+            "ko": "마크 켈리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000377"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-293",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Election scheduling; dated incumbent, not prediction.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스캐롤라이나 정기 선거 일정표를 분리합니다.",
+            "en": "Separate North Carolina's regular election calendar."
+          },
+          {
+            "speaker": "player",
+            "ko": "2026년 정기 선거 대상 의석은 …의 의석입니다.",
+            "en": "The seat up in 2026 is held by …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "틸리스는 Class II 의원입니다.",
+              "en": "Tillis holds Class II."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 틸리스는 Class II 의원입니다.",
+              "en": "Let's review the record. Tillis holds Class II."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "노스캐롤라이나의 2026년 정규선거 의석을 확인합니다.",
+            "en": "Identify North Carolina's seat facing the 2026 election."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "선거 결과가 아니라 기준일의 현직을 확인하세요.",
+            "en": "Check incumbency on the reference date, not election results."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "틸리스의 Class II 의석을 선택합니다.",
+              "en": "Select Tillis's Class II seat."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "틸리스는 Class II 의원입니다.",
+              "en": "Tillis holds Class II."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 틸리스는 Class II 의원입니다.",
+              "en": "Let's review the record. Tillis holds Class II."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석 주기를 적용하지 마세요.",
+              "en": "Do not apply the other seat's cycle."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-293",
+        "date": "2026-10-01",
+        "mechanism": "regular-election-cycle",
+        "learningTarget": "Tillis holds Class II.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/",
+            "claim": "Tillis holds Class II.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/NC/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/T000476",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/B001305",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-293-regular-election-cycle"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-1174.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. P01 cross-pack candidates (House service checked): P01-1174."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "T000476",
+            "name": "Thom Tillis",
+            "ko": "톰 틸리스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000476"
+          },
+          {
+            "id": "B001305",
+            "name": "Ted Budd",
+            "ko": "테드 버드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001305"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "톰 틸리스",
+          "en": "Thom Tillis"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2026년 정기 선거 대상 의석은 {{blank}}의 의석입니다.",
+          "en": "The seat up in 2026 is held by {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "테드 버드",
+              "en": "Ted Budd"
+            },
+            {
+              "id": "B",
+              "ko": "톰 틸리스",
+              "en": "Thom Tillis"
+            },
+            {
+              "id": "C",
+              "ko": "신디 하이드스미스",
+              "en": "Cindy Hyde-Smith"
+            },
+            {
+              "id": "D",
+              "ko": "론 존슨",
+              "en": "Ron Johnson"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "T000476",
+            "name": "Thom Tillis",
+            "ko": "톰 틸리스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000476"
+          },
+          {
+            "id": "B001305",
+            "name": "Ted Budd",
+            "ko": "테드 버드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001305"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-294",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Career file merge risks identity conflation.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "네바다의 연방 하원 경력 파일을 상원 자료와 합칩니다.",
+            "en": "Merge Nevada's earlier House career file with Senate records."
+          },
+          {
+            "speaker": "player",
+            "ko": "해당 의원은 …입니다.",
+            "en": "The senator with prior House service is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The senator with prior House service is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "캐서린 코테즈 매스토",
+              "en": "Catherine Cortez Masto"
+            },
+            {
+              "id": "B",
+              "ko": "미치 매코널",
+              "en": "Mitch McConnell"
+            },
+            {
+              "id": "C",
+              "ko": "재키 로즌",
+              "en": "Jacky Rosen"
+            },
+            {
+              "id": "D",
+              "ko": "존 부즈먼",
+              "en": "John Boozman"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "로즌은 상원 전에 연방 하원에서 재임했습니다.",
+              "en": "Rosen served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 로즌은 상원 전에 연방 하원에서 재임했습니다.",
+              "en": "Let's review the record. Rosen served in the House before the Senate."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "네바다 두 의원의 이전 입법 경험을 비교합니다.",
+            "en": "Compare Nevada senators' earlier legislative experience."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "각자의 양원 재임을 별도로 확인하세요.",
+            "en": "Verify each person's service separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The senator with prior House service is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "캐서린 코테즈 매스토",
+              "en": "Catherine Cortez Masto"
+            },
+            {
+              "id": "B",
+              "ko": "미치 매코널",
+              "en": "Mitch McConnell"
+            },
+            {
+              "id": "C",
+              "ko": "재키 로즌",
+              "en": "Jacky Rosen"
+            },
+            {
+              "id": "D",
+              "ko": "존 부즈먼",
+              "en": "John Boozman"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "로즌의 하원 경력을 연결합니다.",
+              "en": "Link Rosen's House service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "로즌은 상원 전에 연방 하원에서 재임했습니다.",
+              "en": "Rosen served in the House before the Senate."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 로즌은 상원 전에 연방 하원에서 재임했습니다.",
+              "en": "Let's review the record. Rosen served in the House before the Senate."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 인물의 경력을 합치지 마세요.",
+              "en": "Do not merge the two careers."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-294",
+        "date": "2026-10-01",
+        "mechanism": "house-file-merge",
+        "learningTarget": "Rosen served in the House before the Senate.",
+        "evidence": [
+          {
+            "url": "https://bioguide.congress.gov/search/bio/R000608",
+            "claim": "Rosen served in the House before the Senate.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/NV/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/C001113",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/R000608",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-294-house-file-merge"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-098. P01 교차 팩 후보(하원 재임 확인): P01-1342, P01-1339, P01-1132.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-098. P01 cross-pack candidates (House service checked): P01-1342, P01-1339, P01-1132."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "C001113",
+            "name": "Catherine Cortez Masto",
+            "ko": "캐서린 코테즈 매스토",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001113"
+          },
+          {
+            "id": "R000608",
+            "name": "Jacky Rosen",
+            "ko": "재키 로즌",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000608"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "재키 로즌",
+          "en": "Jacky Rosen"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "해당 의원은 {{blank}}입니다.",
+          "en": "The senator with prior House service is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "캐서린 코테즈 매스토",
+              "en": "Catherine Cortez Masto"
+            },
+            {
+              "id": "B",
+              "ko": "미치 매코널",
+              "en": "Mitch McConnell"
+            },
+            {
+              "id": "C",
+              "ko": "재키 로즌",
+              "en": "Jacky Rosen"
+            },
+            {
+              "id": "D",
+              "ko": "존 부즈먼",
+              "en": "John Boozman"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "C001113",
+            "name": "Catherine Cortez Masto",
+            "ko": "캐서린 코테즈 매스토",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C001113"
+          },
+          {
+            "id": "R000608",
+            "name": "Jacky Rosen",
+            "ko": "재키 로즌",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000608"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-295",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Appointment date identity, generic.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "플로리다의 2025년 공석 임명 기록을 갱신합니다.",
+            "en": "Update Florida's 2025 appointment record."
+          },
+          {
+            "speaker": "player",
+            "ko": "1월 21일 임명으로 취임한 의원은 …입니다.",
+            "en": "The appointee seated January 21 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1월 21일 임명으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated January 21 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "릭 스콧",
+              "en": "Rick Scott"
+            },
+            {
+              "id": "B",
+              "ko": "매기 해선",
+              "en": "Margaret Wood Hassan"
+            },
+            {
+              "id": "C",
+              "ko": "조니 언스트",
+              "en": "Joni Ernst"
+            },
+            {
+              "id": "D",
+              "ko": "애슐리 무디",
+              "en": "Ashley Moody"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "무디는 2025년 1월 21일 임명으로 취임했습니다.",
+              "en": "Moody entered by appointment January 21, 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 무디는 2025년 1월 21일 임명으로 취임했습니다.",
+              "en": "Let's review the record. Moody entered by appointment January 21, 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "플로리다의 2025년 공석 임명 자격을 검토합니다.",
+            "en": "Review Florida's 2025 vacancy appointment."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1월 21일 임명과 다른 의석을 구분하세요.",
+            "en": "Distinguish the January 21 appointment from the other seat."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1월 21일 임명으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated January 21 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "릭 스콧",
+              "en": "Rick Scott"
+            },
+            {
+              "id": "B",
+              "ko": "매기 해선",
+              "en": "Margaret Wood Hassan"
+            },
+            {
+              "id": "C",
+              "ko": "조니 언스트",
+              "en": "Joni Ernst"
+            },
+            {
+              "id": "D",
+              "ko": "애슐리 무디",
+              "en": "Ashley Moody"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "무디의 임명 진입을 인정합니다.",
+              "en": "Recognize Moody's appointed entry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "무디는 2025년 1월 21일 임명으로 취임했습니다.",
+              "en": "Moody entered by appointment January 21, 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 무디는 2025년 1월 21일 임명으로 취임했습니다.",
+              "en": "Let's review the record. Moody entered by appointment January 21, 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석을 변경하지 마세요.",
+              "en": "Do not change the other seat."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-295",
+        "date": "2026-10-01",
+        "mechanism": "cabinet-vacancy",
+        "learningTarget": "Moody entered by appointment January 21, 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Moody entered by appointment January 21, 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/FL/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001217",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M001244",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-295-cabinet-vacancy"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-089.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-089."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "S001217",
+            "name": "Rick Scott",
+            "ko": "릭 스콧",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001217"
+          },
+          {
+            "id": "M001244",
+            "name": "Ashley Moody",
+            "ko": "애슐리 무디",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001244"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "애슐리 무디",
+          "en": "Ashley Moody"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "1월 21일 임명으로 취임한 의원은 {{blank}}입니다.",
+          "en": "The appointee seated January 21 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "릭 스콧",
+              "en": "Rick Scott"
+            },
+            {
+              "id": "B",
+              "ko": "매기 해선",
+              "en": "Margaret Wood Hassan"
+            },
+            {
+              "id": "C",
+              "ko": "조니 언스트",
+              "en": "Joni Ernst"
+            },
+            {
+              "id": "D",
+              "ko": "애슐리 무디",
+              "en": "Ashley Moody"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "S001217",
+            "name": "Rick Scott",
+            "ko": "릭 스콧",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001217"
+          },
+          {
+            "id": "M001244",
+            "name": "Ashley Moody",
+            "ko": "애슐리 무디",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001244"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-296",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Missouri cycle application, generic.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "미주리의 두 정기 선거 주기를 분리합니다.",
+            "en": "Separate Missouri's two regular election cycles."
+          },
+          {
+            "speaker": "player",
+            "ko": "2028년 대상 Class III 의원은 …입니다.",
+            "en": "The Class III senator whose seat is up in 2028 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "슈미트는 Class III 의원입니다.",
+              "en": "Schmitt holds Class III."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 슈미트는 Class III 의원입니다.",
+              "en": "Let's review the record. Schmitt holds Class III."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "미주리의 2028년 정규선거 의석을 확인합니다.",
+            "en": "Identify Missouri's seat facing the 2028 election."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의석의 선거 주기를 분리하세요.",
+            "en": "Separate the seat cycles."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "슈미트의 Class III 의석을 선택합니다.",
+              "en": "Select Schmitt's Class III seat."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "슈미트는 Class III 의원입니다.",
+              "en": "Schmitt holds Class III."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 슈미트는 Class III 의원입니다.",
+              "en": "Let's review the record. Schmitt holds Class III."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의석 주기를 뒤집지 마세요.",
+              "en": "Do not reverse the cycles."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-296",
+        "date": "2026-10-01",
+        "mechanism": "class-calendar-contrast",
+        "learningTarget": "Schmitt holds Class III.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/",
+            "claim": "Schmitt holds Class III.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/MO/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/H001089",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/S001227",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-296-class-calendar-contrast"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "H001089",
+            "name": "Josh Hawley",
+            "ko": "조시 홀리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001089"
+          },
+          {
+            "id": "S001227",
+            "name": "Eric Schmitt",
+            "ko": "에릭 슈미트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001227"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "에릭 슈미트",
+          "en": "Eric Schmitt"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2028년 대상 Class III 의원은 {{blank}}입니다.",
+          "en": "The Class III senator whose seat is up in 2028 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "에릭 슈미트",
+              "en": "Eric Schmitt"
+            },
+            {
+              "id": "B",
+              "ko": "조시 홀리",
+              "en": "Josh Hawley"
+            },
+            {
+              "id": "C",
+              "ko": "태미 볼드윈",
+              "en": "Tammy Baldwin"
+            },
+            {
+              "id": "D",
+              "ko": "제임스 랭크퍼드",
+              "en": "James Lankford"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "H001089",
+            "name": "Josh Hawley",
+            "ko": "조시 홀리",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001089"
+          },
+          {
+            "id": "S001227",
+            "name": "Eric Schmitt",
+            "ko": "에릭 슈미트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S001227"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-297",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Seniority comparison meaningful, repeated stem.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "앨라배마 대표단의 취임일 순서로 소개합니다.",
+            "en": "Introduce Alabama's delegation in order of initial Senate entry."
+          },
+          {
+            "speaker": "player",
+            "ko": "먼저 취임한 의원은 …입니다.",
+            "en": "The senator who entered first is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who entered first is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "케이티 브릿",
+              "en": "Katie Boyd Britt"
+            },
+            {
+              "id": "B",
+              "ko": "토미 터버빌",
+              "en": "Tommy Tuberville"
+            },
+            {
+              "id": "C",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "D",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "터버빌은 2021년, 브릿은 2023년 취임했습니다.",
+              "en": "Tuberville entered in 2021 and Britt in 2023."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 터버빌은 2021년, 브릿은 2023년 취임했습니다.",
+              "en": "Let's review the record. Tuberville entered in 2021 and Britt in 2023."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "앨라배마 대표단의 가상 소개 순서를 정합니다.",
+            "en": "Set a simulated Alabama delegation introduction order."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "나이 대신 최초 상원 진입일을 비교하세요.",
+            "en": "Compare first Senate entry rather than age."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who entered first is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "케이티 브릿",
+              "en": "Katie Boyd Britt"
+            },
+            {
+              "id": "B",
+              "ko": "토미 터버빌",
+              "en": "Tommy Tuberville"
+            },
+            {
+              "id": "C",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "D",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "터버빌을 먼저 소개합니다.",
+              "en": "Introduce Tuberville first."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "터버빌은 2021년, 브릿은 2023년 취임했습니다.",
+              "en": "Tuberville entered in 2021 and Britt in 2023."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 터버빌은 2021년, 브릿은 2023년 취임했습니다.",
+              "en": "Let's review the record. Tuberville entered in 2021 and Britt in 2023."
+            },
+            {
+              "speaker": "aide",
+              "ko": "2021년과 2023년의 순서를 다시 비교하세요.",
+              "en": "Recompare the 2021 and 2023 entries."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-297",
+        "date": "2026-10-01",
+        "mechanism": "seniority-introduction",
+        "learningTarget": "Tuberville entered in 2021 and Britt in 2023.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/",
+            "claim": "Tuberville entered in 2021 and Britt in 2023.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/AL/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/T000278",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/B001319",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-297-seniority-introduction"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "T000278",
+            "name": "Tommy Tuberville",
+            "ko": "토미 터버빌",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000278"
+          },
+          {
+            "id": "B001319",
+            "name": "Katie Boyd Britt",
+            "ko": "케이티 브릿",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001319"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "토미 터버빌",
+          "en": "Tommy Tuberville"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 취임한 의원은 {{blank}}입니다.",
+          "en": "The senator who entered first is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "케이티 브릿",
+              "en": "Katie Boyd Britt"
+            },
+            {
+              "id": "B",
+              "ko": "토미 터버빌",
+              "en": "Tommy Tuberville"
+            },
+            {
+              "id": "C",
+              "ko": "크리스 머피",
+              "en": "Christopher Murphy"
+            },
+            {
+              "id": "D",
+              "ko": "로저 마셜",
+              "en": "Roger Marshall"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "T000278",
+            "name": "Tommy Tuberville",
+            "ko": "토미 터버빌",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000278"
+          },
+          {
+            "id": "B001319",
+            "name": "Katie Boyd Britt",
+            "ko": "케이티 브릿",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001319"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-298",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Runoff class distinction useful; no future control assumption.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "2021년 조지아 결선과 상원 다수당 변화를 연결합니다.",
+            "en": "Connect Georgia's 2021 runoffs to the Senate control change."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 당선자 중 Class II 의원은 …입니다.",
+            "en": "The winner holding Class II is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "2021년 결선에서 두 의원이 당선되었고 오소프는 Class II입니다.",
+              "en": "Both won the 2021 runoffs; Ossoff holds Class II."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 2021년 결선에서 두 의원이 당선되었고 오소프는 Class II입니다.",
+              "en": "Let's review the record. Both won the 2021 runoffs; Ossoff holds Class II."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "조지아 두 결선선거 의석에 별도 일정을 적용합니다.",
+            "en": "Apply separate calendars to Georgia's runoff seats."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "동일 선거일이 같은 의석 클래스를 의미하지 않습니다.",
+            "en": "A common election date does not imply the same class."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "오소프의 Class II 의석을 선택합니다.",
+              "en": "Select Ossoff's Class II seat."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "2021년 결선에서 두 의원이 당선되었고 오소프는 Class II입니다.",
+              "en": "Both won the 2021 runoffs; Ossoff holds Class II."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 2021년 결선에서 두 의원이 당선되었고 오소프는 Class II입니다.",
+              "en": "Let's review the record. Both won the 2021 runoffs; Ossoff holds Class II."
+            },
+            {
+              "speaker": "aide",
+              "ko": "동일한 선거 주기를 적용하지 마세요.",
+              "en": "Do not apply one cycle to both seats."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-298",
+        "date": "2026-10-01",
+        "mechanism": "runoff-and-control",
+        "learningTarget": "Both won the 2021 runoffs; Ossoff holds Class II.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/about/parties-leadership/majority-minority-leaders.htm",
+            "claim": "Both won the 2021 runoffs; Ossoff holds Class II.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/GA/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/O000174",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/W000790",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-298-runoff-and-control"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-082.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-082."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "O000174",
+            "name": "Jon Ossoff",
+            "ko": "존 오소프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/O000174"
+          },
+          {
+            "id": "W000790",
+            "name": "Raphael G. Warnock",
+            "ko": "라파엘 워녹",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000790"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "존 오소프",
+          "en": "Jon Ossoff"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "두 당선자 중 Class II 의원은 {{blank}}입니다.",
+          "en": "The winner holding Class II is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "라파엘 워녹",
+              "en": "Raphael G. Warnock"
+            },
+            {
+              "id": "B",
+              "ko": "척 그래슬리",
+              "en": "Chuck Grassley"
+            },
+            {
+              "id": "C",
+              "ko": "존 오소프",
+              "en": "Jon Ossoff"
+            },
+            {
+              "id": "D",
+              "ko": "팀 스콧",
+              "en": "Tim Scott"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "O000174",
+            "name": "Jon Ossoff",
+            "ko": "존 오소프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/O000174"
+          },
+          {
+            "id": "W000790",
+            "name": "Raphael G. Warnock",
+            "ko": "라파엘 워녹",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000790"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-299",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 6,
+      "finding": "Party contact alone, no policy comparison.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜실베이니아 지역 현안에 양당을 초청합니다.",
+            "en": "Invite both parties to a Pennsylvania state policy discussion."
+          },
+          {
+            "speaker": "player",
+            "ko": "공화당 측 의원은 …입니다.",
+            "en": "The Republican participant is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 의원은 {{blank}}입니다.",
+          "en": "The Republican participant is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 페터먼",
+              "en": "John Fetterman"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "D",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "매코믹은 공화당, 페터먼은 민주당입니다.",
+              "en": "McCormick is Republican and Fetterman Democratic."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 매코믹은 공화당, 페터먼은 민주당입니다.",
+              "en": "Let's review the record. McCormick is Republican and Fetterman Democratic."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "펜실베이니아 주민 현안에 양당 의견을 요청합니다.",
+            "en": "Seek both parties' views on a Pennsylvania constituent issue."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "정당 소속과 실제 정책 찬반을 구분하세요.",
+            "en": "Distinguish affiliation from actual policy support."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 의원은 {{blank}}입니다.",
+          "en": "The Republican participant is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 페터먼",
+              "en": "John Fetterman"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "D",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "맥코믹에게 공화당 측 초청을 보냅니다.",
+              "en": "Send the simulated Republican invitation to McCormick."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "매코믹은 공화당, 페터먼은 민주당입니다.",
+              "en": "McCormick is Republican and Fetterman Democratic."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 매코믹은 공화당, 페터먼은 민주당입니다.",
+              "en": "Let's review the record. McCormick is Republican and Fetterman Democratic."
+            },
+            {
+              "speaker": "aide",
+              "ko": "정당만으로 정책 입장을 추정하지 마세요.",
+              "en": "Do not infer policy positions from party alone."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-299",
+        "date": "2026-10-01",
+        "mechanism": "split-state-cooperation",
+        "learningTarget": "McCormick is Republican and Fetterman Democratic.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/",
+            "claim": "McCormick is Republican and Fetterman Democratic.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/PA/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/F000479",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M001243",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-299-split-state-cooperation"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-097.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-097."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "F000479",
+            "name": "John Fetterman",
+            "ko": "존 페터먼",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000479"
+          },
+          {
+            "id": "M001243",
+            "name": "David McCormick",
+            "ko": "데이브 매코믹",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001243"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "데이브 매코믹",
+          "en": "David McCormick"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 의원은 {{blank}}입니다.",
+          "en": "The Republican participant is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 페터먼",
+              "en": "John Fetterman"
+            },
+            {
+              "id": "B",
+              "ko": "케빈 크레이머",
+              "en": "Kevin Cramer"
+            },
+            {
+              "id": "C",
+              "ko": "짐 뱅크스",
+              "en": "Jim Banks"
+            },
+            {
+              "id": "D",
+              "ko": "데이브 매코믹",
+              "en": "David McCormick"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "F000479",
+            "name": "John Fetterman",
+            "ko": "존 페터먼",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000479"
+          },
+          {
+            "id": "M001243",
+            "name": "David McCormick",
+            "ko": "데이브 매코믹",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001243"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    },
+    {
+      "id": "P02-300",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Regular election vs appointment useful; generic.",
+      "classification": "targeted-edit",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오하이오 정기 선거 취임과 공석 임명을 구분합니다.",
+            "en": "Distinguish Ohio's regular election entry from vacancy appointment."
+          },
+          {
+            "speaker": "player",
+            "ko": "2025년 1월 21일 임명 취임자는 …입니다.",
+            "en": "The appointee seated January 21, 2025 is …."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 기록에 맞게 처리해 주세요.",
+            "en": "Please use the official record to complete the task."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "허스테드는 2025년 1월 21일 임명으로 상원에 취임했습니다.",
+              "en": "Husted entered the Senate by appointment January 21, 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 허스테드는 2025년 1월 21일 임명으로 상원에 취임했습니다.",
+              "en": "Let's review the record. Husted entered the Senate by appointment January 21, 2025."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오하이오 두 의원의 선거와 임명 진입을 비교합니다.",
+            "en": "Compare Ohio's elected and appointed entry routes."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1월 21일 임명 기록은 정규선거와 구분하세요.",
+            "en": "Distinguish the January 21 appointment from regular election."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "허스티드의 임명 진입을 선택합니다.",
+              "en": "Select Husted's appointed entry."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "허스테드는 2025년 1월 21일 임명으로 상원에 취임했습니다.",
+              "en": "Husted entered the Senate by appointment January 21, 2025."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "기록을 다시 확인하겠습니다. 허스테드는 2025년 1월 21일 임명으로 상원에 취임했습니다.",
+              "en": "Let's review the record. Husted entered the Senate by appointment January 21, 2025."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 진입 경로를 뒤바꾸지 마세요.",
+              "en": "Do not reverse the entry routes."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-300",
+        "date": "2026-10-01",
+        "mechanism": "vacancy-versus-regular",
+        "learningTarget": "Husted entered the Senate by appointment January 21, 2025.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/senators/AppointedSenators.htm",
+            "claim": "Husted entered the Senate by appointment January 21, 2025.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/OH/senators.htm",
+            "claim": "State delegation record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/M001242",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          },
+          {
+            "url": "https://bioguide.congress.gov/search/bio/H001104",
+            "claim": "Congressional service record.",
+            "asOf": "2026-10-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-300-vacancy-versus-regular"
+        },
+        "venue": {
+          "ko": "상원 정책·대표단 협의",
+          "en": "Senate policy and delegation briefing"
+        },
+        "context": {
+          "ko": "공식 명부와 역사 기록에 근거한 가상 상황. 실제 발언 아님. 연속 사건 후보: P02-088.",
+          "en": "Fictional situation based on official rosters and historical records; not actual quotations. Continuity candidate: P02-088."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M001242",
+            "name": "Bernie Moreno",
+            "ko": "버니 모레노",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001242"
+          },
+          {
+            "id": "H001104",
+            "name": "Jon Husted",
+            "ko": "존 허스테드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001104"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "존 허스테드",
+          "en": "Jon Husted"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "2025년 1월 21일 임명 취임자는 {{blank}}입니다.",
+          "en": "The appointee seated January 21, 2025 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존 허스테드",
+              "en": "Jon Husted"
+            },
+            {
+              "id": "B",
+              "ko": "버니 모레노",
+              "en": "Bernie Moreno"
+            },
+            {
+              "id": "C",
+              "ko": "제리 모런",
+              "en": "Jerry Moran"
+            },
+            {
+              "id": "D",
+              "ko": "루벤 가예고",
+              "en": "Ruben Gallego"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "d91690da9c2006ac8603ca86e76927e26159dccb",
+        "cast": [
+          {
+            "id": "M001242",
+            "name": "Bernie Moreno",
+            "ko": "버니 모레노",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001242"
+          },
+          {
+            "id": "H001104",
+            "name": "Jon Husted",
+            "ko": "존 허스테드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H001104"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Beyond Q2-C R2 coverage; preserve original dated core and evidence, no independent recertification."
+    }
+  ]
+}

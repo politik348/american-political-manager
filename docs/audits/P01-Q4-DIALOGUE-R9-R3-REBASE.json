@@ -1,0 +1,1124 @@
+{
+  "schema": "q4-r9-r3-rebase-v1",
+  "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+  "rows": [
+    {
+      "id": "P01-295",
+      "path": "data/dialogue-packs/P01/part-12.json",
+      "originalBlobSha": "e612fe2acc791c4ca288957f96539ed69deda8cc",
+      "priorAuditBlobSha": "7cab67e554eef31daebdd6a0c63b43afbf24a8af",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-12.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "cast identity names/order unchanged, restored IDs preserved",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "player",
+            "ko": "10년 전 선거 광고는 12번이었는데 지금도 그렇습니까?",
+            "en": "Your ad ten years ago said district twelve. Is that still your district?"
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "그사이 선거구 명부가 바뀌었습니다.",
+            "en": "The district directory has changed since then."
+          },
+          {
+            "speaker": "aide",
+            "ko": "1999",
+            "en": "2000년 미시간 매뉴얼을 확인합니다."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "다음 주민 면담에는 현재 번호로 연락하세요.",
+              "en": "Use the current number for our next meeting."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "현재 미시간 제10선거구를 대표합니다.",
+              "en": "I now represent Michigan's tenth district."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "10년 전 선거 광고는 12번이었는데 지금도 그렇습니까?",
+              "en": "Your ad ten years ago said district twelve. Is that still your district?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "그사이 선거구 명부가 바뀌었습니다.",
+              "en": "The district directory has changed since then."
+            },
+            {
+              "speaker": "aide",
+              "ko": "1999",
+              "en": "2000년 미시간 매뉴얼을 확인합니다."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "1990년 선거 광고의 번호를 현재 주민 안내에 그대로 사용했습니다.",
+              "en": "A current constituent guide reuses the district number from the 1990 campaign ad."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1999~2000년 미시간 매뉴얼에서 현재 번호를 확인하세요.",
+              "en": "Check the current number in the 1999–2000 Michigan Manual."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "다음 주민 면담에는 현재 번호로 연락하세요.",
+                "en": "Use the current number for our next meeting."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "현재 미시간 제10선거구를 대표합니다.",
+                "en": "I now represent Michigan's tenth district."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "현재 문의는 MI-10 기준으로 정리하고 1990년 광고는 MI-12 자료로 보존하세요.",
+                "en": "Route current inquiries under MI-10 and retain the 1990 advertisement as MI-12 material."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "현재 MI-10입니다. 과거 광고를 현재 지도 대신 사용하지 마세요.",
+                "en": "I currently represent MI-10. Do not use an old advertisement in place of the current map."
+              },
+              {
+                "speaker": "player",
+                "ko": "1990년 광고를 배포할 때는 당시 자료라는 설명을 붙이고, 현재 주민 안내문은 회수하겠습니다.",
+                "en": "I'll label the 1990 ad as historical material and withdraw the current guide."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-295",
+        "mechanism": "map-comparison",
+        "learningTarget": "The Michigan Manual for 1999–2000 identifies David Bonior as MI-10.",
+        "date": "2000-02-07",
+        "venue": {
+          "ko": "미시간 대표단 주민 접견",
+          "en": "Michigan constituent reception"
+        },
+        "context": {
+          "ko": "1990년 선거 광고의 번호를 기억하는 주민이 현재 의원을 찾아온다.",
+          "en": "A resident remembers the number on a 1990 ad and seeks the current member."
+        },
+        "cast": [
+          {
+            "id": "B000619",
+            "name": "David Edward Bonior",
+            "ko": "데이비드 보니어",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9583"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "보니어 의원의 현재 지역구는 {{blank}}입니다.",
+          "en": "Bonior's current district is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "MI-10",
+              "en": "MI-10"
+            },
+            {
+              "id": "B",
+              "ko": "MI-12",
+              "en": "MI-12"
+            },
+            {
+              "id": "C",
+              "ko": "MI-6",
+              "en": "MI-6"
+            },
+            {
+              "id": "D",
+              "ko": "MI-8",
+              "en": "MI-8"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9583",
+            "claim": "The Michigan Manual for 1999–2000 identifies David Bonior as MI-10.",
+            "asOf": "2000-02-07"
+          },
+          {
+            "url": "https://www.legislature.mi.gov/%28S%28jnheyz43cyl4fy5oca21cls3%29%29/documents/1999-2000/michiganmanual/1999-mm-p0630-p0645.pdf",
+            "claim": "The Michigan Manual for 1999–2000 identifies David Bonior as MI-10.",
+            "asOf": "2000-02-07"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-295"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-253",
+      "path": "data/dialogue-packs/P01/part-11.json",
+      "originalBlobSha": "804d131a477070ddf0dd33a6048905e6982b4bfa",
+      "priorAuditBlobSha": "1acaea0f1a430e834b955e7033351c9b955f378a",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-11.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "cast identity names/order unchanged, restored IDs preserved",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이번엔 워싱턴의 표결 일정이 아니라 시정 업무입니다.",
+            "en": "This time it's city business, not votes in Washington."
+          },
+          {
+            "speaker": "player",
+            "ko": "새로운 기관에서 만나네요.",
+            "en": "We're meeting in a different institution."
+          },
+          {
+            "speaker": "aide",
+            "ko": "이번 접견에는 현재 직책을 적으세요.",
+            "en": "Enter his current title for this meeting."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "시민 생활 문제로 다시 만나죠.",
+              "en": "Let's meet again about city life."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1934년 뉴욕시장에 취임했습니다.",
+              "en": "I became New York mayor in 1934."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이번엔 워싱턴의 표결 일정이 아니라 시정 업무입니다.",
+              "en": "This time it's city business, not votes in Washington."
+            },
+            {
+              "speaker": "player",
+              "ko": "새로운 기관에서 만나네요.",
+              "en": "We're meeting in a different institution."
+            },
+            {
+              "speaker": "aide",
+              "ko": "이번 접견에는 현재 직책을 적으세요.",
+              "en": "Enter his current title for this meeting."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "뉴욕 주민이 예전 하원 의원실에 시정 민원을 보내려 합니다.",
+              "en": "A New Yorker plans to send a municipal complaint to the former House office."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1934년 현재 제 직책을 확인해 문의의 관할부터 구분하세요.",
+              "en": "Verify my current office in 1934 before routing the inquiry."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시민 생활 문제로 다시 만나죠.",
+                "en": "Let's meet again about city life."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1934년 뉴욕시장에 취임했습니다.",
+                "en": "I became New York mayor in 1934."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "시정 문의는 해당 시정부 절차로 보내고 과거 연방 임기는 따로 보존하세요.",
+                "en": "Route municipal inquiries through city procedures and retain my former federal terms separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 1934년 뉴욕시장이 됐습니다. 주정부나 연방 의회로 분류한 안내를 고치세요.",
+                "en": "I became New York City mayor in 1934. Correct any guide identifying my office as state or federal legislative."
+              },
+              {
+                "speaker": "player",
+                "ko": "시정 민원을 연방 의원실로 보내려던 주민에게 시정부 연락 경로를 다시 안내하겠습니다.",
+                "en": "I'll redirect the constituent who was about to send a city complaint to the federal office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-253",
+        "mechanism": "reunion",
+        "learningTarget": "La Guardia became New York mayor in 1934 after House service ended in 1933.",
+        "date": "1934-02-05",
+        "venue": {
+          "ko": "뉴욕시청",
+          "en": "New York City Hall"
+        },
+        "context": {
+          "ko": "하원의원으로 알던 인물이 시청에서 맞이한다.",
+          "en": "A former House contact receives you at City Hall."
+        },
+        "cast": [
+          {
+            "id": "L000007",
+            "name": "Fiorello Henry La Guardia",
+            "ko": "피오렐로 라과디아",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16582"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이제 라과디아 님은 {{blank}}입니다.",
+          "en": "La Guardia now serves as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴욕주지사",
+              "en": "governor of New York"
+            },
+            {
+              "id": "B",
+              "ko": "하원의장",
+              "en": "Speaker of the House"
+            },
+            {
+              "id": "C",
+              "ko": "뉴욕시장",
+              "en": "mayor of New York City"
+            },
+            {
+              "id": "D",
+              "ko": "상원의원",
+              "en": "U.S. senator"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16582",
+            "claim": "La Guardia became New York mayor in 1934 after House service ended in 1933.",
+            "asOf": "1934-02-05"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-253"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-306",
+      "path": "data/dialogue-packs/P01/part-13.json",
+      "originalBlobSha": "e1e01208f27d01e3cb68e280d8f100c7fa5bf782",
+      "priorAuditBlobSha": "8b4a0779287e2ca4f691d24b57497980a10d63d6",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-13.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "cast identity names/order unchanged, restored IDs preserved",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "미시시피에서 태어나셨다고 들었습니다.",
+            "en": "I heard you were born in Mississippi."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "그렇지만 우리의 의회 활동 기반은 뉴올리언스 쪽이죠.",
+            "en": "But our congressional work is based around New Orleans."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "출생지와 선거구는 구분해 주세요.",
+            "en": "Please distinguish birthplace and constituency."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "좋습니다. 지역 주민들과 인사를 나누죠.",
+              "en": "Good. Let us greet the local residents."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "루이지애나를 대표합니다. 미시시피는 출생지입니다.",
+              "en": "I represent Louisiana; Mississippi is my birthplace."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "미시시피에서 태어나셨다고 들었습니다.",
+              "en": "I heard you were born in Mississippi."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "그렇지만 우리의 의회 활동 기반은 뉴올리언스 쪽이죠.",
+              "en": "But our congressional work is based around New Orleans."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "출생지와 선거구는 구분해 주세요.",
+              "en": "Please distinguish birthplace and constituency."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "보그스 부부의 소개문에서 출생지와 현재 대표 지역이 뒤바뀌었습니다.",
+              "en": "A biography of the Boggs family swaps birthplace and current constituency."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제 출생지는 미시시피입니다. 현재 하원 대표 주는 별도로 확인하세요.",
+              "en": "My birthplace is Mississippi. Verify my current House constituency separately."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "가족의 기록과 현직 의원의 기록도 분리해 주세요.",
+              "en": "Keep family records separate from the sitting member's service record."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "좋습니다. 지역 주민들과 인사를 나누죠.",
+                "en": "Good. Let us greet the local residents."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "루이지애나를 대표합니다. 미시시피는 출생지입니다.",
+                "en": "I represent Louisiana; Mississippi is my birthplace."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "루이지애나 주민의 접견으로 안내하고 출생지 기록은 따로 남기세요.",
+                "en": "Route the meeting to Louisiana constituents and retain the birthplace record separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "저는 루이지애나를 대표합니다. 미시시피는 출생지입니다.",
+                "en": "I represent Louisiana; Mississippi is my birthplace."
+              },
+              {
+                "speaker": "player",
+                "ko": "출생지로 분류한 접견 요청을 취소하고 루이지애나 주민으로 다시 배정하겠습니다.",
+                "en": "I'll cancel the meeting assigned by birthplace and route it to Louisiana constituents."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-306",
+        "mechanism": "family-geography",
+        "learningTarget": "Hale Boggs represented Louisiana and was born in Mississippi; Lindy Boggs was his wife.",
+        "date": "1971-06-09",
+        "venue": {
+          "ko": "뉴올리언스 지역 행사",
+          "en": "New Orleans local event"
+        },
+        "context": {
+          "ko": "지역 주민이 의원의 출생지와 대표 주를 혼동한다.",
+          "en": "A resident confuses the member's birthplace with his constituency."
+        },
+        "cast": [
+          {
+            "id": "B000594",
+            "name": "Thomas Hale Boggs Sr.",
+            "ko": "헤일 보그스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9547"
+          },
+          {
+            "id": null,
+            "name": "Corinne Claiborne Boggs",
+            "ko": "린디 보그스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9543"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "보그스 의원은 {{blank}}를 대표하시는군요.",
+          "en": "Congressman Boggs represents {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "미시시피",
+              "en": "Mississippi"
+            },
+            {
+              "id": "B",
+              "ko": "텍사스",
+              "en": "Texas"
+            },
+            {
+              "id": "C",
+              "ko": "루이지애나",
+              "en": "Louisiana"
+            },
+            {
+              "id": "D",
+              "ko": "앨라배마",
+              "en": "Alabama"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9547",
+            "claim": "Hale Boggs represented Louisiana and was born in Mississippi; Lindy Boggs was his wife.",
+            "asOf": "1971-06-09"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/9543",
+            "claim": "Hale Boggs represented Louisiana and was born in Mississippi; Lindy Boggs was his wife.",
+            "asOf": "1971-06-09"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-306-family-geography"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-342",
+      "path": "data/dialogue-packs/P01/part-14.json",
+      "originalBlobSha": "9e40aa950a04558758560a2f3100fab8a4fc6b2a",
+      "priorAuditBlobSha": "288484a3c933d7aa9aaa3657f51d1be129089ebf",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-14.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "cast identity names/order unchanged, restored IDs preserved",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "이 지역에는 통근자가 많이 사는 교외 도시들이 있습니다.",
+            "en": "Many commuters live in this district's suburban communities."
+          },
+          {
+            "speaker": "host",
+            "ko": "지역 교통 문제를 도시 전체 문제로만 보기는 어렵죠.",
+            "en": "Transportation here is not just a central-city issue."
+          },
+          {
+            "speaker": "player",
+            "ko": "새 지역구의 지리적 특성을 기록하겠습니다.",
+            "en": "I will note the geography of the constituency."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "통근 주민의 이야기를 더 듣죠.",
+              "en": "Let us hear more from the commuters."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "델타 지역의 교외 생활권입니다. 이곳에서 지역 대표 활동을 합니다.",
+              "en": "It is a delta district of suburban communities."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 지역에는 통근자가 많이 사는 교외 도시들이 있습니다.",
+              "en": "Many commuters live in this district's suburban communities."
+            },
+            {
+              "speaker": "host",
+              "ko": "지역 교통 문제를 도시 전체 문제로만 보기는 어렵죠.",
+              "en": "Transportation here is not just a central-city issue."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 지역구의 지리적 특성을 기록하겠습니다.",
+              "en": "I will note the geography of the constituency."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "통근자 교통 회의가 도심 거주자만 대상으로 준비됐습니다.",
+              "en": "A commuter transport forum was prepared only for downtown residents."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "1996년 새 지역구의 지리와 통근 생활권을 확인하세요.",
+              "en": "Identify the new district's 1996 geography and commuting communities."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "통근 주민의 이야기를 더 듣죠.",
+                "en": "Let us hear more from the commuters."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "델타 지역의 교외 생활권입니다. 이곳에서 지역 대표 활동을 합니다.",
+                "en": "It is a delta district of suburban communities."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "델타 교외 주민의 통근 질문을 별도로 받고 도시 전체의 교통 문제와 구별하세요.",
+                "en": "Take delta suburban commuters' questions separately from central-city transportation issues."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "베이 지역 델타의 교외 생활권입니다. 도심 금융가로 소개하지 마세요.",
+                "en": "It is a Bay Area delta suburban constituency, not a downtown financial district."
+              },
+              {
+                "speaker": "player",
+                "ko": "도심 거주자에게만 보낸 초청장을 수정해 델타 생활권 주민도 초청하겠습니다.",
+                "en": "I'll revise the invitation that went only to downtown residents to include the delta communities."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-342",
+        "mechanism": "community-geography",
+        "learningTarget": "Tauscher entered the House after contesting a newly created Bay Area delta district of bedroom communities in 1996.",
+        "date": "1997-04-21",
+        "venue": {
+          "ko": "캘리포니아 이스트베이 주민회의",
+          "en": "California East Bay community meeting"
+        },
+        "context": {
+          "ko": "통근자들이 새 의원에게 지역 교통 문제를 전한다.",
+          "en": "Commuters bring regional transportation concerns to their new representative."
+        },
+        "cast": [
+          {
+            "name": "Ellen O'Kane Tauscher",
+            "ko": "엘런 타우셔",
+            "id": "T000057",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22703"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1996년 선거 당시 지역구는 베이 지역의 {{blank}} 지역이었군요.",
+          "en": "In the 1996 election, the district was a Bay Area {{blank}} constituency.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "델타·교외",
+              "en": "delta and suburban"
+            },
+            {
+              "id": "B",
+              "ko": "산악·광산",
+              "en": "mountain and mining"
+            },
+            {
+              "id": "C",
+              "ko": "도심 금융가",
+              "en": "downtown financial district"
+            },
+            {
+              "id": "D",
+              "ko": "사막 농촌",
+              "en": "desert farming"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22703",
+            "claim": "Tauscher entered the House after contesting a newly created Bay Area delta district of bedroom communities in 1996.",
+            "asOf": "1997-04-21"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-342-community-geography"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-344",
+      "path": "data/dialogue-packs/P01/part-14.json",
+      "originalBlobSha": "9e40aa950a04558758560a2f3100fab8a4fc6b2a",
+      "priorAuditBlobSha": "288484a3c933d7aa9aaa3657f51d1be129089ebf",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-14.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "cast identity names/order unchanged, restored IDs preserved",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "예전 지역 설명에는 공화당 성향이 더 강했다고 합니다.",
+            "en": "The old district description says it leaned more Republican."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "2002년 선거에 적용된 지도는 달라졌죠.",
+            "en": "The map used in 2002 changed the district."
+          },
+          {
+            "speaker": "player",
+            "ko": "이전 구성부터 명확히 설명하겠습니다.",
+            "en": "I will describe the earlier political makeup clearly."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "그렇게 이전 지도와 현재 지도를 구분하죠.",
+              "en": "Let us distinguish the old and current maps."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "재편 전에는 민주당보다 공화당 성향이 강한 지역이었습니다.",
+              "en": "Before reapportionment the district was more Republican than Democratic."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "예전 지역 설명에는 공화당 성향이 더 강했다고 합니다.",
+              "en": "The old district description says it leaned more Republican."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2002년 선거에 적용된 지도는 달라졌죠.",
+              "en": "The map used in 2002 changed the district."
+            },
+            {
+              "speaker": "player",
+              "ko": "이전 구성부터 명확히 설명하겠습니다.",
+              "en": "I will describe the earlier political makeup clearly."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "재획정 전후의 정당 구성 자료가 같은 시점으로 표시됐습니다.",
+              "en": "Party-composition descriptions before and after redistricting have the same date."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2002년 선거에 적용된 새 지도 이전의 지역 설명을 확인하세요.",
+              "en": "Check the description of the district before the map used in the 2002 election."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇게 이전 지도와 현재 지도를 구분하죠.",
+                "en": "Let us distinguish the old and current maps."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "재편 전에는 민주당보다 공화당 성향이 강한 지역이었습니다.",
+                "en": "Before reapportionment the district was more Republican than Democratic."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "당시 공화당 성향이 더 강했다는 설명을 이전 지도에 붙이고 이후 성향은 별도 자료로 확인하세요.",
+                "en": "Attach the description of stronger Republican leaning to the earlier map and verify later composition separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "재편 전에는 공화당 성향이 더 강했습니다. 이 설명을 현재 득표율로 사용하면 안 됩니다.",
+                "en": "Before redistricting it leaned more Republican. Do not treat that description as a current vote share."
+              },
+              {
+                "speaker": "player",
+                "ko": "현재 선거 자료에 잘못 붙인 과거 정당 성향 설명을 제거하겠습니다.",
+                "en": "I'll remove the historical party description from the current election material."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-344",
+        "mechanism": "boundary-tradeoff",
+        "learningTarget": "Before the 2002 reapportionment, Tauscher's suburban district was more Republican than Democratic.",
+        "date": "2003-02-18",
+        "venue": {
+          "ko": "캘리포니아 지역 공공 포럼",
+          "en": "California public forum"
+        },
+        "context": {
+          "ko": "지역 재편 전후의 정당 등록 구성이 달라진 점을 주민이 질문한다.",
+          "en": "A resident asks how the political composition changed after reapportionment."
+        },
+        "cast": [
+          {
+            "name": "Ellen O'Kane Tauscher",
+            "ko": "엘런 타우셔",
+            "id": "T000057",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/22703"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "재편 전에는 {{blank}} 쪽 유권자가 더 많았군요.",
+          "en": "Before reapportionment, the district was more {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "B",
+              "ko": "민주당",
+              "en": "Democratic"
+            },
+            {
+              "id": "C",
+              "ko": "사회당",
+              "en": "Socialist"
+            },
+            {
+              "id": "D",
+              "ko": "자유당",
+              "en": "Libertarian"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/22703",
+            "claim": "Before the 2002 reapportionment, Tauscher's suburban district was more Republican than Democratic.",
+            "asOf": "2003-02-18"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-344-boundary-tradeoff"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-482",
+      "path": "data/dialogue-packs/P01/part-20.json",
+      "originalBlobSha": "94e0d3614af00017946a391d48b0c061209dfc20",
+      "priorAuditBlobSha": "e4361e76b11ef41c9f53d0b792f8b29830556a8b",
+      "priorAuditPath": "docs/audits/P01-Q4-DIALOGUE-R7-part-20.json",
+      "sourceCommit": "d767ed4bb6031e1ca83c323fe9b576f15c526eb8",
+      "category": "R3_hold_rebase",
+      "reason": "legacy protected.correct was compared at top level rather than response.correct; omit prior response edit and preserve current full response",
+      "originalFields": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "4월 11일 워싱턴 대표직을 사임했습니다.",
+            "en": "I resigned my Washington post on April 11."
+          },
+          {
+            "speaker": "player",
+            "ko": "이번에는 섬의 사법기관으로 옮기셨군요.",
+            "en": "You've moved into the island's judiciary."
+          }
+        ],
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "이제 그 직무를 맡습니다.",
+              "en": "I now serve in that office."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "다빌라는 대법관 임명으로 1932년 4월 사임했습니다.",
+              "en": "Córdova Dávila resigned in April 1932 to become an associate justice."
+            }
+          ]
+        }
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "4월 11일 워싱턴 대표직을 사임했습니다.",
+              "en": "I resigned my Washington post on April 11."
+            },
+            {
+              "speaker": "player",
+              "ko": "이번에는 섬의 사법기관으로 옮기셨군요.",
+              "en": "You've moved into the island's judiciary."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "1932년 4월의 사임 기록에 이어 새 공직을 소개하는 문장을 작성하려 합니다.",
+              "en": "I'm writing a description of your next public office after the April 1932 resignation."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "4월 11일의 사임과 이후 임명을 각각 정확히 설명해 주세요.",
+              "en": "Please describe my April 11 resignation and subsequent appointment accurately."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "이제 그 직무를 맡습니다.",
+                "en": "I now serve in that office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "다빌라는 대법관 임명으로 1932년 4월 사임했습니다.",
+                "en": "Córdova Dávila resigned in April 1932 to become an associate justice."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "새 사법 직책을 별도 기록하고 워싱턴 대표직의 종료를 보존하세요.",
+                "en": "Record the new judicial office separately and retain the end of my Washington service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "푸에르토리코 대법원 대법관으로 임명됐습니다. 새 입법직으로 기록하지 마세요.",
+                "en": "I was appointed an associate justice of Puerto Rico's Supreme Court, not to another legislative office."
+              },
+              {
+                "speaker": "player",
+                "ko": "새 입법직으로 잘못 소개한 행사 안내를 회수하겠습니다.",
+                "en": "I'll withdraw the event program that wrongly describes a new legislative office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-482",
+        "mechanism": "office-handover",
+        "learningTarget": "Córdova Dávila resigned April 11, 1932 to join Puerto Rico's supreme court.",
+        "date": "1932-05-01",
+        "venue": {
+          "ko": "법원 취임 접견",
+          "en": "Judicial reception"
+        },
+        "context": {
+          "ko": "전 상주위원이 섬으로 돌아온 이유를 설명한다.",
+          "en": "A former commissioner explains his return to the island."
+        },
+        "cast": [
+          {
+            "id": null,
+            "name": "Félix Córdova Dávila",
+            "ko": "펠릭스 코르도바 다빌라",
+            "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A9lix_C%C3%B3rdova_D%C3%A1vila.jpg",
+            "source": "https://history.house.gov/People/Detail/44573"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 직책은 푸에르토리코 {{blank}}의 대법관입니다.",
+          "en": "Your new post is associate justice of Puerto Rico's {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "상원",
+              "en": "Senate"
+            },
+            {
+              "id": "B",
+              "ko": "시의회",
+              "en": "Municipal council"
+            },
+            {
+              "id": "C",
+              "ko": "대법원",
+              "en": "Supreme Court"
+            },
+            {
+              "id": "D",
+              "ko": "선거위원회",
+              "en": "Election board"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/44573",
+            "claim": "Córdova Dávila resigned April 11, 1932 to join Puerto Rico's supreme court.",
+            "asOf": "1932-05-01"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_C%C3%B3rdova_D%C3%A1vila.jpg",
+            "claim": "Portrait of Félix Córdova Dávila. Library of Congress cph.3c13059; 1919 Bain collection, no known restrictions. Illustrative portrait, not evidence of fictional encounter.",
+            "asOf": "1932-05-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-482-office-handover"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ],
+  "limitations": [
+    "Six safe editorial rebases only; remaining historical flags not cleared. P01-482 response untouched; original options may still cue answer."
+  ]
+}

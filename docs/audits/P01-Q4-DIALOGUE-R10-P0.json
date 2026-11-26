@@ -1,0 +1,1597 @@
+{
+  "schema": "q4-r10-p0-v1",
+  "q2ReviewSha": "c15112cc9c4bf8b7600643841d56c21eea09a4d3",
+  "priorHoldSha": "20becfd8fe58c0ff0cf7d13281a39ba3ea4a831c",
+  "historyGuardSha": "59cb31d5421646e636bbce63336701e3ee39b7ff",
+  "rows": [
+    {
+      "id": "P01-112",
+      "path": "data/dialogue-packs/P01/part-05.json",
+      "originalBlobSha": "3752c1e3ece8f41189bcacab6a1be1f3d7adda4e",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Opening-only superseding proposal; exact expected learningTarget, followup and evidence unchanged. R9 followup revision withdrawn because guard deepEquals entire field. Simulated guard comparison passes; actual test not run.",
+      "historicalReview": null,
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "player",
+              "ko": "의사당에서 뵈었는데 오늘은 시청이군요.",
+              "en": "We met at the Capitol, but today we're at City Hall."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "하원에서 사임하고 시 정부로 옮겼습니다.",
+              "en": "I resigned from the House to join city government."
+            },
+            {
+              "speaker": "aide",
+              "ko": "예전 뉴욕 지역구 기록은 따로 남기죠.",
+              "en": "Let's preserve his former New York district record."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "행사 소개문에 이전 직함을 그대로 써도 될까요?",
+              "en": "May I reuse your former title in the event program?"
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "경력이 바뀌었으니 오늘의 직함을 확인해 주세요.",
+              "en": "My career has changed; please check my current title."
+            },
+            {
+              "speaker": "aide",
+              "ko": "소개문에는 현재 직함 하나만 들어갑니다.",
+              "en": "There is room for one current title in the introduction."
+            }
+          ]
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-112",
+        "mechanism": "career-transition",
+        "learningTarget": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+        "date": "1978-02-06",
+        "venue": {
+          "ko": "뉴욕시청",
+          "en": "New York City Hall"
+        },
+        "context": {
+          "ko": "하원의원으로 만났던 사람을 시청에서 다시 만난다.",
+          "en": "You encounter a former House member at City Hall."
+        },
+        "cast": [
+          {
+            "id": "B000025",
+            "name": "Herman Badillo",
+            "ko": "허먼 바디요",
+            "portrait": "https://historycms.house.gov/uploadedImages/People/Listing/B/B000025.jpg",
+            "source": "https://history.house.gov/People/Detail/8806"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이번에 바디요님은 {{blank}}으로 소개해야겠군요.",
+          "en": "Today I should introduce you as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴욕주 주지사",
+              "en": "New York governor"
+            },
+            {
+              "id": "B",
+              "ko": "뉴욕주 상원의원",
+              "en": "New York state senator"
+            },
+            {
+              "id": "C",
+              "ko": "연방 하원의장",
+              "en": "Speaker of the House"
+            },
+            {
+              "id": "D",
+              "ko": "뉴욕시 부시장",
+              "en": "New York City deputy mayor"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:0",
+              "ko": "다음에는 시청에서 뵙죠.",
+              "en": "See you at City Hall next time."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "1977년 12월 31일 하원에서 사임하고 1978년 뉴욕시 부시장이 됐습니다.",
+              "en": "I resigned from the House on December 31, 1977, and became New York City deputy mayor in 1978."
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8806",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          },
+          {
+            "url": "https://history.house.gov/Collection/Detail/15032397075",
+            "claim": "Badillo represented New York from January 3, 1971 to December 31, 1977 and became New York City deputy mayor in 1978.",
+            "asOf": "1978-02-06"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-career-transition-112"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1742",
+      "path": "data/dialogue-packs/P01/part-70.json",
+      "originalBlobSha": "72c6232b4407e9047a6f654bac0a0dd75601d793",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1742",
+        "date": "2022-11-12",
+        "learningTarget": "Allegan County was split between MI-2 and MI-6 in 2022.",
+        "correct": "C",
+        "sources": [
+          "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm"
+        ],
+        "finding": "117th directory lists Allegan (part) for Huizenga MI-2 and Upton MI-6.",
+        "review_note": "Historical content supported; distinguish 117th district map from subsequent boundaries.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "앨러건 주민의 도로 문제가 접수됐습니다.",
+              "en": "A road concern came from Allegan residents."
+            },
+            {
+              "speaker": "player",
+              "ko": "켄트처럼 다른 의원실도 관련될까요?",
+              "en": "Could another office be involved, as with Kent?"
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제6구에도 앨러건 일부가 있습니다.",
+              "en": "District six includes part of Allegan too."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "앨러건의 도로 문제에 관한 공동 회의를 준비합니다. 해당 지역의 대표를 확인하겠습니다.",
+              "en": "I'm preparing a shared meeting on Allegan road concerns. I'll identify the relevant members."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "지역구가 다른 주민의 요청을 한 의원실에만 보내면 일부 의견이 빠질 수 있습니다.",
+              "en": "Sending all requests to just one district office may omit other residents' views."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제117대 의회의 지역구 경계를 기준으로 초청 대상을 결정해 주세요.",
+              "en": "Use the 117th Congress district boundaries to decide whom to invite."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "같은 주에서도 현안에 따라 의원실 조합이 달라지겠군요.",
+                "en": "The relevant offices change with the issue and location."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "앨러건은 제2구와 제6구에 걸쳐 있었습니다.",
+                "en": "Allegan was split between districts two and six."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 의원실에 공통 정책 자료를 보내고 개인 민원은 따로 확인하겠습니다.",
+                "en": "We'll send the shared policy materials to both offices and verify individual cases separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "하이젠가와 업턴이 해당 두 지역구의 의원이었습니다. 초청 대상부터 정정하세요.",
+                "en": "Huizenga and Upton represented those two districts. Correct the invitations first."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1742",
+        "mechanism": "allegan-coordination",
+        "learningTarget": "Allegan County was split between MI-2 and MI-6 in 2022.",
+        "date": "2022-11-12",
+        "venue": {
+          "ko": "앨러건 지역 도로 토론",
+          "en": "Allegan road discussion"
+        },
+        "context": {
+          "ko": "공개 역사 기록에 근거한 가상의 만남입니다. 조건부 연결 후보 P01-1741 (2022-11-11). 선행 장면 미경험 시에도 독립 진행 가능.",
+          "en": "Fictional encounter grounded in public historical records. Optional continuity candidate P01-1741 (2022-11-11); playable independently without assuming a prior encounter."
+        },
+        "cast": [
+          {
+            "id": "H001058",
+            "name": "Bill Huizenga",
+            "ko": "빌 하이젠가",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/H001058.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/H001058"
+          },
+          {
+            "id": "U000031",
+            "name": "Fred Upton",
+            "ko": "프레드 업턴",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/U000031.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/U000031"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이번에 함께 논의할 의원은 {{blank}}입니다.",
+          "en": "The members involved this time are {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "마이어와 슬롯킨",
+              "en": "Meijer and Slotkin"
+            },
+            {
+              "id": "B",
+              "ko": "레빈과 매클레인",
+              "en": "Levin and McClain"
+            },
+            {
+              "id": "C",
+              "ko": "하이젠가와 업턴",
+              "en": "Huizenga and Upton"
+            },
+            {
+              "id": "D",
+              "ko": "업턴과 슬롯킨",
+              "en": "Upton and Slotkin"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CDIR-2022-10-26/html/CDIR-2022-10-26-MI.htm",
+            "claim": "Allegan County was split between MI-2 and MI-6 in 2022.",
+            "asOf": "2022-11-12"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1742-allegan-coordination"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1925",
+      "path": "data/dialogue-packs/P01/part-77.json",
+      "originalBlobSha": "c90574becec6d3e50820930d5f8b914fd226e2e8",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1925",
+        "date": "2026-11-25",
+        "learningTarget": "Barr's official biography identifies him as Senator-elect after the 2026 election, while the 119th House listing and Clerk profile identify his KY-6 service; Senate term is not assumed to have begun.",
+        "correct": "B",
+        "sources": [
+          "https://barr.house.gov/about-andy-bio",
+          "https://clerk.house.gov/members/B001282"
+        ],
+        "finding": "Official biography identifies Barr as Senator-elect; Clerk lists incumbent KY-6 in 119th Congress.",
+        "review_note": "Supported as of review date; do not infer Senate term has started.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "11월 선거 이후 소개 문구에 상원의원이라고 적었습니다.",
+              "en": "After the November election the caption says Senator."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "공식 약력은 상원의원 당선인으로 표시합니다.",
+              "en": "My official biography says Senator-elect."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "새 임기와 현재 의회의 임기를 구분해야 합니다.",
+              "en": "Distinguish the new term from this Congress."
+            },
+            {
+              "speaker": "player",
+              "ko": "아직 취임하지 않은 직책을 현직으로 부르지 않겠습니다.",
+              "en": "I won't call an office already held when it has not begun."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "11월 선거 직후 방송 자막에서 새 직책과 현재 재임 중인 직책을 하나로 표시하려 합니다.",
+              "en": "A post-election broadcast caption merges the new election-related title with the currently held office."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "선거 결과와 실제 취임은 날짜가 다른 사건입니다.",
+              "en": "Election results and accession to office are distinct dated events."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "11월 25일 기준 공식 약력이 사용하는 선거 관련 직함을 확인하세요.",
+              "en": "Verify the election-related title in my official biography as of November 25."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "선거 결과와 실제 취임을 별도 기록으로 남기겠습니다.",
+                "en": "We'll keep election results separate from taking office."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "공식 약력은 Barr를 Senator-elect로 표시합니다.",
+                "en": "His official biography identifies him as Senator-elect."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그 직함으로 정정하고 현직 하원 재임과 새 임기 시작은 따로 표시하세요.",
+                "en": "Correct the title and separately identify current House service and the beginning of the new term."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "공식 약력의 표기는 Senator-elect입니다. 아직 시작하지 않은 직책을 현직 상원의원이라고 표시하면 안 됩니다.",
+                "en": "The official biography uses Senator-elect. Do not label a not-yet-begun office as sitting Senator."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1925",
+        "mechanism": "election-winner-vs-office",
+        "learningTarget": "Barr's official biography identifies him as Senator-elect after the 2026 election, while the 119th House listing and Clerk profile identify his KY-6 service; Senate term is not assumed to have begun.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "켄터키 선거 후 기자회견",
+          "en": "Kentucky post-election press discussion"
+        },
+        "context": {
+          "ko": "공개 기록을 근거로 구성한 가상 상황. 실제 발언이 아닙니다. 조건부 연결 후보 P01-1876 (2026-07-02). 선행 장면 미경험 시 독립 진행 가능.",
+          "en": "Fictional encounter based on public records; not actual quotations. Optional continuity candidate P01-1876 (2026-07-02); independent of prior encounter completion."
+        },
+        "cast": [
+          {
+            "id": "B001282",
+            "name": "Andy Barr",
+            "ko": "앤디 바",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/B001282.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/B001282"
+          },
+          {
+            "id": "R000395",
+            "name": "Harold Rogers",
+            "ko": "할 로저스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/R000395.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/R000395"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이 시점의 새 직함은 {{blank}}입니다.",
+          "en": "The new election-related title is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "현직 상원의원",
+              "en": "sitting Senator"
+            },
+            {
+              "id": "B",
+              "ko": "상원의원 당선인",
+              "en": "Senator-elect"
+            },
+            {
+              "id": "C",
+              "ko": "주지사",
+              "en": "governor"
+            },
+            {
+              "id": "D",
+              "ko": "하원 의장",
+              "en": "Speaker"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://barr.house.gov/about-andy-bio",
+            "claim": "Barr's official biography identifies him as Senator-elect after the 2026 election, while the 119th House listing and Clerk profile identify his KY-6 service; Senate term is not assumed to have begun.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/member_info/olm-119.pdf",
+            "claim": "Barr's official biography identifies him as Senator-elect after the 2026 election, while the 119th House listing and Clerk profile identify his KY-6 service; Senate term is not assumed to have begun.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/members/B001282",
+            "claim": "Barr's official biography identifies him as Senator-elect after the 2026 election, while the 119th House listing and Clerk profile identify his KY-6 service; Senate term is not assumed to have begun.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1925-election-winner-vs-office"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1927",
+      "path": "data/dialogue-packs/P01/part-78.json",
+      "originalBlobSha": "7377bb5a6d81ec8e1e64a6fbd3fba24e99466ab1",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1927",
+        "date": "2026-11-25",
+        "learningTarget": "House.gov explains that new 2026 congressional maps are for the next Congress and existing districts apply until January 2027.",
+        "correct": "D",
+        "sources": [
+          "https://www.house.gov/representatives/find-your-representative"
+        ],
+        "finding": "House FAQ explicitly distinguishes election maps from current boundaries through January 2, 2027; new Congress January 2027.",
+        "review_note": "Supported; avoid implying all districts were redrawn.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:1",
+              "ko": "주민용 지도에 두 가지 선거구 경계가 들어갔습니다.",
+              "en": "Two sets of boundaries appear on the constituent map."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "2026년에 새 지도가 쓰였더라도 현 의회 임기와 구분해야 합니다.",
+              "en": "Even if a new map was used for the election, distinguish the current term."
+            },
+            {
+              "speaker": "player",
+              "ko": "주민의 현재 대표를 찾는 지도에는 기존 기준을 적용하겠습니다.",
+              "en": "For current representation, I'll use the existing boundaries."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "11월 선거 결과에 따라 주민용 지도를 즉시 바꾸자는 제안을 검토하고 있습니다.",
+              "en": "I'm reviewing a proposal to replace the constituent map immediately after the November election."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "현재 임기의 대표 관계와 선거에 사용된 새 지도를 구분해야 합니다.",
+              "en": "Distinguish current-term representation from the new map used in the election."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "하원의 지도 안내에서 새로운 대표 관계의 적용 시점을 확인하세요.",
+              "en": "Consult the House map guidance for when the new representation takes effect."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 지도에 적용 시점을 크게 표시합시다.",
+                "en": "Clearly label the effective period of both maps."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "하원 안내는 새 지도 적용 시점을 2027년 1월로 구분합니다.",
+                "en": "The House guidance distinguishes January 2027 as the new map's effective period."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:1",
+                "ko": "그 전까지는 현재 의회의 경계를 사용하고 새 지도는 적용 예정일을 표시해 따로 보존하세요.",
+                "en": "Until then, use current congressional boundaries and preserve the new map separately with its effective date."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "2026년 선거에 사용된 새 경계는 2027년 1월 차기 의회부터 대표 관계에 적용됩니다. 모든 지역구가 변경되었다는 뜻은 아닙니다.",
+                "en": "New boundaries used in the 2026 election apply to representation in the next Congress in January 2027; this does not mean every district changed."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1927",
+        "mechanism": "map-effective-date",
+        "learningTarget": "House.gov explains that new 2026 congressional maps are for the next Congress and existing districts apply until January 2027.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "지역구 지도 버전 선택",
+          "en": "Choosing a district map version"
+        },
+        "context": {
+          "ko": "공개 기록을 근거로 구성한 가상 상황. 실제 발언이 아닙니다. 조건부 연결 후보 P01-1926 (2026-10-02). 선행 장면 미경험 시 독립 진행 가능.",
+          "en": "Fictional encounter based on public records; not actual quotations. Optional continuity candidate P01-1926 (2026-10-02); independent of prior encounter completion."
+        },
+        "cast": [
+          {
+            "id": "K000401",
+            "name": "Kevin Kiley",
+            "ko": "케빈 카일리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000401.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/K000401"
+          },
+          {
+            "id": "M001225",
+            "name": "Kevin Mullin",
+            "ko": "케빈 멀린",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001225.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001225"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 선거구가 실제 대표 관계에 적용되는 시점은 {{blank}}입니다.",
+          "en": "The new districts apply to representation starting in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "2026년 1월",
+              "en": "January 2026"
+            },
+            {
+              "id": "B",
+              "ko": "선거운동 시작일",
+              "en": "campaign launch day"
+            },
+            {
+              "id": "C",
+              "ko": "청원 접수일",
+              "en": "petition filing day"
+            },
+            {
+              "id": "D",
+              "ko": "2027년 1월",
+              "en": "January 2027"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://www.house.gov/representatives/find-your-representative",
+            "claim": "House.gov explains that new 2026 congressional maps are for the next Congress and existing districts apply until January 2027.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/member_info/olm-119.pdf",
+            "claim": "House.gov explains that new 2026 congressional maps are for the next Congress and existing districts apply until January 2027.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1927-map-effective-date"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1944",
+      "path": "data/dialogue-packs/P01/part-78.json",
+      "originalBlobSha": "7377bb5a6d81ec8e1e64a6fbd3fba24e99466ab1",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1944",
+        "date": "2026-11-25",
+        "learningTarget": "Pelosi congratulated Scott Wiener on his CA-11 election on November 4, 2026; a regular election does not immediately terminate the incumbent's term.",
+        "correct": "A",
+        "sources": [
+          "https://pelosi.house.gov/news/press-releases/pelosi-statement-californias-11th-congressional-district-election",
+          "https://clerk.house.gov/members/P000197",
+          "https://www.house.gov/representatives/find-your-representative"
+        ],
+        "finding": "November 4 statement congratulates Wiener; Clerk still lists Pelosi as CA-11 incumbent.",
+        "review_note": "Supported; member-elect and incumbent distinct.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "host",
+              "ko": "11월 총선 결과를 반영해 현역 명부를 즉시 바꾸려고 합니다.",
+              "en": "The roster editor wants to replace incumbents immediately after the November election."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "당선 축하와 실제 임기 종료는 다른 사건입니다.",
+              "en": "Congratulating a winner and ending a term are distinct events."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "지도 적용 시점과 마찬가지로 기준 날짜가 필요합니다.",
+              "en": "Like map changes, this needs an effective date."
+            },
+            {
+              "speaker": "player",
+              "ko": "현재 의석은 선거 결과와 별도 칸에 유지하겠습니다.",
+              "en": "I'll maintain a separate field for the current seat."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "CA-11 주민이 11월 선거 후 기존 의원실을 바로 이용할 수 없다고 생각합니다. 11월 25일의 현직을 확인하겠습니다.",
+              "en": "A CA-11 resident thinks the incumbent office became unavailable immediately after the election. I'll verify the incumbent on November 25."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "차기 임기용 지도와 현재 의회용 지도를 구분하듯 당선인과 현직도 별도 기록해야 합니다.",
+              "en": "Just as with next-term and current maps, maintain separate records for members-elect and incumbents."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "11월 4일의 당선 축하 발표와 실제 임기 종료일을 혼동하지 마세요.",
+              "en": "Do not confuse the November 4 congratulations with the actual end of the term."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "현직과 차기 당선인 항목을 분리하죠.",
+                "en": "Separate incumbent and next-term member-elect fields."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "11월 4일 당선 축하 발표는 펠로시의 임기를 즉시 종료시키지 않습니다.",
+                "en": "The November 4 congratulations did not immediately end Pelosi's term."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "현재 임기의 문의는 현직 의원실에 연결하고 당선인은 차기 임기 자료에 표시하세요.",
+                "en": "Route current-term inquiries to the incumbent office and list the member-elect in the next-term record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "11월 25일에는 펠로시가 현직입니다. 선거 결과만으로 현재 임기가 종료되지는 않습니다.",
+                "en": "Pelosi remains the incumbent on November 25. The election result alone does not end the current term."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1944",
+        "mechanism": "general-election-not-vacancy",
+        "learningTarget": "Pelosi congratulated Scott Wiener on his CA-11 election on November 4, 2026; a regular election does not immediately terminate the incumbent's term.",
+        "date": "2026-11-25",
+        "venue": {
+          "ko": "총선 이후 의석 현황",
+          "en": "House seats after the general election"
+        },
+        "context": {
+          "ko": "공개 기록을 근거로 구성한 가상 상황. 실제 발언이 아닙니다.",
+          "en": "Fictional encounter based on public records; not actual quotations."
+        },
+        "cast": [
+          {
+            "id": "P000197",
+            "name": "Nancy Pelosi",
+            "ko": "낸시 펠로시",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/P000197.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/P000197"
+          },
+          {
+            "id": "K000401",
+            "name": "Kevin Kiley",
+            "ko": "케빈 카일리",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/K000401.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/K000401"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "11월 25일 CA-11의 현직으로 남아 있는 의원은 {{blank}}입니다.",
+          "en": "The incumbent still serving CA-11 on November 25 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "낸시 펠로시",
+              "en": "Nancy Pelosi"
+            },
+            {
+              "id": "B",
+              "ko": "스콧 위너",
+              "en": "Scott Wiener"
+            },
+            {
+              "id": "C",
+              "ko": "케빈 카일리",
+              "en": "Kevin Kiley"
+            },
+            {
+              "id": "D",
+              "ko": "로 카나",
+              "en": "Ro Khanna"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://pelosi.house.gov/news/press-releases/pelosi-statement-californias-11th-congressional-district-election",
+            "claim": "Pelosi congratulated Scott Wiener on his CA-11 election on November 4, 2026; a regular election does not immediately terminate the incumbent's term.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://clerk.house.gov/member_info/olm-119.pdf",
+            "claim": "Pelosi congratulated Scott Wiener on his CA-11 election on November 4, 2026; a regular election does not immediately terminate the incumbent's term.",
+            "asOf": "2026-11-25"
+          },
+          {
+            "url": "https://www.house.gov/representatives/find-your-representative",
+            "claim": "Regular general election winners are not recognized as active members until the new Congress; special elections differ.",
+            "asOf": "2026-11-25"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1944-general-election-not-vacancy"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1951",
+      "path": "data/dialogue-packs/P01/part-79.json",
+      "originalBlobSha": "7e735153723baaa2fe6e2418b747897b08f09e96",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1951",
+        "date": "1913-04-15",
+        "learningTarget": "South Dakota began using three numbered House districts in 1913.",
+        "correct": "A",
+        "sources": [
+          "https://sdsos.gov/general-information/assets/bluebook-docs/2025BlueBook.pdf",
+          "https://history.house.gov/Congressional-Overview/Profiles/63rd/"
+        ],
+        "finding": "State legislative manual printed p.103 identifies three numbered districts and Dillon, Burke, Martin in 1913; 63rd Congress historical profile supports period.",
+        "review_note": "Core count supported; manual extracted text used; PDF screenshot failed due to file size. Portrait rights not assessed.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "전에는 주 전체 의석이 두 개였습니다.",
+              "en": "Previously we had two statewide seats."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "이제 저는 2구를 맡습니다.",
+              "en": "I now represent District 2."
+            },
+            {
+              "speaker": "npc:2",
+              "ko": "세 번째 의석도 지도에 넣어야 합니다.",
+              "en": "The third seat belongs on the map as well."
+            },
+            {
+              "speaker": "player",
+              "ko": "새 선거구 지도를 주민에게 어떻게 설명할까요?",
+              "en": "How should I explain the new map to residents?"
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "예전 전주 단위 선출 방식과 1913년 지도를 비교하는 전시를 준비합니다.",
+              "en": "I'm preparing an exhibit comparing the former at-large elections with the 1913 map."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "새 번호 선거구의 수를 확인해 주세요.",
+              "en": "Please verify the number of new numbered districts."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "각 지역구의 연락처는 별도로 표시합시다.",
+              "en": "Let's give each district a separate contact."
+            },
+            {
+              "speaker": "npc:2",
+              "ko": "옛 지도와 새 지도에는 적용 시기를 표시해야 합니다.",
+              "en": "Label the periods covered by the old and new maps."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
+                "en": "I'll display both the old statewide and new district maps."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1913년부터 사우스다코타는 세 개의 번호 선거구로 대표되었다.",
+                "en": "South Dakota began using three numbered House districts in 1913."
+              },
+              {
+                "speaker": "player",
+                "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
+                "en": "I'll display both the old statewide and new district maps."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:2",
+                "ko": "세 지역구용 연락처 칸을 따로 마련하죠. 옛 전주 기록에는 날짜를 붙이세요.",
+                "en": "Prepare separate contact entries for the three districts and date the old at-large record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 의석은 옛 지도입니다. 1913년 번호 지역구 세 개를 확인하고 게시 전에 지도부터 수정하세요.",
+                "en": "Two seats belong to the old map. Check all three numbered districts in 1913 and correct it before posting."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1951",
+        "mechanism": "numbered-seat-launch",
+        "learningTarget": "South Dakota began using three numbered House districts in 1913.",
+        "date": "1913-04-15",
+        "venue": {
+          "ko": "사우스다코타 지도 교체",
+          "en": "South Dakota map replacement"
+        },
+        "context": {
+          "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+          "en": "Fictional RPG encounter grounded in historical records."
+        },
+        "cast": [
+          {
+            "id": "D000348",
+            "name": "Charles Hall Dillon",
+            "ko": "찰스 딜런",
+            "portrait": "https://cdn.loc.gov/service/pnp/hec/17400/17488v.jpg",
+            "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+          },
+          {
+            "id": "B001087",
+            "name": "Charles H. Burke",
+            "ko": "찰스 버크",
+            "portrait": null,
+            "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+          },
+          {
+            "id": "M000176",
+            "name": "Eben Martin",
+            "ko": "에번 마틴",
+            "portrait": null,
+            "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1913년 사우스다코타의 의석 수는 {{blank}}개입니다.",
+          "en": "South Dakota now has {{blank}} House seats.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "3",
+              "en": "3"
+            },
+            {
+              "id": "B",
+              "ko": "2",
+              "en": "2"
+            },
+            {
+              "id": "C",
+              "ko": "4",
+              "en": "4"
+            },
+            {
+              "id": "D",
+              "ko": "1",
+              "en": "1"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+            "claim": "South Dakota began using three numbered House districts in 1913.",
+            "asOf": "1913-04-15"
+          },
+          {
+            "url": "https://www.loc.gov/pictures/item/2016858552/",
+            "claim": "Identity portrait of Charles Hall Dillon; Harris & Ewing collection, Library of Congress; no known restrictions on publication; exact date uncertain. Archival likeness only, not an image of the fictional encounter; may postdate scene.",
+            "asOf": "1913-04-15"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-1951-numbered-seat-launch"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1965",
+      "path": "data/dialogue-packs/P01/part-79.json",
+      "originalBlobSha": "7e735153723baaa2fe6e2418b747897b08f09e96",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1965",
+        "date": "1951-08-13",
+        "learningTarget": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+        "correct": "C",
+        "sources": [
+          "https://history.house.gov/Exhibitions-and-Publications/WIC/Historical-Data/Women-Members-by-Congress/",
+          "https://history.house.gov/People/Detail/11460"
+        ],
+        "finding": "Elizabeth Kee won July 17, 1951 special election after death of John Kee; Cotton served in House 1947–1954.",
+        "review_note": "Supported. Phrase 'new term' should mean service in remainder of existing congressional term, not a new full term.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "남편의 사망으로 공석이 생겼고 올해 선거로 그 자리를 채웠습니다.",
+              "en": "My husband's death left a vacancy, which I filled by election this year."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 뉴햄프셔의 정기 임기 의원입니다. 두 선거 유형을 구별해 주세요.",
+              "en": "I am serving a regular term from New Hampshire. Distinguish the two election types."
+            },
+            {
+              "speaker": "player",
+              "ko": "가족 관계와 당선 절차를 따로 기록하겠습니다.",
+              "en": "I'll record the family relationship separately from the election procedure."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "공석을 가족에게 자동 승계했다고 쓴 기사 초안을 검토합니다.",
+              "en": "I'm reviewing a draft saying a vacancy passed automatically within a family."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "가족관계와 보궐선거 절차를 구분하고 사망한 전임자의 이름을 기록에서 확인하세요.",
+              "en": "Distinguish the family relationship from the special election and identify the deceased predecessor from the record."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "보궐선거로 기존 의회 임기의 잔여기간 동안 재임하게 된 시점과 전임자의 재임 기록을 구분해 주세요.",
+              "en": "Distinguish the start of my service for the remainder of the existing congressional term from my predecessor's service."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
+                "en": "I'll preserve the special election and family record separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "엘리자베스 키는 1951년 존 키의 사망으로 생긴 공석을 채웠다.",
+                "en": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951."
+              },
+              {
+                "speaker": "player",
+                "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
+                "en": "I'll preserve the special election and family record separately."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "남편 존 키의 사망과 제 당선 기록을 별도 사건으로 적어 주세요.",
+                "en": "Record my husband John Kee's death and my election as separate events."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "전임자는 존 키입니다. 엘리자베스 키의 당선은 별도 사건이므로 자동 승계라고 쓰지 마세요.",
+                "en": "The predecessor was John Kee. Elizabeth Kee's election was a separate event, not automatic succession."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1965",
+        "mechanism": "widow-special-election",
+        "learningTarget": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+        "date": "1951-08-13",
+        "venue": {
+          "ko": "웨스트버지니아 보궐선거 접견",
+          "en": "West Virginia special-election reception"
+        },
+        "context": {
+          "ko": "역사 기록에 근거한 가상 RPG 만남입니다.",
+          "en": "Fictional RPG encounter grounded in historical records."
+        },
+        "cast": [
+          {
+            "id": "K000040",
+            "name": "Elizabeth Kee",
+            "ko": "엘리자베스 키",
+            "portrait": null,
+            "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia"
+          },
+          {
+            "id": "C000802",
+            "name": "Norris Cotton",
+            "ko": "노리스 코튼",
+            "portrait": null,
+            "source": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "엘리자베스 키가 채운 공석의 전임자는 {{blank}}입니다.",
+          "en": "The predecessor whose vacancy Elizabeth Kee filled was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "밥 몰로핸",
+              "en": "Bob Mollohan"
+            },
+            {
+              "id": "B",
+              "ko": "노리스 코튼",
+              "en": "Norris Cotton"
+            },
+            {
+              "id": "C",
+              "ko": "존 키",
+              "en": "John Kee"
+            },
+            {
+              "id": "D",
+              "ko": "로버트 버드",
+              "en": "Robert Byrd"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_West_Virginia",
+            "claim": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+            "asOf": "1951-08-13"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Hampshire",
+            "claim": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951.",
+            "asOf": "1951-08-13"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-1965-widow-special-election"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1993",
+      "path": "data/dialogue-packs/P01/part-80.json",
+      "originalBlobSha": "4a352c360a8970c168e6f95d7e39e92424bf5321",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1993",
+        "date": "2004-07-12",
+        "learningTarget": "Stephanie Herseth entered the House through the June 2004 special election.",
+        "correct": "B",
+        "sources": [
+          "https://history.house.gov/People/Detail/15570",
+          "https://history.house.gov/People/Detail/22937"
+        ],
+        "finding": "Herseth won June 1, 2004 special election after Janklow resigned January 20; sworn June 3; Thune's House service ended January 3, 2003.",
+        "review_note": "Supported. Thune is former representative in this fictional meeting; no new full congressional term began.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난 6월 특별선거에서 당선되어 주 전체 의석을 맡았습니다.",
+              "en": "I won the June special election for the at-large seat."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저의 정기 임기는 2003년 1월 끝났습니다. 이번 공석은 다른 임기에 발생했죠.",
+              "en": "My regular term ended in January 2003. This vacancy arose in another term."
+            },
+            {
+              "speaker": "player",
+              "ko": "정기 임기 승계와 임기 중 특별선거를 구별하겠습니다.",
+              "en": "I'll distinguish regular succession from a midterm special election."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "공석 기간 주민 문의를 2004년 새 의원실로 연결해야 합니다.",
+              "en": "Vacancy-period inquiries need routing to the new office in 2004."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 임기는 2003년 1월 끝났습니다. 이번 6월 특별선거 결과를 확인하세요.",
+              "en": "My term ended in January 2003. Check this June special election result."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "이번 특별선거는 기존 의회 임기의 잔여기간을 채우기 위한 것이었습니다. 전임자의 재임과 구분해 주세요.",
+              "en": "This special election was to fill the remainder of the existing congressional term. Distinguish it from my predecessor's service."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "2003년의 의석 기록에 중도 공석과 특별선거를 추가하겠습니다.",
+                "en": "I'll add the vacancy and special election to the 2003 seat record."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "스테퍼니 허세스는 2004년 6월 특별선거로 하원에 진출했다.",
+                "en": "Stephanie Herseth entered the House through the June 2004 special election."
+              },
+              {
+                "speaker": "player",
+                "ko": "2003년의 의석 기록에 중도 공석과 특별선거를 추가하겠습니다.",
+                "en": "I'll add the vacancy and special election to the 2003 seat record."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "공석 기간 문의는 제 의원실 인계 목록으로 보내고 정기 임기와 특별선거는 따로 기록하세요.",
+                "en": "Send vacancy-period inquiries to my handover list and record regular and special elections separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "허세스가 2004년 6월 특별선거로 입성했습니다. 제 종료 임기를 공석 발생 임기로 쓰지 마세요.",
+                "en": "Herseth entered through the June 2004 special election. Do not label my concluded term as the term of this vacancy."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1993",
+        "mechanism": "sd-special-vacancy",
+        "learningTarget": "Stephanie Herseth entered the House through the June 2004 special election.",
+        "date": "2004-07-12",
+        "venue": {
+          "ko": "사우스다코타 보궐선거 후속 접견",
+          "en": "South Dakota special-election follow-up"
+        },
+        "context": {
+          "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1992의 기존 기록을 후속 검토합니다.",
+          "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1992."
+        },
+        "cast": [
+          {
+            "id": "H001037",
+            "name": "Stephanie Herseth",
+            "ko": "스테퍼니 허세스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/H001037.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/H001037"
+          },
+          {
+            "id": "T000250",
+            "name": "John Thune",
+            "ko": "존 튠",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/T000250"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "2004년 6월 사우스다코타 특별선거 당선자는 {{blank}}입니다.",
+          "en": "The winner of the South Dakota special election in June 2004 is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "B",
+              "ko": "허세스",
+              "en": "Herseth"
+            },
+            {
+              "id": "C",
+              "ko": "튠",
+              "en": "Thune"
+            },
+            {
+              "id": "D",
+              "ko": "잰클로",
+              "en": "Janklow"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Stephanie Herseth Sandlin (H001037); Public domain per upstream repository; archival identity image, original date not independently confirmed.",
+            "asOf": "2004-07-12"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of John Thune (T000250); Public domain per upstream repository; archival identity image, original date not independently confirmed.",
+            "asOf": "2004-07-12"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_South_Dakota",
+            "claim": "Stephanie Herseth entered the House through the June 2004 special election.",
+            "asOf": "2004-07-12"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-1993-sd-special-vacancy"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    },
+    {
+      "id": "P01-1999",
+      "path": "data/dialogue-packs/P01/part-80.json",
+      "originalBlobSha": "4a352c360a8970c168e6f95d7e39e92424bf5321",
+      "sourceRef": "hq-i1-pilot-integration",
+      "sourceCommitReported": "5c96d5372ae0c1926d2da07e28e2a2e88960229f",
+      "note": "Q2-C R5 core supported; editorial review against current I1 date, learning target and correct choice. Fictional dialogue, not historical quotation. I1 fresh replay and HQ approval required.",
+      "historicalReview": {
+        "id": "P01-1999",
+        "date": "2007-06-11",
+        "learningTarget": "Sires filled Menendez's House vacancy through a special election in 2006.",
+        "correct": "D",
+        "sources": [
+          "https://history.house.gov/dropdowntemplate?htmlContentID=36507224020&id=36507224009",
+          "https://history.house.gov/People/Detail/22587"
+        ],
+        "finding": "Menendez resigned January 16, 2006; Sires won November 7 special election to fill vacancy.",
+        "review_note": "Supported. Specify remainder of 109th Congress, not a new full term; portrait rights not assessed.",
+        "core_history_supported": true,
+        "proposal_status": "historical_core_supported_I1_review_required",
+        "new_core_credit": 0,
+        "applied": false
+      },
+      "changes": [
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "지난해 특별선거를 거쳐 하원에 들어왔습니다.",
+              "en": "I entered the House through last year's special election."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "저는 지난해 초 상원으로 옮겼습니다.",
+              "en": "I moved to the Senate early last year."
+            },
+            {
+              "speaker": "player",
+              "ko": "2005년 하원 명부가 현재의 대표를 보여 주지 않겠군요.",
+              "en": "The 2005 House directory no longer shows the current representative."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "player",
+              "ko": "상원 이동으로 하원 연락처를 잃은 주민이 도움을 요청합니다.",
+              "en": "A resident seeks help after losing a House contact through a Senate move."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "제 2006년 상원 이동과 하원 공석을 채운 선거를 별도로 확인하세요.",
+              "en": "Check my 2006 Senate move separately from the election filling the House vacancy."
+            },
+            {
+              "speaker": "npc:0",
+              "ko": "제109대 의회의 기존 임기 중 발생한 공석을 채우는 선거였습니다. 정기 임기와 구분해 주세요.",
+              "en": "The election filled a vacancy during the existing term of the 109th Congress. Distinguish it from a regular term."
+            }
+          ]
+        },
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "1997년 제13구 기록에 상원 이동과 보궐선거를 추가하겠습니다.",
+                "en": "I'll append the Senate move and special election to the 1997 District 13 file."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "시레스는 2006년 메넨데스의 하원 공석을 특별선거로 채웠다.",
+                "en": "Sires filled Menendez's House vacancy through a special election in 2006."
+              },
+              {
+                "speaker": "player",
+                "ko": "1997년 제13구 기록에 상원 이동과 보궐선거를 추가하겠습니다.",
+                "en": "I'll append the Senate move and special election to the 1997 District 13 file."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "하원 문의는 제 의원실로 보내고 메넨데스의 상원 연락처와 구분하세요.",
+                "en": "Route House inquiries to me and separate Menendez's Senate contact."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:1",
+                "ko": "시레스가 2006년 특별선거로 공석을 채웠습니다. 양원 수신인을 구별하세요.",
+                "en": "Sires filled the vacancy in a 2006 special election. Distinguish the two chambers' recipients."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-1999",
+        "mechanism": "nj-thirteenth-vacancy",
+        "learningTarget": "Sires filled Menendez's House vacancy through a special election in 2006.",
+        "date": "2007-06-11",
+        "venue": {
+          "ko": "뉴저지 제13구 공석 이후 기록",
+          "en": "New Jersey District 13 vacancy record"
+        },
+        "context": {
+          "ko": "역사 기록에 근거한 가상 RPG 만남입니다. P01-1989의 기존 기록을 후속 검토합니다.",
+          "en": "Fictional RPG encounter grounded in historical records. Follow-up review of P01-1989."
+        },
+        "cast": [
+          {
+            "id": "S001165",
+            "name": "Albio Sires",
+            "ko": "알비오 시레스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/S001165.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/S001165"
+          },
+          {
+            "id": "M000639",
+            "name": "Robert Menendez",
+            "ko": "로버트 메넨데스",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M000639.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M000639"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "메넨데스의 공석을 채운 의원은 {{blank}}입니다.",
+          "en": "The member who filled Menendez's vacancy was {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "로스먼",
+              "en": "Rothman"
+            },
+            {
+              "id": "B",
+              "ko": "패스크렐",
+              "en": "Pascrell"
+            },
+            {
+              "id": "C",
+              "ko": "홀트",
+              "en": "Holt"
+            },
+            {
+              "id": "D",
+              "ko": "시레스",
+              "en": "Sires"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Albio Sires (S001165); Public domain per upstream repository; archival identity image, original date not independently confirmed.",
+            "asOf": "2007-06-11"
+          },
+          {
+            "url": "https://github.com/politik348/american-political-manager/blob/main/data/portraits.json",
+            "claim": "Portrait of Robert Menendez (M000639); Public domain per upstream repository; archival identity image, original date not independently confirmed.",
+            "asOf": "2007-06-11"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/United_States_congressional_delegations_from_New_Jersey",
+            "claim": "Sires filled Menendez's House vacancy through a special election in 2006.",
+            "asOf": "2007-06-11"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-1999-nj-thirteenth-vacancy"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_ready_for_I1_review_not_applied"
+    }
+  ],
+  "limitations": [
+    "I1 reported head SHA fetch returned 404; read named branch and pin exact source blob hashes per row. No test file or history ledger altered. No actual test execution."
+  ]
+}

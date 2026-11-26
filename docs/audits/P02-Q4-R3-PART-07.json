@@ -1,0 +1,5896 @@
+{
+  "schema": 3,
+  "team": "Q4-P02",
+  "round": 3,
+  "scope": "P02-151–175",
+  "source": {
+    "path": "data/dialogue-packs/P02/part-07.json",
+    "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+    "mainCommit": "0d6de1266c0d156f2e6c0c464a230b2a38016142",
+    "i1Commit": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+    "i1BlobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f"
+  },
+  "criteria": [
+    "naturalness",
+    "playerMotivation",
+    "immersion",
+    "knowledgeApplication",
+    "interactionDistinctness",
+    "answerLeakPrevention",
+    "distractorQuality",
+    "npcRoleSeparation",
+    "branchNaturalness",
+    "continuity"
+  ],
+  "entries": [
+    {
+      "id": "P02-151",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Defense oversight distinct from appropriation; generic third line.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "트루먼이 국방계획 조사 특별위원회를 이끌었습니다.",
+              "en": "Truman chaired the defense program inquiry."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 트루먼이 국방계획 조사 특별위원회를 이끌었습니다.",
+              "en": "Here is the distinction. Truman chaired the defense program inquiry."
+            }
+          ]
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "트루먼에게 조사 자료를 전달합니다.",
+              "en": "Route the inquiry material to Truman."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "트루먼이 국방계획 조사 특별위원회를 이끌었습니다.",
+              "en": "Truman chaired the defense program inquiry."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 트루먼이 국방계획 조사 특별위원회를 이끌었습니다.",
+              "en": "Here is the distinction. Truman chaired the defense program inquiry."
+            },
+            {
+              "speaker": "aide",
+              "ko": "예산 승인과 조사 관할을 혼동하지 마세요.",
+              "en": "Do not confuse appropriations with investigative jurisdiction."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-151",
+        "date": "1941-04-01",
+        "mechanism": "contract-audit",
+        "learningTarget": "Truman chaired the defense program inquiry.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MO/senators.htm",
+            "claim": "Truman chaired the defense program inquiry.",
+            "asOf": "1941-04-01"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/investigations/truman.htm",
+            "claim": "Truman chaired the defense program inquiry.",
+            "asOf": "1941-04-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-151-contract-audit"
+        },
+        "venue": {
+          "ko": "군수계약 감독",
+          "en": "Defense oversight"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-125.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-125."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "T000387",
+            "name": "Harry S. Truman",
+            "ko": "해리 트루먼",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000387"
+          },
+          {
+            "id": "C000440",
+            "name": "Joel Bennett Clark",
+            "ko": "조엘 클라크",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000440"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "트루먼",
+          "en": "Truman"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "계약 자료를 위원장 {{blank}}에게 보내죠.",
+          "en": "Route the contracts to Chairman {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "노리스",
+              "en": "Norris"
+            },
+            {
+              "id": "B",
+              "ko": "밴던버그",
+              "en": "Vandenberg"
+            },
+            {
+              "id": "C",
+              "ko": "트루먼",
+              "en": "Truman"
+            },
+            {
+              "id": "D",
+              "ko": "클라크",
+              "en": "Clark"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "T000387",
+            "name": "Harry S. Truman",
+            "ko": "해리 트루먼",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000387"
+          },
+          {
+            "id": "C000440",
+            "name": "Joel Bennett Clark",
+            "ko": "조엘 클라크",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000440"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-152",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Documented foreign-policy shift worth preserving; generic consequence.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "1945년 1월 밴던버그는 국제주의로의 전환을 선언했습니다.",
+              "en": "Vandenberg announced a turn toward internationalism in January 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 1945년 1월 밴던버그는 국제주의로의 전환을 선언했습니다.",
+              "en": "Here is the distinction. Vandenberg announced a turn toward internationalism in January 1945."
+            }
+          ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연설의 방향은 {{blank}}입니다.",
+          "en": "The speech signaled a turn toward {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "고립주의",
+              "en": "isolationism"
+            },
+            {
+              "id": "B",
+              "ko": "보호무역",
+              "en": "protectionism"
+            },
+            {
+              "id": "C",
+              "ko": "분리주의",
+              "en": "separatism"
+            },
+            {
+              "id": "D",
+              "ko": "국제주의",
+              "en": "internationalism"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "국제주의로의 전환을 설명합니다.",
+              "en": "Describe the turn toward internationalism."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "1945년 1월 밴던버그는 국제주의로의 전환을 선언했습니다.",
+              "en": "Vandenberg announced a turn toward internationalism in January 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 1945년 1월 밴던버그는 국제주의로의 전환을 선언했습니다.",
+              "en": "Here is the distinction. Vandenberg announced a turn toward internationalism in January 1945."
+            },
+            {
+              "speaker": "aide",
+              "ko": "당시 연설의 방향을 다시 비교하세요.",
+              "en": "Reconsider the direction of the contemporary speech."
+            }
+          ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연설의 방향은 {{blank}}입니다.",
+          "en": "The speech signaled a turn toward {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "기존 고립주의의 유지",
+              "en": "continued isolationism"
+            },
+            {
+              "id": "B",
+              "ko": "국제 협력 없이 경제 보호주의 중심",
+              "en": "economic protectionism without international cooperation"
+            },
+            {
+              "id": "C",
+              "ko": "지역적 협력에만 국한",
+              "en": "cooperation confined to the region"
+            },
+            {
+              "id": "D",
+              "ko": "국제주의",
+              "en": "internationalism"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "protected": {
+        "id": "P02-152",
+        "date": "1945-02-01",
+        "mechanism": "foreign-policy",
+        "learningTarget": "Vandenberg announced a turn toward internationalism in January 1945.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MI/senators.htm",
+            "claim": "Vandenberg announced a turn toward internationalism in January 1945.",
+            "asOf": "1945-02-01"
+          },
+          {
+            "url": "https://www.senate.gov/senators/FeaturedBios/Featured_Bio_Vandenberg.htm",
+            "claim": "Vandenberg announced a turn toward internationalism in January 1945.",
+            "asOf": "1945-02-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-152-foreign-policy"
+        },
+        "venue": {
+          "ko": "전후 외교 브리핑",
+          "en": "Postwar foreign policy"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-149. 연속 사건 후보: P02-141.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-149. Continuity candidate: P02-141."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "V000025",
+            "name": "Arthur Hendrick Vandenberg",
+            "ko": "아서 밴던버그",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/V000025"
+          },
+          {
+            "id": "F000081",
+            "name": "Homer Samuel Ferguson",
+            "ko": "호머 퍼거슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000081"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "국제주의",
+          "en": "internationalism"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연설의 방향은 {{blank}}입니다.",
+          "en": "The speech signaled a turn toward {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "고립주의",
+              "en": "isolationism"
+            },
+            {
+              "id": "B",
+              "ko": "보호무역",
+              "en": "protectionism"
+            },
+            {
+              "id": "C",
+              "ko": "분리주의",
+              "en": "separatism"
+            },
+            {
+              "id": "D",
+              "ko": "국제주의",
+              "en": "internationalism"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "V000025",
+            "name": "Arthur Hendrick Vandenberg",
+            "ko": "아서 밴던버그",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/V000025"
+          },
+          {
+            "id": "F000081",
+            "name": "Homer Samuel Ferguson",
+            "ko": "호머 퍼거슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000081"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only.",
+      "choiceReview": "Contrast alternative policy orientations without asserting that the senator advocated them."
+    },
+    {
+      "id": "P02-153",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Succession and party difference useful; generic branch.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "트루먼이 상원을 사임했습니다.",
+            "en": "Truman resigned from the Senate."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의석의 정당이 달라졌습니다.",
+            "en": "The seats now have different parties."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "임명 서류는 {{blank}} 앞으로 전달하죠.",
+          "en": "Address the appointment papers to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "브리그스",
+              "en": "Briggs"
+            },
+            {
+              "id": "B",
+              "ko": "도널",
+              "en": "Donnell"
+            },
+            {
+              "id": "C",
+              "ko": "클라크",
+              "en": "Clark"
+            },
+            {
+              "id": "D",
+              "ko": "켐",
+              "en": "Kem"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "브리그스는 1945년 1월 18일 임명됐습니다.",
+              "en": "Briggs was appointed January 18, 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 브리그스는 1945년 1월 18일 임명됐습니다.",
+              "en": "Here is the distinction. Briggs was appointed January 18, 1945."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "트루먼의 상원 사임으로 공석이 생겼습니다.",
+            "en": "Truman's Senate resignation created a vacancy."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 재임과 1월 임명을 구분하세요.",
+            "en": "Separate the continuing seat from the January appointment."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "임명 서류는 {{blank}} 앞으로 전달하죠.",
+          "en": "Address the appointment papers to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "브리그스",
+              "en": "Briggs"
+            },
+            {
+              "id": "B",
+              "ko": "도널",
+              "en": "Donnell"
+            },
+            {
+              "id": "C",
+              "ko": "클라크",
+              "en": "Clark"
+            },
+            {
+              "id": "D",
+              "ko": "켐",
+              "en": "Kem"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "브릭스의 임명 자격을 인정합니다.",
+              "en": "Recognize Briggs's appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "브리그스는 1945년 1월 18일 임명됐습니다.",
+              "en": "Briggs was appointed January 18, 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 브리그스는 1945년 1월 18일 임명됐습니다.",
+              "en": "Here is the distinction. Briggs was appointed January 18, 1945."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석까지 변경하지 마세요.",
+              "en": "Leave the other seat intact."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-153",
+        "date": "1945-02-01",
+        "mechanism": "vp-vacancy",
+        "learningTarget": "Briggs was appointed January 18, 1945.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MO/senators.htm",
+            "claim": "Briggs was appointed January 18, 1945.",
+            "asOf": "1945-02-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-153-vp-vacancy"
+        },
+        "venue": {
+          "ko": "부통령 취임 뒤 공석",
+          "en": "Vice presidential vacancy"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "B000828",
+            "name": "Frank Parks Briggs",
+            "ko": "프랭크 브리그스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000828"
+          },
+          {
+            "id": "D000414",
+            "name": "Forrest C. Donnell",
+            "ko": "포리스트 도널",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/D000414"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "브리그스",
+          "en": "Briggs"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "임명 서류는 {{blank}} 앞으로 전달하죠.",
+          "en": "Address the appointment papers to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "브리그스",
+              "en": "Briggs"
+            },
+            {
+              "id": "B",
+              "ko": "도널",
+              "en": "Donnell"
+            },
+            {
+              "id": "C",
+              "ko": "클라크",
+              "en": "Clark"
+            },
+            {
+              "id": "D",
+              "ko": "켐",
+              "en": "Kem"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "B000828",
+            "name": "Frank Parks Briggs",
+            "ko": "프랭크 브리그스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000828"
+          },
+          {
+            "id": "D000414",
+            "name": "Forrest C. Donnell",
+            "ko": "포리스트 도널",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/D000414"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-154",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Young self-identifies; direct cue.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "모지스가 3월 사망했습니다.",
+            "en": "Moses died in March."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "같은 달 제가 임명됐습니다.",
+            "en": "I was appointed that month."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연초 기록은 보존하고 Class III 현직에 {{blank}}을 넣죠.",
+          "en": "Preserve the January record and list {{blank}} as current Class III senator.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "나이",
+              "en": "Nye"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "랭거",
+              "en": "Langer"
+            },
+            {
+              "id": "D",
+              "ko": "모지스",
+              "en": "Moses"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "영은 1945년 3월 12일 임명됐습니다.",
+              "en": "Young was appointed March 12, 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 영은 1945년 3월 12일 임명됐습니다.",
+              "en": "Here is the distinction. Young was appointed March 12, 1945."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "모지스 사망 후 Class III 의석의 재임 자격을 심사합니다.",
+            "en": "Review Class III credentials after Moses's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "1월 명부와 3월 임명 기록을 비교하세요.",
+            "en": "Compare the January roster and March appointment."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연초 기록은 보존하고 Class III 현직에 {{blank}}을 넣죠.",
+          "en": "Preserve the January record and list {{blank}} as current Class III senator.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "나이",
+              "en": "Nye"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "랭거",
+              "en": "Langer"
+            },
+            {
+              "id": "D",
+              "ko": "모지스",
+              "en": "Moses"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "영의 임명 자격을 인정합니다.",
+              "en": "Recognize Young's appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "영은 1945년 3월 12일 임명됐습니다.",
+              "en": "Young was appointed March 12, 1945."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 영은 1945년 3월 12일 임명됐습니다.",
+              "en": "Here is the distinction. Young was appointed March 12, 1945."
+            },
+            {
+              "speaker": "aide",
+              "ko": "1월의 기록을 현직으로 그대로 적용하지 마세요.",
+              "en": "Do not carry the January roster forward unchanged."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-154",
+        "date": "1945-07-01",
+        "mechanism": "roster-revision",
+        "learningTarget": "Young was appointed March 12, 1945.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/ND/senators.htm",
+            "claim": "Young was appointed March 12, 1945.",
+            "asOf": "1945-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-154-roster-revision"
+        },
+        "venue": {
+          "ko": "전시 연표 수정",
+          "en": "Wartime timeline revision"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "L000070",
+            "name": "William Langer",
+            "ko": "윌리엄 랭거",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000070"
+          },
+          {
+            "id": "Y000047",
+            "name": "Milton Ruben Young",
+            "ko": "밀턴 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000047"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "영",
+          "en": "Young"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연초 기록은 보존하고 Class III 현직에 {{blank}}을 넣죠.",
+          "en": "Preserve the January record and list {{blank}} as current Class III senator.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "나이",
+              "en": "Nye"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "랭거",
+              "en": "Langer"
+            },
+            {
+              "id": "D",
+              "ko": "모지스",
+              "en": "Moses"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "L000070",
+            "name": "William Langer",
+            "ko": "윌리엄 랭거",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/L000070"
+          },
+          {
+            "id": "Y000047",
+            "name": "Milton Ruben Young",
+            "ko": "밀턴 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000047"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-155",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Interim appointment vs separate seat; weak distractors.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "글래스가 5월 사망했습니다.",
+            "en": "Glass died in May."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 Class I은 별개입니다.",
+            "en": "My Class I seat is separate."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "잔여 임기 접견은 {{blank}}에게 잡죠.",
+          "en": "Schedule the interim meeting with {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "글래스",
+              "en": "Glass"
+            },
+            {
+              "id": "B",
+              "ko": "로버트슨",
+              "en": "Robertson"
+            },
+            {
+              "id": "C",
+              "ko": "버치",
+              "en": "Burch"
+            },
+            {
+              "id": "D",
+              "ko": "버드",
+              "en": "Byrd"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "버치는 1946년 5월 31일 임명됐습니다.",
+              "en": "Burch was appointed May 31, 1946."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버치는 1946년 5월 31일 임명됐습니다.",
+              "en": "Here is the distinction. Burch was appointed May 31, 1946."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "글래스 사망으로 생긴 공석의 임시 대표에게 주민 요청을 전달합니다.",
+            "en": "A constituent request needs the interim representative after Glass's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class I 의석의 기존 연락망은 별도로 유지하세요.",
+            "en": "Keep the existing Class I contact separate."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "잔여 임기 접견은 {{blank}}에게 잡죠.",
+          "en": "Schedule the interim meeting with {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "글래스",
+              "en": "Glass"
+            },
+            {
+              "id": "B",
+              "ko": "로버트슨",
+              "en": "Robertson"
+            },
+            {
+              "id": "C",
+              "ko": "버치",
+              "en": "Burch"
+            },
+            {
+              "id": "D",
+              "ko": "버드",
+              "en": "Byrd"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "버치에게 가상 회의 요청을 보냅니다.",
+              "en": "Send the simulated meeting request to Burch."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "버치는 1946년 5월 31일 임명됐습니다.",
+              "en": "Burch was appointed May 31, 1946."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버치는 1946년 5월 31일 임명됐습니다.",
+              "en": "Here is the distinction. Burch was appointed May 31, 1946."
+            },
+            {
+              "speaker": "aide",
+              "ko": "임시 임명자와 다른 의석의 의원을 구분하세요.",
+              "en": "Distinguish the interim appointee from the other incumbent."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-155",
+        "date": "1946-07-01",
+        "mechanism": "memorial-handover",
+        "learningTarget": "Burch was appointed May 31, 1946.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/VA/senators.htm",
+            "claim": "Burch was appointed May 31, 1946.",
+            "asOf": "1946-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-155-memorial-handover"
+        },
+        "venue": {
+          "ko": "추모와 인계",
+          "en": "Memorial and handover"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-147. 연속 사건 후보: P02-122.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-147. Continuity candidate: P02-122."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "B001069",
+            "name": "Thomas Granville Burch",
+            "ko": "토머스 버치",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001069"
+          },
+          {
+            "id": "B001208",
+            "name": "Harry Flood Byrd",
+            "ko": "해리 버드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001208"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "버치",
+          "en": "Burch"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "잔여 임기 접견은 {{blank}}에게 잡죠.",
+          "en": "Schedule the interim meeting with {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "글래스",
+              "en": "Glass"
+            },
+            {
+              "id": "B",
+              "ko": "로버트슨",
+              "en": "Robertson"
+            },
+            {
+              "id": "C",
+              "ko": "버치",
+              "en": "Burch"
+            },
+            {
+              "id": "D",
+              "ko": "버드",
+              "en": "Byrd"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "B001069",
+            "name": "Thomas Granville Burch",
+            "ko": "토머스 버치",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001069"
+          },
+          {
+            "id": "B001208",
+            "name": "Harry Flood Byrd",
+            "ko": "해리 버드",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001208"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-156",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Party contact exercise, obvious cast cue.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "새 Class I 의원이 취임했습니다.",
+            "en": "A new Class I senator took office."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class III은 민주당입니다.",
+            "en": "Class III is Democratic."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 의견서는 {{blank}}에게 전달하죠.",
+          "en": "Deliver the Republican memorandum to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "토머스",
+              "en": "Thomas"
+            },
+            {
+              "id": "B",
+              "ko": "머독",
+              "en": "Murdock"
+            },
+            {
+              "id": "C",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "D",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "왓킨스는 1947년 취임한 공화당 의원입니다.",
+              "en": "Watkins was a Republican who entered in 1947."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 왓킨스는 1947년 취임한 공화당 의원입니다.",
+              "en": "Here is the distinction. Watkins was a Republican who entered in 1947."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "유타 주민의 요청을 두 정당 연락처로 구분합니다.",
+            "en": "Separate Utah constituent requests by party contact."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "새 Class I 의원의 실제 소속을 확인하세요.",
+            "en": "Verify the affiliation of the new Class I incumbent."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 의견서는 {{blank}}에게 전달하죠.",
+          "en": "Deliver the Republican memorandum to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "토머스",
+              "en": "Thomas"
+            },
+            {
+              "id": "B",
+              "ko": "머독",
+              "en": "Murdock"
+            },
+            {
+              "id": "C",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "D",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "왓킨스에게 공화당 연락을 전달합니다.",
+              "en": "Route the Republican contact to Watkins."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "왓킨스는 1947년 취임한 공화당 의원입니다.",
+              "en": "Watkins was a Republican who entered in 1947."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 왓킨스는 1947년 취임한 공화당 의원입니다.",
+              "en": "Here is the distinction. Watkins was a Republican who entered in 1947."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석의 정당을 적용하지 마세요.",
+              "en": "Do not apply the other seat's affiliation."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-156",
+        "date": "1947-07-01",
+        "mechanism": "party-petition",
+        "learningTarget": "Watkins was a Republican who entered in 1947.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/UT/senators.htm",
+            "claim": "Watkins was a Republican who entered in 1947.",
+            "asOf": "1947-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-156-party-petition"
+        },
+        "venue": {
+          "ko": "양당 청원",
+          "en": "Bipartisan petition"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "W000190",
+            "name": "Arthur Vivian Watkins",
+            "ko": "아서 왓킨스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000190"
+          },
+          {
+            "id": "T000164",
+            "name": "Elbert Duncan Thomas",
+            "ko": "엘버트 토머스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000164"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "왓킨스",
+          "en": "Watkins"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 의견서는 {{blank}}에게 전달하죠.",
+          "en": "Deliver the Republican memorandum to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "토머스",
+              "en": "Thomas"
+            },
+            {
+              "id": "B",
+              "ko": "머독",
+              "en": "Murdock"
+            },
+            {
+              "id": "C",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "D",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "W000190",
+            "name": "Arthur Vivian Watkins",
+            "ko": "아서 왓킨스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000190"
+          },
+          {
+            "id": "T000164",
+            "name": "Elbert Duncan Thomas",
+            "ko": "엘버트 토머스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000164"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-157",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Anderson directly names class; succession recall.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 Class II에 취임했습니다.",
+            "en": "I entered Class II this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class I은 제가 맡습니다.",
+            "en": "I retain Class I."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해치의 정규 후임 {{blank}}에게 의제를 전달하죠.",
+          "en": "Send the agenda to Hatch's regular successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "앤더슨",
+              "en": "Anderson"
+            },
+            {
+              "id": "B",
+              "ko": "차베스",
+              "en": "Chavez"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "도메니치",
+              "en": "Domenici"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "앤더슨은 1949년 해치의 뒤를 이었습니다.",
+              "en": "Anderson succeeded Hatch in 1949."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 앤더슨은 1949년 해치의 뒤를 이었습니다.",
+              "en": "Here is the distinction. Anderson succeeded Hatch in 1949."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "해치의 정규 임기 종료 이후 Class II 후임을 확인합니다.",
+            "en": "Identify the Class II successor after Hatch's term."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class I의 계속 재임은 변경하지 마세요.",
+            "en": "Leave continuing Class I service intact."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "해치의 정규 후임 {{blank}}에게 의제를 전달하죠.",
+          "en": "Send the agenda to Hatch's regular successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "앤더슨",
+              "en": "Anderson"
+            },
+            {
+              "id": "B",
+              "ko": "차베스",
+              "en": "Chavez"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "도메니치",
+              "en": "Domenici"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "앤더슨에게 새 의제 협의 요청을 전달합니다.",
+              "en": "Route the new agenda request to Anderson."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "앤더슨은 1949년 해치의 뒤를 이었습니다.",
+              "en": "Anderson succeeded Hatch in 1949."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 앤더슨은 1949년 해치의 뒤를 이었습니다.",
+              "en": "Here is the distinction. Anderson succeeded Hatch in 1949."
+            },
+            {
+              "speaker": "aide",
+              "ko": "해치의 전임 기록과 현직을 분리하세요.",
+              "en": "Separate Hatch's earlier service from the incumbent."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-157",
+        "date": "1949-07-01",
+        "mechanism": "handover",
+        "learningTarget": "Anderson succeeded Hatch in 1949.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/NM/senators.htm",
+            "claim": "Anderson succeeded Hatch in 1949.",
+            "asOf": "1949-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-157-handover"
+        },
+        "venue": {
+          "ko": "뉴멕시코 인계",
+          "en": "New Mexico handover"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-123.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-123."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "A000186",
+            "name": "Clinton Presba Anderson",
+            "ko": "클린턴 앤더슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000186"
+          },
+          {
+            "id": "C000338",
+            "name": "Dennis Chavez",
+            "ko": "데니스 차베스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000338"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "앤더슨",
+          "en": "Anderson"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "해치의 정규 후임 {{blank}}에게 의제를 전달하죠.",
+          "en": "Send the agenda to Hatch's regular successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "앤더슨",
+              "en": "Anderson"
+            },
+            {
+              "id": "B",
+              "ko": "차베스",
+              "en": "Chavez"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "도메니치",
+              "en": "Domenici"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "A000186",
+            "name": "Clinton Presba Anderson",
+            "ko": "클린턴 앤더슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000186"
+          },
+          {
+            "id": "C000338",
+            "name": "Dennis Chavez",
+            "ko": "데니스 차베스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000338"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-158",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Speech title recall, cast clue; not invent reaction from McCarthy.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "어제 본회의에서 연설했습니다.",
+            "en": "I spoke on the floor yesterday."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "연설 기록을 별도 보관합시다.",
+            "en": "File the speech separately."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연설 제목은 {{blank}}입니다.",
+          "en": "File the speech under {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "대서양 헌장",
+              "en": "Atlantic Charter"
+            },
+            {
+              "id": "B",
+              "ko": "양심 선언",
+              "en": "Declaration of Conscience"
+            },
+            {
+              "id": "C",
+              "ko": "독립선언",
+              "en": "Declaration of Independence"
+            },
+            {
+              "id": "D",
+              "ko": "먼로 선언",
+              "en": "Monroe Doctrine"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "스미스는 1950년 6월 1일 양심 선언을 발표했습니다.",
+              "en": "Smith delivered her Declaration of Conscience on June 1, 1950."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 스미스는 1950년 6월 1일 양심 선언을 발표했습니다.",
+              "en": "Here is the distinction. Smith delivered her Declaration of Conscience on June 1, 1950."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "6월 1일 상원 연설의 공개 기록을 검토합니다.",
+            "en": "Review the public record of the June 1 Senate speech."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "연설 제목을 공식 기록으로 확인하고 다른 의원의 반응을 추정하지 마세요.",
+            "en": "Verify the title in the official record without inventing another senator's reaction."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "연설 제목은 {{blank}}입니다.",
+          "en": "File the speech under {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "대서양 헌장",
+              "en": "Atlantic Charter"
+            },
+            {
+              "id": "B",
+              "ko": "양심 선언",
+              "en": "Declaration of Conscience"
+            },
+            {
+              "id": "C",
+              "ko": "독립선언",
+              "en": "Declaration of Independence"
+            },
+            {
+              "id": "D",
+              "ko": "먼로 선언",
+              "en": "Monroe Doctrine"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "양심선언을 해당 연설의 제목으로 선택합니다.",
+              "en": "Identify the Declaration of Conscience as the speech."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "스미스는 1950년 6월 1일 양심 선언을 발표했습니다.",
+              "en": "Smith delivered her Declaration of Conscience on June 1, 1950."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 스미스는 1950년 6월 1일 양심 선언을 발표했습니다.",
+              "en": "Here is the distinction. Smith delivered her Declaration of Conscience on June 1, 1950."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 시대의 선언과 혼동하지 마세요.",
+              "en": "Do not conflate it with a declaration from another period."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-158",
+        "date": "1950-06-02",
+        "mechanism": "speech-archive",
+        "learningTarget": "Smith delivered her Declaration of Conscience on June 1, 1950.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/ME/senators.htm",
+            "claim": "Smith delivered her Declaration of Conscience on June 1, 1950.",
+            "asOf": "1950-06-02"
+          },
+          {
+            "url": "https://www.senate.gov/states/WI/senators.htm",
+            "claim": "Smith delivered her Declaration of Conscience on June 1, 1950.",
+            "asOf": "1950-06-02"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/investigations/mccarthy-hearings/a-declaration-of-conscience.htm",
+            "claim": "Smith delivered her Declaration of Conscience on June 1, 1950.",
+            "asOf": "1950-06-02"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-158-speech-archive"
+        },
+        "venue": {
+          "ko": "본회의 연설 기록",
+          "en": "Floor speech archive"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-027.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-027."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "S000590",
+            "name": "Margaret Chase Smith",
+            "ko": "마거릿 체이스 스미스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S000590"
+          },
+          {
+            "id": "M000315",
+            "name": "Joseph Raymond McCarthy",
+            "ko": "조지프 매카시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000315"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "양심 선언",
+          "en": "Declaration of Conscience"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "연설 제목은 {{blank}}입니다.",
+          "en": "File the speech under {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "대서양 헌장",
+              "en": "Atlantic Charter"
+            },
+            {
+              "id": "B",
+              "ko": "양심 선언",
+              "en": "Declaration of Conscience"
+            },
+            {
+              "id": "C",
+              "ko": "독립선언",
+              "en": "Declaration of Independence"
+            },
+            {
+              "id": "D",
+              "ko": "먼로 선언",
+              "en": "Monroe Doctrine"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "S000590",
+            "name": "Margaret Chase Smith",
+            "ko": "마거릿 체이스 스미스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S000590"
+          },
+          {
+            "id": "M000315",
+            "name": "Joseph Raymond McCarthy",
+            "ko": "조지프 매카시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000315"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-159",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Broadcast and investigation jurisdiction practical; retain factual prompt.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "키포버 위원회는 주간 조직범죄를 조사했습니다.",
+              "en": "The Kefauver Committee investigated interstate organized crime."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 키포버 위원회는 주간 조직범죄를 조사했습니다.",
+              "en": "Here is the distinction. The Kefauver Committee investigated interstate organized crime."
+            }
+          ]
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "키포버위원회를 방송 제목에 사용합니다.",
+              "en": "Use the Kefauver Committee in the caption."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "키포버 위원회는 주간 조직범죄를 조사했습니다.",
+              "en": "The Kefauver Committee investigated interstate organized crime."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 키포버 위원회는 주간 조직범죄를 조사했습니다.",
+              "en": "Here is the distinction. The Kefauver Committee investigated interstate organized crime."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 조사위원회의 명칭을 사용하지 마세요.",
+              "en": "Do not use another investigative committee's name."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-159",
+        "date": "1951-03-15",
+        "mechanism": "broadcast-caption",
+        "learningTarget": "The Kefauver Committee investigated interstate organized crime.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/TN/senators.htm",
+            "claim": "The Kefauver Committee investigated interstate organized crime.",
+            "asOf": "1951-03-15"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/investigations/kefauver.htm",
+            "claim": "The Kefauver Committee investigated interstate organized crime.",
+            "asOf": "1951-03-15"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-159-broadcast-caption"
+        },
+        "venue": {
+          "ko": "청문회 방송",
+          "en": "Hearing broadcast"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. P01 교차 팩 후보(하원 재임 확인): P01-996, P01-995, P01-994.",
+          "en": "Fictional encounter, not actual quotations. P01 cross-pack candidates (House service checked): P01-996, P01-995, P01-994."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "K000044",
+            "name": "Carey Estes Kefauver",
+            "ko": "에스티스 키포버",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000044"
+          },
+          {
+            "id": "M000499",
+            "name": "Kenneth Douglas McKellar",
+            "ko": "케네스 매켈러",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000499"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "키포버",
+          "en": "Kefauver"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "방송 자막은 {{blank}} 위원회입니다.",
+          "en": "Caption the broadcast as the {{blank}} Committee.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "어빈",
+              "en": "Ervin"
+            },
+            {
+              "id": "B",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "C",
+              "ko": "키포버",
+              "en": "Kefauver"
+            },
+            {
+              "id": "D",
+              "ko": "트루먼",
+              "en": "Truman"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "K000044",
+            "name": "Carey Estes Kefauver",
+            "ko": "에스티스 키포버",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/K000044"
+          },
+          {
+            "id": "M000499",
+            "name": "Kenneth Douglas McKellar",
+            "ko": "케네스 매켈러",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000499"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-160",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Vacancy succession clear, generic feedback.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "밴던버그가 4월 사망했습니다.",
+            "en": "Vandenberg died in April."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석은 그대로입니다.",
+            "en": "The other seat is unchanged."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "현직 안내문에는 임명 후임 {{blank}}을 넣죠.",
+          "en": "Add the appointed successor {{blank}} to the current roster.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "퍼거슨",
+              "en": "Ferguson"
+            },
+            {
+              "id": "B",
+              "ko": "포터",
+              "en": "Potter"
+            },
+            {
+              "id": "C",
+              "ko": "하트",
+              "en": "Hart"
+            },
+            {
+              "id": "D",
+              "ko": "무디",
+              "en": "Moody"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "무디는 1951년 4월 23일 임명됐습니다.",
+              "en": "Moody was appointed April 23, 1951."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 무디는 1951년 4월 23일 임명됐습니다.",
+              "en": "Here is the distinction. Moody was appointed April 23, 1951."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "밴든버그 사망 후 미시간 공석의 임명 자격을 확인합니다.",
+            "en": "Review Michigan vacancy credentials after Vandenberg's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 재임은 별개입니다.",
+            "en": "The other seat's tenure is separate."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "현직 안내문에는 임명 후임 {{blank}}을 넣죠.",
+          "en": "Add the appointed successor {{blank}} to the current roster.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "퍼거슨",
+              "en": "Ferguson"
+            },
+            {
+              "id": "B",
+              "ko": "포터",
+              "en": "Potter"
+            },
+            {
+              "id": "C",
+              "ko": "하트",
+              "en": "Hart"
+            },
+            {
+              "id": "D",
+              "ko": "무디",
+              "en": "Moody"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "무디의 임명 자격을 인정합니다.",
+              "en": "Recognize Moody's appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "무디는 1951년 4월 23일 임명됐습니다.",
+              "en": "Moody was appointed April 23, 1951."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 무디는 1951년 4월 23일 임명됐습니다.",
+              "en": "Here is the distinction. Moody was appointed April 23, 1951."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석까지 변경하지 마세요.",
+              "en": "Do not change both seats."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-160",
+        "date": "1951-07-01",
+        "mechanism": "obituary-correction",
+        "learningTarget": "Moody was appointed April 23, 1951.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MI/senators.htm",
+            "claim": "Moody was appointed April 23, 1951.",
+            "asOf": "1951-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-160-obituary-correction"
+        },
+        "venue": {
+          "ko": "추모 기사 수정",
+          "en": "Obituary correction"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-152.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-152."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M000878",
+            "name": "Arthur Edson Blair Moody",
+            "ko": "아서 무디",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000878"
+          },
+          {
+            "id": "F000081",
+            "name": "Homer Samuel Ferguson",
+            "ko": "호머 퍼거슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000081"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "무디",
+          "en": "Moody"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "현직 안내문에는 임명 후임 {{blank}}을 넣죠.",
+          "en": "Add the appointed successor {{blank}} to the current roster.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "퍼거슨",
+              "en": "Ferguson"
+            },
+            {
+              "id": "B",
+              "ko": "포터",
+              "en": "Potter"
+            },
+            {
+              "id": "C",
+              "ko": "하트",
+              "en": "Hart"
+            },
+            {
+              "id": "D",
+              "ko": "무디",
+              "en": "Moody"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "M000878",
+            "name": "Arthur Edson Blair Moody",
+            "ko": "아서 무디",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000878"
+          },
+          {
+            "id": "F000081",
+            "name": "Homer Samuel Ferguson",
+            "ko": "호머 퍼거슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000081"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-161",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Entry dates cue, seat class not explained.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "지난해 11월 취임했습니다.",
+            "en": "I entered last November."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "올해 1월 다른 의석에 취임했습니다.",
+            "en": "I entered the other seat in January."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class III 방문 일정을 {{blank}}에게 연결하죠.",
+          "en": "Attach the Class III visit to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부시",
+              "en": "Bush"
+            },
+            {
+              "id": "B",
+              "ko": "퍼텔",
+              "en": "Purtell"
+            },
+            {
+              "id": "C",
+              "ko": "도드",
+              "en": "Dodd"
+            },
+            {
+              "id": "D",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "부시는 Class III 의원입니다.",
+              "en": "Bush held Class III."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 부시는 Class III 의원입니다.",
+              "en": "Here is the distinction. Bush held Class III."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "코네티컷 두 의석의 방문 일정을 선거 주기에 맞춥니다.",
+            "en": "Align simulated Connecticut visits with the two seats' election cycles."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "취임 날짜 대신 공식 의석 클래스를 확인하세요.",
+            "en": "Check the official seat class rather than entry dates."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class III 방문 일정을 {{blank}}에게 연결하죠.",
+          "en": "Attach the Class III visit to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부시",
+              "en": "Bush"
+            },
+            {
+              "id": "B",
+              "ko": "퍼텔",
+              "en": "Purtell"
+            },
+            {
+              "id": "C",
+              "ko": "도드",
+              "en": "Dodd"
+            },
+            {
+              "id": "D",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "부시에게 Class III 방문을 배정합니다.",
+              "en": "Assign the Class III visit to Bush."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "부시는 Class III 의원입니다.",
+              "en": "Bush held Class III."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 부시는 Class III 의원입니다.",
+              "en": "Here is the distinction. Bush held Class III."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의석의 클래스와 취임일을 혼동하지 마세요.",
+              "en": "Do not confuse the seat classes with entry dates."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-161",
+        "date": "1953-07-01",
+        "mechanism": "calendar-assignment",
+        "learningTarget": "Bush held Class III.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/CT/senators.htm",
+            "claim": "Bush held Class III.",
+            "asOf": "1953-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-161-calendar-assignment"
+        },
+        "venue": {
+          "ko": "의원 방문 달력",
+          "en": "Senate visit calendar"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "B001167",
+            "name": "Prescott Sheldon Bush",
+            "ko": "프레스콧 부시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001167"
+          },
+          {
+            "id": "P000575",
+            "name": "William Arthur Purtell",
+            "ko": "윌리엄 퍼텔",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000575"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "부시",
+          "en": "Bush"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "Class III 방문 일정을 {{blank}}에게 연결하죠.",
+          "en": "Attach the Class III visit to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "부시",
+              "en": "Bush"
+            },
+            {
+              "id": "B",
+              "ko": "퍼텔",
+              "en": "Purtell"
+            },
+            {
+              "id": "C",
+              "ko": "도드",
+              "en": "Dodd"
+            },
+            {
+              "id": "D",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "B001167",
+            "name": "Prescott Sheldon Bush",
+            "ko": "프레스콧 부시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001167"
+          },
+          {
+            "id": "P000575",
+            "name": "William Arthur Purtell",
+            "ko": "윌리엄 퍼텔",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000575"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-162",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 2,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 13,
+      "finding": "Discipline vs removal substantive; alternatives weak.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "상원은 1954년 12월 2일 매카시를 견책했습니다.",
+              "en": "The Senate censured McCarthy on December 2, 1954."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 상원은 1954년 12월 2일 매카시를 견책했습니다.",
+              "en": "Here is the distinction. The Senate censured McCarthy on December 2, 1954."
+            }
+          ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "결과는 제명이 아니라 {{blank}}입니다.",
+          "en": "The result was {{blank}}, not expulsion.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "비준",
+              "en": "ratification"
+            },
+            {
+              "id": "B",
+              "ko": "견책",
+              "en": "censure"
+            },
+            {
+              "id": "C",
+              "ko": "탄핵",
+              "en": "impeachment"
+            },
+            {
+              "id": "D",
+              "ko": "임명",
+              "en": "appointment"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "견책으로 분류하고 제명 처리를 하지 않습니다.",
+              "en": "Classify it as censure, not expulsion."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "상원은 1954년 12월 2일 매카시를 견책했습니다.",
+              "en": "The Senate censured McCarthy on December 2, 1954."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 상원은 1954년 12월 2일 매카시를 견책했습니다.",
+              "en": "Here is the distinction. The Senate censured McCarthy on December 2, 1954."
+            },
+            {
+              "speaker": "aide",
+              "ko": "견책과 제명을 같은 조치로 처리하지 마세요.",
+              "en": "Do not treat censure and expulsion as the same action."
+            }
+          ]
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "결과는 제명이 아니라 {{blank}}입니다.",
+          "en": "The result was {{blank}}, not expulsion.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "정식 징계 없이 조사 종결",
+              "en": "closure of the inquiry without formal discipline"
+            },
+            {
+              "id": "B",
+              "ko": "견책",
+              "en": "censure"
+            },
+            {
+              "id": "C",
+              "ko": "징계 결정을 다음 회기로 연기",
+              "en": "postponement of discipline to the next Congress"
+            },
+            {
+              "id": "D",
+              "ko": "위원회 직책만 변경",
+              "en": "change of committee office only"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "protected": {
+        "id": "P02-162",
+        "date": "1954-12-03",
+        "mechanism": "discipline-disposition",
+        "learningTarget": "The Senate censured McCarthy on December 2, 1954.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/UT/senators.htm",
+            "claim": "The Senate censured McCarthy on December 2, 1954.",
+            "asOf": "1954-12-03"
+          },
+          {
+            "url": "https://www.senate.gov/states/WI/senators.htm",
+            "claim": "The Senate censured McCarthy on December 2, 1954.",
+            "asOf": "1954-12-03"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/censure/133Joseph_McCarthy.htm",
+            "claim": "The Senate censured McCarthy on December 2, 1954.",
+            "asOf": "1954-12-03"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-162-discipline-disposition"
+        },
+        "venue": {
+          "ko": "징계 표결",
+          "en": "Disciplinary vote"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-158. 연속 사건 후보: P02-179.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-158. Continuity candidate: P02-179."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "W000190",
+            "name": "Arthur Vivian Watkins",
+            "ko": "아서 왓킨스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000190"
+          },
+          {
+            "id": "M000315",
+            "name": "Joseph Raymond McCarthy",
+            "ko": "조지프 매카시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000315"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "견책",
+          "en": "censure"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "결과는 제명이 아니라 {{blank}}입니다.",
+          "en": "The result was {{blank}}, not expulsion.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "비준",
+              "en": "ratification"
+            },
+            {
+              "id": "B",
+              "ko": "견책",
+              "en": "censure"
+            },
+            {
+              "id": "C",
+              "ko": "탄핵",
+              "en": "impeachment"
+            },
+            {
+              "id": "D",
+              "ko": "임명",
+              "en": "appointment"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "W000190",
+            "name": "Arthur Vivian Watkins",
+            "ko": "아서 왓킨스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000190"
+          },
+          {
+            "id": "M000315",
+            "name": "Joseph Raymond McCarthy",
+            "ko": "조지프 매카시",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000315"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only.",
+      "choiceReview": "All alternatives concern disciplinary disposition rather than unrelated processes."
+    },
+    {
+      "id": "P02-163",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Both exact dates directly solve comparison.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 취임했습니다.",
+            "en": "I entered this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 1941년부터 재임합니다.",
+            "en": "I have served since 1941."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 재임한 {{blank}}을 먼저 소개하죠.",
+          "en": "Introduce the longer-serving member, {{blank}}, first.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "B",
+              "ko": "캐럴",
+              "en": "Carroll"
+            },
+            {
+              "id": "C",
+              "ko": "밀리킨",
+              "en": "Millikin"
+            },
+            {
+              "id": "D",
+              "ko": "앨럿",
+              "en": "Allott"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "밀리킨은 1941년, 앨럿은 1955년에 취임했습니다.",
+              "en": "Millikin entered in 1941, Allott in 1955."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 밀리킨은 1941년, 앨럿은 1955년에 취임했습니다.",
+              "en": "Here is the distinction. Millikin entered in 1941, Allott in 1955."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "가상 대표단 소개 순서를 재임 기간에 따라 정합니다.",
+            "en": "Set a simulated delegation introduction order by tenure."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "공식 진입 기록의 순서를 비교하세요.",
+            "en": "Compare the order of official entry dates."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 재임한 {{blank}}을 먼저 소개하죠.",
+          "en": "Introduce the longer-serving member, {{blank}}, first.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "B",
+              "ko": "캐럴",
+              "en": "Carroll"
+            },
+            {
+              "id": "C",
+              "ko": "밀리킨",
+              "en": "Millikin"
+            },
+            {
+              "id": "D",
+              "ko": "앨럿",
+              "en": "Allott"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "밀리킨에게 첫 소개를 배정합니다.",
+              "en": "Give Millikin the first introduction."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "밀리킨은 1941년, 앨럿은 1955년에 취임했습니다.",
+              "en": "Millikin entered in 1941, Allott in 1955."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 밀리킨은 1941년, 앨럿은 1955년에 취임했습니다.",
+              "en": "Here is the distinction. Millikin entered in 1941, Allott in 1955."
+            },
+            {
+              "speaker": "aide",
+              "ko": "더 늦게 진입한 의원을 먼저 소개한 순서를 수정하세요.",
+              "en": "Correct the order that placed the later entrant first."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-163",
+        "date": "1955-07-01",
+        "mechanism": "seniority-intro",
+        "learningTarget": "Millikin entered in 1941, Allott in 1955.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/CO/senators.htm",
+            "claim": "Millikin entered in 1941, Allott in 1955.",
+            "asOf": "1955-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-163-seniority-intro"
+        },
+        "venue": {
+          "ko": "지역 행사 소개",
+          "en": "State reception"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "A000161",
+            "name": "Gordon Llewellyn Allott",
+            "ko": "고든 앨럿",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000161"
+          },
+          {
+            "id": "M000771",
+            "name": "Eugene Donald Millikin",
+            "ko": "유진 밀리킨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000771"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "밀리킨",
+          "en": "Millikin"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "먼저 재임한 {{blank}}을 먼저 소개하죠.",
+          "en": "Introduce the longer-serving member, {{blank}}, first.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "존슨",
+              "en": "Johnson"
+            },
+            {
+              "id": "B",
+              "ko": "캐럴",
+              "en": "Carroll"
+            },
+            {
+              "id": "C",
+              "ko": "밀리킨",
+              "en": "Millikin"
+            },
+            {
+              "id": "D",
+              "ko": "앨럿",
+              "en": "Allott"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "A000161",
+            "name": "Gordon Llewellyn Allott",
+            "ko": "고든 앨럿",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000161"
+          },
+          {
+            "id": "M000771",
+            "name": "Eugene Donald Millikin",
+            "ko": "유진 밀리킨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000771"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-164",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Moss self-identifies new entry, Republican counterpart cues answer.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 Class I에 왔습니다.",
+            "en": "I entered Class I this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class III은 공화당입니다.",
+            "en": "Class III remains Republican."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 민주당 의원 {{blank}}에게도 의견을 요청하죠.",
+          "en": "Ask the new Democratic senator, {{blank}}, for input.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "B",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "모스",
+              "en": "Moss"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "모스는 1959년 취임한 민주당 의원입니다.",
+              "en": "Moss was a Democrat entering in 1959."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 모스는 1959년 취임한 민주당 의원입니다.",
+              "en": "Here is the distinction. Moss was a Democrat entering in 1959."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "유타의 신규 의원에게 주민 의견을 전달하려 합니다.",
+            "en": "A constituent seeks the new Utah senator."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 의석의 정당과 재임을 따로 확인하세요.",
+            "en": "Verify affiliation and service for each seat."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "새 민주당 의원 {{blank}}에게도 의견을 요청하죠.",
+          "en": "Ask the new Democratic senator, {{blank}}, for input.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "B",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "모스",
+              "en": "Moss"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "모스에게 가상 의견 요청을 전달합니다.",
+              "en": "Route the simulated request to Moss."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "모스는 1959년 취임한 민주당 의원입니다.",
+              "en": "Moss was a Democrat entering in 1959."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 모스는 1959년 취임한 민주당 의원입니다.",
+              "en": "Here is the distinction. Moss was a Democrat entering in 1959."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석의 의원에게 보내지 마세요.",
+              "en": "Do not route it to the other incumbent."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-164",
+        "date": "1959-07-01",
+        "mechanism": "party-change",
+        "learningTarget": "Moss was a Democrat entering in 1959.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/UT/senators.htm",
+            "claim": "Moss was a Democrat entering in 1959.",
+            "asOf": "1959-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-164-party-change"
+        },
+        "venue": {
+          "ko": "유타 의석 교체",
+          "en": "Utah seat turnover"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-179.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-179."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M001033",
+            "name": "Frank Edward Moss",
+            "ko": "프랭크 모스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001033"
+          },
+          {
+            "id": "B000384",
+            "name": "Wallace Foster Bennett",
+            "ko": "월리스 베넷",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000384"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "모스",
+          "en": "Moss"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "새 민주당 의원 {{blank}}에게도 의견을 요청하죠.",
+          "en": "Ask the new Democratic senator, {{blank}}, for input.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "베넷",
+              "en": "Bennett"
+            },
+            {
+              "id": "B",
+              "ko": "왓킨스",
+              "en": "Watkins"
+            },
+            {
+              "id": "C",
+              "ko": "해치",
+              "en": "Hatch"
+            },
+            {
+              "id": "D",
+              "ko": "모스",
+              "en": "Moss"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "M001033",
+            "name": "Frank Edward Moss",
+            "ko": "프랭크 모스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M001033"
+          },
+          {
+            "id": "B000384",
+            "name": "Wallace Foster Bennett",
+            "ko": "월리스 베넷",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000384"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-165",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 8,
+      "finding": "Temporary service distinction; generic branch.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "브런즈데일의 임시 재임이 끝났습니다.",
+            "en": "Brunsdale's temporary service ended."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "지난달 새 의원이 취임했습니다.",
+            "en": "A new senator entered last month."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 연락처는 {{blank}}입니다.",
+          "en": "The new Class I contact is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "버딕",
+              "en": "Burdick"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "브런즈데일",
+              "en": "Brunsdale"
+            },
+            {
+              "id": "D",
+              "ko": "랭거",
+              "en": "Langer"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "버딕은 1960년 8월 8일 취임했습니다.",
+              "en": "Burdick entered August 8, 1960."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버딕은 1960년 8월 8일 취임했습니다.",
+              "en": "Here is the distinction. Burdick entered August 8, 1960."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "브런스데일의 임시 재임 종료 이후 Class I의 자격을 확인합니다.",
+            "en": "Review Class I credentials after Brunsdale's temporary service."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "8월 취임 기록을 기존 임명 기록과 비교하세요.",
+            "en": "Compare August entry with the earlier appointment."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 연락처는 {{blank}}입니다.",
+          "en": "The new Class I contact is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "버딕",
+              "en": "Burdick"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "브런즈데일",
+              "en": "Brunsdale"
+            },
+            {
+              "id": "D",
+              "ko": "랭거",
+              "en": "Langer"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "버딕의 신규 재임을 인정합니다.",
+              "en": "Recognize Burdick's new service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "버딕은 1960년 8월 8일 취임했습니다.",
+              "en": "Burdick entered August 8, 1960."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버딕은 1960년 8월 8일 취임했습니다.",
+              "en": "Here is the distinction. Burdick entered August 8, 1960."
+            },
+            {
+              "speaker": "aide",
+              "ko": "임시 재임을 연장하지 마세요.",
+              "en": "Do not extend the temporary service."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-165",
+        "date": "1960-09-01",
+        "mechanism": "election-handover",
+        "learningTarget": "Burdick entered August 8, 1960.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/ND/senators.htm",
+            "claim": "Burdick entered August 8, 1960.",
+            "asOf": "1960-09-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-165-election-handover"
+        },
+        "venue": {
+          "ko": "임명에서 선거로",
+          "en": "Appointment to election"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-154.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-154."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "B001077",
+            "name": "Quentin Northrup Burdick",
+            "ko": "퀜틴 버딕",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001077"
+          },
+          {
+            "id": "Y000047",
+            "name": "Milton Ruben Young",
+            "ko": "밀턴 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000047"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "버딕",
+          "en": "Burdick"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 연락처는 {{blank}}입니다.",
+          "en": "The new Class I contact is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "버딕",
+              "en": "Burdick"
+            },
+            {
+              "id": "B",
+              "ko": "영",
+              "en": "Young"
+            },
+            {
+              "id": "C",
+              "ko": "브런즈데일",
+              "en": "Brunsdale"
+            },
+            {
+              "id": "D",
+              "ko": "랭거",
+              "en": "Langer"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "B001077",
+            "name": "Quentin Northrup Burdick",
+            "ko": "퀜틴 버딕",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001077"
+          },
+          {
+            "id": "Y000047",
+            "name": "Milton Ruben Young",
+            "ko": "밀턴 영",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/Y000047"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-166",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Pell identifies first entry; successor cue.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 처음 취임했습니다.",
+            "en": "I entered this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 1950년부터 다른 의석에 있습니다.",
+            "en": "I've held the other seat since 1950."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그린의 후임 {{blank}}과 일정을 잡죠.",
+          "en": "Schedule a meeting with Green's successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "채피",
+              "en": "Chafee"
+            },
+            {
+              "id": "B",
+              "ko": "펠",
+              "en": "Pell"
+            },
+            {
+              "id": "C",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "D",
+              "ko": "그린",
+              "en": "Green"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "펠은 1961년 Class II에 취임했습니다.",
+              "en": "Pell entered Class II in 1961."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 펠은 1961년 Class II에 취임했습니다.",
+              "en": "Here is the distinction. Pell entered Class II in 1961."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "그린의 재임 종료 이후 새 Class II 연락처가 필요합니다.",
+            "en": "A new Class II contact is needed after Green's tenure."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 연락처를 유지하세요.",
+            "en": "Retain the other seat's contact."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "그린의 후임 {{blank}}과 일정을 잡죠.",
+          "en": "Schedule a meeting with Green's successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "채피",
+              "en": "Chafee"
+            },
+            {
+              "id": "B",
+              "ko": "펠",
+              "en": "Pell"
+            },
+            {
+              "id": "C",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "D",
+              "ko": "그린",
+              "en": "Green"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "펠에게 가상 회의 요청을 보냅니다.",
+              "en": "Route the simulated meeting request to Pell."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "펠은 1961년 Class II에 취임했습니다.",
+              "en": "Pell entered Class II in 1961."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 펠은 1961년 Class II에 취임했습니다.",
+              "en": "Here is the distinction. Pell entered Class II in 1961."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석과 승계를 혼동하지 마세요.",
+              "en": "Do not conflate the other seat with the succession."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-166",
+        "date": "1961-07-01",
+        "mechanism": "successor-intro",
+        "learningTarget": "Pell entered Class II in 1961.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/RI/senators.htm",
+            "claim": "Pell entered Class II in 1961.",
+            "asOf": "1961-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-166-successor-intro"
+        },
+        "venue": {
+          "ko": "로드아일랜드 접견",
+          "en": "Rhode Island reception"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "P000193",
+            "name": "Claiborne de Borda Pell",
+            "ko": "클레이본 펠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000193"
+          },
+          {
+            "id": "P000100",
+            "name": "John Orlando Pastore",
+            "ko": "존 파스토어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000100"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "펠",
+          "en": "Pell"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "그린의 후임 {{blank}}과 일정을 잡죠.",
+          "en": "Schedule a meeting with Green's successor, {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "채피",
+              "en": "Chafee"
+            },
+            {
+              "id": "B",
+              "ko": "펠",
+              "en": "Pell"
+            },
+            {
+              "id": "C",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "D",
+              "ko": "그린",
+              "en": "Green"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "P000193",
+            "name": "Claiborne de Borda Pell",
+            "ko": "클레이본 펠",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000193"
+          },
+          {
+            "id": "P000100",
+            "name": "John Orlando Pastore",
+            "ko": "존 파스토어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/P000100"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-167",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Appointment and affiliation distinct; poor fringe foils.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "차베스 사망 뒤 지난해 임명됐습니다.",
+            "en": "I was appointed after Chavez died last year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의석은 민주당입니다.",
+            "en": "My seat remains Democratic."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 임명 후임은 {{blank}} 소속입니다.",
+          "en": "The Class I appointee belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "무소속",
+              "en": "no party"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "the Socialist Party"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "the Republican Party"
+            },
+            {
+              "id": "D",
+              "ko": "민주당",
+              "en": "the Democratic Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "미첨은 1962년 공화당 임명 의원이었습니다.",
+              "en": "Mechem was a Republican appointee in 1962."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 미첨은 1962년 공화당 임명 의원이었습니다.",
+              "en": "Here is the distinction. Mechem was a Republican appointee in 1962."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "차베스 사망 후 임명된 의원의 정당을 확인합니다.",
+            "en": "Identify the affiliation of the appointee after Chavez's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "기존 다른 의석의 소속을 그대로 적용하지 마세요.",
+            "en": "Do not copy the other seat's affiliation."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 임명 후임은 {{blank}} 소속입니다.",
+          "en": "The Class I appointee belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "무소속",
+              "en": "no party"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "the Socialist Party"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "the Republican Party"
+            },
+            {
+              "id": "D",
+              "ko": "민주당",
+              "en": "the Democratic Party"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "미첨을 공화당 임명자로 분류합니다.",
+              "en": "Classify Mechem as a Republican appointee."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "미첨은 1962년 공화당 임명 의원이었습니다.",
+              "en": "Mechem was a Republican appointee in 1962."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 미첨은 1962년 공화당 임명 의원이었습니다.",
+              "en": "Here is the distinction. Mechem was a Republican appointee in 1962."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의석의 정당별 집계를 분리하세요.",
+              "en": "Separate the two seats in the party count."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-167",
+        "date": "1963-07-01",
+        "mechanism": "vacancy-party",
+        "learningTarget": "Mechem was a Republican appointee in 1962.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/NM/senators.htm",
+            "claim": "Mechem was a Republican appointee in 1962.",
+            "asOf": "1963-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-167-vacancy-party"
+        },
+        "venue": {
+          "ko": "공석의 정당 변화",
+          "en": "Party shift in vacancy"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-157.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-157."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M000623",
+            "name": "Edwin Leard Mechem",
+            "ko": "에드윈 미첨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000623"
+          },
+          {
+            "id": "A000186",
+            "name": "Clinton Presba Anderson",
+            "ko": "클린턴 앤더슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000186"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "공화당",
+          "en": "the Republican Party"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 임명 후임은 {{blank}} 소속입니다.",
+          "en": "The Class I appointee belongs to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "무소속",
+              "en": "no party"
+            },
+            {
+              "id": "B",
+              "ko": "사회당",
+              "en": "the Socialist Party"
+            },
+            {
+              "id": "C",
+              "ko": "공화당",
+              "en": "the Republican Party"
+            },
+            {
+              "id": "D",
+              "ko": "민주당",
+              "en": "the Democratic Party"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "M000623",
+            "name": "Edwin Leard Mechem",
+            "ko": "에드윈 미첨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000623"
+          },
+          {
+            "id": "A000186",
+            "name": "Clinton Presba Anderson",
+            "ko": "클린턴 앤더슨",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/A000186"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-168",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Foreign Relations oversight practical; retain question.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "풀브라이트가 1966년 베트남 청문회를 주도했습니다.",
+              "en": "Fulbright led the 1966 Vietnam hearings."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 풀브라이트가 1966년 베트남 청문회를 주도했습니다.",
+              "en": "Here is the distinction. Fulbright led the 1966 Vietnam hearings."
+            }
+          ]
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "풀브라이트에게 가상 증언 요청을 전달합니다.",
+              "en": "Route the simulated testimony request to Fulbright."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "풀브라이트가 1966년 베트남 청문회를 주도했습니다.",
+              "en": "Fulbright led the 1966 Vietnam hearings."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 풀브라이트가 1966년 베트남 청문회를 주도했습니다.",
+              "en": "Here is the distinction. Fulbright led the 1966 Vietnam hearings."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 위원회의 위원장에게 보내지 마세요.",
+              "en": "Do not route it to another committee's chair."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-168",
+        "date": "1966-02-15",
+        "mechanism": "hearing-routing",
+        "learningTarget": "Fulbright led the 1966 Vietnam hearings.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/AR/senators.htm",
+            "claim": "Fulbright led the 1966 Vietnam hearings.",
+            "asOf": "1966-02-15"
+          },
+          {
+            "url": "https://www.senate.gov/artandhistory/history/minute/Vietnam_Hearings.htm",
+            "claim": "Fulbright led the 1966 Vietnam hearings.",
+            "asOf": "1966-02-15"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-168-hearing-routing"
+        },
+        "venue": {
+          "ko": "베트남 청문회",
+          "en": "Vietnam hearings"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-021.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-021."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "F000401",
+            "name": "James William Fulbright",
+            "ko": "윌리엄 풀브라이트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000401"
+          },
+          {
+            "id": "M000332",
+            "name": "John Little McClellan",
+            "ko": "존 매클렐런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000332"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "풀브라이트",
+          "en": "Fulbright"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "청문회 위원장은 {{blank}}입니다.",
+          "en": "The committee chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "매클렐런",
+              "en": "McClellan"
+            },
+            {
+              "id": "B",
+              "ko": "러셀",
+              "en": "Russell"
+            },
+            {
+              "id": "C",
+              "ko": "스테니스",
+              "en": "Stennis"
+            },
+            {
+              "id": "D",
+              "ko": "풀브라이트",
+              "en": "Fulbright"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "F000401",
+            "name": "James William Fulbright",
+            "ko": "윌리엄 풀브라이트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/F000401"
+          },
+          {
+            "id": "M000332",
+            "name": "John Little McClellan",
+            "ko": "존 매클렐런",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000332"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-169",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 7,
+      "finding": "Seat affiliation after vacancy useful, generic.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "맥나마라 사망 뒤 5월 임명됐습니다.",
+            "en": "I was appointed in May after McNamara died."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "제 의석은 민주당입니다.",
+            "en": "My seat remains Democratic."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class II의 새 정당은 {{blank}}입니다.",
+          "en": "The new Class II party is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "B",
+              "ko": "민주당",
+              "en": "Democratic"
+            },
+            {
+              "id": "C",
+              "ko": "무소속",
+              "en": "Independent"
+            },
+            {
+              "id": "D",
+              "ko": "진보당",
+              "en": "Progressive"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "그리핀은 공화당 임명 의원입니다.",
+              "en": "Griffin was a Republican appointee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 그리핀은 공화당 임명 의원입니다.",
+              "en": "Here is the distinction. Griffin was a Republican appointee."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "맥나마라 사망 후 Class II 의석의 정당별 집계를 갱신합니다.",
+            "en": "Update the Class II party count after McNamara's death."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class I의 소속은 별개로 유지하세요.",
+            "en": "Retain the other seat's affiliation separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class II의 새 정당은 {{blank}}입니다.",
+          "en": "The new Class II party is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "B",
+              "ko": "민주당",
+              "en": "Democratic"
+            },
+            {
+              "id": "C",
+              "ko": "무소속",
+              "en": "Independent"
+            },
+            {
+              "id": "D",
+              "ko": "진보당",
+              "en": "Progressive"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "그리핀의 공화당 임명을 반영합니다.",
+              "en": "Reflect Griffin's Republican appointment."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "그리핀은 공화당 임명 의원입니다.",
+              "en": "Griffin was a Republican appointee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 그리핀은 공화당 임명 의원입니다.",
+              "en": "Here is the distinction. Griffin was a Republican appointee."
+            },
+            {
+              "speaker": "aide",
+              "ko": "기존 의석의 정당을 복사하지 마세요.",
+              "en": "Do not copy the previous incumbent's affiliation."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-169",
+        "date": "1966-07-01",
+        "mechanism": "appointment-flip",
+        "learningTarget": "Griffin was a Republican appointee.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/MI/senators.htm",
+            "claim": "Griffin was a Republican appointee.",
+            "asOf": "1966-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-169-appointment-flip"
+        },
+        "venue": {
+          "ko": "공석의 정당 교체",
+          "en": "Vacancy party turnover"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-185.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-185."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "G000465",
+            "name": "Robert Paul Griffin",
+            "ko": "로버트 그리핀",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000465"
+          },
+          {
+            "id": "H000291",
+            "name": "Philip Aloysius Hart",
+            "ko": "필립 하트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H000291"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "공화당",
+          "en": "Republican"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "Class II의 새 정당은 {{blank}}입니다.",
+          "en": "The new Class II party is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "공화당",
+              "en": "Republican"
+            },
+            {
+              "id": "B",
+              "ko": "민주당",
+              "en": "Democratic"
+            },
+            {
+              "id": "C",
+              "ko": "무소속",
+              "en": "Independent"
+            },
+            {
+              "id": "D",
+              "ko": "진보당",
+              "en": "Progressive"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "G000465",
+            "name": "Robert Paul Griffin",
+            "ko": "로버트 그리핀",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/G000465"
+          },
+          {
+            "id": "H000291",
+            "name": "Philip Aloysius Hart",
+            "ko": "필립 하트",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/H000291"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-170",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 6,
+      "finding": "Byrd Jr. reveals succession; name collision important.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "로버트슨의 뒤를 이었습니다.",
+            "en": "I succeeded Robertson."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "아버지의 의석을 1965년 승계했습니다.",
+            "en": "I succeeded my father in 1965."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 기록은 {{blank}}로 표기하죠.",
+          "en": "Label the Class I record as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "윌리엄 스퐁",
+              "en": "William Spong"
+            },
+            {
+              "id": "B",
+              "ko": "해리 버드 주니어",
+              "en": "Harry F. Byrd Jr."
+            },
+            {
+              "id": "C",
+              "ko": "해리 버드 시니어",
+              "en": "Harry F. Byrd Sr."
+            },
+            {
+              "id": "D",
+              "ko": "로버트 버드",
+              "en": "Robert Byrd"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "버드 주니어가 1965년 아버지를 승계했습니다.",
+              "en": "Byrd Jr. succeeded his father in 1965."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버드 주니어가 1965년 아버지를 승계했습니다.",
+              "en": "Here is the distinction. Byrd Jr. succeeded his father in 1965."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "버지니아 두 의석의 승계를 구분합니다.",
+            "en": "Distinguish succession in Virginia's two seats."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "동명에 가까운 부자 의원의 재임을 별도 확인하세요.",
+            "en": "Verify the similarly named father and son's service separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 기록은 {{blank}}로 표기하죠.",
+          "en": "Label the Class I record as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "윌리엄 스퐁",
+              "en": "William Spong"
+            },
+            {
+              "id": "B",
+              "ko": "해리 버드 주니어",
+              "en": "Harry F. Byrd Jr."
+            },
+            {
+              "id": "C",
+              "ko": "해리 버드 시니어",
+              "en": "Harry F. Byrd Sr."
+            },
+            {
+              "id": "D",
+              "ko": "로버트 버드",
+              "en": "Robert Byrd"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "버드 주니어의 Class I 재임을 인정합니다.",
+              "en": "Recognize Byrd Jr.'s Class I service."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "버드 주니어가 1965년 아버지를 승계했습니다.",
+              "en": "Byrd Jr. succeeded his father in 1965."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 버드 주니어가 1965년 아버지를 승계했습니다.",
+              "en": "Here is the distinction. Byrd Jr. succeeded his father in 1965."
+            },
+            {
+              "speaker": "aide",
+              "ko": "아버지와 아들의 재임을 합치지 마세요.",
+              "en": "Do not merge father and son into one service record."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-170",
+        "date": "1967-07-01",
+        "mechanism": "identity-disambiguation",
+        "learningTarget": "Byrd Jr. succeeded his father in 1965.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/VA/senators.htm",
+            "claim": "Byrd Jr. succeeded his father in 1965.",
+            "asOf": "1967-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-170-identity-disambiguation"
+        },
+        "venue": {
+          "ko": "동명이인 구별",
+          "en": "Name disambiguation"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-191.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-191."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "S000739",
+            "name": "William Belser Spong Jr.",
+            "ko": "윌리엄 스퐁",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S000739"
+          },
+          {
+            "id": "B001209",
+            "name": "Harry Flood Byrd Jr.",
+            "ko": "해리 버드 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001209"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "해리 버드 주니어",
+          "en": "Harry F. Byrd Jr."
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "Class I 기록은 {{blank}}로 표기하죠.",
+          "en": "Label the Class I record as {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "윌리엄 스퐁",
+              "en": "William Spong"
+            },
+            {
+              "id": "B",
+              "ko": "해리 버드 주니어",
+              "en": "Harry F. Byrd Jr."
+            },
+            {
+              "id": "C",
+              "ko": "해리 버드 시니어",
+              "en": "Harry F. Byrd Sr."
+            },
+            {
+              "id": "D",
+              "ko": "로버트 버드",
+              "en": "Robert Byrd"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "S000739",
+            "name": "William Belser Spong Jr.",
+            "ko": "윌리엄 스퐁",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/S000739"
+          },
+          {
+            "id": "B001209",
+            "name": "Harry Flood Byrd Jr.",
+            "ko": "해리 버드 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001209"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-171",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Chair vs vice chair real role distinction; generic third line.",
+      "classification": "targeted-edit",
+      "before": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "어빈은 워터게이트 조사위원장입니다.",
+              "en": "Ervin chaired the Watergate committee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 어빈은 워터게이트 조사위원장입니다.",
+              "en": "Here is the distinction. Ervin chaired the Watergate committee."
+            }
+          ]
+        }
+      },
+      "after": {
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "어빈의 위원장 직책에 가상 요청을 연결합니다.",
+              "en": "Route the simulated request to Ervin as chair."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "어빈은 워터게이트 조사위원장입니다.",
+              "en": "Ervin chaired the Watergate committee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 어빈은 워터게이트 조사위원장입니다.",
+              "en": "Here is the distinction. Ervin chaired the Watergate committee."
+            },
+            {
+              "speaker": "aide",
+              "ko": "부위원장 직책을 위원장으로 처리하지 마세요.",
+              "en": "Do not treat the vice chair as chair."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-171",
+        "date": "1973-07-01",
+        "mechanism": "watergate",
+        "learningTarget": "Ervin chaired the Watergate committee.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/NC/senators.htm",
+            "claim": "Ervin chaired the Watergate committee.",
+            "asOf": "1973-07-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/TN/senators.htm",
+            "claim": "Ervin chaired the Watergate committee.",
+            "asOf": "1973-07-01"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/investigations/watergate.htm",
+            "claim": "Ervin chaired the Watergate committee.",
+            "asOf": "1973-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-171-watergate"
+        },
+        "venue": {
+          "ko": "워터게이트 청문회",
+          "en": "Watergate hearings"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "E000211",
+            "name": "Samuel James Ervin Jr.",
+            "ko": "샘 어빈 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/E000211"
+          },
+          {
+            "id": "B000063",
+            "name": "Howard Henry Baker Jr.",
+            "ko": "하워드 베이커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000063"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "어빈",
+          "en": "Ervin"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "증언 요청은 위원장 {{blank}}에게 보내죠.",
+          "en": "Send the testimony request to Chairman {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "키포버",
+              "en": "Kefauver"
+            },
+            {
+              "id": "B",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "C",
+              "ko": "어빈",
+              "en": "Ervin"
+            },
+            {
+              "id": "D",
+              "ko": "베이커",
+              "en": "Baker"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "E000211",
+            "name": "Samuel James Ervin Jr.",
+            "ko": "샘 어빈 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/E000211"
+          },
+          {
+            "id": "B000063",
+            "name": "Howard Henry Baker Jr.",
+            "ko": "하워드 베이커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B000063"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-172",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 2,
+        "immersion": 2,
+        "knowledgeApplication": 2,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 1,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 1
+      },
+      "total": 12,
+      "finding": "Distinct vice chair and chair; unsupported cooperation phrase best remove.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "정보기관 조사위원회가 설치됐습니다.",
+            "en": "An intelligence inquiry committee was established."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "양당 위원장과 부위원장이 협력합니다.",
+            "en": "The chair and vice chair cooperate."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 부위원장은 {{blank}}입니다.",
+          "en": "The Republican vice chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "B",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "C",
+              "ko": "어빈",
+              "en": "Ervin"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "타워는 처치 위원회의 부위원장이었습니다.",
+              "en": "Tower was vice chair of the Church Committee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 타워는 처치 위원회의 부위원장이었습니다.",
+              "en": "Here is the distinction. Tower was vice chair of the Church Committee."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "정보기관 조사에서 위원장과 부위원장의 공식 직책을 구분하세요.",
+            "en": "Distinguish the official chair and vice-chair roles in the intelligence inquiry."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "두 직책의 명부를 확인하되 실제 사적 협의를 추정하지 마세요.",
+            "en": "Verify the roster without inferring private consultations."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 부위원장은 {{blank}}입니다.",
+          "en": "The Republican vice chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "B",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "C",
+              "ko": "어빈",
+              "en": "Ervin"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "D"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "타워를 공화당 부위원장으로 선택합니다.",
+              "en": "Identify Tower as the Republican vice chair."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "타워는 처치 위원회의 부위원장이었습니다.",
+              "en": "Tower was vice chair of the Church Committee."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 타워는 처치 위원회의 부위원장이었습니다.",
+              "en": "Here is the distinction. Tower was vice chair of the Church Committee."
+            },
+            {
+              "speaker": "aide",
+              "ko": "위원장과 부위원장을 바꿔 표시하지 마세요.",
+              "en": "Do not reverse the two offices."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-172",
+        "date": "1975-03-01",
+        "mechanism": "intelligence-oversight",
+        "learningTarget": "Tower was vice chair of the Church Committee.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/ID/senators.htm",
+            "claim": "Tower was vice chair of the Church Committee.",
+            "asOf": "1975-03-01"
+          },
+          {
+            "url": "https://www.senate.gov/states/TX/senators.htm",
+            "claim": "Tower was vice chair of the Church Committee.",
+            "asOf": "1975-03-01"
+          },
+          {
+            "url": "https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm",
+            "claim": "Tower was vice chair of the Church Committee.",
+            "asOf": "1975-03-01"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p02-172-intelligence-oversight"
+        },
+        "venue": {
+          "ko": "정보기관 감독",
+          "en": "Intelligence oversight"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님.",
+          "en": "Fictional encounter, not actual quotations."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "C000388",
+            "name": "Frank Forrester Church",
+            "ko": "프랭크 처치",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000388"
+          },
+          {
+            "id": "T000322",
+            "name": "John Goodwin Tower",
+            "ko": "존 타워",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000322"
+          }
+        ],
+        "correct": "D",
+        "correctChoice": {
+          "id": "D",
+          "ko": "타워",
+          "en": "Tower"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 측 부위원장은 {{blank}}입니다.",
+          "en": "The Republican vice chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "B",
+              "ko": "파스토어",
+              "en": "Pastore"
+            },
+            {
+              "id": "C",
+              "ko": "어빈",
+              "en": "Ervin"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "D"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "C000388",
+            "name": "Frank Forrester Church",
+            "ko": "프랭크 처치",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/C000388"
+          },
+          {
+            "id": "T000322",
+            "name": "John Goodwin Tower",
+            "ko": "존 타워",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000322"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-173",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 1,
+        "answerLeakPrevention": 1,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 7,
+      "finding": "Chair role clear but generic and cast cue.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "정부운영위원회가 감독 개편안을 검토합니다.",
+            "en": "Government Operations is reviewing oversight reform."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "책임자를 확인합시다.",
+            "en": "Identify the chair."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "정부운영위원장은 {{blank}}입니다.",
+          "en": "The Government Operations chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            },
+            {
+              "id": "B",
+              "ko": "와이커",
+              "en": "Weicker"
+            },
+            {
+              "id": "C",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "리비코프가 정부운영위원장으로 개편안을 검토했습니다.",
+              "en": "Ribicoff chaired Government Operations during the reform."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 리비코프가 정부운영위원장으로 개편안을 검토했습니다.",
+              "en": "Here is the distinction. Ribicoff chaired Government Operations during the reform."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "감독 개혁에 관한 가상 청원은 어느 위원회 직책으로 보내야 할까요?",
+            "en": "Which committee office should receive a simulated oversight-reform petition?"
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "일반 의원 사무실과 정부운영위원장 직책을 구분하세요.",
+            "en": "Distinguish an ordinary senator's office from Government Operations chairmanship."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "정부운영위원장은 {{blank}}입니다.",
+          "en": "The Government Operations chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            },
+            {
+              "id": "B",
+              "ko": "와이커",
+              "en": "Weicker"
+            },
+            {
+              "id": "C",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "A"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "리비코프에게 위원장 자격으로 전달합니다.",
+              "en": "Route it to Ribicoff as chair."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "리비코프가 정부운영위원장으로 개편안을 검토했습니다.",
+              "en": "Ribicoff chaired Government Operations during the reform."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 리비코프가 정부운영위원장으로 개편안을 검토했습니다.",
+              "en": "Here is the distinction. Ribicoff chaired Government Operations during the reform."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 위원회 명부를 적용하지 마세요.",
+              "en": "Do not apply another committee's roster."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-173",
+        "date": "1976-07-01",
+        "mechanism": "jurisdiction",
+        "learningTarget": "Ribicoff chaired Government Operations during the reform.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/CT/senators.htm",
+            "claim": "Ribicoff chaired Government Operations during the reform.",
+            "asOf": "1976-07-01"
+          },
+          {
+            "url": "https://www.senate.gov/artandhistory/senate-stories/committees.htm",
+            "claim": "Ribicoff chaired Government Operations during the reform.",
+            "asOf": "1976-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p02-173-jurisdiction"
+        },
+        "venue": {
+          "ko": "감독 개편 관할",
+          "en": "Oversight jurisdiction"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-194, P02-189.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-194, P02-189."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "R000191",
+            "name": "Abraham Alexander Ribicoff",
+            "ko": "에이브러햄 리비코프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000191"
+          },
+          {
+            "id": "W000253",
+            "name": "Lowell Palmer Weicker Jr.",
+            "ko": "로웰 와이커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000253"
+          }
+        ],
+        "correct": "A",
+        "correctChoice": {
+          "id": "A",
+          "ko": "리비코프",
+          "en": "Ribicoff"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "정부운영위원장은 {{blank}}입니다.",
+          "en": "The Government Operations chair is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리비코프",
+              "en": "Ribicoff"
+            },
+            {
+              "id": "B",
+              "ko": "와이커",
+              "en": "Weicker"
+            },
+            {
+              "id": "C",
+              "ko": "처치",
+              "en": "Church"
+            },
+            {
+              "id": "D",
+              "ko": "타워",
+              "en": "Tower"
+            }
+          ],
+          "correct": "A"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "R000191",
+            "name": "Abraham Alexander Ribicoff",
+            "ko": "에이브러햄 리비코프",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/R000191"
+          },
+          {
+            "id": "W000253",
+            "name": "Lowell Palmer Weicker Jr.",
+            "ko": "로웰 와이커",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000253"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-174",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Self-identifying entry and independent cue answer.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 Class II에 취임했습니다.",
+            "en": "I entered Class II this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 다른 의석의 무소속 의원입니다.",
+            "en": "I'm the independent in the other seat."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 신임 의원은 {{blank}}입니다.",
+          "en": "The new Republican senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "트리블",
+              "en": "Trible"
+            },
+            {
+              "id": "B",
+              "ko": "워너",
+              "en": "Warner"
+            },
+            {
+              "id": "C",
+              "ko": "버드",
+              "en": "Byrd"
+            },
+            {
+              "id": "D",
+              "ko": "스콧",
+              "en": "Scott"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "워너는 1979년 Class II에 취임했습니다.",
+              "en": "Warner entered Class II in 1979."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 워너는 1979년 Class II에 취임했습니다.",
+              "en": "Here is the distinction. Warner entered Class II in 1979."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "버지니아의 신규 Class II 의원의 정당을 확인합니다.",
+            "en": "Verify the affiliation of Virginia's new Class II senator."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "다른 의석의 무소속 상태는 별개입니다.",
+            "en": "The other seat's independent status is separate."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 신임 의원은 {{blank}}입니다.",
+          "en": "The new Republican senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "트리블",
+              "en": "Trible"
+            },
+            {
+              "id": "B",
+              "ko": "워너",
+              "en": "Warner"
+            },
+            {
+              "id": "C",
+              "ko": "버드",
+              "en": "Byrd"
+            },
+            {
+              "id": "D",
+              "ko": "스콧",
+              "en": "Scott"
+            }
+          ],
+          "correct": "B"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "워너를 신규 공화당 의원으로 선택합니다.",
+              "en": "Identify Warner as the new Republican senator."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "워너는 1979년 Class II에 취임했습니다.",
+              "en": "Warner entered Class II in 1979."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 워너는 1979년 Class II에 취임했습니다.",
+              "en": "Here is the distinction. Warner entered Class II in 1979."
+            },
+            {
+              "speaker": "aide",
+              "ko": "다른 의석의 소속을 적용하지 마세요.",
+              "en": "Do not apply the other seat's affiliation."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-174",
+        "date": "1979-07-01",
+        "mechanism": "independent-status",
+        "learningTarget": "Warner entered Class II in 1979.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/VA/senators.htm",
+            "claim": "Warner entered Class II in 1979.",
+            "asOf": "1979-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p02-174-independent-status"
+        },
+        "venue": {
+          "ko": "버지니아 대표단",
+          "en": "Virginia delegation"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-170. 연속 사건 후보: P02-191.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-170. Continuity candidate: P02-191."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "W000154",
+            "name": "John W. Warner",
+            "ko": "존 워너",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000154"
+          },
+          {
+            "id": "B001209",
+            "name": "Harry Flood Byrd Jr.",
+            "ko": "해리 버드 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001209"
+          }
+        ],
+        "correct": "B",
+        "correctChoice": {
+          "id": "B",
+          "ko": "워너",
+          "en": "Warner"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 신임 의원은 {{blank}}입니다.",
+          "en": "The new Republican senator is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "트리블",
+              "en": "Trible"
+            },
+            {
+              "id": "B",
+              "ko": "워너",
+              "en": "Warner"
+            },
+            {
+              "id": "C",
+              "ko": "버드",
+              "en": "Byrd"
+            },
+            {
+              "id": "D",
+              "ko": "스콧",
+              "en": "Scott"
+            }
+          ],
+          "correct": "B"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "W000154",
+            "name": "John W. Warner",
+            "ko": "존 워너",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/W000154"
+          },
+          {
+            "id": "B001209",
+            "name": "Harry Flood Byrd Jr.",
+            "ko": "해리 버드 주니어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/B001209"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    },
+    {
+      "id": "P02-175",
+      "scores": {
+        "naturalness": 1,
+        "playerMotivation": 1,
+        "immersion": 1,
+        "knowledgeApplication": 1,
+        "interactionDistinctness": 0,
+        "answerLeakPrevention": 0,
+        "distractorQuality": 0,
+        "npcRoleSeparation": 0,
+        "branchNaturalness": 1,
+        "continuity": 0
+      },
+      "total": 5,
+      "finding": "Self-identification and party clue.",
+      "classification": "full-rewrite-proposal",
+      "before": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "올해 Class II에 취임했습니다.",
+            "en": "I entered Class II this year."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class III은 민주당입니다.",
+            "en": "Class III is Democratic."
+          },
+          {
+            "speaker": "player",
+            "ko": "자료를 상황에 맞게 처리하겠습니다.",
+            "en": "I'll act on these records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 연락은 {{blank}}에게 맡기죠.",
+          "en": "Route the Republican contact to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리",
+              "en": "Lee"
+            },
+            {
+              "id": "B",
+              "ko": "커",
+              "en": "Kerr"
+            },
+            {
+              "id": "C",
+              "ko": "무어",
+              "en": "Moore"
+            },
+            {
+              "id": "D",
+              "ko": "토머스",
+              "en": "Thomas"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "npc:1",
+              "ko": "무어는 1943년 취임한 공화당 의원입니다.",
+              "en": "Moore was a Republican entering in 1943."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 무어는 1943년 취임한 공화당 의원입니다.",
+              "en": "Here is the distinction. Moore was a Republican entering in 1943."
+            }
+          ]
+        }
+      },
+      "after": {
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "오클라호마의 정당별 주민 연락처를 당시 명부로 확인합니다.",
+            "en": "Use the contemporary roster to identify Oklahoma's party contacts."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "Class II와 III 의석의 소속을 따로 판단하세요.",
+            "en": "Determine the affiliations of Class II and III separately."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 연락은 {{blank}}에게 맡기죠.",
+          "en": "Route the Republican contact to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리",
+              "en": "Lee"
+            },
+            {
+              "id": "B",
+              "ko": "커",
+              "en": "Kerr"
+            },
+            {
+              "id": "C",
+              "ko": "무어",
+              "en": "Moore"
+            },
+            {
+              "id": "D",
+              "ko": "토머스",
+              "en": "Thomas"
+            }
+          ],
+          "correct": "C"
+        },
+        "followup": {
+          "correct": [
+            {
+              "speaker": "player",
+              "ko": "무어에게 가상 공화당 연락을 전달합니다.",
+              "en": "Route the simulated Republican contact to Moore."
+            },
+            {
+              "speaker": "npc:1",
+              "ko": "무어는 1943년 취임한 공화당 의원입니다.",
+              "en": "Moore was a Republican entering in 1943."
+            }
+          ],
+          "incorrect": [
+            {
+              "speaker": "npc:0",
+              "ko": "이 기록은 이렇게 구별합니다. 무어는 1943년 취임한 공화당 의원입니다.",
+              "en": "Here is the distinction. Moore was a Republican entering in 1943."
+            },
+            {
+              "speaker": "aide",
+              "ko": "두 의석의 연락처를 바꾸지 마세요.",
+              "en": "Do not reverse the contacts."
+            }
+          ]
+        }
+      },
+      "protected": {
+        "id": "P02-175",
+        "date": "1943-07-01",
+        "mechanism": "wartime-petition",
+        "learningTarget": "Moore was a Republican entering in 1943.",
+        "evidence": [
+          {
+            "url": "https://www.senate.gov/states/OK/senators.htm",
+            "claim": "Moore was a Republican entering in 1943.",
+            "asOf": "1943-07-01"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p02-175-wartime-petition"
+        },
+        "venue": {
+          "ko": "전시 지역 접견",
+          "en": "Wartime state meeting"
+        },
+        "context": {
+          "ko": "가상 만남. 실제 발언 아님. 연속 사건 후보: P02-018.",
+          "en": "Fictional encounter, not actual quotations. Continuity candidate: P02-018."
+        },
+        "fictional": true,
+        "cast": [
+          {
+            "id": "M000895",
+            "name": "Edward Hall Moore",
+            "ko": "에드워드 무어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000895"
+          },
+          {
+            "id": "T000177",
+            "name": "John William Elmer Thomas",
+            "ko": "엘머 토머스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000177"
+          }
+        ],
+        "correct": "C",
+        "correctChoice": {
+          "id": "C",
+          "ko": "무어",
+          "en": "Moore"
+        },
+        "response": {
+          "speaker": "player",
+          "ko": "공화당 연락은 {{blank}}에게 맡기죠.",
+          "en": "Route the Republican contact to {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "리",
+              "en": "Lee"
+            },
+            {
+              "id": "B",
+              "ko": "커",
+              "en": "Kerr"
+            },
+            {
+              "id": "C",
+              "ko": "무어",
+              "en": "Moore"
+            },
+            {
+              "id": "D",
+              "ko": "토머스",
+              "en": "Thomas"
+            }
+          ],
+          "correct": "C"
+        }
+      },
+      "i1": {
+        "blobSha": "c22a045a3d45276be1e3994bc33f7dab97b6d65f",
+        "cast": [
+          {
+            "id": "M000895",
+            "name": "Edward Hall Moore",
+            "ko": "에드워드 무어",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/M000895"
+          },
+          {
+            "id": "T000177",
+            "name": "John William Elmer Thomas",
+            "ko": "엘머 토머스",
+            "portrait": null,
+            "source": "https://bioguide.congress.gov/search/bio/T000177"
+          }
+        ],
+        "protectedDifferences": [],
+        "changedFields": [],
+        "status": "field-match-HQ-review"
+      },
+      "historicalReview": "Q2-C R2 core verified; original factual debrief preserved, simulated actions only."
+    }
+  ]
+}
