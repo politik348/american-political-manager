@@ -473,8 +473,8 @@
         "en": "Local Democratic archive"
       },
       "context": {
-        "ko": "민주당 지역 기록 모임",
-        "en": "Local Democratic archive"
+        "ko": "1964년 전당대회 참여 기록을 이후 연방의원 재임과 분리한다.",
+        "en": "Distinguish participation in the 1964 convention from later congressional service."
       },
       "cast": [
         {
@@ -487,14 +487,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1964년 전당대회 자료가 제 초기 정치 참여를 떠올리게 합니다.",
-          "en": "The 1964 convention papers remind me of my early political involvement."
+          "speaker": "host",
+          "ko": "학생이 전당대회 참가자 명부를 연방의원 명부와 같은 것으로 이해했습니다.",
+          "en": "A student treats a convention participant roster as a congressional roster."
         },
         {
-          "speaker": "player",
-          "ko": "그때는 아직 연방의원이 아니셨죠.",
-          "en": "You weren't a federal representative then."
+          "speaker": "npc:0",
+          "ko": "1964년 민주당 전국 전당대회에서 제가 어떤 자격으로 참가했는지 확인해 주세요.",
+          "en": "Identify the capacity in which I participated in the 1964 Democratic National Convention."
         }
       ],
       "response": {
@@ -529,20 +529,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "전당대회 대의원이었습니다.",
-            "en": "I was a convention delegate."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "당선 이전 정치 참여 자료에 넣읍시다.",
-            "en": "File this under pre-election political participation."
+            "ko": "대의원이었습니다. 전당대회 참여 자체는 연방의원 당선을 뜻하지 않습니다.",
+            "en": "A delegate. Convention participation itself is not election to Congress."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "전당대회 대의원이었습니다.",
-            "en": "I was a convention delegate."
+            "ko": "전당대회 대의원이었습니다. 연방 선출직의 재임 기간으로 기록하지 마세요.",
+            "en": "I was a convention delegate. Do not record it as service in elected federal office."
           }
         ]
       },
@@ -1051,8 +1046,8 @@
         "en": "1984 election class gathering"
       },
       "context": {
-        "ko": "1984년 선거 입성 동기 모임",
-        "en": "1984 election class gathering"
+        "ko": "동기 의원의 정당과 주를 분리해 소개한다.",
+        "en": "Introduce two freshmen by state and party separately."
       },
       "cast": [
         {
@@ -1073,13 +1068,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "같은 선거로 입성한 비스클로스키 의원을 소개합니다.",
-          "en": "Let me introduce Visclosky, who entered after the same election."
+          "ko": "같은 제99대 의회에 입성했지만 당적까지 같지는 않습니다.",
+          "en": "We entered the 99th Congress together, but we do not share a party."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 인디애나 민주당 의원입니다.",
-          "en": "I am a Democrat from Indiana."
+          "ko": "저는 인디애나 민주당 의원입니다. 텍사스 동료의 당적을 확인해 주세요.",
+          "en": "I'm an Indiana Democrat. Identify our Texas colleague's affiliation."
         }
       ],
       "response": {
@@ -1114,20 +1109,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "저는 공화당이고 비스클로스키는 민주당입니다.",
-            "en": "I'm a Republican; Visclosky is a Democrat."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "신입 의원 명단을 주와 정당별로 정리하세요.",
-            "en": "Sort the freshman roster by state and party."
+            "ko": "공화당입니다. 신입 의원 동기 관계와 정당 소속은 별개로 표시해 주세요.",
+            "en": "Republican. Record freshman cohort membership separately from party affiliation."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "저는 공화당이고 비스클로스키는 민주당입니다.",
-            "en": "I'm a Republican; Visclosky is a Democrat."
+            "speaker": "npc:1",
+            "ko": "바턴 의원은 공화당, 저는 민주당입니다. 같은 회기에 들어왔다는 이유로 당적을 통합하면 안 됩니다.",
+            "en": "Barton is Republican and I am Democratic. Do not merge affiliations because we entered together."
           }
         ]
       },

@@ -205,8 +205,8 @@
         "en": "New member introduction"
       },
       "context": {
-        "ko": "신임 의원 소개",
-        "en": "New member introduction"
+        "ko": "새로 선서한 필라델피아 대표에게 지역 주민 질문을 연결한다.",
+        "en": "Connect a constituent inquiry to the newly sworn Philadelphia representative."
       },
       "cast": [
         {
@@ -227,13 +227,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "어제 선서한 펜실베이니아 의원을 소개합니다.",
-          "en": "Let me introduce the Pennsylvania member sworn in yesterday."
+          "ko": "어제 펜실베이니아의 새 동료가 선서했습니다. 필라델피아 주민이 그 의원에게 인사하고 싶어 합니다.",
+          "en": "A new colleague from Pennsylvania took the oath yesterday. A Philadelphia resident wants to meet him."
         },
         {
           "speaker": "npc:1",
-          "ko": "필라델피아 주민들을 대표하게 됐습니다.",
-          "en": "I have come to represent Philadelphia constituents."
+          "ko": "먼저 제 이름과 선서일을 정확히 확인해 주세요. 그다음 지역 주민의 질문을 듣겠습니다.",
+          "en": "First identify my name and oath date. Then we can hear the constituent's question."
         }
       ],
       "response": {
@@ -267,21 +267,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "닉스는 1958년 5월 20일 선서했습니다.",
-            "en": "Nix took his oath on May 20, 1958."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "새 의원의 이름과 선서 날짜를 대표단 명부에 넣으세요.",
-            "en": "Add his name and oath date to the delegation record."
+            "speaker": "npc:1",
+            "ko": "로버트 닉스입니다. 오늘은 신임 의원에게 보내는 주민 서신을 맡겠습니다.",
+            "en": "I'm Robert Nix. Let's handle the constituent letters addressed to the new member."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "닉스는 1958년 5월 20일 선서했습니다.",
-            "en": "Nix took his oath on May 20, 1958."
+            "ko": "어제 선서한 의원은 로버트 닉스입니다. 다른 의원의 임기 시작 기록과 섞지 마세요.",
+            "en": "The member sworn in yesterday was Robert Nix. Do not confuse his entry date with another member's."
           }
         ]
       },
@@ -500,8 +495,8 @@
         "en": "Philadelphia civil rights visitors"
       },
       "context": {
-        "ko": "필라델피아 시민권 방문단",
-        "en": "Philadelphia civil rights visitors"
+        "ko": "본회의 발언과 그 발언이 지지한 시민권 집회의 기록을 구분한다.",
+        "en": "Distinguish a floor speech from the civil-rights gathering it supported."
       },
       "cast": [
         {
@@ -515,13 +510,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "지난주 본회의에서 어제 열린 시위의 목표를 지지하는 발언을 했습니다.",
-          "en": "Last week I spoke on the floor in support of yesterday's demonstration."
+          "ko": "지난주 본회의에서 한 발언과 어제 열린 집회 기록을 함께 검토해 봅시다.",
+          "en": "Let's examine my floor speech last week alongside yesterday's gathering."
         },
         {
           "speaker": "host",
-          "ko": "연설 기록에 시위의 정식 명칭을 넣어 주세요.",
-          "en": "Include the demonstration's formal name in the speech record."
+          "ko": "의회에서 발언한 것과 집회에 참여했다는 주장은 구분하겠습니다. 어느 집회의 목표를 지지하셨나요?",
+          "en": "I'll distinguish speaking in Congress from claiming attendance at the gathering. Which event's goals did you support?"
         }
       ],
       "response": {
@@ -556,20 +551,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "8월 28일 워싱턴 행진의 목표를 지지했습니다.",
-            "en": "I supported the goals of the August 28 March on Washington."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "연설과 행사 날짜를 함께 보관합시다.",
-            "en": "Preserve the speech and event date together."
+            "ko": "일자리와 자유를 위한 워싱턴 행진입니다. 본회의 발언과 8월 28일 집회의 날짜는 따로 보존하세요.",
+            "en": "The March on Washington for Jobs and Freedom. Preserve the floor speech and the August 28 gathering as separate dates."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "8월 28일 워싱턴 행진의 목표를 지지했습니다.",
-            "en": "I supported the goals of the August 28 March on Washington."
+            "ko": "제가 지지한 행사는 1963년 8월 28일 워싱턴 행진입니다. 다른 시민권 운동 사건과 혼동하지 마세요.",
+            "en": "The event I supported was the August 28, 1963 March on Washington. Do not confuse it with other civil-rights events."
           }
         ]
       },
@@ -596,8 +586,8 @@
         "en": "Older workers' meeting"
       },
       "context": {
-        "ko": "고령 노동자 접견",
-        "en": "Older workers' meeting"
+        "ko": "고용 지원 제안의 대상자를 확인하고 시행 여부를 구분한다.",
+        "en": "Identify the beneficiaries of an employment proposal and distinguish it from implementation."
       },
       "cast": [
         {
@@ -610,14 +600,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "60세가 넘은 구직자들의 어려움을 다룰 제안을 냈습니다.",
-          "en": "I proposed a measure addressing the struggles of jobseekers over sixty."
+          "speaker": "host",
+          "ko": "주민이 제안된 봉사단 사업이 어떤 구직자에게 도움이 될지 알고 싶어 합니다.",
+          "en": "A resident wants to know which jobseekers the proposed service corps would assist."
         },
         {
-          "speaker": "player",
-          "ko": "대상과 사업 목적을 구분해 설명하겠습니다.",
-          "en": "I'll explain its intended beneficiaries and purpose."
+          "speaker": "npc:0",
+          "ko": "1966년 제가 제안한 대상 집단을 확인해 주세요. 아직 확정된 취업 지원이라고 안내하지는 마세요.",
+          "en": "Identify the group covered by my 1966 proposal. Do not describe it as guaranteed employment assistance."
         }
       ],
       "response": {
@@ -652,20 +642,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "60세 초과 노동자를 위한 senior service corps 제안이었습니다.",
-            "en": "It was a proposed senior service corps for workers over sixty."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "제안 단계라는 점을 명시해 자료를 전달하세요.",
-            "en": "Label the measure as a proposal when circulating the briefing."
+            "ko": "60세 초과 노동자입니다. 연령 기준과 제안 단계라는 점을 함께 설명하세요.",
+            "en": "Workers over sixty. Explain both the age criterion and the proposal's status."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "60세 초과 노동자를 위한 senior service corps 제안이었습니다.",
-            "en": "It was a proposed senior service corps for workers over sixty."
+            "ko": "60세 초과 노동자를 위한 봉사단 제안이었습니다. 다른 연령대나 직업 집단을 대상으로 한 사업으로 적지 마세요.",
+            "en": "It was a proposed service corps for workers over sixty, not another age group or occupational category."
           }
         ]
       },
@@ -1277,8 +1262,8 @@
         "en": "Urban freshman meeting"
       },
       "context": {
-        "ko": "도시 신입 의원 회의",
-        "en": "Urban freshman meeting"
+        "ko": "제91대 의회에 함께 진입한 도시 지역 대표들을 연결한다.",
+        "en": "Connect urban representatives who entered the 91st Congress together."
       },
       "cast": [
         {
@@ -1299,13 +1284,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "오하이오의 스톡스 의원과 도시 주민 문제를 논의하고 있습니다.",
-          "en": "I'm discussing urban constituent concerns with Stokes of Ohio."
+          "ko": "오하이오의 스톡스 의원과 도시 주민의 요구를 듣고 있습니다.",
+          "en": "I'm hearing urban constituents' concerns with Representative Stokes of Ohio."
         },
         {
           "speaker": "npc:1",
-          "ko": "뉴욕에서도 같은 의회에 입성한 동료가 있죠.",
-          "en": "A colleague from New York entered Congress alongside us."
+          "ko": "같은 회기에 뉴욕에서 신임 의원으로 들어온 동료도 있습니다. 누구인지 확인해서 공동 관심사를 논의해 봅시다.",
+          "en": "A new colleague from New York entered in the same Congress. Identify that member so we can discuss shared concerns."
         }
       ],
       "response": {
@@ -1339,21 +1324,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "치점, 스톡스, 클레이는 제91대 의회 신입 의원이었습니다.",
-            "en": "Chisholm, Stokes and Clay were freshmen in the 91st Congress."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "세 도시 대표의 공동 관심사를 메모에 남겨 주세요.",
-            "en": "Record the three urban members' shared concerns."
+            "speaker": "npc:1",
+            "ko": "셜리 치점 의원입니다. 세 사람의 지역과 첫 임기를 구분하면서 공동 관심사를 살펴보죠.",
+            "en": "Representative Shirley Chisholm. Distinguish our districts and first terms while examining shared concerns."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "치점, 스톡스, 클레이는 제91대 의회 신입 의원이었습니다.",
-            "en": "Chisholm, Stokes and Clay were freshmen in the 91st Congress."
+            "ko": "제91대 의회 신입 의원인 셜리 치점입니다. 뉴욕의 다른 회기 의원을 이 동기 명단에 넣지 마세요.",
+            "en": "Shirley Chisholm was a freshman in the 91st Congress. Do not put a New York member from another cohort on this list."
           }
         ]
       },

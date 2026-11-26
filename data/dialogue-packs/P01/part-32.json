@@ -308,8 +308,8 @@
         "en": "Visalia training field reunion"
       },
       "context": {
-        "ko": "비살리아 항공 훈련 동료",
-        "en": "Visalia training field reunion"
+        "ko": "민간인 전시 근무를 군인 복무와 혼동하지 않도록 설명한다.",
+        "en": "Explain wartime civilian work without confusing it with military service."
       },
       "cast": [
         {
@@ -322,14 +322,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "전시에는 비살리아의 훈련장에서 민간인으로 근무했습니다.",
-          "en": "During the war I worked as a civilian at the training field in Visalia."
+          "speaker": "host",
+          "ko": "학생이 비살리아 훈련장에서의 전시 근무를 군인 복무로 잘못 소개하려 합니다.",
+          "en": "A student is about to describe your wartime work at the Visalia training field as military service."
         },
         {
-          "speaker": "host",
-          "ko": "그때 담당했던 업무도 기억해 주세요.",
-          "en": "Remember the work he did there."
+          "speaker": "npc:0",
+          "ko": "1941년부터 1945년까지 그곳에서 민간인으로 일했습니다. 맡았던 직무를 구별해 주세요.",
+          "en": "I worked there as a civilian from 1941 to 1945. Identify the job I held."
         }
       ],
       "response": {
@@ -363,26 +363,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1941~1945년 항공 운항관리원으로 일했습니다.",
-            "en": "I was a civilian flight dispatcher from 1941 to 1945."
+            "ko": "항공 운항관리원이었습니다. 군인 신분이었다고 쓰지 않도록 해 주세요.",
+            "en": "Flight dispatcher. Don't describe it as military service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "1941~1945년 항공 운항관리원으로 일했습니다.",
-            "en": "I was a civilian flight dispatcher from 1941 to 1945."
+            "ko": "민간 항공 운항관리원이었습니다. 훈련장에서 일했다는 사실만으로 군 복무를 뜻하지는 않습니다.",
+            "en": "Civilian flight dispatcher. Working at a training field doesn't by itself establish military service."
           }
         ]
       },
@@ -409,8 +399,8 @@
         "en": "House leadership meeting"
       },
       "context": {
-        "ko": "하원 지도부 회의",
-        "en": "House leadership meeting"
+        "ko": "의사일정 문의와 당내 표결 연락을 구분한다.",
+        "en": "Distinguish floor scheduling inquiries from internal vote coordination."
       },
       "cast": [
         {
@@ -431,13 +421,13 @@
       "opening": [
         {
           "speaker": "npc:1",
-          "ko": "본회의 일정은 의장실에서 조정하죠.",
-          "en": "The Speaker's office will coordinate floor business."
+          "ko": "본회의 운영에 관한 문의는 의장실에 두세요.",
+          "en": "Keep the inquiry about floor proceedings with the Speaker's office."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 의원들의 표결 의사를 파악하는 지도부 직책을 맡았습니다.",
-          "en": "My leadership role involves tracking members' voting intentions."
+          "ko": "소속 의원들과 연락해 표결 의향을 파악해야 하는 요청은 제 쪽으로 주세요. 어떤 직책인지 설명해 주시겠어요?",
+          "en": "Send me the request involving contact with members about their voting intentions. Explain my role."
         }
       ],
       "response": {
@@ -471,26 +461,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
+            "speaker": "npc:0",
+            "ko": "원내총무입니다. 당내 표결 연락을 따로 받겠습니다.",
+            "en": "Whip. I'll handle the internal voting inquiry."
           },
           {
-            "speaker": "npc:0",
-            "ko": "라이트는 의장, 저는 원내총무입니다.",
-            "en": "Wright is Speaker; I am majority whip."
+            "speaker": "npc:1",
+            "ko": "본회의 운영 문의는 제가 받죠.",
+            "en": "I'll take the floor proceedings question."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
             "speaker": "npc:0",
-            "ko": "라이트는 의장, 저는 원내총무입니다.",
-            "en": "Wright is Speaker; I am majority whip."
+            "ko": "저는 다수당 원내총무이고 라이트 의원은 의장입니다. 두 요청을 다시 나눠 주세요.",
+            "en": "I'm majority whip; Wright is Speaker. Route the two requests separately."
           }
         ]
       },
@@ -522,8 +507,8 @@
         "en": "Caucus agenda routing"
       },
       "context": {
-        "ko": "당 회의 안건 분류",
-        "en": "Caucus agenda routing"
+        "ko": "의원총회와 표결 연락의 담당자를 구분한다.",
+        "en": "Distinguish the member meeting from vote coordination."
       },
       "cast": [
         {
@@ -544,13 +529,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "표결 연락망과 당 의원총회의 안건을 구분합시다.",
-          "en": "Let's separate vote coordination from caucus business."
+          "ko": "표결 연락 요청은 제게 두세요. 당 전체 의원이 모이는 내부 회의 요청은 별개입니다.",
+          "en": "Keep the vote coordination request with me. An internal meeting of the party's members is a separate matter."
         },
         {
           "speaker": "npc:1",
-          "ko": "당 의원총회 업무는 제가 맡고 있습니다.",
-          "en": "I am responsible for the party caucus."
+          "ko": "그 회의의 담당 직책을 소개해 주세요.",
+          "en": "Identify the leadership office responsible for that meeting."
         }
       ],
       "response": {
@@ -584,26 +569,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "그 내용을 기록해 두겠습니다.",
-            "en": "I'll keep that in my notes."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "게파트는 코커스 의장, 코엘류는 원내총무였습니다.",
-            "en": "Gephardt chaired the caucus; Coelho was whip."
+            "speaker": "npc:1",
+            "ko": "코커스 의장입니다. 당내 회의에 관한 문의를 듣죠.",
+            "en": "Caucus chair. I'll hear the internal meeting question."
           }
         ],
         "incorrect": [
           {
-            "speaker": "player",
-            "ko": "제가 기록을 혼동했군요.",
-            "en": "I mixed up the records."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "게파트는 코커스 의장, 코엘류는 원내총무였습니다.",
-            "en": "Gephardt chaired the caucus; Coelho was whip."
+            "speaker": "npc:1",
+            "ko": "코커스 의장입니다. 코엘류 의원의 원내총무 업무와는 구별합니다.",
+            "en": "Caucus chair. That differs from Coelho's whip duties."
           }
         ]
       },
