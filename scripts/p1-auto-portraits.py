@@ -17,7 +17,9 @@ cache=ROOT/'.p1-cache'
 cache.mkdir(exist_ok=True)
 Image.MAX_IMAGE_PIXELS=40_000_000
 class Temporary(Exception): pass
-class RatePause(Temporary): pass
+class RatePause(Temporary):
+    def __init__(self,message,delay=3600):
+        super().__init__(message); self.until=time.time()+max(3600,delay)
 class Hold(Exception): pass
 def read(p): return json.loads((ROOT/p).read_text())
 def save(p,obj):
@@ -34,7 +36,7 @@ def request(url,params=None,binary=False):
     f=cache/(key+'.json')
     if not binary and f.exists() and time.time()-f.stat().st_mtime<7*86400: return json.loads(f.read_text())
     for attempt in range(4):
-        time.sleep(1.5)
+        time.sleep(7.0)  # single worker; <= 9 requests/min even if classified as unidentified
         try:
             with session.get(url,params=params,timeout=(15,60),stream=binary) as res:
                 if res.status_code in (429,503):
@@ -46,7 +48,7 @@ def request(url,params=None,binary=False):
                         try: delay=max(0,(parsedate_to_datetime(delay)-datetime.now(timezone.utc)).total_seconds())
                         except Exception: delay=0
                     # Stop this run rather than ignore a long server-requested delay.
-                    if delay>120: raise RatePause('Retry-After exceeds run budget')
+                    if delay>120: raise RatePause('Retry-After exceeds run budget',delay)
                     time.sleep(max(delay,5*2**attempt)); continue
                 res.raise_for_status()
                 if binary:
@@ -58,7 +60,9 @@ def request(url,params=None,binary=False):
                     return b''.join(chunks)
                 data=res.json()
                 if data.get('error',{}).get('code') in ('maxlag','ratelimited'):
-                    time.sleep(max(5*2**attempt,int(res.headers.get('Retry-After','5')) if res.headers.get('Retry-After','5').isdigit() else 5)); continue
+                    delay=res.headers.get('Retry-After','5')
+                    if delay.isdigit() and int(delay)>120: raise RatePause('Retry-After exceeds run budget',int(delay))
+                    time.sleep(max(5*2**attempt,int(delay) if delay.isdigit() else 5)); continue
                 if 'error' in data: raise Hold('API: '+str(data['error']))
                 f.write_text(json.dumps(data)); return data
         except requests.RequestException as e:
@@ -109,6 +113,24 @@ def inventory():
                     if k not in people: people[k]={'id':k,'name':cast.get('name'),'aliases':[k]}
                 elif not k: unresolved.append({'scene':scene['id'],'name':cast.get('name')})
     return people,overlap,slots,unresolved,cast_counts
+OFFICES={'prez':{'Q11696'},'vp':{'Q11699'},'justice':{'Q11144','Q11147'},'chief':{'Q11147'}}
+def official_office_match(p,e,title):
+    # Require exact stored article and documented office with overlapping term.
+    if not p.get('wiki') or norm(p['wiki'])!=norm(title): return False
+    for t in p.get('terms',[]):
+        allowed=OFFICES.get(t.get('type'),set())
+        if not allowed or not str(t.get('source','')).startswith(('https://www.whitehouse.gov/','https://www.senate.gov/','https://www.supremecourt.gov/')): continue
+        start=str(t.get('start',''))[:4]; end=str(t.get('end',''))[:4]
+        if not start.isdigit() or not end.isdigit(): continue
+        for c in e.get('claims',{}).get('P39',[]):
+            if c.get('rank')=='deprecated' or c.get('mainsnak',{}).get('datavalue',{}).get('value',{}).get('id') not in allowed: continue
+            qs=c.get('qualifiers',{})
+            def y(key):
+                try: return int(qs[key][0]['datavalue']['value']['time'][1:5])
+                except (KeyError,IndexError,ValueError): return None
+            a,z=y('P580'),y('P582')
+            if a is not None and int(start)-1<=a<=int(end)+1 and (z is None or z>=int(start)-1): return True
+    return False
 def identity(p):
     q=p.get('qid'); wp=None
     if not q and p.get('wiki') and not p.get('bioguide'):
@@ -134,7 +156,7 @@ def identity(p):
     if p.get('bioguide'):
         if p['bioguide'] not in claims(e,'P1157'): raise Hold('Bioguide P1157 mismatch')
     else:
-        if norm(p['name']) not in [norm(n) for n in names] or not p.get('birth') or (not p.get('death') and not p.get('wiki')):
+        if norm(p['name']) not in [norm(n) for n in names] or not ((p.get('birth') and (p.get('death') or p.get('wiki'))) or official_office_match(p,e,title)):
             raise Hold('non-Bioguide match needs exact alias, birth year and death year or stored Wikipedia title')
         if not claims(e,'P106') and not claims(e,'P39'): raise Hold('occupation/office missing')
     return q,e,title
@@ -161,7 +183,9 @@ def collect(p,records):
     # Exact, independently sourced official-photo lead for the priority subject.
     if p.get('bioguide')=='S001136':
         candidates.insert(0,('Portrait of W. Stuart Symington.jpg','NARA-confirmed Commons file'))
-    if title:
+    if p.get('bioguide')=='M000851':
+        candidates.insert(0,('Walter Mondale 1977 vice presidential portrait.jpg','Senate-sourced Commons file'))
+    if title and not candidates:
         wp=page(title)
         if wp.get('pageimage'): candidates.append((wp['pageimage'],'PageImages'))
     # Discover additional leads but never auto-publish a mere search hit.
@@ -169,7 +193,7 @@ def collect(p,records):
         s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
         raise Hold('no P18/PageImages; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
     notes=[]
-    for file,method in sorted(dict(reversed(candidates)).items(),key=lambda pair: (0 if pair[1]=='NARA-confirmed Commons file' else 1 if pair[1]=='P18' else 2)):
+    for file,method in sorted(dict(reversed(candidates)).items(),key=lambda pair: (0 if pair[1] in ('NARA-confirmed Commons file','Senate-sourced Commons file') else 1 if pair[1]=='P18' else 2)):
         try:
             i,m=metadata(file)
             # Association is source metadata, not facial recognition. Reject ambiguous descriptive evidence.
@@ -177,7 +201,7 @@ def collect(p,records):
             surname=next((x for x in reversed(tokens) if x not in ('jr','sr','ii','iii','iv')), '')
             evidence=norm(m['fileTitle']+' '+m['description'])
             if not surname or surname not in evidence.split(): raise Hold('portrait description lacks surname')
-            if BAD.search(m['fileTitle']) or method not in ('P18','NARA-confirmed Commons file'): raise Hold('requires individual-portrait review')
+            if BAD.search(m['fileTitle']) or method not in ('P18','NARA-confirmed Commons file','Senate-sourced Commons file'): raise Hold('requires individual-portrait review')
             # A linked P18 is a candidate, not independent visual confirmation.
             # Commons sometimes returns thumbnail error or alternate URLs. Prefer only validated HTTPS upload URLs; fall back to the original when the thumbnail is unusable.
             def trusted(u):
@@ -208,6 +232,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--limit',type=int,default=20)
     parser.add_argument('--expand',action='store_true')
+    parser.add_argument('--retry-improved',action='store_true')
     args=parser.parse_args()
     people,overlap,slots,unresolved,cast_counts=inventory()
     local=read('data/portraits.json')
@@ -234,26 +259,29 @@ def main():
             return (rank,-cast_counts.get(p['id'],0),p['id'])
         queue+=sorted((p for k,p in people.items() if (k in overlap or k in cast_counts or k.startswith('hist:')) and not any(a in valid for a in p['aliases'])),key=priority)
     seen=set(); queue=[p for p in queue if not (p['id'] in seen or seen.add(p['id']))]
-    attempted=0
+    attempted=0; pause_until=None; run_ids=[]
     def checkpoint():
         save(manifest,records)
-        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'queueSize':len(queue),'results':previous,'browserVerified':None,'manualRequests':0})
+        save(report,{'scope':'static roster IDs; dynamic governors and cross-source unresolved aliases excluded from unique-person claims','rosterIds':len(people),'congress1900to2026':len(overlap),'indexedLocalCongress':len(valid&overlap),'castSlots':slots,'unresolvedCast':unresolved,'existingIndexMissingFiles':len(local)-len(valid),'newDownloads':len(records),'thisRunAttempted':attempted,'thisRunIds':run_ids,'pauseUntil':pause_until,'queueSize':len(queue),'results':previous,'browserVerified':None,'manualRequests':0})
     for p in queue:
         k=p['id']
         if attempted>=args.limit: break
         if any(a in valid for a in p['aliases']) or any(k in v['aliases'] and (ROOT/v['path']).is_file() and digest((ROOT/v['path']).read_bytes())==v['sha256'] for v in records.values()): continue
-        if args.expand and previous.get(k,{}).get('status') in ('review_required','temporary_error','technical_error'): continue
-        attempted+=1
+        old=previous.get(k,{})
+        retry=args.retry_improved and (k=='M000851' or old.get('status')=='temporary_error' or ('non-Bioguide match needs' in old.get('reason','') and any(t.get('type') in OFFICES for t in p.get('terms',[]))))
+        if args.expand and old.get('status') in ('review_required','temporary_error','technical_error') and not retry: continue
+        attempted+=1; run_ids.append(k)
         try:
             v=collect(p,records); records[v['qid']]=v
             previous[k]={'name':p['name'],'status':v['status'],'qid':v['qid'],'path':v['path']}
         except (Hold,Temporary) as ex:
+            if isinstance(ex,RatePause): pause_until=ex.until
             previous[k]={'name':p['name'],'status':'temporary_error' if isinstance(ex,Temporary) else 'review_required','reason':str(ex)}
         except Exception as ex:
             previous[k]={'name':p['name'],'status':'technical_error','reason':repr(ex)}
         checkpoint()
         print(k,previous[k],flush=True)
-        if previous[k].get('status')=='temporary_error' and ('Retry-After' in previous[k].get('reason','') or 'rate limit or maxlag' in previous[k].get('reason','')):
+        if pause_until is not None:
             print('Stopping batch on server-requested backoff; resume in later run',flush=True)
             break
     checkpoint()
