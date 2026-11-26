@@ -1,0 +1,29 @@
+name: V18 staff election data staging
+on:
+  push:
+    branches: [v18-staff-slow-growth-r1]
+    paths: ['scripts/import-v18-house-margins.py', '.github/workflows/v18-staff-margin-staging.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  stage:
+    if: github.ref == 'refs/heads/v18-staff-slow-growth-r1'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - run: python scripts/import-v18-house-margins.py
+      - run: npm test
+      - name: Persist validated election margins on isolated PR branch
+        run: |
+          git add data/v18-house-margins.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Stage validated historical House district margins'
+            git push origin HEAD:refs/heads/v18-staff-slow-growth-r1
+          fi
+          echo "CANDIDATE_SHA=$(git rev-parse HEAD)"
