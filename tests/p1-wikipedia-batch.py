@@ -7,6 +7,9 @@ class BatchTest(unittest.TestCase):
         q={'normalized':[{'from':'John_Doe','to':'John Doe'}],'redirects':[{'from':'John Doe','to':'John Doe (politician)'}],'pages':[{'title':'John Doe (politician)','pageimage':'Portrait.jpg'}]}
         self.assertEqual(mapped_pages(q,['John_Doe','John Doe','Jane'])['John Doe']['pageimage'],'Portrait.jpg')
         self.assertNotIn('Jane',mapped_pages(q,['Jane']))
+    def test_normalized_only(self):
+        q={'normalized':[{'from':'Jane_Doe','to':'Jane Doe'}],'pages':[{'title':'Jane Doe','pageimage':'J.jpg'}]}
+        self.assertEqual(mapped_pages(q,['Jane_Doe'])['Jane Doe']['pageimage'],'J.jpg')
     def test_batch_sizes_cache_and_disambiguation(self):
         calls=[]
         def api(host,**p):

@@ -5,7 +5,7 @@ def key(s):
     return str(s or '').replace('_',' ').strip()
 
 def mapped_pages(query,titles):
-    redirects={key(x['from']):key(x['to']) for field in ('normalized','redirects') for x in query.get(field,[])}
+    redirects={key(x['from']):key(x['to']) for field in ('normalized','redirects') for x in query.get(field,[]) if key(x['from'])!=key(x['to'])}
     pages={key(p['title']):p for p in query.get('pages',[]) if p.get('title')}
     out={}
     for t in titles:
