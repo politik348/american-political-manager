@@ -142,25 +142,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "학교 운영위원회 자료를 학생들과 살펴보고 싶어요.",
-          "en": "I'd like students to examine records from my school board years."
-        },
-        {
-          "speaker": "player",
-          "ko": "시의회와는 어떻게 다르죠?",
-          "en": "How does that differ from a city council?"
+          "speaker": "host",
+          "ko": "학생 대표들이 학교 운영과 타운십 행정에 관한 질문을 두 의원에게 나누어 전달하려 합니다.",
+          "en": "Student representatives want to direct separate questions on school governance and township administration."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 애빙턴 타운십 선출직을 경험했습니다. 서로 다른 기관이죠.",
-          "en": "I held elected office in Abington Township. The institutions differ."
+          "ko": "타운십에서의 선출직 경험은 제가 설명하겠습니다. 학교 이사회 경험은 스캔런 의원에게 확인해 주세요.",
+          "en": "I'll address elected township service. Check Scanlon's school board experience for the other question."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 의장을 맡았던 교육구의 명칭부터 정확히 확인하고 질문을 받겠습니다.",
+          "en": "I'll take the questions once you've identified the school district whose board I chaired."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "스캔런이 의장도 맡은 교육구는 {{blank}}입니다.",
-        "en": "Scanlon chaired the board of {{blank}}.",
+        "ko": "학교 이사회 경험은 {{blank}} 교육구와 연결해 소개하겠습니다.",
+        "en": "I'll introduce the school board experience under the district of {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -189,15 +189,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "학교 이사회 기록은 별도로 분류해 주세요.",
-            "en": "File the school board records separately."
+            "ko": "좋습니다. 학교 이사회와 타운십 행정의 권한 차이부터 학생들과 이야기합시다.",
+            "en": "Good. Let's start by discussing how school board authority differs from township administration."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "스캔런은 Wallingford-Swarthmore 학교 이사회 의장이었습니다.",
-            "en": "Scanlon presided over the Wallingford-Swarthmore school board."
+            "ko": "스캔런 의원이 의장을 맡은 곳은 Wallingford-Swarthmore입니다. 제 타운십 경력과 혼동하지 말고 질문을 다시 배분해 주세요.",
+            "en": "Scanlon chaired Wallingford-Swarthmore. Don't confuse it with my township experience; please redirect the questions."
           }
         ]
       },
@@ -245,30 +245,25 @@
       ],
       "opening": [
         {
-          "speaker": "npc:1",
-          "ko": "대학에서 영어를 가르쳤습니다.",
-          "en": "I taught English at a university."
+          "speaker": "player",
+          "ko": "교육 간담회에서 중등학교 교사와 대학 강사의 경험을 비교하려고 합니다. 두 분에게 질문을 나누겠습니다.",
+          "en": "For an education forum, I want to compare secondary-school teaching and college instruction. I'll divide the questions between you."
         },
         {
-          "speaker": "host",
-          "ko": "고등학교 교사 경험은 다른 의원님께 듣겠습니다.",
-          "en": "Now we'll hear from another member about high school teaching."
+          "speaker": "npc:1",
+          "ko": "저는 대학 영어 교육에 관한 질문을 맡겠습니다.",
+          "en": "I'll take the question on teaching English at college."
         },
         {
           "speaker": "npc:0",
-          "ko": "필라델피아에서 과학 수업을 맡았지요.",
-          "en": "I taught a science subject in Philadelphia."
-        },
-        {
-          "speaker": "player",
-          "ko": "학생들이 두 경력을 비교할 수 있겠네요.",
-          "en": "The students can compare those careers."
+          "ko": "제 필라델피아 고등학교 교사 경험에 관한 질문은 담당 교과부터 확인해 주세요.",
+          "en": "For my Philadelphia high-school teaching experience, identify the subject first."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "훌러핸 의원의 교과는 {{blank}}였습니다.",
-        "en": "Houlahan taught {{blank}}.",
+        "ko": "훌러핸 의원에게는 {{blank}} 수업 경험을 질문하겠습니다.",
+        "en": "I'll ask Houlahan about teaching {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -297,15 +292,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "중등교육과 대학 교육도 비교해 봅시다.",
-            "en": "Let's compare secondary and higher education."
+            "ko": "맞습니다. 그 수업 경험을 토대로 중등교육 현장의 질문을 이어가 주세요.",
+            "en": "That's right. Follow up with questions about secondary education using that classroom experience."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "훌러핸은 Simon Gratz High School에서 화학을 가르쳤습니다.",
-            "en": "Houlahan taught chemistry at Simon Gratz High School."
+            "speaker": "npc:0",
+            "ko": "Simon Gratz High School에서 가르친 과목은 화학이었습니다. 질문지를 수정하고 다시 시작합시다.",
+            "en": "I taught chemistry at Simon Gratz High School. Let's revise the question sheet and start again."
           }
         ]
       },
@@ -354,23 +349,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지방정부의 법률 업무를 누가 담당했나요?",
-          "en": "Who handled local government legal work?"
+          "ko": "앨런타운 주민이 법률 검토 담당자와 선출직을 같은 직책으로 소개한 기사를 가져왔습니다.",
+          "en": "An Allentown resident brings an article treating municipal legal review and elected office as the same job."
         },
         {
           "speaker": "npc:0",
-          "ko": "앨런타운의 법률 고문을 맡았습니다.",
-          "en": "I was Allentown's solicitor."
+          "ko": "제가 맡았던 지방정부 직책부터 확인해 주세요.",
+          "en": "Identify my former municipal office first."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 애빙턴 타운십 제7워드의 선출직이었죠.",
-          "en": "I held elected office in Abington Township's seventh ward."
-        },
-        {
-          "speaker": "aide",
-          "ko": "두 직책을 별도로 표시하겠습니다.",
-          "en": "I'll give each office its own line."
+          "ko": "제 애빙턴 타운십 선출직 경력과 법률 검토 역할을 구별해야 합니다.",
+          "en": "Distinguish my elected Abington Township service from legal review."
         }
       ],
       "response": {
@@ -405,15 +395,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "법률 업무와 선출직 업무를 구별해 주세요.",
-            "en": "Distinguish legal work from elected service."
+            "ko": "그 직책의 법률 업무로 정정하고 시장의 권한과 구별하세요.",
+            "en": "Correct it to that office's legal role, distinct from the mayor's authority."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "와일드는 앨런타운 solicitor였습니다.",
-            "en": "Wild was Allentown solicitor."
+            "ko": "와일드는 앨런타운 시 법률고문이었습니다. 시장이나 주의원으로 소개하면 안 됩니다.",
+            "en": "Wild was Allentown solicitor, not a mayor or state legislator."
           }
         ]
       },
@@ -570,29 +560,24 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "민간 법률 경력도 소개해 주세요.",
-          "en": "Please introduce your civilian legal careers."
+          "ko": "시민 대상 사법제도 설명회에서 검사와 판사의 역할을 같은 것으로 소개한 초안이 나왔습니다.",
+          "en": "A draft for a civic law forum treats prosecutors and judges as having the same role."
         },
         {
           "speaker": "npc:1",
-          "ko": "앨러게니 카운티에서 치안판사로 일했습니다.",
-          "en": "I served as a magisterial district judge in Allegheny County."
-        },
-        {
-          "speaker": "player",
-          "ko": "램 의원도 피츠버그에서 법률 업무를 했죠?",
-          "en": "Lamb also worked in law in Pittsburgh, right?"
+          "ko": "저는 앨러게니 카운티 치안판사 경력을 설명하겠습니다. 램 의원의 피츠버그 경력과 구별해 주시죠.",
+          "en": "I'll explain my Allegheny County judicial experience. Distinguish that from Lamb's Pittsburgh career."
         },
         {
           "speaker": "npc:0",
-          "ko": "당시에는 연방 검찰 업무였습니다.",
-          "en": "That was federal prosecution work."
+          "ko": "2014~2017년 제 직책을 제대로 확인하고 사법기관별 질문을 나누어 주세요.",
+          "en": "Identify my 2014–2017 position and divide the questions by institution."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "램의 직책은 {{blank}}였습니다.",
-        "en": "Lamb's former position was {{blank}}.",
+        "ko": "피츠버그에서 램이 맡았던 직책은 {{blank}}로 정정하겠습니다.",
+        "en": "I'll correct Lamb's Pittsburgh position to {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -620,16 +605,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "법원과 검찰의 역할도 따로 설명합시다.",
-            "en": "Let's explain the separate roles of courts and prosecutors."
+            "speaker": "npc:1",
+            "ko": "이제 재판을 담당한 직책과 검찰 직책을 구별한 질문을 각각 진행합시다.",
+            "en": "Now let's proceed with separate questions about judicial and prosecutorial roles."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "램은 피츠버그의 연방 검사보였습니다.",
-            "en": "Lamb was an assistant U.S. attorney in Pittsburgh."
+            "speaker": "npc:0",
+            "ko": "저는 피츠버그의 연방 검사보였습니다. 치안판사와 같은 직책으로 소개하면 설명회가 잘못된 출발을 하게 됩니다.",
+            "en": "I was an assistant U.S. attorney in Pittsburgh. Presenting that as a judicial office would mislead the audience."
           }
         ]
       },
@@ -678,24 +663,24 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난 진로 행사에서 판사 경력을 들었죠. 이후에는 어떤 선거구였나요?",
-          "en": "We discussed your judgeship at the career event. What district came afterward?"
+          "ko": "제37구와 제14구가 동일한 선거구라는 안내문이 들어왔습니다. 어느 기관의 의석인지 확인하겠습니다.",
+          "en": "A notice treats District 37 and District 14 as the same constituency. I'll verify which institution each seat belonged to."
         },
         {
           "speaker": "npc:0",
-          "ko": "해리스버그에서 제37구를 맡았습니다.",
-          "en": "I represented district thirty-seven in Harrisburg."
+          "ko": "제2015~2019년 의석부터 확인해 주세요. 연방 하원 경력과 별개입니다.",
+          "en": "Check my 2015–2019 seat first. It is distinct from my U.S. House service."
         },
         {
           "speaker": "npc:1",
-          "ko": "현재 연방 하원 제14구와는 다른 선거구입니다.",
-          "en": "That is distinct from his current federal district fourteen."
+          "ko": "의회 수준이 다른 의석이라면 선거구 번호만으로 비교할 수 없겠죠.",
+          "en": "If the seats belong to different legislative levels, district numbers alone cannot settle the comparison."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "제37구는 {{blank}}의 선거구였습니다.",
-        "en": "District thirty-seven belonged to the {{blank}}.",
+        "ko": "레셴탈러의 제37구는 {{blank}}의 의석으로 정정하겠습니다.",
+        "en": "I'll correct Reschenthaler's District 37 to a seat in the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -724,15 +709,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주와 연방 의회 연표를 분리합시다.",
-            "en": "Keep state and federal timelines separate."
+            "ko": "좋습니다. 주의회와 연방의회에 대한 안내를 분리하고 각 기관의 관할을 확인합시다.",
+            "en": "Good. Separate the guidance on state and federal legislatures and verify their respective jurisdictions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "레셴탈러는 주 상원 제37구 의원이었습니다.",
-            "en": "Reschenthaler represented state Senate district 37."
+            "speaker": "npc:0",
+            "ko": "제37구는 펜실베이니아 주 상원 의석이었습니다. 연방 하원 제14구와 합치지 말아 주세요.",
+            "en": "District 37 was a Pennsylvania State Senate seat. Please don't merge it with U.S. House District 14."
           }
         ]
       },
@@ -780,24 +765,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "현역 군사 정책과 퇴역 후 지원 자료를 나눠 주세요.",
-          "en": "Please separate active military policy from post-service assistance."
+          "speaker": "player",
+          "ko": "현역 군인의 장비 문제와 전역자의 급여 문제가 같은 질의서에 들어왔습니다.",
+          "en": "One briefing combines equipment for active-duty personnel and benefits for veterans."
         },
         {
-          "speaker": "aide",
-          "ko": "두 의원 모두 군 복무 경력이 있지만 위원회가 다릅니다.",
-          "en": "Both served in the military, but their committees differ."
+          "speaker": "npc:0",
+          "ko": "장비 문제는 국방 정책으로 따로 검토할 수 있겠죠.",
+          "en": "We can review equipment separately as defense policy."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 하원 보훈위원회에 있습니다.",
-          "en": "I serve on House Veterans' Affairs."
-        },
-        {
-          "speaker": "player",
-          "ko": "퇴역 후 지원을 어느 쪽에 연결할지 알겠습니다.",
-          "en": "I understand where to take the post-service questions."
+          "ko": "전역 후 지원을 논의할 담당 의원을 정해 주세요.",
+          "en": "Choose the member to handle the post-service question."
         }
       ],
       "response": {
@@ -831,16 +811,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "군사 정책과 보훈 정책을 구분해 둡시다.",
-            "en": "Keep defense and veterans' policy distinct."
+            "speaker": "npc:1",
+            "ko": "제가 보훈 입법 질문을 받고 훌러핸 의원과 국방 의제를 분리하죠.",
+            "en": "I'll take the veterans' legislative questions and separate Houlahan's defense agenda."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "램은 보훈위원회, 훌러핸은 군사위원회 위원이었습니다.",
-            "en": "Lamb served on Veterans' Affairs; Houlahan on Armed Services."
+            "speaker": "npc:0",
+            "ko": "램은 보훈위원회, 저는 군사위원회였습니다. 현역 장비와 전역 후 지원은 다른 정책입니다.",
+            "en": "Lamb served on Veterans' Affairs; I served on Armed Services. Equipment and post-service benefits are distinct."
           }
         ]
       },
@@ -902,29 +882,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "100일 공동 기고를 소개하겠습니다.",
-          "en": "We're featuring the joint first-100-days op-ed."
+          "speaker": "player",
+          "ko": "공동 기고를 근거로 한 지역구에서 네 명이 선출됐다는 기사가 나왔습니다.",
+          "en": "A report claims that four members were elected from a single district because they wrote a joint op-ed."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 제4구입니다.",
-          "en": "I represent district four."
+          "ko": "공동 기고가 공동 의석을 뜻하지는 않습니다. 각자의 대표 범위를 확인해 주세요.",
+          "en": "A joint op-ed does not mean a shared seat. Check our constituencies."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 제5구입니다.",
-          "en": "I represent district five."
-        },
-        {
-          "speaker": "npc:2",
-          "ko": "저는 제6구입니다.",
-          "en": "Mine is district six."
-        },
-        {
-          "speaker": "npc:3",
-          "ko": "제 지역구는 제7구입니다.",
-          "en": "And mine is district seven."
+          "ko": "같은 글에 서명해도 각자 주민에 대한 책임은 남습니다.",
+          "en": "Signing the same article leaves each of us accountable to our own constituents."
         }
       ],
       "response": {
@@ -958,16 +928,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "원문을 지역구별로 보관하죠.",
-            "en": "File the op-ed with each district identified."
+            "speaker": "npc:2",
+            "ko": "기사를 정정하고 공동 활동과 각자 지역구의 책임을 구별해 주세요.",
+            "en": "Correct the story and distinguish joint activity from responsibility to each district."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "딘·스캔런·훌러핸·와일드는 각각 제4·5·6·7구였습니다.",
-            "en": "Dean, Scanlon, Houlahan and Wild represented districts four through seven."
+            "speaker": "npc:3",
+            "ko": "제4·5·6·7구는 서로 다른 하원 지역구입니다. 공동 기고를 한 의석으로 해석하면 안 됩니다.",
+            "en": "Districts four through seven are separate House districts; a joint article is not one seat."
           }
         ]
       },
@@ -1250,24 +1220,19 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "새 의원 모임의 출범 자료입니다.",
-          "en": "Here are the new caucus launch materials."
+          "speaker": "player",
+          "ko": "여성 군인과 퇴역군인 대표가 정책 협의회를 요청했습니다. 정식 상임위 청문회로 소개해도 될까요?",
+          "en": "Women service members and veterans request a policy discussion. Should it be described as a formal committee hearing?"
         },
         {
           "speaker": "npc:0",
-          "ko": "여성 군 복무자와 퇴역군인을 다루는 모임을 출범시켰습니다.",
-          "en": "We launched a caucus concerning servicewomen and women veterans."
+          "ko": "제가 출범시킨 의원 모임의 정식 명칭을 확인해 주세요.",
+          "en": "Identify the group I launched before issuing invitations."
         },
         {
           "speaker": "npc:1",
-          "ko": "저도 부의장으로 참여합니다.",
-          "en": "I'm one of its vice chairs."
-        },
-        {
-          "speaker": "player",
-          "ko": "실제 출범 기록을 노트에 연결하겠습니다.",
-          "en": "I'll connect the launch record to my notebook."
+          "ko": "부의장이라는 직함만으로 상임위 권한을 가진다고 볼 수는 없습니다.",
+          "en": "A vice-chair title alone does not confer standing committee authority."
         }
       ],
       "response": {
@@ -1302,15 +1267,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "위원회와 코커스는 다른 조직입니다.",
-            "en": "Caucuses and committees are different bodies."
+            "ko": "그 모임과 정책 협의를 준비하되 정식 위원회 절차와 구분하세요.",
+            "en": "Arrange a policy discussion with that caucus, distinct from formal committee proceedings."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "훌러핸은 의장, 셰릴은 부의장 중 한 명이었습니다.",
-            "en": "Houlahan chaired the caucus; Sherrill was among its vice chairs."
+            "ko": "Servicewomen and Women Veterans Congressional Caucus입니다. 정식 위원회가 아닌 의원 모임입니다.",
+            "en": "It is the Servicewomen and Women Veterans Congressional Caucus, not a formal committee."
           }
         ]
       },
@@ -1351,25 +1316,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "신시내티 주민 단체가 전직 공직자의 관할 경험을 소개하는 설명회를 준비합니다.",
+          "en": "A Cincinnati civic group is preparing a forum on former officials' experience with local jurisdictions."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "옛 지방정부 사진을 전시에 넣으려 합니다.",
-          "en": "I'd like to display a photo from my local-government years."
+          "ko": "제 시의회 임기는 1990년에 끝났습니다. 이후 4년 동안의 직책을 확인하면 두 기관의 차이를 설명할 수 있습니다.",
+          "en": "My city council service ended in 1990. Identify my office for the next four years so we can distinguish the two institutions."
         },
         {
           "speaker": "player",
-          "ko": "시의회 이후에는 어떤 기관이었나요?",
-          "en": "What came after city council service?"
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "1990년부터 카운티 정부에서 일했습니다.",
-          "en": "Starting in 1990 I worked in county government."
+          "ko": "그 직책을 근거로 시와 카운티의 역할에 관한 질문을 준비하겠습니다.",
+          "en": "I'll use that office to frame questions about the roles of city and county government."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "다음 직책은 {{blank}}였습니다.",
-        "en": "Chabot's next office was {{blank}}.",
+        "ko": "섀벗의 1990~1994년 직책은 {{blank}}였습니다.",
+        "en": "Chabot's office from 1990 to 1994 was {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1398,15 +1363,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "시와 카운티를 구별한 연표가 되겠군요.",
-            "en": "That timeline distinguishes city and county offices."
+            "ko": "정확합니다. 두 기관을 같은 정부 단위로 취급하지 말고 관할 차이를 토론합시다.",
+            "en": "Correct. Let's discuss their different jurisdictions rather than treating them as the same government unit."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "섀벗은 1990–1994년 해밀턴 카운티 커미셔너였습니다.",
-            "en": "Chabot was Hamilton County commissioner from 1990 to 1994."
+            "ko": "그 기간 저는 해밀턴 카운티 커미셔너였습니다. 시의회 이후의 직책을 다시 확인한 뒤 주민 질문을 배분합시다.",
+            "en": "I was a Hamilton County commissioner then. Verify my post-council office before assigning the residents' questions."
           }
         ]
       },
@@ -1572,19 +1537,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:1",
-          "ko": "자동차 관련 의원 모임을 이끌고 있습니다.",
-          "en": "I help lead a congressional caucus concerned with automobiles."
-        },
-        {
           "speaker": "player",
-          "ko": "두 분 모두 자동차 분야와 접점이 있네요.",
-          "en": "Both of you have connections to the automotive sector."
+          "ko": "자동차 판매업자와 제조업 노동자들이 정책 토론에 참여할 의원 모임을 찾습니다.",
+          "en": "Auto dealers and manufacturing workers seek a congressional group for a policy discussion."
         },
         {
           "speaker": "npc:0",
-          "ko": "가족의 자동차 판매업에서도 일했습니다.",
-          "en": "I worked in my family's automobile dealership."
+          "ko": "제 가족 사업 경험만으로 의원 모임의 권한을 판단하지 마세요.",
+          "en": "Do not infer the group's authority from my family business experience."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "제가 공동의장을 맡은 모임을 확인하고 양쪽 대표단을 초대하세요.",
+          "en": "Identify the group I co-chaired and invite both delegations."
         }
       ],
       "response": {
@@ -1618,16 +1583,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "산업 경력과 의원 모임을 구분해 설명하세요.",
-            "en": "Distinguish industry experience from caucus activity."
+            "speaker": "npc:1",
+            "ko": "두 산업의 질문을 그 모임에 가져오세요. 정식 위원회 심의와는 구별해야 합니다.",
+            "en": "Bring both groups' questions to the caucus, distinct from formal committee consideration."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "캡터는 House Auto Caucus 공동의장이었습니다.",
-            "en": "Kaptur co-chaired the House Auto Caucus."
+            "speaker": "npc:0",
+            "ko": "House Auto Caucus입니다. 자동차 사업 경험 자체는 공식 상임위 권한이 아닙니다.",
+            "en": "It was the House Auto Caucus. Auto business experience itself is not committee authority."
           }
         ]
       },
@@ -1784,18 +1749,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난 대학 행사에서 만난 곤살레스 의원의 스포츠 경력이 궁금합니다.",
-          "en": "I'd like to learn about Gonzalez's sports career after meeting him at the university."
+          "ko": "학생들이 운동선수 출신 의원과 대학 행정 출신 의원의 진로 토론을 준비합니다. 스포츠 소개에 다른 팀이 들어갔습니다.",
+          "en": "Students are preparing a career discussion with a former athlete and university administrator. The sports biography lists the wrong team."
         },
         {
           "speaker": "npc:0",
-          "ko": "2007년부터 2011년까지 인디애나폴리스의 프로팀에서 뛰었습니다.",
-          "en": "I played for a professional team in Indianapolis from 2007 to 2011."
+          "ko": "2007~2011년 제 소속 팀을 정확히 확인해 주세요.",
+          "en": "Verify my team from 2007 to 2011."
         },
         {
           "speaker": "npc:1",
-          "ko": "운동선수 경력과 선출직 기록을 구분합시다.",
-          "en": "Separate the athletic and elected-office records."
+          "ko": "선수 경력과 현직 의원의 입법 활동은 별개의 주제입니다.",
+          "en": "Athletic experience and legislative work are separate topics."
         }
       ],
       "response": {
@@ -1830,15 +1795,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "선출직 경력과 별도 전시를 마련하겠습니다.",
-            "en": "We'll display the sports record separately."
+            "ko": "그 팀에서의 선수 경험에 관한 질문을 받겠습니다.",
+            "en": "I'll take questions about my playing experience there."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "곤살레스는 인디애나폴리스 콜츠에서 뛰었습니다.",
-            "en": "Gonzalez played for the Indianapolis Colts."
+            "ko": "그는 인디애나폴리스 콜츠에서 뛰었습니다. 다른 NFL 팀의 기록을 가져오지 마세요.",
+            "en": "He played for the Indianapolis Colts. Do not substitute another NFL team's record."
           }
         ]
       },
@@ -2098,18 +2063,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "북부 세출 업무를 보다가 도시계획 기록을 찾았습니다.",
-          "en": "I found a planning record while studying northern Ohio appropriations."
+          "ko": "지역 도시계획가들이 캡터 의원의 백악관 경력과 현재 하원 활동을 같은 직무라고 보도했습니다.",
+          "en": "Local planners read a report treating Kaptur's White House experience and current House work as the same job."
         },
         {
           "speaker": "npc:0",
-          "ko": "도시계획가로 백악관 국내정책 참모진에 있었습니다.",
-          "en": "As a planner I served on the White House domestic policy staff."
+          "ko": "당시 국내정책 참모진에서 맡은 분야를 확인하면 그 차이를 바로잡을 수 있습니다.",
+          "en": "Identify my portfolio on the domestic policy staff to correct the distinction."
         },
         {
           "speaker": "npc:1",
-          "ko": "현재 의원직과 다른 역할입니다.",
-          "en": "That differs from congressional service."
+          "ko": "행정부 참모의 업무를 현직 의원의 권한으로 설명하지 마세요.",
+          "en": "Do not describe an executive staff role as the authority of a sitting member."
         }
       ],
       "response": {
@@ -2144,15 +2109,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "백악관 경력을 별도 표시하세요.",
-            "en": "Label the White House service separately."
+            "ko": "해당 분야의 행정부 경험으로 정정하고 현직 하원 활동과 분리합시다.",
+            "en": "Correct it to executive-branch experience in that field, separate from House service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "캡터는 도시문제 담당 부책임자였습니다.",
-            "en": "Kaptur was Assistant Director for Urban Affairs."
+            "ko": "도시 문제 담당 부책임자였습니다. 외교나 군 인사 분야가 아닙니다.",
+            "en": "She was Assistant Director for Urban Affairs, not responsible for diplomacy or military personnel."
           }
         ]
       },
@@ -2201,24 +2166,24 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "하원에서 행정부를 거쳐 상원으로 간 경력을 살펴봅니다.",
-          "en": "We're tracing a path from the House through the executive branch to the Senate."
+          "ko": "정책 토론회 자료가 무역대표부 이후 포트먼 의원의 직책을 의회 예산직으로 잘못 분류했습니다.",
+          "en": "A policy forum brief incorrectly classifies Portman's post-trade office as a congressional budget post."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 하원으로 복귀했고 포트먼 의원은 상원으로 갔죠.",
-          "en": "I returned to the House, while Portman went to the Senate."
+          "ko": "하원에서 맡는 역할과 행정부에서 맡는 직책을 분리해서 소개해야겠군요.",
+          "en": "We should distinguish congressional roles from executive branch offices."
         },
         {
           "speaker": "npc:0",
-          "ko": "무역대표부에 이어 연방 예산관리 업무를 맡았습니다.",
-          "en": "After serving as trade representative I took a federal budget role."
+          "ko": "2006~2007년 제 직책을 확인한 뒤 행정부 예산과 의회 심의에 관한 질문을 나누어 주세요.",
+          "en": "Verify my 2006–2007 position, then separate questions on executive budgeting from legislative review."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "포트먼의 2006–2007년 직책은 {{blank}}입니다.",
-        "en": "Portman's 2006–2007 office was {{blank}}.",
+        "ko": "포트먼의 당시 직책은 {{blank}}로 정정하겠습니다.",
+        "en": "I'll correct Portman's office at that time to {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2246,16 +2211,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "행정부 직책을 순서대로 배치합시다.",
-            "en": "Place the executive roles in order."
+            "speaker": "npc:1",
+            "ko": "좋습니다. 이제 행정부 예산 과정과 의회의 심의 역할을 구별해서 토론합시다.",
+            "en": "Good. Now let's distinguish executive budgeting from legislative review in our discussion."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "포트먼은 2006–2007년 예산관리국장이었습니다.",
-            "en": "Portman directed OMB from 2006 to 2007."
+            "speaker": "npc:0",
+            "ko": "당시 저는 백악관 예산관리국장이었습니다. 하원 위원장이나 주 재무관으로 분류하면 안 됩니다.",
+            "en": "I was director of OMB. That is not a House committee chair or a state treasurer."
           }
         ]
       },
@@ -2304,23 +2269,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "은행과 주택금융 문의를 양원에 전달하고 싶습니다.",
-          "en": "I want to direct a banking and housing inquiry to both chambers."
+          "ko": "은행 규제와 주택금융 입법 문의를 양원에 전달할 계획입니다.",
+          "en": "We plan to raise banking regulation and housing finance legislation in both chambers."
         },
         {
           "speaker": "npc:1",
-          "ko": "상원 은행위원회 소수당 간사입니다.",
-          "en": "I am ranking member of Senate Banking."
+          "ko": "상원 심의는 제 위원회 기록에서 추적할 수 있습니다.",
+          "en": "You can track Senate consideration through my committee record."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 하원 금융서비스위원회에 있습니다.",
-          "en": "I sit on House Financial Services."
-        },
-        {
-          "speaker": "aide",
-          "ko": "위원회 자료를 별도 파일에 넣겠습니다.",
-          "en": "I'll file the committee materials separately."
+          "ko": "하원 접견을 별도로 배정하고 두 원의 검토를 혼동하지 마세요.",
+          "en": "Arrange a separate House discussion and do not conflate the chambers' reviews."
         }
       ],
       "response": {
@@ -2355,15 +2315,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "양원의 역할을 구별한 분류입니다.",
-            "en": "That routing distinguishes the chambers."
+            "ko": "하원 금융서비스위원회 관련 질문은 제가 받겠습니다. 상원 절차는 따로 확인하죠.",
+            "en": "I'll take questions concerning House Financial Services. Track Senate proceedings separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "비티는 하원 금융서비스위원이었습니다.",
-            "en": "Beatty served on House Financial Services."
+            "ko": "저는 상원 은행위원회, 비티는 하원 금융서비스위원회였습니다. 양원 담당자를 바꾸지 마세요.",
+            "en": "I served on Senate Banking; Beatty served on House Financial Services. Do not swap the chamber contacts."
           }
         ]
       },
@@ -2521,24 +2481,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "주 감사관과 재무관의 권한을 설명하는 회의에서 케이시 의원의 두 임기가 하나로 합쳐졌습니다.",
+          "en": "A briefing on state audit and treasury authority has merged Casey's two terms."
+        },
+        {
           "speaker": "npc:1",
-          "ko": "주 감사관과 주 재무관을 지냈습니다.",
-          "en": "I served as state auditor general and treasurer."
+          "ko": "2005~2007년 직책을 확인해 주세요. 두 직책을 동시에 맡았다고 적으면 안 됩니다.",
+          "en": "Identify my office from 2005 to 2007. Do not list both state offices as concurrent."
         },
         {
           "speaker": "npc:2",
-          "ko": "앨런타운 정부 연구위원회에 참여했습니다.",
-          "en": "I served on the Allentown Government Study Commission."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "저도 이 도시에서 법률 업무를 맡았습니다.",
-          "en": "I handled municipal legal work here."
-        },
-        {
-          "speaker": "player",
-          "ko": "주와 지방 직책을 별도로 적겠습니다.",
-          "en": "I'll separate state and municipal offices."
+          "ko": "지방정부 연구와 주 재정 행정도 구분해야 합니다.",
+          "en": "Distinguish local-government study work from state fiscal administration."
         }
       ],
       "response": {
@@ -2573,15 +2528,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "재정 정책의 정부 수준을 구별하세요.",
-            "en": "Keep levels of government distinct in fiscal policy."
+            "ko": "해당 기간의 직책을 정정하고 지방정부 기록과 분리하세요.",
+            "en": "Correct that period's office and keep municipal records separate."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "케이시는 당시 주 재무관이었습니다.",
-            "en": "Casey was state treasurer then."
+            "ko": "그 기간에는 펜실베이니아 주 재무관이었습니다. 연방 재무장관이나 지방 시장 직책이 아닙니다.",
+            "en": "I was Pennsylvania state treasurer then, not federal Treasury secretary or a local mayor."
           }
         ]
       },
@@ -2630,23 +2585,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "학교 운영 기록을 함께 봤던 두 의원님께 지도 질문이 있습니다.",
-          "en": "After our school governance discussion I have a map question."
+          "ko": "몽고메리 카운티 주민 대표단이 모두 한 의원실 소속이라고 발표하려 합니다.",
+          "en": "A Montgomery County delegation plans to announce that all its residents belong to one House district."
         },
         {
           "speaker": "npc:0",
-          "ko": "제5구에는 몽고메리 카운티 일부가 포함됩니다.",
-          "en": "District five includes part of Montgomery County."
+          "ko": "제5구에 포함되는 타운십 일부를 확인해야 합니다.",
+          "en": "Identify the township partly covered by district five."
         },
         {
           "speaker": "npc:1",
-          "ko": "제4구와 구분하려면 카운티 이름만으로 부족합니다.",
-          "en": "The county name isn't enough to distinguish it from district four."
-        },
-        {
-          "speaker": "aide",
-          "ko": "주소를 당시 지도와 대조하겠습니다.",
-          "en": "I'll compare the address with the dated map."
+          "ko": "제4구와의 경계도 당시 지도에서 확인하세요. 카운티 이름만으로 단정하지 마세요.",
+          "en": "Check the boundary with district four on the dated map. Do not infer it from the county name alone."
         }
       ],
       "response": {
@@ -2681,15 +2631,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "주소와 당시 경계 확인이 중요합니다.",
-            "en": "Checking addresses against dated boundaries matters."
+            "ko": "그 타운십의 경계를 확인한 뒤 주민별 담당 의원실을 정하세요.",
+            "en": "Check that township's boundary before assigning individual constituents to an office."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "명부는 로어메리언 타운십 일부를 제5구에 포함합니다.",
-            "en": "The directory lists part of Lower Merion Township in PA-5."
+            "ko": "로어메리언 일부가 제5구였습니다. 타운십 전체가 동일한 지역구라고 단정하면 안 됩니다.",
+            "en": "Part of Lower Merion was in district five. Do not assume the whole township belongs to one district."
           }
         ]
       },
