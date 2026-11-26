@@ -576,8 +576,8 @@
         "en": "Coffee with committee colleagues"
       },
       "context": {
-        "ko": "위원회 동료와 커피에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
-        "en": "At the coffee with committee colleagues, the conversation connects a political career with local representation."
+        "ko": "두 의원의 전체 하원 재직과 위원회 공동 재임을 비교한다.",
+        "en": "Compare two members' House tenure with shared committee service."
       },
       "cast": [
         {
@@ -598,24 +598,24 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "세출위원회 경험을 비교하려면 연방 의원 재임 기간과 위원회 재임 기간을 구분해야 합니다.",
-          "en": "Comparing Appropriations experience requires distinguishing House tenure from committee tenure."
+          "ko": "학생이 두 의원의 하원 재직 기간과 같은 위원회에서 함께 일한 기간을 같은 숫자로 생각하고 있습니다.",
+          "en": "A student assumes the two members' House tenure and their shared committee tenure are the same number."
         },
         {
           "speaker": "npc:0",
           "ko": "우리는 지금 열세 번째 공동 위원회 임기에 있습니다.",
-          "en": "We are now in our thirteenth shared committee term."
+          "en": "We're now in our thirteenth shared committee term."
         },
         {
           "speaker": "npc:1",
-          "ko": "서로 다른 지역구를 대표하지만 같은 예산 심사에 참여합니다.",
-          "en": "We represent different districts but take part in the same spending reviews."
+          "ko": "어느 위원회에서 함께 일했는지 확인한 뒤 그 기간을 비교합시다.",
+          "en": "Identify our shared committee before comparing the periods."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "두 사람이 함께 활동한 위원회는 {{blank}}입니다.",
-        "en": "The committee on which both served is {{blank}}.",
+        "ko": "두 분이 함께 활동한 위원회는 {{blank}}입니다.",
+        "en": "The committee on which you both served is {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -643,16 +643,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "두 의원의 세출위원회 공동 재임 기록을 별도로 정리하겠습니다.",
-            "en": "I'll record their overlapping Appropriations service separately."
+            "speaker": "npc:1",
+            "ko": "세출위원회입니다. 위원회 공동 재임과 각각의 하원 임기를 따로 보죠.",
+            "en": "Appropriations. Compare shared committee tenure separately from our individual House service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "로위와 델라우로는 세출위원회에서 오랫동안 함께 활동했습니다.",
-            "en": "Lowey and DeLauro served together on Appropriations for many terms."
+            "ko": "세출위원회였습니다. 같은 위원회에서 함께 일한 기간과 각각의 하원 재임 기간은 별개입니다.",
+            "en": "Appropriations. Shared committee service and our individual House tenure are distinct."
           }
         ]
       },
@@ -1579,8 +1579,8 @@
         "en": "Foreign affairs papers"
       },
       "context": {
-        "ko": "외교 관련 서류 접견에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
-        "en": "At the foreign affairs papers, the conversation connects a political career with local representation."
+        "ko": "대외 정책의 일반적 질문과 개인 사건 문의가 함께 접수됨",
+        "en": "A general international-policy question and individual casework arrive together"
       },
       "cast": [
         {
@@ -1593,20 +1593,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "외교 정책 관련 위원회 서류를 따로 모아 주세요.",
-          "en": "Please assemble the committee's foreign policy papers separately."
+          "speaker": "player",
+          "ko": "개인 민원과 국가 간 정책에 관한 질문을 구분하겠습니다.",
+          "en": "I'll separate individual casework from questions about policy between nations."
         },
         {
-          "speaker": "player",
-          "ko": "지역 사무실 자료와 구분하겠습니다.",
-          "en": "I'll keep them distinct from district correspondence."
+          "speaker": "npc:0",
+          "ko": "제110대 의회에서 제가 맡은 위원장직을 확인하면 두 번째 질문의 맥락을 이해할 수 있습니다.",
+          "en": "My chairmanship in the 110th Congress provides context for the second question."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "랜토스 의원은 제110대 의회에서 {{blank}} 위원장입니다.",
-        "en": "Lantos chairs {{blank}} in the 110th Congress.",
+        "ko": "랜토스의 위원장직은 {{blank}}입니다.",
+        "en": "Lantos chairs {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1635,20 +1635,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "제110대 의회 외교위원장을 맡았습니다.",
-            "en": "I chair Foreign Affairs in the 110th Congress."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "ko": "외교위원회입니다. 개인 민원과 정책 심의의 차이를 설명하고 질문을 받아 보죠.",
+            "en": "Foreign Affairs. Explain the distinction between casework and policy consideration, then take the question."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제110대 의회 외교위원장을 맡았습니다.",
-            "en": "I chair Foreign Affairs in the 110th Congress."
+            "ko": "외교위원회입니다. 다른 위원회로 분류했다면 정책 문의의 관할을 다시 확인하세요.",
+            "en": "Foreign Affairs. If you assigned it elsewhere, recheck the jurisdiction of the policy question."
           }
         ]
       },
@@ -2135,8 +2130,8 @@
         "en": "New York City Council reunion"
       },
       "context": {
-        "ko": "뉴욕 시의회 옛 동료에서 정치인의 실제 경력과 지역대표성을 연결하는 대화가 이어진다.",
-        "en": "At the new york city council reunion, the conversation connects a political career with local representation."
+        "ko": "뉴욕 지방 공직과 현재 연방 하원 역할을 주민 질문으로 구분한다.",
+        "en": "A resident distinguishes former New York municipal service from federal House service."
       },
       "cast": [
         {
@@ -2149,20 +2144,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "작년까지 뉴욕시의 입법기관에서 여러분과 함께 일했죠.",
-          "en": "Until last year I served with you in the city's legislature."
+          "speaker": "host",
+          "ko": "주민이 의원님의 1982~1992년 공직과 현재의 연방 하원 직책을 혼동하고 있습니다.",
+          "en": "A resident confuses your 1982–1992 office with your present federal House role."
         },
         {
-          "speaker": "player",
-          "ko": "연방 하원에 오기 전의 직책을 기억하겠습니다.",
-          "en": "I'll remember your office before Congress."
+          "speaker": "npc:0",
+          "ko": "당시 뉴욕시에서 맡았던 선출직부터 설명해 주세요.",
+          "en": "Start by identifying the elected office I held in New York City then."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1982~1992년 멀로니는 뉴욕시 {{blank}} 의원이었습니다.",
-        "en": "From 1982 to 1992 Maloney served on the New York City {{blank}}.",
+        "ko": "말로니 의원님은 뉴욕 {{blank}}에서 활동하셨습니다.",
+        "en": "Representative Maloney served on the New York City {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -2191,20 +2186,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "뉴욕 시의회에서 활동했습니다.",
-            "en": "I served on the New York City Council."
-          },
-          {
-            "speaker": "player",
-            "ko": "다음에 만날 때도 기억하겠습니다.",
-            "en": "I'll remember that when we meet again."
+            "ko": "시의회였습니다. 이제 주민의 지방 및 연방 관련 질문을 구별하죠.",
+            "en": "Council. Let's distinguish the resident's local and federal questions."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "뉴욕 시의회에서 활동했습니다.",
-            "en": "I served on the New York City Council."
+            "ko": "뉴욕 시의회에서 1982년부터 1992년까지 활동했습니다. 연방 하원 재임과 별개의 기록입니다.",
+            "en": "I served on the New York City Council from 1982 to 1992. That is distinct from my House service."
           }
         ]
       },

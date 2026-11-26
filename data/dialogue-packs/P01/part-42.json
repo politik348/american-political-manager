@@ -13,8 +13,8 @@
         "en": "Claremont gathering"
       },
       "context": {
-        "ko": "클레어몬트 지역 모임",
-        "en": "Claremont gathering"
+        "ko": "두 차례 선거 결과와 첫 임기 시작을 구분한다.",
+        "en": "Distinguish two election outcomes from the start of the first term."
       },
       "cast": [
         {
@@ -27,14 +27,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1978년 선거 때 만났던 분들이군요. 이번에는 의원으로 왔습니다.",
-          "en": "I remember you from the 1978 election. This time I have come as a member."
+          "speaker": "host",
+          "ko": "1978년 선거 자료와 올해의 신임 의원 명부가 같은 사람을 가리킵니다.",
+          "en": "The 1978 election materials and this year's freshman roster refer to the same person."
         },
         {
-          "speaker": "player",
-          "ko": "두 차례 선거의 결과를 구분하겠습니다.",
-          "en": "I'll distinguish the outcomes of the two elections."
+          "speaker": "npc:0",
+          "ko": "1978년에는 낙선했습니다. 올해 시작된 첫 하원 임기가 어느 의회인지 확인해 주세요.",
+          "en": "I lost in 1978. Identify the Congress in which my first House term begins this year."
         }
       ],
       "response": {
@@ -69,20 +69,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1978년 낙선 뒤 1981년 제97대 의회에 입성했습니다.",
-            "en": "I lost in 1978 and entered the 97th Congress in 1981."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 기록에 두 선거를 별도로 표시해 주세요.",
-            "en": "Mark the two elections separately in our district record."
+            "ko": "제97대 의회입니다. 낙선했던 선거는 실제 의원 재임 기간으로 계산하지 마세요.",
+            "en": "The 97th Congress. Do not count an unsuccessful election as congressional service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1978년 낙선 뒤 1981년 제97대 의회에 입성했습니다.",
-            "en": "I lost in 1978 and entered the 97th Congress in 1981."
+            "ko": "1981년 제97대 의회에 입성했습니다. 1978년 낙선과 구분해야 합니다.",
+            "en": "I entered the 97th Congress in 1981, distinct from the 1978 loss."
           }
         ]
       },
@@ -210,8 +205,8 @@
         "en": "San Dimas constituent mail"
       },
       "context": {
-        "ko": "샌디머스 주민 서신",
-        "en": "San Dimas constituent mail"
+        "ko": "2003년 샌디머스 주민의 문의가 잘못 분류된 상황을 해결한다.",
+        "en": "Correct a misrouted San Dimas constituent inquiry in 2003."
       },
       "cast": [
         {
@@ -224,14 +219,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "2003년 새 의회 명부가 나왔습니다. 지역구 번호를 확인해 주세요.",
-          "en": "The new congressional directory is out. Please check the district number."
+          "speaker": "host",
+          "ko": "샌디머스에서 온 편지에 지역구 번호가 빠져 있습니다. 예전 명부를 사용한 직원도 있네요.",
+          "en": "A letter from San Dimas lacks a district number, and a staff member used an older directory."
         },
         {
-          "speaker": "player",
-          "ko": "지금 명부를 기준으로 우편을 분류하겠습니다.",
-          "en": "I'll route mail using the current directory."
+          "speaker": "npc:0",
+          "ko": "2003년 7월 명부에 표시된 제 의석을 확인해 주세요.",
+          "en": "Use the July 2003 directory to identify my seat."
         }
       ],
       "response": {
@@ -266,20 +261,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "2003년 명부에는 제26선거구입니다.",
-            "en": "The 2003 directory lists the 26th District."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "샌디머스 주민의 문의를 현 사무실에 연결하세요.",
-            "en": "Route the San Dimas inquiry to the current office."
+            "ko": "제26선거구입니다. 날짜가 다른 명부를 섞지 말고 편지를 해당 사무실에 전달하세요.",
+            "en": "The 26th District. Route the letter to the appropriate office using the dated directory."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2003년 명부에는 제26선거구입니다.",
-            "en": "The 2003 directory lists the 26th District."
+            "ko": "2003년에는 제26선거구입니다. 이전 지도나 다른 의원의 번호로 보내지 마세요.",
+            "en": "In 2003 it is the 26th District. Do not route the letter using an older map or another member's district."
           }
         ]
       },
@@ -424,8 +414,8 @@
         "en": "Ohio campaign video archive"
       },
       "context": {
-        "ko": "오하이오 선거 영상 자료실",
-        "en": "Ohio campaign video archive"
+        "ko": "1994년 선거 영상과 이후 선거 자료의 지역구 표기가 다른 경우를 점검한다.",
+        "en": "Check the district label on 1994 campaign footage separately from later election materials."
       },
       "cast": [
         {
@@ -438,14 +428,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "올해 선거 홍보 영상의 지역구 표기를 보존해 주세요.",
-          "en": "Please preserve the district label on this year's campaign videos."
+          "speaker": "host",
+          "ko": "1994년 선거 영상의 제목에서 지역구 번호가 빠졌습니다.",
+          "en": "The district number is missing from the title of the 1994 campaign footage."
         },
         {
-          "speaker": "player",
-          "ko": "후대 지도와 혼동하지 않도록 날짜를 붙이겠습니다.",
-          "en": "I'll date the record so it won't be confused with later maps."
+          "speaker": "npc:0",
+          "ko": "나중의 선거구 지도를 거꾸로 적용하지 말고 당시 영상 기록에서 번호를 복원하세요.",
+          "en": "Do not back-project a later district map. Restore the number from the period record."
         }
       ],
       "response": {
@@ -480,20 +470,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1994년 자료에는 제13선거구라고 표시되어 있습니다.",
-            "en": "The 1994 campaign materials identify District 13."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "영상과 당시 선거 결과 자료를 함께 보관하세요.",
-            "en": "Archive the videos alongside the election returns."
+            "ko": "제13선거구입니다. 1994년 영상에 해당 표기를 복원하세요.",
+            "en": "The 13th District. Restore that label to the 1994 footage."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1994년 자료에는 제13선거구라고 표시되어 있습니다.",
-            "en": "The 1994 campaign materials identify District 13."
+            "ko": "1994년 선거 영상 기록에는 오하이오 제13선거구가 표시되어 있습니다. 다른 연도의 자료는 별도로 보관하세요.",
+            "en": "The 1994 footage record identifies Ohio's 13th District. Keep other years' materials separate."
           }
         ]
       },
@@ -520,8 +505,8 @@
         "en": "Ohio election administration colleagues"
       },
       "context": {
-        "ko": "오하이오 선거 행정 동료",
-        "en": "Ohio election administration colleagues"
+        "ko": "오하이오 주정부 경력과 연방의회 활동을 구별한다.",
+        "en": "Distinguish Ohio state-government service from federal congressional work."
       },
       "cast": [
         {
@@ -534,14 +519,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "주정부에서 선거 관련 업무를 담당했던 동료들이 오셨군요.",
-          "en": "Colleagues from state election administration have arrived."
+          "speaker": "host",
+          "ko": "주민이 연방의원으로서의 권한과 이전 오하이오 공직의 권한을 혼동하고 있습니다.",
+          "en": "A constituent is confusing your federal legislative powers with your earlier Ohio office."
         },
         {
-          "speaker": "player",
-          "ko": "당시 직책과 현재 의원직을 구분해 소개하겠습니다.",
-          "en": "I'll introduce your former office separately from your House seat."
+          "speaker": "npc:0",
+          "ko": "1983년부터 1991년까지 주정부에서 맡은 직책을 확인해 주세요.",
+          "en": "Identify the Ohio state office I held from 1983 to 1991."
         }
       ],
       "response": {
@@ -576,20 +561,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 주 국무장관으로 재임했습니다.",
-            "en": "I served as Ohio secretary of state."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "주정부 기록과 연방 하원 기록을 나누어 주세요.",
-            "en": "Keep state and federal records separate."
+            "ko": "오하이오 주 국무장관이었습니다. 주정부의 선거 행정과 연방 하원의 입법을 구분해 설명하죠.",
+            "en": "Ohio secretary of state. Distinguish state election administration from federal House legislation."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "오하이오 주 국무장관으로 재임했습니다.",
-            "en": "I served as Ohio secretary of state."
+            "ko": "주 국무장관이었습니다. 주지사나 주 법무장관의 기록과는 별개입니다.",
+            "en": "I was secretary of state, distinct from the governor or attorney general."
           }
         ]
       },
@@ -1511,8 +1491,8 @@
         "en": "Georgia economic development delegation"
       },
       "context": {
-        "ko": "조지아 경제개발 담당자 방문",
-        "en": "Georgia economic development delegation"
+        "ko": "지역 경제개발 방문단의 기관 관할을 확인한다.",
+        "en": "Identify the local jurisdiction of an economic development delegation."
       },
       "cast": [
         {
@@ -1525,14 +1505,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지역 경제개발 기관에서 함께 일했던 분들이군요.",
-          "en": "I recognize colleagues from local economic development."
+          "speaker": "host",
+          "ko": "조지아의 여러 카운티 경제개발 기관에서 온 방문단의 접견 시간을 분리하고 있습니다.",
+          "en": "We're separating appointments for economic development delegations from several Georgia counties."
         },
         {
-          "speaker": "player",
-          "ko": "기관 이름을 지역 산업 소개에 포함하겠습니다.",
-          "en": "I'll include the agency in the regional industry briefing."
+          "speaker": "npc:0",
+          "ko": "제 이전 기관은 몰트리와 해당 카운티의 이름을 함께 쓰는 곳입니다. 정확한 카운티를 확인해 주세요.",
+          "en": "My former organization combines Moultrie with its county in its name. Identify the correct county."
         }
       ],
       "response": {
@@ -1567,20 +1547,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "몰트리-콜퀴트 카운티 경제개발기관입니다.",
-            "en": "It is the Moultrie-Colquitt County Economic Development Authority."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "지역 산업 관계자의 방문 자료를 준비하세요.",
-            "en": "Prepare the materials for the economic delegation."
+            "ko": "콜퀴트 카운티입니다. 몰트리-콜퀴트 경제개발기관의 요청을 다른 지역 방문단과 구별하세요.",
+            "en": "Colquitt County. Keep the Moultrie-Colquitt authority's request distinct from other delegations."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "몰트리-콜퀴트 카운티 경제개발기관입니다.",
-            "en": "It is the Moultrie-Colquitt County Economic Development Authority."
+            "ko": "몰트리-콜퀴트 카운티 경제개발기관입니다. 풀턴이나 채텀 카운티의 기관은 아닙니다.",
+            "en": "It was the Moultrie-Colquitt County Economic Development Authority, not an agency in Fulton or Chatham."
           }
         ]
       },
@@ -2318,8 +2293,8 @@
         "en": "Two Udalls' district maps"
       },
       "context": {
-        "ko": "두 유달 의원의 지역 지도",
-        "en": "Two Udalls' district maps"
+        "ko": "같은 성의 두 의원에게 전달할 지역구별 서신을 구분한다.",
+        "en": "Separate constituent letters for two members sharing a surname."
       },
       "cast": [
         {
@@ -2340,13 +2315,13 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "콜로라도 지도와 뉴멕시코 지도를 따로 놓아 주세요.",
-          "en": "Keep the Colorado and New Mexico maps separate."
+          "ko": "콜로라도 제2선거구의 서신은 제 쪽으로 보내 주세요.",
+          "en": "Send Colorado's Second District correspondence to my office."
         },
         {
           "speaker": "npc:1",
-          "ko": "같은 성을 가진 의원의 지역구 번호도 구분해야 합니다.",
-          "en": "Distinguish the district numbers of members with the same surname."
+          "ko": "뉴멕시코의 제 사무실에는 다른 지역구 번호가 필요합니다. 2008년 명부에서 확인해 주세요.",
+          "en": "My New Mexico office needs a different district number. Check the 2008 directory."
         }
       ],
       "response": {
@@ -2380,21 +2355,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "톰은 뉴멕시코 제3선거구 의원입니다.",
-            "en": "Tom represents New Mexico's Third District."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "두 지역구 지도에 정확한 의원 이름을 표시하세요.",
-            "en": "Label both district maps with the correct names."
+            "speaker": "npc:1",
+            "ko": "NM-3입니다. 성만으로 두 사무실을 구분하지 말고 주와 지역구를 함께 사용하세요.",
+            "en": "NM-3. Use both the state and district rather than the surname alone to distinguish our offices."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "톰은 뉴멕시코 제3선거구 의원입니다.",
-            "en": "Tom represents New Mexico's Third District."
+            "ko": "저는 CO-2이고 톰 의원은 NM-3입니다. 콜로라도와 뉴멕시코의 문의를 섞지 마세요.",
+            "en": "I'm CO-2 and Tom is NM-3. Do not mix the Colorado and New Mexico requests."
           }
         ]
       },
@@ -2436,8 +2406,8 @@
         "en": "Los Alamos constituent papers"
       },
       "context": {
-        "ko": "로스앨러모스 주민 서류",
-        "en": "Los Alamos constituent papers"
+        "ko": "로스앨러모스 카운티 주민이 2008년 당시 담당 의원실을 찾는다.",
+        "en": "A Los Alamos County resident seeks the appropriate office in 2008."
       },
       "cast": [
         {
@@ -2450,14 +2420,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "로스앨러모스에서 온 주민 서류를 전달해 주세요.",
-          "en": "Please route the papers from Los Alamos residents."
+          "speaker": "host",
+          "ko": "로스앨러모스 카운티 주민이 우편을 보낼 의원실을 찾고 있습니다. 다른 주의 동명이인에게 잘못 보내고 싶지 않습니다.",
+          "en": "A Los Alamos County resident wants to contact the correct office rather than send mail to a similarly named member in another state."
         },
         {
-          "speaker": "player",
-          "ko": "지역구에 해당 카운티가 포함되는지 확인하겠습니다.",
-          "en": "I'll check whether the county is included in your district."
+          "speaker": "npc:0",
+          "ko": "그 카운티가 포함된 2008년 8월 명부상의 지역구를 확인해 주세요.",
+          "en": "Identify the district containing that county in the August 2008 directory."
         }
       ],
       "response": {
@@ -2492,20 +2462,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "2008년 명부의 뉴멕시코 제3선거구입니다.",
-            "en": "It is New Mexico District 3 in the 2008 directory."
-          },
-          {
-            "speaker": "npc:0",
-            "ko": "해당 카운티의 요청을 지역 사무실 자료에 추가하세요.",
-            "en": "Add the county's request to the district-office file."
+            "ko": "NM-3입니다. 카운티 포함 여부를 확인했으니 이제 해당 시점의 주소로 문의를 전달할 수 있습니다.",
+            "en": "NM-3. Having checked the county's inclusion, you can route the inquiry using the address for that period."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2008년 명부의 뉴멕시코 제3선거구입니다.",
-            "en": "It is New Mexico District 3 in the 2008 directory."
+            "ko": "2008년 로스앨러모스 카운티는 뉴멕시코 제3선거구에 포함됩니다. 다른 주나 지역구에 보내지 마세요.",
+            "en": "In 2008 Los Alamos County is included in New Mexico's Third District. Do not route it to another state or district."
           }
         ]
       },
