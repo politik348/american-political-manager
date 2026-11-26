@@ -1,4 +1,4 @@
-import {newsState,ingestNews,newsOnDate,nextNewsDate,markNews} from './v18-news.js';
+import {newsState,ingestNews,newsOnDate,nextNewsDate,markNews,indexOfNews} from './v18-news.js';
 // UTC date arithmetic; only protected careers use this calendar in preview 2.
 import {career18,protectedMode,next18,canLocalElection,staffRanks} from './v18-career.js';
 import {appointmentCore,validScene,startPilot,answerPilot,pilotBook,chainIntro} from './i1-pilot.js';
@@ -23,7 +23,7 @@ const nextNews=nextNewsDate(c,news,end);
 const target=[end,c.nextChat,nextNews].filter(x=>x&&x>c.date&&x<=end).sort()[0];c.lastJump=Math.round((Date.parse(target)-Date.parse(c.date))/DAY);c.date=target;ingestNews(c,news,c.date);
 if(dueNews(s,news)||c.nextChat<=c.date)return continueCalendar(s,news,catalog);return true;}
 export const genericEvent=i=>generic[i]||generic[0];
-export function ackNews(s,news){const c=calendar18(s),n=dueNews(s,news);if(!n||c.pending&&(c.pending.kind!=='news'||c.pending.id!==n.id))return false;ingestNews(c,news,c.date);if(!markNews(c,news,n.id))return false;c.pending=null;return true}
+export function ackNews(s,news){const c=calendar18(s),n=c.pending?.kind==='news'?indexOfNews(news).byId.get(c.pending.id):dueNews(s,news);if(!n||n.date!==c.date||c.pending&&c.pending.kind!=='news')return false;ingestNews(c,news,c.date);if(!markNews(c,news,n.id))return false;c.pending=null;return true}
 export function answerCalendar(s,choice,catalog){const c=calendar18(s),d=career18(s),p=c.pending;if(!p||p.answered)return false;let xp=0,trust=0,energy=0;
 if(p.kind==='scene'){if(!catalog||!answerPilot(s,catalog,choice,c.date))return false;const a=pilotBook(s).active;p.correct=a.correct;xp=a.correct?10:4;trust=a.correct?2:0;const v=catalog.scenes.find(x=>x.id===p.id);for(const person of v.cast){if(!person.id)continue;const old=c.contacts[person.id]||{name:person.name,count:0,last:null};old.count++;old.last=c.date;c.contacts[person.id]=old}}
 else if(p.kind==='chat'){const delta={research:[8,1,-4],collaborate:[5,3,-3],defer:[0,0,4]}[choice];if(!delta||s.energy+delta[2]<0)return false;[xp,trust,energy]=delta}else return false;
