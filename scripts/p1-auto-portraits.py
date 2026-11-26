@@ -83,7 +83,7 @@ def inventory():
             ids=p.get('id',{}); k=ids.get('bioguide')
             if not k: continue
             n=p['name']; name=n.get('official_full') or ' '.join(n.get(x,'') for x in ('first','middle','last','suffix')).strip()
-            people[k]={'id':k,'name':name,'wiki':ids.get('wikipedia'),'qid':ids.get('wikidata'),'bioguide':k,'birth':p.get('bio',{}).get('birthday','')[:4],'death':p.get('bio',{}).get('deathday','')[:4],'aliases':[k],'terms':p.get('terms',[])}
+            people[k]={'id':k,'name':name,'wiki':ids.get('wikipedia'),'qid':ids.get('wikidata'),'bioguide':k,'birth':(p.get('bio',{}).get('birthday') or '')[:4],'death':(p.get('bio',{}).get('deathday') or '')[:4],'aliases':[k],'terms':p.get('terms',[])}
             if any(t.get('end','')[:4]>='1900' and t.get('start','')[:4]<='2026' for t in p.get('terms',[])): overlap.add(k)
             if ids.get('wikipedia'): bywiki.setdefault(norm(ids['wikipedia']),set()).add(k)
     for p in read('data/historical-people.json')['people']+read('data/encounter-records.json').get('people',[])+read('data/world.json').get('seed',[]):
@@ -130,8 +130,8 @@ def identity(p):
     if p.get('bioguide'):
         if p['bioguide'] not in claims(e,'P1157'): raise Hold('Bioguide P1157 mismatch')
     else:
-        if norm(p['name']) not in [norm(n) for n in names] or not p.get('birth') or not p.get('death'):
-            raise Hold('non-Bioguide match needs exact alias and both life years')
+        if norm(p['name']) not in [norm(n) for n in names] or not p.get('birth') or (not p.get('death') and not p.get('wiki')):
+            raise Hold('non-Bioguide match needs exact alias, birth year and death year or stored Wikipedia title')
         if not claims(e,'P106') and not claims(e,'P39'): raise Hold('occupation/office missing')
     return q,e,title
 BAD=re.compile(r'\b(group|grave|tomb|statue|bust|monument|signature|autograph|document|cartoon|memorial|building|headstone|coin|stamp|plaque|family|with|and wife|and husband)\b',re.I)
@@ -162,7 +162,7 @@ def collect(p,records):
         s=api(CM,action='query',list='search',srsearch='"'+p['name']+'" portrait',srnamespace=6,srlimit=5)
         raise Hold('no P18/PageImages; Commons leads: '+', '.join(x['title'] for x in s['query']['search']))
     notes=[]
-    for file,method in dict(candidates).items():
+    for file,method in dict(reversed(candidates)).items():
         try:
             i,m=metadata(file)
             # Association is source metadata, not facial recognition. Reject ambiguous descriptive evidence.
