@@ -1111,18 +1111,18 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "딩겔 의원님과 맥배스 의원님은 6번 지역구를 함께 대표하신 건가요?",
-          "en": "Did Representatives Dingell and McBath jointly represent district six?"
+          "ko": "두 의원의 자료에 같은 번호가 보입니다. 어느 기록을 현행 안내에 사용할까요?",
+          "en": "Both files contain the same number. Which record belongs in current guidance?"
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 이번 의회의 미시간 6번입니다.",
-          "en": "I'm the Michigan sixth-district member in this Congress."
+          "ko": "제 현재 명부와 맥배스 의원의 이전 명부를 각각 대조해 주세요.",
+          "en": "Compare my current roster with McBath's previous roster separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 지난 의회에 조지아 6번을 맡았지만 지금은 조지아 7번입니다.",
-          "en": "I represented Georgia's sixth in the previous Congress and now represent Georgia's seventh."
+          "ko": "두 기록은 서로 다른 의회 자료에서 확인할 수 있습니다.",
+          "en": "The two entries can be checked in distinct congressional records."
         }
       ],
       "response": {
@@ -1156,9 +1156,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "그 설명이면 번호가 겹쳐도 구분할 수 있겠어요.",
-            "en": "That explanation makes it possible to distinguish overlapping numbers."
+            "speaker": "npc:0",
+            "ko": "두 주와 회기의 기록을 별도 검색 결과로 표시하고 지역구 번호만으로 동일 의석으로 판단하지 마세요.",
+            "en": "Show the states and Congresses as separate search entries; do not infer identical seats from numbers alone."
           }
         ],
         "incorrect": [
@@ -1166,6 +1166,11 @@
             "speaker": "npc:0",
             "ko": "MI-6은 제 현재 지역구이고 GA-6은 맥배스 의원의 이전 지역구입니다. 주와 임기를 함께 확인하세요.",
             "en": "MI-6 is my current district and GA-6 is McBath's former district. Check both the state and the term."
+          },
+          {
+            "speaker": "player",
+            "ko": "주와 회기를 빠뜨린 검색 색인을 고치겠습니다.",
+            "en": "I'll correct the index that omitted state and Congress."
           }
         ]
       },
@@ -1565,9 +1570,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "고맙습니다. 두 임기의 대표가 구별되겠군요.",
-            "en": "Thank you. That distinguishes the two terms."
+            "speaker": "npc:0",
+            "ko": "포터의 종료된 임기를 보존하고 민 의원의 새 연락처를 별도 등록하세요.",
+            "en": "Retain Porter's concluded term and register Min's new contact separately."
           }
         ],
         "incorrect": [
@@ -1575,6 +1580,11 @@
             "speaker": "aide",
             "ko": "118대 CA-47은 포터, 119대는 민입니다.",
             "en": "Porter represented CA-47 in the 118th; Min represents it in the 119th."
+          },
+          {
+            "speaker": "player",
+            "ko": "현재와 과거 연락처를 혼동한 명부를 다시 대조하겠습니다.",
+            "en": "I'll recheck the roster that confuses old and current contacts."
           }
         ]
       },
@@ -2533,8 +2543,8 @@
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 애리조나 3번이죠. 영어 약칭도 쓰면 명확합니다.",
-          "en": "I represent Arizona's third. The English abbreviation helps."
+          "ko": "제 지역구 표기는 애리조나 대표단 명부에서 확인하세요.",
+          "en": "Check my district label in the Arizona delegation roster."
         },
         {
           "speaker": "host",
@@ -2573,9 +2583,9 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "두 언어가 같은 지역구를 뜻하게 되었군요.",
-            "en": "Both languages now identify the same district."
+            "speaker": "npc:0",
+            "ko": "영어와 한국어의 AZ-3 표기를 일치시키고 캘리포니아 자료와 구분하세요.",
+            "en": "Make the Korean and English AZ-3 labels consistent and separate them from California materials."
           }
         ],
         "incorrect": [
@@ -2583,6 +2593,11 @@
             "speaker": "aide",
             "ko": "안사리는 AZ-3, 사이먼은 CA-12입니다.",
             "en": "Ansari represents AZ-3; Simon represents CA-12."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 언어에서 다른 주를 가리키는 표찰을 회수하겠습니다.",
+            "en": "I'll withdraw the labels that refer to different states in the two languages."
           }
         ]
       },
