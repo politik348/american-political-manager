@@ -20,7 +20,7 @@ export async function loadCatalog(fetcher=fetch,base='./data/dialogue-packs/'){
  if(!Array.isArray(m.parts)||new Set(m.parts).size!==m.parts.length||!m.parts.every(p=>/^P0[12]\/part-\d+\.json$/.test(p)))throw Error('Invalid manifest');
  for(let i=0;i<m.parts.length;i+=8)parts.push(...await Promise.all(m.parts.slice(i,i+8).map(read)));
  const audits=await Promise.all((m.appointmentAuditFiles||[]).map(p=>read(p).catch(()=>({records:[]}))));const appointmentChecks=Object.fromEntries(audits.flatMap(a=>a.records||[]).map(x=>[x.id,x]));
- return {...catalog(parts),chains:m.chains||[],photos:m.photos||[],notebookPhotos:m.notebookPhotos||[],appointmentPilot:[...new Set([...(m.appointmentPilot||[]),...Object.keys(appointmentChecks)])],appointmentChecks,dateHandoffIds:m.dateHandoffIds||m.appointmentPilot||[],archiveHorizon:m.archiveHorizon};
+ return {...catalog(parts),chains:m.chains||[],photos:m.photos||[],notebookPhotos:m.notebookPhotos||[],appointmentPilot:[...new Set([...(m.appointmentPilot||[]),...Object.keys(appointmentChecks)])],appointmentChecks,appointmentExcludedIds:m.appointmentExcludedIds||[],dateHandoffIds:m.dateHandoffIds||m.appointmentPilot||[],archiveHorizon:m.archiveHorizon};
 }
 export function pilotBook(s){return s.i1Pilot||(s.i1Pilot={version:1,active:null,history:{},pack:'all',page:0})}
 export function eligible(c,date,pack='all'){return c.scenes.filter(s=>s.date<=date&&(pack==='all'||s.id.startsWith(pack+'-')))}
@@ -35,6 +35,7 @@ export function approvedPhoto(c,v,i){if(!/^[A-Z][0-9]{6}$/.test(v.cast[i]?.id||'
  // Optional dated archive invitation beside, not in place of, a generated encounter.
 export function archiveDate(s,liveDate,horizon){return !s.politics?.active||s.politics.active.finished?s.year===2026&&s.quarter===4&&isDate(horizon)&&horizon.slice(0,4)==='2026'&&horizon>liveDate?horizon:liveDate:liveDate}
 export function appointmentCore(c,v){
+ if(c.appointmentExcludedIds?.includes(v.id))return false;
  if(!c.appointmentPilot?.includes(v.id))return false;
  if(c.dateHandoffIds?.includes(v.id))return true;
  const a=c.appointmentChecks?.[v.id];

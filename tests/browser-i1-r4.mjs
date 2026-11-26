@@ -7,7 +7,7 @@ const url=process.env.APM_URL||'http://127.0.0.1:8000/';
 const data=new URL('../data/',import.meta.url), root=new URL('dialogue-packs/',data);
 const read=(p,base=root)=>JSON.parse(fs.readFileSync(new URL(p,base),'utf8'));
 const m=read('i1-index.json'), appointmentChecks=Object.fromEntries(m.appointmentAuditFiles.flatMap(p=>read(p).records).map(x=>[x.id,x]));
-const c={...catalog(m.parts.map(p=>read(p))),chains:m.chains,photos:m.photos,appointmentPilot:[...new Set([...m.appointmentPilot,...Object.keys(appointmentChecks)])],appointmentChecks,dateHandoffIds:m.dateHandoffIds,archiveHorizon:m.archiveHorizon};
+const c={...catalog(m.parts.map(p=>read(p))),chains:m.chains,photos:m.photos,appointmentPilot:[...new Set([...m.appointmentPilot,...Object.keys(appointmentChecks)])],appointmentChecks,appointmentExcludedIds:m.appointmentExcludedIds,dateHandoffIds:m.dateHandoffIds,archiveHorizon:m.archiveHorizon};
 const raw=['legislators-historical.json','legislators-current.json'].flatMap(p=>read(p,data));
 const people=[...new Map(raw.filter(p=>p.id?.bioguide).map(p=>[p.id.bioguide,{id:p.id.bioguide,terms:p.terms}])).values()];
 const states=read('world.json',data).states;
@@ -64,10 +64,10 @@ try{
  const context=await browser.newContext();
  try{
   const page=await context.newPage();await page.goto(new URL('icon.svg',url).href);
-  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-shell-v17.9-i1-rc5');await caches.open('apm-portraits-v1')});
+  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-shell-v17.9-i1-rc5');await caches.open('apm-shell-v17.9-i1-rc6');await caches.open('apm-portraits-v1')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc6')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3','apm-shell-v17.9-i1-rc4','apm-shell-v17.9-i1-rc5'].some(k=>keys.includes(k))},{},{timeout:45000});
-  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc6');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc7')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3','apm-shell-v17.9-i1-rc4','apm-shell-v17.9-i1-rc5','apm-shell-v17.9-i1-rc6'].some(k=>keys.includes(k))},{},{timeout:45000});
+  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc7');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
   assert.ok(result.manifest&&result.entry);assert.ok(result.keys.includes('apm-portraits-v1'));
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
