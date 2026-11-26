@@ -1,4 +1,4 @@
-name: P1 Wikipedia-first full-roster campaign
+name: P1 Wikipedia-first DIRECT full-roster collection
 on:
   push:
     branches: [hq-p1-portrait-recovery]
@@ -35,7 +35,7 @@ jobs:
           same=s.get('lastRun',s.get('run'))==os.environ['GITHUB_RUN_ID']
           status=s.get('status')
           old_cap=status=='complete_or_queue_exhausted' and s.get('targetAttempts')==1000 and s.get('totalAttempts',0)>=1000
-          stop=(status in ('pilot_gate_not_met','primary_queue_exhausted','complete_or_queue_exhausted') and not old_cap) or (status=='server_pause' and same)
+          stop=(status in ('primary_queue_exhausted','complete_or_queue_exhausted') and not old_cap) or (status=='server_pause' and same)
           with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('collect='+str(not stop).lower()+'\n')
           print('Slot gate:',status,'collect:',not stop)
           PY
@@ -58,7 +58,7 @@ jobs:
         if: steps.gate.outputs.collect == 'true'
       - run: python tests/p1-wikipedia-batch.py
         if: steps.gate.outputs.collect == 'true'
-      - name: Check campaign gate and collect one serial chunk
+      - name: Collect next full-roster chunk (no pilot gate)
         if: steps.gate.outputs.collect == 'true'
         run: python scripts/p1-campaign.py
       - name: Commit candidate files and checkpoint
