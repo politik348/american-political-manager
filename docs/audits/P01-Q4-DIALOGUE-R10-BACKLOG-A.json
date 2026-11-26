@@ -1,0 +1,2023 @@
+{
+  "schema": "q4-r10-backlog-v1",
+  "rows": [
+    {
+      "id": "P01-741",
+      "path": "data/dialogue-packs/P01/part-30.json",
+      "originalBlobSha": "27046e4ed974e347fa419b0e6a819c864b59b9a4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞아요. 서로 다른 수준의 입법기관입니다.",
+                "en": "Yes. These are legislatures at different levels."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "펜실베이니아 주 하원이었습니다. 연방 하원과는 다릅니다.",
+                "en": "It was the Pennsylvania House, not the U.S. House."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "주하원에서 다룬 법안과 연방 의회에서 다룰 법안을 비교해 보죠. 같은 입법이라도 관할이 다릅니다.",
+                "en": "Let's compare the bills I dealt with in the state House and those before Congress; their jurisdictions differ."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "펜실베이니아 주하원에서 12년간 일했습니다. 연방 상원 경력으로 소개한 부분은 다시 작성해 주세요.",
+                "en": "I spent twelve years in the Pennsylvania House. Revise any introduction describing U.S. Senate service."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-741",
+        "mechanism": "legislative-orientation",
+        "learningTarget": "Mackenzie served twelve years in the Pennsylvania House before Congress.",
+        "date": "2025-08-25",
+        "venue": {
+          "ko": "펜실베이니아 신임의원 오리엔테이션",
+          "en": "Pennsylvania freshman orientation"
+        },
+        "context": {
+          "ko": "연방 하원 신임의원이지만 입법 경력이 있는 동료와 만난다.",
+          "en": "A freshman in Congress already has legislative experience."
+        },
+        "cast": [
+          {
+            "id": "M001230",
+            "name": "Ryan Mackenzie",
+            "ko": "라이언 매켄지",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001230.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/M001230"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "연방의회에서는 신임이지만 입법 자체가 처음은 아닙니다.",
+            "en": "I am new to Congress, but not to legislative work."
+          },
+          {
+            "speaker": "player",
+            "ko": "어느 기관에서 활동하셨는지 궁금합니다.",
+            "en": "I wonder which institution you served in."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이전에는 {{blank}}에서 12년간 일하셨죠.",
+          "en": "Previously you spent twelve years in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "연방 상원",
+              "en": "the U.S. Senate"
+            },
+            {
+              "id": "B",
+              "ko": "뉴저지 주 하원",
+              "en": "the New Jersey Assembly"
+            },
+            {
+              "id": "C",
+              "ko": "펜실베이니아 주 하원",
+              "en": "the Pennsylvania House"
+            },
+            {
+              "id": "D",
+              "ko": "펜실베이니아 주 상원",
+              "en": "the Pennsylvania Senate"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://iqconnect.house.gov/iqextranet/view_newsletter.aspx?c=PA07RM&id=100430",
+            "claim": "Sworn in January 3, 2025 after twelve years as Pennsylvania state representative.",
+            "asOf": "2025-08-25"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-741-legislative-orientation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-745",
+      "path": "data/dialogue-packs/P01/part-30.json",
+      "originalBlobSha": "27046e4ed974e347fa419b0e6a819c864b59b9a4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇습니다. 저는 뉴햄프셔 2구를 대표합니다.",
+                "en": "Right. I represent New Hampshire's Second District."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "뉴햄프셔입니다. 뉴잉글랜드의 다른 주와 구별해 주세요.",
+                "en": "New Hampshire. Distinguish it from the other New England states."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "내슈아에서 온 주민들과 뉴햄프셔 제2구의 현안을 먼저 논의하겠습니다.",
+                "en": "I'll begin by discussing New Hampshire's Second District with visitors from Nashua."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "내슈아는 뉴햄프셔에 있습니다. 다른 주의 방문단으로 소개하지 말고 이쪽으로 안내해 주세요.",
+                "en": "Nashua is in New Hampshire. Bring the visitors here rather than introducing them as a delegation from another state."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-745",
+        "mechanism": "hometown-introduction",
+        "learningTarget": "Goodlander was born and raised in Nashua, New Hampshire, and represents NH-2.",
+        "date": "2025-08-29",
+        "venue": {
+          "ko": "내슈아 청년 행사",
+          "en": "Nashua youth event"
+        },
+        "context": {
+          "ko": "학생이 의원의 출생지와 지역구를 연결해 소개한다.",
+          "en": "A student connects the member's hometown with her district."
+        },
+        "cast": [
+          {
+            "id": "G000604",
+            "name": "Maggie Goodlander",
+            "ko": "매기 굿랜더",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/G000604.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/G000604"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "저는 내슈아에서 태어나 자랐습니다.",
+            "en": "I was born and raised in Nashua."
+          },
+          {
+            "speaker": "player",
+            "ko": "이 도시를 포함하는 주의 이름도 소개하겠습니다.",
+            "en": "I will also identify the state containing this city."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "내슈아는 {{blank}}에 있습니다.",
+          "en": "Nashua is in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "메인",
+              "en": "Maine"
+            },
+            {
+              "id": "B",
+              "ko": "로드아일랜드",
+              "en": "Rhode Island"
+            },
+            {
+              "id": "C",
+              "ko": "뉴햄프셔",
+              "en": "New Hampshire"
+            },
+            {
+              "id": "D",
+              "ko": "버몬트",
+              "en": "Vermont"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://goodlander.house.gov/meet-maggie/",
+            "claim": "Born and raised in Nashua, New Hampshire.",
+            "asOf": "2025-08-29"
+          },
+          {
+            "url": "https://goodlander.house.gov/media/press-releases/goodlander-statement-on-certification-of-2024-presidential-election-results/",
+            "claim": "Sworn in to represent New Hampshire's Second District.",
+            "asOf": "2025-08-29"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-745-hometown-introduction"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-746",
+      "path": "data/dialogue-packs/P01/part-30.json",
+      "originalBlobSha": "27046e4ed974e347fa419b0e6a819c864b59b9a4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 1996년에 취득했습니다.",
+                "en": "Correct. I earned it in 1996."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "럿거스입니다. 의학 학위를 받은 학교와는 다릅니다.",
+                "en": "Rutgers. It differs from the school where I earned my medical degree."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "럿거스에서 공부한 법학과 의학 경험이 정책 토론에 어떻게 연결되는지 학생들의 질문을 받겠습니다.",
+                "en": "I'll take student questions on how my legal studies at Rutgers and medical background relate to policy."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "법학 학위는 1996년 럿거스에서 받았습니다. 의학 학위와 학교를 혼동한 소개는 고쳐 주세요.",
+                "en": "I earned my law degree at Rutgers in 1996. Correct the introduction that confuses the two schools."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-746",
+        "mechanism": "dual-degree",
+        "learningTarget": "Conaway earned his JD at Rutgers in 1996 and his MD at Thomas Jefferson University in 1989.",
+        "date": "2025-09-02",
+        "venue": {
+          "ko": "의학과 법학 공동 진로 행사",
+          "en": "Medicine and law career event"
+        },
+        "context": {
+          "ko": "학생들이 두 전문 학위를 취득한 의원에게 질문한다.",
+          "en": "Students ask a representative with two professional degrees about his career."
+        },
+        "cast": [
+          {
+            "id": "C001136",
+            "name": "Herbert C. Conaway, Jr.",
+            "ko": "허브 코너웨이",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/C001136.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/C001136"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의학을 공부한 뒤 법학 학위도 취득했습니다.",
+            "en": "After studying medicine, I also earned a law degree."
+          },
+          {
+            "speaker": "player",
+            "ko": "의학과 법학을 함께 공부하셨다는 말씀이군요.",
+            "en": "So you pursued both medicine and law."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "의원님의 법학 학위는 {{blank}}에서 받으셨습니다.",
+          "en": "You earned your law degree at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "스탠퍼드 대학교",
+              "en": "Stanford University"
+            },
+            {
+              "id": "B",
+              "ko": "럿거스 대학교",
+              "en": "Rutgers University"
+            },
+            {
+              "id": "C",
+              "ko": "프린스턴 대학교",
+              "en": "Princeton University"
+            },
+            {
+              "id": "D",
+              "ko": "예일 대학교",
+              "en": "Yale University"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/36507225702",
+            "claim": "MD Thomas Jefferson University 1989; JD Rutgers University 1996.",
+            "asOf": "2025-09-02"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-746-dual-degree"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-747",
+      "path": "data/dialogue-packs/P01/part-30.json",
+      "originalBlobSha": "27046e4ed974e347fa419b0e6a819c864b59b9a4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Existing I1 branches differ, but incorrect dialogue contains redundant speaker prefix and no recovery; retain improved opening.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "패터슨은 뉴저지, 라이는 뉴욕으로 분류하고 두 지방정부 경력을 따로 보여주겠습니다.",
+                "en": "I'll classify Paterson under New Jersey and Rye under New York, and show the two local-government careers separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "포우: 패터슨은 뉴저지, 래티머 의원의 라이는 뉴욕입니다.",
+                "en": "Pou: Paterson is in New Jersey, and Representative Latimer's Rye is in New York."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "패터슨에서 맡았던 지방정부 업무를 먼저 이야기하겠습니다.",
+                "en": "I'll first discuss my work in Paterson's municipal government."
+              },
+              {
+                "speaker": "npc:1",
+                "ko": "이어서 라이 시의회의 경험을 비교해 보죠.",
+                "en": "Then let's compare my Rye city council experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "패터슨은 뉴저지, 래티머 의원의 라이는 뉴욕입니다. 두 도시를 같은 주로 분류한 전시 표지를 교체하세요.",
+                "en": "Paterson is in New Jersey; Representative Latimer's Rye is in New York. Replace the exhibit label that puts both in one state."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-747",
+        "mechanism": "cross-state-career",
+        "learningTarget": "Pou worked for Paterson city government; Latimer served on Rye city council in New York.",
+        "date": "2025-09-03",
+        "venue": {
+          "ko": "뉴욕 대도시권 지역정치 모임",
+          "en": "New York metropolitan local politics meeting"
+        },
+        "context": {
+          "ko": "인접 주 의원들이 과거 지방정부 경력을 비교한다.",
+          "en": "Members from neighboring states compare their local-government backgrounds."
+        },
+        "cast": [
+          {
+            "id": "P000621",
+            "name": "Nellie Pou",
+            "ko": "넬리 포우",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/P000621.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/P000621"
+          },
+          {
+            "id": "L000606",
+            "name": "George Latimer",
+            "ko": "조지 래티머",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/L000606.jpg",
+            "source": "https://bioguide.congress.gov/search/bio/L000606"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "지방정부 경력 전시에서 패터슨 시청과 라이 시의회의 자료가 한 상자에 들어 있었습니다.",
+            "en": "A local-government exhibit has Paterson city hall and Rye city council records in the same box."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "제가 일했던 패터슨 자료는 다른 주의 도시 기록과 구분해야 합니다.",
+            "en": "Records from Paterson, where I worked, need to be separated from the other state's municipal records."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "라이 시의회 자료는 뉴욕주 기록입니다. 패터슨 자료의 주도 확인해 주세요.",
+            "en": "Rye city council records belong to New York. Identify the state for Paterson."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "포우 의원의 패터슨은 {{blank}}에 있습니다.",
+          "en": "Representative Pou's Paterson is in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "뉴저지",
+              "en": "New Jersey"
+            },
+            {
+              "id": "B",
+              "ko": "뉴욕",
+              "en": "New York"
+            },
+            {
+              "id": "C",
+              "ko": "코네티컷",
+              "en": "Connecticut"
+            },
+            {
+              "id": "D",
+              "ko": "펜실베이니아",
+              "en": "Pennsylvania"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/36507225783",
+            "claim": "Paterson, NJ city staff 1975–1997.",
+            "asOf": "2025-09-03"
+          },
+          {
+            "url": "https://history.house.gov/People/Detail/36507225751",
+            "claim": "Rye, NY city council 1988–1991.",
+            "asOf": "2025-09-03"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-747-cross-state-career"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-752",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇죠. 직업교육과 법률 공부 모두 제 경력의 일부입니다.",
+                "en": "Yes. Vocational education and legal study are both part of my background."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "피츠필드입니다. 이곳에서 태어났습니다.",
+                "en": "Pittsfield. I was born here."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "피츠필드의 직업교육 경험을 주제로 학생들과 이야기를 시작하겠습니다. 이후 법학 공부에 관해서도 질문해 주세요.",
+                "en": "I'll begin by discussing my vocational education in Pittsfield with students; then ask about my legal studies."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "제 고향은 매사추세츠주 피츠필드입니다. 다른 도시 동문 행사로 소개한 안내를 철회하세요.",
+                "en": "My hometown is Pittsfield, Massachusetts. Withdraw the program identifying me as an alumnus of another city."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-752",
+        "mechanism": "vocational-reunion",
+        "learningTarget": "Conte was born in Pittsfield and graduated from its vocational high school in 1940.",
+        "date": "1961-04-11",
+        "venue": {
+          "ko": "피츠필드 직업학교",
+          "en": "Pittsfield vocational school"
+        },
+        "context": {
+          "ko": "직업교육을 받은 의원이 학생들과 경력 이야기를 나눈다.",
+          "en": "A member with vocational training talks with students."
+        },
+        "cast": [
+          {
+            "id": "C000709",
+            "name": "Silvio Ottavio Conte",
+            "ko": "실비오 콘테",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11342"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1940년에 이 도시의 직업고등학교를 졸업했습니다.",
+            "en": "I finished vocational high school in this city in 1940."
+          },
+          {
+            "speaker": "player",
+            "ko": "이후 법학도 공부하셨다고 들었습니다.",
+            "en": "I hear you later studied law as well."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "이 학교가 있는 의원님의 고향은 {{blank}}입니다.",
+          "en": "Your hometown, where this school is located, is {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "일리노이 피오리아",
+              "en": "Peoria, Illinois"
+            },
+            {
+              "id": "B",
+              "ko": "뉴저지 뉴어크",
+              "en": "Newark, New Jersey"
+            },
+            {
+              "id": "C",
+              "ko": "텍사스 보몬트",
+              "en": "Beaumont, Texas"
+            },
+            {
+              "id": "D",
+              "ko": "매사추세츠 피츠필드",
+              "en": "Pittsfield, Massachusetts"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/C/CONTE%2C-Silvio-Ottavio-%28C000709%29/",
+            "claim": "Born Pittsfield, Massachusetts; graduated Pittsfield Vocational High School 1940; House Republican from January 1959.",
+            "asOf": "1961-04-11"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-752-vocational-reunion"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-754",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Opening eliminates one option; neutralize exclusion and replace generic acknowledgement.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 하지만 하원에서는 텍사스를 대표합니다.",
+                "en": "Correct. But I represent Texas in the House."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "루이지애나입니다. 1927년에 보몬트로 이사했지요.",
+                "en": "Louisiana. I moved to Beaumont in 1927."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "루이지애나 출생과 텍사스에서의 성장 경험을 구분해 소개하면 제 지역 연고를 이해하기 쉬울 겁니다.",
+                "en": "Distinguishing my Louisiana birth from growing up in Texas will help explain my local ties."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "루이지애나에서 태어나 1927년 보몬트로 이사했습니다. 텍사스 출생으로 작성한 전기 지도를 수정하세요.",
+                "en": "I was born in Louisiana and moved to Beaumont in 1927. Correct the biography map showing a Texas birthplace."
+              }
+            ]
+          }
+        },
+        {
+          "field": "opening",
+          "before": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 어릴 때 가족과 함께 보몬트로 이사했습니다.",
+              "en": "I moved to Beaumont with my family as a child."
+            },
+            {
+              "speaker": "player",
+              "ko": "출생지는 텍사스가 아니었군요.",
+              "en": "So you were not born in Texas."
+            }
+          ],
+          "after": [
+            {
+              "speaker": "npc:0",
+              "ko": "저는 어릴 때 가족과 함께 보몬트로 이사했습니다.",
+              "en": "I moved to Beaumont with my family as a child."
+            },
+            {
+              "speaker": "player",
+              "ko": "출생지와 성장한 지역을 별도로 소개하겠습니다.",
+              "en": "I'll introduce your birthplace separately from where you grew up."
+            }
+          ]
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-754",
+        "mechanism": "birth-versus-representation",
+        "learningTarget": "Brooks was born in Crowley, Louisiana and moved to Beaumont, Texas in 1927.",
+        "date": "1963-06-04",
+        "venue": {
+          "ko": "보몬트 지역 역사 행사",
+          "en": "Beaumont history event"
+        },
+        "context": {
+          "ko": "주민이 출생 주와 대표 주가 다른 의원의 약력을 읽는다.",
+          "en": "A resident reads the biography of a member born outside his represented state."
+        },
+        "cast": [
+          {
+            "id": "B000880",
+            "name": "Jack Bascom Brooks",
+            "ko": "잭 브룩스",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/9918"
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "브룩스 의원의 출생 주는 {{blank}}입니다.",
+          "en": "Brooks was born in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "미시시피",
+              "en": "Mississippi"
+            },
+            {
+              "id": "B",
+              "ko": "루이지애나",
+              "en": "Louisiana"
+            },
+            {
+              "id": "C",
+              "ko": "텍사스",
+              "en": "Texas"
+            },
+            {
+              "id": "D",
+              "ko": "오클라호마",
+              "en": "Oklahoma"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/9918",
+            "claim": "Born Crowley, Louisiana in December 1922; moved to Beaumont, Texas in 1927.",
+            "asOf": "1963-06-04"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-754-birth-versus-representation"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-757",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇죠. 1965년에 MIT에서 받았습니다.",
+                "en": "Yes. I earned it at MIT in 1965."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "경제학입니다. 국방정책과도 연결되는 분야이지요.",
+                "en": "Economics. It can also connect with defense policy."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "경제학 박사 과정에서 배운 분석과 국방정책 토론이 어떻게 만나는지 질문해 주세요.",
+                "en": "Ask how the analysis I learned during my economics doctorate connects with defense policy debates."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1965년 MIT에서 경제학 박사학위를 받았습니다. 다른 전공으로 준비한 학술 토론 질문은 바꿔 주세요.",
+                "en": "I earned my economics doctorate at MIT in 1965. Replace the academic discussion questions based on another field."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-757",
+        "mechanism": "academic-background",
+        "learningTarget": "Aspin earned an economics PhD from MIT in 1965 and taught economics at Marquette.",
+        "date": "1971-05-11",
+        "venue": {
+          "ko": "밀워키 대학 세미나",
+          "en": "Milwaukee university seminar"
+        },
+        "context": {
+          "ko": "신임 의원이 대학에서 연구했던 분야를 소개한다.",
+          "en": "A new representative describes his academic specialty."
+        },
+        "cast": [
+          {
+            "id": "A000224",
+            "name": "Leslie Aspin",
+            "ko": "레스 애스핀",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8576"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전 마케트 대학에서 가르쳤습니다.",
+            "en": "Before Congress I taught at Marquette University."
+          },
+          {
+            "speaker": "player",
+            "ko": "박사학위의 전공도 궁금합니다.",
+            "en": "I would like to know your doctoral field."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "애스핀 의원의 박사학위는 {{blank}} 분야입니다.",
+          "en": "Aspin earned a doctorate in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "법학",
+              "en": "law"
+            },
+            {
+              "id": "B",
+              "ko": "물리학",
+              "en": "physics"
+            },
+            {
+              "id": "C",
+              "ko": "경제학",
+              "en": "economics"
+            },
+            {
+              "id": "D",
+              "ko": "정치학",
+              "en": "political science"
+            }
+          ],
+          "correct": "C"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/people/detail/8576",
+            "claim": "Economics PhD from MIT in 1965; assistant professor of economics at Marquette 1969–1970; House service from January 1971.",
+            "asOf": "1971-05-11"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-757-academic-background"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-758",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 그 경험은 법조계 진출보다 앞섰습니다.",
+                "en": "Yes. That experience preceded my legal career."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "대중연설과 시민권 강좌였습니다. 뉴어크에서 가르쳤지요.",
+                "en": "Public speaking and citizenship classes, here in Newark."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "대중연설과 시민교육을 주제로 당시 수강생들이 배웠던 내용부터 이야기하겠습니다.",
+                "en": "I'll begin by discussing what students learned in those public speaking and citizenship classes."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "뉴어크에서 대중연설과 시민교육을 가르쳤습니다. 다른 과목을 전제로 한 교육 행사 소개는 수정하세요.",
+                "en": "I taught public speaking and citizenship in Newark. Correct the education event program describing another subject."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-758",
+        "mechanism": "citizenship-class-memory",
+        "learningTarget": "Rodino taught public speaking and citizenship in Newark in 1930–1932.",
+        "date": "1972-06-20",
+        "venue": {
+          "ko": "뉴어크 시민교육 모임",
+          "en": "Newark civic education meeting"
+        },
+        "context": {
+          "ko": "시민교육 강사가 의원에게 과거 교육 경험을 묻는다.",
+          "en": "A civics instructor asks about the member's earlier teaching."
+        },
+        "cast": [
+          {
+            "id": "R000374",
+            "name": "Peter Wallace Rodino Jr.",
+            "ko": "피터 로디노",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/20545"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1930년대 초 이 도시에서 강좌를 가르쳤습니다.",
+            "en": "I taught classes in this city in the early 1930s."
+          },
+          {
+            "speaker": "player",
+            "ko": "지역의 성인교육 기록과 연결되는 이야기군요.",
+            "en": "That connects to local adult education records."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "당시 로디노 의원이 가르친 내용은 {{blank}}입니다.",
+          "en": "Rodino taught {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "음악과 미술",
+              "en": "music and art"
+            },
+            {
+              "id": "B",
+              "ko": "대중연설과 시민권",
+              "en": "public speaking and citizenship"
+            },
+            {
+              "id": "C",
+              "ko": "회계와 경영",
+              "en": "accounting and management"
+            },
+            {
+              "id": "D",
+              "ko": "물리학과 화학",
+              "en": "physics and chemistry"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/20545",
+            "claim": "Taught public speaking and citizenship at Newark YMCA and Federation of Clubs in 1930–1932; House service from 1949.",
+            "asOf": "1972-06-20"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-758-citizenship-class-memory"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-771",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "그렇습니다. 매사추세츠 서부 주민들이 이용하는 사무실입니다.",
+                "en": "Yes. They serve residents of western Massachusetts."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "매사추세츠입니다. 워싱턴의 의회 사무실과는 별도입니다.",
+                "en": "Massachusetts. They are separate from my Washington office."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "매사추세츠 서부 주민에게는 피츠필드와 홀리오크 사무실을 안내하겠습니다. 워싱턴 방문은 별도로 잡죠.",
+                "en": "Let's direct western Massachusetts residents to the Pittsfield and Holyoke offices and arrange Washington visits separately."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "두 지역 사무실은 매사추세츠에 있습니다. 다른 주의 의원실로 보내려던 문의를 돌려 주세요.",
+                "en": "Both district offices are in Massachusetts. Redirect any inquiries destined for another state's office."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-771",
+        "mechanism": "district-office-referral",
+        "learningTarget": "Conte maintained district offices in Pittsfield and Holyoke, Massachusetts.",
+        "date": "1990-05-08",
+        "venue": {
+          "ko": "홀리오크 주민 상담",
+          "en": "Holyoke constituent meeting"
+        },
+        "context": {
+          "ko": "매사추세츠 서부 주민이 지역구 사무실 위치를 확인한다.",
+          "en": "A western Massachusetts constituent checks district office locations."
+        },
+        "cast": [
+          {
+            "id": "C000709",
+            "name": "Silvio Ottavio Conte",
+            "ko": "실비오 콘테",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11342"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "제 지역구 사무실은 피츠필드와 홀리오크에 있습니다.",
+            "en": "My district offices are in Pittsfield and Holyoke."
+          },
+          {
+            "speaker": "player",
+            "ko": "두 도시가 같은 주에 있는지 확인하겠습니다.",
+            "en": "I will confirm their shared state."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "두 사무실은 {{blank}}에 있습니다.",
+          "en": "Both offices are in {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "매사추세츠",
+              "en": "Massachusetts"
+            },
+            {
+              "id": "B",
+              "ko": "코네티컷",
+              "en": "Connecticut"
+            },
+            {
+              "id": "C",
+              "ko": "뉴욕",
+              "en": "New York"
+            },
+            {
+              "id": "D",
+              "ko": "버몬트",
+              "en": "Vermont"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11342",
+            "claim": "Archival collection describes district offices in Pittsfield and Holyoke; both in Massachusetts. Exact 1990 office addresses not stated.",
+            "asOf": "1990-05-08"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-771-district-office-referral"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-772",
+      "path": "data/dialogue-packs/P01/part-31.json",
+      "originalBlobSha": "59d2c36436c8211c2d57d9e9d1ac63b92c3a8d0a",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "맞습니다. 이후 인디애나 펜실베이니아 대학에도 다녔습니다.",
+                "en": "Yes. I later attended Indiana University of Pennsylvania."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "피츠버그 대학교입니다. 1962년에 학위를 받았습니다.",
+                "en": "The University of Pittsburgh. I received the degree in 1962."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "피츠버그대 졸업 경험을 주제로 동문들의 질문부터 받겠습니다.",
+                "en": "I'll start by taking alumni questions about my experience at the University of Pittsburgh."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1962년 피츠버그 대학교에서 학사학위를 받았습니다. 다른 대학 동문으로 소개한 행사 자료를 교체해 주세요.",
+                "en": "I earned my bachelor's degree at the University of Pittsburgh in 1962. Replace the event program identifying me as an alumnus elsewhere."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-772",
+        "mechanism": "regional-university",
+        "learningTarget": "Murtha earned his BA from the University of Pittsburgh in 1962.",
+        "date": "1991-04-23",
+        "venue": {
+          "ko": "피츠버그 동문 행사",
+          "en": "Pittsburgh alumni event"
+        },
+        "context": {
+          "ko": "머사가 자신의 대학 경력을 지역 학생들에게 소개한다.",
+          "en": "Murtha describes his college background to local students."
+        },
+        "cast": [
+          {
+            "id": "M001120",
+            "name": "John Patrick Murtha Jr.",
+            "ko": "존 머사",
+            "portrait": "https://unitedstates.github.io/images/congress/225x275/M001120.jpg",
+            "source": "https://history.house.gov/People/Detail/18726"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "1962년에 이 지역에서 학사학위를 받았습니다.",
+            "en": "I earned my bachelor's degree in this region in 1962."
+          },
+          {
+            "speaker": "player",
+            "ko": "펜실베이니아의 대학들이 여러 곳 있군요.",
+            "en": "Pennsylvania has several universities."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "머사 의원의 학사학위 수여 기관은 {{blank}}입니다.",
+          "en": "Murtha earned his bachelor's degree at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "펜실베이니아 대학교",
+              "en": "the University of Pennsylvania"
+            },
+            {
+              "id": "B",
+              "ko": "카네기 멜런 대학교",
+              "en": "Carnegie Mellon University"
+            },
+            {
+              "id": "C",
+              "ko": "템플 대학교",
+              "en": "Temple University"
+            },
+            {
+              "id": "D",
+              "ko": "피츠버그 대학교",
+              "en": "the University of Pittsburgh"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Listing/M/MURTHA%2C-John-Patrick%2C-Jr--%28M001120%29/",
+            "claim": "BA from University of Pittsburgh in 1962.",
+            "asOf": "1991-04-23"
+          }
+        ],
+        "outcome": {
+          "kind": "document",
+          "key": "p01-772-regional-university"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-777",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "그 내용을 기록해 두겠습니다.",
+                "en": "I'll keep that in my notes."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "그 학교의 1960년 졸업생입니다.",
+                "en": "I was a 1960 graduate of Dos Palos High School."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "player",
+                "ko": "제가 기록을 혼동했군요.",
+                "en": "I mixed up the records."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "그 학교의 1960년 졸업생입니다.",
+                "en": "I was a 1960 graduate of Dos Palos High School."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "도스팔로스 고등학교 후배들에게 졸업 이후의 공직 진로를 이야기하겠습니다.",
+                "en": "I'll talk with Dos Palos High School students about my path into public service after graduation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1960년 도스팔로스 고등학교를 졸업했습니다. 다른 학교로 보낼 동문 초청장을 회수하세요.",
+                "en": "I graduated from Dos Palos High School in 1960. Retrieve the alumni invitation addressed to another school."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-777",
+        "mechanism": "career-recall",
+        "learningTarget": "Coelho graduated from Dos Palos High School in 1960.",
+        "date": "1980-03-18",
+        "venue": {
+          "ko": "고향 학교 방문",
+          "en": "Hometown school visit"
+        },
+        "context": {
+          "ko": "고향 학교 방문",
+          "en": "Hometown school visit"
+        },
+        "cast": [
+          {
+            "id": "C000581",
+            "name": "Tony Coelho",
+            "ko": "토니 코엘류",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/11178"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "졸업생들과 이야기할 기회를 주셔서 감사합니다.",
+            "en": "Thank you for inviting me to speak to the graduates."
+          },
+          {
+            "speaker": "host",
+            "ko": "우리 학교를 다녔던 의원님을 학생들에게 소개해 주세요.",
+            "en": "Introduce our former student to the pupils."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "1960년에 코엘류 의원이 졸업한 곳은 {{blank}} 고등학교입니다.",
+          "en": "Coelho graduated from {{blank}} High School in 1960.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "도스팔로스",
+              "en": "Dos Palos"
+            },
+            {
+              "id": "B",
+              "ko": "프레즈노",
+              "en": "Fresno"
+            },
+            {
+              "id": "C",
+              "ko": "베이커즈필드",
+              "en": "Bakersfield"
+            },
+            {
+              "id": "D",
+              "ko": "머세드",
+              "en": "Merced"
+            }
+          ],
+          "correct": "A"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/11178",
+            "claim": "Dos Palos High School graduation 1960.",
+            "asOf": "1980-03-18"
+          }
+        ],
+        "outcome": {
+          "kind": "revisit",
+          "key": "p01-777-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-778",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "그 내용을 기록해 두겠습니다.",
+                "en": "I'll keep that in my notes."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "샌호아킨밸리 식품 가공 공장에서 일했습니다.",
+                "en": "I worked in a San Joaquin Valley food processing plant."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "player",
+                "ko": "제가 기록을 혼동했군요.",
+                "en": "I mixed up the records."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "샌호아킨밸리 식품 가공 공장에서 일했습니다.",
+                "en": "I worked in a San Joaquin Valley food processing plant."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "식품 가공 노동자들의 질문을 먼저 듣겠습니다. 제가 일했던 샌호아킨밸리 공장 경험을 토대로 이야기하죠.",
+                "en": "I'll hear food-processing workers' questions first, drawing on my experience in a San Joaquin Valley plant."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "식품 가공 공장에서 일했습니다. 다른 업종의 경험을 전제로 한 토론 질문을 바꿔 주세요.",
+                "en": "I worked in a food-processing plant. Replace the discussion questions premised on another industry."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-778",
+        "mechanism": "industry-link",
+        "learningTarget": "Sisk worked at a San Joaquin Valley food processing plant until 1941.",
+        "date": "1955-03-10",
+        "venue": {
+          "ko": "식품 공장 노동자 모임",
+          "en": "Food plant workers' gathering"
+        },
+        "context": {
+          "ko": "식품 공장 노동자 모임",
+          "en": "Food plant workers' gathering"
+        },
+        "cast": [
+          {
+            "id": "S000454",
+            "name": "Bernice Frederic Sisk",
+            "ko": "버니스 시스크",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/21704"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "캘리포니아에 온 뒤에는 여러분처럼 공장에서 일했습니다.",
+            "en": "After moving to California I worked in a plant like yours."
+          },
+          {
+            "speaker": "player",
+            "ko": "그 경험을 지역 산업 자료와 연결하겠습니다.",
+            "en": "I'll relate that experience to local industry."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "시스크의 1937~1941년 직업은 {{blank}} 공장 노동이었습니다.",
+          "en": "Sisk worked in a {{blank}} plant from 1937 until 1941.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "자동차 조립",
+              "en": "automobile assembly"
+            },
+            {
+              "id": "B",
+              "ko": "제철",
+              "en": "steel"
+            },
+            {
+              "id": "C",
+              "ko": "조선",
+              "en": "shipbuilding"
+            },
+            {
+              "id": "D",
+              "ko": "식품 가공",
+              "en": "food processing"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/21704",
+            "claim": "Food-processing employment 1937–41.",
+            "asOf": "1955-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-778-industry-link"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-782",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "브래들리 졸업 기록을 지역 연고와 연결하겠습니다.",
+                "en": "I'll connect his Bradley graduation to his local roots."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "정확한 답은 브래들리 대학교입니다. 브래들리 졸업 기록을 지역 연고와 연결하겠습니다.",
+                "en": "The correct answer is Bradley University. I'll connect his Bradley graduation to his local roots."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "브래들리대 동문들에게 대학 졸업 이후 보좌관으로 일했던 경험을 소개하겠습니다.",
+                "en": "I'll tell Bradley alumni about my work as a congressional aide after graduation."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1948년 브래들리 대학교를 졸업했습니다. 다른 대학의 동문으로 표시한 행사 소개는 수정하세요.",
+                "en": "I graduated from Bradley University in 1948. Correct the event introduction listing another alma mater."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-782",
+        "mechanism": "career-recall",
+        "learningTarget": "Michel earned a B.S. from Bradley University in 1948.",
+        "date": "1957-03-10",
+        "venue": {
+          "ko": "피오리아 보좌진 재회",
+          "en": "Peoria staff reunion"
+        },
+        "context": {
+          "ko": "피오리아 동문 행사에서 새 의원의 지역 연고를 소개한다.",
+          "en": "Peoria alumni introduce the new member's local ties."
+        },
+        "cast": [
+          {
+            "id": "M000692",
+            "name": "Robert Henry Michel",
+            "ko": "로버트 미셸",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/18193"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "피오리아 동문 행사에서 새 의원의 지역 연고를 소개한다.",
+            "en": "Peoria alumni introduce the new member's local ties."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "의원 보좌관이 되기 전 1948년에 이 지역 대학을 졸업했습니다.",
+            "en": "I graduated from a local university in 1948 before becoming a congressional aide."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "미셸의 학사 학위는 {{blank}}에서 받았습니다.",
+          "en": "Michel earned his bachelor's degree at {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "노스웨스턴 대학교",
+              "en": "Northwestern University"
+            },
+            {
+              "id": "B",
+              "ko": "일리노이 대학교",
+              "en": "University of Illinois"
+            },
+            {
+              "id": "C",
+              "ko": "시카고 대학교",
+              "en": "University of Chicago"
+            },
+            {
+              "id": "D",
+              "ko": "브래들리 대학교",
+              "en": "Bradley University"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/18193",
+            "claim": "Bradley University B.S. 1948; Velde aide 1949–56.",
+            "asOf": "1957-03-10"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-782-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-786",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "그 내용을 기록해 두겠습니다.",
+                "en": "I'll keep that in my notes."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "1957~1970년 프로 미식축구 선수였습니다.",
+                "en": "I played professional football from 1957 to 1970."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "player",
+                "ko": "제가 기록을 혼동했군요.",
+                "en": "I mixed up the records."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "1957~1970년 프로 미식축구 선수였습니다.",
+                "en": "I played professional football from 1957 to 1970."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "미식축구 선수 시절과 의정 활동의 차이를 학생들과 토론하겠습니다.",
+                "en": "I'll discuss the differences between my football career and congressional service with students."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1957~1970년 프로 미식축구 선수였습니다. 다른 종목의 경력을 전제로 준비한 질문은 바꿔 주세요.",
+                "en": "I played professional football from 1957 to 1970. Replace questions premised on another sport."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-786",
+        "mechanism": "career-recall",
+        "learningTarget": "Kemp was a professional football player from 1957 to 1970.",
+        "date": "1972-04-18",
+        "venue": {
+          "ko": "지역 체육 행사",
+          "en": "Community sports event"
+        },
+        "context": {
+          "ko": "지역 체육 행사",
+          "en": "Community sports event"
+        },
+        "cast": [
+          {
+            "id": "K000086",
+            "name": "Jack French Kemp",
+            "ko": "잭 켐프",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/16187"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "의회에 오기 전에는 운동장에서 일했습니다.",
+            "en": "Before Congress my workplace was the playing field."
+          },
+          {
+            "speaker": "host",
+            "ko": "학생들에게 이전 직업을 소개해 주시죠.",
+            "en": "Tell the students about his previous profession."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "켐프의 정치 입문 전 직업은 프로 {{blank}} 선수였습니다.",
+          "en": "Before Congress, Kemp was a professional {{blank}} player.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "야구",
+              "en": "baseball"
+            },
+            {
+              "id": "B",
+              "ko": "농구",
+              "en": "basketball"
+            },
+            {
+              "id": "C",
+              "ko": "아이스하키",
+              "en": "ice hockey"
+            },
+            {
+              "id": "D",
+              "ko": "미식축구",
+              "en": "football"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/16187",
+            "claim": "Professional football 1957–70.",
+            "asOf": "1972-04-18"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-786-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-788",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "player",
+                "ko": "그 내용을 기록해 두겠습니다.",
+                "en": "I'll keep that in my notes."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "1969~1970년 마케트대에서 경제학을 가르쳤습니다.",
+                "en": "I taught economics at Marquette in 1969–1970."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "player",
+                "ko": "제가 기록을 혼동했군요.",
+                "en": "I mixed up the records."
+              },
+              {
+                "speaker": "npc:0",
+                "ko": "1969~1970년 마케트대에서 경제학을 가르쳤습니다.",
+                "en": "I taught economics at Marquette in 1969–1970."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "마케트대에서 경제학을 가르쳤던 경험을 토대로 지역 경제 문제를 토론하겠습니다.",
+                "en": "I'll discuss local economic issues drawing on my experience teaching economics at Marquette."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "1969~1970년 마케트대에서 가르쳤습니다. 다른 학교의 교수로 소개한 토론 안내를 수정하세요.",
+                "en": "I taught at Marquette in 1969–1970. Correct the discussion program identifying me as a professor at another school."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-788",
+        "mechanism": "career-recall",
+        "learningTarget": "Aspin taught economics at Marquette University in 1969–1970.",
+        "date": "1971-04-08",
+        "venue": {
+          "ko": "밀워키 대학 동료",
+          "en": "Milwaukee faculty reunion"
+        },
+        "context": {
+          "ko": "밀워키 대학 동료",
+          "en": "Milwaukee faculty reunion"
+        },
+        "cast": [
+          {
+            "id": "A000224",
+            "name": "Les Aspin",
+            "ko": "레스 애스핀",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/8576"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "npc:0",
+            "ko": "작년까지는 밀워키의 대학에서 강의했습니다.",
+            "en": "Until last year I taught at a university in Milwaukee."
+          },
+          {
+            "speaker": "player",
+            "ko": "이제 학생 대신 지역 주민을 직접 만나시는군요.",
+            "en": "Now you meet constituents as well as former students."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "애스핀의 이전 대학은 {{blank}}였습니다.",
+          "en": "Aspin previously taught at {{blank}} University.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "하버드",
+              "en": "Harvard"
+            },
+            {
+              "id": "B",
+              "ko": "마케트",
+              "en": "Marquette"
+            },
+            {
+              "id": "C",
+              "ko": "프린스턴",
+              "en": "Princeton"
+            },
+            {
+              "id": "D",
+              "ko": "스탠퍼드",
+              "en": "Stanford"
+            }
+          ],
+          "correct": "B"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/8576",
+            "claim": "Marquette economics assistant professor 1969–70.",
+            "asOf": "1971-04-08"
+          }
+        ],
+        "outcome": {
+          "kind": "notebook",
+          "key": "p01-788-career-recall"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    },
+    {
+      "id": "P01-790",
+      "path": "data/dialogue-packs/P01/part-32.json",
+      "originalBlobSha": "8e13955924b27bfeeb70489dbcbb0ceed57d7fa4",
+      "sourceRef": "hq-i1-pilot-integration",
+      "category": "new_backlog_proposal",
+      "note": "Bilingual scene review: existing generic or repetitive followup; introduce relevant successful interaction and distinct corrective action.",
+      "changes": [
+        {
+          "field": "followup",
+          "before": {
+            "correct": [
+              {
+                "speaker": "host",
+                "ko": "해군 현역과 예비군 복무 기간을 구분하겠습니다.",
+                "en": "I'll distinguish his active Navy and Naval Reserve service."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "정확한 답은 해군입니다. 해군 현역과 예비군 복무 기간을 구분하겠습니다.",
+                "en": "The correct answer is Navy. I'll distinguish his active Navy and Naval Reserve service."
+              }
+            ]
+          },
+          "after": {
+            "correct": [
+              {
+                "speaker": "npc:0",
+                "ko": "해군 현역 복무와 예비군 경력을 구분해 소개하고 복무 경험에 관한 질문을 받겠습니다.",
+                "en": "I'll describe my active Navy and Naval Reserve service separately, then take questions about that experience."
+              }
+            ],
+            "incorrect": [
+              {
+                "speaker": "npc:0",
+                "ko": "군종은 해군입니다. 다른 군종에 배정한 현역·예비군 경력 전시 표지를 교체하세요.",
+                "en": "My branch was the Navy. Replace the exhibit label assigning my active and reserve service to another branch."
+              }
+            ]
+          }
+        }
+      ],
+      "protectedFields": {
+        "id": "P01-790",
+        "mechanism": "institutional-transition",
+        "learningTarget": "Hyde served in the Navy 1944–46 and Naval Reserve 1946–68.",
+        "date": "1975-04-15",
+        "venue": {
+          "ko": "일리노이 주의회 방문단",
+          "en": "Illinois statehouse delegation"
+        },
+        "context": {
+          "ko": "신임 의원의 현역과 예비군 복무 기록을 구분한다.",
+          "en": "Distinguish active and reserve service of the new member."
+        },
+        "cast": [
+          {
+            "id": null,
+            "name": "Henry Hyde",
+            "ko": "헨리 하이드",
+            "portrait": null,
+            "source": "https://history.house.gov/People/Detail/15544"
+          }
+        ],
+        "opening": [
+          {
+            "speaker": "host",
+            "ko": "신임 의원의 현역과 예비군 복무 기록을 구분한다.",
+            "en": "Distinguish active and reserve service of the new member."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "1944~1946년 현역으로 복무하고 1968년까지 예비군에 있었습니다.",
+            "en": "I served on active duty from 1944 to 1946 and in the reserve until 1968."
+          }
+        ],
+        "response": {
+          "speaker": "player",
+          "ko": "하이드의 복무 군종은 {{blank}}입니다.",
+          "en": "Hyde's service branch was the {{blank}}.",
+          "choices": [
+            {
+              "id": "A",
+              "ko": "육군",
+              "en": "Army"
+            },
+            {
+              "id": "B",
+              "ko": "해병대",
+              "en": "Marine Corps"
+            },
+            {
+              "id": "C",
+              "ko": "공군",
+              "en": "Air Force"
+            },
+            {
+              "id": "D",
+              "ko": "해군",
+              "en": "Navy"
+            }
+          ],
+          "correct": "D"
+        },
+        "evidence": [
+          {
+            "url": "https://history.house.gov/People/Detail/15544",
+            "claim": "Navy 1944–46; Naval Reserve 1946–68; House service began 1975.",
+            "asOf": "1975-04-15"
+          }
+        ],
+        "outcome": {
+          "kind": "appointment",
+          "key": "p01-790-institutional-transition"
+        },
+        "fictional": true
+      },
+      "status": "editorial_proposal_not_applied"
+    }
+  ]
+}
