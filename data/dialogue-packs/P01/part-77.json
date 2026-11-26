@@ -2722,24 +2722,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "11월 선거 이후 소개 문구에 상원의원이라고 적었습니다.",
-          "en": "After the November election the caption says Senator."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "공식 약력은 상원의원 당선인으로 표시합니다.",
-          "en": "My official biography says Senator-elect."
+          "speaker": "player",
+          "ko": "11월 선거 직후 방송 자막에서 새 직책과 현재 재임 중인 직책을 하나로 표시하려 합니다.",
+          "en": "A post-election broadcast caption merges the new election-related title with the currently held office."
         },
         {
           "speaker": "npc:1",
-          "ko": "새 임기와 현재 의회의 임기를 구분해야 합니다.",
-          "en": "Distinguish the new term from this Congress."
+          "ko": "선거 결과와 실제 취임은 날짜가 다른 사건입니다.",
+          "en": "Election results and accession to office are distinct dated events."
         },
         {
-          "speaker": "player",
-          "ko": "아직 취임하지 않은 직책을 현직으로 부르지 않겠습니다.",
-          "en": "I won't call an office already held when it has not begun."
+          "speaker": "npc:0",
+          "ko": "11월 25일 기준 공식 약력이 사용하는 선거 관련 직함을 확인하세요.",
+          "en": "Verify the election-related title in my official biography as of November 25."
         }
       ],
       "response": {
@@ -2774,15 +2769,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "선거 결과와 실제 취임을 별도 기록으로 남기겠습니다.",
-            "en": "We'll keep election results separate from taking office."
+            "ko": "그 직함으로 정정하고 현직 하원 재임과 새 임기 시작은 따로 표시하세요.",
+            "en": "Correct the title and separately identify current House service and the beginning of the new term."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "공식 약력은 Barr를 Senator-elect로 표시합니다.",
-            "en": "His official biography identifies him as Senator-elect."
+            "ko": "공식 약력의 표기는 Senator-elect입니다. 아직 시작하지 않은 직책을 현직 상원의원이라고 표시하면 안 됩니다.",
+            "en": "The official biography uses Senator-elect. Do not label a not-yet-begun office as sitting Senator."
           }
         ]
       },

@@ -41,24 +41,24 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "예전 전주 단위 선출 방식과 1913년 지도를 비교하는 전시를 준비합니다.",
+          "en": "I'm preparing an exhibit comparing the former at-large elections with the 1913 map."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "전에는 주 전체 의석이 두 개였습니다.",
-          "en": "Previously we had two statewide seats."
+          "ko": "새 번호 선거구의 수를 확인해 주세요.",
+          "en": "Please verify the number of new numbered districts."
         },
         {
           "speaker": "npc:1",
-          "ko": "이제 저는 2구를 맡습니다.",
-          "en": "I now represent District 2."
+          "ko": "각 지역구의 연락처는 별도로 표시합시다.",
+          "en": "Let's give each district a separate contact."
         },
         {
           "speaker": "npc:2",
-          "ko": "세 번째 의석도 지도에 넣어야 합니다.",
-          "en": "The third seat belongs on the map as well."
-        },
-        {
-          "speaker": "player",
-          "ko": "새 선거구 지도를 주민에게 어떻게 설명할까요?",
-          "en": "How should I explain the new map to residents?"
+          "ko": "옛 지도와 새 지도에는 적용 시기를 표시해야 합니다.",
+          "en": "Label the periods covered by the old and new maps."
         }
       ],
       "response": {
@@ -92,21 +92,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
-            "en": "I'll display both the old statewide and new district maps."
+            "speaker": "npc:2",
+            "ko": "세 지역구용 연락처 칸을 따로 마련하죠. 옛 전주 기록에는 날짜를 붙이세요.",
+            "en": "Prepare separate contact entries for the three districts and date the old at-large record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1913년부터 사우스다코타는 세 개의 번호 선거구로 대표되었다.",
-            "en": "South Dakota began using three numbered House districts in 1913."
-          },
-          {
-            "speaker": "player",
-            "ko": "예전 주 전체 선거 지도와 새 지도를 함께 게시하겠습니다.",
-            "en": "I'll display both the old statewide and new district maps."
+            "ko": "두 의석은 옛 지도입니다. 1913년 번호 지역구 세 개를 확인하고 게시 전에 지도부터 수정하세요.",
+            "en": "Two seats belong to the old map. Check all three numbered districts in 1913 and correct it before posting."
           }
         ]
       },
@@ -1593,19 +1588,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "남편의 사망으로 공석이 생겼고 올해 선거로 그 자리를 채웠습니다.",
-          "en": "My husband's death left a vacancy, which I filled by election this year."
+          "speaker": "player",
+          "ko": "공석을 가족에게 자동 승계했다고 쓴 기사 초안을 검토합니다.",
+          "en": "I'm reviewing a draft saying a vacancy passed automatically within a family."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 뉴햄프셔의 정기 임기 의원입니다. 두 선거 유형을 구별해 주세요.",
-          "en": "I am serving a regular term from New Hampshire. Distinguish the two election types."
+          "ko": "가족관계와 보궐선거 절차를 구분하고 사망한 전임자의 이름을 기록에서 확인하세요.",
+          "en": "Distinguish the family relationship from the special election and identify the deceased predecessor from the record."
         },
         {
-          "speaker": "player",
-          "ko": "가족 관계와 당선 절차를 따로 기록하겠습니다.",
-          "en": "I'll record the family relationship separately from the election procedure."
+          "speaker": "npc:0",
+          "ko": "보궐선거로 기존 의회 임기의 잔여기간 동안 재임하게 된 시점과 전임자의 재임 기록을 구분해 주세요.",
+          "en": "Distinguish the start of my service for the remainder of the existing congressional term from my predecessor's service."
         }
       ],
       "response": {
@@ -1639,21 +1634,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
-            "en": "I'll preserve the special election and family record separately."
+            "speaker": "npc:0",
+            "ko": "남편 존 키의 사망과 제 당선 기록을 별도 사건으로 적어 주세요.",
+            "en": "Record my husband John Kee's death and my election as separate events."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "엘리자베스 키는 1951년 존 키의 사망으로 생긴 공석을 채웠다.",
-            "en": "Elizabeth Kee filled the vacancy caused by John Kee's death in 1951."
-          },
-          {
-            "speaker": "player",
-            "ko": "보궐선거 결과와 가계 기록을 각각 보존하겠습니다.",
-            "en": "I'll preserve the special election and family record separately."
+            "speaker": "npc:1",
+            "ko": "전임자는 존 키입니다. 엘리자베스 키의 당선은 별도 사건이므로 자동 승계라고 쓰지 마세요.",
+            "en": "The predecessor was John Kee. Elizabeth Kee's election was a separate event, not automatic succession."
           }
         ]
       },

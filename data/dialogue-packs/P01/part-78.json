@@ -142,19 +142,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "11월 선거 결과에 따라 주민용 지도를 즉시 바꾸자는 제안을 검토하고 있습니다.",
+          "en": "I'm reviewing a proposal to replace the constituent map immediately after the November election."
+        },
+        {
           "speaker": "npc:1",
-          "ko": "주민용 지도에 두 가지 선거구 경계가 들어갔습니다.",
-          "en": "Two sets of boundaries appear on the constituent map."
+          "ko": "현재 임기의 대표 관계와 선거에 사용된 새 지도를 구분해야 합니다.",
+          "en": "Distinguish current-term representation from the new map used in the election."
         },
         {
           "speaker": "npc:0",
-          "ko": "2026년에 새 지도가 쓰였더라도 현 의회 임기와 구분해야 합니다.",
-          "en": "Even if a new map was used for the election, distinguish the current term."
-        },
-        {
-          "speaker": "player",
-          "ko": "주민의 현재 대표를 찾는 지도에는 기존 기준을 적용하겠습니다.",
-          "en": "For current representation, I'll use the existing boundaries."
+          "ko": "하원의 지도 안내에서 새로운 대표 관계의 적용 시점을 확인하세요.",
+          "en": "Consult the House map guidance for when the new representation takes effect."
         }
       ],
       "response": {
@@ -188,16 +188,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "두 지도에 적용 시점을 크게 표시합시다.",
-            "en": "Clearly label the effective period of both maps."
+            "speaker": "npc:1",
+            "ko": "그 전까지는 현재 의회의 경계를 사용하고 새 지도는 적용 예정일을 표시해 따로 보존하세요.",
+            "en": "Until then, use current congressional boundaries and preserve the new map separately with its effective date."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "하원 안내는 새 지도 적용 시점을 2027년 1월로 구분합니다.",
-            "en": "The House guidance distinguishes January 2027 as the new map's effective period."
+            "speaker": "npc:0",
+            "ko": "2026년 선거에 사용된 새 경계는 2027년 1월 차기 의회부터 대표 관계에 적용됩니다. 모든 지역구가 변경되었다는 뜻은 아닙니다.",
+            "en": "New boundaries used in the 2026 election apply to representation in the next Congress in January 2027; this does not mean every district changed."
           }
         ]
       },
@@ -2007,24 +2007,19 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "11월 총선 결과를 반영해 현역 명부를 즉시 바꾸려고 합니다.",
-          "en": "The roster editor wants to replace incumbents immediately after the November election."
-        },
-        {
-          "speaker": "npc:0",
-          "ko": "당선 축하와 실제 임기 종료는 다른 사건입니다.",
-          "en": "Congratulating a winner and ending a term are distinct events."
+          "speaker": "player",
+          "ko": "CA-11 주민이 11월 선거 후 기존 의원실을 바로 이용할 수 없다고 생각합니다. 11월 25일의 현직을 확인하겠습니다.",
+          "en": "A CA-11 resident thinks the incumbent office became unavailable immediately after the election. I'll verify the incumbent on November 25."
         },
         {
           "speaker": "npc:1",
-          "ko": "지도 적용 시점과 마찬가지로 기준 날짜가 필요합니다.",
-          "en": "Like map changes, this needs an effective date."
+          "ko": "차기 임기용 지도와 현재 의회용 지도를 구분하듯 당선인과 현직도 별도 기록해야 합니다.",
+          "en": "Just as with next-term and current maps, maintain separate records for members-elect and incumbents."
         },
         {
-          "speaker": "player",
-          "ko": "현재 의석은 선거 결과와 별도 칸에 유지하겠습니다.",
-          "en": "I'll maintain a separate field for the current seat."
+          "speaker": "npc:0",
+          "ko": "11월 4일의 당선 축하 발표와 실제 임기 종료일을 혼동하지 마세요.",
+          "en": "Do not confuse the November 4 congratulations with the actual end of the term."
         }
       ],
       "response": {
@@ -2059,15 +2054,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "현직과 차기 당선인 항목을 분리하죠.",
-            "en": "Separate incumbent and next-term member-elect fields."
+            "ko": "현재 임기의 문의는 현직 의원실에 연결하고 당선인은 차기 임기 자료에 표시하세요.",
+            "en": "Route current-term inquiries to the incumbent office and list the member-elect in the next-term record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:1",
-            "ko": "11월 4일 당선 축하 발표는 펠로시의 임기를 즉시 종료시키지 않습니다.",
-            "en": "The November 4 congratulations did not immediately end Pelosi's term."
+            "ko": "11월 25일에는 펠로시가 현직입니다. 선거 결과만으로 현재 임기가 종료되지는 않습니다.",
+            "en": "Pelosi remains the incumbent on November 25. The election result alone does not end the current term."
           }
         ]
       },
