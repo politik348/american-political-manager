@@ -1,0 +1,45 @@
+name: V18 real-data release staging
+on:
+  push:
+    branches: [hq-v18-final-release-staging]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v18-final-staging-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  candidate:
+    if: github.ref == 'refs/heads/hq-v18-final-release-staging'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Generate and verify exact candidate files
+        run: |
+          node scripts/prepare-v18-news-release.mjs --write
+          node scripts/prepare-v18-news-release.mjs --check
+          node scripts/validate-v18-news.mjs --full --release
+      - name: Persist generated candidate only to isolated staging branch
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          git add data/v18-news-index.json data/v18-news-metadata.json docs/audits/V18-NEWS-HQ-RELEASE-MANIFEST.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Persist verified V18 news staging candidate (not release approval)'
+            git push origin HEAD:refs/heads/hq-v18-final-release-staging
+          fi
+          echo "CANDIDATE_SHA=$(git rev-parse HEAD)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v18-release-candidate
+          path: |
+            data/v18-news-index.json
+            data/v18-news-metadata.json
+            docs/audits/V18-NEWS-HQ-RELEASE-MANIFEST.json
+      - run: npm test
