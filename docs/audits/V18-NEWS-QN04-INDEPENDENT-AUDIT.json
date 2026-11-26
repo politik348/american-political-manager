@@ -24,12 +24,13 @@
     "confirmedDateErrors": 1,
     "sourceAccessErrors": 0,
     "minorNotes": 48,
-    "duplicateReviewScope": "N04 titles only, not exhaustive across baseline or other teams",
+    "duplicateReviewScope": "N04+19 starter events exact date/title and same-day semantic screening; 1500 other-team dates screened, no period overlap; exhaustive different-date semantic review pending",
     "final": false,
-    "sourceSupportIssues": 3
+    "sourceSupportIssues": 3,
+    "individualAuditComplete": true
   },
   "limitations": [
-    "10 batches registered; 0 events await individual historical review. Final integration verification separate.",
+    "All 250 individual audit entries registered; prior 200 records carried forward; final structural integration check completed, release approval pending.",
     "Cross-verification counts independent institutional evidence supporting core event/date, not every secondary detail; same transcript or same-institution commentary alone excluded.",
     "Legislative stage/importance are editorial candidates, not verification of producer legislative dossier references.",
     "Batch 3 uses conservative independent-source counting: CRS summaries of the same Senate roll call do not count separately, failed/dynamic source openings excluded, and partial corroboration noted. Earlier batches' counts are carried forward, not re-audited in batch 3.",
@@ -39,7 +40,8 @@
     "Batch 7: source excerpts actually opened and inspected; same-agency SSA records and same underlying congressional votes not counted as independent. Cross-checks limited to explicitly recorded additional evidence; prior records carried forward without re-audit. Legislative linkage and exhaustive duplicate check remain pending.",
     "Batch 8: source excerpts actually opened and inspected; same-agency SSA records and same underlying congressional votes not counted as independent. Cross-checks limited to explicitly recorded additional evidence; prior records carried forward without re-audit. Legislative linkage and exhaustive duplicate check remain pending.",
     "Batch 9: original URLs opened; independent cross-checks counted only where relevant independent evidence actually inspected, with same underlying vote record excluded; prior 200 audit entries carried forward without source re-audit.",
-    "Batch 10: original URLs opened; independent cross-checks counted only where relevant independent evidence actually inspected, with same underlying vote record excluded; prior 200 audit entries carried forward without source re-audit."
+    "Batch 10: original URLs opened; independent cross-checks counted only where relevant independent evidence actually inspected, with same underlying vote record excluded; prior 200 audit entries carried forward without source re-audit.",
+    "Final integration recomputed all 250 SHA-256 hashes, compared baseline and N04 same-day events, checked dates in other teams' 1500 events, and checked dossier ID references. It does not establish exhaustive semantic duplicate absence across different dates or verify every legislative dossier's factual content. Earlier source assertions were not re-opened in this final turn."
   ],
   "records": [
     {
@@ -7897,5 +7899,248 @@
       "correctedArticle": null,
       "verifiedOn": "2026-11-26"
     }
-  ]
+  ],
+  "finalIntegration": {
+    "verifiedOn": "2026-11-26",
+    "productionSha": "d80cdded2a17f8fd1c28d6829a06c40065c814dc",
+    "sourcePackCount": 10,
+    "sourceEventCount": 250,
+    "auditRecordCount": 250,
+    "uniqueIds": 250,
+    "hashRecalculated": 250,
+    "hashMismatchIds": [],
+    "shaPathMismatchIds": [],
+    "allDatesWithinCoverage": true,
+    "originalBaselineBlob": "ffd761a2f9193d5b2302776446afdfe66711913c",
+    "duplicateScreening": {
+      "baselineCount": 19,
+      "exactDateTitleDuplicates": [],
+      "sameDateGroups": [
+        {
+          "date": "1965-08-11",
+          "items": [
+            {
+              "id": "N04-0039",
+              "en": "Unrest erupts in Watts"
+            },
+            {
+              "id": "N04-0156",
+              "en": "Senate confirms Abe Fortas"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1968-04-04",
+          "items": [
+            {
+              "id": "N04-0050",
+              "en": "Martin Luther King Jr. assassinated"
+            },
+            {
+              "id": "N04-0166",
+              "en": "Robert Kennedy appeals for peace in Indianapolis"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1969-01-03",
+          "items": [
+            {
+              "id": "N04-0056",
+              "en": "Shirley Chisholm enters Congress"
+            },
+            {
+              "id": "N04-0171",
+              "en": "Edward Kennedy wins Democratic whip race"
+            },
+            {
+              "id": "N04-0172",
+              "en": "Carl Hayden retires"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1974-08-09",
+          "items": [
+            {
+              "id": "N04-0087",
+              "en": "Gerald Ford inaugurated"
+            },
+            {
+              "id": "nixon",
+              "en": "President Nixon resigns"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1965-04-08",
+          "items": [
+            {
+              "id": "N04-0134",
+              "en": "House rejects Byrnes health alternative"
+            },
+            {
+              "id": "N04-0135",
+              "en": "House passes Medicare legislation"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1965-07-09",
+          "items": [
+            {
+              "id": "N04-0141",
+              "en": "Curtis amendment to remove Medicare fails"
+            },
+            {
+              "id": "N04-0142",
+              "en": "Senate passes Medicare bill"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        },
+        {
+          "date": "1965-07-28",
+          "items": [
+            {
+              "id": "N04-0145",
+              "en": "Senate adopts Medicare conference report"
+            },
+            {
+              "id": "N04-0155",
+              "en": "Abe Fortas nominated"
+            }
+          ],
+          "assessment": "Distinct events or procedural stages; no duplicate on manual same-day title review."
+        }
+      ],
+      "crossTeamDateScan": [
+        {
+          "team": "N01",
+          "sha": "b3e266f232f10f4e75e9b655c80fc573c36bcdb4",
+          "minDate": "1900-03-14",
+          "maxDate": "1919-11-19",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        },
+        {
+          "team": "N02",
+          "sha": "45a49b430273c9099e8d9e234ee4701f59c5505e",
+          "minDate": "1920-01-17",
+          "maxDate": "1939-11-04",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        },
+        {
+          "team": "N03",
+          "sha": "a8f7f69d6d5cdd0e06fbf98ae521da5cc56a0afb",
+          "minDate": "1940-01-16",
+          "maxDate": "1959-09-14",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        },
+        {
+          "team": "N05",
+          "sha": "457b525c5f15289a8cb48a13690b71840b993869",
+          "minDate": "1980-01-03",
+          "maxDate": "1999-11-17",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        },
+        {
+          "team": "N06",
+          "sha": "70dca8db2f83d9fe53d1f8a85b58d5d0bba5ade0",
+          "minDate": "2000-02-01",
+          "maxDate": "2019-12-18",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        },
+        {
+          "team": "N07",
+          "sha": "16921341eddee7833741a7ed1ea35727cd3a0f9f",
+          "minDate": "2020-01-13",
+          "maxDate": "2026-11-20",
+          "records": 250,
+          "overlapWithN04Period": 0,
+          "invalidDateFormat": 0
+        }
+      ],
+      "crossTeamEventsChecked": 1500,
+      "crossTeamPeriodOverlaps": 0,
+      "scope": "N04 and starter base exact date/title and manual same-day event review; all six other-team packs' recorded dates checked against N04 period. Different-date semantic duplicates, incorrect dates in other teams, and full cross-team article-level semantic comparison not exhaustively audited."
+    },
+    "legislativeLinkage": {
+      "dossierCount": 25,
+      "linkedIds": 53,
+      "uniqueLinkedIds": 53,
+      "missingIds": [],
+      "stageDateMissing": [
+        {
+          "id": "N04-0129",
+          "dossier": "Social Security Amendments of 1965",
+          "date": "1965-01-07",
+          "stageDateMatch": false
+        },
+        {
+          "id": "N04-0140",
+          "dossier": "Social Security Amendments of 1965",
+          "date": "1965-07-08",
+          "stageDateMatch": false
+        }
+      ],
+      "candidateCount": 80,
+      "candidateNotLinked": [
+        "N04-0002",
+        "N04-0004",
+        "N04-0011",
+        "N04-0014",
+        "N04-0016",
+        "N04-0035",
+        "N04-0037",
+        "N04-0043",
+        "N04-0044",
+        "N04-0051",
+        "N04-0059",
+        "N04-0064",
+        "N04-0065",
+        "N04-0066",
+        "N04-0086",
+        "N04-0097",
+        "N04-0099",
+        "N04-0158",
+        "N04-0176",
+        "N04-0179",
+        "N04-0184",
+        "N04-0186",
+        "N04-0187",
+        "N04-0189",
+        "N04-0193",
+        "N04-0212",
+        "N04-0214",
+        "N04-0215"
+      ],
+      "linkedNotFlagged": [
+        "N04-0223"
+      ],
+      "notes": [
+        "Candidate flags are not mandatory dossier links; 28 candidate-only IDs are coverage suggestions, not broken references.",
+        "Two linked events missing from structured stage lists: Jan 7 1965 presidential proposal and July 8 1965 Kennedy amendment; add stages.",
+        "N04-0223 linked to FECA 1974 dossier but not flagged by production audit; align candidate flag if intended.",
+        "Suggest linking enactment N04-0037 to H.R.6675 dossier; N04-0063 to EPA plan; base cra/vra enactments via separate engine-supported references if applicable.",
+        "Full independent factual verification of every dossier claim, bill text, supporters/opponents, and importance ranking not completed."
+      ]
+    },
+    "individualAuditComplete": true,
+    "releaseRecommendation": "HOLD: resolve 2 substantive article corrections, review 48 minor notes, reconcile legislative stage lists. Do not merge automatically."
+  }
 }
