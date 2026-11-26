@@ -65,11 +65,13 @@ try{
  try{
   const page=await context.newPage();await page.goto(new URL('icon.svg',url).href);
   await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-shell-v17.9-i1-rc5');await caches.open('apm-shell-v17.9-i1-rc6');await caches.open('apm-shell-v17.9-i1-rc7');await caches.open('apm-shell-v17.9-i1-rc8-careers');await caches.open('apm-shell-v18-preview1');await caches.open('apm-shell-v18-preview2-calendar');await caches.open('apm-shell-v18-news-engine1');await caches.open('apm-portraits-v1')});
-  await page.evaluate(async()=>{await caches.open('apm-shell-v18-release-candidate1')});
+  await page.evaluate(async()=>{await caches.open('apm-shell-v18-release-candidate1');await caches.open('apm-shell-v18-release-candidate2')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v18-release-candidate2')&&keys.filter(k=>k.startsWith('apm-shell-')).length===1},{},{timeout:60000});
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v18-release-candidate3')&&keys.filter(k=>k.startsWith('apm-shell-')).length===1},{},{timeout:60000});
+  const verifyController=()=>page.evaluate(async()=>{const worker=navigator.serviceWorker.controller;if(!worker)throw Error('No controlling service worker');return new Promise((resolve,reject)=>{const channel=new MessageChannel(),timer=setTimeout(()=>{channel.port1.close();reject(Error('Service worker verification timeout'))},10000);channel.port1.onmessage=e=>{clearTimeout(timer);channel.port1.close();resolve(e.data)};worker.postMessage({type:'APM_VERIFY_SHELL'},[channel.port2])})});
+  const confirmed=await verifyController();assert.equal(confirmed.ok,true,JSON.stringify(confirmed));assert.equal(confirmed.version,'apm-shell-v18-release-candidate3');assert.deepEqual(confirmed.keys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate3']);
   const result=await page.evaluate(async()=>{
-   const keys=await caches.keys(),cache=await caches.open('apm-shell-v18-release-candidate2'),base=(await navigator.serviceWorker.ready).scope;
+   const keys=await caches.keys(),cache=await caches.open('apm-shell-v18-release-candidate3'),base=(await navigator.serviceWorker.ready).scope;
    const check=async p=>{const r=await cache.match(new URL(p,base).href);return !!r&&r.ok};
    const paths=['./data/dialogue-packs/i1-index.json','./index.html','./i1-career-saves.js','./i1-onboarding-ui.js','./data/v18-news-index.json','./data/v18-news-metadata.json','./data/v18-news.json','./v18-news.js','./data/v18-news-packs/N07/part-10.json','./__apm_shell_ready__'];
    const checks=Object.fromEntries(await Promise.all(paths.map(async p=>[p,await check(p)])));
@@ -80,7 +82,7 @@ try{
   console.log('V18 cache inventory '+JSON.stringify(result));
   for(const [p,ok] of Object.entries(result.checks))assert.equal(ok,true,'Missing cache entry '+p);
   assert.equal(result.packCount,70);assert.deepEqual(result.missing,[]);assert.ok(result.keys.includes('apm-portraits-v1'));
-  assert.deepEqual(result.keys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate2'],'old shell caches must actually be removed');
+  assert.deepEqual(result.keys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate3'],'old shell caches must actually be removed');
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
   assert.equal(offline.ok,true);assert.equal(offline.parts,103);
@@ -92,7 +94,7 @@ try{
   console.log('V18 offline registry '+JSON.stringify(offlineNews));
   await page.reload();await page.locator('[data-action="lobby:career"]').waitFor({timeout:45000});
   const local=await page.evaluate(async()=>{const m=await (await fetch('./data/dialogue-packs/i1-index.json')).json();return Promise.all(m.photos.filter(p=>p.localPath).map(async p=>{const r=await fetch(p.localPath);return {id:p.id,ok:r.ok,bytes:(await r.arrayBuffer()).byteLength}}))});assert.ok(local.some(p=>p.id==='L000004'&&p.ok&&p.bytes===1007628),'local original must survive offline');console.log('I1 R5 offline local images '+JSON.stringify(local));
-  const finalKeys=await page.evaluate(()=>caches.keys());assert.deepEqual(finalKeys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate2']);assert.ok(finalKeys.includes('apm-portraits-v1'));
-  console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:finalKeys.filter(k=>k.startsWith('apm-shell-')).length===1&&finalKeys.includes('apm-shell-v18-release-candidate2'),portraitCachePreserved:finalKeys.includes('apm-portraits-v1'),offlineManifest:offline.parts,finalKeys}));
+  const finalConfirmed=await verifyController();assert.equal(finalConfirmed.ok,true);assert.equal(finalConfirmed.version,'apm-shell-v18-release-candidate3');const finalKeys=await page.evaluate(()=>caches.keys());assert.deepEqual(finalKeys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate3']);assert.ok(finalKeys.includes('apm-portraits-v1'));
+  console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:finalKeys.filter(k=>k.startsWith('apm-shell-')).length===1&&finalKeys.includes('apm-shell-v18-release-candidate3'),portraitCachePreserved:finalKeys.includes('apm-portraits-v1'),offlineManifest:offline.parts,finalKeys}));
  }finally{await context.close()}
 }finally{await browser.close()}

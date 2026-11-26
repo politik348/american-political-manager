@@ -1,4 +1,4 @@
-const KEY='apm-shell-v18-release-candidate2',PHOTO='apm-portraits-v1',SHELL=["./i1-pilot-app.js","./v18-career.js","./v18-calendar.js","./v18-news.js","./v18-news-ui.js","./data/v18-news-index.json","./data/v18-news-metadata.json","./v18-calendar-ui.js","./data/v18-news.json","./v18-career-ui.js","./v18-career.css","./i1-onboarding-ui.js","./i1-career-saves.js","./i1-pilot.js","./i1-pilot-ui.js","./app.js","./engine.js","./expansion.js","./v7.js","./v11.js","./v17.js","./v17-ui.js","./onboarding.js","./onboarding-ui.js","./dynamics.js","./encounters.js","./encounters-ui.js","./data/dialogue-packs/i1-index.json","./","./index.html","./start.html","./play-17.8.html","./release/17.8.0/app.js","./release/17.8.0/engine.js","./release/17.8.0/expansion.js","./release/17.8.0/v7.js","./release/17.8.0/v11.js","./release/17.8.0/v17.js","./release/17.8.0/v17-ui.js","./release/17.8.0/onboarding.js","./release/17.8.0/onboarding-ui.js","./release/17.8.0/style.css","./release/17.8.0/dynamics.js","./release/17.8.0/encounters.js","./release/17.8.0/encounters-ui.js","./data/challenges.json","./data/historical-people.json","./data/scenarios.json","./data/world.json","./data/portraits.json","./data/encounter-records.json","./manifest.webmanifest","./icon.svg"];
+const KEY='apm-shell-v18-release-candidate3',PHOTO='apm-portraits-v1',SHELL=["./i1-pilot-app.js","./v18-career.js","./v18-calendar.js","./v18-news.js","./v18-news-ui.js","./data/v18-news-index.json","./data/v18-news-metadata.json","./v18-calendar-ui.js","./data/v18-news.json","./v18-career-ui.js","./v18-career.css","./i1-onboarding-ui.js","./i1-career-saves.js","./i1-pilot.js","./i1-pilot-ui.js","./app.js","./engine.js","./expansion.js","./v7.js","./v11.js","./v17.js","./v17-ui.js","./onboarding.js","./onboarding-ui.js","./dynamics.js","./encounters.js","./encounters-ui.js","./data/dialogue-packs/i1-index.json","./","./index.html","./start.html","./play-17.8.html","./release/17.8.0/app.js","./release/17.8.0/engine.js","./release/17.8.0/expansion.js","./release/17.8.0/v7.js","./release/17.8.0/v11.js","./release/17.8.0/v17.js","./release/17.8.0/v17-ui.js","./release/17.8.0/onboarding.js","./release/17.8.0/onboarding-ui.js","./release/17.8.0/style.css","./release/17.8.0/dynamics.js","./release/17.8.0/encounters.js","./release/17.8.0/encounters-ui.js","./data/challenges.json","./data/historical-people.json","./data/scenarios.json","./data/world.json","./data/portraits.json","./data/encounter-records.json","./manifest.webmanifest","./icon.svg"];
 const scopeURL=p=>new URL(p,self.registration.scope).href;
 const packPath=/^v18-news-packs\/N0[1-7]\/part-(0[1-9]|10)\.json$/;
 const request=p=>new Request(scopeURL(p),{cache:'reload'});
@@ -27,10 +27,26 @@ async function installShell(){
  }catch(e){await caches.delete(KEY);throw e}
 }
 self.addEventListener('install',e=>e.waitUntil(installShell().then(()=>self.skipWaiting())));
+async function retireOldShells(){
+ const c=await caches.open(KEY),ready=await (await cached(c,'./__apm_shell_ready__')).json();
+ if(ready.version!==KEY||ready.packs!==70)throw Error('Invalid shell readiness marker');
+ const obsolete=k=>k.startsWith('apm-shell-')&&k!==KEY;
+ for(let attempt=0;attempt<4;attempt++){
+  const keys=await caches.keys();
+  for(const k of keys.filter(obsolete))await caches.delete(k);
+  const remaining=await caches.keys();
+  if(remaining.includes(KEY)&&!remaining.some(obsolete))return remaining;
+ }
+ throw Error('Old shell caches still present');
+}
 self.addEventListener('activate',e=>e.waitUntil((async()=>{
- const c=await caches.open(KEY);await cached(c,'./__apm_shell_ready__');
- const keys=await caches.keys();await Promise.all(keys.filter(k=>k.startsWith('apm-shell-')&&k!==KEY).map(k=>caches.delete(k)));await self.clients.claim();
+ await retireOldShells();await self.clients.claim();
 })()));
+self.addEventListener('message',e=>{
+ if(e.data?.type!=='APM_VERIFY_SHELL'||!e.ports[0])return;
+ const port=e.ports[0];
+ e.waitUntil(retireOldShells().then(keys=>port.postMessage({ok:true,version:KEY,keys})).catch(error=>port.postMessage({ok:false,version:KEY,error:String(error)})));
+});
 async function portrait(req){let c=await caches.open(PHOTO);let hit=await c.match(req);if(hit)return hit;let res=await fetch(req);if(res.ok||res.type==='opaque'){try{await c.put(req,res.clone());const keys=await c.keys();for(const k of keys.slice(0,Math.max(0,keys.length-180)))await c.delete(k)}catch{}}return res}
 
 const shellURLs=new Set(SHELL.map(scopeURL));
