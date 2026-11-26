@@ -1,6 +1,6 @@
 import {newsState,ingestNews,newsOnDate,nextNewsDate,markNews,indexOfNews} from './v18-news.js';
 // UTC date arithmetic; only protected careers use this calendar in preview 2.
-import {career18,protectedMode,next18,canLocalElection,staffRanks} from './v18-career.js';
+import {career18,protectedMode,next18,canLocalElection,staffDialogueReward} from './v18-career.js';
 import {appointmentCore,validScene,startPilot,answerPilot,pilotBook,chainIntro} from './i1-pilot.js';
 const DAY=86400000,END='2026-12-31';
 export const paceDays={immersive:4,balanced:8,fast:16};
@@ -27,7 +27,7 @@ export function ackNews(s,news){const c=calendar18(s),n=c.pending?.kind==='news'
 export function answerCalendar(s,choice,catalog){const c=calendar18(s),d=career18(s),p=c.pending;if(!p||p.answered)return false;let xp=0,trust=0,energy=0;
 if(p.kind==='scene'){if(!catalog||!answerPilot(s,catalog,choice,c.date))return false;const a=pilotBook(s).active;p.correct=a.correct;xp=a.correct?10:4;trust=a.correct?2:0;const v=catalog.scenes.find(x=>x.id===p.id);for(const person of v.cast){if(!person.id)continue;const old=c.contacts[person.id]||{name:person.name,count:0,last:null};old.count++;old.last=c.date;c.contacts[person.id]=old}}
 else if(p.kind==='chat'){const delta={research:[8,1,-4],collaborate:[5,3,-3],defer:[0,0,4]}[choice];if(!delta||s.energy+delta[2]<0)return false;[xp,trust,energy]=delta}else return false;
-s.energy=Math.max(0,Math.min(100,s.energy+energy));d.xp+=xp;d.trust=Math.min(100,d.trust+trust);if(s.mode==='staff'){const old=d.rank;d.rank=Math.min(staffRanks.length-1,Math.floor(d.xp/60));if(d.rank>old)d.awards.push({type:'promotion',rank:d.rank,year:s.year,quarter:s.quarter,date:c.date})}p.answered=true;p.choice=choice;p.reward={xp,trust,energy};c.conversations.push({date:c.date,kind:p.kind,id:p.id||genericEvent(p.index).key,choice,correct:p.correct??null});return true}
+s.energy=Math.max(0,Math.min(100,s.energy+energy));if(s.mode==='staff'){({xp,trust}=staffDialogueReward(s,p.kind==='scene'?!!p.correct:choice!=='defer'));}else{d.xp+=xp;d.trust=Math.min(100,d.trust+trust);}p.answered=true;p.choice=choice;p.reward={xp,trust,energy};c.conversations.push({date:c.date,kind:p.kind,id:p.id||genericEvent(p.index).key,choice,correct:p.correct??null});return true}
 export function closeCalendar(s){const c=calendar18(s);if(!c.pending?.answered)return false;if(c.pending.kind==='scene')pilotBook(s).active=null;c.pending=null;c.nextChat=addDays(c.date,paceDays[c.pace]);return true}
 export function sceneForCalendar(s,catalog){const c=calendar18(s);return c.pending?.kind==='scene'?catalog?.scenes.find(v=>v.id===c.pending.id)||null:null}
 export function sceneChain(s,catalog,v){return chainIntro(s,catalog,v,calendar18(s).date)}
