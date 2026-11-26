@@ -322,8 +322,8 @@
         "en": "House–Senate passage"
       },
       "context": {
-        "ko": "연방 상·하원 연결 통로에서 역사적 기록을 토대로 재구성한 가상 만남입니다. 이전 장면 P01-820 (2010-11-15): 상원 선거에서 당선된 모런과 새 회기에 다시 만납니다.",
-        "en": "A fictional encounter at a house–senate passage, grounded in the dated historical record. Earlier scene P01-820 (2010-11-15): Meet Moran again in the next Congress after his Senate election victory."
+        "ko": "캔자스 주민이 2010년 이전 하원 연락처를 현재에 사용하려 한다.",
+        "en": "A Kansas constituent tries to use a pre-2010 House contact for a current inquiry."
       },
       "cast": [
         {
@@ -344,23 +344,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "모런 의원님, 2010년에 상원 선거에서 당선되셨죠. 다시 뵙습니다.",
-          "en": "Senator Moran, you won a Senate election in 2010. Good to meet again."
+          "ko": "모런 의원님의 예전 하원 명함을 가져왔습니다. 현재 연락할 원이 같은지 확인하겠습니다.",
+          "en": "I brought Moran's old House business card. I'll check whether the current chamber is the same."
         },
         {
           "speaker": "npc:0",
-          "ko": "새 회기에는 같은 주에서도 상원과 하원의 연락 창구가 달라집니다.",
-          "en": "A new Congress can mean different House and Senate contacts for the same state."
+          "ko": "제 하원 임기는 2011년에 시작했습니다. 모런 의원의 현재 직책은 별도로 확인하세요.",
+          "en": "My House service began in 2011. Check Moran's current office separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 하원에서 여러 해 일한 뒤 2010년에 선출됐습니다. 지금은 다른 원에서 일합니다.",
-          "en": "After years in the House, I was elected in 2010. I now work in the other chamber."
-        },
-        {
-          "speaker": "aide",
-          "ko": "새 회기 대표단의 하원과 상원 항목을 따로 정리해 주세요.",
-          "en": "Please separate House and Senate entries for the new delegation."
+          "ko": "2010년 선거 결과에 따라 제 연락 창구도 바뀌었습니다.",
+          "en": "My contact office changed following the 2010 election."
         }
       ],
       "response": {
@@ -394,16 +389,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "그렇습니다. 주 대표단 명단에도 두 원을 따로 표시하세요.",
-            "en": "Exactly. Keep the two chambers separate in your delegation notebook."
+            "speaker": "npc:1",
+            "ko": "연방 상원입니다. 현재의 상원 문의와 이전 하원 기록을 나누어 주세요.",
+            "en": "The U.S. Senate. Separate present Senate inquiries from earlier House records."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2010년 선거에서 모런은 연방 상원의원으로 선출됐습니다.",
-            "en": "Moran was elected to the U.S. Senate in 2010."
+            "ko": "모런 의원은 현재 연방 상원에 있습니다. 캔자스 주상원이나 이전 하원 사무실로 보내지 마세요.",
+            "en": "Moran now serves in the U.S. Senate. Don't route the inquiry to the state Senate or his former House office."
           }
         ]
       },
@@ -1043,8 +1038,8 @@
         "en": "Iowa research interview"
       },
       "context": {
-        "ko": "아이오와 연구 인터뷰에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
-        "en": "A fictional encounter at a iowa research interview, grounded in the dated historical record."
+        "ko": "학생이 직업 경험만으로 정치인의 입장을 추론하려 한다.",
+        "en": "A student attempts to infer a member's political position solely from occupational background."
       },
       "cast": [
         {
@@ -1064,14 +1059,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "학생들이 의회 이전의 직업 경력을 조사하고 있다고요?",
-          "en": "Students are researching careers before Congress?"
+          "speaker": "player",
+          "ko": "두 분의 직업이 다르다면 법안에 대한 의견도 반드시 다를까요?",
+          "en": "If your careers differ, must your views on a bill differ too?"
         },
         {
           "speaker": "npc:1",
-          "ko": "브레일리 의원은 법률 분야에서 여러 해 일했습니다. 지역 정치 진입 경로가 꼭 한 가지는 아니죠.",
-          "en": "My colleague spent years in the legal profession. There is no single path into regional politics."
+          "ko": "직업 경력과 실제 정치적 입장은 따로 확인해야 합니다. 저는 대학에서 가르쳤습니다.",
+          "en": "Check career and actual political position separately. I taught at college."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1983~2006년 제 전문직부터 확인하고 실제 표결은 별도 자료로 살펴보세요.",
+          "en": "Identify my profession in 1983–2006, then examine actual votes separately."
         }
       ],
       "response": {
@@ -1106,15 +1106,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "그 경력도 별도의 인터뷰 주제로 기록해 보세요.",
-            "en": "Record that as a separate interview topic."
+            "ko": "변호사였습니다. 직업을 알았더라도 실제 입장은 증거를 보고 판단하세요.",
+            "en": "A lawyer. Even after identifying my profession, use evidence to determine actual positions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "브레일리는 1983년부터 2006년까지 변호사로 일했습니다.",
-            "en": "Braley practiced law from 1983 to 2006."
+            "speaker": "npc:1",
+            "ko": "브레일리 의원은 변호사였습니다. 그 경력만으로 특정 정책 입장을 단정하면 안 됩니다.",
+            "en": "Braley was a lawyer. That alone does not establish a position on a particular policy."
           }
         ]
       },
@@ -1337,8 +1337,8 @@
         "en": "Iowa construction and farming fair"
       },
       "context": {
-        "ko": "아이오와 건설·농업 박람회에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
-        "en": "A fictional encounter at a iowa construction and farming fair, grounded in the dated historical record."
+        "ko": "지역 박람회에서 종자 단체와 회사의 문의를 구분",
+        "en": "Distinguish inquiries from a seed association and a business at a regional fair"
       },
       "cast": [
         {
@@ -1359,13 +1359,18 @@
       "opening": [
         {
           "speaker": "npc:0",
-          "ko": "저는 종자 관련 단체들과 인연이 있습니다. 여기 건설 분야를 경험한 동료도 왔군요.",
-          "en": "I have ties to seed organizations. Here is a colleague with construction experience."
+          "ko": "종자 관련 단체의 요청은 제 경력과 관련된 질문입니다.",
+          "en": "The seed associations' questions relate to my background."
+        },
+        {
+          "speaker": "player",
+          "ko": "킹 의원이 운영했던 회사의 업종을 확인해 다른 방문단의 질문을 분리하겠습니다.",
+          "en": "I'll identify the industry of King's former company to distinguish the other delegation's questions."
         },
         {
           "speaker": "npc:1",
-          "ko": "의회에 오기 전 직접 회사를 운영했습니다. 지역 일자리를 이야기할 때도 여러 분야를 구분해야지요.",
-          "en": "I ran a company before Congress. Local employment spans different sectors."
+          "ko": "회사 운영 경험과 연방의원으로서의 책임은 별개입니다.",
+          "en": "Business experience and my responsibilities as a federal legislator are distinct."
         }
       ],
       "response": {
@@ -1399,16 +1404,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "박람회 기록에 두 분야를 따로 표시하면 좋겠습니다.",
-            "en": "Keep the two industries distinct in your fair notes."
+            "speaker": "npc:1",
+            "ko": "건설업입니다. 종자 산업과 건설업의 지역 일자리 문제를 각각 검토하세요.",
+            "en": "Construction. Consider employment issues in the seed and construction industries separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "킹 의원은 King Construction Company를 소유하고 운영했습니다.",
-            "en": "King owned and operated King Construction Company."
+            "ko": "킹 의원은 건설 회사를 운영했습니다. 제 종자 단체 경험과 혼동하지 마세요.",
+            "en": "King operated a construction company. Distinguish it from my seed association background."
           }
         ]
       },
@@ -1435,8 +1440,8 @@
         "en": "Indiana delegation budget briefing"
       },
       "context": {
-        "ko": "의회 예산 실습에서 역사적 기록을 토대로 재구성한 가상 만남입니다. 이전 장면 P01-1070 (2007-06-12): 과거 보좌진 예산위원회 경력을 바탕으로 현직 위원회의 역할을 비교합니다.",
-        "en": "A fictional encounter at a congressional budgeting practicum, grounded in the dated historical record. Earlier scene P01-1070 (2007-06-12): Following the earlier discussion of budget committee staff service, compare current committee roles."
+        "ko": "예산 총액과 개별 지출 관련 문의를 두 위원회로 분리한다.",
+        "en": "Separate questions about budget aggregates and individual appropriations."
       },
       "cast": [
         {
@@ -1456,19 +1461,19 @@
       ],
       "opening": [
         {
-          "speaker": "aide",
-          "ko": "두 위원회의 자료를 모두 받았습니다. 어느 쪽에 질문을 전달할까요?",
-          "en": "We've received materials from both committees. Where should we send the question?"
+          "speaker": "player",
+          "ko": "예산의 큰 틀에 관한 자료와 특정 사업 지출 자료를 함께 받았습니다. 두 위원회의 역할이 같은가요?",
+          "en": "I received materials on the overall budget and on spending for a particular program. Do the two committees have the same role?"
         },
         {
           "speaker": "npc:0",
-          "ko": "지난번 제 보좌진 경력을 살펴보셨죠. 이번에는 현직 위원으로서 세출위원회의 일을 설명하겠습니다.",
-          "en": "We discussed my staff career earlier. Today I'll explain my current work as an Appropriations member."
+          "ko": "저는 세출위원회 위원입니다. 개별 지출 법안과 예산의 큰 틀을 구분해야 합니다.",
+          "en": "I serve on Appropriations. Distinguish appropriations measures from the overall budget framework."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 다른 위원회에서 예산의 큰 틀을 다룹니다. 같은 주 의원이지만 역할이 다르죠.",
-          "en": "I work on the broader budget framework in another committee. We represent the same state, but our roles differ."
+          "ko": "제 위원회는 후자의 관점에서 자료를 검토합니다.",
+          "en": "My committee considers the latter perspective."
         }
       ],
       "response": {
@@ -1502,21 +1507,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 예산위원회와 세출위원회는 동일하지 않습니다.",
-            "en": "Good. Budget and Appropriations are not the same committee."
-          },
-          {
             "speaker": "npc:1",
-            "ko": "제가 맡은 위원회의 예산 자료도 함께 살펴봅시다.",
-            "en": "Let's also look at materials from my committee."
+            "ko": "예산위원회입니다. 예산의 틀과 개별 세출 법안을 별도로 추적하세요.",
+            "en": "Budget. Track the budget framework and individual appropriations measures separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:1",
-            "ko": "저는 예산위원회 소속이고 비슬로스키 의원은 세출위원회 소속입니다.",
-            "en": "I serve on Budget, while Visclosky serves on Appropriations."
+            "speaker": "npc:0",
+            "ko": "로키타 의원은 예산위원회, 저는 세출위원회 소속입니다. 같은 위원회가 아닙니다.",
+            "en": "Rokita serves on Budget and I serve on Appropriations. They are not the same committee."
           }
         ]
       },
@@ -1543,8 +1543,8 @@
         "en": "South Bend education forum"
       },
       "context": {
-        "ko": "사우스벤드 교육 간담회에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
-        "en": "A fictional encounter at a south bend education forum, grounded in the dated historical record."
+        "ko": "학교 운영 결정에 관한 민원의 정확한 담당 기관 확인",
+        "en": "Identify the body responsible for a school-governance question"
       },
       "cast": [
         {
@@ -1564,14 +1564,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "지역 학교의 운영 결정을 연방 교육부가 직접 내렸다는 설명을 확인하고 싶습니다.",
+          "en": "I want to check a claim that a local school's governance decision was made directly by the federal Education Department."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "미샤와카에서 학교 운영에 참여했던 시절이 생각납니다.",
-          "en": "This reminds me of my time in school governance in Mishawaka."
+          "ko": "미샤와카에서 1997~2001년에 제가 맡은 역할을 사례로 살펴보세요.",
+          "en": "Use my 1997–2001 Mishawaka role as an example."
         },
         {
           "speaker": "npc:1",
-          "ko": "학교의 운영 경험은 연방 의회의 교육 관련 권한과는 구별해야겠군요.",
-          "en": "School governance differs from federal congressional authority over education."
+          "ko": "지역 학교 운영과 연방 입법의 책임은 분리해야 합니다.",
+          "en": "Separate local school governance from federal legislative responsibility."
         }
       ],
       "response": {
@@ -1606,15 +1611,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "지역 교육기관에서의 활동도 의원의 이력에 포함됩니다.",
-            "en": "Local educational service is part of a member's background too."
+            "ko": "고등학교 이사회였습니다. 학교 운영 기관과 연방 입법기관을 구별하세요.",
+            "en": "A high school board. Distinguish school governance from federal lawmaking."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "도널리는 Marian High School 이사였고 2000~2001년 이사장을 맡았습니다.",
-            "en": "Donnelly served on Marian High School's board and was its president in 2000–2001."
+            "speaker": "npc:1",
+            "ko": "도널리 의원은 Marian High School 이사회에서 일했습니다. 연방 교육부 근무가 아닙니다.",
+            "en": "Donnelly served on the Marian High School board, not in the federal Education Department."
           }
         ]
       },
@@ -2337,8 +2342,8 @@
         "en": "Local small-business event"
       },
       "context": {
-        "ko": "소상공인 지역 행사에서 역사적 기록을 토대로 재구성한 가상 만남입니다.",
-        "en": "A fictional encounter at a local small-business event, grounded in the dated historical record."
+        "ko": "두 산업 방문단의 정책 건의",
+        "en": "Policy submissions from two industry delegations"
       },
       "cast": [
         {
@@ -2358,14 +2363,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "의회에 오기 전에는 외식업 단체에서 주정부 관련 업무도 맡았습니다.",
-          "en": "Before Congress, I worked on state relations for a restaurant industry association."
+          "speaker": "player",
+          "ko": "두 산업단체의 건의서를 의원들의 공식 입법 기록과 분리하고 있습니다. 에머슨 의원의 과거 주정부 관계 업무를 확인하겠습니다.",
+          "en": "I'm separating two industry associations' submissions from official legislative records. I'll identify Emerson's former state-relations role."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 경매 회사를 운영했습니다. 업종별 단체가 어떤 일을 하는지 비교해 볼 수 있겠군요.",
-          "en": "I ran an auction business. We can compare what different industry associations do."
+          "ko": "저의 경매 사업 경력과 에머슨 의원의 단체 경력은 다른 출처입니다.",
+          "en": "My auction business and Emerson's association background are separate sources."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "제가 근무했던 전국 단체의 이름을 확인한 후 건의와 실제 입법을 구분하세요.",
+          "en": "Identify the national organization where I worked, then distinguish advocacy from actual lawmaking."
         }
       ],
       "response": {
@@ -2400,15 +2410,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "산업 단체에서의 경험과 의원으로서의 공적 역할은 별개입니다.",
-            "en": "Industry association experience and a member's public role are separate."
+            "ko": "전국외식업협회입니다. 해당 업계의 건의 자료를 따로 검토하세요.",
+            "en": "The National Restaurant Association. Review the industry's submissions separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "에머슨은 National Restaurant Association에서 주정부 관계 및 풀뿌리 업무를 맡았습니다.",
-            "en": "Emerson directed state relations and grassroots programs for the National Restaurant Association."
+            "speaker": "npc:1",
+            "ko": "에머슨 의원은 전국외식업협회에서 일했습니다. 제 경매 사업이나 다른 산업단체의 기록을 합치지 마세요.",
+            "en": "Emerson worked for the National Restaurant Association. Do not merge my auction business or other associations into that record."
           }
         ]
       },
