@@ -34,19 +34,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "서로 다른 하원 지역구에서 같은 주의 청원 두 통이 왔습니다. 상원용 봉투를 몇 개로 나눌지 결정해야 합니다.",
+          "en": "Two petitions arrived from different House districts in the same state. I need to decide how to organize the Senate delivery."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "하원 지역구가 다른 주민들의 청원이군요.",
-          "en": "These petitions come from different House districts."
+          "ko": "하원 지역구 표시는 청원 원본에 그대로 두세요.",
+          "en": "Keep the House district labels on the original petitions."
         },
         {
           "speaker": "npc:1",
-          "ko": "상원에서는 두 사람 모두 주 전체를 대표합니다.",
-          "en": "Both of us represent the whole state in the Senate."
-        },
-        {
-          "speaker": "player",
-          "ko": "청원 전달처를 정하겠습니다.",
-          "en": "I'll choose where to deliver the petition."
+          "ko": "상원 대표 단위가 무엇인지 확인한 뒤 두 청원의 전달 경로를 정하세요.",
+          "en": "Determine the Senate constituency before routing both petitions."
         }
       ],
       "response": {
@@ -80,26 +80,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네, 그렇게 전달하면 됩니다.",
-            "en": "Yes, that is the right way to route it."
-          },
-          {
-            "speaker": "player",
-            "ko": "청원 전달처를 정하겠습니다.",
-            "en": "I'll choose where to deliver the petition."
+            "speaker": "npc:1",
+            "ko": "상원의 대표 단위는 주 전체입니다. 두 청원을 같은 주의 상원 대표단 자료에 연결하세요.",
+            "en": "The Senate constituency is the whole state. Link both petitions to the same state's Senate delegation file."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 청원 전달의 대표 단위는 주 전체입니다.",
-            "en": "There is a distinction to make here. The Senate constituency for these petitions is the whole state."
-          },
-          {
-            "speaker": "player",
-            "ko": "청원 전달처를 정하겠습니다.",
-            "en": "I'll choose where to deliver the petition."
+            "ko": "하원 지역구는 상원 대표 단위가 아닙니다. 주 전체를 대표하는 상원 자료로 잘못 분류한 청원을 옮기세요.",
+            "en": "A House district is not the Senate constituency. Move the misrouted petitions to the statewide Senate file."
           }
         ]
       },
@@ -280,19 +270,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "임시의장 선출 교착에 절충안이 나왔습니다.",
-          "en": "A compromise has emerged over the deadlocked chair election."
+          "speaker": "player",
+          "ko": "오늘의 본회의 가상 의사일정에 임시의장 이름이 비어 있습니다.",
+          "en": "Today's simulated floor agenda has no name in the president pro tempore field."
         },
         {
           "speaker": "npc:1",
-          "ko": "오늘 담당자와 이후 교대 계획을 구별합시다.",
-          "en": "Distinguish today's presiding officer from the later rotation."
+          "ko": "장기적인 직책 명부만 보지 말고 오늘 하루의 선출 기록을 확인하세요.",
+          "en": "Check the election record for this particular day rather than only the long-term office roster."
         },
         {
-          "speaker": "player",
-          "ko": "오늘의 회의 순서를 확정하죠.",
-          "en": "I'll settle today's agenda."
+          "speaker": "host",
+          "ko": "교착을 해결하기 위한 절충 일정에서 오늘의 담당자를 표시해 주세요.",
+          "en": "Identify today's presiding officer in the compromise schedule."
         }
       ],
       "response": {
@@ -326,26 +316,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
-            "en": "Good. We can move on to the next step."
-          },
-          {
-            "speaker": "player",
-            "ko": "오늘의 회의 순서를 확정하죠.",
-            "en": "I'll settle today's agenda."
+            "speaker": "host",
+            "ko": "오늘 하루의 임시의장은 베이컨입니다. 8월 14일 일정표에만 그 이름을 넣으세요.",
+            "en": "Bacon is the one-day president pro tempore. Enter his name on the August 14 agenda only."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 오늘 하루 임시의장을 맡는 사람은 베이컨입니다.",
-            "en": "There is a distinction to make here. The one-day president pro tempore today is Bacon."
-          },
-          {
-            "speaker": "player",
-            "ko": "오늘의 회의 순서를 확정하죠.",
-            "en": "I'll settle today's agenda."
+            "speaker": "npc:1",
+            "ko": "오늘의 담당자는 베이컨입니다. 교대 계획을 장기 임시의장 재임으로 처리한 일정표를 수정하세요.",
+            "en": "Bacon was today's officer. Correct any agenda that treated the rotation as a long-term tenure."
           }
         ]
       },
@@ -526,19 +506,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "표결 참석을 조정하는 새 역할이 생겼습니다.",
-          "en": "A new role coordinates attendance for votes."
+          "speaker": "player",
+          "ko": "당 회의와 본회의를 잇는 새 직책의 연락표를 작성합니다. 첫 담당자의 이름이 비어 있습니다.",
+          "en": "I'm preparing a contact sheet for the new role linking the party conference and the floor. The first officeholder's name is blank."
         },
         {
           "speaker": "npc:1",
-          "ko": "회의와 본회의의 연락을 맡는 직책입니다.",
-          "en": "It links the conference and floor."
+          "ko": "당의 원내 지도자와 출석·표결 조정을 맡는 원내총무는 별도 직책입니다.",
+          "en": "The party floor leader and the whip coordinating attendance and votes are separate offices."
         },
         {
-          "speaker": "player",
-          "ko": "연락 담당을 지정하죠.",
-          "en": "I'll identify the liaison."
+          "speaker": "host",
+          "ko": "1913년 원내총무 직책의 첫 재임자를 공식 명부에서 확인하세요.",
+          "en": "Find the first whip in the official 1913 leadership roster."
         }
       ],
       "response": {
@@ -572,26 +552,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네. 그 기준으로 일정을 정합시다.",
-            "en": "Yes. Let's use that basis to set the schedule."
-          },
-          {
-            "speaker": "player",
-            "ko": "연락 담당을 지정하죠.",
-            "en": "I'll identify the liaison."
+            "speaker": "host",
+            "ko": "루이스를 최초 원내총무로 표시하고 원내 지도자 연락표는 유지하세요.",
+            "en": "List Lewis as the first whip and keep the floor-leader contact separate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 최초의 정당 원내총무는 루이스입니다.",
-            "en": "There is a distinction to make here. The first Senate party whip is Lewis."
-          },
-          {
-            "speaker": "player",
-            "ko": "연락 담당을 지정하죠.",
-            "en": "I'll identify the liaison."
+            "speaker": "npc:1",
+            "ko": "최초 원내총무는 루이스입니다. 지도자나 이후 원내총무의 이름을 잘못 옮긴 연락표를 수정하세요.",
+            "en": "Lewis was the first whip. Correct the sheet that borrowed the name of a leader or later whip."
           }
         ]
       },
@@ -649,19 +619,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "베일리 의원이 사임했습니다.",
-          "en": "Senator Bailey has resigned."
+          "speaker": "player",
+          "ko": "베일리 사임으로 텍사스의 한 의석만 변경해야 합니다. 임명 기록을 받아 왔습니다.",
+          "en": "Bailey's resignation requires updating only one Texas seat. I have the appointment record."
         },
         {
           "speaker": "npc:1",
-          "ko": "다른 의석은 유지됩니다.",
-          "en": "The other seat remains unchanged."
+          "ko": "다른 의석의 재임 구간은 변경하지 마세요.",
+          "en": "Leave the other seat's service interval unchanged."
         },
         {
-          "speaker": "player",
-          "ko": "한 의석만 갱신하죠.",
-          "en": "I'll update only one seat."
+          "speaker": "host",
+          "ko": "공석 임명과 이후의 선거를 구별해 이번 임명자의 이름을 넣어 주세요.",
+          "en": "Enter this appointee's name, distinguishing the appointment from a later election."
         }
       ],
       "response": {
@@ -695,26 +665,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "정확합니다. 두 역할을 혼동하지 않겠군요.",
-            "en": "Correct. That keeps the roles distinct."
-          },
-          {
-            "speaker": "player",
-            "ko": "한 의석만 갱신하죠.",
-            "en": "I'll update only one seat."
+            "speaker": "host",
+            "ko": "존스턴을 베일리 공석의 임명자로 넣고 두 의석의 기록을 분리하세요.",
+            "en": "Enter Johnston as the appointee to Bailey's vacancy and retain separate seat records."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 베일리의 공석에 임명된 사람은 존스턴입니다.",
-            "en": "There is a distinction to make here. Bailey's appointed replacement is Johnston."
-          },
-          {
-            "speaker": "player",
-            "ko": "한 의석만 갱신하죠.",
-            "en": "I'll update only one seat."
+            "speaker": "npc:1",
+            "ko": "베일리 공석의 임명자는 존스턴입니다. 다른 의석 또는 후속 선거 기록에 붙인 이름을 원래 칸으로 돌리세요.",
+            "en": "Johnston was the appointee to Bailey's vacancy. Restore any name incorrectly moved from another seat or later election."
           }
         ]
       },
@@ -767,19 +727,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "3월에 바뀐 상원 규칙을 절차 카드에 반영하려 합니다.",
+          "en": "I'm updating the procedure card for the Senate rule changed in March."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "상원이 이번 달 토론 규칙을 바꿨습니다.",
-          "en": "The Senate changed its debate rule this month."
+          "ko": "토론을 마치는 절차와 법안에 대한 최종 표결은 별도 카드로 만들어야 합니다.",
+          "en": "Create separate cards for ending debate and voting on final passage."
         },
         {
           "speaker": "npc:1",
-          "ko": "토론 종결과 법안 통과는 다른 표결입니다.",
-          "en": "Ending debate and passing a bill are distinct votes."
-        },
-        {
-          "speaker": "player",
-          "ko": "두 절차를 분리하죠.",
-          "en": "I'll separate the procedures."
+          "ko": "새 토론 종료 절차의 공식 용어를 확인해 첫 카드에 넣어 주세요.",
+          "en": "Use the formal term for the new debate-ending procedure on the first card."
         }
       ],
       "response": {
@@ -813,26 +773,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 그 내용을 반영해 주세요.",
-            "en": "Good. Please incorporate that detail."
-          },
-          {
-            "speaker": "player",
-            "ko": "두 절차를 분리하죠.",
-            "en": "I'll separate the procedures."
+            "speaker": "npc:1",
+            "ko": "클로처를 토론종결 카드에 넣으세요. 이후 법안 가결은 별도 결과입니다.",
+            "en": "Label the debate-ending card cloture. Final passage remains a separate outcome."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 새 토론 종결 절차는 클로처입니다.",
-            "en": "There is a distinction to make here. The newly adopted debate-ending procedure is cloture."
-          },
-          {
-            "speaker": "player",
-            "ko": "두 절차를 분리하죠.",
-            "en": "I'll separate the procedures."
+            "ko": "새 절차는 클로처입니다. 인준이나 재의결을 토론종결로 표시한 카드를 수정하세요.",
+            "en": "The new procedure is cloture. Correct any card identifying confirmation or veto override as debate termination."
           }
         ]
       },
@@ -890,19 +840,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "1917년 토론종결 규칙 카드에 첫 실제 적용 사례를 연결할 문서가 필요합니다.",
+          "en": "I need a document linking the 1917 cloture-rule card to its first actual use."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "조약 심의에서 클로처가 처음 적용됐습니다.",
-          "en": "Cloture has been used for the first time in a treaty debate."
+          "ko": "조약 관련 토론종결 기록과 상원의 동의 표결을 별도로 확인하세요.",
+          "en": "Check the treaty cloture record separately from the Senate's consent vote."
         },
         {
           "speaker": "npc:1",
-          "ko": "종결 자체가 조약 비준을 뜻하지는 않습니다.",
-          "en": "Ending debate does not itself ratify a treaty."
-        },
-        {
-          "speaker": "player",
-          "ko": "비준 기록과 토론 기록을 구별하죠.",
-          "en": "I'll separate ratification from debate."
+          "ko": "1919년 첫 적용 당시 심의했던 조약의 제목을 확인해 주세요.",
+          "en": "Identify the treaty under debate at the first application in 1919."
         }
       ],
       "response": {
@@ -937,25 +887,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
-            "en": "That's right. Keep it in mind for our next meeting."
-          },
-          {
-            "speaker": "player",
-            "ko": "비준 기록과 토론 기록을 구별하죠.",
-            "en": "I'll separate ratification from debate."
+            "ko": "베르사유 조약의 클로처 적용 기록을 연결하세요. 토론종결을 조약 비준으로 표시하지 않습니다.",
+            "en": "Link the cloture record for the Treaty of Versailles without labeling it treaty ratification."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 그 조약은 베르사유 조약입니다.",
-            "en": "There is a distinction to make here. The treaty was the Treaty of Versailles."
-          },
-          {
-            "speaker": "player",
-            "ko": "비준 기록과 토론 기록을 구별하죠.",
-            "en": "I'll separate ratification from debate."
+            "speaker": "npc:1",
+            "ko": "첫 적용 조약은 베르사유 조약입니다. 다른 조약 문서에 붙인 토론종결 기록을 옮기세요.",
+            "en": "The treaty at first application was Versailles. Move the cloture record from the unrelated treaty file."
           }
         ]
       },
@@ -1006,19 +946,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "오늘 상원에서 선서했습니다.",
-          "en": "I took the Senate oath today."
-        },
-        {
           "speaker": "host",
-          "ko": "여성의 상원 진출 연표에 새 기록이 생겼습니다.",
-          "en": "There is a new entry in the timeline of women in the Senate."
+          "ko": "상원에 재임한 최초 여성의 기록과 선거에서 승리한 최초 여성의 기록을 구분하는 가상 전시입니다.",
+          "en": "This simulated exhibit distinguishes the first woman to serve in the Senate from the first woman to win a Senate election."
         },
         {
           "speaker": "player",
-          "ko": "오늘의 선서를 연표에 넣죠.",
-          "en": "I'll add today's oath to the timeline."
+          "ko": "1922년 11월 21일 선서 자료의 이름표를 확인하겠습니다.",
+          "en": "I'll verify the nameplate for the November 21, 1922 oath record."
         }
       ],
       "response": {
@@ -1052,26 +987,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네, 그렇게 전달하면 됩니다.",
-            "en": "Yes, that is the right way to route it."
-          },
-          {
-            "speaker": "player",
-            "ko": "오늘의 선서를 연표에 넣죠.",
-            "en": "I'll add today's oath to the timeline."
+            "speaker": "host",
+            "ko": "펠턴을 상원에 재임한 최초 여성으로 표시하세요. 선거 승리의 최초 사례는 별도 기록입니다.",
+            "en": "Label Felton as the first woman to serve. The first woman elected belongs in a separate entry."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 최초 여성 상원의원은 펠턴입니다.",
-            "en": "There is a distinction to make here. The first woman to serve in the Senate is Felton."
-          },
-          {
-            "speaker": "player",
-            "ko": "오늘의 선서를 연표에 넣죠.",
-            "en": "I'll add today's oath to the timeline."
+            "speaker": "host",
+            "ko": "최초 여성 상원의원은 펠턴입니다. 최초 재임과 최초 선거 승리를 같은 사건으로 처리한 전시 설명을 수정하세요.",
+            "en": "Felton was the first woman to serve in the Senate. Correct any exhibit that merged first service with first election victory."
           }
         ]
       },
@@ -1124,19 +1049,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "공화당과 민주당 원내 지도부가 협의합니다.",
-          "en": "Republican and Democratic floor leaders consult."
+          "speaker": "player",
+          "ko": "1926년 상원 원내 지도부 조직도에 다수당 지도자 항목이 누락됐습니다.",
+          "en": "The 1926 floor-leadership chart is missing the majority leader."
         },
         {
           "speaker": "npc:1",
-          "ko": "양측에 지도부가 있지만 다수당은 하나입니다.",
-          "en": "Both sides have leaders, but only one has the majority."
+          "ko": "소수당 지도부도 별도 직책으로 남겨야 합니다.",
+          "en": "Retain the minority leadership as a distinct office."
         },
         {
-          "speaker": "player",
-          "ko": "일정 협의 상대를 확인하죠.",
-          "en": "I'll identify the scheduling counterpart."
+          "speaker": "host",
+          "ko": "당시의 공식 지도부 명부로 다수당 지도자의 이름을 확인하세요.",
+          "en": "Check the official leadership roster for the majority leader on that date."
         }
       ],
       "response": {
@@ -1170,26 +1095,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "맞습니다. 그 구분을 유지합시다.",
-            "en": "Exactly. Keep that distinction clear."
-          },
-          {
-            "speaker": "player",
-            "ko": "일정 협의 상대를 확인하죠.",
-            "en": "I'll identify the scheduling counterpart."
+            "speaker": "host",
+            "ko": "커티스를 다수당 지도자로 표시하고 소수당 지도부의 항목은 별도로 유지하세요.",
+            "en": "Mark Curtis as majority leader and retain a separate minority-leadership entry."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1926년 다수당 지도자는 커티스입니다.",
-            "en": "There is a distinction to make here. The majority leader in 1926 is Curtis."
-          },
-          {
-            "speaker": "player",
-            "ko": "일정 협의 상대를 확인하죠.",
-            "en": "I'll identify the scheduling counterpart."
+            "speaker": "npc:1",
+            "ko": "1926년 다수당 지도자는 커티스입니다. 다른 시기의 지도자를 복사한 조직도를 수정하세요.",
+            "en": "Curtis was majority leader in 1926. Correct the chart if it borrowed a leader from another period."
           }
         ]
       },
@@ -1247,19 +1162,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "제 상원 임기는 작년에 끝났습니다.",
-          "en": "My Senate service ended last year."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "저는 현직입니다.",
-          "en": "I remain in office."
-        },
-        {
           "speaker": "player",
-          "ko": "현직과 전직을 구별하죠.",
-          "en": "I'll distinguish current and former members."
+          "ko": "1928년 뉴욕 대표단의 현재 재임 명부와 이전 재임 명부가 섞여 있습니다.",
+          "en": "The 1928 New York delegation file mixes the current and former members."
+        },
+        {
+          "speaker": "host",
+          "ko": "이 가상 명부 확인에서는 사람의 현재 화면 등장 여부가 아니라 실제 재임 기간을 사용합니다.",
+          "en": "In this simulated roster check, use the actual service interval, not whoever appears on screen."
         }
       ],
       "response": {
@@ -1293,26 +1203,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
-            "en": "Good. We can move on to the next step."
-          },
-          {
-            "speaker": "player",
-            "ko": "현직과 전직을 구별하죠.",
-            "en": "I'll distinguish current and former members."
+            "speaker": "host",
+            "ko": "코플랜드를 현직으로 분류하고 워즈워스의 이전 재임 기록은 보존하세요.",
+            "en": "Classify Copeland as sitting and preserve Wadsworth's previous service."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1928년 현직 뉴욕 상원의원은 코플랜드입니다.",
-            "en": "There is a distinction to make here. The sitting New York senator in 1928 is Copeland."
-          },
-          {
-            "speaker": "player",
-            "ko": "현직과 전직을 구별하죠.",
-            "en": "I'll distinguish current and former members."
+            "speaker": "host",
+            "ko": "1928년 제시된 현직 의원은 코플랜드입니다. 전직 명부에서 옮긴 이름을 되돌리고 날짜를 대조하세요.",
+            "en": "Copeland is the sitting member among these options in 1928. Restore the misplaced former-member entry and reconcile the dates."
           }
         ]
       },
@@ -1365,19 +1265,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "임명으로 시작했지만 이번 달 선거도 치렀습니다.",
-          "en": "My service began by appointment, but I faced an election this month."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "임명과 선거는 다른 자격 경로입니다.",
-          "en": "Appointment and election are distinct routes."
+          "speaker": "host",
+          "ko": "여성 상원의원 역사 전시에서 최초 재임과 최초 선거 승리를 나누어 기록합니다.",
+          "en": "The women-in-the-Senate exhibit separates first service from first election victory."
         },
         {
           "speaker": "player",
-          "ko": "임명과 선거 기록을 나란히 놓죠.",
-          "en": "I'll place the appointment and election records together."
+          "ko": "1932년 1월 선거 결과표를 보고 두 번째 유형의 최초 사례를 확인하겠습니다.",
+          "en": "I'll use the January 1932 election record to identify the first example of the second category."
+        },
+        {
+          "speaker": "npc:1",
+          "ko": "임명장과 선거 결과표는 서로 다른 근거입니다.",
+          "en": "An appointment certificate and election returns are different kinds of evidence."
         }
       ],
       "response": {
@@ -1411,26 +1311,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "그 기록이 정확합니다.",
-            "en": "That is the correct record."
-          },
-          {
-            "speaker": "player",
-            "ko": "임명과 선거 기록을 나란히 놓죠.",
-            "en": "I'll place the appointment and election records together."
+            "speaker": "host",
+            "ko": "캐러웨이를 상원 선거에서 처음 승리한 여성으로 표시하고 임명 기록은 별도로 보존하세요.",
+            "en": "Label Caraway as the first woman to win a Senate election and preserve her appointment separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 상원 선거에서 처음 승리한 여성은 캐러웨이입니다.",
-            "en": "There is a distinction to make here. The first woman to win a Senate election is Caraway."
-          },
-          {
-            "speaker": "player",
-            "ko": "임명과 선거 기록을 나란히 놓죠.",
-            "en": "I'll place the appointment and election records together."
+            "speaker": "npc:1",
+            "ko": "최초 선거 승리는 캐러웨이입니다. 펠턴의 최초 재임 사례와 섞인 전시 표지를 분리하세요.",
+            "en": "Caraway was the first woman to win a Senate election. Separate that label from Felton's first-service entry."
           }
         ]
       },
@@ -1483,19 +1373,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "새 의회에서는 민주당이 다수입니다.",
-          "en": "Democrats have the majority in the new Congress."
+          "speaker": "player",
+          "ko": "새 의회의 원내 지도부 표를 이전 회기 표와 비교하려 합니다.",
+          "en": "I need to compare the new Congress's floor-leadership chart with the preceding Congress."
         },
         {
           "speaker": "npc:1",
-          "ko": "공화당은 소수당 지도부를 유지합니다.",
-          "en": "Republicans retain minority leadership."
+          "ko": "다수당과 소수당 직책을 이름만으로 이어 붙이지 마세요.",
+          "en": "Do not transfer majority and minority offices merely by matching names."
         },
         {
-          "speaker": "player",
-          "ko": "새 의사일정을 준비하죠.",
-          "en": "I'll prepare the new agenda."
+          "speaker": "host",
+          "ko": "1933년 새 의회의 공식 다수당 지도자를 확인하세요.",
+          "en": "Verify the new Congress's official majority leader in 1933."
         }
       ],
       "response": {
@@ -1529,26 +1419,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네. 그 기준으로 일정을 정합시다.",
-            "en": "Yes. Let's use that basis to set the schedule."
-          },
-          {
-            "speaker": "player",
-            "ko": "새 의사일정을 준비하죠.",
-            "en": "I'll prepare the new agenda."
+            "speaker": "host",
+            "ko": "로빈슨을 다수당 지도자로 등록하고 이전 회기의 지도부 표를 별도로 보존하세요.",
+            "en": "Enter Robinson as majority leader and preserve the preceding Congress's chart separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 다수당 지도자는 로빈슨입니다.",
-            "en": "There is a distinction to make here. The majority leader is Robinson."
-          },
-          {
-            "speaker": "player",
-            "ko": "새 의사일정을 준비하죠.",
-            "en": "I'll prepare the new agenda."
+            "speaker": "npc:1",
+            "ko": "새 다수당 지도자는 로빈슨입니다. 이전 회기의 다수당·소수당 직책을 복사한 표를 바로잡으세요.",
+            "en": "The new majority leader was Robinson. Correct any chart that copied earlier majority or minority offices."
           }
         ]
       },
@@ -1847,19 +1727,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "로빈슨 의원 사망으로 지도부가 바뀌었습니다.",
-          "en": "Senator Robinson's death changed the leadership."
+          "speaker": "player",
+          "ko": "로빈슨 사망 이후 원내 지도부 조직도를 새로 작성하려 합니다.",
+          "en": "I need to update the floor-leadership chart after Robinson's death."
         },
         {
           "speaker": "npc:1",
-          "ko": "소수당 지도부는 그대로입니다.",
-          "en": "Minority leadership is unchanged."
+          "ko": "소수당 지도부의 기존 항목은 그대로 두고 변경된 다수당 직책만 확인하세요.",
+          "en": "Retain minority leadership and verify only the changed majority office."
         },
         {
-          "speaker": "player",
-          "ko": "지도부 연락처를 갱신하죠.",
-          "en": "I'll update the leadership contact."
+          "speaker": "host",
+          "ko": "공식 지도부 승계 기록에서 로빈슨의 후임을 찾아 주세요.",
+          "en": "Identify Robinson's successor in the official leadership record."
         }
       ],
       "response": {
@@ -1893,26 +1773,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
-            "en": "That's right. Keep it in mind for our next meeting."
-          },
-          {
-            "speaker": "player",
-            "ko": "지도부 연락처를 갱신하죠.",
-            "en": "I'll update the leadership contact."
+            "speaker": "host",
+            "ko": "바클리를 후임 다수당 지도자로 표시하고 로빈슨의 이전 재임 구간을 보존하세요.",
+            "en": "List Barkley as the succeeding majority leader and preserve Robinson's earlier tenure."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 로빈슨의 후임 다수당 지도자는 바클리입니다.",
-            "en": "There is a distinction to make here. Robinson's successor as majority leader is Barkley."
-          },
-          {
-            "speaker": "player",
-            "ko": "지도부 연락처를 갱신하죠.",
-            "en": "I'll update the leadership contact."
+            "speaker": "npc:1",
+            "ko": "후임은 바클리입니다. 소수당 지도자를 다수당 후임으로 잘못 연결한 조직도를 수정하세요.",
+            "en": "Barkley succeeded Robinson. Correct any chart that linked the minority leader as the majority successor."
           }
         ]
       },
@@ -2081,19 +1951,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "보라 의원이 지난달 사망했습니다.",
-          "en": "Senator Borah died last month."
+          "speaker": "player",
+          "ko": "보라 사망으로 생긴 아이다호 공석의 승계 계보를 확인합니다.",
+          "en": "I'm checking the succession lineage for the Idaho vacancy created by Borah's death."
         },
         {
           "speaker": "npc:1",
-          "ko": "다른 의석의 임기는 바뀌지 않습니다.",
-          "en": "The other seat's term does not change."
+          "ko": "다른 아이다호 의석은 변경하지 마세요.",
+          "en": "Do not change the other Idaho seat."
         },
         {
-          "speaker": "player",
-          "ko": "선거 결과로 기록하지 않겠습니다.",
-          "en": "I won't label this an election result."
+          "speaker": "host",
+          "ko": "1940년 임명 자료에서 공석을 맡은 사람을 확인하세요.",
+          "en": "Identify the appointee from the 1940 appointment record."
         }
       ],
       "response": {
@@ -2127,26 +1997,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "맞습니다. 그 구분을 유지합시다.",
-            "en": "Exactly. Keep that distinction clear."
-          },
-          {
-            "speaker": "player",
-            "ko": "선거 결과로 기록하지 않겠습니다.",
-            "en": "I won't label this an election result."
+            "speaker": "host",
+            "ko": "토머스를 보라 사망 후 임명된 의원으로 연결하고 선거 이력은 별도로 남겨 주세요.",
+            "en": "Link Thomas as the appointee after Borah's death and keep election records separate."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 보라 사망 후 임명된 사람은 토머스입니다.",
-            "en": "There is a distinction to make here. The senator appointed after Borah's death is Thomas."
-          },
-          {
-            "speaker": "player",
-            "ko": "선거 결과로 기록하지 않겠습니다.",
-            "en": "I won't label this an election result."
+            "speaker": "npc:1",
+            "ko": "임명된 사람은 토머스입니다. 다른 아이다호 의석의 현직을 공석 후임으로 잘못 넣은 계보를 복원하세요.",
+            "en": "Thomas was appointed. Restore any lineage that incorrectly placed the other Idaho incumbent into the vacancy."
           }
         ]
       },
@@ -2199,19 +2059,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "셰퍼드 의원 사망으로 임명이 이루어졌습니다.",
-          "en": "An appointment followed Senator Sheppard's death."
+          "speaker": "player",
+          "ko": "셰퍼드 사망 후 텍사스 공석을 채운 첫 기록을 작성하고 있습니다.",
+          "en": "I'm entering the first record filling the Texas vacancy after Sheppard's death."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 의석은 공석과 별개입니다.",
-          "en": "My seat is separate from that vacancy."
+          "ko": "다른 텍사스 의석의 재임 기록은 유지하세요.",
+          "en": "Retain the other Texas seat's service record."
         },
         {
-          "speaker": "player",
-          "ko": "후임 선출 절차를 추적하죠.",
-          "en": "I'll follow the succession process."
+          "speaker": "host",
+          "ko": "현재 확인된 임명 후임을 기록하고 이후 선거 결과는 아직 넣지 마세요.",
+          "en": "Record the confirmed appointee and leave any later election outcome unentered."
         }
       ],
       "response": {
@@ -2245,26 +2105,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 이제 다음 단계로 넘어가죠.",
-            "en": "Good. We can move on to the next step."
-          },
-          {
-            "speaker": "player",
-            "ko": "후임 선출 절차를 추적하죠.",
-            "en": "I'll follow the succession process."
+            "speaker": "host",
+            "ko": "휴스턴을 셰퍼드의 임명 후임으로 추가하세요. 이후의 승계는 새로운 기록이 필요합니다.",
+            "en": "Add Houston as Sheppard's appointed successor. Later succession requires a new record."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 셰퍼드의 임명 후임은 휴스턴입니다.",
-            "en": "There is a distinction to make here. Sheppard's appointed successor is Houston."
-          },
-          {
-            "speaker": "player",
-            "ko": "후임 선출 절차를 추적하죠.",
-            "en": "I'll follow the succession process."
+            "speaker": "npc:1",
+            "ko": "임명 후임은 휴스턴입니다. 다른 재임자나 아직 확인하지 않은 선거 결과로 공석을 채운 표를 수정하세요.",
+            "en": "The appointee was Houston. Correct any table that filled the vacancy with another incumbent or unconfirmed election result."
           }
         ]
       },
@@ -2317,19 +2167,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "지난달 상원 임기가 시작됐습니다.",
-          "en": "My Senate service began last month."
+          "speaker": "player",
+          "ko": "8월에 새로 시작된 텍사스 상원 재임 구간을 이전 임명 기록과 연결하겠습니다.",
+          "en": "I'll link the Texas Senate service interval beginning in August to the preceding appointment history."
         },
         {
           "speaker": "npc:1",
-          "ko": "특별선거 의석과 제 의석은 다릅니다.",
-          "en": "The special-election seat and mine are separate."
+          "ko": "특별선거 의석과 나머지 텍사스 의석은 별도로 유지하세요.",
+          "en": "Keep the special-election seat separate from the other Texas seat."
         },
         {
-          "speaker": "player",
-          "ko": "새 의석 주인을 연결하죠.",
-          "en": "I'll link the new seat holder."
+          "speaker": "host",
+          "ko": "1941년 8월 실제로 진입한 의원의 이름을 확인하세요.",
+          "en": "Identify the senator who actually entered in August 1941."
         }
       ],
       "response": {
@@ -2363,26 +2213,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "그 기록이 정확합니다.",
-            "en": "That is the correct record."
-          },
-          {
-            "speaker": "player",
-            "ko": "새 의석 주인을 연결하죠.",
-            "en": "I'll link the new seat holder."
+            "speaker": "host",
+            "ko": "오대니얼을 8월 진입자로 연결하고 앞선 공석 임명 이력을 지우지 마세요.",
+            "en": "Link O'Daniel as the August entrant without deleting the earlier appointment history."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1941년 8월 텍사스 상원에 진입한 사람은 오대니얼입니다.",
-            "en": "There is a distinction to make here. The Texan entering the Senate in August 1941 is O'Daniel."
-          },
-          {
-            "speaker": "player",
-            "ko": "새 의석 주인을 연결하죠.",
-            "en": "I'll link the new seat holder."
+            "speaker": "npc:1",
+            "ko": "8월 진입자는 오대니얼입니다. 앞선 재임자와 새로운 진입자를 같은 기간으로 합친 기록을 분리하세요.",
+            "en": "O'Daniel was the August entrant. Separate the earlier officeholder and new entrant if their terms were merged."
           }
         ]
       },
@@ -2435,19 +2275,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 계속 Class III 의석에 있습니다.",
-          "en": "I continue to hold the Class III seat."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "저는 이번 1월 다른 의석의 임기를 시작했습니다.",
-          "en": "I began the other seat's term this January."
-        },
-        {
           "speaker": "player",
-          "ko": "신임 의원을 소개하죠.",
-          "en": "I'll introduce the new member."
+          "ko": "1943년 아칸소 대표단 명부에서 계속 재임한 의석과 새 임기가 시작된 의석을 구분합니다.",
+          "en": "I'm distinguishing the continuing Arkansas seat from the seat with a new term in 1943."
+        },
+        {
+          "speaker": "host",
+          "ko": "이전의 Class III 기록을 보존하면서 새 진입자의 이름을 공식 재임 자료에서 확인하세요.",
+          "en": "Retain the earlier Class III record while verifying the new entrant from the service roster."
         }
       ],
       "response": {
@@ -2481,26 +2316,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네. 그 기준으로 일정을 정합시다.",
-            "en": "Yes. Let's use that basis to set the schedule."
-          },
-          {
-            "speaker": "player",
-            "ko": "신임 의원을 소개하죠.",
-            "en": "I'll introduce the new member."
+            "speaker": "host",
+            "ko": "매클렐런을 새 의원으로 추가하고 캐러웨이의 계속 재임하는 의석은 보존하세요.",
+            "en": "Add McClellan as the new senator and preserve Caraway's continuing seat."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1943년 새 아칸소 상원의원은 매클렐런입니다.",
-            "en": "There is a distinction to make here. The new Arkansas senator in 1943 is McClellan."
-          },
-          {
-            "speaker": "player",
-            "ko": "신임 의원을 소개하죠.",
-            "en": "I'll introduce the new member."
+            "speaker": "host",
+            "ko": "1943년 새 아칸소 의원은 매클렐런입니다. 계속 재임한 의석까지 교체한 명부를 원상 복구하세요.",
+            "en": "McClellan was the new Arkansas senator in 1943. Restore any roster that also replaced the continuing seat."
           }
         ]
       },
@@ -2553,19 +2378,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "다수당 지도부는 계속 업무를 맡습니다.",
-          "en": "Majority leadership continues its work."
-        },
-        {
-          "speaker": "npc:1",
-          "ko": "올해 공화당 원내 지도자가 바뀌었습니다.",
-          "en": "Republican floor leadership changed this year."
-        },
-        {
           "speaker": "player",
-          "ko": "전시 회의 연락처를 바꾸죠.",
-          "en": "I'll update the wartime meeting contact."
+          "ko": "1944년 6월의 상원 지도부 연락표를 이전 회기의 표와 비교하고 있습니다.",
+          "en": "I'm comparing the June 1944 Senate leadership sheet with its predecessor."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "다수당 지도부의 기록은 유지하되 바뀐 소수당 직책을 별도로 확인하세요.",
+          "en": "Retain the majority leadership entry while verifying the changed minority office."
+        },
+        {
+          "speaker": "host",
+          "ko": "6월의 공식 소수당 지도자 이름으로 연락표를 갱신하세요.",
+          "en": "Update the sheet with the official minority leader for June."
         }
       ],
       "response": {
@@ -2599,26 +2424,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "정확합니다. 두 역할을 혼동하지 않겠군요.",
-            "en": "Correct. That keeps the roles distinct."
-          },
-          {
-            "speaker": "player",
-            "ko": "전시 회의 연락처를 바꾸죠.",
-            "en": "I'll update the wartime meeting contact."
+            "speaker": "host",
+            "ko": "화이트를 1944년 6월 소수당 지도자로 표시하고 이전 명부를 날짜별로 보관하세요.",
+            "en": "List White as minority leader in June 1944 and retain the earlier roster by date."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1944년 6월 소수당 지도자는 화이트입니다.",
-            "en": "There is a distinction to make here. The minority leader in June 1944 is White."
-          },
-          {
-            "speaker": "player",
-            "ko": "전시 회의 연락처를 바꾸죠.",
-            "en": "I'll update the wartime meeting contact."
+            "ko": "당시 소수당 지도자는 화이트입니다. 이전 지도자를 계속 재임자로 표시한 연락표를 수정하세요.",
+            "en": "White was minority leader then. Correct the sheet that retained an earlier leader as incumbent."
           }
         ]
       },
@@ -2676,19 +2491,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "군 복무를 마치고 지난달 선서했습니다.",
-          "en": "After leaving the military, I took the Senate oath last month."
+          "speaker": "player",
+          "ko": "1945년 캘리포니아 상원의 임명에 따른 진입 기록을 확인합니다.",
+          "en": "I'm checking the 1945 California Senate entry by appointment."
         },
         {
           "speaker": "npc:1",
-          "ko": "캘리포니아에는 두 상원 의석이 있습니다.",
-          "en": "California has two Senate seats."
+          "ko": "임명장과 선서 자료의 날짜는 각각 보존하세요.",
+          "en": "Retain the appointment and oath dates separately."
         },
         {
-          "speaker": "player",
-          "ko": "임명일과 선서일을 구별하죠.",
-          "en": "I'll distinguish appointment and oath dates."
+          "speaker": "host",
+          "ko": "당시 임명으로 진입한 의원의 이름을 공식 기록에서 확인하세요.",
+          "en": "Identify the senator who entered through appointment from the official record."
         }
       ],
       "response": {
@@ -2722,26 +2537,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "좋습니다. 그 내용을 반영해 주세요.",
-            "en": "Good. Please incorporate that detail."
-          },
-          {
-            "speaker": "player",
-            "ko": "임명일과 선서일을 구별하죠.",
-            "en": "I'll distinguish appointment and oath dates."
+            "speaker": "host",
+            "ko": "놀랜드를 1945년 임명 진입자로 등록하고 이전 의석 재임자와 혼동하지 마세요.",
+            "en": "Register Knowland as the 1945 appointee without conflating him with the previous seat holder."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 1945년 임명으로 상원에 진입한 사람은 놀랜드입니다.",
-            "en": "There is a distinction to make here. The appointee who entered the Senate in 1945 is Knowland."
-          },
-          {
-            "speaker": "player",
-            "ko": "임명일과 선서일을 구별하죠.",
-            "en": "I'll distinguish appointment and oath dates."
+            "speaker": "npc:1",
+            "ko": "임명으로 진입한 의원은 놀랜드입니다. 다른 캘리포니아 의원의 경력을 이 임명 기록에 붙이지 마세요.",
+            "en": "Knowland entered by appointment. Remove any other California senator's career from this appointment record."
           }
         ]
       },
@@ -2794,19 +2599,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "상원 정규 임기가 시작되는 가상 기준일을 1915년으로 잡았습니다. 다음 정규 임기 시작 연도를 계산하려 합니다.",
+          "en": "For a simulated calendar, I set a regular Senate term's starting year to 1915. I need to calculate the next regular term start."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "같은 주지만 정규 선거를 동시에 치르지 않습니다.",
-          "en": "We represent one state but face different regular elections."
+          "ko": "공석을 채우는 남은 임기와 정규 임기를 혼동하지 마세요.",
+          "en": "Do not confuse the remainder of a vacant term with a regular term."
         },
         {
           "speaker": "npc:1",
-          "ko": "클래스가 임기 시작 시점을 나눕니다.",
-          "en": "Classes stagger the start of terms."
-        },
-        {
-          "speaker": "player",
-          "ko": "장기 방문 달력을 만들죠.",
-          "en": "I'll create a long-term visit calendar."
+          "ko": "정규 임기의 길이를 적용해 이 가상 달력을 완성하세요.",
+          "en": "Apply the regular term length to complete the simulated calendar."
         }
       ],
       "response": {
@@ -2840,26 +2645,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "맞습니다. 다음에 만날 때도 기억해 주세요.",
-            "en": "That's right. Keep it in mind for our next meeting."
-          },
-          {
-            "speaker": "player",
-            "ko": "장기 방문 달력을 만들죠.",
-            "en": "I'll create a long-term visit calendar."
+            "speaker": "npc:1",
+            "ko": "정규 임기는 6년입니다. 1915년을 기준으로 한 가상 달력의 다음 시작 연도를 1921년으로 두세요.",
+            "en": "A regular term lasts six years. Set 1921 as the next start year in the simulated calendar beginning in 1915."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "여기서 구별할 점이 있습니다. 정규 상원 임기는 6년입니다.",
-            "en": "There is a distinction to make here. A regular Senate term lasts six years."
-          },
-          {
-            "speaker": "player",
-            "ko": "장기 방문 달력을 만들죠.",
-            "en": "I'll create a long-term visit calendar."
+            "ko": "정규 임기는 6년입니다. 특별선거의 잔여 임기나 하원 임기와 혼동한 가상 달력을 다시 계산하세요.",
+            "en": "A regular Senate term lasts six years. Recalculate the simulation if you confused it with a remaining vacancy term or a House term."
           }
         ]
       },
@@ -2912,19 +2707,19 @@
       ],
       "opening": [
         {
+          "speaker": "player",
+          "ko": "1917년 규칙을 적용하는 가상 표결입니다. 출석해 투표한 의원이 90명이라면 어떤 기준을 써야 합니까?",
+          "en": "This is a simulated vote applying the 1917 rule. With 90 senators present and voting, what threshold applies?"
+        },
+        {
           "speaker": "npc:0",
-          "ko": "새 종결 규칙을 적용하는 연습입니다.",
-          "en": "We are practicing the new cloture rule."
+          "ko": "법안 자체의 가결과 토론종결은 다른 절차입니다.",
+          "en": "Final passage and cloture are distinct procedures."
         },
         {
           "speaker": "npc:1",
-          "ko": "법안 가결에 필요한 표와 혼동하지 맙시다.",
-          "en": "Do not confuse it with votes needed to pass a bill."
-        },
-        {
-          "speaker": "player",
-          "ko": "필요한 표를 계산하죠.",
-          "en": "I'll calculate the required votes."
+          "ko": "당시 규칙의 분모와 비율을 적용해 필요한 표를 계산해 주세요.",
+          "en": "Apply the denominator and fraction in the rule at that date to calculate the required votes."
         }
       ],
       "response": {
@@ -2958,26 +2753,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:0",
-            "ko": "네, 그렇게 전달하면 됩니다.",
-            "en": "Yes, that is the right way to route it."
-          },
-          {
-            "speaker": "player",
-            "ko": "필요한 표를 계산하죠.",
-            "en": "I'll calculate the required votes."
+            "speaker": "npc:1",
+            "ko": "출석하여 투표한 의원의 3분의 2가 필요합니다. 가상 표결의 90명 중 60표가 문턱입니다.",
+            "en": "Two-thirds of senators present and voting are required. In the simulated vote, the threshold is 60 out of 90."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1917년 규칙에서는 출석하여 투표한 의원의 3분의 2가 필요합니다.",
-            "en": "The cloture threshold under the 1917 rule is two-thirds of senators present and voting."
-          },
-          {
-            "speaker": "player",
-            "ko": "필요한 표를 계산하죠.",
-            "en": "I'll calculate the required votes."
+            "ko": "1917년 기준은 출석·투표자의 3분의 2입니다. 가상 90명에 단순 과반이나 다른 비율을 적용한 계산표를 수정하세요.",
+            "en": "The 1917 threshold is two-thirds of those present and voting. Correct the simulation if it used a simple majority or another fraction."
           }
         ]
       },
