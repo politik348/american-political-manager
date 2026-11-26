@@ -64,3 +64,6 @@ export function startSuggested(s,c,people,date,slot,place,id){
  const v=suggestPilot(s,c,people,date,slot,place);if(!v||v.id!==id||!startPilot(s,c,id,date))return false;
  const b=pilotBook(s);(b.appointments||(b.appointments={}))[slot]=id;b.active.kind='appointment-archive';return true;
 }
+
+// A display-size derivative of the exact approved Wikimedia file, not a new portrait.
+export function portraitUrls(p){const primary=p.url;if(!p.displayDerivative)return [primary];try{const u=new URL(primary);const match=u.pathname.match(/^\/wikipedia\/commons\/([a-f0-9])\/([a-f0-9]{2})\/([^/]+\.(?:jpg|jpeg|png))$/i);if(u.hostname!=='upload.wikimedia.org'||!match)return [primary];const [,a,b,file]=match,thumb=u.origin+'/wikipedia/commons/thumb/'+a+'/'+b+'/'+file+'/330px-'+file;return [...new Set([thumb,primary,u.origin+u.pathname])]}catch{return [primary]}}
