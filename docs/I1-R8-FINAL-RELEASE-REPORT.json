@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "round": "I1-B R8",
+  "releaseDecision": "HOLD_PENDING_FINAL_SAME_HEAD_CI_AND_HQ",
+  "baseR7": "0a535db274e234e8afa68734082fd6f0ec86994c",
+  "identitySourceCommit": "bd3f52aac2094cde3f71ebec3c5b6d0388f5efa8",
+  "identity": {
+    "prior227": 227,
+    "applied157": 157,
+    "expectedSlots": 4295,
+    "sourceFiles": 26,
+    "exactSourceSlots": 153,
+    "rebasedSlots": 4,
+    "finalIndexBlob": "1eaf1f955f2fa6ff79139ea7f5ab9d62fcc19fff",
+    "r2IndexBlob": "e5c0c1b34d25fcdb4ea4bf6ed1a26dc5bdbe8aff",
+    "ledgerFiles": [
+      "docs/I1-R8-D1-A.json",
+      "docs/I1-R8-D1-B.json",
+      "docs/I1-R8-D1-C.json",
+      "docs/I1-R8-D1-D.json",
+      "docs/I1-R8-D1-E.json"
+    ]
+  },
+  "p01": {
+    "proposalCount": 1153,
+    "priorUniqueChangeLedger": 1104,
+    "uncreditedPriorityCount": 49,
+    "classification": "pending actual CI output of read-only R8 comparison"
+  },
+  "p02": {
+    "latestExact": 388,
+    "partial": 93,
+    "other": 19,
+    "unchanged": true
+  },
+  "photos": {
+    "priorVerifiedR7": {
+      "historical": 37,
+      "notebook": 28,
+      "browserRun": 45746691109
+    },
+    "changes": 0,
+    "lodge": "approved remote and fallback retained"
+  },
+  "chains": 90,
+  "recommendation": {
+    "prior": 2001,
+    "intermediateActual": 2115,
+    "final": "pending same-head CI with role exclusions"
+  },
+  "auditIntegration": "docs/I1-R8-AUDIT-PR-INTEGRATION.json",
+  "mainAtInspection": "8c2f0b6232ffca187f8a4ba55aeb34c3abd26c92",
+  "deployment": {
+    "entry": "https://politik348.github.io/american-political-manager/",
+    "alternate": "https://politik348.github.io/american-political-manager/start.html",
+    "legacy": "https://politik348.github.io/american-political-manager/play-17.8.html",
+    "method": "GitHub Pages main / root after HQ approval, static HTTPS; documented in DEPLOY.md. Pages enabled; exact current deployment config not independently read.",
+    "status": "not deployed by R8; V17.9 RC entry files use i1-pilot-app.js"
+  },
+  "ci": {
+    "status": "pending final commit",
+    "checks": "https://github.com/politik348/american-political-manager/pull/3/checks"
+  },
+  "risks": [
+    "External images remain network-dependent; fallback retained",
+    "R7 photos validated, R8 Chromium must verify on final head",
+    "No new historical audit or content development; editorial holds not a release blocker",
+    "HQ approval and final CI required"
+  ],
+  "prohibitions": {
+    "mergeMain": false,
+    "deploy": false,
+    "p03": false,
+    "newDevelopment": false
+  }
+}
