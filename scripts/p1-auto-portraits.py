@@ -176,8 +176,13 @@ def collect(p,records):
             if not surname or surname not in evidence.split(): raise Hold('portrait description lacks surname')
             if BAD.search(m['fileTitle']) or method not in ('P18','NARA-confirmed Commons file'): raise Hold('requires individual-portrait review')
             # A linked P18 is a candidate, not independent visual confirmation.
-            url=i.get('thumburl') or i['url']
-            if urlparse(url).hostname!='upload.wikimedia.org' or urlparse(url).scheme!='https': raise Hold('unexpected download host')
+            # Commons sometimes returns thumbnail error or alternate URLs. Prefer only validated HTTPS upload URLs; fall back to the original when the thumbnail is unusable.
+            def trusted(u):
+                v=urlparse(u or '')
+                return v.scheme=='https' and v.hostname=='upload.wikimedia.org' and v.path.startswith('/wikipedia/commons/')
+            urls=[u for u in (i.get('thumburl'),i.get('url')) if trusted(u)]
+            if not urls: raise Hold('unexpected download host: thumb='+str(urlparse(i.get('thumburl') or '').hostname)+', original='+str(urlparse(i.get('url') or '').hostname))
+            url=urls[0]
             raw=request(url,binary=True)
             im=Image.open(io.BytesIO(raw)); im.verify()
             im=ImageOps.exif_transpose(Image.open(io.BytesIO(raw))).convert('RGB')
