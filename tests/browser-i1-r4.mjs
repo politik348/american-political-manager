@@ -80,6 +80,7 @@ try{
   console.log('V18 cache inventory '+JSON.stringify(result));
   for(const [p,ok] of Object.entries(result.checks))assert.equal(ok,true,'Missing cache entry '+p);
   assert.equal(result.packCount,70);assert.deepEqual(result.missing,[]);assert.ok(result.keys.includes('apm-portraits-v1'));
+  assert.deepEqual(result.keys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate2'],'old shell caches must actually be removed');
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
   assert.equal(offline.ok,true);assert.equal(offline.parts,103);
@@ -91,6 +92,7 @@ try{
   console.log('V18 offline registry '+JSON.stringify(offlineNews));
   await page.reload();await page.locator('[data-action="lobby:career"]').waitFor({timeout:45000});
   const local=await page.evaluate(async()=>{const m=await (await fetch('./data/dialogue-packs/i1-index.json')).json();return Promise.all(m.photos.filter(p=>p.localPath).map(async p=>{const r=await fetch(p.localPath);return {id:p.id,ok:r.ok,bytes:(await r.arrayBuffer()).byteLength}}))});assert.ok(local.some(p=>p.id==='L000004'&&p.ok&&p.bytes===1007628),'local original must survive offline');console.log('I1 R5 offline local images '+JSON.stringify(local));
-  console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:true,portraitCachePreserved:true,offlineManifest:offline.parts}));
+  const finalKeys=await page.evaluate(()=>caches.keys());assert.deepEqual(finalKeys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate2']);assert.ok(finalKeys.includes('apm-portraits-v1'));
+  console.log('I1 R4 service worker '+JSON.stringify({oldShellRemoved:finalKeys.filter(k=>k.startsWith('apm-shell-')).length===1&&finalKeys.includes('apm-shell-v18-release-candidate2'),portraitCachePreserved:finalKeys.includes('apm-portraits-v1'),offlineManifest:offline.parts,finalKeys}));
  }finally{await context.close()}
 }finally{await browser.close()}
