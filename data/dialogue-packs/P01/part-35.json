@@ -291,8 +291,8 @@
         "en": "House procedure staff reunion"
       },
       "context": {
-        "ko": "하원 의사규칙 담당자 재회에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
-        "en": "At the house procedure staff reunion, the conversation draws on the actual political record."
+        "ko": "방문객이 하원 규정에 관한 문의의 담당 직책을 구분한다.",
+        "en": "A visitor distinguishes the staff office involved in House procedural questions."
       },
       "cast": [
         {
@@ -306,19 +306,19 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "의사 절차에 관한 문의가 있습니다. 선출직 의원과 절차 자문을 맡은 직원의 역할을 구별해 봅시다.",
-          "en": "A procedural inquiry requires distinguishing elected members from staff who advise on procedure."
+          "ko": "방문객이 하원의장과 규정에 관한 조언을 하는 직원을 같은 사람으로 알고 있습니다.",
+          "en": "A visitor thinks the Speaker and the staff official who advises on rules are the same person."
         },
         {
           "speaker": "npc:0",
-          "ko": "1923년 의원이 되기 전에는 65대 하원에서 절차 자문을 맡았습니다.",
-          "en": "Before becoming a member in 1923, I advised on procedure in the 65th House."
+          "ko": "제가 의원이 되기 전 제65대 의회에서 맡았던 직책을 사례로 설명해 주세요.",
+          "en": "Use the position I held in the 65th Congress before becoming a member as an example."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1917~1919년 캐넌의 직책은 하원 {{blank}}였습니다.",
-        "en": "In 1917–1919 Cannon served as House {{blank}}.",
+        "ko": "캐넌 의원님은 1917~1919년 하원 {{blank}}이었습니다.",
+        "en": "Representative Cannon was House {{blank}} in 1917–1919.",
         "choices": [
           {
             "id": "A",
@@ -346,16 +346,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "player",
-            "ko": "의사규칙 자문관과 선출직 의원의 역할을 구분해 설명하겠습니다.",
-            "en": "I'll explain the distinction between the parliamentarian and an elected member."
+            "speaker": "npc:0",
+            "ko": "의사규칙 자문관이었습니다. 이제 선출직 의원과 전문 직원의 역할을 구별해 보죠.",
+            "en": "Parliamentarian. Now distinguish elected members from professional staff."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "제65대 의회의 의사규칙 자문관이었습니다.",
-            "en": "I was parliamentarian in the 65th Congress."
+            "ko": "하원 의사규칙 자문관이었습니다. 의장이나 원내대표와는 다른 직책입니다.",
+            "en": "House parliamentarian, distinct from Speaker or majority leader."
           }
         ]
       },
@@ -1817,8 +1817,8 @@
         "en": "Capitol Page program visit"
       },
       "context": {
-        "ko": "의회 페이지 프로그램 방문에서 실제 정치 경력을 바탕으로 이야기를 나눈다.",
-        "en": "At the capitol page program visit, the conversation draws on the actual political record."
+        "ko": "학생이 의회에서 배울 수 있는 경로와 의원 당선을 비교",
+        "en": "A student compares educational experience in Congress with election to office"
       },
       "cast": [
         {
@@ -1831,20 +1831,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "제가 처음 의사당에서 배웠던 시절이 떠오릅니다.",
-          "en": "I remember my early years learning at the Capitol."
+          "speaker": "player",
+          "ko": "의회 관련 교육 경험이 의원으로 당선된 것과 같은 것은 아니겠죠.",
+          "en": "Educational experience connected to Congress is not the same as being elected, correct?"
         },
         {
-          "speaker": "host",
-          "ko": "현재의 의원직 이전에 이곳에서 학생이셨군요.",
-          "en": "You were a student here before becoming a member."
+          "speaker": "npc:0",
+          "ko": "1996년에 제가 다녔던 학교를 사례로 삼아 그 차이를 살펴봅시다.",
+          "en": "Use the school I attended in 1996 to examine that distinction."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1996년 스팬버거가 다닌 곳은 {{blank}}입니다.",
-        "en": "In 1996 Spanberger attended the {{blank}}.",
+        "ko": "스팬버거가 다닌 곳은 {{blank}}입니다.",
+        "en": "Spanberger attended the {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1873,20 +1873,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
-            "en": "I attended the Capitol Page School in 1996."
-          },
-          {
-            "speaker": "player",
-            "ko": "이 기록을 다음 만남에도 활용하겠습니다.",
-            "en": "I'll keep that in mind for our next meeting."
+            "ko": "의회 페이지 학교입니다. 학생 경험과 선출직 재임은 별개로 기억하세요.",
+            "en": "The Capitol Page School. Keep student experience separate from elected service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1996년에 의회 페이지 학교를 다녔습니다.",
-            "en": "I attended the Capitol Page School in 1996."
+            "ko": "미국 의회 페이지 학교였습니다. 군사 교육기관에서의 경력이나 의원 임기로 분류하면 안 됩니다.",
+            "en": "It was the United States Capitol Page School, not military education or congressional tenure."
           }
         ]
       },

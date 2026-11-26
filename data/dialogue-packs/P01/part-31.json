@@ -13,8 +13,8 @@
         "en": "Peoria district office"
       },
       "context": {
-        "ko": "의원이 지역구에서 보좌진을 만나 자신의 경력을 회고한다.",
-        "en": "A member meets district staff and recalls his career."
+        "ko": "1949~1956년 의원실 자료의 기록 주체 확인",
+        "en": "Identify the owner of congressional office records from 1949 to 1956"
       },
       "cast": [
         {
@@ -27,14 +27,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저도 의원실 보좌진으로 일하던 시절이 있었습니다.",
-          "en": "I once worked on a congressional staff myself."
+          "speaker": "player",
+          "ko": "1949~1956년 미셸 이름이 있는 보좌진 자료가 본인의 하원 표결 기록으로 분류됐습니다. 당시 소속 의원실을 확인하겠습니다.",
+          "en": "Staff records from 1949 to 1956 bearing Michel's name have been filed as his own House votes. I'll identify the office where he worked."
         },
         {
-          "speaker": "player",
-          "ko": "어느 의원을 보좌했는지 기록하겠습니다.",
-          "en": "I will note which member you assisted."
+          "speaker": "npc:0",
+          "ko": "제 하원 임기는 1957년에 시작했습니다. 그 이전 보좌 업무를 맡았던 의원의 이름을 확인하세요.",
+          "en": "My House tenure began in 1957. Identify the member for whom I worked before that."
         }
       ],
       "response": {
@@ -69,15 +69,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 1949년부터 1956년까지 그 의원을 보좌했습니다.",
-            "en": "Right. I assisted him from 1949 to 1956."
+            "ko": "해럴드 벨드 의원입니다. 보좌관 자료와 제 자신의 의원 표결 기록을 분리하세요.",
+            "en": "Harold Velde. Separate staff work from my own voting record as a member."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "해럴드 벨드입니다. 제 하원 임기는 1957년에 시작했습니다.",
-            "en": "Harold Velde. My own House service began in 1957."
+            "ko": "1949~1956년에는 해럴드 벨드를 보좌했습니다. 다른 의원실의 자료를 제 기록으로 합치지 마세요.",
+            "en": "I worked for Harold Velde from 1949 to 1956. Do not merge another member's office records into mine."
           }
         ]
       },
@@ -195,8 +195,8 @@
         "en": "Texas delegation meeting"
       },
       "context": {
-        "ko": "두 텍사스 의원이 지방정치 경험을 비교한다.",
-        "en": "Two Texas representatives compare local political careers."
+        "ko": "텍사스 두 전직 지방·주 공직자의 권한 비교",
+        "en": "Compare municipal and state responsibilities of two former officials in Texas"
       },
       "cast": [
         {
@@ -216,14 +216,19 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "저는 1950년부터 1954년까지 시장을 지냈습니다.",
-          "en": "I served as mayor from 1950 to 1954."
+          "speaker": "player",
+          "ko": "주민들이 시의 사업 결정과 주 입법을 같은 기관에서 처리한다고 생각합니다. 두 의원의 이전 공직을 비교하겠습니다.",
+          "en": "Residents think municipal project decisions and state legislation are handled by the same body. I'll compare your earlier offices."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 텍사스 주 하원에서 일했습니다.",
-          "en": "I served in the Texas House."
+          "ko": "제 경력은 텍사스 주 하원입니다. 라이트 의원의 시장 재임 도시를 확인하세요.",
+          "en": "My background is in the Texas House. Identify the city where Wright was mayor."
+        },
+        {
+          "speaker": "npc:0",
+          "ko": "1950~1954년의 기록을 주의회 자료와 분리해 보세요.",
+          "en": "Separate the 1950–1954 record from state legislative materials."
         }
       ],
       "response": {
@@ -258,15 +263,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "라이트: 맞아요. 시장직은 연방 하원의원과 관할이 다릅니다.",
-            "en": "Wright: Yes. Municipal and federal responsibilities differ."
+            "ko": "웨더퍼드입니다. 시정부의 사업 결정과 주 입법의 기록을 각각의 관할에 연결하세요.",
+            "en": "Weatherford. Link municipal decisions and state legislation to their respective institutions."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "라이트: 웨더퍼드입니다. 브룩스 의원의 지역 경력과 구별해 주세요.",
-            "en": "Wright: Weatherford. Distinguish it from Representative Brooks's local background."
+            "speaker": "npc:1",
+            "ko": "라이트 의원은 웨더퍼드 시장이었습니다. 제 텍사스 주 하원 경력과 같은 정부 수준으로 분류하면 안 됩니다.",
+            "en": "Wright was mayor of Weatherford. Do not classify it as the same level of government as my Texas House service."
           }
         ]
       },
@@ -1065,8 +1070,8 @@
         "en": "House scheduling meeting"
       },
       "context": {
-        "ko": "텍사스 의원이 다수당의 입법 일정 조정을 논의한다.",
-        "en": "A Texas member discusses coordination of the majority's legislative agenda."
+        "ko": "제95대 의회의 의사일정과 다수당 지도부 문의",
+        "en": "An inquiry about the agenda and majority leadership in the 95th Congress"
       },
       "cast": [
         {
@@ -1079,14 +1084,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "다수당 의원들의 일정과 의제를 조정하는 일이 제 역할입니다.",
-          "en": "Coordinating the majority's agenda and schedule is part of my role."
+          "speaker": "player",
+          "ko": "하원 의사일정과 다수당 의원들의 입장 조율에 관한 문의를 준비했습니다. 의장직과 당 지도부 직책을 구별해야겠습니다.",
+          "en": "I've prepared questions about the House agenda and coordination among majority-party members. I need to distinguish the Speaker from party leadership."
         },
         {
-          "speaker": "player",
-          "ko": "하원의장과 별도의 지도부 직책이군요.",
-          "en": "That is a leadership office distinct from Speaker."
+          "speaker": "npc:0",
+          "ko": "제95대 의회에서 맡은 지도부 직책을 확인하세요. 하원의장과 동일한 직책으로 기록하지 마세요.",
+          "en": "Identify my leadership office in the 95th Congress. Do not record it as the same office as Speaker."
         }
       ],
       "response": {
@@ -1121,15 +1126,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "그렇습니다. 다수당 원내대표입니다.",
-            "en": "Yes. I am the majority leader."
+            "ko": "하원 다수당 원내대표입니다. 당 지도부의 조율 역할과 의장의 별도 직책을 구분해 문의하세요.",
+            "en": "House majority leader. Distinguish party leadership coordination from the Speaker's separate office."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "하원 다수당 원내대표입니다. 의장과는 다른 직책이지요.",
-            "en": "House majority leader, distinct from the Speaker."
+            "ko": "다수당 원내대표입니다. 의장이나 상원 임시의장에게 보낼 질문과 혼동하지 마세요.",
+            "en": "Majority leader. Do not confuse the inquiry with one for the Speaker or Senate president pro tempore."
           }
         ]
       },
@@ -2188,8 +2193,8 @@
         "en": "Defense policy transition meeting"
       },
       "context": {
-        "ko": "하원의원직을 사임하고 내각에 합류한 애스핀과 재회한다.",
-        "en": "Aspin returns for a conversation after leaving the House for the Cabinet."
+        "ko": "1993년 하원 사임 이후의 연락처 확인",
+        "en": "Identify the new office after the January 1993 House resignation"
       },
       "cast": [
         {
@@ -2202,14 +2207,14 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "1월 20일 하원의원직을 사임하고 새 역할을 맡았습니다.",
-          "en": "On January 20 I resigned my House seat and took on a new role."
+          "speaker": "player",
+          "ko": "1월 20일 사임 이후에도 주민 서신이 예전 지역구 사무실에 도착합니다. 애스핀의 새 공직을 확인하겠습니다.",
+          "en": "Letters continue to arrive at the former district office after the January 20 resignation. I'll identify Aspin's new office."
         },
         {
-          "speaker": "player",
-          "ko": "군사위원회 경력과 연결되는 행정부 직책이군요.",
-          "en": "That executive office relates to your Armed Services experience."
+          "speaker": "npc:0",
+          "ko": "이제 하원 재임 기록과 새 행정부 직책의 기록을 구분해야 합니다.",
+          "en": "The House tenure record must now be separated from my new executive-branch office."
         }
       ],
       "response": {
@@ -2244,15 +2249,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 이제 저는 행정부에서 일합니다.",
-            "en": "Correct. I now serve in the executive branch."
+            "ko": "국방부 장관입니다. 국방 행정 관련 문의와 이전 하원 지역구 민원을 각각의 담당 기관으로 연결하세요.",
+            "en": "Secretary of Defense. Route defense administration inquiries separately from former district casework."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "국방부 장관입니다. 하원의원직은 사임했습니다.",
-            "en": "Secretary of Defense. I resigned my House seat."
+            "ko": "국방부 장관이 되기 위해 하원을 사임했습니다. 국무부나 재무부 직책으로 안내하지 마세요.",
+            "en": "I resigned from the House to become Secretary of Defense. Do not direct the inquiry to State or Treasury."
           }
         ]
       },
