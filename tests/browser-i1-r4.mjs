@@ -67,7 +67,24 @@ try{
   await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-shell-v17.9-i1-rc5');await caches.open('apm-shell-v17.9-i1-rc6');await caches.open('apm-shell-v17.9-i1-rc7');await caches.open('apm-shell-v17.9-i1-rc8-careers');await caches.open('apm-shell-v18-preview1');await caches.open('apm-shell-v18-preview2-calendar');await caches.open('apm-shell-v18-news-engine1');await caches.open('apm-portraits-v1')});
   await page.evaluate(async()=>{await caches.open('apm-shell-v18-release-candidate1');await caches.open('apm-shell-v18-release-candidate2')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v18-release-candidate3')&&keys.filter(k=>k.startsWith('apm-shell-')).length===1},{},{timeout:60000});
+  // Playwright waitForFunction predicates must be synchronous: a Promise is truthy
+  // even when its resolved value is false (microsoft/playwright#29132).
+  try{
+   const active=await page.waitForFunction(()=>navigator.serviceWorker.controller?.state==='activated',undefined,{timeout:60000});
+   await active.dispose();
+  }catch(error){
+   const diagnostic=await page.evaluate(async()=>{
+    const r=await navigator.serviceWorker.getRegistration();
+    return {url:location.href,controller:navigator.serviceWorker.controller?.state??null,scope:r?.scope??null,installing:r?.installing?.state??null,waiting:r?.waiting?.state??null,active:r?.active?.state??null,keys:await caches.keys()};
+   });
+   console.error('V18 service worker activation diagnostic '+JSON.stringify(diagnostic));
+   throw error;
+  }
+  // Check the actual cache inventory before the controller handshake can retire
+  // any remaining obsolete caches; activation itself must have done the work.
+  const activationKeys=await page.evaluate(()=>caches.keys());
+  assert.deepEqual(activationKeys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate3'],'activation must leave exactly the verified release shell');
+  assert.ok(activationKeys.includes('apm-portraits-v1'),'activation must preserve portrait cache');
   const verifyController=()=>page.evaluate(async()=>{const worker=navigator.serviceWorker.controller;if(!worker)throw Error('No controlling service worker');return new Promise((resolve,reject)=>{const channel=new MessageChannel(),timer=setTimeout(()=>{channel.port1.close();reject(Error('Service worker verification timeout'))},10000);channel.port1.onmessage=e=>{clearTimeout(timer);channel.port1.close();resolve(e.data)};worker.postMessage({type:'APM_VERIFY_SHELL'},[channel.port2])})});
   const confirmed=await verifyController();assert.equal(confirmed.ok,true,JSON.stringify(confirmed));assert.equal(confirmed.version,'apm-shell-v18-release-candidate3');assert.deepEqual(confirmed.keys.filter(k=>k.startsWith('apm-shell-')),['apm-shell-v18-release-candidate3']);
   const result=await page.evaluate(async()=>{
