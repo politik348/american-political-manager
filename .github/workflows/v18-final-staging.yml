@@ -1,0 +1,27 @@
+name: V18 real-data release staging
+on:
+  push:
+    branches: [hq-v18-final-release-staging]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Generate candidate manifest and verify 70 real packs
+        run: node scripts/prepare-v18-news-release.mjs --write
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v18-release-candidate
+          path: |
+            data/v18-news-index.json
+            data/v18-news-metadata.json
+            docs/audits/V18-NEWS-HQ-RELEASE-MANIFEST.json
+      - name: Verify generated candidate reproducibility
+        run: node scripts/prepare-v18-news-release.mjs --check
