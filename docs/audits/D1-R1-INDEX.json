@@ -34,12 +34,12 @@
     },
     {
       "path": "docs/audits/D1-R1/PART-02.json",
-      "blobSha": "0ce7c21bc2c1ad4b4c42baadcc741714caebf87b",
+      "blobSha": "04890e5974533d31de5dc88e208ccf4c3651ee6a",
       "records": 101
     },
     {
       "path": "docs/audits/D1-R1/PART-03.json",
-      "blobSha": "a1d3dcec1d46c6816530e3541b3ebd4d6cdb2c80",
+      "blobSha": "6adbcf31e1bbb7f4ade283beb0b4cf694ced31bd",
       "records": 125
     }
   ],
@@ -647,5 +647,23 @@
   ],
   "approvalPolicy": "Only verified rows with unchanged exact scene/cast/source/ID and sourceBlobSha may be considered for I1 restoration; revalidate against latest I1 before writing. Pending rows have null proposedBioguideId. Former/elected-but-not-seated roles do not imply incumbency. No scenario changes in D1.",
   "limitations": "At least one verified slot in 76 groups meets minimum 75 name-group goal; fully cleared groups counted separately. 100 screened groups is not equivalent to 100 verified groups. No fictional or noneligible classifications established. Bioguide direct access sometimes HTTP 403; verified House canonical citations and Senate roster link targets used. Historical scenario assertions outside identity scope are not certified.",
-  "status": "minimum_group_target_met_with_remaining_slot_holds"
+  "status": "minimum_group_target_met_with_remaining_slot_holds",
+  "inventorySourceCommit": "01eaebcd8228f29cf8d724402a731e5acd67eb92",
+  "latestComparedI1Commit": "4fb05084abe66014c10f26aaf1a1fea22109bc64",
+  "sourceRecheck": {
+    "compareUrl": "https://github.com/politik348/american-political-manager/compare/01eaebcd8228f29cf8d724402a731e5acd67eb92...4fb05084abe66014c10f26aaf1a1fea22109bc64",
+    "changedAuditedFiles": 6,
+    "recheckedSlots": 39,
+    "identityFieldChanges": 0,
+    "contextChanges": 13,
+    "unchangedAuditedFiles": 20,
+    "notes": "Records from changed files use refreshed sourceBlobSha and sourceCommit; unchanged files retain original sourceCommit with identical blob confirmed by commit comparison. All 39 rechecked slots retain exact name, ID, date and source; revised context reviewed for identity consistency."
+  },
+  "validation": {
+    "records": 286,
+    "uniqueSlotKeys": 286,
+    "missingRequiredFields": 0,
+    "invalidApprovedId": 0,
+    "nonNullHeldId": 0
+  }
 }
