@@ -148,18 +148,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "양당 의원의 실제 표결 자료를 비교합니다.",
-          "en": "I am comparing the two parties' actual votes."
+          "ko": "장애인법 조정안의 초당적 지지 여부를 묻는 방송 질문이 들어왔습니다.",
+          "en": "A broadcast question asks whether the ADA conference report received bipartisan support."
         },
         {
           "speaker": "npc:0",
-          "ko": "법안 이름으로 개별 표를 추정하지 마세요.",
-          "en": "Do not infer individual votes from a bill's name."
+          "ko": "제 표는 최종 조정안 호명표에서 확인하세요.",
+          "en": "Check my vote in the roll call on the conference report."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 장애인법 조정안에 대한 두 표를 비교하세요.",
-          "en": "Right. Compare both votes on the ADA conference report."
+          "ko": "제 표도 따로 확인해야 합니다. 정당만으로 추정하면 안 됩니다.",
+          "en": "Check mine separately too; party affiliation alone is not evidence."
         }
       ],
       "response": {
@@ -194,15 +194,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "1990년 장애인법 조정안에 하킨과 듀런버거 모두 찬성했다. 양당 표결 관계를 기록하세요.",
-            "en": "Harkin and Durenberger both voted for the 1990 ADA conference report. Record the cross-party voting relationship."
+            "ko": "두 표가 모두 찬성으로 확인됐으니 두 의원의 실제 표결 사례만 방송 원고에 넣으세요.",
+            "en": "Both votes were yes. Use these two recorded votes in the broadcast script."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "1990년 장애인법 조정안에 하킨과 듀런버거 모두 찬성했다. 공식 호명표를 다시 대조하세요.",
-            "en": "Harkin and Durenberger both voted for the 1990 ADA conference report. Reconcile the official roll call."
+            "ko": "하킨과 듀런버거 모두 찬성했습니다. 추정으로 쓴 원고를 보류하고 두 사람의 호명표를 다시 대조하세요.",
+            "en": "Harkin and Durenberger both voted yes. Hold the inference-based script and recheck the two roll-call entries."
           }
         ]
       },
@@ -487,18 +487,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "예산합의 집행 수정안의 호명표가 도착했습니다.",
-          "en": "The roll call on the budget enforcement amendment has arrived."
+          "ko": "예산 집행 수정안의 발의자 목록과 표결 목록을 다른 화면에 표시하고 있습니다.",
+          "en": "I'm displaying the amendment's authors and roll call on different panels."
         },
         {
           "speaker": "npc:0",
-          "ko": "공동 작성자와 표를 던진 의원을 구별하세요.",
-          "en": "Distinguish authors from senators casting votes."
+          "ko": "수정안 명칭에 있는 제 이름만으로 다른 의원의 표를 결정하지 마세요.",
+          "en": "Do not infer another senator's vote from my name on the amendment."
         },
         {
           "speaker": "npc:1",
-          "ko": "네. 콘래드의 기록을 확인해 주세요.",
-          "en": "Yes. Check Conrad's entry."
+          "ko": "콘래드의 호명표 항목을 확인하고 찬반 열에 옮겨 주세요.",
+          "en": "Check Conrad's roll-call entry and place it in the correct vote column."
         }
       ],
       "response": {
@@ -532,16 +532,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "콘래드는 1997년 도메니치의 초당적 예산합의 집행 수정안에 찬성했다. 수정안 지지 기록을 저장하세요.",
-            "en": "Conrad voted yea on Domenici's 1997 bipartisan budget enforcement amendment. Save the amendment support record."
+            "speaker": "npc:0",
+            "ko": "찬성 열에 콘래드를 넣으세요. 이 기록은 해당 수정안 표결에 한정됩니다.",
+            "en": "Put Conrad in the yes column. This entry applies only to this amendment."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "콘래드는 1997년 도메니치의 초당적 예산합의 집행 수정안에 찬성했다. 호명표로 돌아가 잘못된 표를 수정하세요.",
-            "en": "Conrad voted yea on Domenici's 1997 bipartisan budget enforcement amendment. Return to the roll call and correct the entry."
+            "speaker": "npc:1",
+            "ko": "콘래드는 찬성했습니다. 발의자 명단을 고치는 대신 잘못된 호명표 분류만 수정하세요.",
+            "en": "Conrad voted yes. Correct the misclassified roll-call entry rather than altering the authorship list."
           }
         ]
       },
@@ -826,18 +826,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "오늘의 초당적 합의 자료를 접수했습니다.",
-          "en": "Today's bipartisan agreement has arrived."
+          "ko": "오늘 발표된 법관 지명 관련 합의문의 참여자 표가 필요합니다.",
+          "en": "Today's agreement on judicial nominations needs a participant table."
         },
         {
           "speaker": "npc:0",
-          "ko": "개별 후보의 인준과 절차상 합의는 다릅니다.",
-          "en": "Confirming a nominee differs from reaching a procedural agreement."
+          "ko": "합의에 참여한 사람과 각 후보 인준 표결을 따로 표시하세요.",
+          "en": "Keep agreement participants separate from votes on individual nominees."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 합의에 참여한 그룹의 규모를 기록하세요.",
-          "en": "Right. Record the negotiating group's size."
+          "ko": "명단의 전체 인원수를 확인해 합의문 표지를 완성해 주세요.",
+          "en": "Confirm the roster's total before completing the agreement cover."
         }
       ],
       "response": {
@@ -872,15 +872,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "콜린스 등 14명은 2005년 5월 23일 법관 인준과 필리버스터 관련 합의를 발표했다. 합의문과 명단을 함께 보관하세요.",
-            "en": "Collins and thirteen colleagues reached a judicial nomination and filibuster agreement on May 23, 2005. Archive the agreement and roster together."
+            "ko": "14인 합의로 표시하고 문서와 참여자 명단을 함께 저장하세요. 후보별 표결은 별도 자료입니다.",
+            "en": "Label it the fourteen-senator agreement and preserve the document and roster together; nominee votes remain separate."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "콜린스 등 14명은 2005년 5월 23일 법관 인준과 필리버스터 관련 합의를 발표했다. 다른 초당적 협상 그룹의 숫자를 수정하세요.",
-            "en": "Collins and thirteen colleagues reached a judicial nomination and filibuster agreement on May 23, 2005. Correct the count borrowed from another group."
+            "ko": "참여자는 14명이었습니다. 다른 초당적 협상팀의 숫자를 옮겨 적은 표를 수정하세요.",
+            "en": "Fourteen senators participated. Correct the table that borrowed another coalition's size."
           }
         ]
       },
@@ -1617,18 +1617,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "두 의원의 조달 개혁 표결을 비교합니다.",
-          "en": "I am comparing your votes on acquisition reform."
+          "ko": "두 의원이 모든 국방정책에서 같은 입장이었다는 문장이 설명문에 들어갔습니다.",
+          "en": "A caption says these senators agreed on every defense policy."
         },
         {
           "speaker": "npc:0",
-          "ko": "다른 안보정책까지 동일한 입장이라고 추정하지 마세요.",
-          "en": "Do not generalize this to all security issues."
+          "ko": "2009년 조달 개혁에 관한 특정 표결부터 확인하세요.",
+          "en": "Start with the specific 2009 acquisition-reform vote."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 해당 표결만 대조하세요.",
-          "en": "Right. Check only this roll call."
+          "ko": "그 결과는 이 법안의 지지 여부만 입증합니다. 두 사람의 표를 따로 확인해 주세요.",
+          "en": "That result establishes support only on this measure. Verify the two votes independently."
         }
       ],
       "response": {
@@ -1663,15 +1663,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2009년 국방 조달 개혁안 표결에서 레빈과 매케인은 모두 찬성했다. 법안별 협력 표결을 저장하세요.",
-            "en": "Levin and McCain both voted for the 2009 defense acquisition reform measure. Save this bill-specific bipartisan vote."
+            "ko": "두 사람 모두 찬성한 해당 표결만 예시로 사용하세요. 모든 국방정책으로 확대하지 않습니다.",
+            "en": "Use this specific vote, in which both voted yes, without extending it to all defense policy."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2009년 국방 조달 개혁안 표결에서 레빈과 매케인은 모두 찬성했다. 다른 국방정책으로 일반화한 기록을 수정하세요.",
-            "en": "Levin and McCain both voted for the 2009 defense acquisition reform measure. Correct generalizations about other defense policy."
+            "ko": "레빈과 매케인은 해당 안건에 모두 찬성했습니다. 광범위한 정치적 합의라는 문장 대신 이 호명표만 인용하세요.",
+            "en": "Levin and McCain both supported this measure. Replace the broad agreement claim with this specific roll-call record."
           }
         ]
       },
@@ -1843,18 +1843,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "공동 작성자 명단에서 민주당 의원이 빠졌습니다.",
-          "en": "A Democrat is missing from the coauthor list."
+          "ko": "상원 특허 개혁안 표지에 그래슬리와 해치의 이름만 들어가 있습니다.",
+          "en": "The Senate patent reform cover lists only Grassley and Hatch."
         },
         {
           "speaker": "npc:0",
-          "ko": "하원에서 먼저 추진한 사람과 상원 저자를 구분하세요.",
-          "en": "Distinguish earlier House sponsors from Senate authors."
+          "ko": "공동 작성자 명단은 실제 상원 법안의 근거로 확인해야 합니다.",
+          "en": "Verify the coauthors against the actual Senate measure."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 우리와 함께 작성한 상원 동료를 확인하세요.",
-          "en": "Right. Identify the Senate colleague who worked with us."
+          "ko": "하원 법안의 대표 발의자와 혼동하지 않도록 빠진 상원 의원을 찾아 주세요.",
+          "en": "Identify the missing senator without confusing Senate authorship with House sponsorship."
         }
       ],
       "response": {
@@ -1888,16 +1888,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "리히·해치·그래슬리는 2011년 상원 특허 개혁안의 저자였다. 공동 저자 명단을 완성하세요.",
-            "en": "Leahy, Hatch and Grassley authored the Senate patent reform bill in 2011. Complete the author roster."
+            "speaker": "npc:0",
+            "ko": "패트릭 리히를 추가해 상원 공동 작성자 세 명을 표시하세요.",
+            "en": "Add Patrick Leahy to complete the three Senate coauthors."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "리히·해치·그래슬리는 2011년 상원 특허 개혁안의 저자였다. 양원의 저자 기록을 분리하세요.",
-            "en": "Leahy, Hatch and Grassley authored the Senate patent reform bill in 2011. Separate House and Senate authorship."
+            "speaker": "npc:1",
+            "ko": "공동 저자는 리히·해치·그래슬리입니다. 다른 의원의 이름을 빼고 상원 작성자 명단을 다시 확인하세요.",
+            "en": "The coauthors were Leahy, Hatch, and Grassley. Remove the incorrect name and recheck the Senate authorship roster."
           }
         ]
       },
@@ -2069,18 +2069,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "공동 제안에 참여한 다른 의원들을 기록합니다.",
-          "en": "I am recording the other participants in your proposal."
+          "ko": "주택금융 제안의 발표 명단 중 두 사람이 누락됐습니다.",
+          "en": "Two names are missing from the housing-finance proposal's public announcement."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 둘만 기록하면 전체 그룹을 놓칩니다.",
-          "en": "Listing only us omits the larger group."
+          "ko": "비터와 워런의 이름은 이미 확인됐습니다.",
+          "en": "Vitter and Warren are already verified."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 함께 발표한 두 의원을 확인하세요.",
-          "en": "Exactly. Identify the other two announcers."
+          "ko": "같은 3월 14일 발표에 참여한 다른 두 사람을 찾아 명단을 완성해 주세요.",
+          "en": "Find the other two senators named in the March 14 announcement to complete the roster."
         }
       ],
       "response": {
@@ -2114,16 +2114,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2013년 3월 14일 코커·워너·비터·워런은 Jumpstart GSE Reform Act를 발표했다. 네 사람의 명단을 저장하세요.",
-            "en": "Corker, Warner, Vitter and Warren introduced the Jumpstart GSE Reform Act on March 14, 2013. Save the four-person roster."
+            "speaker": "npc:0",
+            "ko": "코커와 워너를 추가해 Jumpstart GSE Reform Act의 네 사람 명단을 저장하세요.",
+            "en": "Add Corker and Warner to preserve the four-person Jumpstart GSE Reform Act roster."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2013년 3월 14일 코커·워너·비터·워런은 Jumpstart GSE Reform Act를 발표했다. 다른 공동 협력 명단과 섞인 항목을 정정하세요.",
-            "en": "Corker, Warner, Vitter and Warren introduced the Jumpstart GSE Reform Act on March 14, 2013. Correct the roster conflating other coalitions."
+            "speaker": "npc:1",
+            "ko": "빠진 사람은 코커와 워너입니다. 다른 초당적 협상팀의 이름을 제거하고 이 발표문을 다시 확인하세요.",
+            "en": "Corker and Warner are the missing senators. Remove the other coalition's names and recheck this announcement."
           }
         ]
       },
@@ -2634,18 +2634,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "오늘 지명 관련 절차의 변화 기록을 검토합니다.",
-          "en": "I am reviewing today's change to nomination procedure."
+          "ko": "오늘 지명 절차 관련 상원 기록을 읽고 있습니다. 의장 판단, 이의 제기, 표결을 각각 구분하겠습니다.",
+          "en": "I'm reading today's Senate record on nomination procedure, separating the ruling, challenge, and votes."
         },
         {
           "speaker": "npc:0",
-          "ko": "의장의 판단과 이의 제기를 표결 결과와 함께 기록해야 합니다.",
-          "en": "Record the chair's ruling and challenges alongside the votes."
+          "ko": "기록된 선례의 적용 범위를 기준으로 절차표를 수정하세요.",
+          "en": "Revise the procedure chart using the scope of the recorded precedent."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 새 선례의 적용 범위를 명확히 하세요.",
-          "en": "Right. Specify the scope of the new precedent."
+          "ko": "예외에 해당하는 지명까지 같은 방식으로 바뀌었다고 표시하지 마세요.",
+          "en": "Do not mark excluded nominations as subject to the same change."
         }
       ],
       "response": {
@@ -2679,16 +2679,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2013년 11월 21일 선례는 대법관을 제외한 지명의 토론종결 문턱을 바꿨다. 예외를 명시한 절차표를 배포하세요.",
-            "en": "On November 21, 2013, the precedent changed cloture for nominations other than the Supreme Court. Distribute a procedure chart marking the exception."
+            "speaker": "npc:0",
+            "ko": "대법관 지명을 예외로 표시하고 다른 지명의 토론종결 변화만 반영하세요.",
+            "en": "Mark Supreme Court nominations as excluded and update only cloture for the other nominations."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2013년 11월 21일 선례는 대법관을 제외한 지명의 토론종결 문턱을 바꿨다. 대법관 지명에도 적용된 것으로 쓴 표를 고치세요.",
-            "en": "On November 21, 2013, the precedent changed cloture for nominations other than the Supreme Court. Correct the chart applying it to Supreme Court nominations."
+            "speaker": "npc:1",
+            "ko": "2013년 선례에서 대법관 지명은 제외됐습니다. 그 범위까지 바꾼 것으로 작성한 절차표를 복원하세요.",
+            "en": "Supreme Court nominations were excluded from the 2013 precedent. Restore the chart that incorrectly extended the change to them."
           }
         ]
       },
@@ -2747,18 +2747,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "2013년 선례가 오늘 다시 논의됐습니다.",
-          "en": "The 2013 precedent was revisited today."
+          "ko": "2013년 절차표 옆에 오늘 상원 표결 기록을 놓았습니다. 적용 범위에서 바뀐 한 항목을 찾겠습니다.",
+          "en": "Today's Senate vote record is beside the 2013 chart. I'll identify the category whose treatment changed."
         },
         {
           "speaker": "npc:0",
-          "ko": "당시 제외된 범위를 기억해야 합니다.",
-          "en": "Remember the earlier exception."
+          "ko": "오늘의 절차 이의와 표결에 근거해 변경 범위를 확인하세요.",
+          "en": "Use today's procedural challenge and votes to identify the scope of the change."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 오늘 적용이 확대된 대상을 기록하세요.",
-          "en": "Right. Identify the newly covered category."
+          "ko": "일반 법률안이나 다른 상원 의결의 문턱까지 바뀌었다고 확대하지 마세요.",
+          "en": "Do not extend this change to ordinary legislation or other Senate decisions."
         }
       ],
       "response": {
@@ -2792,16 +2792,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2017년 4월 6일 매코널의 절차 이의와 상원 표결로 대법관 지명에도 과반 토론종결 선례가 적용됐다. 두 선례를 시간순으로 연결하세요.",
-            "en": "McConnell's procedural action and Senate votes on April 6, 2017 extended majority cloture to Supreme Court nominations. Connect the two precedents chronologically."
+            "speaker": "npc:0",
+            "ko": "대법관 지명을 새 적용 범위에 추가해 2013년 표와 2017년 표를 나란히 보존하세요.",
+            "en": "Add Supreme Court nominations to the new scope and retain the 2013 and 2017 charts side by side."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2017년 4월 6일 매코널의 절차 이의와 상원 표결로 대법관 지명에도 과반 토론종결 선례가 적용됐다. 일반 법률안까지 바뀌었다는 기록을 수정하세요.",
-            "en": "McConnell's procedural action and Senate votes on April 6, 2017 extended majority cloture to Supreme Court nominations. Correct the claim that ordinary legislation also changed."
+            "speaker": "npc:1",
+            "ko": "2017년 변화는 대법관 지명에 과반 토론종결 선례를 확장한 것입니다. 다른 의결까지 변경한 표를 되돌리세요.",
+            "en": "The 2017 change extended majority cloture precedent to Supreme Court nominations. Undo changes to unrelated decision categories."
           }
         ]
       },

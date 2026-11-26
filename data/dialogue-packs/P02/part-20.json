@@ -35,18 +35,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "신임 상원의원의 이전 연방 경력 시작점을 소개문에 넣겠습니다.",
-          "en": "I will introduce the new senator's earlier congressional career."
+          "ko": "마키 의원의 상원 취임 카드를 기존 하원 경력 카드에 연결하겠습니다. 첫 당선 연도가 필요합니다.",
+          "en": "I'll link Markey's Senate entry card to his existing House career card. I need his first election year."
         },
         {
           "speaker": "npc:0",
-          "ko": "상원 취임일만 기록하면 수십 년의 경력이 빠집니다.",
-          "en": "Recording only Senate entry omits decades of service."
+          "ko": "하원에서 시작한 경력은 상원 취임으로 덮어쓰지 마세요.",
+          "en": "Don't overwrite the House career with Senate entry."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 하원에 처음 선출된 해를 확인하세요.",
-          "en": "Right. Check the year of his first House election."
+          "ko": "공식 선출 기록에서 상원 취임보다 앞선 첫 하원 당선 연도를 확인하세요.",
+          "en": "Use the official election record to establish the first House election year before Senate entry."
         }
       ],
       "response": {
@@ -81,15 +81,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "마키는 1976년 하원에 선출됐고 2013년 7월 16일 상원 선서를 했다. 양원 경력을 시간순으로 연결하세요.",
-            "en": "Markey was elected to the House in 1976 and sworn into the Senate on July 16, 2013. Link the two chamber careers."
+            "ko": "1976년 하원 당선 기록과 2013년 7월 16일 상원 선서를 연결하세요.",
+            "en": "Link the 1976 House election to the July 16, 2013 Senate oath."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "마키는 1976년 하원에 선출됐고 2013년 7월 16일 상원 선서를 했다. 상원 진입일로 하원 기록을 덮어쓰지 마세요.",
-            "en": "Markey was elected to the House in 1976 and sworn into the Senate on July 16, 2013. Do not overwrite House history with Senate entry."
+            "ko": "첫 하원 당선은 1976년입니다. 상원 취임 카드를 기존 인물의 경력 이력으로 돌려보내세요.",
+            "en": "The first House election was in 1976. Return the Senate entry card to the existing person's career history."
           }
         ]
       },
@@ -148,18 +148,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난 회기 특별선거 기록과 새 정규 임기 기록이 있습니다.",
-          "en": "We have a prior special election and a new regular term."
+          "ko": "2013년 특별선거와 정규 임기를 한 줄로 합친 기록을 분리하려 합니다.",
+          "en": "I need to separate a record that merged the 2013 special election and the full term."
         },
         {
           "speaker": "npc:0",
-          "ko": "두 기록은 같은 의석이라도 구별해야 합니다.",
-          "en": "Keep the two records distinct even for the same seat."
+          "ko": "최초 공석을 만든 전임자와 직전 재임자를 같은 개념으로 쓰지 마세요.",
+          "en": "Do not equate the original vacancy's incumbent with the immediate predecessor."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 2013년에 발생한 공석의 원래 의원을 적으세요.",
-          "en": "Right. Identify the senator whose vacancy arose in 2013."
+          "ko": "특별선거의 출발점이 된 공석의 원래 의원을 확인하세요.",
+          "en": "Identify the original senator whose vacancy led to the special election."
         }
       ],
       "response": {
@@ -194,15 +194,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "마키는 국무장관으로 임명된 케리의 공석을 2013년 특별선거로 채웠고 이후 정규 임기를 얻었다. 특별선거와 정규 임기를 연결하세요.",
-            "en": "Markey won the 2013 special election for Kerry's vacant seat and subsequently won a full term. Link the special election and full term."
+            "ko": "케리의 공석을 표시하고 특별선거 당선과 후속 정규 임기를 별도 구간으로 연결하세요.",
+            "en": "Mark Kerry's vacancy and link the special-election win and later full term as distinct intervals."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "마키는 국무장관으로 임명된 케리의 공석을 2013년 특별선거로 채웠고 이후 정규 임기를 얻었다. 다른 매사추세츠 의석을 연결한 자료를 정정하세요.",
-            "en": "Markey won the 2013 special election for Kerry's vacant seat and subsequently won a full term. Correct the record linking the other Massachusetts seat."
+            "ko": "원래 공석은 존 케리의 의석입니다. 다른 매사추세츠 의석으로 연결한 선을 수정하세요.",
+            "en": "The original vacancy was John Kerry's seat. Correct the link to the other Massachusetts seat."
           }
         ]
       },
@@ -261,18 +261,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "모런 의원의 하원 보훈정책 경력을 소개하려 합니다.",
-          "en": "I am introducing Moran's House veterans policy experience."
+          "ko": "상원 보훈 관련 브리핑 연락처를 만들기 전에 모런의 이전 하원 담당 업무를 확인합니다.",
+          "en": "Before creating a Senate veterans briefing contact, I'll verify Moran's former House responsibilities."
         },
         {
           "speaker": "npc:0",
-          "ko": "단순한 하원 재임 여부보다 실제 담당 분야가 중요합니다.",
-          "en": "His responsibilities matter more than a generic House tenure entry."
+          "ko": "하원 시절의 소위원회 직책과 현재 상원 경력을 분리하세요.",
+          "en": "Separate the House subcommittee role from current Senate service."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 보훈위원회에서 맡았던 소위원장 직책을 확인하세요.",
-          "en": "Right. Identify his former subcommittee chairmanship."
+          "ko": "이전 보훈위 소위원장 직책을 정확히 기록하면 분야별 경험을 확인할 수 있습니다.",
+          "en": "Identify the former Veterans' Affairs subcommittee chairmanship to document his subject experience."
         }
       ],
       "response": {
@@ -306,16 +306,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "모런은 하원 보훈위원회 보건소위원장 경력을 갖고 2011년 상원에 진출했다. 보훈 경력에 직책을 추가하세요.",
-            "en": "Moran entered the Senate in 2011 after chairing the House Veterans' Affairs Health Subcommittee. Add the role to the veterans policy record."
+            "speaker": "npc:0",
+            "ko": "보건소위원장 이력을 하원 경력으로 추가하고 2011년 상원 진출과 연결하세요.",
+            "en": "Add the Health Subcommittee chairmanship to House service and link it to Senate entry in 2011."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "모런은 하원 보훈위원회 보건소위원장 경력을 갖고 2011년 상원에 진출했다. 상원 위원장 경력과 혼동한 자료를 수정하세요.",
-            "en": "Moran entered the Senate in 2011 after chairing the House Veterans' Affairs Health Subcommittee. Correct the record conflating House and Senate chairmanships."
+            "speaker": "npc:1",
+            "ko": "하원 보훈위 보건소위원장 경력입니다. 상원에서 같은 직책을 맡았다고 적은 자료를 분리하세요.",
+            "en": "It was the House Veterans' Affairs Health Subcommittee chairmanship. Separate any entry assigning the same office in the Senate."
           }
         ]
       },
@@ -1391,18 +1391,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "은행 파산 이후 공동 제안의 최초 협력 집단을 확인합니다.",
-          "en": "I am identifying the original coalition following bank failures."
+          "ko": "3월 최초 발의 명단과 확대 명단의 이름을 서로 다른 색으로 표시하고 있습니다.",
+          "en": "I'm distinguishing the March original sponsors from the expanded roster."
         },
         {
           "speaker": "npc:0",
-          "ko": "나중에 참여한 사람과 초기 발의자는 구분해야 합니다.",
-          "en": "Later participants differ from original sponsors."
+          "ko": "5월 현재 지지자 명단을 최초 발의자 전체로 사용하지 마세요.",
+          "en": "Do not substitute the May supporters for the original sponsorship list."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 우리 외 최초 참여자 두 명을 확인하세요.",
-          "en": "Right. Identify the other two original participants."
+          "ko": "코테즈 매스토와 홀리 외의 최초 두 발의자를 찾아 기준 명단을 완성하세요.",
+          "en": "Find the other two original sponsors alongside Cortez Masto and Hawley to complete the baseline roster."
         }
       ],
       "response": {
@@ -1437,15 +1437,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2023년 3월 코테즈 매스토·워런·홀리·브라운이 Failed Bank Executives Clawback Act를 처음 발의했다. 초기와 확대 명단을 구분해 보관하세요.",
-            "en": "Cortez Masto, Warren, Hawley and Braun originally introduced the Failed Bank Executives Clawback Act in March 2023. Retain separate initial and expanded rosters."
+            "ko": "워런과 브라운을 추가해 3월 최초 네 명을 보존하세요. 이후 참여자는 확대 명단에 기록합니다.",
+            "en": "Add Warren and Braun to preserve the original four in March; record later participants in the expanded roster."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2023년 3월 코테즈 매스토·워런·홀리·브라운이 Failed Bank Executives Clawback Act를 처음 발의했다. 뒤늦게 참여한 의원을 초기 발의자로 표시하지 마세요.",
-            "en": "Cortez Masto, Warren, Hawley and Braun originally introduced the Failed Bank Executives Clawback Act in March 2023. Do not label later participants original sponsors."
+            "ko": "초기 나머지 두 사람은 워런과 브라운입니다. 확대 명단에서 잘못 옮겨온 이름을 제거하세요.",
+            "en": "The remaining original participants were Warren and Braun. Remove names improperly copied from the expanded roster."
           }
         ]
       },
@@ -2408,18 +2408,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "민주·공화 협상자 외 제3의 참여자를 확인해야 합니다.",
-          "en": "I need to identify a third participant beyond the two party negotiators."
+          "ko": "2월 4일 공개 합의에 참여한 핵심 상원 협상자의 명단을 점검합니다.",
+          "en": "I'm checking the roster of principal Senate negotiators for the February 4 public agreement."
         },
         {
           "speaker": "npc:0",
-          "ko": "두 사람만 적으면 실제 협상 구성이 빠집니다.",
-          "en": "Listing only us would omit part of the negotiating group."
+          "ko": "공화당과 민주당 협상자 두 명의 이름만으로는 명단이 완성되지 않습니다.",
+          "en": "The Republican and Democratic negotiators alone do not complete the roster."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 세 번째 상원의원을 기록하세요.",
-          "en": "Right. Name the third senator."
+          "ko": "정당·무소속 표시는 실제 그 날짜의 소속으로 적고 세 번째 이름을 찾아 주세요.",
+          "en": "Use affiliations as of that date and locate the third name."
         }
       ],
       "response": {
@@ -2453,16 +2453,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2024년 국경정책 합의의 핵심 상원 협상자는 랭크퍼드·머피·시네마였다. 세 협상자의 정당 및 무소속 관계를 기록하세요.",
-            "en": "Lankford, Murphy and Sinema were the principal Senate negotiators of the 2024 border agreement. Record the three negotiators' affiliations."
+            "speaker": "npc:0",
+            "ko": "시네마를 추가해 랭크퍼드·머피·시네마의 세 협상자 명단을 완성하세요.",
+            "en": "Add Sinema to complete the Lankford–Murphy–Sinema roster."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2024년 국경정책 합의의 핵심 상원 협상자는 랭크퍼드·머피·시네마였다. 다른 초당적 협상팀과 섞인 명단을 수정하세요.",
-            "en": "Lankford, Murphy and Sinema were the principal Senate negotiators of the 2024 border agreement. Correct the roster conflating other negotiating groups."
+            "speaker": "npc:1",
+            "ko": "세 번째 핵심 협상자는 커스틴 시네마입니다. 다른 협상팀에서 옮긴 이름을 지우고 공개 합의 기록을 확인하세요.",
+            "en": "The third principal negotiator was Kyrsten Sinema. Remove the name from an unrelated coalition and recheck the public record."
           }
         ]
       },
@@ -2747,18 +2747,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "최근 AI 정책 로드맵 작업반의 전체 구성을 확인합니다.",
-          "en": "I am checking the full roster behind the recent AI roadmap."
+          "ko": "AI 정책 로드맵 표지에 작업반의 네 이름을 넣으려 합니다.",
+          "en": "I'm preparing a four-name byline for the AI policy roadmap."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 두 명만으로는 초당적 그룹의 구성이 드러나지 않습니다.",
-          "en": "Listing only us does not capture the bipartisan group."
+          "ko": "로드맵 발표자와 별개 AI 법안의 발의자 명단을 섞지 마세요.",
+          "en": "Do not mix the roadmap authors with sponsors of separate AI legislation."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 나머지 두 명을 확인하세요.",
-          "en": "Right. Identify the other two members."
+          "ko": "라운즈와 하인리히 외에 발표에 참여한 두 사람을 찾아 주세요.",
+          "en": "Find the other two senators who released the roadmap alongside Rounds and Heinrich."
         }
       ],
       "response": {
@@ -2792,16 +2792,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2024년 AI 정책 로드맵 발표 그룹은 슈머·라운즈·하인리히·영으로 구성됐다. 작업반 전체 명단을 보관하세요.",
-            "en": "Schumer, Rounds, Heinrich and Young released the 2024 AI policy roadmap. Archive the full working group roster."
+            "speaker": "npc:0",
+            "ko": "슈머와 영을 추가해 네 사람의 로드맵 발표 명단을 완성하세요. 법률 성립 기록으로는 분류하지 않습니다.",
+            "en": "Add Schumer and Young to complete the four-person roadmap roster; do not classify it as enacted legislation."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2024년 AI 정책 로드맵 발표 그룹은 슈머·라운즈·하인리히·영으로 구성됐다. 별개 AI 법안의 발의자와 혼동하지 마세요.",
-            "en": "Schumer, Rounds, Heinrich and Young released the 2024 AI policy roadmap. Do not confuse it with sponsors of a separate AI bill."
+            "speaker": "npc:1",
+            "ko": "다른 두 발표자는 슈머와 영입니다. 별개 AI 법안에서 가져온 이름을 제거하고 로드맵 표지를 수정하세요.",
+            "en": "The other two authors were Schumer and Young. Remove names copied from another AI bill and correct the roadmap byline."
           }
         ]
       },

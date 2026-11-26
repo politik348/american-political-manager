@@ -1391,18 +1391,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "초기 협상 그룹의 정당 구성표를 만들고 있습니다.",
-          "en": "I am preparing the initial negotiating group's party breakdown."
+          "ko": "인프라 협상 참가자 표의 정당별 합계가 비어 있습니다.",
+          "en": "The party totals in the infrastructure negotiating roster are blank."
         },
         {
           "speaker": "npc:0",
-          "ko": "참여 인원과 최종 찬성표를 혼동하면 안 됩니다.",
-          "en": "Do not confuse negotiators with final votes."
+          "ko": "민주당 열에는 오늘 명단에 있는 사람만 넣으세요.",
+          "en": "Count only those on today's list in the Democratic column."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 오늘 발표의 구성만 표시하세요.",
-          "en": "Exactly. Use today's announced composition."
+          "ko": "공화당 열도 같은 기준으로 세어야 합니다. 전체 상원 찬성표와는 다른 표입니다.",
+          "en": "Apply the same rule to the Republican column; this is not the full Senate vote tally."
         }
       ],
       "response": {
@@ -1436,16 +1436,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "2021년 6월 10일 인프라 협상 그룹은 민주·공화 각각 5명으로 구성됐다. 초기 협상 명부를 고정하세요.",
-            "en": "The June 10, 2021 infrastructure negotiating group had five senators from each party. Preserve the initial roster."
+            "speaker": "npc:0",
+            "ko": "양당 다섯 명씩인 초기 10인 명단을 기준 자료로 고정하세요. 추가 지지자는 나중에 별도 버전으로 기록합니다.",
+            "en": "Freeze the initial ten-person roster, five from each party, as the baseline. Later supporters belong in a separate version."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "2021년 6월 10일 인프라 협상 그룹은 민주·공화 각각 5명으로 구성됐다. 나중에 늘어난 그룹과 구별하세요.",
-            "en": "The June 10, 2021 infrastructure negotiating group had five senators from each party. Distinguish the later expanded group."
+            "speaker": "npc:1",
+            "ko": "오늘 구성은 민주당 5명, 공화당 5명입니다. 정당별 숫자를 다시 맞춘 뒤 합계가 10인지 확인하세요.",
+            "en": "Today's composition is five Democrats and five Republicans. Reconcile the party totals and confirm that they sum to ten."
           }
         ]
       },
@@ -1617,18 +1617,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "협상 대표들의 발표와 공식 표결을 함께 정리하겠습니다.",
-          "en": "I will file the negotiators' statement alongside the official vote."
+          "ko": "공개 브리핑에 협상 그룹 인원과 본회의 표결 숫자가 섞여 들어갔습니다.",
+          "en": "The public briefing has mixed the negotiation-group size with the floor-vote totals."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 협상 그룹의 규모와 전체 찬성표는 다릅니다.",
-          "en": "Our negotiating group's size differs from the full affirmative vote."
+          "ko": "협상자 명단은 역할을 보여 주는 자료로 남겨 주세요.",
+          "en": "Retain the negotiator roster as a record of roles."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 상원 전체의 표결 집계를 사용하세요.",
-          "en": "Right. Use the full Senate vote."
+          "ko": "통과 결과에는 오늘의 상원 찬반 집계를 사용해야 합니다. 어느 숫자를 발표할까요?",
+          "en": "Use today's Senate yeas and nays for the passage result. Which tally should be published?"
         }
       ],
       "response": {
@@ -1662,16 +1662,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "섀힌과 캐시디는 협상 대표로서 2021년 8월 10일 69대30의 상원 통과를 환영했다. 표결과 협상 대표 명단을 연결하세요.",
-            "en": "Shaheen and Cassidy, lead negotiators, welcomed the August 10, 2021 Senate passage by 69–30. Link the tally to the lead negotiators."
+            "speaker": "npc:0",
+            "ko": "69대 30을 표결 칸에 넣고 협상 그룹 자료는 별도 첨부하세요.",
+            "en": "Enter 69–30 under the vote and attach the negotiating roster separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "섀힌과 캐시디는 협상 대표로서 2021년 8월 10일 69대30의 상원 통과를 환영했다. 초기 협상 인원과 본표결 숫자를 다시 구분하세요.",
-            "en": "Shaheen and Cassidy, lead negotiators, welcomed the August 10, 2021 Senate passage by 69–30. Reconcile negotiator numbers and the floor tally."
+            "speaker": "npc:1",
+            "ko": "오늘 상원 통과 표결은 69대 30입니다. 잘못된 숫자로 만든 발표 초안을 보류하고 표결 집계를 다시 확인하세요.",
+            "en": "Today's Senate passage vote was 69–30. Hold the draft with the wrong tally and recheck the floor-vote record."
           }
         ]
       },
@@ -1956,18 +1956,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "오늘 발표의 상원 협상자 네 명을 기록하려 합니다.",
-          "en": "I am recording the four Senate negotiators in today's announcement."
+          "ko": "공개 발표 자료에 발표자 네 명을 넣어야 하는데 초안에는 두 명만 있습니다.",
+          "en": "The public announcement needs four names, but the draft contains only two."
         },
         {
           "speaker": "npc:0",
-          "ko": "우리 둘만 기록하면 다른 양당 참여자가 빠집니다.",
-          "en": "Listing only us omits the other participants."
+          "ko": "다른 법안의 초당적 명단을 복사해 넣지는 마세요.",
+          "en": "Do not copy a bipartisan roster from a different bill."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 나머지 두 사람을 함께 기록하세요.",
-          "en": "Right. Include the other two names."
+          "ko": "공개 발표문에 함께 이름을 올린 나머지 두 의원을 확인한 뒤 자막을 완성해 주세요.",
+          "en": "Check the other two senators named in the public announcement before completing the caption."
         }
       ],
       "response": {
@@ -2002,15 +2002,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2022년 6월 21일 머피·코닌·시네마·틸리스가 Bipartisan Safer Communities Act를 발표했다. 네 명의 실제 발표자 명단을 보존하세요.",
-            "en": "Murphy, Cornyn, Sinema and Tillis announced the Bipartisan Safer Communities Act on June 21, 2022. Preserve the four actual announcers."
+            "ko": "시네마와 틸리스를 추가해 네 사람의 발표 명단을 완성하세요. 발표자와 전체 찬성자는 따로 표시합니다.",
+            "en": "Add Sinema and Tillis to complete the four-person announcement roster; distinguish announcers from all supporters."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2022년 6월 21일 머피·코닌·시네마·틸리스가 Bipartisan Safer Communities Act를 발표했다. 다른 초당적 협상팀 명단을 회수하세요.",
-            "en": "Murphy, Cornyn, Sinema and Tillis announced the Bipartisan Safer Communities Act on June 21, 2022. Remove the unrelated negotiation roster."
+            "ko": "빠진 사람은 시네마와 틸리스입니다. 다른 협상팀의 이름을 지우고 공개 발표 자료에 맞춰 자막을 수정하세요.",
+            "en": "The missing senators are Sinema and Tillis. Remove names from the other negotiating team and correct the caption against the public release."
           }
         ]
       },
@@ -2069,18 +2069,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "민주당 두 의원의 공동 발표에 공화당 참여자도 표시해야 합니다.",
-          "en": "The announcement by two Democrats also needs its Republican participant recorded."
+          "ko": "7월 18일 발표문에 의원 세 사람의 이름을 정확히 넣어야 합니다.",
+          "en": "The July 18 announcement needs an accurate three-senator byline."
         },
         {
           "speaker": "npc:0",
-          "ko": "정당 이름만으로 공동 발의를 단정할 수는 없지요.",
-          "en": "Party labels alone do not establish joint sponsorship."
+          "ko": "나중에 표결에 찬성할 사람과 오늘 발표 명단에 있는 사람은 같은 범주가 아닙니다.",
+          "en": "Later yes voters and today's named announcers are different categories."
         },
         {
           "speaker": "npc:1",
-          "ko": "네. 실제 발표문에 나온 동료를 확인하세요.",
-          "en": "Yes. Identify the colleague named in the announcement."
+          "ko": "공개 발표문을 기준으로 빈 세 번째 이름을 채워 주세요.",
+          "en": "Fill the third name from the public announcement."
         }
       ],
       "response": {
@@ -2115,15 +2115,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "2022년 7월 18일 볼드윈·파인스타인·콜린스는 Respect for Marriage Act를 발표했다. 초기 공동 발표 명단을 기록하세요.",
-            "en": "Baldwin, Feinstein and Collins announced the Respect for Marriage Act on July 18, 2022. Record the initial announcement roster."
+            "ko": "수전 콜린스를 발표 명단에 추가하세요. 추후 수정안 참여 명단은 별도 문서로 남겨야 합니다.",
+            "en": "Add Susan Collins to the announcement roster. Keep any later amendment participants in a separate document."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2022년 7월 18일 볼드윈·파인스타인·콜린스는 Respect for Marriage Act를 발표했다. 다른 공화당 지지자와 발표자를 구분하세요.",
-            "en": "Baldwin, Feinstein and Collins announced the Respect for Marriage Act on July 18, 2022. Distinguish other Republican supporters from the announcer."
+            "ko": "오늘 발표에 함께한 사람은 콜린스입니다. 다른 의원의 지지 여부를 추정하지 말고 발표 명단만 고치세요.",
+            "en": "Collins joined today's announcement. Correct the byline without inferring any other senator's support."
           }
         ]
       },
@@ -2182,18 +2182,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "같은 주의 양당 의원이 참여한 연방 선거제도 개혁 기록입니다.",
-          "en": "This is a federal election reform involving both senators from one state."
+          "ko": "주 대표단의 공동 선거법 브리핑을 의회 절차 자료와 유권자 등록 자료 중 어디에 연결할지 고민입니다.",
+          "en": "I'm deciding whether the delegation's joint election-law briefing belongs with congressional procedure or voter registration."
         },
         {
           "speaker": "npc:0",
-          "ko": "주 선거법과 연방 의회 절차는 구분해야 합니다.",
-          "en": "Distinguish state election law from congressional procedure."
+          "ko": "투표를 하는 단계와 의회가 결과를 처리하는 단계는 나눠 보세요.",
+          "en": "Separate the act of voting from Congress's handling of the results."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇습니다. 이번 협력의 대상 법을 명확히 적으세요.",
-          "en": "Yes. Specify the law targeted by this effort."
+          "ko": "이번 7월 제안이 손보려는 기존 연방법의 이름으로 분류를 정해 주세요.",
+          "en": "Classify this July proposal by the existing federal statute it seeks to revise."
         }
       ],
       "response": {
@@ -2227,16 +2227,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "npc:1",
-            "ko": "캐피토와 맨친은 2022년 7월 선거인단 집계법 개혁안 발표에 참여했다. 같은 주 양당 협력 사례로 기록하세요.",
-            "en": "Capito and Manchin participated in the July 2022 Electoral Count Act reform proposal. Record the cross-party state delegation collaboration."
+            "speaker": "npc:0",
+            "ko": "1887년 선거인단 집계법 개혁으로 연결하세요. 주 대표단의 공동 발표 자료는 의회 절차에 첨부합니다.",
+            "en": "Link it to reform of the 1887 Electoral Count Act and attach the delegation announcement to congressional procedure."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "캐피토와 맨친은 2022년 7월 선거인단 집계법 개혁안 발표에 참여했다. 주 단위 선거법과 연방 집계법을 분리하세요.",
-            "en": "Capito and Manchin participated in the July 2022 Electoral Count Act reform proposal. Separate state election law from federal counting law."
+            "speaker": "npc:1",
+            "ko": "개혁 대상은 1887년 선거인단 집계법입니다. 등록법이나 선거운동법 자료에 잘못 보낸 브리핑을 돌려받으세요.",
+            "en": "The target is the Electoral Count Act of 1887. Retrieve the briefing if it was routed to registration or campaign-finance materials."
           }
         ]
       },
@@ -2521,18 +2521,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "전쟁 관련 기존 권한에 대한 공동 법안이 상원을 통과했습니다.",
-          "en": "A joint measure on earlier war authorities passed the Senate."
+          "ko": "상원 통과 소식을 전하는 설명문에 모든 군사력 사용 권한이 없어졌다고 쓰여 있습니다.",
+          "en": "A draft about Senate passage says that all authorizations for military force have disappeared."
         },
         {
           "speaker": "npc:0",
-          "ko": "모든 군사권한을 없앤 것처럼 설명하지 마세요.",
-          "en": "Do not describe it as eliminating all military authorities."
+          "ko": "폐지 대상으로 삼은 권한과 폐지되지 않은 권한을 구분해야 합니다.",
+          "en": "Separate the authorizations targeted for repeal from those not targeted."
         },
         {
           "speaker": "npc:1",
-          "ko": "네. 이번에 대상으로 삼은 두 권한을 명시하세요.",
-          "en": "Yes. Identify the two authorizations targeted."
+          "ko": "상원 통과와 법률 성립도 다른 단계입니다. 우선 이번 법안의 대상부터 정확히 적으세요.",
+          "en": "Senate passage and enactment are also distinct. Start by specifying what this bill targets."
         }
       ],
       "response": {
@@ -2567,15 +2567,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "영과 케인의 1991·2002년 AUMF 폐지 법안은 2023년 3월 29일 상원을 통과했다. 상원 통과 단계로 기록하고 법률 성립은 별도 확인하세요.",
-            "en": "Young and Kaine's proposal to repeal the 1991 and 2002 AUMFs passed the Senate on March 29, 2023. Record Senate passage and track enactment separately."
+            "ko": "1991년과 2002년 이라크 관련 AUMF만 대상이라고 수정하고, 상태는 상원 통과로 남기세요.",
+            "en": "Correct the draft to name only the 1991 and 2002 Iraq-related AUMFs and leave the status as Senate passage."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "영과 케인의 1991·2002년 AUMF 폐지 법안은 2023년 3월 29일 상원을 통과했다. 2001년 권한과 혼동한 표를 수정하세요.",
-            "en": "Young and Kaine's proposal to repeal the 1991 and 2002 AUMFs passed the Senate on March 29, 2023. Correct the chart conflating the 2001 authorization."
+            "ko": "대상은 1991년과 2002년 AUMF입니다. 2001년 권한이나 전쟁권한결의 전체를 폐지했다고 한 문장을 회수하세요.",
+            "en": "The targets are the 1991 and 2002 AUMFs. Withdraw the sentence claiming repeal of the 2001 authority or the entire War Powers Resolution."
           }
         ]
       },

@@ -35,18 +35,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난달 작성된 임명장과 이번 회기의 선서 기록이 서로 다른 날짜입니다.",
-          "en": "The appointment certificate and oath record have different dates."
+          "ko": "임명장과 선서 증명서에 서로 다른 날짜가 찍혀 있습니다.",
+          "en": "Which date belongs in the service ledger? The appointment certificate and oath record differ."
         },
         {
           "speaker": "npc:0",
-          "ko": "작성일을 임기 시작일로 옮기면 공석 계산이 달라집니다.",
-          "en": "Using the certificate date as the start changes the vacancy calculation."
+          "ko": "임명장 발행일은 문서 이력에 그대로 남겨 주세요.",
+          "en": "Retain the certificate issue date in the document history."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇다면 실제 효력 발생일을 쓰세요.",
-          "en": "Then enter the effective date."
+          "ko": "의석 공석 기간을 계산할 때는 임명 효력일을 사용해야 합니다.",
+          "en": "Use the effective date when calculating the vacancy."
         }
       ],
       "response": {
@@ -81,15 +81,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "카너핸의 임명장은 2000년 12월 4일 작성됐지만 효력 및 선서는 2001년 1월 3일이었다. 임명장과 취임일을 별도 필드에 보존하세요.",
-            "en": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001. Preserve the certificate and effective date separately."
+            "ko": "1월 3일부터 재임 구간을 표시하고 12월 4일 임명장을 별도로 첨부하세요.",
+            "en": "Mark service from January 3 and attach the December 4 certificate separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "카너핸의 임명장은 2000년 12월 4일 작성됐지만 효력 및 선서는 2001년 1월 3일이었다. 공석 계산표를 회수하고 날짜를 다시 대조하세요.",
-            "en": "Carnahan's certificate was dated December 4, 2000, but her appointment took effect and oath occurred January 3, 2001. Recall the vacancy calculation and reconcile the dates."
+            "ko": "임명 효력과 선서는 1월 3일입니다. 공석 기간을 다시 계산한 후 임명장 발행일을 별도 칸에 복원하세요.",
+            "en": "The appointment took effect and the oath occurred on January 3. Recalculate the vacancy and restore the separate certificate date."
           }
         ]
       },
@@ -261,18 +261,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "이미 선서한 의원의 새로운 본회의 기록이 나왔습니다.",
-          "en": "A chamber record has appeared for a senator already sworn in."
+          "ko": "미네소타 선서가 기록되어 있는데 상원 공개 회기의 기록도 도착했습니다.",
+          "en": "The Minnesota oath is already filed, and a Senate open-session record has arrived."
         },
         {
           "speaker": "npc:0",
-          "ko": "이전 기록을 지우지 말아야 합니다.",
-          "en": "Do not delete the previous record."
+          "ko": "두 기록 중 하나가 중복이라고 삭제하면 안 됩니다.",
+          "en": "Do not delete one as a duplicate just because both are oaths."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇습니다. 본회의에서 다시 선서한 날짜를 추가하세요.",
-          "en": "Exactly. Add the date of the chamber oath."
+          "ko": "공개 회기에서 이루어진 행위의 날짜를 새 칸에 넣어 주세요.",
+          "en": "Enter the date of the act in open session in a new field."
         }
       ],
       "response": {
@@ -307,15 +307,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "바클리는 11월 5일 미네소타 선서 후 11월 12일 상원 공개 회기에서 선서했다. 두 선서 기록을 시간순으로 연결하세요.",
-            "en": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5. Link both oath records chronologically."
+            "ko": "11월 12일을 공개 회기 선서로 추가하세요. 11월 5일 자료는 유지합니다.",
+            "en": "Add November 12 as the open-session oath and retain November 5."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "바클리는 11월 5일 미네소타 선서 후 11월 12일 상원 공개 회기에서 선서했다. 하나의 선서만 있었다는 기록을 보류하세요.",
-            "en": "Barkley took an oath in open Senate session on November 12 after the Minnesota oath on November 5. Hold the record asserting only one oath."
+            "ko": "11월 5일은 미네소타 선서, 12일은 공개 회기 선서입니다. 하나만 남긴 연혁을 두 항목으로 복원하세요.",
+            "en": "November 5 was the Minnesota oath; November 12 was the open-session oath. Restore both entries."
           }
         ]
       },
@@ -374,18 +374,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "임명장 발급 이후 자격 확인이 지연되었습니다.",
-          "en": "Credential review took longer than the certificate issuance."
+          "ko": "버리스의 서류를 두고 임명장과 자격 확인을 같은 사건으로 적은 초안이 있습니다.",
+          "en": "A draft merges Burris's certificate and credential acceptance into one event."
         },
         {
           "speaker": "npc:0",
-          "ko": "임명장 날짜와 자격 확인은 별개입니다.",
-          "en": "The certificate date and credential acceptance are distinct."
+          "ko": "임명장의 날짜는 원문 그대로 두세요.",
+          "en": "Keep the original certificate date unchanged."
         },
         {
           "speaker": "npc:1",
-          "ko": "그러면 자격 서류가 적합하다고 확인된 날짜를 찾으세요.",
-          "en": "Then find when the credentials were accepted."
+          "ko": "자격 확인과 선서도 별도의 사건입니다. 가운데 단계의 날짜를 정해 주세요.",
+          "en": "Credential acceptance and the oath are separate events too. Identify the middle milestone."
         }
       ],
       "response": {
@@ -420,15 +420,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "버리스의 임명장은 2008년 12월 31일자였고 2009년 1월 12일 자격이 확인됐으며 15일 선서했다. 자격 확인과 선서를 구분해 기록하세요.",
-            "en": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15. Record credential acceptance separately from the oath."
+            "ko": "1월 12일을 자격 확인일로 표시하고 15일 선서와 분리하세요.",
+            "en": "Enter January 12 as credential acceptance, separate from the January 15 oath."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "버리스의 임명장은 2008년 12월 31일자였고 2009년 1월 12일 자격이 확인됐으며 15일 선서했다. 임명장만으로 자격 확인을 완료했다는 표시를 지우세요.",
-            "en": "Burris's certificate was dated December 31, 2008; credentials were accepted January 12, 2009, and the oath occurred January 15. Remove the premature acceptance mark."
+            "ko": "12월 31일 임명장, 1월 12일 자격 확인, 1월 15일 선서입니다. 잘못 합친 항목을 세 단계로 나누세요.",
+            "en": "December 31 was the certificate, January 12 acceptance, and January 15 the oath. Split the merged record into three milestones."
           }
         ]
       },
@@ -487,18 +487,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "지난주 임명 발표 이후 하원 직책 정리가 있었습니다.",
-          "en": "The House office was resolved after last week's appointment announcement."
+          "ko": "하원과 상원 경력표를 겹쳐 보니 전환일이 맞지 않습니다.",
+          "en": "The House and Senate career timelines do not align at the transition."
         },
         {
           "speaker": "npc:0",
-          "ko": "두 원의 재임을 같은 날 자동으로 중첩시키지 마세요.",
-          "en": "Do not automatically overlap service in both chambers."
+          "ko": "하원 사임 기록은 임명 발표 기록과 따로 보존하세요.",
+          "en": "Keep the House resignation separate from the appointment announcement."
         },
         {
           "speaker": "npc:1",
-          "ko": "맞습니다. 상원 임명의 실제 효력 발생일을 적으세요.",
-          "en": "Right. Enter the actual effective date."
+          "ko": "상원 임명 효력이 시작되는 경계일을 정하면 중복 구간을 검토할 수 있습니다.",
+          "en": "Identify the effective date to review any apparent overlap."
         }
       ],
       "response": {
@@ -533,15 +533,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "질리브랜드는 1월 23일 임명 발표 후 26일 하원에서 사직하면서 상원 임명이 효력을 얻었다. 하원 퇴임과 상원 효력을 연결하세요.",
-            "en": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26. Link House resignation and Senate effectiveness."
+            "ko": "1월 26일을 전환 경계로 잡고 23일 발표를 별도 기록에 남기세요.",
+            "en": "Set January 26 as the transition boundary and retain the January 23 announcement."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "질리브랜드는 1월 23일 임명 발표 후 26일 하원에서 사직하면서 상원 임명이 효력을 얻었다. 발표일을 효력일로 쓴 경력표를 수정하세요.",
-            "en": "Gillibrand was appointed January 23, but her Senate appointment became effective upon House resignation January 26. Correct the career record using the announcement date."
+            "ko": "효력은 하원 사임일인 1월 26일에 발생했습니다. 발표일을 사용한 재임 구간을 수정하세요.",
+            "en": "Effectiveness began with the House resignation on January 26. Correct the service interval that used the announcement date."
           }
         ]
       },
@@ -600,18 +600,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "임명 발표일과 하원 사임일이 다릅니다.",
-          "en": "The appointment announcement and House resignation dates differ."
+          "ko": "새 대표단 소개문이 헬러를 임명 발표일부터 상원의원으로 표시합니다.",
+          "en": "The new delegation caption lists Heller as a senator from the announcement date."
         },
         {
           "speaker": "npc:0",
-          "ko": "실제 상원 재임 기록은 두 날짜 중 어느 쪽인지 확인해야 합니다.",
-          "en": "We need to identify the actual effective date."
+          "ko": "발표일은 기사 배경으로 남겨도 되지만 재임 날짜와는 다릅니다.",
+          "en": "The announcement date may remain in the background, but it is not the service date."
         },
         {
           "speaker": "npc:1",
-          "ko": "선서 기록까지 대조해 주세요.",
-          "en": "Compare the oath record as well."
+          "ko": "하원 사임 및 상원 선서 기록을 대조해서 소개문을 수정해 주세요.",
+          "en": "Revise the caption against the House resignation and Senate oath records."
         }
       ],
       "response": {
@@ -646,15 +646,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "헬러는 5월 3일 임명 발표 후 5월 9일 하원 사임과 상원 선서를 했다. 실제 전환일을 경력표에 반영하세요.",
-            "en": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9. Enter the actual transition date."
+            "ko": "5월 9일을 공식 전환일로 사용해 소개문을 게시하세요.",
+            "en": "Use May 9 as the formal transition date and release the caption."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "헬러는 5월 3일 임명 발표 후 5월 9일 하원 사임과 상원 선서를 했다. 임명 발표일로 확정한 항목을 수정하세요.",
-            "en": "Heller was appointed May 3 and resigned his House seat and took the Senate oath May 9. Correct the entry using the announcement date."
+            "ko": "5월 3일은 발표일이고 9일은 사임과 선서일입니다. 초안을 보류하고 소개문 날짜를 바로잡으세요.",
+            "en": "May 3 was the announcement; May 9 was resignation and oath. Hold the draft and correct its date."
           }
         ]
       },
@@ -713,18 +713,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "임시 임명 의원의 경력 종료와 새 의원의 선출을 연결합니다.",
-          "en": "I am linking a temporary appointee's departure to the elected successor."
+          "ko": "바이든의 공석에서 쿤스까지 이어지는 의석 계보에 한 칸이 비어 있습니다.",
+          "en": "The seat lineage from Biden's vacancy to Coons has a missing entry."
         },
         {
           "speaker": "npc:0",
-          "ko": "정규 선거와 임기 잔여분을 구별합시다.",
-          "en": "Distinguish a regular term from the remainder of a term."
+          "ko": "특별선거로 선출된 사람과 그전의 임명 의원을 구별하세요.",
+          "en": "Distinguish the special-election winner from the preceding appointee."
         },
         {
           "speaker": "npc:1",
-          "ko": "이전 임명 의원이 누구였는지 확인하세요.",
-          "en": "Identify the previous appointee."
+          "ko": "중간에 실제로 의석을 맡았던 사람을 채워 주세요.",
+          "en": "Fill in the person who actually held the seat in between."
         }
       ],
       "response": {
@@ -759,15 +759,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "코프먼은 바이든의 공석을 임시로 채웠고 쿤스는 2010년 특별선거 후 의석을 이어받았다. 임시 임명 단계와 특별선거 단계를 연결하세요.",
-            "en": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election. Link the interim appointment and special election."
+            "ko": "테드 코프먼을 중간 칸에 넣어 의석 계보를 완성하세요.",
+            "en": "Insert Ted Kaufman in the middle and complete the seat lineage."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "코프먼은 바이든의 공석을 임시로 채웠고 쿤스는 2010년 특별선거 후 의석을 이어받았다. 바이든에서 쿤스로 바로 연결한 기록을 수정하세요.",
-            "en": "Kaufman temporarily filled Biden's vacancy; Coons succeeded him after the 2010 special election. Correct the record skipping the interim appointee."
+            "ko": "직전 임명 의원은 코프먼입니다. 바이든에서 쿤스로 바로 이어진 선을 끊고 임시 재임 구간을 추가하세요.",
+            "en": "Kaufman was the immediate appointee. Break the direct Biden-to-Coons link and add the interim service."
           }
         ]
       },
@@ -939,18 +939,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "새 임명 의원의 선서 확인서를 받았습니다.",
-          "en": "I received the oath certificate of the new appointee."
+          "ko": "매사추세츠 대표단 명부에 어제와 오늘의 두 행위가 들어왔습니다.",
+          "en": "Two events from yesterday and today have arrived for the Massachusetts delegation roster."
         },
         {
           "speaker": "npc:0",
-          "ko": "주지사 임명과 상원 선서는 별개 기록입니다.",
-          "en": "Appointment and Senate oath are separate records."
+          "ko": "어제의 임명 문서는 그대로 보존해 주세요.",
+          "en": "Keep yesterday's appointment document intact."
         },
         {
           "speaker": "npc:1",
-          "ko": "그러면 오늘의 실제 행위를 표시해 주세요.",
-          "en": "Then identify today's actual act."
+          "ko": "오늘 자료가 입증하는 절차를 별도 행으로 표시하세요.",
+          "en": "Label the procedure established by today's document in a separate row."
         }
       ],
       "response": {
@@ -985,15 +985,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "커크는 2009년 9월 24일 임명되고 25일 선서했다. 선서 완료로 기록하세요.",
-            "en": "Kirk was appointed September 24, 2009, and took the oath September 25. Record completion of the oath."
+            "ko": "9월 25일 선서 완료로 표시하고 24일 임명과 연결하세요.",
+            "en": "Mark the September 25 oath and link it to the September 24 appointment."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "커크는 2009년 9월 24일 임명되고 25일 선서했다. 선거 결과로 잘못 분류한 기록을 정정하세요.",
-            "en": "Kirk was appointed September 24, 2009, and took the oath September 25. Correct the record labeled election results."
+            "ko": "오늘의 사건은 상원 선서입니다. 임명장 발급과 선서 칸을 분리해서 명부를 수정하세요.",
+            "en": "Today's event was the Senate oath. Separate certificate issuance from the oath in the roster."
           }
         ]
       },
@@ -1052,18 +1052,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "금요일 임명 기록 이후 새로운 문서가 도착했습니다.",
-          "en": "A new document has arrived after Friday's appointment."
+          "ko": "여름 공석 처리 기록에 7월 20일 문서를 추가하려 합니다.",
+          "en": "A July 20 document needs to be added to the summer vacancy file."
         },
         {
           "speaker": "npc:0",
-          "ko": "공석을 채운 사람의 선서 여부도 확인해야 합니다.",
-          "en": "We also need to verify the oath of the appointee."
+          "ko": "16일 임명 기록은 이전 상태로 보존해 주세요.",
+          "en": "Retain the July 16 appointment as the prior milestone."
         },
         {
           "speaker": "npc:1",
-          "ko": "오늘 날짜로 무엇을 확정할 수 있습니까?",
-          "en": "What can we certify today?"
+          "ko": "오늘 확인할 수 있는 절차를 선택하면 의석 이력이 갱신됩니다.",
+          "en": "Choose the procedural milestone that today's document establishes."
         }
       ],
       "response": {
@@ -1098,15 +1098,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "굿윈은 2010년 7월 16일 임명되고 20일 선서했다. 선서 확인을 완료하세요.",
-            "en": "Goodwin was appointed July 16, 2010, and took the oath July 20. Complete the oath verification."
+            "ko": "7월 20일 상원 선서를 추가하세요. 특별선거 이후의 승계는 미래 자료가 필요합니다.",
+            "en": "Add the July 20 Senate oath. Any later special-election succession needs a future record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "굿윈은 2010년 7월 16일 임명되고 20일 선서했다. 선거 승리로 표시한 항목을 수정하세요.",
-            "en": "Goodwin was appointed July 16, 2010, and took the oath July 20. Correct the entry labeled election victory."
+            "ko": "굿윈은 7월 16일 임명되고 20일 선서했습니다. 선거 결과로 잘못 표시한 문서를 임명·취임 기록으로 옮기세요.",
+            "en": "Goodwin was appointed July 16 and sworn July 20. Move the misclassified election document to the appointment and entry file."
           }
         ]
       },
@@ -1391,18 +1391,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "새 공석 임명자의 서류를 접수했습니다.",
-          "en": "I received the vacancy appointee's paperwork."
+          "ko": "6월 6일 기록 다음에 10일 문서가 도착했습니다.",
+          "en": "A June 10 document follows the June 6 record."
         },
         {
           "speaker": "npc:0",
-          "ko": "임명 발표와 공식 선서는 날짜가 다르지요.",
-          "en": "Appointment and oath dates may differ."
+          "ko": "공석 임명의 발표일은 이전 행으로 남겨 주세요.",
+          "en": "Retain the vacancy appointment announcement in its earlier row."
         },
         {
           "speaker": "npc:1",
-          "ko": "오늘의 문서가 어떤 절차를 확인하는지 표시하세요.",
-          "en": "Identify which stage today's record confirms."
+          "ko": "두 번째 자료가 어떤 절차를 완료했는지 표시하세요.",
+          "en": "Identify the procedural milestone completed by the second document."
         }
       ],
       "response": {
@@ -1437,15 +1437,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "키에사는 2013년 6월 6일 임명되고 10일 선서했다. 선서 기록을 명부에 연결하세요.",
-            "en": "Chiesa was appointed June 6, 2013, and took the oath June 10. Link the oath to the roster."
+            "ko": "6월 10일 선서를 표시하고 임시 재임 자료를 저장하세요.",
+            "en": "Mark the June 10 oath and save the interim-service record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "키에사는 2013년 6월 6일 임명되고 10일 선서했다. 임명 발표일로 기록한 날짜를 고치세요.",
-            "en": "Chiesa was appointed June 6, 2013, and took the oath June 10. Correct the date entered as the announcement."
+            "ko": "키에사는 6일 임명되고 10일 선서했습니다. 두 날짜를 한 사건으로 합친 표를 다시 나누세요.",
+            "en": "Chiesa was appointed June 6 and sworn June 10. Split the merged events into separate rows."
           }
         ]
       },
@@ -1504,18 +1504,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "새로 선출된 의원의 의석 이력을 복원합니다.",
-          "en": "I am reconstructing the newly elected senator's seat history."
+          "ko": "뉴저지 의석 계보를 정리하는데 최초 공석과 특별선거 사이의 인물이 사라졌습니다.",
+          "en": "The New Jersey seat lineage has lost the person between the vacancy and special election."
         },
         {
           "speaker": "npc:0",
-          "ko": "당적 변동이 있었으므로 직전 임명자도 보존해야 합니다.",
-          "en": "The party changed, so preserve the interim appointee too."
+          "ko": "정당 정보는 각 재임 구간에 따로 표시해야 합니다.",
+          "en": "Record party affiliation for each service interval separately."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 직접 전임자를 명시하세요.",
-          "en": "Exactly. Name the immediate predecessor."
+          "ko": "부커의 바로 앞 임명 의원을 복원해 주세요.",
+          "en": "Restore Booker's immediate appointed predecessor."
         }
       ],
       "response": {
@@ -1550,15 +1550,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "부커는 2013년 특별선거 후 공화당 임명 의원 키에사의 의석을 이어받았다. 정당 변화와 의석 승계를 기록하세요.",
-            "en": "Booker succeeded Republican appointee Chiesa after the 2013 special election. Record both the party change and succession."
+            "ko": "공화당 임명 의원 키에사의 재임 구간을 추가한 뒤 부커의 특별선거 기록을 연결하세요.",
+            "en": "Add Republican appointee Chiesa's service interval before linking Booker's special-election record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "부커는 2013년 특별선거 후 공화당 임명 의원 키에사의 의석을 이어받았다. 최초 공석 발생자와 직접 전임자를 다시 나누세요.",
-            "en": "Booker succeeded Republican appointee Chiesa after the 2013 special election. Separate the original vacancy from the immediate predecessor."
+            "ko": "직전 임명 의원은 키에사입니다. 로텐버그의 공석과 키에사의 임시 재임을 구별해 계보를 고치세요.",
+            "en": "Chiesa was the immediate appointee. Distinguish Lautenberg's vacancy from Chiesa's interim service."
           }
         ]
       },
@@ -1730,18 +1730,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "어제 경선 결선 결과를 일반선거 일정과 대조하고 있습니다.",
-          "en": "I am comparing yesterday's primary runoff with the general election calendar."
+          "ko": "어제 선거 결과 때문에 현직 명부를 바로 수정하라는 요청이 왔습니다.",
+          "en": "Yesterday's election result prompted a request to change the incumbent roster immediately."
         },
         {
           "speaker": "npc:0",
-          "ko": "경선에서의 결과가 곧 상원 의석 상실은 아닙니다.",
-          "en": "A primary result is not immediate loss of the Senate seat."
+          "ko": "후보 자격과 현재 재임 상태는 서로 다른 기록입니다.",
+          "en": "Candidate status and current service are separate records."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇다면 어제의 실제 결과를 분류해 주세요.",
-          "en": "Then classify yesterday's result."
+          "ko": "9월 26일 결과가 어떤 선거 단계인지부터 확인해 주세요.",
+          "en": "First classify the September 26 result by its electoral stage."
         }
       ],
       "response": {
@@ -1776,15 +1776,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "스트레인지는 2017년 9월 26일 공화당 경선 결선에서 패배하여 일반선거 후보가 되지 못했다. 경선 결과만 확정하고 재임은 별도로 유지하세요.",
-            "en": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate. Certify the primary result while retaining the separate tenure record."
+            "ko": "경선 결선 패배를 후보 기록에 표시하되 상원 재임 명부는 그 결과만으로 지우지 마세요.",
+            "en": "Mark the primary-runoff defeat in the candidate record without deleting the incumbent service entry on that basis."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "스트레인지는 2017년 9월 26일 공화당 경선 결선에서 패배하여 일반선거 후보가 되지 못했다. 의석 즉시 상실 표시를 철회하세요.",
-            "en": "Strange lost the Republican primary runoff September 26, 2017, and did not become a general-election candidate. Remove the immediate seat-loss label."
+            "ko": "공화당 경선 결선 패배입니다. 일반선거 결과나 제명으로 처리한 변경을 취소하고 후보 기록만 수정하세요.",
+            "en": "It was a Republican primary-runoff defeat. Undo any general-election or expulsion classification and update only the candidate record."
           }
         ]
       },
@@ -2182,18 +2182,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "두 의원이 오늘 같은 주의 상원 대표단에 합류합니다.",
-          "en": "Both senators join the state's delegation today."
+          "ko": "애리조나 두 의석의 취임 카드가 같은 날짜로 생성됐습니다.",
+          "en": "Both Arizona seat-entry cards were generated with the same date."
         },
         {
           "speaker": "npc:0",
-          "ko": "같은 취임일이 곧 같은 선출 방식이라는 뜻은 아닙니다.",
-          "en": "A shared entry date does not imply an identical route."
+          "ko": "제 카드의 취임 근거는 다른 의석의 근거와 별도로 확인해 주세요.",
+          "en": "Check the basis for my entry independently of the other seat."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 두 사람의 진입 경로를 구별하세요.",
-          "en": "Right. Distinguish the routes."
+          "ko": "제 카드도 마찬가지입니다. 이름 순서에 맞춰 두 진입 경로를 적어 주세요.",
+          "en": "Do the same for my card. Record the two entry routes in name order."
         }
       ],
       "response": {
@@ -2228,15 +2228,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "맥샐리는 2019년 1월 3일 공석 임명으로 취임했고 시네마는 2018년 정규 선거 승리로 상원에 진입했다. 두 경력의 진입 방식을 별도로 표시하세요.",
-            "en": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election. Mark the two entry routes separately."
+            "ko": "맥샐리는 임명, 시네마는 정규 선거로 각각 표시해 두 의석의 기록을 분리하세요.",
+            "en": "Label McSally appointment and Sinema regular election, preserving the two distinct seat records."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "맥샐리는 2019년 1월 3일 공석 임명으로 취임했고 시네마는 2018년 정규 선거 승리로 상원에 진입했다. 같은 날짜를 동일한 선출 방식으로 추정하지 마세요.",
-            "en": "McSally entered by appointment January 3, 2019, while Sinema entered after winning the 2018 regular election. Do not infer identical selection from a shared date."
+            "ko": "맥샐리는 공석 임명, 시네마는 2018년 정규선거 당선으로 진입했습니다. 두 카드의 근거를 다시 배치하세요.",
+            "en": "McSally entered by vacancy appointment and Sinema by the 2018 regular election. Reassign the supporting records to their proper cards."
           }
         ]
       },
@@ -2295,18 +2295,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "올해 특별선거 결과에 따라 대표단의 의석 명부를 바꿉니다.",
-          "en": "I am changing the roster following this year's special election."
+          "ko": "특별선거 뒤 애리조나 의석 계보를 수정하려는데 세 명의 이전 재임자가 검색됩니다.",
+          "en": "Updating the Arizona seat after the special election returned three earlier officeholders."
         },
         {
           "speaker": "npc:0",
-          "ko": "2019년 임명 기록을 지우면 이전 경력이 사라집니다.",
-          "en": "Deleting the 2019 appointment would erase earlier service."
+          "ko": "과거에 그 의석을 맡았던 사람 모두가 직전 전임자인 것은 아닙니다.",
+          "en": "Not everyone who once held that seat is the immediate predecessor."
         },
         {
           "speaker": "npc:1",
-          "ko": "네. 새 의원의 직접 전임자를 연결하세요.",
-          "en": "Yes. Link the immediate predecessor."
+          "ko": "다른 의석과 분리해서 켈리 바로 앞의 사람을 찾으세요.",
+          "en": "Find the person immediately before Kelly without mixing the other seat."
         }
       ],
       "response": {
@@ -2341,15 +2341,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "켈리는 2020년 특별선거 후 임명 의원 맥샐리를 대체했다. 의석별 승계 기록을 확정하세요.",
-            "en": "Kelly replaced appointee McSally after the 2020 special election. Finalize the seat succession record."
+            "ko": "맥샐리의 임명 구간 뒤에 켈리의 특별선거 승계 기록을 붙이세요.",
+            "en": "Place Kelly's special-election succession after McSally's appointed service."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "켈리는 2020년 특별선거 후 임명 의원 맥샐리를 대체했다. 다른 애리조나 의석 전임자를 연결한 표를 수정하세요.",
-            "en": "Kelly replaced appointee McSally after the 2020 special election. Correct the table linking the wrong Arizona seat."
+            "ko": "직전 전임자는 맥샐리입니다. 카일과 매케인은 이전 단계에 그대로 두고 다른 의석과의 잘못된 연결을 끊으세요.",
+            "en": "McSally was the immediate predecessor. Retain Kyl and McCain as earlier stages and remove any other-seat link."
           }
         ]
       },
@@ -2408,18 +2408,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "새 동료의 임명 효력과 선서 날짜가 서로 다릅니다.",
-          "en": "The new colleague's appointment and oath dates differ."
+          "ko": "조지아의 공석 기간 계산표가 오늘 선서일부터 재임을 세고 있습니다.",
+          "en": "A Georgia vacancy calculation begins service on today's oath date."
         },
         {
           "speaker": "npc:0",
-          "ko": "오늘 선서했다고 오늘 임명이 처음 효력을 얻은 것은 아닙니다.",
-          "en": "Today's oath does not mean the appointment first became effective today."
+          "ko": "선서 기록은 별도 날짜로 보존해야 합니다.",
+          "en": "Preserve the oath as a distinct dated record."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇습니다. 실제 효력일을 표시하세요.",
-          "en": "Yes. Mark the effective date."
+          "ko": "임명의 효력이 발생한 날을 적용하면 계산이 달라지는지 확인하세요.",
+          "en": "Check the calculation against the date the appointment became effective."
         }
       ],
       "response": {
@@ -2454,15 +2454,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "뢰플러의 임명은 2020년 1월 1일 효력을 얻었고 6일 선서했다. 두 날짜를 모두 저장하세요.",
-            "en": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6. Save both dates."
+            "ko": "1월 1일을 효력일로 기록하고 6일 선서 기록을 첨부하세요.",
+            "en": "Record January 1 effectiveness and attach the January 6 oath record."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "뢰플러의 임명은 2020년 1월 1일 효력을 얻었고 6일 선서했다. 선서일로 효력일을 덮어쓴 기록을 수정하세요.",
-            "en": "Loeffler's appointment took effect January 1, 2020, and she took the oath January 6. Correct the effective date overwritten by the oath date."
+            "ko": "효력일은 1월 1일이고 선서는 6일입니다. 공석 기간표의 시작일을 다시 계산하세요.",
+            "en": "Effectiveness began January 1 and the oath was January 6. Recalculate the vacancy interval."
           }
         ]
       },
@@ -2521,18 +2521,18 @@
       "opening": [
         {
           "speaker": "player",
-          "ko": "결선 후 의석을 이어받은 의원의 이전 명부를 확인합니다.",
-          "en": "I am checking the previous roster for the seat filled after the runoff."
+          "ko": "조지아의 두 의석이 모두 새 선거 결과를 반영하고 있습니다.",
+          "en": "Both Georgia seats are being updated after election results."
         },
         {
           "speaker": "npc:0",
-          "ko": "같은 주의 다른 의석과 혼동하지 마세요.",
-          "en": "Do not confuse the other seat from the same state."
+          "ko": "한 의석의 결선 결과를 다른 의석에 붙이면 안 됩니다.",
+          "en": "Do not attach one seat's runoff to the other seat."
         },
         {
           "speaker": "npc:1",
-          "ko": "그렇죠. 이 의석의 바로 전 임명자를 찾아 주세요.",
-          "en": "Right. Find the immediate appointee in this seat."
+          "ko": "워녹이 이어받은 의석의 직전 임명자를 확인해 주세요.",
+          "en": "Identify the immediate appointee in the seat Warnock succeeded to."
         }
       ],
       "response": {
@@ -2567,15 +2567,15 @@
         "correct": [
           {
             "speaker": "npc:1",
-            "ko": "워녹은 2021년 1월 5일 특별선거 결선에서 임명 의원 뢰플러를 꺾었다. 특별선거 승계를 정확한 의석에 연결하세요.",
-            "en": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff. Link the special-election succession to the correct seat."
+            "ko": "뢰플러의 임명 재임 구간 뒤에 워녹의 특별선거 결과를 연결하세요.",
+            "en": "Link Warnock's special-election result after Loeffler's appointed interval."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "워녹은 2021년 1월 5일 특별선거 결선에서 임명 의원 뢰플러를 꺾었다. 다른 조지아 의석과 섞인 항목을 재검토하세요.",
-            "en": "Warnock defeated appointee Loeffler in the January 5, 2021 special-election runoff. Recheck the record mixing Georgia's two seats."
+            "ko": "워녹은 1월 5일 특별선거 결선에서 뢰플러를 꺾었습니다. 퍼듀의 의석과 섞인 결과표를 분리하세요.",
+            "en": "Warnock defeated Loeffler in the January 5 special-election runoff. Separate any result incorrectly attached to Perdue's seat."
           }
         ]
       },
