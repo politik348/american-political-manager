@@ -389,8 +389,8 @@
         "en": "Illinois delegation lunch"
       },
       "context": {
-        "ko": "같은 주 의원들이 당내 직책과 지역 대표성을 구별한다.",
-        "en": "Members from one state distinguish party roles from geographic representation."
+        "ko": "일리노이 대표단 토론에서 정당과 지역구가 다른 속성임을 설명한다.",
+        "en": "Explain that party and district are distinct attributes in an Illinois delegation discussion."
       },
       "cast": [
         {
@@ -411,23 +411,23 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "일리노이 대표단을 소개하는 자리입니다. 사회자가 두 의원이 같은 주 출신이라 같은 정당이라고 생각합니다.",
-          "en": "At an Illinois delegation introduction, the host assumes that two members from one state belong to the same party."
+          "ko": "방청객이 두 의원이 같은 주를 대표한다는 이유로 정치적 입장도 같다고 생각합니다.",
+          "en": "An audience member assumes that two members from one state must share political positions."
         },
         {
           "speaker": "npc:0",
-          "ko": "저는 시카고 출신 민주당 의원입니다. 하지만 주 대표단이 반드시 한 정당으로 구성되는 것은 아니죠.",
-          "en": "I am a Democrat from Chicago. A state delegation need not consist of a single party."
+          "ko": "지역 대표라는 공통점과 정당 소속은 별개입니다.",
+          "en": "Representation of one state and party affiliation are distinct."
         },
         {
           "speaker": "npc:1",
-          "ko": "피오리아를 대표하는 제 정당도 따로 확인해 주세요.",
-          "en": "Identify my party separately as the member from Peoria."
+          "ko": "피오리아를 대표하는 제 소속을 정확히 소개해 주세요.",
+          "en": "Identify my party as the member from Peoria."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "미셸 의원의 소속은 {{blank}}입니다.",
+        "ko": "미셸 의원님은 {{blank}} 소속입니다.",
         "en": "Representative Michel belongs to {{blank}}.",
         "choices": [
           {
@@ -456,16 +456,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "같은 주의 두 정당 의원으로 소개하겠습니다. 주와 정당을 혼동하지 않겠습니다.",
-            "en": "I'll introduce you as members of different parties from the same state, without confusing state and party."
+            "speaker": "npc:1",
+            "ko": "공화당입니다. 질문은 각 의원에게 직접 해 주세요.",
+            "en": "Republican. Put questions to each member directly."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 민주당입니다. 같은 주라는 이유만으로 답을 미리 가정하지는 마세요.",
+            "en": "I'm a Democrat. Don't assume our answers just because we share a state."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "로스텐카우스키: 미셸은 공화당, 저는 민주당입니다.",
-            "en": "Rostenkowski: Michel is Republican; I am a Democrat."
+            "speaker": "npc:1",
+            "ko": "저는 공화당이고 로스텐카우스키 의원은 민주당입니다. 이제 각자의 질문을 듣죠.",
+            "en": "I'm a Republican and Rostenkowski is a Democrat. Let's take questions separately."
           }
         ]
       },
@@ -861,8 +866,8 @@
         "en": "Illinois freshman gathering"
       },
       "context": {
-        "ko": "주 의회 지도부 경험이 있는 신임의원을 소개한다.",
-        "en": "A freshman with state legislative leadership experience is introduced."
+        "ko": "신임 연방의원의 이전 지도부 직책을 구분한다.",
+        "en": "Distinguish a new federal member's previous leadership office."
       },
       "cast": [
         {
@@ -875,20 +880,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "연방 하원에서는 신임이지만 일리노이 주 하원 지도부 경험이 있습니다.",
-          "en": "I am new to the U.S. House but served in Illinois House leadership."
+          "speaker": "host",
+          "ko": "학생이 신임 연방의원이 과거 의회 지도부 경험도 있다는 설명을 듣고 어느 직책이었는지 묻습니다.",
+          "en": "A student hears that a new federal member has earlier legislative leadership experience and asks which post it was."
         },
         {
-          "speaker": "player",
-          "ko": "그 직책을 연방 직책과 혼동하지 않겠습니다.",
-          "en": "I will distinguish that office from federal leadership."
+          "speaker": "npc:0",
+          "ko": "1971년과 1972년의 직책을 연방 하원 직책과 혼동하지 않도록 소개해 주세요.",
+          "en": "Introduce my 1971–1972 office without confusing it with a federal House position."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1971년과 1972년의 직책은 {{blank}}이었습니다.",
-        "en": "Your position in 1971 and 1972 was {{blank}}.",
+        "ko": "당시 하이드 의원님은 {{blank}}이었습니다.",
+        "en": "At that time Representative Hyde was {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -917,15 +922,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 주 의회에서 맡았던 직책입니다.",
-            "en": "Correct. It was a state legislative office."
+            "ko": "일리노이 주 하원 다수당 원내대표였습니다. 이제 연방 하원의 새 임기에 관한 질문을 듣죠.",
+            "en": "Illinois House majority leader. Now let's take questions about my new federal term."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "일리노이 주 하원 다수당 원내대표였습니다.",
-            "en": "I was the Illinois House majority leader."
+            "ko": "일리노이 주 하원 다수당 원내대표였습니다. 연방 의회 지도부가 아니었습니다.",
+            "en": "I was Illinois House majority leader, not a federal congressional leader."
           }
         ]
       },
@@ -1367,8 +1372,8 @@
         "en": "Tax policy briefing room"
       },
       "context": {
-        "ko": "세금 관련 법안의 소관 위원회를 확인한다.",
-        "en": "A tax-policy discussion identifies the relevant committee."
+        "ko": "기자가 하원 조세 입법 검토를 맡은 위원장의 직책을 확인한다.",
+        "en": "A reporter identifies the chair responsible for reviewing House tax legislation."
       },
       "cast": [
         {
@@ -1381,20 +1386,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "조세 관련 법안은 제가 위원장을 맡은 위원회의 주요 업무입니다.",
-          "en": "Tax legislation is central to the committee I chair."
+          "speaker": "host",
+          "ko": "기자가 조세 입법 관련 위원회와 그 위원장을 확인하고 싶어 합니다.",
+          "en": "A reporter wants to identify the committee and chair connected to tax legislation."
         },
         {
-          "speaker": "player",
-          "ko": "정확한 위원회 이름으로 자료를 분류하겠습니다.",
-          "en": "I will file these documents under the correct committee name."
+          "speaker": "npc:0",
+          "ko": "법안의 본회의 통과와 위원회 심사는 서로 다른 단계입니다. 제가 맡은 위원회를 알려 주세요.",
+          "en": "Committee review and floor passage are separate stages. Identify my committee."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "로스텐카우스키 의원은 {{blank}} 위원장입니다.",
-        "en": "Rostenkowski chairs the {{blank}} Committee.",
+        "ko": "로스텐카우스키 의원님은 {{blank}} 위원장입니다.",
+        "en": "Representative Rostenkowski chairs the {{blank}} Committee.",
         "choices": [
           {
             "id": "A",
@@ -1423,15 +1428,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "맞습니다. 하원의 조세 입법을 다루는 위원회입니다.",
-            "en": "Correct. It is the House committee responsible for tax legislation."
+            "ko": "세입위원회입니다. 기자에게 위원회 검토가 본회의 의결과 같지 않다는 점도 설명해 주세요.",
+            "en": "Ways and Means. Explain that committee review is not the same as a floor vote."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "세입위원회입니다. 다른 위원회와 관할이 다릅니다.",
-            "en": "Ways and Means. Its jurisdiction differs from other committees."
+            "ko": "세입위원회입니다. 기사에서는 위원회 심의와 본회의 의결을 구분하세요.",
+            "en": "Ways and Means. Distinguish committee consideration from floor passage in the article."
           }
         ]
       },
@@ -1679,8 +1684,8 @@
         "en": "House leadership introduction"
       },
       "context": {
-        "ko": "두 정당 지도자가 제100대 의회에서 맡은 직책을 비교한다.",
-        "en": "Leaders of both parties compare their roles in the 100th Congress."
+        "ko": "본회의 운영과 야당 지도부에 대한 문의를 분리한다.",
+        "en": "Separate questions about presiding over the House from minority leadership questions."
       },
       "cast": [
         {
@@ -1701,24 +1706,24 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "1987년 새 의회의 지도부 토론을 준비합니다. 본회의를 주재하는 직책과 야당 지도자의 직책을 구분해야 합니다.",
-          "en": "We are preparing a leadership discussion for the new Congress of 1987. The chamber's presiding officer and the minority leader must be distinguished."
+          "ko": "본회의 운영 문의와 야당의 토론 준비 문의가 동시에 들어왔습니다.",
+          "en": "Two questions arrive: one about House proceedings and one about the opposition's debate preparations."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 공화당 원내대표입니다. 다수당 출신 의장과 역할이 다르죠.",
-          "en": "I am the Republican floor leader. That is distinct from the Speaker from the majority party."
+          "ko": "공화당 원내대표에게는 야당 관련 질문을 주세요.",
+          "en": "Send the opposition question to the Republican floor leader."
         },
         {
           "speaker": "npc:0",
-          "ko": "새 의회의 의장직을 맡은 인물을 확인해 주세요.",
-          "en": "Identify the person holding the speakership in the new Congress."
+          "ko": "본회의 주재에 관한 질문은 어느 의장에게 보낼지 결정해 주세요.",
+          "en": "Identify the Speaker who should receive the question about presiding."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1987년 하원의장은 {{blank}}입니다.",
-        "en": "The Speaker in 1987 is {{blank}}.",
+        "ko": "본회의 운영 문의는 {{blank}} 의장에게 보내겠습니다.",
+        "en": "I'll send the procedural question to Speaker {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1746,16 +1751,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "라이트 의장과 미셸 야당 원내대표를 서로 다른 직책으로 안내하겠습니다.",
-            "en": "I'll introduce Wright as Speaker and Michel as minority leader."
+            "speaker": "npc:0",
+            "ko": "짐 라이트입니다. 본회의 운영에 관한 질문을 받겠습니다.",
+            "en": "I'm Jim Wright. I'll hear the question about proceedings."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "야당 관련 질문은 저 미셸에게 주세요.",
+            "en": "Send the opposition question to me, Michel."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "라이트: 제가 의장이고 미셸 의원은 소수당 원내대표입니다.",
-            "en": "Wright: I am Speaker; Michel is minority leader."
+            "ko": "1987년 의장은 짐 라이트입니다. 미셸 의원은 소수당 원내대표입니다. 두 문의를 구분하세요.",
+            "en": "Jim Wright is Speaker in 1987; Michel is minority leader. Separate the two questions."
           }
         ]
       },
@@ -2269,8 +2279,8 @@
         "en": "Wisconsin budget discussion"
       },
       "context": {
-        "ko": "새 회기 세출위원장에게 과거 입법 경력과 현재 역할을 묻는다.",
-        "en": "A new Appropriations chair discusses prior experience and current responsibilities."
+        "ko": "위원장 선출 뒤 새 예산 문의의 소관을 구별한다.",
+        "en": "Distinguish jurisdiction for a budget inquiry after a chair's election."
       },
       "cast": [
         {
@@ -2284,19 +2294,19 @@
       "opening": [
         {
           "speaker": "aide",
-          "ko": "4월 12일 하원은 새 위원장을 선출했습니다. 연방 지출을 위한 세출 법안을 다루는 위원회입니다.",
-          "en": "On April 12, the House elected a new chair. The committee handles appropriations bills for federal spending."
+          "ko": "4월 12일 위원장 선출 이후 새 문의가 들어왔습니다. 과거 합동경제위원회 기록과 혼동하지 않아야 합니다.",
+          "en": "A new inquiry arrived after the April 12 chair election. Don't confuse it with the old Joint Economic Committee record."
         },
         {
           "speaker": "npc:0",
-          "ko": "예전에 합동경제위원회를 맡았지만 이번 직책은 다른 기관입니다.",
-          "en": "I previously chaired the Joint Economic Committee, but this new position is in a different body."
+          "ko": "이번에 선출된 위원장직을 확인하면 문의를 구분할 수 있습니다.",
+          "en": "Identify the chairmanship I was elected to this time to distinguish the inquiry."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "1994년 오비 의원의 위원회는 {{blank}}입니다.",
-        "en": "Obey chairs {{blank}} in 1994.",
+        "ko": "1994년 오비 의원님은 {{blank}} 위원장입니다.",
+        "en": "In 1994 Representative Obey chairs the {{blank}} Committee.",
         "choices": [
           {
             "id": "A",
@@ -2324,16 +2334,16 @@
       "followup": {
         "correct": [
           {
-            "speaker": "aide",
-            "ko": "4월 12일 세출위원장 선출과 이전 합동경제위원회 경력을 구분하겠습니다.",
-            "en": "I'll distinguish the April 12 Appropriations chair election from the earlier Joint Economic Committee role."
+            "speaker": "npc:0",
+            "ko": "세출위원회입니다. 이전 합동경제위원회 경력과 별도로 예산 문의를 다루죠.",
+            "en": "Appropriations. Handle the budget inquiry separately from my earlier Joint Economic Committee work."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "세출위원회입니다. 제103대 의회에서 위원장을 맡습니다.",
-            "en": "Appropriations. I chair it in the 103rd Congress."
+            "ko": "4월 12일 세출위원장으로 선출됐습니다. 이전 기록은 그대로 두고 현재 직책을 수정하세요.",
+            "en": "I was elected Appropriations chair April 12. Keep the earlier record and correct my current office."
           }
         ]
       },

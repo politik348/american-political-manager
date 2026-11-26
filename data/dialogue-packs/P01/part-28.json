@@ -616,8 +616,8 @@
         "en": "Veterans and nursing roundtable"
       },
       "context": {
-        "ko": "군 복무와 의료 경력을 모두 가진 의원을 두 모임에 소개한다.",
-        "en": "Introduce a member with military and healthcare experience to both groups."
+        "ko": "참전군인과 간호 학생의 질문을 나누어 진행한다.",
+        "en": "Separate veterans' and nursing students' questions."
       },
       "cast": [
         {
@@ -630,20 +630,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "해군에서 복무한 뒤 의료 분야에서 일했습니다.",
-          "en": "I served in the Navy and later worked in healthcare."
+          "speaker": "host",
+          "ko": "한 학생은 군 경력을, 다른 학생은 의료 경력을 묻고 싶어 합니다.",
+          "en": "One student wants to ask about military service; another about healthcare."
         },
         {
-          "speaker": "player",
-          "ko": "군 경력의 구체적인 역할도 소개하겠습니다.",
-          "en": "I'll include your specific military role."
+          "speaker": "npc:0",
+          "ko": "군 경력부터 시작하죠. 해군에서 제가 맡았던 역할을 어떻게 소개하시겠어요?",
+          "en": "Start with my military career. How would you introduce my Navy role?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "키건스 의원은 해군 {{blank}} 출신입니다.",
-        "en": "Representative Kiggans was a Navy {{blank}}.",
+        "ko": "해군에서는 {{blank}}로 복무하셨습니다.",
+        "en": "In the Navy you served as a {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -672,15 +672,15 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "간호 전문 경력까지 함께 소개하면 두 모임 모두 연결되겠네요.",
-            "en": "Including my nursing career will connect both groups."
+            "ko": "헬리콥터 조종사였습니다. 다음 학생에게는 노인 전문 간호 경력을 이야기하죠.",
+            "en": "I flew helicopters. Let's turn to geriatric nursing for the next student."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "해군에서 헬리콥터를 조종했고 이후 노인 전문 간호사가 됐습니다.",
-            "en": "I flew Navy helicopters and later became a geriatric nurse practitioner."
+            "ko": "해군 헬리콥터 조종사였습니다. 군 경력과 나중의 간호 경력을 구분해서 질문하면 됩니다.",
+            "en": "I was a Navy helicopter pilot. Keep that separate from my later nursing career."
           }
         ]
       },
@@ -712,8 +712,8 @@
         "en": "State-line map workshop"
       },
       "context": {
-        "ko": "2017년 펜실베이니아 지도와 현재 지도가 겹쳐 놓여 있다.",
-        "en": "A 2017 Pennsylvania map overlaps a current map."
+        "ko": "두 연도의 지역구 번호가 충돌하는 방문 연락을 해결한다.",
+        "en": "Resolve a visit request with conflicting district numbers from two years."
       },
       "cast": [
         {
@@ -733,20 +733,20 @@
       ],
       "opening": [
         {
-          "speaker": "npc:0",
-          "ko": "이 지도에서 제 지역구 번호가 지금과 다르군요.",
-          "en": "My district number on this map differs from the current one."
+          "speaker": "npc:1",
+          "ko": "제 뉴저지 5구 연락처는 그대로 두세요. 펜실베이니아 쪽 방문 요청에는 서로 다른 번호가 적혀 있군요.",
+          "en": "Keep my New Jersey Fifth District contact separate. The Pennsylvania visit request has conflicting numbers."
         },
         {
-          "speaker": "npc:1",
-          "ko": "제 뉴저지 5구 기록은 별도로 표시해 주세요.",
-          "en": "Keep my New Jersey Fifth District record separate."
+          "speaker": "npc:0",
+          "ko": "2017년에는 8구였습니다. 2025년 방문 요청이라면 어느 번호를 사용하시겠어요?",
+          "en": "In 2017 I represented the Eighth. Which number belongs on a 2025 visit request?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "피츠패트릭 의원은 2017년 펜실베이니아 8구에서 2019년 {{blank}}로 바뀌었습니다.",
-        "en": "Fitzpatrick's district changed from Pennsylvania's Eighth in 2017 to the {{blank}} in 2019.",
+        "ko": "2019년부터 대표하시는 {{blank}}로 요청하겠습니다.",
+        "en": "I'll use the {{blank}}, which you have represented since 2019.",
         "choices": [
           {
             "id": "A",
@@ -775,15 +775,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "두 지도에 연도를 표시해 두면 혼동이 줄겠네요.",
-            "en": "Labeling each map by year should prevent confusion."
+            "ko": "1구로 연락하면 됩니다. 오래된 기록은 지우지 마세요.",
+            "en": "Use the First District. Keep the old record intact."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "뉴저지 쪽 요청은 제 5구와 별개로 처리하죠.",
+            "en": "Handle my New Jersey Fifth District request separately."
           }
         ],
         "incorrect": [
           {
             "speaker": "npc:0",
-            "ko": "2019년부터 제 지역구는 펜실베이니아 1구입니다.",
-            "en": "My district has been Pennsylvania's First since 2019."
+            "ko": "2019년부터 펜실베이니아 1구입니다. 2017년 기록은 그 당시의 기록으로 남겨 주세요.",
+            "en": "Since 2019, Pennsylvania's First. Keep the 2017 entry as a historical record."
           }
         ]
       },
@@ -830,8 +835,8 @@
         "en": "Michigan map exhibit"
       },
       "context": {
-        "ko": "두 의원의 과거 명함을 나란히 놓자 지역구 숫자가 서로 바뀐 것이 보인다.",
-        "en": "Two old business cards reveal an exchange of district numbers."
+        "ko": "과거 명함으로 온 재방문 문의를 현재 의석과 구분한다.",
+        "en": "Distinguish current seats from a return request using old business cards."
       },
       "cast": [
         {
@@ -851,20 +856,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "방문객이 2022년 명함을 들고 두 의원을 찾습니다. 번호가 같아도 지금의 담당자가 같다는 보장은 없어요.",
+          "en": "A visitor brings 2022 business cards. The same district number need not identify the same member today."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 옛 명함에는 2구라고 적혀 있네요.",
-          "en": "My old card says Second District."
+          "ko": "2023년부터 저는 4구입니다. 동료 의원의 번호도 확인해 주시겠어요?",
+          "en": "Since 2023 I've represented the Fourth. Can you identify my colleague's number too?"
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 옛날에는 4구였죠. 지금은 번호가 다릅니다.",
-          "en": "Mine used to say Fourth. The number is different now."
+          "ko": "현재 연락을 위한 번호만 먼저 알려 주세요.",
+          "en": "Give the visitor the current number first."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "2023년부터 하이젠가는 4구, 물레나는 {{blank}}를 대표합니다.",
-        "en": "From 2023 Huizenga represents District Four and Moolenaar represents {{blank}}.",
+        "ko": "물레나 의원님은 2023년부터 {{blank}}를 대표하십니다.",
+        "en": "Since 2023 Representative Moolenaar has represented {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -892,16 +902,21 @@
       "followup": {
         "correct": [
           {
+            "speaker": "npc:1",
+            "ko": "2구입니다. 이제 방문객과 이야기를 시작하죠.",
+            "en": "District Two. Let's begin the conversation."
+          },
+          {
             "speaker": "npc:0",
-            "ko": "명함에 날짜를 붙여 두죠. 숫자만 보고 판단하면 안 되겠습니다.",
-            "en": "Let's date the cards rather than relying on the numbers alone."
+            "ko": "이전 명함은 날짜와 함께 남겨 두세요.",
+            "en": "Keep the old cards with their dates."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "물레나 의원은 2023년부터 2구입니다.",
-            "en": "Moolenaar has represented District Two since 2023."
+            "speaker": "npc:1",
+            "ko": "제 현재 번호는 2구입니다. 하이젠가 의원의 4구와 구별해 주세요.",
+            "en": "My current number is District Two. Keep it distinct from Huizenga's Fourth."
           }
         ]
       },
@@ -1400,8 +1415,8 @@
         "en": "Minnesota civic education forum"
       },
       "context": {
-        "ko": "진행자가 정당별 좌석 대신 지역구별 좌석을 배치한다.",
-        "en": "The moderator assigns seats by district rather than party."
+        "ko": "정당과 지역구를 별개의 속성으로 설명하는 토론을 준비한다.",
+        "en": "Prepare a panel explaining party and district as distinct attributes."
       },
       "cast": [
         {
@@ -1421,20 +1436,25 @@
       ],
       "opening": [
         {
+          "speaker": "host",
+          "ko": "방청객이 두 의원의 지역구 번호만 보고 어느 정당인지도 알 수 있느냐고 묻습니다.",
+          "en": "An audience member asks whether district numbers tell them the members' parties."
+        },
+        {
           "speaker": "npc:0",
-          "ko": "제 좌석은 2구로 해 주세요.",
-          "en": "Please seat me under District Two."
+          "ko": "제 2구와 동료의 7구만으로는 정당을 알 수 없죠.",
+          "en": "My Second District and my colleague's Seventh don't establish party affiliation."
         },
         {
           "speaker": "npc:1",
-          "ko": "저는 7구입니다. 정당도 구분해 놓으면 좋겠군요.",
-          "en": "I'm in District Seven. We can label parties too."
+          "ko": "두 사람을 어떤 정당 소속으로 소개하시겠어요?",
+          "en": "How would you introduce our affiliations?"
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "크레이그와 피시바흐의 정당은 순서대로 {{blank}}입니다.",
-        "en": "Craig and Fischbach belong respectively to the {{blank}}.",
+        "ko": "크레이그와 피시바흐 의원은 각각 {{blank}} 소속입니다.",
+        "en": "Representatives Craig and Fischbach belong respectively to {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1463,15 +1483,20 @@
         "correct": [
           {
             "speaker": "npc:0",
-            "ko": "좋습니다. 주민들은 같은 주 안의 차이도 보겠네요.",
-            "en": "Good. Residents can see differences within one state."
+            "ko": "저는 민주당입니다. 이제 지역구에 관한 질문을 듣죠.",
+            "en": "I'm a Democrat. Let's take district questions."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 공화당입니다. 같은 주 안에서도 서로 다른 정당이 존재합니다.",
+            "en": "I'm a Republican. A state can have members of different parties."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "크레이그는 민주당, 피시바흐는 공화당입니다.",
-            "en": "Craig is a Democrat and Fischbach is a Republican."
+            "speaker": "npc:1",
+            "ko": "크레이그 의원은 민주당이고 저는 공화당입니다. 지역구 번호와 정당을 구별해 소개해 주세요.",
+            "en": "Craig is a Democrat; I'm a Republican. Introduce districts and parties separately."
           }
         ]
       },
@@ -1621,8 +1646,8 @@
         "en": "New Jersey generations exhibit"
       },
       "context": {
-        "ko": "같은 성을 가진 정치인들의 기록이 섞일 수 있어 현재 의원 두 명의 의석을 먼저 구별한다.",
-        "en": "Two current members distinguish their seats before displaying political family records."
+        "ko": "기자가 뉴저지 8구 의원과 인터뷰를 시작하려 한다.",
+        "en": "A reporter wants to interview the member for New Jersey's Eighth District."
       },
       "cast": [
         {
@@ -1643,24 +1668,24 @@
       "opening": [
         {
           "speaker": "host",
-          "ko": "뉴저지 지역 행사에서 제7선거구와 제8선거구의 인터뷰 음성 파일 이름이 뒤바뀌었습니다.",
-          "en": "At a New Jersey event, the interview filenames for Districts Seven and Eight were switched."
+          "ko": "8구 주민 인터뷰를 시작할 시간입니다. 기자는 두 의원 중 누구에게 질문할지 망설입니다.",
+          "en": "It's time for a District Eight interview. The reporter hesitates over which member to address."
         },
         {
           "speaker": "npc:0",
-          "ko": "공개 명부를 기준으로 제목을 복구하면 되겠습니다.",
-          "en": "Restore the titles using the public roster."
+          "ko": "뉴저지 대표단이라는 소개만으로는 충분하지 않겠군요.",
+          "en": "Introducing us as New Jersey members isn't enough."
         },
         {
           "speaker": "npc:1",
-          "ko": "두 사람이 모두 같은 주 의원이라는 사실만으로는 파일을 구분할 수 없죠.",
-          "en": "Knowing that we both represent the same state is not enough to distinguish the files."
+          "ko": "먼저 대상 지역구를 확실히 하고 질문을 시작하죠.",
+          "en": "Let's settle the district before the questions begin."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "2025년 뉴저지 8구의 의원은 {{blank}}입니다.",
-        "en": "In 2025 New Jersey's Eighth District is represented by {{blank}}.",
+        "ko": "8구에 관한 질문은 {{blank}} 의원님께 드리겠습니다.",
+        "en": "We'll direct the District Eight question to Representative {{blank}}.",
         "choices": [
           {
             "id": "A",
@@ -1688,16 +1713,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "제8선거구 인터뷰에는 롭 메넨데스 의원의 이름을 복구하고 제7선거구에는 킨 의원의 이름을 붙이겠습니다.",
-            "en": "I'll restore Rob Menendez to the District Eight interview and Kean to District Seven."
+            "speaker": "npc:1",
+            "ko": "제가 롭 메넨데스입니다. 질문을 듣겠습니다.",
+            "en": "I'm Rob Menendez. Let's hear the question."
+          },
+          {
+            "speaker": "npc:0",
+            "ko": "저는 7구의 킨 의원입니다.",
+            "en": "I'm Kean, from District Seven."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "8구는 롭 메넨데스, 7구는 톰 킨 주니어입니다.",
-            "en": "Rob Menendez represents the Eighth and Tom Kean Jr. the Seventh."
+            "speaker": "npc:1",
+            "ko": "8구는 제가 맡습니다. 롭 메넨데스입니다. 이제 인터뷰를 시작하세요.",
+            "en": "I represent the Eighth, Rob Menendez. Go ahead with the interview."
           }
         ]
       },
@@ -1729,8 +1759,8 @@
         "en": "Minnesota federal politics panel"
       },
       "context": {
-        "ko": "두 의원을 소개할 때 한 주의 서로 다른 지역구임을 강조한다.",
-        "en": "The introduction should emphasize different districts in the same state."
+        "ko": "같은 주의 서로 다른 의원을 비교하는 토론을 시작한다.",
+        "en": "Begin a discussion comparing members from different districts in one state."
       },
       "cast": [
         {
@@ -1750,25 +1780,20 @@
       ],
       "opening": [
         {
-          "speaker": "host",
-          "ko": "대표단 토론 영상에 서로 다른 정당과 선거구를 가진 두 의원이 등장합니다. 영상 편집자가 두 사람을 다른 주 소속으로 분류했어요.",
-          "en": "A delegation discussion features two members from different parties and districts. The editor has filed them under separate states."
-        },
-        {
           "speaker": "npc:0",
-          "ko": "제 선거구 번호는 5번입니다.",
-          "en": "My district number is five."
+          "ko": "제 5구 주민의 질문을 먼저 받겠습니다.",
+          "en": "I'll first take questions from District Five residents."
         },
         {
           "speaker": "npc:1",
-          "ko": "제 번호는 8번이지만 정당의 차이가 곧 주의 차이는 아니죠.",
-          "en": "Mine is eight, but a difference in party is not necessarily a difference in state."
+          "ko": "제 8구 주민의 질문도 이어서 받죠. 어느 주 대표단의 토론인지 청중에게 알려 주세요.",
+          "en": "Then I'll hear from District Eight residents. Tell the audience which state delegation this is."
         }
       ],
       "response": {
         "speaker": "player",
-        "ko": "두 사람의 공통 대표 주는 {{blank}}입니다.",
-        "en": "Both members represent the state of {{blank}}.",
+        "ko": "두 분은 {{blank}} 대표단 의원입니다.",
+        "en": "You both belong to the {{blank}} delegation.",
         "choices": [
           {
             "id": "A",
@@ -1796,16 +1821,21 @@
       "followup": {
         "correct": [
           {
-            "speaker": "host",
-            "ko": "같은 미네소타 대표단의 민주당 의원과 공화당 의원으로 표시하겠습니다.",
-            "en": "I'll identify them as a Democrat and a Republican from the same Minnesota delegation."
+            "speaker": "npc:0",
+            "ko": "미네소타 5구의 민주당 의원입니다.",
+            "en": "I'm a Democrat from Minnesota's Fifth."
+          },
+          {
+            "speaker": "npc:1",
+            "ko": "저는 미네소타 8구 공화당입니다. 질문을 구분해 받겠습니다.",
+            "en": "I'm a Republican from Minnesota's Eighth. Let's take the questions separately."
           }
         ],
         "incorrect": [
           {
-            "speaker": "npc:0",
-            "ko": "두 사람 모두 미네소타 의원입니다. 지역구는 다르죠.",
-            "en": "Both are Minnesota members, from different districts."
+            "speaker": "npc:1",
+            "ko": "미네소타입니다. 지역구와 정당은 다르지만 같은 주를 대표하죠.",
+            "en": "Minnesota. We represent different districts and parties within the same state."
           }
         ]
       },
