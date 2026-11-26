@@ -38,7 +38,7 @@ export function appointmentCore(c,v){
  if(!c.appointmentPilot?.includes(v.id))return false;
  if(c.dateHandoffIds?.includes(v.id))return true;
  const a=c.appointmentChecks?.[v.id];
- return !!a&&a.date===v.date&&a.learningTarget===v.learningTarget&&a.correct===v.response.correct&&a.answer===v.response.choices.find(x=>x.id===a.correct)?.en&&Array.isArray(a.cast)&&a.cast.length===v.cast.length&&a.cast.every((x,i)=>x.name===v.cast[i].name&&(!x.id||x.id===v.cast[i].id));
+ return !!a&&!a.hold&&a.date===v.date&&a.learningTarget===v.learningTarget&&a.correct===v.response.correct&&a.answer===v.response.choices.find(x=>x.id===a.correct)?.en&&Array.isArray(a.cast)&&a.cast.length===v.cast.length&&a.cast.every((x,i)=>x.name===v.cast[i].name&&(!x.id||x.id===v.cast[i].id));
 }
 export function appointmentTerms(v,records,date){
  if(v.date>date||Date.parse(date)-Date.parse(v.date)>92*86400000)return null;

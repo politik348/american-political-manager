@@ -19,6 +19,9 @@ for(const year of [2026,2025,2024,2023,2022]){
  }
 }
 assert.equal(cases.length,4,'four distinct roster-screened additional careers required');
+let senateCase;
+for(let year=2026;year>=1900&&!senateCase;year--)for(const state of states.filter(x=>x.admitted<=year&&x.id!=='CA').map(x=>x.id)){const v=suggestPilot({state,office:'local'},c,people,year+'-05-15','career:'+year+':2','career');if(v?.id.startsWith('P02-')&&!planned.has(v.id)){senateCase={year,state,expected:v.id,senate:true};break}}
+assert.ok(senateCase,'a real roster-screened Senate career must exist');cases.push(senateCase);
 const browser=await chromium.launch({headless:true});
 try{
  const actual=new Set(['P01-088']);
@@ -43,7 +46,7 @@ try{
    const suggestion=page.locator('[data-action^="meet:pilot:suggest:career:"]');
    await suggestion.waitFor({timeout:30000});
    const id=(await suggestion.getAttribute('data-action')).split(':').at(-1);
-   const v=c.scenes.find(x=>x.id===id);assert.ok(v);assert.ok(!actual.has(id),'duplicate actual scene '+id);actual.add(id);
+   const v=c.scenes.find(x=>x.id===id);assert.ok(v);if(cfg.senate)assert.ok(id.startsWith('P02-'),'actual Senate appointment required');assert.ok(!actual.has(id),'duplicate actual scene '+id);actual.add(id);
    await suggestion.click();await page.locator('#i1-pilot .eyebrow').filter({hasText:id}).waitFor();
    await page.locator('[data-action="meet:pilot:answer:'+v.response.correct+'"]').click();
    await page.locator('[data-i1-result="correct"]').waitFor();
@@ -57,14 +60,14 @@ try{
    console.log('I1 R4 real schedule '+JSON.stringify({scene:id,year:cfg.year,state:cfg.state,quarter:2,planned:cfg.expected,noSaveInjection:true,noRepeat:true}));
   }finally{await context.close()}
  }
- assert.equal(actual.size,5);
+ assert.equal(actual.size,6);
  const context=await browser.newContext();
  try{
   const page=await context.newPage();await page.goto(new URL('icon.svg',url).href);
-  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-portraits-v1')});
+  await page.evaluate(async()=>{await caches.open('apm-shell-v17.9-i1-rc1');await caches.open('apm-shell-v17.9-i1-rc2');await caches.open('apm-shell-v17.9-i1-rc3');await caches.open('apm-shell-v17.9-i1-rc4');await caches.open('apm-portraits-v1')});
   await page.goto(new URL('index.html',url).href);
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc4')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3'].some(k=>keys.includes(k))},{},{timeout:45000});
-  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc4');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return !!navigator.serviceWorker.controller&&keys.includes('apm-shell-v17.9-i1-rc5')&&!['apm-shell-v17.9-i1-rc1','apm-shell-v17.9-i1-rc2','apm-shell-v17.9-i1-rc3','apm-shell-v17.9-i1-rc4'].some(k=>keys.includes(k))},{},{timeout:45000});
+  const result=await page.evaluate(async()=>{const keys=await caches.keys(), cache=await caches.open('apm-shell-v17.9-i1-rc5');return {keys,manifest:!!await cache.match('./data/dialogue-packs/i1-index.json'),entry:!!await cache.match('./index.html')}});
   assert.ok(result.manifest&&result.entry);assert.ok(result.keys.includes('apm-portraits-v1'));
   await context.setOffline(true);
   const offline=await page.evaluate(async()=>{const r=await fetch('./data/dialogue-packs/i1-index.json');return {ok:r.ok,parts:(await r.json()).parts.length}});
