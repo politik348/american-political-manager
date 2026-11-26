@@ -25,3 +25,34 @@
 /* News hub: compact feed and explicit expanded archive. */
 .v18-news-center{display:grid;gap:8px}.v18-news-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.v18-news-toolbar h2{margin:0}.v18-news-row{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #43566a;padding:9px 0}.v18-news-row h3{margin:3px 0;font-size:1rem}.v18-news-row button{flex-shrink:0;min-height:40px}.v18-news-tier{font-size:.75rem;padding:2px 6px;border:1px solid #7990a3;border-radius:4px}.v18-tier-1{color:#f0b18d}.v18-tier-2{color:#e8c58a}.v18-unread{color:#9ec8f0}.v18-news-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:8px;align-items:end;padding:10px 0}.v18-news-filters label{display:grid;gap:5px}.v18-news-filters input,.v18-news-filters select{max-width:100%;min-width:0}.v18-news-filters input[type=checkbox]{justify-self:start}.v18-news-links{margin:8px 0}.v18-major-news{border-left:4px solid #e8c58a}.v18-major-news button{margin-top:12px;min-height:44px}.v18-news-detail button{margin:8px}.v18-news-detail{scroll-margin-top:12px}
 @media(max-width:600px){.v18-news-row{align-items:flex-start}.v18-news-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.v18-news-row h3{overflow-wrap:anywhere}}
+
+/* V18 career setup only: meaningful section accents and readable control states. */
+.v18-setup{max-width:1040px;margin:18px auto;background:#121e2b;border-color:#3c5063;padding:clamp(12px,2.2vw,24px)}
+#startform{display:grid;gap:14px}
+#startform .v18-setup-group{--section:#a8c1d6;--section-bg:#192b3a;min-width:0;margin:0;padding:12px 16px 16px;border:1px solid #43566a;border-left:4px solid var(--section);border-radius:10px;background:var(--section-bg)}
+#startform .v18-setup-mode{--section:#f2cd8c;--section-bg:#2b2928}
+#startform[data-mode="state51"] .v18-setup-mode{--section:#91dec0;--section-bg:#20352f}
+#startform[data-mode="alternate"] .v18-setup-mode{--section:#c8b4f2;--section-bg:#302b40}
+#startform .v18-setup-profile{--section:#96c9f1;--section-bg:#1b3043}
+#startform .v18-setup-politics{--section:#8ed8c8;--section-bg:#1a3436}
+#startform .v18-setup-difficulty{--section:#d7c0f4;--section-bg:#302a40}
+#startform legend{padding:0 8px;color:var(--section);font-weight:700;font-size:15px;letter-spacing:.025em}
+#startform legend span{display:inline-block;margin-right:7px;font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.09em}
+#startform .v18-setup-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#startform label{margin:0;color:#e2eaf2;font-size:13px;font-weight:600;min-width:0}
+#startform label input,#startform label select{margin:6px 0 0;width:100%;min-width:0;min-height:46px;background:#101d2b;border:1px solid #677d90;color:#f4f7fb;font-size:15px;font-weight:500}
+#startform select option{background:#172534;color:#f4f7fb}
+#startform input:hover,#startform select:not(:disabled):hover{border-color:var(--section)}
+#startform input:focus-visible,#startform select:focus-visible{outline:2px solid var(--section);outline-offset:2px}
+#startform #careermode{border-color:var(--section);color:var(--section);font-weight:700}
+#startform .v18-mode-hint{margin:10px 0 0;padding:10px 12px;color:#edf2f7;border-left-color:var(--section);background:#101d2b;border-radius:4px}
+#startform #startstate:disabled{opacity:1;border-style:dashed;color:#91dec0;cursor:not-allowed}
+#startform[data-party="Democrat"] select[name="party"]{border-color:#81b7f4;color:#acd0ff}
+#startform[data-party="Republican"] select[name="party"]{border-color:#e68e91;color:#ffc1c2}
+#startform[data-party="Independent"] select[name="party"]{border-color:#b1c0d0;color:#e2eaf2}
+#startform[data-difficulty="easy"] #startdifficulty{border-color:#83cdaa;color:#a8e8c9}
+#startform[data-difficulty="normal"] #startdifficulty{border-color:#dbb577;color:#f2d39a}
+#startform[data-difficulty="hard"] #startdifficulty{border-color:#e68e91;color:#ffc1c2}
+#startform .v18-setup-submit{min-height:52px;justify-self:stretch;font-size:16px;background:#f0cc8e;color:#17212b;border-color:#f0cc8e}
+#startform .v18-setup-submit:hover{background:#ffe0a7;color:#17212b;border-color:#ffe0a7}
+@media(max-width:600px){#startform .v18-setup-fields{grid-template-columns:1fr;gap:12px}#startform .v18-setup-group{padding:10px 12px 14px}#startform{gap:12px}}
