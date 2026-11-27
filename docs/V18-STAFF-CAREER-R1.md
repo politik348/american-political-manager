@@ -13,3 +13,6 @@
 
 ### Static data staging
 Pinned public copy of the MEDSL V15 TSV, source mirror and exact Git blob recorded. The isolated staging workflow validates coverage and selected close races, then persists compact margins only to the PR branch. The client reads the local JSON before considering the API. Data staging and browser checks must succeed before release. The mirror is not independently byte-compared to Harvard Dataverse by this workflow.
+
+### R3 data import result
+25 regular election years (1976–2024), 9,498 district-year observations passed complete-vote and candidate validation. Data committed to isolated branch b60fe545690913ed114d1314f03711747bb7b880. Data included in offline shell; latest main spaced-practice UI preserved. Final validation remains required.
