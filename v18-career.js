@@ -80,8 +80,8 @@ export function reconcileOffice18(s,people=[],complete=false){
  d.bestRank=Math.max(d.bestRank||0,d.rank);d.office=null;d.rank=0;d.trust=5;d.rankSince=stamp(s);d.officeNotice={type:'ended',name:o.name};return true;
 }
 function quarterBudget(s,d){if(d.budgetTurn!==stamp(s)){d.budgetTurn=stamp(s);d.trustEarned=0;d.chatXP=0}}
-function changeStaffTrust(s,d,delta){quarterBudget(s,d);const old=d.trust;const permitted=delta>0?Math.min(delta,1-d.trustEarned):delta;d.trust=cap(old+permitted);if(d.trust>old)d.trustEarned+=d.trust-old;return d.trust-old}
-export function staffDialogueReward(s,correct,rng=Math.random){const d=career18(s);quarterBudget(s,d);const xp=correct&&d.chatXP<2?1:0;d.chatXP+=xp;d.xp+=xp;const trust=correct&&d.office&&rng()<.025?changeStaffTrust(s,d,1):0;return {xp,trust}}
+export function changeCareerTrust(s,d,delta){quarterBudget(s,d);const old=d.trust;const permitted=delta>0?Math.min(delta,Math.max(0,1-(d.trustEarned||0))):delta;d.trust=cap(old+permitted);if(d.trust>old)d.trustEarned=(d.trustEarned||0)+d.trust-old;return d.trust-old}
+export function staffDialogueReward(s,correct,rng=Math.random){const d=career18(s);quarterBudget(s,d);const xp=correct&&d.chatXP<2?1:0;d.chatXP+=xp;d.xp+=xp;const trust=correct&&d.office&&rng()<.025?changeCareerTrust(s,d,1):0;return {xp,trust}}
 export function promotionReview18(s,rng=Math.random){
  const d=career18(s);if(s.mode!=='staff'||!d.office||d.rank<1||d.rank>=staffRanks.length-1)return false;
  const target=d.rank+1,now=stamp(s),service=now-d.startedTurn;
@@ -107,10 +107,10 @@ if(key!=='rest'){
   const skill=d.skills[key]||0,adjust=(fit?.04:0)+Math.min(.08,skill*.003)-(s.energy<35?.08:0),roll=rng()-adjust;
   outcome=roll<.05?'great':roll<.20?'good':roll<.75?'normal':roll<.90?'weak':'fail';
   gain={great:5,good:3,normal:2,weak:1,fail:1}[outcome];
-  if(outcome==='great'||outcome==='good'){d.skills[key]=cap(skill+1);if(d.office||d.campaign)trust=changeStaffTrust(s,d,1);}
-  else if(outcome==='fail'&&(d.office||d.campaign))trust=changeStaffTrust(s,d,-1);
+  if(outcome==='great'||outcome==='good'){d.skills[key]=cap(skill+1);if(d.office||d.campaign)trust=changeCareerTrust(s,d,1);}
+  else if(outcome==='fail'&&(d.office||d.campaign))trust=changeCareerTrust(s,d,-1);
   followup=fit&&(outcome==='great'||outcome==='good')&&rng()<.35;
- }else{gain=fit?20:12;const before=d.trust;d.skills[key]+=fit?3:2;d.trust=cap(d.trust+(fit?6:2));trust=d.trust-before;s.support=cap(s.support+(fit?6:3));followup=fit}
+ }else{gain=fit?20:12;d.skills[key]+=fit?3:2;trust=fit?changeCareerTrust(s,d,1):0;s.support=cap(s.support+(fit?6:3));followup=fit}
  d.xp+=gain;if(followup)d.pending={turn:stamp(s)+1,focus:paths[(paths.findIndex(p=>p[0]===key)+1)%paths.length][0],followup:true};
 }
 d.feedback={key,gain,trust,energy:-cost,fit,followup,outcome,rank:null};d.log.unshift({year:s.year,quarter:s.quarter,...d.feedback});d.log=d.log.slice(0,100);return true;}

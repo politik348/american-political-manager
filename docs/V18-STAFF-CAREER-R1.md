@@ -16,3 +16,6 @@ Pinned public copy of the MEDSL V15 TSV, source mirror and exact Git blob record
 
 ### R3 data import result
 25 regular election years (1976–2024), 9,498 district-year observations passed complete-vote and candidate validation. Data committed to isolated branch b60fe545690913ed114d1314f03711747bb7b880. Data included in offline shell; latest main spaced-practice UI preserved. Final validation remains required.
+
+### R7 trust pacing
+State 51 now shares the staff-mode quarterly trust budget: recommended work and positive dialogue combined may add at most one trust point per quarter; other work adds no trust. The budget is persisted across reloads. Staff work probabilities, XP, fictional support, historical records and existing accumulated trust are unchanged. This is a gameplay balance rule, not an empirical model of political trust.
